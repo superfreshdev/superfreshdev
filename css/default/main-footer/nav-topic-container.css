@@ -1,0 +1,30 @@
+/* 
+
+    nav-topic-container.css
+    > defines the topic header navigation for the webpage
+
+*/
+
+
+#nav-topic-container {
+
+
+    /* height: 200px; */
+
+    height: 0px;
+
+    /* min-height: 0;
+
+    position: absolute;
+    top:-100%;
+    left:0;
+    width: 100%; */
+   
+    /* transform: translateY(-100%); */
+   
+    background-color: green;
+
+    transition: all .4s ease; 
+    
+
+}

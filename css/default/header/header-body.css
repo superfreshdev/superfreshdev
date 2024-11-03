@@ -1,0 +1,152 @@
+/*
+    header-body.css
+    > define the root header of the webpage
+*/
+
+#header-body {
+
+ 
+    
+}
+
+/* ------------------------------------------------------------------------------ */ 
+/* Header Container 
+/* ------------------------------------------------------------------------------ */ 
+
+#header-container-body {
+
+    position: fixed;
+    left:0;
+    right: 0;
+
+    z-index: 100;
+
+    /* 4rem = 5 * 16px = 80px */
+    height: 6rem;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* ------------------------------------------------------------------------------ */ 
+/* Logo Header 
+/* ------------------------------------------------------------------------------ */ 
+
+#logo-header-body {
+
+    line-height: 1.3rem;
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+    color: var(--c-light-brown-1);
+
+}
+
+#img-logo-header {
+
+    /* default small img size for mobile  */
+    height: 1.8em;
+}
+
+
+/* ------------------------------------------ */
+/* Title Header Body 
+/* ------------------------------------------ */
+
+#title-header-body {
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+    font-weight: bold;
+
+}
+
+#title-header-superfreshdev-body {
+
+    color: var(--c-l-white-1);
+    
+}
+
+#sub-title-header-body {
+
+    font-size: .9rem;
+     font-style: italic;
+}
+
+
+
+/* ------------------------------------------------------------------------------ */ 
+/* Label Nav Header 
+/* ------------------------------------------------------------------------------ */ 
+
+#lbl-nav-header {
+
+    /* 2.8 x 16px =  */
+    width: 2.8em;
+    height: 2.8em;
+
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    row-gap: .4em;
+
+    background-color:  var(--c-dark-grey-1);
+    border-radius: .6em;
+   
+    cursor: pointer;
+    transition: all .4s;
+    
+}
+
+.hamburger-stripe {
+
+    width: 1.6em;
+    height: .25em;
+
+    border-radius: .3em;
+
+    background-color: var(--c-light-grey-1);
+
+    transition: all .4s;
+}
+
+
+/* ------------------------------------------------------------------------------ */ 
+/* Handling Checkbox 
+/* ------------------------------------------------------------------------------ */ 
+
+#chk-nav-header { display: none; }
+
+#chk-nav-header:checked + label {
+
+    background-color: var(--c-dark-red-1);
+
+}
+
+#chk-nav-header:checked + label > div:nth-of-type(1) {
+
+    transform: translate(0, 11px) rotate(-45deg);
+    background-color: var(--c-light-brown-1);
+    
+}
+
+#chk-nav-header:checked + label > div:nth-of-type(2) {
+
+    background-color: transparent;
+    
+}
+
+#chk-nav-header:checked + label > div:nth-of-type(3) {
+
+    transform: translate(0, -10px) rotate(45deg);
+    background-color: var(--c-light-brown-1);
+    
+}

@@ -1,0 +1,37 @@
+/*
+    footer-body.css
+    > define the root footer of the webpage
+*/
+
+#footer-body {
+
+    background-color: rgb(145, 145, 145);
+}
+
+
+/* ------------------------------------------------------------------------------ */ 
+/* Footer Layout Container 
+/* ------------------------------------------------------------------------------ */ 
+
+#footer-layout-container-body {
+
+    padding: 1em .6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+
+#copyright-container-footer {
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+    font-style: italic;
+
+    color: var(--c-grey);
+}

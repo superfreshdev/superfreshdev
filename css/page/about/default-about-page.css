@@ -1,0 +1,45 @@
+/*
+    default-about-page.css
+    > define the default layout of about page 
+*/
+
+#about-page {
+
+    height: 100%;
+
+    display: grid;
+    grid: auto auto auto / 1fr;
+
+}
+
+
+/* ------------------------------------------------------- */
+/* Welcome Container 
+/* ------------------------------------------------------- */
+
+#welcome-about-container {
+
+    background-color: rgb(132, 132, 227);
+
+}
+
+
+/* ------------------------------------------------------- */
+/* My Top 3 Projects Container 
+/* ------------------------------------------------------- */
+
+#my-top-3-projects-about-container{
+
+    background-color: greenyellow;
+
+}
+
+/* ------------------------------------------------------- */
+/* Contact Me Container 
+/* ------------------------------------------------------- */
+
+#contact-me-about-container {
+
+    background-color: bisque;
+
+}
