@@ -5,66 +5,47 @@
 
 */
 
+/* ------------------------------------------------------------------- */
+/* Nav Topic Container 
+/* ------------------------------------------------------------------- */
 
 #nav-topic-container {
 
 
-    height: 0px;
-
-    /* max-height: 0px; */
-
-    
-
-    /* min-height: 0;
-
-    position: absolute;
-    top:-100%;
-    left:0;
-    width: 100%; */
-   
-    /* transform: translateY(-100%); */
+    display: grid;
+    grid-template-rows: 0fr;
    
     background-color: green;
 
     transition: all .4s ease; 
-   
 
 }
 
-.button-panel {
 
-    background-color: grey;
+
+/* ------------------------------------------------------------------- */
+/* Nav Topic Layout Container
+/* ------------------------------------------------------------------- */
+
+#nav-topic-layout-container {
+
+    padding: 2em 0em;
+
     display: flex;
-    align-items: center;
     justify-content: center;
-    column-gap: 1em;
+    column-gap: 2em;
+
 }
 
-#quick-example {
 
-    /* padding: 10px; */
-    
+/* ------------------------------------------------------------------- */
+/* Block Topic Container 
+/* ------------------------------------------------------------------- */
 
-    background-color: green;
-    border-radius: .5em;
+.block-topic-container {
 
-    display: grid;
-    grid-template-rows: 0fr;
-    /* transition: grid-template-rows 500ms; */
+    border-radius: .6em;
+    border: 1px solid black;
 
-    transition: all .4s;
 }
-
-#quick-example > div {
-
-    overflow: hidden;
-    
-   
-}
-
-#layout {
-
-    padding: 12px;
-}
-
 

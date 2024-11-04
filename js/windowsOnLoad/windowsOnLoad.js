@@ -1,12 +1,33 @@
 
 console.log("### windowsOnLoad ")
 
-/* ------------------------------------------- */ 
+/* ------------------------------------------------------------------------- */ 
 /* DOM Elements */
-/* ------------------------------------------- */ 
+/* ------------------------------------------------------------------------- */ 
 
-const elNavTopicContainer =  document.getElementById('nav-topic-container');
-const elMainContainer = document.getElementById('main-container');
+var radiosNavTopics = document.getElementsByName('radio-nav-topic')
+var subNavTopicContainer = document.getElementById("sub-nav-topic-container");
+
+
+/* ------------------------------------------------------------------------- */ 
+/* Function */
+/* ------------------------------------------------------------------------- */ 
+
+function setSubNavTopicContainer( subNavTopicContainer , radios , strIdAbout ) {
+
+  for( let i=0; i < radios.length; i++ ) {
+
+      if( radiosNavTopics[i].checked == true && radiosNavTopics[i].getAttribute('id') === strIdAbout ) {
+
+          subNavTopicContainer.style.cssText =  `grid-template-rows: 1fr 0fr;`;
+
+      } else {
+
+          subNavTopicContainer.style.cssText =  `grid-template-rows: 0fr 1fr;`;
+      }
+  }
+
+}
 
 
 /* ------------------------------------------- */ 
@@ -15,10 +36,35 @@ const elMainContainer = document.getElementById('main-container');
 
 window.addEventListener("load", (event) => {
 
-    console.log("page is fully loaded");
+    // console.log("page is fully loaded");
 
-    // console.log("nav-topic-container,heihgt= " + elNavTopicContainer.clientHeight + " px" )
+    // set default sub nav topic container by radio checked 
+    setSubNavTopicContainer( subNavTopicContainer , radiosNavTopics , "radio-about" )
 
-    // /* Slide Correct Main */
-    // elMainContainer.style.transform = `translateY(${-elNavTopicContainer.clientHeight}px)`
-  });
+  
+});
+
+
+
+
+/* -------------------------------------------------------------- */
+/* Add Change Lister on Nav Topic Radios 
+/* -------------------------------------------------------------- */
+
+
+for( let i=0; i < radiosNavTopics.length; i++ ) {
+
+  // console.log("runs")
+
+  radiosNavTopics[i].addEventListener( 'change' , ()=> {
+
+    setSubNavTopicContainer( subNavTopicContainer , radiosNavTopics , "radio-about" )
+
+  })
+
+}
+
+
+
+
+

@@ -1,0 +1,30 @@
+/* 
+
+    anker-link-content-nav.css
+    > define the basic layout of an anker link content nav for 
+    sliding on chapter of the page 
+
+*/
+
+#about-anker-link-content-nav {
+
+
+}
+
+/* ------------------------------------------------------------------------ */ 
+/* Anker Link Content Nav 
+/* ------------------------------------------------------------------------ */ 
+
+.anker-link-content-nav {
+
+    height: 4.5em;
+
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+
+    background-color: palegreen;
+
+}
+
+

@@ -3,18 +3,29 @@
     > define the root main of the webpage
 */
 
+
+/* ------------------------------------------------------------------- */
+/* Main Body
+/* ------------------------------------------------------------------- */
+
 #main-body {
     
     margin-top: 6em;
 
-    /* height: 100%; */
-   
-    /* display: grid; 
-    grid: 1fr / 1fr; */
-
-    /* transform: translateY( 0% ); */
-
     transition: all .4s;
     
+}
+
+/* ------------------------------------------------------------------- */
+/* Smooth Slide Down Up Container 
+/* ------------------------------------------------------------------- */
+
+/* this extra container we need for smooth slide down up by 
+using grid row */
+
+.smooth-slide-down-up-container {
+    
+    overflow: hidden;
+
 }
 

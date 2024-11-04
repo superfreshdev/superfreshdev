@@ -19,8 +19,7 @@
     
     overflow-x: hidden;
 
-   
-    
+
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -103,7 +102,7 @@
 }
 
 
-#sub-nav-topic-container  > div {
+#sub-nav-topic-container > div {
 
     overflow: hidden;
     
@@ -115,43 +114,4 @@
 
 
 
-
-
-
-
-
-
-.custom-select,
-.link-content-slide-panel  {
-
-    height: 4.5em;
-
-    display: flex;
-    align-items: center;
-}
-
-
-/* ---------------------------------------------------------------------------- */
-/* Link Content Slide Panel 
-/* ---------------------------------------------------------------------------- */
-
-
-.link-content-slide-panel {
-
-    column-gap: 1em;
-
-    background-color: rgb(167, 134, 168);
-
-
-}
-
-/* ---------------------------------------------------------------------------- */
-/* Custom Select
-/* ---------------------------------------------------------------------------- */
-
-.custom-select {
-
-    background-color: yellow;
-
-}
 

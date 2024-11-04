@@ -41,6 +41,11 @@
         <link rel="stylesheet" href="css/default/main-footer/nav-topic-container.css">   
         <link rel="stylesheet" href="css/default/main-footer/main-container/main-container.css">  
 
+        <!-- UI Elements  -->
+        <link rel="stylesheet" href="css/default/main-footer/UI-Elements/anker-link-content-nav.css">   
+        <link rel="stylesheet" href="css/default/main-footer/UI-Elements/custom-select.css">  
+
+
         <!-- footer -->
         <link rel="stylesheet" href="css/default/main-footer/main-container/footer-body.css">  
 
@@ -125,27 +130,57 @@
         <!-- ----------------------------------------------------------------- --> 
         <div id="nav-topic-container">
 
-            Nav Topic Container || Nav Topic Container || Nav Topic Container <br>
-            Nav Topic Container || Nav Topic Container || Nav Topic Container <br>
+            <div class="smooth-slide-down-up-container">
 
-            <div class="button-panel">
-
-                <input type="radio" id="radio-about" name="radio-nav-topic">
-                <label for="radio-about">
-                    About 
-                </label>
-
-                <input type="radio" id="radio-books" name="radio-nav-topic">
-                <label for="radio-books">
-                    Books
-                </label>
+                <!-- ----------------------------------------------------- -->
+                <!-- Nav Topic Layout Container --> 
+                <!-- ----------------------------------------------------- -->
+                <div id="nav-topic-layout-container">
 
 
+                    <!-- ------------------------------------------ -->
+                    <!-- Topic - MY IT -->
+                    <!-- ------------------------------------------ -->
+                    <div class="block-topic-container">
+                        My IT 
+                    </div> 
+
+
+                    <!-- ------------------------------------------ -->
+                    <!-- Topic - My Private Lifestyle -->
+                    <!-- ------------------------------------------ -->
+                    <div class="block-topic-container">
+                        My Private Lifestyle <br>
+
+                        <input type="radio" id="radio-books" name="radio-nav-topic">
+                        <label for="radio-books">
+                            Books
+                        </label>
+
+
+                    </div> 
+
+
+                    <!-- ------------------------------------------ -->
+                    <!-- Topic - About -->
+                    <!-- ------------------------------------------ -->
+                    <div class="block-topic-container">
+
+                        About <br>
+
+                        <input checked type="radio" id="radio-about" name="radio-nav-topic">
+                        <label for="radio-about">
+                            About 
+                        </label>
+        
+                    </div> 
+
+                  
+
+                </div>  
+                
+    
             </div>
-
-            Nav Topic Container || Nav Topic Container || Nav Topic Container <br>
-            Nav Topic Container || Nav Topic Container || Nav Topic Container <br>
-
 
         </div> 
 
@@ -168,21 +203,25 @@
                     <div id="sub-nav-topic-container">
 
                         <div>
+
                             <!-- ----------------------------------------------------------------- -->
-                            <!-- Link Content Slide Panel                                          --> 
+                            <!-- Anker Link Content Nav                                                  --> 
                             <!-- ----------------------------------------------------------------- -->
-                            <div class="link-content-slide-panel" id="about-link-nav-panel">
+                            <div id="about-anker-link-content-nav" class="anker-link-content-nav">
                                 Me || My Top 3 Projects || Actually Doings 2024 || Contact 
                             </div>
+
                         </div>
 
                         <div>
+
                             <!-- ----------------------------------------------------------------- -->
                             <!-- Custom Select | Topic Filter                                      --> 
                             <!-- ----------------------------------------------------------------- -->
-                            <div class="custom-select" id="custom-select-topic-filter">
+                            <div id="custom-select-topic-filter" class="custom-select" >
                                 Custom Select  | Topic Filter 
                             </div>
+
                         </div>
                       
                     </div>  
@@ -194,23 +233,10 @@
 
                         <div>Book Overview Page 1</div>
 
-                        <button onClick="slide('next')">Next</button> <br><br>
+                        <button onClick="slide('next')">Next 1 </button> <br><br>
+                        <button onClick="slide('next')">Next 2 </button> <br><br>
+                        <button onClick="slide('next')">Next 3 </button> <br><br>
 
-                        <div id="quick-example">
-                            <div>
-                                <div id="layout">
-
-                                    this is amazing! <br>
-                                    Here comes the sun from the beatles <br>
-                                    ujeur e <br>
-    
-                                    <img src="media/content/about/img/pexels-kevin-ku-92347-577585.jpg" style="height: 300px;">
-
-                                </div>
-                              
-
-                            </div>
-                        </div>
 
                         <div> Marko Marko Marko </div>
 
@@ -260,10 +286,13 @@
     <!-- -------------------------------------------------------------------- -->
 
     <!--windows On Load -->
-    <!-- <script src="js/windowsOnLoad/windowsOnLoad.js"></script> -->
+    <script src="js/windowsOnLoad/windowsOnLoad.js"></script>
 
     <!-- header -->
     <script src="js/header/header-nav-open.js"></script>
+
+    <!-- main -->
+    <script src="js/main/page-slider.js"></script>
 
 
 </body>
