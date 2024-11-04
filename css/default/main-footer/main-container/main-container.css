@@ -1,7 +1,8 @@
 /*
 
     main-container.css 
-    > ...
+    > defines basic layouts to handle css page slide logic and basic boxes 
+    where the layout lives in
 
 */
 
@@ -15,10 +16,16 @@
     background-color: yellow;
 
     transition: all .4s ease; 
-
+    
     overflow-x: hidden;
+
+   
     
 }
+
+/* ---------------------------------------------------------------------------- */
+/* Page Slide Container 
+/* ---------------------------------------------------------------------------- */
 
 #pages-slide-container {
 
@@ -26,9 +33,23 @@
     width: 200%;
     display: flex;
 
-    
+   
     
 }
+
+
+/* ---------------------------------------------------------------------------- */
+/* Page
+/* ---------------------------------------------------------------------------- */
+
+.page {
+
+
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Page Overview & Details 
+/* ---------------------------------------------------------------------------- */
 
 .page-details,
 .page-overview {
@@ -58,3 +79,79 @@
     background-color: blueviolet;
 
 }
+
+
+#page-content-overview {
+
+    background-color: red;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* Sub Nav Topic Container 
+/* ---------------------------------------------------------------------------- */
+
+#sub-nav-topic-container {
+
+    background-color: aquamarine;
+
+    display: grid;
+    grid-template-rows: 0fr 0fr;
+
+    transition: all .4s;
+}
+
+
+#sub-nav-topic-container  > div {
+
+    overflow: hidden;
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-select,
+.link-content-slide-panel  {
+
+    height: 4.5em;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* Link Content Slide Panel 
+/* ---------------------------------------------------------------------------- */
+
+
+.link-content-slide-panel {
+
+    column-gap: 1em;
+
+    background-color: rgb(167, 134, 168);
+
+
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Custom Select
+/* ---------------------------------------------------------------------------- */
+
+.custom-select {
+
+    background-color: yellow;
+
+}
+

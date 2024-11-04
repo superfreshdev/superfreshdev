@@ -37,14 +37,12 @@
 
         <!-- main  -->
         <link rel="stylesheet" href="css/default/main-footer/main-body.css">
-        <link rel="stylesheet" href="css/default/main-footer/main-container/main-container.css">  
 
         <link rel="stylesheet" href="css/default/main-footer/nav-topic-container.css">   
-        <link rel="stylesheet" href="css/default/main-footer/main-container/sub-nav-topic-container.css">
-        <link rel="stylesheet" href="css/default/main-footer/main-container/page-content-container.css">
+        <link rel="stylesheet" href="css/default/main-footer/main-container/main-container.css">  
 
         <!-- footer -->
-        <link rel="stylesheet" href="css/default/main-footer/footer-body.css">  
+        <link rel="stylesheet" href="css/default/main-footer/main-container/footer-body.css">  
 
     
         <!-- ----------------------------------- -->    
@@ -58,7 +56,7 @@
     <title>Superfresh 🔱 Become Smarter.</title>
 
 </head>
-
+<link rel="stylesheet" href="css/default/main-footer/nav-topic-container.css">   
 <!-- ------------------------------------------------------------------------------------------------------- -->
 <!-- BODY --> 
 <!-- ------------------------------------------------------------------------------------------------------- -->
@@ -127,14 +125,27 @@
         <!-- ----------------------------------------------------------------- --> 
         <div id="nav-topic-container">
 
-            Nav Main Header Container Nav Main Header Container Nav Main Header Container
-            <br>
-            Nav Main Header Container Nav Main Header Container Nav Main Header Container
-            <br>
-            Nav Main Header Container Nav Main Header Container Nav Main Header Container
-            <br>
-            Nav Main Header Container Nav Main Header Container Nav Main Header Container
-            <br>
+            Nav Topic Container || Nav Topic Container || Nav Topic Container <br>
+            Nav Topic Container || Nav Topic Container || Nav Topic Container <br>
+
+            <div class="button-panel">
+
+                <input type="radio" id="radio-about" name="radio-nav-topic">
+                <label for="radio-about">
+                    About 
+                </label>
+
+                <input type="radio" id="radio-books" name="radio-nav-topic">
+                <label for="radio-books">
+                    Books
+                </label>
+
+
+            </div>
+
+            Nav Topic Container || Nav Topic Container || Nav Topic Container <br>
+            Nav Topic Container || Nav Topic Container || Nav Topic Container <br>
+
 
         </div> 
 
@@ -147,31 +158,61 @@
             <div id="pages-slide-container">
 
                 <!-- ---------------------------------------------------- -->
-                <!-- Page Overview -->
+                <!-- Page Overview ( First Page )   -->
                 <!-- ---------------------------------------------------- --> 
-                <div class="page page-overview" >
+                <div class="page page-overview">
 
                     <!-- ----------------------------------------------------------------- -->
                     <!-- Sub Nav Topic Container                                    --> 
                     <!-- ----------------------------------------------------------------- -->
                     <div id="sub-nav-topic-container">
 
-                        Sub Nav Topic Container Sub Nav Topic Container  <br>
-                        Sub Nav Topic Container  Sub Nav Topic Container  <br>
-                        Sub Nav Topic Container Sub Nav Topic Container  <br>
-                        Sub Nav Topic Container  Sub Nav Topic Container  <br>
+                        <div>
+                            <!-- ----------------------------------------------------------------- -->
+                            <!-- Link Content Slide Panel                                          --> 
+                            <!-- ----------------------------------------------------------------- -->
+                            <div class="link-content-slide-panel" id="about-link-nav-panel">
+                                Me || My Top 3 Projects || Actually Doings 2024 || Contact 
+                            </div>
+                        </div>
 
+                        <div>
+                            <!-- ----------------------------------------------------------------- -->
+                            <!-- Custom Select | Topic Filter                                      --> 
+                            <!-- ----------------------------------------------------------------- -->
+                            <div class="custom-select" id="custom-select-topic-filter">
+                                Custom Select  | Topic Filter 
+                            </div>
+                        </div>
+                      
                     </div>  
 
                     <!-- ----------------------------------------------------------------- -->
-                    <!-- Page Content Container                                           --> 
+                    <!-- Page Content Container ( dynamic overview content )               --> 
                     <!-- ----------------------------------------------------------------- -->
-                    <div id="page-content-container">
+                    <div class="page-overview-container" id="page-content-overview">
 
                         <div>Book Overview Page 1</div>
 
-                        <button onClick="slide('next')">Next</button>
+                        <button onClick="slide('next')">Next</button> <br><br>
 
+                        <div id="quick-example">
+                            <div>
+                                <div id="layout">
+
+                                    this is amazing! <br>
+                                    Here comes the sun from the beatles <br>
+                                    ujeur e <br>
+    
+                                    <img src="media/content/about/img/pexels-kevin-ku-92347-577585.jpg" style="height: 300px;">
+
+                                </div>
+                              
+
+                            </div>
+                        </div>
+
+                        <div> Marko Marko Marko </div>
 
 
                     </div> 
@@ -189,22 +230,23 @@
                 </div>
 
                 <!-- ---------------------------------------------------- -->
-                <!-- Page Details -->
+                <!-- Page Details ( Last Page ) -->
                 <!-- ---------------------------------------------------- -->
                 <div class="page page-details">
 
-                    Page Details <br>
-                    <button onClick="slide('prev')">Previous</button>
+                    <div class="page-details-container" id="page-content-details">
+
+                        Page Details <br>
+                        <button onClick="slide('prev')">Previous</button>
+
+                    </div>
+                   
 
                 </div>
 
 
             </div>
-
-            
-
-
-
+        
         </div>  
 
 
@@ -216,6 +258,9 @@
     <!-- -------------------------------------------------------------------- -->
     <!-- JS Bindings ( should be on the end because of loading elements )     --> 
     <!-- -------------------------------------------------------------------- -->
+
+    <!--windows On Load -->
+    <!-- <script src="js/windowsOnLoad/windowsOnLoad.js"></script> -->
 
     <!-- header -->
     <script src="js/header/header-nav-open.js"></script>

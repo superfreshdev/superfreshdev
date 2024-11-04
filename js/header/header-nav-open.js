@@ -15,6 +15,8 @@ var chkHeader = document.getElementById('chk-nav-header');
 var navTopicContainer = document.getElementById('nav-topic-container');
 var mainBody = document.getElementById('main-body');
 
+var elQuickExample = document.getElementById('quick-example');
+
 // handle links 
 
 var linkPageOverview = document.getElementById('link-page-overview')
@@ -51,11 +53,14 @@ lblNavHeader.addEventListener( 'click' , ()=> {
         navTopicContainer.style.cssText = 
         `
             height: 0px;
-          
+
             
-           
-            
-        
+        `;
+
+        elQuickExample.style.cssText = 
+        `
+            grid-template-rows: 0fr;
+
             
         `;
 
@@ -68,15 +73,21 @@ lblNavHeader.addEventListener( 'click' , ()=> {
 
         // mainBody.style.cssText = 
         // `
-        //     grid: auto 1fr / 1fr;
+        //     grid: auto 1fr / 1fr;  height: 100px;
         // `
 
         navTopicContainer.style.cssText = 
         `
+           
+          
             height: 100px;
-          
-          
-          
+            
+        `;
+        
+
+        elQuickExample.style.cssText = 
+        `
+            grid-template-rows: 1fr;
 
             
         `;
@@ -89,5 +100,52 @@ lblNavHeader.addEventListener( 'click' , ()=> {
     }
     
 } )
+
+
+// var radiosToCheck = document.getElementsByName("radio-nav-topic");
+
+var radioAbout = document.getElementById("radio-about");
+var radioBooks = document.getElementById("radio-books");
+
+var subNavTopicContainer = document.getElementById("sub-nav-topic-container");
+
+
+
+radioAbout.addEventListener( "change" , ()=> {
+
+    if( radioAbout.checked == true ) {
+
+        console.log(" About checked ")
+
+        subNavTopicContainer.style.cssText = 
+        `
+        grid-template-rows: 1fr 0fr;
+
+        `;
+
+    } 
+  
+
+  
+})
+
+radioBooks.addEventListener( "change" , ()=> {
+
+    if( radioBooks.checked == true ) {
+
+        console.log(" Books checked ")
+
+        subNavTopicContainer.style.cssText = 
+        `
+        grid-template-rows: 0fr 1fr;
+
+        `;
+
+    }
+    
+  
+
+  
+})
 
 
