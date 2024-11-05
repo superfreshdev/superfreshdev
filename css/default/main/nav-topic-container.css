@@ -1,0 +1,200 @@
+/* 
+
+    nav-topic-container.css
+    > defines the topic header navigation for the webpage
+
+*/
+
+/* ------------------------------------------------------------------- */
+/* Nav Topic Container 
+/* ------------------------------------------------------------------- */
+
+#nav-topic-container {
+
+    display: grid;
+    grid-template-rows: 0fr;
+
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+
+    transition: all .4s ease; 
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Nav Topic Layout Container
+/* ------------------------------------------------------------------- */
+
+#nav-topic-layout-container {
+
+    padding: 2em 0em;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 2em;
+    row-gap: 2em;
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Block Topic Container 
+/* ------------------------------------------------------------------- */
+
+.block-topic-container {
+
+    display: grid;
+    row-gap: .6em;
+
+    font-weight: bold;
+
+   
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header Block Topic 
+/* ------------------------------------------------------------------- */
+
+.header-block-topic {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* color:var(--c-light-brown-1); */
+
+    
+
+
+}
+
+.header-block-topic > img { 
+
+    height: 14em;
+    width: 22em;
+    border-radius: .6em;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    
+    
+}
+
+.header-block-topic > div:nth-of-type(1) {
+
+    position: absolute;
+   
+    font-size: 1.125em;
+
+    height: 3em;
+    padding: 0em 1.3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .3em;
+
+    box-shadow: rgba(217, 191, 152, 0.37) 0px -23px 25px 0px inset,
+     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+     rgba(0, 0, 0, 0.06) 0px 2px 1px,
+     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+   
+   
+
+    background-color: black;
+    color:white;
+
+}
+
+.header-block-topic > div:nth-of-type(2) {
+
+    font-size: 1.125em;
+
+    height: 2.5em;
+    padding: 0em 1em;
+
+    position: absolute;
+    top:0;
+    right:0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0em .6em .3em .3em;
+
+    /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply; */
+
+    background-color: black;
+    color:rgb(174, 174, 174);
+
+
+   
+}
+
+
+/* ------------------------------------------------------------------- */
+/* List Block Topic 
+/* ------------------------------------------------------------------- */
+
+.list-block-topic {
+
+    display: grid;
+    row-gap: .6em;
+    
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Label Nav Topic 
+/* ------------------------------------------------------------------- */
+
+input[name="radio-nav-topic"] { display: none; }
+
+input[name="radio-nav-topic"]:checked + label { 
+
+    background-color: var(--c-light-brown-1);
+}
+
+.lbl-nav-topic {
+
+    height: 4em;
+    padding: 0em 1em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+
+    border-radius: .6em;
+
+    background-color: rgb(171, 171, 171);
+
+    cursor: pointer;
+    transition: all .4s;
+    
+
+}
+
+.lbl-nav-topic:hover {
+
+    background-color: var(--c-light-brown-1);
+}
+
+.lbl-nav-topic > div:nth-of-type(1) {
+
+    font-size: 1.125em;
+
+}

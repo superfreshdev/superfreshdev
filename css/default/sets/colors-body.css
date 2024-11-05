@@ -48,7 +48,7 @@
 /* Brown
 /* --------------------------------------------------------- */
 
---c-light-brown-1: #d9bf98;
+--c-light-brown-1: rgb(217, 191, 152);
 
 
 /* --------------------------------------------------------- */
@@ -71,7 +71,37 @@
 /* --------------------------------------------------------- */
 
 .bgc-l-anthracite-mix {
-    background-color: rgb(39, 39, 39);
+
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     background-blend-mode: multiply;
+
 }
+
+
+/* 
+
+    Interessante BG Color Mixe: 
+
+
+  /* background-color: rgb(39, 39, 39);
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply; */
+
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% ); */
+
+    /* background-image: linear-gradient( 109.6deg,  rgba(102,51,153,1) 11.2%, rgba(2,0,4,1) 91.1% ); */
+
+    /* background-image: linear-gradient( 178.2deg,  rgba(118,8,23,1) 10.9%, rgba(158,12,33,1) 62.6% ); */
+
+    /* background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% ); */
+
+    /* background-image: radial-gradient( circle 602px at 2.1% 5.1%,  rgba(233,0,120,1) 0%, rgba(0,0,0,1) 90.1% ); */
+
+    /* background-image: radial-gradient( circle 732px at -23.9% -25.1%,  rgba(30,39,107,1) 6.1%, rgba(188,104,142,1) 100.2% ); */
+
+    /* background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% ); */
+
+    /* background-image: linear-gradient( 109.6deg,  rgba(33,103,43,1) 11.3%, rgba(117,162,61,1) 91.1% ); */
+
+
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
