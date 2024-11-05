@@ -8,6 +8,7 @@
 
 #about-anker-link-content-nav {
 
+    padding: 0em 1em;
 
 }
 
@@ -17,14 +18,57 @@
 
 .anker-link-content-nav {
 
-    height: 4.5em;
+    height: 5em;
 
     display: flex;
     align-items: center;
     column-gap: 1em;
 
-    background-color: palegreen;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+    /* border-bottom: 4px solid var(--c-light-brown-1); */
+   
 
 }
 
+
+/* ------------------------------------------------------------------------ */ 
+/* Link Style
+/* ------------------------------------------------------------------------ */ 
+
+.anker-link-content-nav > a {
+
+    height: 2.5em;
+    padding: 0em 1em;;
+
+    display: flex;
+    column-gap: .5em;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .6em;
+
+    font-weight: bold;
+
+    color: black;
+    background-color: var(--c-light-grey-1);
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    text-decoration: none;
+
+    transition: all .4s;
+}
+
+.anker-link-content-nav > a:hover {
+
+    background-color: var(--c-light-brown-1);
+
+}
+
+.anker-link-content-nav > a:visited { 
+
+    color: black;
+}
 

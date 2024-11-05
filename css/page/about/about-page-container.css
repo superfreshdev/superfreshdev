@@ -1,0 +1,286 @@
+/*
+    default-about-page.css
+    > define the default layout of about page 
+*/
+
+#about-page-container {
+
+    /* height: 100%; */
+
+    display: grid;
+    grid: auto auto auto auto / 1fr;
+
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* Welcome Container 
+/* ----------------------------------------------------------------------- */
+
+#welcome-about-container {
+
+    padding: 2.5em .8em;
+
+    display: grid;
+    align-items: flex-start;
+    grid: auto / 1.3fr 1fr;
+
+    column-gap: 2em;
+
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+}
+
+#welcome-about-container > div:nth-of-type(1) {
+
+    display: grid;
+    row-gap: 2em;
+}
+
+#welcome-about-container > div:nth-of-type(2) {
+
+    height: 100%;
+    display: grid;
+    justify-content: flex-end;
+    align-content: space-between;
+    
+    row-gap: 2em;
+}
+
+
+/* ------------------------------------------- */
+/* Welcome Title 
+/* ------------------------------------------- */
+
+#welcome-title-about-container {
+
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+
+}
+
+#welcome-title-about-container > img:nth-of-type(1) {
+
+    height: 8.5em;
+    
+}
+
+#welcome-title-box-about {
+
+    color: red;
+
+    line-height: 2.8em;
+}
+
+#welcome-title-box-about > div:nth-of-type(1) {
+
+    font-size: 1.75em;
+    font-weight: bold;
+
+    color:rgb(157, 157, 157);
+
+}
+
+#welcome-title-box-about > div:nth-of-type(2) {
+
+    font-size: 2.625em;
+
+    font-weight: bold;
+
+    color: white;
+
+}
+
+#welcome-title-box-about > div:nth-of-type(2) > span:nth-of-type(1) {
+
+    color: var(--c-light-brown-1);
+
+}
+
+#welcome-title-box-about > div:nth-of-type(3) {
+
+    font-size: 1.25em;
+
+    color:rgb(183, 183, 183);
+
+}
+
+/* ------------------------------------------- */
+/* Welcome Text
+/* ------------------------------------------- */
+
+#welcome-text-about-container {
+
+    font-size: 1.125em;;
+
+    padding-left: 6.5em;
+
+    display: grid;
+    justify-content: center;
+    /* justify-items: center; */
+
+    /* line-height: 2em; */
+
+    color:rgb(207, 207, 207);
+
+    border: 1px solid yellow;
+    
+}
+
+#welcome-text-about-container > div:not(.unicode-circle) {
+
+    line-height: 2em;
+    
+}
+
+#welcome-text-about-container > .unicode-circle {
+
+    color: var(--c-light-brown-1);
+    font-size: 14px;
+}
+
+
+/* ------------------------------------------- */
+/* Welcome Date
+/* ------------------------------------------- */
+
+#welcome-date-about-container {
+
+
+    height: 2em;
+
+    font-size: 1.125em;
+
+
+    border: 1px solid yellow;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-weight: bold;
+    
+    color: var(--c-light-brown-1);
+    opacity: .8;
+
+}
+
+/* ------------------------------------------- */
+/* Welcome Img
+/* ------------------------------------------- */
+
+#img-welcome-about {
+
+    border-radius: .6em;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+}
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* Mindset About Container 
+/* ------------------------------------------------------- */
+
+#mindset-about-container {
+
+    
+    padding: 6em .8em;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3em;
+    row-gap: 2em;
+
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+
+
+}
+
+#my-mindset-quote {
+
+    width: 22em;
+    height: 18em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    border-radius: .6em;
+
+    
+    
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    color: var(--c-light-brown-1);
+
+}
+
+
+#my-mindset-quote > div {
+
+     font-size: 1.375em;
+     line-height: 1.5em;
+   
+     font-style: italic;
+     text-align: center;   
+
+}
+
+#mindset-video {
+
+    height: 18em;
+    /* width: 6em; */
+  
+    border-radius: .6em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+}
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* My Top 3 Projects Container 
+/* ------------------------------------------------------- */
+
+#my-top-3-projects-about-container{
+
+    background-color: greenyellow;
+
+}
+
+/* ------------------------------------------------------- */
+/* Contact Me Container 
+/* ------------------------------------------------------- */
+
+#contact-about-container {
+
+    background-color: bisque;
+
+}
+
+
+/* ------------------------------------------------------- */
+/* More Container 
+/* ------------------------------------------------------- */
+
+#contact-about-container {
+
+    background-color: bisque;
+
+}
