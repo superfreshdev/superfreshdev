@@ -20,7 +20,7 @@
 
 #welcome-about-container {
 
-    padding: 1.5em .8em;
+    padding: 1.5em 1.8em;
 
     display: grid;
   
@@ -195,30 +195,35 @@
 
 #mindset-about-container {
 
-    
-    
-    padding: 6em .8em;
+
+    padding: 4em 1.8em 5em 1.8em;
+   
+
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+
+
+}
+
+
+#mindset-about-layout-container {
+
+    padding-top: 3em;
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     column-gap: 3em;
-    row-gap: 2em;
-
-    background-color: #DCD9D4;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
-    background-blend-mode: soft-light,screen;
-
-    /* display: none; */
-
+    row-gap: 1em;
 
 }
 
 #my-mindset-quote {
 
 
-    height: 15em;
+    height: 11em;
     width: 100%;
 
     display: flex;
@@ -275,11 +280,42 @@
 /* My Top 3 Projects Container 
 /* ------------------------------------------------------- */
 
-#my-top-3-projects-about-container{
+#my-top-3-projects-about-container {
 
-    background-color: greenyellow;
+    
+    padding: 4em 1.8em 5em 1.8em;
+   
+
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+
+
 
 }
+
+
+#my-top-3-projects-about-layout-container {
+
+    padding-top: 3em;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    column-gap: 3em;
+    row-gap: 3em;
+
+}
+
+.my-top-3-project-container {
+
+    width: 100%;
+    height: 22em;
+    border-radius: .6em;
+    border: 1px solid black;
+}
+
 
 /* ------------------------------------------------------- */
 /* Contact Me Container 
@@ -287,7 +323,47 @@
 
 #contact-about-container {
 
-    background-color: bisque;
+    padding: 4em 1.8em;
+
+    display: grid;
+    row-gap: 2em;
+
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+}
+
+#contact-about-layout-container {
+
+    position: relative;
+
+    padding: 1em 0em;
+
+    display: flex;
+    align-items: center;
+    column-gap: 3em;
+
+   
+}
+
+#img-email-cartoon {
+
+    height: 7em;
+   
+
+    transform: scaleX(-1);
+}
+
+#img-email-line {
+
+    position: absolute;
+    left: 8.3em;
+    
+
+
+   
+
+    height: 11em;
 
 }
 
@@ -296,8 +372,60 @@
 /* More Container 
 /* ------------------------------------------------------- */
 
-#contact-about-container {
+#more-about-container {
 
-    background-color: bisque;
+    padding: 4em 1.8em 5em 1.8em;
+    
 
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+
+
+    display: grid;
+    row-gap: 2em;
+
+}
+
+#more-about-layout-container {
+
+    display: grid;
+    row-gap: 1.5em;
+
+   
+   
+
+}
+
+
+#txt-more-id-quesetion {
+
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#more-about-list-container {
+
+    padding: 1.5em 0em 1.5em .6em;
+
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+    display: grid;
+    row-gap: 1em;
+
+}
+
+#more-about-list-container > div {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+}
+
+#txt-more-id-quesetion {
+
+    font-size: 18px;
+    font-weight: bold;
 }

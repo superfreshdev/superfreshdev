@@ -33,3 +33,35 @@
     align-items: center;
     justify-content: center;
 }
+
+/* ---------------------------------------------- */
+/* h1 - h4 
+/* ---------------------------------------------- */
+
+/*
+    h4 = 18px 
+    h3 = 20px 
+    h2 = 22px 
+    h1 = 24px 
+*/
+
+.h1-sfd,
+.h1-sfd-light,
+.h1-sfd-p-tb-1 {
+
+    font-size: 1.5em;
+    margin: 0 0 0 5px;
+
+    color: var(--c-dark-grey-2);
+}
+
+.h1-sfd-light {
+
+    color: var(--c-light-grey-1);
+
+}
+
+.h1-sfd-p-tb-1 {
+
+    padding: 1em 0em;
+}
