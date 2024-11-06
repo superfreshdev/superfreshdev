@@ -49,6 +49,10 @@
 .h1-sfd-light,
 .h1-sfd-p-tb-1 {
 
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
     font-size: 1.5em;
     margin: 0 0 0 5px;
 

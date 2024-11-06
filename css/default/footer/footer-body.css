@@ -18,7 +18,7 @@
 
 #footer-container {
 
-    height: 4em;
+    height: 6em;
     padding: 0em 1.5em;
 
     display: flex;
@@ -28,6 +28,8 @@
     column-gap: .3em;
 
     color: var(--c-grey);
+
+    font-size: 18.5px;
 
 }
 

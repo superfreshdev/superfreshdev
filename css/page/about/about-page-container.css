@@ -5,6 +5,8 @@
 
 #about-page-container {
 
+    z-index: 3;
+
     /* height: 100%; */
     margin-top: 5em;
 
@@ -20,7 +22,7 @@
 
 #welcome-about-container {
 
-    padding: 1.5em 1.8em;
+    padding: 1.5em 2em;
 
     display: grid;
   
@@ -32,6 +34,8 @@
 
    
     border-top: 2px solid var(--c-light-brown-1);
+
+    font-size: 18.5px;
 
 }
 
@@ -152,6 +156,7 @@
     order: 3;
 
     height: 2em;
+    padding-right: .4em;
 
     /* font-size: 1.125em; */
 
@@ -162,11 +167,24 @@
     align-items: center;
     justify-content: flex-end;
 
-    font-weight: bold;
     
-    color: var(--c-light-brown-1);
     opacity: .8;
+    
+    
 
+}
+
+#welcome-date-about-container > div:nth-of-type(1) {
+
+    font-weight: bold;
+    color: var(--c-light-brown-1);
+}
+
+#js-date {
+
+    padding-right: .1em;
+    padding-left: .2em;
+    color:white;
 }
 
 /* ------------------------------------------- */
@@ -349,7 +367,8 @@
 #img-email-cartoon {
 
     height: 7em;
-   
+
+    z-index: 1;
 
     transform: scaleX(-1);
 }
@@ -358,8 +377,6 @@
 
     position: absolute;
     left: 8.3em;
-    
-
 
    
 
@@ -390,31 +407,36 @@
 #more-about-layout-container {
 
     display: grid;
-    row-gap: 1.5em;
+    row-gap: 2.3em;
 
-   
+ 
    
 
 }
 
 
-#txt-more-id-quesetion {
+.sub-txt-h1 {
 
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 
 }
+
 
 #more-about-list-container {
 
-    padding: 1.5em 0em 1.5em .6em;
+    padding: 2em 0em 2em .6em;
 
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
 
     display: grid;
-    row-gap: 1em;
+    row-gap: 1.3em;
 
+    font-size: 18.5px;
+
+   
+   
 }
 
 #more-about-list-container > div {
@@ -422,10 +444,9 @@
     display: flex;
     align-items: center;
     column-gap: .6em;
+
+    
+
+  
 }
 
-#txt-more-id-quesetion {
-
-    font-size: 18px;
-    font-weight: bold;
-}
