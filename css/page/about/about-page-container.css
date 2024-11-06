@@ -6,9 +6,10 @@
 #about-page-container {
 
     /* height: 100%; */
+    margin-top: 5em;
 
     display: grid;
-    grid: auto auto auto auto / 1fr;
+    grid: auto auto auto auto auto / 1fr;
 
 }
 
@@ -19,41 +20,29 @@
 
 #welcome-about-container {
 
-    padding: 2.5em .8em;
+    padding: 1.5em .8em;
 
     display: grid;
-    align-items: flex-start;
-    grid: auto / 1.3fr 1fr;
-
+  
+    row-gap: 2em;
     column-gap: 2em;
 
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     background-blend-mode: multiply;
 
-}
+   
+    border-top: 2px solid var(--c-light-brown-1);
 
-#welcome-about-container > div:nth-of-type(1) {
-
-    display: grid;
-    row-gap: 2em;
-}
-
-#welcome-about-container > div:nth-of-type(2) {
-
-    height: 100%;
-    display: grid;
-    justify-content: flex-end;
-    align-content: space-between;
-    
-    row-gap: 2em;
 }
 
 
 /* ------------------------------------------- */
-/* Welcome Title 
+/* 1/4 | Welcome Title 
 /* ------------------------------------------- */
 
 #welcome-title-about-container {
+
+    order: 1;
 
     display: flex;
     align-items: center;
@@ -63,29 +52,37 @@
 
 #welcome-title-about-container > img:nth-of-type(1) {
 
-    height: 8.5em;
+    display: none;
+    /* height: 8.5em; */
+   
     
 }
 
 #welcome-title-box-about {
 
-    color: red;
+    line-height: 1.8em;
 
-    line-height: 2.8em;
+    /* line-height: 2.8em; */
 }
 
+/* txt - welcome to  */
 #welcome-title-box-about > div:nth-of-type(1) {
 
-    font-size: 1.75em;
+    font-size: 24px;
+    /* font-size: 1.75em; */
+
     font-weight: bold;
 
     color:rgb(157, 157, 157);
 
 }
 
+/* txt - superfresdev  */
 #welcome-title-box-about > div:nth-of-type(2) {
 
-    font-size: 2.625em;
+    font-size: 26px;
+
+    /* font-size: 2.625em; */
 
     font-weight: bold;
 
@@ -93,29 +90,34 @@
 
 }
 
+/* txt - world */
 #welcome-title-box-about > div:nth-of-type(2) > span:nth-of-type(1) {
 
     color: var(--c-light-brown-1);
 
 }
 
+/* txt - lets build systems not just software */
 #welcome-title-box-about > div:nth-of-type(3) {
 
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
 
-    color:rgb(183, 183, 183);
+    
+    color: var(--c-grey);
 
 }
 
 /* ------------------------------------------- */
-/* Welcome Text
+/* 2/4 | Welcome Text
 /* ------------------------------------------- */
 
 #welcome-text-about-container {
 
-    font-size: 1.125em;;
+    order: 4;
 
-    padding-left: 6.5em;
+    /* font-size: 1.125em;; */
+
+    /* padding-left: 6.5em; */
 
     display: grid;
     justify-content: center;
@@ -125,7 +127,7 @@
 
     color:rgb(207, 207, 207);
 
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     
 }
 
@@ -135,26 +137,26 @@
     
 }
 
-#welcome-text-about-container > .unicode-circle {
+.img-small-seperator {
 
-    color: var(--c-light-brown-1);
-    font-size: 14px;
+    height: .4em;
+
 }
 
-
 /* ------------------------------------------- */
-/* Welcome Date
+/* 3/4 | Welcome Date
 /* ------------------------------------------- */
 
 #welcome-date-about-container {
 
+    order: 3;
 
     height: 2em;
 
-    font-size: 1.125em;
+    /* font-size: 1.125em; */
 
 
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 
     display: flex;
     align-items: center;
@@ -168,18 +170,22 @@
 }
 
 /* ------------------------------------------- */
-/* Welcome Img
+/* 4/4 | Welcome Img
 /* ------------------------------------------- */
 
 #img-welcome-about {
+
+    order: 2;
+
+    /* display: none; */
+    width: 100%;
 
     border-radius: .6em;
 
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     
+
 }
-
-
 
 
 
@@ -189,6 +195,7 @@
 
 #mindset-about-container {
 
+    
     
     padding: 6em .8em;
 
@@ -203,15 +210,19 @@
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
     background-blend-mode: soft-light,screen;
 
+    /* display: none; */
+
 
 }
 
 #my-mindset-quote {
 
-    width: 22em;
-    height: 18em;
+
+    height: 15em;
+    width: 100%;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     
@@ -220,8 +231,10 @@
 
     
     
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;
+    /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply; */
+
+    background-color: black;
 
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
@@ -232,17 +245,21 @@
 
 #my-mindset-quote > div {
 
-     font-size: 1.375em;
-     line-height: 1.5em;
+    width: 12em;
+    
+    font-size: 20px;
+    /* font-size: 1.375em; */
+    line-height: 1.8em;
    
-     font-style: italic;
-     text-align: center;   
+    font-style: italic;
+    text-align: center;   
 
 }
 
 #mindset-video {
 
-    height: 18em;
+    width: 100%;
+    /* height: 18em; */
     /* width: 6em; */
   
     border-radius: .6em;

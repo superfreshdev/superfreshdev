@@ -23,7 +23,7 @@
 
     /* 4rem = 5 * 16px = 80px */
     height: 6rem;
-    padding: 0 .6em;
+    padding: 0 1em;
 
     display: flex;
     align-items: center;
@@ -45,11 +45,11 @@
 
 #logo-header-body {
 
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 
     display: flex;
     align-items: center;
-    column-gap: .8em;
+    column-gap: 1em;
 
     color: var(--c-light-brown-1);
 
@@ -58,7 +58,7 @@
 #img-logo-header {
 
     /* default small img size for mobile  */
-    height: 1.8em;
+    height: 2.3em;
 }
 
 
@@ -78,6 +78,7 @@
 
 #title-header-superfreshdev-body {
 
+    font-size: 1.25em;
     color: var(--c-l-white-1);
     
 }

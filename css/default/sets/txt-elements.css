@@ -9,3 +9,27 @@
 
     color:black;
 }
+
+
+.txt-b { font-weight: bold; }
+
+.txt-bc { 
+
+    font-weight: bold;
+    font-style: italic;
+}
+
+.txt-important {
+
+    font-weight: bold;
+    color: var(--c-light-brown-1)
+}
+
+.txt-seperator-container {
+
+    height: 3.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
