@@ -11,6 +11,7 @@
 
 #nav-topic-container {
 
+
     display: grid;
     grid-template-rows: 0fr;
 
@@ -29,7 +30,8 @@
 
 #nav-topic-layout-container {
 
-    padding: 2em 0em;
+    padding: 2em 1em;
+    
 
     display: flex;
     flex-wrap: wrap;
@@ -70,8 +72,10 @@
 
 .header-block-topic > img { 
 
-    height: 14em;
-    width: 22em;
+    /* height: 10em; */
+    width: 100%;
+    /* width: 22em; */
+
     border-radius: .6em;
 
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -84,7 +88,7 @@
 
     position: absolute;
    
-    font-size: 1.125em;
+    font-size: .85em;
 
     height: 3em;
     padding: 0em 1.3em;
@@ -103,8 +107,6 @@
      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
    
-   
-
     background-color: black;
     color:white;
 
@@ -112,7 +114,9 @@
 
 .header-block-topic > div:nth-of-type(2) {
 
-    font-size: 1.125em;
+    /* font-size: 1.125em; */
+
+    font-size: .85em;
 
     height: 2.5em;
     padding: 0em 1em;
@@ -133,8 +137,6 @@
     background-color: black;
     color:rgb(174, 174, 174);
 
-
-   
 }
 
 
@@ -147,8 +149,7 @@
     display: grid;
     row-gap: 1em;
 
-    
-    
+
 }
 
 
@@ -185,13 +186,15 @@ input[name="radio-nav-topic"]:checked + label {
 
 }
 
+.lbl-nav-topic > div:nth-of-type(1) {
+
+    font-size: .85em;
+
+}
+
+
 .lbl-nav-topic:hover {
 
     background-color: var(--c-light-brown-1);
 }
 
-.lbl-nav-topic > div:nth-of-type(1) {
-
-    font-size: 1.125em;
-
-}
