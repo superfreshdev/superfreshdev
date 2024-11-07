@@ -136,28 +136,28 @@
 
 #chk-nav-header { display: none; }
 
-#chk-nav-header:checked ~ #lbl-nav-header {
+#chk-nav-header:checked + label {
 
     background-color: var(--c-dark-red-1);
 
 }
 
-#chk-nav-header:checked ~ #lbl-nav-header > div:nth-of-type(1) {
+#chk-nav-header:checked + label > div:nth-of-type(1) {
 
     transform: translate(0, 13px) rotate(-45deg);
     background-color: var(--c-light-brown-1);
     
 }
 
-#chk-nav-header:checked + #lbl-nav-header > div:nth-of-type(2) {
+#chk-nav-header:checked + label  > div:nth-of-type(2) {
 
     background-color: transparent;
     
 }
 
-#chk-nav-header:checked + #lbl-nav-header > div:nth-of-type(3) {
+#chk-nav-header:checked + label  > div:nth-of-type(3) {
 
-    transform: translate(0, -11px) rotate(45deg);
+    transform: translate(0, -10px) rotate(45deg);
     background-color: var(--c-light-brown-1);
     
 }
