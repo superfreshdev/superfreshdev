@@ -6,7 +6,7 @@
 #about-page-container {
 
     /* height: 100%; */
-    margin-top: 5em;
+    /* margin-top: 5em; */
 
     display: grid;
     grid: auto auto auto auto auto / 1fr;
@@ -33,7 +33,7 @@
    
     border-top: 2px solid var(--c-light-brown-1);
 
-    font-size: 18.5px;
+    /* font-size: 18.5px; */
 
 }
 
@@ -75,7 +75,7 @@
 /* txt - welcome to  */
 #txt-welcome-to {
 
-    font-size: 24px;
+    /* font-size: 24px; */
 
     font-weight: bold;
     color:rgb(157, 157, 157);
@@ -85,7 +85,7 @@
 /* txt - superfresdev  */
 #txt-title-superfresdev {
 
-    font-size: 24px;
+    /* font-size: 24px; */
     /* font-size: 2.625em; */
 
     font-weight: bold;

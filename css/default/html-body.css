@@ -11,7 +11,7 @@
 
     /* default mobile size 16px = 1rem , Desktop 18-20px */
     /* I use for mobile default 18,5px , 18.5 / 16 */
-    font-size: 1.15625rem;
+    font-size: 1.125em;
     line-height: 1.5rem;
 
     color: var(--c-light-black-1);

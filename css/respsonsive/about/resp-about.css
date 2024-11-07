@@ -18,18 +18,18 @@
     /* -------------------------------------------------------- */
     #welcome-title-box-about > div:nth-of-type(1) {
 
-        line-height: 2em;
+        /* line-height: 2em; */
     }
 
     #txt-welcome-to  {
 
-        font-size: 28px;
+        /* font-size: 28px; */
 
     }
 
     #txt-title-superfresdev {
 
-        font-size: 30px;
+        /* font-size: 30px; */
 
     }
 

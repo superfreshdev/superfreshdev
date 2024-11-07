@@ -18,10 +18,10 @@
 
 .anker-link-content-nav {
 
-    z-index: 99;
+    /* z-index: 99;
     position: fixed;
     left:0;
-    right:0;
+    right:0; */
     
     height: 5em;
 
