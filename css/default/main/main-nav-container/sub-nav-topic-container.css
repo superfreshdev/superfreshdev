@@ -1,0 +1,31 @@
+
+/*
+
+    sub-nav-topic-container.css
+    > definees my sub nav main container to go by deeper in topics of main
+    category 
+
+*/
+
+
+/* ---------------------------------------------------------------------------- */
+/* Sub Nav Topic Container 
+/* ---------------------------------------------------------------------------- */
+
+#sub-nav-topic-container {
+
+    background-color: aquamarine;
+
+    display: grid;
+    grid-template-rows: 1fr 0fr;
+
+    transition: all .4s;
+}
+
+
+#sub-nav-topic-container > div {
+
+    overflow: hidden;
+    
+   
+}

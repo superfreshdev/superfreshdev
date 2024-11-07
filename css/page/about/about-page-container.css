@@ -5,8 +5,6 @@
 
 #about-page-container {
 
-    z-index: 3;
-
     /* height: 100%; */
     margin-top: 5em;
 
@@ -22,7 +20,7 @@
 
 #welcome-about-container {
 
-    padding: 1.5em 2em;
+    /* padding: 1.5em 2em; */
 
     display: grid;
   
@@ -59,33 +57,35 @@
     display: none;
     /* height: 8.5em; */
    
-    
 }
 
 #welcome-title-box-about {
 
-    line-height: 1.8em;
+    display: grid;
+    row-gap: .3em;
+    
+}
 
-    /* line-height: 2.8em; */
+#welcome-title-box-about > div:nth-of-type(1) {
+
+    line-height: 1.8em;
+   
 }
 
 /* txt - welcome to  */
-#welcome-title-box-about > div:nth-of-type(1) {
+#txt-welcome-to {
 
     font-size: 24px;
-    /* font-size: 1.75em; */
 
     font-weight: bold;
-
     color:rgb(157, 157, 157);
 
 }
 
 /* txt - superfresdev  */
-#welcome-title-box-about > div:nth-of-type(2) {
+#txt-title-superfresdev {
 
-    font-size: 26px;
-
+    font-size: 24px;
     /* font-size: 2.625em; */
 
     font-weight: bold;
@@ -95,18 +95,16 @@
 }
 
 /* txt - world */
-#welcome-title-box-about > div:nth-of-type(2) > span:nth-of-type(1) {
+#txt-title-world {
 
     color: var(--c-light-brown-1);
 
 }
 
 /* txt - lets build systems not just software */
-#welcome-title-box-about > div:nth-of-type(3) {
+#txt-sub-title {
 
     /* font-size: 1.25em; */
-
-    
     color: var(--c-grey);
 
 }
@@ -156,7 +154,7 @@
     order: 3;
 
     height: 2em;
-    padding-right: .4em;
+    /* padding-right: .4em; */
 
     /* font-size: 1.125em; */
 
@@ -182,7 +180,7 @@
 
 #js-date {
 
-    padding-right: .1em;
+    padding-right: .3em;
     padding-left: .2em;
     color:white;
 }
@@ -214,7 +212,7 @@
 #mindset-about-container {
 
 
-    padding: 4em 1.8em 5em 1.8em;
+    /* padding: 4em 1.8em 5em 1.8em; */
    
 
     background-color: #DCD9D4;
@@ -227,7 +225,7 @@
 
 #mindset-about-layout-container {
 
-    padding-top: 3em;
+    /* padding-top: 3em; */
 
     display: flex;
     flex-wrap: wrap;
@@ -241,7 +239,7 @@
 #my-mindset-quote {
 
 
-    height: 11em;
+    /* height: 11em; */
     width: 100%;
 
     display: flex;
@@ -268,9 +266,9 @@
 
 #my-mindset-quote > div {
 
-    width: 12em;
+    /* width: 12em; */
     
-    font-size: 20px;
+    /* font-size: 20px; */
     /* font-size: 1.375em; */
     line-height: 1.8em;
    
@@ -301,7 +299,7 @@
 #my-top-3-projects-about-container {
 
     
-    padding: 4em 1.8em 5em 1.8em;
+    /* padding: 4em 1.8em 5em 1.8em; */
    
 
     background-color: #DCD9D4;
@@ -315,7 +313,7 @@
 
 #my-top-3-projects-about-layout-container {
 
-    padding-top: 3em;
+    /* padding-top: 3em; */
 
     display: flex;
     flex-wrap: wrap;
@@ -341,7 +339,7 @@
 
 #contact-about-container {
 
-    padding: 4em 1.8em;
+    /* padding: 4em 1.8em; */
 
     display: grid;
     row-gap: 2em;
@@ -355,7 +353,7 @@
 
     position: relative;
 
-    padding: 1em 0em;
+    /* padding: 1em 0em; */
 
     display: flex;
     align-items: center;
@@ -376,7 +374,9 @@
 #img-email-line {
 
     position: absolute;
-    left: 8.3em;
+    /* left: 8.3em; */
+
+    display: none;
 
    
 
@@ -391,7 +391,7 @@
 
 #more-about-container {
 
-    padding: 4em 1.8em 5em 1.8em;
+    /* padding: 4em 1.8em 5em 1.8em; */
     
 
     background-color: #DCD9D4;
@@ -418,14 +418,14 @@
 .sub-txt-h1 {
 
     font-weight: bold;
-    font-size: 20px;
+    /* font-size: 20px; */
 
 }
 
 
 #more-about-list-container {
 
-    padding: 2em 0em 2em .6em;
+    /* padding: 2em 0em 2em .6em; */
 
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
@@ -433,7 +433,7 @@
     display: grid;
     row-gap: 1.3em;
 
-    font-size: 18.5px;
+    /* font-size: 18.5px; */
 
    
    

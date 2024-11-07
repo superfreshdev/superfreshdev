@@ -16,16 +16,39 @@
     
 }
 
+
 /* ------------------------------------------------------------------- */
-/* Smooth Slide Down Up Container 
+/* Main Container
 /* ------------------------------------------------------------------- */
 
-/* this extra container we need for smooth slide down and up by 
-using grid row */
+#main-container {
+
+    height: 100%;
+
+    /* display: grid;
+    grid: 1fr / 1fr; */
+
+    background-color: yellow;
+
+    transition: all .4s ease; 
+    
+    overflow-x: hidden;
+
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Default | Smooth Slide Down & Up Container 
+/* ------------------------------------------------------------------- */
+
+/* this extra container will need for smooth slide down and up by 
+using css grid row style*/
 
 .smooth-slide-down-up-container {
     
     overflow: hidden;
 
 }
+
 

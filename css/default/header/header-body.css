@@ -21,8 +21,8 @@
 
     z-index: 100;
 
-    /* 4rem = 5 * 16px = 80px */
-    height: 6rem;
+    /* 6rem * 18.5px  */
+    height: 6em;
     padding: 0 1em;
 
     display: flex;
@@ -45,7 +45,7 @@
 
 #logo-header-body {
 
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 
     display: flex;
     align-items: center;
@@ -78,15 +78,16 @@
 
 #title-header-superfreshdev-body {
 
-    font-size: 1.25em;
+    /* 24px / 18.5 = 1.29... */
+    font-size: 1.3em;
     color: var(--c-l-white-1);
     
 }
 
 #sub-title-header-body {
 
-    font-size: .9rem;
-     font-style: italic;
+    font-size: 1em;
+    font-style: italic;
 }
 
 

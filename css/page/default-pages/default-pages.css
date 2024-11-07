@@ -1,0 +1,81 @@
+/* 
+
+    default-pages.css
+    > defines layouts which goes over all pages for using
+
+*/
+
+
+/* ---------------------------------------------------------------------------- */
+/* Page Slide Container ( width 200 % )
+/* ---------------------------------------------------------------------------- */
+
+#pages-slide-container {
+
+    height: 100%;
+    width: 200%;
+    display: flex;
+  
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* Page
+/* ---------------------------------------------------------------------------- */
+
+.page {
+
+    width: 100%;
+    transition: all 0.7s;
+
+}
+
+.content-row-container {
+
+
+    padding: 1em 1em;
+    background-color: red !important;
+    
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* Page Overview Layout Container 
+/* ---------------------------------------------------------------------------- */
+
+#page-overview-layout-container {
+
+
+    height: 100%;
+    display: grid;
+    grid: auto 1fr auto / 1fr;
+
+     /* transform: translateX(0%); */
+
+}
+
+
+
+
+
+#page-overview-content-layout-container {
+
+    background-color: red;
+
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* Page Details Layout Container 
+/* ---------------------------------------------------------------------------- */
+
+#page-details-layout-container {
+
+    background-color: blueviolet;
+    /* transform: translateX(0%); */
+
+}
+
+
+
+
