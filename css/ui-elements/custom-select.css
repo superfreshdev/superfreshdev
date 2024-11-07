@@ -1,0 +1,25 @@
+/* 
+
+    custom-select.css
+    > define my personally custom select
+    
+*/
+
+#custom-select-topic-filter { 
+
+    padding: 0em 1em;
+}
+
+/* ------------------------------------------------------------------------ */ 
+/* Custom Select  
+/* ------------------------------------------------------------------------ */ 
+
+.custom-select {
+
+    height: 5em;
+
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(160, 113, 203);
+}
