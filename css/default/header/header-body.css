@@ -136,31 +136,47 @@
 
 #chk-nav-header { display: none; }
 
-#chk-nav-header:checked + label {
+#chk-nav-header:checked ~ #header-body #lbl-nav-header {
 
     background-color: var(--c-dark-red-1);
 
 }
 
-#chk-nav-header:checked + label > div:nth-of-type(1) {
+#chk-nav-header:checked ~ #header-body #lbl-nav-header > div:nth-of-type(1) {
 
     transform: translate(0, 13px) rotate(-45deg);
     background-color: var(--c-light-brown-1);
     
 }
 
-#chk-nav-header:checked + label  > div:nth-of-type(2) {
+#chk-nav-header:checked ~ #header-body #lbl-nav-header  > div:nth-of-type(2) {
 
     background-color: transparent;
     
 }
 
-#chk-nav-header:checked + label  > div:nth-of-type(3) {
+#chk-nav-header:checked ~ #header-body #lbl-nav-header  > div:nth-of-type(3) {
 
     transform: translate(0, -10px) rotate(45deg);
     background-color: var(--c-light-brown-1);
     
 }
+
+/* ------------------------------------------------------ */
+/* Special Case for About Anker Panel Fixed 
+/* ------------------------------------------------------ */
+
+#chk-nav-header:checked ~ #main-body > #main-container > #pages-slide-container > #page-overview-layout-container > #sub-nav-topic-container #about-anker-link-content-nav {
+
+    position: relative;
+}
+
+#chk-nav-header:checked ~ #main-body > #main-container > #pages-slide-container > #page-overview-layout-container > #about-page-container {
+
+    margin-top: 0em;
+    
+}
+
 
 /* #chk-nav-header:checked ~ #main-body {
 

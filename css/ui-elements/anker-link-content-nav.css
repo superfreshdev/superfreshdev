@@ -9,7 +9,13 @@
 #about-anker-link-content-nav {
 
     padding: 0em 1em;
+    height: 5em;
 
+    z-index: 99;
+    position: fixed;
+    left:0;
+    right:0;  
+    
 }
 
 /* ------------------------------------------------------------------------ */ 
@@ -18,12 +24,6 @@
 
 .anker-link-content-nav {
 
-    /* z-index: 99;
-    position: fixed;
-    left:0;
-    right:0;  test rf*/
-    
-    height: 5em;
 
     display: flex;
     align-items: center;
