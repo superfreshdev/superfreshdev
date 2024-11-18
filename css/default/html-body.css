@@ -9,8 +9,8 @@
     /* with that we can better work with css layouts like grid */
     margin: 0;
 
-    /* default mobile size 16px = 1rem , Desktop 18-20px */
-    /* I use for mobile default 18,5px , 18.5 / 16 */
+    /* default mobile size 16px = 1rem , better Mobile is 18px, Desktop is 18px - 20px */
+    /* I use for mobile default 18px*/
     font-size: 1.125em;
     line-height: 1.5rem;
 

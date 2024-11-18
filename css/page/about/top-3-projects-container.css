@@ -1,0 +1,46 @@
+/*
+    top-3-projects-container.css
+    > defines the layout part of about -> top 3 projects
+
+*/
+
+/* ------------------------------------------------------- */
+/* My Top 3 Projects Container 
+/* ------------------------------------------------------- */
+
+#my-top-3-projects-about-container {
+
+    
+    /* padding: 4em 1.8em 5em 1.8em; */
+   
+
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+
+
+
+}
+
+
+#my-top-3-projects-about-layout-container {
+
+    padding: 2em 0em;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    column-gap: 3em;
+   
+
+}
+
+.my-top-3-project-container {
+
+    width: 100%;
+    height: 22em;
+    border-radius: .6em;
+    border: 1px solid rgb(81, 81, 81);
+}

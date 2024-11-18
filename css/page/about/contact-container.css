@@ -1,0 +1,58 @@
+/*
+    contact-container.css
+    > defines the layout part of about -> contact
+
+*/
+
+
+
+/* ------------------------------------------------------- */
+/* Contact Me Container 
+/* ------------------------------------------------------- */
+
+#contact-about-container {
+
+    /* padding: 4em 1.8em; */
+
+    display: grid;
+    row-gap: 2em;
+
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+}
+
+#contact-about-layout-container {
+
+    position: relative;
+
+    padding: 2em 0em;
+
+    display: flex;
+    align-items: center;
+    column-gap: 3em;
+
+   
+}
+
+#img-email-cartoon {
+
+    height: 5em;
+
+    z-index: 1;
+
+    transform: scaleX(-1);
+}
+
+#img-email-line {
+
+    position: absolute;
+    /* left: 8.3em; */
+
+    display: none;
+
+   
+
+    height: 11em;
+
+}

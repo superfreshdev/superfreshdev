@@ -1,0 +1,100 @@
+/*
+    game-container.css
+    > defines the layout part of about -> mindset 
+
+*/
+
+
+/* ------------------------------------------------------- */
+/* More Container 
+/* ------------------------------------------------------- */
+
+#more-about-container {
+
+    /* padding: 4em 1.8em 5em 1.8em; */
+
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+
+
+    display: grid;
+    row-gap: 2em;
+
+}
+
+#more-about-layout-container {
+
+    padding: .5em 0em 2em 0em;
+
+    display: grid;
+    row-gap: .3em;
+
+}
+
+#playing-container {
+
+    height: 12em;
+
+    padding: .3em .3em 0em .6em;
+
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+
+    border-radius: .6em;
+    border-bottom: 4px solid rgb(35, 35, 35);
+    border-left: 1px solid rgba(35, 35, 35, .3);
+    border-right: 1px solid rgba(35, 35, 35, .3);
+    border-top: 1px solid rgba(35, 35, 35, .3);
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    /* shadow inset  */
+}
+
+#playing-container > img:nth-of-type(2) { 
+
+    margin-left: 4em;
+}
+
+#playing-container > img:nth-of-type(3) { 
+
+    margin-left: 2em;
+}
+
+
+.sub-txt-h1 {
+
+    font-weight: bold;
+    /* font-size: 20px; */
+
+}
+
+
+#more-about-list-container {
+
+    /* padding: 2em 0em 2em .6em; */
+
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+    display: grid;
+    row-gap: 1.3em;
+
+    /* font-size: 18.5px; */
+
+   
+   
+}
+
+#more-about-list-container > div {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    
+
+  
+}
