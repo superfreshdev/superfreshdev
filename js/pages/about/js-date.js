@@ -6,9 +6,11 @@
 
 var divJsDate = document.getElementById('js-date');
 var spanJsYear = document.getElementById('js-footer-year');
+var divNewsDate = document.getElementById('js-news-about-date');
 
 divJsDate.innerHTML = getActuallyDate();
 spanJsYear.innerHTML = getActuallyYear();
+divNewsDate.innerHTML = getActuallyDate() + " " + getActuallyYear();
 
 // get english formatted date 
 function getActuallyDate() {
