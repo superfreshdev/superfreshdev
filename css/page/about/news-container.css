@@ -5,6 +5,10 @@
 */
 
 
+/* --------------------------------------------------------------- */
+/* Header - My News
+/* --------------------------------------------------------------- */
+
 #header-news-about-container {
 
     display: flex;
@@ -17,6 +21,9 @@
     opacity: .6;
 }
 
+/* --------------------------------------------------------------- */
+/* News About Container
+/* --------------------------------------------------------------- */
 
 #news-about-container {
 
@@ -26,19 +33,22 @@
 
 }
 
-#actually-doing-about-container {
+#doing-about-container {
    
-    padding: 1.5em 0em;
+    padding: 3.5em 0em;
 
     display: grid;
-    row-gap: 1em;
+    /* grid-template-rows: 0fr; */
+    row-gap: 1.5em;
 
 }
 
 .doing-item-about-container {
 
     display: grid;
-    row-gap: .6em;
+   
+
+    row-gap: 1em;
 
 }
 
@@ -48,25 +58,78 @@
 /* [1/2] - Header Doing About Container 
 /* ----------------------------------------------------------------------- */
 
+/* handling  */
+
+#list-doing-it-about-container,
+#list-doing-softskills-about-container,
+#list-doing-sport-about-container {
+
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: all .4s ease; 
+
+}
+
+#chk-doing-it-about,
+#chk-doing-softskills-about,
+#chk-doing-sport-about { display: none; }
+
+
+/* open close change  */
+#chk-doing-it-about:checked ~ #list-doing-it-about-container,
+#chk-doing-softskills-about:checked ~ #list-doing-softskills-about-container,
+#chk-doing-sport-about:checked ~ #list-doing-sport-about-container {
+
+    grid-template-rows: 1fr;
+
+}
+
+/* color change  */
+#chk-doing-it-about:checked ~ #lbl-doing-it-about,
+#chk-doing-softskills-about:checked ~ #lbl-doing-softskills-about,
+#chk-doing-sport-about:checked ~ #lbl-doing-sport-about {
+
+    background: rgb(217, 191, 152);
+    background-blend-mode: multiply;
+
+   
+    color: var(--c-light-black-1);
+
+}
+
+
+
 .header-doing-about-container {
 
-    height: 3.5em;
+    height: 4em;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    border-radius: .4em;
-
-    /* background-color: green;
-    background-color: rgb(217, 191, 152); */
+    border-radius: .8em;
 
     color: var(--c-light-grey-1);
 
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     background-blend-mode: multiply;
 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   
+
     cursor: pointer;
+    transition: all .4s;
+
+}
+
+.header-doing-about-container:hover {
+
+    background: rgb(217, 191, 152);
+    background-blend-mode: multiply;
+
+   
+    color: var(--c-light-black-1);
 
 }
 
@@ -129,8 +192,8 @@
 
 .status-header-doing-about {
 
-    padding: 0 .4em;
-    border-radius: .4em;
+    padding: 0 .5em;
+    border-radius: .2em;
 
     color: black;
 
@@ -152,7 +215,8 @@
 
 .switch-open-close-view-container {
 
-    width: 3.5em;
+    width: 4em;
+    padding-right: .5em;
     height: 3em;
 
     display: flex;
@@ -176,11 +240,15 @@
 
 .list-doing-about-container {
 
+   
+   
+
     padding: 1.3em .3em;
 
-    border-radius: .4em;
+    border-radius: .8em;
 
-    background-color: rgb(126, 126, 126);
+    background-color: rgb(173, 173, 173);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
 
@@ -213,7 +281,7 @@
     /* because of ul li only had default line heigt 1em  */
     line-height: 1.8rem;
 
-    border-top: 1px solid rgb(174, 13, 13);
+    border-top: 1px solid rgb(71, 71, 71);
 
     margin: 1.3em .6em 0em .6em;
     padding-top: 1.5em;

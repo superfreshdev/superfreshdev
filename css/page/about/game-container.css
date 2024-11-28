@@ -6,10 +6,10 @@
 
 
 /* ------------------------------------------------------- */
-/* More Container 
+/* Game About Container 
 /* ------------------------------------------------------- */
 
-#more-about-container {
+#game-about-container {
 
     /* padding: 4em 1.8em 5em 1.8em; */
 
@@ -23,16 +23,176 @@
 
 }
 
-#more-about-layout-container {
+/* ------------------------------------------------------- */
+/* Game About Layout Container
+/* ------------------------------------------------------- */
 
-    padding: .5em 0em 2em 0em;
+#game-about-layout-container {
+
+    padding: 1em 0em;
 
     display: grid;
-    row-gap: .3em;
+    row-gap: 1.5em;
 
 }
 
-#playing-container {
+#game-descript-about-container {
+
+    line-height: 2rem;
+    color:red;
+
+    padding-bottom: 2em;
+    border-bottom: 1px solid red;
+}
+
+/* ------------------------------------------------------- */
+/* Game Play About Container
+/* ------------------------------------------------------- */
+
+#game-play-about-container {
+
+    display: grid;
+    row-gap: 1em;
+
+}
+
+
+
+/* ------------------------------------------------------- */
+/* [1/3] - Game Control About Panel
+/* ------------------------------------------------------- */
+
+#game-control-about-panel {
+
+    height: 6em;
+    padding: 0em .6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: .6em;
+
+    /* background-color: grey; */
+
+}
+
+
+/* ----------------------------------------- */
+/* Highscore Info Container 
+/* ----------------------------------------- */
+
+#highscore-game-info-about-container {
+
+    display: grid;
+    row-gap: .6em;
+    font-weight: bold;
+
+}
+
+#highscore-title-game-about {
+
+    font-size: 1.375rem;
+    
+
+}
+
+#highscore-reach-game-about {
+
+    font-size: 1.375rem;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+}
+
+#js-highscore-reach {
+
+    padding: .4em .6em;
+   
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+    border-radius: .3em;
+    color:var(--c-light-brown-1)
+}
+
+
+
+/* ----------------------------------------- */
+/* Game Control About Container 
+/* ----------------------------------------- */
+
+#game-control-about-container {
+
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+
+}
+
+
+
+/* ----------------------------------------- */
+/* Default Game Button
+/* ----------------------------------------- */
+
+.btn-game {
+
+    border: 0px;
+    height: 4em;
+    padding: 0em 1.5em;
+
+    border-radius: .4em;
+    
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    column-gap: .5em;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.btn-game > div:nth-of-type(1) {
+
+    font-size: 1.125em;
+
+}
+
+.btn-play {
+
+
+    background-color: green;
+
+
+}
+
+.btn-stop {
+
+    background-color: var(--c-light-red-1);
+
+}
+
+.btn-pause {
+
+    background-color: yellow;
+
+}
+
+.btn-default {
+
+    background-color: var(--c-light-grey-1);
+}
+
+
+
+/* ------------------------------------------------------- */
+/* [2/3] - Playing View About Container
+/* ------------------------------------------------------- */
+
+#playing-view-about-container {
 
     height: 12em;
 
@@ -40,7 +200,8 @@
 
     display: flex;
     align-items: flex-end;
-    align-content: flex-end;
+    justify-content: space-between;
+
 
     border-radius: .6em;
     border-bottom: 4px solid rgb(35, 35, 35);
@@ -50,15 +211,16 @@
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
-    /* shadow inset  */
+
 }
 
-#playing-container > img:nth-of-type(2) { 
+
+#playing-game-about-container  > img:nth-of-type(2) { 
 
     margin-left: 4em;
 }
 
-#playing-container > img:nth-of-type(3) { 
+#playing-game-about-container  > img:nth-of-type(3) { 
 
     margin-left: 2em;
 }
@@ -82,19 +244,225 @@
     display: grid;
     row-gap: 1.3em;
 
-    /* font-size: 18.5px; */
-
-   
+    /* font-size: 18.5px; */   
    
 }
 
-#more-about-list-container > div {
+
+
+
+/* ------------------------------------------------------- */
+/* [1/?] - Player Box
+/* ------------------------------------------------------- */
+
+#player-box {
+
+    position: relative;
+
+    left: 0px;
+
+    height: 2.5em;
+    border: 1px solid black;
+
+    
+}
+
+#img-player-body {
+
+    height: 1.5em;
+
+}
+
+#img-player-left-leg,
+#img-player-right-leg {
+
+    position: absolute;
+    bottom: 0;
+}
+
+#img-player-left-leg {
+
+    height: 1em;
+    left: .2em;
+    
+}
+
+#img-player-right-leg {
+
+    height: 1em;
+    right:.4em;
+    
+}
+
+
+@keyframes runAnim {
+    
+    0% {  left: .5em }
+    50% {  left: 3em }
+    100% {  left: 0em } 
+  
+
+}
+
+/* 25% {  left: .8em }
+50% {  left: 1em }
+60% {  left: 1.8em }
+
+
+75% {  right: 1em }
+80% {  right: .8em }
+100% {  right: 0em } */
+
+
+@keyframes legAnimRight {
+    
+    0% { 
+        
+        transform: rotate(55deg);
+        right: 1.1em;
+    
+    }
+
+
+    100% { 
+        
+        transform: rotate(0deg);
+        right:.4em;
+    
+    }
+
+}
+
+
+
+@keyframes legAnimLeft {
+    
+    0% { 
+        
+        transform: rotate(-55deg);
+        left: 1em;
+    
+    }
+
+
+    100% { 
+        
+        transform: rotate(0deg);
+        left: .2em;
+    
+    }
+
+}
+
+
+
+/* ------------------------------------------------------- */
+/* Animation Players
+/* ------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------- */
+/* [2/?] - Boxes 
+/* ------------------------------------------------------- */
+
+.game-box {
+
+    height: 2.5em;
+    border: 1px solid black;
+}
+
+
+.game-box > img {
+
+    height: 2.5em;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* [3/?] - Devil Monster
+/* ------------------------------------------------------- */
+
+.devil-1-box {
+
+    height: 2.5em;
+    border: 1px solid black;
+
+}
+
+.devil-1-box > img {
+
+    height: 2.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* [3/3] - Joystick Control About Panel
+/* ------------------------------------------------------- */
+
+#joystick-control-about-panel {
 
     display: flex;
     align-items: center;
-    column-gap: .6em;
+    justify-content: space-between;
 
-    
-
-  
 }
+
+
+#extra-skill-game-container,
+#skill-game-container  {
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+}
+
+#extra-skill-game-container {
+
+
+}
+
+#skill-game-container {
+
+
+}
+
+
+
+
+
+
+/* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
