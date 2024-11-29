@@ -255,6 +255,12 @@
 /* [1/?] - Player Box
 /* ------------------------------------------------------- */
 
+#player-box.animate {
+
+    animation: jumpAnim .5s 1;
+}
+
+
 #player-box {
 
     position: relative;
@@ -264,8 +270,113 @@
     height: 2.5em;
     border: 1px solid black;
 
+   
+
     
 }
+
+
+/* jumping */
+
+@keyframes jumpAnim {
+    
+    0% { bottom: 5.5em; left: 0em }
+    100% { bottom: 0em; left: 0em }
+
+}
+
+#img-ninja-star {
+
+    position: absolute;
+
+    top: 0em;
+    right: -.3em;
+
+    height: .8em;
+    opacity: 0;
+
+    /* animation: throwAnim 3s linear infinite; */
+    
+
+    /* throwAnim 3s linear 1 */
+
+    transition: all .3s;
+   
+}
+
+.anim360 {
+
+    animation: throw360Anim .2s linear infinite;
+}
+
+.animThrow {
+
+    animation:  throwAnim .5s linear 1;
+}
+
+.compy360Throw {
+
+    animation:  throw360Anim .2s linear infinite , throwAnim .5s linear 1;
+
+}
+
+
+@keyframes throw360Anim {
+
+    0% { 
+        
+        opacity: 1;
+        
+        transform: rotate(90deg);
+
+        
+    }
+
+    50% { 
+        
+        transform: rotate(180deg);
+ 
+        
+    }
+
+    75% { 
+        
+        transform: rotate(270deg);
+
+        
+    }
+
+    100% { 
+
+        opacity: 1;
+        transform: rotate(360deg);
+ 
+        
+    }
+
+
+
+}
+
+@keyframes throwAnim {
+    
+    0% { 
+        
+        right: -.3em;
+        opacity: 1;
+        
+    }
+
+    100% { 
+        
+        right: -15em;
+        opacity: 1;
+        
+    }
+
+
+}
+
 
 #img-player-body {
 
