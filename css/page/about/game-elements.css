@@ -1,0 +1,25 @@
+/*
+
+    game-elements.css
+    > styles all what happend by elements like boxes etc.
+
+*/
+
+
+
+/* ------------------------------------------------------- */
+/* [2/?] - Boxes 
+/* ------------------------------------------------------- */
+
+.game-box {
+
+    height: 2.5em;
+    border: 1px solid black;
+}
+
+
+.game-box > img {
+
+    height: 2.5em;
+}
+

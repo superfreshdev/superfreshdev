@@ -1,0 +1,30 @@
+/*
+
+    game-evil.css
+    > styles all what happend by evil
+
+*/
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* [3/?] - Devil Monster
+/* ------------------------------------------------------- */
+
+.devil-1-box {
+
+    height: 2.5em;
+    border: 1px solid black;
+
+}
+
+.devil-1-box > img {
+
+    height: 2.5em;
+}
+
+
+

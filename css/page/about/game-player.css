@@ -1,0 +1,226 @@
+/*
+
+    game-player.css
+    > styles all what happend by player
+
+*/
+
+
+/* ------------------------------------------------------- */
+/* [1/?] - Player Box
+/* ------------------------------------------------------- */
+
+#player-box.animate {
+
+    animation: jumpAnim .5s 1;
+}
+
+
+#player-box {
+
+    position: relative;
+
+    left: 0px;
+
+    height: 2.5em;
+    border: 1px solid black;
+
+   
+
+    
+}
+
+/* ------------------------------------------------------------ */
+/* Animation: jumping
+/* ------------------------------------------------------------ */
+
+@keyframes jumpAnim {
+    
+    0% { bottom: 5.5em; left: 0em }
+    100% { bottom: 0em; left: 0em }
+
+}
+
+#img-ninja-star {
+
+    position: absolute;
+
+    top: 0em;
+    right: -.3em;
+
+    height: .8em;
+    opacity: 0;
+
+    /* animation: throwAnim 3s linear infinite; */
+    
+
+    /* throwAnim 3s linear 1 */
+
+    transition: all .3s;
+   
+}
+
+.anim360 {
+
+    animation: throw360Anim .2s linear infinite;
+}
+
+.animThrow {
+
+    animation:  throwAnim .5s linear 1;
+}
+
+.compy360Throw {
+
+    animation:  throw360Anim .2s linear infinite , throwAnim .5s linear 1;
+
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* Animation: throwing spining
+/* ------------------------------------------------------------ */
+@keyframes throw360Anim {
+
+    0% { 
+        
+        opacity: 1;
+        
+        transform: rotate(90deg);
+
+        
+    }
+
+    50% { 
+        
+        transform: rotate(180deg);
+ 
+        
+    }
+
+    75% { 
+        
+        transform: rotate(270deg);
+
+        
+    }
+
+    100% { 
+
+        opacity: 1;
+        transform: rotate(360deg);
+ 
+        
+    }
+
+
+
+}
+
+/* ------------------------------------------------------------ */
+/* Animation: throwing
+/* ------------------------------------------------------------ */
+@keyframes throwAnim {
+    
+    0% { 
+        
+        right: -.3em;
+        opacity: 1;
+        
+    }
+
+    100% { 
+        
+        right: -15em;
+        opacity: 1;
+        
+    }
+
+
+}
+
+
+#img-player-body {
+
+    height: 1.5em;
+
+}
+
+#img-player-left-leg,
+#img-player-right-leg {
+
+    position: absolute;
+    bottom: 0;
+}
+
+#img-player-left-leg {
+
+    height: 1em;
+    left: .2em;
+    
+}
+
+#img-player-right-leg {
+
+    height: 1em;
+    right:.4em;
+    
+}
+
+/* ------------------------------------------------------------ */
+/* Animation: running 
+/* ------------------------------------------------------------ */
+@keyframes runAnim {
+    
+    0% {  left: .5em }
+    50% {  left: 3em }
+    100% {  left: 0em } 
+  
+
+}
+
+/* ------------------------------------------------------------ */
+/* Animation: right leg
+/* ------------------------------------------------------------ */
+@keyframes legAnimRight {
+    
+    0% { 
+        
+        transform: rotate(55deg);
+        right: 1.1em;
+    
+    }
+
+
+    100% { 
+        
+        transform: rotate(0deg);
+        right:.4em;
+    
+    }
+
+}
+
+
+/* ------------------------------------------------------------ */
+/* Animation: left leg
+/* ------------------------------------------------------------ */
+@keyframes legAnimLeft {
+    
+    0% { 
+        
+        transform: rotate(-55deg);
+        left: 1em;
+    
+    }
+
+
+    100% { 
+        
+        transform: rotate(0deg);
+        left: .2em;
+    
+    }
+
+}

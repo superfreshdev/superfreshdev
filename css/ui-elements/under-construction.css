@@ -1,0 +1,50 @@
+/*
+
+    under-construction.css
+    > things which the user should be see as is on under construction
+
+*/
+
+/* ------------------------------------------------------------- */
+/* Under Construction Container
+/* ------------------------------------------------------------- */
+
+.uc-container {
+
+    display: grid;
+    row-gap: 1em;
+}
+
+
+/* ------------------------------------------------------------- */
+/* Info Box | Under Construction 
+/* ------------------------------------------------------------- */
+
+.info-box-uc {
+
+    padding: .6em;
+    border-radius: .6em;
+
+    font-weight: bold;
+
+    background-color: var(--c-light-red-1);
+    color: var(--c-l-white-1)
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Info Text | Under Construction 
+/* ------------------------------------------------------------- */
+
+.info-txt-uc {
+
+    padding: .6em;
+    border-radius: .6em;
+
+    border: 1px dashed var(--c-light-red-1);
+
+    color: var(--c-light-red-1);
+
+
+}

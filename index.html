@@ -53,7 +53,9 @@
         <!-- ----------------------------------------- -->  
 
         <link rel="stylesheet" href="css/ui-elements/anker-link-content-nav.css">   
-        <link rel="stylesheet" href="css/ui-elements/custom-select.css">  
+        <link rel="stylesheet" href="css/ui-elements/custom-select.css">
+        <link rel="stylesheet" href="css/ui-elements/under-construction.css">
+        <link rel="stylesheet" href="css/ui-elements/btn-and-layouts-gaming.css">    
 
     
         <!-- ----------------------------------------- -->     
@@ -71,7 +73,10 @@
         <link rel="stylesheet" href="css/page/about/mindset-container.css"> 
         <link rel="stylesheet" href="css/page/about/top-3-projects-container.css"> 
         <link rel="stylesheet" href="css/page/about/contact-container.css"> 
-        <link rel="stylesheet" href="css/page/about/game-container.css">      
+        <link rel="stylesheet" href="css/page/about/game-container.css">
+        <link rel="stylesheet" href="css/page/about/game-player.css">
+        <link rel="stylesheet" href="css/page/about/game-evil.css">
+        <link rel="stylesheet" href="css/page/about/game-elements.css">
 
 
 
@@ -1113,7 +1118,7 @@
 
 
                         <!-- ------------------------------------------------------------ -->
-                        <!-- Contact | Container --> 
+                        <!-- Contact Container --> 
                         <!-- ------------------------------------------------------------ -->
                         <div id="contact-about-container" class="content-row-container">
 
@@ -1173,12 +1178,14 @@
 
 
                         <!-- ------------------------------------------------------------ -->
-                        <!-- Game About | Container --> 
+                        <!-- Game About Container --> 
                         <!-- ------------------------------------------------------------ -->
                         <div id="game-about-container" class="content-row-container">
 
                             
+                            <!-- ----------------------------------------------- -->
                             <!-- content 1 -->
+                            <!-- ----------------------------------------------- --> 
                             <div class="content-layout-container">
 
 
@@ -1202,12 +1209,35 @@
                                     <!-- ------------------------------------------------------------- -->
                                     <!-- Description -->
                                     <!-- ------------------------------------------------------------- -->  
-                                    <div id="game-descript-about-container">
-                                        <b>[⚠️ Under Construction - Cooming Soon]</b> <br>
-                                        ! If i had better programming & algorithmn skills, i will 
-                                        programm this game in maximum 2 hours. I think about 
-                                        to make an video how i program that game. <br>
-                                        <hr>
+                                    <div id="game-description-about-container">
+
+                                        <div class="uc-container">
+
+                                            <div class="info-box-uc">
+                                                ⚠️ Under Construction - Cooming Soon
+                                            </div>
+
+                                            <div class="info-txt-uc">
+
+                                                <b>[Info]:</b> Actually i train my java script programming & 
+                                                algorithm skills to be faster. I'd like to 
+                                                program my own little monster game in 
+                                                maximum 2hours. To do this, 
+                                                i need more expierence to resolve problems 
+                                                faster. That is a mix of practicing 
+                                                better ide, shortcuts, templates & to think 
+                                                quicker in data structures. Because I hate 
+                                                the try-catch-error Conept. It's better to 
+                                                use your concepts to programm it like an 
+                                                flowing waterfall, thats the way how 
+                                                programming makes fun.
+
+                                            </div>
+
+                                        </div>
+
+                                        <br>
+
                                         I programmed an little Java Script Game calling "running monster" - Version 1.0. <br>
                                         Click Play and u will understand it automatically by trying.
                                     </div>
@@ -1219,23 +1249,22 @@
 
 
                                         <!-- ------------------------------------------------ -->
-                                        <!-- [1/3] - Game Control About Panel -->
+                                        <!-- [1/3] - Start Game Panel About -->
                                         <!-- ------------------------------------------------ -->  
-                                        <div id="game-control-about-panel">
+                                        <div id="start-game-panel-about">
 
                                             <!-- ----------------------------------------------------- -->
                                             <!-- Highscore Game Info About Container -->
                                             <!-- ----------------------------------------------------- -->
                                             <div id="highscore-game-info-about-container">
                                                 
-                                                <div id="highscore-title-game-about">
-                                                    Highscore
-                                                </div>
+                                                
+                                                <div>Highscore:</div>
 
-                                                <div id="highscore-reach-game-about">
-                                                    
-                                                    <div id="js-highscore-reach">12.000 </div>
+                                                <div id="highscore-credit-container-about">
 
+                                                    <img src="media/img/icons/emojies/emoji-king.png" class="img-icon-0-8" id="js-img-highscore-credit-status">
+                                                    <div>12.000</div>
                                                 </div>
 
                                             </div> 
@@ -1244,19 +1273,19 @@
                                             <!-- ----------------------------------------------------- -->
                                             <!-- Game Control About Container -->
                                             <!-- ----------------------------------------------------- -->
-                                            <div id="game-control-about-container">
+                                            <div id="game-control-about-container" class="btns-gaming-panel">
                                                 
 
                                                 <button class="btn-game btn-stop">
                                                     
-                                                    <img src="media/img/icons/icons/stop-button.png" alt="img" class="img-icon-1-8 ">
+                                                    <img src="media/img/icons/gaming-icons/stop-button.png" alt="img" class="img-icon-1">
                                                     <div>Stop</div>
                                                    
                                                 </button>
 
                                                 <button class="btn-game btn-play">
                                                     
-                                                    <img src="media/img/icons/icons/play.png" alt="img" class="img-icon-1-3 ">
+                                                    <img src="media/img/icons/gaming-icons/play.png" alt="img" class="img-icon-1">
                                                     <div>Play</div>
                                                    
                                                 </button>
@@ -1309,22 +1338,21 @@
                                         </div>
 
                                         <!-- ------------------------------------------------ -->
-                                        <!-- [3/3] - Joystick Control About Panel -->
+                                        <!-- [3/3] - Control Game Panel About -->
                                         <!-- ------------------------------------------------ -->  
-                                        <div id="joystick-control-about-panel">
+                                        <div id="control-game-panel-about">
 
 
                                             <!-- ----------------------------------------- -->
-                                            <!-- Extra Skill Game Container -->
+                                            <!-- Gaming Effects  -->
                                             <!-- ----------------------------------------- -->
-                                            <div id="extra-skill-game-container">
+                                            <div class="btns-gaming-panel">
 
-                                             
 
                                                 <button id="btn-game-throw" class="btn-game btn-default">
                                                     
-                                                    <img src="media/img/icons/icons/star.png" alt="img" class="img-icon-1-3 ">
-                                                    <div>throw(16)</div>
+                                                    <img src="media/img/icons/gaming-icons/star.png" alt="img" class="img-icon-1-1 ">
+                                                    <div>throw (16)</div>
                                                    
                                                 </button>
 
@@ -1333,14 +1361,14 @@
                                        
 
                                             <!-- ----------------------------------------- -->
-                                            <!-- Skill Game Container -->
+                                            <!-- Gaming Movement -->
                                             <!-- ----------------------------------------- -->  
-                                            <div id="skill-game-container">
+                                            <div class="btns-gaming-panel">
 
                                              
                                                 <button id="btn-game-jump" class="btn-game btn-default">
                                                     
-                                                    <img src="media/img/icons/icons/up-arrow.png" alt="img" class="img-icon-1-3 ">
+                                                    <img src="media/img/icons/icons/up-arrow.png" alt="img" class="img-icon-1-1 ">
                                                     <div>Jump</div>
                                                    
                                                 </button>
@@ -1371,15 +1399,6 @@
                                         </div>
                                              
                                    
-
-                                    
-
-                                        
-
-                                        
-
-
-
                                     </div>
     
     
