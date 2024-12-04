@@ -1,0 +1,126 @@
+/*
+
+    project-card.css
+    > define my project card layouts
+
+
+*/
+
+
+.project-card-container {
+
+    display: grid;
+
+}
+
+.header-project-card,
+.footer-project-card {
+
+    height: 3em;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0em .8em;
+}
+
+
+/* ----------------------------------------------- */
+/* header project card
+/* ----------------------------------------------- */
+
+.header-project-card {
+
+
+    border-radius: .6em .6em 0em 0em;
+    background-color: red;
+
+}
+
+/* ----------------------------------------------- */
+/* main project card
+/* ----------------------------------------------- */
+
+.main-project-card {
+
+    background-color: yellow;
+
+    display: grid;
+    row-gap: 1em;
+    padding-bottom: 1em;
+
+}
+
+
+/* ----------------------------------------------- */
+/* img carousel container
+/* ----------------------------------------------- */
+
+.img-carousel-container-project-card {
+
+    background-color: pink;
+
+}
+
+
+.title-container-project-card,
+.hashtags-container-project-card {
+
+    padding: 0em .8em;
+
+}
+
+
+/* ----------------------------------------------- */
+/* title container
+/* ----------------------------------------------- */
+
+.title-container-project-card {
+
+    font-weight: bold;
+
+}
+
+/* ----------------------------------------------- */
+/* hashtags container
+/* ----------------------------------------------- */
+
+.hashtags-container-project-card {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: .4em;
+    row-gap: .2em;
+
+}
+
+.hashtags-container-project-card > div {
+
+    height: 2.3em;
+    padding: 0em .4em;
+
+    font-size: 14.5px;
+
+    border-radius: .4em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: grey;
+
+    color: rgb(232, 232, 232);
+
+}
+
+/* ----------------------------------------------- */
+/* footer project card
+/* ----------------------------------------------- */
+
+.footer-project-card {
+
+    border-radius: 0em 0em .6em .6em;
+    background-color: green;
+
+}

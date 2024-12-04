@@ -10,7 +10,7 @@
 
 #mindset-about-container {
 
-    /* padding: 4em 1.8em 5em 1.8em; */
+    padding-bottom: 4em;
    
     background-color: #DCD9D4;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
@@ -21,66 +21,170 @@
 
 #mindset-about-layout-container {
 
-    padding: 3.5em 0em;
+    display: grid;
+    grid-template-rows: 0fr;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    column-gap: 3em;
-    /* row-gap: 1em; */
+    transition: all .4s;
+    
+}
+
+
+/* ------------------------------------------------------- */
+/* Label Show More / Close 
+/* ------------------------------------------------------- */
+
+#lbl-show-mindset-content {
+
+    margin-top: 2em;
+}
+
+/* ------------------------------------------------------- */
+/* Handling Checkbox ( show / unshow )
+/* ------------------------------------------------------- */
+
+#lbl-show-mindset-content > div.panel-btn-nav-container > span:nth-of-type(2),
+#lbl-show-mindset-content > div.panel-btn-title-container > div:nth-of-type(2) { 
+
+    display: none;
 
 }
 
-#my-mindset-quote {
+#chk-show-mindset-content {
 
-    /* height: 11em; */
-    width: 100%;
+    display: none;
+}
 
-    padding: 1.5em 1em;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
+#chk-show-mindset-content:checked + label {
+
+    background-color: var(--c-light-brown-1);
+}
+
+/* ----------------------------------------------- */
+/* switching (+/-) & (show me / close )            */
+/* ----------------------------------------------- */
+
+#chk-show-mindset-content:checked ~ #lbl-show-mindset-content > div.panel-btn-nav-container > span:nth-of-type(1),
+#chk-show-mindset-content:checked ~ #lbl-show-mindset-content > div.panel-btn-title-container > div:nth-of-type(1)  {
+
+    display: none;
+}
+
+#chk-show-mindset-content:checked ~ #lbl-show-mindset-content > div.panel-btn-nav-container > span:nth-of-type(2),
+#chk-show-mindset-content:checked ~ #lbl-show-mindset-content > div.panel-btn-title-container > div:nth-of-type(2)  {
+
+    display: block;
+}
+
+
+/* ----------------------------------------------- */
+/* show content                                    */
+/* ----------------------------------------------- */
+
+#chk-show-mindset-content:checked ~ #mindset-about-layout-container {
+
+    padding: 3.5em 0em;
+
+    grid-template-rows: 1fr;
+
+}
+
+
+/* ------------------------------------------------------- */
+/* List of Quote Container 
+/* ------------------------------------------------------- */
+
+.list-of-quote-container {
+
+    display: grid;
+    row-gap: 1em;
+}
+
+
+.my-mindset-text-container,
+.my-mindset-video-container {
+
+    position: relative;
+
+    display: grid;
+    justify-items: center;
 
     border-radius: .6em;
+
+    line-height: 1.8em;
+   
+    font-style: italic;
+    text-align: center;   
 
     color: var(--c-light-brown-1);
     
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     background-blend-mode: multiply;
 
-    
-
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
-    
+}
+
+/* ------------------------------------------------------- */
+/* My Mindset Text Quote Container 
+/* ------------------------------------------------------- */
+
+.my-mindset-text-container {
+
+    padding: 1.5em 1em;
+    row-gap: 1.5em;
+}
+
+/* ------------------------------------------------------- */
+/* My Mindset Video Quote Container 
+/* ------------------------------------------------------- */
+
+.my-mindset-video-container {
+
+    padding-top: 1.5em;
+    row-gap: 1.5em;
+
+}
+
+/* ------------------------------------------------------- */
+/* Quote Info Box About 
+/* ------------------------------------------------------- */
+
+.quote-info-box-about {
+
+    width: 3em;
+    height: 3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .6em;
+    background-color: var(--c-light-grey-1);
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
 }
 
 
-#my-mindset-quote > div {
-
-    /* width: 12em; */
-    
-    /* font-size: 20px; */
-    /* font-size: 1.375em; */
-    line-height: 1.8em;
-   
-    font-style: italic;
-    text-align: center;   
-
-}
+/* ------------------------------------------------------- */
+/* Video
+/* ------------------------------------------------------- */
 
 #mindset-video {
 
     width: 100%;
 
+    /* min-height: 13em;
+    max-height: 13em; */
+
     /* width: 6em; */
   
-    border-radius: .6em;
+    border-radius: 0em 0em.6em .6em;
+
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     
 }
+
+
+
