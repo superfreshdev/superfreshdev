@@ -106,6 +106,8 @@
 
 .img-carousel-layout-container-project-card {
 
+    position: relative;
+
     height: 100%;
 
     display: flex;
@@ -113,6 +115,64 @@
     justify-content: center;
 
 }
+
+/* -------------------------------------------- */
+/* Control 
+/* -------------------------------------------- */
+
+.img-control-right:hover ,
+.img-control-left:hover {
+
+    background-color: rgb(99, 99, 99);
+}
+
+.img-control-left,
+.img-control-right {
+
+    position: absolute;
+    
+    height: 6em;
+    width: 3.5em;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.img-control-left {
+
+    left:0;
+    border-radius: 0em .6em .6em 0em;
+
+
+}
+
+.img-control-left > img {
+
+    transform: rotate(90deg)
+
+}
+
+
+.img-control-right {
+
+    right:0;
+    border-radius: .6em 0em 0em .6em;
+
+}
+
+.img-control-right > img {
+
+    transform: rotate(270deg)
+
+}
+
 
 .img-small-carousel {
 

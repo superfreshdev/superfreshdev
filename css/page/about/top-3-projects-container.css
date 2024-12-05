@@ -11,10 +11,15 @@
 #my-top-3-projects-about-container {
     
     /* padding: 4em 1.8em 5em 1.8em; */
+
+    background-color: var(--c-white);
+
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
    
-    background-color: #DCD9D4;
+    /* background-color: #DCD9D4;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
-    background-blend-mode: soft-light,screen;
+    background-blend-mode: soft-light,screen; */
 
 }
 
