@@ -20,6 +20,8 @@
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     background-blend-mode: multiply;
 
+    color:rgb(157, 157, 157);
+
 
     display: grid;
     row-gap: 2em;
@@ -55,10 +57,10 @@
 
 #game-play-about-container {
 
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
+    border-top: 1px dashed rgb(150, 150, 150);
+    border-bottom: 1px dashed rgb(150, 150, 150);
 
-    padding: 1em 0em;
+    padding: 2em 0em;
 
     display: grid;
     row-gap: 1em;
@@ -91,6 +93,7 @@
 #highscore-game-info-about-container {
 
     display: grid;
+    row-gap: .3em;
   
     font-weight: bold;
 
@@ -106,10 +109,12 @@
 
     border-radius: .3em;
 
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;
+    /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply; */
+    background-color: white;
 
-    color:var(--c-light-brown-1)
+    /* color:var(--c-light-brown-1) */
+    color:black;
 
 }
 
@@ -143,7 +148,8 @@
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
-    background-color: var(--c-light-brown-1);
+    /* background-color: var(--c-light-brown-1); */
+    background-color: rgb(227, 227, 227);
 
 }
 

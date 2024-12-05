@@ -33,7 +33,8 @@
    
     border-top: 2px solid var(--c-light-brown-1);
 
-    /* font-size: 18.5px; */
+    font-size: 20px;
+  
 
 }
 
@@ -75,7 +76,7 @@
 /* txt - welcome to  */
 #txt-welcome-to {
 
-    /* font-size: 24px; */
+    font-size: 1.625rem;
 
     font-weight: bold;
     color:rgb(157, 157, 157);
@@ -87,6 +88,7 @@
 
     /* font-size: 24px; */
     /* font-size: 2.625em; */
+    font-size: 1.75rem;
 
     font-weight: bold;
 
@@ -141,7 +143,7 @@
 
 .img-small-seperator {
 
-    height: .4em;
+    height: .8em;
 
 }
 
