@@ -1,0 +1,56 @@
+/*
+
+    btn-defaults.css
+    > styles my buttons defaults ones 
+
+*/
+
+.btn-2-5h-default,
+.btn-2h-default,
+.btn-1-8h-default {
+
+    border: 0px;
+    padding: 0em 1em;
+
+    border-radius: .6em;
+    
+    font-weight: bold;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+
+.btn-2-5h-default:hover,
+.btn-2h-default:hover,
+.btn-1-8h-default:hover {
+
+    background-color: var(--c-light-brown-1);
+}
+
+.btn-2-5h-default {
+
+    height: 2.5rem;
+}
+
+
+.btn-2h-default {
+
+    height: 2rem;
+}
+
+
+.btn-1-8h-default {
+
+    height: 1.8rem;
+}
+
+
