@@ -90,7 +90,7 @@
 
 .empty-white-container {
 
-    height: 8rem;
+    height: 8em;
     padding: 0em .8em;
 
     background-color: var(--c-white);
@@ -109,12 +109,13 @@
 #txt-see-you-later {
 
     align-self: center;
+    font-weight: bold;
 
 }
 
 #img-me-dog { 
 
-    height: 7rem;
+    height: 8rem;
 }
 
 

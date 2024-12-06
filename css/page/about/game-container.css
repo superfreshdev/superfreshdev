@@ -110,7 +110,7 @@
 #highscore-game-info-about-container {
 
     display: grid;
-    row-gap: .3em;
+    row-gap: .4em;
   
     font-weight: bold;
 
@@ -118,7 +118,7 @@
 
 #highscore-credit-container-about {
 
-    padding: 0em .6em;
+    padding: .3em .6em;
 
     display: flex;
     align-items: center;

@@ -71,7 +71,7 @@
 
 .nr-header-project-card > div {
 
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 /* ----------------------------------------------- */
@@ -110,7 +110,6 @@
 
    
 }
-
 
 .img-carousel-layout-container-project-card {
 
@@ -190,31 +189,40 @@
 }
 
 
+/* ----------------------------------------------------- */
+/* Nr of Img Carousel Container 
+/* ----------------------------------------------------- */
+
+.nr-of-img-carousel-container {
+
+    height: 2.3em;
+    padding: 0em .3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+
 .nr-img-carousel {
 
-    justify-self: flex-end;
-
-    padding-right: .8em;
+    height: 2.3em;
+    padding: 0em .6em;
 
     display: flex;
     align-items: center;
     column-gap: .1em;
 
-    font-size: 1rem;
+    border-radius: .4em;
+
+    font-size: 1.25rem;
 
     font-weight: bold;
+
+    background-color: var(--c-black);
+    color: var(--c-light-grey-1);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -233,6 +241,7 @@
 .title-container-project-card {
 
     font-weight: bold;
+    line-height: 1.5em;
 
 }
 
@@ -257,7 +266,7 @@
     height: 2.3em;
     padding: 0em .8em;
 
-    font-size: 14.5px;
+    font-size: 1.25rem;
 
     border-radius: .4em;
 
@@ -270,6 +279,14 @@
 
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
+    transition: all .4s;
+    cursor: help;
+
+}
+
+.hashtags-container-project-card > div:hover {
+
+    background-color: var(--c-dark-grey-1);
 }
 
 /* ----------------------------------------------- */
@@ -278,7 +295,7 @@
 
 .footer-project-card {
 
-    height: 4.8em;
+    height: 5.3em;
     border-radius: 0em 0em .6em .6em;
 
     background-color: grey;

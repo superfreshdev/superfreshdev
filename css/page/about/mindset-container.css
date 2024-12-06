@@ -10,7 +10,7 @@
 
 #mindset-about-container {
 
-    padding-bottom: 4em;
+    padding-bottom: 3.8em;
 
     background-color: var(--c-white);
    
@@ -133,8 +133,8 @@
 
 .my-mindset-text-container {
 
-    padding: 1.5em 1em;
-    row-gap: 1.5em;
+    padding: 2.3em 1.5em;
+    row-gap: 1.8em;
 }
 
 /* ------------------------------------------------------- */
@@ -144,7 +144,7 @@
 .my-mindset-video-container {
 
     padding-top: 1.5em;
-    row-gap: 1.5em;
+    row-gap: 1.8em;
 
 }
 

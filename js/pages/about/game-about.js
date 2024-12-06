@@ -28,6 +28,9 @@ var divPlayerBox = document.getElementById("player-box");
 
 var imgStarThrow = document.getElementById("img-ninja-star");
 
+var countThrowStars = document.getElementById("js-throw-star");
+var nmbOfStars = countThrowStars.innerHTML;
+
 var imgLegLeftPlayer = document.getElementById("img-player-left-leg");
 var imgLegRightPlayer = document.getElementById("img-player-right-leg");
 
@@ -120,6 +123,15 @@ btnGameThrow.addEventListener( "click" , ()=> {
     console.log(" Player is throwing ")
 
     imgStarThrow.classList.add('compy360Throw')
+
+    nmbOfStars--;
+    countThrowStars.innerText = nmbOfStars;
+
+    console.log("Star = " + nmbOfStars )
+
+    if( nmbOfStars == 0 ) {
+        nmbOfStars = 17;
+    }
 
 
     setTimeout(() => {

@@ -8,7 +8,7 @@
 
 
 /* ----------------------------------------------------------------- */
-/* panel-btn-show-unshow
+/* Panel Button Show Unshow
 /* ----------------------------------------------------------------- */
 
 .panel-btn-show-unshow {
@@ -29,6 +29,8 @@
     
     background-color: var(--c-light-grey-0);
 
+    cursor: pointer;
+
     transition: all .4s;
 
 }
@@ -44,7 +46,7 @@
     align-items: center;
     column-gap: .4em;
 
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
 }
 
 
@@ -65,5 +67,6 @@
 
 .panel-btn-nav-container > span {
 
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
+    font-size: 1.3em;
 }

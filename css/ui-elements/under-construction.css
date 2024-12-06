@@ -42,9 +42,12 @@
     padding: .6em;
     border-radius: .6em;
 
-    border: 1px dashed var(--c-light-red-1);
+    line-height: 1.8em;
+
+    border: 2px dashed var(--c-light-red-1);
 
     color: var(--c-light-red-1);
+    color:red;
 
 
 }
