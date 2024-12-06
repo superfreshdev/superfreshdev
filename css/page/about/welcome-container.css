@@ -1,0 +1,225 @@
+/*
+    welcome-container.css
+    > define styles for welcome part of about page
+*/
+
+
+
+/* ----------------------------------------------------------------------- */
+/* Welcome Container 
+/* ----------------------------------------------------------------------- */
+
+#welcome-about-container {
+
+    /* padding: 1.5em 2em; */
+
+    display: grid;
+  
+    row-gap: 2em;
+    column-gap: 2em;    
+   
+    border-top: 2px solid var(--c-light-brown-1);
+
+
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* [1/4] | Welcome Title About Container 
+/* ----------------------------------------------------------------------- */
+
+#welcome-title-about-container {
+
+    order: 1;
+
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+
+}
+
+#img-cartoon-me-welcome-about {
+
+    /* display: none; */
+    height: 6.5em;
+
+}
+
+/* ----------------------------------- */
+/* Welcome Title About Box 
+/* ----------------------------------- */
+
+#welcome-title-about-box {
+
+    display: grid;
+    row-gap: .3em;
+
+}
+
+/* #welcome-title-box-about > div:nth-of-type(1) {
+
+    line-height: 1.8em;
+   
+} */
+
+
+#txt-welcome-to {
+
+    /* font-size: 1.625rem; */
+
+    font-weight: bold;
+    /* color:rgb(157, 157, 157); */
+    color: var(--c-light-grey-2);
+
+}
+
+#txt-title-superfreshdev {
+
+    /* font-size: 24px; */
+    /* font-size: 2.625em; */
+    /* font-size: 1.75rem; */
+
+    font-weight: bold;
+
+    color: white;
+
+}
+
+#txt-title-world {
+
+    color: var(--c-light-brown-1);
+
+}
+
+#txt-sub-title {
+
+     /* font-size: 1.25em; */
+     /* color: var(--c-grey); */
+     color: var(--c-light-grey-2);
+
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+/*  [2/4] | Welcome Text About Container 
+/* ----------------------------------------------------------------------- */
+
+#welcome-text-about-container {
+
+    order: 4;
+
+    padding-bottom: 2em;
+
+    /* font-size: 1.125em;; */
+
+    /* padding-left: 6.5em; */
+
+    display: grid;
+    justify-content: center;
+    /* justify-items: center; */
+
+    /* line-height: 2em; */
+
+    /* color:rgb(207, 207, 207); */
+    color:rgb(218, 218, 218);
+
+    /* border: 1px solid yellow; */
+
+}
+
+.txt-box-welcome-about {
+
+    display: grid;
+    row-gap: .8em;
+
+}
+
+
+.txt-info-nr-box-welcome-about {
+
+    height: 2.3em;
+    padding: 0em .6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .2em;
+
+    border: 1px dashed rgb(218, 218, 218);
+
+    /* background-color: pink; */
+
+    border-radius: .6em;
+}
+
+
+
+
+/* #welcome-text-about-container > div:not(.unicode-circle) {
+
+    line-height: 2em;
+    
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+/*  [3/4] | Welcome Date About Container 
+/* ----------------------------------------------------------------------- */
+
+#welcome-date-about-container {
+
+    order: 3;
+    
+    height: 2em;
+    /* padding-right: .4em; */
+
+    /* font-size: 1.125em; */
+
+
+    /* border: 1px solid yellow; */
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    
+    opacity: .8;
+
+}
+
+#welcome-date-about-container > div:nth-of-type(1) {
+
+    font-weight: bold;
+    color: var(--c-light-brown-1);
+}
+
+#js-date {
+
+    /* font-size: 24px; */
+
+    padding-right: .3em;
+    padding-left: .2em;
+    color:var(--c-white);
+}
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/*  [4/4] | Welcome IMG Me About 
+/* ----------------------------------------------------------------------- */
+
+#img-me-welcome-about {
+
+    order: 2;
+
+    width: 100%;
+
+    border-radius: .6em;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+
+}
+
