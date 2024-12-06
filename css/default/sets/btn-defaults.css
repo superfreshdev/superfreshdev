@@ -5,9 +5,23 @@
 
 */
 
-.btn-2-5h-default,
-.btn-2h-default,
-.btn-1-8h-default {
+/* ------------------------------------------------------------------------- */
+/* Button Heights
+/* ------------------------------------------------------------------------- */
+
+/* = 36px | 36px / 16 = 2.25rem
+= 32px | 32px / 16 = 2ren
+h1 = 28px | 28px / 16 = 1.75rem; 
+h2 = 26px | 26px / 16 = 1.625rem;
+h3 = 22px | 22px / 16 = 1.375rem;
+h4 = 20px | 20px / 16 = 1.25rem
+= 18px | 18px / 16px = 1.125rem
+*/
+
+
+.btn-2-5h,
+.btn-2h,
+.btn-1-8h {
 
     border: 0px;
     padding: 0em 1em;
@@ -15,7 +29,7 @@
     border-radius: .6em;
     
     font-weight: bold;
-    font-size: 1rem;
+    /* font-size: 1rem; */
 
     display: flex;
     align-items: center;
@@ -28,29 +42,153 @@
 
 }
 
+.btn-2-5h > div:nth-of-type(1),
+.btn-2h > div:nth-of-type(1),
+.btn-1-8h > div:nth-of-type(1) {
 
-.btn-2-5h-default:hover,
-.btn-2h-default:hover,
-.btn-1-8h-default:hover {
+    font-size: 1.125rem;
+}
+
+.btn-2-5h:hover,
+.btn-2h:hover,
+.btn-1-8h:hover {
 
     background-color: var(--c-light-brown-1);
 }
 
-.btn-2-5h-default {
+.btn-2-5h {
 
-    height: 2.5rem;
+    /* height = 50px , 50/16 = 3.125rem */
+    height: 3.125rem;
 }
 
 
-.btn-2h-default {
+.btn-2h {
 
     height: 2rem;
 }
 
 
-.btn-1-8h-default {
+.btn-1-8h {
 
     height: 1.8rem;
 }
 
+/* ------------------------------------------------------------------------- */
+/* Button Types
+/* ------------------------------------------------------------------------- */
 
+.btn-default {
+
+    background-color: var(--c-light-grey-1);
+
+}
+
+.btn-default:active { 
+
+    background-color: var(--c-light-brown-1);
+}
+
+.btn-play {
+
+}
+
+.btn-pause {
+
+
+}
+
+.btn-stop {
+
+
+}
+
+
+
+
+
+
+/* ----------------------------------------- */
+/* Default Game Button
+/* ----------------------------------------- */
+
+.btn-game {
+
+    border: 0px;
+    height: 2.5em;
+    padding: 0em 1em;
+
+    border-radius: .6em;
+    
+    font-weight: bold;
+    font-size: 1.125rem;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+.btn-game > div:nth-of-type(1) {
+
+    font-size: 1rem;
+    
+}
+
+.btn-play {
+
+    background-color: var(--c-green);
+
+}
+
+.btn-play:active {
+
+    background-color: var(--c-dark-green-1);
+
+}
+
+
+
+.btn-stop {
+
+    background-color: var(--c-light-red-1);
+
+}
+
+.btn-stop:active { 
+
+    background-color: var(--c-dark-red-1);
+}
+
+.btn-pause {
+
+    background-color: var(--c-dark-yellow-1);
+
+}
+
+.btn-pause:active {
+
+    background-color: black;
+
+}
+
+
+
+
+
+/* ----------------------------------------- */
+/* Buttons Gaming Panel
+/* ----------------------------------------- */
+
+.btns-gaming-panel {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+}

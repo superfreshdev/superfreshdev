@@ -83,4 +83,38 @@
 
 
 
+/* ---------------------------------------------------------------------------- */
+/* Empty White Container 
+/* ---------------------------------------------------------------------------- */
+
+
+.empty-white-container {
+
+    height: 8rem;
+    padding: 0em .8em;
+
+    background-color: var(--c-white);
+}
+
+#me-dog-container {
+
+    height: 100%;
+
+    display: flex;
+    column-gap: 5em;
+    align-items: flex-end;
+    
+}
+
+#txt-see-you-later {
+
+    align-self: center;
+
+}
+
+#img-me-dog { 
+
+    height: 7rem;
+}
+
 

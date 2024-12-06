@@ -38,6 +38,10 @@
 
 }
 
+.txt-test {
+
+    font-size: 24px;
+}
 
 /* ------------------------------------------- */
 /* 1/4 | Welcome Title 
@@ -55,8 +59,8 @@
 
 #welcome-title-about-container > img:nth-of-type(1) {
 
-    display: none;
-    /* height: 8.5em; */
+    /* display: none; */
+    height: 6.5em;
    
 }
 
@@ -181,6 +185,8 @@
 }
 
 #js-date {
+
+    font-size: 24px;
 
     padding-right: .3em;
     padding-left: .2em;

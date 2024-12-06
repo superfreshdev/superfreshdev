@@ -75,14 +75,31 @@
 
 #start-game-panel-about {
 
-   
+
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
+
+    /* background-color: bisque; */
 
     border-radius: .6em;
 
 
+}
+
+#select-game-about {
+
+    height: 60px;
+    background-color: rgb(207, 207, 207);
+    border-radius: .6em;
+    padding: 0em .8em;
+}
+
+#select-game-about > option {
+
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
 }
 
 
@@ -111,7 +128,7 @@
 
     /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     background-blend-mode: multiply; */
-    background-color: white;
+    background-color: var(--c-light-brown-1);
 
     /* color:var(--c-light-brown-1) */
     color:black;
@@ -120,7 +137,7 @@
 
 #highscore-credit-container-about >  div:nth-of-type(1) {
 
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 
