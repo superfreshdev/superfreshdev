@@ -41,7 +41,7 @@
 #img-cartoon-me-welcome-about {
 
     /* display: none; */
-    height: 6.5em;
+    height: 6.3em;
 
 }
 
@@ -56,16 +56,16 @@
 
 }
 
-/* #welcome-title-box-about > div:nth-of-type(1) {
+#welcome-title-about-box > div:nth-of-type(1) {
 
-    line-height: 1.8em;
+    line-height: 2em;
    
-} */
+} 
 
 
 #txt-welcome-to {
 
-    /* font-size: 1.625rem; */
+    font-size: 1.35em;
 
     font-weight: bold;
     /* color:rgb(157, 157, 157); */
@@ -78,6 +78,8 @@
     /* font-size: 24px; */
     /* font-size: 2.625em; */
     /* font-size: 1.75rem; */
+    font-size: 1.50em;
+   
 
     font-weight: bold;
 
@@ -95,7 +97,9 @@
 
      /* font-size: 1.25em; */
      /* color: var(--c-grey); */
+     line-height: 1.3em;
      color: var(--c-light-grey-2);
+     opacity: .3;
 
 }
 
@@ -128,15 +132,36 @@
 
 }
 
-.txt-box-welcome-about {
+.text-box-welcome-about {
 
     display: grid;
     row-gap: .8em;
 
 }
 
+.header-text-box-left-welcome-about,
+.header-text-box-right-welcome-about {
 
-.txt-info-nr-box-welcome-about {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+
+}
+
+.header-text-box-right-welcome-about {
+
+    justify-content: flex-end;
+}
+
+.header-title-text-box-welcome-about {
+
+    font-weight: bold;
+    /* color:var(--c-light-brown-1); */
+
+}
+
+
+.nr-box-text-box-welcome-about {
 
     height: 2.3em;
     padding: 0em .6em;
@@ -152,8 +177,6 @@
 
     border-radius: .6em;
 }
-
-
 
 
 /* #welcome-text-about-container > div:not(.unicode-circle) {
