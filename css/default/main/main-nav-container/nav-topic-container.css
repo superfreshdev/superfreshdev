@@ -5,6 +5,13 @@
 
 */
 
+/*
+
+    1. nav-main-topic-container 
+    2. nav-sub-topic-container ( about panel, drop-down list, ... )
+
+*/
+
 /* ------------------------------------------------------------------- */
 /* Nav Topic Container 
 /* ------------------------------------------------------------------- */
@@ -31,7 +38,7 @@
 #nav-topic-layout-container {
 
     padding: 2em 1em;
-    
+   
 
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +56,7 @@
 .block-topic-container {
 
     display: grid;
-    row-gap: 1em;
+    row-gap: 1.5em;
 
     font-weight: bold;
 }
@@ -73,9 +80,10 @@
 
 }
 
-.header-block-topic > img { 
+.header-block-topic > picture > img { 
 
-    width: 100%;
+    width: 32rem;
+    height: 12rem;
 
     /* min-height: 5em;
     max-height: 5em; */
@@ -154,14 +162,14 @@
 .list-block-topic {
 
     display: grid;
-    row-gap: 1em;
+    row-gap: 1.3em;
 
 
 }
 
 
 /* ------------------------------------------------------------------- */
-/* Label Nav Topic 
+/* Handling | Label Nav Topic 
 /* ------------------------------------------------------------------- */
 
 input[name="radio-nav-topic"] { display: none; }
@@ -171,10 +179,17 @@ input[name="radio-nav-topic"]:checked + label {
     background-color: var(--c-light-brown-1);
 }
 
+input[name="radio-nav-topic"]:checked + label > .cst-radio > img:nth-of-type(1) {
+
+    display: block;
+}
+
+
+
 .lbl-nav-topic {
 
     height: 4em;
-    padding: 0em 1em;
+    padding: 0em 1.3em 0em 1em;
 
    
     display: flex;
@@ -229,7 +244,7 @@ input[name="radio-nav-topic"]:checked + label {
 
     border-radius: 50%;
 
-    border: 3px solid rgb(124, 124, 124);
+    border: 4px solid rgb(124, 124, 124);
     background-color: white;
 }
 
@@ -238,5 +253,10 @@ input[name="radio-nav-topic"]:checked + label {
 
     position: absolute;
     height: 1.8em;
+
+    margin-left: .2em;
+
     transform: rotate(90deg);
+
+    display: none;
 }

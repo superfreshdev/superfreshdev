@@ -65,7 +65,7 @@
 
 #txt-welcome-to {
 
-    font-size: 1.35em;
+    font-size: 2rem;
 
     font-weight: bold;
     /* color:rgb(157, 157, 157); */
@@ -75,15 +75,12 @@
 
 #txt-title-superfreshdev {
 
-    /* font-size: 24px; */
-    /* font-size: 2.625em; */
-    /* font-size: 1.75rem; */
-    font-size: 1.35em;
+    font-size: 2.25rem;
    
 
     font-weight: bold;
 
-    color: white;
+    color: var(--c-white);
 
 }
 
@@ -95,11 +92,10 @@
 
 #txt-sub-title {
 
-     /* font-size: 1.25em; */
-     /* color: var(--c-grey); */
-     line-height: 1.3em;
-     color: var(--c-light-grey-2);
-     opacity: .3;
+    line-height: 1.3em;
+
+    color: var(--c-light-grey-2);
+    opacity: .6;
 
 }
 
@@ -135,8 +131,13 @@
 .text-box-welcome-about {
 
     display: grid;
-    row-gap: .8em;
+    row-gap: 1.5em;
 
+}
+
+.text-box-welcome-about > div:nth-of-type(2) {
+
+    font-size: 2rem;
 }
 
 .header-text-box-left-welcome-about,
@@ -156,6 +157,7 @@
 .header-title-text-box-welcome-about {
 
     font-weight: bold;
+    font-size: 2rem;
     /* color:var(--c-light-brown-1); */
 
 }
@@ -171,7 +173,10 @@
     justify-content: center;
     column-gap: .2em;
 
-    border: 1px dashed rgb(218, 218, 218);
+    /* border: 1px dashed rgb(218, 218, 218); */
+
+    background-color: rgb(80, 80, 80);
+    color:rgb(182, 182, 182);
 
     /* background-color: pink; */
 
@@ -210,6 +215,11 @@
     
     opacity: .8;
 
+}
+
+#welcome-date-about-container > div {
+
+    font-size: 2rem;
 }
 
 #welcome-date-about-container > div:nth-of-type(1) {
