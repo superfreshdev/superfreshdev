@@ -82,7 +82,7 @@
 
 .header-block-topic > picture > img { 
 
-    width: 32rem;
+    width: 100%;
     height: 12rem;
 
     /* min-height: 5em;

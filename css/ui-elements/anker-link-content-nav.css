@@ -38,6 +38,16 @@
 
 }
 
+.seperator-nav-header {
+
+    font-size: 2rem;
+
+    color:var(--c-light-grey-1);
+    opacity: .4;
+    
+    font-weight: bold;
+
+}
 
 /* ------------------------------------------------------------------------ */ 
 /* Link Style

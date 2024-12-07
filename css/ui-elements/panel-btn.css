@@ -49,6 +49,11 @@
     /* font-size: 1.25rem; */
 }
 
+.panel-btn-title-container > div {
+
+    font-size: 2rem;
+}
+
 
 .panel-btn-nav-container {
 

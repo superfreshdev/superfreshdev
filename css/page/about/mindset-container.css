@@ -127,6 +127,14 @@
 
 }
 
+
+.my-mindset-text-container > div:nth-of-type(2),
+.my-mindset-video-container > div:nth-of-type(2) {
+    
+    font-size: 2rem;
+    line-height: 1.8em;
+}
+
 /* ------------------------------------------------------- */
 /* My Mindset Text Quote Container 
 /* ------------------------------------------------------- */
