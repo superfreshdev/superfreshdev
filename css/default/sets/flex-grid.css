@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------- */
+/* > colors.css
+/*  
+/* : default names for quick styling of flex , grid layouts 
+/* -------------------------------------------------------------- */
+
+.flex { display: flex; }
+.iflex { display: inline-flex; }
+.grid { display: grid; }
+
+/* --------------------------------------------- */
+/* Align | Content & Items
+/* --------------------------------------------- */
+
+/* align content */
+.ac-c { align-content: center; }
+.ac-fs { align-content: flex-start; }
+.ac-fe { align-content: flex-end; }
+
+/* align items */
+.ai-c { align-items: center; }
+
+/* --------------------------------------------- */
+/* Justify | Content & Items 
+/* --------------------------------------------- */
+
+/* justify content  */
+.jcc-c { justify-content: center; }
+.jcc-sb { justify-content: space-between; }
+.jcc-fs { justify-content: flex-start; }
+
+/* justify items  */
+.jci-c { justify-items: center;}
+
+/* --------------------------------------------- */
+/* Self |
+/* --------------------------------------------- */
+
+/* by flex */
+.as-fe { align-self: flex-end; }
+
+/* by grid  */
+.js-fe { justify-self: flex-end; }
+
+
+

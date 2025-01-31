@@ -1,0 +1,48 @@
+{
+
+    "imgHeaderTopic": "",
+    "headerTopic": "Dev-Ops",
+    "descHeaderTopic": "My IT Doc's",
+
+    "defSelectItemImgFirst": "",
+    "defSelectItemText": "Show All",
+    "defSelectItemImgLast": "",
+
+    "subTopicItems": [
+
+        {
+            "selectItemText": "🛑 Git-GitHub/Lab & Co"
+        },
+        
+        {
+            "selectItemText": "🛑 Jenkins"
+        },
+
+        {
+            "selectItemText": "🛑 Docker-Kubernetes"
+        },
+
+        {
+            "selectItemText": "🛑 Concepts of Dev-Ops"
+        },
+
+        {
+            "selectItemText": "🛑 Microservices"
+        },
+
+        {
+            "selectItemText": "🛑 Shared Applications with DARPR Cloud"
+        },
+
+        {
+            "selectItemText": "🛑 Sonaqube (Testing)"
+        }
+
+        
+
+
+    ]
+
+
+
+}

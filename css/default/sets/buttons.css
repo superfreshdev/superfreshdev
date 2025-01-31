@@ -1,0 +1,112 @@
+/* -------------------------------------------------------------- */
+/* > buttons.css
+/*  
+/* : styles all art of using buttons
+/* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Default Buttons
+/* -------------------------------------------------------- */
+
+.btn-mini, 
+.btn-small, 
+.btn-normal {
+
+    /* delete default button styles from browsers */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    /* important, because default it is text align center , can make ur layout not sexy */
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    cursor: pointer;
+    transition: all .4s;
+}
+
+/* -------------------------------------------------------- */
+/* Mini Button
+/* -------------------------------------------------------- */
+
+.btn-mini {
+
+    column-gap: .3em;
+
+    height: 2em;
+    padding: 0 .3em;
+
+    background-color: red;
+
+}
+
+.img-btn-mini {
+    height: .6em;
+}
+
+.btn-mini:hover {
+
+    background-color: rgb(169, 169, 169);
+
+}
+
+/* -------------------------------------------------------- */
+/* Small Button
+/* -------------------------------------------------------- */
+
+.btn-small {
+
+    column-gap: .6em;
+
+    height: 2.5em;
+    padding: 0.8em;
+
+    background-color: green;
+    
+}
+
+.img-btn-small {
+    height: .8em;
+}
+
+.btn-small:hover {
+
+    background-color: rgb(169, 169, 169);
+
+
+}
+
+/* -------------------------------------------------------- */
+/* Normal Button
+/* -------------------------------------------------------- */
+
+.btn-normal {
+
+    column-gap: .8em;
+
+    height: 3em;
+    padding: 0 .8em;
+
+    background-color: mediumaquamarine;
+    
+}
+
+.img-btn-normal {
+    height: 1em;
+}
+
+.btn-normal:hover {
+
+    background-color: rgb(169, 169, 169);
+
+}

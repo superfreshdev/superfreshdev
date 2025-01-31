@@ -1,0 +1,281 @@
+/* -------------------------------------------------------------- */
+/* > my-top-3-projects-about.css
+/*  
+/* : styles img my top 3 projects about container 
+/* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+/* About Top 3 Projects
+/* -------------------------------------------------------------- */
+
+#about-my-top-3-projects {
+
+    padding: .8em;
+
+    display: grid;
+    row-gap: .6em;
+
+    background-color: rgb(206, 206, 206);
+}
+
+/* -------------------------------------------------------------- */
+/* Big Project Overview Card Container
+/* -------------------------------------------------------------- */
+
+.big-project-overview-card-container {
+
+    padding: 1em 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: .6em;
+
+    background-color: rgb(213, 213, 213);
+
+}
+
+/* -------------------------------------------------------------- */
+/* Big Project Overview Card 
+/* -------------------------------------------------------------- */
+
+.big-project-overview-card {
+
+    width: 20em;
+   
+    display: grid;
+
+    border-radius: .6em;
+
+    background-color: gray;
+}
+
+/* ------------------------ */
+/* IMG 
+/* ------------------------ */
+
+.img-present-big-project-overview-card {
+
+    width: 100%;
+
+    border-radius: .6em .6em 0 0;
+}
+
+/* ------------------------ */
+/* Bit Title 
+/* ------------------------ */
+
+.big-title-project-overview-card-container {
+
+    padding: .8em;
+
+    display: grid;
+    row-gap: 1em;
+   
+    background-color: wheat;
+}
+
+.category-title-big-project {
+
+    font-size: 14px;
+
+    height: 2em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    background-color: grey;
+
+}
+
+.img-normal-category-big-title-project-overview {
+
+    height: 1em;
+
+}
+
+
+.big-title-project-overview-card {
+
+    /* 18px */
+    /* font-size: 1.125em; */
+
+    font-weight: bold;
+
+}
+
+
+
+
+
+/* ------------------------ */
+/* Tech Skills  
+/* ------------------------ */
+
+.tech-skills-big-project-overview-container {
+
+    padding: .8em;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3em;
+}
+
+.tech-skills-big-project-overview-container > div {
+
+    /* influence sizing height by em  */
+    /* 14px */
+    font-size: 0.875em;
+
+    height: 1.8em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    
+    border-radius: .4em;
+
+    background-color: rgb(187, 187, 187);
+}
+
+/* ------------------------------------------ */
+/* Nav Big Project Overview Container 
+/* ------------------------------------------ */
+
+.nav-big-project-overview-container {
+
+    padding: .8em .6em;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .6em
+}
+
+.nav-link-big-project-overview {
+
+    /* delete default link style */
+    text-decoration: none;
+
+    height: 2em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    background-color: rgb(102, 102, 102);
+    color:black;
+
+    transition: all .4s;
+
+  
+}
+
+.nav-link-big-project-overview:hover {
+
+    background-color: red;
+}
+
+.nav-link-big-project-overview:visited {
+    color:black;
+}
+
+.img-nav-zip {
+
+    height: 1em;
+}
+
+.img-nav-github {
+
+    height: 1.13em;
+
+}
+
+
+/* ------------------------------------------ */
+/* Want To See More About  
+/* ------------------------------------------ */
+
+#want-to-see-more-about {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+
+    background-color: gold;
+}
+
+#want-to-see-more-about > img {
+
+    height: 11em;
+}
+
+#want-to-see-more-about > div:nth-of-type(1) {
+
+    display: grid;
+    row-gap: .6em;
+}
+
+#want-to-see-more-about > div:nth-of-type(1) > div:nth-of-type(1) {
+
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
+/* 🚧 [ Überlegen ob weg kann ] - Concept IDEE, Dinge zu verallgemeiner
+/* -------------------------------------------------------------- */
+
+.about-row-container {
+
+    padding: .8em;
+
+    display: grid;
+    row-gap: .6em;
+
+}
+
+.bgc-light-grey {
+    background-color: rgb(206, 206, 206);
+}
+
+.bgc-white {
+    background-color: white;
+}

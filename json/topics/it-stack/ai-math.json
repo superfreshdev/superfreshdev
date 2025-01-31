@@ -1,0 +1,29 @@
+{
+    "imgHeaderTopic": "",
+    "headerTopic": "AI-Data-Science",
+    "descHeaderTopic": "My IT Doc's",
+
+    "defSelectItemImgFirst": "",
+    "defSelectItemText": "Show All",
+    "defSelectItemImgLast": "",
+
+    "subTopicItems": [
+
+        {
+            "selectItemText": "🛑 Become Data Scientist"
+        },
+        
+        {
+            "selectItemText": "🛑 AI-Algorithmns"
+        },
+
+        {
+            "selectItemText": "🛑 AI-Tools"
+        }
+
+
+    ]
+
+
+
+}

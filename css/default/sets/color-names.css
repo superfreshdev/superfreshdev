@@ -1,0 +1,62 @@
+/* -------------------------------------------------------------- */
+/* > color-names.css
+/*  
+/* : defines my color names from colos.css 
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------ */
+/* Emojie Colors
+/* ------------------------------------------------ */
+
+.c-status-coming-soon {
+    color: var(--c-blue-arrow);
+}
+
+.c-status-in-progress {
+    color: var(--c-yellow-thunder);
+}
+
+.c-status-no-priority {
+    color: var(--c-green-alien);
+}
+
+
+* ------------------------------------------------- */
+/* ⚠️ Universeller Sets | Default: Background Colors 
+/* ------------------------------------------------- */
+
+.bgc-antrahazit-mix {
+
+    /* background-color: rgb(76, 76, 76);
+    color:white; */
+
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+    /* rgba(97, 97, 97, 0.6); */
+}
+
+.bgc-very-light-grey {
+
+}
+
+.bgc-light-grey {
+
+
+}
+
+.bgc-grey {
+
+
+}
+
+.bgc-darker-grey {
+
+
+}
+
+.bgc-very-dark-grey {
+
+
+}
