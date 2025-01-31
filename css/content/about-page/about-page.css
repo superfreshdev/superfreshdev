@@ -211,15 +211,49 @@
     padding: .8em;
 
     max-width: 18em;
-    
+
+    display: grid;
+    row-gap: .6em;
+    justify-items: center;
+    justify-content: center;
+
+    color:wheat;
+
+    font-weight: bold;
 
     border-radius: .4em;
 
-    text-align: center;
+    
 
-    background-color: grey;
+    /* background-color: rgba(128, 128, 128, 1); */
 
 }
+
+#to-be-fresh {
+
+    height: 2.3em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+    border-radius: .6em;
+
+    background-color: aquamarine;
+    color:black;
+}
+
+.delius-regular {
+
+    font-family: "Delius", serif;
+    font-weight: bold;
+
+    font-size: 1.25em;
+    /* font-weight: 400; */
+    /* font-style: normal; */
+
+  }
 
 
 #video-bgc-waves {
@@ -294,3 +328,5 @@
 
     display: none;
 }
+
+
