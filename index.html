@@ -9,10 +9,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ------------------------------------------------- -->
+    <!-- Google Font Link Area Testing -->
+    <!-- ------------------------------------------------- -->  
     <!-- get google link font but as local file is better  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Pochaevsk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Pochaevsk&display=swap" rel="stylesheet"> -->
+
+    <!-- ------------------------------------------------- -->
+    <!-- Google Font Binding as File -->
+    <!-- ------------------------------------------------- -->  
+
+    <!-- > we build @font-face in google-fonts.css  -->
 
     <!-- ------------------------------------------------------------------------ -->
     <!-- 🖼️ Favicon Bindings -->
@@ -34,6 +43,7 @@
         <link rel="stylesheet" href="css/default/html-body.css">
 
         <!-- sets  -->
+        <link rel="stylesheet" href="css/default/sets/google-fonts.css">
         <link rel="stylesheet" href="css/default/sets/colors.css">
         <link rel="stylesheet" href="css/default/sets/color-names.css">
         <link rel="stylesheet" href="css/default/sets/styles.css">
@@ -81,6 +91,7 @@
             <link rel="stylesheet" href="css/content/about-page/my-top-3-projects-about.css">
             <link rel="stylesheet" href="css/content/about-page/my-mindset-about.css">
             <link rel="stylesheet" href="css/content/about-page/contact-me-about.css">
+            <link rel="stylesheet" href="css/content/about-page/to-be-fresh-about.css">
 
 
             <!-- it stack page -->
@@ -993,31 +1004,62 @@
                                 </div> 
 
                                 <!-- --------------------------------------------------------- -- -->
-                                <!-- About Footer | Container -->
+                                <!-- To Be Fresh About | Container -->
                                 <!-- --------------------------------------------------------- -- -->
-                                <div id="about-footer">
+                                <div id="to-be-fresh-about-container">
 
-                                    <input style="display: none;" type="checkbox" id="chk-play-audio" name="name-chk-play-audio">
-                                    <label for="chk-play-audio" class="lbl-play-audio">
+                                    <input type="checkbox" id="chk-audio-to-be-fresh" name="name-chk-audio-to-be-fresh">
+                                    
+                                    <!-- ------------------------------------------------------------- -->
+                                    <!-- Audio - to be fresh - Container -->
+                                    <!-- ------------------------------------------------------------- -->  
+                                    <label for="chk-audio-to-be-fresh" id="audio-to-be-fresh-container">
 
-                                        <img src="media/img/icons/icons/mp3-play.png" class="" alt="img">
+                                        <!-- ---------------------------------------- -->
+                                        <!-- Timestamp -->
+                                        <!-- ---------------------------------------- -->  
+                                        <div id="audio-timestamp-to-be-fresh">
+
+                                            <span>08:42</span>
+                                            <span>Min.</span>
+
+                                        </div>
+
+                                        <!-- ---------------------------------------- -->
+                                        <!-- Play/Stop Container -->
+                                        <!-- ---------------------------------------- -->  
+                                        <div id="play-stop-audio-to-be-fresh-container">
+                                            <img src="media/img/icons/icons/mp3-play.png"
+                                                id="img-play-stop-audio-to-be-fresh" alt="img">
+                                        </div>
+
+                                        <!-- ---------------------------------------- -->
+                                        <!-- Audio Source -->
+                                        <!-- ---------------------------------------- -->  
+                                        <audio id="js-src-audio-to-be-fresh" loop>
+                                            <source type="audio/mp3" src="">
+                                        </audio>
 
                                     </label>
 
-                                    <audio id="audio-wave-about" loop>
-                                        <source type="audio/mp3" src="media/img/content/about/my-top-3-about/Xavier Rudd Spirit Bird audio HQ.mp3">
-                                    </audio>
+                                    <!-- ------------------------------------------------------------- -->
+                                    <!-- Img - to be fresh - Container -->
+                                    <!-- ------------------------------------------------------------- -->  
+                                    <img src="media/img/content/about/my-top-3-about/top-project-1.jpg" 
+                                    id="img-to-be-fresh" alt="img">
 
-
-                                    <video id="video-bgc-waves" muted loop>
+                                    <!-- ------------------------------------------------------------- -->
+                                    <!-- Video - to be fresh - Container -->
+                                    <!-- ------------------------------------------------------------- -->  
+                                    <video id="video-to-be-fresh-container" muted loop>
                                         <source 
                                         src="media/img/content/about/my-top-3-about/background-waves.mp4">
                                     </video>                                    
 
-                                    <img src="media/img/content/about/my-top-3-about/top-project-1.jpg" 
-                                    id="background-img-wave" alt="img">
-
-                                    <div id="my-qoute-about-footer">
+                                    <!-- ------------------------------------------------------------- -->
+                                    <!-- Qoute - to be fresh - Container -->
+                                    <!-- ------------------------------------------------------------- -->  
+                                    <div id="quote-to-be-fresh-container">
 
                                         <div id="to-be-fresh">
 
@@ -1350,7 +1392,7 @@
         <!-- Features  -->
         <!-- ------------------------------------------ -->  
         <script src="js/features/actually-date.js"></script> 
-        <script src="js/features/play-audio.js"></script> 
+        <script src="js/features/play-pause-audio.js"></script> 
 
         <!-- ------------------------------------------ -->
         <!-- Events -->

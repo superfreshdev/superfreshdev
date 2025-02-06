@@ -1,0 +1,14 @@
+/* -------------------------------------------------------------- */
+/* > google-fonts.css
+/*  
+/* : load local the google font files to use sexy fonts 
+/* -------------------------------------------------------------- */
+
+
+@font-face {
+    font-family: "Delius";
+    src: url('../../../srcs/fonts/google/google-font-delius/Delius/Delius-Regular.ttf') format('truetype'),
+         url('../../../srcs/fonts/google/google-font-delius/Pochaevsk/Pochaevsk-Regular.ttf') format('truetype'),
+         url('../../../srcs/fonts/google/google-font-delius/Inria_Sans/InriaSans-Regular.ttf') format('truetype'),
+
+}
