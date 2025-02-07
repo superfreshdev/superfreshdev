@@ -75,11 +75,21 @@
 
     font-size: 14px;
 
+    display: flex;
+    column-gap: .3em;
+    
+
     /* font-weight: bold; */
 
     color:rgba(255, 255, 255, .6 );
 
     transition: all .4s;
+}
+
+#audio-timestamp-to-be-fresh > span:nth-of-type(1) {
+
+    display: flex;
+    column-gap: .1em;
 }
 
 /* -------------------------------------------------- */
