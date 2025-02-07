@@ -24,7 +24,7 @@ console.log('🟡 handle-content-topics.js')
 /* ------------------------------------------------------------ */ 
 async function canGetJsonFile( strPath ) {
 
-    console.log('➡️❓canGetJsonFile|strPath:' + strPath )
+    // console.log('➡️❓canGetJsonFile|strPath:' + strPath )
 
     // remember: return comes in the try catch block as promise 
     // so if u get no error, u will get no error message in console
@@ -56,7 +56,7 @@ async function canGetJsonFile( strPath ) {
 
 async function createMainHeader( strPath ) {
 
-    console.log('➡️❓ getDataJsonFile|strPath:' + strPath )
+    // console.log('➡️❓ getDataJsonFile|strPath:' + strPath )
 
     try {
 
@@ -69,26 +69,26 @@ async function createMainHeader( strPath ) {
             if( response.status === 404 ) throw new Error( "404, Not found" );
             if( response.status === 500 ) throw new Error( "500, Internal Server Error" );
         }
-        console.log('➡️🟩1/2| - JSON File was found'  )
+        // console.log('➡️🟩1/2| - JSON File was found'  )
        
 
         /* -------------------------------------------- */
         /* 2|2 - Can Read Json File ? 
         /* -------------------------------------------- */
         const jsonData = await response.json();
-        console.log('➡️🟩2/2| - JSON File was correct reading'  )
+        // console.log('➡️🟩2/2| - JSON File was correct reading'  )
 
         /* -------------------------------------------- */
         /* Create Main Header 
         /* -------------------------------------------- */
-        console.log('### json file ###')
+        // console.log('### json file ###')
 
-        console.log("01: " + jsonData.headerTopic )
-        console.log("02: " + jsonData.descHeaderTopic )
+        // console.log("01: " + jsonData.headerTopic )
+        // console.log("02: " + jsonData.descHeaderTopic )
 
         for( let i=0; i< jsonData.subTopicItems.length; i++ ) {
 
-            console.log("03."+(i+1) + ": " + jsonData.subTopicItems[i].selectItemText )
+            // console.log("03."+(i+1) + ": " + jsonData.subTopicItems[i].selectItemText )
 
         }
         
@@ -120,7 +120,7 @@ async function createMainHeader( strPath ) {
 /* Execute 
 /* ------------------------------------------------------------ */
 
-console.log("### Execute-Part ###")
+// console.log("### Execute-Part ###")
 
 // console.log("1. Can get JSON File ? " )
 // canGetJsonFile( '../../json/topics/it-stack/web-dev-data.json');
