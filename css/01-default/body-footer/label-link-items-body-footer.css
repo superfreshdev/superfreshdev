@@ -1,0 +1,121 @@
+/* -------------------------------------------------------------- */
+/* > label-link-items-body-footer.css
+/*  
+/* : layout for label link items from body footer
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Label Link Item Body Footer
+/* -------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------- */
+/* Link Item Container Body Footer
+/* ----------------------------------------------------- */
+
+.link-item-container-body-footer {
+
+    padding: .3em .4em .3em 0;
+    /* height: 3.5em; */
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: 1em;
+
+    border-radius: .4em;
+    /* border: 1px solid black; */
+    
+    transition: all .4s;
+
+}
+
+.link-item-container-body-footer:hover {
+
+    background-color: grey;
+}
+
+
+/* ----------------------------------------------------- */
+/* Content Block | Link Item | Body Footer
+/* ----------------------------------------------------- */
+
+.content-block-link-item-body-footer {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+}
+
+.content-block-link-item-body-footer > img:nth-of-type(1) {
+
+    height: 2.3em;
+    border-radius: .4em;
+
+}
+
+.title-container-link-item-body-footer {
+
+    line-height: 1.1em;
+
+}
+
+
+.title-container-link-item-body-footer > div:nth-of-type(1) {
+
+    font-weight: bold;
+
+}
+
+.title-container-link-item-body-footer  > div:nth-of-type(2) {
+
+    font-size: .8rem;
+    color:rgb(48, 48, 48);
+
+}
+
+/* ----------------------------------------------------- */
+/* Media Block | Link Item | Body Footer
+/* ----------------------------------------------------- */
+
+.media-block-link-item-body-footer {
+
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
+
+}
+
+.link-media-link-item-body-footer {
+
+    height: 3em;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.link-media-link-item-body-footer > img {
+
+    height: 1.8em;
+    width: 1.8em;
+
+    border-radius: .4em;
+
+    /* grey */
+    filter:grayscale(100%);
+    opacity: .6;
+
+    transition: all .4s;
+}
+
+.link-media-link-item-body-footer > img:hover {
+
+    filter:grayscale(0%);
+    opacity: 1;
+}

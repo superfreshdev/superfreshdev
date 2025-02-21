@@ -166,10 +166,9 @@
     display: grid;
     justify-items: center;
 
+    /* 🚧🚧🚧🚧🚧🚧🚧  */
     grid: 0fr / 1fr;
     /* grid-template-rows: 0fr 0fr; */
-
-    /* display: none; */
     
     transition: grid-template-rows 0.3s ease-out;
 
@@ -258,41 +257,12 @@
     
 }
 
-/* ------------------------------------------------------------------- */
-/* Smooth Open Close | Link Containers | Body Footer
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-link-containers-body-footer {
-
-    /* padding: 1.3em .8em; */
-
-    display: grid;
-   
-    /* 🚧 Open Construction - Actually dont know 
-    why the smooth open concept dont work here 
-    i like the smooth effect by switching 2 viewing 
-    containers  */
-    /* grid-template-rows: 1fr 0fr; */
-    
-    transition: grid-template-rows .3s ease-out;
-
-} 
 
 /* ----------------------------------------------------------------------------------------- */
 /* ### Styling 
 /* Radio Handling | Tab Links ( links & community links )
 /* ----------------------------------------------------------------------------------------- */
 
-/*
-    🚧 Baustelle: 
-    Alt: 
-    <input checked type="radio" id="radio-footer-body-links" name="name-radio-footer-body">
-    <input type="radio" id="radio-footer-body-community-links" name="name-radio-footer-body">  
-    Neu: Besser, 
-    <!-- 🚧 radio-tab-links-footer-body, name-radio-tab-links-footer-body  --> 
-    <!-- 🚧 radio-tab-community-links-footer-body, name-radio-tab-community-links-footer-body  -->  
-
-*/
 
 input[name='name-radio-tab-links-body-footer'] {
 
