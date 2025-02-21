@@ -6,11 +6,11 @@
 
 
 /* ------------------------------------------------- */
-/* Custom Radio | Topics & Sub Topic
+/* Custom Radio | Normal & Small
 /* ------------------------------------------------- */
 
-.custom-radio-topic,
-.custom-radio-sub-topic {
+.custom-radio,
+.custom-radio-small {
 
     display: flex;
     align-items: center;
@@ -23,42 +23,45 @@
 
 }
 
+/* ------------------------------------------------- */
+/* Custom Radio | Normal 
+/* ------------------------------------------------- */
+
+.custom-radio {
+
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.custom-radio > img:nth-of-type(1) {
+
+    padding-bottom: .2em;
+    display: none;
+}
+
 .img-cr-x {
     height: 1.6em;
 }
 
+
 /* ------------------------------------------------- */
-/* Custom Radio | Topic 
+/* Custom Radio | Small
 /* ------------------------------------------------- */
 
-.custom-radio-topic {
+.custom-radio-small {
 
-    height: 1.2em;
-    width: 1.2em;
+    height: 1em;
+    width: 1em;
+
 }
-
-.custom-radio-topic > img:nth-of-type(1) {
+.custom-radio-small > img:nth-of-type(1) {
 
     padding-bottom: .2em;
     display: none;
 }
 
-
-/* ------------------------------------------------- */
-/* Custom Radio | Sub Topic 
-/* ------------------------------------------------- */
-
-.custom-radio-sub-topic {
-
-    height: 1.2em;
-    width: 1.2em;
-
-}
-
-.custom-radio-sub-topic > img:nth-of-type(1) {
-
-    padding-bottom: .2em;
-    display: none;
+.img-cr-x-small {
+    height: 1.4em;
 }
 
 

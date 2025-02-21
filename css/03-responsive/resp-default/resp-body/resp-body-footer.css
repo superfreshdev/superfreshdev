@@ -15,4 +15,27 @@
         display: flex;
     }
 
+    /* unshown paper clip from mobile version */
+    #img-paper-clip-body-footer {
+        display: none;
+    }
+
 }
+
+/* -------------------------------------------------------------- */
+/* >= 1200px width
+/* -------------------------------------------------------------- */
+@media (min-width: 1200px ) {
+
+    /* delelte mobile padding left,right from header body footer */
+    #header-body-footer { 
+        padding: 0;
+    }
+
+    /* delete mobile padding left,right from tab panel body footer */
+    #tab-panel-body-footer {
+        padding: 0;
+    }
+
+}
+

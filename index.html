@@ -73,7 +73,7 @@
 
             <!-- Default Body Footer -->
             <link rel="stylesheet" href="css/01-default/body-footer/body-footer.css">
-            <link rel="stylesheet" href="css/01-default/body-footer/body-footer-full-view-container.css">
+            <link rel="stylesheet" href="css/01-default/body-footer/main-body-footer.css">
 
             <!-- Sets -->
             <link rel="stylesheet" href="css/01-default/sets/google-fonts.css">
@@ -358,44 +358,46 @@
         <!-- --------------------------------------------------------- -->
         <!-- Radios | Links & Communites                   -->
         <!-- --------------------------------------------------------- -->
-        <!-- 🚧 radio-tab-links-footer-body, name-radio-tab-links-footer-body  --> 
-        <!-- 🚧 radio-tab-community-links-footer-body, name-radio-tab-community-links-footer-body  -->  
-        <input checked type="radio" id="radio-footer-body-links" name="name-radio-footer-body">
-        <input type="radio" id="radio-footer-body-community-links" name="name-radio-footer-body">  
+        <input checked type="radio" id="radio-tab-links-body-footer" name="name-radio-tab-links-body-footer">
+        <input type="radio" id="radio-tab-community-links-body-footer" name="name-radio-tab-links-body-footer">  
 
         <!-- --------------------------------------------------------------------- -->
-        <!-- [Handle] - Main Content Area | Header | Body Footer         -->
+        <!-- [Handle] - Max Content Area                                           -->
         <!-- --------------------------------------------------------------------- -->
-        <div class="handle-main-content-area">
+        <div class="handle-max-content-area">
 
             <!-- ----------------------------------------------------------------------------- -->
             <!-- Width: 100% ( Stretch under Layout to Max Parent Layout ) -->
             <!-- ----------------------------------------------------------------------------- -->
-            <div class="w-100p">
+            <div class="w-100p grid ji-c">
 
-                <!-- --------------------------------------------- -->
-                <!-- Footer Body Layout Container -->
-                <!-- --------------------------------------------- -->  
-                <div id="body-footer-container" >
-                    
-                    <!-- -------------------------------------------------------------------------- -->
-                    <!-- ⬇️⬆️ | Smooth Open Close | Useful Links | Body Footer                     -->
-                    <!-- -------------------------------------------------------------------------- -->
-                    <div id="smooth-open-close-useful-links-body-footer" >
+                
+                <!-- --------------------------------------------------------------------------------------------------- -->
+                <!-- [1/3] Header Body Footer | Handle Main Content Area                                               -->
+                <!-- --------------------------------------------------------------------------------------------------- -->
+                <div class="handle-main-content-area">
 
-                        
+
+                    <!-- ----------------------------------------------------------------------------- -->
+                    <!-- Width: 100% ( Stretch under Layout to Max Parent Layout ) -->
+                    <!-- ----------------------------------------------------------------------------- -->
+                    <div class="w-100p">
+
                         <!-- -------------------------------------------- -->
-                        <!-- [1/2] - Short View Container  -->
-                        <!-- -------------------------------------------- -->        
-                        <div id="body-footer-short-view-container" >
+                        <!-- Header Body Footer  -->
+                        <!-- -------------------------------------------- -->                             
+                        <div id="header-body-footer" >
 
                             <!-- -------------------------------------------- -->
-                            <!-- Open My Useful Links -->
+                            <!-- Label | Useful Links                         -->
                             <!-- -------------------------------------------- -->                      
                             <label for="chk-useful-links-body-footer" 
                                 id="lbl-useful-links-body-footer" name="name-chk-useful-links-body-footer">
 
                                 <img src="media/img/icons/clipart/show-left.png" alt="img">
+
+                                <img src="media/img/icons/icons/bueroklammer-light-grey.png"
+                                id="img-paper-clip-body-footer" alt="img">
 
                                 <div id="txt-lbl-useful-links-body-footer">Useful Links</div>
 
@@ -403,84 +405,142 @@
 
                             </label>   
 
-
                             <!-- -------------------------------------------- -->
-                            <!-- SFD Copyright | Body Footer -->
+                            <!-- SFD Copyright                                -->
                             <!-- -------------------------------------------- -->
                             <div id="sfd-copyright-body-footer">
                                 <div>@SuperfreshDEV |</div>                            
                                 <div id="js-txt-year-copyright">year</div>
                             </div>
 
-                        </div>
-                
-                        <!-- ---------------------------------------------- -->
-                        <!-- Overflow Hidden - Container                    -->
-                        <!-- Reminder: Condition for Open/Close Smooth      --> 
-                        <!-- ---------------------------------------------- -->  
-                        <div class="overflow-hidden" style="display: none;" >
-
-                           
-                            <!-- -------------------------------------------- -->
-                            <!-- Category Tab Panel                           -->
-                            <!-- -------------------------------------------- -->
-                            <div id="category-tabs-panel-body-footer">
-
-                                <!-- ------------------------------- -->
-                                <!-- Tab: Links -->
-                                <!-- ------------------------------- -->
-                                <label for="radio-footer-body-links" class="lbl-tab-category-body-footer" >
-
-                                    <!-- ------------------------------- -->
-                                    <!-- Custom Radio -->
-                                    <!-- ------------------------------- -->
-                                    <div class="custom-radio-sub-topic">
-                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" 
-                                        class="img-cr-x">
-                                    </div>   
-
-                                    <!-- ------------------------------- -->
-                                    <!-- Title -->
-                                    <!-- ------------------------------- -->
-                                    <div class="lbl-title-category-tab-body-footer">
-                                        <img src="media/img/icons/icons/cursor-black.png" alt="img"
-                                            class="img-lbl-title-tab-category-body-footer">
-                                        <div>Links</div>
-                                    </div>
-
-                                </label>
-
-                                <!-- ------------------------------- -->
-                                <!-- Tab: Community Links -->
-                                <!-- ------------------------------- -->
-                                <label for="radio-footer-body-community-links" class="lbl-tab-category-body-footer">
-
-                                    <!-- ------------------------------- -->
-                                    <!-- Custom Radio -->
-                                    <!-- ------------------------------- -->
-                                    <div class="custom-radio-sub-topic">
-                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x">
-                                    </div>   
-                                    
-                                    <!-- ------------------------------- -->
-                                    <!-- Title -->
-                                    <!-- ------------------------------- -->
-                                    <div class="lbl-title-category-tab-body-footer">
-                                        <img src="media/img/icons/icons/team-black.png" alt="img" 
-                                            class="img-lbl-title-tab-category-body-footer">
-                                        <div>Community</div>
-                                    </div>
-                                
-                                </label>
-
-                            </div>
-                                
-
-                        </div>
-
+                        </div>          
 
                     </div>
-                    
+
+
+                </div>
+
+
+                <!-- -------------------------------------------------------------------------- -->
+                <!-- ⬇️⬆️ | Smooth Open Close | Useful Links | Body Footer                     -->
+                <!-- -------------------------------------------------------------------------- -->
+                <div id="smooth-open-close-useful-links-body-footer">
+
+
+                    <div class="w-100p grid ji-c overflow-hidden">
+
+                        <!-- ----------------------------------------------------------------------------- -->
+                        <!-- Hanlde Main Content Area | Tab Panel | Body Footer -->
+                        <!-- ----------------------------------------------------------------------------- -->
+                        <div class="handle-main-content-area">
+
+
+                            <!-- ----------------------------------------------------------------------------- -->
+                            <!-- Width: 100% ( Stretch under Layout to Max Parent Layout ) -->
+                            <!-- ----------------------------------------------------------------------------- -->
+                            <div class="w-100p">
+
+                                <!-- --------------------------------------------------------- -->
+                                <!-- Tab Panel | Body Footer -->
+                                <!-- ( default unshown )--> 
+                                <!-- --------------------------------------------------------- -->                   
+
+                                <div id="tab-panel-body-footer">
+                                    
+                                    <!-- ------------------------------- -->
+                                    <!-- Tab: Links -->
+                                    <!-- ------------------------------- -->
+                                    <label for="radio-tab-links-body-footer" class="lbl-tab-link-body-footer" >
+
+                                        <!-- ------------------------------- -->
+                                        <!-- Custom Radio | Small -->
+                                        <!-- ------------------------------- -->
+                                        <div class="custom-radio-small">
+                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" 
+                                            class="img-cr-x-small">
+                                        </div>   
+
+                                        <!-- ------------------------------- -->
+                                        <!-- Title -->
+                                        <!-- ------------------------------- -->
+                                        <div>
+                                            <img src="media/img/icons/icons/cursor-black.png" alt="img">  
+                                            <div>Links</div>
+                                        </div>
+
+                                    </label>
+
+                                    <!-- ------------------------------- -->
+                                    <!-- Tab: Community Links -->
+                                    <!-- ------------------------------- -->
+                                    <label for="radio-tab-community-links-body-footer" class="lbl-tab-link-body-footer" >
+
+                                        <!-- ------------------------------- -->
+                                        <!-- [UI] - Custom Radio | Small -->
+                                        <!-- ------------------------------- -->
+                                        <div class="custom-radio-small">
+                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" 
+                                            class="img-cr-x-small">
+                                        </div>   
+
+                                        <!-- ------------------------------- -->
+                                        <!-- Title -->
+                                        <!-- ------------------------------- -->
+                                        <div>
+                                            <img src="media/img/icons/icons/team-black.png" alt="img">  
+                                            <div>Community</div>
+                                        </div>
+
+                                    </label> 
+
+
+
+                                </div>   
+
+                            </div>
+
+                        </div>
+
+                        <!-- --------------------------------------------------------- -->
+                        <!-- Main | Body Footer -->
+                        <!-- ( default unshown )--> 
+                        <!-- --------------------------------------------------------- -->
+                        <div class="w-100p">
+
+                            <div id="main-body-footer" >
+
+                                <!-- ----------------------------------------------------- -->
+                                <!-- Link Container -->
+                                <!-- ----------------------------------------------------- -->  
+                                <div> 
+                                    
+                                    <div>Main Body Footer | Link Container 1</div>
+                                    <div>Main Body Footer | Link Container 1</div>
+                                    <div>Main Body Footer | Link Container 1</div>
+
+                                </div>
+
+                                <!-- ----------------------------------------------------- -->
+                                <!-- Link Community Container -->
+                                <!-- ----------------------------------------------------- -->  
+                                <div> 
+                                    
+                                    <div>Main Body Footer | Link Community Container 2</div>
+                                    <div>Main Body Footer | Link Community Container 2</div>
+                                    <div>Main Body Footer | Link Community Container 2</div>
+                                    <div>Main Body Footer | Link Community Container 2</div>
+                                    <div>Main Body Footer | Link Community Container 2</div>
+                                    <div>Main Body Footer | Link Community Container 2</div>
+                                    <div>Main Body Footer | Link Community Container 2</div>
+                                    <div>Main Body Footer | Link Community Container 2</div>
+
+                                </div>
+
+                            </div>
+
+                        </div> 
+
+                    <div>
 
                 </div>
 
@@ -489,1451 +549,6 @@
 
         </div>
 
-        <!-- --------------------------------------------------------------------- -->
-        <!-- [Handle] - Max Content Area | Main | Body Footer                        -->
-        <!-- --------------------------------------------------------------------- -->
-        <div class="handle-max-content-area" style="display: none;">
-
-            
-            <!-- ----------------------------------------------------------------------------- -->
-            <!-- Width: 100% ( Stretch under Layout to Max Parent Layout ) -->
-            <!-- ----------------------------------------------------------------------------- -->
-            <div class="w-100p" >
-
-        
-                <!-- -------------------------------------------------------------------------- -->
-                <!-- ⬇️⬆️ | Smooth Open Close | Link Containers | Body Footer                  -->
-                <!-- -------------------------------------------------------------------------- -->
-                <div id="smooth-open-close-link-containers-body-footer">
-
-                    
-                    <!-- -------------------------------------------------------------- -->
-                    <!-- [1/2] - Links Container (default shown)                        -->
-                    <!-- -------------------------------------------------------------- -->
-                    <div class="links-container-body-footer">
-
-                        <!-- --------------------------------------------- -->
-                        <!-- Links -->
-                        <!-- --------------------------------------------- -->
-                        <div class="mixery-category-link-container-body-footer">
-
-                            <header>
-                                <img src="media/img/icons/icons/tornado.png" alt="img">
-                                <div> Mixery </div>
-                            </header>
-
-                            <main>
-
-                                         
-                                <!-- ❇️ Rheinwerk Openbook  -->
-                                <div class="link-item-container-body-footer">
-
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Content Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="content-block-link-item-body-footer">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Img User -->
-                                        <!-- --------------------------------------- -->  
-                                        <img src="media/img/content/default/body-footer/links/rheinwerk.jpg" class="img-link-item-body-footer" alt="img">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Title User -->
-                                        <!-- --------------------------------------- -->  
-                                        <div class="title-link-item-body-footer">
-
-                                            <div>Rheinwerk Openbook's</div>
-                                            <div>Java | Web Dev | Backend | ... </div>
-
-                                        </div>
-
-                                    </div> 
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Media Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="media-block-link-item-body-footer">
-
-
-                                        <a href="https://www.rheinwerk-verlag.de/openbook/?srsltid=AfmBOorb1DowSuqI37emZDclCJACoRLC1NmXv0d-8iyqyf2w_BNwTWm7" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
-                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
-                                        </a>
-
-
-                                    </div> 
-
-
-                                </div>
-
-                                <!-- ❇️ Pic Color finder  -->
-                                <div class="link-item-container-body-footer">
-
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Content Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="content-block-link-item-body-footer">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Img User -->
-                                        <!-- --------------------------------------- -->  
-                                        <img src="media/img/content/default/body-footer/links/pic-color-finder.jpg" class="img-link-item-body-footer" alt="img">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Title User -->
-                                        <!-- --------------------------------------- -->  
-                                        <div class="title-link-item-body-footer">
-
-                                            <div>Pic Color Finder</div>
-                                            <div>Img Hexcolor Finder </div>
-
-                                        </div>
-
-                                    </div> 
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Media Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="media-block-link-item-body-footer">
-
-
-                                        <a href="https://imagecolorpicker.com/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
-                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
-                                        </a>
-
-
-                                    </div> 
-
-
-                                </div>
-
-                                <!-- ❇️ 95 CSS Box Shadow Effects -->
-                                <div class="link-item-container-body-footer">
-
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Content Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="content-block-link-item-body-footer">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Img User -->
-                                        <!-- --------------------------------------- -->  
-                                        <img src="media/img/content/default/body-footer/links/css95.jpg" class="img-link-item-body-footer" alt="img">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Title User -->
-                                        <!-- --------------------------------------- -->  
-                                        <div class="title-link-item-body-footer">
-
-                                            <div>95 CSS Box Shadow Effects</div>
-                                            <div>CSS Shadows </div>
-
-                                        </div>
-
-                                    </div> 
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Media Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="media-block-link-item-body-footer">
-
-
-                                        <a href="https://getcssscan.com/css-box-shadow-examples" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
-                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
-                                        </a>
-
-
-                                    </div> 
-
-
-                                </div>
-
-                                <!-- ❇️ Flaticon -->
-                                <div class="link-item-container-body-footer">
-
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Content Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="content-block-link-item-body-footer">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Img User -->
-                                        <!-- --------------------------------------- -->  
-                                        <img src="media/img/content/default/body-footer/links/flaticon.jpg" class="img-link-item-body-footer" alt="img">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Title User -->
-                                        <!-- --------------------------------------- -->  
-                                        <div class="title-link-item-body-footer">
-
-                                            <div>Flaticon</div>
-                                            <div>icon imgs </div>
-
-                                        </div>
-
-                                    </div> 
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Media Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="media-block-link-item-body-footer">
-
-
-                                        <a href="https://www.flaticon.com/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
-                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
-                                        </a>
-
-
-                                    </div> 
-
-
-                                </div>
-
-                                <!-- ❇️ css gradient -->
-                                <div class="link-item-container-body-footer">
-
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Content Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="content-block-link-item-body-footer">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Img User -->
-                                        <!-- --------------------------------------- -->  
-                                        <img src="media/img/content/default/body-footer/links/cssgradient.jpg" class="img-link-item-body-footer" alt="img">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Title User -->
-                                        <!-- --------------------------------------- -->  
-                                        <div class="title-link-item-body-footer">
-
-                                            <div>cssgradient.io</div>
-                                            <div>css background color stylings </div>
-
-                                        </div>
-
-                                    </div> 
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Media Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="media-block-link-item-body-footer">
-
-
-                                        <a href="https://cssgradient.io/gradient-backgrounds/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
-                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
-                                        </a>
-
-
-                                    </div> 
-
-
-                                </div>
-
-                                <!-- ❇️ leet code -->
-                                <div class="link-item-container-body-footer">
-
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Content Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="content-block-link-item-body-footer">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Img User -->
-                                        <!-- --------------------------------------- -->  
-                                        <img src="media/img/content/default/body-footer/links/leetcode.jpg" class="img-link-item-body-footer" alt="img">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Title User -->
-                                        <!-- --------------------------------------- -->  
-                                        <div class="title-link-item-body-footer">
-
-                                            <div>leet code</div>
-                                            <div>algorithmn task & solutions community </div>
-
-                                        </div>
-
-                                    </div> 
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Media Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="media-block-link-item-body-footer">
-
-
-                                        <a href="https://leetcode.com/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
-                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
-                                        </a>
-
-
-                                    </div> 
-
-
-                                </div> 
-
-                                <!-- ❇️ code wars -->
-                                <div class="link-item-container-body-footer">
-
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Content Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="content-block-link-item-body-footer">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Img User -->
-                                        <!-- --------------------------------------- -->  
-                                        <img src="media/img/content/default/body-footer/links/codewars.jpg" class="img-link-item-body-footer" alt="img">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Title User -->
-                                        <!-- --------------------------------------- -->  
-                                        <div class="title-link-item-body-footer">
-
-                                            <div>code wars</div>
-                                            <div>algorithmn task & solutions community </div>
-
-                                        </div>
-
-                                    </div> 
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Media Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="media-block-link-item-body-footer">
-
-
-                                        <a href="https://www.codewars.com/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
-                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
-                                        </a>
-
-
-                                    </div> 
-
-
-                                </div>  
-
-                                <!-- ❇️ codepen -->
-                                <div class="link-item-container-body-footer">
-
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Content Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="content-block-link-item-body-footer">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Img User -->
-                                        <!-- --------------------------------------- -->  
-                                        <img src="media/img/content/default/body-footer/links/codepen.jpg" class="img-link-item-body-footer" alt="img">
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Title User -->
-                                        <!-- --------------------------------------- -->  
-                                        <div class="title-link-item-body-footer">
-
-                                            <div>Code Pen</div>
-                                            <div>HTML, CSS/SASS , Java Script - Community </div>
-
-                                        </div>
-
-                                    </div> 
-
-                                    <!-- --------------------------------------- -->
-                                    <!-- Media Block -->
-                                    <!-- --------------------------------------- -->
-                                    <div class="media-block-link-item-body-footer">
-
-
-                                        <a href="https://codepen.io/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
-                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
-                                        </a>
-
-
-                                    </div> 
-
-
-                                </div> 
-
-                                <!-- ❇️ Linkedin Learning -->
-
-                                <!-- ❇️ Angular Official -->
-
-                                <!-- ❇️ Youtube -->
-
-                                <!-- ❇️ ??? -->
-                                
-
-                            </main>
-
-                            
-
-
-                        </div>
-
-
-                    </div>  
-
-                    <!-- ---------------------------------------------- -->
-                    <!-- Overflow Hidden - Container                    -->
-                    <!-- Reminder: Condition for Open/Close Smooth      --> 
-                    <!-- ---------------------------------------------- -->  
-                    <div class="overflow-hidden">
-
-                        <!-- -------------------------------------------------------------- -->
-                        <!-- [2/2] - Community Links Container (default unshown)            -->
-                        <!-- -------------------------------------------------------------- -->
-                        <div class="links-container-body-footer">
-
-                            <!-- --------------------------------------------- -->
-                            <!-- Categegory: Web-Dev -->
-                            <!-- --------------------------------------------- -->
-                            <div class="category-link-container-body-footer">
-
-                                    <header>
-                                        
-                                        <img src="media/img/icons/icons/nav-main-body/web-code-black.png" alt="img">
-                                        <div> Web-Dev </div>
-
-                                    </header>
-
-                                    <main>
-                                        
-                                        
-
-                                        <!-- ❇️ Anika Kubow  - User  -->
-                                        <div class="link-item-container-body-footer">
-
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Content Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="content-block-link-item-body-footer">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Img User -->
-                                                <!-- --------------------------------------- -->  
-                                                <img src="media/img/content/default/body-footer/user-community/ania-kubow.jpg" class="img-link-item-body-footer" alt="img">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Title User -->
-                                                <!-- --------------------------------------- -->  
-                                                <div class="title-link-item-body-footer">
-
-                                                    <div>Ania Kubow</div>
-                                                    <div>Java Script | CSS | React | IT-Lifestyle</div>
-
-                                                </div>
-
-                                            </div> 
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Media Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="media-block-link-item-body-footer">
-
-
-                                                <a href="https://www.youtube.com/@aniakubow" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                                </a>
-
-                                                <a href="https://www.instagram.com/aniakubow/" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
-                                                    <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
-                                                </a>
-
-
-                                            </div> 
-
-
-                                        </div>
-
-                                        <!-- ❇️ Angular Love - User  -->
-                                        <div class="link-item-container-body-footer">
-
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Content Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="content-block-link-item-body-footer">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Img User -->
-                                                <!-- --------------------------------------- -->  
-                                                <img src="media/img/content/default/body-footer/user-community/angular-love.jpg" class="img-link-item-body-footer" alt="img">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Title User -->
-                                                <!-- --------------------------------------- -->  
-                                                <div class="title-link-item-body-footer">
-
-                                                    <div>Angular Love</div>
-                                                    <div>Angular | RxJS | NgRX | ... </div>
-
-                                                </div>
-
-                                            </div> 
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Media Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="media-block-link-item-body-footer">
-
-
-                                                <a href="https://www.youtube.com/@angularlove" 
-                                                class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                    <img src="media/img/icons/icons/social-media/youtube-square.png"
-                                                        alt="img">
-                                                </a>
-
-
-                                            </div> 
-
-
-                                        </div>
-
-                                        <!-- ❇️ Angular University - User  -->
-                                        <div class="link-item-container-body-footer">
-
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Content Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="content-block-link-item-body-footer">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Img User -->
-                                                <!-- --------------------------------------- -->  
-                                                <img src="media/img/content/default/body-footer/user-community/angular-university.jpg" class="img-link-item-body-footer" alt="img">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Title User -->
-                                                <!-- --------------------------------------- -->  
-                                                <div class="title-link-item-body-footer">
-
-                                                    <div>Angular University</div>
-                                                    <div>Free Courses | Pay Coursed | ...  </div>
-
-                                                </div>
-
-                                            </div> 
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Media Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="media-block-link-item-body-footer">
-
-
-                                                <a href="https://angular-university.io/" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                                </a>
-
-                                            </div> 
-
-
-                                        </div>
-                                    
-                                        <!-- ❇️ Angular - Manfred Steyer  -->
-                                        <div class="link-item-container-body-footer">
-
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Content Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="content-block-link-item-body-footer">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Img User -->
-                                                <!-- --------------------------------------- -->  
-                                                <img src="media/img/content/default/body-footer/user-community/angular-architects-manfred-steyer.jpg" class="img-link-item-body-footer" alt="img">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Title User -->
-                                                <!-- --------------------------------------- -->  
-                                                <div class="title-link-item-body-footer">
-
-                                                    <div>Angular Architects <br> Manfred Steyer</div>
-                                                    <div>Bootcamps | Angular | RxJS | NgRX | Architecture | ... </div>
-
-                                                </div>
-
-                                            </div> 
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Media Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="media-block-link-item-body-footer">
-
-
-                                                <a href="https://www.angulararchitects.io/" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                                </a>
-
-                                            </div> 
-
-
-                                        </div>
-
-                                        <!-- ❇️ Code with Ashan  - User -->
-                                        <div class="link-item-container-body-footer">
-
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Content Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="content-block-link-item-body-footer">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Img User -->
-                                                <!-- --------------------------------------- -->  
-                                                <img src="media/img/content/default/body-footer/user-community/code-with-ashan.jpg" class="img-link-item-body-footer" alt="img">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Title User -->
-                                                <!-- --------------------------------------- -->  
-                                                <div class="title-link-item-body-footer">
-
-                                                    <div>code with ashan  </div>
-                                                    <div>Google Expert | Angular | IT-Lifestyle | ...  </div>
-
-                                                </div>
-
-                                            </div> 
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Media Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="media-block-link-item-body-footer">
-
-                                                <a href="https://www.youtube.com/@CodeWithAhsan" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                                </a>
-
-
-                                            </div> 
-
-
-                                        </div>
-
-                                        <!-- ❇️ Web-Dev-Simplyfied - User  -->
-                                        <div class="link-item-container-body-footer">
-
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Content Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="content-block-link-item-body-footer">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Img User -->
-                                                <!-- --------------------------------------- -->  
-                                                <img src="media/img/content/default/body-footer/user-community/web-dev-simplified.jpg" class="img-link-item-body-footer" alt="img">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Title User -->
-                                                <!-- --------------------------------------- -->  
-                                                <div class="title-link-item-body-footer">
-
-                                                    <div>Web Dev Simplyfied</div>
-                                                    <div>TS | JS | React | ... </div>
-
-                                                </div>
-
-                                            </div> 
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Media Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="media-block-link-item-body-footer">
-
-
-                                                <a href="https://www.youtube.com/@WebDevSimplified" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                                </a>
-
-                                            </div> 
-
-
-                                        </div>
-
-                                        <!-- ❇️ Color Code  - User -->
-                                        <div class="link-item-container-body-footer">
-
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Content Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="content-block-link-item-body-footer">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Img User -->
-                                                <!-- --------------------------------------- -->  
-                                                <img src="media/img/content/default/body-footer/user-community/color-code.jpg" class="img-link-item-body-footer" alt="img">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Title User -->
-                                                <!-- --------------------------------------- -->  
-                                                <div class="title-link-item-body-footer">
-
-                                                    <div>Color Code  </div>
-                                                    <div>My Genius Java Script Deveoper | CSS | ...  </div>
-
-                                                </div>
-
-                                            </div> 
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Media Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="media-block-link-item-body-footer">
-
-                                                <a href="https://www.youtube.com/@ColorCode-io" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                                </a>
-
-
-                                            </div> 
-
-
-                                        </div>
-
-                                        <!-- ❇️ Kevin Powell - User -->
-                                        <div class="link-item-container-body-footer">
-
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Content Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="content-block-link-item-body-footer">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Img User -->
-                                                <!-- --------------------------------------- -->  
-                                                <img src="media/img/content/default/body-footer/user-community/kevin-powell.jpg" class="img-link-item-body-footer" alt="img">
-
-                                                <!-- --------------------------------------- -->
-                                                <!-- Title User -->
-                                                <!-- --------------------------------------- -->  
-                                                <div class="title-link-item-body-footer">
-
-                                                    <div>Kevin Powell</div>
-                                                    <div>CSS | UX-Design | JS | ... </div>
-
-                                                </div>
-
-                                            </div> 
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Media Block -->
-                                            <!-- --------------------------------------- -->
-                                            <div class="media-block-link-item-body-footer">
-
-                                                <a href="https://www.youtube.com/@KevinPowell" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                                </a>
-
-                                            </div> 
-
-
-                                        </div>
-
-                                        
-                                                                                     
-
-
-                                        
-
-
-                                    </main>
-
-                            </div> 
-                                
-                            <!-- --------------------------------------------- -->
-                            <!-- Categegory: Sofware & AI Dev -->
-                            <!-- --------------------------------------------- -->
-                            <div class="category-link-container-body-footer">
-
-                                <header>
-
-                                    <img src="media/img/icons/icons/nav-main-body/brackets-black.png" alt="img">
-                                    <div> Software & AI-Dev </div>
-
-                                </header>
-
-                                <main>
-
-                                    <!-- ❇️ Clément Mihailescu - User  -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/clement.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Clément Mihailescu</div>
-                                                <div>Algo Expert | Algorithmn | IT-Lifestyle | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-
-                                            <a href="https://www.youtube.com/@clem/videos" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                            <a href="https://www.instagram.com/clement_mihailescu/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
-                                            </a>
-
-                                        </div> 
-
-
-                                    </div>
-
-                                    <!-- ❇️  Turing   - User -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/turing.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Turing</div>
-                                                <div>Coding Interviews | Angular | Java | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-                                            <a href="https://www.youtube.com/@Turingcom" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                            <a href="https://www.instagram.com/turingcomdev/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
-                                            </a>
-
-
-                                        </div> 
-
-
-                                    </div> 
-
-                                    <!-- ❇️  Amigocode   - User -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/amigocode.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Amigocode</div>
-                                                <div>Java | IntelliJ | Spring Boot | DevOps | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-                                            <a href="https://www.youtube.com/@amigoscode" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                           
-
-
-
-                                        </div> 
-
-
-                                    </div>   
-                                    
-                                    <!-- ❇️ Code Basic   - User -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/code-basics.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>code basics  </div>
-                                                <div>Data Scientist | Python | AI | ...  </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-                                            <a href="https://www.youtube.com/@codebasics" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-
-                                        </div> 
-
-
-                                    </div>
-
-                                    <!-- ❇️  Mameewin   - User -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/mameeewin.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Mameewin</div>
-                                                <div>Algorithmn Coding Challenges | Leetcode | Python | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-                                            <a href="https://www.youtube.com/@mameeewin" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-
-
-                                        </div> 
-
-
-                                    </div>
-
-                                    <!-- ❇️  the native web   - User -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/the-native-web.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>the native web GmbH</div>
-                                                <div>IT Concepts | DDD | Clean Code | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-                                            <a href="https://www.youtube.com/@thenativeweb" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-
-
-                                        </div> 
-
-
-                                    </div>
-
-
-                                </main>
-
-                            </div> 
-
-                            <!-- --------------------------------------------- -->
-                            <!-- Categegory: IT-Lifestyle -->
-                            <!-- --------------------------------------------- -->
-                            <div class="category-link-container-body-footer">
-
-                                <header>
-                                    <img src="media/img/icons/icons/laptop.png" alt="img">
-                                    <div> IT-Lifestyle </div>
-                                </header>
-
-                                <main>
-
-                                    <!-- ❇️ With Marko - Scandinavian Deveoper  -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/with-marko.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>with Marko</div>
-                                                <div>Scandinavian Software Developer | Lifestyle | MacBook | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-
-                                            <a href="https://www.youtube.com/@withmarko" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                        </div> 
-
-
-                                    </div>
-
-                                    <!-- ❇️ Morpheus - User -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/morpheus.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Morpheus</div>
-                                                <div>IT-News | Software Developing | IT-Concepts | IT-Courses | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-
-                                            <a href="https://www.youtube.com/@TheMorpheusVlogs" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                            <a href="https://www.instagram.com/themorpheustuts/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
-                                            </a>
-
-                                           
-                                            
-
-
-                                        </div> 
-
-
-                                    </div>                                                     
-
-                                    <!-- ❇️ Kevin Chromik - User -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/kevin-chromik.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Kevin Chromik </div>
-                                                <div>IT-Lifestyle | IT-Projects | IOS-Developer | ...  </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-                                            <a href="https://www.youtube.com/@KevinChromik" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                        </div> 
-
-
-                                    </div>
-
-                                    <!-- ❇️ Calvin Li  - User -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/calvin-li.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Calvin Li </div>
-                                                <div>IT-Lifestyle | Meta-Deveoper(Facebook) | ...  </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-                                            <a href="https://www.youtube.com/@calvinxli/videos" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                            <a href="https://www.instagram.com/calvinxli/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
-                                            </a>
-
-
-
-                                        </div> 
-
-
-                                    </div>
-
-                                    <!-- ❇️ singh in usa   - User -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/singh-in-usa.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>singh in usa  </div>
-                                                <div>Fullstack Software Deveoper | Silicon Valley | IT-Projects | IT-Lifestyle | ...  </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-                                            <a href="https://www.youtube.com/@SinghinUSA" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                            <a href="https://www.instagram.com/iharnoor/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
-                                            </a>
-
-
-                                        </div> 
-
-
-                                    </div>             
-
-                                </main>
-
-                                
-
-
-                            </div> 
-
-
-                            <!-- --------------------------------------------- -->
-                            <!-- Others -->
-                            <!-- --------------------------------------------- -->
-                            <div class="category-link-container-body-footer">
-
-                                <header>
-
-                                    <img src="media/img/icons/icons/pfeile.png" alt="img">
-                                    <div> Others </div>
-
-                                </header>
-
-                                <main>
-
-                                    <!-- ❇️ Shaolin  - User  -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/shaolin-europe.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Shaolin Temple Europe</div>
-                                                <div>Meditation | Kung Fu | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-
-                                            <a href="https://www.youtube.com/@ShaolinTempleEurope" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                          
-                                        </div> 
-
-
-                                    </div>
-
-                                    <!-- ❇️ Roofless - User  -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/rooflesstv.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Roofless TV</div>
-                                                <div>Lost Place Advendures | Parcour | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-
-                                            <a href="https://www.youtube.com/@rooflesstv" 
-                                            class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png"
-                                                    alt="img">
-                                            </a>
-
-
-                                        </div> 
-
-
-                                    </div>
-
-                                    <!-- ❇️ Schlappen - User  -->
-                                    <div class="link-item-container-body-footer">
-
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Content Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="content-block-link-item-body-footer">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Img User -->
-                                            <!-- --------------------------------------- -->  
-                                            <img src="media/img/content/default/body-footer/user-community/schlappen.jpg" class="img-link-item-body-footer" alt="img">
-
-                                            <!-- --------------------------------------- -->
-                                            <!-- Title User -->
-                                            <!-- --------------------------------------- -->  
-                                            <div class="title-link-item-body-footer">
-
-                                                <div>Freeruning Schlappen </div>
-                                                <div>Parcour | Travel | ... </div>
-
-                                            </div>
-
-                                        </div> 
-
-                                        <!-- --------------------------------------- -->
-                                        <!-- Media Block -->
-                                        <!-- --------------------------------------- -->
-                                        <div class="media-block-link-item-body-footer">
-
-
-                                            <a href="https://www.youtube.com/@FreerunningSchlappen" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
-                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
-                                            </a>
-
-                                        </div> 
-
-
-                                    </div>
-  
-
-                                </main>
-
-                            </div> 
-
-                            <!-- --------------------------------------------- -->
-                            <!-- Categegory: IT General & Lifestyle -->
-                            <!-- --------------------------------------------- -->
-
-                    
-                        
-                        </div>
-                        
-                    </div>
-
-                </div> 
-
-
-            </div>
-
-        </div>   
             
     </footer>
 
