@@ -47,6 +47,7 @@
 .item-links-inline-container-body-footer {
 
     display: grid;
+    align-content: flex-start;
     row-gap: .8em;
 
     border-radius: .6em;
@@ -57,7 +58,8 @@
 
 .item-links-container-body-footer {
 
-    max-width: 20em;
+    width: 100%;
+    /* max-width: 20em; */
 
 }
 
