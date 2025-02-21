@@ -6,9 +6,13 @@
 
 
 /* -------------------------------------------------------------- */
-/* >= 330px width
+/* >= 420px width
 /* -------------------------------------------------------------- */
-@media (min-width: 330px ) {
+@media (min-width: 420px ) {
 
+    /* show txt useful links */
+    #txt-lbl-useful-links-body-footer {
+        display: flex;
+    }
 
 }
