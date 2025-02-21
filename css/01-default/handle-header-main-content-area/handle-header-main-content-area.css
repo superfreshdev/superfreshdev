@@ -1,0 +1,50 @@
+/* -------------------------------------------------------------- */
+/* > handle-header-main-content-area.css
+/*  🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧 > + max
+/* : styles my resp header & main content area 
+/*   we just like to have these 2 area contents 
+/* -------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------ */
+/* Header & Main Content Area 
+/* ------------------------------------------------------------ */
+
+.handle-header-content-area,
+.handle-main-content-area,
+.handle-max-content-area {
+
+    width: 100%;
+}
+
+
+/* ------------------------------------------------------------ */
+/* Handle Header Content Area 
+/* ------------------------------------------------------------ */
+
+.handle-header-content-area {
+
+    background-color: rgb(234, 18, 213);
+}
+
+
+/* ------------------------------------------------------------ */
+/* Handle Main Content Area 
+/* ------------------------------------------------------------ */
+
+.handle-main-content-area {
+
+    background-color: rgb(108, 108, 108);
+}
+
+
+/* ------------------------------------------------------------ */
+/* Handle Header Content Area 
+/* ------------------------------------------------------------ */
+
+.handle-max-content-area {
+
+    background-color: rgb(119, 255, 0);
+}
+

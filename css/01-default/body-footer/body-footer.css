@@ -1,0 +1,185 @@
+/* -------------------------------------------------------------- */
+/* > body-footer.css
+/*  
+/* : style my body footer
+/* -------------------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+/* Body Footer
+/* ----------------------------------------------------- */
+
+#body-footer {
+
+    width: 100%;
+   
+    display: grid;
+    grid: auto 1fr / 1fr;
+
+    justify-items: center;
+
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+}
+
+/* ----------------------------------------------------- */
+/* Body Footer Container
+/* ----------------------------------------------------- */
+
+#body-footer-container {
+
+    width: 100%;
+    color:white;
+}
+
+/* ------------------------------------------------- */
+/* Checkbox Handling | Open Useful Links 
+/* ------------------------------------------------- */
+
+#chk-useful-links-body-footer {
+
+    display: none;
+}
+
+/* Default unshown max area content  */
+#chk-useful-links-body-footer ~ .handle-max-content-area {
+
+    display: none;
+}
+
+/* by checked show max content area */
+#chk-useful-links-body-footer:checked ~ .handle-max-content-area {
+
+    display: block;
+}
+
+/* Open Smooth Container  */
+#chk-useful-links-body-footer:checked ~ .handle-main-content-area #smooth-open-close-useful-links-body-footer {
+
+    grid-template-rows: auto 1fr;
+
+}
+
+#chk-useful-links-body-footer:checked ~ .handle-main-content-area #lbl-useful-links-body-footer > img:nth-of-type(2) {
+
+    transform: rotate(180deg);
+}
+
+#chk-useful-links-body-footer:checked ~ .handle-main-content-area #smooth-open-close-useful-links-body-footer #lbl-body-footer-open-useful-links {
+
+    background-color: wheat;
+    color:black;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Smooth Open Close | Useful Link | Body Footer
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-useful-links-body-footer {
+
+    padding: 1.3em .8em;
+
+    display: grid;
+    grid-template-rows: auto 0fr;
+    
+    transition: grid-template-rows 0.3s ease-out;
+
+}
+
+
+/* ----------------------------------------------------- */
+/* [1/2] - Short View Container
+/* ----------------------------------------------------- */
+
+#body-footer-short-view-container {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* ------------------------------------------------- */
+/* Label | Useful Links
+/* ------------------------------------------------- */
+
+#lbl-useful-links-body-footer {
+
+    height: 3.3em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+
+    border-radius: .6em;
+
+    background-color: rgb(66, 66, 66);
+    color:rgb(223, 223, 223);
+
+    cursor: pointer;
+
+    transition: all .4s;
+}
+
+#lbl-useful-links-body-footer:hover {
+
+    background-color: wheat;
+    color:black;
+}
+
+/* img 1 - clipart  */
+#lbl-useful-links-body-footer > img:nth-of-type(1) {
+
+    height: 2.5em;
+    transform: scaleX(-1);
+
+}
+
+#lbl-useful-links-body-footer > div:nth-of-type(1)  {
+
+    font-weight: bold;
+   
+}
+
+/* img 2 - arrow up/down */
+#lbl-useful-links-body-footer > img:nth-of-type(2) {
+
+    height: .7em;
+    transition: all .4s;
+}
+
+/* ------------------------------------------------- */
+/* SFD Copyright Container
+/* ------------------------------------------------- */
+
+#sfd-copyright-body-footer {
+
+    height: 3.3em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+    border-radius: .6em;
+
+    background-color: green;
+    
+}
+
+#sfd-copyright-body-footer > div:nth-of-type(1) {
+
+    font-weight: bold;
+    color:wheat;
+
+}
+
+#sfd-copyright-body-footer > div:nth-of-type(2) {
+
+    color:rgb(54, 54, 54);
+    font-weight: bold;
+
+}
+

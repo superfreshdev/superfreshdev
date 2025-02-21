@@ -9,19 +9,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ------------------------------------------------- -->
-    <!-- Google Font Link Area Testing -->
-    <!-- ------------------------------------------------- -->  
-    <!-- get google link font but as local file is better  -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Pochaevsk&display=swap" rel="stylesheet"> -->
+    <!-- ------------------------------------------------------------- -->
+    <!-- Google Font: Delius | Lokaly Binding (src/fonts)              -->
+    <!-- ------------------------------------------------------------- -->  
 
-    <!-- ------------------------------------------------- -->
-    <!-- Google Font Binding as File -->
-    <!-- ------------------------------------------------- -->  
-
-    <!-- > we build @font-face in google-fonts.css  -->
+    <!-- Reminder: we build the css class name of Google Font Delius as
+         @font-face in google-fonts.css -->
 
     <!-- ------------------------------------------------------------------------ -->
     <!-- 🖼️ Favicon Bindings -->
@@ -35,105 +28,179 @@
     <!-- ------------------------------------------------------------------------ -->
     <!-- 🔵 CSS Bindings -->
     <!-- ------------------------------------------------------------------------ -->
-     
+    
         <!-- ------------------------------------------------------------ -->
-        <!-- Default -->
-        <!-- ------------------------------------------------------------ -->
-
-        <link rel="stylesheet" href="css/default/html-body.css">
-
-        <!-- sets  -->
-        <link rel="stylesheet" href="css/default/sets/google-fonts.css">
-        <link rel="stylesheet" href="css/default/sets/colors.css">
-        <link rel="stylesheet" href="css/default/sets/color-names.css">
-        <link rel="stylesheet" href="css/default/sets/styles.css">
-        <link rel="stylesheet" href="css/default/sets/sizes.css">
-        <link rel="stylesheet" href="css/default/sets/buttons.css">
-        <link rel="stylesheet" href="css/default/sets/h1-h5.css">
-        <link rel="stylesheet" href="css/default/sets/flex-grid.css">
-        
-        <!-- header body -->
-        <link rel="stylesheet" href="css/default/header-body/header-body.css">
-        <link rel="stylesheet" href="css/default/header-body/nav-header-body.css">
-
-        <!-- main body -->
-        <link rel="stylesheet" href="css/default/main-body/main-body.css">
-        <link rel="stylesheet" href="css/default/main-body/nav-main-body.css">
-
-        <!-- main header -->
-        <link rel="stylesheet" href="css/default/main-body/header-main-layout/header-main-layout.css">
-        <link rel="stylesheet" href="css/default/main-body/header-main-layout/main-filter-sub-topic.css">
-
-        <!-- footer - main body -->
-        <link rel="stylesheet" href="css/default/footer-body/footer-body.css">
-   
-        <!-- ------------------------------------------------------------ -->
-        <!-- UI Elements -->
+        <!-- [00/03] - CSS Framework                                      -->
         <!-- ------------------------------------------------------------ -->
 
-        <!-- inputs  -->
-        <link rel="stylesheet" href="css/ui-elements/inputs/custom-select.css">
-        <link rel="stylesheet" href="css/ui-elements/inputs/custom-radio.css">
+            <!-- Reminder: defines my special sfd ui-elements, which u can use too 
+            or not  -->
 
-        <!-- layout elements -->
-        <link rel="stylesheet" href="css/ui-elements/layout-elements/btn-filter-container.css">
+            <!-- ------------------------------------- -->
+            <!-- Default Styles  -->
+            <!-- ------------------------------------- -->
 
-        <!-- ------------------------------------------------------------ -->
-        <!-- Content -->
-        <!-- ------------------------------------------------------------ --> 
+            <!-- ------------------------------------- -->
+            <!-- sfd Styles  -->
+            <!-- ------------------------------------- -->
 
-            <!-- -------------------------- -->
-            <!-- About | Page  -->
-            <!-- -------------------------- --> 
-            <link rel="stylesheet" href="css/content/about-page/about-page.css">
+                <!-- ui-elements  -->
+                <link rel="stylesheet" href="css/00-css-framework/02-sfd-styles/ui-elements/inputs/custom-radio.css">
+                <link rel="stylesheet" href="css/00-css-framework/02-sfd-styles/ui-elements/inputs/custom-select.css">
 
-            <link rel="stylesheet" href="css/content/about-page/info-img-about.css">
-            <link rel="stylesheet" href="css/content/about-page/my-top-3-projects-about.css">
-            <link rel="stylesheet" href="css/content/about-page/my-mindset-about.css">
-            <link rel="stylesheet" href="css/content/about-page/contact-me-about.css">
-            <link rel="stylesheet" href="css/content/about-page/to-be-fresh-about.css">
-
-
-            <!-- it stack page -->
-            <link rel="stylesheet" href="css/content/it-docs-projects.css">
-
-        <!-- ------------------------------------------------------------ -->
-        <!-- Responsive -->
-        <!-- ------------------------------------------------------------ --> 
-
-            <!-- ---------------------------------- -->
-            <!-- Default -->
-            <!-- ---------------------------------- -->
+                <link rel="stylesheet" href="css/00-css-framework/02-sfd-styles/ui-elements/layout-elements/btn-filter-container.css">
             
-            <link rel="stylesheet" href="css/responsive/default/resp-default.css">
-            <link rel="stylesheet" href="css/responsive/default/resp-header-main-body.css">
-            <link rel="stylesheet" href="css/responsive/default/resp-header-main-container.css">
+
+        <!-- ------------------------------------------------------------ -->
+        <!-- [01/03] - Default                                            -->
+        <!-- ------------------------------------------------------------ -->
+
+            <link rel="stylesheet" href="css/01-default/html-body.css">
+
+            <!-- Handle Header/Main Content Area -->
+            <link rel="stylesheet" href="css/01-default/handle-header-main-content-area/handle-header-main-content-area.css">
+
+            <!-- Default Body Header -->
+            <link rel="stylesheet" href="css/01-default/body-header/body-header.css">
+            <link rel="stylesheet" href="css/01-default/body-header/body-header-nav.css">
+
+            <!-- Default Body Main -->
+            <link rel="stylesheet" href="css/01-default/body-main/body-main.css">
+            <link rel="stylesheet" href="css/01-default/body-main/body-main-nav.css">
+
+            <link rel="stylesheet" href="css/01-default/body-main/header-main-layout/header-main-layout.css">
+            <link rel="stylesheet" href="css/01-default/body-main/header-main-layout/main-filter-sub-topic.css">
+
+            <!-- Default Body Footer -->
+            <link rel="stylesheet" href="css/01-default/body-footer/body-footer.css">
+            <link rel="stylesheet" href="css/01-default/body-footer/body-footer-full-view-container.css">
+
+            <!-- Sets -->
+            <link rel="stylesheet" href="css/01-default/sets/google-fonts.css">
+            <link rel="stylesheet" href="css/01-default/sets/colors.css">
+            <link rel="stylesheet" href="css/01-default/sets/color-names.css">
+
+            <link rel="stylesheet" href="css/01-default/sets/h1-h5.css">
+            <link rel="stylesheet" href="css/01-default/sets/sizes.css">
+
+            <link rel="stylesheet" href="css/01-default/sets/styles.css">
+
+            <link rel="stylesheet" href="css/01-default/sets/flex-grid.css">
+
+            <link rel="stylesheet" href="css/01-default/sets/buttons.css">
+
+
+
+        <!-- ------------------------------------------------------------ -->
+        <!-- [02/03] - Content                                            -->
+        <!-- ------------------------------------------------------------ -->
+
+            <!-- ------------------------------------- -->
+            <!-- About Page -->
+            <!-- ------------------------------------- -->
+
+                <link rel="stylesheet" href="css/02-content/about-page/about-page.css">
+
+
+                <!-- ----------------------------------------------- -->
+                <!-- Part #1 - Welcome & About Me                    -->
+                <!-- ----------------------------------------------- -->
+
+                    <!-- 🚧 Welcome Title - About -->
+                    <!-- <link rel="stylesheet" href="css/02-content/about-page/"> -->
+
+                    <!-- Impress - About -->
+                    <link rel="stylesheet" href="css/02-content/about-page/info-img-about.css"> 
+
+
+                <!-- --------------------------------- -->
+                <!-- Part #2 - See My Work & More      -->
+                <!-- --------------------------------- -->
+
+                    <!-- My Top 3 Projects - About -->
+                    <link rel="stylesheet" href="css/02-content/about-page/my-top-3-projects-about.css"> 
+                    <!-- My Mindset - About -->
+                    <link rel="stylesheet" href="css/02-content/about-page/my-mindset-about.css">  
+
+                    <!-- 🚧 (actually in production) - News - About -->
+                    <!-- Like to See on what i am actually working ?  -->
+                    <!-- <link rel="stylesheet" href="css/02-content/about-page/"> -->
+
+                    <!-- 🚧 See More - About -->
+                    <!-- or do u have an idea und 
+                        like the way to cantact me direct now ? ( i try to answer u in maxium 48h ) --> 
+                    <!-- <link rel="stylesheet" href="css/02-content/about-page/"> -->
+
+                <!-- --------------------------------- -->
+                <!-- Part #3 - Contact Me -->
+                <!-- --------------------------------- -->
+
+                    <!-- Contact Me - About -->
+                    <link rel="stylesheet" href="css/02-content/about-page/contact-me-about.css">
+
+                    <!-- to be fresh- About -->
+                    <link rel="stylesheet" href="css/02-content/about-page/to-be-fresh-about.css"> 
+
+            <!-- ------------------------------------- -->
+            <!-- Content Page -->
+            <!-- ------------------------------------- -->
+
+                <!-- My IT-Stack -->
+                <link rel="stylesheet" href="css/02-content/content-page/it-docs-projects.css">
+
+                <!-- My Private Lifestyle -->
+
+
+        <!-- ------------------------------------------------------------ -->
+        <!-- [03/03] - Responsive                                         -->
+        <!-- ------------------------------------------------------------ -->
 
 
             <!-- ---------------------------------- -->
-            <!-- Header, Main, Footer  -->
-            <!-- ---------------------------------- -->
-            
-            <!-- header  -->
-            <link rel="stylesheet" href="css/responsive/resp-header/resp-header.css">
-
-            <!-- main -->
-            <link rel="stylesheet" href="css/responsive/resp-main/resp-main.css">
-            <link rel="stylesheet" href="css/responsive/resp-main/resp-nav-main-body.css">
-            <link rel="stylesheet" href="css/responsive/resp-main/resp-main-header.css">
-
-
-            <!-- ---------------------------------- -->
-            <!-- Content  -->
+            <!-- Resp | Default -->
             <!-- ---------------------------------- -->
 
-            <!-- about page -->
-            <link rel="stylesheet" href="css/responsive/resp-content/resp-about-page.css">
-            
-           
+                <!-- Resp Handle Header Main Content Area -->
+                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-handle-header-main-content-area/resp-handle-header-main-content-area.css">
+
+                <!-- Resp Body Header -->
+                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-header.css">
+
+                <!-- Resp Body Main -->
+                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-main/resp-main.css">
+                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-main/resp-main-header.css">
+                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-main/resp-nav-main-body.css">
+
+                <!-- Resp Body Footer -->
+                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-footer.css"> 
+                
+            <!-- ---------------------------------- -->
+            <!-- Resp | Content -->
+            <!-- ---------------------------------- -->
+
+                <!-- --------------------------------------- -->
+                <!-- Resp | Default Content --> 
+                <!-- --------------------------------------- --> 
+
+                <link rel="stylesheet" href="css/03-responsive/resp-content/resp-default-content/resp-header-main-body.css">
+
+                <!-- --------------------------------------- -->
+                <!-- Resp | About Page --> 
+                <!-- --------------------------------------- --> 
+
+                <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about-page/resp-about-page.css">
+
+                <!-- --------------------------------------- -->
+                <!-- Resp | Content Page --> 
+                <!-- --------------------------------------- --> 
+
+                <!-- <link rel="stylesheet" href="css/03-responsive/resp-content/resp-content-page/"> -->
 
     
     <title>🌊 SuperfreshDEV</title>
+    <!-- --------------------------------------------- -->
+    <!-- [Row-Container] - Width: 100%                 -->
+    <!-- --------------------------------------------- --> 
 
 
 </head>
@@ -144,52 +211,53 @@
 <body>
 
     <!-- ------------------------------------------------------ -->    
-    <!-- To Handle Nav Main Body -->
+    <!-- Checkbox | Handle Nav Header -->
     <!-- ------------------------------------------------------ --> 
-    <input type="checkbox" id="chk-nav-header-body">   
+    <input type="checkbox" id="chk-body-header-nav-label">   
 
     <!-- ----------------------------------------------------------------------------- -->
-    <!-- Fixed Header Body -->
+    <!-- Body Fixed Header | ( jc-c )   -->
     <!-- ----------------------------------------------------------------------------- -->
-    <header id="fixed-header-body">
+    <header id="body-fixed-header">
 
         <!-- --------------------------------------------- -->
-        <!-- [Resp] - Header Container -->
+        <!-- [Handle] - Header Content Area                -->
         <!-- --------------------------------------------- -->  
-        <div class="resp-header-container">
+        <div class="handle-header-content-area">
 
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- 100% orient of dyn. resp header container -->
+            <!-- Width: 100% ( Stretch under Layout to Max Parent Layout ) -->
             <!-- ----------------------------------------------------------------------------- -->
-            <div style="width: 100%;">
+            <div class="w-100p">
 
                 <!-- ----------------------------------------------------------------------------- -->
-                <!-- Header Body Layout Container -->
+                <!-- Body Fixed Header Container ( layout ) -->
                 <!-- ----------------------------------------------------------------------------- -->
-                <div id="header-body-layout-container">
+                <div id="body-fixed-header-container">
 
                     <!-- --------------------------------------------------------- -->
-                    <!-- [Button] - Company Header Body  -->
+                    <!-- [1/2] - Header Company Logo                               -->
                     <!-- --------------------------------------------------------- -->  
-                    <button id="btn-company-header-body" title="» Go to About">
+                    <button id="header-company-logo" title="» Go to About">
 
-                        <img src="media/img/icons/icons/header/supfreshdev.png" id="img-company-header-body" alt="img">
+                        <img src="media/img/icons/icons/header/supfreshdev.png"
+                         id="img-company-logo" alt="img">
 
-                        <div id="title-company-header-body">
+                        <div id="header-title-company-logo">
                             
-                            <div id="title-company">SuperfreshDEV</div>
-                            <div id="sub-title-company">» Fullstack Developer</div>
+                            <div id="title-company-logo">SuperfreshDEV</div>
+                            <div id="sub-title-company-logo">» Fullstack Developer</div>
                     
                         </div>
 
                     </button>
 
                     <!-- --------------------------------------------------------- -->
-                    <!-- [Label] - Nav Header Body -->
+                    <!-- [2/2] - Body Header Label Nav                             -->
                     <!-- --------------------------------------------------------- -->
-                    <label for="chk-nav-header-body" id="lbl-nav-header-body" >
+                    <label for="chk-body-header-nav-label" id="body-header-nav-label" >
                         
-                        <div id="hamburger-stripe-body-container">
+                        <div id="body-header-hamburger-stripe-container">
 
                             <div class="hamburger-stripe"></div>
                             <div class="hamburger-stripe"></div>
@@ -200,7 +268,6 @@
                     </label>
 
                 </div>
-
                 
             </div>
 
@@ -209,7 +276,7 @@
     </header>
 
     <!-- ----------------------------------------------------------------------------- -->
-    <!-- Main Body -->
+    <!-- Body Main -->
     <!-- ----------------------------------------------------------------------------- -->
     <main id="main-body">
 
@@ -218,1181 +285,1967 @@
         <!-- ----------------------------------------------------------------------------- -->
         <div id="main-body-container">
 
-            <!-- ----------------------------------------------- -->
-            <!-- [Nav Topic] - Row Main Container -->
-            <!-- ----------------------------------------------- -->
-            <div class="row-main-container bgc-row-main">
 
-                <!-- ----------------------------------------------- -->
-                <!-- [Resp] - Main Container -->
-                <!-- ----------------------------------------------- -->
-                <div class="resp-main-container box-shadow-main">
+            <!-- ----------------------------------------------- -->
+            <!-- Row Container | Nav Topic Container -->
+            <!-- ----------------------------------------------- -->
+            <div class="row-container" style="background-color: green;">
+
+                
+                <!-- ----------------------------------------------------------- -->
+                <!-- Resp Main Content Container                                 -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="resp-main-content-container">
+
 
                     <!-- ----------------------------------------------------------- -->
-                    <!-- 100% orient of dyn. resp header container -->
+                    <!-- width 100% (sets)                                           -->
                     <!-- ----------------------------------------------------------- -->
-                    <div class="w-100p">
-                    
-                        <!-- ----------------------------------------------- -->
-                        <!-- Nav Layout Container -->
-                        <!-- ----------------------------------------------- -->
-                        <div class="nav-layout-container">
-                            Nav Layout Container XXX
+                    <div class="w-100p flex jc-c">
+
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- Nav Topic Container           -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div class="test-nav-topic-container">
+                            Nav Topic Container | Resp Main Content Container
                         </div>
+
 
                     </div>
 
-                </div>
 
-            </div>
+                   
+
+                </div> 
+
+
+              
+
+            </div> 
 
             <!-- ----------------------------------------------- -->
-            <!-- [Header] - Row Main Container -->
+            <!-- Row Container | Main Container -->
             <!-- ----------------------------------------------- -->
-            <div class="row-main-container bgc-row-header">
+            <div class="grid-row-container" style="background-color: rgb(255, 243, 15);">
 
-                <!-- ----------------------------------------------- -->
-                <!-- [Resp] - Main Container -->
-                <!-- ----------------------------------------------- -->
-                <div class="resp-main-container box-shadow-main">
 
-                    <!-- ----------------------------------------------- -->
-                    <!-- [Resp] - Header Container -->
-                    <!-- ----------------------------------------------- -->
-                    <div class="resp-header-container">
-                        
+                <!-- ----------------------------------------------------------- -->
+                <!-- Content Header | Sub Row Container                     -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="sub-row-container" style="background-color: rgb(228, 7, 7);">
+
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- [Resp Main Content Container]                               -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="resp-main-content-container">
+
+
                         <!-- ----------------------------------------------------------- -->
-                        <!-- 100% orient of dyn. resp header container -->
+                        <!-- width 100% (sets)                                           -->
                         <!-- ----------------------------------------------------------- -->
-                        <div class="w-100p">
+                        <div class="w-100p flex jc-c">
 
-                            <!-- ----------------------------------------------- -->
-                            <!-- 🚧 About Page Container -->
-                            <!-- ----------------------------------------------- -->
-                            <div id="about-page-container">
-                                
-                                <!-- --------------------------------------------------------- -- -->
-                                <!-- Header About | Container  -->
-                                <!-- --------------------------------------------------------- -- -->
-                                <div id="header-about-container">
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- [Resp Header Content Container]                               -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="resp-header-content-container">
 
-                                    <!-- ------------------------------------------------ -->
-                                    <!-- Title Header About | Container -->
-                                    <!-- ------------------------------------------------ -->
-                                    <div id="title-header-about-container">
+                                <!-- ----------------------------------------------------------- -->
+                                <!-- Main Header                             -->
+                                <!-- ----------------------------------------------------------- -->
+                                <div class="main-header-content">
 
-                                        <div id="title-block-header-about">
+                                    Content Header
 
-                                            <div id="txt-welcome-to">Welcome to</div>
-                                            <div>
-                                                <span id="txt-superfreshdev">SuperfreshDEV</span>
-                                                <span id="txt-world">{World}</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div id="txt-motto-superfreshdev">» Let's build modern IT-Systems.</div>
-
-                                    </div>
-                                    
-                                    <!-- ------------------------------------------------ -->
-                                    <!-- Date Header About | Container -->
-                                    <!-- ------------------------------------------------ -->
-                                    <div id="date-header-about-container">
-
-                                        <span id="txt-today">today, </span>
-
-                                        <span id="txt-actually-date">
-
-                                            <span id="js-txt-day">JS</span>
-                                            <span id="js-txt-month">JS</span>
-                                            <span id="js-txt-year">JS</span>
-
-                                        </span>
-                                              
-                                    </div>
-
-
-                                </div> 
-
-                                <!-- --------------------------------------------------------- -- -->
-                                <!-- Info Img About | Container -->
-                                <!-- --------------------------------------------------------- -- -->
-                                <div id="info-img-about-container">
-                                    
-                                    <!-- --------------------------------------------------- -->
-                                    <!-- My Img About | Container -->
-                                    <!-- --------------------------------------------------- --> 
-                                    <div id="my-img-about-container">
-
-                                        
-                                        <img src="media/img/icons/icons/big-bracket-right-dark-grey.png"
-                                         class="img-bracket-my-img-about" alt="img">
-
-                                        <picture>
-                                            <source media="(min-width:600px)" srcset="media/img/content/about/ich-desktop.png">
-                                            <img src="media/img/content/about/ich-mobile.png" id="img-about-me" alt="img">
-                                        </picture>
-                                                                           
-                                        <img src="media/img/icons/icons/big-bracket-right-dark-grey.png"
-                                         class="img-bracket-my-img-about" alt="img">
-                                        
-
-                                    </div> 
-
-                                    <!-- --------------------------------------------------- -->
-                                    <!-- Short Description About | Container  -->
-                                    <!-- --------------------------------------------------- -->
-                                    <div id="short-description-about-container">
-
-                                        <div>My Name is Marko (SuperfreshDEV) and 
-                                            I'm from Germany.</div>
-                                        
-                                        <div>I'm a Software Fullstack Developer in </div>
-
-                                        <!-- -------------------------------------------- -->
-                                        <!-- IT Stack Container | About  -->
-                                        <!-- -------------------------------------------- --> 
-                                        <div id="it-stack-container-about">
-
-                                            <!-- 1 - web-development  -->
-                                            <div class="it-stack-item-about">
-
-                                                <div class="header-it-stack-item-about">
-                                                    <div>01</div>
-                                                    <div>Web-Development</div>
-                                                </div>
-
-                                                <div class="tech-skills-container-about">
-                                                    <div>
-                                                        <img src="media/img/icons/tech-icons/angular19.png" class="img-tk-normal" alt="img">
-                                                        <div>Angular</div>
-                                                    </div>
-                                                    <div>
-                                                        <img src="media/img/icons/tech-icons/reactt.png" class="img-tk-normal" alt="img">
-                                                        <div>React</div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <!-- 2 - software-development  -->
-                                            <div class="it-stack-item-about">
-
-                                                <div class="header-it-stack-item-about">
-                                                    <div>02</div>
-                                                    <div>Software-Development</div>
-                                                </div>
-
-                                                <div class="tech-skills-container-about">
-                                                    <div>
-                                                        <img src="media/img/icons/tech-icons/java-alt.png" class="img-tk-normal" alt="img">
-                                                        <div>Java</div>
-                                                    </div>
-                                                    <div>
-                                                        <img src="media/img/icons/tech-icons/kotlin.png" class="img-tk-normal" alt="img">
-                                                        <div>Kotlin</div>
-                                                    </div>
-                                                    <div>
-                                                        <img src="media/img/icons/tech-icons/reactt.png" class="img-tk-normal" alt="img">
-                                                        <div>React Native</div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            
-                                            <!-- 3 - backend  -->
-                                            <div class="it-stack-item-about">
-
-                                                <div class="header-it-stack-item-about">
-                                                    <div>03</div>
-                                                    <div>Backend:</div>
-                                                </div>
-
-                                                <!-- sub it stack - dev ops  -->
-                                                <div class="sub-it-stack-container-about">
-
-                                                    <div class="header-sub-it-stack-container-about">
-                                                        <div>03.01</div>
-                                                        <div>DevOps</div>
-                                                    </div>
-
-                                                    <div class="tech-skills-container-about">
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/cloud-engine.png" class="img-tk-normal" alt="img">
-                                                            <div>Cloud</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/docker.png" class="img-tk-normal" alt="img">
-                                                            <div>Docker</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/jenkins.png" class="img-tk-normal" alt="img">
-                                                            <div>Jenkins</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/quarkus.png" class="img-tk-normal" alt="img">
-                                                            <div>Quarkus</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/springboot2.png" class="img-tk-normal" alt="img">
-                                                            <div>Spring Boot</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/sonarqube-1.svg" class="img-tk-normal" alt="img">
-                                                            <div>Sonaqube</div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <!-- sub it stack - webserver  -->
-                                                <div class="sub-it-stack-container-about">
-
-                                                    <div class="header-sub-it-stack-container-about">
-                                                        <div>03.02</div>
-                                                        <div>Webserver</div>
-                                                    </div>
-
-                                                    <div class="tech-skills-container-about">
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/nodejs.png" class="img-tk-normal" alt="img">
-                                                            <div>NodeJS</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/nestjs.svg" class="img-tk-normal" alt="img">
-                                                            <div>NestJS</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/nginx.png" class="img-tk-normal" alt="img">
-                                                            <div>Nginx</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/wildfly.png" class="img-tk-normal" alt="img">
-                                                            <div>WildFly</div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <!-- sub it stack - database  -->
-                                                <div class="sub-it-stack-container-about">
-
-                                                    <div class="header-sub-it-stack-container-about">
-                                                        <div>03.03</div>
-                                                        <div>Database</div>
-                                                    </div>
-
-                                                    <div class="tech-skills-container-about">
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/postgre.png" class="img-tk-normal" alt="img">
-                                                            <div>PostgreSQL</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/mongodb.png" class="img-tk-normal" alt="img">
-                                                            <div>MongoDB</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/neo4j-2.png" class="img-tk-normal" alt="img">
-                                                            <div>Neo4j</div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <!-- sub it stack - Backend Tools  -->
-                                                <div class="sub-it-stack-container-about">
-
-                                                    <div class="header-sub-it-stack-container-about">
-                                                        <div>03.04</div>
-                                                        <div>Tools</div>
-                                                    </div>
-
-                                                    <div class="tech-skills-container-about">
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/kafka.png" class="img-tk-normal" alt="img">
-                                                            <div>Kafka</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/kexcloak.png" class="img-tk-normal" alt="img">
-                                                            <div>Keycloak</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/splunk.png" class="img-tk-normal" alt="img">
-                                                            <div>Splunk</div>
-                                                        </div>
-                                                        <div>
-                                                            <img src="media/img/icons/tech-icons/grafana.png" class="img-tk-normal" alt="img">
-                                                            <div>Grafana</div>
-                                                        </div>
-                                                        
-                                                    </div>
-
-                                                </div>
-
-                                               
-
-                                            </div>
-
-                                             <!-- 4 - ai Data Science  -->
-                                             <div class="it-stack-item-about">
-
-                                                <div class="header-it-stack-item-about">
-                                                    <div>04</div>
-                                                    <div>AI - Data Science (2025)</div>
-                                                </div>
-
-                                                <div class="actually-tech-learning-skill-container">
-
-                                                    <div>
-                                                        <img src="media/img/icons/emojies/emoji-thunder.png" class="img-thunder-learning" alt="img">
-                                                        <img src="media/img/icons/emojies/emoji-gear.png" class="img-gear-learning" alt="img"> 
-                                                    </div>
-
-                                                    <div>Actually Learning Concepts & Python</div>
-
-
-                                                </div>
-                                               
-
-                                            </div>
-
-                                        </div>
-
-                                        <!-- -------------------------- -->
-                                        <!-- Text 1 -->
-                                        <!-- -------------------------- -->   
-                                        <div class="text-container-about">
-                                            My purpose in developing modern IT systems is to 
-                                            analyze the aspects that the customer needs and 
-                                            translate them into a modern, scalable IT systen 
-                                            that can be quickly updated to accommodate future 
-                                            changes.   
-                                        </div>
-                                        
-                                        <!-- -------------------------- -->
-                                        <!-- Text 2 -->
-                                        <!-- -------------------------- -->  
-                                        <div class="text-container-about">
-                                            At Least I would say on my own way that
-                                            I have a strong passion for creating 
-                                            layouts that are clear and visually appealing, 
-                                            because we all appreciate using simple, clean, 
-                                            and functional products. <br>
-                                            This can be the key factor in prioritzing our 
-                                            products over those of our competitors.
-                                        </div>
-
-                                        <div class="grid row-g-1">
-
-                                            <a href="https://drive.google.com/file/d/1nTpw-fA9N6c3RQL1c5ZaDt4V43Ehd_pu/view?usp=sharing" target="_blank">[PDF] | Angular 17 (2021-22) - Routing </a>
-
-                                            <a href="https://drive.google.com/file/d/1DlkrRwariWlC4dcXSmx8RAJoOMws7zoK/view?usp=sharing" target="_blank">[PDF] | Type Script (2025) - Grundlagen </a>
-
-                                        </div>
-                                      
-
-                                    </div>
-                                        
                                 </div>
 
-                                <!-- --------------------------------------------------------- -- -->
-                                <!-- My Top 3 Projects About | Container -->
-                                <!-- --------------------------------------------------------- -- -->
-                                <div id="about-my-top-3-projects">
-
-                                    <!-- ----------------------------------------- -->
-                                    <!-- Row Header About -->
-                                    <!-- ----------------------------------------- -->
-                                    <div class="row-header-about">
-
-                                        <div class="nr-box-row-header-about js-fe">
-                                            <div>01</div>
-                                            <div>/</div>
-                                            <div>03</div>
-                                        </div>
-                                        
-                                        <div class="row-header-title-about">
-    
-                                            <img src="media/img/icons/icons/rocket-3-black-mobile.png"
-                                             class="img-row-header-about" alt="img">
-                                            <div>My Top 3 Project's</div>
-    
-                                        </div>
-
-                                    </div>   
-
-                                    <!-- ----------------------------------------- -->
-                                    <!-- Row Content About -->
-                                    <!-- ----------------------------------------- -->
-                                    <div class="row-content-about">
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- Big Project Card Container -->
-                                        <!-- ----------------------------------------- -->
-                                        <div class="big-project-overview-card-container">
-                                            
-                                            <!-- ---------------------------------------- -->
-                                            <!-- Big Project Card #1 -->
-                                            <!-- ---------------------------------------- -->
-                                            <div class="big-project-overview-card">
-
-                                                <!-- ------------------------------------------- -->
-                                                <!-- IMG -->
-                                                <!-- ------------------------------------------- -->
-                                                <img src="media/img/content/about/my-top-3-about/top-project-1.jpg"
-                                                 class="img-present-big-project-overview-card" alt="img">
-                                                
-                                                <!-- ------------------------------------------- -->
-                                                <!-- Big Title Project Overview Card -->
-                                                <!-- ------------------------------------------- -->
-                                                <div class="big-title-project-overview-card-container">
-                                                    
-                                                    <div class="category-title-big-project">
-                                                        
-                                                        <img src="media/img/icons/icons/project-category/application.png" class="img-normal-category-big-title-project-overview" alt="img">
-
-                                                        <div >
-                                                            Web Application
-                                                            <!-- Web Application  -->
-                                                            <!-- Java-Project -->
-                                                            <!-- Backend-Project  -->
-                                                            <!-- AI-Data-Science-Project  -->
-
-                                                        </div>
-
-                                                    </div>
-                                                    
-                                                    <div class="big-title-project-overview-card">Configurable Memory Game to Play with the 
-                                                        Computer or to Play with others.
-                                                    </div>
-                                                    
-                                                </div>
-
-                                                <!-- -------------------------------------------- -->
-                                                <!-- Tech Skills Big Project Overview Container  -->
-                                                <!-- -------------------------------------------- -->
-                                                <div class="tech-skills-big-project-overview-container">
-
-                                                    <div>Angular</div>
-                                                    <div>NodeJS</div>
-                                                    <div>RestAPI</div>
-                                                    <div>chart.js</div>
-                                                    <div>leafmap</div>
-                                                    <div>MongoDB</div>
-                                                    <div>Java</div>
-                                                    <div>WildFly</div>
-
-                                                </div>
-                                                
-                                                <!-- -------------------------------------------- -->
-                                                <!-- Navigate Big Project Overview Container  -->
-                                                <!-- -------------------------------------------- -->
-                                                <nav class="nav-big-project-overview-container">
-
-                                                    <!-- -------------------------------------------- -->
-                                                    <!-- ZIP Download -->
-                                                    <!-- -------------------------------------------- -->  
-                                                    <a href="" class="nav-link-big-project-overview" title="» Download .zip File" target="_blank">
-                                                        <img src="media/img/icons/icons/download-black.png" class="img-nav-zip" alt="img">
-                                                        <div>.zip</div>
-                                                    </a>
-
-                                                    <!-- -------------------------------------------- -->
-                                                    <!-- GitHub Link -->
-                                                    <!-- -------------------------------------------- -->  
-                                                    <a href="" class="nav-link-big-project-overview" title="» Go to GitHub" target="_blank">
-                                                        <img src="media/img/icons/icons/github-black.png" class="img-nav-github" alt="img">
-                                                        <div>GitHub</div>
-                                                    </a>
-
-                                                </nav> 
-
-                                            </div> 
-
-                                            <!-- ---------------------------------------- -->
-                                            <!-- Big Project Card #2 -->
-                                            <!-- ---------------------------------------- -->  
-                                            <div class="big-project-overview-card">
-
-                                                <!-- ------------------------------------------- -->
-                                                <!-- IMG -->
-                                                <!-- ------------------------------------------- -->
-                                                <img src="media/img/content/about/my-top-3-about/top-project-3.jpg"
-                                                 class="img-present-big-project-overview-card" alt="img">
-                                                
-                                                <!-- ------------------------------------------- -->
-                                                <!-- Big Title Project Overview Card -->
-                                                <!-- ------------------------------------------- -->
-                                                <div class="big-title-project-overview-card-container">
-                                                    
-                                                    <div class="category-title-big-project">
-                                                        
-                                                        <img src="media/img/icons/icons/project-category/application.png"
-                                                         class="img-normal-category-big-title-project-overview" alt="img">
-
-                                                        <div >
-                                                            Java Application
-                                                            <!-- Web Application  -->
-                                                            <!-- Java-Project -->
-                                                            <!-- Backend-Project  -->
-                                                            <!-- AI-Data-Science-Project  -->
-
-                                                        </div>
-
-                                                    </div>
-                                                    
-                                                    <div class="big-title-project-overview-card">
-                                                        Handle Insurance Customer Datas in 
-                                                        a modern Database (Neo4j) and Create 
-                                                        Data Files for an possiblie Web Solution.
-                                                    </div>
-                                                    
-                                                </div>
-
-                                                <!-- -------------------------------------------- -->
-                                                <!-- Tech Skills Big Project Overview Container  -->
-                                                <!-- -------------------------------------------- -->
-                                                <div class="tech-skills-big-project-overview-container">
-
-                                                    <div>Java</div>
-                                                    <div>WildFly</div>
-                                                    <div>Spring Boot</div>
-                                                    <div>Quarkus</div>
-
-                                                    <div>RestAPI</div>
-                                                    
-                                                    <div>Neo4j</div>
-                                                    
-
-                                                </div>
-                                                
-                                                <!-- -------------------------------------------- -->
-                                                <!-- Navigate Big Project Overview Container  -->
-                                                <!-- -------------------------------------------- -->
-                                                <nav class="nav-big-project-overview-container">
-
-                                                    <!-- -------------------------------------------- -->
-                                                    <!-- ZIP Download -->
-                                                    <!-- -------------------------------------------- -->  
-                                                    <a href="" class="nav-link-big-project-overview" title="» Download .zip File" target="_blank">
-                                                        <img src="media/img/icons/icons/download-black.png" class="img-nav-zip" alt="img">
-                                                        <div>.zip</div>
-                                                    </a>
-
-                                                    <!-- -------------------------------------------- -->
-                                                    <!-- GitHub Link -->
-                                                    <!-- -------------------------------------------- -->  
-                                                    <a href="" class="nav-link-big-project-overview" title="» Go to GitHub" target="_blank">
-                                                        <img src="media/img/icons/icons/github-black.png" class="img-nav-github" alt="img">
-                                                        <div>GitHub</div>
-                                                    </a>
-
-                                                </nav> 
-
-                                            </div> 
-
-                                            <!-- ---------------------------------------- -->
-                                            <!-- Big Project Card #3 -->
-                                            <!-- ---------------------------------------- -->  
-                                            <div class="big-project-overview-card">
-
-                                                <!-- ------------------------------------------- -->
-                                                <!-- IMG -->
-                                                <!-- ------------------------------------------- -->
-                                                <img src="media/img/content/about/my-top-3-about/top-project-2.jpg"
-                                                 class="img-present-big-project-overview-card" alt="img">
-                                                
-                                                <!-- ------------------------------------------- -->
-                                                <!-- Big Title Project Overview Card -->
-                                                <!-- ------------------------------------------- -->
-                                                <div class="big-title-project-overview-card-container">
-                                                    
-                                                    <div class="category-title-big-project">
-                                                        
-                                                        <img src="media/img/icons/icons/project-category/application.png"
-                                                         class="img-normal-category-big-title-project-overview" alt="img">
-
-                                                        <div >
-                                                            Web Application
-                                                            <!-- Web Application  -->
-                                                            <!-- Java-Project -->
-                                                            <!-- Backend-Project  -->
-                                                            <!-- AI-Data-Science-Project  -->
-
-                                                        </div>
-
-                                                    </div>
-                                                    
-                                                    <div class="big-title-project-overview-card">
-                                                        
-                                                        Modern Web CRM-System to Visualize 
-                                                        actually personally Business Datas 
-                                                        and helpful Features to go in 
-                                                        faster in Action Descions.
-
-                                                    </div>
-                                                    
-                                                </div>
-
-                                                <!-- -------------------------------------------- -->
-                                                <!-- Tech Skills Big Project Overview Container  -->
-                                                <!-- -------------------------------------------- -->
-                                                <div class="tech-skills-big-project-overview-container">
-
-                                                    <div>Java</div>
-                                                    <div>WildFly</div>
-                                                    <div>Spring Boot</div>
-                                                    <div>Quarkus</div>
-
-                                                    <div>RestAPI</div>
-                                                    
-                                                    <div>Neo4j</div>
-                                                    
-
-                                                </div>
-                                                
-                                                <!-- -------------------------------------------- -->
-                                                <!-- Navigate Big Project Overview Container  -->
-                                                <!-- -------------------------------------------- -->
-                                                <nav class="nav-big-project-overview-container">
-
-                                                    <!-- -------------------------------------------- -->
-                                                    <!-- ZIP Download -->
-                                                    <!-- -------------------------------------------- -->  
-                                                    <a href="" class="nav-link-big-project-overview" title="» Download .zip File" target="_blank">
-                                                        <img src="media/img/icons/icons/download-black.png" class="img-nav-zip" alt="img">
-                                                        <div>.zip</div>
-                                                    </a>
-
-                                                    <!-- -------------------------------------------- -->
-                                                    <!-- GitHub Link -->
-                                                    <!-- -------------------------------------------- -->  
-                                                    <a href="" class="nav-link-big-project-overview" title="» Go to GitHub" target="_blank">
-                                                        <img src="media/img/icons/icons/github-black.png" class="img-nav-github" alt="img">
-                                                        <div>GitHub</div>
-                                                    </a>
-
-                                                </nav> 
-
-                                            </div> 
-
-                                        </div>
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- Want to See More ? -->
-                                        <!-- ----------------------------------------- -->
-                                        <div id="want-to-see-more-about">
-                                            
-                                           <img src="media/img/icons/clipart/me-challenge.png" alt="img">
-
-                                           <div>
-
-                                                <div>You Like to See More About <br> » {My Work}, {Learnings}, {Actually Processing Things} ? </div>
-
-                                                <div>
-                                                    <div>Then You Are Welcome to Have A Look on my Header Navigation Part.</div>
-                                                    <div>There you can Find the Categroy: "My IT-Stack" & "My Private Lifestyle" </div>
-                                                </div>
-
-                                           </div>
-                                            
-                                        </div>
-
-                                    </div>
-                                
-                                </div>
-
-                                <!-- --------------------------------------------------------- -- -->
-                                <!-- Mindset About | Container  -->
-                                <!-- --------------------------------------------------------- -- -->
-                                <div id="about-mindset">
-
-                                    <!-- ----------------------------------------- -->
-                                    <!-- Row Header About -->
-                                    <!-- ----------------------------------------- -->
-                                    <div class="row-header-about">
-
-                                        <div class="nr-box-row-header-about">
-                                            <div>02</div>
-                                            <div>/</div>
-                                            <div>03</div>
-                                        </div>
-                                        
-                                        <div class="row-header-title-about js-fe">
-    
-                                            <img src="media/img/icons/icons/light-bulb.png"
-                                             class="img-light-bulb-fix-row-header-about" alt="img">
-                                            <div>My Mindset</div>
-    
-                                        </div>
-
-                                    </div> 
-
-                                    <!-- ----------------------------------------- -->
-                                    <!-- Row Content About -->
-                                    <!-- ----------------------------------------- -->
-                                    <div class="row-content-about">
-
-                                         <!-- ----------------------------------------- -->
-                                        <!-- Video Mindset Container About  -->
-                                        <!-- ----------------------------------------- -->
-                                        <div>
-                                            Video Mindset Container About 
-                                        </div>
-                                        
-                                        <!-- ----------------------------------------- -->
-                                        <!-- My Quotes Mindset Container About  -->
-                                        <!-- ----------------------------------------- -->
-                                        <div>
-                                            My Quotes Mindset Container About
-                                        </div> 
-
-                                    </div>
-                                   
-                                   
-                                </div> 
-
-                                <!-- --------------------------------------------------------- -- -->
-                                <!-- Contact Me About | Container -->
-                                <!-- --------------------------------------------------------- -- -->
-                                <div id="about-contact">
-
-                                    <!-- ----------------------------------------- -->
-                                    <!-- Row Header About -->
-                                    <!-- ----------------------------------------- -->
-                                    <div class="row-header-about">
-
-                                        <div class="nr-box-row-header-about js-fe">
-                                            <div>03</div>
-                                            <div>/</div>
-                                            <div>03</div>
-                                        </div>
-                                        
-                                        <div class="row-header-title-about">
-    
-                                            <img src="media/img/icons/icons/email-black.png"
-                                             class="img-small-row-header-about" alt="img">
-                                            <div>Contact Me</div>
-    
-                                        </div>
-
-                                    </div> 
-
-
-                                    <!-- ----------------------------------------- -->
-                                    <!-- Row Content About -->
-                                    <!-- ----------------------------------------- -->
-                                    <div class="row-content-about">
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- Contact Me Container About -->
-                                        <!-- ----------------------------------------- -->
-                                        <div>
-                                            Contact Me Container About 
-
-                                            <br><br>
-
-                                            Contact - Like to coming in touch ?
-                                            >> Work togehter or more ? 
-
-                                            <br> Than you are Welcome to Write me an E-Mail 
-                                            <br>
-                                            <br>
-                                            I will try my best to answer you in 
-                                            maximum 48h
-
-
-                                        </div>
-
-                                    </div>
-
-                                   
-
-                                </div> 
-
-                                <!-- --------------------------------------------------------- -- -->
-                                <!-- To Be Fresh About | Container -->
-                                <!-- --------------------------------------------------------- -- -->
-                                <div id="to-be-fresh-about-container">
-
-                                    <input type="checkbox" id="chk-audio-to-be-fresh" name="name-chk-audio-to-be-fresh">
-                                    
-                                    <!-- ------------------------------------------------------------- -->
-                                    <!-- Audio - to be fresh - Container -->
-                                    <!-- ------------------------------------------------------------- -->  
-                                    <label for="chk-audio-to-be-fresh" id="audio-to-be-fresh-container">
-
-                                        <!-- ---------------------------------------- -->
-                                        <!-- Timestamp -->
-                                        <!-- ---------------------------------------- -->  
-                                        <div id="audio-timestamp-to-be-fresh">
-
-                                            <span>
-                                                <span id="js-min-audio-to-be-fresh">XX</span>
-                                                <span>:</span>
-                                                <span id="js-sec-audio-to-be-fresh">XX</span>
-                                            </span>
-
-                                            <span>Min.</span>
-
-                                        </div>
-
-                                        <!-- ---------------------------------------- -->
-                                        <!-- Play/Stop Container -->
-                                        <!-- ---------------------------------------- -->  
-                                        <div id="play-stop-audio-to-be-fresh-container">
-                                            <img src="media/img/icons/icons/mp3-play.png"
-                                                id="img-play-stop-audio-to-be-fresh" alt="img">
-                                        </div>
-
-                                        <!-- ---------------------------------------- -->
-                                        <!-- Audio Source -->
-                                        <!-- ---------------------------------------- -->  
-                                        <audio id="js-src-audio-to-be-fresh" 
-                                            src="media/audio/content/about/x-bird-spirit.mp3" type="audio/mp3">                                           
-                                        </audio>
-
-                                    </label>
-
-                                    <!-- ------------------------------------------------------------- -->
-                                    <!-- Img - to be fresh - Container -->
-                                    <!-- ------------------------------------------------------------- -->
-                                    <img src="media/img/content/about/my-top-3-about/top-project-1.jpg" 
-                                    id="img-to-be-fresh" alt="img">
-                                   
-                                   
-
-                                    <!-- ------------------------------------------------------------- -->
-                                    <!-- Video - to be fresh - Container -->
-                                    <!-- ------------------------------------------------------------- -->  
-                                    <video id="video-to-be-fresh-container" muted loop>
-                                        <source 
-                                        src="media/img/content/about/my-top-3-about/background-waves.mp4">
-                                    </video>                                    
-
-                                    <!-- ------------------------------------------------------------- -->
-                                    <!-- Quote - to be fresh - Container -->
-                                    <!-- ------------------------------------------------------------- -->  
-                                    <div id="quote-to-be-fresh-container">
-
-                                        <div id="txt-to-be-fresh">
-
-                                            <div>»</div>
-                                            <div class="delius-regular">to be fresh:</div>
-                                            <div id="txt-double-arrow-fix-to-be-fresh">»</div>
-
-                                        </div>
-
-                                        <div id="txt-quote-to-be-fresh">
-
-                                            <div>is</div>
-
-                                            <div>
-                                                <div>to accept things you can't change</div>
-                                                <div>and go for things u can change</div>
-                                            </div>
-
-                                        </div>
-                                             
-
-                                    </div>
-
-                                </div>
-                                
-
-                            </div> 
-
-                            <!-- ----------------------------------------------- -->
-                            <!-- Header Main Layout Container -->
-                            <!-- ----------------------------------------------- -->
-                            <div id="header-main-layout-container">
-                                
-                                
-                                <!-- ----------------------------------------------------------- -->
-                                <!-- Title Container | Header Main Layout --> 
-                                <!-- ----------------------------------------------------------- -->
-                                <div id="title-container-h-m-l">
-                                    
-                                    <img src="media/img/icons/icons/main/main-header/web-dev-black.png" class="img-title-main-header" alt="img">
-
-                                    <div id="title-main-header-container">
-                                        <div id="title-main-header">Web-Dev</div>
-                                        <div id="sub-title-main-header">» My IT Doc's & IT Project's</div>
-                                    </div>
-
-                                </div>
-                                
-                                <!-- ----------------------------------------------------------- -->
-                                <!-- [UI-Element] - Custom Select | Sub Topic --> 
-                                <!-- ----------------------------------------------------------- -->
-                                <input type="checkbox" id="chk-cs-sub-topic" name="name-chk-cs-selected-sub-topic"> 
-                                <label for="chk-cs-sub-topic" id="selected-sub-topic" class="custom-selected-sub-topic">
-                                    
-                                    <div class="title-cs-container">
-
-                                        <img src="media/img/icons/icons/right-arrow-black.png" class="img-beginning-cs-sub-topic"  alt="img">
-                                        <div>Show All</div>
-
-                                    </div>
-
-                                    <img src="media/img/icons/icons/arrow-down-black.png" class="img-arrow-up-down-cs-sub-topic" alt="img">
-
-                                </label> 
-                              
-                                <!-- ----------------------------------------------------- -->
-                                <!-- Smooth Open/Close Container -->
-                                <!-- ----------------------------------------------------- -->
-                                <div class="smooth-open-close-container w-100p">
-
-                                    <div class="container-overflow-hidden">
-
-                                        <!-- ----------------------------------------------------------- -->
-                                        <!-- [UI-Element] - Select List Custom Select | Sub Topic        --> 
-                                        <!-- ----------------------------------------------------------- -->
-                                        <div class="custom-select-list-sub-topic w-100p">
-                                        
-                                            <input type="radio" id="radio-sub-topic-1" name="name-radio-sub-topic">
-                                            <label for="radio-sub-topic-1" class="lbl-cs-sub-topic-item">
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Title Item | Sub Topic  -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="title-item-cs-sub-topic-item">
-
-                                                    <div class="nr-box-cs-sub-topic-item">
-                                                        
-                                                        <!-- <div>NR</div> -->
-                                                        <img src="media/img/icons/icons/right-arrow-black.png" class="img-beginning-cs-sub-topic" alt="img">
-
-                                                    </div>
-
-                                                    <div class="title-cs-sub-topic-item">Show All</div>
-
-                                                </div>
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Custom Radio | Sub Topic -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="custom-radio-sub-topic">
-                                                    <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
-                                                </div>
-
-                                            </label>
-
-                                            <input type="radio" id="radio-sub-topic-2" name="name-radio-sub-topic">
-                                            <label for="radio-sub-topic-2" class="lbl-cs-sub-topic-item">
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Title Item | Sub Topic  -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="title-item-cs-sub-topic-item">
-
-                                                    <div class="nr-box-cs-sub-topic-item">
-                                                        
-                                                        <div class="nr-text-box-cs-sub-topic-item">01</div>
-
-                                                    </div>
-
-                                                    <div class="title-cs-sub-topic-item">Web Basics</div>
-
-                                                </div>
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Custom Radio | Sub Topic -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="custom-radio-sub-topic">
-                                                    <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
-                                                </div>
-
-                                            </label>
-
-                                            <input type="radio" id="radio-sub-topic-3" name="name-radio-sub-topic">
-                                            <label for="radio-sub-topic-3" class="lbl-cs-sub-topic-item">
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Title Item | Sub Topic  -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="title-item-cs-sub-topic-item">
-
-                                                    <div class="nr-box-cs-sub-topic-item">
-                                                        
-                                                        <div class="nr-text-box-cs-sub-topic-item">02</div>
-
-                                                    </div>
-
-                                                    <div class="title-cs-sub-topic-item">Frameworks</div>
-
-                                                </div>
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Custom Radio | Sub Topic -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="custom-radio-sub-topic">
-                                                    <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
-                                                </div>
-
-                                            </label>
-
-                                            <input type="radio" id="radio-sub-topic-4" name="name-radio-sub-topic">
-                                            <label for="radio-sub-topic-4" class="lbl-cs-sub-topic-item">
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Title Item | Sub Topic  -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="title-item-cs-sub-topic-item">
-
-                                                    <div class="nr-box-cs-sub-topic-item">
-                                                        
-                                                        <div class="nr-text-box-cs-sub-topic-item">03</div>
-
-                                                    </div>
-
-                                                    <div class="title-cs-sub-topic-item">JS Webservers</div>
-
-                                                </div>
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Custom Radio | Sub Topic -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="custom-radio-sub-topic">
-                                                    <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
-                                                </div>
-
-                                            </label>
-
-                                            <input type="radio" id="radio-sub-topic-5" name="name-radio-sub-topic">
-                                            <label for="radio-sub-topic-5" class="lbl-cs-sub-topic-item">
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Title Item | Sub Topic  -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="title-item-cs-sub-topic-item">
-
-                                                    <div class="nr-box-cs-sub-topic-item">
-                                                        
-                                                        <div class="nr-text-box-cs-sub-topic-item">04</div>
-                                                        
-                                                    </div>
-
-                                                    <div class="title-cs-sub-topic-item">Web IT-Tools</div>
-
-                                                </div>
-
-                                                <!-- ----------------------------------- -->
-                                                <!-- Custom Radio | Sub Topic -->
-                                                <!-- ----------------------------------- -->  
-                                                <div class="custom-radio-sub-topic">
-                                                    <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
-                                                </div>
-
-                                            </label>
-
-                                        </div>
-
-                                    </div>
-                                
-                                </div>
-
-                                <!-- ----------------------------------------------------------- -->
-                                <!-- [UI-Element] - Filter Left Button Container        --> 
-                                <!-- ----------------------------------------------------------- -->
-                                <div class="filter-left-button-container">
-
-                                    <button id="btn-open-all-cards" class="btn-small btn-open-close-cards">
-                                        
-                                        <img src="media/img/icons/icons/arrow-down-black.png" class="img-btn-small" alt="img">
-                                        <div> Open All Cards</div>
-                                       
-                                    </button>
-
-                                    <button id="btn-close-all-cards" class="btn-small btn-open-close-cards">
-                                         
-                                        <img src="media/img/icons/icons/arrow-down-black.png" class="img-btn-small rot-180" alt="img">
-                                        <div> Close All Cards </div>
-                                        
-                                    </button>
-
-                                </div> 
 
                             </div>
 
-                        </div>
+                           
 
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- ----------------------------------------------- -->
-            <!-- [Main] - Row Main Container -->
-            <!-- ----------------------------------------------- -->
-            <div class="row-main-container bgc-row-main">
-
-                <!-- ----------------------------------------------- -->
-                <!-- [Resp] - Main Container -->
-                <!-- ----------------------------------------------- -->
-                <div class="resp-main-container box-shadow-main">
-
-                    <!-- ----------------------------------------------------------- -->
-                    <!-- 100% orient of dyn. resp header container -->
-                    <!-- ----------------------------------------------------------- -->
-                    <div class="w-100p">
-
-                        <!-- ----------------------------------------------- -->
-                        <!-- Main Layout Container -->
-                        <!-- ----------------------------------------------- -->
-                        <div id="main-layout-container">
-
-                            Dyn. Content - Main Layout Container <br>
-                            <a href="https://drive.google.com/file/d/1PQgjkt-Rv0cDSIwuahDAqOTN267IExfx/view?usp=sharing" target="_blank">
-                                PDF | Angular - Routing 
-                            </a>
 
                         </div>
 
+
                     </div>
 
-                </div>
+                  
+                       
+                </div> 
+
+                <!-- ----------------------------------------------------------- -->
+                <!-- About Header | Sub Row Container                            -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="sub-row-container" style="background-color: rgb(0, 0, 0);">
+
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- [Resp Main Content Container]                               -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="resp-main-content-container">
 
 
-            </div>
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width 100 %                            -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div style="width: 100%;">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- Main Header                             -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div id="title-header-about" style="padding: .8em;">
+
+                                About Header
+
+                            </div>
+
+
+                        </div>
+
+
+
+                       
+
+
+                    </div>
+
+                       
+                </div> 
+
+                <!-- ----------------------------------------------------------- -->
+                <!-- About - Impress | Sub Row Container                           -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="sub-row-container" style="background-color: magenta;">
+
+                    
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- [Resp Main Content Container]                               -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="resp-main-content-container">
+
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width 100 %                            -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div style="width: 100%;">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- Main Content 1                         -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="test-main-header">
+
+                                About - Impress Container
+                                
+                            </div>
+
+
+                        </div>
+
+
+
+                       
+
+
+                    </div>
+
+                </div> 
+
+                <!-- ----------------------------------------------------------- -->
+                <!-- About - My Top 3 Projects | Sub Row Container                 -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="sub-row-container" style="background-color: rgb(155, 65, 71);">
+
+                    
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- [Resp Main Content Container]                               -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="resp-main-content-container">
+
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width 100 %                            -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div style="width: 100%;">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- Main Content 2                         -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="test-main-header">
+
+                                About - My Top 3 Projects Container <br>
+
+                                <a href="https://drive.google.com/file/d/1iMJrcWbiX1BzcQGYhnHWtDp6L_YhZymJ/view?usp=sharing" target="_blank">[Intro] - Sass Dashboard</a> <br>
+                                <a href="https://drive.google.com/file/d/1CiLIGXxgjtJ2W9Z_L3qzER1G0soDB0J_/view?usp=sharing" target="_blank">[Layout Konzepte] - Sass Dashboard</a> <br>
+                                <a href="https://drive.google.com/file/d/1ewxLvRGdClmdQHrcIo6m1Y-VUFNr_pEN/view?usp=sharing" target="_blank">[Coding] - Sass Dashboard</a> <br>
+                                
+                            </div>
+
+
+                        </div>
+
+
+
+                       
+
+
+                    </div>
+
+                </div> 
+
+                <!-- ----------------------------------------------------------- -->
+                <!-- About - Mindset | Sub Row Container                 -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="sub-row-container" style="background-color: rgb(155, 65, 71);">
+
+                    
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- [Resp Main Content Container]                               -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="resp-main-content-container">
+
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width 100 %                            -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div style="width: 100%;">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- Main Content 2                         -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="test-main-header">
+
+                                About - My Mindset
+                                
+                            </div>
+
+
+                        </div>
+
+
+
+                       
+
+
+                    </div>
+
+                </div> 
+
+                <!-- ----------------------------------------------------------- -->
+                <!-- About - Contact Me | Sub Row Container                 -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="sub-row-container" style="background-color: rgb(155, 65, 71);">
+
+                    
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- [Resp Main Content Container]                               -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="resp-main-content-container">
+
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width 100 %                            -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div style="width: 100%;">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- Main Content 2                         -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="test-main-header">
+
+                                About - Contact Me
+                                
+                            </div>
+
+
+                        </div>
+
+
+
+                       
+
+
+                    </div>
+
+                </div> 
+
+                <!-- ----------------------------------------------------------- -->
+                <!-- About - Contact Me | Sub Row Container                 -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="sub-row-container" style="background-color: rgb(155, 65, 71);">
+
+                    
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- [Resp Main Content Container]                               -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="resp-main-content-container">
+
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width 100 %                            -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div style="width: 100%;">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- Main Content 2                         -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="test-main-header">
+
+                                About - News
+                                
+                            </div>
+
+
+                        </div>
+
+
+
+                       
+
+
+                    </div>
+
+                </div> 
+
+                <!-- ----------------------------------------------------------- -->
+                <!-- About - to be fresh | Sub Row Container                 -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="sub-row-container" style="background-color: rgb(155, 65, 71);">
+
+                    
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- [Resp Main Content Container]                               -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="resp-main-content-container">
+
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width 100 %                            -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div style="width: 100%;">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- Main Content 2                         -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="test-main-header">
+
+                                About - to be fresh
+                                
+                            </div>
+
+
+                        </div>
+
+
+
+                       
+
+
+                    </div>
+
+                </div> 
+
+                
+
+             
+
+            </div> 
+
 
         </div>
        
     </main> 
 
+    <!-- ------------------------------------------------------------------------------- -->
+    <!-- Body Footer | ( jc-c ) -->
+    <!-- ------------------------------------------------------------------------------- -->
+    <footer id="body-footer">
 
-    <!-- ------------------------------------------------------- -->
-    <!-- Footer Body -->
-    <!-- ------------------------------------------------------- -->
-    <footer id="footer-body">
+        <!-- --------------------------------------------------------- -->
+        <!-- Radio | Useful Links                          -->
+        <!-- --------------------------------------------------------- -->
+        <input type="checkbox" id="chk-useful-links-body-footer"
+        name="name-chk-useful-links-body-footer"> 
 
-        <!-- --------------------------------------------- -->
-        <!-- [Resp] - Main Container -->
-        <!-- --------------------------------------------- -->  
-        <div class="resp-main-container">
+        <!-- --------------------------------------------------------- -->
+        <!-- Radios | Links & Communites                   -->
+        <!-- --------------------------------------------------------- -->
+        <!-- 🚧 radio-tab-links-footer-body, name-radio-tab-links-footer-body  --> 
+        <!-- 🚧 radio-tab-community-links-footer-body, name-radio-tab-community-links-footer-body  -->  
+        <input checked type="radio" id="radio-footer-body-links" name="name-radio-footer-body">
+        <input type="radio" id="radio-footer-body-community-links" name="name-radio-footer-body">  
+
+        <!-- --------------------------------------------------------------------- -->
+        <!-- [Handle] - Main Content Area | Header | Body Footer         -->
+        <!-- --------------------------------------------------------------------- -->
+        <div class="handle-main-content-area">
 
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- 100% orient of dyn. resp header container -->
+            <!-- Width: 100% ( Stretch under Layout to Max Parent Layout ) -->
             <!-- ----------------------------------------------------------------------------- -->
-            <div style="width: 100%;">
+            <div class="w-100p">
 
                 <!-- --------------------------------------------- -->
                 <!-- Footer Body Layout Container -->
                 <!-- --------------------------------------------- -->  
-                <div id="footer-body-layout-container">
+                <div id="body-footer-container">
+                    
+                    <!-- -------------------------------------------------------------------------- -->
+                    <!-- ⬇️⬆️ | Smooth Open Close | Useful Links | Body Footer                     -->
+                    <!-- -------------------------------------------------------------------------- -->
+                    <div id="smooth-open-close-useful-links-body-footer" >
 
-                    <div>@SuperfreshDEV</div>
-                    <div>Interessante Links</div>
+                        
+                        <!-- -------------------------------------------- -->
+                        <!-- [1/2] - Short View Container  -->
+                        <!-- -------------------------------------------- -->        
+                        <div id="body-footer-short-view-container">
+
+                            <!-- -------------------------------------------- -->
+                            <!-- Open My Useful Links -->
+                            <!-- -------------------------------------------- -->                      
+                            <label for="chk-useful-links-body-footer" 
+                                id="lbl-useful-links-body-footer" name="name-chk-useful-links-body-footer">
+
+                                <img src="media/img/icons/clipart/show-left.png" alt="img">
+
+                                <div id="txt-title-open-useful-links" style="display: none;">Useful Links</div>
+
+                                <img src="media/img/icons/icons/arrow-down-light-grey.png" alt="img">
+
+                            </label>   
+
+
+                            <!-- -------------------------------------------- -->
+                            <!-- SFD Copyright | Body Footer -->
+                            <!-- -------------------------------------------- -->
+                            <div id="sfd-copyright-body-footer">
+                                <div>@SuperfreshDEV |</div>                            
+                                <div id="js-txt-year-copyright">year</div>
+                            </div>
+
+                        </div>
+                
+                        <!-- ---------------------------------------------- -->
+                        <!-- Overflow Hidden - Container                    -->
+                        <!-- Reminder: Condition for Open/Close Smooth      --> 
+                        <!-- ---------------------------------------------- -->  
+                        <div class="overflow-hidden" >
+
+                           
+                            <!-- -------------------------------------------- -->
+                            <!-- Category Tab Panel                           -->
+                            <!-- -------------------------------------------- -->
+                            <div id="category-tabs-panel-body-footer">
+
+                                <!-- ------------------------------- -->
+                                <!-- Tab: Links -->
+                                <!-- ------------------------------- -->
+                                <label for="radio-footer-body-links" class="lbl-tab-category-body-footer" >
+
+                                    <!-- ------------------------------- -->
+                                    <!-- Custom Radio -->
+                                    <!-- ------------------------------- -->
+                                    <div class="custom-radio-sub-topic">
+                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" 
+                                        class="img-cr-x">
+                                    </div>   
+
+                                    <!-- ------------------------------- -->
+                                    <!-- Title -->
+                                    <!-- ------------------------------- -->
+                                    <div class="lbl-title-category-tab-body-footer">
+                                        <img src="media/img/icons/icons/cursor-black.png" alt="img"
+                                            class="img-lbl-title-tab-category-body-footer">
+                                        <div>Links</div>
+                                    </div>
+
+                                </label>
+
+                                <!-- ------------------------------- -->
+                                <!-- Tab: Community Links -->
+                                <!-- ------------------------------- -->
+                                <label for="radio-footer-body-community-links" class="lbl-tab-category-body-footer">
+
+                                    <!-- ------------------------------- -->
+                                    <!-- Custom Radio -->
+                                    <!-- ------------------------------- -->
+                                    <div class="custom-radio-sub-topic">
+                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x">
+                                    </div>   
+                                    
+                                    <!-- ------------------------------- -->
+                                    <!-- Title -->
+                                    <!-- ------------------------------- -->
+                                    <div class="lbl-title-category-tab-body-footer">
+                                        <img src="media/img/icons/icons/team-black.png" alt="img" 
+                                            class="img-lbl-title-tab-category-body-footer">
+                                        <div>Community</div>
+                                    </div>
+                                
+                                </label>
+
+                            </div>
+                                
+
+                        </div>
+
+
+                    </div>
+                    
 
                 </div>
 
             </div>
 
-            
+
         </div>
+
+        <!-- --------------------------------------------------------------------- -->
+        <!-- [Handle] - Max Content Area | Main | Body Footer                        -->
+        <!-- --------------------------------------------------------------------- -->
+        <div class="handle-max-content-area" style="display: none;">
+
+            
+            <!-- ----------------------------------------------------------------------------- -->
+            <!-- Width: 100% ( Stretch under Layout to Max Parent Layout ) -->
+            <!-- ----------------------------------------------------------------------------- -->
+            <div class="w-100p" >
+
+        
+                <!-- -------------------------------------------------------------------------- -->
+                <!-- ⬇️⬆️ | Smooth Open Close | Link Containers | Body Footer                  -->
+                <!-- -------------------------------------------------------------------------- -->
+                <div id="smooth-open-close-link-containers-body-footer">
+
+                    
+                    <!-- -------------------------------------------------------------- -->
+                    <!-- [1/2] - Links Container (default shown)                        -->
+                    <!-- -------------------------------------------------------------- -->
+                    <div class="links-container-body-footer">
+
+                        <!-- --------------------------------------------- -->
+                        <!-- Links -->
+                        <!-- --------------------------------------------- -->
+                        <div class="mixery-category-link-container-body-footer">
+
+                            <header>
+                                <img src="media/img/icons/icons/tornado.png" alt="img">
+                                <div> Mixery </div>
+                            </header>
+
+                            <main>
+
+                                         
+                                <!-- ❇️ Rheinwerk Openbook  -->
+                                <div class="link-item-container-body-footer">
+
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Content Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="content-block-link-item-body-footer">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Img User -->
+                                        <!-- --------------------------------------- -->  
+                                        <img src="media/img/content/default/body-footer/links/rheinwerk.jpg" class="img-link-item-body-footer" alt="img">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Title User -->
+                                        <!-- --------------------------------------- -->  
+                                        <div class="title-link-item-body-footer">
+
+                                            <div>Rheinwerk Openbook's</div>
+                                            <div>Java | Web Dev | Backend | ... </div>
+
+                                        </div>
+
+                                    </div> 
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Media Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="media-block-link-item-body-footer">
+
+
+                                        <a href="https://www.rheinwerk-verlag.de/openbook/?srsltid=AfmBOorb1DowSuqI37emZDclCJACoRLC1NmXv0d-8iyqyf2w_BNwTWm7" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
+                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
+                                        </a>
+
+
+                                    </div> 
+
+
+                                </div>
+
+                                <!-- ❇️ Pic Color finder  -->
+                                <div class="link-item-container-body-footer">
+
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Content Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="content-block-link-item-body-footer">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Img User -->
+                                        <!-- --------------------------------------- -->  
+                                        <img src="media/img/content/default/body-footer/links/pic-color-finder.jpg" class="img-link-item-body-footer" alt="img">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Title User -->
+                                        <!-- --------------------------------------- -->  
+                                        <div class="title-link-item-body-footer">
+
+                                            <div>Pic Color Finder</div>
+                                            <div>Img Hexcolor Finder </div>
+
+                                        </div>
+
+                                    </div> 
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Media Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="media-block-link-item-body-footer">
+
+
+                                        <a href="https://imagecolorpicker.com/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
+                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
+                                        </a>
+
+
+                                    </div> 
+
+
+                                </div>
+
+                                <!-- ❇️ 95 CSS Box Shadow Effects -->
+                                <div class="link-item-container-body-footer">
+
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Content Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="content-block-link-item-body-footer">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Img User -->
+                                        <!-- --------------------------------------- -->  
+                                        <img src="media/img/content/default/body-footer/links/css95.jpg" class="img-link-item-body-footer" alt="img">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Title User -->
+                                        <!-- --------------------------------------- -->  
+                                        <div class="title-link-item-body-footer">
+
+                                            <div>95 CSS Box Shadow Effects</div>
+                                            <div>CSS Shadows </div>
+
+                                        </div>
+
+                                    </div> 
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Media Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="media-block-link-item-body-footer">
+
+
+                                        <a href="https://getcssscan.com/css-box-shadow-examples" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
+                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
+                                        </a>
+
+
+                                    </div> 
+
+
+                                </div>
+
+                                <!-- ❇️ Flaticon -->
+                                <div class="link-item-container-body-footer">
+
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Content Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="content-block-link-item-body-footer">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Img User -->
+                                        <!-- --------------------------------------- -->  
+                                        <img src="media/img/content/default/body-footer/links/flaticon.jpg" class="img-link-item-body-footer" alt="img">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Title User -->
+                                        <!-- --------------------------------------- -->  
+                                        <div class="title-link-item-body-footer">
+
+                                            <div>Flaticon</div>
+                                            <div>icon imgs </div>
+
+                                        </div>
+
+                                    </div> 
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Media Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="media-block-link-item-body-footer">
+
+
+                                        <a href="https://www.flaticon.com/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
+                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
+                                        </a>
+
+
+                                    </div> 
+
+
+                                </div>
+
+                                <!-- ❇️ css gradient -->
+                                <div class="link-item-container-body-footer">
+
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Content Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="content-block-link-item-body-footer">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Img User -->
+                                        <!-- --------------------------------------- -->  
+                                        <img src="media/img/content/default/body-footer/links/cssgradient.jpg" class="img-link-item-body-footer" alt="img">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Title User -->
+                                        <!-- --------------------------------------- -->  
+                                        <div class="title-link-item-body-footer">
+
+                                            <div>cssgradient.io</div>
+                                            <div>css background color stylings </div>
+
+                                        </div>
+
+                                    </div> 
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Media Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="media-block-link-item-body-footer">
+
+
+                                        <a href="https://cssgradient.io/gradient-backgrounds/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
+                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
+                                        </a>
+
+
+                                    </div> 
+
+
+                                </div>
+
+                                <!-- ❇️ leet code -->
+                                <div class="link-item-container-body-footer">
+
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Content Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="content-block-link-item-body-footer">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Img User -->
+                                        <!-- --------------------------------------- -->  
+                                        <img src="media/img/content/default/body-footer/links/leetcode.jpg" class="img-link-item-body-footer" alt="img">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Title User -->
+                                        <!-- --------------------------------------- -->  
+                                        <div class="title-link-item-body-footer">
+
+                                            <div>leet code</div>
+                                            <div>algorithmn task & solutions community </div>
+
+                                        </div>
+
+                                    </div> 
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Media Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="media-block-link-item-body-footer">
+
+
+                                        <a href="https://leetcode.com/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
+                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
+                                        </a>
+
+
+                                    </div> 
+
+
+                                </div> 
+
+                                <!-- ❇️ code wars -->
+                                <div class="link-item-container-body-footer">
+
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Content Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="content-block-link-item-body-footer">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Img User -->
+                                        <!-- --------------------------------------- -->  
+                                        <img src="media/img/content/default/body-footer/links/codewars.jpg" class="img-link-item-body-footer" alt="img">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Title User -->
+                                        <!-- --------------------------------------- -->  
+                                        <div class="title-link-item-body-footer">
+
+                                            <div>code wars</div>
+                                            <div>algorithmn task & solutions community </div>
+
+                                        </div>
+
+                                    </div> 
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Media Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="media-block-link-item-body-footer">
+
+
+                                        <a href="https://www.codewars.com/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
+                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
+                                        </a>
+
+
+                                    </div> 
+
+
+                                </div>  
+
+                                <!-- ❇️ codepen -->
+                                <div class="link-item-container-body-footer">
+
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Content Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="content-block-link-item-body-footer">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Img User -->
+                                        <!-- --------------------------------------- -->  
+                                        <img src="media/img/content/default/body-footer/links/codepen.jpg" class="img-link-item-body-footer" alt="img">
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Title User -->
+                                        <!-- --------------------------------------- -->  
+                                        <div class="title-link-item-body-footer">
+
+                                            <div>Code Pen</div>
+                                            <div>HTML, CSS/SASS , Java Script - Community </div>
+
+                                        </div>
+
+                                    </div> 
+
+                                    <!-- --------------------------------------- -->
+                                    <!-- Media Block -->
+                                    <!-- --------------------------------------- -->
+                                    <div class="media-block-link-item-body-footer">
+
+
+                                        <a href="https://codepen.io/" class="link-media-link-item-body-footer" title="» Go To Webpage" target="_blank">
+                                            <img src="media/img/icons/icons/social-media/internet-square.png" alt="img">
+                                        </a>
+
+
+                                    </div> 
+
+
+                                </div> 
+
+                                <!-- ❇️ Linkedin Learning -->
+
+                                <!-- ❇️ Angular Official -->
+
+                                <!-- ❇️ Youtube -->
+
+                                <!-- ❇️ ??? -->
+                                
+
+                            </main>
+
+                            
+
+
+                        </div>
+
+
+                    </div>  
+
+                    <!-- ---------------------------------------------- -->
+                    <!-- Overflow Hidden - Container                    -->
+                    <!-- Reminder: Condition for Open/Close Smooth      --> 
+                    <!-- ---------------------------------------------- -->  
+                    <div class="overflow-hidden">
+
+                        <!-- -------------------------------------------------------------- -->
+                        <!-- [2/2] - Community Links Container (default unshown)            -->
+                        <!-- -------------------------------------------------------------- -->
+                        <div class="links-container-body-footer">
+
+                            <!-- --------------------------------------------- -->
+                            <!-- Categegory: Web-Dev -->
+                            <!-- --------------------------------------------- -->
+                            <div class="category-link-container-body-footer">
+
+                                    <header>
+                                        
+                                        <img src="media/img/icons/icons/nav-main-body/web-code-black.png" alt="img">
+                                        <div> Web-Dev </div>
+
+                                    </header>
+
+                                    <main>
+                                        
+                                        
+
+                                        <!-- ❇️ Anika Kubow  - User  -->
+                                        <div class="link-item-container-body-footer">
+
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Content Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="content-block-link-item-body-footer">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Img User -->
+                                                <!-- --------------------------------------- -->  
+                                                <img src="media/img/content/default/body-footer/user-community/ania-kubow.jpg" class="img-link-item-body-footer" alt="img">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Title User -->
+                                                <!-- --------------------------------------- -->  
+                                                <div class="title-link-item-body-footer">
+
+                                                    <div>Ania Kubow</div>
+                                                    <div>Java Script | CSS | React | IT-Lifestyle</div>
+
+                                                </div>
+
+                                            </div> 
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Media Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="media-block-link-item-body-footer">
+
+
+                                                <a href="https://www.youtube.com/@aniakubow" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                                </a>
+
+                                                <a href="https://www.instagram.com/aniakubow/" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
+                                                    <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
+                                                </a>
+
+
+                                            </div> 
+
+
+                                        </div>
+
+                                        <!-- ❇️ Angular Love - User  -->
+                                        <div class="link-item-container-body-footer">
+
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Content Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="content-block-link-item-body-footer">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Img User -->
+                                                <!-- --------------------------------------- -->  
+                                                <img src="media/img/content/default/body-footer/user-community/angular-love.jpg" class="img-link-item-body-footer" alt="img">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Title User -->
+                                                <!-- --------------------------------------- -->  
+                                                <div class="title-link-item-body-footer">
+
+                                                    <div>Angular Love</div>
+                                                    <div>Angular | RxJS | NgRX | ... </div>
+
+                                                </div>
+
+                                            </div> 
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Media Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="media-block-link-item-body-footer">
+
+
+                                                <a href="https://www.youtube.com/@angularlove" 
+                                                class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                    <img src="media/img/icons/icons/social-media/youtube-square.png"
+                                                        alt="img">
+                                                </a>
+
+
+                                            </div> 
+
+
+                                        </div>
+
+                                        <!-- ❇️ Angular University - User  -->
+                                        <div class="link-item-container-body-footer">
+
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Content Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="content-block-link-item-body-footer">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Img User -->
+                                                <!-- --------------------------------------- -->  
+                                                <img src="media/img/content/default/body-footer/user-community/angular-university.jpg" class="img-link-item-body-footer" alt="img">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Title User -->
+                                                <!-- --------------------------------------- -->  
+                                                <div class="title-link-item-body-footer">
+
+                                                    <div>Angular University</div>
+                                                    <div>Free Courses | Pay Coursed | ...  </div>
+
+                                                </div>
+
+                                            </div> 
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Media Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="media-block-link-item-body-footer">
+
+
+                                                <a href="https://angular-university.io/" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                                </a>
+
+                                            </div> 
+
+
+                                        </div>
+                                    
+                                        <!-- ❇️ Angular - Manfred Steyer  -->
+                                        <div class="link-item-container-body-footer">
+
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Content Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="content-block-link-item-body-footer">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Img User -->
+                                                <!-- --------------------------------------- -->  
+                                                <img src="media/img/content/default/body-footer/user-community/angular-architects-manfred-steyer.jpg" class="img-link-item-body-footer" alt="img">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Title User -->
+                                                <!-- --------------------------------------- -->  
+                                                <div class="title-link-item-body-footer">
+
+                                                    <div>Angular Architects <br> Manfred Steyer</div>
+                                                    <div>Bootcamps | Angular | RxJS | NgRX | Architecture | ... </div>
+
+                                                </div>
+
+                                            </div> 
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Media Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="media-block-link-item-body-footer">
+
+
+                                                <a href="https://www.angulararchitects.io/" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                                </a>
+
+                                            </div> 
+
+
+                                        </div>
+
+                                        <!-- ❇️ Code with Ashan  - User -->
+                                        <div class="link-item-container-body-footer">
+
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Content Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="content-block-link-item-body-footer">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Img User -->
+                                                <!-- --------------------------------------- -->  
+                                                <img src="media/img/content/default/body-footer/user-community/code-with-ashan.jpg" class="img-link-item-body-footer" alt="img">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Title User -->
+                                                <!-- --------------------------------------- -->  
+                                                <div class="title-link-item-body-footer">
+
+                                                    <div>code with ashan  </div>
+                                                    <div>Google Expert | Angular | IT-Lifestyle | ...  </div>
+
+                                                </div>
+
+                                            </div> 
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Media Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="media-block-link-item-body-footer">
+
+                                                <a href="https://www.youtube.com/@CodeWithAhsan" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                                </a>
+
+
+                                            </div> 
+
+
+                                        </div>
+
+                                        <!-- ❇️ Web-Dev-Simplyfied - User  -->
+                                        <div class="link-item-container-body-footer">
+
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Content Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="content-block-link-item-body-footer">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Img User -->
+                                                <!-- --------------------------------------- -->  
+                                                <img src="media/img/content/default/body-footer/user-community/web-dev-simplified.jpg" class="img-link-item-body-footer" alt="img">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Title User -->
+                                                <!-- --------------------------------------- -->  
+                                                <div class="title-link-item-body-footer">
+
+                                                    <div>Web Dev Simplyfied</div>
+                                                    <div>TS | JS | React | ... </div>
+
+                                                </div>
+
+                                            </div> 
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Media Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="media-block-link-item-body-footer">
+
+
+                                                <a href="https://www.youtube.com/@WebDevSimplified" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                                </a>
+
+                                            </div> 
+
+
+                                        </div>
+
+                                        <!-- ❇️ Color Code  - User -->
+                                        <div class="link-item-container-body-footer">
+
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Content Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="content-block-link-item-body-footer">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Img User -->
+                                                <!-- --------------------------------------- -->  
+                                                <img src="media/img/content/default/body-footer/user-community/color-code.jpg" class="img-link-item-body-footer" alt="img">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Title User -->
+                                                <!-- --------------------------------------- -->  
+                                                <div class="title-link-item-body-footer">
+
+                                                    <div>Color Code  </div>
+                                                    <div>My Genius Java Script Deveoper | CSS | ...  </div>
+
+                                                </div>
+
+                                            </div> 
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Media Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="media-block-link-item-body-footer">
+
+                                                <a href="https://www.youtube.com/@ColorCode-io" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                                </a>
+
+
+                                            </div> 
+
+
+                                        </div>
+
+                                        <!-- ❇️ Kevin Powell - User -->
+                                        <div class="link-item-container-body-footer">
+
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Content Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="content-block-link-item-body-footer">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Img User -->
+                                                <!-- --------------------------------------- -->  
+                                                <img src="media/img/content/default/body-footer/user-community/kevin-powell.jpg" class="img-link-item-body-footer" alt="img">
+
+                                                <!-- --------------------------------------- -->
+                                                <!-- Title User -->
+                                                <!-- --------------------------------------- -->  
+                                                <div class="title-link-item-body-footer">
+
+                                                    <div>Kevin Powell</div>
+                                                    <div>CSS | UX-Design | JS | ... </div>
+
+                                                </div>
+
+                                            </div> 
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Media Block -->
+                                            <!-- --------------------------------------- -->
+                                            <div class="media-block-link-item-body-footer">
+
+                                                <a href="https://www.youtube.com/@KevinPowell" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                    <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                                </a>
+
+                                            </div> 
+
+
+                                        </div>
+
+                                        
+                                                                                     
+
+
+                                        
+
+
+                                    </main>
+
+                            </div> 
+                                
+                            <!-- --------------------------------------------- -->
+                            <!-- Categegory: Sofware & AI Dev -->
+                            <!-- --------------------------------------------- -->
+                            <div class="category-link-container-body-footer">
+
+                                <header>
+
+                                    <img src="media/img/icons/icons/nav-main-body/brackets-black.png" alt="img">
+                                    <div> Software & AI-Dev </div>
+
+                                </header>
+
+                                <main>
+
+                                    <!-- ❇️ Clément Mihailescu - User  -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/clement.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Clément Mihailescu</div>
+                                                <div>Algo Expert | Algorithmn | IT-Lifestyle | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+
+                                            <a href="https://www.youtube.com/@clem/videos" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                            <a href="https://www.instagram.com/clement_mihailescu/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
+                                            </a>
+
+                                        </div> 
+
+
+                                    </div>
+
+                                    <!-- ❇️  Turing   - User -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/turing.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Turing</div>
+                                                <div>Coding Interviews | Angular | Java | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+                                            <a href="https://www.youtube.com/@Turingcom" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                            <a href="https://www.instagram.com/turingcomdev/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
+                                            </a>
+
+
+                                        </div> 
+
+
+                                    </div> 
+
+                                    <!-- ❇️  Amigocode   - User -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/amigocode.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Amigocode</div>
+                                                <div>Java | IntelliJ | Spring Boot | DevOps | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+                                            <a href="https://www.youtube.com/@amigoscode" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                           
+
+
+
+                                        </div> 
+
+
+                                    </div>   
+                                    
+                                    <!-- ❇️ Code Basic   - User -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/code-basics.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>code basics  </div>
+                                                <div>Data Scientist | Python | AI | ...  </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+                                            <a href="https://www.youtube.com/@codebasics" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+
+                                        </div> 
+
+
+                                    </div>
+
+                                    <!-- ❇️  Mameewin   - User -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/mameeewin.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Mameewin</div>
+                                                <div>Algorithmn Coding Challenges | Leetcode | Python | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+                                            <a href="https://www.youtube.com/@mameeewin" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+
+
+                                        </div> 
+
+
+                                    </div>
+
+                                    <!-- ❇️  the native web   - User -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/the-native-web.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>the native web GmbH</div>
+                                                <div>IT Concepts | DDD | Clean Code | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+                                            <a href="https://www.youtube.com/@thenativeweb" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+
+
+                                        </div> 
+
+
+                                    </div>
+
+
+                                </main>
+
+                            </div> 
+
+                            <!-- --------------------------------------------- -->
+                            <!-- Categegory: IT-Lifestyle -->
+                            <!-- --------------------------------------------- -->
+                            <div class="category-link-container-body-footer">
+
+                                <header>
+                                    <img src="media/img/icons/icons/laptop.png" alt="img">
+                                    <div> IT-Lifestyle </div>
+                                </header>
+
+                                <main>
+
+                                    <!-- ❇️ With Marko - Scandinavian Deveoper  -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/with-marko.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>with Marko</div>
+                                                <div>Scandinavian Software Developer | Lifestyle | MacBook | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+
+                                            <a href="https://www.youtube.com/@withmarko" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                        </div> 
+
+
+                                    </div>
+
+                                    <!-- ❇️ Morpheus - User -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/morpheus.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Morpheus</div>
+                                                <div>IT-News | Software Developing | IT-Concepts | IT-Courses | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+
+                                            <a href="https://www.youtube.com/@TheMorpheusVlogs" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                            <a href="https://www.instagram.com/themorpheustuts/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
+                                            </a>
+
+                                           
+                                            
+
+
+                                        </div> 
+
+
+                                    </div>                                                     
+
+                                    <!-- ❇️ Kevin Chromik - User -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/kevin-chromik.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Kevin Chromik </div>
+                                                <div>IT-Lifestyle | IT-Projects | IOS-Developer | ...  </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+                                            <a href="https://www.youtube.com/@KevinChromik" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                        </div> 
+
+
+                                    </div>
+
+                                    <!-- ❇️ Calvin Li  - User -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/calvin-li.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Calvin Li </div>
+                                                <div>IT-Lifestyle | Meta-Deveoper(Facebook) | ...  </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+                                            <a href="https://www.youtube.com/@calvinxli/videos" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                            <a href="https://www.instagram.com/calvinxli/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
+                                            </a>
+
+
+
+                                        </div> 
+
+
+                                    </div>
+
+                                    <!-- ❇️ singh in usa   - User -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/singh-in-usa.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>singh in usa  </div>
+                                                <div>Fullstack Software Deveoper | Silicon Valley | IT-Projects | IT-Lifestyle | ...  </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+                                            <a href="https://www.youtube.com/@SinghinUSA" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                            <a href="https://www.instagram.com/iharnoor/?hl=de" class="link-media-link-item-body-footer" title="» Go To Instagram Account" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/instragram-square.png" alt="img">
+                                            </a>
+
+
+                                        </div> 
+
+
+                                    </div>             
+
+                                </main>
+
+                                
+
+
+                            </div> 
+
+
+                            <!-- --------------------------------------------- -->
+                            <!-- Others -->
+                            <!-- --------------------------------------------- -->
+                            <div class="category-link-container-body-footer">
+
+                                <header>
+
+                                    <img src="media/img/icons/icons/pfeile.png" alt="img">
+                                    <div> Others </div>
+
+                                </header>
+
+                                <main>
+
+                                    <!-- ❇️ Shaolin  - User  -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/shaolin-europe.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Shaolin Temple Europe</div>
+                                                <div>Meditation | Kung Fu | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+
+                                            <a href="https://www.youtube.com/@ShaolinTempleEurope" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                          
+                                        </div> 
+
+
+                                    </div>
+
+                                    <!-- ❇️ Roofless - User  -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/rooflesstv.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Roofless TV</div>
+                                                <div>Lost Place Advendures | Parcour | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+
+                                            <a href="https://www.youtube.com/@rooflesstv" 
+                                            class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png"
+                                                    alt="img">
+                                            </a>
+
+
+                                        </div> 
+
+
+                                    </div>
+
+                                    <!-- ❇️ Schlappen - User  -->
+                                    <div class="link-item-container-body-footer">
+
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Content Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="content-block-link-item-body-footer">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Img User -->
+                                            <!-- --------------------------------------- -->  
+                                            <img src="media/img/content/default/body-footer/user-community/schlappen.jpg" class="img-link-item-body-footer" alt="img">
+
+                                            <!-- --------------------------------------- -->
+                                            <!-- Title User -->
+                                            <!-- --------------------------------------- -->  
+                                            <div class="title-link-item-body-footer">
+
+                                                <div>Freeruning Schlappen </div>
+                                                <div>Parcour | Travel | ... </div>
+
+                                            </div>
+
+                                        </div> 
+
+                                        <!-- --------------------------------------- -->
+                                        <!-- Media Block -->
+                                        <!-- --------------------------------------- -->
+                                        <div class="media-block-link-item-body-footer">
+
+
+                                            <a href="https://www.youtube.com/@FreerunningSchlappen" class="link-media-link-item-body-footer" title="» Go To YT-Chanel" target="_blank">
+                                                <img src="media/img/icons/icons/social-media/youtube-square.png" alt="img">
+                                            </a>
+
+                                        </div> 
+
+
+                                    </div>
+  
+
+                                </main>
+
+                            </div> 
+
+                            <!-- --------------------------------------------- -->
+                            <!-- Categegory: IT General & Lifestyle -->
+                            <!-- --------------------------------------------- -->
+
+                    
+                        
+                        </div>
+                        
+                    </div>
+
+                </div> 
+
+
+            </div>
+
+        </div>   
             
     </footer>
 
@@ -1401,88 +2254,36 @@
     <!-- ----------------------------------------------------------------------------- -->
 
         <!-- ------------------------------------------ -->
-        <!-- My Library -->
+        <!-- [00/03] - JS Library -->
         <!-- ------------------------------------------ -->
         
-        <!-- formatted fct -->
-        <script src="js/my-library/formatted-fct.js"></script> 
+            <!-- formatted date styles -->
+            <script src="js/00-js-library/formatted-date-styles.js"></script> 
+
+            <!-- helpful functions  -->
+            <script src="js/00-js-library/helpful-functions.js"></script> 
 
         <!-- ------------------------------------------ -->
-        <!-- Features  -->
+        <!-- [01/02] - JS Content -->
         <!-- ------------------------------------------ -->  
-        <script src="js/features/actually-date.js"></script> 
-        <script src="js/features/play-pause-audio.js"></script> 
 
+            <!-- (default content) - handle viewing content  -->
+            <script src="js/02-content/default-content/handle-viewing-content.js"></script> 
+
+            <!-- about -->
+            <script src="js/02-content/about/actually-date-about.js"></script> 
+            <!-- <script src="js/02-content/about/play-pause-audio-about.js"></script>  -->
+       
         <!-- ------------------------------------------ -->
-        <!-- Events -->
-        <!-- ------------------------------------------ -->  
-
-            <!-- handle content  -->
-            <script src="js/topics/handle-content-topics.js"></script> 
-
+        <!-- [02/02] - JS Default -->
+        <!-- ------------------------------------------ -->
 
             <!-- windows on load -->
-            <script src="js/events/windowsOnLoad.js"></script> 
+            <script src="js/01-default/windowsOnLoad.js"></script> 
 
-   
-
-    
+       
 </body>
 
 
-    <!-- --------------------------------------------- -->
-    <!-- Main Body Content Container -->
-    <!-- --------------------------------------------- -->
-    <div style="display: none;" id="main-body-content-container">
-
-        <!-- ----------------------------------------------------------------------------- -->
-        <!-- Nav Container | Main Body -->
-        <!-- ----------------------------------------------------------------------------- -->
-        <nav id="nav-container-main-body" class="resp-main-context-area">
-
-            <!-- custom-select-overflow-hidden  -->
-            <div class="container-overflow-hidden">
-
-            <!-- ------------------------------------------------------ -->
-            <!-- Nav Layout | Main Body -->
-            <!-- ------------------------------------------------------ -->
-            <div class="nav-layout-main-body">
-                
-                    <div>Nav Layout 1</div>
-                    <div>Nav Layout 2</div>
-                    <div>Nav Layout 3</div>
-                    <div>Nav Layout 4</div>
-
-                </div>
-
-            </div>
-                            
-        </nav>
-
-        <!-- ----------------------------------------------------------------------------- -->
-        <!-- Main Container | Main Body -->
-        <!-- --------------------------------------------------------------------------------- -->
-        <div id="main-container-main-body">
-            
-            <!-- ------------------------------------------------- -->
-            <!-- Header Main Body -->
-            <!-- ------------------------------------------------- -->
-            <div id="header-main-body">
-                Header Main Body
-            </div> 
-                
-            <!-- ------------------------------------------------- -->
-            <!-- Content Main Body -->
-            <!-- ------------------------------------------------- -->
-            <div id="content-main-body">
-                Content Main Body
-            </div>  
-
-        </div>
-
-
-    </div>   
-
-
-
+  
 </html>

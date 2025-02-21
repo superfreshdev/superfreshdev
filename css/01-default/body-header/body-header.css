@@ -1,0 +1,122 @@
+/* -------------------------------------------------------------- */
+/* > body-header.css
+/*  
+/* : default sets for body header
+/* -------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* Body Fixed Header
+/* ---------------------------------------------------------------- */
+
+#body-fixed-header {
+
+    z-index: 99;
+
+    height: 5.5em;
+    width: 100%;
+    
+    position: fixed;
+    left:0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Body Fixed Header Container
+/* ---------------------------------------------------------------- */
+
+#body-fixed-header-container {
+
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+/* ---------------------------------------------------------------- */
+/* [1/2] - Header Company Logo 
+/* ---------------------------------------------------------------- */
+
+#header-company-logo {
+
+    /* delete default
+    button styles from browsers */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    
+    height: 3em;
+    padding: 0em .6em;
+    border-radius: .4em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+    transition: all .4s;
+    /* background-color: red; */
+
+}
+
+#header-company-logo:hover {
+
+    background-color: rgba(97, 97, 97, 0.6);
+}
+
+#img-company-logo {
+
+    /* default unshown because mobile first */
+    display: none;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* [2/2] - Title Company - Header Body
+/* ---------------------------------------------------------------- */
+
+#header-title-company-logo {
+
+    /* optimal layout position fixing  */
+    /* padding-top: .23em; */
+
+    /* important, because default button is text align center */
+    text-align: left;  
+
+}
+
+#title-company-logo {
+
+    /* default 18px */
+    font-size: 1.125rem;
+    font-weight: bold;
+
+    color:white;
+
+}
+
+#sub-title-company-logo {
+
+    font-size: 14.5px;
+    font-weight: bold;
+
+    line-height: 1.2em;
+    
+    color:rgb(217, 191, 152);
+
+}

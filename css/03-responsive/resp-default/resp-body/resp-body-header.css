@@ -1,0 +1,108 @@
+/* -------------------------------------------------------------- */
+/* > resp-body-header.css
+/*  
+/* : responsive sets for body header
+/* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+/* >= 330px width
+/* -------------------------------------------------------------- */
+@media (min-width: 330px ) {
+
+    /* ------------------------------------ */
+    /* Company Logo 
+    /* ------------------------------------ */
+
+    /* Style of Header Company Logo  */
+    #header-company-logo {
+
+        padding: 0 .6em 0 0;
+
+    }
+
+    /* show img company logo  */
+    #img-company-logo {
+
+        display: flex;
+        height: 3em;
+    }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 800px width
+/* -------------------------------------------------------------- */
+@media (min-width: 800px ) {
+
+    /* delete default padding for mobile size  */
+    #body-fixed-header-container {
+        padding: 0;
+    }
+    
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1000px width
+/* -------------------------------------------------------------- */
+@media (min-width: 1000px ) {
+
+    #body-fixed-header {
+        height: 6.5em;
+    }
+
+    /* ------------------------------------ */
+    /* Company Logo 
+    /* ------------------------------------ */
+
+    #header-company-logo {
+        column-gap: 1em;
+    }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1200px width
+/* -------------------------------------------------------------- */
+@media (min-width: 1200px ) {
+
+    /* ------------------------------------ */
+    /* Company Logo 
+    /* ------------------------------------ */
+
+    #header-company-logo { 
+        height: 3.5em;
+    }
+
+    #header-title-company-logo {
+        line-height: 2em;
+        /* better layout fixing  */
+        padding-bottom: .15em;
+    }
+
+    #img-company-logo {
+        height: 3.5em;
+    }
+
+    #title-company-logo {
+        /* 20px */
+        font-size: 1.25rem;
+    }
+    
+    #sub-title-company-logo {
+
+        /* 1rem = 16px */
+        font-size: 1rem;
+        
+    }
+
+    /* ------------------------------------ */
+    /* Nav
+    /* ------------------------------------ */
+
+    #body-header-nav-label {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+}

@@ -1,0 +1,64 @@
+/* -------------------------------------------------------------- */
+/* > styles.css
+/*  
+/* : styles for parts of layout elements
+/* -------------------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* Rotates
+/* ------------------------------------------------- */
+
+.rot-0 {
+    transform: rotate(0deg);
+}
+
+.rot-45 {
+    transform: rotate(45deg);
+}
+
+.rot-90 {
+    transform: rotate(90deg);
+}
+
+.rot-135 {
+    transform: rotate(135deg);
+}
+
+.rot-180 {
+    transform: rotate(180deg);
+}
+
+.rot-225 {
+    transform: rotate(180deg);
+}
+
+.rot-270 {
+    transform: rotate(180deg);
+}
+
+.rot-315 {
+    transform: rotate(315deg);
+}
+
+.rot-360 {
+    transform: rotate(360deg);
+}
+
+/* ------------------------------------------------- */
+/* Shadows 
+/* ------------------------------------------------- */
+
+.box-shadow-main {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/* ------------------------------------------------- */
+/* Overflow
+/* ------------------------------------------------- */
+
+.overflow-hidden {
+
+    overflow: hidden;
+    
+}
