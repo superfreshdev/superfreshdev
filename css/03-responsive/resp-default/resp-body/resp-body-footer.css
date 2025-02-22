@@ -54,5 +54,11 @@
         padding: 0;
     }
 
+    /* Mixery Links Container */
+    #resp-mixery-links-container-body-footer {
+
+        /* same widht like main-content-area */
+        max-width: 65em;
+    }
 }
 

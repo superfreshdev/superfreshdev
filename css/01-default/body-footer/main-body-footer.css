@@ -86,10 +86,16 @@
 
 }
 
+.item-links-container-body-footer > header > div,
+.item-links-inline-container-body-footer > header > div {
+
+    font-size: .9rem;
+} 
+
 .item-links-container-body-footer > header > img,
 .item-links-inline-container-body-footer > header > img {
 
-    height: 1.3em;
+    height: 1em;
 }
 
 /* ----------------------------------------------------- */

@@ -16,6 +16,8 @@
 
 .link-item-container-body-footer {
 
+    /* font-size: .9rem; */
+
     padding: .3em .4em .3em 0;
     /* height: 3.5em; */
     
@@ -46,7 +48,7 @@
 .content-block-link-item-body-footer {
 
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     column-gap: .8em;
 
 }
@@ -67,6 +69,7 @@
 
 .title-container-link-item-body-footer > div:nth-of-type(1) {
 
+    font-size: .9rem;
     font-weight: bold;
 
 }
