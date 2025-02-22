@@ -141,9 +141,9 @@
                 <!-- --------------------------------- -->
 
                     <!-- My Top 3 Projects - About -->
-                    <link rel="stylesheet" href="css/02-content/about-page/my-top-3-projects-about.css"> 
+                    <!-- <link rel="stylesheet" href="css/02-content/about-page/my-top-3-projects-about.css">  -->
                     <!-- My Mindset - About -->
-                    <link rel="stylesheet" href="css/02-content/about-page/my-mindset-about.css">  
+                    <!-- <link rel="stylesheet" href="css/02-content/about-page/my-mindset-about.css">   -->
 
                     <!-- 🚧 (actually in production) - News - About -->
                     <!-- Like to See on what i am actually working ?  -->
@@ -159,10 +159,10 @@
                 <!-- --------------------------------- -->
 
                     <!-- Contact Me - About -->
-                    <link rel="stylesheet" href="css/02-content/about-page/contact-me-about.css">
+                    <!-- <link rel="stylesheet" href="css/02-content/about-page/contact-me-about.css"> -->
 
                     <!-- to be fresh- About -->
-                    <link rel="stylesheet" href="css/02-content/about-page/to-be-fresh-about.css"> 
+                    <!-- <link rel="stylesheet" href="css/02-content/about-page/to-be-fresh-about.css">  -->
 
             <!-- ------------------------------------- -->
             <!-- Content Page -->
@@ -650,6 +650,12 @@
                             <div id="to-be-fresh-container-about">
                                 
 
+                                <div id="audio-timestamp-to-be-fresh">
+                                    <span id="js-min-audio-to-be-fresh">00</span> 
+                                    <span id="">:</span>
+                                    <span id="js-sec-audio-to-be-fresh">00</span>                            
+                                </div>
+
                                 <!-- -------------------------------------------- -->
                                 <!-- 🚧 Baustelle -->
                                 <!-- -------------------------------------------- -->  
@@ -658,25 +664,19 @@
                                 <!-- Checkbox + Label ( to play audio ) | Absolute       -->
                                 <!-- ------------------------------------------------------------------ -->   
                                 <input type="checkbox" id="chk-play-audio-to-be-fresh" name="name-chk-play-audio-to-be-fresh">                                   
-                                <label for="chk-play-audio-to-be-fresh" id="lbl-play-audio-to-be-fresh">
+                                <label for="chk-play-audio-to-be-fresh" id="lbl-play-audio-to-be-fresh" title="» play audio">
 
-                                    <img src="media/img/icons/icons/mp3-play.png" alt="img">
+                                    <!-- 🚧 Timestamp  -->
+                                    <img src="media/img/icons/icons/mp3-play.png" id="img-play-pause-audio-to-be-fresh" alt="img">
 
                                 </label>
 
                                 <!-- ------------------------------------------------------------------ -->
                                 <!-- Audio | to be fresh       -->
                                 <!-- ------------------------------------------------------------------ -->  
-                                <audio id="js-audio-to-be-fresh" loop>
-                                    <source type="audio/mp3" src="media/audio/content/about/spiritual-healing.mp3">
+                                <audio loop>
+                                    <source type="audio/mp3" id="js-audio-to-be-fresh" src="media/audio/content/about/now.mp3">
                                 </audio>
-
-                                <!-- ------------------------------------------------------------------ -->
-                                <!-- Video | to be fresh       -->
-                                <!-- ------------------------------------------------------------------ -->  
-                                <video id="video-to-be-fresh" muted loop>
-                                    <source src="media/video/content/about/background-waves.mp4">
-                                </video>                                    
 
                                 <!-- ------------------------------------------------------------------ -->
                                 <!-- Img Wave | to be fresh       -->
@@ -685,16 +685,38 @@
                                     id="img-wave-to-be-fresh"  alt="img">
 
                                 <!-- ------------------------------------------------------------------ -->
+                                <!-- Video | to be fresh       -->
+                                <!-- ------------------------------------------------------------------ -->  
+                                <video id="video-to-be-fresh" muted loop >
+                                    <source src="media/video/content/about/background-waves.mp4">
+                                </video>                                    
+
+                                
+                                <!-- ------------------------------------------------------------------ -->
                                 <!-- Quote Container | to be fresh       -->
                                 <!-- ------------------------------------------------------------------ -->  
-                                <div id="quote-to-be-fresh-container" style="display: none;">
+                                <div id="quote-to-be-fresh-container" >
                                     
-                                    <div>» to be fresh: »</div>
+                                    <div id="txt-to-be-fresh">
 
-                                    <div>is</div>
+                                        <div>»</div>
+                                        <div>to be fresh:</div>
+                                        <div>»</div> 
+                                    
+                                    </div>    
+                                    
+                                    <div id="txt-quote-to-be-fresh">
 
-                                    <div>to accept things you can't change</div>
-                                    <div>and go for things u can change</div>
+                                        <div>is</div>
+
+                                        <div>
+                                            <div>to accept things you can't change</div>
+                                            <div>and go for things u can change</div>
+                                        </div>
+
+                                    </div>
+
+                                    
 
                                 </div>
 
@@ -2381,11 +2403,11 @@
         <!-- ------------------------------------------ -->  
 
             <!-- (default content) - handle viewing content  -->
-            <script src="js/02-content/default-content/handle-viewing-content.js"></script> 
+            <!-- <script src="js/02-content/default-content/handle-viewing-content.js"></script>  -->
 
             <!-- about -->
             <script src="js/02-content/about/actually-date-about.js"></script> 
-            <!-- <script src="js/02-content/about/play-pause-audio-about.js"></script>  -->
+            <script src="js/02-content/about/play-pause-audio-about.js"></script> 
        
         <!-- ------------------------------------------ -->
         <!-- [02/02] - JS Default -->

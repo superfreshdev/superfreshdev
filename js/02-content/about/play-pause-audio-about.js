@@ -26,7 +26,7 @@ console.log('[🟡|content>about] = play-pause-audio-about.js')
 
 const elAudioToBeFresh = document.getElementById('js-audio-to-be-fresh')
 
-var chkAudioToBeFresh = document.getElementById('chk-audio-to-be-fresh') 
+var chkAudioToBeFresh = document.getElementById('chk-play-audio-to-be-fresh') 
 
 /* ----------------------------------- */
 // Info Audio Time 
@@ -48,7 +48,7 @@ var imgPlayPauseToBeFresh = document.getElementById('img-play-pause-audio-to-be-
 // Video Element, to be fresh
 /* ----------------------------------- */
 
-const videoElToBeFresh = document.getElementById('video-to-be-fresh-container'); 
+const videoElToBeFresh = document.getElementById('video-to-be-fresh'); 
 
 
 /* ------------------------------------------------------------ */
@@ -324,7 +324,6 @@ audioSrcToBeFresh.addEventListener( 'ended', ()=> {
 /* ------------------------------------------------------------ */
 
 console.log('🎵(choose)=' + elAudioToBeFresh.getAttribute('src') )
-
 
 // Step 1: Set Audio Duration by Promise
 setAudioDuration( elAudioToBeFresh.getAttribute('src') )
