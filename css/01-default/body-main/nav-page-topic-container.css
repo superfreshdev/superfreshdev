@@ -1,0 +1,28 @@
+/* ----------------------------------------------------------------------------- */
+/* > nav-page-topic-container.css
+/*  
+/* : styles my nav cpage topic container, that are 
+     for example my links for about, my it stack, my private lifestyle 
+/* ----------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* Nav Page Topic Container
+/* ---------------------------------------------------------------- */
+
+.nav-page-topic-container {
+
+    padding: .8em;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    column-gap: 1.5em;
+    row-gap: 1em;
+
+    background-color: rgb(108, 108, 108);
+}
+
+/* ---------------------------------------------------------------- */
+/* Nav Page Topic Container
+/* ---------------------------------------------------------------- */

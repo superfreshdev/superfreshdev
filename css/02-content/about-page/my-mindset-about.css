@@ -10,12 +10,11 @@
 /* About Mindset
 /* -------------------------------------------------------------- */
 
-#about-mindset {
+#mindset-container-about {
 
-    padding: .8em;
-
-    display: grid;
-    row-gap: .6em;
+   
+    display: flex;
+    align-items: center;
 
     background-color: white;
 }

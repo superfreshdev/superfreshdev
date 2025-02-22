@@ -37,7 +37,7 @@
 
 .link-item-container-body-footer:hover {
 
-    background-color: grey;
+    background-color: rgb(27, 27, 27);
 }
 
 
@@ -72,12 +72,15 @@
     font-size: .9rem;
     font-weight: bold;
 
+    /* ⚠️ light grey color & light grey img  */
+    color: #9a9a9a;
+
 }
 
 .title-container-link-item-body-footer  > div:nth-of-type(2) {
 
     font-size: .8rem;
-    color:rgb(48, 48, 48);
+    color:rgb(126, 126, 126);
 
 }
 

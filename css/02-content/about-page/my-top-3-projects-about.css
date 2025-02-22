@@ -5,8 +5,38 @@
 /* -------------------------------------------------------------- */
 
 /* -------------------------------------------------------------- */
-/* About Top 3 Projects
+/* My Top 3 Projects Container
 /* -------------------------------------------------------------- */
+
+#my-top-3-projects-container-about {
+
+    /* width: 100%; */
+
+    display: flex;
+    align-items: center;
+
+    background-color: turquoise;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ❌❌❌❌ Müll  */
 
 #about-my-top-3-projects {
 

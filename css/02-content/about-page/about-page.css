@@ -6,46 +6,46 @@
 
 /* z.b be about hat es x-rows und bei content ist der aufbau z.B nur aus 2 rows */
 
-.grid-row-container {
+/* .grid-row-container {
 
     width: 100%;
 
     display: grid;
     align-content: flex-start;
     justify-items: center;
-}
+} */
 
-.row-container,
+/* .row-container,
 .sub-row-container  {
    
     width: 100%;
     display: flex;
     justify-content: center;
 
-}
+} */
 
 
 /* ----------------------------------------- */
 /* Main Header Content 
 /* ----------------------------------------- */
 
-.main-header-content {
+/* .main-header-content {
 
     background-color: black;
     color:white;
-}
+} */
 
 
 /* ----------------------------------------- */
 /* Title Header About
 /* ----------------------------------------- */
-
+/* 
 #title-header-about {
 
     background-color: yellow;
     color:black,
 
-}
+} */
 
 
 
@@ -54,7 +54,7 @@
 /* Nav Topic Container 
 /* -------------------------------------------------------- */
 
-.test-nav-topic-container {
+/* .test-nav-topic-container {
 
     width: 100%;
 
@@ -68,9 +68,9 @@
     background-color: grey;
     
     
-}
+} */
 
-
+/* 
 .resp-header-content-container {
 
     width: 450px;
@@ -87,7 +87,7 @@
 
     background-color: red;
     
-}
+} */
 
 
 

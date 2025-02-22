@@ -44,6 +44,14 @@
 /* -------------------------------------------------------------- */
 @media (min-width: 1200px ) {
 
+
+    /* delete mobile padding */
+    #main-body-footer {
+
+        padding: 2.3em 0em;    
+    
+    }
+
     /* delelte mobile padding left,right from header body footer */
     #header-body-footer { 
         padding: 0;

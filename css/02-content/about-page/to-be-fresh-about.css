@@ -4,12 +4,27 @@
 /* : styles the 'to be fresh about container'
 /* -------------------------------------------------------------- */
 
+/* --------------------------------------------------------------- */
+/* To Be Fresh Container About
+/* --------------------------------------------------------------- */
+
+#to-be-fresh-container-about {
+
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(169, 169, 169);
+}
+
+
+
+
 
 /* --------------------------------------------------------------- */
 /* To Be Fresh | About Container 
 /* --------------------------------------------------------------- */
 
-#to-be-fresh-about-container {
+#XXXto-be-fresh-about-container {
 
     position: relative;
 

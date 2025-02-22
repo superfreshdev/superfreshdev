@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------- */
-/* > contact-me-about.css
+/* > contact-about.css
 /*  
 /* : styles contact me about container 
 /* -------------------------------------------------------------- */
@@ -7,15 +7,13 @@
 
 
 /* -------------------------------------------------------------- */
-/* About Contact
+/* Contact Container About
 /* -------------------------------------------------------------- */
 
-#about-contact {
+#contact-container-about {
 
-    padding: .8em;
+    display: flex;
+    align-items: center;
 
-    display: grid;
-    row-gap: .6em;
-
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(199, 127, 156);
 }

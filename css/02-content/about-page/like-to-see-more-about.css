@@ -1,0 +1,18 @@
+/* ----------------------------------------------------------------------------- */
+/* > like-to-see-more-about.css
+/*  
+/* : styles for like to see more container in about page
+/* --------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* Like to See More Container | About
+/* ---------------------------------------------------------------- */
+
+#like-to-see-more-container-about {
+
+    display: flex;
+    align-items: center;
+
+    background-color: pink;
+}
