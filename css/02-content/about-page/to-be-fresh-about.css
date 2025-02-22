@@ -10,47 +10,42 @@
 
 #to-be-fresh-container-about {
 
-    display: flex;
-    align-items: center;
-
-    background-color: rgb(169, 169, 169);
-}
-
-
-
-
-
-/* --------------------------------------------------------------- */
-/* To Be Fresh | About Container 
-/* --------------------------------------------------------------- */
-
-#XXXto-be-fresh-about-container {
-
     position: relative;
 
+    width: 100%;
+    height: 100%;
+
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 
-   
-    background-color: yellow;
+    background-color: rgb(169, 169, 169);
 
+    background-color: red;
 }
 
 /* --------------------------------------------------------------- */
-/* [1/4] - Audio To Be Fresh Container
+/* Background Color | Row Container
 /* --------------------------------------------------------------- */
 
+.bgc-to-be-fresh {
 
-/* --------------------------------------------- */
-/* Handling Checkbox | Audio to be fresh
-/* --------------------------------------------- */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 
-#chk-audio-to-be-fresh { 
+}
+
+
+/* ------------------------------------------------- */
+/* ### Styling 
+/* Checkbox Handling | Audio to be fresh
+/* ------------------------------------------------- */
+
+#chk-play-audio-to-be-fresh { 
     display: none;
 }
 
-#chk-audio-to-be-fresh:checked + label > #play-pause-audio-to-be-fresh-container {
+#chk-play-audio-to-be-fresh:checked + label > #play-pause-audio-to-be-fresh-container {
 
     background-color: rgb(209, 35, 35);
 }
@@ -80,6 +75,275 @@
 
 }
 
+
+
+/* --------------------------------------------------------------- */
+/* [1/4] - Label Play Audio To Be Fresh
+/* --------------------------------------------------------------- */
+
+#lbl-play-audio-to-be-fresh {
+
+    z-index: 12;
+
+    position: absolute;
+    top: 1em;
+    right: 1em;
+
+    height: 3em;
+    width: 3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .6em;
+
+    background-color: magenta;
+
+    cursor: pointer;
+
+    transition: all .4s;
+}
+
+#lbl-play-audio-to-be-fresh:hover {
+
+    background-color: rgb(209, 35, 35);
+}
+
+#lbl-play-audio-to-be-fresh > img {
+
+    height: 2.1em;
+}
+
+
+/* --------------------------------------------------------------- */
+/* ❓ Audio Element
+/* --------------------------------------------------------------- */
+
+#js-audio-to-be-fresh {
+
+
+}
+
+/* --------------------------------------------------------------- */
+/* [2/4] - Video Element
+/* --------------------------------------------------------------- */
+
+#video-to-be-fresh {
+
+    position: absolute;
+    z-index: 11;
+
+    /* animation: slowOpacityUp 11s 1 ease; */
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+@keyframes slowOpacityUp {
+    
+    0% {  opacity: .2; }
+    20% { opacity: .3; }
+    40% { opacity: .4; }
+    50% { opacity: .5; }
+    70% { opacity: .7; }
+    100% { opacity: 1; }
+       
+}
+
+@keyframes slowOpacityDown {
+    
+    0% {  opacity: 1; }
+    20% { opacity: .7; }
+    40% { opacity: .5; }
+    50% { opacity: .4; }
+    70% { opacity: .2; }
+    100% { opacity: 0; }
+       
+}
+
+
+/* --------------------------------------------------------------- */
+/* [3/4] - Img Wave Element
+/* --------------------------------------------------------------- */
+
+#img-wave-to-be-fresh {
+
+    z-index: 10;
+    /* object-fit: cover; */
+    /* position: absolute; */
+
+    width: 100%;
+
+}
+
+/* --------------------------------------------------------------- */
+/* [4/4] - Quote Container 
+/* --------------------------------------------------------------- */
+
+#quote-to-be-fresh-container {
+
+    z-index: 12;
+    position: absolute;
+
+    max-width: 18em;
+    padding: 2.5em .8em 0em .8em;
+
+    display: grid;
+    row-gap: .6em;
+    justify-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    /* background-color: rgba(128, 128, 128, 1); */
+
+}
+
+#txt-to-be-fresh {
+
+    height: 2.3em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+    font-family: "Delius", serif;
+    font-weight: bold;
+
+    border-radius: .6em;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    background-color: rgb(45, 58, 86);
+    /* color:rgb(219, 219, 219); */
+    color:rgb(240, 240, 240);
+}
+
+#txt-double-arrow-fix-to-be-fresh {
+
+    transform: rotate(180deg); padding-bottom: .2em;
+}
+
+#txt-quote-to-be-fresh {
+
+    padding: .8em .8em;
+
+    display: grid;   
+    row-gap: .2em;
+
+    text-align: center;
+
+    border-radius: .8em;
+
+    color:wheat;
+
+    text-shadow:
+    1px 1px 1px rgb(0, 0, 0);
+
+    /* background-color: rgba(245, 222, 179, .6); */
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    transition: all .8s;
+   
+} 
+
+#txt-quote-to-be-fresh:hover {
+
+    background-color: rgba(0, 0, 0, .8);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------- */
+/* To Be Fresh | About Container 
+/* --------------------------------------------------------------- */
+
+/* ❌ Muss später weg  */
+#to-be-fresh-about-container {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+    background-color: yellow;
+
+}
 
 
 /* -------------------------------------------------- */
@@ -153,97 +417,15 @@
     /* position: absolute; */
 
     width: 100%;
+    
    
     
     
 }
 
-/* --------------------------------------------------------------- */
-/* [3/4] - Qoute To Be Fresh Container
-/* --------------------------------------------------------------- */
-
-#quote-to-be-fresh-container {
-
-    z-index: 11;
-    position: absolute;
-
-    max-width: 18em;
-    padding: 2.5em .8em 0em .8em;
-
-    display: grid;
-    row-gap: .6em;
-    justify-items: center;
-    justify-content: center;
-
-    font-weight: bold;
-
-    border-radius: .4em;
-
-    /* background-color: rgba(128, 128, 128, 1); */
-
-}
-
-#txt-to-be-fresh {
-
-    height: 2.3em;
-    padding: 0 .6em;
-
-    display: flex;
-    align-items: center;
-    column-gap: .3em;
-
-    font-family: "Delius", serif;
-    font-weight: bold;
-
-    border-radius: .6em;
-
-    user-select: none;
-    -webkit-user-select: none;
-
-    background-color: rgb(45, 58, 86);
-    /* color:rgb(219, 219, 219); */
-    color:rgb(240, 240, 240);
-}
 
 
 
-#txt-double-arrow-fix-to-be-fresh {
-
-    transform: rotate(180deg); padding-bottom: .2em;
-}
-
-#txt-quote-to-be-fresh {
-
-    padding: .8em .8em;
-
-
-    display: grid;   
-    row-gap: .2em;
-
-    text-align: center;
-
-    border-radius: .8em;
-
-    color:wheat;
-
-    text-shadow:
-    1px 1px 1px rgb(0, 0, 0);
-
-    /* background-color: rgba(245, 222, 179, .6); */
-
-    user-select: none;
-    -webkit-user-select: none;
-
-    transition: all .8s;
-   
-} 
-
-#txt-quote-to-be-fresh:hover {
-
-    background-color: rgba(0, 0, 0, .8);
-    
-
-}
 
 /* #txt-quote-to-be-fresh {
 
@@ -260,49 +442,3 @@
 } */
 
 
-
-
-
-
-/* --------------------------------------------------------------- */
-/* [4/4] - Video To Be Fresh Container
-/* --------------------------------------------------------------- */
-
-#video-to-be-fresh-container {
-  
-    position: absolute;
-    z-index: 9;
-
-    
-
-    /* animation: slowOpacityUp 11s 1 ease; */
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    
-}
-
-@keyframes slowOpacityUp {
-    
-    0% {  opacity: .2; }
-    20% { opacity: .3; }
-    40% { opacity: .4; }
-    50% { opacity: .5; }
-    70% { opacity: .7; }
-    100% { opacity: 1; }
-       
-}
-
-@keyframes slowOpacityDown {
-    
-    0% {  opacity: 1; }
-    20% { opacity: .7; }
-    40% { opacity: .5; }
-    50% { opacity: .4; }
-    70% { opacity: .2; }
-    100% { opacity: 0; }
-       
-}

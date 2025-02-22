@@ -140,6 +140,8 @@
 
     opacity: .3;
 
+    user-select: none;
+
     /* background-color: green; */
     
 }

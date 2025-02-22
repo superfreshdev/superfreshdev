@@ -75,12 +75,16 @@
     /* ⚠️ light grey color & light grey img  */
     color: #9a9a9a;
 
+    user-select: none;
+
 }
 
 .title-container-link-item-body-footer  > div:nth-of-type(2) {
 
     font-size: .8rem;
     color:rgb(126, 126, 126);
+
+    user-select: none;
 
 }
 
