@@ -32,7 +32,7 @@ var chkAudioToBeFresh = document.getElementById('chk-play-audio-to-be-fresh')
 // Info Audio Time 
 /* ----------------------------------- */
 
-const elTxtAudioTimeStampToBeFresh = document.getElementById('audio-timestamp-to-be-fresh');
+const elTxtAudioTimeStampToBeFresh = document.getElementById('time-audio-box-to-be-fresh');
 
 const txtMinAudioToBeFresh = document.getElementById('js-min-audio-to-be-fresh');
 const txtSecAudioToBeFresh = document.getElementById('js-sec-audio-to-be-fresh');

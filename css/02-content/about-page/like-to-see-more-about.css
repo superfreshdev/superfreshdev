@@ -11,8 +11,6 @@
 
 #like-to-see-more-container-about {
 
-    display: flex;
-    align-items: center;
-
+    display: grid;
     background-color: pink;
 }

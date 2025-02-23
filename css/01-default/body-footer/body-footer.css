@@ -176,8 +176,7 @@
    
     display: grid;
     justify-items: center;
-
-    /* 🚧🚧🚧🚧🚧🚧🚧  */
+    
     grid: 0fr / 1fr;
     /* grid-template-rows: 0fr 0fr; */
     

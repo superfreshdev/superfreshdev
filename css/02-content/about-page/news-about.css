@@ -8,12 +8,23 @@
 /* News Container About
 /* ---------------------------------------------------------------- */
 
-
 #news-container-about {
 
+    padding: .8em;
    
-    display: flex;
-    align-items: center;
+    display: grid;
+    /* justify-items: center; */
+    /* align-items: center; */
 
     background-color: rgb(227, 14, 99);
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Header | News Container 
+/* ---------------------------------------------------------------- */
+
+#news-container-about > header {
+
+    font-weight: bold;
 }
