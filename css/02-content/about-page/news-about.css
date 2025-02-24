@@ -10,13 +10,11 @@
 
 #news-container-about {
 
-    padding: .8em;
+    width: 100%;
+    padding: 1.5em 0;
    
-    display: grid;
-    /* justify-items: center; */
-    /* align-items: center; */
 
-    background-color: rgb(227, 14, 99);
+    /* background-color: rgb(227, 14, 99); */
 }
 
 

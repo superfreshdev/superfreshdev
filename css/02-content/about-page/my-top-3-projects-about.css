@@ -10,15 +10,102 @@
 
 #my-top-3-projects-container-about {
 
-    /* width: 100%; */
+    width: 100%;
+    padding: 1.5em 0;
+
+    /* display: grid; */
+    /* grid: auto / 1fr; */
+    
+
+    /* display: grid;
+    row-gap: .6em; */
+    /* align-items: center; */
+
+    /* background-color: turquoise; */
+}
+
+
+/* -------------------------------------------------------------- */
+/* My Top 3 Projects Container
+/* -------------------------------------------------------------- */
+
+.tmp-my-top-3-projects-containers {
+
+    
+
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3em;
+    row-gap: 1.5em;
+}
+
+
+/* -------------------------------------------------------------- */
+/* My Top 3 Projects Container
+/* -------------------------------------------------------------- */
+
+.tmp-container-3 {
+
+    max-width: 28em;
+
+    display: grid;
+    row-gap: .3em;
+}
+
+
+.tmp-container-3 > img:nth-of-type(1) {
+
+    width: 100%;
+
+    border-radius: .6em;
+
+}
+
+.tmp-container-3 > header {
+
+    padding: 1.5em 0;
+
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.tmp-video-links-container {
 
     display: grid;
     row-gap: .6em;
-    /* align-items: center; */
-
-    background-color: turquoise;
 }
 
+.tmp-video-links-container > a {
+
+    
+    padding: .6em .3em;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    border-radius: .3em;
+    background-color: rgb(132, 132, 132);
+    color:black;
+
+    transition: all .4s;
+}
+
+.tmp-video-links-container > a:hover {
+
+    background-color: rgb(189, 189, 189);
+}
+
+.tmp-github-container {
+
+    padding: 1em 0em;
+
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 

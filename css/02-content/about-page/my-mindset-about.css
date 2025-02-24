@@ -13,6 +13,7 @@
 #mindset-container-about {
 
    
-    display: grid;
-    background-color: white;
+    width: 100%;
+    padding: 1.5em 0;
+    
 }

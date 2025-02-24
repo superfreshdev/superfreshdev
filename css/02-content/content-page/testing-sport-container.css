@@ -1,0 +1,93 @@
+/* ----------------------------------------------------------------------------- */
+/* > testing-sport-container.css
+/*  
+/* : styles testing my sport container layout
+/* ----------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* Testing Sport Container
+/* ---------------------------------------------------------------- */
+
+#testing-sport-container {
+
+    width: 100%;
+    padding: 1.5em 0;
+    
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Sport Containers
+/* ---------------------------------------------------------------- */
+
+.sport-containers {
+
+    padding: 1.8em 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    column-gap: 3em;
+    row-gap: 1.5em;
+
+    background-color: rgb(216, 216, 216);
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Sport Item Container
+/* ---------------------------------------------------------------- */
+
+.sport-item-container {
+
+    padding: .8em;
+
+    display: grid;
+    row-gap: .8em;
+
+    border-radius: .6em;
+
+    border: 1px dashed black;
+
+}
+
+.sport-item-container > header {
+
+    font-weight: bold;
+    /* text-decoration: line-through; */
+    text-decoration: underline;
+}
+
+.sport-item-container > main {
+
+    display: grid;
+    row-gap: .6em;
+}
+
+.sport-item-container > main > a {
+
+    height: 2.3em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: .4em;
+
+    text-decoration: none;
+
+    background-color: rgb(48, 48, 48);
+    color:rgb(185, 172, 61);
+
+    transition: all .4s;
+}
+
+.sport-item-container > main > a:hover {
+
+    background-color: rgb(71, 71, 71);
+    color:white;
+}
