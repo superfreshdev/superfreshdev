@@ -10,74 +10,203 @@
 
 #my-top-3-projects-container-about {
 
-    width: 100%;
-    padding: 1.5em 0;
-
-    /* display: grid; */
-    /* grid: auto / 1fr; */
-    
-
-    /* display: grid;
-    row-gap: .6em; */
-    /* align-items: center; */
-
-    /* background-color: turquoise; */
-}
-
-
-/* -------------------------------------------------------------- */
-/* My Top 3 Projects Container
-/* -------------------------------------------------------------- */
-
-.tmp-my-top-3-projects-containers {
-
-    
+    /* width: 100%; */
+    padding: 2.5em .8em;
 
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
     justify-content: center;
-    column-gap: 3em;
-    row-gap: 1.5em;
+
+    /* background-color: red; */
+
+    /* background-color: turquoise; */
+    /* background-color: red; */
 }
 
 
+
 /* -------------------------------------------------------------- */
-/* My Top 3 Projects Container
+/* My Top 3 Projects Layout Container About
 /* -------------------------------------------------------------- */
 
-.tmp-container-3 {
+#my-top-3-projects-layout-container-about {
 
-    max-width: 28em;
+    /* width: 95%; */
 
     display: grid;
-    row-gap: .3em;
+    justify-items: center;
+    row-gap: 2.5em;
+
+    /* background-color: rgb(183, 162, 162); */
+   
 }
 
 
-.tmp-container-3 > img:nth-of-type(1) {
+#my-top-3-projects-layout-container-about > header {
+
+    font-size: 1.5em;
+
+    height: 1.8em;
+    padding: 0 .8em 0 .6em;
+
+    justify-self: flex-start;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: .4em;
+
+    font-weight: bold;
+    /* text-decoration: underline; */
+
+    background-color: rgb(220, 220, 220);
+
+}
+
+#my-top-3-projects-layout-container-about > main {
 
     width: 100%;
 
-    border-radius: .6em;
+    display: flex;
+
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 5em;
+    row-gap: 5.5em;
 
 }
 
-.tmp-container-3 > header {
 
-    padding: 1.5em 0;
+/* -------------------------------------------------------------- */
+/* Item-Container My Top 3 Projects About 
+/* -------------------------------------------------------------- */
+
+.item-container-my-top-3-projects-about {
+
+    /* max-width: 28em; */
+
+    display: grid;
+    row-gap: 1.3em;
+
+}
+
+.item-container-my-top-3-projects-about > img:nth-of-type(1) {
+
+    width: 100%;
+    border-radius: .8em;
+
+    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+
+}
+
+/* ---------------------------------------- */
+/* Header 
+/* ---------------------------------------- */
+
+.item-container-my-top-3-projects-about > header {
+
+    /* padding-top: .6em; */
+
+   display: flex;
+   column-gap: .8em;
+
+}
+
+.item-container-my-top-3-projects-about > header > img:nth-of-type(1) {
+
+    height: 3em;
+    border-radius: .4em;
+}
+
+/* ---------------------------------------- */
+/* Title Project Container
+/* ---------------------------------------- */
+
+.title-project-container {
+
+    display: grid;
+    row-gap: .4em;
+   
+}
+
+/* ---------------------------------------- */
+/* Sub Info Title Project 
+/* ---------------------------------------- */
+
+.sub-info-title-project {
+
+    height: 1.6em;
+    padding: 0 .6em;
+
+    display: flex;
+    column-gap: .4em;
+    align-items: center;
+
+    /* dont allow to strech 100%  */
+    justify-self: flex-start;
+
+    border-radius: .4em;
+
+    background-color: rgb(233, 233, 233);
+    color:rgb(173, 173, 173);
+
+    /* display: none; */
+}
+
+.sub-info-title-project > img:nth-of-type(1) {
+
+    height: .9em;
+}
+
+/* ---------------------------------------- */
+/* Title Top 3 Projects 
+/* ---------------------------------------- */
+
+.title-top-3-projects-about {
 
     font-size: 1.125em;
     font-weight: bold;
+
 }
 
-.tmp-video-links-container {
+/* ---------------------------------------- */
+/* Small Skill Set Container
+/* ⚠️ Auslagern in eine universalle CSS 
+/* ---------------------------------------- */
+
+.small-skill-set-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4em;
+}
+
+.small-skill-set-container > div {
+
+    padding: .1em .4em;
+
+    border-radius: .4em;
+    background: rgb(44, 44, 44);
+    color:grey;
+}
+
+
+/* ---------------------------------------- */
+/* Project Choose Container 
+/* ---------------------------------------- */
+
+.project-choose-container {
+
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+
+    padding: 1em 0em;
 
     display: grid;
     row-gap: .6em;
+
 }
 
-.tmp-video-links-container > a {
+.project-choose-container > a {
 
     
     padding: .6em .3em;
@@ -88,312 +217,56 @@
     text-decoration: none;
 
     border-radius: .3em;
-    background-color: rgb(132, 132, 132);
+    background-color: rgb(244, 244, 244);
     color:black;
 
     transition: all .4s;
 }
 
-.tmp-video-links-container > a:hover {
+.project-choose-container > a:hover {
 
     background-color: rgb(189, 189, 189);
 }
 
-.tmp-github-container {
 
-    padding: 1em 0em;
+/* ---------------------------------------- */
+/* Link Github Container
+/* ---------------------------------------- */
 
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ❌❌❌❌ Müll  */
-
-#about-my-top-3-projects {
-
-    padding: .8em;
-
-    display: grid;
-    row-gap: .6em;
-
-    background-color: rgb(206, 206, 206);
-}
-
-/* -------------------------------------------------------------- */
-/* Big Project Overview Card Container
-/* -------------------------------------------------------------- */
-
-.big-project-overview-card-container {
-
-    padding: 1em 0;
+.link-github-container {
 
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-
-    gap: .6em;
-
-    background-color: rgb(213, 213, 213);
-
-}
-
-/* -------------------------------------------------------------- */
-/* Big Project Overview Card 
-/* -------------------------------------------------------------- */
-
-.big-project-overview-card {
-
-    width: 20em;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: .4em;
    
-    display: grid;
-
-    border-radius: .6em;
-
-    background-color: gray;
 }
 
-/* ------------------------ */
-/* IMG 
-/* ------------------------ */
+.link-item-github {
 
-.img-present-big-project-overview-card {
-
-    width: 100%;
-
-    border-radius: .6em .6em 0 0;
-}
-
-/* ------------------------ */
-/* Bit Title 
-/* ------------------------ */
-
-.big-title-project-overview-card-container {
-
-    padding: .8em;
-
-    display: grid;
-    row-gap: 1em;
-   
-    background-color: wheat;
-}
-
-.category-title-big-project {
-
-    font-size: 14px;
-
-    height: 2em;
+    height: 2.5em;
     padding: 0 .6em;
 
     display: flex;
     align-items: center;
     column-gap: .4em;
 
-    font-weight: bold;
-
     border-radius: .4em;
 
-    background-color: grey;
-
-}
-
-.img-normal-category-big-title-project-overview {
-
-    height: 1em;
-
-}
-
-
-.big-title-project-overview-card {
-
-    /* 18px */
-    /* font-size: 1.125em; */
-
-    font-weight: bold;
-
-}
-
-
-
-
-
-/* ------------------------ */
-/* Tech Skills  
-/* ------------------------ */
-
-.tech-skills-big-project-overview-container {
-
-    padding: .8em;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: .3em;
-}
-
-.tech-skills-big-project-overview-container > div {
-
-    /* influence sizing height by em  */
-    /* 14px */
-    font-size: 0.875em;
-
-    height: 1.8em;
-    padding: 0 .6em;
-
-    display: flex;
-    align-items: center;
-    
-    border-radius: .4em;
-
-    background-color: rgb(187, 187, 187);
-}
-
-/* ------------------------------------------ */
-/* Nav Big Project Overview Container 
-/* ------------------------------------------ */
-
-.nav-big-project-overview-container {
-
-    padding: .8em .6em;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    gap: .6em
-}
-
-.nav-link-big-project-overview {
-
-    /* delete default link style */
     text-decoration: none;
 
-    height: 2em;
-    padding: 0 .6em;
-
-    display: flex;
-    align-items: center;
-    column-gap: .4em;
-
     font-weight: bold;
 
-    border-radius: .4em;
-
-    background-color: rgb(102, 102, 102);
-    color:black;
+    background: rgb(44, 44, 44);
+    color:grey;
 
     transition: all .4s;
 
-  
 }
 
-.nav-link-big-project-overview:hover {
+.link-item-github:hover {
 
-    background-color: red;
-}
-
-.nav-link-big-project-overview:visited {
+    background-color: wheat;
     color:black;
-}
-
-.img-nav-zip {
-
-    height: 1em;
-}
-
-.img-nav-github {
-
-    height: 1.13em;
-
-}
-
-
-/* ------------------------------------------ */
-/* Want To See More About  
-/* ------------------------------------------ */
-
-#want-to-see-more-about {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5em;
-
-    background-color: gold;
-}
-
-#want-to-see-more-about > img {
-
-    height: 11em;
-}
-
-#want-to-see-more-about > div:nth-of-type(1) {
-
-    display: grid;
-    row-gap: .6em;
-}
-
-#want-to-see-more-about > div:nth-of-type(1) > div:nth-of-type(1) {
-
-    font-weight: bold;
-
-    font-size: 18px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------------------------------------- */
-/* 🚧 [ Überlegen ob weg kann ] - Concept IDEE, Dinge zu verallgemeiner
-/* -------------------------------------------------------------- */
-
-.about-row-container {
-
-    padding: .8em;
-
-    display: grid;
-    row-gap: .6em;
-
-}
-
-.bgc-light-grey {
-    background-color: rgb(206, 206, 206);
-}
-
-.bgc-white {
-    background-color: white;
 }

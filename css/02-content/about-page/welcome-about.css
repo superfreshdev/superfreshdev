@@ -6,17 +6,94 @@
 
 
 /* ---------------------------------------------------------------- */
-/* ...
+/* Welcome Container | About
 /* ---------------------------------------------------------------- */
 
 #welcome-container-about {
 
-    width: 20em;
-  
-    /* width: 100%; */
+    width: 100%;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    
+    /* background-color: orange; */
+}
 
-    background-color: orange;
+
+/* ---------------------------------------------------------------- */
+/* Welcome Title Block | About
+/* ---------------------------------------------------------------- */
+
+#welcome-title-block-about {
+
+    display: flex;
+    align-items: center;
+    column-gap: 1.5em;
+   
+}
+
+#img-me-clipart-welcome {
+
+    height: 11em;
+}
+
+#txt-block-welcome-title-about {
+
+    display: grid;
+    row-gap: 1em;
+}
+
+#txt-block-welcome-title-about > div:nth-of-type(1) {
+
+    display: grid;
+    row-gap: 1em;
+
+}
+
+#txt-welcome-to-about {
+
+    font-size: 1.8em;
+    font-weight: bold;
+
+    color:rgb(185, 185, 185);
+}
+
+#txt-superfreshdev-about {
+
+    font-size: 2em;
+    font-weight: bold;
+
+    color:white;
+}
+
+#txt-superfreshdev-about > span:nth-of-type(1) {
+
+    color:wheat;
+}
+
+#txt-motto-superfreshdev-about {
+
+    font-size: 1.125em;
+    color:rgb(89, 89, 89);
+}
+
+/* ---------------------------------------------------------------- */
+/* Welcome Date Block | About
+/* ---------------------------------------------------------------- */
+
+#welcome-date-block-about {
+
+    font-weight: bold;
+
+    color:grey;
+
+    /* background-color: red; */
+    
+}
+
+#txt-today-about {
+
+    font-weight: bold;
+    color:wheat;
 }

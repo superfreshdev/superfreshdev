@@ -25,7 +25,7 @@ window.addEventListener( 'load', ()=> {
     /* ---------------------------------------------- */
     /* Set Actually Date About
     /* ---------------------------------------------- */
-    // setEnglishFormattedDate( day, month, year )
+    setEnglishFormattedDate( day, month, year )
 
     yearBodyFooter.innerText = getYear();
     
