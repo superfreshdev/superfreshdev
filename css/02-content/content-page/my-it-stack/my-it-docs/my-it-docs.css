@@ -134,3 +134,43 @@
     background-color: wheat;
 
 }
+
+
+/* ----------------------------------------------------------------------- */
+/* 🟢 IT Docs Finish 
+/* ----------------------------------------------------------------------- */
+
+.it-docs-finish {
+
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* 🟡 IT Docs in Progress
+/* ----------------------------------------------------------------------- */
+
+.it-docs-in-progress {
+
+    width: 100%;
+
+    padding: 1.5em 0em;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    border-radius: .6em;
+
+    background-color: rgb(97, 97, 97);
+    
+}
