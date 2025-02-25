@@ -12,13 +12,13 @@
 #it-docs-container {
 
     width: 100%;
-    padding: 2.5em .8em;
+    padding: 5em .8em;
 
     display: flex;
     /* justify-content: center; */
 
    
-    background-color: green;
+    /* background-color: green; */
 
 }
 
@@ -33,7 +33,7 @@
     width: 100%;
 
     display: grid;
-    row-gap: 2.5em;
+    row-gap: 4.5em;
    
 
 }
@@ -87,7 +87,7 @@
 
 .img-cover-it-doc { 
 
-    height: 30em;
+    height: 25em;
 
     border-radius: .6em;
 }

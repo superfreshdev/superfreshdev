@@ -11,12 +11,22 @@
 #news-container-about {
 
     width: 100%;
-    padding: 1.5em 0;
+    
    
 
     /* background-color: rgb(227, 14, 99); */
 }
 
+
+#news-layout-container-about {
+
+    padding: 1.5em .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 
 /* ---------------------------------------------------------------- */
 /* Header | News Container 

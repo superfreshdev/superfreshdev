@@ -11,7 +11,7 @@
 #my-top-3-projects-container-about {
 
     /* width: 100%; */
-    padding: 2.5em .8em;
+    padding: 5em .8em;
 
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
 
     display: grid;
     justify-items: center;
-    row-gap: 2.5em;
+    row-gap: 4.5em;
 
     /* background-color: rgb(183, 162, 162); */
    
