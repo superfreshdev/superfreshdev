@@ -150,3 +150,50 @@
     color:black;
 
 }
+
+/* ------------------------------------------------------ */
+/* Coming Soon SFD Square Art 
+/* ------------------------------------------------------ */
+
+
+.coming-soon-sfd-square {
+
+    height: 6em;
+    padding: .8em 1.3em;
+
+    position: absolute;
+    bottom: 10em;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.3em;
+
+    border-radius: .6em;
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+.coming-soon-sfd-square > img:nth-of-type(1) {
+
+    height: 4.5em;
+    transform: rotate(40deg);
+}
+
+.txt-coming-soon {
+
+    padding: .4em;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-radius: .6em;
+
+    
+    background-color: #225de8;
+    color:rgb(235, 235, 235);
+
+}
