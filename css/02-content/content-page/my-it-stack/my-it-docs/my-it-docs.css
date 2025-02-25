@@ -1,0 +1,136 @@
+/* -------------------------------------------------------------- */
+/* > my-it-docs.css
+/*  
+/* : style my it docs layout 
+/* -------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------- */
+/* IT Docs Container 
+/* ----------------------------------------------------- */
+
+#it-docs-container {
+
+    width: 100%;
+    padding: 2.5em .8em;
+
+    display: flex;
+    /* justify-content: center; */
+
+   
+    background-color: green;
+
+}
+
+/* Actually working on | Coming Soon |  */
+
+/* ----------------------------------------------------- */
+/* IT Docs Layout Container 
+/* ----------------------------------------------------- */
+
+#it-docs-layout-container {
+
+    width: 100%;
+
+    display: grid;
+    row-gap: 2.5em;
+   
+
+}
+
+#it-docs-layout-container > header {
+
+    font-size: 1.5em;
+
+    height: 1.8em;
+    padding: 0 .8em 0 .6em;
+
+    justify-self: flex-start;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: .4em;
+
+    font-weight: bold;
+    /* text-decoration: underline; */
+
+    background-color: rgb(220, 220, 220);
+
+}
+
+#it-docs-layout-container > main {
+
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+
+}
+
+/* ----------------------------------------------------- */
+/* IT Docs Item Container
+/* ----------------------------------------------------- */
+
+.it-docs-item-container {
+
+    position: relative;
+
+    display: grid;
+    justify-items: center;
+    row-gap: .6em;
+
+}
+
+.img-cover-it-doc { 
+
+    height: 30em;
+
+    border-radius: .6em;
+}
+
+/* ----------------------------------------------------- */
+/* Nav | IT Doc Item Container
+/* ----------------------------------------------------- */
+
+.it-docs-item-container > nav {
+
+    width: 100%;
+
+    display: grid;
+    row-gap: .4em;
+}
+
+
+.it-docs-item-container > nav > a {
+
+    height: 2.5em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: .4em;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    background-color: grey;
+    color:black;
+
+    text-decoration: none;
+
+    transition: all .4s;
+
+}
+
+.it-docs-item-container > nav > a:hover {
+
+    background-color: wheat;
+
+}

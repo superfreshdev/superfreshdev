@@ -1,0 +1,122 @@
+/* -------------------------------------------------------------- */
+/* > resp-welcome-about.css
+/*  
+/* : responsive sets for the welcome about container 
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* >= 500x width
+/* -------------------------------------------------------------- */
+@media (min-width: 500px ) {
+
+
+    #img-me-clipart-welcome {
+
+        /* desktop size  */
+        height: 8.5em;
+    }
+
+    #txt-block-welcome-title-about {
+        
+        row-gap: .8em;
+    }
+
+    #txt-block-welcome-title-about > div:nth-of-type(1) {
+
+        row-gap: .8em;
+    
+    }
+
+    #txt-welcome-to-about {
+
+        /* desktop size  */
+        font-size: 1.5em;
+    
+    }
+    
+    #txt-superfreshdev-about {
+    
+        /* desktop size  */
+        font-size: 1.75em;
+       
+    }
+
+    #txt-motto-superfreshdev-about {
+
+        /* desktop size  */
+        font-size: 1.125em;
+
+    }
+  
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 730x width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 730px ) {
+
+    #welcome-date-block-about {
+
+        width: auto;
+    
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 800x width
+/* -------------------------------------------------------------- */
+@media (min-width: 800px ) {
+
+
+    #img-me-clipart-welcome {
+
+        /* desktop size  */
+        height: 11em;
+    }
+
+    #txt-block-welcome-title-about {
+        
+        row-gap: 1em;
+    }
+
+    #txt-block-welcome-title-about > div:nth-of-type(1) {
+
+        row-gap: 1em;
+    
+    }
+
+    #txt-welcome-to-about {
+
+        /* desktop size  */
+        font-size: 1.8em;
+    
+    }
+    
+    #txt-superfreshdev-about {
+    
+        /* desktop size  */
+        font-size: 2em;
+       
+    }
+
+    #txt-motto-superfreshdev-about {
+
+        /* desktop size  */
+        font-size: 1.125em;
+
+    }
+  
+
+}
+
+
+
+
+

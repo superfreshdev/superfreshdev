@@ -105,3 +105,48 @@
     color:  rgba(232, 196, 34, .8);
 
 }
+
+
+/* ------------------------------------------------------ */
+/* In Progress SFD Square Art 
+/* ------------------------------------------------------ */
+
+
+.in-progress-sfd-square {
+
+    padding: .8em 1.3em;
+
+    position: absolute;
+    bottom: 10em;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .4em;
+
+    border-radius: .6em;
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+.in-progress-sfd-square > img:nth-of-type(1) {
+
+    height: 10em;
+}
+
+.txt-in-progress {
+
+    padding: .4em;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-radius: .6em;
+
+    background-color: rgb(232, 196, 34);
+    color:black;
+
+}

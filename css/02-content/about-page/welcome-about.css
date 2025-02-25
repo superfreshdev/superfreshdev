@@ -12,10 +12,17 @@
 #welcome-container-about {
 
     width: 100%;
+    padding: 1.5em 0em;
 
     display: flex;
+    flex-wrap: wrap;
+
     align-items: center;
     justify-content: space-between;
+    
+
+    /* this will be use in mobile  */
+    row-gap: 1em;
     
     /* background-color: orange; */
 }
@@ -29,31 +36,33 @@
 
     display: flex;
     align-items: center;
-    column-gap: 1.5em;
+    column-gap: 1em;
    
 }
 
 #img-me-clipart-welcome {
 
-    height: 11em;
+    /* mobile size  */
+    height: 6.5em;
 }
 
 #txt-block-welcome-title-about {
 
     display: grid;
-    row-gap: 1em;
+    row-gap: .6em;
 }
 
 #txt-block-welcome-title-about > div:nth-of-type(1) {
 
     display: grid;
-    row-gap: 1em;
+    row-gap: .3em;
 
 }
 
 #txt-welcome-to-about {
 
-    font-size: 1.8em;
+    /* mobile size  */
+    font-size: 1.125em;
     font-weight: bold;
 
     color:rgb(185, 185, 185);
@@ -61,7 +70,8 @@
 
 #txt-superfreshdev-about {
 
-    font-size: 2em;
+    /* mobile size  */
+    font-size: 1.25em;
     font-weight: bold;
 
     color:white;
@@ -74,7 +84,11 @@
 
 #txt-motto-superfreshdev-about {
 
-    font-size: 1.125em;
+    /* mobile size  */
+    font-size: 1em;
+
+    line-height: 1.4em;
+
     color:rgb(89, 89, 89);
 }
 
@@ -83,6 +97,13 @@
 /* ---------------------------------------------------------------- */
 
 #welcome-date-block-about {
+
+    width: 100%;
+    padding-right: 1em;
+
+    display: flex;
+    justify-content: flex-end;
+  
 
     font-weight: bold;
 
@@ -97,3 +118,4 @@
     font-weight: bold;
     color:wheat;
 }
+
