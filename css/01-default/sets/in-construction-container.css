@@ -6,6 +6,11 @@
 
 
 
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* 🚧🚧🚧 | Big In Construction Container | SFD
+/* ------------------------------------------------------------------------------------------------------------------ */
+
 /* ------------------------------------------------------ */
 /* In Construction | SFD
 /* ------------------------------------------------------ */
@@ -28,6 +33,7 @@
 .in-construction-sfd > img:nth-of-type(1) {
 
     height: 6.5em;
+   
 }
 
 
@@ -107,6 +113,132 @@
 }
 
 
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* 🚧🚧🚧 | In Construction Container | SFD
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.in-progress-it-doc-sfd,
+.coming-soon-sfd-square {
+
+    height: 8em;
+    padding: .3em 1.8em;
+
+    position: absolute;
+    bottom: 2em;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+
+    border-radius: .6em;
+
+    background-color: rgba(0, 0, 0, .3);
+
+}
+
+
+.in-progress-it-doc-sfd > img:nth-of-type(1) {
+
+    height: 6em;
+    opacity: .3;
+}
+
+.txt-container-in-progress-sfd {
+
+    padding: .4em;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-radius: .6em;
+
+    background-color: rgba(232, 196, 34, .3);
+    /* background-color: red; */
+    color:black;
+
+}
+
+.active-in-progress-in-progress-sfd {
+
+    position: absolute;
+    bottom: 8em;
+    left: 2.6em;
+
+    height: 4em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    color: rgba(232, 196, 34, 1);
+    background-color: rgb(0, 0, 0);
+    /* background-color: red; */
+}
+
+.img-gear-it-doc-in-progress {
+
+    height: 2.3em;
+
+    animation: d 2s ease infinite;
+}
+
+/* infinite-360-run */
+@keyframes d {
+
+    0% { transform: rotate(45deg); }
+    20% { transform: rotate(90deg); }
+    40% { transform: rotate(135deg); }
+    60% { transform: rotate(180deg); }
+    80% { transform: rotate(135deg); }
+    100% { transform: rotate(360deg); }
+    
+}
+
+
+/* ------------------------------------------------------ */
+/* Coming Soon SFD Square Art 
+/* ------------------------------------------------------ */
+
+
+.coming-soon-sfd-square > img:nth-of-type(1) {
+
+    height: 4.5em;
+    transform: rotate(40deg);
+}
+
+.txt-coming-soon {
+
+    padding: .6em;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-radius: .6em;
+
+    
+    background-color: rgba(34, 93, 232, .3);
+    color:rgb(235, 235, 235);
+
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ❌❌❌ | Müll 
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
 /* ------------------------------------------------------ */
 /* In Progress SFD Square Art 
 /* ------------------------------------------------------ */
@@ -135,6 +267,7 @@
 .in-progress-sfd-square > img:nth-of-type(1) {
 
     height: 6em;
+    opacity: .3;
 }
 
 .txt-in-progress {
@@ -147,54 +280,29 @@
 
     border-radius: .6em;
 
-    background-color: rgb(232, 196, 34);
+    background-color: rgba(232, 196, 34, .6);
     color:black;
 
 }
 
+
+
 /* ------------------------------------------------------ */
-/* Coming Soon SFD Square Art 
+/* Header IT Status Info
 /* ------------------------------------------------------ */
 
+.header-it-status-info {
 
-.coming-soon-sfd-square {
+    font-size: 1.25em;
 
-    height: 8em;
-    padding: .3em 1.8em;
+    padding-left: .8em;
 
-    position: absolute;
-    bottom: 2em;
-    
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1.8em;
-
-    border-radius: .6em;
-
-    background-color: rgb(0, 0, 0);
-
+    display: grid;
+    row-gap: .2em;
+    color:rgb(85, 85, 85);
 }
 
-.coming-soon-sfd-square > img:nth-of-type(1) {
-
-    height: 4.5em;
-    transform: rotate(40deg);
-}
-
-.txt-coming-soon {
-
-    padding: .6em;
+.header-it-status-info span {
 
     font-weight: bold;
-
-    text-align: center;
-
-    border-radius: .6em;
-
-    
-    background-color: #225de8;
-    color:rgb(235, 235, 235);
-
 }

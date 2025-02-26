@@ -15,10 +15,7 @@
     padding: 5em .8em;
 
     display: flex;
-    /* justify-content: center; */
-
    
-    /* background-color: green; */
 
 }
 
@@ -40,12 +37,22 @@
 
 #it-docs-layout-container > header {
 
+    
+    display: grid;
+    row-gap: 1.5em;
+
+    justify-self: flex-start;
+
+   
+
+}
+
+#it-docs-layout-container > header > div:nth-of-type(1) {
+
     font-size: 1.5em;
 
     height: 1.8em;
     padding: 0 .8em 0 .6em;
-
-    justify-self: flex-start;
 
     display: flex;
     align-items: center;
@@ -57,7 +64,7 @@
 
     background-color: rgb(220, 220, 220);
 
-}
+} 
 
 #it-docs-layout-container > main {
 
@@ -112,7 +119,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     column-gap: .4em;
 
@@ -133,6 +140,13 @@
 
     background-color: wheat;
 
+}
+
+.it-docs-item-container > nav > a > div:last-child {
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
 }
 
 
@@ -161,7 +175,7 @@
 
     width: 100%;
 
-    padding: 1.5em 0em;
+    padding: 2.5em 0em;
 
     display: flex;
     align-items: flex-start;
@@ -171,6 +185,6 @@
 
     border-radius: .6em;
 
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(71, 71, 71);
     
 }
