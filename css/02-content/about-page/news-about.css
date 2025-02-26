@@ -11,8 +11,6 @@
 #news-container-about {
 
     width: 100%;
-    
-   
 
     /* background-color: rgb(227, 14, 99); */
 }
@@ -35,4 +33,31 @@
 #news-container-about > header {
 
     font-weight: bold;
+}
+
+.li-task {
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+    
+}
+
+.li-task > div:nth-of-type(1) {
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+}
+
+.li-task > div:nth-of-type(2),
+.li-task > div:nth-of-type(3) {
+
+    font-weight: bold;
+}
+
+.li-task > div:nth-of-type(1) > img {
+
+    height: 1em;
 }
