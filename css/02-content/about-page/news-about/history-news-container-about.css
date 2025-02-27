@@ -1,0 +1,51 @@
+/* ----------------------------------------------------------------------------- */
+/* > history-news-container-about.css
+/*  
+/* : styles the history news container | about 
+/* ----------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/*  History News Container 
+/* ---------------------------------------------------------------- */
+
+#history-news-container {
+
+    padding: 1em 0 1.5em 0;
+
+    display: grid;
+    row-gap: 1.3em;
+
+    border-top: 1px solid black;
+
+    /* background-color: pink; */
+}
+
+
+/* ---------------------------------------------------------------- */
+/*  Header | History News Container 
+/* ---------------------------------------------------------------- */
+
+#history-news-container > header {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+
+}
+
+#history-news-container > header > img {
+
+    height: 1.5em;
+}
+
+/* ---------------------------------------------------------------- */
+/*  Main | History News Container 
+/* ---------------------------------------------------------------- */
+
+#history-news-container > main {
+
+    display: grid;
+    row-gap: .3em;
+}
