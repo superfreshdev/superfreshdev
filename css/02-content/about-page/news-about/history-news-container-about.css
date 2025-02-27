@@ -15,7 +15,7 @@
     display: grid;
     row-gap: 1.3em;
 
-    border-top: 1px solid black;
+    border-top: 1px dashed rgb(125, 125, 125);
 
     /* background-color: pink; */
 }
@@ -32,6 +32,8 @@
     column-gap: .6em;
 
     font-weight: bold;
+
+    color:#008021;
 
 }
 
