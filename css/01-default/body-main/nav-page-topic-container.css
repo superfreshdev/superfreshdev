@@ -7,25 +7,107 @@
 
 
 /* ---------------------------------------------------------------- */
-/* Nav Page Topic Container
+/* Nav Topic Container
 /* ---------------------------------------------------------------- */
 
-.nav-page-topic-container {
+#nav-topic-container {
 
     width: 100%;
     padding: 1.5em 0;
 
-    /* padding: .8em; */
 
-    /* display: flex;
-    flex-wrap: wrap;
-
-    column-gap: 1.5em;
-    row-gap: 1em; */
+    display: grid;
+    justify-items: center;
 
     background-color: rgb(108, 108, 108);
+
+    background-color: rgb(247, 206, 0);
+
+    
 }
+
+.tmp-header {
+
+    padding: .4em .6em;
+
+    text-align: center;
+
+    border-radius: .4em;
+
+    background-color: rgb(188, 188, 188);
+}
+
+/* ---------------------------------------------------------------- */
+/* ⬇️⬆️ Open / Close Nav Body
+/* ---------------------------------------------------------------- */
+
+#open-close-nav-body {
+
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+
+}
+
+
+.tmp-nav-topic-layout-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3em;
+    row-gap: 2em;
+}
+
+
+/* ------------------------------------------------- */
+/* ### Styling
+/* Checkbox Handling | Open News Container 
+/* ------------------------------------------------- */
+
+/* #chk-open-close-news-container-about {
+
+    display: none;
+} */
+
+/* txt unshow | show me  */
+/* #chk-open-close-news-container-about:checked + #news-container-about #lbl-open-close-new-container-about > div:nth-of-type(1) {
+
+    display: none;
+} */
+
+/* show | close  */
+/* #chk-open-close-news-container-about:checked + #news-container-about #lbl-open-close-new-container-about > div:nth-of-type(2) {
+
+    display: flex;
+}
+
+#chk-open-close-news-container-about:checked + #news-container-about #lbl-open-close-new-container-about {
+
+    background-color: wheat;
+    color:black;
+}
+
+#chk-open-close-news-container-about:checked + #news-container-about #lbl-open-close-new-container-about > img {
+
+    transform: rotate(180deg);
+} */
+
+
+/* ------------------------------------------------- */
+/* ### Movement
+/* Checkbox Handling | Open News Container
+/* ------------------------------------------------- */
+
+/* #chk-open-close-news-container-about:checked + #news-container-about > #open-close-news-container-about {
+
+    grid-template-rows: 1fr;
+
+} */
+
 
 /* ---------------------------------------------------------------- */
 /* Nav Page Topic Container
 /* ---------------------------------------------------------------- */
+

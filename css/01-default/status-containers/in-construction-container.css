@@ -287,22 +287,4 @@
 
 
 
-/* ------------------------------------------------------ */
-/* Header IT Status Info
-/* ------------------------------------------------------ */
 
-.header-it-status-info {
-
-    font-size: 1.25em;
-
-    padding-left: .8em;
-
-    display: grid;
-    row-gap: .2em;
-    color:rgb(85, 85, 85);
-}
-
-.header-it-status-info span {
-
-    font-weight: bold;
-}

@@ -62,11 +62,22 @@
             <!-- Handle Header/Main Content Area -->
             <link rel="stylesheet" href="css/01-default/handle-header-main-content-area/handle-header-main-content-area.css">
 
+            <!-- ------------------------------------ -->
+            <!-- status info container  -->
+            <!-- ------------------------------------ --> 
+            <link rel="stylesheet" href="css/01-default/status-containers/status-containers.css">
+            <!-- ⚠️Überlegung ob in construction auch in status als eigene Datei rein kommt  -->
+            <link rel="stylesheet" href="css/01-default/status-containers/in-construction-container.css">
+
+            <!-- ------------------------------------ -->
             <!-- Default Body Header -->
+            <!-- ------------------------------------ --> 
             <link rel="stylesheet" href="css/01-default/body-header/body-header.css">
             <link rel="stylesheet" href="css/01-default/body-header/body-header-nav.css">
 
+            <!-- ------------------------------------ -->
             <!-- Default Body Main -->
+            <!-- ------------------------------------ --> 
             <link rel="stylesheet" href="css/01-default/body-main/body-main.css">
             <link rel="stylesheet" href="css/01-default/body-main/nav-page-topic-container.css">
             <!-- 🚧 > body-main-nav.css später löschen  -->
@@ -76,12 +87,16 @@
             <link rel="stylesheet" href="css/01-default/body-main/header-main-layout/header-main-layout.css">
             <link rel="stylesheet" href="css/01-default/body-main/header-main-layout/main-filter-sub-topic.css">
 
+            <!-- ------------------------------------ -->
             <!-- Default Body Footer -->
+            <!-- ------------------------------------ --> 
             <link rel="stylesheet" href="css/01-default/body-footer/body-footer.css">
             <link rel="stylesheet" href="css/01-default/body-footer/main-body-footer.css">
             <link rel="stylesheet" href="css/01-default/body-footer/label-link-items-body-footer.css">
 
+            <!-- ------------------------------------ -->
             <!-- Sets -->
+            <!-- ------------------------------------ --> 
             <link rel="stylesheet" href="css/01-default/sets/google-fonts.css">
             <link rel="stylesheet" href="css/01-default/sets/colors.css">
             <link rel="stylesheet" href="css/01-default/sets/color-names.css">
@@ -96,7 +111,9 @@
             <link rel="stylesheet" href="css/01-default/sets/flex-grid.css">
 
             <link rel="stylesheet" href="css/01-default/sets/buttons.css">
-            <link rel="stylesheet" href="css/01-default/sets/in-construction-container.css">
+
+
+            
 
 
 
@@ -340,7 +357,7 @@
             <!-- ----------------------------------------------- -->
             <!-- Row Container | (sub)Nav Page Topic Container   -->
             <!-- ----------------------------------------------- -->
-            <div class="row-container" style="display: none; background-color: green;">
+            <div class="row-container" style="background-color: green;">
 
                 
                 <!-- ----------------------------------------------------------- -->
@@ -355,63 +372,69 @@
                     <div class="w-100p flex jc-c">
 
 
-                        <!-- ----------------------------------------------------------- -->
-                        <!-- Nav Page Topic Container ( nav-page-topic-container.css )    -->
-                        <!-- ----------------------------------------------------------- -->
-                        <!-- 🚧🚧🚧🚧 -->
-                        <nav class="nav-page-topic-container">
+                        <!-- ------------------------------------------------------ -->
+                        <!-- ⬇️⬆️ Open / Close Nav Body -->
+                        <!-- ------------------------------------------------------ -->
+                        <div id="open-close-nav-body">
 
-                            <!-- ------------------------------------------------------- -->
-                            <!-- 🚧🚧🚧 In Construction 🚧🚧🚧 -->
-                            <!-- ------------------------------------------------------- -->  
-                            <div class="in-construction-sfd">
+
+                            <!-- -----------------------------------------------------  -->
+                            <!-- Overflow:hidden | important for smooth grid effect -->
+                            <!-- -----------------------------------------------------  -->
+                            <div class="overflow-hidden w-100p">
+
+
+                                <!-- ----------------------------------------------------------- -->
+                                <!-- Nav Topic Container                                         -->
+                                <!-- ----------------------------------------------------------- -->
+                                
+                                <nav id="nav-topic-container">
+
+
+                                    <div class="tmp-header">
+
+                                        <b>⚠️⚠️⚠️ In Construction ⚠️⚠️⚠️</b>
+                                        <div>» Nav Topic Container</div> 
+
+                                    </div>
+                                
+
+                                    <!-- --------------------------------------------------------- -->
+                                    <!-- TMP | Nav Topic Layout Container -->
+                                    <!-- --------------------------------------------------------- -->  
+                                    <div class="tmp-nav-topic-layout-container">
+
+                                   
+                                        <ul>
+                                        <li><b>About</b></li>
+                                        </ul>
+
+                                        <ul>
+                                            <li><b>My IT-Stack</b></li>
+                                            <li>My IT-Doc's (G.)</li>
+                                            <li>My IT-Project's</li>
+                                            <li>My Mini Games / Online Tools</li>
+                                        </ul>
+
+                                        <ul>
+                                            <li><b>My Private Lifesytle</b></li>
+                                            <li>My Sport | Challenges </li>
+                                            <li>Language Learning | Spain, France, ... </li>
+                                            <li>Softskills Trainer | math, brain, ... </li>
+                                            <li>... </li>
+                                        </ul>
+
+                                    </div>
+
+                                        
+                                </nav> 
 
                                 
-                                <img src="media/img/icons/clipart/me-in-construction.png" alt="img">
-                                
-
-                                <main>
-
-                                    <!-- ------------------------------------- -->
-                                    <!-- Title -->
-                                    <!-- ------------------------------------- --> 
-                                    <div class="title-in-construction-sfd"> 
-                                        
-                                        <div>Navigation Content | About </div>
-                                        <div>» in construction </div>
-                                        
-                                    
-                                    </div>
-                                    <!-- ------------------------------------- -->
-                                    <!-- Description -->
-                                    <!-- ------------------------------------- --> 
-                                    <div class="description-in-construction-sfd" style="display: none;">
-
-                                        <div>» [About] ( own page ) </div>
-                                        <div>» [My IT-Stack] » IT-Projects , IT-Docs | Web | Software | Backend | AI | IT-Tools | - Dev </div>
-                                        <div>» [My Private Lifestyle] » Sport | Languages | Softskills | Violine | ... </div>
-
-
-                                    </div>
-                                    <!-- ------------------------------------- -->
-                                    <!-- Deadline -->
-                                    <!-- ------------------------------------- --> 
-                                    <div class="deadline-in-construction-sfd" >
-
-                                        <div>🗓️</div>
-                                        <div>coming soon</div>
-                                        
-                                    </div>
-
-                                </main>
-
                             </div>
-                                
-                        </nav> 
 
+                        </div>
                       
                                
-                       
 
                     </div>
 
@@ -487,7 +510,7 @@
                                                         
                                                         <img src="media/img/icons/icons/thunder-grey.png" alt="img">
                                                         <!-- <img src="media/img/icons/icons/thunder-dark-yellow.png" alt="img"> -->
-                                                        <div>(🚧)My News | from 27.02.2025 </div>
+                                                        <div>⚠️ | My News | from 27.02.2025 </div>
 
                                                     </div> 
 
@@ -984,17 +1007,88 @@
                                     <!-- ----------------------------------------------- -->
                                     <header>
 
-                                        <div># My IT Doc's </div>
+                                        <div>
+                                            <img src="media/img/icons/icons/books-black.svg" class="img-h-1-1" alt="img">
+                                            <div>My IT-Doc's | German Content</div>
+
+                                        </div>
                                         
-                                        <div class="header-it-status-info">
-                                            <div> <span>Status:</span> 🟢 | 100% Finish</div>
+                                        <div class="header-status-small-info-container">
 
-                                            <div class="green-box">H</div>
-                                            <div class="yellow-box">x</div>
-                                            <div class="blue-box">P</div>
+                                            
+                                            <!-- Status Small Info | Finish -->
+                                            <div class="status-small-info-container">
 
-                                            <div> <span>Status:</span> 🚧 | in progress </div>
-                                            <div> <span>Status:</span> 🔵 | coming soon (not to forget) </div>
+                                                <header> Status:</header>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Small Info Finish -->
+                                                <!-- ---------------------------------------------- -->  
+                                                <div class="status-small-info-finish">
+                                                    <img src="media/img/icons/icons/check-black.png" class="img-h-1-1" alt="img">    
+                                                </div>
+
+                                                <div>|</div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Description -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="status-small-info-desciption">
+                                                    100% Done
+                                                </div> 
+
+
+                                            </div>
+
+                                            <!-- Status Small Info | in progress -->
+                                            <div class="status-small-info-container">
+
+                                                <header> Status:</header>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Small Info in Progress -->
+                                                <!-- ---------------------------------------------- -->            
+                                                <div class="status-small-info-in-progress">
+                                                    <img src="media/img/icons/icons/gear-black.png" class="img-h-1" alt="img">    
+                                                </div>
+
+                                                <div>|</div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Description -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="status-small-info-desciption">
+                                                    actually in progress
+                                                </div> 
+
+
+                                            </div>
+                                           
+                                            <!-- Status Small Info | coming soon -->
+                                            <div class="status-small-info-container">
+
+                                                <header> Status:</header>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Small Info in Progress -->
+                                                <!-- ---------------------------------------------- -->            
+                                                <div class="status-small-info-coming-soon">
+                                                    <img src="media/img/icons/icons/coming-soon-black.png" class="img-h-1" alt="img">    
+                                                </div>
+
+                                                <div>|</div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Description -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="status-small-info-desciption">
+                                                    coming soon (not to forget)
+                                                </div> 
+
+
+                                            </div>
+
+                                
                                         </div>
 
                                     </header> 
@@ -2285,7 +2379,7 @@
                                             <div class="it-docs-item-container">
 
 
-                                                <img src="media/img/content/about/it-docs/java-gk1-cover-it-doc.png" style="opacity: .2;" class="img-cover-it-doc" alt="img">
+                                                <img src="media/img/content/about/it-docs/java-gk1-sprachkonzepte-cover-it-doc.png" style="opacity: .2;" class="img-cover-it-doc" alt="img">
 
 
                                                 <!-- -------------------------------------------- -->
@@ -3538,13 +3632,90 @@
                                     <!-- ----------------------------------------------- -->
                                     <header>
 
-                                        <div># My Top 3 IT-Projects </div>
+                                        <div>
+
+                                            <img src="media/img/icons/icons/rocket-3-black-mobile.png" class="img-h-1-1" alt="img">
+                                            <img src="media/img/icons/icons/folder.png" class="img-h-1-1" alt="img">
+                                            <div>My Top 3 IT-Projects </div>
+
+                                        </div>
                                         
-                                        <div class="header-it-status-info">
-                                            <div> <span>Status:</span> 🟢 | 100% Finish</div>
-                                            <div> <span>Status:</span> 🔴 | not finished </div>
-                                            <div> <span>Status:</span> 🚧 | in progress </div>
+                                        <div class="header-status-small-info-container">
+
                                             
+                                            <!-- Status Small Info | Finish -->
+                                            <div class="status-small-info-container">
+
+                                                <header> Status:</header>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Small Info Finish -->
+                                                <!-- ---------------------------------------------- -->  
+                                                <div class="status-small-info-finish">
+                                                    <img src="media/img/icons/icons/check-black.png" class="img-h-1-1" alt="img">    
+                                                </div>
+
+                                                <div>|</div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Description -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="status-small-info-desciption">
+                                                    100% Done
+                                                </div> 
+
+
+                                            </div>
+
+                                            <!-- Status Small Info | in progress -->
+                                            <div class="status-small-info-container">
+
+                                                <header> Status:</header>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Small Info in Progress -->
+                                                <!-- ---------------------------------------------- -->            
+                                                <div class="status-small-info-in-progress">
+                                                    <img src="media/img/icons/icons/gear-black.png" class="img-h-1" alt="img">    
+                                                </div>
+
+                                                <div>|</div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Description -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="status-small-info-desciption">
+                                                    actually in progress
+                                                </div> 
+
+
+                                            </div>
+                                           
+                                            <!-- Status Small Info | coming soon -->
+                                            <div class="status-small-info-container">
+
+                                                <header> Status:</header>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Small Info in Progress -->
+                                                <!-- ---------------------------------------------- -->            
+                                                <div class="status-small-info-coming-soon">
+                                                    <img src="media/img/icons/icons/coming-soon-black.png" class="img-h-1" alt="img">    
+                                                </div>
+
+                                                <div>|</div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Status Description -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="status-small-info-desciption">
+                                                    coming soon (not to forget)
+                                                </div> 
+
+
+                                            </div>
+
+                                
                                         </div>
 
                                     </header> 
@@ -3803,6 +3974,8 @@
                                                 <!-- ----------------------------------------------------------- -->
                                                 <!-- 🚧 Custom Select -->
                                                 <!-- ----------------------------------------------------------- --> 
+                                                <div><b>Project Ideas:</b></div> 
+
                                                 <a href="" target="_blank">
                                                     🔴🤔 | Project 1 | Coming Soon 2025 | Portfolio Webpage
                                                 </a>
@@ -3889,6 +4062,8 @@
                                                 <!-- ----------------------------------------------------------- -->
                                                 <!-- 🚧 Custom Select -->
                                                 <!-- ----------------------------------------------------------- --> 
+                                                <div><b>Project Ideas:</b></div> 
+
                                                 <a href="" target="_blank">
                                                     🔴🤔  | Project 1 | Coming Soon 2025 | Complex Operator Calculator 
                                                     for Strings, Math Calculation, Filter, Sorting, ...

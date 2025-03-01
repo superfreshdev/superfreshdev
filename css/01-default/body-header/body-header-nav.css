@@ -106,10 +106,10 @@
 
 
 /* ----------------------------------------------------- */
-/* 🚧 Handling | Open | Body Nav Topic Container
+/* 🚧 ⬇️⬆️ Open / Close Nav Body
 /* ----------------------------------------------------- */
 
-#chk-body-header-nav-label:checked ~ #main-body #nav-container-main-body {
+#chk-body-header-nav-label:checked ~ #main-body #open-close-nav-body {
 
     /* background-color: red; */
     grid-template-rows: 1fr;
