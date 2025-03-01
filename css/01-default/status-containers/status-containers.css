@@ -4,6 +4,26 @@
 /* : styles staus containers in finish | in progress | coming soon 
 /* -------------------------------------------------------------------------- */
 
+.tmp-construction-header {
+
+    /* font-size: 1.25em; */
+
+    padding: .6em .8em;
+
+    /* padding-left: .8em; */
+
+    display: grid;
+    row-gap: .3em;
+   
+    text-align: center;
+
+    border-radius: .6em;
+    /* border: 1px dashed black; */
+
+    color:rgb(151, 151, 151);
+    background-color: black;
+}
+
 
 /* ----------------------------------------------------------------------------- */
 /* Header Status Small Info Container 
@@ -13,14 +33,20 @@
 
     font-size: 1.25em;
 
+    /* padding: .6em .8em; */
+
     padding-left: .8em;
 
     display: grid;
     row-gap: .3em;
-    color:rgb(85, 85, 85);
+    color:rgb(10, 10, 10);
+
+    text-align: center;
 
     border-radius: .6em;
     /* border: 1px dashed black; */
+
+    /* background-color: black; */
 }
 
 

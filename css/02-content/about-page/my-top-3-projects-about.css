@@ -44,7 +44,7 @@
 #my-top-3-projects-layout-container-about > header {
 
     display: grid;
-    row-gap: 1.5em;
+    row-gap: 2.5em;
 
     justify-self: flex-start;
 }
@@ -54,10 +54,11 @@
 
     font-size: 1.5em;
 
-    height: 1.8em;
+    height: 2.3em;
     padding: 0 .8em 0 .6em;
 
     display: flex;
+    column-gap: .6em;
     align-items: center;
 
     border-radius: .4em;
