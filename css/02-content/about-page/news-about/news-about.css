@@ -17,14 +17,13 @@
 }
 
 /* ---------------------------------------------------------------- */
-/* [1/2] | Header | News Container 
+/* [1/2] | Header News | About
 /* ---------------------------------------------------------------- */
 
 #news-container-about > header {
 
     height: 4em;
     
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,13 +164,174 @@
 
 #news-layout-container-about {
 
-    padding: .8em;
-
+    padding: 1em 0em;
+   
     display: grid;
-    row-gap: 1.5em;
+    row-gap: 0em;
 
     /* background-color: green; */
 }
+
+
+/* ---------------------------------------------------------------- */
+/*  News Doing Container
+/* ---------------------------------------------------------------- */
+
+.news-doing-container {
+
+    display: grid;
+    /* row-gap: 1em; */
+
+
+}
+
+/* ---------------------------------------------------------------- */
+/*  Header | News Doing Container
+/* ---------------------------------------------------------------- */
+
+.news-doing-container > header,
+.news-done-container > header {
+
+    height: 2.8em;
+    padding: 0 .8em;
+
+    /* border-top: 1px solid rgb(109, 109, 109);
+    border-bottom: 1px solid rgb(109, 109, 109); */
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    background-color: grey;
+
+    /* background-color: red; */
+
+}
+
+.news-doing-container > header > img:nth-of-type(1),
+.news-done-container > header > img:nth-of-type(1) {
+
+    height: 1.3em;
+   
+    
+}
+
+.news-doing-container > header > img:nth-of-type(1) {
+
+    animation: rotate360deg 4s ease infinite;
+
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/*  News Done Container
+/* ---------------------------------------------------------------- */
+
+
+.news-doing-container > main, 
+.news-done-container > main {
+
+    /* padding: 1em 0; */
+    /* background-color: pink; */
+}
+
+
+/* ---------------------------------------------------------------- */
+/*  News Doing Catgeory
+/* ---------------------------------------------------------------- */
+
+.news-doing-catgegory {
+
+    padding: 1em 0;
+    
+    display: grid;
+    row-gap: .6em;
+
+    border-bottom: 1px dashed black;
+
+    /* background-color: red; */
+}
+
+/* ---------------------------------------------------------------- */
+/*  Doing Task
+/* ---------------------------------------------------------------- */
+
+.doing-task {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .4em;
+    row-gap: .4em;
+}
+
+
+/* ---------------------------------------------------------------- */
+/*  Stamp |  Task
+/* ---------------------------------------------------------------- */
+
+.stamp-doing-task {
+
+    font-weight: bold;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .6em;
+    row-gap: .1em;
+
+}
+
+/* -------------------------------------- */
+/* Stamp 1 & 2 
+/* -------------------------------------- */
+
+.stamp-1-doing-task,
+.stamp-2-doing-task {
+
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
+}
+
+
+.stamp-2-doing-task > div {
+
+    height: 1.6em;
+    padding: 0em .4em;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: .4em;
+
+    background-color: rgb(183, 183, 183);
+
+}
+
+.img-stamp-doing-task {
+
+    height: 1.4em;
+}
+
+
+/* ---------------------------------------------------------------- */
+/*  Description | Doing Task
+/* ---------------------------------------------------------------- */
+
+.description-doing-task {
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+}
+
 
 
 

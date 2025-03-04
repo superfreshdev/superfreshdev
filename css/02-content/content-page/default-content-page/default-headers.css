@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------- */
+/* > default-headers.css
+/*  
+/* : styles for default header content pages
+/* -------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------- */
+/* H1 Content header | Universal 
+/* ----------------------------------------------------- */
+
+.h1-content-header {
+
+    display: grid;
+    row-gap: 3em;
+   
+    /* to not stretch header 100% */
+    justify-self: flex-start;
+
+    /* background-color: blue; */
+
+}
+
+.h1-content-header > div:nth-of-type(1) {
+
+    font-size: 1.5em;
+
+    height: 2.3em;
+    padding: 0 .8em 0 .6em;
+
+    display: flex;
+    column-gap: .6em;
+    align-items: center;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    background-color: rgb(220, 220, 220);
+
+   
+
+}
+
+

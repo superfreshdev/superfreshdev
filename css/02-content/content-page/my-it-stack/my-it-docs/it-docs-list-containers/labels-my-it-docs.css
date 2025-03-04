@@ -1,0 +1,237 @@
+/* --------------------------------------------------------------------------------------- */
+/* > labels-my-it-docs.css
+/*  
+/* : style my labels of my it docs ( done, in progress, coming soon )
+/* --------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------- */
+/* ### Styling
+/* Checkbox Handling | Open News Container 
+/* ------------------------------------------------- */
+
+#chk-open-done-it-docs,
+#chk-open-in-progress-it-docs,
+#chk-open-coming-soon-it-docs {
+
+    display: none;
+}
+
+#chk-open-done-it-docs:checked ~ #it-docs-content-row-containers #lbl-chk-open-done-it-docs {
+
+    background-color: lightgreen;
+
+}
+
+
+#chk-open-done-it-docs:checked ~ #it-docs-content-row-containers #lbl-chk-open-done-it-docs > img:last-child {
+
+    transform: rotate(180deg);
+   
+}
+
+#chk-open-in-progress-it-docs:checked ~ #it-docs-content-row-containers #lbl-chk-open-in-progress-it-docs {
+
+    background-color: lightyellow;
+
+}
+
+#chk-open-in-progress-it-docs:checked ~ #it-docs-content-row-containers #lbl-chk-open-in-progress-it-docs > img:last-child {
+
+    transform: rotate(180deg);
+   
+}
+
+#chk-open-coming-soon-it-docs:checked ~ #it-docs-content-row-containers #lbl-chk-open-coming-soon-it-docs {
+
+    background-color: lightblue;
+
+}
+
+#chk-open-coming-soon-it-docs:checked ~ #it-docs-content-row-containers #lbl-chk-open-coming-soon-it-docs > img:last-child {
+
+    transform: rotate(180deg);
+   
+}
+
+/* ------------------------------------------------- */
+/* ### Movement
+/* Checkbox Handling | Open News Container
+/* ------------------------------------------------- */
+
+#chk-open-done-it-docs:checked ~ #it-docs-content-row-containers #open-close-smooth-done-it-docs {
+
+    grid-template-rows: 1fr;
+}
+
+
+#chk-open-in-progress-it-docs:checked ~ #it-docs-content-row-containers #open-close-smooth-in-progress-it-docs {
+
+    grid-template-rows: 1fr;
+}
+
+#chk-open-coming-soon-it-docs:checked ~ #it-docs-content-row-containers #open-close-smooth-coming-soon-it-docs {
+
+    grid-template-rows: 1fr;
+}
+
+
+
+/* --------------------------------------------------------------------------------------- */
+/* Label | Open / Close | Done, in Progress, Coming Soon | It Docs
+/* --------------------------------------------------------------------------------------- */
+
+#lbl-chk-open-done-it-docs,
+#lbl-chk-open-in-progress-it-docs,
+#lbl-chk-open-coming-soon-it-docs   {
+
+    /* width: 100%; */
+    height: 3.3em;
+    padding-right: .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: .4em;
+
+    background-color: rgb(183, 183, 183);
+
+    
+    user-select: none;
+    cursor: pointer;
+
+    transition: all .4s;
+}
+
+
+#lbl-chk-open-done-it-docs:hover {
+
+    background-color: lightgreen;
+}
+
+#lbl-chk-open-in-progress-it-docs:hover {
+
+    background-color: lightyellow;
+}
+
+#lbl-chk-open-coming-soon-it-docs:hover {
+
+    background-color: lightskyblue;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+/* Label > Div:nth-of-type(1) | Open / Close |
+/* --------------------------------------------------------------------------------------- */
+
+
+#lbl-chk-open-done-it-docs > div:nth-last-of-type(1),
+#lbl-chk-open-in-progress-it-docs > div:nth-last-of-type(1),
+#lbl-chk-open-coming-soon-it-docs > div:nth-last-of-type(1) {
+
+    height: 100%;
+  
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+
+    font-weight: bold;
+
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+/*  Lbl Status Info Box 
+/* --------------------------------------------------------------------------------------- */
+
+.lbl-status-done-info-box,
+.lbl-status-in-progress-info-box,
+.lbl-status-coming-soon-info-box {
+
+    
+    height: 100%;
+    width: 4.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .4em 0 0 .4em;
+
+}
+
+.lbl-status-done-info-box {
+
+    background-color: rgb(9, 169, 9);
+}
+
+.lbl-status-in-progress-info-box {
+
+    background-color: rgb(255, 222, 9);
+}
+
+.lbl-status-in-progress-info-box > img:nth-of-type(1) {
+
+    animation: rotate360deg 4s ease infinite;
+}
+
+.lbl-status-coming-soon-info-box {
+
+    background-color: rgb(9, 140, 255);
+
+}
+
+.lbl-status-coming-soon-info-box > img:nth-of-type(1) {
+
+    animation: leftright 1s ease infinite;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+/* Label > img arrow up/down | Open / Close |
+/* --------------------------------------------------------------------------------------- */
+
+/* .img-container-arrow-it-doc {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: .8em;
+
+    border-radius: 0 .4em .4em 0;
+
+    background-color: red;
+}
+
+.img-container-arrow-it-doc > img {
+
+    height: .8em;
+} */
+
+#lbl-chk-open-done-it-docs > img:nth-last-of-type(1),
+#lbl-chk-open-in-progress-it-docs > img:nth-last-of-type(1),
+#lbl-chk-open-coming-soon-it-docs > img:nth-last-of-type(1) {
+
+    height: .8em;
+    /* padding-right: .8em; */
+   
+}
+
+
+
+/* --------------------------------------------------------------------------------------- */
+/* ⬇️⬆️ | Smooth Open Close | done, in progress, coming soon | IT-Docs
+/* --------------------------------------------------------------------------------------- */
+
+
+#open-close-smooth-done-it-docs,
+#open-close-smooth-in-progress-it-docs,
+#open-close-smooth-coming-soon-it-docs {
+
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+}
