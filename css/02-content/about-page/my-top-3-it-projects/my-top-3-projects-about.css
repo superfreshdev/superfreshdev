@@ -4,6 +4,197 @@
 /* : styles img my top 3 projects about container 
 /* -------------------------------------------------------------- */
 
+
+/* 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 */
+
+
+/* --------------------------------------------------------- */
+/* My Top 3 IT Project Card Container 
+/* --------------------------------------------------------- */
+
+.my-top-3-it-project-card-container {
+
+    width: 25em;
+    padding-bottom: 1em;
+
+    display: grid;
+    row-gap: 1em;
+
+    border-radius: .8em;
+
+    background-color: gray;
+}
+
+/* --------------------------------------------------------- */
+/* Header | 
+/* --------------------------------------------------------- */
+
+.my-top-3-it-project-card-container > header {
+
+    display: grid;
+    row-gap: 1.4em;
+
+    border-radius: .8em 0 0 .8em;
+
+}
+
+/* --------------------------------------------------------- */
+/* IMG Project Title
+/* --------------------------------------------------------- */
+
+.img-project-title {
+
+    width: 100%;
+
+    border-radius: .8em;
+}
+
+
+/* --------------------------------------------------------- */
+/* Project Title Card Container 
+/* --------------------------------------------------------- */
+
+.project-title-card-container {
+
+    display: flex;
+    column-gap: .8em;
+
+}
+
+.project-title-card-container > img:nth-of-type(1) {
+
+    /* optimal layout fixing  */
+    padding-top: .2em;
+
+    height: 2.8em;
+    border-radius: .4em;
+
+}
+
+
+.project-title-card-container > div:nth-of-type(1) {
+
+    display: grid;
+    row-gap: .6em;
+    /* row-gap: 1.3em; */
+
+}
+
+.extra-project-title-info {
+
+    height: 1.5em;
+    padding: 0 .3em;
+
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    column-gap: .3em;
+
+    border-radius: .4em;
+
+    background-color: rgb(185, 185, 185);
+}
+
+.project-title-card-container > div:nth-of-type(1) > div:last-child
+ {
+
+    font-size: 1.125em;
+    font-weight: bold;
+ }
+
+/* --------------------------------------------------------- */
+/* Project Skill Set Card Container
+/* --------------------------------------------------------- */
+
+.project-skill-set-card-container {
+
+    padding-bottom: 1em;
+    border-bottom: 1px dashed black;
+
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: .3em;
+}
+
+.project-skill-set-card-container > div {
+
+    height: 1.5em;
+    padding: 0 .3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .3em;
+
+    background-color: red;
+}
+
+
+/* --------------------------------------------------------- */
+/* Main | My Top 3 IT Project Card Container 
+/* --------------------------------------------------------- */
+
+.main-my-top-3-it-project-card {
+
+
+}
+
+
+/* --------------------------------------------------------- */
+/* Project Idea Container 
+/* --------------------------------------------------------- */
+
+.project-idea-container {
+
+
+}
+
+/* --------------------------------------------------------- */
+/* Header | Project Idea Container 
+/* --------------------------------------------------------- */
+
+.project-idea-container > header {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+    
+}
+
+.project-idea-container > header > img:nth-of-type(1) {
+
+    height: 1.4em;
+}
+
+
+/* --------------------------------------------------------- */
+/* Main  | Project Idea Container 
+/* --------------------------------------------------------- */
+
+.project-idea-container > main {
+
+    padding: 1em 0em .5em 0;
+
+    display: grid;
+    row-gap: .4em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------------------------------------------------- */
 /* My Top 3 Projects Container
 /* -------------------------------------------------------------- */
