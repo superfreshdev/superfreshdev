@@ -1,0 +1,107 @@
+/* -------------------------------------------------------------------------- */
+/* > content-status-container.css
+/*  
+/* : styles status content in construction
+/* -------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------- */
+/* Content Status In Construction
+/* ----------------------------------------------------------------------------- */
+
+.content-status-in-construction {
+
+    padding: 1em;
+
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: .8em;
+    row-gap: .3em;
+
+    border-radius: .6em;
+    border: 3px solid black;
+
+    background-color: rgb(232, 196, 34);
+
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Clipart | In Construction Container
+/* ----------------------------------------------------------------------------- */
+
+.clipart-in-construction-container {
+
+    position: relative;
+
+    height: clamp(4em, 6em, 6em);
+    width: clamp(4em, 6em, 6em);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+
+    border-radius: .4em;
+    border: 3px solid black;
+}
+
+.clipart-in-construction-container > img:nth-of-type(1) {
+
+    height: clamp(4.5em, 5em, 5em);
+}
+
+.img-gear-absolute-in-construction {
+
+    position: absolute;
+    bottom: clamp(.3em, .3em, .3em);
+    right: clamp(.3em, .3em, .3em);
+
+    height: clamp(1.5em, 1.5em, 1.8em);
+
+    animation: rotate360deg 4s ease infinite;
+
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Main
+/* ----------------------------------------------------------------------------- */
+
+.content-status-in-construction > main {
+
+    display: grid;
+    row-gap: 1.3em;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Main > Header 
+/* ----------------------------------------------------------------------------- */
+
+.content-status-in-construction > main > header {
+
+    display: grid;
+    row-gap: .3em;
+
+    font-weight: bold;
+
+    /* background-color: red; */
+}
+
+.content-status-in-construction > main > header > div:nth-of-type(1) {
+
+    height: 2em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+
+    justify-self: flex-start;
+
+    border-radius: .4em;
+
+    
+
+    color:white;
+    background-color: black;
+}

@@ -1,42 +1,14 @@
-/* -------------------------------------------------------------------------- */
-/* > status-containers.css
+/* ----------------------------------------------------------------------------- */
+/* > h1-status-info-container.css
 /*  
-/* : styles staus containers in finish | in progress | coming soon 
-/* -------------------------------------------------------------------------- */
+/* : styles the h1 status info container | done , in progress , coming soon
+/* ----------------------------------------------------------------------------- */
 
 
 
 /* ----------------------------------------------------------------------------- */
-/* Extra Staus - In Construction
-/* ----------------------------------------------------------------------------- */
-
-.tmp-construction-header {
-
-    /* font-size: 1.25em; */
-
-    padding: .6em .8em;
-
-    /* padding-left: .8em; */
-
-    display: grid;
-    row-gap: .3em;
-   
-    text-align: center;
-
-    border-radius: .6em;
-    /* border: 1px dashed black; */
-
-    color:rgb(151, 151, 151);
-    background-color: black;
-}
-
-
-
-
-
-/* ----------------------------------------------------- */
 /* H1 | Status Three Info Container 
-/* ----------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
 
 .h1-status-three-info-container {
 
@@ -53,7 +25,6 @@
     border-radius: .6em;
 
     /* background-color: blue; */
-    
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -110,7 +81,6 @@
 
 }
 
-
 .h1-status-coming-soon-info-box  {
 
     background-color: rgb(9, 140, 255);
@@ -132,33 +102,4 @@
     font-style: italic;
     color:rgb(105, 105, 105);
 
-}
-
-
-/* ------------------------------------- */
-/* Animation | rotate 360
-/* ------------------------------------- */
-
-/* infinite-360-run */
-@keyframes rotate360deg {
-
-    0% { transform: rotate(45deg); }
-    20% { transform: rotate(90deg); }
-    40% { transform: rotate(135deg); }
-    60% { transform: rotate(180deg); }
-    80% { transform: rotate(135deg); }
-    100% { transform: rotate(360deg); }
-    
-}
-
-/* ------------------------------------- */
-/* Animation | left right
-/* ------------------------------------- */
-
-@keyframes leftright {
-
-    0% { padding-left: .3em; }
-    50% { padding-right: .3em; }
-    100% { padding-left: .3em; }
-    
 }

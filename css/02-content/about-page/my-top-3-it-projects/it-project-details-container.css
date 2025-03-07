@@ -1,0 +1,336 @@
+/* -------------------------------------------------------------------------------- */
+/* > it-project-details-container.css
+/*  
+/* : styles the it project detail container, video container & github
+/* -------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/* [1/2] | IT Project Video Details Container
+/* -------------------------------------------------------------------------------- */
+
+.it-project-video-details-container {
+
+    display: grid;
+    row-gap: 1em;
+}
+
+
+/* ⬇️⬆️ Handling  */
+#chk-show-video-details-project-1:checked ~ #smooth-open-close-top-3-it-project-1-1 {
+
+    grid-template-rows: 1fr;
+}
+
+#chk-show-video-details-project-1:checked + label {
+
+    background-color: wheat;
+    color:blacK
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Label 
+/* -------------------------------------------------------------------------------- */
+
+.lbl-it-project-video-details {
+
+    height: 3.5em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .6em;
+
+    border-radius: .4em;
+
+    cursor: pointer;
+
+    background-color: rgb(66, 66, 66);
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    font-weight: bold;
+    
+    /* ⚠️ light grey color & light grey img  */
+    color: #9a9a9a;
+
+    transition: all .4s;
+
+}
+
+.lbl-it-project-video-details > div:nth-of-type(1) {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+}
+
+.lbl-it-project-video-details:hover {
+
+    background-color: wheat;
+    color:black;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ⬆️⬇️ Smooth Open Close | Video Details | Project 1 | 1 of 3 
+/* -------------------------------------------------------------------------------- */
+
+#smooth-open-close-top-3-it-project-1-1 {
+
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* Video Tutorial Link Container
+/* -------------------------------------------------------------------------------- */
+
+.video-tutorial-link-container {
+
+    display: grid;
+    row-gap: .8em;
+
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* Video Category IT Project Container
+/* -------------------------------------------------------------------------------- */
+
+.video-category-it-project-container {
+
+    display: grid;
+    row-gap: .8em;
+
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* Label
+/* -------------------------------------------------------------------------------- */
+
+
+.lbl-video-category-it-project {
+
+    padding:  .8em .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: 1em;
+
+    font-weight: bold;
+
+    background-color: lightgrey;
+
+    
+
+    user-select: none;
+
+    cursor: pointer;
+    transition: all .4s;
+    
+}
+
+.lbl-video-category-it-project:hover {
+
+    background-color: grey;
+}
+
+.lbl-video-category-it-project > div:last-child {
+
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Handling
+/* -------------------------------------------------------------------------------- */
+
+input[name="name-chk-top-3-it-project-1-1"] {
+
+    display: none;
+
+}
+
+#chk-top-project-1-1-1:checked ~ .list-video-link-it-projects,
+#chk-top-project-1-1-2:checked ~ .list-video-link-it-projects,
+#chk-top-project-1-1-3:checked ~ .list-video-link-it-projects,
+#chk-top-project-1-1-4:checked ~ .list-video-link-it-projects  {
+
+    display: grid;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* List Video Links IT Project
+/* -------------------------------------------------------------------------------- */
+
+.list-video-link-it-projects {
+
+    display: grid;
+    row-gap: .6em;
+
+    display: none;
+}
+
+
+
+/* -------------------------------------- */
+/* Link
+/* -------------------------------------- */
+
+.link-done-video-it-project, 
+.link-in-progress-video-it-project,
+.link-coming-soon-video-it-project {
+
+    
+    min-height: 2.5em;
+
+    display: grid;
+    align-items: center;
+    grid: auto / 2.5em 1fr;
+    column-gap: .6em;
+
+    text-decoration: none;
+
+    user-select: none;
+
+    color:black;
+
+}
+
+.link-done-video-it-project > div:last-child , 
+.link-in-progress-video-it-project  > div:last-child ,
+.link-coming-soon-video-it-project > div:last-child {
+
+    padding: .4em .6em .4em 0;
+}
+
+.link-done-video-it-project { 
+
+    cursor: pointer;
+    background-color: lightgreen;
+
+    transition: all .4s;
+}
+
+.link-done-video-it-project:hover {
+
+    background-color: grey;
+}
+
+.link-in-progress-video-it-project {
+
+    background-color: lightyellow;
+}
+
+.link-coming-soon-video-it-project {
+
+    background-color: lightblue;
+}
+
+.link-done-video-it-project:visited, 
+.link-in-progress-video-it-project:visited,
+.link-coming-soon-video-it-project:visited {
+
+    color:black;
+
+}
+
+
+
+/* -------------------------------------- */
+/* Status Video Link IT Project
+/* -------------------------------------- */
+
+.status-done-video-link-it-project,
+.status-in-progress-video-link-it-project,
+.status-coming-soon-video-link-it-project {
+
+    height: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.status-done-video-link-it-project > img:nth-of-type(1),
+.status-in-progress-video-link-it-project > img:nth-of-type(1),
+.status-coming-soon-video-link-it-project > img:nth-of-type(1) {
+
+    height: 1.3em;
+}
+
+
+.status-done-video-link-it-project {
+
+    background-color: rgb(9, 169, 9);
+}
+
+.status-in-progress-video-link-it-project {
+
+    background-color: rgb(255, 222, 9);
+
+}
+
+.status-in-progress-video-link-it-project > img:nth-of-type(1) {
+
+    animation: rotate360deg 4s ease infinite;
+
+}
+
+.status-coming-soon-video-link-it-project {
+
+    background-color: rgb(9, 140, 255);
+}
+
+.status-coming-soon-video-link-it-project > img:nth-of-type(1) {
+
+    animation: leftright 1s ease infinite;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* Handling | Video Tutorial Link Container
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* [2/2] | IT Project Github Details Container
+/* -------------------------------------------------------------------------------- */

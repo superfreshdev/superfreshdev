@@ -1,0 +1,33 @@
+/* -------------------------------------------------------------------------- */
+/* > animations.css
+/*  
+/* : styles all animations we like to use e.g 360deg rotate, ...
+/* -------------------------------------------------------------------------- */
+
+
+/* ------------------------------------- */
+/* Animation | rotate 360
+/* ------------------------------------- */
+
+@keyframes rotate360deg {
+
+    0% { transform: rotate(45deg); }
+    20% { transform: rotate(90deg); }
+    40% { transform: rotate(135deg); }
+    60% { transform: rotate(180deg); }
+    80% { transform: rotate(135deg); }
+    100% { transform: rotate(360deg); }
+    
+}
+
+/* ------------------------------------- */
+/* Animation | left right
+/* ------------------------------------- */
+
+@keyframes leftright {
+
+    0% { padding-left: .3em; }
+    50% { padding-right: .3em; }
+    100% { padding-left: .3em; }
+    
+}

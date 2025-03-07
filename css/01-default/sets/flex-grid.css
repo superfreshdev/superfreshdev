@@ -9,55 +9,57 @@
 .grid { display: grid; }
 
 /* --------------------------------------------- */
-/* Align | Content & Items
+/* Align Content
 /* --------------------------------------------- */
 
-/* align content */
 .ac-c { align-content: center; }
 .ac-fs { align-content: flex-start; }
 .ac-fe { align-content: flex-end; }
 
-/* align items */
+/* --------------------------------------------- */
+/* Align Items
+/* --------------------------------------------- */
+
 .ai-c { align-items: center; }
 
 /* --------------------------------------------- */
-/* Justify | Content & Items 
+/* Justify Content 
 /* --------------------------------------------- */
 
-/* justify content  */
 .jc-c { justify-content: center; }
 .jc-sb { justify-content: space-between; }
 .jc-fs { justify-content: flex-start; }
 .jc-fe { justify-content: flex-end; }
 
-/* justify items  */
+/* --------------------------------------------- */
+/* Justify Items
+/* --------------------------------------------- */
+
 .ji-c { justify-items: center;}
 
 /* --------------------------------------------- */
-/* Self |
+/* Self
 /* --------------------------------------------- */
 
-/* by flex */
 .as-fe { align-self: flex-end; }
 
-/* by grid  */
 .js-fe { justify-self: flex-end; }
-
-
+.js-c { justify-self: center; }
 
 
 
 /* --------------------------------------------- */
-/* Row Gabs 
+/* Row Gab 
 /* -------------------------------------------- */
 
 .row-g-0-3 { row-gap: .3em; }
 .row-g-0-5 { row-gap: .5em; }
 .row-g-0-8 { row-gap: .8em; }
+
 .row-g-1 { row-gap: 1em; }
 
 /* --------------------------------------------- */
-/* Column Gabs 
+/* Column Gab
 /* -------------------------------------------- */
 
 .col-g-0-3 { column-gap: .3em; }

@@ -1,0 +1,118 @@
+
+/* ---------------------------------------------------------------------------------------- */
+/* header-it-project-card.css
+/*  
+/* : style the header of it project card 
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------- */
+/* Header | IT Project Card 
+/* --------------------------------------------------------------------- */
+
+.it-project-card > header {
+
+    display: grid;
+    row-gap: 1.3em;    
+
+    background-color: rgb(157, 157, 157);
+}
+
+
+
+/* --------------------------------------------------------------------- */
+/* IMG | Project Present
+/* --------------------------------------------------------------------- */
+
+.img-project-present {
+
+    width: 100%;
+
+    border-radius: .8em;
+}
+
+/* --------------------------------------------------------------------- */
+/* IT Project Info Container
+/* --------------------------------------------------------------------- */
+
+.it-project-info-container {
+
+    display: grid;
+    row-gap: 1.3em;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* Project Number
+/* --------------------------------------------------------------------- */
+
+.it-project-number {
+
+    height: 1.8em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+
+    justify-self: flex-start;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    background-color: grey;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* IT Project Title Container
+/* --------------------------------------------------------------------- */
+
+.it-project-title-container {
+
+    display: flex;
+    column-gap: .8em;
+
+}
+
+.it-project-title-container > img:nth-of-type(1) {
+
+    height: 2.8em;
+
+    border-radius: .4em;
+}
+
+.it-project-title-container > div:last-child {
+
+    /* 18px */
+    font-size: 1.125em;
+    font-weight: bold;
+
+}
+
+/* --------------------------------------------------------------------- */
+/* IT Project Skill Set Container
+/* --------------------------------------------------------------------- */
+
+.it-project-skill-set-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4em
+
+}
+
+.it-project-skill-set-container > div {
+
+    height: 1.8em;
+    padding: 0 .4em;
+    
+    display: flex;
+    align-items: center;
+
+    border-radius: .3em;
+
+    color:rgb(196, 196, 196);
+    background-color: black;
+
+}

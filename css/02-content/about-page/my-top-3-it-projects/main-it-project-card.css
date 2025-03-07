@@ -1,0 +1,203 @@
+
+/* ---------------------------------------------------------------------------------------- */
+/* main-it-project-card.css
+/*  
+/* : style the main of it project card 
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------- */
+/* Main
+/* --------------------------------------------------------------------- */
+
+.it-project-card > main {
+
+    display: grid;
+    row-gap: .8em;
+
+    background-color: white;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* IT Project Ideas Container
+/* --------------------------------------------------------------------- */
+
+.it-project-ideas-container {
+
+    display: grid;
+    row-gap: .3em;
+
+}
+
+/* --------------------------------------------------------------------- */
+/* Label | IT Project Ideas Container
+/* --------------------------------------------------------------------- */
+
+.lbl-it-project-idea-done,
+.lbl-it-project-idea-in-progress,
+.lbl-it-project-idea-coming-soon {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: 1em;
+
+
+}
+
+.lbl-it-project-idea-done,
+.lbl-it-project-idea-in-progress {
+
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+.lbl-it-project-idea-done {
+
+    background-color: lightgreen;
+
+}
+
+.lbl-it-project-idea-in-progress {
+
+    background-color: lightyellow;
+}
+
+.lbl-it-project-idea-coming-soon {
+
+    background-color: lightblue;
+    padding-right: .8em;
+}
+
+.lbl-it-project-idea-coming-soon > .project-select-custom-radio-container {
+
+    display: none;
+}
+
+
+.lbl-it-project-idea-done:hover,
+.lbl-it-project-idea-in-progress:hover {
+
+    background-color: grey;
+}
+
+/* --------------------------------------------------------------------- */
+/* Select Info | Label 
+/* --------------------------------------------------------------------- */
+
+.select-info-it-project {
+
+    height: 100%;
+
+    display: grid;
+    grid: auto / 3.3em 1fr;
+    column-gap: .8em;
+
+}
+
+.select-info-it-project > div:last-child {
+
+    padding: .6em 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .3em;
+    row-gap: .1em;
+
+}
+
+.select-info-it-project > div:last-child > div:nth-of-type(1) {
+
+    font-weight: bold;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* Status Info Item (done,in progress, coming soon) it project
+/* --------------------------------------------------------------------- */
+
+.status-info-item-done-it-project,
+.status-info-item-in-progress-it-project,
+.status-info-item-coming-soon-it-project {
+
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.status-info-item-done-it-project {
+    
+    background-color: rgb(9, 169, 9);
+
+}
+
+.status-info-item-done-it-project > img:nth-of-type(1) {
+
+    height: 1.5em;
+}
+
+.status-info-item-in-progress-it-project {
+
+    background-color: rgb(255, 222, 9);
+
+}
+
+.status-info-item-in-progress-it-project > img:nth-of-type(1) {
+
+    height: 1.5em;
+
+    animation: rotate360deg 4s ease infinite;
+
+}
+
+.status-info-item-coming-soon-it-project {
+
+    background-color: rgb(9, 140, 255);
+
+}
+
+.status-info-item-coming-soon-it-project > img:nth-of-type(1) {
+
+    height: 1.5em;
+
+    animation: leftright 1s ease infinite;
+
+}
+
+/* --------------------------------------------------------------------- */
+/* Project Select Custom Radio Ctonainer
+/* --------------------------------------------------------------------- */
+
+.project-select-custom-radio-container {
+
+    height: 80%;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+
+    /* background-color: brown; */
+
+    border-left: 1px dashed rgb(135, 135, 135);
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* IT Project | Details Video Container / Github Container
+/* --------------------------------------------------------------------- */
+
+.it-project-video-details-container,
+.it-project-github-details-container {
+
+
+}
