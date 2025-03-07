@@ -18,8 +18,6 @@
     background-color: rgb(157, 157, 157);
 }
 
-
-
 /* --------------------------------------------------------------------- */
 /* IMG | Project Present
 /* --------------------------------------------------------------------- */
@@ -41,7 +39,6 @@
     row-gap: 1.3em;
 }
 
-
 /* --------------------------------------------------------------------- */
 /* Project Number
 /* --------------------------------------------------------------------- */
@@ -49,20 +46,38 @@
 .it-project-number {
 
     height: 1.8em;
+  
+    display: flex;
+    align-items: center;
+
+    column-gap: .6em;
+
+    /* justify-self: flex-start; */
+
+}
+
+.it-project-number > div:nth-of-type(1) {
+
+    height: 1.8em;
     padding: 0 .6em;
 
     display: flex;
     align-items: center;
-
-    justify-self: flex-start;
 
     font-weight: bold;
 
     border-radius: .4em;
 
     background-color: grey;
+
+
 }
 
+.it-project-number > div:nth-of-type(2) {
+
+    color:rgb(78, 78, 78);
+    
+}
 
 /* --------------------------------------------------------------------- */
 /* IT Project Title Container
@@ -77,7 +92,7 @@
 
 .it-project-title-container > img:nth-of-type(1) {
 
-    height: 2.8em;
+    height: 3em;
 
     border-radius: .4em;
 }
@@ -104,15 +119,13 @@
 
 .it-project-skill-set-container > div {
 
-    height: 1.8em;
-    padding: 0 .4em;
+    padding: .1em .4em;
     
     display: flex;
-    align-items: center;
+    align-items: center; 
 
-    border-radius: .3em;
-
-    color:rgb(196, 196, 196);
-    background-color: black;
+    border-radius: .4em;
+    background: rgb(44, 44, 44);
+    color:grey;
 
 }

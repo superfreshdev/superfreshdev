@@ -143,15 +143,21 @@
                 <link rel="stylesheet" href="css/02-content/about-page/impress-about.css"> 
 
                 <!-- --------------------------------------------------- -->
-                <!-- My Top 3 Projects Container | About  -->
+                <!-- My Top 3 Projects Container | About                 -->
                 <!-- --------------------------------------------------- --> 
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/my-top-3-projects-about.css">
+                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/my-top-3-projects-container.css">
                 
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/header-it-project-card.css"> 
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/main-it-project-card.css"> 
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/handlings-radio-it-project-card.css"> 
+                <!-- header , select list  -->
+                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/header-it-project-card.css"> 
+                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/select-list-it-project-card.css"> 
 
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/it-project-details-container.css"> 
+                <!-- video list & zip github link container  -->
+                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/video-list-project-details.css"> 
+                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/zip-github-link-container.css"> 
+
+                <!-- handling radio & checkbox  -->
+                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/handling-radios-it-project-card.css">
+                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/handling-checkboxes-it-project-card.css">  
                 
                 
                 <!-- Like To See More Container | About  -->
@@ -4200,7 +4206,7 @@
                             <div id="my-top-3-it-projects-container">
 
                                 <!-- --------------------------------------------------------------- -->
-                                <!-- Header --> 
+                                <!-- Header (default style) --> 
                                 <!-- --------------------------------------------------------------- --> 
                                 <header class="h1-content-header">
 
@@ -4307,7 +4313,7 @@
                                 <main>
                                    
                                     <!-- --------------------------------------------------------------- -->
-                                    <!-- IT Project Card -->
+                                    <!-- Project 1 | IT Project Card -->
                                     <!-- --------------------------------------------------------------- -->
                                     <div class="it-project-card">
 
@@ -4319,7 +4325,7 @@
                                             <!-- ------------------------------------------------------------ -->
                                             <!-- IMG Project Present -->
                                             <!-- ------------------------------------------------------------ -->
-                                            <img src="media/img/content/about/my-top-3-about/project-1-sass-dashboard.png" class="img-project-present" alt="img">
+                                            <img src="media/img/content/about/my-top-3-about/project-1/project-1-sass-dashboard.png" class="img-project-present" alt="img">
                                             
                                             <!-- ------------------------------------------------------------ -->
                                             <!-- IT Project Info Container -->
@@ -4330,7 +4336,10 @@
                                                 <!-- Project Number -->
                                                 <!-- ----------------------------------------- -->
                                                 <div class="it-project-number">
-                                                    Project 1: 
+
+                                                    <div id="js">Project 1:</div>
+                                                    <div id="js">in progress</div>
+
                                                 </div> 
                                                 
                                                 <!-- ----------------------------------------- -->
@@ -4369,26 +4378,31 @@
 
                                         </header> 
 
+                                        <!-- ------------------------------------------------------------ -->
+                                        <!-- 3x Radio Projects -->
+                                        <!-- ------------------------------------------------------------ -->
+                                        <input type="radio" id="radio-top-3-it-project-1-1" name="name-radio-top-3-it-project-1"> 
+                                        <input type="radio" id="radio-top-3-it-project-1-2" name="name-radio-top-3-it-project-1">
+                                        <input type="radio" id="radio-top-3-it-project-1-3" name="name-radio-top-3-it-project-1">
 
                                         <!-- ------------------------------------------------------------ -->
                                         <!-- Main -->
                                         <!-- ------------------------------------------------------------ -->
                                         <main>
                                            
-
-                                            <!-- ------------------------------------------------- -->
-                                            <!-- IT Project Ideas Container                        -->
-                                            <!-- ------------------------------------------------- -->
-                                            <div class="it-project-ideas-container">
+                                            <!-- --------------------------------------------------------------------------------------- -->
+                                            <!-- [1/2] Select List IT Project Card                                                             -->
+                                            <!-- --------------------------------------------------------------------------------------- -->
+                                            <div class="select-list-it-project-card">
                                                 
-
-                                                <!-- --------------------------- -->
+                                               
+                                                <!-- --------------------------------------------------------------------- -->
                                                 <!-- Project #1 -->
-                                                <!-- --------------------------- --> 
-                                                <label for="radio-" id="lbl-radio-project-1-1" class="lbl-it-project-idea-in-progress">
+                                                <!-- --------------------------------------------------------------------- --> 
+                                                <label for="radio-top-3-it-project-1-1" id="lbl-radio-top-3-it-project-1-1" class="lbl-it-project-idea-in-progress">
 
                                                     <!-- ------------------------------------------------------------ -->
-                                                    <!-- Project Select Info -->
+                                                    <!-- Select Info IT Project -->
                                                     <!-- ------------------------------------------------------------ --> 
                                                     <div class="select-info-it-project">
 
@@ -4401,7 +4415,8 @@
 
                                                         <div>
                                                             <div> Project 1: </div>
-                                                            <div>CSS to SASS | Responsive Dashboard #1 ( Inspired by Pinterest User Templates )</div>
+                                                            <div>German Step by Step Video Tutorial | CSS to SASS | How to build an Responsive <b>Dashboard #1</b> by Inspiration of 
+                                                                an User Template from Pinterest </div>
                                                         </div> 
 
                                                     </div>
@@ -4415,7 +4430,7 @@
                                                         <!-- Small Custom Radio -->
                                                         <!-- ------------------------------------------------------------ -->
                                                         <div class="custom-radio">                                                     
-                                                            <img src="" class="img-cr-x-small" alt="img">
+                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                         </div>  
 
                                                     </div>
@@ -4423,10 +4438,10 @@
                                                    
                                                 </label> 
 
-                                                <!-- --------------------------- -->
+                                                <!-- --------------------------------------------------------------------- -->
                                                 <!-- Project #2 -->
-                                                <!-- --------------------------- --> 
-                                                <label for="radio-" id="lbl-radio-project-1-2" class="lbl-it-project-idea-done">
+                                                <!-- --------------------------------------------------------------------- --> 
+                                                <label for="radio-top-3-it-project-1-2" id="lbl-radio-top-3-it-project-1-2" class="lbl-it-project-idea-done">
                                                     
                                                     <!-- ------------------------------------------------------------ -->
                                                     <!-- Project Select Info -->
@@ -4442,7 +4457,8 @@
 
                                                         <div>
                                                             <div> Project 2: </div>
-                                                            <div>CSS to SASS | Responsive Dashboard #2 ( Inspired by Pinterest User Templates )</div>
+                                                            <div>German Step by Step Video Tutorial | CSS to SASS | How to build an Responsive <b>Dashboard #2</b> by Inspiration of 
+                                                                an User Template from Pinterest </div>
                                                         </div> 
 
                                                     </div>
@@ -4456,17 +4472,17 @@
                                                         <!-- Small Custom Radio -->
                                                         <!-- ------------------------------------------------------------ -->
                                                         <div class="custom-radio">                                                     
-                                                            <img src="" class="img-cr-x-small" alt="img">
+                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                         </div>  
 
                                                     </div>
 
                                                 </label> 
 
-                                                <!-- --------------------------- -->
+                                                <!-- --------------------------------------------------------------------- -->
                                                 <!-- Project #3 -->
-                                                <!-- --------------------------- --> 
-                                                <label for="radio-" id="lbl-radio-project-1-3" class="lbl-it-project-idea-coming-soon">
+                                                <!-- --------------------------------------------------------------------- --> 
+                                                <label for="radio-top-3-it-project-1-3" id="lbl-radio-top-3-it-project-1-3" class="lbl-it-project-idea-coming-soon">
                                                     
                                                     <!-- ------------------------------------------------------------ -->
                                                     <!-- Project Select Info -->
@@ -4482,7 +4498,7 @@
 
                                                         <div>
                                                             <div> Project 3: </div>
-                                                            <div>StoryBook | Style own responsive Formular Elements
+                                                            <div>German Step by Step Video Tutorial | <b>Storybook, CSS, SASS</b> | Style own responsive Formular Elements
                                                                  ( Buttons, Textfields, Drop Down List, 3x Info Boxes )
                                                                  and document it in Storybook</div>
                                                         </div> 
@@ -4498,7 +4514,7 @@
                                                         <!-- Small Custom Radio -->
                                                         <!-- ------------------------------------------------------------ -->
                                                         <div class="custom-radio">                                                     
-                                                            <img src="" class="img-cr-x-small" alt="img">
+                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                         </div>  
 
                                                     </div>
@@ -4508,20 +4524,20 @@
                                             </div>
                                             
                                             
-                                            <!-- ------------------------------------------------- -->
-                                            <!-- IT Project Details Container                      -->
-                                            <!-- ------------------------------------------------- -->
-                                            <div class="it-project-video-details-container">
+                                            <!-- --------------------------------------------------------------------------------------- -->
+                                            <!-- 🔥🔥🔥 [2/2] Video List / zip github Container                                                       -->
+                                            <!-- --------------------------------------------------------------------------------------- -->
+                                            <div class="video-list-it-project-details-container">
                                                 
-                                                <input style="display: none;" type="checkbox" id="chk-show-video-details-project-1">
+                                                <input type="checkbox" id="chk-my-top-3-it-project-1">
 
                                                 <!-- ------------------------------------------------------------- -->
                                                 <!-- Label | Open / Close | Video Details -->
                                                 <!-- ------------------------------------------------------------- -->
-                                                <label for="chk-show-video-details-project-1" id="lbl-chk-" class="lbl-it-project-video-details">
+                                                <label for="chk-my-top-3-it-project-1" id="lbl-chk-my-top-3-it-project-1" class="lbl-video-details-it-project">
                                                     
                                                     <div>
-                                                        <img src="media/img/icons/emojies/emojie-eye.png" class="img-h-1-2" alt="img">
+                                                        <img src="media/img/icons/icons/video-camera-light-grey-1.png" class="img-h-1-2" alt="img">
                                                         <div>Show Video Tutorial's</div>
                                                     </div>
 
@@ -4532,7 +4548,7 @@
                                                 <!-- ------------------------------------------------------------- -->
                                                 <!-- ⬇️⬆️ | Smooth Open / Close | Video Details | Project 1       -->
                                                 <!-- ------------------------------------------------------------- -->
-                                                <div id="smooth-open-close-top-3-it-project-1-1">
+                                                <div id="smooth-open-close-top-3-it-project-1">
 
 
                                                     <!-- ------------------------------------------------------ -->
@@ -4546,7 +4562,7 @@
                                                         <div class="video-tutorial-link-container">
 
                                                             <!-- ------------------------------------------------ -->
-                                                            <!-- Category 1 -->
+                                                            <!-- Category 1 | Die ersten Schritte-->
                                                             <!-- ------------------------------------------------ -->
                                                             <div class="video-category-it-project-container">
 
@@ -4564,14 +4580,15 @@
                                                                 </label>
 
                                                                 <!-- ------------------------------------------------------- -->
-                                                                <!-- List Video Links IT Project -->
+                                                                <!-- Video Link List IT Projects -->
                                                                 <!-- ------------------------------------------------------- -->  
-                                                                <div class="list-video-link-it-projects">
+                                                                <div class="video-link-list-it-projects">
 
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Link 1 -->
                                                                     <!-- ---------------------------------------- -->  
-                                                                    <a href="https://drive.google.com/file/d/1iMJrcWbiX1BzcQGYhnHWtDp6L_YhZymJ/view?usp=sharing" class="link-done-video-it-project" target="_blank">
+                                                                    <a href="https://drive.google.com/file/d/1iMJrcWbiX1BzcQGYhnHWtDp6L_YhZymJ/view?usp=sharing"
+                                                                     class="link-done-video-it-project" target="_blank">
 
                                                                         <div class="status-done-video-link-it-project">
                                                                             <img src="media/img/icons/icons/check-black.png" alt="img">
@@ -4584,7 +4601,8 @@
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Link 2 -->
                                                                     <!-- ---------------------------------------- -->  
-                                                                    <a href="https://drive.google.com/file/d/1CiLIGXxgjtJ2W9Z_L3qzER1G0soDB0J_/view?usp=sharing" class="link-done-video-it-project" target="_blank">
+                                                                    <a href="https://drive.google.com/file/d/1CiLIGXxgjtJ2W9Z_L3qzER1G0soDB0J_/view?usp=sharing"
+                                                                     class="link-done-video-it-project" target="_blank">
 
                                                                         <div class="status-done-video-link-it-project">
                                                                             <img src="media/img/icons/icons/check-black.png" alt="img">
@@ -4597,7 +4615,8 @@
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Link 3 -->
                                                                     <!-- ---------------------------------------- -->  
-                                                                    <a href="https://drive.google.com/file/d/1ewxLvRGdClmdQHrcIo6m1Y-VUFNr_pEN/view?usp=sharing" class="link-done-video-it-project" target="_blank">
+                                                                    <a href="https://drive.google.com/file/d/1ewxLvRGdClmdQHrcIo6m1Y-VUFNr_pEN/view?usp=sharing"
+                                                                     class="link-done-video-it-project" target="_blank">
 
                                                                         <div class="status-done-video-link-it-project">
                                                                             <img src="media/img/icons/icons/check-black.png" alt="img">
@@ -4639,7 +4658,7 @@
                                                             </div>   
 
                                                             <!-- ------------------------------------------------ -->
-                                                            <!-- Category 2 -->
+                                                            <!-- Category 2 | Responsive Basis Layout -->
                                                             <!-- ------------------------------------------------ -->
                                                             <div class="video-category-it-project-container">
 
@@ -4650,7 +4669,7 @@
                                                                 <input type="checkbox" id="chk-top-project-1-1-2" name="name-chk-top-3-it-project-1-1">
                                                                 <label for="chk-top-project-1-1-2" class="lbl-video-category-it-project">
     
-                                                                    <div>Part 2/4 | Steuerlemente des Dashboards </div>
+                                                                    <div>Part 2/4 | Responsives Basis Layout </div>
     
                                                                     <div>+</div>
     
@@ -4659,9 +4678,48 @@
                                                                 <!-- ------------------------------------------------------- -->
                                                                 <!-- List Video Links IT Project -->
                                                                 <!-- ------------------------------------------------------- -->  
-                                                                <div class="list-video-link-it-projects">
+                                                                <div class="video-link-list-it-projects">
 
                                                                    
+                                                                    <!-- ---------------------------------------- -->
+                                                                    <!-- Link 1 -->
+                                                                    <!-- ---------------------------------------- -->  
+                                                                    <div class="link-in-progress-video-it-project" >
+
+                                                                        <div class="status-in-progress-video-link-it-project">
+                                                                            <img src="media/img/icons/icons/gear-black.png" alt="img">
+                                                                        </div>
+
+                                                                        <div>01 | CSS | ??:?? Min. | Responsives Basis Layout schaffen </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <!-- ---------------------------------------- -->
+                                                                    <!-- Link 2 -->
+                                                                    <!-- ---------------------------------------- -->  
+                                                                    <div class="link-in-progress-video-it-project" >
+
+                                                                        <div class="status-in-progress-video-link-it-project">
+                                                                            <img src="media/img/icons/icons/gear-black.png" alt="img">
+                                                                        </div>
+
+                                                                        <div>02 | CSS | ??:?? Min. | ???</div>
+                                                                        
+                                                                    </div>
+
+                                                                    <!-- ---------------------------------------- -->
+                                                                    <!-- Link 3 -->
+                                                                    <!-- ---------------------------------------- -->  
+                                                                    <div class="link-in-progress-video-it-project" >
+
+                                                                        <div class="status-in-progress-video-link-it-project">
+                                                                            <img src="media/img/icons/icons/gear-black.png" alt="img">
+                                                                        </div>
+
+                                                                        <div>03 | CSS | ??:?? Min. | ???</div>
+                                                                        
+                                                                    </div>
+
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Link 4 -->
                                                                     <!-- ---------------------------------------- -->  
@@ -4671,22 +4729,11 @@
                                                                             <img src="media/img/icons/icons/gear-black.png" alt="img">
                                                                         </div>
 
-                                                                        <div>04 | CSS | ??:?? Min. | Responsives Basis Layout schaffen </div>
+                                                                        <div>04 | CSS to SASS | ??:?? Min. | CSS Layoute in SASS überführen </div>
                                                                         
                                                                     </div>
 
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <!-- Link 5 -->
-                                                                    <!-- ---------------------------------------- -->  
-                                                                    <div class="link-in-progress-video-it-project" >
-
-                                                                        <div class="status-in-progress-video-link-it-project">
-                                                                            <img src="media/img/icons/icons/gear-black.png" alt="img">
-                                                                        </div>
-
-                                                                        <div>05 | CSS | ??:?? Min. | ???</div>
-                                                                        
-                                                                    </div>
+                                                                    
 
                                                                 </div>
     
@@ -4694,7 +4741,7 @@
                                                             </div>
 
                                                             <!-- ------------------------------------------------ -->
-                                                            <!-- Category 3 -->
+                                                            <!-- Category 3 | Innere Leben des Dashboards -->
                                                             <!-- ------------------------------------------------ -->
                                                             <div class="video-category-it-project-container">
 
@@ -4705,7 +4752,7 @@
                                                                 <input type="checkbox" id="chk-top-project-1-1-3" name="name-chk-top-3-it-project-1-1">
                                                                 <label for="chk-top-project-1-1-3" class="lbl-video-category-it-project">
     
-                                                                    <div>Part 3/4 | Inneres Leben des Dashboards </div>
+                                                                    <div>Part 3/4 | Innere Leben des Dashboards </div>
     
                                                                     <div>+</div>
     
@@ -4714,9 +4761,48 @@
                                                                 <!-- ------------------------------------------------------- -->
                                                                 <!-- List Video Links IT Project -->
                                                                 <!-- ------------------------------------------------------- -->  
-                                                                <div class="list-video-link-it-projects">
+                                                                <div class="video-link-list-it-projects">
 
                                                             
+
+                                                                    <!-- ---------------------------------------- -->
+                                                                    <!-- Link 1 -->
+                                                                    <!-- ---------------------------------------- -->  
+                                                                    <div class="link-in-progress-video-it-project" >
+
+                                                                        <div class="status-in-progress-video-link-it-project">
+                                                                            <img src="media/img/icons/icons/gear-black.png" alt="img">
+                                                                        </div>
+
+                                                                        <div>01 | CSS | ??:?? Min. | Responsives 'Diagram Container' </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <!-- ---------------------------------------- -->
+                                                                    <!-- Link 2 -->
+                                                                    <!-- ---------------------------------------- -->  
+                                                                    <div class="link-in-progress-video-it-project" >
+
+                                                                        <div class="status-in-progress-video-link-it-project">
+                                                                            <img src="media/img/icons/icons/gear-black.png" alt="img">
+                                                                        </div>
+
+                                                                        <div>02 | CSS | ??:?? Min. | Responsives 'Circle Container' </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <!-- ---------------------------------------- -->
+                                                                    <!-- Link 3 -->
+                                                                    <!-- ---------------------------------------- -->  
+                                                                    <div class="link-in-progress-video-it-project" >
+
+                                                                        <div class="status-in-progress-video-link-it-project">
+                                                                            <img src="media/img/icons/icons/gear-black.png" alt="img">
+                                                                        </div>
+
+                                                                        <div>03 | CSS | ??:?? Min. | Responsives 'Info Cards' </div>
+                                                                        
+                                                                    </div>
 
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Link 4 -->
@@ -4727,7 +4813,7 @@
                                                                             <img src="media/img/icons/icons/gear-black.png" alt="img">
                                                                         </div>
 
-                                                                        <div>04 | CSS | ??:?? Min. | Responsives Basis Layout schaffen </div>
+                                                                        <div>04 | CSS | ??:?? Min. | Responsives 'Recent Activities Container' </div>
                                                                         
                                                                     </div>
 
@@ -4740,7 +4826,7 @@
                                                                             <img src="media/img/icons/icons/gear-black.png" alt="img">
                                                                         </div>
 
-                                                                        <div>05 | CSS | ??:?? Min. | ???</div>
+                                                                        <div>05 | CSS | ??:?? Min. | Responsives 'Order Activities Container' </div>
                                                                         
                                                                     </div>
 
@@ -4753,12 +4839,12 @@
                                                                             <img src="media/img/icons/icons/gear-black.png" alt="img">
                                                                         </div>
 
-                                                                        <div>05 | CSS | ??:?? Min. | ???</div>
+                                                                        <div>06 | CSS | ??:?? Min. | Feinschliff Responsiv aller Layout Elemente </div>
                                                                         
                                                                     </div>
 
                                                                     <!-- ---------------------------------------- -->
-                                                                    <!-- Link 7 -->
+                                                                    <!-- Link 6 -->
                                                                     <!-- ---------------------------------------- -->  
                                                                     <div class="link-in-progress-video-it-project" >
 
@@ -4766,7 +4852,7 @@
                                                                             <img src="media/img/icons/icons/gear-black.png" alt="img">
                                                                         </div>
 
-                                                                        <div>05 | CSS | ??:?? Min. | ???</div>
+                                                                        <div>07 | CSS to SASS | ??:?? Min. | CSS Layoute in SASS überführen </div>
                                                                         
                                                                     </div>
 
@@ -4776,7 +4862,7 @@
                                                             </div>
 
                                                             <!-- ------------------------------------------------ -->
-                                                            <!-- Category 4 -->
+                                                            <!-- Category 4 | Lets get Final -->
                                                             <!-- ------------------------------------------------ -->
                                                             <div class="video-category-it-project-container">
 
@@ -4796,12 +4882,11 @@
                                                                 <!-- ------------------------------------------------------- -->
                                                                 <!-- List Video Links IT Project -->
                                                                 <!-- ------------------------------------------------------- -->  
-                                                                <div class="list-video-link-it-projects">
+                                                                <div class="video-link-list-it-projects">
 
                                                                   
-
                                                                     <!-- ---------------------------------------- -->
-                                                                    <!-- Link 4 -->
+                                                                    <!-- Link 1 -->
                                                                     <!-- ---------------------------------------- -->  
                                                                     <div class="link-in-progress-video-it-project" >
 
@@ -4809,22 +4894,11 @@
                                                                             <img src="media/img/icons/icons/gear-black.png" alt="img">
                                                                         </div>
 
-                                                                        <div>04 | CSS | ??:?? Min. | Responsives Basis Layout schaffen </div>
+                                                                        <div>01 | CSS | ??:?? Min. | Live Test </div>
                                                                         
                                                                     </div>
 
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <!-- Link 5 -->
-                                                                    <!-- ---------------------------------------- -->  
-                                                                    <div class="link-in-progress-video-it-project" >
-
-                                                                        <div class="status-in-progress-video-link-it-project">
-                                                                            <img src="media/img/icons/icons/gear-black.png" alt="img">
-                                                                        </div>
-
-                                                                        <div>05 | CSS | ??:?? Min. | ???</div>
-                                                                        
-                                                                    </div>
+                                                                  
 
                                                                 </div>
     
@@ -4849,7 +4923,15 @@
                                         </main> 
 
 
-                                    </div>   
+                                    </div>
+                                    
+                                    <!-- --------------------------------------------------------------- -->
+                                    <!-- Project 2 | IT Project Card -->
+                                    <!-- --------------------------------------------------------------- -->
+
+                                    <!-- --------------------------------------------------------------- -->
+                                    <!-- Project 3 | IT Project Card -->
+                                    <!-- --------------------------------------------------------------- -->
 
                                 </main> 
 
