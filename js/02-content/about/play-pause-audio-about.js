@@ -323,7 +323,7 @@ audioSrcToBeFresh.addEventListener( 'ended', ()=> {
 /* 🟨 Execute 
 /* ------------------------------------------------------------ */
 
-console.log('🎵(choose)=' + elAudioToBeFresh.getAttribute('src') )
+// console.log('🎵(choose)=' + elAudioToBeFresh.getAttribute('src') )
 
 // Step 1: Set Audio Duration by Promise
 setAudioDuration( elAudioToBeFresh.getAttribute('src') )
@@ -336,7 +336,7 @@ setAudioDuration( elAudioToBeFresh.getAttribute('src') )
         // Save Max Audio Duration to set again by ending Playing Audio 
         savedAudioDurationToBeFresh = audioDurationToBeFresh;
 
-        console.log('[⌚ Max ]: ' + audioDurationToBeFresh  + ' Seconds' )
+        // console.log('[⌚ Max ]: ' + audioDurationToBeFresh  + ' Seconds' )
 
         // Set Max Minutes
         txtMinAudioToBeFresh.innerText = setZeroStylingByNumbers( getMinutesBySeconds( audioDurationToBeFresh ) );
