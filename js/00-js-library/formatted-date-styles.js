@@ -1,4 +1,4 @@
-console.log('[🟡|js-library] = formatted-date-styles.js')
+console.log('[🟡|js-library| ➡️ formatted-date-styles.js]')
 
 /* ------------------------------------------- */
 /* Day 1st, 2nd, 3rd, 4th, 5th,...

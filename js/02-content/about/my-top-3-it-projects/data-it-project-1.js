@@ -1,138 +1,207 @@
-console.log('🟡 data-it-project-1.js')
+console.log('[🟡|content|about|my-top-3-it-projects| ➡️ data-it-project-1-js]')
 
 /* --------------------------------------------------------- */
-/* Data Object 
+/* Data Object | Project 1
 /* --------------------------------------------------------- */
 
-const imgSrcs = [
+var dataTop3Project1 = [
 
-    'media/img/content/about/my-top-3-about/project-1/project-1-sass-dashboard.png',
-    'media/img/content/about/my-top-3-about/project-1/project-cover-img-in-construction.png'
-]
-
-var dataItProject1 ={
-
-    project1: {
-
+    {
         header: {
 
-            a:"a-1",
-            b:"b-1"
+            imgSrcCover: "media/img/content/about/my-top-3-about/project-1/project-1-sass-dashboard.png",
+            txtProjectNr: "Project 1:",
+            status: "in progress",
+            imgSrcProjectTtile: "media/img/icons/tech-icons/styled-tech-icons/sass-logo-sfd.png",
+            projectTitle: "German Step by Step Video Tutorial | CSS to SASS | How to build an Responsive Dashboard #1 by Inspiration of an User Template from Pinterest",
+            skillItems: [ "CSS" , "SASS", "Layout Concepts", "UX", "Responsive", "Java Script", "chart.js", "VSCoce" ],
 
         }
-       
     },
 
-    project2: {
-
+    {
         header: {
 
-            a:"a-2",
-            b:"b-2"
+            imgSrcCover: "media/img/content/about/my-top-3-about/project-1/project-cover-img-in-construction.png",
+            txtProjectNr: "Project 2:",
+            status: "coming soon",
+            imgSrcProjectTtile: "media/img/icons/tech-icons/styled-tech-icons/storybook-logo-sfd.png",
+            projectTitle: "German Step by Step Video Tutorial | CSS to SASS | How to build an Responsive Dashboard #2 by Inspiration of an User Template from Pinterest",
+            skillItems: [ "test-1" , "test-2", "test-3", "test-4" ],
 
         }
+    },
+]
 
-    }
-}
 
 /* --------------------------------------------------------- */
 /* DOM Elements 
 /* --------------------------------------------------------- */
 
-// 2 x Radio Boxes 
+// IDs Elements of Radio Project 1 ( My Top 3 IT Projects )
 var radio_p1_1_it_project = document.getElementById('radio-top-3-it-project-1-1');
 var radio_p1_2_it_project = document.getElementById('radio-top-3-it-project-1-2');
 
 // header elements of it project card 
 var img_cover_top3_project_1 = document.getElementById('js-img-cover-top-3-project-1');
 
+// txt project nr & status 
+var div_p1_nr_project_t3 = document.getElementById('js-p1-nr-project-t3');
+var div_p1_status_project_t3 = document.getElementById('js-p1-status-project-t3');
 
-/* --------------------------------------------------------- */
+// img small project title & project title
+var img_small_p1_project_t3 = document.getElementById('js-img-small-project-title-p1-t3')
+var div_project_title_p1_project_t3 = document.getElementById('js-project-title-p1-t3')
+
+/* ----------------------------------------------------------------------------------- */
 /* Functions
-/* --------------------------------------------------------- */
-
-// ⚠️ Auslagern:
-// ⚠️ Universal Function,
-//  check if one of a radio list is checked if not set the first 
-
-function setCheckboxRadio( attrNameList ) {
-
-    var foundChecked = 0
-
-    if( attrNameList.length != null && attrNameList.length != undefined ) {
+/* ----------------------------------------------------------------------------------- */
 
 
-        for( let i=0; i < attrNameList.length; i++ ) {
+/* ------------------------------------------------------------------- */
+/* ⚠️ Function | Set | Header | IT Project Card 
+/* ------------------------------------------------------------------- */
 
-            if( attrNameList[i].checked == true ) {
+/* ------------------------------------------------------------------- */
+/* ⚠️ Function | Set | Video List |  IT Project Card 
+/* ------------------------------------------------------------------- */
 
-                // manuel html checked was found & exit 
-                i = attrNameList.length;
-                foundChecked = 1;
-            } 
-        }
-
-        if( foundChecked == 0 ) {
-
-            // not manuel html checked found , set default index 0
-            attrNameList[0].checked = true;
-        }
-       
-
-    } else {
-
-        return '🆘Error|setCheckboxRadio()|: given attrNameList is null/undefined'
-
-    }
-
-}
-
-// Set Header Content 
-
-function setHeaderItProject( radioElements ) {
-
-    var checkedIndex = 0;
-
-    for( let i=0; i < radioElements.length; i++ ) {
-
-        if( radioElements[i].checked == true ) {
-            checkedIndex = i;
-        }
-    }
-
-    /* ---------------------------------------------------- */
-    /* Set New Header Data ( to js dom elements )
-    /* ---------------------------------------------------- */
-    console.log('imgSrcs[i]= ' + imgSrcs[checkedIndex] )
-    // console.log('imgSrcs[i]' = imgSrcs[i] )
-    img_cover_top3_project_1.setAttribute('src', imgSrcs[checkedIndex]);
+/* ------------------------------------------------------------------- */
+/* ⚠️ Function | Set | zip-github-container |  IT Project Card 
+/* ------------------------------------------------------------------- */
 
 
-}
-
-/* --------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
 /* Events
-/* --------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
 
 // Reminder: by visiting wepage & no radio was default 
-// checked, we set the first
+// checked, we set the first radio
 
-/* --------------------------------------- */
-/* Change Event Radio | Project 1 
-/* --------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* Radio | Project 1 | Change Event  
+/* ------------------------------------------------------------------- */
 
 radio_p1_1_it_project.addEventListener( 'change', ()=> {
 
+    var setProjectIndex = -1;
+
+    /* --------------------------------------------------- */
+    /* Console Logs
+    /* --------------------------------------------------- */
     console.log(' Radio | 1 > changed ')
-    setHeaderItProject( radio_top_3_it_projects_1 )
+    console.log(' New Index Checked: ' + getCheckedIndex( radios_top_3_it_projects_1 ) )
+
+
+    /* --------------------------------------------------- */
+    /* Update Infos: Project Card
+    /* --------------------------------------------------- */
+
+    setProjectIndex = getCheckedIndex( radios_top_3_it_projects_1 );
+
+    console.log('----------------------------------------------')
+
+    console.log(' Set IMG SRC = ' + dataTop3Project1[setProjectIndex].header.imgSrcCover )
+
+    console.log(' Set txt Project Nr = ' + dataTop3Project1[setProjectIndex].header.txtProjectNr )
+
+    console.log(' Set Skill Item 1 = ' + dataTop3Project1[setProjectIndex].header.skillItems[0] )
+
+    console.log('----------------------------------------------')
+
+
+    /* ------------------------------------------ */
+    /* Build in Function
+    /* ------------------------------------------ */
+
+    // img cover
+    setValueAttribute( 'src', dataTop3Project1[setProjectIndex].header.imgSrcCover , img_cover_top3_project_1)
+
+    // project nr & status
+    setTextToDomElement( dataTop3Project1[setProjectIndex].header.txtProjectNr, div_p1_nr_project_t3 )
+    setTextToDomElement( dataTop3Project1[setProjectIndex].header.status, div_p1_status_project_t3 )
+
+    // img small project title & project title
+    setValueAttribute( 'src', dataTop3Project1[setProjectIndex].header.imgSrcProjectTtile , img_small_p1_project_t3 )
+    setTextToDomElement( dataTop3Project1[setProjectIndex].header.projectTitle, div_project_title_p1_project_t3 )
+
 })
 
-/* --------------------------------------- */
-/* Change Event Radio | Project 2 
-/* --------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* Radio | Project 2 | Change Event 
+/* ------------------------------------------------------------------- */
 
 radio_p1_2_it_project.addEventListener( 'change', ()=> {
 
+    var setProjectIndex = -1;
+
+    /* --------------------------------------------------- */
+    /* Console Logs
+    /* --------------------------------------------------- */
     console.log(' Radio | 2 > changed ')
-    setHeaderItProject( radio_top_3_it_projects_1 )
+    console.log(' New Index Checked: ' + getCheckedIndex( radios_top_3_it_projects_1 ) )
+
+    /* --------------------------------------------------- */
+    /* Update Infos: Project Card
+    /* --------------------------------------------------- */
+
+    setProjectIndex = getCheckedIndex( radios_top_3_it_projects_1 );
+
+    console.log('----------------------------------------------')
+
+    console.log(' Set IMG SRC = ' + dataTop3Project1[setProjectIndex].header.imgSrcCover )
+
+    console.log(' Set txt Project Nr = ' + dataTop3Project1[setProjectIndex].header.txtProjectNr )
+
+    console.log(' Set Skill Item 1 = ' + dataTop3Project1[setProjectIndex].header.skillItems[0] )
+
+    console.log('----------------------------------------------')
+
+
+
+    /* ------------------------------------------ */
+    /* Build in Function
+    /* ------------------------------------------ */
+
+    // img cover
+    setValueAttribute( 'src', dataTop3Project1[setProjectIndex].header.imgSrcCover , img_cover_top3_project_1)
+
+    // project nr & status
+    setTextToDomElement( dataTop3Project1[setProjectIndex].header.txtProjectNr, div_p1_nr_project_t3 )
+    setTextToDomElement( dataTop3Project1[setProjectIndex].header.status, div_p1_status_project_t3 )
+
+    // img small project title & project title
+    setValueAttribute( 'src', dataTop3Project1[setProjectIndex].header.imgSrcProjectTtile , img_small_p1_project_t3 )
+    setTextToDomElement( dataTop3Project1[setProjectIndex].header.projectTitle, div_project_title_p1_project_t3 )
+
+ 
+
+
+
+
+
+
+
+
+
+    /* -------------------------------------------------------------- */
+    /* Step 1 | SET | IMG DOC Cover
+    /* -------------------------------------------------------------- */ 
+
+    /* -------------------------------------------------------------- */
+    /* Step 2 | SET | Project Nr Info 
+    /* -------------------------------------------------------------- */ 
+
+    /* -------------------------------------------------------------- */
+    /* Step 3 | SET | Project Title & Small Img
+    /* -------------------------------------------------------------- */ 
+
+    /* -------------------------------------------------------------- */
+    /* Step 4 | SET | Skill Items 
+    /* -------------------------------------------------------------- */ 
+
+
+    /* -------------------------------------------------------------- */
+    /* Step 5 | SET | Optional ( Video / GitHub )
+    /* -------------------------------------------------------------- */ 
 })

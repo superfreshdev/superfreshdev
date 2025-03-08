@@ -1,4 +1,4 @@
-console.log('[🟡|content>about] = play-pause-audio-about.js')
+console.log('[🟡|content|about| ➡️ play-pause-audio-about.js]')
 
 /* ------------------------------------------------------------------ 
 

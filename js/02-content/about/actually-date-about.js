@@ -1,4 +1,4 @@
-console.log('[🟡|content>about] = actually-date-about.js')
+console.log('[🟡|content|about| ➡️ actually-date-about.js]')
 
 /* ------------------------------------------------------------ */
 /* Variables

@@ -1,5 +1,4 @@
-console.log('[🟡|js-library] = helpful-functions.js')
-
+console.log('[🟡|js-library| ➡️ helpful-functions.js]')
 
 /* ------------------------------------------------------------------ */
 /* SET | Functions 
