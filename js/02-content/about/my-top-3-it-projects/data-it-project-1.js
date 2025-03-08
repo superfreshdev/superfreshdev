@@ -53,6 +53,9 @@ var div_p1_status_project_t3 = document.getElementById('js-p1-status-project-t3'
 var img_small_p1_project_t3 = document.getElementById('js-img-small-project-title-p1-t3')
 var div_project_title_p1_project_t3 = document.getElementById('js-project-title-p1-t3')
 
+// skill set container 
+var div_skill_set_container_p1_project_t3 = document.getElementById('js-skill-set-container-p1-t3');
+
 /* ----------------------------------------------------------------------------------- */
 /* Functions
 /* ----------------------------------------------------------------------------------- */
@@ -125,6 +128,21 @@ radio_p1_1_it_project.addEventListener( 'change', ()=> {
     setValueAttribute( 'src', dataTop3Project1[setProjectIndex].header.imgSrcProjectTtile , img_small_p1_project_t3 )
     setTextToDomElement( dataTop3Project1[setProjectIndex].header.projectTitle, div_project_title_p1_project_t3 )
 
+    // Step 1: create div elements 
+
+    console.log('### Laenge ###= ' + dataTop3Project1[setProjectIndex].header.skillItems.length )
+
+    createDivElements( dataTop3Project1[setProjectIndex].header.skillItems.length ) 
+
+
+    var strArray = new Array();
+    strArray = getArrayFromStrings( dataTop3Project1[setProjectIndex].header.skillItems )
+    
+    console.log('strArray= ' + strArray.length )
+
+    createDivElements( strArray )
+
+
 })
 
 /* ------------------------------------------------------------------- */
@@ -174,8 +192,20 @@ radio_p1_2_it_project.addEventListener( 'change', ()=> {
     setValueAttribute( 'src', dataTop3Project1[setProjectIndex].header.imgSrcProjectTtile , img_small_p1_project_t3 )
     setTextToDomElement( dataTop3Project1[setProjectIndex].header.projectTitle, div_project_title_p1_project_t3 )
 
- 
+    // Step 1: create div elements 
 
+    console.log('### Laenge ###= ' + dataTop3Project1[setProjectIndex].header.skillItems.length )
+
+    createDivElements( dataTop3Project1[setProjectIndex].header.skillItems.length ) 
+
+
+    var strArray = new Array();
+    strArray = getArrayFromStrings( dataTop3Project1[setProjectIndex].header.skillItems )
+    
+    console.log('strArray= ' + strArray.length )
+
+    createDivElements( strArray )
+    
 
 
 
@@ -205,3 +235,91 @@ radio_p1_2_it_project.addEventListener( 'change', ()=> {
     /* Step 5 | SET | Optional ( Video / GitHub )
     /* -------------------------------------------------------------- */ 
 })
+
+
+    /* --------------------------------------------------------------- */
+    /* Div Operations
+    /* --------------------------------------------------------------- */
+
+    function createDivElements( maxElements ) {
+
+        if( maxElements.length > 0 ) {
+
+            // Create Const Div Array 
+            var divElements = new Array();
+
+            for( let i=0; i < maxElements.length; i++ ) {
+                
+                // console.log('i:'+i+ ' - Skill Item')
+
+                // Create Div Dom Element 
+                // divElements.push(i + ' Marko');
+
+                divElements.push( document.createElement('div') )
+                divElements[i].innerText = maxElements[i];
+
+                div_skill_set_container_p1_project_t3.appendChild( divElements[i] );
+
+                console.log( divElements[i] )
+
+            }
+
+        } else {
+
+            return -1;
+        }
+    }
+
+    function createDivElementsByClassnames( strClassname ) {
+
+    }
+
+    function addTextToDivElements() {
+
+    }
+
+    // Step 2: add created div elements to dom element
+    function addDomElementsToDomElement( domElements, domElement ) {
+
+        if( domElements.length > 0 && domElement != null && domElement != undefined ) {
+
+
+
+        } else {
+
+            // no dom elements or domElement not exist
+            return -1;
+        }
+
+        
+    }
+
+
+    
+    function getArrayFromStrings( strElements ) {
+
+
+        // console.log('strElements = ' + strElements[0] )
+
+        if( strElements.length > 0 ) {
+
+            var strArray = new Array();
+
+            for( let i=0; i < strElements.length; i++ ) {
+
+                strArray.push( strElements[i] )
+
+                
+
+            }
+
+            return strArray;
+
+        } else {
+
+            return -1;
+
+        }
+    }
+
+ 
