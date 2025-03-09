@@ -98,14 +98,9 @@ window.addEventListener( 'load', ()=> {
                 /* ------------------------------------------------------------------------------------ */
                 /* Step 2.1: Set | Header | Project Card 1
                 /* ------------------------------------------------------------------------------------ */
-
-                // function setHeaderItProjectCard() {
-                //     // statements 
-                // }
-
                 
                 var setProject1Index = getCheckedIndex( radios_top_3_it_projects_1 );
-                setValueAttribute( 'src', dataTop3Project1[setProject1Index].header.imgSrcCover, img_cover_top3_project_1 ) 
+                setValueAttribute( 'src', dataTop3Project1.projects[setProject1Index].header.imgSrcCover, img_cover_top3_project_1 ) 
 
                 /* ------------------------------------------------------------------------------------ */
                 /* Step 2.2: Set | Video List & zip-github Container | Project Card 1
