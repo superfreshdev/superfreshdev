@@ -4,3 +4,53 @@
 /* : styles the zip & github link container
 /* -------------------------------------------------------------- */
 
+
+/* -------------------------------------------------------------- */
+/* ZIP Github Links Container 
+/* -------------------------------------------------------------- */
+
+.zip-github-links-container {
+
+    padding: 2em 0 1em 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: .6em;
+
+    background-color: red;
+}
+
+
+/* -------------------------------------------------------------- */
+/* Links (a) | ZIP Github Links Container 
+/* -------------------------------------------------------------- */
+
+
+.zip-github-links-container > a {
+
+    height: 2.8em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+    border-radius: .4em;
+
+    font-weight: bold;
+
+    /* ⚠️ light grey color & light grey img  */
+    color: #9a9a9a;
+    background-color: rgb(66, 66, 66);
+
+    text-decoration: none;
+
+    transition: all .4s;
+}
+
+.zip-github-links-container > a:hover {
+
+    background-color: wheat;
+    color:black;
+}

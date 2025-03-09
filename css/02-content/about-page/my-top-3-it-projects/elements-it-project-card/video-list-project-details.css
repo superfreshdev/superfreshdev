@@ -12,7 +12,7 @@
 .video-list-it-project-details-container {
 
     display: grid;
-    row-gap: 1em;
+    /* row-gap: 1em; */
 
 }
 
@@ -84,6 +84,8 @@
 /* -------------------------------------------------------------------------------- */
 
 .video-tutorial-link-container {
+
+    padding-top: 1em;
 
     display: grid;
     row-gap: .8em;
