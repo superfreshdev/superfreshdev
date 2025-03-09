@@ -4,62 +4,95 @@
 /* : handling styles & movement from checkboxes project card e.g clap video lists
 /* ---------------------------------------------------------------------------------------- */
 
+
+
 /* -------------------------------------------------------------------------------- */
-/* Handlings: Project 1
+/*  Checkbox Labels | Show Video Tutorials
+/*  > Max 3 Labels ( TOP 3 IT Projects )
 /* -------------------------------------------------------------------------------- */
+
 
 /* ------------------------------------------------- */
 /* ### Styling
-/* Checkbox Handling | Open Show Project Details
 /* ------------------------------------------------- */
 
-#chk-my-top-3-it-project-1 {
+#chk-t3-p1,
+#chk-t3-p2,
+#chk-t3-p3 {
 
     display: none;
 }
 
-#chk-my-top-3-it-project-1:checked + label {
+
+#chk-t3-p1:checked + label,
+#chk-t3-p2:checked + label,
+#chk-t3-p3:checked + label {
 
     background-color: wheat;
     color:blacK
+
 }
 
-#chk-my-top-3-it-project-1:checked + label > img:last-child {
+#chk-t3-p1:checked + label > img:last-child,
+#chk-t3-p2:checked + label > img:last-child,
+#chk-t3-p3:checked + label > img:last-child {
 
     transform: rotate(180deg);
-}
-
-/* ------------------------------------------------------------- */
-
-input[name="name-chk-top-3-it-project-1-1"] {
-
-    display: none;
 
 }
 
-#chk-top-project-1-1-1:checked ~ .video-link-list-it-projects,
-#chk-top-project-1-1-2:checked ~ .video-link-list-it-projects,
-#chk-top-project-1-1-3:checked ~ .video-link-list-it-projects,
-#chk-top-project-1-1-4:checked ~ .video-link-list-it-projects  {
-
-    display: grid;
-}
 
 /* ------------------------------------------------- */
 /* ### Movement
-/* Checkbox Handling | Open Show Project Details
 /* ------------------------------------------------- */
 
-/* ---------------------------------------------------- */
-/* ⬇️⬆️ Open Close Container   */
-/* ---------------------------------------------------- */
-#chk-my-top-3-it-project-1:checked ~ #smooth-open-close-top-3-it-project-1 {
 
-    grid-template-rows: 1fr;
+/* ----------------------------------------------------------------------------------------------------- */
+/*  Checkbox Labels | Video Tutorial Category Items
+/*  > Max all checkboxes from Top 3 IT Projects
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* ### Styling
+/* ----------------------------------------------------------------------------------------------------- */
+
+/*  all checkboxes as video category */
+input[name="name-chk-t3-vc"] {
+
+    display: none;
+}
+
+/* Switch +/-  by open or close */
+input[name="name-chk-t3-vc"]:checked + label > img:nth-of-type(1)  {
+
+    display: none;
+}
+
+input[name="name-chk-t3-vc"]:checked + label > img:nth-of-type(2) {
+
+    display: flex;
 }
 
 
+/* ----------------------------------------------------------------------------------------------------- */
+/* ### Movement
+/* ----------------------------------------------------------------------------------------------------- */
 
+    /* ------------------------------------------------------------------------------ */
+    /* ⬇️⬆️ Smooth | Video Tutorials Categories Container | T3 | P1   */
+    /* ------------------------------------------------------------------------------ */
 
+    #chk-t3-p1:checked ~ #smooth-video-tutorial-categories-container-t3-p1 {
 
+        grid-template-rows: 1fr;
+    }
 
+    /* ---------------------------------------------------- */
+    /* Show | Video Link List IT Projects                   */
+    /* ---------------------------------------------------- */
+    
+    input[name="name-chk-t3-vc"]:checked + label + main {
+
+        display: grid;
+    }

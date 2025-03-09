@@ -1,26 +1,25 @@
 /* -------------------------------------------------------------- */
+/* ⚠️ video-tutorial-container
 /* > video-list-project-details.css
 /*  
-/* : styles the video list link container
+/* : styles the video category link list container
 /* -------------------------------------------------------------- */
 
-
 /* -------------------------------------------------------------------------------- */
-/* Video List Project Details Container
+/*  Video Tutorial Container
 /* -------------------------------------------------------------------------------- */
 
-.video-list-it-project-details-container {
+.video-tutorial-container {
 
     display: grid;
-    /* row-gap: 1em; */
 
 }
 
 /* -------------------------------------------------------------------------------- */
-/* [1/2] | Label | Video Details IT Project
+/*  Label | Show Video Tutorial
 /* -------------------------------------------------------------------------------- */
 
-.lbl-video-details-it-project {
+.lbl-show-video-tutorials {
 
     height: 3.5em;
     padding: 0 .8em;
@@ -47,29 +46,30 @@
 
 }
 
-.lbl-video-details-it-project > div:nth-of-type(1) {
-
-    display: flex;
-    align-items: center;
-    column-gap: .8em;
-}
-
-.lbl-video-details-it-project:hover {
+.lbl-show-video-tutorials:hover {
 
     background-color: wheat;
     color:black;
 }
 
-.lbl-video-details-it-project > img:last-child {
+.lbl-show-video-tutorials > div:nth-of-type(1) {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+}
+
+.lbl-show-video-tutorials > img:last-child {
 
     transition: all .4s;
 }
 
 /* -------------------------------------------------------------------------------- */
-/* ⬆️⬇️ Smooth Open Close | Video Details | Project 1 | 
+/* ⬆️⬇️ Smooth | Video Tutorial Categories Container | T3 |  Project 1 | 
 /* -------------------------------------------------------------------------------- */
 
-#smooth-open-close-top-3-it-project-1 {
+#smooth-video-tutorial-categories-container-t3-p1 {
 
     display: grid;
     grid-template-rows: 0fr;
@@ -79,11 +79,10 @@
 }
 
 /* -------------------------------------------------------------------------------- */
-/* ⚠️⚠️ Auslagern
-/* [2/2] Video Tutorial Link Container
+/*  Video Category List Container
 /* -------------------------------------------------------------------------------- */
 
-.video-tutorial-link-container {
+.video-category-list-container {
 
     padding-top: 1em;
 
@@ -93,10 +92,10 @@
 }
 
 /* -------------------------------------------------------------------------------- */
-/* Video Category IT Project Container
+/* Video Catgeory Item 
 /* -------------------------------------------------------------------------------- */
 
-.video-category-it-project-container {
+.video-category-item {
 
     display: grid;
     row-gap: .8em;
@@ -104,12 +103,12 @@
 }
 
 /* -------------------------------------------------------------------------------- */
-/* Label | Video Category It Project
+/* Label | Video Category Item 
 /* -------------------------------------------------------------------------------- */
 
-.lbl-video-category-it-project {
+.lbl-video-category-item {
 
-    padding:  .8em .8em;
+    padding: .8em .9em .8em .8em;
 
     display: flex;
     align-items: center;
@@ -125,26 +124,25 @@
 
     cursor: pointer;
     transition: all .4s;
-    
+
 }
 
-.lbl-video-category-it-project:hover {
+.lbl-video-category-item:hover {
 
     background-color: grey;
 }
 
-.lbl-video-category-it-project > div:last-child {
+.lbl-video-category-item > img:nth-of-type(2) {
 
-    font-size: 1.25em;
-    font-weight: bold;
+    display: none;
 }
 
 
 /* -------------------------------------------------------------------------------- */
-/* Video Link List It Projects
+/* Main | Video Category Item
 /* -------------------------------------------------------------------------------- */
 
-.video-link-list-it-projects {
+.video-category-item > main {
 
     display: grid;
     row-gap: .6em;
@@ -153,9 +151,11 @@
 }
 
 
-/* -------------------------------------- */
-/* Link
-/* -------------------------------------- */
+/* 🟥 status texte knackiger gestalten  */
+
+/* ----------------------------------------------------------------------------------------- */
+/* Status Video Link 
+/* ----------------------------------------------------------------------------------------- */
 
 .link-done-video-it-project, 
 .link-in-progress-video-it-project,
@@ -235,8 +235,6 @@
 
 }
 
-
-
 /* -------------------------------------- */
 /* Status Video Link IT Project
 /* -------------------------------------- */
@@ -286,122 +284,4 @@
 .status-coming-soon-video-link-it-project > img:nth-of-type(1) {
 
     animation: leftright 1s ease infinite;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------------------------------------------------------- */
-/* IT Project | Details Video Container / Github Container
-/* --------------------------------------------------------------------- */
-
-.it-project-video-details-container,
-.it-project-github-details-container {
-
-
-}
-
-
-
-/* --------------------------------------------------------------------- */
-/* 🟥🟥🟥 OLD GitHUB Link Style
-/* --------------------------------------------------------------------- */
-
-
-/* ---------------------------------------- */
-/* Project Choose Container 
-/* ---------------------------------------- */
-
-.project-choose-container {
-
-    border-top: 1px dashed rgb(195, 195, 195);
-    border-bottom: 1px dashed rgb(195, 195, 195);
-
-    padding: 1em 0em;
-
-    display: grid;
-    row-gap: .6em;
-
-}
-
-.project-choose-container > a {
-
-    
-    padding: .6em .3em;
-
-    display: flex;
-    align-items: center;
-
-    text-decoration: none;
-
-    border-radius: .3em;
-    background-color: rgb(244, 244, 244);
-    color:black;
-
-    transition: all .4s;
-}
-
-.project-choose-container > a:hover {
-
-    background: rgb(44, 44, 44);
-    color:rgb(253, 253, 253);
-}
-
-
-/* ---------------------------------------- */
-/* Link Github Container
-/* ---------------------------------------- */
-
-.link-github-container {
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    column-gap: .4em;
-   
-}
-
-.link-item-github {
-
-    height: 2.5em;
-    padding: 0 .6em;
-
-    display: flex;
-    align-items: center;
-    column-gap: .4em;
-
-    border-radius: .4em;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    background: rgb(44, 44, 44);
-    color:grey;
-
-    transition: all .4s;
-
-}
-
-.link-item-github:hover {
-
-    background-color: wheat;
-    color:black;
 }

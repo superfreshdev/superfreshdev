@@ -1,0 +1,60 @@
+
+/* -------------------------------------------------------------------------------- */
+/* Handlings: Project 1
+/* -------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* ### Styling
+/* Checkbox Handling | Open Show Project Details
+/* ------------------------------------------------- */
+
+#chk-my-top-3-it-project-1 {
+
+    display: none;
+}
+
+#chk-my-top-3-it-project-1:checked + label {
+
+    background-color: wheat;
+    color:blacK
+}
+
+#chk-my-top-3-it-project-1:checked + label > img:last-child {
+
+    transform: rotate(180deg);
+}
+
+/* ------------------------------------------------------------- */
+
+input[name="name-chk-top-3-it-project-1-1"] {
+
+    display: none;
+
+}
+
+#chk-top-project-1-1-1:checked ~ .video-link-list-it-projects,
+#chk-top-project-1-1-2:checked ~ .video-link-list-it-projects,
+#chk-top-project-1-1-3:checked ~ .video-link-list-it-projects,
+#chk-top-project-1-1-4:checked ~ .video-link-list-it-projects  {
+
+    display: grid;
+}
+
+/* ------------------------------------------------- */
+/* ### Movement
+/* Checkbox Handling | Open Show Project Details
+/* ------------------------------------------------- */
+
+/* ---------------------------------------------------- */
+/* ⬇️⬆️ Open Close Container   */
+/* ---------------------------------------------------- */
+#chk-my-top-3-it-project-1:checked ~ #smooth-open-close-top-3-it-project-1 {
+
+    grid-template-rows: 1fr;
+}
+
+
+
+
+
+
