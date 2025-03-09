@@ -151,17 +151,14 @@
 }
 
 
-/* 🟥 status texte knackiger gestalten  */
-
 /* ----------------------------------------------------------------------------------------- */
 /* Status Video Link 
 /* ----------------------------------------------------------------------------------------- */
 
-.link-done-video-it-project, 
-.link-in-progress-video-it-project,
-.link-coming-soon-video-it-project {
+.video-link-done,
+.video-link-in-progress,
+.video-link-coming-soon {
 
-    
     min-height: 2.5em;
 
     display: grid;
@@ -174,37 +171,17 @@
     user-select: none;
 
     color:black;
+}
+
+.video-link-done:visited, 
+.video-link-in-progress:visited,
+.video-link-coming-soon:visited {
+
+    color:black;
 
 }
 
-.link-done-video-it-project > div:nth-of-type(2) , 
-.link-in-progress-video-it-project > div:nth-of-type(2) ,
-.link-coming-soon-video-it-project > div:nth-of-type(2) {
-
-   padding: .5em 0;
-
-}
-
-.link-done-video-it-project > div:last-child , 
-.link-in-progress-video-it-project  > div:last-child ,
-.link-coming-soon-video-it-project >  div:last-child {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.link-done-video-it-project > div:last-child > img:nth-of-type(1), 
-.link-in-progress-video-it-project  > div:last-child > img:nth-of-type(1),
-.link-coming-soon-video-it-project >  div:last-child > img:nth-of-type(1) {
-
-    padding-right: .8em;
-    padding-left: .3em;
-    height: 1.2em;
-}
-
-.link-done-video-it-project { 
+.video-link-done { 
 
     cursor: pointer;
     background-color: lightgreen;
@@ -212,36 +189,29 @@
     transition: all .4s;
 }
 
-.link-done-video-it-project:hover {
+.video-link-done:hover,
+.video-link-in-progress:hover {
 
     background-color: grey;
 }
 
-.link-in-progress-video-it-project {
+.video-link-in-progress {
 
     background-color: lightyellow;
 }
 
-.link-coming-soon-video-it-project {
+.video-link-coming-soon {
 
     background-color: lightblue;
 }
 
-.link-done-video-it-project:visited, 
-.link-in-progress-video-it-project:visited,
-.link-coming-soon-video-it-project:visited {
+/* ------------------------------------------------------------- */
+/* [1/2] | Status: IMG | Video Link 
+/* ------------------------------------------------------------- */
 
-    color:black;
-
-}
-
-/* -------------------------------------- */
-/* Status Video Link IT Project
-/* -------------------------------------- */
-
-.status-done-video-link-it-project,
-.status-in-progress-video-link-it-project,
-.status-coming-soon-video-link-it-project {
+.status-box-done-video-link,
+.status-box-in-progress-video-link,
+.status-box-coming-soon-video-link {
 
     height: 100%;
    
@@ -251,37 +221,59 @@
 
 }
 
-.status-done-video-link-it-project > img:nth-of-type(1),
-.status-in-progress-video-link-it-project > img:nth-of-type(1),
-.status-coming-soon-video-link-it-project > img:nth-of-type(1) {
+.status-box-done-video-link > img:nth-of-type(1),
+.status-box-in-progress-video-link > img:nth-of-type(1),
+.status-box-coming-soon-video-link > img:nth-of-type(1) {
 
     height: 1.3em;
 }
 
 
-.status-done-video-link-it-project {
+.status-box-done-video-link {
 
     background-color: rgb(9, 169, 9);
 }
 
-.status-in-progress-video-link-it-project {
+.status-box-in-progress-video-link {
 
     background-color: rgb(255, 222, 9);
 
 }
 
-.status-in-progress-video-link-it-project > img:nth-of-type(1) {
+.status-box-in-progress-video-link> img:nth-of-type(1) {
 
     animation: rotate360deg 4s ease infinite;
 
 }
 
-.status-coming-soon-video-link-it-project {
+.status-box-coming-soon-video-link {
 
     background-color: rgb(9, 140, 255);
 }
 
-.status-coming-soon-video-link-it-project > img:nth-of-type(1) {
+.status-box-coming-soon-video-link> img:nth-of-type(1) {
 
     animation: leftright 1s ease infinite;
+}
+
+
+/* ------------------------------------------------------------- */
+/* [2/2] | Status: Title & IMG New Tab 
+/* ------------------------------------------------------------- */
+
+.video-link-done > div:nth-of-type(2) , 
+.video-link-in-progress > div:nth-of-type(2) ,
+.video-link-coming-soon > div:nth-of-type(2) {
+
+   padding: .5em 0;
+
+}
+
+.video-link-done > img:last-child, 
+.video-link-in-progress  > img:last-child,
+.video-link-coming-soon > img:last-child {
+
+    padding-right: .8em;
+    padding-left: .3em;
+    height: 1.2em;
 }
