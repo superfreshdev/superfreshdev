@@ -6,13 +6,13 @@
 
 
 /* --------------------------------------------------------------------- */
-/* My Top 3 IT Project Card Container 
+/* Top 3 IT Projects Container
 /* --------------------------------------------------------------------- */
 
-#my-top-3-it-projects-container {
+#top3-it-projects-container  {
 
     width: 100%;
-    /* padding: 5em .8em; */
+    padding: 5em .8em;
 
     display: grid; 
     row-gap: 3em;
@@ -25,7 +25,7 @@
 /* Header
 /* --------------------------------------------------------------------- */
 
-#my-top-3-it-projects-container > header {
+#top3-it-projects-container  > header {
 
     justify-self: flex-end;
 }
@@ -34,10 +34,11 @@
 /* Main
 /* --------------------------------------------------------------------- */
 
-#my-top-3-it-projects-container > main {
+#top3-it-projects-container > main {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
     column-gap: 3em;
     row-gap: 3em;

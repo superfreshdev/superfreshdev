@@ -12,7 +12,7 @@
 .h1-content-header {
 
     display: grid;
-    row-gap: 3em;
+    row-gap: 2em;
    
     /* to not stretch header 100% */
     justify-self: flex-start;

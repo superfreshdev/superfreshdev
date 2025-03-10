@@ -26,6 +26,7 @@
 /* -------------------------------------------------------------- */
 /* >= 800x width
 /* -------------------------------------------------------------- */
+
 @media (min-width: 800px ) {
 
     /* #my-top-3-projects-layout-container-about > main {
@@ -39,12 +40,14 @@
 /* -------------------------------------------------------------- */
 /* >= 1200px width
 /* -------------------------------------------------------------- */
+
 @media (min-width: 1200px ) {
 
-    #my-top-3-projects-container-about {
+    #top3-it-projects-container  {
 
+        /* dont need padding-left,right in desktop */
         padding: 5em 0em;
-        /* background-color: black; */
+        
     }
 
 

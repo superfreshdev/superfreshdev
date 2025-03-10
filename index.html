@@ -244,31 +244,31 @@
 
 
             <!-- ---------------------------------- -->
-            <!-- Resp | Default -->
+            <!-- Resp | Default                     -->
             <!-- ---------------------------------- -->
 
                 <!-- --------------------------------------------------- -->
                 <!-- Resp | Handle Content Areas                         -->
                 <!-- --------------------------------------------------- -->  
-                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-handle-content-areas/resp-handle-content-areas.css">
+                <link rel="stylesheet" href="css/03-responsive/resp-default/02-others/resp-handle-content-areas/resp-handle-content-areas.css">
 
                 <!-- --------------------------------------------------- -->
                 <!-- Resp | Body Header                                  -->
                 <!-- --------------------------------------------------- -->  
-                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-header.css">
+                <link rel="stylesheet" href="css/03-responsive/resp-default/01-resp-body/resp-header-body.css">
 
                 <!-- --------------------------------------------------- -->
                 <!-- Resp | Body Main                                    -->
                 <!-- --------------------------------------------------- -->  
-                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-main/resp-main.css">
+                <link rel="stylesheet" href="css/03-responsive/resp-default/01-resp-body/resp-main-body/resp-main.css">
 
-                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-main/resp-main-header.css">
-                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-main/resp-nav-main-body.css">
+                <link rel="stylesheet" href="css/03-responsive/resp-default/01-resp-body/resp-main-body/resp-main-header.css">
+                <link rel="stylesheet" href="css/03-responsive/resp-default/01-resp-body/resp-main-body/resp-nav-main-body.css">
 
                 <!-- --------------------------------------------------- -->
                 <!-- Resp | Body Footer                                  -->
                 <!-- --------------------------------------------------- -->  
-                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-footer.css"> 
+                <link rel="stylesheet" href="css/03-responsive/resp-default/01-resp-body/resp-footer-body.css"> 
                 
             <!-- ---------------------------------- -->
             <!-- Resp | Content -->
@@ -290,11 +290,15 @@
                     <!-- Resp | Welcome                                -->
                     <!-- --------------------------------------------- --> 
                     <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about/resp-welcome.css">
+
+                    <!-- --------------------------------------------- -->
+                    <!-- Resp | IT Docs                                -->
+                    <!-- --------------------------------------------- --> 
+                    <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about/resp-it-docs.css">
     
                     <!-- --------------------------------------------- -->
                     <!-- Resp | TOP 3 IT Projects                      -->
                     <!-- --------------------------------------------- --> 
-
                     <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about/resp-t3-it-projects.css">
 
                 <!-- --------------------------------------- -->
@@ -397,7 +401,7 @@
             <!-- ----------------------------------------------- -->
             <!-- ⚠️ News | Row Container                        -->
             <!-- ----------------------------------------------- -->
-            <div class="row-container" style="background-color: green;">
+            <div class="row-container" style="background-color: rgb(30, 30, 30);">
 
                 <!-- ----------------------------------------------------------- -->
                 <!-- Handle | Main | Content Area                                -->
@@ -1617,7 +1621,7 @@
                 <!-- ----------------------------------------------------------------------- -->
                 <!-- ⚠️ Impress Container | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
-                <div class="row-container" style="display: none; background-color: rgb(50, 50, 50);"> 
+                <div style="display: none; background-color: rgb(50, 50, 50);"  class="row-container" > 
                     
 
                     <!-- ----------------------------------------------------------- -->
@@ -1697,15 +1701,51 @@
                 </div>
                 
                 <!-- ----------------------------------------------------------------------- -->
+                <!-- ❌ Später Weg | Nur Handle Max | Test | Row Container  -->
+                <!-- ----------------------------------------------------------------------- -->
+                <div class="row-container">
+
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- Handle | Max | Content Area                                 -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div class="handle-max-content-area">
+
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- width & heihgt 100% (sets)                                  -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="w-100p h-100p flex jc-c">
+
+
+                                <div style="display: grid; row-gap: .3em; padding: 2em .8em">
+
+                                    <div>Handle Max Content Area 1</div>
+                                    <div>Handle Max Content Area 1</div>
+                                    <div>Handle Max Content Area 1</div>
+                                    <div>Handle Max Content Area 1</div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                </div> 
+
+                <!-- ----------------------------------------------------------------------- -->
                 <!-- IT-Doc Container | My IT-Stack > IT-Docs | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div class="row-container" style="background-color: rgb(229, 229, 229)"> 
                     
 
                     <!-- ----------------------------------------------------------- -->
-                    <!-- Handle | Max Content Area                                -->
+                    <!-- Handle | Large Main | Content Area                          -->
                     <!-- ----------------------------------------------------------- -->
-                    <div class="handle-max-content-area" >
+                    <div class="handle-large-main-content-area">
 
 
                         <!-- ----------------------------------------------------------- -->
@@ -4185,9 +4225,9 @@
                 <div class="row-container" style="background-color: rgb(16, 16, 16)"> 
                     
                     <!-- ----------------------------------------------------------- -->
-                    <!-- Handle | Max | Content Area                                -->
+                    <!-- Handle | Large Main | Content Area                                -->
                     <!-- ----------------------------------------------------------- -->
-                    <div class="handle-max-content-area" >
+                    <div class="handle-large-main-content-area" >
 
                         <!-- ----------------------------------------------------------- -->
                         <!-- Width 100% | Flex JC-C | (sets)                             -->
@@ -4197,7 +4237,7 @@
                             <!-- ------------------------------------------------------------------ -->
                             <!-- ⚠️ Top 3 IT Projects Container                                     -->
                             <!-- ------------------------------------------------------------------ -->
-                            <div id="my-top-3-it-projects-container">
+                            <div id="top3-it-projects-container">
 
                                 <!-- --------------------------------------------------------------- -->
                                 <!-- Header (default style) --> 
@@ -5235,49 +5275,16 @@
                                 <!-- ------------------------------------------------------- -->
                                 <!-- ⚠️⚠️⚠️ In Construction ⚠️⚠️⚠️ -->
                                 <!-- ------------------------------------------------------- --> 
-                                <div class="content-status-in-construction">
+                                <div class="in-construction-container">
 
+                                    <img src="media/img/icons/emojies/emoji-construction-side.png" alt="img">
                                     
-                                    <!-- ------------------------------------------------------ -->
-                                    <!-- Clipart | In Construction Container -->
-                                    <!-- ------------------------------------------------------ -->  
-                                    <div class="clipart-in-construction-container">
-
-                                        <img src="media/img/icons/clipart/me-in-construction.png" alt="img">
-
-                                        <img src="media/img/icons/emojies/emoji-gear.png" class="img-gear-absolute-in-construction" alt="img">
-
+                                    <div>
+                                        <div>In Construction</div>
+                                        <div>» My Sport Challenge Container</div>
                                     </div>
 
-
-                                    <!-- ------------------------------------------------------ -->
-                                    <!-- Main -->
-                                    <!-- ------------------------------------------------------ -->  
-                                    <main>
-
-
-                                        <!-- ------------------------------------------------------ -->
-                                        <!-- Header -->
-                                        <!-- ------------------------------------------------------ -->  
-                                        <header>
-                                            <div>» In Construction</div>
-                                            <div>» My Sport Challenge View Container </div>
-                                        </header>
-
-                                        <!-- ------------------------------------------------------ -->
-                                        <!-- Main (sub infos) -->
-                                        <!-- ------------------------------------------------------ -->  
-                                        <main>
-
-                                            <div>* Drop Down, Filter 3,6,9,...</div>
-                                            <div>* or other layout like instagram x3</div>
-
-                                        </main>
-
-                                       
-                                    </main>
-
-                                </div> 
+                                </div>
 
                                 <!-- ------------------------------------------------------- -->
                                 <!-- 🚧 Sport Container ( testing-sport-container.css ) -->

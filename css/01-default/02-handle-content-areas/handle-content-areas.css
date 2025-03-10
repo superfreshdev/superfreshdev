@@ -18,3 +18,30 @@
 
     width: 100%;
 }
+
+
+/* ⚠️ Just for Testing, to bring in productive delete or comment it  */
+
+.handle-header-content-area {
+
+    background-color: magenta;
+
+}
+
+.handle-main-content-area {
+
+    background-color: green;
+
+}
+
+.handle-large-main-content-area {
+
+    background-color: rgb(0, 255, 200);
+
+}
+
+.handle-max-content-area {
+
+    background-color: rgb(210, 5, 5);
+
+}
