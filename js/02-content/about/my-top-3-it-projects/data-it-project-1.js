@@ -1,5 +1,43 @@
 console.log('[🟡|content|about|my-top-3-it-projects| ➡️ data-it-project-1-js]')
 
+/* 
+
+
+
+    /* ------------------------------------------------- */
+    /* Top 3x3 IT - Projects
+    /* ------------------------------------------------- */
+    
+    /*
+        ### Project 1 | CSS, SASS, chart.js, java script,  Storybook ####
+            1. Responsives CSS-SASS Dashboard 
+            2. Responsives Online Shop ( Welcome Page )
+            3. Storybook, CSS, SASS ( Buttons, Textfields, Drop Down List, 3 Info Boxes )
+
+        ### Project 2 | Angular 19 ####
+
+            1. Portfolio Webseite 
+            2. Company Page 
+            3. Data Dashboard, CRM - System , Mongo DB 
+
+            4. Online Shop like Zalando , Booking, Pinterst 
+            5. Youtube Music, ... 
+
+        ### Project 3 | Java ####
+
+            1. Java Math & Operator Calculator ( string operations list, filter, search, file uploard, statistik )
+            2. Manage Data from Insurence using Mongo DB, Spring Boot 
+            3. Java Coding Challenge 
+
+
+        ### Project 4 | React Native vs Lynx (TikTok,Rust) ####
+ 
+            1. Press and Show me the day ( Mobile Wathc & Mobile Devices )
+
+
+
+*/
+
 /* --------------------------------------------------------- */
 /* Data Object | Project 1
 /* --------------------------------------------------------- */
@@ -50,8 +88,8 @@ var dataTop3Project1 = {
     
                 allowCreateContainers: {
     
-                    videoTutorialContainer: "true",
-                    zipGithubContainer: "true",
+                    statusVideoTutorialContainer: "true",
+                    statusZipGithubContainer: "true",
     
                 },
     
@@ -194,11 +232,11 @@ var dataTop3Project1 = {
         {
             header: {
     
-                imgSrcCover: "media/img/content/about/my-top-3-about/project-1/project-cover-img-in-construction.png",
+                imgSrcCover: "media/img/content/about/my-top-3-about/project-1/online-shop-zalando.gif",
                 txtProjectNr: "Project 2:",
                 status: "coming soon",
                 imgSrcProjectTtile: "media/img/icons/tech-icons/styled-tech-icons/storybook-logo-sfd.png",
-                projectTitle: "German Step by Step Video Tutorial | CSS to SASS | How to build an Responsive Dashboard #2 by Inspiration of an User Template from Pinterest",
+                projectTitle: "German Step by Step Video Tutorial | CSS to SASS | How to build an Responsive Online Shop like Zalando ( Condition: 2025 ). ",
                 skillItems: [ "test-1🍎" , "test-2🍌", "test-3🌶️", "test-4🥦", "test-5🍋" ],
     
             },
@@ -207,8 +245,8 @@ var dataTop3Project1 = {
     
                 allowCreateContainers: {
     
-                    videoTutorialContainer: "true",
-                    zipGithubContainer: "true",
+                    statusVideoTutorialContainer: "true",
+                    statusZipGithubContainer: "false",
     
                 },
     
@@ -315,15 +353,153 @@ var div_skill_set_container_p1_project_t3 = document.getElementById('js-skill-se
 /* --------------------------------------------------------- */
 
 // Video Tutorial Container 
+var video_tutorial_container_t3_p1 = document.getElementById('js-video-tutorial-container-t3-p1');
+
+// Video Category List Container | Top 3 | Project 1
+var video_category_list_container_t3_p1 = document.getElementById('js-video-category-list-container-t3-p1');
 
 // ZIP Github Container
+var zip_github_container_t3_p1 = document.getElementById('js-zip-github-links-container-t3-p1');
+
+
+//  ⚠️ Nützliche Methode auslagern in Show 
+
+function showDomElementByStatus( strStatus, domElement, strDisplayArt ) {
+
+    console.log('showDomElementByStatus | Status =  ' + strStatus )
+
+    if( strDisplayArt == "flex" || strDisplayArt == "grid" || strDisplayArt == "block" ) {
+
+        if( domElement != null && domElement != undefined ) {
+
+            if( strStatus == "true" ) {
+
+                domElement.style.display = strDisplayArt;
+
+            } else {
+
+                domElement.style.display = "none";
+
+            }
+
+        } else {
+
+            console.log("[🔴Error|showDomElementByStatus]: given domElement dont exist.")
+            return -1;
+        }
+
+    } else {
+
+        console.log("[🔴Error|showDomElementByStatus]: wrong given strDisplayArt, only flex,grid,block are allowed.")
+        return -1;
+    }
+}
+
+
+// ⚠️ Update Video Category Items & Links
+
+function updateVideoCategoryItems( dataVideoCategoryItems, domElement ) {
+
+    if( domElement != null && domElement != undefined ) {
+
+
+        // get title | video category item 
+        var titleVideoCategoryItems = new Array();
+        
+        for( let i=0; i < dataVideoCategoryItems.length; i++) {
+
+            titleVideoCategoryItems.push( dataVideoCategoryItems[i].categoryTitle )
+
+        }
+     
+        // create div with | title video category item 
+        var divVideoCategoryItems = new Array();
+        
+        divVideoCategoryItems = createDivElementsWithText( titleVideoCategoryItems )
+
+        console.log('divVideoCategoryItems Laenge= ' + divVideoCategoryItems.length)
+
+
+        // Add DIvs Video category item to dom element 
+        addDomElementsToDomElement( divVideoCategoryItems, video_category_list_container_t3_p1 )
+
+
+
+
+        // printArray( divVideoCategoryItems )
+
+       
+
+        
+            
+
+            // titleVideoCategories.push( dataVideoCategoryItems[i].categoryTitle );
+
+            // console.log('titleVideoCategories|'+i+'| ' + titleVideoCategories[i] )
+
+            /* ------------------------------------------------------------------------ */
+            /* Creations: 
+            /*
+
+                1. div, video-category-item 
+
+                    1.1 input checkbox, id=chk-t3-p1-vc-1(2,3,4,...n) | name=name-chk-t3-vc
+                    1.2 label for=chk-t3-p1-vc-1(2,3,4,...n) | .lbl-video-category-item
+
+                        1.2.1 div -> Part 1/4 | Die ersten Schritte 
+                        1.2.2 img src plus black , class img-h-1 alt=img
+                        1.2.3 img src minus black , class img-h-1 alt=img
+
+            */
+       
+
+
+    } else {
+
+        console.log('[🔴Error|updateVideoCategoryItems()]: given domElement dont exist.')
+        return -1;
+    }
+
+}
 
 /* ----------------------------------------------------------------------------------- */
 /* Functions
 /* ----------------------------------------------------------------------------------- */
 
 
-console.log('🔥🔥🔥 ' + dataTop3Project1.projects[0].footer.videoTutorialContainer[0].links[0].urlVideo )
+// console.log('🔥🔥🔥 ' + dataTop3Project1.projects[0].footer.videoTutorialContainer[0].links[0].urlVideo )
+
+
+/* -------------------------------------------------------------- */
+/* Dyn. Video Categorie Items 
+/* -------------------------------------------------------------- */
+
+/*
+
+    ⚠️⚠️⚠️ | Bestehende Methoden auslagern in Dom set , get , create .... dom Elements 
+
+    Voraussetzungen:
+    1. div , class: video-category-item 
+
+        1.1 input , id= chk-t3-p1-vc-1, name-chk-t3-vc 
+        1.2 label,  for=chk-t3-p1-vc-1, class: lbl-video-category-item
+
+            1.2.1 div -> Part 1/4
+            1.2.2 | img 1, img 2, class img-h-1 , media/img/icons/icons/plus-black.png | media/img/icons/icons/minus-black.png
+
+        1.3 main 
+
+            #####################
+            #### Link ###
+            #####################
+
+            1.3.1 | a href= url, class: video-link-done / video-link-in-progress / video-link-coming-soon , target=_blank
+
+                1.3.1.1 | div | status-box-done-video-link / in-progress / coming sooon + img 
+                1.3.1.2 | div | 01 Einführung ....
+                1.3.1.3 | img | img icon new tab
+
+*/
 
 
 /* --------------------------------------------------------------------------------------------------- */
@@ -336,6 +512,8 @@ console.log('🔥🔥🔥 ' + dataTop3Project1.projects[0].footer.videoTutorialC
 /* ------------------------------------------------------------------- */
 /* Radio | Project 1 | Change Event  
 /* ------------------------------------------------------------------- */
+
+// ⚠️  radio-t3-p1-1 , radio-t3-p1-2
 
 radio_p1_1_it_project.addEventListener( 'change', ()=> {
 
@@ -358,18 +536,32 @@ radio_p1_1_it_project.addEventListener( 'change', ()=> {
         updateItProjectCard( setProjectIndex )
 
 
+    /* --------------------------------------------------------------------------------------- */
+    /* ⚠️ TMP | Update: Video Tutorial Container / Zip Github Container 
+    /* --------------------------------------------------------------------------------------- */
+
+ 
+    var statusVideoTutorialContainer = dataTop3Project1.projects[setProjectIndex].footer.allowCreateContainers.statusVideoTutorialContainer;
+    var statusZipGithubContainer = dataTop3Project1.projects[setProjectIndex].footer.allowCreateContainers.statusZipGithubContainer;
+
+    // status Show Video Container
+    showDomElementByStatus( statusVideoTutorialContainer, video_tutorial_container_t3_p1, 'grid' )
+
+    // status Show Zip GithubContainer
+    showDomElementByStatus( statusZipGithubContainer, zip_github_container_t3_p1, 'flex' )
 
 
+    /* --------------------------------------------------------------------------------------- */
+    /* ⚠️ TMP | Update: Video Category Items
+    /* --------------------------------------------------------------------------------------- */
 
-    // console.log('----------------------------------------------')
+    var dataVideoCategorieItems = new Array();
+    dataVideoCategorieItems = dataTop3Project1.projects[setProjectIndex].footer.videoTutorialContainer;
 
-    // console.log(' Set IMG SRC = ' + dataTop3Project1[setProjectIndex].header.imgSrcCover )
+    updateVideoCategoryItems( dataVideoCategorieItems, video_category_list_container_t3_p1 )
+  
 
-    // console.log(' Set txt Project Nr = ' + dataTop3Project1[setProjectIndex].header.txtProjectNr )
 
-    // console.log(' Set Skill Item 1 = ' + dataTop3Project1[setProjectIndex].header.skillItems[0] )
-
-    // console.log('----------------------------------------------')
 
    
 
@@ -400,21 +592,36 @@ radio_p1_2_it_project.addEventListener( 'change', ()=> {
         updateItProjectCard( setProjectIndex )
 
 
+    /* --------------------------------------------------------------------------------------- */
+    /* ⚠️ TMP | Update: Video Tutorial Container / Zip Github Container 
+    /* --------------------------------------------------------------------------------------- */
 
 
+    var statusVideoTutorialContainer = dataTop3Project1.projects[setProjectIndex].footer.allowCreateContainers.statusVideoTutorialContainer;
+    var statusZipGithubContainer = dataTop3Project1.projects[setProjectIndex].footer.allowCreateContainers.statusZipGithubContainer;
 
-    // console.log('----------------------------------------------')
+    // status Show Video Container
+    showDomElementByStatus( statusVideoTutorialContainer, video_tutorial_container_t3_p1, 'grid' )
 
-    // console.log(' Set IMG SRC = ' + dataTop3Project1[setProjectIndex].header.imgSrcCover )
+    // status Show Zip GithubContainer
+    showDomElementByStatus( statusZipGithubContainer, zip_github_container_t3_p1, 'flex' )
 
-    // console.log(' Set txt Project Nr = ' + dataTop3Project1[setProjectIndex].header.txtProjectNr )
 
-    // console.log(' Set Skill Item 1 = ' + dataTop3Project1[setProjectIndex].header.skillItems[0] )
+    /* --------------------------------------------------------------------------------------- */
+    /* ⚠️ TMP | Update: Video Category Items
+    /* --------------------------------------------------------------------------------------- */
 
-    // console.log('### Laenge ###= ' + dataTop3Project1[setProjectIndex].header.skillItems.length )
+    var dataVideoCategorieItems = new Array();
+    dataVideoCategorieItems = dataTop3Project1.projects[setProjectIndex].footer.videoTutorialContainer;
 
-    // console.log('----------------------------------------------')
 
+    // Delete Old Video Category Items
+    deleteAllDomElementsFromDomElement( '#js-video-category-list-container-t3-p1 > div' , video_category_list_container_t3_p1 )
+
+    updateVideoCategoryItems( dataVideoCategorieItems, video_category_list_container_t3_p1 )
+
+
+  
 
 
     
@@ -621,3 +828,31 @@ radio_p1_2_it_project.addEventListener( 'change', ()=> {
     }
 
  
+
+    /* printArray() */
+
+    function printArray( arrayElements ) {
+
+        if( arrayElements != null && arrayElements != undefined ) {
+
+            if( arrayElements.length > 0 ) {
+
+                for( let i=0; i < arrayElements.length; i++ ) {
+
+                    console.log(i + ': ' + arrayElements[i] )
+                }
+
+            } else {
+
+                console.log('[🔴Error|printArray()]: no array Index.')
+                return -1;
+            }
+
+
+        } else {
+
+            console.log('[🔴Error|printArray()]: given arrayElements dont exist.')
+            return -1;
+        }
+        
+    }

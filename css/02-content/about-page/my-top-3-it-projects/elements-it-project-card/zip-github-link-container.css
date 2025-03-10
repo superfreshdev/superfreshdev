@@ -19,6 +19,9 @@
     column-gap: .6em;
 
     background-color: red;
+
+    /* js handling  */
+    display: none;
 }
 
 
