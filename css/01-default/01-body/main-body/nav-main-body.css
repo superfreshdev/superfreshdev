@@ -1,0 +1,115 @@
+/* -------------------------------------------------------------- */
+/* > nav-main-body.css
+/*  
+/* : styles my nav container for the main body
+/* -------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* Nav Main Body 
+/* ---------------------------------------------------------------- */
+
+#nav-main-body {
+
+    padding: 2em .8em;
+
+    display: grid;
+    justify-items: center;
+    
+    row-gap: 2em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Nav Main Container Body 
+/* ---------------------------------------------------------------- */
+
+#nav-main-container-body {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 2em;
+    row-gap: 1em;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* Link Box | Nav Main Body 
+/* ---------------------------------------------------------------- */
+
+.link-box-nav-main-body {
+
+    /* width: 20em; */
+
+    padding: .8em;
+
+    display: grid;
+    justify-items: flex-start;
+    /* row-gap: .5em; */
+
+    border-radius: .4em;
+    border: 1px dashed black;
+
+    background-color: white;
+}
+
+/* ---------------------------------------------------------------- */
+/* Header | Link Box 
+/* ---------------------------------------------------------------- */
+
+.link-box-nav-main-body > header {
+
+    padding: .3em;
+    
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    background-color: lightgrey;
+
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Main | Link Box 
+/* ---------------------------------------------------------------- */
+
+.link-box-nav-main-body > main {
+
+    padding: 1em 0;
+
+    display: grid;
+    row-gap: .2em;
+
+    
+}
+
+/* ---------------------------------------------------------------- */
+/* ⬇️⬆️ Open / Close Nav Body
+/* ---------------------------------------------------------------- */
+
+#open-close-nav-body {
+
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

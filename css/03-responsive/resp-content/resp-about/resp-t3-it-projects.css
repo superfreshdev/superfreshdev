@@ -1,0 +1,53 @@
+/* -------------------------------------------------------------- */
+/* > resp-t3-it-projects.css
+/*  
+/* : responsive sets for my top 3 it projects about 
+/* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+/* >= 500x width
+/* -------------------------------------------------------------- */
+@media (min-width: 500px ) {
+
+    #my-top-3-projects-layout-container-about > main {
+
+        justify-content: center;
+    
+    }
+
+    .item-container-my-top-3-projects-about {
+
+        max-width: 28em;
+
+    }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 800x width
+/* -------------------------------------------------------------- */
+@media (min-width: 800px ) {
+
+    /* #my-top-3-projects-layout-container-about > main {
+
+        justify-content: center;
+    
+    } */
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1200px width
+/* -------------------------------------------------------------- */
+@media (min-width: 1200px ) {
+
+    #my-top-3-projects-container-about {
+
+        padding: 5em 0em;
+        /* background-color: black; */
+    }
+
+
+   
+}
+

@@ -1,24 +1,19 @@
 /* -------------------------------------------------------------- */
-/* > resp-nav-main-body.css
+/* > my-mindset.css
 /*  
-/* : responsive sets nav main body
+/* : styles my mindset about container 
 /* -------------------------------------------------------------- */
 
 
+
 /* -------------------------------------------------------------- */
-/* >= 800px width
+/* About Mindset
 /* -------------------------------------------------------------- */
 
-@media (min-width: 800px ) {
+#mindset-container-about {
 
-    /* orientation to handle header content area */
-    #nav-main-body {
-
-        /* dont need padding-left,right anymore, just in mobile  */
-        padding: 2em 0em;
-
-    }
+   
+    width: 100%;
+    padding: 1.5em 0;
     
-
-
 }

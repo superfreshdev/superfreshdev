@@ -1,0 +1,20 @@
+/* -------------------------------------------------------------- */
+/* > handle-content-areas.css
+/*  
+/* : styles content areas which we only use to 
+     bring layouts in it
+/* -------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------ */
+/* Header, Main, Large Main, Max | Content Area 
+/* ------------------------------------------------------------ */
+
+.handle-header-content-area,
+.handle-main-content-area,
+.handle-large-main-content-area,
+.handle-max-content-area {
+
+    width: 100%;
+}

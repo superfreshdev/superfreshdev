@@ -1,0 +1,53 @@
+/* ----------------------------------------------------------------------------- */
+/* > done-news.css
+/*  
+/* : styles the done news container 
+/* ----------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/*  History News Container 
+/* ---------------------------------------------------------------- */
+
+#history-news-container {
+
+    padding: 1em 0 1.5em 0;
+
+    display: grid;
+    row-gap: 1.3em;
+
+    border-top: 1px dashed rgb(125, 125, 125);
+
+    /* background-color: pink; */
+}
+
+
+/* ---------------------------------------------------------------- */
+/*  Header | History News Container 
+/* ---------------------------------------------------------------- */
+
+#history-news-container > header {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+
+    color:#008021;
+
+}
+
+#history-news-container > header > img {
+
+    height: 1.5em;
+}
+
+/* ---------------------------------------------------------------- */
+/*  Main | History News Container 
+/* ---------------------------------------------------------------- */
+
+#history-news-container > main {
+
+    display: grid;
+    row-gap: .3em;
+}

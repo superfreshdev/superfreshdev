@@ -1,0 +1,146 @@
+/* ----------------------------------------------------------------------------- */
+/* > actually-news.css
+/*  
+/* : styles the actually news container
+/* ----------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/*  Actually News Container 
+/* ---------------------------------------------------------------- */
+
+#actually-news-container {
+
+    
+
+    display: grid;
+    row-gap: 1.3em;
+
+    /* background-color: rgb(154, 154, 154); */
+}
+
+/* ---------------------------------------------------------------- */
+/*  Header | Actually News Container  
+/* ---------------------------------------------------------------- */
+
+#actually-news-container > header {
+
+    border-bottom: 1px dashed rgb(125, 125, 125);
+
+    padding-bottom: 1em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+}
+
+#actually-news-container > header > img {
+
+    height: 1.5em;
+}
+
+/* ---------------------------------------------------------------- */
+/*  Main | Actually News Container  
+/* ---------------------------------------------------------------- */
+
+#actually-news-container > main {
+
+    display: grid;
+    row-gap: .6em;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Info Task News Container 
+/* ---------------------------------------------------------------- */
+
+.info-task-news-container {
+
+   
+/* 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .3em; */
+
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Info Task Box News Container 
+/* ---------------------------------------------------------------- */
+
+.info-task-box-news-container {
+
+    float:left;
+
+    padding-right: .8em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    color:rgb(36, 36, 36);
+}
+
+.info-task-box-news-container > div:nth-of-type(1) {
+
+
+   display: flex;
+   align-items: center;
+   column-gap: .4em;
+
+   font-weight: bold;
+
+}
+
+.info-task-box-news-container > div:nth-of-type(1) > div:nth-of-type(1) {
+
+    font-size: 1.125em;
+}
+
+.info-task-box-news-container > div:nth-of-type(1) img {
+
+    height: 1.5em;
+
+}
+
+.info-task-box-news-container > div:nth-of-type(2) {
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+}
+
+.info-task-box-news-container > div:nth-of-type(2) > div {
+
+    font-size: .9em;
+
+    height: 1.8em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: .4em;
+    
+    /* font-weight: bold; */
+
+    background-color: rgb(180, 180, 180);
+    color:rgb(25, 25, 25);
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Text Info Task Box News Container 
+/* ---------------------------------------------------------------- */
+
+.txt-info-task-box-news-container {
+
+   
+
+    /* font-style: italic; */
+    color:rgb(81, 28, 28);
+}

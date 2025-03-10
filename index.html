@@ -26,222 +26,220 @@
 
 
     <!-- ------------------------------------------------------------------------ -->
-    <!-- 🔵 CSS Bindings -->
+    <!-- 🔵 CSS Bindings                                                         -->
     <!-- ------------------------------------------------------------------------ -->
     
         <!-- ------------------------------------------------------------ -->
-        <!-- [00/03] - CSS Framework                                      -->
+        <!-- 🔵 [1/4] CSS Framework                                       -->
         <!-- ------------------------------------------------------------ -->
 
-            <!-- Reminder: defines my special sfd ui-elements, which u can use too 
-            or not  -->
-
             <!-- ------------------------------------- -->
-            <!-- Default Styles  -->
+            <!-- Default                               -->
             <!-- ------------------------------------- -->
 
-            <link rel="stylesheet" href="css/00-css-framework/01-default-styles/height-containers.css">
+            <!-- ⚠️❓ Überlegung, ob wir height Containers brauchen um welche höhen Container Voralgen zu haben -->
+            <link rel="stylesheet" href="css/00-css-framework/01-default/height-containers.css">
 
             <!-- ------------------------------------- -->
-            <!-- sfd Styles  -->
+            <!-- sfd Custom Styles                     -->
             <!-- ------------------------------------- -->
 
-                <!-- ui-elements  -->
-                <link rel="stylesheet" href="css/00-css-framework/02-sfd-styles/ui-elements/inputs/custom-radio.css">
-                <link rel="stylesheet" href="css/00-css-framework/02-sfd-styles/ui-elements/inputs/custom-select.css">
+                <!-- ------------------------------------------ -->
+                <!-- Input | Elements                           -->
+                <!-- ------------------------------------------ -->  
+                <link rel="stylesheet" href="css/00-css-framework/02-sfd-custom-styles/inputs/custom-radio.css">
+                <link rel="stylesheet" href="css/00-css-framework/02-sfd-custom-styles/inputs/custom-select.css">
 
-                <link rel="stylesheet" href="css/00-css-framework/02-sfd-styles/ui-elements/layout-elements/btn-filter-container.css">
+                <!-- ------------------------------------------ -->
+                <!-- Layout Elements                            -->
+                <!-- ------------------------------------------ -->  
+                <link rel="stylesheet" href="css/00-css-framework/02-sfd-custom-styles/layout-elements/btn-filter-container.css">
             
 
         <!-- ------------------------------------------------------------ -->
-        <!-- [01/03] - Default                                            -->
+        <!-- 🔵 [2/4] CSS Default                                         -->
         <!-- ------------------------------------------------------------ -->
 
+            <!-- ----------------------------------- -->
+            <!-- HTML, BODY                          -->
+            <!-- ----------------------------------- --> 
             <link rel="stylesheet" href="css/01-default/html-body.css">
 
-            <!-- Handle Header/Main Content Area -->
-            <link rel="stylesheet" href="css/01-default/handle-header-main-content-area/handle-header-main-content-area.css">
+            <!-- ----------------------------------- -->
+            <!-- BODY                                -->
+            <!-- ----------------------------------- --> 
 
-            <!-- ------------------------------------ -->
-            <!-- Animations                           -->
-            <!-- ------------------------------------ -->
-            <link rel="stylesheet" href="css/01-default/animations/animations.css">  
+                <!-- ------------------------------------ -->
+                <!-- Body | Header                        -->
+                <!-- ------------------------------------ -->
+                <link rel="stylesheet" href="css/01-default/01-body/header-body/header-body.css">
+                <link rel="stylesheet" href="css/01-default/01-body/header-body/nav-header-body.css">
+
+                <!-- ------------------------------------ -->
+                <!-- Body | Main                          -->
+                <!-- ------------------------------------ --> 
+                <link rel="stylesheet" href="css/01-default/01-body/main-body/main-body.css">
+                <link rel="stylesheet" href="css/01-default/01-body/main-body/nav-main-body.css">
+        
+                <link rel="stylesheet" href="css/01-default/01-body/main-body/header-main-layout/header-main-layout.css">
+                <link rel="stylesheet" href="css/01-default/01-body/main-body/header-main-layout/main-filter-sub-topic.css">
+
+                <!-- ------------------------------------ -->
+                <!-- Body | Footer                        -->
+                <!-- ------------------------------------ --> 
+                <link rel="stylesheet" href="css/01-default/01-body/footer-body/body-footer.css">
+                <link rel="stylesheet" href="css/01-default/01-body/footer-body/main-body-footer.css">
+                <link rel="stylesheet" href="css/01-default/01-body/footer-body/label-link-items-body-footer.css">
+
+            <!-- ----------------------------------- -->
+            <!-- Handle Content Areas                -->
+            <!-- ----------------------------------- --> 
+            <link rel="stylesheet" href="css/01-default/02-handle-content-areas/handle-content-areas.css">
 
             <!-- ------------------------------------ -->
             <!-- Status Containers                    -->
             <!-- ------------------------------------ --> 
-            <link rel="stylesheet" href="css/01-default/status-containers/content-status-container.css">
-            <link rel="stylesheet" href="css/01-default/status-containers/h1-status-info-container.css">
+            <link rel="stylesheet" href="css/01-default/03-status-containers/in-construction.css">
+            <link rel="stylesheet" href="css/01-default/03-status-containers/h1-status-info-container.css">
 
             <!-- ------------------------------------ -->
-            <!-- Default Body Header -->
-            <!-- ------------------------------------ --> 
-            <link rel="stylesheet" href="css/01-default/body-header/body-header.css">
-            <link rel="stylesheet" href="css/01-default/body-header/body-header-nav.css">
-
+            <!-- Animations                           -->
             <!-- ------------------------------------ -->
-            <!-- Default Body Main -->
-            <!-- ------------------------------------ --> 
-            <link rel="stylesheet" href="css/01-default/body-main/body-main.css">
-            <link rel="stylesheet" href="css/01-default/body-main/nav-page-topic-container.css">
-            <!-- 🚧 > body-main-nav.css später löschen  -->
-            <link rel="stylesheet" href="css/01-default/body-main/body-main-nav.css">
-           
-
-            <link rel="stylesheet" href="css/01-default/body-main/header-main-layout/header-main-layout.css">
-            <link rel="stylesheet" href="css/01-default/body-main/header-main-layout/main-filter-sub-topic.css">
-
-            <!-- ------------------------------------ -->
-            <!-- Default Body Footer -->
-            <!-- ------------------------------------ --> 
-            <link rel="stylesheet" href="css/01-default/body-footer/body-footer.css">
-            <link rel="stylesheet" href="css/01-default/body-footer/main-body-footer.css">
-            <link rel="stylesheet" href="css/01-default/body-footer/label-link-items-body-footer.css">
+            <link rel="stylesheet" href="css/01-default/04-animations/animations.css">  
 
             <!-- ------------------------------------ -->
             <!-- Sets -->
             <!-- ------------------------------------ --> 
-            <link rel="stylesheet" href="css/01-default/sets/google-fonts.css">
-            <link rel="stylesheet" href="css/01-default/sets/colors.css">
-            <link rel="stylesheet" href="css/01-default/sets/color-names.css">
+            <link rel="stylesheet" href="css/01-default/05-sets/google-fonts.css">
+            <link rel="stylesheet" href="css/01-default/05-sets/colors.css">
+            <link rel="stylesheet" href="css/01-default/05-sets/color-names.css">
 
-            <link rel="stylesheet" href="css/01-default/sets/h1-h5.css">
-            <link rel="stylesheet" href="css/01-default/sets/sizes.css">
-            <link rel="stylesheet" href="css/01-default/sets/imgs.css">
-            <link rel="stylesheet" href="css/01-default/sets/padding-margin.css">
+            <link rel="stylesheet" href="css/01-default/05-sets/h1-h5.css">
+            <link rel="stylesheet" href="css/01-default/05-sets/sizes.css">
+            <link rel="stylesheet" href="css/01-default/05-sets/imgs.css">
+            <link rel="stylesheet" href="css/01-default/05-sets/padding-margin.css">
 
-            <link rel="stylesheet" href="css/01-default/sets/styles.css">
+            <link rel="stylesheet" href="css/01-default/05-sets/styles.css">
 
-            <link rel="stylesheet" href="css/01-default/sets/flex-grid.css">
+            <link rel="stylesheet" href="css/01-default/05-sets/flex-grid.css">
 
-            <link rel="stylesheet" href="css/01-default/sets/buttons.css">
-
-
-            
-
+            <link rel="stylesheet" href="css/01-default/05-sets/buttons.css">
 
 
         <!-- ------------------------------------------------------------ -->
-        <!-- [02/03] - Content                                            -->
+        <!-- 🔵 [3/4] CSS Content                                         -->
         <!-- ------------------------------------------------------------ -->
 
-            <!-- ------------------------------------- -->
-            <!-- About Page -->
-            <!-- ------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------- -->
+            <!-- About Page                                                                                  -->
+            <!-- ------------------------------------------------------------------------------------------- -->
 
-                <!-- News Container | About  -->
-                <link rel="stylesheet" href="css/02-content/about-page/news-about/news-about.css">
-                <link rel="stylesheet" href="css/02-content/about-page/news-about/actually-news-container-about.css">
-                <link rel="stylesheet" href="css/02-content/about-page/news-about/history-news-container-about.css">
+                <!-- ❓ Aktuell noch keine Verwendung | Löschen ?!  -->
+                <link rel="stylesheet" href="css/02-content/01-about/about.css">
 
-                <!-- Welcome Container | About  -->
-                <link rel="stylesheet" href="css/02-content/about-page/welcome-about.css">
-                <!-- Impress Container | About  -->
-                <link rel="stylesheet" href="css/02-content/about-page/impress-about.css"> 
+                <!-- ---------------------------------------------- -->
+                <!-- News | Container                               -->
+                <!-- ---------------------------------------------- --> 
+
+                <link rel="stylesheet" href="css/02-content/01-about/news/news.css">
+                <link rel="stylesheet" href="css/02-content/01-about/news/actually-news.css">
+                <link rel="stylesheet" href="css/02-content/01-about/news/done-news.css">
+
+                <!-- ---------------------------------------------- -->
+                <!-- Welcome | Container                            -->
+                <!-- ---------------------------------------------- --> 
+                <link rel="stylesheet" href="css/02-content/01-about/welcome.css">
+
+                <!-- ---------------------------------------------- -->
+                <!-- Impress | Container                            -->
+                <!-- ---------------------------------------------- --> 
+                <!-- ❓ Aktuell noch keine Verwendung | Löschen ?!  --> 
+                <!-- <link rel="stylesheet" href="css/02-content/about-page/impress-about.css">  -->
 
                 <!-- --------------------------------------------------- -->
-                <!-- My Top 3 Projects Container | About                 -->
+                <!-- Top 3x3 IT Projects | Container                     -->
                 <!-- --------------------------------------------------- --> 
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/my-top-3-projects-container.css">
+
+                    <link rel="stylesheet" href="css/02-content/01-about/top-3-it-projects/top3-it-projects.css">
                 
-                <!-- header , select list  -->
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/header-it-project-card.css"> 
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/select-list-it-project-card.css"> 
+                    <!-- ------------------------------------------------------------------ -->
+                    <!-- Header | Project Card                                              --> 
+                    <!-- ------------------------------------------------------------------ -->
+                    <link rel="stylesheet" href="css/02-content/01-about/top-3-it-projects/it-project-card/header-it-project-card/header-it-project-card.css"> 
+                    <link rel="stylesheet" href="css/02-content/01-about/top-3-it-projects/it-project-card/header-it-project-card/select-list-it-project-card.css"> 
 
-                <!-- video list & zip github link container  -->
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/video-list-project-details.css"> 
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/zip-github-link-container.css"> 
+                    <!-- ------------------------------------------------------------------ -->
+                    <!-- Main | Project Card                                                --> 
+                    <!-- ------------------------------------------------------------------ -->
+                    <link rel="stylesheet" href="css/02-content/01-about/top-3-it-projects/it-project-card/main-it-project-card/video-list-project-details.css"> 
+                    <link rel="stylesheet" href="css/02-content/01-about/top-3-it-projects/it-project-card/main-it-project-card/zip-github-link-container.css"> 
 
-                <!-- handling radio & checkbox  -->
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/handling-radios-it-project-card.css">
-                <link rel="stylesheet" href="css/02-content/about-page/my-top-3-it-projects/elements-it-project-card/handling-checkboxes-it-project-card.css">  
+                    <!-- ------------------------------------------------------------------ -->
+                    <!-- Handling | Radios & Checkboxes | Project Card                      --> 
+                    <!-- ------------------------------------------------------------------ --> 
+                    <link rel="stylesheet" href="css/02-content/01-about/top-3-it-projects/it-project-card/handlings-radios-checkboxes/handling-radios-it-project-card.css">
+                    <link rel="stylesheet" href="css/02-content/01-about/top-3-it-projects/it-project-card/handlings-radios-checkboxes/handling-checkboxes-it-project-card.css">  
                 
                 
-                <!-- Like To See More Container | About  -->
-                <link rel="stylesheet" href="css/02-content/about-page/like-to-see-more-about.css">   
-                <!-- My Mindset Container | About  -->
-                <link rel="stylesheet" href="css/02-content/about-page/my-mindset-about.css">    
+                <!-- --------------------------------------------------- -->
+                <!-- ⚠️ Like To See More | Container                     -->
+                <!-- --------------------------------------------------- --> 
+                <link rel="stylesheet" href="css/02-content/01-about/like-to-see-more.css">  
                 
-                <!-- Contact Me | About  -->
-                <link rel="stylesheet" href="css/02-content/about-page/contact-about.css">   
-                <!-- to be fresh | About  -->
-                <link rel="stylesheet" href="css/02-content/about-page/to-be-fresh-about.css">           
+                <!-- --------------------------------------------------- -->
+                <!-- ⚠️ Mindset | Container                              -->
+                <!-- --------------------------------------------------- --> 
+                <link rel="stylesheet" href="css/02-content/01-about/my-mindset.css">    
+                
+                <!-- --------------------------------------------------- -->
+                <!-- ⚠️ Contact | Container                              -->
+                <!-- --------------------------------------------------- --> 
+                <link rel="stylesheet" href="css/02-content/01-about/contact.css">   
 
-                <!-- ----------------------------------------------- -->
-                <!-- Part #1 - Welcome & About Me                    -->
-                <!-- ----------------------------------------------- -->
+                <!-- --------------------------------------------------- -->
+                <!-- to be fresh | Container                              -->
+                <!-- --------------------------------------------------- --> 
+                <link rel="stylesheet" href="css/02-content/01-about/to-be-fresh.css">           
 
-                    <!-- 🚧 Welcome Title - About -->
-                    <!-- <link rel="stylesheet" href="css/02-content/about-page/"> -->
-
-                    <!-- Impress - About -->
-                    <link rel="stylesheet" href="css/02-content/about-page/info-img-about.css"> 
-
-
-                <!-- --------------------------------- -->
-                <!-- Part #2 - See My Work & More      -->
-                <!-- --------------------------------- -->
-
-                    <!-- My Top 3 Projects - About -->
-                    <!-- <link rel="stylesheet" href="css/02-content/about-page/my-top-3-projects-about.css">  -->
-                    <!-- My Mindset - About -->
-                    <!-- <link rel="stylesheet" href="css/02-content/about-page/my-mindset-about.css">   -->
-
-                    <!-- 🚧 (actually in production) - News - About -->
-                    <!-- Like to See on what i am actually working ?  -->
-                    <!-- <link rel="stylesheet" href="css/02-content/about-page/"> -->
-
-                    <!-- 🚧 See More - About -->
-                    <!-- or do u have an idea und 
-                        like the way to cantact me direct now ? ( i try to answer u in maxium 48h ) --> 
-                    <!-- <link rel="stylesheet" href="css/02-content/about-page/"> -->
-
-                <!-- --------------------------------- -->
-                <!-- Part #3 - Contact Me -->
-                <!-- --------------------------------- -->
-
-                    <!-- Contact Me - About -->
-                    <!-- <link rel="stylesheet" href="css/02-content/about-page/contact-me-about.css"> -->
-
-                    <!-- to be fresh- About -->
-                    <!-- <link rel="stylesheet" href="css/02-content/about-page/to-be-fresh-about.css">  -->
-
-            <!-- ------------------------------------- -->
+                           
+            <!-- ------------------------------------------------------------------------------------------- -->
             <!-- Content Page -->
-            <!-- ------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------- -->
 
                 <!-- ------------------------------------------- -->
-                <!-- Default | Content Page -->
+                <!-- ⚠️ Default                                  -->
                 <!-- ------------------------------------------- -->
-                <link rel="stylesheet" href="css/02-content/content-page/default-content-page/default-content.css">
-                <link rel="stylesheet" href="css/02-content/content-page/default-content-page/default-headers.css">
 
-                <!-- 🚧 sport testing  -->
-                <link rel="stylesheet" href="css/02-content/content-page/testing-sport-container.css">
+                <link rel="stylesheet" href="css/02-content/02-content/01-default/default-content.css">
+                <link rel="stylesheet" href="css/02-content/02-content/01-default/default-headers.css">
 
                 <!-- ------------------------------------------- -->
-                <!-- My IT-Stack -->
+                <!-- ⚠️ My IT-Stack                             -->
                 <!-- ------------------------------------------- -->
-                
-                    <!-- 🔴 Prüfen ob gelöscht werden kann ?!  -->
-                    <link rel="stylesheet" href="css/02-content/content-page/it-docs-projects.css"> 
-
-
+    
                     <!-- ------------------------------------------- -->
                     <!-- My IT-Docs -->
                     <!-- ------------------------------------------- -->
-                    <link rel="stylesheet" href="css/02-content/content-page/my-it-stack/my-it-docs/my-it-docs.css">
-                    <link rel="stylesheet" href="css/02-content/content-page/my-it-stack/my-it-docs/it-docs-list-containers/labels-my-it-docs.css"> 
-                    <link rel="stylesheet" href="css/02-content/content-page/my-it-stack/my-it-docs/it-docs-list-containers/main-it-docs-list-containers.css">
-                    <link rel="stylesheet" href="css/02-content/content-page/my-it-stack/my-it-docs/it-docs-list-containers/it-doc-card-container.css">    
-                
-                    
+                    <link rel="stylesheet" href="css/02-content/02-content/02-my-it-stack/my-it-docs/my-it-docs.css">
 
-                <!-- My Private Lifestyle -->
+                    <!-- it doc card | label it doc card | main it doc card -->
+                    <link rel="stylesheet" href="css/02-content/02-content/02-my-it-stack/my-it-docs/it-docs-list-containers/it-doc-card-container.css"> 
+                    <link rel="stylesheet" href="css/02-content/02-content/02-my-it-stack/my-it-docs/it-docs-list-containers/labels-my-it-docs.css">
+                    <link rel="stylesheet" href="css/02-content/02-content/02-my-it-stack/my-it-docs/it-docs-list-containers/main-it-docs-list-containers.css">    
+                
+                <!-- ------------------------------------------- -->
+                <!-- ⚠️ My Private Lifestyle                     -->
+                <!-- ------------------------------------------- -->
+
+                    <!-- ------------------------------------------- -->
+                    <!-- My Sport Challenges -->
+                    <!-- ------------------------------------------- -->  
+                    <link rel="stylesheet" href="css/02-content/02-content/03-my-private-lifestyle/01-sport/sport.css">
+
 
 
         <!-- ------------------------------------------------------------ -->
-        <!-- [03/03] - Responsive                                         -->
+        <!-- 🔵 [4/4] CSS Responsive                                     -->
         <!-- ------------------------------------------------------------ -->
 
 
@@ -249,18 +247,27 @@
             <!-- Resp | Default -->
             <!-- ---------------------------------- -->
 
-                <!-- Resp Handle Header Main Content Area -->
-                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-handle-header-main-content-area/resp-handle-header-main-content-area.css">
+                <!-- --------------------------------------------------- -->
+                <!-- Resp | Handle Content Areas                         -->
+                <!-- --------------------------------------------------- -->  
+                <link rel="stylesheet" href="css/03-responsive/resp-default/resp-handle-content-areas/resp-handle-content-areas.css">
 
-                <!-- Resp Body Header -->
+                <!-- --------------------------------------------------- -->
+                <!-- Resp | Body Header                                  -->
+                <!-- --------------------------------------------------- -->  
                 <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-header.css">
 
-                <!-- Resp Body Main -->
+                <!-- --------------------------------------------------- -->
+                <!-- Resp | Body Main                                    -->
+                <!-- --------------------------------------------------- -->  
                 <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-main/resp-main.css">
+
                 <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-main/resp-main-header.css">
                 <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-main/resp-nav-main-body.css">
 
-                <!-- Resp Body Footer -->
+                <!-- --------------------------------------------------- -->
+                <!-- Resp | Body Footer                                  -->
+                <!-- --------------------------------------------------- -->  
                 <link rel="stylesheet" href="css/03-responsive/resp-default/resp-body/resp-body-footer.css"> 
                 
             <!-- ---------------------------------- -->
@@ -270,21 +277,25 @@
                 <!-- --------------------------------------- -->
                 <!-- Resp | Default Content --> 
                 <!-- --------------------------------------- --> 
-
-                <link rel="stylesheet" href="css/03-responsive/resp-content/resp-default-content/resp-header-main-body.css">
+                <link rel="stylesheet" href="css/03-responsive/resp-content/resp-default/resp-main-body/resp-header-main-body.css">
 
                 <!-- --------------------------------------- -->
-                <!-- Resp | About Page --> 
+                <!-- Resp | About                            --> 
                 <!-- --------------------------------------- --> 
 
-                <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about-page/resp-about-page.css">
+                    <!-- ❓ Brauch ich diese resp noch überhaupt ?  -->
+                    <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about/resp-about.css">
 
-                <!-- resp - welcome  -->
-                <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about-page/resp-welcome-about.css">
- 
+                    <!-- --------------------------------------------- -->
+                    <!-- Resp | Welcome                                -->
+                    <!-- --------------------------------------------- --> 
+                    <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about/resp-welcome.css">
+    
+                    <!-- --------------------------------------------- -->
+                    <!-- Resp | TOP 3 IT Projects                      -->
+                    <!-- --------------------------------------------- --> 
 
-                <!-- resp - my top 3 projects -->
-                <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about-page/resp-my-top-3-projects-about.css">
+                    <link rel="stylesheet" href="css/03-responsive/resp-content/resp-about/resp-t3-it-projects.css">
 
                 <!-- --------------------------------------- -->
                 <!-- Resp | Content Page --> 
@@ -292,7 +303,6 @@
 
                 
 
-                <!-- <link rel="stylesheet" href="css/03-responsive/resp-content/resp-content-page/"> -->
 
     
     <title>🌊 SuperfreshDEV</title>
@@ -309,12 +319,12 @@
 <body>
 
     <!-- ------------------------------------------------------ -->    
-    <!-- Checkbox | Handle Nav Header -->
+    <!-- Checkbox | Hamburger Icon                              -->
     <!-- ------------------------------------------------------ --> 
     <input type="checkbox" id="chk-body-header-nav-label">   
 
     <!-- ----------------------------------------------------------------------------- -->
-    <!-- Body Fixed Header | ( jc-c )   -->
+    <!-- Body Fixed Header | ( jc-c )                                                  -->
     <!-- ----------------------------------------------------------------------------- -->
     <header id="body-fixed-header">
 
@@ -385,125 +395,113 @@
 
 
             <!-- ----------------------------------------------- -->
-            <!-- ⚠️ Row Container | News                        -->
+            <!-- ⚠️ News | Row Container                        -->
             <!-- ----------------------------------------------- -->
             <div class="row-container" style="background-color: green;">
 
-                
                 <!-- ----------------------------------------------------------- -->
-                <!-- Handle | Main Content Area                                -->
+                <!-- Handle | Main | Content Area                                -->
                 <!-- ----------------------------------------------------------- -->
                 <div class="handle-main-content-area">
-
 
                     <!-- ----------------------------------------------------------- -->
                     <!-- width 100% (sets)                                           -->
                     <!-- ----------------------------------------------------------- -->
                     <div class="w-100p flex jc-c">
 
-
                         <!-- ------------------------------------------------------ -->
                         <!-- ⬇️⬆️ Open / Close Nav Body -->
                         <!-- ------------------------------------------------------ -->
                         <div id="open-close-nav-body">
 
-
                             <!-- -----------------------------------------------------  -->
-                            <!-- Overflow:hidden | important for smooth grid effect -->
+                            <!-- Overflow Hidden ( Smooth Effect )                      -->
                             <!-- -----------------------------------------------------  -->
                             <div class="overflow-hidden w-100p">
 
-
                                 <!-- ----------------------------------------------------------- -->
-                                <!-- ⚠️ Nav Topic Container                                         -->
+                                <!-- ⚠️ Nav Topic Container                                      -->
                                 <!-- ----------------------------------------------------------- -->
-                                <nav id="nav-topic-container">
+                                <nav id="nav-main-body">
 
 
                                     <!-- ------------------------------------------------------- -->
                                     <!-- ⚠️⚠️⚠️ In Construction ⚠️⚠️⚠️ -->
                                     <!-- ------------------------------------------------------- --> 
-                                    <div class="content-status-in-construction">
+                                    <div class="in-construction-container">
 
+                                        <img src="media/img/icons/emojies/emoji-construction-side.png" alt="img">
                                         
-                                        <!-- ------------------------------------------------------ -->
-                                        <!-- Clipart | In Construction Container -->
-                                        <!-- ------------------------------------------------------ -->  
-                                        <div class="clipart-in-construction-container">
-
-                                            <img src="media/img/icons/clipart/me-in-construction.png" alt="img">
-
-                                            <img src="media/img/icons/emojies/emoji-gear.png" class="img-gear-absolute-in-construction" alt="img">
-
+                                        <div>
+                                            <div>In Construction</div>
+                                            <div>» Page Navigation Container</div>
                                         </div>
 
+                                    </div>
 
-                                        <!-- ------------------------------------------------------ -->
-                                        <!-- Main -->
-                                        <!-- ------------------------------------------------------ -->  
-                                        <main>
+                                    <!-- --------------------------------------------------------- -->
+                                    <!-- ⚠️ Nav Main Container Body -->
+                                    <!-- --------------------------------------------------------- -->  
+                                    <div id="nav-main-container-body">
 
 
-                                            <!-- ------------------------------------------------------ -->
-                                            <!-- Header -->
-                                            <!-- ------------------------------------------------------ -->  
-                                            <header>
-                                                <div>» In Construction</div>
-                                                <div>» My Page Navigation Container </div>
-                                            </header>
+                                        <!-- ---------------------------------------------------- -->
+                                        <!-- Link Box 1 | Nav Main Body -->
+                                        <!-- ---------------------------------------------------- --> 
+                                        <div class="link-box-nav-main-body">
 
-                                            <!-- ------------------------------------------------------ -->
-                                            <!-- Main (sub infos) -->
-                                            <!-- ------------------------------------------------------ -->  
-                                            <main style="display: none;">
 
-                                                <div>* Drop Down, Filter 3,6,9,...</div>
-                                                <div>* or other layout like instagram x3</div>
+                                            <header>About:</header>
+
+                                            <main>
+
+                                                <div>About</div>
 
                                             </main>
 
-                                        
-                                        </main>
 
-                                    </div> 
-                                
-
-                                    <!-- --------------------------------------------------------- -->
-                                    <!-- TMP | Nav Topic Layout Container -->
-                                    <!-- --------------------------------------------------------- -->  
-                                    <div class="tmp-nav-topic-layout-container">
-
-                                   
-                                        <div class="tmp-nav-box">
-                                            <b>About</b>
                                         </div>
+                                        
+                                        <!-- ---------------------------------------------------- -->
+                                        <!-- Link Box 2 | Nav Main Body -->
+                                        <!-- ---------------------------------------------------- --> 
+                                        <div class="link-box-nav-main-body">
 
-                                        <div class="tmp-nav-box">
 
-                                            <b>My IT-Stack</b>
+                                            <header>My IT-Stack's:</header>
 
                                             <main>
+
                                                 <div>* My IT-Doc's (Only German)</div>
                                                 <div>* My IT-Project's</div>
                                                 <div>* My Mini JS | Online Games & Online Tools</div>
+
                                             </main>
 
+
                                         </div>
+                                        
+                                        <!-- ---------------------------------------------------- -->
+                                        <!-- Link Box 3 | Nav Main Body -->
+                                        <!-- ---------------------------------------------------- --> 
+                                        <div class="link-box-nav-main-body">
 
-                                        <div class="tmp-nav-box">
 
-                                            <b>My Private Lifesytle</b>
+                                            <header>My Private Lifestyle:</header>
 
                                             <main>
+
                                                 <div>* My Sport | Challenges</div>
                                                 <div>* My Violine Training</div>
                                                 <div>* My Food </div>
+                                                <div>* My Travel Trips </div>
                                                 <div>* Language Training | Spain, France, ...</div>
                                                 <div>* Softskills Training | Math, Geographie, ...</div>
-                                            </main>
-                                            
-                                        </div>
 
+                                            </main>
+
+
+                                        </div>
 
                 
                                     </div>
@@ -522,11 +520,10 @@
 
                 </div> 
 
-
             </div> 
 
             <!-- ----------------------------------------------- -->
-            <!-- About Page | Row Container                      -->
+            <!-- ⚠️ About | Row Container                      -->
             <!-- ----------------------------------------------- -->
             <div class="main-page-content-container">
 
@@ -4185,7 +4182,7 @@
                 <!-- ----------------------------------------------------------------------- -->
                 <!-- 🔥🔥🔥 My Top 3 Projects Container | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
-                <div class="row-container" style="background-color: white"> 
+                <div class="row-container" style="background-color: rgb(16, 16, 16)"> 
                     
                     <!-- ----------------------------------------------------------- -->
                     <!-- Handle | Max | Content Area                                -->
@@ -4198,7 +4195,7 @@
                         <div class="w-100p flex jc-c">
 
                             <!-- ------------------------------------------------------------------ -->
-                            <!-- ✅ My Top 3 IT-Projects Container                                 -->
+                            <!-- ⚠️ Top 3 IT Projects Container                                     -->
                             <!-- ------------------------------------------------------------------ -->
                             <div id="my-top-3-it-projects-container">
 
@@ -4983,10 +4980,142 @@
                                     <!-- --------------------------------------------------------------- -->
                                     <!-- Project 2 | IT Project Card -->
                                     <!-- --------------------------------------------------------------- -->
+                                    <div class="it-project-card">
+
+                                        <header>
+                                            
+                                            <!-- ------------------------------------------------------------ -->
+                                            <!-- IMG Project Present -->
+                                            <!-- ------------------------------------------------------------ -->
+                                            <img src="media/img/content/about/my-top-3-about/project-1/project-1-sass-dashboard.png" id="js-img-cover-top-3-project-22" class="img-project-present" alt="img">
+                                            
+                                            <!-- ------------------------------------------------------------ -->
+                                            <!-- IT Project Info Container -->
+                                            <!-- ------------------------------------------------------------ -->
+                                            <div class="it-project-info-container">
+
+                                                <!-- ----------------------------------------- -->
+                                                <!-- Project Number -->
+                                                <!-- ----------------------------------------- -->
+                                                <div class="it-project-number">
+
+                                                    <div id="js-p2-nr-project-t3">js</div>
+                                                    <div id="js-p2-status-project-t3">js</div>
+
+                                                </div> 
+                                                
+                                                <!-- ----------------------------------------- -->
+                                                <!-- IT Project Title Container -->
+                                                <!-- ----------------------------------------- -->
+                                                <div class="it-project-title-container">
+                                                    <!-- media/img/icons/tech-icons/styled-tech-icons/storybook-logo-sfd.png -->
+                                                    <!-- media/img/icons/tech-icons/styled-tech-icons/sass-logo-sfd.png -->
+                                                    <img src="media/img/icons/tech-icons/styled-tech-icons/sass-logo-sfd.png" id="js-img-" alt="img">
+
+                                                    
+                                                    <div id="js-">js</div>
+                                                       
+
+                                                </div>
+                                                
+                                                <!-- ----------------------------------------- -->
+                                                <!-- IT Project Skill Set Container -->
+                                                <!-- ----------------------------------------- -->
+                                                <div id="js-" class="it-project-skill-set-container" >
+
+                                                    <div>CSS</div>
+                                                    <div>SASS</div>
+                                                    <div>Layout Concepts</div>
+                                                    <div>UX</div>
+                                                    <div>Responsive</div>
+                                                    <div>Java Script</div>
+                                                    <div>chart.js</div>
+                                                    <div>VSCode</div>
+
+
+                                                </div> 
+                                                
+                                            </div> 
+
+                                        </header> 
+
+                                        <main>
+                                            <div> Items 1 </div>
+                                            <div> Items 2 </div>
+                                            <div> Items 3 </div>
+                                        </main>
+
+                                    </div>
 
                                     <!-- --------------------------------------------------------------- -->
                                     <!-- Project 3 | IT Project Card -->
                                     <!-- --------------------------------------------------------------- -->
+                                    <div class="it-project-card">
+
+                                        <header>
+                                            
+                                            <!-- ------------------------------------------------------------ -->
+                                            <!-- IMG Project Present -->
+                                            <!-- ------------------------------------------------------------ -->
+                                            <img src="media/img/content/about/my-top-3-about/project-1/project-1-sass-dashboard.png" id="js-img-cover-top-3-project-22" class="img-project-present" alt="img">
+                                            
+                                            <!-- ------------------------------------------------------------ -->
+                                            <!-- IT Project Info Container -->
+                                            <!-- ------------------------------------------------------------ -->
+                                            <div class="it-project-info-container">
+
+                                                <!-- ----------------------------------------- -->
+                                                <!-- Project Number -->
+                                                <!-- ----------------------------------------- -->
+                                                <div class="it-project-number">
+
+                                                    <div id="js-p2-nr-project-t3">js</div>
+                                                    <div id="js-p2-status-project-t3">js</div>
+
+                                                </div> 
+                                                
+                                                <!-- ----------------------------------------- -->
+                                                <!-- IT Project Title Container -->
+                                                <!-- ----------------------------------------- -->
+                                                <div class="it-project-title-container">
+                                                    <!-- media/img/icons/tech-icons/styled-tech-icons/storybook-logo-sfd.png -->
+                                                    <!-- media/img/icons/tech-icons/styled-tech-icons/sass-logo-sfd.png -->
+                                                    <img src="media/img/icons/tech-icons/styled-tech-icons/sass-logo-sfd.png" id="js-img-" alt="img">
+
+                                                    
+                                                    <div id="js-">js</div>
+                                                       
+
+                                                </div>
+                                                
+                                                <!-- ----------------------------------------- -->
+                                                <!-- IT Project Skill Set Container -->
+                                                <!-- ----------------------------------------- -->
+                                                <div id="js-" class="it-project-skill-set-container" >
+
+                                                    <div>CSS</div>
+                                                    <div>SASS</div>
+                                                    <div>Layout Concepts</div>
+                                                    <div>UX</div>
+                                                    <div>Responsive</div>
+                                                    <div>Java Script</div>
+                                                    <div>chart.js</div>
+                                                    <div>VSCode</div>
+
+
+                                                </div> 
+                                                
+                                            </div> 
+
+                                        </header> 
+
+                                        <main>
+                                            <div> Items 1 </div>
+                                            <div> Items 2 </div>
+                                            <div> Items 3 </div>
+                                        </main>
+
+                                    </div>
 
                                 </main> 
 
@@ -5540,7 +5669,7 @@
             </div> 
 
             <!-- ----------------------------------------------- -->
-            <!-- Dynamic Page | Row Container  -->
+            <!-- ⚠️ Content | Row Container  -->
             <!-- ----------------------------------------------- -->
 
 
@@ -5549,7 +5678,7 @@
     </main> 
 
     <!-- ------------------------------------------------------------------------------- -->
-    <!-- Body Footer | ( jc-c ) -->
+    <!-- Body Footer | ( jc-c )                                                          -->
     <!-- ------------------------------------------------------------------------------- -->
     <footer id="body-footer">
 

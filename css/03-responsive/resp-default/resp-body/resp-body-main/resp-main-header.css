@@ -33,5 +33,211 @@
     
 }
 
+/* -------------------------------------------------------------- */
+/* > resp-header-main-body.css
+/*  
+/* : responsive sets for header body , main body 
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* >= 330px width
+/* -------------------------------------------------------------- */
+@media (min-width: 330px ) {
+
+    /* ----------------------------------------------------- */
+    /* Main Body | Docs Items 
+    /* ----------------------------------------------------- */
+
+    .docs-items-container-cc-idp {
+
+        /* padding: 0 .3em; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .not-finished-doc-item-cc-idp {
+     
+        width: 8.5em;
+        height: 12em;
+           
+    }
+
+    .doc-item-cc-idp {
+
+        width: 8.5em;
+        height: auto;
+    }
+
+    .status-doc {
+
+        
+        /* min-height: 65%;
+        max-height: 65%; */
+
+        min-height: 7.5em;
+        max-height: 7.5em;
+    }
+
+    .year-message-status-doc {
+        font-size: .875rem;
+    }
+    
+    .text-message-status-doc {
+        font-size: .875rem;
+    }
+    
+    .img-message-status-doc {
+        height: 1.5em;
+    }
+
+
+
+   
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 350px width
+/* -------------------------------------------------------------- */
+@media (min-width: 350px ) {
+
+    /* ----------------------------------------------------- */
+    /* Main Body | Docs Items
+    /* ----------------------------------------------------- */
+
+    .not-finished-doc-item-cc-idp {
+     
+        width: 9em;
+        height: 12em;
+           
+    }
+
+    .doc-item-cc-idp {
+
+        width: 9em;
+        height: auto;
+    }
+   
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* >= 400px width
+/* -------------------------------------------------------------- */
+@media (min-width: 400px ) {
+
+
+
+    /* ----------------------------------------------------- */
+    /* Main Body | Docs Items
+    /* ----------------------------------------------------- */
+
+    .not-finished-doc-item-cc-idp {
+     
+        width: 10.5em;
+        height: 12em;
+           
+    }
+
+    .doc-item-cc-idp {
+
+        width: 10.5em;
+        height: auto;
+    }
+
+    .status-doc {
+
+        min-height: 6.5em;
+        max-height: 6.5em;
+    }
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 450px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 450px ) {
+
+    /* ----------------------------------------------------- */
+    /* Main Body | Docs Items
+    /* ----------------------------------------------------- */
+
+    .not-finished-doc-item-cc-idp {
+     
+        width: 12em;
+        height: 14em;
+           
+    }
+
+    .doc-item-cc-idp {
+
+        width: 12em;
+        height: auto;
+    }
+
+    .status-doc {
+
+        min-height: 7.5em;
+        max-height: 7.5em;
+    }
+ 
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 500px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 500px ) {
+
+    /* ----------------------------------------------------- */
+    /* Main Body | Docs Items
+    /* ----------------------------------------------------- */
+
+    .not-finished-doc-item-cc-idp {
+     
+        width: 14em;
+        height: 16em;
+           
+    }
+
+    .doc-item-cc-idp {
+
+        width: 14em;
+        height: auto;
+    }
+
+    .status-doc {
+
+        min-height: 9em;
+        max-height: 9em;
+    }
+
+    .year-message-status-doc {
+        font-size: 1rem;
+    }
+    
+    .text-message-status-doc {
+        font-size: 1.125rem
+    }
+    
+    .img-message-status-doc {
+        height: 1.8em;
+    }
+
+   
+
+}
+
+
+
+
+
 
 

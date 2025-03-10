@@ -1,0 +1,235 @@
+/* -------------------------------------------------------------- */
+/* > info-img.css
+/*  
+/* : styles img info about container 
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------ */
+/* Info Img About Container 
+/* ------------------------------------------------ */
+
+#info-img-about-container {
+
+    padding: 1.5em .8em;
+
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+
+    background-color: white;
+
+}
+
+/* ------------------------------------------------ */
+/* [1/2] - My Img About Container 
+/* ------------------------------------------------ */
+
+#my-img-about-container  {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+}
+
+.img-bracket-my-img-about {
+    height: 3em;
+}
+
+#my-img-about-container .img-bracket-my-img-about:nth-of-type(1) {
+
+    transform: rotate(180deg);
+}
+
+#img-about-me {
+    border-radius: .6em;
+    height: 18em;
+}
+
+/* ------------------------------------------------ */
+/* [2/2] - Short Description About Container
+/* ------------------------------------------------ */
+
+#short-description-about-container {
+
+    padding: .8em;
+
+    display: grid;
+    row-gap: .8em;
+    
+    border-radius: .6em;
+    border: 1px dashed black;
+
+}
+
+
+/* ------------------------------------------------ */
+/* IT Stack Container | About 
+/* ------------------------------------------------ */
+
+#it-stack-container-about  {
+
+    display: grid;
+    row-gap: 1em;
+
+    background-color: rgb(200, 200, 200);
+
+}
+
+/* ------------------------------------------------ */
+/* IT Stack Item | About
+/* ------------------------------------------------ */
+
+.it-stack-item-about {
+
+    display: grid;
+    row-gap: .6em;
+
+}
+
+/* ------------------------------------------------ */
+/* Header IT Stack Item | About
+/* ------------------------------------------------ */
+
+.header-it-stack-item-about {
+
+    height: 2em;
+
+    display: flex;
+    align-items: center;
+    gap: .6em;
+
+    border-radius: .6em;
+
+    font-weight: bold;
+
+    background-color: red;
+}
+
+.header-it-stack-item-about > div:nth-of-type(1) {
+
+    width: 2em;
+    height: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .6em 0 0 .6em;
+
+    background-color: green;
+
+}
+
+/* ------------------------------------------------ */
+/* Tech Skills Container | About
+/* ------------------------------------------------ */
+
+.tech-skills-container-about {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3em;
+
+}
+
+.tech-skills-container-about > div {
+
+    height: 2.3em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .3em;
+
+    border-radius: .4em;
+
+    background-color: black;
+    color:white;
+
+}
+
+.img-tk-normal {
+    height: 1.2em;
+}
+
+
+/* ------------------------------------------------ */
+/* Sub IT Stack Container | About
+/* ------------------------------------------------ */
+
+.sub-it-stack-container-about {
+
+    padding: 0 .8em;
+
+    display: grid;
+    row-gap: .3em;
+
+}
+
+.header-sub-it-stack-container-about {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+    font-weight: bold;
+
+}
+
+
+/* ------------------------------------------- */
+/* Actually Tech Learning Skill Container
+/* ------------------------------------------- */
+
+.actually-tech-learning-skill-container {
+
+    padding: 0 .8em .8em .8em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+}
+
+.actually-tech-learning-skill-container > div:nth-of-type(1) {
+
+    display: flex;
+    column-gap: .3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-thunder-learning,
+.img-gear-learning {
+
+    height: 1.2em;
+
+}
+
+.img-gear-learning {
+
+    height: 1.2em;
+
+    animation: gearSpinning 3s infinite;
+}
+
+/* Animation: Spinning  */
+@keyframes gearSpinning {
+
+    0% { transform: rotate(45deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+    
+}
+
+
+/* ------------------------------------------------ */
+/* Text Container | About
+/* ------------------------------------------------ */
+
+.text-container-about {
+
+    padding: .6em 0em .3em 0em;
+}

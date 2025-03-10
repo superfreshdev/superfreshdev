@@ -1,0 +1,23 @@
+/* -------------------------------------------------------------- */
+/* > height-containers.css
+/*  
+/* : styles 3 types of height containers which can be used 
+/*   for example to creating different button heihgts, ... 
+/* -------------------------------------------------------------- */
+
+
+.container-small {
+    height: 2em;
+}
+
+.container-normal {
+    height: 2.5em;
+}
+
+.container-larger {
+    height: 2.8em;
+}
+
+.container-big {
+    height: 3em;
+}
