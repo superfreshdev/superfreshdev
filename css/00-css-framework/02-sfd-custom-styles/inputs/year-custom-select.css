@@ -1,0 +1,22 @@
+/* -------------------------------------------------------------- */
+/* > year-custom-select.css
+/*  
+/* : styles year custom select 
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------- */
+/* Year Custom Select 
+/* ------------------------------------------------- */
+
+.year-custom-select {
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: .8em;
+
+    /* background-color: yellow; */
+}
