@@ -49,7 +49,6 @@
                 <!-- ------------------------------------------ -->  
                 <link rel="stylesheet" href="css/00-css-framework/02-sfd-custom-styles/inputs/custom-radio.css">
                 <link rel="stylesheet" href="css/00-css-framework/02-sfd-custom-styles/inputs/custom-select.css">
-                <link rel="stylesheet" href="css/00-css-framework/02-sfd-custom-styles/inputs/year-custom-select.css">
 
                 <!-- ------------------------------------------ -->
                 <!-- Layout Elements                            -->
@@ -235,7 +234,14 @@
                     <!-- ------------------------------------------- -->
                     <!-- My Sport Challenges -->
                     <!-- ------------------------------------------- -->  
-                    <link rel="stylesheet" href="css/02-content/02-content/03-my-private-lifestyle/01-sport/sport.css">
+                    <link rel="stylesheet" href="css/02-content/02-content/03-my-private-lifestyle/01-sport/sport-challenge.css">
+
+                    <!-- header sport filter &  header sport video category container-->
+                    <link rel="stylesheet" href="css/02-content/02-content/03-my-private-lifestyle/01-sport/header-sport-filter/header-sport-filter-container.css">
+                    <link rel="stylesheet" href="css/02-content/02-content/03-my-private-lifestyle/01-sport/header-sport-filter/header-sport-video-category-container.css">
+
+
+                    <link rel="stylesheet" href="css/02-content/02-content/03-my-private-lifestyle/01-sport/video-list-sport-container.css">
 
 
 
@@ -1770,17 +1776,26 @@
                             <!-- ----------------------------------------------------------------------- -->  
                             <div id="it-docs-container">
 
-                                <!-- ----------------------------------------------- -->
-                                <!-- Header | IT Docs -->
-                                <!-- ----------------------------------------------- -->
-                                <header class="h1-content-header">
 
-                                    <!-- ---------------------------------------------- -->
-                                    <!-- Content Header Title -->
-                                    <!-- ---------------------------------------------- -->  
-                                    <div>
-                                        <img src="media/img/icons/icons/books-black.svg" class="img-h-1-1" alt="img">
-                                        <div>My IT-Doc's | German Content</div>
+                                <!-- --------------------------------------------------------------- -->
+                                <!-- [1/2] | Header (default style) --> 
+                                <!-- --------------------------------------------------------------- --> 
+                                <header class="h1-content-header-container">
+
+
+                                    <!-- --------------------------------------------------------------- -->
+                                    <!--  Header (default style) --> 
+                                    <!-- --------------------------------------------------------------- --> 
+                                    <div class="h1-content-header">
+
+                                        <!-- ---------------------------------------------- -->
+                                        <!-- Title Header -->
+                                        <!-- ---------------------------------------------- -->  
+                                        <div>
+                                            <img src="media/img/icons/icons/books-black.svg" class="img-h-1-1" alt="img">
+                                            <div>My IT-Doc's | Only German </div>
+                                        </div>
+    
                                     </div>
 
                                     <!-- ---------------------------------------------- -->
@@ -1867,8 +1882,8 @@
                                         </div>
 
                                     </div>   
+    
 
-                                    
                                 </header>
 
                                 
@@ -4980,16 +4995,23 @@
                                 <!-- --------------------------------------------------------------- -->
                                 <!-- [1/2] | Header (default style) --> 
                                 <!-- --------------------------------------------------------------- --> 
-                                <header class="h1-content-header">
+                                <header class="h1-content-header-container js-fe">
 
-                                    <!-- ---------------------------------------------- -->
-                                    <!-- Title Header -->
-                                    <!-- ---------------------------------------------- -->  
-                                    <div>
-                                        <img src="media/img/icons/icons/rocket-3-black-mobile.png" class="img-h-1-1" alt="img">
-                                        <div>My Top 3x3 IT-Projects</div>
+
+                                    <!-- --------------------------------------------------------------- -->
+                                    <!--  Header (default style) --> 
+                                    <!-- --------------------------------------------------------------- --> 
+                                    <div class="h1-content-header">
+
+                                        <!-- ---------------------------------------------- -->
+                                        <!-- Title Header -->
+                                        <!-- ---------------------------------------------- -->  
+                                        <div>
+                                            <img src="media/img/icons/icons/rocket-3-black-mobile.png" class="img-h-1-1" alt="img">
+                                            <div>My Top 3x3 IT-Projects</div>
+                                        </div>
+    
                                     </div>
-
 
                                     <!-- ---------------------------------------------- -->
                                     <!-- 🟪 (Optional) | 3 Status Info Container        -->
@@ -5075,10 +5097,11 @@
                                         </div>
 
                                     </div>   
+    
 
-                            
                                 </header>
-
+                               
+                        
 
                                 <!-- --------------------------------------------------------------- -->
                                 <!-- Main --> 
@@ -6007,22 +6030,24 @@
                         <div class="w-100p h-100p flex jc-c">
 
                             <!-- ------------------------------------------------------------------ -->
-                            <!-- My Sport Challenge Container                                       -->
+                            <!-- Sport Challenge Container                                          -->
                             <!-- ------------------------------------------------------------------ -->
                             <div id="sport-challenge-container">
 
                                 
                                 <!-- --------------------------------------------------------------- -->
-                                <!-- Sport Header Container-->
-                                <!-- --------------------------------------------------------------- -->
-                                <div id="sport-header-container">
+                                <!-- Header | Filter Sport Container                                 -->
+                                <!-- --------------------------------------------------------------- -->                               
+                                <header id="header-filter-sport-container">
 
-                                    <input type="checkbox" id="chk-year-sport-challenge"> 
+                                    <!-- Checkbox Handling | Selected Year -->
+                                    <input type="checkbox" id="chk-year-sport-challenge">
+                                    <!-- ❓ Radio Handling | Selected Video Category --> 
                                     
                                     <!-- --------------------------------------------------------------- -->
-                                    <!-- Sport Heaer -->
+                                    <!-- [1/4] | Header Sport Container -->
                                     <!-- --------------------------------------------------------------- -->
-                                    <div id="sport-header">
+                                    <div id="header-sport-container">
 
                                         <!-- --------------------------------------------------------------- -->
                                         <!-- [1/2] | Header (default style) --> 
@@ -6034,38 +6059,27 @@
                                             <!-- ---------------------------------------------- -->  
                                             <div>
                                                 <img src="media/img/icons/icons/biceps-black.png" class="img-h-1-1" alt="img">                                           
-                                                <div>⚠️ My Sport Challenges </div>
+                                                <div>My Sport Challenges </div>
                                             </div>
                                             
                                         </header>
-
-                                        <!-- --------------------------------------------------------------- -->
-                                        <!-- [2/2] | Year | Custom Select --> 
-                                        <!-- --------------------------------------------------------------- -->                                     
-                                        <div class="year-custom-select">
-
-
-                                            <!-- ---------------------------------------------------------- -->
-                                            <!-- Label | Selected View Item  -->
-                                            <!-- ---------------------------------------------------------- -->
-                                            <label for="chk-year-sport-challenge" class="lbl-selected-view-item">
-                                                
-                                                <div id="js-">2025</div>
-                                                <img src="media/img/icons/icons/arrow-down-light-grey.png" alt="img">
-
-                                            </label>  
+                                
+                                        <!-- ---------------------------------------------------------- -->
+                                        <!--  [2/2] | Label | Selected View Item  -->
+                                        <!-- ---------------------------------------------------------- -->
+                                        <label for="chk-year-sport-challenge" class="lbl-selected-sport-year">
                                             
-                                            
+                                            <div id="js-">2025</div>
+                                            <img src="media/img/icons/icons/arrow-down-light-grey.png" class="img-h-0-9" alt="img">
 
-                                        </div>  
-
-
+                                        </label>  
+ 
                                     </div> 
 
                                     <!-- ---------------------------------------------------------------  -->
-                                    <!-- ⬇️⬆️ Smooth Sport Year Container --> 
+                                    <!-- [2/4] | ⬇️⬆️ Smooth | Select Sport Year Container               --> 
                                     <!-- ---------------------------------------------------------------  -->
-                                    <div id="smooth-sport-year-container">
+                                    <div id="smooth-select-sport-year-container">
 
                                         <!-- --------------------------------------------------------- -->
                                         <!-- Overflow: hidden | Container -->
@@ -6075,10 +6089,10 @@
                                             <!-- --------------------------------------------------------------- -->
                                             <!-- Sport Year Container -->
                                             <!-- --------------------------------------------------------------- -->
-                                            <div id="sport-year-container">
+                                            <div id="sport-year-choose-list-container">
                                                 
                                                 <input type="radio" id="radio-sport-year-2024">
-                                                <label for="radio-sport-year-2024" class="lbl-radio-choose-sport-year">
+                                                <label for="radio-sport-year-2024" class="lbl-selected-sport-year">
                                                     
                                                     <div>2024</div>
 
@@ -6094,288 +6108,391 @@
 
                                     </div>
 
-                                   
-
-
-                                    
-
-                                </div>
-
-
-                                <!-- --------------------------------------------------------------- -->
-                                <!-- Main --> 
-                                <!-- --------------------------------------------------------------- -->
-                                <main>
-                                    
-                                    <!-- ---------------------------------------------------------- -->
-                                    <!-- Radio Tab Container -->
-                                    <!-- ---------------------------------------------------------- -->
-                                    <div class="radio-tab-container">
+                                    <!-- ---------------------------------------------------------------  -->
+                                    <!-- [3/4] | ⬇️⬆️ Smooth | Select Sport Video Category Container     --> 
+                                    <!-- ---------------------------------------------------------------  -->
+                                    <div class="smooth-select-sport-video-category-container">
                                         
-                                        <div><b>⚠️ My Sport Challenges: In Construction ⚠️ | Actually 30 Units of (Running,Back,Pull ups)</b></div>
-                                        <!-- <div>Challenge #1</div>
-                                        <div>Challenge #2</div>
-                                        <div>Challenge #4</div> -->
+
+                                        <!-- --------------------------------------------------------- -->
+                                        <!-- Overflow: hidden | Container -->
+                                        <!-- --------------------------------------------------------- -->
+                                        <div class="overflow-hidden">
+
+                                            <!-- --------------------------------------------------------------- -->
+                                            <!-- Sport Year Container -->
+                                            <!-- --------------------------------------------------------------- -->
+                                            <div id="sport-video-category-choose-list-container">
+
+                                                <!-- ---------------------------------------------------------- -->
+                                                <!-- Label | Selected View Item  -->
+                                                <!-- ---------------------------------------------------------- -->
+                                                <label for="chk-year-sport-challenge" class="lbl-selected-sport-video-category">
+                                                    
+                                                    <div id="js-">Challenge #1</div>
+
+                                                    <img src="media/img/icons/icons/arrow-down-light-grey.png" class="img-h-0-9" alt="img">
+
+                                                </label>
+                                                
+                                                <!-- ---------------------------------------------------------- -->
+                                                <!-- Label | Selected View Item  -->
+                                                <!-- ---------------------------------------------------------- -->
+                                                <label for="chk-year-sport-challenge" class="lbl-selected-sport-video-category">
+                                                    
+                                                    <div id="js-">Challenge #2</div>
+
+                                                    <div class="custom-radio-small">
+                                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x-small" alt="img">
+                                                    </div>
+
+                                                </label>  
+
+                                                <!-- ---------------------------------------------------------- -->
+                                                <!-- Label | Selected View Item  -->
+                                                <!-- ---------------------------------------------------------- -->
+                                                <label for="chk-year-sport-challenge" class="lbl-selected-sport-video-category">
+                                                    
+                                                    <div id="js-">⚠️ Fixed (3)</div>
+
+                                                    <div class="custom-radio-small">
+                                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x-small" alt="img">
+                                                    </div>
+
+                                                </label>  
+
+                                                
+                                        
+                                            </div>   
+
+                                        </div>
+
+                                       
 
                                     </div>
-                                    
-                                    <!-- ---------------------------------------------------------- -->
-                                    <!-- Sport Video List Container -->
-                                    <!-- ---------------------------------------------------------- -->
-                                    <div class="sport-video-list-container">
+
+                                    <!-- ---------------------------------------------------------------  -->
+                                    <!-- [4/4] | Header Sport Video Category Container                    --> 
+                                    <!-- ---------------------------------------------------------------  -->
+                                    <div id="header-sport-video-category-container">
 
 
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 01 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/1I5EK48PCepZJKiRy9BBqSmomDWw3Vaox/view?usp=sharing" class="link-sport-video" target="_blank">
+                                        <!-- --------------------------------------------------------------- -->
+                                        <!-- HEADER                                                          -->
+                                        <!-- --------------------------------------------------------------- -->
+                                        <header>
+                                            <div> 30 Day's </div>
+                                            <div id="js-extra-info"> | Best (3-5) Videos</div>
+                                        </header>
 
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                01
-                                            </div>
+                                        <header style="display: none;">
+                                            <div> Individual Training |</div>
+                                            <div>Running | Swimming | Biceycle | Gym</div>
+                                        </header>
+                                        
+                                        <!-- --------------------------------------------------------------- -->
+                                        <!-- Main                                                             -->
+                                        <!-- --------------------------------------------------------------- -->
+                                        <main>
+
+                                            <!-- ------------------------------------------------- -->
+                                            <!-- Running | Info Sport Art Item                   -->
+                                            <!-- ------------------------------------------------- -->
+                                            <div class="info-sport-art-item">
+
+                                                <img src="media/img/icons/icons/run-black.png" class="img-h-1-5" alt="img">
+                                                <div class="txt-sport-art">Running (5-8KM)</div>
+                                                
+
+                                            </div>   
+
+                                            <!-- ------------------------------------------------- -->
+                                            <!-- Strength | Info Sport Art Item -->
+                                            <!-- ------------------------------------------------- -->
+                                            <div class="info-sport-art-item">
+
+                                                <img src="media/img/icons/icons/biceps-black.png" class="img-h-1-3" alt="img">
+                                                <div class="txt-sport-art">Strength |</div>
+                                                <div>1x Pull up | 3x push-ups | 1x Ninja Mode</div>
+                                                
+
+                                            </div>   
+
+                                            <!-- ------------------------------------------------- -->
+                                            <!-- Balance | Info Sport Art Item -->
+                                            <!-- ------------------------------------------------- -->
+                                            <div class="info-sport-art-item">
+
+                                                <img src="media/img/icons/icons/stability-black.png" class="img-h-1-3" alt="img">
+                                                <div class="txt-sport-art">Balance |</div>
+                                                <div>3x attempts</div>
+                                                
+
+                                            </div>   
+
+                                        </main> 
                                             
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>23. Jan</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 02 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/11nr-O5zDXWoVLdE2XM4oDdLDbhZd-9y6/view?usp=sharing" class="link-sport-video" target="_blank">
-
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                02
-                                            </div>
-                                            
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>28. Jan</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>      
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 03 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/13TrzU-vxNtUECKU8p6sX10g5r9S-QyTJ/view?usp=sharing" class="link-sport-video" target="_blank">
-
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                03
-                                            </div>
-                                            
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>02. Feb</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 04 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/1IYz7pCj6xQFg68EGWywCTMZjh8RSBLAh/view?usp=sharing" class="link-sport-video" target="_blank">
-
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                04
-                                            </div>
-                                            
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>04. Feb</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 05 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/1OCfJ10fEBh9ivkR0Aa7QzqyT-4H8OgR7/view?usp=sharing" class="link-sport-video" target="_blank">
-
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                05
-                                            </div>
-                                            
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>08. Feb</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 06 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/1zqDGdh8N6CEq07x8tM0jods0sgmakUmc/view?usp=sharing" class="link-sport-video" target="_blank">
-
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                06
-                                            </div>
-                                            
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>10. Feb</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 07 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/13rXW3o0OWsNqFtKkgNwZpQVuz5l9nogz/view?usp=sharing" class="link-sport-video" target="_blank">
-
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                07
-                                            </div>
-                                            
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>16. Feb</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 08 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/1bVIa6UNuR2-R5f9L7gOBJU0SH1tpJM-c/view?usp=sharing" class="link-sport-video" target="_blank">
-
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                08
-                                            </div>
-                                            
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>23. Feb</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 09 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/1AUYjnkwSuYyIlJJtwoHVkRw425EvJ7AR/view?usp=sharing" class="link-sport-video" target="_blank">
-
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                09
-                                            </div>
-                                            
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>28. Feb</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>
-
-                                        <!-- ----------------------------------------- -->
-                                        <!-- 10 | Sport Video Link Item -->
-                                        <!-- ----------------------------------------- -->
-                                        <a href="https://drive.google.com/file/d/1R8O1eKULK0e-dJd7uReOmS6kGeQzZhpM/view?usp=sharing" class="link-sport-video" target="_blank">
-
-                                            <!-- -------------------------------------- -->
-                                            <!-- NR Block --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="nr-block-sport-video">
-                                                10
-                                            </div>
-                                            
-                                            <!-- -------------------------------------- -->
-                                            <!-- Date --> 
-                                            <!-- -------------------------------------- -->
-                                            <div class="date-sport-video">
-
-                                                <div>07. March</div>
-                                                <div>2025</div>
-                                                <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
-
-                                            </div>
-
-                                        </a>
-
                                     </div> 
+
+  
+                                </header>
+
+                                <!-- --------------------------------------------------------------- -->
+                                <!-- Main | Sport Video List Container                               --> 
+                                <!-- --------------------------------------------------------------- -->
+                                <main class="sport-video-list-container">
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 01 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/1I5EK48PCepZJKiRy9BBqSmomDWw3Vaox/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            01
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>23. Jan</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 02 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/11nr-O5zDXWoVLdE2XM4oDdLDbhZd-9y6/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            02
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>28. Jan</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>      
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 03 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/13TrzU-vxNtUECKU8p6sX10g5r9S-QyTJ/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            03
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>02. Feb</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 04 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/1IYz7pCj6xQFg68EGWywCTMZjh8RSBLAh/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            04
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>04. Feb</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 05 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/1OCfJ10fEBh9ivkR0Aa7QzqyT-4H8OgR7/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            05
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>08. Feb</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 06 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/1zqDGdh8N6CEq07x8tM0jods0sgmakUmc/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            06
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>10. Feb</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 07 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/13rXW3o0OWsNqFtKkgNwZpQVuz5l9nogz/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            07
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>16. Feb</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 08 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/1bVIa6UNuR2-R5f9L7gOBJU0SH1tpJM-c/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            08
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>23. Feb</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 09 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/1AUYjnkwSuYyIlJJtwoHVkRw425EvJ7AR/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            09
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>28. Feb</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>
+
+                                    <!-- ----------------------------------------- -->
+                                    <!-- 10 | Sport Video Link Item -->
+                                    <!-- ----------------------------------------- -->
+                                    <a href="https://drive.google.com/file/d/1R8O1eKULK0e-dJd7uReOmS6kGeQzZhpM/view?usp=sharing" class="link-sport-video" target="_blank">
+
+                                        <!-- -------------------------------------- -->
+                                        <!-- NR Block --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="nr-block-sport-video">
+                                            10
+                                        </div>
+                                        
+                                        <!-- -------------------------------------- -->
+                                        <!-- Date --> 
+                                        <!-- -------------------------------------- -->
+                                        <div class="date-sport-video">
+
+                                            <div>07. March</div>
+                                            <div>2025</div>
+                                            <img src="media/img/icons/icons/video-camera-black-1.png" style="height: 1em;" alt="img">
+
+                                        </div>
+
+                                    </a>
+
+                                    
 
                                 </main> 
 

@@ -1,0 +1,230 @@
+/* ----------------------------------------------------------------------------------------------- */
+/* > header-sport-filter-container.css
+/*  
+/* : styles header sport filter basic of my sport challenges
+/* ----------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Header Filter Sport Container
+/* ---------------------------------------------------------------------------------- */
+
+#header-filter-sport-container {
+
+    width: 100%;
+
+    display: grid;
+    row-gap: 1em;
+   
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* 💙 [1/4] | Header Sport Container
+/* ---------------------------------------------------------------------------------- */
+
+#header-sport-container {
+
+    width: 100%;
+
+    display: grid;
+    column-gap: .8em;
+    row-gap: 2em;
+
+    border-radius: .8em;
+
+    background-color: red;
+   
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* 2xLabels | Year | Video Category |  Selected View Item |
+/* ---------------------------------------------------------------------------------- */
+
+.lbl-selected-sport-year,
+.lbl-selected-sport-video-category {
+
+    height: 3.3em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1em;
+
+    font-weight: bold;
+
+    border-radius: .8em;
+
+    background-color: green;
+
+    cursor: pointer;
+
+    transition: all .4s;
+
+}
+
+.lbl-selected-sport-year {
+  
+    width: 6em;
+
+}
+
+.lbl-selected-sport-video-category {
+
+    width: 11em;
+}
+
+
+.lbl-selected-sport-year > div:nth-of-type(1),
+.lbl-selected-sport-video-category > div:nth-of-type(1) {
+
+    font-size: 1.25em;
+}
+
+.lbl-selected-sport-year:hover,
+.lbl-selected-sport-video-category:hover {
+
+    background-color: grey;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* 💙 [2/4] | ⬆️⬇️ Smooth | Select Sport Year Container 
+/* ---------------------------------------------------------------------------------- */
+
+#smooth-select-sport-year-container {
+
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Sport Year Choose List Container
+/* ---------------------------------------------------------------------------------- */
+
+#sport-year-choose-list-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    /* background-color: yellow; */
+
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* 💙 [3/4] | ⬆️⬇️ Smooth | Select Sport Video Category Container 
+/* ---------------------------------------------------------------------------------- */
+
+#smooth-select-sport-video-category-container {
+
+    display: grid;
+    grid-template-rows: 1fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Sport Video Category Choose List Container
+/* ---------------------------------------------------------------------------------- */
+
+#sport-video-category-choose-list-container {
+
+   
+    display: grid;
+    justify-content: flex-end;
+
+    row-gap: .6em;
+
+    background-color: yellow;
+
+}
+
+/* ----------------------------------------------------- */
+/* 🟥 Unsauber  */
+/* ----------------------------------------------------- */
+
+/* Info: 2025,2024 => Radio, muss nur dynamisch gesetzt werden */
+
+/* ---------------------------------------------------------------------------------------- */
+/* [1/2] | Checkbox-Label Handling | Selected Item ( year )  
+/* ---------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* ### Styling
+/* Checkbox Handling | Open News Container 
+/* ------------------------------------------------- */
+
+#chk-year-sport-challenge {
+
+    display: none;
+}
+
+#chk-year-sport-challenge:checked ~ #sport-header > .year-custom-select > label {
+
+    background-color: wheat;
+}
+
+#chk-year-sport-challenge:checked ~ #sport-header > .year-custom-select > label > img:last-child {
+
+    transform: rotate(180deg);
+}
+
+/* ------------------------------------------------- */
+/* ### Movement
+/* Checkbox Handling | Open News Container
+/* ------------------------------------------------- */
+
+#chk-year-sport-challenge:checked ~ #smooth-select-sport-year-container {
+
+    grid-template-rows: 1fr;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* [2/2] | Radio-Label Handling | Choose Item ( year )  
+/* ---------------------------------------------------------------------------------------- */
+
+#radio-sport-year-2024 {
+
+    display: none;
+}
+
+#radio-sport-year-2024:checked + label > .custom-radio-small > img {
+
+    display: flex;
+}
+
+.lbl-radio-choose-sport-year {
+
+    height: 3.3em;
+    width: 6em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1em;
+
+    border-radius: .6em;
+
+    background-color: grey;
+
+    cursor: pointer;
+
+    transition: all .4s;
+}
+
+.lbl-radio-choose-sport-year:hover {
+
+    background-color: wheat;
+}
+
+.lbl-radio-choose-sport-year > div {
+
+    font-size: 1.25em;
+    font-weight: bold;
+}

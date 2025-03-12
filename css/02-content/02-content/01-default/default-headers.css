@@ -4,6 +4,19 @@
 /* : styles for default header content pages
 /* -------------------------------------------------------------- */
 
+/* ----------------------------------------------------- */
+/* H1 Content header Container | Universal 
+/* ----------------------------------------------------- */
+
+.h1-content-header-container {
+
+    display: grid;
+    row-gap: 2em;
+   
+    /* to not stretch header 100% */
+    /* justify-self: flex-start; */
+
+}
 
 /* ----------------------------------------------------- */
 /* H1 Content header | Universal 
@@ -11,13 +24,15 @@
 
 .h1-content-header {
 
+    height: 3.3em;
+
     display: grid;
     row-gap: 2em;
    
     /* to not stretch header 100% */
     justify-self: flex-start;
 
-    /* background-color: blue; */
+   
 
 }
 
@@ -25,8 +40,8 @@
 
     /* 24px */
     font-size: 1.5em;
-
-    padding: .6em;
+   
+    padding: 0 .6em;
 
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +55,8 @@
     border-radius: .4em;
 
     background-color: rgb(220, 220, 220);
+
+    /* background-color: blue; */
 
    
 }
