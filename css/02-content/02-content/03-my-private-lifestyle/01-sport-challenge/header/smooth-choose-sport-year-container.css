@@ -1,0 +1,86 @@
+/* ----------------------------------------------------------------------------------------------- */
+/* > smooth-choose-sport-year-container.css
+/*  
+/* : styles the smooth container of choose sport
+/* ----------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------- */
+/* ⬆️⬇️ Smooth | Choose Sport Year Container
+/* ---------------------------------------------------------------------------------- */
+
+#smooth-choose-sport-year-container {
+
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+
+}
+
+#select-list-sport-years {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: yellow;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Checkbox-Label Handling | Selected Sport Year
+/* ---------------------------------------------------------------------------------- */
+
+/* ################### */
+/* Styling 
+/* ################### */
+
+#chk-selected-sport-year {
+
+    display: none;
+}
+
+#chk-selected-sport-year:checked ~ #header-sport-container > label:last-child {
+
+    background-color: wheat;
+}
+
+#chk-selected-sport-year:checked ~ #header-sport-container > label:last-child > img:last-child {
+
+    transform: rotate(180deg);
+}
+
+/* ################### */
+/* Movement
+/* ################### */
+
+/* ---------------------------------------------------------------------------------- */
+/* Radio-Label Handling | Select Sport Year
+/* ---------------------------------------------------------------------------------- */
+
+/* ################### */
+/* Styling 
+/* ################### */
+
+input[name="name-select-sport-year"] { 
+
+    display: none;
+}
+
+/* radio year 2024, 2025 */
+#radio-select-sport-year-2024:checked ~ #smooth-choose-sport-year-container #select-list-sport-years > label[for="radio-select-sport-year-2024"] > .custom-radio-small > img,
+#radio-select-sport-year-2025:checked ~ #smooth-choose-sport-year-container #select-list-sport-years > label[for="radio-select-sport-year-2025"] > .custom-radio-small > img  {
+
+    display: flex;
+}
+
+/* ################### */
+/* Movement
+/* ################### */
+
+#chk-selected-sport-year:checked ~ #smooth-choose-sport-year-container {
+
+    grid-template-rows: 1fr;
+
+}
+

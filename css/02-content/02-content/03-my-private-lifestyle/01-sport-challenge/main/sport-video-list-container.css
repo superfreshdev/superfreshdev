@@ -1,8 +1,9 @@
 /* ----------------------------------------------------------------------------- */
-/* > video-list-sport-container.css
+/* > sport-video-list-container.css
 /*  
-/* : styles video list sport container of my sport challenges
+/* : styles sport video list container of sport challenges
 /* ----------------------------------------------------------------------------- */
+
 
 /* ---------------------------------------------------------------- */
 /* Video List Sport Container
@@ -38,10 +39,8 @@
     align-items: flex-start;
     align-content: center;
 
-
     text-decoration: none;
-    
-   
+
     border-radius: .6em;
 
     background-color: rgb(199, 199, 199);

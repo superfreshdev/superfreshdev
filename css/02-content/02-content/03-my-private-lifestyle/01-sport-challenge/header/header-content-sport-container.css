@@ -1,0 +1,170 @@
+/* ----------------------------------------------------------------------------------------------- */
+/* > header-content-sport-container.css
+/*  
+/* : styles header sport of sport challenge
+/* ----------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Header Content Sport Container
+/* ---------------------------------------------------------------------------------- */
+
+#header-content-sport-container {
+
+    width: 100%;
+
+    display: grid;
+    row-gap: 1em;
+
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* [1/?] | Header Sport Container 
+/* ---------------------------------------------------------------------------------- */
+
+#header-sport-container {
+
+    width: 100%;
+
+    display: grid;
+    justify-items: flex-end;
+
+    column-gap: .8em;
+    row-gap: 2em;
+
+    border-radius: .8em;
+
+    background-color: red;
+   
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Label | Select ( Sport Year / Sport Video Category ) 
+/* ---------------------------------------------------------------------------------- */
+
+.lbl-select-sport-year,
+.lbl-select-sport-video-category {
+
+    height: 3.3em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1em;
+
+    font-weight: bold;
+
+    border-radius: .8em;
+
+    cursor: pointer;
+
+    transition: all .4s;
+
+}
+
+.lbl-select-sport-year > div:nth-of-type(1),
+.lbl-select-sport-video-category > div:nth-of-type(1) {
+
+    font-size: 1.25em;
+
+}
+
+.lbl-select-sport-year img,
+.lbl-select-sport-video-category  img {
+
+    /* for the better effect */
+    transition: all .4s;
+
+}
+
+.lbl-select-sport-year:hover,
+.lbl-select-sport-video-category:hover {
+
+    background-color: wheat;
+}
+
+
+.lbl-select-sport-year {
+
+    width: 6em;
+    background-color: green;
+}
+
+.lbl-select-sport-video-category {
+
+    width: 11.5em;
+    background-color: yellow;
+}
+
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Header Sport Video Category Container
+/* ---------------------------------------------------------------------------------- */
+
+#header-sport-video-category-container {
+
+    display: grid;
+    row-gap: 1.3em;
+    
+}
+
+/* ----------------------------------------------------------- */
+/* Header | Header Sport Video Category Container
+/* ----------------------------------------------------------- */
+
+#header-sport-video-category-container > header {
+
+    height: 2em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+
+    justify-self: flex-start;
+
+    column-gap: .3em;
+
+    border-radius: .6em;
+
+    background-color: rgb(220, 220, 220);
+}
+
+#header-sport-video-category-container > header > div:nth-of-type(1) {
+
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------- */
+/* Main | Header Sport Video Category Container
+/* ----------------------------------------------------------- */
+
+#header-sport-video-category-container > main {
+
+    padding-left: .3em;
+
+    display: grid;
+    row-gap: .6em;
+
+    /* background-color: rgb(250, 250, 250); */
+}
+
+/* ----------------------------------------------------------- */
+/* Info Sport Art Item
+/* ----------------------------------------------------------- */
+
+.info-sport-art-item {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2em;
+
+}
+
+.txt-sport-art {
+
+    padding-left: .3em;
+    font-weight: bold;
+}

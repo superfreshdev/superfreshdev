@@ -1,0 +1,64 @@
+/* ----------------------------------------------------------------------------------------------- */
+/* > smooth-selected-sport-video-category-container.css
+/*  
+/* : styles the smooth container of selected sport video category
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------- */
+/* ⬆️⬇️ Smooth | Selected Sport Video Category Container
+/* ---------------------------------------------------------------------------------- */
+
+#smooth-selected-sport-video-category-container {
+
+    display: grid;
+    grid-template-rows: 1fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+
+}
+
+#selected-sport-video-category-item-container {
+
+    display: grid;
+   
+    justify-content: flex-end;
+
+    background-color: rgb(255, 0, 212);
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Checkbox-Label Handling | Selected Sport Video Category
+/* ---------------------------------------------------------------------------------- */
+
+/* ################### */
+/* Styling 
+/* ################### */
+
+#chk-selected-sport-video-category {
+
+    display: none;
+}
+
+#chk-selected-sport-video-category:checked ~ #smooth-selected-sport-video-category-container #selected-sport-video-category-item-container > label:nth-of-type(1) {
+
+    background-color: wheat;
+}
+
+#chk-selected-sport-video-category:checked ~ #smooth-selected-sport-video-category-container #selected-sport-video-category-item-container > label:nth-of-type(1) > img:last-child {
+
+    transform: rotate(180deg);
+}
+
+/* ################### */
+/* Movement
+/* ################### */
+
+#chk-selected-sport-video-category:checked ~ #smooth-selected-sport-video-category-container #selected-sport-video-category-item-container #smooth-choose-sport-video-category-container {
+
+    grid-template-rows: 1fr;
+
+
+}
+
+
