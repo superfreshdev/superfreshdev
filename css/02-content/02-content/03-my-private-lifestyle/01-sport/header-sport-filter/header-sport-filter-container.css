@@ -89,10 +89,10 @@
 }
 
 /* ---------------------------------------------------------------------------------- */
-/* 💙 [2/4] | ⬆️⬇️ Smooth | Select Sport Year Container 
+/* 💙 [2/4] | ⬆️⬇️ Smooth | Choose Sport Year  
 /* ---------------------------------------------------------------------------------- */
 
-#smooth-select-sport-year-container {
+#smooth-choose-sport-year {
 
     display: grid;
     grid-template-rows: 0fr;
@@ -112,34 +112,6 @@
     justify-content: flex-end;
 
     /* background-color: yellow; */
-
-}
-
-/* ---------------------------------------------------------------------------------- */
-/* 💙 [3/4] | ⬆️⬇️ Smooth | Select Sport Video Category Container 
-/* ---------------------------------------------------------------------------------- */
-
-#smooth-select-sport-video-category-container {
-
-    display: grid;
-    grid-template-rows: 1fr;
-
-    transition: grid-template-rows 0.3s ease-out;
-
-}
-
-/* ---------------------------------------------------------------------------------- */
-/* Sport Video Category Choose List Container
-/* ---------------------------------------------------------------------------------- */
-
-#sport-video-category-choose-list-container {
-
-   
-    display: grid;
-   
-    justify-content: flex-end;
-
-    background-color: yellow;
 
 }
 
@@ -178,7 +150,7 @@
 /* Checkbox Handling | Open News Container
 /* ------------------------------------------------- */
 
-#chk-year-sport-challenge:checked ~ #smooth-select-sport-year-container {
+#chk-year-sport-challenge:checked ~ #smooth-choose-sport-year {
 
     grid-template-rows: 1fr;
 }
