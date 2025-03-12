@@ -6040,9 +6040,28 @@
                                 <!-- --------------------------------------------------------------- -->                               
                                 <header id="header-filter-sport-container">
 
-                                    <!-- Checkbox Handling | Selected Year -->
+                                    <!-- ------------------------------------------------------------------------- -->
+                                    <!-- [1/2] | Checkbox Handling | Selected YEAR -->
+                                    <!-- ------------------------------------------------------------------------- --> 
+                                    
+                                    <!-- Checkbox | Selected Year -->
                                     <input type="checkbox" id="chk-year-sport-challenge">
-                                    <!-- ❓ Radio Handling | Selected Video Category --> 
+
+                                    <!--  Radio | Choose Year | 2024 / 2025 -->
+                                    <!-- <input type="radio" id="radio-choose-year-2024-sport-challenge" name="radio-choose-year-sport-challenge">   -->
+                                    <!-- <input type="radio" id="radio-choose-year-2025-sport-challenge" name="radio-choose-year-sport-challenge">   -->
+
+                                    <!-- ---------------------------------------------------------------------------------- -->
+                                    <!-- [2/2] | Checkbox Handling | Selected Video Category from Year                      -->
+                                    <!-- ---------------------------------------------------------------------------------- --> 
+                                    
+                                    <!-- Checkbox | Selected Video Category -->
+                                    <input type="checkbox" id="chk-video-category-sport-challenge">
+
+                                    <!--  Radio | Choose Video Category | Challenge #1, #2, Fixed -->
+                                    <!-- <input type="radio" id="radio-choose-video-category-sport-challenge-1" name="radio-choose-video-category-sport-challenge">   -->
+                                    <!-- <input type="radio" id="radio-choose-video-category-sport-challenge-2" name="radio-choose-video-category-sport-challenge">   -->
+                                    <!-- <input type="radio" id="radio-choose-video-category-sport-challenge-3" name="radio-choose-video-category-sport-challenge">   -->
                                     
                                     <!-- --------------------------------------------------------------- -->
                                     <!-- [1/4] | Header Sport Container -->
@@ -6111,7 +6130,7 @@
                                     <!-- ---------------------------------------------------------------  -->
                                     <!-- [3/4] | ⬇️⬆️ Smooth | Select Sport Video Category Container     --> 
                                     <!-- ---------------------------------------------------------------  -->
-                                    <div class="smooth-select-sport-video-category-container">
+                                    <div id="smooth-select-sport-video-category-container">
                                         
 
                                         <!-- --------------------------------------------------------- -->
@@ -6127,7 +6146,7 @@
                                                 <!-- ---------------------------------------------------------- -->
                                                 <!-- Label | Selected View Item  -->
                                                 <!-- ---------------------------------------------------------- -->
-                                                <label for="chk-year-sport-challenge" class="lbl-selected-sport-video-category">
+                                                <label for="chk-video-category-sport-challenge" class="lbl-selected-sport-video-category">
                                                     
                                                     <div id="js-">Challenge #1</div>
 
@@ -6135,31 +6154,57 @@
 
                                                 </label>
                                                 
-                                                <!-- ---------------------------------------------------------- -->
-                                                <!-- Label | Selected View Item  -->
-                                                <!-- ---------------------------------------------------------- -->
-                                                <label for="chk-year-sport-challenge" class="lbl-selected-sport-video-category">
-                                                    
-                                                    <div id="js-">Challenge #2</div>
+                                                <!-- ---------------------------------------------------------------  -->
+                                                <!--  ⬇️⬆️ Smooth | Select Sport Video Category Items Container      --> 
+                                                <!-- ---------------------------------------------------------------  -->
+                                                <div id="smooth-select-sport-video-category-items-container"> 
 
-                                                    <div class="custom-radio-small">
-                                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x-small" alt="img">
+                                                    <!-- --------------------------------------------------------- -->
+                                                    <!-- Overflow: hidden | Container -->
+                                                    <!-- --------------------------------------------------------- -->
+                                                    <div class="overflow-hidden">
+
+                                                        <!-- --------------------------------------------------------- -->
+                                                        <!-- Video Category Choose Items Container -->
+                                                        <!-- --------------------------------------------------------- -->
+                                                        <div id="choose-sport-video-category-items-container">
+
+                                                            <!-- ---------------------------------------------------------- -->
+                                                            <!-- Label | Selected View Item  -->
+                                                            <!-- ---------------------------------------------------------- -->
+                                                            <label for="chk-year-sport-challenge" class="lbl-selected-sport-video-category">
+                                                                
+                                                                <div id="js-">Challenge #2</div>
+
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x-small" alt="img">
+                                                                </div>
+
+                                                            </label>  
+
+                                                            <!-- ---------------------------------------------------------- -->
+                                                            <!-- Label | Selected View Item  -->
+                                                            <!-- ---------------------------------------------------------- -->
+                                                            <label for="chk-year-sport-challenge" class="lbl-selected-sport-video-category">
+                                                                
+                                                                <div id="js-">⚠️ Fixed (3)</div>
+
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x-small" alt="img">
+                                                                </div>
+
+                                                            </label>  
+
+
+                                                        </div> 
+                                             
+
                                                     </div>
 
-                                                </label>  
 
-                                                <!-- ---------------------------------------------------------- -->
-                                                <!-- Label | Selected View Item  -->
-                                                <!-- ---------------------------------------------------------- -->
-                                                <label for="chk-year-sport-challenge" class="lbl-selected-sport-video-category">
-                                                    
-                                                    <div id="js-">⚠️ Fixed (3)</div>
+                                                </div>
 
-                                                    <div class="custom-radio-small">
-                                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x-small" alt="img">
-                                                    </div>
-
-                                                </label>  
+                                              
 
                                                 
                                         

@@ -136,9 +136,8 @@
 
    
     display: grid;
+   
     justify-content: flex-end;
-
-    row-gap: .6em;
 
     background-color: yellow;
 
@@ -164,12 +163,12 @@
     display: none;
 }
 
-#chk-year-sport-challenge:checked ~ #sport-header > .year-custom-select > label {
+#chk-year-sport-challenge:checked ~ #header-sport-container > label:last-child {
 
     background-color: wheat;
 }
 
-#chk-year-sport-challenge:checked ~ #sport-header > .year-custom-select > label > img:last-child {
+#chk-year-sport-challenge:checked ~ #header-sport-container > label:last-child > img:last-child {
 
     transform: rotate(180deg);
 }

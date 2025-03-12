@@ -74,10 +74,69 @@
     font-weight: bold;
 }
 
+/* ---------------------------------------------------------------------------------- */
+/* ⬆️⬇️ Smooth | Select Sport Video Category Items Container  
+/* ---------------------------------------------------------------------------------- */
 
+#smooth-select-sport-video-category-items-container {
 
-/* Info: Challenge #1, Challenge #2, Fixed () ...  => Radio, muss nur dynamisch gesetzt werden */
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Sport Video Category Choose List Container
+/* ---------------------------------------------------------------------------------- */
+
+#choose-sport-video-category-items-container {
+
+    padding-top: .6em;
+   
+    display: grid;
+    justify-content: flex-end;
+
+    row-gap: .6em;
+
+    background-color: rgb(0, 208, 255);
+
+}
+
 
 /* ---------------------------------------------------------------------------------------- */
-/* [2/2] | Radio-Label Handling | Selected Item ( sport video category )  
+/* [1/2] | Checkbox-Label Handling | Selected Video Sport Category
 /* ---------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* ### Styling
+/* Checkbox Handling | Open News Container 
+/* ------------------------------------------------- */
+
+#chk-video-category-sport-challenge {
+
+    display: none;
+}
+
+/* First Label -> Checkbox -> Open / close */
+#chk-video-category-sport-challenge:checked ~ #smooth-select-sport-video-category-container #sport-video-category-choose-list-container > label:nth-of-type(1) {
+
+    background-color: wheat;
+}
+
+#chk-video-category-sport-challenge:checked ~ #smooth-select-sport-video-category-container #sport-video-category-choose-list-container > label:nth-of-type(1) > img:last-child {
+
+    transform: rotate(180deg);
+}
+
+
+/* ------------------------------------------------- */
+/* ### Movement
+/* Checkbox Handling | Open News Container
+/* ------------------------------------------------- */
+
+#chk-video-category-sport-challenge:checked ~ #smooth-select-sport-video-category-container #smooth-select-sport-video-category-items-container  {
+
+    grid-template-rows: 1fr;
+}
