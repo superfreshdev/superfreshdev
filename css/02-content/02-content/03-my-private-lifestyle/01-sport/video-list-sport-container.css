@@ -15,10 +15,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: .6em;
+    gap: 1.3em;
 
     /* background-color: green; */
-    background-color: red;
+    /* background-color: red; */
 
 }
 
@@ -46,6 +46,8 @@
 
     background-color: rgb(199, 199, 199);
     color: black;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     transition: all .4s;
 }
