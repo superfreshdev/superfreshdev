@@ -1,0 +1,65 @@
+/* ----------------------------------------------------------------------------- */
+/* > label-radio-sfd.css
+/*  
+/* : styles my label radio style for small, normal andl larger version
+/* ----------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* Label Radio SFD
+/* ---------------------------------------------------------------- */
+
+.lbl-cusotm-radio-small-sfd,
+.lbl-cusotm-radio-sfd,
+.lbl-cusotm-radio-big-sfd {
+
+    padding: 0 .6em 0 .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: .6em;
+
+    border-radius: .4em;
+
+    font-weight: bold;
+
+    background-color: grey;
+
+    transition: all .4s;
+
+}
+
+.lbl-cusotm-radio-small-sfd:hover ,
+.lbl-cusotm-radio-sfd:hover,
+.lbl-cusotm-radio-big-sfd:hover {
+
+    background-color: wheat;
+
+}
+ 
+.lbl-cusotm-radio-small-sfd {
+
+    height: 2.5em;
+
+}
+
+.lbl-cusotm-radio-sfd {
+
+    height: 3em;
+
+}
+
+.lbl-cusotm-radio-big-sfd {
+
+    height: 3.5em;
+}
+
+/* ---------------------------------------------------------------- */
+/* 
+/* ---------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/*
+/* ---------------------------------------------------------------- */

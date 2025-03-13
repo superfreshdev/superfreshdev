@@ -10,10 +10,8 @@
 
 #done-news-container {
 
-    /* width: 100%; */
-
     display: grid;
-    row-gap: 1.3em;
+    /* row-gap: 1.3em; */
 
     /* background-color: rgb(154, 154, 154); */
 }
@@ -24,8 +22,8 @@
 
 #done-news-container > header {
 
-   
-    padding: .8em;
+    height: 4em;
+    padding: 0 .8em 0 1.3em;
    
     display: flex;
     align-items: center;
@@ -34,8 +32,6 @@
     font-weight: bold;
 
     background-color: lightgreen;
-
-   
     
 }
 
@@ -45,10 +41,43 @@
 
 #done-news-container > main {
 
-   
+    padding: 1em 1em 1em 1.5em;
+
     display: grid;
+    row-gap: 1.3em;
    
 
     /* background-color: rgb(154, 154, 154); */
 }
 
+/* ---------------------------------------------------------------- */
+/*  Done News Radio Tab Panel 
+/* ---------------------------------------------------------------- */
+
+#done-news-radio-tab-panel {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: .4em;
+
+    padding-bottom: 1em;
+
+    border-bottom: 1px dashed black;;
+
+}
+
+/* ---------------------------------------------------------------- */
+/*  Done News List
+/* ---------------------------------------------------------------- */
+
+#done-news-list {
+
+    display: grid;
+    row-gap: .8em;
+
+    color: rgb(169, 169, 169);
+
+    /* background-color: red; */
+}

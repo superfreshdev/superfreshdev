@@ -14,7 +14,7 @@
     display: grid;
 
     background-color: white;
-  
+    
     
 }
 
@@ -151,10 +151,8 @@
 
 #news-list-container {
 
-    padding: .8em;
-
     display: grid;
-    row-gap: 1em;
+
 }
 
 /* ---------------------------------------------------- */
@@ -166,7 +164,7 @@
     /* padding: 1em 0; */
 
     display: grid;
-    row-gap: .5em;
+    row-gap: .8em;
 
   
 

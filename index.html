@@ -54,6 +54,7 @@
                 <!-- Layout Elements                            -->
                 <!-- ------------------------------------------ -->  
                 <link rel="stylesheet" href="css/00-css-framework/02-sfd-custom-styles/layout-elements/btn-filter-container.css">
+                <link rel="stylesheet" href="css/00-css-framework/02-sfd-custom-styles/layout-elements/label-radio-sfd.css">
             
 
         <!-- ------------------------------------------------------------ -->
@@ -553,23 +554,20 @@
 
 
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- ⚠️ News | My Private Lifestyle | Row Container  -->
+                <!-- ⚠️ | News | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div class="row-container" style="background-color: rgb(135, 135, 135);"> 
                     
-
                     <!-- ----------------------------------------------------------- -->
                     <!-- Handle | Main Content Area                                -->
                     <!-- ----------------------------------------------------------- -->
                     <div class="handle-main-content-area">
-
 
                         <!-- ----------------------------------------------------------- -->
                         <!-- width & heihgt 100% (sets)                                  -->
                         <!-- ----------------------------------------------------------- -->
                         <div class="w-100p h-100p flex jc-c">
 
-                        
                             <!-- ---------------------------------------------------- -->
                             <!--  News Container                                      -->
                             <!-- ---------------------------------------------------- -->
@@ -623,7 +621,6 @@
 
                                 </label>
                                 
-                                
                                 <!-- ------------------------------------------------------ -->
                                 <!-- ⬇️⬆️ Smooth | News List Container -->
                                 <!-- ------------------------------------------------------ -->
@@ -651,7 +648,7 @@
                                                 <!-- -------------------------------------------------------- -->
                                                 <header>
 
-                                                    <img src="media/img/icons/clipart/me-in-construction.png" class="img-h-3-5" alt="img">
+                                                    <img src="media/img/icons/icons/gear-black.png" class="img-h-1-5" alt="img">
                                                     <div>Actually Doing ...</div>
 
                                                 </header>  
@@ -691,7 +688,7 @@
                                                             <div class="title-news-task">
 
                                                                 <div>Java (2/3):</div>
-                                                                <div>bla bla bla bla bla bla bla</div>
+                                                                <div>Objektorientierte Programmierung, Fehlerbehandlung, Stream API</div>
 
                                                             </div> 
                                                                 
@@ -723,8 +720,8 @@
                                                             <!-- ---------------------------------- -->
                                                             <div class="title-news-task">
 
-                                                                <div>Java (2/3):</div>
-                                                                <div>bla bla bla bla bla bla bla</div>
+                                                                <div>UML:</div>
+                                                                <div>Grundlagen</div>
 
                                                             </div> 
                                                                 
@@ -756,8 +753,8 @@
                                                             <!-- ---------------------------------- -->
                                                             <div class="title-news-task">
 
-                                                                <div>Java (2/3):</div>
-                                                                <div>bla bla bla bla bla bla bla</div>
+                                                                <div>IntelliJ:</div>
+                                                                <div>Grundlagen</div>
 
                                                             </div> 
                                                                 
@@ -1001,7 +998,7 @@
                                                 <!-- -------------------------------------------------------- -->
                                                 <header>
 
-                                                    <img src="media/img/icons/emojies/emojie-neu-2025/emojie-25-square-correct.png" class="img-h-2" alt="img">
+                                                    <img src="media/img/icons/emojies/emojie-neu-2025/emojie-25-square-correct.png" class="img-h-1-8" alt="img">
                                                     <div>Done - 100%</div>
 
                                                 </header>  
@@ -1010,7 +1007,226 @@
                                                 <!-- MAIN -->
                                                 <!-- -------------------------------------------------------- -->
                                                 <main>
-                                                    DONE - Main 
+                                                   
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- Done News | Radio Tab Panel -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <div id="done-news-radio-tab-panel">
+
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <!-- LABEL | March 25 -->
+                                                        <!-- ------------------------------------------------------------ --> 
+                                                        <input style="display: none;" type="radio" id="radio-done-new-march-25" name="radio-done-new-months"> 
+                                                        <label for="radio-done-news-march-25" class="lbl-cusotm-radio-sfd">
+
+                                                            <div>March 25</div>
+
+                                                            <div class="custom-radio-small">
+                                                                <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x-small" alt="img">
+                                                            </div>
+
+                                                        </label>
+
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <!-- LABEL | Feb 25 -->
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <input style="display: none;" type="radio" id="radio-done-new-feb-25" name="radio-done-new-months"> 
+                                                        <label for="radio-done-news-feb-25" class="lbl-cusotm-radio-sfd">
+
+                                                            <div>Feb. 25</div>
+
+                                                            <div class="custom-radio-small">
+                                                                <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x-small" alt="img">
+                                                            </div>
+
+                                                        </label>
+
+                                                        <input style="display: none;" type="radio" id="radio-done-new-unshown" name="radio-done-new-months"> 
+                                                        <label for="radio-done-new-unshown" class="lbl-cusotm-radio-sfd">
+
+                                                            <div>unshown</div>
+
+                                                            <div class="custom-radio-small">
+                                                                <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x-small" alt="img">
+                                                            </div>
+
+                                                        </label>
+                                                         
+                                                        
+                                                    </div>
+                                                    
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- Done News List  -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <div id="done-news-list">
+
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <!-- ✅ 1 | News Task Item --> 
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <div class="news-task-item">
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Index News Task -->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <div class="index-news-task">
+                                                                01 |
+                                                            </div>
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- IMG Done-->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <img src="media/img/icons/emojies/emojie-neu-2025/emojie-25-square-correct.png" class="img-h-1-2" alt="img">
+                                                            
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Title News Task  -->
+                                                            <!-- ---------------------------------- -->
+                                                            <div class="title-news-task">
+
+                                                                <div>Java (2/3):</div>
+                                                                <div>bla bla bla bla bla bla bla</div>
+
+                                                            </div> 
+                                                                
+                                                                
+
+                                                        </div> 
+
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <!-- ✅ 2 | News Task Item --> 
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <div class="news-task-item">
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Index News Task -->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <div class="index-news-task">
+                                                                02 |
+                                                            </div>
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- IMG Done-->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <img src="media/img/icons/emojies/emojie-neu-2025/emojie-25-square-correct.png" class="img-h-1-2" alt="img">
+                                                            
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Title News Task  -->
+                                                            <!-- ---------------------------------- -->
+                                                            <div class="title-news-task">
+
+                                                                <div>Java (2/3):</div>
+                                                                <div>bla bla bla bla bla bla bla</div>
+
+                                                            </div> 
+                                                                
+                                                                
+
+                                                        </div> 
+
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <!-- ✅ 3 | News Task Item --> 
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <div class="news-task-item">
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Index News Task -->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <div class="index-news-task">
+                                                                03 |
+                                                            </div>
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- IMG Done-->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <img src="media/img/icons/emojies/emojie-neu-2025/emojie-25-square-correct.png" class="img-h-1-2" alt="img">
+                                                            
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Title News Task  -->
+                                                            <!-- ---------------------------------- -->
+                                                            <div class="title-news-task">
+
+                                                                <div>Java (2/3):</div>
+                                                                <div>bla bla bla bla bla bla bla</div>
+
+                                                            </div> 
+                                                                
+                                                                
+
+                                                        </div> 
+
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <!-- ✅ 4 | News Task Item --> 
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <div class="news-task-item">
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Index News Task -->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <div class="index-news-task">
+                                                                04 |
+                                                            </div>
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- IMG Done-->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <img src="media/img/icons/emojies/emojie-neu-2025/emojie-25-square-correct.png" class="img-h-1-2" alt="img">
+                                                            
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Title News Task  -->
+                                                            <!-- ---------------------------------- -->
+                                                            <div class="title-news-task">
+
+                                                                <div>Java (2/3):</div>
+                                                                <div>bla bla bla bla bla bla bla</div>
+
+                                                            </div> 
+                                                                
+                                                                
+
+                                                        </div> 
+
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <!-- ✅ 5 | News Task Item --> 
+                                                        <!-- ------------------------------------------------------------- -->
+                                                        <div class="news-task-item">
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Index News Task -->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <div class="index-news-task">
+                                                                05 |
+                                                            </div>
+
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- IMG Done-->
+                                                            <!-- ---------------------------------- -->
+
+                                                            <img src="media/img/icons/emojies/emojie-neu-2025/emojie-25-square-correct.png" class="img-h-1-2" alt="img">
+                                                            
+                                                            <!-- ---------------------------------- -->
+                                                            <!-- Title News Task  -->
+                                                            <!-- ---------------------------------- -->
+                                                            <div class="title-news-task">
+
+                                                                <div>Java (2/3):</div>
+                                                                <div>bla bla bla bla bla bla bla</div>
+
+                                                            </div> 
+                                                                
+                                                                
+
+                                                        </div> 
+
+                                                    </div>
+
                                                 </main>
 
                                             </div> 
@@ -1039,7 +1255,7 @@
                 </div>  
 
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- ⚠️ Welcome Container | About | Row Container  -->
+                <!-- ⚠️ | Welcome Container | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div class="row-container" style="background-color: rgb(28, 28, 28);"> 
                     
@@ -1123,7 +1339,7 @@
                 </div>
 
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- ⚠️ Impress Container | About | Row Container  -->
+                <!-- ⚠️ | Impress Container | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div style="display: none; background-color: rgb(50, 50, 50);"  class="row-container" > 
                     
@@ -1205,43 +1421,7 @@
                 </div>
                 
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- ❌ Später Weg | Nur Handle Max | Test | Row Container  -->
-                <!-- ----------------------------------------------------------------------- -->
-                <div style="display: none;" class="row-container">
-
-
-                        <!-- ----------------------------------------------------------- -->
-                        <!-- Handle | Max | Content Area                                 -->
-                        <!-- ----------------------------------------------------------- -->
-                        <div class="handle-max-content-area">
-
-
-                            <!-- ----------------------------------------------------------- -->
-                            <!-- width & heihgt 100% (sets)                                  -->
-                            <!-- ----------------------------------------------------------- -->
-                            <div class="w-100p h-100p flex jc-c">
-
-
-                                <div style="display: grid; row-gap: .3em; padding: 2em .8em">
-
-                                    <div>Handle Max Content Area 1</div>
-                                    <div>Handle Max Content Area 1</div>
-                                    <div>Handle Max Content Area 1</div>
-                                    <div>Handle Max Content Area 1</div>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-
-
-                </div> 
-
-                <!-- ----------------------------------------------------------------------- -->
-                <!-- IT-Doc Container | My IT-Stack > IT-Docs | Row Container  -->
+                <!-- (⚠️) IT-Doc Container | My IT-Stack > IT-Docs | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div class="row-container" style="background-color: rgb(229, 229, 229)"> 
                     
@@ -4459,7 +4639,7 @@
                 </div>
 
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- 🔥🔥🔥 My Top 3 Projects Container | About | Row Container  -->
+                <!-- ⚠️ | Top 3 IT Projects Container | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div class="row-container" style="background-color: rgb(255, 255, 255)"> 
                     
@@ -6595,9 +6775,8 @@
 
                 </div> 
                 
-
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- Like to See More ? | About | Row Container  -->
+                <!-- ⚠️ | Like to See More ? | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div  class="row-container" style="display: none;  background-color: rgb(135, 135, 135);"> 
                     
@@ -6674,10 +6853,8 @@
 
                 </div>
 
-               
-                
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- Sport | My Private Lifestyle | Row Container  -->
+                <!-- ⚠️ | Sport | My Private Lifestyle  > Sport | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div class="row-container"  style="background-color: rgb(229, 229, 229)"> 
                     
@@ -7304,7 +7481,7 @@
                 </div>  
                 
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- Mindset | About | Row Container  -->
+                <!-- ⚠️ | Mindset | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div class="row-container"  style="display: none; background-color: rgb(164, 164, 164);"> 
                     
@@ -7383,7 +7560,7 @@
                 </div>   
                 
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- Contact | About | Row Container  -->
+                <!-- ⚠️ | Contact | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div class="row-container" style="display: none; background-color: rgb(191, 191, 191);"> 
                     
@@ -7459,9 +7636,8 @@
 
                 </div>    
                 
-
                 <!-- ----------------------------------------------------------------------- -->
-                <!-- to be fresh | About | Row Container  -->
+                <!-- ✅ | to be fresh | About | Row Container  -->
                 <!-- ----------------------------------------------------------------------- -->
                 <div class="row-container bgc-to-be-fresh"> 
                     
@@ -7589,8 +7765,6 @@
 
                 </div>     
                 
-
-               
 
             </div> 
 
