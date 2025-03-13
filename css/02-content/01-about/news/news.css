@@ -36,6 +36,9 @@
 
     color:grey;
 
+    background-color: rgb(209, 209, 209);
+   
+
     cursor: pointer;
 
     transition: all .4s;
@@ -160,13 +163,18 @@
 
 .news-doing-item-box {
 
-    padding: 1em 0;
+    /* padding: 1em 0; */
 
     display: grid;
     row-gap: .5em;
 
-    border-top: 1px dashed black;
+  
 
+}
+
+.line-dashed-seperator {
+   
+    border-bottom: 1px dashed rgb(132, 132, 132);
 }
 
 /* ---------------------------------------------------- */

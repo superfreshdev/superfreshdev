@@ -25,13 +25,15 @@
 
 #actually-news-container > header {
 
+    padding: .8em;
    
     display: flex;
     align-items: center;
+    column-gap: 1em;
 
     font-weight: bold;
 
-    background-color: grey;
+    background-color: rgb(201, 201, 201);
 }
 
 /* ---------------------------------------------------------------- */
@@ -42,6 +44,7 @@
 
    
     display: grid;
+    row-gap: 1em;
    
 
     /* background-color: rgb(154, 154, 154); */
