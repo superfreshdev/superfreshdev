@@ -36,6 +36,8 @@
 
 #top3-it-projects-container > main {
 
+    padding: 5em 0;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -43,7 +45,7 @@
     column-gap: 3em;
     row-gap: 3em;
 
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
 }
 
 /* --------------------------------------------------------------------- */
@@ -52,14 +54,14 @@
 
 .it-project-card {
 
-    width: 25em;
+    width: 26em;
 
     display: grid;
     row-gap: 1.5em;
 
     /* border-radius: ; */
 
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 
 /* --------------------------------------------------------------------- */

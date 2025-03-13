@@ -102,6 +102,17 @@ window.addEventListener( 'load', ()=> {
                 var setProject1Index = getCheckedIndex( radios_top_3_it_projects_1 );
                 setValueAttribute( 'src', dataTop3Project1.projects[setProject1Index].header.imgSrcCover, img_cover_top3_project_1 ) 
 
+
+                // ❌ Quick Fix 
+
+                 // GET | New Checked Project Index 
+                setProjectIndex = getCheckedIndex( radios_top_3_it_projects_1 );
+
+                // UPDATE | IT Project Card by Checked Project Index
+                updateItProjectCard( setProjectIndex )
+
+
+
                 /* ------------------------------------------------------------------------------------ */
                 /* Step 2.2: Set | Video List & zip-github Container | Project Card 1
                 /*

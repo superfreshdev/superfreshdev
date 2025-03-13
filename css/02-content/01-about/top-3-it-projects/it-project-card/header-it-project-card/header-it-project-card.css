@@ -15,7 +15,7 @@
     display: grid;
     row-gap: 1.3em;    
 
-    background-color: rgb(157, 157, 157);
+    /* background-color: rgb(157, 157, 157); */
 }
 
 /* --------------------------------------------------------------------- */
@@ -68,14 +68,14 @@
 
     border-radius: .4em;
 
-    background-color: grey;
+    background-color: rgb(207, 207, 207);
 
 
 }
 
 .it-project-number > div:nth-of-type(2) {
 
-    color:rgb(78, 78, 78);
+    color:rgb(0, 0, 0);
     
 }
 
@@ -119,13 +119,19 @@
 
 .it-project-skill-set-container > div {
 
-    padding: .1em .4em;
+    padding: .2em .4em;
+
+    font-size: .9em;
     
     display: flex;
     align-items: center; 
 
     border-radius: .4em;
-    background: rgb(44, 44, 44);
-    color:grey;
+
+    background-color: rgb(226, 226, 226);
+    color:rgb(152, 152, 152);
+    
+    /* background: rgb(44, 44, 44);
+    color:grey; */
 
 }

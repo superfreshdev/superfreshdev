@@ -34,7 +34,7 @@
 
     border-radius: .8em;
 
-    background-color: red;
+    /* background-color: red; */
    
 }
 
@@ -89,13 +89,13 @@
 .lbl-select-sport-year {
 
     width: 6em;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .lbl-select-sport-video-category {
 
     width: 11.5em;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 

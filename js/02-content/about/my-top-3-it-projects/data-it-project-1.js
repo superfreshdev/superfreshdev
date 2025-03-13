@@ -515,7 +515,7 @@ function updateVideoCategoryItems( dataVideoCategoryItems, domElement ) {
 
 // ⚠️  radio-t3-p1-1 , radio-t3-p1-2
 
-radio_p1_1_it_project.addEventListener( 'change', ()=> {
+radio_p1_1_it_project.addEventListener( 'changeX', ()=> {
 
     var setProjectIndex = -1;
 
@@ -571,7 +571,7 @@ radio_p1_1_it_project.addEventListener( 'change', ()=> {
 /* Radio | Project 2 | Change Event 
 /* ------------------------------------------------------------------- */
 
-radio_p1_2_it_project.addEventListener( 'change', ()=> {
+radio_p1_2_it_project.addEventListener( 'changeX', ()=> {
 
     var setProjectIndex = -1;
 
