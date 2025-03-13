@@ -10,6 +10,8 @@
 
 #done-news-container {
 
+    /* width: 100%; */
+
     display: grid;
     row-gap: 1.3em;
 

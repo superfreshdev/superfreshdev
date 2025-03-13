@@ -11,8 +11,11 @@
 #news-container {
 
     width: 100%;
+    display: grid;
+
+    background-color: white;
+  
     
-    /* background-color: red; */
 }
 
 
@@ -22,6 +25,7 @@
 
 #lbl-news-header {
 
+    
     height: 3.5em;
 
     padding: 0 .8em;
@@ -156,20 +160,40 @@
 
 .news-doing-item-box {
 
+    padding: 1em 0;
+
+    display: grid;
+    row-gap: .5em;
+
+    border-top: 1px dashed black;
 
 }
 
 /* ---------------------------------------------------- */
-/* News Doing Item
+/* News Task Item  ( doing / done )
 /* ---------------------------------------------------- */ 
 
-.news-doing-item {
+.news-task-item {
 
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: .4em;
+    align-items: center;
+
+}
+
+/* ---------------------------------------------------- */
+/* Index News Task ( doing / done )
+/* ---------------------------------------------------- */ 
+
+.index-news-task {
+
+    font-weight: bold;
 
 }
 
 /* ---------------------------------------------------------------- */
-/*  Status
+/*  Status Doing
 /* ---------------------------------------------------------------- */
 
 .status-now,
@@ -177,8 +201,10 @@
 .status-later,
 .status-infinity {
 
-    height: 1.6em;
-    padding: 0 .6em;
+    font-size: 14.5px;
+
+    height: 1.5em;
+    padding: 0 .4em;
 
     display: flex;
     align-items: center;
@@ -198,10 +224,9 @@
 
 .status-after {
 
-    background-color: rgb(255, 222, 9);
+    background-color: #ffde09;
 
 }
-
 
 .status-later {
     
@@ -215,6 +240,27 @@
 
     border: 1px dashed black;
 }
+
+
+/* ---------------------------------------------------- */
+/* Title News ask ( doing / done )
+/* ---------------------------------------------------- */ 
+
+.title-news-task {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .3em;
+
+}
+
+.title-news-task > div:nth-of-type(1) {
+
+    font-weight: bold;
+}
+
+
 
 
 /* ---------------------------------------------------------------------------------- */
