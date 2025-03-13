@@ -281,7 +281,7 @@
     flex-wrap: wrap;
     align-items: center;
     column-gap: .4em;
-    row-gap: 2em;
+    /* row-gap: 2em; */
 }
 
 .new-doing-task > div:nth-of-type(1) {
