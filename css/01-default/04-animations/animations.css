@@ -31,3 +31,32 @@
     100% { padding-left: .3em; }
     
 }
+
+/* ------------------------------------- */
+/* Animation | Shaking
+/* ------------------------------------- */
+
+@keyframes shaking {
+    
+    0% { transform: rotate(-35deg); }
+
+    50% { transform: rotate(5deg); }
+
+    100% { transform: rotate(-35deg); }
+    
+}
+
+
+/* ------------------------------------- */
+/* Animation | Diagonal
+/* ------------------------------------- */
+
+@keyframes diagonal {
+
+    0% {  transform: translate( 2px , -2px ); }
+
+    50% { transform: translate( -1px , 1px ); }
+
+    100% { transform: translate( 2px , -2px ); }
+
+}

@@ -1,304 +1,172 @@
 /* ----------------------------------------------------------------------------- */
 /* > news.css
 /*  
-/* : styles the news container
+/* : styles the news container of about page 
 /* ----------------------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- */
-/* News Container About
+/* News Container
 /* ---------------------------------------------------------------- */
 
-#news-container-about {
+#news-container {
 
     width: 100%;
-    margin: 0 .8em;
-
-    /* background-color: rgb(227, 14, 99); */
+    
+    /* background-color: red; */
 }
 
+
 /* ---------------------------------------------------------------- */
-/* [1/2] | Header News | About
+/* Label | News Header 
 /* ---------------------------------------------------------------- */
 
-#news-container-about > header {
+#lbl-news-header {
 
-    height: 4em;
-    
+    height: 3.5em;
+
+    padding: 0 .8em;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    font-weight: bold;
-
-    /* background-color: green; */
-    /* background-color: yellow; */
-}
-
-.header-news-container-about {
-
-    height: 2.5em;
-
-    display: flex;
-    align-items: center;
-    column-gap: .6em;
-
-    /* background-color: red; */
-}
-
-.header-news-container-about > img {
-
-    height: 1.8em;
-}
-
-
-/* ---------------------------------------------------------------- */
-/* [2/2] | Label | Open/ Close | News Container 
-/* ---------------------------------------------------------------- */
-
-#lbl-open-close-new-container-about {
-
-    height: 2.3em;
-    padding: 0 .8em;
-
-    display: flex;
-    align-items: center;
-    column-gap: .6em;
-
-    border-radius: .4em;
+    color:grey;
 
     cursor: pointer;
 
-    background-color: rgb(66, 66, 66);
-
-    user-select: none;
-    -webkit-user-select: none;
-    
-    /* ⚠️ light grey color & light grey img  */
-    color: #9a9a9a;
-
-    transition: all .4s;
-
-}
-
-#lbl-open-close-new-container-about > div:nth-of-type(2) {
-
-    display: none;
-}
-
-#lbl-open-close-new-container-about:hover {
-
-    background-color: wheat;
-    color:black;
-}
-
-#lbl-open-close-new-container-about > img {
-
-    height: .6em;
-
     transition: all .4s;
 }
 
-
-/* ------------------------------------------------------------------- */
-/* ⬇️⬆️ | Smooth Open Close | News Container | About
-/* ------------------------------------------------------------------- */
-
-#open-close-news-container-about {
-
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.3s ease-out;
-
-}
-
-
-/* ------------------------------------------------- */
-/* ### Styling
-/* Checkbox Handling | Open News Container 
-/* ------------------------------------------------- */
-
-#chk-open-close-news-container-about {
-
-    display: none;
-}
-
-/* txt unshow | show me  */
-#chk-open-close-news-container-about:checked + #news-container-about #lbl-open-close-new-container-about > div:nth-of-type(1) {
-
-    display: none;
-}
-
-/* show | close  */
-#chk-open-close-news-container-about:checked + #news-container-about #lbl-open-close-new-container-about > div:nth-of-type(2) {
-
-    display: flex;
-}
-
-#chk-open-close-news-container-about:checked + #news-container-about #lbl-open-close-new-container-about {
+#lbl-news-header:hover {
 
     background-color: wheat;
-    color:black;
-}
 
-#chk-open-close-news-container-about:checked + #news-container-about #lbl-open-close-new-container-about > img {
-
-    transform: rotate(180deg);
-}
-
-
-/* ------------------------------------------------- */
-/* ### Movement
-/* Checkbox Handling | Open News Container
-/* ------------------------------------------------- */
-
-#chk-open-close-news-container-about:checked + #news-container-about > #open-close-news-container-about {
-
-    grid-template-rows: 1fr;
-
-}
-
-
-/* ---------------------------------------------------------------- */
-/*  News Layout Container About 
-/* ---------------------------------------------------------------- */
-
-#news-layout-container-about {
-
-    padding: 1em 0em;
-   
-    display: grid;
-    row-gap: 0em;
-
-    /* background-color: green; */
-}
-
-
-/* ---------------------------------------------------------------- */
-/*  News Doing Container
-/* ---------------------------------------------------------------- */
-
-.news-doing-container {
-
-    display: grid;
-    /* row-gap: 1em; */
-
-
+    /* background-color: rgb(44, 44, 44);
+    color:white; */
 }
 
 /* ---------------------------------------------------------------- */
-/*  Header | News Doing Container
+/* Title Label | News Header 
 /* ---------------------------------------------------------------- */
 
-.news-doing-container > header,
-.news-done-container > header {
-
-    height: 2.8em;
-    padding: 0 .8em;
-
-    /* border-top: 1px solid rgb(109, 109, 109);
-    border-bottom: 1px solid rgb(109, 109, 109); */
-
-    display: flex;
-    align-items: center;
-    column-gap: .6em;
-
-    font-weight: bold;
-
-    border-radius: .4em;
-
-    background-color: rgb(220, 220, 220);
-
-    /* background-color: red; */
-
-}
-
-.news-doing-container > header > img:nth-of-type(1),
-.news-done-container > header > img:nth-of-type(1) {
-
-    height: 1.3em;
-   
-    
-}
-
-.news-doing-container > header > img:nth-of-type(1) {
-
-    animation: rotate360deg 4s ease infinite;
-
-}
-
-
-
-/* ---------------------------------------------------------------- */
-/*  News Done Container
-/* ---------------------------------------------------------------- */
-
-
-/* .news-doing-container > main, 
-.news-done-container > main {
-
-   
-} */
-
-
-.line {
-
-    width: 100%;
-    margin: .3em 0;
-
-    border-bottom: 1px dashed black;
-    
-}
-
-
-/* ---------------------------------------------------------------- */
-/*  News Doing Catgeory
-/* ---------------------------------------------------------------- */
-
-.news-doing-catgegory {
-
-    padding: 1em 0;
-    
-    display: grid;
-    row-gap: .6em;
-
-    border-bottom: 1px dashed black;
-
-    /* background-color: red; */
-}
-
-
-
-
-/* ---------------------------------------------------------------- */
-/*  New Doing Task
-/* ---------------------------------------------------------------- */
-
-.new-doing-task {
-
-    /* padding: .8em 0; */
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    column-gap: .4em;
-    /* row-gap: 2em; */
-}
-
-.new-doing-task > div:nth-of-type(1) {
+#title-lbl-news-header {
 
     display: flex;
     align-items: center;
     column-gap: .3em;
-}
-
-
-.nr-new-doing-task,
-.txt-prio {
 
     font-weight: bold;
 
 }
 
+/* ------------------------------------------ */
+/* Thunder Box | News
+/* ------------------------------------------ */ 
+
+#thunder-box-news {
+
+    height: 2.5em;
+    width: 1.8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: red; */
+
+}
+
+#thunder-box-news > img {
+
+    height: 1.3em;
+}
+
+#thunder-box-news > img:nth-of-type(2) {
+
+    display: none;
+}
+
+/* ------------------------------------------ */
+/* Title Box | News 
+/* ------------------------------------------ */ 
+
+#title-box-news {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .1em;
+
+}
+
+#title-box-news > div:nth-of-type(2) {
+
+    padding-left: .3em;
+}
+
+/* ------------------------------------------ */
+/* Info Open Close | News header
+/* ------------------------------------------ */ 
+
+#info-open-close-news-header {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+    font-weight: bold;
+}
+
+#info-open-close-news-header > img:last-child {
+
+    height: .7em;
+    transition: all .4s;
+}
+
+
+#info-show-close-news-header > div:nth-of-type(2) {
+
+    display: none;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* ⬆️⬇️ Smooth | News List Container
+/* ---------------------------------------------------------------------------------- */
+
+#smooth-news-list-container {
+
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+#news-list-container {
+
+    padding: .8em;
+
+    display: grid;
+    row-gap: 1em;
+}
+
+/* ---------------------------------------------------- */
+/* News Doing Item Box
+/* ---------------------------------------------------- */ 
+
+.news-doing-item-box {
+
+
+}
+
+/* ---------------------------------------------------- */
+/* News Doing Item
+/* ---------------------------------------------------- */ 
+
+.news-doing-item {
+
+
+}
 
 /* ---------------------------------------------------------------- */
 /*  Status
@@ -322,178 +190,109 @@
 
 }
 
-
 .status-now {
 
-    background-color: rgb(196, 4, 4);
+    background-color: rgb(240, 90, 90);
 
 }
 
-
 .status-after {
 
-    background-color: rgb(254, 254, 4);
+    background-color: rgb(255, 222, 9);
+
 }
 
 
 .status-later {
     
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(196, 196, 196);
 
 }
 
 .status-infinity {
 
-    background-color: rgb(205, 205, 205);
+    /* background-color: rgb(205, 205, 205); */
+
+    border: 1px dashed black;
 }
 
 
+/* ---------------------------------------------------------------------------------- */
+/* Checkbox-Label Handling | Show/Close News Container
+/* ---------------------------------------------------------------------------------- */
 
+/* ################### */
+/* Styling 
+/* ################### */
 
+#chk-news {
 
-.title-new-doing-task {
+    display: none;
+}
 
-    
+#chk-news:checked + #lbl-news-header {
+
+    background-color: rgb(28, 28, 28);
+}
+
+#chk-news:checked + #lbl-news-header:hover {
+
+    background-color: rgb(59, 59, 59);
 }
 
 
+/* Show Yellow Thunder & Unshown Grey Thunder  */
+#chk-news:checked + #lbl-news-header #thunder-box-news > img:nth-of-type(1) {
 
+    display: none;
+}
 
-
-
-/* ---------------------------------------------------------------- */
-/*  Doing Task
-/* ---------------------------------------------------------------- */
-
-.doing-task {
+#chk-news:checked + #lbl-news-header #thunder-box-news > img:nth-of-type(2) {
 
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    column-gap: .4em;
-    row-gap: .4em;
 }
 
+#chk-news:checked + #lbl-news-header #thunder-box-news > img {
 
-/* ---------------------------------------------------------------- */
-/*  Stamp |  Task
-/* ---------------------------------------------------------------- */
+    animation: diagonal 1s infinite ease;
+}
 
-.stamp-doing-task {
+/* change title colors  */
+#chk-news:checked + #lbl-news-header #title-box-news > div:nth-of-type(1) {
 
-    font-weight: bold;
+    color:rgb(255, 222, 9);
+}
+
+#chk-news:checked + #lbl-news-header #title-box-news > div:nth-of-type(2) {
+
+    color:white;
+    text-decoration: underline;
+}
+
+/* Info Open Close News Header */
+#chk-news:checked + #lbl-news-header #info-open-close-news-header > img:last-child {
+
+    transform: rotate(180deg);
+
+}
+
+#chk-news:checked + #lbl-news-header #info-show-close-news-header > div:nth-of-type(1) {
+
+    display: none;
+}
+
+#chk-news:checked + #lbl-news-header #info-show-close-news-header > div:nth-of-type(2) {
 
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    column-gap: .6em;
-    row-gap: .1em;
-
-}
-
-/* -------------------------------------- */
-/* Stamp 1 & 2 
-/* -------------------------------------- */
-
-.stamp-1-doing-task,
-.stamp-2-doing-task {
-
-    display: flex;
-    align-items: center;
-    column-gap: .4em;
 }
 
 
-.stamp-2-doing-task > div {
+/* ################### */
+/* Movement
+/* ################### */
 
-    height: 1.6em;
-    padding: 0em .4em;
+#chk-news:checked ~ #smooth-news-list-container {
 
-    display: flex;
-    align-items: center;
-
-    border-radius: .4em;
-
-    background-color: rgb(183, 183, 183);
-
+    grid-template-rows: 1fr;
 }
 
-.img-stamp-doing-task {
-
-    height: 1.4em;
-}
-
-
-/* ---------------------------------------------------------------- */
-/*  Description | Doing Task
-/* ---------------------------------------------------------------- */
-
-.description-doing-task {
-
-    display: flex;
-    align-items: center;
-    column-gap: .3em;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------- */
-/* ❌ MÜLL 
-/* ---------------------------------------------------------------- */
-
-.li-task {
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    column-gap: .3em;
-
-    
-}
-
-.ubuntu {
-
-    display: grid;
-    row-gap: .6em;
-}
-
-.li-task > div:nth-of-type(1) {
-
-    display: flex;
-    align-items: center;
-    column-gap: .3em;
-}
-
-.li-task > div:nth-of-type(2),
-.li-task > div:nth-of-type(3) {
-
-    font-weight: bold;
-}
-
-.li-task > div:nth-of-type(1) > img {
-
-    height: 1.5em;
-}

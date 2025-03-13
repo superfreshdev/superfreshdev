@@ -5,49 +5,43 @@
 /* ----------------------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- */
-/*  History News Container 
+/*  Done News Container
 /* ---------------------------------------------------------------- */
 
-#history-news-container {
-
-    padding: 1em 0 1.5em 0;
+#done-news-container {
 
     display: grid;
     row-gap: 1.3em;
 
-    border-top: 1px dashed rgb(125, 125, 125);
-
-    /* background-color: pink; */
+    /* background-color: rgb(154, 154, 154); */
 }
 
-
 /* ---------------------------------------------------------------- */
-/*  Header | History News Container 
+/*  Header | Done News Container
 /* ---------------------------------------------------------------- */
 
-#history-news-container > header {
+#done-news-container > header {
 
+   
     display: flex;
     align-items: center;
-    column-gap: .6em;
 
     font-weight: bold;
 
-    color:#008021;
-
-}
-
-#history-news-container > header > img {
-
-    height: 1.5em;
+    background-color: lightgreen;
+    
 }
 
 /* ---------------------------------------------------------------- */
-/*  Main | History News Container 
+/*  Main | Done News Container
 /* ---------------------------------------------------------------- */
 
-#history-news-container > main {
+#done-news-container > main {
 
+   
     display: grid;
-    row-gap: .3em;
+   
+
+    /* background-color: rgb(154, 154, 154); */
 }
+
