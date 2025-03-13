@@ -206,7 +206,7 @@
 
     border-radius: .4em;
 
-    background-color: grey;
+    background-color: rgb(220, 220, 220);
 
     /* background-color: red; */
 
@@ -338,7 +338,7 @@
 
 .status-later {
     
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(205, 205, 205);
 
 }
 
