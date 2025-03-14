@@ -52,6 +52,127 @@
 }
 
 /* ---------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth | Done News List 
+/* ---------------------------------------------------------------- */
+
+#smooth-done-news-list {
+
+    display: grid;
+   
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+
+
+}
+
+
+/* ---------------------------------------------------------------- */
+/*  Done News List
+/* ---------------------------------------------------------------- */
+
+#done-news-list {
+
+    padding: .6em 0;
+
+    display: grid;
+    row-gap: .8em;
+
+    /* color: rgb(169, 169, 169); */
+    color:green;
+
+    /* background-color: red; */
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Actually & Last | Month News Done List 
+/* ---------------------------------------------------------------- */
+
+#actually-month-news-done-list,
+#last-month-news-done-list {
+
+    display: grid;
+    row-gap: .8em;
+
+    /* default unshown, because of radio decison  */
+    display: none;
+
+}
+
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Radio-Label Handling | Actually Month , Last Month, Unshown
+/* ---------------------------------------------------------------------------------- */
+
+/* ################### */
+/* Styling 
+/* ################### */
+
+input[name="name-radio-news-done"] {
+
+    display: none;
+}
+
+#radio-actually-month-news-done:checked ~ #done-news-radio-tab-panel > label[for="radio-actually-month-news-done"],
+#radio-last-month-news-done:checked ~ #done-news-radio-tab-panel > label[for="radio-last-month-news-done"],
+#radio-unshown-news-done:checked ~ #done-news-radio-tab-panel > label[for="radio-unshown-news-done"] {
+
+    background-color: lightgreen;
+}
+
+#radio-actually-month-news-done:checked ~ #done-news-radio-tab-panel > label[for="radio-actually-month-news-done"] > .custom-radio-small > img,
+#radio-last-month-news-done:checked ~ #done-news-radio-tab-panel > label[for="radio-last-month-news-done"] > .custom-radio-small > img,
+#radio-unshown-news-done:checked ~ #done-news-radio-tab-panel > label[for="radio-unshown-news-done"] > .custom-radio-small > img {
+
+    display: flex;
+}
+
+
+/* ################### */
+/* Movement
+/* ################### */
+
+
+/* show done list  */
+#radio-actually-month-news-done:checked ~ #smooth-done-news-list,
+#radio-last-month-news-done:checked ~ #smooth-done-news-list {
+
+    grid-template-rows: 1fr;
+}
+
+/* show acutally month & unshown last month */
+#radio-actually-month-news-done:checked ~ #smooth-done-news-list #done-news-list #actually-month-news-done-list {
+
+    display: grid;
+}
+#radio-actually-month-news-done:checked ~ #smooth-done-news-list #done-news-list #last-month-news-done-list {
+
+    display: none;
+}
+
+/* show last month & unshwon actuallym onth */
+#radio-last-month-news-done:checked ~ #smooth-done-news-list #done-news-list #last-month-news-done-list {
+
+    display: grid;
+}
+
+#radio-last-month-news-done:checked ~ #smooth-done-news-list #done-news-list #actually-month-news-done-list {
+
+    display: none;
+}
+
+
+/* unshow done list  */
+#radio-unshown-news-done:checked ~ #smooth-done-news-list {
+
+    grid-template-rows: 0fr;
+}
+
+
+
+/* ---------------------------------------------------------------- */
 /*  Done News Radio Tab Panel 
 /* ---------------------------------------------------------------- */
 
@@ -69,18 +190,3 @@
 
 }
 
-/* ---------------------------------------------------------------- */
-/*  Done News List
-/* ---------------------------------------------------------------- */
-
-#done-news-list {
-
-    padding: .6em 0;
-
-    display: grid;
-    row-gap: .8em;
-
-    color: rgb(169, 169, 169);
-
-    /* background-color: red; */
-}

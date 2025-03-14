@@ -144,7 +144,7 @@
 #smooth-news-list-container {
 
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 0fr;
 
     transition: grid-template-rows 0.3s ease-out;
 }
@@ -161,12 +161,8 @@
 
 .news-doing-item-box {
 
-    /* padding: 1em 0; */
-
     display: grid;
     row-gap: .8em;
-
-  
 
 }
 
@@ -201,9 +197,9 @@
 
 .index-news-task {
 
-    width: 2.3em;
+    width: 2em;
     font-weight: bold;
-    background-color: magenta;
+    /* background-color: magenta; */
 
 }
 
@@ -268,7 +264,7 @@
     align-items: center;
     column-gap: .3em;
 
-    background-color: pink;
+    /* background-color: pink; */
 
 }
 
