@@ -187,9 +187,6 @@
 
 .index-status-item-news-task {
 
-    /* optimal layout fix by text with 2 lines */
-    padding-top: 1px;
-
     display: flex;
     column-gap: .3em;
 
