@@ -144,7 +144,7 @@
 #smooth-news-list-container {
 
     display: grid;
-    grid-template-rows: 0fr;
+    grid-template-rows: 1fr;
 
     transition: grid-template-rows 0.3s ease-out;
 }
@@ -182,10 +182,17 @@
 .news-task-item {
 
     display: flex;
-    flex-wrap: wrap;
     column-gap: .4em;
-    align-items: center;
+}
 
+/* ---------------------------------------------------- */
+/* Index Status Item News Task  ( doing / done )
+/* ---------------------------------------------------- */ 
+
+.index-status-item-news-task {
+
+    display: flex;
+    column-gap: .3em;
 }
 
 /* ---------------------------------------------------- */
@@ -194,7 +201,9 @@
 
 .index-news-task {
 
+    width: 2.3em;
     font-weight: bold;
+    background-color: magenta;
 
 }
 
@@ -258,6 +267,8 @@
     flex-wrap: wrap;
     align-items: center;
     column-gap: .3em;
+
+    background-color: pink;
 
 }
 

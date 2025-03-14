@@ -10,8 +10,8 @@
 /* ---------------------------------------------------------------- */
 
 .lbl-cusotm-radio-small-sfd,
-.lbl-cusotm-radio-sfd,
-.lbl-cusotm-radio-big-sfd {
+.lbl-cusotm-radio-normal-sfd,
+.lbl-cusotm-radio-large-sfd {
 
     padding: 0 .6em 0 .8em;
 
@@ -24,15 +24,66 @@
 
     font-weight: bold;
 
-    background-color: grey;
+    
 
     transition: all .4s;
 
 }
 
+/* -------------------------------------------------------- */
+/* Color Schemas
+/* -------------------------------------------------------- */
+
+.lbl-dashed-border-black {
+
+    border: 1px dashed black;
+
+}
+
+.lbl-solid-border-black {
+
+    border: 1px solid black;
+
+}
+
+.lbl-bgc-light-green {
+
+    background-color: lightgreen;
+    color:black;
+
+}
+
+.lbl-bgc-very-light-grey {
+
+    background-color: rgb(239, 239, 239);
+    color:black;
+
+}
+
+.lbl-bgc-light-grey {
+
+    background-color: rgb(203, 203, 203);
+    color:black;
+
+}
+
+.lbl-bgc-dark-grey {
+
+    background-color: grey;
+    color:black;
+
+}
+
+.lbl-bgc-antrahcite {
+
+    background-color: rgb(50, 50, 50);
+    color:white;
+
+}
+
 .lbl-cusotm-radio-small-sfd:hover ,
-.lbl-cusotm-radio-sfd:hover,
-.lbl-cusotm-radio-big-sfd:hover {
+.lbl-cusotm-radio-normal-sfd:hover,
+.lbl-cusotm-radio-large-sfd:hover {
 
     background-color: wheat;
 
@@ -44,13 +95,13 @@
 
 }
 
-.lbl-cusotm-radio-sfd {
+.lbl-cusotm-radio-normal-sfd {
 
     height: 3em;
 
 }
 
-.lbl-cusotm-radio-big-sfd {
+.lbl-cusotm-radio-large-sfd {
 
     height: 3.5em;
 }

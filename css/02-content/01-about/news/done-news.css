@@ -41,7 +41,7 @@
 
 #done-news-container > main {
 
-    padding: 1em 1em 1em 1.5em;
+    padding: 1em 1.2em;
 
     display: grid;
     row-gap: 1.3em;
@@ -65,7 +65,7 @@
 
     padding-bottom: 1em;
 
-    border-bottom: 1px dashed black;;
+    border-bottom: 1px solid rgb(211, 211, 211);;
 
 }
 
@@ -74,6 +74,8 @@
 /* ---------------------------------------------------------------- */
 
 #done-news-list {
+
+    padding: .6em 0;
 
     display: grid;
     row-gap: .8em;
