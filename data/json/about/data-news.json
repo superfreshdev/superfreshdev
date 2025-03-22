@@ -18,6 +18,18 @@
                 "category": "IntelliJ",
                 "description": "Grundlagen",
                 "link": "https://drive.google.com/file/d/1DGfDRL3OTBAUENJqQXh5YrkVA0fFY1X6/view?usp=sharing"
+            },
+
+            {
+                "category": "Java (3/3)",
+                "description": "Generics, Functional Interfaces, Multithreading",
+                "link": "https://drive.google.com/file/d/1b_n56iadYomRTjiHdJngGFQh7UG-II6u/view?usp=sharing"
+            },
+
+            {
+                "category": "Spring Boot",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1BCPh3tvOwSCrWmukE89qAjwU24pxZ_kY/view?usp=sharing"
             }
         ]
 
@@ -50,8 +62,44 @@
             },
 
             {
-                "category": "GraphQL API",
+                "category": "GraphQL",
                 "description": "Grundlagen"
+            },
+
+            {
+                "category": "Unit Testing",
+                "description": "Grundlagen ChatGBT, Jest, JUnit, Cypress",
+                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
+            },
+
+            {
+                "category": "React Native",
+                "description": "Grundlagen Mobile Development (IOS & Android)",
+                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
+            },
+
+            {
+                "category": "DB Konzept & SQL",
+                "description": "Grundlagen & MYSQL & PostgreSQL",
+                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
+            },
+
+            {
+                "category": "Mongo DB",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
+            },
+
+            {
+                "category": "QE (1/2)",
+                "description": "Einführung Softwaretechnik 2 - Testen, Refactoring, Metriken, Versionsmanagement",
+                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
+            },
+
+            {
+                "category": "QE (2/2)",
+                "description": "Refactoring: Bestehende Architekturen",
+                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
             }
         ]
 
@@ -78,6 +126,14 @@
             {
                 "category": "Zusammenfassung Angular 17",
                 "description": "1.Erweiterte Komponenten & 2.Routing & Praxis Übungen"
+            },
+            {
+                "category": "SuperfreshDEV (1/2)",
+                "description": "Clean Code: My dyn. News Container (About)"
+            },
+            {
+                "category": "SuperfreshDEV (2/2)",
+                "description": "Clean Code & Build dyn. IT Docs Container (About)"
             }
         ]
 
@@ -109,12 +165,20 @@
                 "category": "Violine",
                 "description": "Actually: learn music notes | My Inspiration for example to play like this: Link Audio |",
                 "link": "media/audio/content/about/rhett-price-tom-brady.mp3"
+            },
+
+            {
+                "imgPath": "media/img/icons/icons/violine.png",
+                "category": "SuperfreshDEV",
+                "description": "working on my website ( design, dynamic, content)"
             }
         ]
 
    },
 
    "done": {
+
+        "imgDone": "media/img/icons/emojies/emojie-neu-2025/emojie-25-square-correct.png",
 
         "actuallyMonth": [
 
@@ -123,27 +187,32 @@
 
                     {
                         "category": "Java (2/3)",
-                        "description": "OOP, Fehlerbehandlung, Stream API"
+                        "description": "OOP, Fehlerbehandlung, Stream API",
+                        "link": ""
                     },
 
                     {
                         "category": "Java (3/3)",
-                        "description": "Generics, Functional Interfaces, Multithreading"
+                        "description": "Generics, Functional Interfaces, Multithreading",
+                        "link": ""
                     },
 
                     {
                         "category": "UML",
-                        "description": "Grundlagen"
+                        "description": "Grundlagen",
+                        "link": ""
                     },
 
                     {
                         "category": "IntelliJ",
-                        "description": "Grundlagen"
+                        "description": "Grundlagen",
+                        "link": ""
                     },
 
                     {
                         "category": "Spring Boot",
-                        "description": "Grundlagen"
+                        "description": "Grundlagen",
+                        "link": ""
                     }
                 ]    
             },
@@ -224,6 +293,7 @@
                    
                 ]    
             }
+
         ]
 
        

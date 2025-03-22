@@ -39,10 +39,11 @@ function printTwoFormattedNumber( number ) {
     if( number <= 9 ) {
 
         twoFormattedNumber = "0"+number;
-        
+        return twoFormattedNumber;
+
     }
 
-    return twoFormattedNumber;
+    return number;
 
 
 }

@@ -56,6 +56,63 @@ function getEnglishShortMonthName( month ) {
         default:
             return "-1"
         
-
     }
 }
+
+/* ------------------------------------------- */
+/* printFullMonthShortYear()
+/* ------------------------------------------- */
+
+function printFullMonthShortYear( indexMonth, year ) {
+
+    var strDate = "";
+    var strYear = year.toString();
+
+    switch( indexMonth ) {
+
+        case 0:
+            strDate = "January"
+            break;
+        case 1:
+            strDate = "February"
+            break;
+        case 2:
+            strDate = "March"
+            break;
+        case 3:
+            strDate = "April"
+            break;
+        case 4:
+            strDate = "May"
+            break;
+        case 5:
+            strDate = "June"
+            break;
+        case 6:
+            strDate = "July"
+            break;
+        case 7:
+            strDate = "August"
+            break;
+        case 8:
+            strDate = "September"
+            break;
+        case 9:
+            strDate = "October"
+            break;
+        case 10:
+            strDate = "November"
+            break;
+        case 11:
+            strDate = "December"
+            break;
+
+        default:
+            strDate = "-1"
+        
+    }
+
+    return strDate + " " + strYear.substring(2,4);
+}
+
+

@@ -1,23 +1,32 @@
 console.log('[🟡|content|about|news| ➡️ update-news.js]')
 
-/* 
-
-    1. on reload (windowsOnLoad) the function updateNews will execute 
-       to read json file & show actually new datas 
-
-*/
 
 /* ---------------------------------------------------------------------------------- */
 /* DOM Elements 
 /* ---------------------------------------------------------------------------------- */
 
+
+/* ------------------------------------------------- */
+/* Actually Doing | Elements 
+/* ------------------------------------------------- */
+
+
 // Add Point , News Doing Container
 const add_news_doing_container = document.getElementById('js-add-news-doing-container');
 
 
+/* ------------------------------------------------- */
+/* Done | Elements 
+/* ------------------------------------------------- */
+
+// Div Actually Month
+const div_done_actually_month = document.getElementById('js-news-done-actually-month');
+// Div Last Month
+const div_done_last_month = document.getElementById('js-news-done-last-month');
+
 // Add Point , Actually Month News Done Container 
-// Add Point, Last Month News Done Container 
 const add_news_actually_month_done_container = document.getElementById('actually-month-news-done-list')
+// Add Point, Last Month News Done Container 
 const add_news_last_month_done_container = document.getElementById('last-month-news-done-list');
 
 
@@ -53,7 +62,7 @@ async function updateNews ( filePath ) {
         console.log("##############");
 
         /* ----------------------------------------------------------------------- */
-        /* ### Start ###
+        /* ### Start | Doing Task ###
         /* ----------------------------------------------------------------------- */
 
         createNewsPrioTask( data.now )
@@ -65,7 +74,23 @@ async function updateNews ( filePath ) {
         createNewsPrioTask( data.infinity )
 
         /* ----------------------------------------------------------------------- */
-        /* ### End ###
+        /* ### End | Doing Task  ###
+        /* ----------------------------------------------------------------------- */
+
+
+        /* ----------------------------------------------------------------------- */
+        /* ### Start | Done Task ###
+        /* ----------------------------------------------------------------------- */
+
+
+        createDoneTasks( data.done.actuallyMonth, data.done.imgDone, add_news_actually_month_done_container );
+
+
+        createDoneTasks( data.done.lastMonth, data.done.imgDone, add_news_last_month_done_container );
+
+
+        /* ----------------------------------------------------------------------- */
+        /* ### End | Done Task  ###
         /* ----------------------------------------------------------------------- */
 
 
@@ -74,6 +99,143 @@ async function updateNews ( filePath ) {
     } catch (error) {
         console.error('API Error:', error)
     }
+
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* Sub Function | Create Done Tasks
+/* ---------------------------------------------------------------------------------- */
+
+function createDoneTasks( objDataMonth , objImgPath, addDomPoint ) {
+
+
+    var objMonth = objDataMonth;
+    var imgPath = objImgPath;
+
+    var newDivDoneTaskCategories = "";
+    
+
+    /* 
+        1. For: Add every done category list 
+        2. For: Add done task items to done category list 
+
+    */
+
+    for( let i=0; i < objMonth.length; i++ ) {
+
+        
+        newDivDoneTaskCategories = createDoneListTaskCategory( objMonth[i].tasks, imgPath )
+
+        console.log( newDivDoneTaskCategories )
+
+        // Add Done Category List to Parent 
+        console.log('####')
+
+        addDomElementToParent( newDivDoneTaskCategories , addDomPoint )
+
+        // Add Seperator dashed line 
+        var newDivSeperatorElement = createDivClassText( "line-dashed-seperator" );
+        addDomElementToParent( newDivSeperatorElement , addDomPoint )
+        
+    }
+    
+
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Sub Function | Create Done List Task Category
+/* ---------------------------------------------------------------------------------- */
+
+function createDoneListTaskCategory( objDoneTaskItems , imgPath ) {
+
+
+    var newDiv_done_list_task_category = createDivClassText( 'done-list-task-category' )
+
+    var newDiv_news_task_item = "";
+
+    var newDiv_index_status_item_news_task = "";
+    var newDiv_title_news_task = "";
+
+    for( let j=0; j <  objDoneTaskItems.length; j++ ) {
+
+        newDiv_news_task_item = createDivClassText( 'news-task-item' )
+
+
+        /* ----------------------------------------------------- */
+        /* Step 1 | Create | Index Status Iten News Task
+        /* ----------------------------------------------------- */
+
+        newDiv_index_status_item_news_task = createDivClassText( 'index-status-item-news-task' )
+
+
+            var newDiv_index_news_task = createDivClassText( 'index-news-task', printTwoFormattedNumber(j+1) + " |" )
+
+            // console.log( newDiv_index_news_task )
+
+            // Append "index-news-task" to parent: "index-status-item-news-task"
+            addDomElementToParent( newDiv_index_news_task , newDiv_index_status_item_news_task )
+
+
+            var newImg_done_task = createImg( imgPath, 'img-h-1' )
+
+            // layout img fix 
+            newImg_done_task.style.padding = " 4px 0 0 0";
+
+            // console.log( newImg_done_task  )
+
+            // Append "newImg_done_task" to parent: "index-status-item-news-task"
+            addDomElementToParent( newImg_done_task , newDiv_index_status_item_news_task )
+
+            //  console.log( newDiv_index_status_item_news_task  )
+
+            // Final ADD to | news task item 
+            addDomElementToParent( newDiv_index_status_item_news_task , newDiv_news_task_item )
+
+            // console.log( newDiv_news_task_item  )
+
+
+        /* ----------------------------------------------------- */
+        /* Step 2 | Create | Description
+        /* ----------------------------------------------------- */  
+        
+        newDiv_title_news_task = createDivClassText( 'title-news-task' )
+
+        var newDivCategory = createDivText( objDoneTaskItems[j].category  )
+
+        addDomElementToParent( newDivCategory , newDiv_title_news_task )
+
+        var newDivDescription = createDivText( objDoneTaskItems[j].description  )
+
+        addDomElementToParent( newDivDescription , newDiv_title_news_task )
+
+        //  console.log( newDiv_title_news_task  )
+
+
+        // Final ADD to | news task item 
+        addDomElementToParent( newDiv_title_news_task  , newDiv_news_task_item )
+
+        //   console.log( newDiv_news_task_item  )
+
+
+
+        /* ----------------------------------------------------------------- */
+        /* Final | Add each Task Done Item to Done List TAsk Category */
+        /* ----------------------------------------------------------------- */
+
+        // Add TAsk Item to List TAsk Category 
+        addDomElementToParent( newDiv_news_task_item  , newDiv_done_list_task_category )
+
+        // console.log( newDiv_done_list_task_category  )
+    
+
+
+    }
+
+
+    return newDiv_done_list_task_category;
+
+
 
 }
 
@@ -294,8 +456,28 @@ function createDomNewsTaskItem( strIndex , strPrioText, strPrioCategory, imgInfi
 /* ---------------------------------------------------------------------------------- */
 
     var filePath = 'data/json/about/data-news.json';
-
     updateNews( filePath );
 
+    // Update Actually Month Year Radio Labels
 
+    // testing: buildings szenarios: jan 26, dez. 25
+    // var actuallyMonthIndex = 0;
+    // var actuallyYear = 2026;
+
+    const date = new Date();
+
+    var actuallyMonthIndex = date.getMonth();
+    var actuallyYear = date.getFullYear();
+
+    div_done_actually_month.innerText =  printFullMonthShortYear(  actuallyMonthIndex , actuallyYear )
+
+    if( actuallyMonthIndex == 0 ) {
+
+        div_done_last_month.innerText = printFullMonthShortYear(  11 , actuallyYear-1 )
+
+    } else {
+
+        div_done_last_month.innerText = printFullMonthShortYear(  actuallyMonthIndex-1 , actuallyYear )
+
+    }
 
