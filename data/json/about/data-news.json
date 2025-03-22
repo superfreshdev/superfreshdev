@@ -63,43 +63,20 @@
 
             {
                 "category": "GraphQL",
-                "description": "Grundlagen"
-            },
-
-            {
-                "category": "Unit Testing",
-                "description": "Grundlagen ChatGBT, Jest, JUnit, Cypress",
-                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
-            },
-
-            {
-                "category": "React Native",
-                "description": "Grundlagen Mobile Development (IOS & Android)",
-                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
-            },
-
-            {
-                "category": "DB Konzept & SQL",
-                "description": "Grundlagen & MYSQL & PostgreSQL",
-                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
-            },
-
-            {
-                "category": "Mongo DB",
                 "description": "Grundlagen",
                 "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
             },
 
             {
-                "category": "QE (1/2)",
-                "description": "Einführung Softwaretechnik 2 - Testen, Refactoring, Metriken, Versionsmanagement",
-                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
+                "category": "Unit Testing",
+                "description": "Grundlagen ChatGBT, Jest, JUnit, Cypress",
+                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
             },
 
             {
-                "category": "QE (2/2)",
-                "description": "Refactoring: Bestehende Architekturen",
-                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
+                "category": "React Native",
+                "description": "Grundlagen Mobile Development (IOS & Android)",
+                "link": "https://drive.google.com/file/d/1eIvWDwfsROk3ql8_lNSKIe1re7DkCsih/view?usp=sharing"
             }
         ]
 
@@ -115,25 +92,46 @@
 
             {
                 "category": "Angular 17",
-                "description": "Erweiterte Komponenten"
+                "description": "Erweiterte Komponenten",
+                "link": "https://drive.google.com/file/d/17ksgMfQzPucvitaQHrjX2o9xrz23OU-x/view?usp=sharing"
             },
 
             {
                 "category": "Angular 17",
-                "description": "Routing (Wiederholung)"
+                "description": "Routing (Wiederholung)",
+                "link": "https://drive.google.com/file/d/1Z0wrnFF50Cz9R3lIWhU0vhSOuayiZXlV/view?usp=sharing"
             },
 
             {
                 "category": "Zusammenfassung Angular 17",
-                "description": "1.Erweiterte Komponenten & 2.Routing & Praxis Übungen"
+                "description": "| Erweiterte Komponenten | Routing | Praxis Projekte "
+            },
+            {
+                "category": "Angular 17",
+                "description": "CLI & Projekt Setup",
+                "link": "https://drive.google.com/file/d/1zUhkgxLdYS0gSfFlVtexoZ441_ybwMBZ/view?usp=sharing"
+            },
+            {
+                "category": "Angular 17",
+                "description": "Module, Komponenten, Bindungen",
+                "link": "https://drive.google.com/file/d/1Z0369AuV6MC0im_OivfDeWZiPjyNcDkG/view?usp=sharing"
+            },
+            {
+                "category": "Angular 17",
+                "description": "Dependency Injection",
+                "link": "https://drive.google.com/file/d/1qRIRBGe1GGtdNPlXdEL7hPY0x1eFwMGD/view?usp=sharing"
+            },
+            {
+                "category": "Zusammenfassung Angular 17",
+                "description": "CLI | Module-Komponenten-Bindungen | DI | Praxis Projekte "
             },
             {
                 "category": "SuperfreshDEV (1/2)",
-                "description": "Clean Code: My dyn. News Container (About)"
+                "description": "Clean Code | My News Container"
             },
             {
                 "category": "SuperfreshDEV (2/2)",
-                "description": "Clean Code & Build dyn. IT Docs Container (About)"
+                "description": "Clean Code & Dynamic | IT Docs Container"
             }
         ]
 
@@ -150,7 +148,7 @@
             {
                 "imgPath": "media/img/icons/icons/biceps-black.png",
                 "category": "Sport",
-                "description": "Running | Swimming | Bicycle | Gym | ..."
+                "description": "Running | Bicycle | Gym | Swimming | ..."
             },
 
             {
@@ -163,14 +161,14 @@
             {
                 "imgPath": "media/img/icons/icons/violine.png",
                 "category": "Violine",
-                "description": "Actually: learn music notes | My Inspiration for example to play like this: Link Audio |",
+                "description": "Actually: learn music notes | My Inspiration for example to play like this: |",
                 "link": "media/audio/content/about/rhett-price-tom-brady.mp3"
             },
 
             {
                 "imgPath": "media/img/icons/icons/violine.png",
                 "category": "SuperfreshDEV",
-                "description": "working on my website ( design, dynamic, content)"
+                "description": "constantly working on my website ( design, dynamic, content)"
             }
         ]
 
