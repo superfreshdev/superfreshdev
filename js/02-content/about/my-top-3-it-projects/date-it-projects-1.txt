@@ -516,12 +516,119 @@ function updateVideoCategoryItems( dataVideoCategoryItems, domElement ) {
 // ⚠️  radio-t3-p1-1 , radio-t3-p1-2
 
 
+radio_p1_1_it_project.addEventListener( 'change', ()=> {
+
+    var setProjectIndex = -1;
+
+    /* --------------------------------------------------- */
+    /* Console Logs
+    /* --------------------------------------------------- */
+    console.log(' Radio | 1 > changed ')
+    console.log(' New Index Checked: ' + getCheckedIndex( radios_top_3_it_projects_1 ) )
+
+    /* --------------------------------------------------- */
+    /* Update: IT Project Card 
+    /* --------------------------------------------------- */
+
+        // GET | New Checked Project Index 
+        setProjectIndex = getCheckedIndex( radios_top_3_it_projects_1 );
+
+        // UPDATE | IT Project Card by Checked Project Index
+        updateItProjectCard( setProjectIndex )
+
+
+    /* --------------------------------------------------------------------------------------- */
+    /* ⚠️ TMP | Update: Video Tutorial Container / Zip Github Container 
+    /* --------------------------------------------------------------------------------------- */
+
+ 
+    var statusVideoTutorialContainer = dataTop3Project1.projects[setProjectIndex].footer.allowCreateContainers.statusVideoTutorialContainer;
+    var statusZipGithubContainer = dataTop3Project1.projects[setProjectIndex].footer.allowCreateContainers.statusZipGithubContainer;
+
+    // status Show Video Container
+    showDomElementByStatus( statusVideoTutorialContainer, video_tutorial_container_t3_p1, 'grid' )
+
+    // status Show Zip GithubContainer
+    showDomElementByStatus( statusZipGithubContainer, zip_github_container_t3_p1, 'flex' )
+
+
+    /* --------------------------------------------------------------------------------------- */
+    /* ⚠️ TMP | Update: Video Category Items
+    /* --------------------------------------------------------------------------------------- */
+
+    var dataVideoCategorieItems = new Array();
+    dataVideoCategorieItems = dataTop3Project1.projects[setProjectIndex].footer.videoTutorialContainer;
+
+    updateVideoCategoryItems( dataVideoCategorieItems, video_category_list_container_t3_p1 )
+  
+
+
+
+   
+
+})
+
 
 
 /* ------------------------------------------------------------------- */
 /* Radio | Project 2 | Change Event 
 /* ------------------------------------------------------------------- */
 
+radio_p1_2_it_project.addEventListener( 'change', ()=> {
+
+    var setProjectIndex = -1;
+
+    /* --------------------------------------------------- */
+    /* Console Logs
+    /* --------------------------------------------------- */
+    console.log(' Radio | 2 > changed ')
+    console.log(' New Index Checked: ' + getCheckedIndex( radios_top_3_it_projects_1 ) )
+
+    /* --------------------------------------------------- */
+    /* Update: IT Project Card 
+    /* --------------------------------------------------- */
+
+        // GET | New Checked Project Index 
+        setProjectIndex = getCheckedIndex( radios_top_3_it_projects_1 );
+
+        // UPDATE | IT Project Card by Checked Project Index
+        updateItProjectCard( setProjectIndex )
+
+
+    /* --------------------------------------------------------------------------------------- */
+    /* ⚠️ TMP | Update: Video Tutorial Container / Zip Github Container 
+    /* --------------------------------------------------------------------------------------- */
+
+
+    var statusVideoTutorialContainer = dataTop3Project1.projects[setProjectIndex].footer.allowCreateContainers.statusVideoTutorialContainer;
+    var statusZipGithubContainer = dataTop3Project1.projects[setProjectIndex].footer.allowCreateContainers.statusZipGithubContainer;
+
+    // status Show Video Container
+    showDomElementByStatus( statusVideoTutorialContainer, video_tutorial_container_t3_p1, 'grid' )
+
+    // status Show Zip GithubContainer
+    showDomElementByStatus( statusZipGithubContainer, zip_github_container_t3_p1, 'flex' )
+
+
+    /* --------------------------------------------------------------------------------------- */
+    /* ⚠️ TMP | Update: Video Category Items
+    /* --------------------------------------------------------------------------------------- */
+
+    var dataVideoCategorieItems = new Array();
+    dataVideoCategorieItems = dataTop3Project1.projects[setProjectIndex].footer.videoTutorialContainer;
+
+
+    // Delete Old Video Category Items
+    deleteAllDomElementsFromDomElement( '#js-video-category-list-container-t3-p1 > div' , video_category_list_container_t3_p1 )
+
+    updateVideoCategoryItems( dataVideoCategorieItems, video_category_list_container_t3_p1 )
+
+
+  
+
+
+    
+})
 
 
 /* ------------------------------------------------------------------- */
@@ -582,13 +689,13 @@ function updateVideoCategoryItems( dataVideoCategoryItems, domElement ) {
                     var strArray = new Array();
                     strArray = getArrayFromStrings( dataTop3Project1.projects[checkedProjectIndex].header.skillItems )
                     
-                    // console.log('strArray= ' + strArray.length )
+                    console.log('strArray= ' + strArray.length )
 
                     // CREATE | new Div Skill Items by Strings
                     var newDivArray = new Array();
                     newDivArray = createDivElementsWithText( strArray )
 
-                    // console.log('newDivArray= ' + newDivArray.length )
+                    console.log('newDivArray= ' + newDivArray.length )
 
                     // ADD | new Div Skill Items to DomElement ( skill item container )
                     addDomElementsToDomElement( newDivArray, div_skill_set_container_p1_project_t3 )
@@ -618,7 +725,7 @@ function updateVideoCategoryItems( dataVideoCategoryItems, domElement ) {
                 divElements.push( document.createElement('div') )
                 divElements[i].innerText = strTexts[i];
 
-                // console.log( divElements[i] )
+                console.log( divElements[i] )
 
             }
 
@@ -633,11 +740,11 @@ function updateVideoCategoryItems( dataVideoCategoryItems, domElement ) {
 
     function deleteAllDomElementsFromDomElement( strQuerySelector , domElement ) {
 
-        // console.log('❄️ = ' + strQuerySelector )
+        console.log('❄️ = ' + strQuerySelector )
 
         var domElements = document.querySelectorAll( strQuerySelector );
 
-        // console.log('❄️ Länge = ' + domElements.length )
+        console.log('❄️ Länge = ' + domElements.length )
 
         if( domElements.length > 0 && domElements != null && domElements != undefined  ) {
 
@@ -646,7 +753,7 @@ function updateVideoCategoryItems( dataVideoCategoryItems, domElement ) {
 
                 for( let i=0; i < domElements.length; i++ ) {
 
-                    // console.log(i + ":" + strQuerySelector )
+                    console.log(i + ":" + strQuerySelector )
 
                     // Remove each domElement
                     domElements[i].remove();
@@ -735,7 +842,7 @@ function updateVideoCategoryItems( dataVideoCategoryItems, domElement ) {
 
                 for( let i=0; i < arrayElements.length; i++ ) {
 
-                    // console.log(i + ': ' + arrayElements[i] )
+                    console.log(i + ': ' + arrayElements[i] )
                 }
 
             } else {

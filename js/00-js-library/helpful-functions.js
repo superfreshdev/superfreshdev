@@ -28,3 +28,22 @@ function getYear() {
 }
 
 
+/* ------------------------------------------------------------------ */
+/* printTwoFormattedNumber
+/* ------------------------------------------------------------------ */
+
+function printTwoFormattedNumber( number ) {
+
+    var twoFormattedNumber = "";
+
+    if( number <= 9 ) {
+
+        twoFormattedNumber = "0"+number;
+        
+    }
+
+    return twoFormattedNumber;
+
+
+}
+

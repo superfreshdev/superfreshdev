@@ -13,6 +13,6 @@ var dataSportChallenges = [
 ]
 
 
-console.log('🏃🏃🏃 = ' + dataSportChallenges[0].a)
+// console.log('🏃🏃🏃 = ' + dataSportChallenges[0].a)
 
 

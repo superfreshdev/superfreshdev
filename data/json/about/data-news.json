@@ -1,0 +1,235 @@
+{
+
+   "now": {
+
+        "statusShow": "show",
+
+        "text": "Now",
+
+        "tasks": [
+
+            {
+                "category": "UML",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1VHpYJFz6O5GcjaeNyTCIc9fJLm5y8OhY/view?usp=sharing"
+            },
+
+            {
+                "category": "IntelliJ",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1DGfDRL3OTBAUENJqQXh5YrkVA0fFY1X6/view?usp=sharing"
+            }
+        ]
+
+   },
+
+   "after": {
+
+        "statusShow": "show",
+
+        "text": "After",
+
+        "tasks": [
+
+            {
+                "category": "Algorithmen & Datenstrukturen",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1Jrr7O91mnDEIA54C2n6byuDyPS6OoSok/view?usp=sharing"
+            },
+
+            {
+                "category": "Clean Code",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1-51egfdL8IrHF-MCw32xyUCEX8p1KfVh/view?usp=sharing"
+            },
+
+            {
+                "category": "Rest API",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
+            },
+
+            {
+                "category": "GraphQL API",
+                "description": "Grundlagen"
+            }
+        ]
+
+   },
+
+   "later": {
+
+        "statusShow": "show",
+
+        "text": "Later",
+
+        "tasks": [
+
+            {
+                "category": "Angular 17",
+                "description": "Erweiterte Komponenten"
+            },
+
+            {
+                "category": "Angular 17",
+                "description": "Routing (Wiederholung)"
+            },
+
+            {
+                "category": "Zusammenfassung Angular 17",
+                "description": "1.Erweiterte Komponenten & 2.Routing & Praxis Übungen"
+            }
+        ]
+
+   },
+
+   "infinity": {
+
+        "statusShow": "show",
+
+        "text": "Infinity",
+
+        "tasks": [
+
+            {
+                "imgPath": "media/img/icons/icons/biceps-black.png",
+                "category": "Sport",
+                "description": "Running | Swimming | Bicycle | Gym | ..."
+            },
+
+            {
+                "imgPath": "media/img/icons/icons/books-black.svg",
+                "category": "Book reading",
+                "description": "Actually: Das Versprechen - David Baldacci | ⚠️ Website under construction | ",
+                "link": "https://superfreshdev.github.io/sfd-read/"
+            },
+
+            {
+                "imgPath": "media/img/icons/icons/violine.png",
+                "category": "Violine",
+                "description": "Actually: learn music notes | My Inspiration for example to play like this: Link Audio |",
+                "link": "media/audio/content/about/rhett-price-tom-brady.mp3"
+            }
+        ]
+
+   },
+
+   "done": {
+
+        "actuallyMonth": [
+
+            {
+                "tasks": [
+
+                    {
+                        "category": "Java (2/3)",
+                        "description": "OOP, Fehlerbehandlung, Stream API"
+                    },
+
+                    {
+                        "category": "Java (3/3)",
+                        "description": "Generics, Functional Interfaces, Multithreading"
+                    },
+
+                    {
+                        "category": "UML",
+                        "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "IntelliJ",
+                        "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "Spring Boot",
+                        "description": "Grundlagen"
+                    }
+                ]    
+            },
+
+            {
+                "tasks": [
+
+                    {
+                        "category": "Clean Code",
+                        "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "Rest API",
+                        "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "GraphQL API",
+                        "description": "Grundlagen"
+                    }
+                   
+                ]    
+            }
+        ],
+
+        "lastMonth": [
+
+            {
+                "tasks": [
+
+                    {
+                        "category": "Sass",
+                        "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "Type Script",
+                        "description": "Grundlagen"
+                    }
+                ]    
+            },
+
+            {
+                "tasks": [
+
+                    {
+                        "category": "OOP",
+                        "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "Algorithmen & Datenstrukturen",
+                        "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "Java (1/3)",
+                        "description": "Grundlagen"
+                    }
+                   
+                ]    
+            },
+
+            {
+                "tasks": [
+
+                    {
+                        "category": "Angular 17",
+                        "description": "Erweiterte Komponenten"
+                    },
+
+                    {
+                        "category": "Angular 17",
+                        "description": "Routing"
+                    }
+
+                   
+                ]    
+            }
+        ]
+
+       
+
+   }
+
+}
+   
+  
