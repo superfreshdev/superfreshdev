@@ -106,7 +106,7 @@ window.addEventListener( 'load', ()=> {
                 // ❌ Quick Fix 
 
                  // GET | New Checked Project Index 
-                setProjectIndex = getCheckedIndex( radios_top_3_it_projects_1 );
+                // setProjectIndex = getCheckedIndex( radios_top_3_it_projects_1 );
 
                 // UPDATE | IT Project Card by Checked Project Index
                 updateItProjectCard( setProjectIndex )
