@@ -146,7 +146,7 @@
 #smooth-news-list-container {
 
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 0fr;
 
     transition: grid-template-rows 0.3s ease-out;
 }
