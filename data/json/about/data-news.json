@@ -64,7 +64,7 @@
             {
                 "category": "GraphQL",
                 "description": "Grundlagen",
-                "link": "https://drive.google.com/file/d/1j5nY186lEaFj6-jPrI4Jjfhm5lfBDOT3/view?usp=sharing"
+                "link": "https://drive.google.com/file/d/116H0ZeulVTftirr81FoF6MfdThWrNFUQ/view?usp=sharing"
             },
 
             {
@@ -104,7 +104,7 @@
 
             {
                 "category": "Zusammenfassung Angular 17",
-                "description": "| Erweiterte Komponenten | Routing | Praxis Projekte "
+                "description": "| Erweiterte Komponenten & Routing | Praxis Projekte "
             },
             {
                 "category": "Angular 17",
@@ -123,15 +123,22 @@
             },
             {
                 "category": "Zusammenfassung Angular 17",
-                "description": "CLI | Module-Komponenten-Bindungen | DI | Praxis Projekte "
+                "description": "| CLI & Module-Komponenten-Bindungen & DI | Praxis Projekte "
             },
             {
-                "category": "SuperfreshDEV (1/2)",
-                "description": "Clean Code | My News Container"
+                "category": "Angular 17",
+                "description": "Formulare",
+                "link": "https://drive.google.com/file/d/177Xq7ScRCUMVZ447_FaAphuir2DJygjr/view?usp=sharing"
             },
             {
-                "category": "SuperfreshDEV (2/2)",
-                "description": "Clean Code & Dynamic | IT Docs Container"
+                "category": "Angular 17",
+                "description": "CRUD mit HTTP-Client",
+                "link": "https://drive.google.com/file/d/1TfpS-PNs-6NANvhaouUAGysOLOwOdtaL/view?usp=sharing"
+            },
+            {
+                "category": "Storybook",
+                "description": "Grundlagen(4/4)",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
             }
         ]
 
@@ -153,8 +160,8 @@
 
             {
                 "imgPath": "media/img/icons/icons/books-black.svg",
-                "category": "Book reading",
-                "description": "Actually: Das Versprechen - David Baldacci | ⚠️ Website under construction | ",
+                "category": "Book Reading",
+                "description": "Actually: Das Versprechen - David Baldacci | ⚠️ Website under construction ⚠️ | ",
                 "link": "https://superfreshdev.github.io/sfd-read/"
             },
 
@@ -166,9 +173,9 @@
             },
 
             {
-                "imgPath": "media/img/icons/icons/violine.png",
+                "imgPath": "media/img/icons/icons/globe.png",
                 "category": "SuperfreshDEV",
-                "description": "constantly working on my website ( design, dynamic, content)"
+                "description": "constantly working on my website ( design, dynamic, content )"
             }
         ]
 
@@ -229,8 +236,58 @@
                     },
 
                     {
-                        "category": "GraphQL API",
+                        "category": "GraphQL",
                         "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "Unit Testing",
+                        "description": "Grundlagen - Jest & JUnit & Cypress"
+                    }
+                   
+                ]    
+            },
+
+            {
+                "tasks": [
+
+                    {
+                        "category": "React Native",
+                        "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "Storybook",
+                        "description": "Grundlagen"
+                    },
+
+                    {
+                        "category": "Angular 17",
+                        "description": "CLI & Projekt Setup"
+                    },
+
+                    {
+                        "category": "Angular 17",
+                        "description": "Module, Komponenten, Bindungen"
+                    },
+                    {
+                        "category": "Angular 17",
+                        "description": "Dependency Injection"
+                    }
+                   
+                ]    
+            },
+
+            {
+                "tasks": [
+
+                    {
+                        "category": "Angular 17",
+                        "description": "Formulare"
+                    },
+                    {
+                        "category": "Angular 17",
+                        "description": "CRUD mit HTTP-Client"
                     }
                    
                 ]    
@@ -300,4 +357,7 @@
 
 }
    
+
+
+                   
   
