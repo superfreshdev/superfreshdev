@@ -12,6 +12,8 @@
 
     display: grid;
     row-gap: 2em;
+
+
    
     /* to not stretch header 100% */
     /* justify-self: flex-start; */
@@ -24,7 +26,8 @@
 
 .h1-content-header {
 
-    height: 3.3em;
+
+    /* height: 3.3em; */
 
     display: grid;
     row-gap: 2em;
@@ -40,15 +43,17 @@
 
     /* 24px */
     font-size: 1.5em;
+    padding: .6em .8em;
    
-    padding: 0 .6em;
+    /* padding: 0 .6em; */
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 
     column-gap: .6em;
-    row-gap: .1em;
+    row-gap: .2em;
+    line-height: 1.4em;
 
     font-weight: bold;
 

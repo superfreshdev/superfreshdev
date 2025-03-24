@@ -14,8 +14,7 @@
     display: grid;
 
     /* background-color: white; */
-    
-    
+      
 }
 
 
@@ -34,7 +33,9 @@
     align-items: center;
     justify-content: space-between;
 
-    color:rgb(232, 232, 232);
+    color:#424242;
+
+    
 
     /* background-color: rgb(209, 209, 209); */
    
@@ -233,18 +234,21 @@
 .status-now {
 
     background-color: rgb(240, 90, 90);
+    color:rgb(53, 53, 53);
 
 }
 
 .status-after {
 
     background-color: #ffde09;
+    color:rgb(53, 53, 53);
 
 }
 
 .status-later {
     
     background-color: rgb(196, 196, 196);
+    color:rgb(53, 53, 53);
 
 }
 
@@ -252,7 +256,7 @@
 
     /* background-color: rgb(205, 205, 205); */
 
-    border: 1px dashed black;
+    border: 1px dashed white;
 }
 
 
@@ -276,6 +280,20 @@
     font-weight: bold;
 }
 
+.title-news-task > div:nth-of-type(2) {
+
+    color:grey;
+}
+
+.title-news-task a {
+
+    color: rgb(124, 124, 124);
+}
+
+.title-news-task a:visited {
+
+    color: rgb(124, 124, 124);
+}
 
 
 
@@ -294,12 +312,13 @@
 
 #chk-news:checked + #lbl-news-header {
 
-    background-color: rgb(28, 28, 28);
+    background-color: wheat;
 }
 
 #chk-news:checked + #lbl-news-header:hover {
 
-    background-color: rgb(59, 59, 59);
+
+    background-color: rgb(217, 217, 217);
 }
 
 
@@ -323,11 +342,13 @@
 #chk-news:checked + #lbl-news-header #title-box-news > div:nth-of-type(1) {
 
     color:rgb(255, 222, 9);
+
+    color:black;
 }
 
 #chk-news:checked + #lbl-news-header #title-box-news > div:nth-of-type(2) {
 
-    color:white;
+    color:rgb(92, 92, 92);
     text-decoration: underline;
 }
 

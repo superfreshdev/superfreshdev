@@ -188,6 +188,7 @@ input[name="name-radio-news-done"] {
     align-items: center;
     justify-content: flex-end;
     column-gap: .4em;
+    row-gap: .4em;
 
     padding-bottom: 1em;
 

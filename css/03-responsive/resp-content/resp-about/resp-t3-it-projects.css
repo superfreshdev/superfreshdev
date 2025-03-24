@@ -15,9 +15,15 @@
     
     }
 
+    .it-project-card {
+    
+        width: 26em;
+    }
+
+    /* ❌⚠️ Gibt es nicht mehr, kann eigentlich weg */
     .item-container-my-top-3-projects-about {
 
-        max-width: 28em;
+        max-width: 30em;
 
     }
 

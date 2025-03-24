@@ -153,27 +153,27 @@
         "tasks": [
 
             {
-                "imgPath": "media/img/icons/icons/biceps-black.png",
+                "imgPath": "media/img/icons/icons/biceps-white.png",
                 "category": "Sport",
                 "description": "Running | Bicycle | Gym | Swimming | ..."
             },
 
             {
-                "imgPath": "media/img/icons/icons/books-black.svg",
+                "imgPath": "media/img/icons/icons/books-white.png",
                 "category": "Book Reading",
-                "description": "Actually: Das Versprechen - David Baldacci | ⚠️ Website under construction ⚠️ | ",
+                "description": "Actually: Das Versprechen - David Baldacci | 👷🏽‍♂️⚠️ Website under construction | ",
                 "link": "https://superfreshdev.github.io/sfd-read/"
             },
 
             {
-                "imgPath": "media/img/icons/icons/violine.png",
+                "imgPath": "media/img/icons/icons/violine-white.png",
                 "category": "Violine",
                 "description": "Actually: learn music notes | My Inspiration for example to play like this: |",
                 "link": "media/audio/content/about/rhett-price-tom-brady.mp3"
             },
 
             {
-                "imgPath": "media/img/icons/icons/globe.png",
+                "imgPath": "media/img/icons/icons/globe-white.png",
                 "category": "SuperfreshDEV",
                 "description": "constantly working on my website ( design, dynamic, content )"
             }
