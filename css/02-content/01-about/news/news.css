@@ -164,8 +164,17 @@
 
 .news-doing-item-box {
 
+    padding: 1.8em 1.2em; 
+
     display: grid;
     row-gap: .8em;
+
+    
+    border-radius: .8em;
+
+    background-color: rgb(28, 28, 28);
+    color:white;
+
 
 }
 

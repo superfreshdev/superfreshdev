@@ -55,16 +55,16 @@
 
 #actually-news-container > main {
 
-    padding: 1.8em 1.2em;
-
+    padding: 0em 0 1em 0;
+    
     display: grid;
     row-gap: 1em;
 
     border-radius: .8em .8em 0 0;
 
-    background-color: rgb(28, 28, 28);
-     color:white;
-   
+    /* background-color: red; */
     /* background-color: rgb(154, 154, 154); */
 }
+
+
 

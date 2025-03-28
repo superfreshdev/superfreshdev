@@ -310,8 +310,8 @@ function createDomNewsTask( objTaskPrio ) {
         addDomElementToParent(  newDiv_news_doing_item_box,  add_news_doing_container )
 
         // Add Seperator dashed line 
-        newDivSeperatorElement = createDivClassText( "line-dashed-seperator" );
-        addDomElementToParent( newDivSeperatorElement , add_news_doing_container )
+        // newDivSeperatorElement = createDivClassText( "line-dashed-seperator" );
+        // addDomElementToParent( newDivSeperatorElement , add_news_doing_container )
     }
 
 }
