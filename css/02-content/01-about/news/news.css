@@ -313,6 +313,8 @@
 #chk-news:checked + #lbl-news-header {
 
     background-color: wheat;
+
+    border-radius: 0 0 .8em .8em;
 }
 
 #chk-news:checked + #lbl-news-header:hover {
