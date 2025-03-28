@@ -55,7 +55,7 @@
 
 #actually-news-container > main {
 
-    padding: 0em 0 1em 0;
+    padding: 0em .8em 1em .8em;
     
     display: grid;
     row-gap: 1em;
@@ -68,3 +68,16 @@
 
 
 
+/* -------------------------------------------------------------- */
+/* Quick & Dirty Responsive Solution 
+/* -------------------------------------------------------------- */
+
+@media ( min-width: 800px ) {
+
+    #actually-news-container > main {
+
+        padding: 0em 0 1em 0;
+
+    }
+
+}
