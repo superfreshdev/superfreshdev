@@ -16,32 +16,15 @@
             },
 
             {
-                "category": "Spring Boot",
-                "description": "Grundlagen",
-                "link": "https://drive.google.com/file/d/1BCPh3tvOwSCrWmukE89qAjwU24pxZ_kY/view?usp=sharing"
-            }
-        ]
-
-   },
-
-   "after": {
-
-        "statusShow": "show",
-
-        "text": "After",
-
-        "tasks": [
-
-            {
-                "category": "Algorithmen & Datenstrukturen",
-                "description": "Grundlagen",
-                "link": "https://drive.google.com/file/d/1Jrr7O91mnDEIA54C2n6byuDyPS6OoSok/view?usp=sharing"
-            },
-
-            {
                 "category": "Clean Code",
                 "description": "Grundlagen",
                 "link": "https://drive.google.com/file/d/1-51egfdL8IrHF-MCw32xyUCEX8p1KfVh/view?usp=sharing"
+            },
+
+            {
+                "category": "Spring Boot",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1BCPh3tvOwSCrWmukE89qAjwU24pxZ_kY/view?usp=sharing"
             },
 
             {
@@ -57,27 +40,10 @@
             },
 
             {
-                "category": "Unit Testing",
-                "description": "Grundlagen ChatGBT, Jest, JUnit, Cypress",
-                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
-            },
-
-            {
                 "category": "React Native",
                 "description": "Grundlagen Mobile Development (IOS & Android)",
                 "link": "https://drive.google.com/file/d/1eIvWDwfsROk3ql8_lNSKIe1re7DkCsih/view?usp=sharing"
-            }
-        ]
-
-   },
-
-   "later": {
-
-        "statusShow": "show",
-
-        "text": "Later",
-
-        "tasks": [
+            },
 
             {
                 "category": "Angular 17",
@@ -94,7 +60,95 @@
             {
                 "category": "Zusammenfassung Angular 17",
                 "description": "| Erweiterte Komponenten & Routing | Praxis Projekte "
+            }
+
+        ]
+
+   },
+
+   "after": {
+
+        "statusShow": "show",
+
+        "text": "After",
+
+        "tasks": [
+
+           
+            {
+                "category": "Algorithmen & Datenstrukturen",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1Jrr7O91mnDEIA54C2n6byuDyPS6OoSok/view?usp=sharing"
             },
+
+            {
+                "category": "AuD - Liste",
+                "description": "Aud 11 , LeetCode 20 Aufgaben, Eigene Coding Challenges 30-120 Min. TicTacToe, ..."
+                
+            },
+
+        
+            {
+                "category": "Unit Testing",
+                "description": "Grundlagen ChatGBT, Jest, JUnit, Cypress",
+                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
+            },
+
+            {
+                "category": "DevOps",
+                "description": "Grundlagen & richtige Gestaltung",
+                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
+            },
+
+            {
+                "category": "Git & GitHub",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
+            },
+
+            {
+                "category": "Git",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
+            },
+
+            {
+                "category": "Jenkins",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
+            },
+            {
+                "category": "Docker",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
+            },
+            {
+                "category": "Microservices",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
+            },
+            {
+                "category": "Jira & Confluence & Outlook",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/11Wb3xE5o312GHw1xTFv9WjQ9Sxh1XlHT/view?usp=sharing"
+            }
+
+           
+        ]
+
+   },
+
+ 
+
+   "later": {
+
+        "statusShow": "show",
+
+        "text": "Later",
+
+        "tasks": [
+
+           
             {
                 "category": "Angular 17",
                 "description": "CLI & Projekt Setup",
@@ -128,7 +182,113 @@
                 "category": "Storybook",
                 "description": "Grundlagen(4/4)",
                 "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "Angular 19/20",
+                "description": "Was ist neu ?!",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "RxJS",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "NgRX",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "NPM, NX",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "NodeJS",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "NestJS",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "Datenbank Konzept & SQL",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "MongoDB",
+                "description": "Grundlagen",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "QE 2",
+                "description": "Einführung in die Softwaretechnik: Testen, Refactoring, Metriken, Versionsmanagement, Build Management",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+
+            {
+                "category": "QE 3",
+                "description": "Refactoring: Bestehende Architekturen restrukturieren",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+
+            {
+                "category": "QE 4.1",
+                "description": "Python: Unit-Testing"
+                
+            },
+
+            {
+                "category": "QE 4.2",
+                "description": "Java Script: Unit-Testing"
+                
+            },
+
+            {
+                "category": "QE 5",
+                "description": "Codemetriken & Langlebige Software-Architekturen",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+
+            {
+                "category": "SA 1",
+                "description": "Grundlagen und Begriffe",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "SA 2",
+                "description": "Architekturmuster",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "SA 3",
+                "description": "Architekturbewertung",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "SA 4",
+                "description": "Architekturdokumentation",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "SA 5",
+                "description": "Qualitätsmerkmale und Anforderungen",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "SA 6",
+                "description": "Moderne Webarchitekturen: Technologien, Modelle, Lösungen ",
+                "link": "https://drive.google.com/file/d/1gQqfHzf6EMg2xfS21qU0T-2LsUBzRPDA/view?usp=sharing"
+            },
+            {
+                "category": "Projekte",
+                "description": "Geschäftsprojekte, ... "
+                
             }
+
         ]
 
    },
