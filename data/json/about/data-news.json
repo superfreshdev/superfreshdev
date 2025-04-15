@@ -148,6 +148,17 @@
 
         "tasks": [
 
+            {
+                "category": "👑Java Experte werden",
+                "description": "chatGBT - Anleitung",
+                "link": "https://drive.google.com/file/d/1hQ02YhqB3LW8fRU1efedKnMelw4ve719/view?usp=sharing"
+            },
+
+            {
+                "category": "👑Angular Experte werden",
+                "description": "chatGBT - Anleitung",
+                "link": "https://drive.google.com/file/d/1cG8pLxu9FzfgGrHlm5_fnVChtOSFdMzH/view?usp=sharing"
+            },
            
             {
                 "category": "Angular 17",
