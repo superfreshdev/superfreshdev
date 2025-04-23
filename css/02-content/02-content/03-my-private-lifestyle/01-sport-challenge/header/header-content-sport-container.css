@@ -129,7 +129,9 @@
 
     border-radius: .6em;
 
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(255, 103, 103);
+
+    
 }
 
 #header-sport-video-category-container > header > div:nth-of-type(1) {
@@ -137,21 +139,103 @@
     font-weight: bold;
 }
 
+
+
 /* ----------------------------------------------------------- */
 /* Main | Header Sport Video Category Container
 /* ----------------------------------------------------------- */
 
 #header-sport-video-category-container > main {
 
-    margin-left: .6em;
-    padding-left: 1em;
-
-    display: grid;
-    row-gap: .6em;
-
-    border-left: 5px solid black;
+   
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   column-gap: 2em;
+   row-gap: 1em;
 
     /* background-color: rgb(250, 250, 250); */
+}
+
+/* ----------------------------------------------------------- */
+/* Sport Info Training Container 
+/* ----------------------------------------------------------- */
+
+.sport-info-training-container {
+
+    display: grid;
+    row-gap: 1em;
+    
+}
+
+.sport-info-training-container > header {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+    
+}
+
+.sport-info-training-container > header > div:nth-of-type(1) {
+
+    height: 1.3em;
+
+    padding: .3em .4em;
+    display: flex;
+    align-items: center;
+
+    border-radius: .6em;
+
+    /* color: rgb(220, 220, 220); */
+
+    color:rgb(219, 219, 219);
+    background-color: black;
+}
+
+
+.sport-info-training-container > header > div:nth-of-type(2) {
+
+    text-decoration: underline;
+
+    height: 1.3em;
+
+    padding: .3em .4em;
+    display: flex;
+    align-items: center;
+
+    border-radius: .6em;
+
+    
+}
+
+.info-sport-trainings-art-ninja-sport {
+  
+    background-color: rgb(219, 189, 111);
+    
+}
+
+.info-sport-trainings-art-strength-flexibility {
+  
+    background-color: rgb(150, 150, 150);
+    
+}
+
+
+
+.sport-info-training-container > main {
+
+ 
+  margin-left: .3em;
+
+  display: grid;
+  row-gap: .6em;
+
+  padding-left: 1em;
+
+  border-left: 5px solid black;
+    
 }
 
 /* ----------------------------------------------------------- */

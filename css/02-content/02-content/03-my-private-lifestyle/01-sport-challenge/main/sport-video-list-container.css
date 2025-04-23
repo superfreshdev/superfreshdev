@@ -43,7 +43,7 @@
 
     border-radius: .6em;
 
-    background-color: rgb(199, 199, 199);
+    /* background-color: rgb(199, 199, 199); */
     color: black;
 
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -104,6 +104,6 @@
 
 .date-sport-video > div:nth-of-type(2) {
 
-    color:grey;
+    color:rgb(40, 40, 40);
     padding-bottom: .3em;
 }
