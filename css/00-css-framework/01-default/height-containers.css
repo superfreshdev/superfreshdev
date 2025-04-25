@@ -10,6 +10,10 @@
     height: 2em;
 }
 
+.container-less-smaller {
+    height: 2.3em;
+}
+
 .container-normal {
     height: 2.5em;
 }

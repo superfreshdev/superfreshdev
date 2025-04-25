@@ -63,7 +63,7 @@
 
     border-radius: .6em;
 
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(36, 36, 36);
     
     /* ⚠️ light grey color & light grey img  */
     color: #9a9a9a;
@@ -82,7 +82,7 @@
 /* img 1 - clipart  */
 #lbl-useful-links-body-footer > img:nth-of-type(1) {
 
-    height: 2.1em;
+    height: 1.8em;
     padding-bottom: .1em;
     transform: scaleX(-1);
 
