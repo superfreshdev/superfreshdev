@@ -28,9 +28,9 @@ async function updateItDocsContent( filePath ) {
         // Step 1: Create Filter IT Docs Panel 
 
        
-        addPointItDocs.append(  createDivClassText( "class-Marko", data.test ) )
-        addPointItDocs.append(  createDivClassText( "class-Marko", data.test ) )
-        addPointItDocs.append(  createDivClassText( "class-Marko", data.test ) )
+        // addPointItDocs.append(  createDivClassText( "class-Marko", data.test ) )
+        // addPointItDocs.append(  createDivClassText( "class-Marko", data.test ) )
+        // addPointItDocs.append(  createDivClassText( "class-Marko", data.test ) )
 
         
 
