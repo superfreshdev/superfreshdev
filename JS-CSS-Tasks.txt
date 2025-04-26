@@ -1,0 +1,28 @@
+
+
+/* ---------------------------------------------------- */
+/* JAVA SCRIPT TASKs 
+/* ---------------------------------------------------- */
+
+1. JS-Framework - to use functions to create faster 
+   small dynamically logic, for example methods to create div-Containers 
+   with given css-classNames, ... 
+
+1.1 Create DOM Elements 
+1.2 Fetch API
+
+
+
+/* ---------------------------------------------------- */
+/* CSS TASKs 
+/* ---------------------------------------------------- */
+
+1. CSS-Framework - for often css use cases for example 
+   quick layouts in flex, grid, paddings, margins, 
+   img sizes, ... 
+
+1.1 CSS-Framework Advaned - bring some style layouts to 
+     be used, for example default info cards, button styles, ...
+
+     Color Packs, Animation Packs 
+

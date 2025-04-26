@@ -1,4 +1,4 @@
-console.log('[🟡|js-library| ➡️ lib-set-dom-elements.js]')
+//console.log('[🟡|js-library| ➡️ lib-set-dom-elements.js]')
 
 /* ----------------------------------------------------------------------------------- */
 /* ➡️ SET | Functions 

@@ -1,4 +1,4 @@
-console.log('[🟡|content|about|news| ➡️ update-news.js]')
+//console.log('[🟡|content|about|news| ➡️ update-news.js]')
 
 
 /* ---------------------------------------------------------------------------------- */
@@ -59,7 +59,7 @@ async function updateNews ( filePath ) {
         // try to read
         const data = await response.json();
 
-        console.log("##############");
+        //console.log("##############");
 
         /* ----------------------------------------------------------------------- */
         /* ### Start | Doing Task ###
@@ -94,7 +94,7 @@ async function updateNews ( filePath ) {
         /* ----------------------------------------------------------------------- */
 
 
-        console.log("##############");
+       //console.log("##############");
 
     } catch (error) {
         console.error('API Error:', error)
@@ -126,10 +126,10 @@ function createDoneTasks( objDataMonth , objImgPath, addDomPoint ) {
         
         newDivDoneTaskCategories = createDoneListTaskCategory( objMonth[i].tasks, imgPath )
 
-        console.log( newDivDoneTaskCategories )
+        //console.log( newDivDoneTaskCategories )
 
         // Add Done Category List to Parent 
-        console.log('####')
+        //console.log('####')
 
         addDomElementToParent( newDivDoneTaskCategories , addDomPoint )
 
@@ -252,7 +252,7 @@ function createNewsPrioTask( objTaskPrio ) {
   
     if( objTaskPrio.statusShow == "show" ) {
 
-        console.log('🏗️ Create Prio Task | ' + objTaskPrio.text )
+        //console.log('🏗️ Create Prio Task | ' + objTaskPrio.text )
 
         // Create from Task Category all Task Items 
         createDomNewsTask( objTaskPrio ) 

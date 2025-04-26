@@ -1,0 +1,234 @@
+/* ------------------------------------------------------------------------ */
+/* File: default-it-docs.css
+/* 
+/* : Create Default Layouts for the Content "My IT Doc's in German" 
+/* 
+/* ------------------------------------------------------------------------ */
+
+
+
+
+/* -------------------------------------------------------- */
+/* Filter IT Docs Panel 
+/* -------------------------------------------------------- */
+
+.filter-it-docs-panel {
+
+    /* background-color: red; */
+
+    display: grid;
+    row-gap: 1em;
+}
+
+
+/* -------------------------------------------------------- */
+/* Main Filter 
+/* -------------------------------------------------------- */
+
+.filter-it-docs-panel > .main-filter {
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: .6em;
+    row-gap: .6em;
+}
+
+/* -------------------------------------------------------- */
+/* Checkbox & Label | Filter Info / Close Filter
+/* -------------------------------------------------------- */
+
+#chk-filter-it-docs { display: none; }
+
+.lbl-chk-filter-it-docs {
+
+    width: 3.5em;
+    height: 3.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .8em;
+
+    background-color: rgb(28, 28, 28);
+
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------- */
+/* Radio & Label | Main Filter Item 
+/* -------------------------------------------------------- */
+
+[name="name-radio-main-filter-it-docs"] {
+
+    display: none;
+}
+
+.lbl-radio-main-filter-it-docs {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: .8em;
+
+    border-radius: .8em;
+
+    background-color: rgb(193, 193, 193);
+
+    cursor: pointer;
+
+    transition: all .4s;
+}
+
+.lbl-radio-main-filter-it-docs:hover {
+
+    background-color: green;
+}
+
+.lbl-radio-main-filter-it-docs > .title-item {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+
+    color:rgb(37, 37, 37);
+}
+
+/* -------------------------------------------------------- */
+/* Sub Filter 
+/* -------------------------------------------------------- */
+
+.filter-it-docs-panel > .sub-filter {
+
+    padding: 1em 0 1em 0;
+
+    border-top: 1px solid rgb(206, 206, 206);
+
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- */
+/* 🟣 Universal 
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* 🟣 H1 Container | light-black / light-grey
+/* -------------------------------------------------------- */
+
+.h1-container-light-black,
+.h1-container-light-grey {
+
+    /* because of parent grid layout */
+    justify-self: flex-start;
+
+    padding: 1em 1.3em;
+
+    display: flex;
+    align-items: center;
+    column-gap: 1.3em;
+
+    border-radius: .6em;
+
+}
+
+.h1-container-light-black {
+
+    background-color: rgb(28, 28, 28);
+    color: white;
+
+}
+
+.h1-container-light-grey {
+
+    background-color: rgb(220, 220, 220);
+}
+
+
+
+/* --------------------------------- */
+/* H1 Title 
+/* --------------------------------- */
+
+.h1-container-light-black > .h1-title,
+.h1-container-light-grey > .h1-title {
+
+    /* Position Fix: better proposition */
+    padding-top: .3em;
+
+    display: grid;
+    row-gap: .3em;
+
+    /* background-color: red; */
+    
+}
+
+.h1-container-light-black > .h1-title > div:nth-of-type(1),
+.h1-container-light-grey > .h1-title > div:nth-of-type(1) {
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.h1-container-light-black > .h1-title > div:nth-of-type(2),
+.h1-container-light-grey > .h1-title > div:nth-of-type(2) {
+
+    color: grey;
+}
+
+
+/* ------------------------------ */ 
+/* 🟣 color Schema */
+/* ------------------------------ */ 
+
+.bgc-light-black { 
+
+
+    background-color: rgb(28, 28, 28);
+}
+
+.bgc-light-grey { 
+
+    background-color: rgb(220, 220, 220);
+}
+
+
+/* -------------------------------------------------------- */
+/* 🟣 H2 Container | ???
+/* -------------------------------------------------------- */
+
+

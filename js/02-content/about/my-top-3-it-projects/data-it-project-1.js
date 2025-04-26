@@ -1,4 +1,4 @@
-console.log('[🟡|content|about|my-top-3-it-projects| ➡️ data-it-project-1-js]')
+//console.log('[🟡|content|about|my-top-3-it-projects| ➡️ data-it-project-1-js]')
 
 /* 
 

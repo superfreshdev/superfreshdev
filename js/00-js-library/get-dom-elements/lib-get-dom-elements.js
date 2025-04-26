@@ -1,4 +1,4 @@
-console.log('[🟡|js-library| ➡️ lib-get-dom-elements.js]')
+//console.log('[🟡|js-library| ➡️ lib-get-dom-elements.js]')
 
 
 /* ----------------------------------------------------------------------------------- */

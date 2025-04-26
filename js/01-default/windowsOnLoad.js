@@ -1,4 +1,4 @@
-console.log('[🟡|default| ➡️ windowsOnLoad.js]')
+//console.log('[🟡|default| ➡️ windowsOnLoad.js]')
 
 /* ------------------------------------------------------------ */
 /* DOM Elements 
@@ -109,7 +109,7 @@ window.addEventListener( 'load', ()=> {
                 // setProjectIndex = getCheckedIndex( radios_top_3_it_projects_1 );
 
                 // UPDATE | IT Project Card by Checked Project Index
-                updateItProjectCard( setProjectIndex )
+                //updateItProjectCard( setProjectIndex )
 
 
 
