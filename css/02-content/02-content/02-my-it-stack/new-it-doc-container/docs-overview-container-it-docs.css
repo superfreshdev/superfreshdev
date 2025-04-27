@@ -1,0 +1,231 @@
+/* ------------------------------------------------------------------- */
+/* > docs-overview-container-it-docs.css 
+/* 
+/* : style the it docs category overview to navigate to my it docs 
+/* ------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- */
+/* Overview Container | IT Docs 
+/* -------------------------------------------------------- */
+
+.overview-container-it-docs {
+
+    padding-top: 2em;
+    
+    display: grid;
+    row-gap: 4em;
+
+    border-top: 1px solid rgb(193, 193, 193);
+    /* background-color: yellow; */
+
+}
+
+
+/* -------------------------------------------------------- */
+/* Category Container | IT Docs 
+/* -------------------------------------------------------- */
+
+.category-container-it-docs {
+
+    display: grid;
+    row-gap: 2.5em;
+
+}
+
+/* -------------------------------------------------------- */
+/* Header | Category Container 
+/* -------------------------------------------------------- */
+
+.category-container-it-docs > header {
+
+    justify-self: flex-start;
+
+    padding: .6em .8em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    border-radius: .8em;
+
+    background-color: rgb(207, 207, 207);
+
+}
+
+.category-container-it-docs > header > div:nth-of-type(1) {
+
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------- */
+/* Main | Category Container
+/* -------------------------------------------------------- */
+
+.category-container-it-docs > main {
+
+    /* background-color: blue; */
+    
+}
+
+
+/* -------------------------------------------------------- */
+/* List Container | IT Docs
+/* -------------------------------------------------------- */
+
+.list-container-it-docs {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: .8em;
+    row-gap: 2em;
+
+}
+
+/* -------------------------------------------------------- */
+/* IT Docs Card
+
+/* 1. finsished: it-docs-card
+/* 2. in progress: it-docs-card-in-progress 
+/* 3. coming soon: it-docs-card-coming-soon
+/* -------------------------------------------------------- */
+
+.it-docs-card,
+.it-docs-card-in-progress,
+.it-docs-card-coming-soon {
+
+    position: relative;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1em;
+
+}
+
+/* ---------------------------------------------------------- */
+/* Status It Docs Container 
+/* ---------------------------------------------------------- */
+
+.status-it-docs-container {
+
+    position: absolute;
+
+    /* width: 8em; */
+    padding: .8em;
+
+    line-height: 1.3em;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border-radius: .8em;
+ 
+}
+
+.it-docs-card-in-progress > .status-it-docs-container {
+
+    background-color: rgb(239, 207, 0);
+
+}
+
+.it-docs-card-in-progress > .status-it-docs-container > img:nth-of-type(1) {
+
+    margin-top: .6em;
+    animation: rotate360deg 4s ease infinite;
+}
+
+.it-docs-card-coming-soon > .status-it-docs-container {
+
+    background-color: rgb(18, 119, 235);
+
+}
+
+
+.it-docs-card-coming-soon > .status-it-docs-container > img:nth-of-type(1) {
+
+    margin-top: .6em;
+    animation: leftright .6s ease infinite;
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* In Progress & Coming Soon | IT Doc Card 
+/* ---------------------------------------------------------- */
+
+.it-docs-card-in-progress > .img-it-doc-card:nth-last-of-type(1),
+.it-docs-card-coming-soon > .img-it-doc-card:nth-last-of-type(1) {
+
+    opacity: .5;
+    filter: grayscale(100%);
+}
+
+
+
+/* ---------------------------------------- */
+/* Coming Soon | IT Doc Card 
+/* ---------------------------------------- */
+
+.img-it-doc-card {
+
+    height: 23em;
+
+    border-radius: .8em;
+}
+
+/* -------------------------------------------------------- */
+/* Link | IT Docs Card
+/* -------------------------------------------------------- */
+
+.link-it-docs-card {
+
+    height: 3em;
+    padding: 0 .6em;
+
+    justify-self: flex-end;
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+
+    font-weight: bold;    
+
+    text-decoration: none;
+
+    border-radius: .8em;
+
+    background-color: rgb(206, 206, 206);
+    color:black;
+
+    transition: all .4s;
+
+}
+
+.link-it-docs-card > div {
+
+    font-size: .9em;
+}
+
+.link-it-docs-card:hover {
+
+    background-color: wheat;
+}
+
+
+/* -------------------------------------------------------- */
+/* Sepearator | IT Docs Card
+/* -------------------------------------------------------- */
+
+.seperator-it-docs-list {
+
+    margin-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-top:1px solid rgb(191, 191, 191);
+
+}
+
+
