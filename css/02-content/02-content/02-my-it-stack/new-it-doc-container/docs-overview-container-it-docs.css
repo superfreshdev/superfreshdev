@@ -126,9 +126,21 @@
  
 }
 
+.it-docs-card-in-progress > .status-it-docs-container,
+.it-docs-card-coming-soon > .status-it-docs-container {
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+/* ---------------------------------------- */
+/* In Progress | IT Docs Container 
+/* ---------------------------------------- */
+
 .it-docs-card-in-progress > .status-it-docs-container {
 
     background-color: rgb(239, 207, 0);
+    
 
 }
 
@@ -138,12 +150,15 @@
     animation: rotate360deg 4s ease infinite;
 }
 
+/* ---------------------------------------- */
+/* Coming Soon | IT Docs Container 
+/* ---------------------------------------- */
+
 .it-docs-card-coming-soon > .status-it-docs-container {
 
-    background-color: rgb(18, 119, 235);
+    background-color: rgb(87, 166, 255);
 
 }
-
 
 .it-docs-card-coming-soon > .status-it-docs-container > img:nth-of-type(1) {
 
