@@ -94,7 +94,8 @@
 
 .it-docs-card,
 .it-docs-card-in-progress,
-.it-docs-card-coming-soon {
+.it-docs-card-coming-soon,
+.it-docs-card-no-priority {
 
     position: relative;
 
@@ -127,7 +128,8 @@
 }
 
 .it-docs-card-in-progress > .status-it-docs-container,
-.it-docs-card-coming-soon > .status-it-docs-container {
+.it-docs-card-coming-soon > .status-it-docs-container,
+.it-docs-card-no-priority > .status-it-docs-container {
 
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
@@ -166,14 +168,28 @@
     animation: leftright .6s ease infinite;
 }
 
+/* ---------------------------------------- */
+/* No Priority | IT Docs Container 
+/* ---------------------------------------- */
 
+.it-docs-card-no-priority > .status-it-docs-container {
+
+    background-color: rgb(32, 32, 32);
+    color:rgb(159, 159, 159);
+}
+
+.it-docs-card-no-priority > .status-it-docs-container > img:nth-of-type(1) {
+
+    margin-top: .6em;
+}
 
 /* ---------------------------------------------------------- */
-/* In Progress & Coming Soon | IT Doc Card 
+/* In Progress & Coming Soon & No Priority | IT Doc Card 
 /* ---------------------------------------------------------- */
 
 .it-docs-card-in-progress > .img-it-doc-card:nth-last-of-type(1),
-.it-docs-card-coming-soon > .img-it-doc-card:nth-last-of-type(1) {
+.it-docs-card-coming-soon > .img-it-doc-card:nth-last-of-type(1),
+.it-docs-card-no-priority > .img-it-doc-card:nth-last-of-type(1) {
 
     opacity: .5;
     filter: grayscale(100%);
