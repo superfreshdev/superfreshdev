@@ -4,6 +4,234 @@
 /* : styles the news container of about page 
 /* ----------------------------------------------------------------------------- */
 
+
+.my-news-container {
+
+    padding: 2em 0;
+
+    display: grid;
+    align-items: flex-start;
+    grid: 1fr / 1.3fr 1fr;
+    column-gap: 2em;
+    row-gap: 2em;
+
+    /* background-color: yellow; */
+
+}
+
+
+/* ---------------------------------------------------------- */
+/* My News Item Container 
+/* ---------------------------------------------------------- */
+
+.my-news-item-container {
+
+    display: grid;
+    row-gap: 2em;
+
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* Header | My News Item Container 
+/* ---------------------------------------------------------- */
+
+.my-news-item-container > header {
+
+    height: 4em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+    border-radius: .8em;
+
+    font-weight: bold;
+
+    background-color: rgb(214, 214, 214);
+    color:rgb(33, 33, 33);
+
+}
+
+
+.img-my-news-my-it-lifestyle {
+
+    height: 3em;
+    border-radius: .4em;
+}
+
+.img-my-news-my-private-lifestyle {
+
+    height: 3em;
+}
+
+
+/* ---------------------------------------------------------- */
+/* Main | My News Item Container 
+/* ---------------------------------------------------------- */
+
+.my-news-item-container > main {
+
+    display: grid;
+    row-gap: 1em;
+
+    color:rgb(68, 37, 37);
+
+}
+
+
+/* ---------------------------------------------------------- */
+/* My New Task Container 
+/* ---------------------------------------------------------- */
+
+/*
+    task container, routine task container , 
+
+    each container max 6 task for better organization
+
+*/
+
+.my-news-task-container {
+
+    padding: 1.3em;
+
+    display: grid;
+    row-gap: 1em;
+
+    border-radius: .8em;
+   
+    border: 1px dashed black;
+    color:rgb(35, 35, 35);
+}
+
+
+/* ---------------------------------------------------------- */
+/* Status Info Item Task 
+/* ---------------------------------------------------------- */
+
+.status-info-item-task {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .6em;
+    row-gap: .3em;
+
+    line-height: 1.3em;
+
+}
+
+/* ------------------------------------------- */
+/* NR 
+/* ------------------------------------------- */
+.status-info-item-task-nr {
+
+    font-weight: bold;
+}
+
+/* ------------------------------------------- */
+/* Title Task  
+/* ------------------------------------------- */
+
+.title-task {
+
+    font-weight: bold;
+
+}
+
+.description-task {
+
+    color:grey;
+}
+
+/* ---------------------------------------------------------- */
+/* Status Info Task 
+/* ---------------------------------------------------------- */
+
+/* Now, After, Later, Actually(), Infinity */
+
+.status-info-task-now,
+.status-info-task-after,
+.status-info-task-later,
+.status-info-task-actually,
+.status-info-task-infinity {
+
+    height: 1.5em;
+    padding: 0 .3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    color:rgb(33, 33, 33);
+
+    border-radius: .4em;
+}
+
+.status-info-task-now,
+.status-info-task-after,
+.status-info-task-later,
+.status-info-task-actually,
+.staus-info-task-infinity {
+
+    font-size: .9em;
+}
+
+.status-info-task-now {
+
+    background-color: rgb(255, 121, 121);
+}
+
+.status-info-task-after {
+
+    background-color: rgb(255, 225, 0);
+}
+
+.status-info-task-later {
+
+    background-color: rgb(117, 117, 117);
+}
+
+
+.status-info-task-actually {
+
+    background-color: rgb(255, 255, 255);
+    color:black;
+}
+
+.status-info-task-infinity {
+
+    background-color: rgb(165, 165, 165);
+    border: 1px dashed white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* 🔴 OLD | Clean Code , than delete it 
+/* ---------------------------------------------------------------- */
+
+
+
+
+
+
+
+
 /* ---------------------------------------------------------------- */
 /* News Container
 /* ---------------------------------------------------------------- */
@@ -88,7 +316,7 @@
 
 #thunder-box-news > img {
 
-    height: 1.3em;
+    height: 1.1em;
 }
 
 #thunder-box-news > img:nth-of-type(2) {
