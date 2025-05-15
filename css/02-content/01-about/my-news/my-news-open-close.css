@@ -1,0 +1,189 @@
+/* ----------------------------------------------------------------------------- */
+/* > open-close-my-news.css
+/*  
+/* : styles the news open / close label 
+/* ----------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/*  Open / Close | My News 
+/* ------------------------------------------------------------------------- */
+
+#my-news-open-close {
+
+    height: 4em;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: bold;
+ 
+    color:#424242;
+   
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+#my-news-open-close:hover {
+
+    background-color: wheat;
+    color:rgb(100, 100, 100);
+
+}
+
+/* ------------------------------------------------------------------------- */
+/* Title | Open / Close 
+/* ------------------------------------------------------------------------- */
+
+#my-news-open-close > .title-container {
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
+
+}
+
+#my-news-open-close > .title-container > div:nth-of-type(1) {
+
+    height: 100%;
+
+    margin-left: 1em;
+    width: 1.5em;
+        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: green; */
+
+}
+
+#my-news-open-close > .title-container > div:nth-of-type(1) > img:nth-of-type(1) {
+
+    transition: all .4s;
+}
+
+#my-news-text-year {
+
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------- */
+/* State Container | Open / Close 
+/* ------------------------------------------------------------------------- */
+
+#my-news-open-close > .state-open-close-container {
+
+    height: 100%;
+
+    /* mobile */
+    width: 3.5em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .6em;
+
+    /* background-color: blue; */
+  
+}
+
+/* smooth img transition by changing */
+#my-news-open-close > .state-open-close-container > img {
+
+    transition: all .4s;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | My Overview News Container 
+/* ------------------------------------------------------------------------- */
+
+#smooth-open-close-my-overview-news-container {
+
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Checkbox Handling | Open/Close
+/* ------------------------------------------------------------------------- */ 
+
+#chk-my-news-open-close {
+    display: none;
+}
+
+/* ----------------------------------------------------- */
+/* Label Styling | Handling 
+/* ----------------------------------------------------- */
+
+/* checked */
+#chk-my-news-open-close:checked + .handle-header-content-area #my-news-open-close {
+
+    border-radius: 0 0 .8em .8em;
+    background-color: wheat;
+}
+
+/* checked => animation 2 arrow slide up down */
+#chk-my-news-open-close:checked + .handle-header-content-area #my-news-open-close .title-container > div:nth-of-type(1) > img:nth-of-type(1) {
+
+    transform: rotate(90deg);
+    animation: leftright infinite .6s ease;
+}
+
+/* ----------------------------------------------------- */
+/* Open/Close State | Handling 
+/* ----------------------------------------------------- */
+
+/* default img arrow white unshown */
+#my-news-open-close > .state-open-close-container > img:nth-of-type(2) {
+
+    display: none;
+}
+
+/* checked => unshow img arrow dark */
+#chk-my-news-open-close:checked + .handle-header-content-area #my-news-open-close > .state-open-close-container > img:nth-of-type(1) {
+
+    display: none;
+
+}
+
+/* checked => show img arrow white */
+#chk-my-news-open-close:checked + .handle-header-content-area #my-news-open-close > .state-open-close-container > img:nth-of-type(2) {
+
+    display: flex;
+
+}
+
+/* checked => red layout  */
+#chk-my-news-open-close:checked + .handle-header-content-area #my-news-open-close > .state-open-close-container  {
+
+    border-radius: 0 0 .8em 0;
+    background-color: rgb(224, 4, 4);
+
+}
+
+/* checked => arrow up */
+#chk-my-news-open-close:checked + .handle-header-content-area #my-news-open-close > .state-open-close-container > img {
+
+    transform: rotate(180deg);
+}
+
+/* ----------------------------------------------------- */
+/* Smooth Open Close Overview | Handling 
+/* ----------------------------------------------------- */
+
+/* checked => show smooth overview */
+#chk-my-news-open-close:checked ~ #smooth-open-close-my-overview-news-container {
+
+    grid-template-rows: 1fr;
+
+}

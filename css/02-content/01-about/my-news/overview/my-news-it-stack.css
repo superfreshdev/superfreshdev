@@ -1,0 +1,249 @@
+/* ----------------------------------------------------------------------------- */
+/* > my-news-category-list.css
+/*  
+/* : styles my news category list for my it doing & private lifestyle list
+/* ----------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* Content | IT Stack | My News
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-content-it-stack {
+
+    display: grid;
+
+}
+
+/* ------------------------------------------------------------------------- */
+/* LI | Content IT Stack | 
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-content-it-stack > li {
+
+    padding: 1.2em;
+
+    display: grid;
+    row-gap: .4em;
+
+    transition: all .4s;
+
+}
+
+.my-news-category-list-it-doing > li:hover {
+
+    /* background-color: wheat; */
+    background-color: rgb(218, 218, 218);
+}
+
+.my-news-category-list-it-doing > li:first-child {
+
+    border-radius: 1em 1em 0 0;
+}
+
+.my-news-category-list-it-doing > li:last-child {
+
+    border-radius: 0em 0em 1em 1em;
+}
+
+.my-news-category-list-it-doing > li:not(li:last-child) {
+
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+/* ------------------------------------------------------------------------- */
+/* Doing Info Status | My News
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-doing-info-status {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: .4em;
+    row-gap: .4em;
+
+    font-size: .9em;
+
+    color:#d5d5d5;
+}
+
+/* ------------------------------ */
+/* Nr 
+/* ------------------------------ */
+
+.my-news-doing-info-status > .nr {
+
+    width: 1.5em;
+    height: 1.5em;
+    /* optimal layout fix */
+    padding-top: .1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    border-radius: .3em;
+
+    background-color: grey;
+    
+
+}
+
+/* ------------------------------ */
+/* Img | Status Now
+/* ------------------------------ */
+
+.my-news-doing-info-status > .img-status-now {
+
+    height: 1.2em;
+    animation: rotate360deg 8s infinite ease;
+}
+
+/* ------------------------------ */
+/* Box & Img | Status After
+/* ------------------------------ */
+
+.my-news-img-status-after-box {
+
+    height: 1.5em;
+    width: 1.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: green; */
+}
+
+.my-news-img-status-after-box > .img-status-after {
+
+    height: .9em;
+    animation: leftright 1s infinite ease;
+}
+
+/* ------------------------------ */
+/* Info | Status Now
+/* ------------------------------ */
+
+.my-news-doing-info-status > .info-status-now {
+
+   height: 1.6em;
+   padding: 0 .4em;
+
+   font-weight: bold;
+
+   border-radius: .4em;
+
+   color:black;
+   background-color: rgb(224, 4, 4);
+  
+   
+}
+
+/* ------------------------------ */
+/* Info | Status After
+/* ------------------------------ */
+
+.my-news-doing-info-status > .info-status-after {
+
+   height: 1.6em;
+   padding: 0 .4em;
+
+   font-weight: bold;
+
+   border-radius: .4em;
+
+   color:black;
+   background-color: rgb(249, 233, 54);
+   
+}
+
+/* ------------------------------ */
+/* Info | Status Art 
+/* ------------------------------ */
+
+.my-news-doing-info-status > .info-status-art {
+
+   padding: 0 .5em;
+
+   display: flex;
+   align-items: center;
+   column-gap: .3em;
+
+   font-weight: bold;
+
+   border-radius: .4em;
+
+   background-color: grey;
+   color:rgb(213, 213, 213);
+
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* IMG | Status Art | 
+/* ------------------------------------------------------------------------------------- */
+
+/* arts: learning, practice, job, building project, working on */
+
+.img-status-learning {
+
+    height: 1.2em;
+    
+}
+
+.img-status-project {
+
+    height: .9em;
+}
+
+.img-status-practice {
+
+    height: 1em;
+}
+
+.img-status-job {
+
+    height: .95em;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Doing Info | My News
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-doing-info {
+
+   
+}
+
+/* ---------------------------------------- */
+/* Title | Doing Info 
+/* ---------------------------------------- */
+
+.my-news-doing-info > .title {
+
+    font-weight: bold;
+}
+
+/* ---------------------------------------- */
+/* Description | Doing Info 
+/* ---------------------------------------- */
+
+.my-news-doing-info > .description {
+
+    /* font-style: italic; */
+    color:grey;
+    
+}
+
+/* ---------------------------------------- */
+/* Link | Doing Info 
+/* ---------------------------------------- */
+
+.my-news-doing-info > .description > .link {
+
+    color:rgb(57, 57, 57);
+}

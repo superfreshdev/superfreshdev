@@ -1,0 +1,111 @@
+/* ----------------------------------------------------------------------------- */
+/* > my-news-category-list.css
+/*  
+/* : styles my news category list for my it doing & private lifestyle list
+/* ----------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* Content | Private Lifestyle | My News
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-content-private-lifestyle {
+
+    display: grid;
+
+}
+
+/* ------------------------------------------------------------------------- */
+/* LI | Content Private Style | 
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-content-private-lifestyle > li {
+
+    display: grid;
+    row-gap: .6em;
+
+    background-color: rgb(224, 224, 224);
+    
+}
+
+/* ------------------------------------------------------------------------- */
+/* Header | Private Lifestyle
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-content-private-lifestyle > li > header {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+    font-weight: bold;
+    
+}
+
+.my-news-content-private-lifestyle > li > header > div {
+
+    font-size: 1.125em;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* IMG | Header | Private Lifestyle
+/* ------------------------------------------------------------------------- */ 
+
+.img-my-news-private-lifestyle-books {
+
+    height: 2.8em;
+}
+
+.img-my-news-private-lifestyle-violine {
+
+    height: 1em;
+}
+
+.img-my-news-private-lifestyle-family-friends {
+
+    height: 1em;
+}
+
+.img-my-news-private-lifestyle-working-webpage {
+
+    height: 1em;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Description List | Private Lifestyle
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-content-private-lifestyle > li > .description-list {
+
+    /* delete default ul style */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    /* color:red; */
+    
+}
+/* ------------------------------------------------------------------------- */
+/* LI | Description List 
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-content-private-lifestyle > li > .description-list > li {
+
+    padding-left: 3em;
+
+    display: flex;
+    align-items: flex-start;
+    gap: .5em;
+    
+}
+
+.img-bullet-small {
+
+    /* layout fix because of flex-start */
+    padding-top: .5em;
+    height: .4em;
+}
+
+
