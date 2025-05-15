@@ -50,5 +50,8 @@ html,body {
     /* body-main, body-footer */
     grid: 1fr auto / 1fr;
 
+    /* for smooth anker scrolling */
+    scroll-behavior: smooth;
+
 
 }

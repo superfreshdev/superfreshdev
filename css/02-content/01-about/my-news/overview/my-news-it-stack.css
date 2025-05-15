@@ -4,6 +4,15 @@
 /* : styles my news category list for my it doing & private lifestyle list
 /* ----------------------------------------------------------------------------- */
 
+/* 
+🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+IDEE: 
+
+    einzelne Tabs statt so großes Layout Fenster
+    > dabei können die Nummeriungen größer sein 
+    > after bekommt keine Nummerierung sondern nur Sternchen 
+
+*/
 
 /* ------------------------------------------------------------------------- */
 /* Content | IT Stack | My News
@@ -21,7 +30,7 @@
 
 .my-news-content-it-stack > li {
 
-    padding: 1.2em;
+    padding: 1.5em 2em;
 
     display: grid;
     row-gap: .4em;
@@ -30,23 +39,23 @@
 
 }
 
-.my-news-category-list-it-doing > li:hover {
+.my-news-content-it-stack > li:hover {
 
     /* background-color: wheat; */
     background-color: rgb(218, 218, 218);
 }
 
-.my-news-category-list-it-doing > li:first-child {
+.my-news-content-it-stack > li:first-child {
 
     border-radius: 1em 1em 0 0;
 }
 
-.my-news-category-list-it-doing > li:last-child {
+.my-news-content-it-stack > li:last-child {
 
     border-radius: 0em 0em 1em 1em;
 }
 
-.my-news-category-list-it-doing > li:not(li:last-child) {
+.my-news-content-it-stack > li:not(li:last-child) {
 
     border-bottom: 1px solid rgb(227, 227, 227);
 }
@@ -87,41 +96,14 @@
 
     border-radius: .3em;
 
-    background-color: grey;
+    /* background-color: grey; */
+    border: 1px dashed black;
+
+    border: 1px solid rgb(205, 205, 205);
+
+    color:black;
     
 
-}
-
-/* ------------------------------ */
-/* Img | Status Now
-/* ------------------------------ */
-
-.my-news-doing-info-status > .img-status-now {
-
-    height: 1.2em;
-    animation: rotate360deg 8s infinite ease;
-}
-
-/* ------------------------------ */
-/* Box & Img | Status After
-/* ------------------------------ */
-
-.my-news-img-status-after-box {
-
-    height: 1.5em;
-    width: 1.5em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* background-color: green; */
-}
-
-.my-news-img-status-after-box > .img-status-after {
-
-    height: .9em;
-    animation: leftright 1s infinite ease;
 }
 
 /* ------------------------------ */
@@ -137,8 +119,65 @@
 
    border-radius: .4em;
 
-   color:black;
-   background-color: rgb(224, 4, 4);
+   border: 1px solid rgb(205, 205, 205);
+
+   background-color: rgb(230, 67, 67);
+   color:rgb(0, 0, 0);
+  
+   
+}
+
+/* ------------------------------ */
+/* Info | Status Infinity
+/* ------------------------------ */
+
+.my-news-doing-info-status > .info-status-infinity {
+
+   height: 1.6em;
+   padding: 0 .4em;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   font-weight: bold;
+
+   border-radius: .4em;
+
+   border: 1px solid rgb(205, 205, 205);
+
+   background-color: rgb(207, 207, 207);
+   color:rgb(0, 0, 0);
+  
+   
+}
+
+.my-news-doing-info-status > .info-status-infinity > img:nth-of-type(1) {
+
+    height: 1em;
+}
+
+/* ------------------------------ */
+/* Info | Status Finished
+/* ------------------------------ */
+
+.my-news-doing-info-status > .info-status-finished {
+
+   height: 1.6em;
+   padding: 0 .4em;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   font-weight: bold;
+
+   border-radius: .4em;
+
+   border: 1px solid rgb(205, 205, 205);
+
+   background-color: rgb(87, 170, 92);
+   color:rgb(0, 0, 0);
   
    
 }
@@ -155,6 +194,8 @@
    font-weight: bold;
 
    border-radius: .4em;
+
+   border: 1px solid rgb(205, 205, 205);
 
    color:black;
    background-color: rgb(249, 233, 54);
@@ -177,8 +218,12 @@
 
    border-radius: .4em;
 
-   background-color: grey;
+   /* background-color: grey; */
    color:rgb(213, 213, 213);
+
+   color:black;
+
+   border: 1px solid rgb(205, 205, 205);
 
 }
 

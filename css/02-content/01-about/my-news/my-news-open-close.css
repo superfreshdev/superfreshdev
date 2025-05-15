@@ -167,7 +167,7 @@
 #chk-my-news-open-close:checked + .handle-header-content-area #my-news-open-close > .state-open-close-container  {
 
     border-radius: 0 0 .8em 0;
-    background-color: rgb(224, 4, 4);
+    background-color: rgb(230, 67, 67);
 
 }
 
