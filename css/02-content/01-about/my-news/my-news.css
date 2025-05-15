@@ -79,9 +79,12 @@
 
     border-radius: .6em;
 
-    background-color: rgb(223, 223, 223);
+    /* background-color: rgb(223, 223, 223); */
 
-    background-color: wheat;
+    background-color: black;
+    color:white;
+
+    /* background-color: wheat; */
 }
 
 /* ------------------------------------------------------- */
@@ -174,6 +177,6 @@
 
     /* border: 1px dashed rgb(136, 136, 136); */
 
-    background-color: rgb(246, 246, 246);
+    /* background-color: rgb(246, 246, 246); */
 
 }
