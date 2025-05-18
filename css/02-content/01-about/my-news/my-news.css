@@ -150,10 +150,10 @@
 
 .my-news-category > main {
 
-    padding: 3em 0;
+    padding: 1em 0;
 
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    /* border-top: 1px solid black; */
+    /* border-bottom: 1px solid black; */
 
     display: flex;
 

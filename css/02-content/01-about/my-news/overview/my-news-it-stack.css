@@ -52,7 +52,7 @@
 
     background-color: rgb(252, 251, 202);
 
-    opacity: .2;
+    /* opacity: .2; */
 
 } 
 .my-news-doing-finished {
@@ -64,14 +64,17 @@
 /* Doing Hover ( Infinity, Now, After, Finsihed ) | My News
 /* ------------------------------------------------------------------------- */ 
 
-.my-news-doing-infinity:hover, 
+.my-news-doing-infinity:hover,
 .my-news-doing-now:hover,
 .my-news-doing-after:hover, 
 .my-news-doing-finished:hover {
 
     background-color: rgb(218, 218, 218);
 
+    background-color: wheat;
+
 }
+
 
 .my-news-doing-after:hover {
 
@@ -323,7 +326,8 @@
 .my-news-doing-info > .description {
 
     /* font-style: italic; */
-    color:grey;
+    /* color:rgb(28, 28, 28); */
+    color:rgb(121, 121, 121);
     
 }
 
