@@ -125,6 +125,8 @@
 
     border: 1px solid black;
 
+    border: 1px solid rgb(174, 174, 174);
+
     color:black;
 
 }
@@ -162,6 +164,8 @@
    border-radius: .4em;
 
    border: 1px solid black;
+
+   border: 1px solid rgb(174, 174, 174);
 
    color:rgb(0, 0, 0);
 
@@ -225,6 +229,8 @@
     border-radius: .4em;
 
     border: 1px solid black;
+
+    border: 1px solid rgb(174, 174, 174);
 
     color:rgb(0, 0, 0);
 
