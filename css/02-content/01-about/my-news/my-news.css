@@ -150,12 +150,17 @@
 
 .my-news-category > main {
 
+    padding: 3em 0;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
     display: flex;
 
     /* mobile solution */
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 1em;
+    column-gap: 2.5em;
 
     /* background-color: magenta; */
     
