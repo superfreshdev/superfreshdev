@@ -1,0 +1,134 @@
+/* ------------------------------------------------------------------- */
+/* > tab-content-filter.css 
+/* 
+/* Style ui-component for tab content filter
+/* 
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Tab Content Filter 
+/* ------------------------------------------------------------- */
+
+.tab-content-filter {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    
+}
+
+.layout-center {
+
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------- */
+/* Tab Content Item 
+/* ------------------------------------------------------------- */
+
+.tab-content-item {
+
+    padding: .6em .6em;
+    min-width: 14em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.5em;
+
+    font-weight: bold;
+    
+    border-radius: .6em;
+
+    user-select: none;
+
+    background-color: rgb(234, 234, 234);
+
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.tab-content-item:hover {
+
+    background-color: wheat;
+}
+
+.tab-content-item > div:nth-of-type(1) {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | Tab Content Item 
+/* ------------------------------------------------------------- */
+
+.img-tab-normal {
+
+    height: 3em;
+}
+.img-tab-big {
+
+    height: 4.5em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img Border Radius | Tab Content Item 
+/* ------------------------------------------------------------- */
+
+.img-border-radius-0-6 {
+
+    border-radius: .6em;
+}
+
+.img-border-radius-0-8 {
+    
+    border-radius: .8em;
+}
+
+/* ------------------------------------------------------------- */
+/* 🟣 Handling => Extra CSS File in My News 
+/* ------------------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* Handling Style | My IT
+/* -------------------------------------------------- */
+
+#chk-radio-tab-my-news-it:checked ~ .tab-content-filter {
+
+    /* background-color: green; */
+}
+
+#chk-radio-tab-my-news-it:checked ~ .tab-content-filter > label[for="chk-radio-tab-my-news-it"] {
+
+    background-color: wheat;
+}
+
+#chk-radio-tab-my-news-it:checked ~ .tab-content-filter > label[for="chk-radio-tab-my-news-it"] > .custom-radio-small > img {
+
+    display: flex;
+}
+
+/* -------------------------------------------------- */
+/* Handling Style | My Private Lifestyle 
+/* -------------------------------------------------- */
+
+#chk-radio-tab-my-news-private-lifestyle:checked ~ .tab-content-filter {
+
+    /* background-color: rgb(128, 0, 111); */
+}
+
+#chk-radio-tab-my-news-private-lifestyle:checked ~ .tab-content-filter > label[for="chk-radio-tab-my-news-private-lifestyle"] {
+
+    background-color: wheat;
+}
+
+#chk-radio-tab-my-news-private-lifestyle:checked ~ .tab-content-filter > label[for="chk-radio-tab-my-news-private-lifestyle"] > .custom-radio-small > img {
+
+    display: flex;
+}

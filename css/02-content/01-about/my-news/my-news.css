@@ -154,6 +154,7 @@
 
     /* mobile solution */
     flex-wrap: wrap;
+    align-items: flex-start;
     gap: 1em;
 
     /* background-color: magenta; */

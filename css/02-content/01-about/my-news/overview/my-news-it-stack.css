@@ -4,15 +4,6 @@
 /* : styles my news category list for my it doing & private lifestyle list
 /* ----------------------------------------------------------------------------- */
 
-/* 
-🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
-IDEE: 
-
-    einzelne Tabs statt so großes Layout Fenster
-    > dabei können die Nummeriungen größer sein 
-    > after bekommt keine Nummerierung sondern nur Sternchen 
-
-*/
 
 /* ------------------------------------------------------------------------- */
 /* Content | IT Stack | My News
@@ -26,61 +17,95 @@ IDEE:
 }
 
 /* ------------------------------------------------------------------------- */
-/* LI | Content IT Stack | 
+/* Doing ( Infinity, Now, After, Finsihed ) | My News
 /* ------------------------------------------------------------------------- */ 
 
-.my-news-content-it-stack > li {
+.my-news-doing-infinity, 
+.my-news-doing-now,
+.my-news-doing-after, 
+.my-news-doing-finished {
 
-    padding: 1.5em 2em;
+    padding: 1em 1em;
 
     display: grid;
-    row-gap: .4em;
+    row-gap: .8em;
     
-    border-radius: 1em;
+    border-radius: .6em;
 
-
-    background-color: rgb(246, 246, 246);
-    /* background-color: red; */
+    /* border: 1px solid black; */
 
     transition: all .4s;
 
+}  
+
+.my-news-doing-infinity {
+
+    background-color: rgb(246, 246, 246);
+}  
+
+.my-news-doing-now {
+
+    background-color: rgb(252, 202, 202);;
+
 }
+.my-news-doing-after {
 
-.my-news-content-it-stack > li:hover {
+    background-color: rgb(252, 251, 202);
 
-    /* background-color: wheat; */
-    background-color: rgb(218, 218, 218);
-}
+    opacity: .2;
 
+} 
+.my-news-doing-finished {
 
-
-.my-news-content-it-stack > li:not(li:last-child) {
-
-    border-bottom: 1px solid rgb(227, 227, 227);
+    background-color: rgb(212, 252, 202);
 }
 
 /* ------------------------------------------------------------------------- */
-/* Doing Info Status | My News
+/* Doing Hover ( Infinity, Now, After, Finsihed ) | My News
 /* ------------------------------------------------------------------------- */ 
 
-.my-news-doing-info-status {
+.my-news-doing-infinity:hover, 
+.my-news-doing-now:hover,
+.my-news-doing-after:hover, 
+.my-news-doing-finished:hover {
+
+    background-color: rgb(218, 218, 218);
+
+}
+
+.my-news-doing-after:hover {
+
+    opacity: 1;
+
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* Doing Status | My News
+/* ------------------------------------------------------------------------- */ 
+
+.my-news-doing-status {
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: .4em;
-    row-gap: .4em;
+    justify-content: space-between;
+    gap: .3em;
+}
 
-    font-size: .9em;
+.my-news-doing-status > div:nth-of-type(1) {
 
-    color:#d5d5d5;
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
 }
 
 /* ------------------------------ */
-/* Nr 
+/* Nr Box
 /* ------------------------------ */
 
-.my-news-doing-info-status > .nr {
+.my-news-doing-status > div:nth-of-type(1) > .nr-box {
 
     width: 1.5em;
     height: 1.5em;
@@ -95,75 +120,33 @@ IDEE:
 
     border-radius: .3em;
 
-    /* background-color: grey; */
-   
-
-    /* border: 1px solid rgb(205, 205, 205); */
-
-     border: 1px solid black;
-
-    color:black;
-    
-
-}
-
-/* ------------------------------ */
-/* Info | Status Now
-/* ------------------------------ */
-
-.my-news-doing-info-status > .info-status-now {
-
-   height: 1.6em;
-   padding: 0 .4em;
-
-   font-weight: bold;
-
-   border-radius: .4em;
-
-   border: 1px solid black;
-
-   background-color: rgb(230, 67, 67);
-   color:rgb(0, 0, 0);
-  
-   
-}
-
-/* ------------------------------ */
-/* Info | Status Infinity
-/* ------------------------------ */
-
-.my-news-doing-info-status > .info-status-infinity {
-
-   height: 1.6em;
-   padding: 0 .4em;
-
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-   font-weight: bold;
-
-   border-radius: .4em;
-
     border: 1px solid black;
 
-   background-color: rgb(207, 207, 207);
-   color:rgb(0, 0, 0);
-  
-   
+    color:black;
+
 }
 
-.my-news-doing-info-status > .info-status-infinity > img:nth-of-type(1) {
+.img-my-news-infinity {
 
     height: 1em;
+
 }
 
-/* ------------------------------ */
-/* Info | Status Finished
-/* ------------------------------ */
+.img-my-news-after {
 
-.my-news-doing-info-status > .info-status-finished {
+    /* layout fix */
+    padding-bottom: 1px;
 
+    height: .8em;
+    transform: rotate(90deg);
+}
+
+/* --------------------------------------------------------------- */
+/* Doing Status ( Infinity, Now, After, Finished )
+/* --------------------------------------------------------------- */
+
+.my-news-doing-status > div:nth-of-type(1) > .doing-status {
+    
    height: 1.6em;
    padding: 0 .4em;
 
@@ -177,59 +160,117 @@ IDEE:
 
    border: 1px solid black;
 
-   background-color: rgb(87, 170, 92);
    color:rgb(0, 0, 0);
-  
-   
+
+}
+
+/* --------------------------------------------------------------- */
+/* Infinity Doing Status 
+/* --------------------------------------------------------------- */
+
+.my-news-doing-infinity > .my-news-doing-status > div:nth-of-type(1) > .doing-status {
+
+    background-color: rgb(246, 246, 246);
+    
+} 
+
+/* ------------------------------ */
+/* Now | Doing Status 
+/* ------------------------------ */
+
+.my-news-doing-now > .my-news-doing-status > div:nth-of-type(1) > .doing-status {
+
+    background-color: rgb(230, 67, 67);
+
 }
 
 /* ------------------------------ */
-/* Info | Status After
+/* After | Doing Status 
 /* ------------------------------ */
 
-.my-news-doing-info-status > .info-status-after {
+.my-news-doing-after > .my-news-doing-status > div:nth-of-type(1) > .doing-status {
 
-   height: 1.6em;
-   padding: 0 .4em;
-
-   font-weight: bold;
-
-   border-radius: .4em;
-
-   border: 1px solid black;
-
-   color:black;
-   background-color: rgb(249, 233, 54);
-   
+    background-color: rgb(249, 233, 54);    
 }
 
 /* ------------------------------ */
-/* Info | Status Art 
+/* Finished | Doing Status 
 /* ------------------------------ */
 
-.my-news-doing-info-status > .info-status-art {
+.my-news-doing-finished > .my-news-doing-status > div:nth-of-type(1) > .doing-status {
 
-   padding: 0 .5em;
-
-   display: flex;
-   align-items: center;
-   column-gap: .3em;
-
-   font-weight: bold;
-
-   border-radius: .4em;
-
-   /* background-color: grey; */
-   color:rgb(213, 213, 213);
-
-   color:black;
-
-   border: 1px solid black;
+    background-color: rgb(87, 170, 92);
 
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* IMG | Status Art | 
+/*  Doing Art | 
+/* ------------------------------------------------------------------------------------- */
+
+.my-news-doing-status > .doing-art {
+
+    height: 1.6em;
+    padding: 0 .4em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .3em;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    border: 1px solid black;
+
+    color:rgb(0, 0, 0);
+
+}
+
+/* -------------------------------------------------------------- */
+/*  Infinity | Doing Art | 
+/* -------------------------------------------------------------- */
+
+.my-news-doing-infinity > .my-news-doing-status > .doing-art {
+
+    background-color: rgb(246, 246, 246);
+    
+} 
+
+/* -------------------------------------------------------------- */
+/*  Now | Doing Art | 
+/* -------------------------------------------------------------- */
+
+.my-news-doing-now > .my-news-doing-status > .doing-art {
+
+    background-color: rgb(230, 67, 67);
+    
+} 
+
+/* -------------------------------------------------------------- */
+/*  After | Doing Art | 
+/* -------------------------------------------------------------- */
+
+.my-news-doing-after > .my-news-doing-status > .doing-art {
+
+     background-color: rgb(249, 233, 54); 
+    
+} 
+
+/* -------------------------------------------------------------- */
+/*  Finished | Doing Art | 
+/* -------------------------------------------------------------- */
+
+.my-news-doing-finished > .my-news-doing-status > .doing-art {
+
+    background-color: rgb(87, 170, 92);
+     
+
+    
+} 
+
+/* ------------------------------------------------------------------------------------- */
+/* IMG | Doing Art | 
 /* ------------------------------------------------------------------------------------- */
 
 /* arts: learning, practice, job, building project, working on */
@@ -255,7 +296,6 @@ IDEE:
     height: .95em;
 }
 
-
 /* ------------------------------------------------------------------------- */
 /* Doing Info | My News
 /* ------------------------------------------------------------------------- */ 
@@ -269,10 +309,12 @@ IDEE:
 /* Title | Doing Info 
 /* ---------------------------------------- */
 
-.my-news-doing-info > .title {
+.my-news-doing-info > .title,
+.my-news-doing-info > .title .colon {
 
     font-weight: bold;
 }
+
 
 /* ---------------------------------------- */
 /* Description | Doing Info 
@@ -290,6 +332,11 @@ IDEE:
 /* ---------------------------------------- */
 
 .my-news-doing-info > .description > .link {
+
+    color:rgb(57, 57, 57);
+}
+
+.my-news-doing-info > .description > .link:visited {
 
     color:rgb(57, 57, 57);
 }
