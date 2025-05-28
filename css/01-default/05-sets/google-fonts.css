@@ -1,14 +1,24 @@
 /* -------------------------------------------------------------- */
 /* > google-fonts.css
-/*  
-/* : load local the google font files to use sexy fonts 
+/*
+/* : load local the google font files to use sexy fonts
 /* -------------------------------------------------------------- */
 
 
 @font-face {
     font-family: "Delius";
-    src: url('../../../srcs/fonts/google/google-font-delius/Delius/Delius-Regular.ttf') format('truetype'),
-         url('../../../srcs/fonts/google/google-font-delius/Pochaevsk/Pochaevsk-Regular.ttf') format('truetype'),
-         url('../../../srcs/fonts/google/google-font-delius/Inria_Sans/InriaSans-Regular.ttf') format('truetype'),
+    src: url('../../../srcs/fonts/google/google-fonts/Delius/Delius-Regular.ttf') format('truetype'),
+         url('../../../srcs/fonts/google/google-fonts/Pochaevsk/Pochaevsk-Regular.ttf') format('truetype'),
+         url('../../../srcs/fonts/google/google-fonts/Inria_Sans/InriaSans-Regular.ttf') format('truetype'),
 
+}
+
+@font-face {
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    src: url("../../../srcs/fonts/google/google-fonts/WDXL_Lubrifont_TC/WDXLLubrifontTC-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Playpen Sans Deva", sans-serif;
+    src: url("../../../srcs/fonts/google/google-fonts/PlayPenSansDeva/PlaypenSansDeva-Medium.ttf") format('truetype');
 }
