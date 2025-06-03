@@ -1,121 +1,141 @@
 /* ----------------------------------------------------------------------------- */
 /* > welcome.css
-/*  
-/* : styles for welcome container in about page
+/*
+/* : styles for welcome container
 /* ----------------------------------------------------------------------------- */
 
-
 /* ---------------------------------------------------------------- */
-/* Welcome Container | About
+/*  Welcome Container
 /* ---------------------------------------------------------------- */
 
-#welcome-container-about {
+#welcome-container {
 
     width: 100%;
-    padding: 1.5em 0em;
 
-    display: flex;
-    flex-wrap: wrap;
-
-    align-items: center;
-    justify-content: space-between;
-    
-
-    /* this will be use in mobile  */
-    row-gap: 1em;
-    
-    /* background-color: orange; */
-}
-
-
-/* ---------------------------------------------------------------- */
-/* Welcome Title Block | About
-/* ---------------------------------------------------------------- */
-
-#welcome-title-block-about {
-
-    display: flex;
-    align-items: center;
-    column-gap: 1em;
-   
-}
-
-#img-me-clipart-welcome {
-
-    /* mobile size  */
-    height: 6.5em;
-}
-
-#txt-block-welcome-title-about {
+    /* mobile */
+    padding: 1em .8em;
 
     display: grid;
-    row-gap: .6em;
+    /* align-content: center; */
+    align-items: center;
+
+    /* mobile */
+    grid-template:
+        "welcome-img-area welcome-title-area"
+        "welcome-motto-area welcome-motto-area"
+        "welcome-date-area welcome-date-area"
+    ;
+    /* mobile */
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto 1fr;
+
+    /* mobile */
+    column-gap: 1.1em;
+    row-gap: .4em;
+
+    background-color: rgb(28, 28, 28);
 }
 
-#txt-block-welcome-title-about > div:nth-of-type(1) {
+/* --------------------------------------------- */
+/* [1/4] | Welcome Img Area
+/* --------------------------------------------- */
+
+.welcome-img-area {
+
+    grid-area: welcome-img-area;
+
+    display: flex;
+    align-items: center;
+
+    /* background-color: green; */
+}
+
+#img-welcome-clipart-me {
+
+    /* mobile */
+    height: 5.5em;
+
+}
+
+/* --------------------------------------------- */
+/* [2/4] | Welcome Title Area
+/* --------------------------------------------- */
+
+.welcome-title-area {
+
+    grid-area: welcome-title-area;
 
     display: grid;
-    row-gap: .3em;
+    row-gap: .2em;
 
+    /* background-color: rgb(255, 247, 0); */
 }
 
-#txt-welcome-to-about {
+#text-welcome-to {
 
     /* mobile size  */
-    font-size: 1.125em;
+    font-size: 1.25em;
+
     font-weight: bold;
 
     color:rgb(185, 185, 185);
 }
 
-#txt-superfreshdev-about {
+#text-superfreshdev {
+
 
     /* mobile size  */
-    font-size: 1.25em;
+    font-size: 1.375em;
+
     font-weight: bold;
 
     color:white;
+    /* color:wheat; */
 }
 
-#txt-superfreshdev-about > span:nth-of-type(1) {
 
-    color:wheat;
+/* --------------------------------------------- */
+/* [3/4] | Welcome Motto Area
+/* --------------------------------------------- */
+
+.welcome-motto-area {
+
+    grid-area: welcome-motto-area;
+
+    display: grid;
+    /* row-gap: 0em; */
+
+    color:grey;
+    opacity: .8;
 }
 
-#txt-motto-superfreshdev-about {
+/* --------------------------------------------- */
+/* [4/4] | Welcome Motto Area
+/* --------------------------------------------- */
 
-    /* mobile size  */
-    font-size: 1em;
+.welcome-date-area {
 
-    line-height: 1.4em;
+    grid-area: welcome-date-area;
 
-    color:rgb(89, 89, 89);
-}
-
-/* ---------------------------------------------------------------- */
-/* Welcome Date Block | About
-/* ---------------------------------------------------------------- */
-
-#welcome-date-block-about {
-
-    width: 100%;
-    padding-right: 1em;
+    padding-top: 1em;
+    padding-right: .3em;
 
     display: flex;
     justify-content: flex-end;
-  
+    align-items: center;
+    column-gap: .3em;
 
+    font-size: .895em;
     font-weight: bold;
 
-    color:grey;
+    opacity: .8;
+    color:rgb(156, 156, 156);
 
-    /* background-color: red; */
-    
+    /* background-color: green; */
+
 }
 
-#txt-today-about {
+#txt-welcome-today {
 
-    font-weight: bold;
     color:wheat;
 }
-

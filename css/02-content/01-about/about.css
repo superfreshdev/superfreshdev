@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------- */
 /* > about.css
-/*  
+/*
 /* : styles about page container & header about container
 /* -------------------------------------------------------------- */
 
@@ -8,3 +8,153 @@
 /* ------------------------------------------------------------------- */
 /* ❓❓ | Aktuell noch keine Verweundung
 /* ------------------------------------------------------------------- */
+
+/* ------------------------------------------- */
+/* About Container
+/* ------------------------------------------- */
+
+#about-container {
+
+    height: 100%;
+    width: 100%;
+    padding: 0 .8em;
+
+    display: grid;
+    grid: auto 1fr / 1fr;
+
+}
+
+#about-layout-container {
+
+    width: 100%;
+
+    display: grid;
+    justify-items: center;
+    row-gap: 1em;
+
+    /* background-color: rebeccapurple; */
+}
+
+#about-more-imgs-block {
+
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+}
+
+
+/* ------------------------------------------- */
+/* [1/2] About First Info Container
+/* ------------------------------------------- */
+
+#about-first-info-container {
+
+    width: 100%;
+
+    display: grid;
+    justify-items: center;
+    grid: 1fr / 1fr 1fr;
+
+}
+
+#about-info-contact {
+
+    width: 100%;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    border: 1px dashed black;
+}
+
+
+#about-img-container {
+
+    width: 100%;
+
+    display: grid;
+    justify-items: center;
+    row-gap: 1em;
+}
+
+#about-img-container > img {
+
+    /* width: 70%; */
+    border-radius: .8em;
+}
+
+#about-img-container > div {
+
+    /* background-color: brown; */
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+}
+
+/* ------------------------------------------- */
+/* [2/2] About Second Info Container
+/* ------------------------------------------- */
+
+#about-second-info-container {
+
+    display: grid;
+    justify-items: center;
+    grid: 1fr / 1fr 1fr;
+
+    /* background-color: blue; */
+
+}
+
+.img-vegeta {
+
+    width: 70%;
+    border-radius: .8em;
+}
+
+
+
+.big-category-header-right,
+.big-category-header-left {
+
+    padding: 4em 0em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+    /* font-style: italic; */
+
+    font-family: 'Delius';
+    font-weight: bold;
+
+    filter: grayscale(1);
+
+    /* background-color: rgb(54, 54, 54); */
+    color:grey;
+
+    /* background-color: yellow; */
+
+}
+
+.big-category-header-right > img,
+.big-category-header-left > img {
+
+    opacity: .6;
+}
+
+.big-category-header-right > div,
+.big-category-header-left > div {
+
+    font-size: 3.5em;
+
+
+}
+
+.big-category-header-right {
+
+    justify-content: flex-end;
+
+}

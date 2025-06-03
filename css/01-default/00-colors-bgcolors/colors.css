@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------- */
 /* > colors.css
-/*  
-/* : default name sets for all colors which will be use 
+/*
+/* : default name sets for all colors which will be use
 /* -------------------------------------------------------------- */
 
 :root {
@@ -13,7 +13,7 @@
 --c-cyan: cyan;
 --c-red: red;
 --c-yellow: yellow;
---c-green: green; 
+--c-green: green;
 --c-black: black;
 --c-white: white;
 --c-brown: brown;
@@ -31,29 +31,9 @@
 --c-blue-arrow: #5dabf4;
 --c-green-alien: #7dda7f;
 
-
 --c-dark-grey: #525252;
 
-
-/* --------------------------------------------------------- */
-/* Nice Colors I Like
-/* --------------------------------------------------------- */
-
 --c-antrahcite-glowy: rgb(28, 28, 28);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

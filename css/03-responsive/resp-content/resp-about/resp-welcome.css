@@ -1,69 +1,165 @@
 /* -------------------------------------------------------------- */
 /* > resp-welcome.css
-/*  
-/* : responsive sets for the welcome about container 
+/*
+/* : responsive sets for the welcome about container
 /* -------------------------------------------------------------- */
 
-
 /* -------------------------------------------------------------- */
-/* >= 500x width
+/* >= 330x width
 /* -------------------------------------------------------------- */
-@media (min-width: 500px ) {
 
+@media (min-width: 330px ) {
 
-    #img-me-clipart-welcome {
+    #img-welcome-clipart-me {
 
-        /* desktop size  */
-        height: 8.5em;
+        /* mobile */
+        height: 6.5em;
     }
 
-    #txt-block-welcome-title-about {
-        
-        row-gap: .8em;
+    /* ------------------------------------------ */
+    /* Title
+    /* ------------------------------------------ */
+
+    .welcome-title-area {
+
+        row-gap: .3em;
     }
 
-    #txt-block-welcome-title-about > div:nth-of-type(1) {
+    #text-welcome-to {
 
-        row-gap: .8em;
-    
+        /* mobile */
+        font-size: 1.375em;
+
     }
 
-    #txt-welcome-to-about {
+    #text-superfreshdev {
 
-        /* desktop size  */
+        /* mobile  */
         font-size: 1.5em;
-    
-    }
-    
-    #txt-superfreshdev-about {
-    
-        /* desktop size  */
-        font-size: 1.75em;
-       
-    }
-
-    #txt-motto-superfreshdev-about {
-
-        /* desktop size  */
-        font-size: 1.125em;
 
     }
-  
 
 }
 
 /* -------------------------------------------------------------- */
-/* >= 730x width
+/* >= 400x width
 /* -------------------------------------------------------------- */
 
-@media (min-width: 730px ) {
+@media (min-width: 400px ) {
 
-    #welcome-date-block-about {
+    #img-welcome-clipart-me {
 
-        width: auto;
-    
-        display: flex;
-        justify-content: flex-end;
+        /* mobile */
+        height: 7.5em;
+
+        padding-bottom: 1.5em;
+    }
+
+    /* ------------------------------------------ */
+    /* Welcome Container
+    /* ------------------------------------------ */
+
+    /* change grid template area layout */
+
+    #welcome-container {
+
+        /* mobile */
+        padding: 2em .8em 1.5em .8em;
+
+        /* mobile */
+        grid-template:
+            "welcome-img-area welcome-title-area"
+            "welcome-img-area welcome-motto-area"
+            "welcome-img-area welcome-date-area"
+        ;
+        /* mobile */
+        grid-template-columns: auto 1fr;
+
+        /* mobile */
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+
+    /* ------------------------------------------ */
+    /* Title
+    /* ------------------------------------------ */
+
+     .welcome-title-area {
+
+        row-gap: .4em;
+    }
+
+    .welcome-motto-area {
+
+        /* 1.03125em = 16.5px  */
+        font-size: 1.03125em;
+    }
+
+    /* ------------------------------------------ */
+    /* Date
+    /* ------------------------------------------ */
+
+    .welcome-date-area {
+
+        padding-top: 0em;
+    }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 500x width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 500px ) {
+
+    /* ------------------------------------------ */
+    /* Welcome Container
+    /* ------------------------------------------ */
+
+    #welcome-container {
+
+        /* mobile */
+        padding: 2em .8em 1.3em .8em;
+
+    }
+
+    #img-welcome-clipart-me {
+
+        /* desktop */
+        height: 8.5em;
+    }
+
+    /* ------------------------------------------ */
+    /* Title
+    /* ------------------------------------------ */
+
+    .welcome-title-area {
+
+        row-gap: .5em;
+    }
+
+    #text-welcome-to {
+
+        /* desktop */
+        font-size: 1.5em;
+
+    }
+
+    #text-superfreshdev {
+
+        /* desktop size  */
+        font-size: 1.75em;
+
+    }
+
+    .welcome-motto-area {
+
+        padding-top: .4em;
+
+        row-gap: .2em;
+
+        /* 18px */
+        font-size: 1.125em;
 
     }
 
@@ -72,51 +168,57 @@
 /* -------------------------------------------------------------- */
 /* >= 800x width
 /* -------------------------------------------------------------- */
+
 @media (min-width: 800px ) {
 
 
-    #img-me-clipart-welcome {
+    #img-welcome-clipart-me {
 
-        /* desktop size  */
-        height: 11em;
+        /* desktop */
+        height: 10em;
     }
 
-    #txt-block-welcome-title-about {
-        
+    #welcome-container {
+
+        /* desktop */
+        padding: 3em .6em 1.8em .6em;
+
+        /* desktop */
+        column-gap: 1.5em;
+
+    }
+
+    /* ------------------------------------------ */
+    /* Title
+    /* ------------------------------------------ */
+
+    .welcome-title-area {
+
         row-gap: 1em;
     }
 
-    #txt-block-welcome-title-about > div:nth-of-type(1) {
+    #text-welcome-to {
 
-        row-gap: 1em;
-    
-    }
-
-    #txt-welcome-to-about {
-
-        /* desktop size  */
+        /* desktop */
         font-size: 1.8em;
-    
-    }
-    
-    #txt-superfreshdev-about {
-    
-        /* desktop size  */
-        font-size: 2em;
-       
+
     }
 
-    #txt-motto-superfreshdev-about {
+    #text-superfreshdev {
 
-        /* desktop size  */
+        /* desktop */
+        font-size: 2.3em;
+
+    }
+
+    /* ------------------------------------------ */
+    /* Date
+    /* ------------------------------------------ */
+
+    .welcome-date-area {
+
+        /* 18px */
         font-size: 1.125em;
-
     }
-  
 
 }
-
-
-
-
-

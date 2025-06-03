@@ -1,12 +1,12 @@
 /* -------------------------------------------------------------- */
 /* > main-body.css
-/*  
+/*
 /* : default sets for main body
 /* -------------------------------------------------------------- */
 
 
 /* ---------------------------------------------------------------- */
-/* Main Body 
+/* Main Body
 /* ---------------------------------------------------------------- */
 
 #main-body {
@@ -21,7 +21,7 @@
     justify-items: center;
 
     /* background-color: yellow; */
-    background-color: white;   
+    background-color: white;
 
 }
 
@@ -32,22 +32,30 @@
 #main-body-container {
 
     width: 100%;
-   
+
     /* because of fixed header height 5.5em */
     padding-top: 5.5em;
 
     /* remember: main-body is height 100%, so it can stretch max height */
     display: grid;
     justify-items: center;
-    /* nav, main-header, main */
+
     grid: auto 1fr / 1fr;
+
+    /* row-gap: 2em; */
+
 
     /* background-color: green; */
 
 }
 
+#main-body-container > div {
+
+    /* border-bottom: 10px solid black; */
+}
+
 /* ---------------------------------------------------------------- */
-/* Row Container 
+/* Row Container
 /* ---------------------------------------------------------------- */
 
 .row-container {
@@ -101,7 +109,7 @@
 
 .bgc-row-header {
     background-color: grey;
-} 
+}
 
 .bgc-row-main {
     background-color: white;
@@ -151,7 +159,7 @@
 
 
 /* ---------------------------------------------------------------- */
-/* [1/2] - Header Main Container 
+/* [1/2] - Header Main Container
 /* ---------------------------------------------------------------- */
 
 #header-main-container {
@@ -162,7 +170,7 @@
 
 
 /* ---------------------------------------------------------------- */
-/* [2/2] - Main Content Container 
+/* [2/2] - Main Content Container
 /* ---------------------------------------------------------------- */
 
 
@@ -179,14 +187,14 @@
 
 
 /* ---------------------------------------------------------------- */
-/* Main Container | Main Body  
+/* Main Container | Main Body
 /* ---------------------------------------------------------------- */
 
 #main-container-main-body {
 
     padding: 0 .8em;
-    
-    display: grid; 
+
+    display: grid;
     /* justify-items: center; */
     /* main header, main content, main footer  */
     grid: auto 1fr / 1fr;
@@ -223,13 +231,13 @@
 #main-header-container-main-body {
 
     padding: 1.5em .8em;
-   
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: .8em;
-    
+
 }
 
 #main-header-item-main-body {
@@ -246,7 +254,7 @@
 
 #main-header-item-main-body > div {
 
-    
+
     line-height: 1.3em;
 }
 
@@ -279,4 +287,3 @@
     /* background-color: white; */
 
 }
-

@@ -1,0 +1,102 @@
+/* -------------------------------------------------------------- */
+/* > header-company-body.css
+/*
+/* : default sets for header company body
+/* -------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* [1/2] Header Company
+/* ---------------------------------------------------------------- */
+
+#header-company-body {
+
+    /* reset default link style */
+    text-decoration: none;
+
+    height: 3em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    /* mobile */
+    display: none;
+
+    border-radius: .4em;
+
+    transition: all .4s;
+}
+
+
+#header-company:hover {
+
+    background-color: rgba(97, 97, 97, 0.6);
+}
+
+#img-company-logo-container {
+
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
+
+    /* mobile */
+    display: none;
+}
+
+#img-company-logo {
+
+    /* mobile */
+    display: none;
+
+    height: 3em;
+
+    border-radius: .4em;
+
+}
+
+#img-company-logo-container > div:nth-of-type(1) {
+
+    font-size: 1.125em;
+
+    color:grey;
+    opacity: .8;
+
+    /* mobile */
+    display: none;
+}
+
+/* ------------------------------------------- */
+/* Header Company Title Container
+/* ------------------------------------------- */
+
+#header-company-title-container {
+
+    display: grid;
+
+    /* mobile */
+    display: none;
+
+}
+
+#text-header-company-title {
+
+    /* 18px */
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    line-height: 1.1em;
+
+    color:white;
+
+}
+
+#text-header-company-sub-title {
+
+    font-size: 14.5px;
+    font-weight: bold;
+
+    color:grey;
+    opacity: .8;
+
+}
