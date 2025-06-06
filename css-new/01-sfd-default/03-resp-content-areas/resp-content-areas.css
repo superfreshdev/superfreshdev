@@ -1,0 +1,37 @@
+/* -------------------------------------------------------------- */
+/* > resp-content-areas.css
+/*
+/* : styles different responsive content areas which we can
+     maximum use to style our other layouts in it
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------ */
+/* Resp | Min,Main,Max
+/* ------------------------------------------------------------ */
+
+.resp-min-content-area,
+.resp-main-content-area,
+.resp-max-content-area {
+
+    width: 100%;
+}
+
+/* ----------------------------------------- */
+/* ℹ️ just for css bg-color area testing    */
+/* ----------------------------------------- */
+
+.resp-min-content-area {
+
+    /* background-color: magenta; */
+}
+
+.resp-main-content-area {
+
+    /* background-color: green; */
+}
+
+.resp-max-content-area  {
+
+    /* background-color: rgb(210, 5, 5); */
+}

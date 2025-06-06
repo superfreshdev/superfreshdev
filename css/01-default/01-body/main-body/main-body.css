@@ -5,80 +5,26 @@
 /* -------------------------------------------------------------- */
 
 
-/* ---------------------------------------------------------------- */
-/* Main Body
-/* ---------------------------------------------------------------- */
-
-#main-body {
-
-    /* important: to stretch max height of parent body-container */
-    height: 100%;
-    width: 100%;
-
-    /* important to bring main-body-container in
-       layout for better layout page handling  */
-    display: grid;
-    justify-items: center;
-
-    /* background-color: yellow; */
-    background-color: white;
-
-}
-
-/* ---------------------------------------------------------------- */
-/* Main Body Container
-/* ---------------------------------------------------------------- */
-
-#main-body-container {
-
-    width: 100%;
-
-    /* because of fixed header height 5.5em */
-    padding-top: 5.5em;
-
-    /* remember: main-body is height 100%, so it can stretch max height */
-    display: grid;
-    justify-items: center;
-
-    grid: auto 1fr / 1fr;
-
-    /* row-gap: 2em; */
 
 
-    /* background-color: green; */
-
-}
-
-#main-body-container > div {
-
-    /* border-bottom: 10px solid black; */
-}
-
-/* ---------------------------------------------------------------- */
-/* Row Container
-/* ---------------------------------------------------------------- */
-
-.row-container {
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
 
-/* ---------------------------------------------------------------- */
-/* Main Page Content Container
-/* ---------------------------------------------------------------- */
+/* 🟨🟨🟨🟨 neu */
 
-.main-page-content-container {
 
-    width: 100%;
 
-    display: grid;
 
-    background-color: yellow;
 
-}
+/* 🟨🟨🟨🟨 neu */
+
+
+
+
+
+
+
+
+
 
 
 

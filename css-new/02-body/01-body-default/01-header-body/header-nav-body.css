@@ -40,11 +40,16 @@
 
     /* border: 1px dashed grey; */
 
-    background-color: rgb(53, 53, 53);
+    /* background-color: rgb(53, 53, 53); */
 
-    background-color: rgb(192, 192, 192);
+    /* background-color: rgb(255, 255, 255); */
 
     /* background-color: rgb(83, 83, 83); */
+    color:rgb(129, 129, 129);
+
+    /* border: 1px solid rgb(53, 53, 53); */
+
+    background-color: rgb(53, 53, 53);
 
 }
 
@@ -90,92 +95,4 @@
 .anker-link-header-body:visited {
 
     color: black;
-}
-
-
-
-/* ------------------------------------------------------------------------- */
-/* Main Container & Header Main Container
-/* ------------------------------------------------------------------------- */
-
-
-/* ---------------------------------------------------- */
-/* Main Content Container
-/* ---------------------------------------------------- */
-
-.main-content-container {
-
-    width: 100%;
-
-    display: grid;
-    grid: auto 1fr / 1fr;
-
-    /* background-color: red; */
-
-}
-
-/* ---------------------------------------------------- */
-/* Header Main (left,right,2-outside) Container
-/* ---------------------------------------------------- */
-
-.header-main-left-container,
-.header-main-right-container,
-.header-main-two-outside-container {
-
-    height: 12em;
-    padding: 0 .8em;
-
-    display: flex;
-    align-items: center;
-}
-
-.header-main-right-container {
-
-    justify-content: flex-end;
-}
-
-.header-main-two-outside-container  {
-
-    justify-content: space-between;
-}
-
-.header-main {
-
-    height: 5em;
-    padding: 0 2em;
-
-    display: flex;
-    column-gap: 1.3em;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: bold;
-
-    border-radius: .6em;
-
-    background-color: rgb(28, 28, 28);
-    color:white;
-
-    opacity: .6;
-
-}
-
-
-
-.header-main div:nth-of-type(1) {
-
-    font-size: 2em;
-}
-
-/* ---------------------------------------------------- */
-/* Main Content Layout Container
-/* ---------------------------------------------------- */
-
-.main-content-layout-container {
-
-    padding: 2em 2em;
-
-
-
-    background-color: grey;
 }

@@ -1,8 +1,26 @@
 /* -------------------------------------------------------------- */
-/* > resp-body-header.css
+/* > resp-header-fixed-body.css
 /*
-/* : responsive sets for header body
+/* : responsive sets for resp header fixed body
 /* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+/* >= 320px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 320px ) {
+
+    /* ------------------------------------ */
+    /* Header Nav
+    /* ------------------------------------ */
+
+    #nav-header-body {
+
+        grid: auto / auto auto auto;
+        /* background-color: blue; */
+    }
+
+}
 
 
 /* -------------------------------------------------------------- */
@@ -14,12 +32,6 @@
     /* ------------------------------------ */
     /* Header Nav
     /* ------------------------------------ */
-
-    #nav-header-body {
-
-        grid: auto / auto auto auto;
-        /* background-color: blue; */
-    }
 
     .anker-link-header-body > img {
 
@@ -78,10 +90,6 @@
 
 @media (min-width: 800px ) {
 
-    /* delete default padding for mobile size  */
-    #header-fixed-body-layout {
-        /* padding: 0; */
-    }
 
     /* ------------------------------------ */
     /* Header Company
@@ -89,6 +97,7 @@
 
     #header-company-title-container {
 
+        /* small mobile default unshown */
         display: grid;
 
         /* background-color: red; */
@@ -99,22 +108,15 @@
 }
 
 /* -------------------------------------------------------------- */
-/* >= 1000px width
-/* -------------------------------------------------------------- */
-
-@media (min-width: 1000px ) {
-
-    #header-fixed-body {
-        height: 6.5em;
-    }
-
-}
-
-/* -------------------------------------------------------------- */
 /* >= 1200px width
 /* -------------------------------------------------------------- */
 
 @media (min-width: 1200px ) {
+
+
+    #header-fixed-body {
+        height: 6.5em;
+    }
 
     /* ------------------------------------ */
     /* Header Company

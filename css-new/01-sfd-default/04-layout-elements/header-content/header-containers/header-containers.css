@@ -1,0 +1,99 @@
+/* -------------------------------------------------------------- */
+/* > header-nav-body.css
+/*
+/* : default sets for header nav body
+/* -------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------- */
+/* Header Containers ( left, right, two-cols-outside)
+/* ---------------------------------------------------- */
+
+.header-left-container,
+.header-right-container,
+.header-two-cols-outside-container {
+
+    /* mobile */
+    height: 8em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+
+}
+
+.header-right-container {
+
+    justify-content: flex-end;
+}
+
+.header-two-cols-outside-container  {
+
+    justify-content: space-between;
+}
+
+.header-main {
+
+    /* mobile */
+    height: 4em;
+    padding: 0 1em;
+
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    border-radius: .6em;
+
+    background-color: rgb(100, 100, 100);
+    background-color: rgb(53, 53, 53);
+    /* background-color: rgb(28, 28, 28); */
+    /* color:white; */
+
+    opacity: .6;
+
+}
+
+.header-main div:nth-of-type(1) {
+
+    /* mobile */
+    font-size: 1.5em;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Explicit 3 header container ids to handle better resp
+/* ----------------------------------------------------------- */
+
+#header-container-about,
+#header-container-my-it,
+#header-container-my-private {
+
+
+}
+
+/* img header container about */
+#header-container-about > img {
+
+    /* mobile */
+    height: 2.5em;
+}
+
+/* img header container my it */
+#header-container-my-it > img {
+
+    /* mobile */
+    height: 2em;
+}
+
+/* img header container my private */
+#header-container-my-private > img {
+
+    /* mobile */
+    height: 2.3em;
+}

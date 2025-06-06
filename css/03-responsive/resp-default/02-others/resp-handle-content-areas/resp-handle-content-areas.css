@@ -1,8 +1,8 @@
 /* -------------------------------------------------------------- */
 /* > resp-handle-content-areas.css
 /*
-/* : responsive sets for all handle content areas,
-     Basis File: handle-content-area.css
+/* : responsive handlings for resp content areas ( min, main, max )
+     file: resp-content-areas.css
 /* -------------------------------------------------------------- */
 
 
@@ -12,21 +12,9 @@
 
 @media (min-width: 800px ) {
 
-    .resp-small-content-area {
+    .resp-min-content-area {
         width: 90%
     }
-
-}
-
-/* ----------------------------------- */
-/* ❌ | löschen ❌ */
-/* ----------------------------------- */
-@media (min-width: 800px ) {
-
-    .handle-header-content-area {
-        width: 90%
-    }
-
 
 }
 
@@ -36,18 +24,7 @@
 
 @media (min-width: 900px ) {
 
-    .resp-small-content-area {
-        width: 45em;
-    }
-
-}
-
-/* ----------------------------------- */
-/* ❌ | löschen ❌ */
-/* ----------------------------------- */
-@media (min-width: 900px ) {
-
-    .handle-header-content-area {
+    .resp-min-content-area {
         width: 45em;
     }
 
@@ -69,24 +46,6 @@
 
 }
 
-/* ----------------------------------- */
-/* ❌ | löschen ❌ */
-/* ----------------------------------- */
-@media (min-width: 1200px ) {
-
-    .handle-main-content-area {
-        width: 65em;
-    }
-
-
-    .handle-max-content-area,
-    .handle-large-main-content-area  {
-        width: 95%;
-    }
-
-}
-
-
 /* -------------------------------------------------------------- */
 /* >= 1600px width
 /* -------------------------------------------------------------- */
@@ -94,18 +53,6 @@
 @media (min-width: 1600px ) {
 
     .resp-main-content-area {
-
-        width: 90em;
-    }
-
-}
-
-/* ----------------------------------- */
-/* ❌ | löschen ❌ */
-/* ----------------------------------- */
-@media (min-width: 1600px ) {
-
-    .handle-large-main-content-area {
 
         width: 90em;
     }
