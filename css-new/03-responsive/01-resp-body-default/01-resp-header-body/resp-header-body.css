@@ -22,7 +22,6 @@
 
 }
 
-
 /* -------------------------------------------------------------- */
 /* >= 400px width
 /* -------------------------------------------------------------- */
@@ -51,8 +50,17 @@
     #header-fixed-body-layout {
 
         /* mobile */
-        justify-content: space-between;
-        grid: auto / auto 1fr;
+
+        /* ⚠️ first unshown, we let layout bring right */
+        justify-content: flex-end;
+        grid: auto / 1fr;
+
+        /* ⚠️ js solution by scrolling down */
+        /* justify-content: space-between;
+        grid: auto / auto 1fr; */
+
+        /* background-color: blue; */
+
 
     }
 
@@ -62,8 +70,11 @@
 
     #header-company-body {
 
-        width: 100%;
-        display: flex;
+        /* width: 100%;
+        display: flex; */
+
+        /* ⚠️ first unshown, this will just show by js scrolling down */
+        display: none;
 
     }
 
@@ -99,6 +110,7 @@
 
         /* small mobile default unshown */
         display: grid;
+
 
         /* background-color: red; */
 

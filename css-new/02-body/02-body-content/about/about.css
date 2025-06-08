@@ -1,0 +1,291 @@
+/* -------------------------------------------------------------- */
+/* > about.css
+/*
+/* : styles about page container & header about container
+/* -------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- */
+/* ❇️❇️❇️❇️ NEU
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------------------- */
+/* About Container
+/* ------------------------------------------- */
+
+#about-container {
+
+    display: grid;
+    row-gap: 2em;
+
+    /* background-color: red; */
+
+}
+
+/* ------------------------------------------- */
+/* About Layout Container
+/* ------------------------------------------- */
+
+#about-layout-container {
+
+    background-color: rgb(224, 224, 224);
+}
+/* ------------------------------------------- */
+/* About Info Container
+/* ------------------------------------------- */
+
+#about-info-container {
+
+    line-height: 1.8em;
+
+    /* default 18px its bette for easy reading */
+    font-size: 1.125em;
+
+    /* default 20px its bette for easy reading */
+    font-size: 1.25em;
+}
+
+/* ------------------------------------------- */
+/* About Quick | Info Container
+/* ------------------------------------------- */
+
+#about-quick-info-container {
+
+    display: grid;
+    row-gap: 1.5em;
+
+}
+
+/* ------------------------------------------- */
+/* About More | Info Container
+/* ------------------------------------------- */
+
+#about-more-info-container {
+
+
+}
+
+/* ------------------------------------------- */
+/* Img | 1st, 2nd, 3rd | About
+/* ------------------------------------------- */
+
+#img-first-about,
+#img-second-about,
+#img-third-about {
+
+    border-radius: 1em;
+}
+
+#img-first-about {
+
+
+    height: 15em;
+
+}
+
+#img-second-about {
+
+    height: 10em;
+
+}
+
+#img-third-about {
+
+    height: 10em;
+}
+
+/* ------------------------------------------- */
+/* About Contact Container
+/* ------------------------------------------- */
+
+#about-contact-container {
+
+    display: flex;
+    justify-content: center;
+
+    color:rgb(183, 183, 183);
+    background-color: rgb(127, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* 🟣 Universal - auslagern ? -> sfd styles open close containers    */
+/* ------------------------------------------------------------------ */
+
+.ul-about-main-it-skills {
+
+    padding: 0;
+
+    display: grid;
+    row-gap: .6em;
+
+    border: 1px solid black;
+
+}
+
+/* ---------------------------------------- */
+/* LI | Ul About Main It Skills
+/* ---------------------------------------- */
+
+.ul-about-main-it-skills > li {
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: .3em;
+    row-gap: .2em;
+
+
+}
+
+/* ---------------------------------------- */
+/* LI category | Ul About Main It Skills
+/* ---------------------------------------- */
+
+.ul-about-main-it-skills > li > .category {
+
+    height: 2.5em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+
+    border-radius: .6em;
+
+    background-color: rgb(192, 192, 192);
+
+}
+
+/* ---------------------------------------- */
+/* LI item list | Ul About Main It Skills
+/* ---------------------------------------- */
+
+.ul-about-main-it-skills > li > .li-item-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: .1em;
+    row-gap: .3em;
+}
+
+
+.ul-about-main-it-skills > li > .li-item-list > .li-item {
+
+    text-decoration: none;
+    color:black;
+
+    padding: 0 .4em;
+
+    display: flex;
+    align-items: center;
+    align-items: center;
+    column-gap: .3em;
+
+    border-radius: .4em
+    ;
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+.ul-about-main-it-skills > li > .li-item-list > .li-item:visited {
+
+     color:black;
+}
+
+.ul-about-main-it-skills > li > .li-item-list > .li-item:hover {
+
+    background-color: rgb(192, 192, 192);
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* 🟣 Universal - auslagern ? -> sfd styles open close containers    */
+/* ------------------------------------------------------------------ */
+
+.txt-b {
+
+    font-weight: bold;
+}
+
+.txt-bi {
+
+    font-weight: bold;
+    font-style: italic;
+}
+
+.open-close-left-control-container,
+.open-close-right-control-container {
+
+    height: 4em;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px dashed black;
+
+    background-color: rgb(224, 224, 224);
+
+}
+
+.open-close-right-control-container {
+
+    justify-content: flex-end;
+}
+
+.lbl-open-close-content {
+
+    height: 3em;
+    padding: 0 1em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+
+    border-radius: .6em;
+
+    background-color: grey;
+
+    cursor: pointer;
+    transition: all .4s;
+
+
+}
+
+.lbl-open-close-content:hover {
+
+    background-color: rgb(28, 28, 28);
+    color:white;
+}

@@ -1,18 +1,18 @@
 /* -------------------------------------------------------------- */
-/* > header-nav-body.css
+/* > headline-containers.css
 /*
-/* : default sets for header nav body
+/* : default sets for all headline styles
 /* -------------------------------------------------------------- */
 
 
 
 /* ---------------------------------------------------- */
-/* Header Containers ( left, right, two-cols-outside)
+/* Headline Containers ( left, right, two-cols-outside)
 /* ---------------------------------------------------- */
 
-.header-left-container,
-.header-right-container,
-.header-two-cols-outside-container {
+.headline-left-container,
+.headline-right-container,
+.headline-two-cols-outside-container {
 
     /* mobile */
     height: 8em;
@@ -25,17 +25,21 @@
 
 }
 
-.header-right-container {
+.headline-right-container {
 
     justify-content: flex-end;
 }
 
-.header-two-cols-outside-container  {
+.headline-two-cols-outside-container  {
 
     justify-content: space-between;
 }
 
-.header-main {
+/* ---------------------------------------------------- */
+/* Headline Container
+/* ---------------------------------------------------- */
+
+.headline-container {
 
     /* mobile */
     height: 4em;
@@ -61,41 +65,34 @@
 
 }
 
-.header-main div:nth-of-type(1) {
+.headline-container > div:nth-of-type(1) {
 
-    /* mobile */
-    font-size: 1.5em;
+    font-size: 1.375em;
 }
 
 
-/* ----------------------------------------------------------- */
-/* AExplicit 3 header container ids to handle better resp
-/* ----------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* Img Individual | Headline | About, My IT , My Private
+/* ------------------------------------------------------------- */
 
-#header-container-about,
-#header-container-my-it,
-#header-container-my-private {
-
-
-}
 
 /* img header container about */
-#header-container-about > img {
+#headline-about > img {
 
     /* mobile */
     height: 2.5em;
 }
 
 /* img header container my it */
-#header-container-my-it > img {
+#headline-my-it > img {
 
     /* mobile */
-    height: 2em;
+    height: 1.8em;
 }
 
 /* img header container my private */
-#header-container-my-private > img {
+#headline-my-private > img {
 
     /* mobile */
-    height: 2.3em;
+    height: 2em;
 }

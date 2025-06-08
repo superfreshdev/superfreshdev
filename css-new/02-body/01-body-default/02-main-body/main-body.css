@@ -40,17 +40,13 @@
     display: grid;
     justify-items: center;
 
-    grid: auto 1fr / 1fr;
+    /* welcome, about, my-it, my-private, to be fresh */
+    grid: auto auto auto auto 1fr / 1fr;
 
     /* row-gap: 2em; */
 
     /* background-color: green; */
 
-}
-
-#main-body-container > div {
-
-    /* border-bottom: 10px solid black; */
 }
 
 /* ---------------------------------------------------------------- */
@@ -64,30 +60,9 @@
     justify-content: center;
 }
 
-
-
-
-
-
-
-/* ---------------------------------------------------------------- */
-/* Main Page Content Container
-/* ---------------------------------------------------------------- */
-
-.main-page-content-container {
-
-    width: 100%;
-
-    display: grid;
-
-    background-color: yellow;
-
-}
-
-
-/* ---------------------------------------------------- */
-/* Main Content Container
-/* ---------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* Main Content Container ( headline + main content layout )
+/* ---------------------------------------------------------------------- */
 
 .main-content-container {
 
@@ -101,12 +76,14 @@
 }
 
 /* ---------------------------------------------------- */
-/* Main Content Layout Container
+/* ❌ in Zukunft löschen | Main Content Layout Container
 /* ---------------------------------------------------- */
 
 .main-content-layout-container {
 
-    padding: 2em 2em;
+    padding: .8em;
 
     background-color: rgb(241, 241, 241);
+
+    border-radius: .8em;
 }
