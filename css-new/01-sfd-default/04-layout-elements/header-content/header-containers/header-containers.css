@@ -50,12 +50,14 @@
 
     border-radius: .6em;
 
-    background-color: rgb(100, 100, 100);
-    background-color: rgb(53, 53, 53);
+    /* background-color: rgb(100, 100, 100); */
+    /* background-color: rgb(53, 53, 53); */
     /* background-color: rgb(28, 28, 28); */
     /* color:white; */
 
-    opacity: .6;
+    background-color: wheat;
+
+    /* opacity: .6; */
 
 }
 
