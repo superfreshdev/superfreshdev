@@ -1,0 +1,23 @@
+/* -------------------------------------------------------------- */
+/* > about-contact.css
+/*
+/* : style the contact layout of about
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------- */
+/* [3/3] | About Contact Container
+/* ------------------------------------------- */
+
+#about-contact-container {
+
+    height: 6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color:rgb(19, 19, 19);
+    background-color: rgb(148, 148, 148);
+
+}

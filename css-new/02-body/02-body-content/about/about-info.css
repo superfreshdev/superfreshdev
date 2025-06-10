@@ -1,0 +1,220 @@
+/* -------------------------------------------------------------- */
+/* > about-info.css
+/*
+/* : style the info of about
+/* -------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------ */
+/* About Skill Info Container                                         */
+/* ------------------------------------------------------------------ */
+
+#about-skill-info-container {
+
+  display: grid;
+  row-gap: .6em;
+
+}
+
+#about-skill-info-container > header {
+
+  font-weight: bold;
+
+}
+
+/* ------------------------------------------------------------------ */
+/* Ul About Skill Info Container                                      */
+/* ------------------------------------------------------------------ */
+
+#ul-about-skill-info-container {
+
+    /* delete default ul style  */
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    row-gap: 1em;
+
+}
+
+/* ---------------------------------------- */
+/* LI | ....
+/* ---------------------------------------- */
+
+#ul-about-skill-info-container > li {
+
+   display: grid;
+   justify-items: flex-start;
+   row-gap: 1em;
+
+
+}
+
+/* ---------------------------------------- */
+/* LI Header | ....
+/* ---------------------------------------- */
+
+#ul-about-skill-info-container > li > header {
+
+    /* font-family: 'Courier New', Courier, monospace; */
+    height: 2.5em;
+    padding: 0 .6em;
+
+    display: inline-flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+
+    border-radius: .4em;
+
+    background-color: rgb(28, 28, 28);
+    color:rgb(143, 143, 143);
+    /* color:white; */
+    /* color:wheat; */
+
+    border: 1px dashed black;
+
+
+
+}
+
+/* ---------------------------------------- */
+/* LI | about skill list | ....
+/* ---------------------------------------- */
+
+#ul-about-skill-info-container > li > .about-skill-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: .5em;
+    row-gap: .5em;
+
+}
+
+/* ---------------------------------------- */
+/* link about skill ....
+/* ---------------------------------------- */
+
+#ul-about-skill-info-container > li > .about-skill-list > .link-about-skill {
+
+    text-decoration: none;
+    color:black;
+
+    height: 2.3em;
+    padding: 0 .6em;
+
+    display: flex;
+    align-items: center;
+    align-items: center;
+    column-gap: .3em;
+
+    border-radius: .4em;
+
+     font-weight: 600;
+
+    background-color: rgb(239, 239, 239);
+
+
+    background-color: rgb(234, 234, 234);
+    color:rgb(113, 113, 113);
+
+    border: 1px dashed black;
+
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+#ul-about-skill-info-container > li > .about-skill-list > .link-about-skill > div {
+
+  /* font-size: 16px; */
+
+
+}
+
+#ul-about-skill-info-container > li > .about-skill-list > .link-about-skill:visited {
+
+  color:rgb(113, 113, 113);
+
+}
+
+#ul-about-skill-info-container > li > .about-skill-list > .link-about-skill:hover {
+
+  background-color: wheat;
+  color:black;
+
+}
+
+
+/* ------------------------------------------- */
+/* Img About
+/* ------------------------------------------- */
+
+#about-img-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#img-about {
+
+    width: 100%;
+
+    border-radius: 1em;
+}
+
+
+
+/* ------------------------------------------- */
+/* ⚠️ Media Queries
+/* ------------------------------------------- */
+
+@media ( min-width: 340px ) {
+
+    #img-about {
+
+        width: 80%;
+        /* display: none; */
+    }
+
+}
+
+@media ( min-width: 400px ) {
+
+    #img-about {
+
+        width: 60%;
+        /* display: none; */
+    }
+
+}
+
+@media ( min-width: 500px ) {
+
+    #img-about {
+
+        width: 40%;
+        /* display: none; */
+    }
+
+    #about-layout-container  {
+
+      grid: auto / 1fr 1fr;
+
+    }
+
+    #img-about {
+
+        order: 5;
+    }
+
+
+}
+
+@media ( min-width: 800px ) {
+
+
+}

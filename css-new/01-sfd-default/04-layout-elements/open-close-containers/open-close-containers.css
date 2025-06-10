@@ -1,0 +1,60 @@
+/* -------------------------------------------------------------- */
+/* > open-close-containers.css
+/*
+/* : styles open close content containers
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------ */
+/*  Open / Close ( left/right ) Containers
+/* ------------------------------------------------------------------ */
+
+.open-close-left-container,
+.open-close-right-container {
+
+  height: 4em;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px dashed black;
+
+  background-color: rgb(224, 224, 224);
+
+}
+
+.open-close-right-container {
+
+    justify-content: flex-end;
+}
+
+/* --------------------------------------------- */
+/* Label Open Close Content
+/* --------------------------------------------- */
+
+.lbl-open-close-content {
+
+    height: 3em;
+    padding: 0 1em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+
+    border-radius: .6em;
+
+    background-color: grey;
+
+    cursor: pointer;
+    transition: all .4s;
+
+
+}
+
+.lbl-open-close-content:hover {
+
+    background-color: rgb(28, 28, 28);
+    color:white;
+}
