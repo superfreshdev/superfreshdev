@@ -79,8 +79,8 @@
 
   display: flex;
   flex-wrap: wrap;
-  column-gap: .6em;
-  row-gap: .6em;
+  column-gap: .8em;
+  row-gap: .8em;
 
 }
 
