@@ -13,13 +13,14 @@
 .open-close-right-container {
 
   height: 4em;
+  padding: 0 .8em;
 
   display: flex;
   align-items: center;
 
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
 
-  background-color: rgb(224, 224, 224);
+  /* background-color: rgb(224, 224, 224); */
 
 }
 
@@ -45,7 +46,8 @@
 
     border-radius: .6em;
 
-    background-color: grey;
+    background-color: rgb(180, 180, 180);
+    background-color: rgb(170, 0, 0);
 
     cursor: pointer;
     transition: all .4s;

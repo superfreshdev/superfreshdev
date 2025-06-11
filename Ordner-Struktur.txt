@@ -79,3 +79,225 @@
     > toDo.txt
 
 */
+
+
+ <ul style="display: none;">
+
+
+
+
+
+    <!-- ---------------------------------- -->
+    <!-- LI | Web-Development -->
+    <!-- ---------------------------------- -->
+    <li>
+
+        <header>
+            <img src="media/img/icons/icons/web-code-light-brown.png" class="img-h-1-2" alt="img">
+            <div>Web-Development:</div>
+        </header>
+
+        <div class="about-skill-list">
+
+            <!-- angular -->
+            <a href="https://www.google.com/search?q=angular&oq=angular+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDIGCAIQRRhBMgYIAxBFGDwyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYQdIBCDEyNjdqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank" title="Angular ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/angular19.png" class="img-h-1-2" alt="img">
+                <div>Angular</div>
+
+            </a>
+
+            <!-- react -->
+            <a href="https://www.google.com/search?q=react&sca_esv=574dbc9e6ebca954&ei=ePxFaJu6EsiN9u8P7O3r6Q0&ved=0ahUKEwib1oq93uKNAxXIhv0HHez2Ot0Q4dUDCBA&uact=5&oq=react&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXJlYWN0MgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHSJYFUKADWKADcAF4ApABAJgBAKABAKoBALgBA8gBAPgBAZgCAqACCsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFmAMA4gMFEgExIECIBgGQBgiSBwEyoAcAsgcAuAcAwgcDMi0yyAcH&sclient=gws-wiz-serp" target="_blank" title="React ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/react-atom.png" class="img-h-1-3" alt="img">
+                <div>React</div>
+
+            </a>
+
+            <!-- css -->
+            <a href="https://www.google.com/search?q=css+style&sca_esv=574dbc9e6ebca954&ei=hPxFaLvWCojo7_UPuoaesAY&ved=0ahUKEwi7qN_C3uKNAxUI9LsIHTqDB2YQ4dUDCBA&uact=5&oq=css+style&gs_lp=Egxnd3Mtd2l6LXNlcnAiCWNzcyBzdHlsZTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIixhQlANYuxZwAXgBkAEAmAFJoAGEA6oBATa4AQPIAQD4AQGYAgegAqMDwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAg4QABiwAxjkAhjWBNgBAcICExAuGIAEGLADGEMYyAMYigXYAQHCAhAQLhiABBjRAxhDGMcBGIoFwgIKEAAYgAQYQxiKBcICDhAuGIAEGMcBGI4FGK8BwgINEAAYgAQYsQMYQxiKBcICHxAuGIAEGNEDGEMYxwEYigUYlwUY3AQY3gQY4ATYAQHCAgoQLhiABBhDGIoFwgIHEAAYgAQYCpgDAIgGAZAGEroGBggBEAEYCZIHATegB5MksgcBNrgHnQPCBwUwLjIuNcgHGw&sclient=gws-wiz-serp" target="_blank" title="CSS ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/css.png" class="img-h-1-2" alt="img">
+                <div>CSS</div>
+
+            </a>
+
+            <!-- sass -->
+            <a href="https://www.google.com/search?q=sass&sca_esv=574dbc9e6ebca954&ei=jPxFaPnvEtmG9u8Pis6DkQI&ved=0ahUKEwj55c_G3uKNAxVZg_0HHQrnICIQ4dUDCBA&uact=5&oq=sass&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHNhc3MyDRAAGIAEGLEDGEMYigUyDhAAGIAEGLEDGIMBGIoFMgoQABiABBhDGIoFMg4QLhiABBixAxjHARivATIIEC4YgAQYsQMyCBAuGIAEGLEDMggQABiABBixAzIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEC4YgARIlQVQAFjsA3AAeAGQAQCYAW6gAeMCqgEDMy4xuAEDyAEA-AEBmAIEoAL2AsICDhAuGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYgwHCAgUQABiABMICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYxwEYjgUYrwHCAg4QLhiABBixAxjRAxjHAcICBBAAGAPCAgsQLhiABBixAxiDAZgDAJIHAzMuMaAH8EayBwMzLjG4B_YCwgcDMi00yAcS&sclient=gws-wiz-serp" target="_blank" title="Sass ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/sass.png" class="img-h-1-2" alt="img">
+                <div>Sass</div>
+
+            </a>
+
+            <!-- storybook -->
+            <a href="https://www.google.com/search?q=storybook&oq=storybook+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTk5MGowajSoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank" title="Storybook ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/storybook.png" class="img-h-1-2" alt="img">
+                <div>Storybook</div>
+
+            </a>
+
+            <!-- js -->
+            <a href="https://www.google.com/search?q=java+script&sca_esv=574dbc9e6ebca954&ei=mvxFaKOYE6ep9u8P6baRkAs&ved=0ahUKEwijzabN3uKNAxWnlP0HHWlbBLIQ4dUDCBA&uact=5&oq=java+script&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2phdmEgc2NyaXB0MgcQABiABBgKMgUQABiABDIHEAAYgAQYCjIHEAAYgAQYCjIFEAAYgAQyBxAAGIAEGAoyBRAAGIAEMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSOINUABYoAxwAHgBkAEAmAFboAGTBqoBAjExuAEDyAEA-AEBmAILoALJBsICDhAuGIAEGMcBGI4FGK8BwgIUEC4YgAQYsQMYgwEYxwEYigUYrwHCAg4QLhiABBixAxiDARiKBcICCBAAGIAEGLEDwgIKEAAYgAQYQxiKBcICCxAuGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QABiABBixAxiDARiKBcICHRAuGIAEGMcBGI4FGK8BGJcFGNwEGN4EGOAE2AEBwgILEC4YgAQYxwEYrwHCAgUQLhiABMICDRAAGIAEGLEDGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIMBwgIXEC4YgAQYsQMYgwEYxwEYigUYjgUYrwGYAwC6BgYIARABGBSSBwIxMaAHyYYBsgcCMTG4B8kGwgcEMi0xMcgHLg&sclient=gws-wiz-serp" target="_blank" title="Java Script ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/js.png" class="img-h-1-2" alt="img">
+                <div>Java Script</div>
+
+            </a>
+
+            <!-- ts -->
+            <d href="https://www.google.com/search?q=type+script&sca_esv=574dbc9e6ebca954&ei=pfxFaL7ZCYPt7_UPstrliA8&ved=0ahUKEwj-v7zS3uKNAxWD9rsIHTJtGfEQ4dUDCBA&uact=5&oq=type+script&gs_lp=Egxnd3Mtd2l6LXNlcnAiC3R5cGUgc2NyaXB0MgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSJsaUOUKWIsVcAB4ApABAJgBjAGgAcoGqgEEMTAuMbgBA8gBAPgBAZgCDKAC-QbCAgQQABhHwgIKEAAYgAQYQxiKBcICBRAAGIAEwgILEAAYgAQYsQMYgwHCAgYQABgDGArCAg4QLhiABBixAxiDARjUAsICERAuGIAEGLEDGNEDGIMBGMcBwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICCBAAGIAEGLEDwgINEAAYgAQYsQMYQxiKBcICDhAAGIAEGLEDGIMBGIoFwgILEC4YgAQYsQMYgwHCAgcQLhiABBgKwgIOEC4YgAQYxwEYjgUYrwGYAwDiAwUSATEgQIgGAZAGCJIHBDExLjGgB-tZsgcEMTAuMbgH8wbCBwYwLjIuMTDIByc&sclient=gws-wiz-serp" target="_blank" title="Type Script ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/ts.png" class="img-h-1-2" alt="img">
+                <div>Type Script</div>
+
+            </d>
+
+        </div>
+
+    </li>
+
+    <!-- ---------------------------------- -->
+    <!-- LI | Softare-Mobile-Development -->
+    <!-- ---------------------------------- -->
+    <li>
+        <header>
+
+            <img src="media/img/icons/icons/nav-main-body/brackets-light-brown.png" class="img-h-1-3" alt="img">
+            <div>Software/Mobile-Development:</div>
+
+        </header>
+
+        <div class="about-skill-list">
+
+            <!-- java -->
+            <a href="" target="_blank" title="Angular ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/java-black.png" style="padding-bottom: .3em;" class="img-h-1-5" alt="img">
+                <div>Java</div>
+
+            </a>
+
+            <!-- Spring Boot -->
+            <a href="" target="_blank" title="React ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/springboot2.png" class="img-h-1-2" alt="img">
+                <div>Spring Boot</div>
+
+            </a>
+
+            <!-- Rest API -->
+            <a href="" target="_blank" title="React ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/rest.png" class="img-h-1-2" alt="img">
+                <div>Rest API</div>
+
+            </a>
+
+            <!-- Spring Boot -->
+            <a href="" target="_blank" title="React ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/graph.png" class="img-h-1-2" alt="img">
+                <div>GraphQL</div>
+
+            </a>
+
+            <!-- React Native -->
+            <a href="" target="_blank" title="CSS ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/react-atom.png" class="img-h-1-3" alt="img">
+                <div>React Native</div>
+
+            </a>
+
+
+
+
+        </div>
+
+    </li>
+
+    <!-- ---------------------------------- -->
+    <!-- LI | Backend -->
+    <!-- ---------------------------------- -->
+    <li>
+
+        <header>
+            <img src="media/img/icons/icons/nav-main-body/backend-wheat.png" class="img-h-1-2" alt="img">
+            <div>Backend:</div>
+        </header>
+
+        <div class="about-skill-list">
+
+            <!-- PostgreSQL -->
+            <a href="" target="_blank" title="PostgreSQL ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/postgre.png" class="img-h-1-3" alt="img">
+                <div>PostgreSQL</div>
+
+            </a>
+
+            <!-- MongoDB -->
+            <a href="" target="_blank" title="MongoDB ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/mongodb.png" class="img-h-1-2" alt="img">
+                <div>MongoDB</div>
+
+            </a>
+
+            <!-- Docker -->
+            <a href="" target="_blank" title="Docker ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/docker.png" class="img-h-1-2" alt="img">
+                <div>Docker</div>
+
+            </a>
+
+            <!-- Kubernetes -->
+            <a href="" target="_blank" title="Kubernetes ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/kubernetes.png" class="img-h-1-5" alt="img">
+                <div>Kubernetes</div>
+
+            </a>
+
+            <!-- Apache Kafka -->
+            <a href="" target="_blank" title="Apache Kafka ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/kafka.png" class="img-h-1-3" alt="img">
+                <div>Apache Kafka</div>
+
+            </a>
+
+            <!-- DevOps -->
+            <a href="" target="_blank" title="DevOps ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/devops.png" class="img-h-1-5" alt="img">
+                <div>DevOps</div>
+
+            </a>
+
+            <!-- Cloud -->
+            <a href="" target="_blank" title="Cloud ?!" class="link-about-skill">
+
+                <img src="media/img/icons/tech-icons/cloud-engine.png" class="img-h-1-1" alt="img">
+                <div>Cloud</div>
+
+            </a>
+
+
+
+
+        </div>
+
+
+    </li>
+
+
+
+
+
+
+</ul>
