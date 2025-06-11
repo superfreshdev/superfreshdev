@@ -51,14 +51,31 @@
 
 #about-quick-info {
 
-  color:rgb(128, 128, 128);
+  font-size: 1.125em;
 
-  /* color:red; */
-  padding: 1em 1em;
+  padding: 2em 2em;
+
+  display: grid;
+  row-gap: 1em;
+
+  /* line-height: 1.8em; */
 
   border-radius: .8em;
-  background-color: rgb(241, 241, 241);
 
+  background-color: rgb(241, 241, 241);
+  color:rgb(128, 128, 128);
+
+}
+
+#about-quick-info > header {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .4em;
+
+  font-weight: bold;
+  font-size: 1.125em;
 }
 
 /* ------------------------------------------- */
@@ -67,20 +84,29 @@
 
 #about-personality-info {
 
+  font-size: 1.125em;
+
+  padding: 2em 2em;
+
   display: grid;
-  align-content: flex-start;
-  row-gap: 1em;
+  row-gap: 1.5em;
+
+  border-radius: .8em;
+
+  background-color: rgb(241, 241, 241);
+  color:rgb(128, 128, 128);
 
 }
 
 #about-personality-info > header {
 
   display: flex;
+  justify-content: center;
   align-items: center;
   column-gap: .4em;
 
   font-weight: bold;
-  color:rgb(98, 98, 98);
+  font-size: 1.125em;
 
 }
 
@@ -93,7 +119,13 @@
 
 #about-personality-info > footer {
 
-  padding-top: 1em;
+  padding-top: .3em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.125em;
   font-weight: bold;
 
 }
