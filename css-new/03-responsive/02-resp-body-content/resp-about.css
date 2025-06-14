@@ -148,4 +148,28 @@
     }
 
 
+    /* ------------------------------------------------ */
+    /* About Layout Container */
+    /* ------------------------------------------------ */
+    #about-layout-container {
+
+       align-items: flex-start;
+       column-gap: 3em;
+
+       grid-template-areas:
+
+       'quickInfo quickInfo'
+       'headerSkill headerSkill'
+       'webdev software'
+       'backend backend'
+       'personality personality'
+       'contact contact';
+
+       /* grid-template-columns: auto auto; */
+
+    }
+
+
+
+
 }

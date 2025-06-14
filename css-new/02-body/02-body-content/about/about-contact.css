@@ -4,12 +4,13 @@
 /* : style the contact layout of about
 /* -------------------------------------------------------------- */
 
-
 /* ------------------------------------------- */
 /* About Contact Container
 /* ------------------------------------------- */
 
 #about-contact-container {
+
+    grid-area: contact;
 
     margin: 2em 0;
 
