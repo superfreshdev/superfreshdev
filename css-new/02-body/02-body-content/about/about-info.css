@@ -5,8 +5,6 @@
 /* -------------------------------------------------------------- */
 
 
-
-
 /* --------------------------------------------- */
 /* 🟣 Auslagern -> Font Style
 /* --------------------------------------------- */
@@ -15,6 +13,73 @@
   color:rgb(98, 98, 98);
   font-weight: bold;
 }
+
+/* --------------------------------------------- */
+/* ❇️❇️❇️ Quick Info Container
+/* --------------------------------------------- */
+
+.info-quick-container {
+
+  display: grid;
+  row-gap: 1em;
+
+}
+
+/* ----------------------------------------- */
+/* Header ( left/right )
+/* ----------------------------------------- */
+
+.info-quick-container > header.left,
+.info-quick-container > header.right {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  color:rgb(128, 128, 128);
+
+  opacity: .4;
+
+}
+
+.info-quick-container > header.right {
+
+  justify-content: flex-end;
+}
+
+/* font size - header */
+.info-quick-container > header.left > div:nth-of-type(1),
+.info-quick-container > header.right > div:nth-of-type(1) {
+
+  /* 20px */
+  font-size: 1.5em;
+
+}
+
+/* ----------------------------------------- */
+/* Info Quick Main Container
+/* ----------------------------------------- */
+
+.info-quick-main-container {
+
+  /* 18px */
+  font-size: 1.25em;
+
+  padding: 1.5em 2em;
+  line-height: 1.8em;
+
+  border-left: 10px solid black;
+
+
+  border-radius: .8em;
+
+  background-color: rgb(241, 241, 241);
+  color:rgb(128, 128, 128);
+
+}
+
 
 /* ------------------------------------------- */
 /* Quick Info Img Container
@@ -50,81 +115,69 @@
     border-radius: 1em;
 }
 
-/* ------------------------------------------- */
-/*  [2/2] | About Quick Info
-/* ------------------------------------------- */
 
-#about-quick-info {
 
-  font-size: 1.125em;
 
-  padding: 2em 2em;
 
-  display: grid;
-  row-gap: 1em;
 
-  /* line-height: 1.8em; */
 
-  border-radius: .8em;
 
-  background-color: rgb(241, 241, 241);
-  color:rgb(128, 128, 128);
 
-}
 
-#about-quick-info > header {
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: .4em;
 
-  font-weight: bold;
-  font-size: 1.125em;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------- */
 /* Personality Info
 /* ------------------------------------------- */
 
-
-
-
 #about-personality-info {
 
   grid-area: personality;
 
-  font-size: 1.125em;
-
-  padding: 2em 2em;
-
-  display: grid;
-  row-gap: 1.5em;
-
-  border-radius: .8em;
-
-  background-color: rgb(241, 241, 241);
-  color:rgb(128, 128, 128);
-
 }
 
-#about-personality-info > header {
+/* ------------------------------------------- */
+/* Main Personality Info
+/* ------------------------------------------- */
+
+#info-personality-about-container {
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: .4em;
-
-  font-weight: bold;
-  font-size: 1.125em;
+  align-items: flex-end;
 
 }
 
-#about-personality-info > main {
+#img-clipart-more-personality {
+
+  height: 16em;
+}
+
+#info-personality-about-container > main {
 
   display: grid;
   row-gap: 1.5em;
 
+}
+
+#info-personality-about-container > main > div {
+
+  display: flex;
+  align-items: center;
+  column-gap: 1.5em;
 }
 
 #about-personality-info > footer {

@@ -22,7 +22,7 @@
 
     #about-quick-info {
 
-        text-align: center;
+        /* text-align: center; */
     }
 
 }
@@ -124,7 +124,8 @@
     /* ------------------------------------------------ */
     #about-quick-info {
 
-        width: 60%;
+        width: 35em;
+        /* width: 60%; */
 
     }
 

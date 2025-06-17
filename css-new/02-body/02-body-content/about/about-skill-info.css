@@ -131,7 +131,8 @@
 .link-skill-about {
 
     text-decoration: none;
-    color:black;
+
+    color:rgb(98, 98, 98);
 
     height: 3em;
     padding: 0 1em;
@@ -161,14 +162,14 @@
 .link-skill-about:visited {
 
   color:rgb(113, 113, 113);
-  color:black;
+   color:rgb(98, 98, 98);
 
 }
 
 .link-skill-about:hover {
 
   background-color: wheat;
-  color:black;
+   color:rgb(98, 98, 98);
 
 }
 
