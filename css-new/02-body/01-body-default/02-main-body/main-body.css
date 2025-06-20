@@ -12,11 +12,10 @@
 #main-body {
 
     /* important: to stretch max height of parent body-container */
-    height: 100%;
     width: 100%;
+    height: 100%;
 
-    /* important to bring main-body-container in
-       layout for better layout page handling  */
+    /* i: ji-c to let layout in the middle  */
     display: grid;
     justify-items: center;
 
@@ -28,62 +27,55 @@
 /* ---------------------------------------------------------------- */
 /* Main Body Container
 /* ---------------------------------------------------------------- */
+/* i: important for correct full height grid stretching -
+      because of div concepts */
 
 #main-body-container {
 
-    width: 100%;
+  width: 100%;
+  /* height: 100%; */
 
-    /* because of fixed header height 5.5em */
-    padding-top: 5.5em;
+  /* because of fixed header height 5.5em */
+  padding-top: 5.5em;
 
-    /* remember: main-body is height 100%, so it can stretch max height */
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 
-    /* welcome, about, my-it, my-private, to be fresh */
-    grid: auto auto auto auto 1fr / 1fr;
+  /* welcome, about, my-it, my-private, to be fresh */
+  grid: auto auto auto auto 1fr / 1fr;
 
-    /* row-gap: 2em; */
-
-    /* background-color: green; */
 
 }
 
-/* ---------------------------------------------------------------- */
-/* Row Container
-/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* Row Content Container
+/* ------------------------------------------------------- */
+/* i: to let style background behind layout element */
+/* i: is a universal layout element in the main container */
 
-.row-container {
+.row-content-container {
 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+  width: 100%;
 
-/* ---------------------------------------------------------------------- */
-/* Main Content Container ( headline + main content layout )
-/* ---------------------------------------------------------------------- */
-
-.main-content-container {
-
-    width: 100%;
-
-    display: grid;
-    grid: auto 1fr / 1fr;
-
-    /* background-color: red; */
+  display: flex;
+  justify-content: center;
 
 }
 
-/* ---------------------------------------------------- */
-/* ❌ in Zukunft löschen | Main Content Layout Container
-/* ---------------------------------------------------- */
+/* ------------------------------------------- */
+/* Main Headline Container
+/* ------------------------------------------- */
 
-.main-content-layout-container {
+.main-headline-container {
 
-    padding: .8em;
+   width: 100%;
 
-    background-color: rgb(241, 241, 241);
+   /* mobile */
+   height: 8em;
+   padding: 0 .8em;
 
-    border-radius: .8em;
+   background-color: white;
+
+   background-color: blue;
+
 }

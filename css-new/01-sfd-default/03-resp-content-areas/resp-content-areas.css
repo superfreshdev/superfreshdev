@@ -7,9 +7,10 @@
 
 
 /* ------------------------------------------------------------ */
-/* Resp | Min,Main,Max
+/* Resp | Very Small, Min,Main,Max
 /* ------------------------------------------------------------ */
 
+.resp-very-small-content-area,
 .resp-min-content-area,
 .resp-main-content-area,
 .resp-max-content-area {
@@ -20,6 +21,11 @@
 /* ----------------------------------------- */
 /* ℹ️ just for css bg-color area testing    */
 /* ----------------------------------------- */
+
+.resp-very-small-content-area {
+
+    /* background-color: gold; */
+}
 
 .resp-min-content-area {
 

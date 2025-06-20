@@ -1,0 +1,99 @@
+/* -------------------------------------------------------------- */
+/* > quick-info-text-container.css
+/*
+/* : style the info text containers
+/* -------------------------------------------------------------- */
+
+/* --------------------------------------------- */
+/* 🟣 Auslagern -> Font Style
+/* --------------------------------------------- */
+.c1 {
+
+  color:rgb(98, 98, 98);
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------ */
+/* Quick Info Text Container
+/* ------------------------------------------------------ */
+
+.quick-info-text-container {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: 1em;
+
+  /* background-color: yellow; */
+
+}
+
+/* ------------------------------------------------------ */
+/* Header ( left,right )
+/* ------------------------------------------------------ */
+
+.quick-info-text-container > header.left,
+.quick-info-text-container > header.right {
+
+  /* because of grid to not stretch max */
+  justify-self: flex-start;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  color:rgb(209, 209, 209);
+
+  opacity: .8;
+
+  /* color:black; */
+
+  padding: .4em .8em;
+
+  border-radius: .8em;
+
+  background-color: rgb(74, 74, 74);
+
+}
+
+.quick-info-text-container > header.right {
+
+  justify-content: flex-end;
+
+}
+
+/* font size - header */
+.quick-info-text-container > header.left > div:nth-of-type(1),
+.quick-info-text-container > header.right > div:nth-of-type(1) {
+
+  /* 20px */
+  font-size: 1.25em;
+}
+
+/* ------------------------------------------------------ */
+/* Main
+/* ------------------------------------------------------ */
+
+.quick-info-text-container > main {
+
+  /* 18px - desktop */
+  font-size: 1.125em;
+
+  /* deskotp */
+  /* padding: 1.5em 2em; */
+
+  /* mobile */
+  /* padding: 0 .8em; */
+
+  line-height: 1.8em;
+
+  border-radius: .8em;
+
+  /* border-left: 10px solid rgb(128, 128, 128); */
+
+  /* background-color: rgb(241, 241, 241); */
+  color:rgb(128, 128, 128);
+
+}

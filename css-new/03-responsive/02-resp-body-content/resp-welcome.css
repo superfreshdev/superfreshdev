@@ -10,6 +10,20 @@
 
 @media (min-width: 330px ) {
 
+    /* ------------------------------------------ */
+    /* Welcome Container
+    /* ------------------------------------------ */
+
+    #welcome-container {
+
+        height: 14.5em;
+
+    }
+
+    /* ------------------------------------------ */
+    /* IMG
+    /* ------------------------------------------ */
+
     #img-welcome-clipart-me {
 
         /* mobile */
@@ -17,10 +31,10 @@
     }
 
     /* ------------------------------------------ */
-    /* Title
+    /* Welcome Title Container
     /* ------------------------------------------ */
 
-    .welcome-title-area {
+    .welcome-title-container {
 
         row-gap: .3em;
     }
@@ -47,30 +61,17 @@
 
 @media (min-width: 400px ) {
 
-    #img-welcome-clipart-me {
-
-        /* mobile */
-        height: 7.5em;
-
-        padding-bottom: 1.5em;
-    }
-
     /* ------------------------------------------ */
     /* Welcome Container
     /* ------------------------------------------ */
 
-    /* change grid template area layout */
-
     #welcome-container {
 
         /* mobile */
-        padding: 2em .8em 1.5em .8em;
-
-        /* mobile */
         grid-template:
-            "welcome-img-area welcome-title-area"
-            "welcome-img-area welcome-motto-area"
-            "welcome-img-area welcome-date-area"
+            "welcome-img welcome-title"
+            "welcome-img welcome-motto"
+            "welcome-img welcome-date"
         ;
         /* mobile */
         grid-template-columns: auto 1fr;
@@ -81,27 +82,34 @@
     }
 
     /* ------------------------------------------ */
-    /* Title
+    /* IMG
     /* ------------------------------------------ */
 
-     .welcome-title-area {
+    #img-welcome-clipart-me {
+
+        /* mobile */
+        height: 7.5em;
+        /* mobile */
+        padding-bottom: 1.5em;
+    }
+
+    /* ------------------------------------------ */
+    /* Welcome Title Container
+    /* ------------------------------------------ */
+
+    .welcome-title-container {
 
         row-gap: .4em;
     }
 
-    .welcome-motto-area {
+    /* ------------------------------------------ */
+    /* Welcome Motto Container
+    /* ------------------------------------------ */
+
+    .welcome-motto-container {
 
         /* 1.03125em = 16.5px  */
         font-size: 1.03125em;
-    }
-
-    /* ------------------------------------------ */
-    /* Date
-    /* ------------------------------------------ */
-
-    .welcome-date-area {
-
-        padding-top: 0em;
     }
 
 }
@@ -118,22 +126,27 @@
 
     #welcome-container {
 
-        /* mobile */
-        padding: 2em .8em 1.3em .8em;
+        height: 15em;
 
     }
+
+    /* ------------------------------------------ */
+    /* IMG
+    /* ------------------------------------------ */
 
     #img-welcome-clipart-me {
 
         /* desktop */
         height: 8.5em;
+
+        padding: 0em;
     }
 
     /* ------------------------------------------ */
-    /* Title
+    /* Welcome Title Container
     /* ------------------------------------------ */
 
-    .welcome-title-area {
+    .welcome-title-container {
 
         row-gap: .5em;
     }
@@ -152,7 +165,11 @@
 
     }
 
-    .welcome-motto-area {
+    /* ------------------------------------------ */
+    /* Welcome Title Container
+    /* ------------------------------------------ */
+
+    .welcome-motto-container {
 
         padding-top: .4em;
 
@@ -166,22 +183,83 @@
 }
 
 /* -------------------------------------------------------------- */
+/* >= 630x width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 630px ) {
+
+    /* ------------------------------------------ */
+    /* Welcome Container
+    /* ------------------------------------------ */
+
+    #welcome-container {
+
+        height: 14em;
+
+        /* all item top orientation */
+        align-items: flex-start;
+
+        /* mobile */
+        grid-template:
+            "welcome-img welcome-title welcome-date"
+            "welcome-img welcome-motto welcome-date"
+        ;
+        /* mobile */
+        grid-template-columns: auto auto 1fr;
+        grid-template-rows: auto;
+
+        /* mobile */
+        column-gap: 1em;
+        row-gap: 0em;
+    }
+
+    /* ------------------------------------------ */
+    /* Welcome Title Container
+    /* ------------------------------------------ */
+
+    .welcome-title-container {
+
+        /* this element should be in the middle */
+        align-self: center;
+
+    }
+
+    /* ------------------------------------------ */
+    /* Welcome Title Container
+    /* ------------------------------------------ */
+
+    .welcome-motto-container {
+
+        /* color:red; */
+        row-gap: .3em;
+
+    }
+
+    /* ------------------------------------------ */
+    /* Date
+    /* ------------------------------------------ */
+
+    .welcome-date-container {
+
+        /* this element should be in the middle */
+        align-self: center;
+        padding-top: 0em;
+
+    }
+
+}
+
+/* -------------------------------------------------------------- */
 /* >= 800x width
 /* -------------------------------------------------------------- */
 
 @media (min-width: 800px ) {
 
-
-    #img-welcome-clipart-me {
-
-        /* desktop */
-        height: 10em;
-    }
+    /* ------------------------------------------ */
+    /* Welcome Container
+    /* ------------------------------------------ */
 
     #welcome-container {
-
-        /* desktop */
-        padding: 3em .6em 1.8em .6em;
 
         /* desktop */
         column-gap: 1.5em;
@@ -189,10 +267,20 @@
     }
 
     /* ------------------------------------------ */
-    /* Title
+    /* IMG
     /* ------------------------------------------ */
 
-    .welcome-title-area {
+    #img-welcome-clipart-me {
+
+        /* desktop */
+        height: 10em;
+    }
+
+    /* ------------------------------------------ */
+    /* Welcome Title Container
+    /* ------------------------------------------ */
+
+    .welcome-title-container {
 
         row-gap: 1em;
     }
@@ -215,10 +303,29 @@
     /* Date
     /* ------------------------------------------ */
 
-    .welcome-date-area {
+    .welcome-date-container {
 
         /* 18px */
         font-size: 1.125em;
     }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1200x width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 1200px ) {
+
+    /* ------------------------------------------ */
+    /* Welcome Container
+    /* ------------------------------------------ */
+    #welcome-container {
+
+        /* desktop */
+        padding: 0em;
+
+    }
+
 
 }

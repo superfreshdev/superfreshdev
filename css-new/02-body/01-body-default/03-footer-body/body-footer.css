@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------- */
 /* > body-footer.css
-/*  
+/*
 /* : style my body footer
 /* -------------------------------------------------------------- */
 
@@ -13,7 +13,7 @@
     /* height: 100%; */
 
     width: 100%;
-   
+
     display: grid;
     /* grid: 1fr / 1fr; */
     /* 🚧 Future */
@@ -39,7 +39,7 @@
 
     height: 6em;
     padding: 0 .8em;
-   
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,9 +64,11 @@
     border-radius: .6em;
 
     background-color: rgb(36, 36, 36);
-    
+
     /* ⚠️ light grey color & light grey img  */
     color: #9a9a9a;
+
+    opacity: .8;
 
     cursor: pointer;
 
@@ -97,7 +99,7 @@
 
     font-weight: bold;
     display: none;
-   
+
 }
 
 /* img 2 - arrow up/down */
@@ -109,8 +111,8 @@
 
 
 /* ------------------------------------------------- */
-/* ### Styling 
-/* Checkbox Handling | Open Useful Links 
+/* ### Styling
+/* Checkbox Handling | Open Useful Links
 /* ------------------------------------------------- */
 
 #chk-useful-links-body-footer {
@@ -147,7 +149,7 @@
     user-select: none;
 
     /* background-color: green; */
-    
+
 }
 
 #sfd-copyright-body-footer > img:nth-of-type(1) {
@@ -177,20 +179,20 @@
 #smooth-open-close-useful-links-body-footer {
 
     width: 100%;
-   
+
     display: grid;
     justify-items: center;
-    
+
     grid: 0fr / 1fr;
     /* grid-template-rows: 0fr 0fr; */
-    
+
     transition: grid-template-rows 0.3s ease-out;
 
 }
 
 /* ------------------------------------------------- */
 /* ### Movement
-/* Checkbox Handling | Open Useful Links 
+/* Checkbox Handling | Open Useful Links
 /* ------------------------------------------------- */
 
 
@@ -243,7 +245,7 @@
     font-weight: bold;
 
     background-color: rgb(66, 66, 66);
-   
+
     /* ⚠️ light grey color & light grey img  */
     color: #9a9a9a;
 
@@ -269,12 +271,12 @@
 .lbl-tab-link-body-footer > div:nth-of-type(2) > img {
 
     height: 1em;
-    
+
 }
 
 
 /* ----------------------------------------------------------------------------------------- */
-/* ### Styling 
+/* ### Styling
 /* Radio Handling | Tab Links ( links & community links )
 /* ----------------------------------------------------------------------------------------- */
 
@@ -320,7 +322,7 @@ input[name='name-radio-tab-links-body-footer'] {
 }
 
 /* --------------------------------------------------------------- */
-/*  Show - Community Links  */      
+/*  Show - Community Links  */
 /* --------------------------------------------------------------- */
 
 /* Custom Select - set x img  */

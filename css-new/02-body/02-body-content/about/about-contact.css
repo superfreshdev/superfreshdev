@@ -1,21 +1,17 @@
 /* -------------------------------------------------------------- */
 /* > about-contact.css
 /*
-/* : style the contact layout of about
+/* : style about contact layout
 /* -------------------------------------------------------------- */
 
 /* ------------------------------------------- */
-/* About Contact Container
+/* Main | About Contact Container
 /* ------------------------------------------- */
 
 #about-contact-container {
 
-    grid-area: contact;
-
-    margin: 2em 0;
-
-    height: 6em;
-
+    width: 100%;
+    padding: 4em 0;
 
     display: flex;
     align-items: center;
@@ -25,3 +21,7 @@
     background-color: rgb(148, 148, 148);
 
 }
+
+/* ------------------------------------------- */
+/* ❌❌❌ Trash Down
+/* ------------------------------------------- */

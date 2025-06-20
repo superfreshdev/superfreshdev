@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------- */
 /* > about.css
 /*
-/* : styles about page container & header about container
+/* : styles about page defaults
 /* -------------------------------------------------------------- */
 
 
@@ -11,19 +11,53 @@
 
 #about-container {
 
+    width: 100%;
     display: grid;
 
 }
 
 /* ------------------------------------------- */
-/* About Layout Container
+/* Img Icon Headline About
 /* ------------------------------------------- */
 
-#about-layout-container {
+#img-icon-about-headline {
 
-    line-height: 1.8em;
+    /* mobile */
+    height: 2.5em;
+}
 
-    padding: 2em .8em;
+/* ------------------------------------------- */
+/* About Main Container
+/* ------------------------------------------- */
+
+#about-main-container {
+
+  width: 100%;
+  display: grid;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------- */
+/* ❌❌❌ Trash Down
+/* ------------------------------------------- */
+
+.about-content-area {
+
+    padding: 2em 0em;
+    width: 100%;
 
     display: grid;
     /* row-gap: 1em; */
@@ -31,4 +65,33 @@
     /* default 18px its bette for easy reading */
     /* font-size: 1.125em; */
     /* background-color: rgb(224, 224, 224); */
+
+    line-height: 1.8em;
+
+    /* background-color: red; */
+}
+
+
+/* ------------------------------------------- */
+/* About Footer Content Number Container
+/* ------------------------------------------- */
+
+.about-footer-content-number-container {
+
+  height: 6em;
+  padding: 0 1.5em;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+
+  background-color: red;
+
+}
+
+.about-footer-content-number-container > div:nth-of-type(1) {
+
+  font-size: 1.5em;
+  letter-spacing: 1px;
 }

@@ -1,0 +1,93 @@
+/* -------------------------------------------------------------- */
+/* > about-quick-info.css
+/*
+/* : style the about quick info area
+/* -------------------------------------------------------------- */
+
+/* ------------------------------------------- */
+/* About Quick Info Container
+/* ------------------------------------------- */
+
+#about-quick-info-container {
+
+  width: 100%;
+
+  /* mobile */
+  padding: 2em .8em;
+
+  /* mobile */
+  display: grid;
+
+  row-gap: 2em;
+
+  /* mobile */
+  /* flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; */
+
+  /* column-gap: .8em;
+  row-gap: .8em; */
+
+  /* color:blue; */
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------- */
+/* [1/3] | About Quick Info ( desktop - max width )
+/* ------------------------------------------- */
+
+#about-quick-info {
+
+  order:3;
+
+  /* desktop */
+  /* max-width: 10em; */
+
+}
+
+
+/* ------------------------------------------- */
+/* [2/3] | Arrow Container
+/* ------------------------------------------- */
+
+#about-quick-info-container .arrow-container {
+
+  order:2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.75em;
+  font-weight: bold;
+
+  color:rgb(98, 98, 98);
+
+}
+
+#about-quick-info-container .arrow-container > div {
+
+  transform: rotate(90deg);
+
+}
+
+/* ------------------------------------------- */
+/* [3/3] | Img About Container
+/* ------------------------------------------- */
+
+#img-about-container {
+
+  /* order:1; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#img-professional-me-about {
+
+  width: 100%;
+  border-radius: 2em;
+}

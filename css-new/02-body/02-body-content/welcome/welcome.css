@@ -13,17 +13,20 @@
     width: 100%;
 
     /* mobile */
-    padding: 1em .8em;
+    height: 14em;
+
+    /* mobile */
+    padding: 0em .8em;
 
     display: grid;
-    /* align-content: center; */
     align-items: center;
+    align-content: center;
 
     /* mobile */
     grid-template:
-        "welcome-img-area welcome-title-area"
-        "welcome-motto-area welcome-motto-area"
-        "welcome-date-area welcome-date-area"
+        "welcome-img welcome-title"
+        "welcome-motto welcome-motto"
+        "welcome-date welcome-date"
     ;
     /* mobile */
     grid-template-rows: auto auto auto;
@@ -37,17 +40,15 @@
 }
 
 /* --------------------------------------------- */
-/* [1/4] | Welcome Img Area
+/* [1/4] | Welcome Img Container
 /* --------------------------------------------- */
 
-.welcome-img-area {
+.welcome-img-container {
 
-    grid-area: welcome-img-area;
+    grid-area: welcome-img;
 
     display: flex;
     align-items: center;
-
-    /* background-color: green; */
 }
 
 #img-welcome-clipart-me {
@@ -58,17 +59,16 @@
 }
 
 /* --------------------------------------------- */
-/* [2/4] | Welcome Title Area
+/* [2/4] | Welcome Title Container
 /* --------------------------------------------- */
 
-.welcome-title-area {
+.welcome-title-container {
 
-    grid-area: welcome-title-area;
+    grid-area: welcome-title;
 
     display: grid;
     row-gap: .2em;
 
-    /* background-color: rgb(255, 247, 0); */
 }
 
 #text-welcome-to {
@@ -78,11 +78,11 @@
 
     font-weight: bold;
 
-    color:rgb(185, 185, 185);
+    /* color:rgb(185, 185, 185); */
+    color:wheat;
 }
 
 #text-superfreshdev {
-
 
     /* mobile size  */
     font-size: 1.375em;
@@ -90,35 +90,36 @@
     font-weight: bold;
 
     color:white;
-    /* color:wheat; */
+
 }
 
 
 /* --------------------------------------------- */
-/* [3/4] | Welcome Motto Area
+/* [3/4] | Welcome Motto Container
 /* --------------------------------------------- */
 
-.welcome-motto-area {
+.welcome-motto-container {
 
-    grid-area: welcome-motto-area;
+    grid-area: welcome-motto;
 
     display: grid;
     /* row-gap: 0em; */
 
-    color:grey;
-    opacity: .8;
+    font-weight: bold;
+
+    color:rgb(116, 116, 116);
+    /* opacity: .8; */
 }
 
 /* --------------------------------------------- */
 /* [4/4] | Welcome Motto Area
 /* --------------------------------------------- */
 
-.welcome-date-area {
+.welcome-date-container {
 
-    grid-area: welcome-date-area;
+    grid-area: welcome-date;
 
     padding-top: 1em;
-    padding-right: .3em;
 
     display: flex;
     justify-content: flex-end;

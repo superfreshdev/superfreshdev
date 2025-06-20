@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------- */
 /* > resp-it-docs.css
-/*  
-/* : responsive sets for it docs 
+/*
+/* : responsive sets for it docs
 /* -------------------------------------------------------------- */
 
 
@@ -11,13 +11,5 @@
 
 @media (min-width: 1200px ) {
 
-    #it-docs-container  {
 
-        /* dont need padding-left,right in desktop */
-        padding: 5em 0em;
-        
-    }
-
-
-   
 }

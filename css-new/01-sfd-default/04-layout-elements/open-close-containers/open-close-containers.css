@@ -12,15 +12,8 @@
 .open-close-left-container,
 .open-close-right-container {
 
-  height: 4em;
-  padding: 0 .8em;
-
   display: flex;
   align-items: center;
-
-  /* border: 1px dashed black; */
-
-  /* background-color: rgb(224, 224, 224); */
 
 }
 
@@ -30,33 +23,32 @@
 }
 
 /* --------------------------------------------- */
-/* Label Open Close Content
+/* Label Open Close Element
 /* --------------------------------------------- */
 
-.lbl-open-close-content {
+.lbl-open-close-element {
+
 
     height: 3em;
     padding: 0 1em;
 
     display: flex;
     align-items: center;
-    column-gap: .6em;
+    column-gap: .8em;
 
     font-weight: bold;
 
-    border-radius: .6em;
+    border-radius: .8em;
 
     background-color: rgb(180, 180, 180);
-    background-color: rgb(246, 132, 132);
+    /* background-color: rgb(246, 132, 132); */
 
     cursor: pointer;
     transition: all .4s;
 
-
 }
 
-.lbl-open-close-content:hover {
+.lbl-open-close-element > div {
 
-    background-color: rgb(28, 28, 28);
-    color:white;
+  font-size: 1.25em;
 }

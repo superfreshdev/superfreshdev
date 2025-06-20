@@ -12,12 +12,12 @@
 @media ( min-width: 340px ) {
 
     /* ------------------------------------------------ */
-    /* Img About */
+    /* Img Professional Me About */
     /* ------------------------------------------------ */
-    #img-about {
+
+    #img-professional-me-about {
 
         width: 80%;
-        /* display: none; */
     }
 
     #about-quick-info {
@@ -34,12 +34,12 @@
 @media ( min-width: 340px ) {
 
     /* ------------------------------------------------ */
-    /* Img About */
+    /* Img Professional Me About */
     /* ------------------------------------------------ */
-    #img-about {
+
+    #img-professional-me-about {
 
         width: 60%;
-        /* display: none; */
     }
 
 }
@@ -51,12 +51,12 @@
 @media ( min-width: 450px ) {
 
     /* ------------------------------------------------ */
-    /* Img About */
+    /* Img Professional Me About */
     /* ------------------------------------------------ */
-    #img-about {
+
+    #img-professional-me-about {
 
         width: 40%;
-        /* display: none; */
     }
 
 }
@@ -68,12 +68,12 @@
 @media ( min-width: 500px ) {
 
     /* ------------------------------------------------ */
-    /* Img About */
+    /* Img Professional Me About */
     /* ------------------------------------------------ */
-    #img-about {
+
+    #img-professional-me-about {
 
         width: 15em;
-        /* display: none; */
     }
 
 
@@ -90,17 +90,76 @@
     /* ------------------------------------------------ */
     /* About Quick Info Img Container */
     /* ------------------------------------------------ */
-    #about-quick-info-img-container {
+    /* #about-quick-info-img-container {
 
         grid: auto / 1fr auto;
 
-    }
+    } */
 
     /* img to the right */
-    #about-img-container {
+    /* #about-img-container {
         order: 2;
+    } */
+
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 700px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 700px ) {
+
+    /* ------------------------------------------- */
+    /* About Quick Info Container
+    /* ------------------------------------------- */
+
+    #about-quick-info-container {
+
+        /* mobile */
+        padding: 2em .8em;
+
+        /* mobile */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        column-gap: 1em;
+
     }
 
+    #about-quick-info-container .arrow-container > div {
+
+        transform: rotate(0deg);
+
+    }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 800px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 800px ) {
+
+  /* -------------------------------------------------- */
+  /* About My It Skills Container | Main
+  /* -------------------------------------------------- */
+
+  #about-my-it-skills-container > main {
+
+    /* background-color: red; */
+
+    grid-template-areas:
+
+      'about-skill-web-dev about-skill-software-mobile-dev'
+      'about-skill-backend about-skill-backend'
+      'about-skill-quote-container about-skill-quote-container';
+
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1.2fr;
+
+  }
 
 }
 
@@ -110,25 +169,38 @@
 
 @media ( min-width: 900px ) {
 
-    /* ------------------------------------------------ */
-    /* About Quick Info Img Container */
-    /* ------------------------------------------------ */
-    /* #about-quick-info-img-container {
+    /* ------------------------------------------- */
+    /* About Quick Info Container
+    /* ------------------------------------------- */
 
-        grid: auto / 2fr auto;
+    #about-quick-info-container {
 
-    } */
+        /* deskotp */
+        padding: 2em 0em;
+
+        column-gap: 1.5em;
+
+    }
 
     /* ------------------------------------------------ */
     /* About Quick Info */
     /* ------------------------------------------------ */
-    #about-quick-info {
+
+    #resp-about-quick-info-text-container {
 
         width: 35em;
-        /* width: 60%; */
 
     }
 
+    /* ------------------------------------------------ */
+    /* About My IT Skills Container                     */
+    /* ------------------------------------------------ */
+
+    #about-my-it-skills-container {
+
+        padding: 4em 0em;
+
+    }
 
 
 }
@@ -148,29 +220,22 @@
         /* display: none; */
     }
 
+}
 
-    /* ------------------------------------------------ */
-    /* About Layout Container */
-    /* ------------------------------------------------ */
-    #about-layout-container {
+/* ------------------------------------------------------------------- */
+/* >= 1200px
+/* ------------------------------------------------------------------- */
 
-       align-items: flex-start;
-       column-gap: 3em;
+@media ( min-width: 1200px ) {
 
-       grid-template-areas:
+    /* ------------------------------------------- */
+    /* About Nav
+    /* ------------------------------------------- */
 
-       'quickInfo quickInfo'
-       'headerSkill headerSkill'
-       'webdev software'
-       'backend backend'
-       'personality personality'
-       'contact contact';
+    #about-nav {
 
-       /* grid-template-columns: auto auto; */
+        padding: 0;
 
     }
-
-
-
 
 }

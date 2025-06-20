@@ -5,24 +5,17 @@
 /* -------------------------------------------------------------- */
 
 
-
-/* ---------------------------------------------------- */
-/* Headline Containers ( left, right, two-cols-outside)
-/* ---------------------------------------------------- */
+/* -------------------------------------------------------------- */
+/* Headline ( left, right, two-cols-outside) Container
+/* -------------------------------------------------------------- */
 
 .headline-left-container,
 .headline-right-container,
 .headline-two-cols-outside-container {
 
     /* mobile */
-    height: 8em;
-    padding: 0 .8em;
-
     display: flex;
     align-items: center;
-
-    background-color: white;
-
 }
 
 .headline-right-container {
@@ -36,10 +29,10 @@
 }
 
 /* ---------------------------------------------------- */
-/* Headline Container
+/* [1/2] | Headline Topic Element
 /* ---------------------------------------------------- */
 
-.headline-container {
+.headline-topic-element {
 
     /* mobile */
     height: 4em;
@@ -52,47 +45,46 @@
 
     font-weight: bold;
 
-    border-radius: .6em;
-
-    /* background-color: rgb(100, 100, 100); */
-    /* background-color: rgb(53, 53, 53); */
-    /* background-color: rgb(28, 28, 28); */
-    /* color:white; */
+    border-radius: .8em;
 
     background-color: wheat;
 
-    /* opacity: .6; */
+}
+
+.headline-topic-element > div:nth-of-type(1) {
+
+    /* 24px */
+    font-size: 1.5em;
+}
+
+/* ------------------------------------------------------------------------ */
+/* [2/2] | Headline Sub Topic ( dark / light ) Element
+/* ------------------------------------------------------------------------ */
+
+.headline-sub-topic-dark-element,
+.headline-sub-topic-light-element {
+
+  height: 4em;
+  padding: 0em 1.3em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  border-radius: .8em;
 
 }
 
-.headline-container > div:nth-of-type(1) {
+.headline-sub-topic-dark-element {
 
-    font-size: 1.375em;
+    border: 1px solid grey;
+
+    border: 1px solid rgb(78, 78, 78);
+
 }
 
+.headline-sub-topic-light-element {
 
-/* ------------------------------------------------------------- */
-/* Img Individual | Headline | About, My IT , My Private
-/* ------------------------------------------------------------- */
+    border: 4px solid red;
 
-
-/* img header container about */
-#headline-about > img {
-
-    /* mobile */
-    height: 2.5em;
-}
-
-/* img header container my it */
-#headline-my-it > img {
-
-    /* mobile */
-    height: 1.8em;
-}
-
-/* img header container my private */
-#headline-my-private > img {
-
-    /* mobile */
-    height: 2em;
 }
