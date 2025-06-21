@@ -6,11 +6,12 @@
 
 
 /* ------------------------------------------------------------------ */
-/*  Open / Close ( left/right ) Containers
+/*  Open / Close ( left/right/center ) Containers
 /* ------------------------------------------------------------------ */
 
 .open-close-left-container,
-.open-close-right-container {
+.open-close-right-container,
+.open-close-center-container  {
 
   display: flex;
   align-items: center;
@@ -20,6 +21,11 @@
 .open-close-right-container {
 
     justify-content: flex-end;
+}
+
+.open-close-center-container {
+
+    justify-content: center;
 }
 
 /* --------------------------------------------- */
