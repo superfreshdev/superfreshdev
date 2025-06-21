@@ -1,13 +1,93 @@
 /* ------------------------------------------------------------------- */
-/* > tab-content-filter.css 
-/* 
-/* Style ui-component for tab content filter
-/* 
+/* > tab-filter-panel.css
+/*
+/* Style ui-component for tab filter panel
+/*
 /* ------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------- */
-/* Tab Content Filter 
+/* Tab Filter Panel
+/* ------------------------------------------------------------- */
+
+.tab-filter-panel {
+
+    padding: 0 .8em;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6em;
+
+    font-weight: bold;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Tab Unselector | Tab Filter Panel
+/* ------------------------------------------------------------- */
+
+.tab-filter-panel > .tab-unselector {
+
+    height: 3em;
+    width: 3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .8em;
+
+    background-color: rgb(198, 3, 3);
+
+    transition: all .4s;
+    cursor: pointer;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Tab Selector | Tab Filter Panel
+/* ------------------------------------------------------------- */
+
+.tab-filter-panel > .tab-selector {
+
+    height: 3em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    border-radius: .8em;
+
+    border: 1px solid rgb(170, 170, 170);
+    background-color: rgb(234, 234, 234);
+
+    color: rgb(80, 80, 80);
+
+    transition: all .4s;
+    cursor: pointer;
+
+}
+
+.tab-filter-panel > .tab-selector > div:nth-of-type(1) {
+
+    font-size: 1.125em;
+
+}
+
+.tab-filter-panel > .tab-selector:hover {
+
+    background-color: wheat;
+}
+
+
+
+
+
+/* ------------------------------------------------------------- */
+/* ❌❌❌ MÜLL ❌❌❌
 /* ------------------------------------------------------------- */
 
 .tab-content-filter {
@@ -16,7 +96,7 @@
     flex-wrap: wrap;
     gap: 1em;
 
-    
+
 }
 
 .layout-center {
@@ -25,7 +105,7 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Tab Content Item 
+/* Tab Content Item
 /* ------------------------------------------------------------- */
 
 .tab-content-item {
@@ -39,7 +119,7 @@
     column-gap: 1.5em;
 
     font-weight: bold;
-    
+
     border-radius: .6em;
 
     user-select: none;
@@ -64,7 +144,7 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Img | Tab Content Item 
+/* Img | Tab Content Item
 /* ------------------------------------------------------------- */
 
 .img-tab-normal {
@@ -78,7 +158,7 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Img Border Radius | Tab Content Item 
+/* Img Border Radius | Tab Content Item
 /* ------------------------------------------------------------- */
 
 .img-border-radius-0-6 {
@@ -87,12 +167,12 @@
 }
 
 .img-border-radius-0-8 {
-    
+
     border-radius: .8em;
 }
 
 /* ------------------------------------------------------------- */
-/* 🟣 Handling => Extra CSS File in My News 
+/* 🟣 Handling => Extra CSS File in My News
 /* ------------------------------------------------------------- */
 
 /* -------------------------------------------------- */
@@ -115,7 +195,7 @@
 }
 
 /* -------------------------------------------------- */
-/* Handling Style | My Private Lifestyle 
+/* Handling Style | My Private Lifestyle
 /* -------------------------------------------------- */
 
 #chk-radio-tab-my-news-private-lifestyle:checked ~ .tab-content-filter {
