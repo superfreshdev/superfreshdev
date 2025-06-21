@@ -35,6 +35,9 @@
 .quick-info-text-container > header.left,
 .quick-info-text-container > header.right {
 
+  height: 2.8em;
+  padding: 0em .8em;
+
   /* because of grid to not stretch max */
   justify-self: flex-start;
 
@@ -44,17 +47,12 @@
 
   font-weight: bold;
 
-  color:rgb(209, 209, 209);
-
   opacity: .8;
 
-  /* color:black; */
-
-  padding: .4em .8em;
-
-  border-radius: .8em;
+  border-radius: .6em;
 
   background-color: rgb(74, 74, 74);
+  color:rgb(209, 209, 209);
 
 }
 

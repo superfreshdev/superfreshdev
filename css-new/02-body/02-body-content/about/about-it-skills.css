@@ -29,7 +29,7 @@
 }
 
 /* --------------------------------------------------------------*/
-/* [1/3] | Header                                                */
+/* [1/2] | Header                                                */
 /* ------------------------------------------------------------- */
 
 #about-my-it-skills-container > header {
@@ -50,7 +50,7 @@
 }
 
 /* --------------------------------------------------------------*/
-/* About Laptop Img Container
+/* ⚠️ About Laptop Img Container
 /* --------------------------------------------------------------*/
 
 #about-img-laptop-container {
@@ -66,14 +66,10 @@
 }
 
 /* ------------------------------------------- */
-/* [2/3] | Main
+/* [2/2] | Main
 /* ------------------------------------------- */
 
 #about-my-it-skills-container > main {
-
-  /* background-color: red; */
-
-  /* width: 100%; */
 
   display: grid;
   justify-items: center;
@@ -82,33 +78,32 @@
   align-items: flex-start;
 
   grid-template-areas:
-  'about-skill-web-dev'
-  'about-skill-software-mobile-dev'
-  'about-skill-backend'
-  'about-skill-quote-container';
+  'web-dev'
+  'software-mobile-dev'
+  'backend'
+  'quote'
+  'number';
 
   row-gap: 4em;
   column-gap: 4em;
-
-  /* background-color: red; */
 
 }
 
 #about-skill-web-dev {
 
-  grid-area: about-skill-web-dev;
+  grid-area: web-dev;
 
 }
 
 #about-skill-software-mobile-dev {
 
-  grid-area: about-skill-software-mobile-dev;
+  grid-area: software-mobile-dev;
 
 }
 
 #about-skill-backend {
 
-  grid-area: about-skill-backend;
+  grid-area: backend;
 
 }
 
@@ -133,6 +128,8 @@
   display: flex;
   align-items: center;
   column-gap: .6em;
+
+  line-height: 1.8em;
 
   font-weight: bold;
 
@@ -177,19 +174,12 @@
 
   border-radius: .8em;
 
-  /* font-weight: 600; */
+  font-weight: bold;
 
   border: 1px solid rgb(49, 49, 49);
 
   background-color: rgb(34, 34, 34);
-
-  /* background-color: rgb(22, 22, 22); */
-
-  color:rgb(98, 98, 98);
-
   color:rgb(84, 84, 84);
-
-  font-weight: bold;
 
   cursor: pointer;
   transition: all .4s;
@@ -204,19 +194,16 @@
 
 .about-link-skill-item:visited {
 
-  color:rgb(113, 113, 113);
-   color:rgb(98, 98, 98);
+  color:rgb(98, 98, 98);
 
 }
 
 .about-link-skill-item:hover {
 
   background-color: wheat;
-  color:rgb(98, 98, 98);
   color:black;
 
 }
-
 
 /* ------------------------------------------- */
 /* About Skill Quote Container
@@ -224,7 +211,7 @@
 
 #about-skill-quote-container {
 
-  grid-area: about-skill-quote-container;
+  grid-area: quote;
 
   display: flex;
   align-items: center;
@@ -243,4 +230,16 @@
 #about-skill-quote-container > div:nth-of-type(2) {
 
   color:wheat;
+}
+
+/* -------------------------------------------------- */
+/* IT Skills | Number Container
+/* -------------------------------------------------- */
+
+#about-it-skills-number-container {
+
+  grid-area: number;
+
+  /* border: 1px solid black; */
+
 }

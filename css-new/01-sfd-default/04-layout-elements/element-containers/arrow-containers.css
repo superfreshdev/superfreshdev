@@ -1,0 +1,59 @@
+/* -------------------------------------------------------------- */
+/* > arrow-containers.css
+
+/* : styles arrow containers to showing content directoin
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Arrow Contaienr
+/* -------------------------------------------------------------- */
+
+.arrow-down-container-left,
+.arrow-container-left,
+.arrow-down-container-right,
+.arrow-container-right,
+.arrow-down-container-center,
+.arrow-container-center {
+
+  display: flex;
+  align-items: center;
+
+}
+
+.arrow-down-container-right,
+.arrow-container-right {
+
+  justify-content: flex-end;
+}
+
+.arrow-down-container-center,
+.arrow-container-center {
+
+  justify-content: center;
+}
+
+
+.arrow-down-container-left > div:nth-of-type(1),
+.arrow-container-left > div:nth-of-type(1),
+.arrow-down-container-right > div:nth-of-type(1),
+.arrow-container-right > div:nth-of-type(1),
+.arrow-down-container-center > div:nth-of-type(1),
+.arrow-container-center > div:nth-of-type(1) {
+
+  font-size: 1.75em;
+
+  font-weight: bold;
+
+  color:rgb(98, 98, 98);
+
+}
+
+/* arrow down */
+.arrow-down-container-left > div:nth-of-type(1),
+.arrow-down-container-right > div:nth-of-type(1),
+.arrow-down-container-center > div:nth-of-type(1) {
+
+  transform: rotate(90deg);
+
+}

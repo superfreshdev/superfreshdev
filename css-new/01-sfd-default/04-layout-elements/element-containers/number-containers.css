@@ -1,0 +1,77 @@
+/* -------------------------------------------------------------- */
+/* > number-containers.css
+
+/* : styles for number containers for content areas
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Number Container ( left/right/center ) ( light/dark )
+/* -------------------------------------------------------------- */
+
+.number-container-light-left,
+.number-container-light-right,
+.number-container-light-center,
+.number-container-dark-left,
+.number-container-dark-right,
+.number-container-dark-center {
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+}
+
+.number-container-light-right,
+.number-container-dark-right {
+
+  justify-content: flex-end;
+}
+
+.number-container-light-center,
+.number-container-dark-center {
+
+  justify-content: center;
+}
+
+/* -------------------------------------------------------------- */
+/* Number Item
+/* -------------------------------------------------------------- */
+
+/* Light & Dark */
+.number-container-light-left > .number-item,
+.number-container-light-right > .number-item,
+.number-container-light-center > .number-item,
+.number-container-dark-left > .number-item,
+.number-container-dark-right > .number-item,
+.number-container-dark-center > .number-item {
+
+  font-size: 1.25em;
+
+  padding: .8em;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+  border: 1px solid rgb(75, 75, 75);
+
+  color:rgb(97, 97, 97);
+
+}
+
+/* Light */
+.number-container-light-left > .number-item,
+.number-container-light-right > .number-item,
+.number-container-light-center > .number-item {
+
+
+}
+
+/* Dark */
+.number-container-dark-left > .number-item,
+.number-container-dark-right > .number-item,
+.number-container-dark-center > .number-item {
+
+
+}

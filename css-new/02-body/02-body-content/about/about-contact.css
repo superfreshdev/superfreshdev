@@ -41,7 +41,6 @@
     font-size: 1.25em;
     font-weight: bold;
 
-
 }
 
 /* ------------------------------------------- */
@@ -70,8 +69,10 @@
 
 #about-contact-container > main {
 
+    width: 100%;
+
     display: grid;
-    row-gap: 2em;
+    row-gap: 3em;
 
 }
 
@@ -172,4 +173,16 @@
 #about-contact-close-about:hover {
 
     background-color: wheat;
+}
+
+
+/* -------------------------------------------------- */
+/* Contact | Numebr Container
+/* -------------------------------------------------- */
+
+#about-contact-number-container {
+
+    width: 100%;
+    /* border: 1px solid black; */
+
 }
