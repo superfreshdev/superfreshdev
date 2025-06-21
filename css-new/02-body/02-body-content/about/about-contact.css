@@ -5,23 +5,171 @@
 /* -------------------------------------------------------------- */
 
 /* ------------------------------------------- */
-/* Main | About Contact Container
+/* About Contact Container
 /* ------------------------------------------- */
 
 #about-contact-container {
 
     width: 100%;
-    padding: 4em 0;
+    padding: 4em .8em;
+
+    display: grid;
+    justify-items: center;
+    row-gap: 2em;
+
+    /* color:rgb(19, 19, 19); */
+    /* background-color: rgb(148, 148, 148); */
+
+}
+
+/* ------------------------------------------- */
+/* Header | About Contact Container
+/* ------------------------------------------- */
+
+#about-contact-container > header {
+
+    display: grid;
+    justify-items: center;
+    row-gap: 2em;
+
+    color: rgb(224, 224, 224);
+
+}
+
+#about-contact-container > header > div:nth-of-type(1) > div {
+
+    font-size: 1.25em;
+    font-weight: bold;
+
+
+}
+
+/* ------------------------------------------- */
+/* About Contact Sub Info
+/* ------------------------------------------- */
+
+#about-contact-sub-info {
+
+    font-size: 1.125em;
+    line-height: 1.8em;
+
+    text-align: center;
+    /* color:red; */
+}
+
+#about-contact-sub-info > header {
+
+    color: wheat;
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------- */
+/* Main | About Contact Container
+/* ------------------------------------------- */
+
+#about-contact-container > main {
+
+    display: grid;
+    row-gap: 2em;
+
+}
+
+/* ------------------------------------------- */
+/* Link | About Contact Container
+/* ------------------------------------------- */
+
+#about-contact-my-link-container {
+
+    font-size: 1.25em;
+
+    height: 2.5em;
+    padding: 0 .8em;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    color:rgb(19, 19, 19);
-    background-color: rgb(148, 148, 148);
+    border-radius: .8em;
 
+    font-weight: bold;
+
+    /* background-color: grey; */
+    color: wheat;
+}
+
+#about-contact-my-link-container:visited {
+
+    color: wheat;
 }
 
 /* ------------------------------------------- */
-/* ❌❌❌ Trash Down
+/* Img Container | About Contact Container
 /* ------------------------------------------- */
+
+#about-contact-img-container {
+
+    display: flex;
+    justify-content: center;
+
+    /* border: 1px solid black; */
+
+    /* background-color: red; */
+}
+
+#about-contact-img-container > img {
+
+    height: 10em;
+}
+
+
+/* ------------------------------------------- */
+/* About Contact Close About Container
+/* ------------------------------------------- */
+
+#about-contact-close-about-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: yellow; */
+}
+
+#about-contact-close-about {
+
+
+    height: 3em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    border-radius: .8em;
+
+    /* border: 1px solid grey; */
+    font-weight: bold;
+
+    background-color: rgb(246, 132, 132);
+
+    cursor: pointer;
+
+    transition: all .4s;
+}
+
+#about-contact-close-about > img {
+
+    transform: rotate(180deg);
+}
+
+#about-contact-close-about > div{
+
+    font-size: 1.125em;
+}
+
+
+#about-contact-close-about:hover {
+
+    background-color: wheat;
+}

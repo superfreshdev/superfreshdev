@@ -142,24 +142,57 @@
 
 @media ( min-width: 800px ) {
 
-  /* -------------------------------------------------- */
-  /* About My It Skills Container | Main
-  /* -------------------------------------------------- */
+    /* -------------------------------------------------- */
+    /* About My It Skills Container | Main
+    /* -------------------------------------------------- */
 
-  #about-my-it-skills-container > main {
+    #about-my-it-skills-container > main {
 
-    /* background-color: red; */
+        /* background-color: red; */
 
-    grid-template-areas:
+        grid-template-areas:
 
-      'about-skill-web-dev about-skill-software-mobile-dev'
-      'about-skill-backend about-skill-backend'
-      'about-skill-quote-container about-skill-quote-container';
+        'about-skill-web-dev about-skill-software-mobile-dev'
+        'about-skill-backend about-skill-backend'
+        'about-skill-quote-container about-skill-quote-container';
 
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr 1.2fr;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1.2fr;
 
-  }
+    }
+
+    /* --------------------------------------------------------------*/
+    /* Main  | About More Private Info                               */
+    /* ------------------------------------------------------------- */
+
+    #about-more-private-info > main {
+
+        padding: 0 1.5em;
+        /* background-color: red; */
+
+    }
+
+    /* --------------------------------------------------------------*/
+    /* Main Div | About More Private Info                            */
+    /* ------------------------------------------------------------- */
+
+    #about-more-private-info > main > div {
+
+        display: flex;
+        align-items: center;
+        column-gap: 1.5em;
+
+    }
+
+    /* --------------------------------------------------------------*/
+    /* About More Private Img Coffee                                 */
+    /* ------------------------------------------------------------- */
+
+    #about-more-private-img-coffee {
+
+        display: flex;
+
+    }
 
 }
 
@@ -202,6 +235,25 @@
 
     }
 
+    /* --------------------------------------------------------------*/
+    /* About More Private Container                                  */
+    /* ------------------------------------------------------------- */
+
+    #about-more-private-container {
+
+        padding: 4em 0em;
+
+    }
+
+    /* ------------------------------------------- */
+    /* About Contact Container
+    /* ------------------------------------------- */
+
+    #about-contact-container {
+
+        padding: 4em 0em;
+
+    }
 
 }
 

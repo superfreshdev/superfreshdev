@@ -1,0 +1,248 @@
+/* -------------------------------------------------------------- */
+/* > about-more-private.css
+/*
+/* : style about more private infos
+/* -------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------*/
+/* About More Private Container                                  */
+/* ------------------------------------------------------------- */
+
+#about-more-private-container {
+
+  width: 100%;
+  padding: 4em .8em;
+
+  display: grid;
+
+  grid-template-areas:
+
+    'info img-coffee'
+    'img-arrow-down-container img-arrow-down-container'
+    'my-wishes my-wishes';
+
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr auto;
+
+  row-gap: 3.3em;
+
+  /* background-color: rgb(255, 0, 212); */
+
+}
+
+/* --------------------------------------------------------------*/
+/* About More Private Info                                       */
+/* ------------------------------------------------------------- */
+
+#about-more-private-info {
+
+  grid-area: info;
+
+  display: grid;
+  row-gap: 4em;
+
+  /* background-color: green; */
+}
+
+/* --------------------------------------------------------------*/
+/* Main | About More Private Info                                */
+/* ------------------------------------------------------------- */
+
+#about-more-private-info > main {
+
+  display: grid;
+  row-gap: 3em;
+}
+
+/* --------------------------------------------------------------*/
+/* Main Div | About More Private Info                            */
+/* ------------------------------------------------------------- */
+
+#about-more-private-info > main > div {
+
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
+
+}
+
+/* --------------------------------------------------------------*/
+/* About More Private Img Coffee                                 */
+/* ------------------------------------------------------------- */
+
+#about-more-private-img-coffee {
+
+  grid-area: img-coffee;
+
+  display: none;
+
+  /* background-color: red; */
+}
+
+#img-about-img-coffee {
+
+  height: 13em;
+}
+
+/* --------------------------------------------------------------*/
+/* 🟣 Img Arrow Down Container                                   */
+/* ------------------------------------------------------------- */
+
+.img-arrow-down-container {
+
+  grid-area: img-arrow-down-container;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: yellow; */
+}
+
+.img-arrow-down-container > div {
+
+  font-size: 1.75em;
+  font-weight: bold;
+
+  color: rgb(98, 98, 98);
+
+  transform: rotate(90deg);
+}
+
+/* --------------------------------------------------------------*/
+/* About More Private My Wishes                                 */
+/* ------------------------------------------------------------- */
+
+#about-more-private-my-wishes {
+
+  grid-area: my-wishes;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .2em;
+
+  /* background-color: yellow; */
+
+}
+
+#about-more-private-my-wishes > div {
+
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------*/
+/* ⬇️ Production                                                */
+/* ------------------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------- */
+/* About Main Personality Info Container
+/* ------------------------------------------- */
+
+
+
+
+/* ------------------------------------------- */
+/* ❌❌❌ Trash Down
+/* ------------------------------------------- */
+
+
+
+
+/* ------------------------------------------- */
+/* Main
+/* ------------------------------------------- */
+
+#about-personality-info-container > main {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* ❌❌❌ MÜLL                                        */
+/* ------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------- */
+/* 🟣 Ausalgern -> Personality Info
+/* ------------------------------------------- */
+
+#about-personality-info {
+
+  grid-area: personality;
+
+}
+
+/* ------------------------------------------- */
+/* Main Personality Info
+/* ------------------------------------------- */
+
+#info-personality-about-container {
+
+  display: flex;
+  align-items: flex-end;
+
+}
+
+#img-clipart-more-personality {
+
+  height: 16em;
+}
+
+#info-personality-about-container > main {
+
+  display: grid;
+  row-gap: 1.5em;
+
+}
+
+#info-personality-about-container > main > div {
+
+  display: flex;
+  align-items: center;
+  column-gap: 1.5em;
+}
+
+#about-personality-info > footer {
+
+  padding-top: .3em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.125em;
+  font-weight: bold;
+
+}
