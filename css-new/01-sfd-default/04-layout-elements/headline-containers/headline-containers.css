@@ -95,8 +95,12 @@
 .sub-headline-category-container {
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+
     column-gap: 1em;
+    row-gap: 1em;
 }
 
 /* --------------------------------------------------- */
@@ -105,8 +109,8 @@
 
 .sub-headline-category-container > div:nth-of-type(1) {
 
-    height: 5.5em;
-    padding: 0 1.3em;
+    /* height: 5em; */
+    padding: 1em 1em;
 
     display: flex;
     align-items: center;
@@ -125,7 +129,7 @@
 
 .sub-headline-category-container > div:nth-of-type(1) > div:nth-of-type(1) .title-sub-headline-category {
 
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
 
     color:white;

@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------------- */
 /* > animations.css
-/*  
+/*
 /* : styles all animations we like to use e.g 360deg rotate, ...
 /* -------------------------------------------------------------------------- */
 
@@ -17,7 +17,12 @@
     60% { transform: rotate(180deg); }
     80% { transform: rotate(135deg); }
     100% { transform: rotate(360deg); }
-    
+
+}
+
+.anim-rotate360-4s {
+
+    animation: rotate360deg infinite 4s ease;
 }
 
 /* ------------------------------------- */
@@ -29,11 +34,11 @@
     0% { padding-left: .3em; }
     50% { padding-right: .3em; }
     100% { padding-left: .3em; }
-    
+
 }
 
 /* ------------------------------------- */
-/* Animation | up down slide 
+/* Animation | up down slide
 /* ------------------------------------- */
 
 @keyframes updown {
@@ -41,7 +46,7 @@
     0% { padding-bottom: .3em; }
     50% { padding-top: .3em; }
     100% { padding-bottom: .3em; }
-    
+
 }
 
 /* ------------------------------------- */
@@ -49,13 +54,13 @@
 /* ------------------------------------- */
 
 @keyframes shaking {
-    
+
     0% { transform: rotate(-35deg); }
 
     50% { transform: rotate(5deg); }
 
     100% { transform: rotate(-35deg); }
-    
+
 }
 
 

@@ -38,6 +38,8 @@
 
 .doc-row-category-container > header {
 
+  justify-self: flex-start;
+
   height: 3.5em;
   padding: 0 .8em;
 
@@ -49,7 +51,8 @@
 
   border-radius: .8em;
 
-  background-color: grey;
+  background-color: rgb(201, 201, 201);
+  border: 1px solid grey,
 
 
 }
@@ -69,8 +72,9 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  column-gap: 3em;
-  row-gap: 3em;
+  /* mobile */
+  column-gap: 1em;
+  row-gap: 1em;
 }
 
 
@@ -78,13 +82,93 @@
 /* Doc Card Container
 /* ------------------------------------------------------------- */
 
-.doc-card-container {
+.doc-card-container,
+.doc-card-container-in-progress,
+.doc-card-container-no-priority {
 
-  width: 14em;
+  width: 8em;
 
   display: grid;
-  row-gap: 1em;
+  align-items: center;
+  row-gap: .5em;
 
+}
+
+.doc-card-container-in-progress,
+.doc-card-container-no-priority {
+
+  position: relative;
+}
+
+/* ---------------------------------- */
+/* In Progress Info & No Priority
+/* ---------------------------------- */
+
+.doc-card-in-progress-info,
+.doc-card-no-priority-info {
+
+  position: absolute;
+  top:5.3em;
+
+  z-index: 2;
+
+  width: 100%;
+  height: 5.5em;
+
+  display: grid;
+  justify-items: center;
+  align-content: center;
+
+  row-gap: .3em;
+
+  text-align: center;
+
+}
+
+.doc-card-in-progress-info > div,
+.doc-card-no-priority-info > div {
+
+  /* font-size: 1.125em; */
+  font-weight: bold;
+
+  padding: 0 1em;
+
+}
+
+.doc-card-in-progress-info > img {
+
+  height: 1.2em;
+}
+
+/* ------------------------------------------ */
+/* in progress info */
+/* ------------------------------------------ */
+
+.doc-card-in-progress-info {
+
+  background-color: rgb(255, 217, 0);
+  color:rgb(72, 72, 72);
+
+  /* display: none; */
+
+}
+
+
+
+/* ------------------------------------------ */
+/* no priority info */
+/* ------------------------------------------ */
+
+.doc-card-no-priority-info {
+
+  background-color: rgb(28, 28, 28);
+  color:white;
+
+}
+
+.doc-card-no-priority-info > img {
+
+  height: .9em;
 }
 
 /* ------------------------------------------------------------- */
@@ -98,15 +182,25 @@
   border-radius: .8em;
 }
 
+.doc-card-container-in-progress > .img-doc-view,
+.doc-card-container-no-priority .img-doc-view {
+
+  opacity: .8;
+  filter: grayscale(1);
+
+}
+
 /* ------------------------------------------------------------- */
 /* Doc Link | Doc Card Container
 /* ------------------------------------------------------------- */
 
 .link-doc-container {
 
+  justify-self: flex-end;
+
   text-decoration: none;
 
-  height: 3em;
+  height: 2.6em;
   padding: 0 1em;
 
   display: flex;
@@ -115,10 +209,12 @@
 
   column-gap: .8em;
 
-  border-radius: 1em;
+  border-radius: .8em;
 
-  background-color: rgb(205, 205, 205);
-  color:black;
+  background-color: rgb(243, 243, 243);
+
+  color:grey;
+  border: 1px solid grey;
 
   transition: all .4s;
   cursor: pointer;
@@ -127,12 +223,13 @@
 .link-doc-container > div {
 
   font-weight: bold;
-  font-size: 1.125em;
+  /* font-size: 1.125em; */
 }
 
 .link-doc-container:visited {
 
-  color:black;
+
+  color:grey;
 }
 
 .link-doc-container:hover {

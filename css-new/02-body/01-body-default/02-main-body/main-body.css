@@ -79,3 +79,13 @@
    /* background-color: blue; */
 
 }
+
+/* ------------------------------------------- */
+/* Resp Handling Sub Headline Category
+/* ------------------------------------------- */
+
+.resp-handling-sub-headline-category {
+
+  flex-direction: column-reverse;
+
+}

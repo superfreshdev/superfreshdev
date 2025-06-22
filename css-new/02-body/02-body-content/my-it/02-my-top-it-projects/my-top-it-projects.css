@@ -4,6 +4,9 @@
 /* : styles my it projects
 /* -------------------------------------------------------------- */
 
-/* 🟣 Universal -> tab nav filter  */
+#my-it-projects-container {
 
-/* 🟣 Default + top 3 (2css) + more (2css)  */
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
+}

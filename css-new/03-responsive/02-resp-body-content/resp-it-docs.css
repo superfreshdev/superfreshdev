@@ -4,13 +4,129 @@
 /* : responsive sets for it docs
 /* -------------------------------------------------------------- */
 
+
+/* -------------------------------------------------------------- */
+/* >= 330px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 330px ) {
+
+  /* ------------------------------------------ */
+  /* Doc Card Containers
+  /* ------------------------------------------ */
+
+  .doc-card-container,
+  .doc-card-container-in-progress,
+  .doc-card-container-no-priority {
+
+    width: 9em;
+
+  }
+
+
+  /* ------------------------------------------ */
+  /* Doc Card In Progress / No Prio
+  /* ------------------------------------------ */
+
+  .doc-card-in-progress-info,
+  .doc-card-no-priority-info {
+
+    top: 6em;
+
+  }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 370px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 370px ) {
+
+  /* ------------------------------------------ */
+  /* Doc Card Containers
+  /* ------------------------------------------ */
+
+  .doc-card-container,
+  .doc-card-container-in-progress,
+  .doc-card-container-no-priority {
+
+    width: 10em;
+
+  }
+
+  /* ------------------------------------------ */
+  /* Doc Card In Progress / No Prio
+  /* ------------------------------------------ */
+
+  .doc-card-in-progress-info,
+  .doc-card-no-priority-info {
+
+    top: 6.8em;
+
+  }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 420px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 420px ) {
+
+  /* ------------------------------------------ */
+  /* Doc Card Containers
+  /* ------------------------------------------ */
+
+  .doc-card-container,
+  .doc-card-container-in-progress,
+  .doc-card-container-no-priority {
+
+    width: 11em;
+
+  }
+
+  /* ------------------------------------------ */
+  /* Doc Card In Progress / No Prio
+  /* ------------------------------------------ */
+
+  .doc-card-in-progress-info,
+  .doc-card-no-priority-info {
+
+    top: 7.5em;
+
+  }
+
+}
+
 /* -------------------------------------------------------------- */
 /* >= 450px width
 /* -------------------------------------------------------------- */
 
-
 @media (min-width: 450px ) {
 
+  /* ------------------------------------------ */
+  /* Doc Card Containers
+  /* ------------------------------------------ */
+
+  .doc-card-container,
+  .doc-card-container-in-progress,
+  .doc-card-container-no-priority {
+
+    width: 12em;
+
+  }
+
+  /* ------------------------------------------ */
+  /* Doc Card In Progress / No Prio
+  /* ------------------------------------------ */
+
+  .doc-card-in-progress-info,
+  .doc-card-no-priority-info {
+
+    top: 8.2em;
+
+  }
 
   /* -------------------------------------------------------------- */
   /* Tab Selector | Mobile
@@ -22,6 +138,36 @@
     width: auto;
   }
 
+}
+
+/* -------------------------------------------------------------- */
+/* >= 520px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 520px ) {
+
+  /* ------------------------------------------ */
+  /* Doc Card Containers
+  /* ------------------------------------------ */
+
+  .doc-card-container,
+  .doc-card-container-in-progress,
+  .doc-card-container-no-priority {
+
+    width: 14em;
+
+  }
+
+  /* ------------------------------------------ */
+  /* Doc Card In Progress / No Prio
+  /* ------------------------------------------ */
+
+  .doc-card-in-progress-info,
+  .doc-card-no-priority-info {
+
+    top: 9.5em;
+
+  }
 
 }
 
