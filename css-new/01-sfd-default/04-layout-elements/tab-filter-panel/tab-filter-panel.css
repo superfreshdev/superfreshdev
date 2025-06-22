@@ -38,6 +38,8 @@
     transition: all .4s;
     cursor: pointer;
 
+
+
 }
 
 /* ------------------------------------------------------------- */
@@ -68,6 +70,8 @@
 
     transition: all .4s;
     cursor: pointer;
+
+    font-weight: bold;
 
 }
 
