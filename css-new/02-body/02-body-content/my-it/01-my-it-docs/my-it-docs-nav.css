@@ -1,0 +1,53 @@
+/* ------------------------------------------------------------------- */
+/* > my-it-docs-nav.css
+/*
+/* Style the it docs nav style and radio handlings
+/*
+/* ------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+/* My IT Docs Nav
+/* -------------------------------------------------------------- */
+
+#my-it-docs-nav {
+
+  padding: 0 .8em;
+
+  background-color: red;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Tab Selector | Mobile
+/* -------------------------------------------------------------- */
+
+#my-it-docs-nav .tab-selector {
+
+  /* mobile */
+  width: 100%;
+}
+
+
+/* -------------------------------------------------------------- */
+/* Nav Handling | Style
+/* -------------------------------------------------------------- */
+
+/* default  */
+#radio-it-docs-web-dev:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-web-dev"] > .custom-radio-default > img,
+#radio-it-docs-software-concepts:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-software-concepts"] > .custom-radio-default > img,
+#radio-it-docs-software-mobile-dev:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-software-mobile-dev"] > .custom-radio-default > img,
+#radio-it-docs-software-architecture:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-software-architecture"] > .custom-radio-default > img,
+#radio-it-docs-quality-engineering:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-quality-engineering"] > .custom-radio-default > img,
+#radio-it-docs-it-tools:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-it-tools"] > .custom-radio-default > img,
+#radio-it-docs-backend:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-backend"] > .custom-radio-default > img,
+#radio-it-docs-data-science:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-data-science"] > .custom-radio-default > img {
+
+  display: flex;
+
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* Nav Handling | Move
+/* -------------------------------------------------------------- */

@@ -1,0 +1,141 @@
+/* ------------------------------------------------------------------- */
+/* > my-it-docs-container.css
+/*
+/* ...
+/*
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Container
+/* ------------------------------------------------------------- */
+
+#my-it-docs-container {
+
+  width: 100%;
+  padding: 2em .8em;
+
+  display: grid;
+  row-gap: 3em;
+
+  /* background-color: rgb(147, 147, 147); */
+}
+
+/* ------------------------------------------------------------- */
+/* Doc Row Category Container
+/* ------------------------------------------------------------- */
+
+.doc-row-category-container {
+
+  display: grid;
+  row-gap: 3em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | Doc Row Category Container
+/* ------------------------------------------------------------- */
+
+.doc-row-category-container > header {
+
+  height: 3.5em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  background-color: grey;
+
+
+}
+
+.doc-row-category-container > header > div {
+
+  font-size: 1.25em;
+}
+
+/* ------------------------------------------------------------- */
+/* Main | Doc Row Category Container
+/* ------------------------------------------------------------- */
+
+.doc-row-category-container > main {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  column-gap: 3em;
+  row-gap: 3em;
+}
+
+
+/* ------------------------------------------------------------- */
+/* Doc Card Container
+/* ------------------------------------------------------------- */
+
+.doc-card-container {
+
+  width: 14em;
+
+  display: grid;
+  row-gap: 1em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | Doc Card Container
+/* ------------------------------------------------------------- */
+
+.img-doc-view {
+
+  width: 100%;
+
+  border-radius: .8em;
+}
+
+/* ------------------------------------------------------------- */
+/* Doc Link | Doc Card Container
+/* ------------------------------------------------------------- */
+
+.link-doc-container {
+
+  text-decoration: none;
+
+  height: 3em;
+  padding: 0 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  column-gap: .8em;
+
+  border-radius: 1em;
+
+  background-color: rgb(205, 205, 205);
+  color:black;
+
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.link-doc-container > div {
+
+  font-weight: bold;
+  font-size: 1.125em;
+}
+
+.link-doc-container:visited {
+
+  color:black;
+}
+
+.link-doc-container:hover {
+
+  background-color: wheat;
+}

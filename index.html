@@ -144,11 +144,18 @@
 
                 <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/my-it.css">
 
-                <!-- it docs | my it -->
-                <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs.css">
+                    <!-- -------------------------------- -->
+                    <!-- it docs | my it -->
+                    <!-- -------------------------------- -->
+                    <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs.css">
 
-                <!-- it projects | my it -->
-                <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/02-my-top-it-projects/my-top-it-projects.css">
+                    <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs-nav.css">
+                    <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs-doc-layout.css">
+
+                    <!-- -------------------------------- -->
+                    <!-- it projects | my it -->
+                    <!-- -------------------------------- -->
+                    <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/02-my-top-it-projects/my-top-it-projects.css">
 
 
                 <!-- ---------------------- -->
@@ -201,10 +208,13 @@
                 <link rel="stylesheet" href="css-new/03-responsive/02-resp-body-content/resp-about.css">
 
                 <!-- resp my it  -->
+                <link rel="stylesheet" href="css-new/03-responsive/02-resp-body-content/resp-it-docs.css">
 
                 <!-- resp my private  -->
+                <link rel="stylesheet" href="css-new/03-responsive/02-resp-body-content/resp-private.css">
 
                 <!-- resp to be fresh  -->
+                <link rel="stylesheet" href="css-new/03-responsive/02-resp-body-content/resp-to-be-fresh.css">
 
 
 
@@ -1560,19 +1570,49 @@
                                     <!-- ----------------------------------------------------------- -->
                                     <div class="w-100p h-100p flex jc-c">
 
-                                        <div>
-                                            Category Headline - My IT Docs(Content Only in German) 1/2
+                                        <div class="sub-headline-category-container">
+
+                                            <!-- ----------------------------------------- -->
+                                            <!-- My IT Docs | Sub Headline Category -->
+                                            <!-- ----------------------------------------- -->
+                                            <div>
+
+                                                <img src="media/img/icons/emojies/emoji-books.png" class="img-h-2" alt="img">
+                                                <div>
+                                                    <div class="title-sub-headline-category">My IT-Docs</div>
+                                                    <div class="sub-title-sub-headline-category">Content Only in German</div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ----------------------------------------- -->
+                                            <!-- Number Category | Sub Headline Category -->
+                                            <!-- ----------------------------------------- -->
+                                            <div>
+                                                1/2
+                                            </div>
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- radio boxes -->
+                            <input type="radio" id="radio-it-docs-filter-close" name="radio-it-docs" style="display: none;">
+
+                            <input type="radio" id="radio-it-docs-web-dev" name="radio-it-docs" style="display: none;">
+                            <input type="radio" id="radio-it-docs-software-concepts" name="radio-it-docs" style="display: none;">
+                            <input type="radio" id="radio-it-docs-software-mobile-dev" name="radio-it-docs" style="display: none;">
+                            <input type="radio" id="radio-it-docs-software-architecture" name="radio-it-docs" style="display: none;">
+                            <input type="radio" id="radio-it-docs-quality-engineering" name="radio-it-docs" style="display: none;">
+                            <input type="radio" id="radio-it-docs-it-tools" name="radio-it-docs" style="display: none;">
+                            <input type="radio" id="radio-it-docs-backend" name="radio-it-docs" style="display: none;">
+                            <input type="radio" id="radio-it-docs-data-science" name="radio-it-docs" style="display: none;">
 
                             <!-- --------------------------------------------------- -->
                             <!-- 🟥 [2/4] | Nav | My IT                             -->
                             <!-- --------------------------------------------------- -->
-                            <div class="row-content-container">
+                            <div id="my-it-docs-nav-radio-handle" class="row-content-container">
 
                                 <!-- ----------------------------------------------------------- -->
                                 <!-- RESP Main Content                                           -->
@@ -1585,7 +1625,7 @@
                                     <div class="w-100p h-100p flex jc-c">
 
                                         <!-- ------------------------------------------------------- -->
-                                        <!-- NAV -->
+                                        <!-- NAV | Tab Filte Panel                                   -->
                                         <!-- ------------------------------------------------------- -->
                                         <nav id="my-it-docs-nav" class="tab-filter-panel">
 
@@ -1601,15 +1641,27 @@
                                             <!-- -------------------------------------------------------------- -->
                                             <!-- Web-Dev | Tab Selector                                 -->
                                             <!-- -------------------------------------------------------------- -->
-                                            <label for="radio-my-it-docs-web-dev" class="tab-selector">
+                                            <label for="radio-it-docs-web-dev" class="tab-selector">
 
-                                                <img src="media/img/icons/icons/it-icons/web-code-black.png" class="img-h-1-3" alt="img">
-                                                <div>Web-Development</div>
+                                                <!-- ---------------------- -->
+                                                <!-- Label Img Container    -->
+                                                <!-- ---------------------- -->
+                                                <div>
+                                                    <img src="media/img/icons/icons/it-icons/web-code-black.png" class="img-h-1-3" alt="img">
+                                                </div>
+
+                                                <!-- ---------------------- -->
+                                                <!-- Label Text Container    -->
+                                                <!-- ---------------------- -->
+                                                <div>
+                                                    <div>Web-Development</div>
+                                                </div>
+
 
                                                 <!-- ---------------------- -->
                                                 <!-- Custom Radio -->
                                                 <!-- ---------------------- -->
-                                                <div class="custom-radio">
+                                                <div class="custom-radio-default">
                                                     <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                 </div>
 
@@ -1618,7 +1670,7 @@
                                             <!-- -------------------------------------------------------------- -->
                                             <!-- Software Concepts | Tab Selector                               -->
                                             <!-- -------------------------------------------------------------- -->
-                                            <label for="radio-my-it-docs-web-dev" class="tab-selector">
+                                            <label for="radio-it-docs-software-concepts" class="tab-selector">
 
                                                 <img src="media/img/icons/icons/software-concepts.png" class="img-h-1-3" alt="img">
                                                 <div>Software Concepts</div>
@@ -1626,7 +1678,7 @@
                                                 <!-- ---------------------- -->
                                                 <!-- Custom Radio -->
                                                 <!-- ---------------------- -->
-                                                <div class="custom-radio">
+                                                <div class="custom-radio-default">
                                                     <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                 </div>
 
@@ -1635,7 +1687,7 @@
                                             <!-- -------------------------------------------------------------- -->
                                             <!-- Software/Mobile-Dev | Tab Selector                             -->
                                             <!-- -------------------------------------------------------------- -->
-                                            <label for="radio-my-it-docs-web-dev" class="tab-selector">
+                                            <label for="radio-it-docs-software-mobile-dev" class="tab-selector">
 
                                                 <img src="media/img/icons/icons/it-icons/brackets-black.png" class="img-h-1-3" alt="img">
                                                 <div>Software/Mobile-Dev</div>
@@ -1643,7 +1695,7 @@
                                                 <!-- ---------------------- -->
                                                 <!-- Custom Radio -->
                                                 <!-- ---------------------- -->
-                                                <div class="custom-radio">
+                                                <div class="custom-radio-default">
                                                     <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                 </div>
 
@@ -1652,7 +1704,7 @@
                                             <!-- -------------------------------------------------------------- -->
                                             <!-- Software Architecture | Tab Selector                           -->
                                             <!-- -------------------------------------------------------------- -->
-                                            <label for="radio-my-it-docs-web-dev" class="tab-selector">
+                                            <label for="radio-it-docs-software-architecture" class="tab-selector">
 
                                                 <img src="media/img/icons/icons/layers.png" class="img-h-1-4" alt="img">
                                                 <div>Software Architecture</div>
@@ -1660,7 +1712,7 @@
                                                 <!-- ---------------------- -->
                                                 <!-- Custom Radio -->
                                                 <!-- ---------------------- -->
-                                                <div class="custom-radio">
+                                                <div class="custom-radio-default">
                                                     <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                 </div>
 
@@ -1669,7 +1721,7 @@
                                             <!-- -------------------------------------------------------------- -->
                                             <!-- Quality Engineering | Tab Selector                             -->
                                             <!-- -------------------------------------------------------------- -->
-                                            <label for="radio-my-it-docs-web-dev" class="tab-selector">
+                                            <label for="radio-it-docs-quality-engineering" class="tab-selector">
 
                                                 <img src="media/img/icons/icons/it-icons/clean-code.png" class="img-h-1-3" alt="img">
                                                 <div>Quality Engineering</div>
@@ -1677,7 +1729,7 @@
                                                 <!-- ---------------------- -->
                                                 <!-- Custom Radio -->
                                                 <!-- ---------------------- -->
-                                                <div class="custom-radio">
+                                                <div class="custom-radio-default">
                                                     <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                 </div>
 
@@ -1687,7 +1739,7 @@
                                             <!-- -------------------------------------------------------------- -->
                                             <!-- IT-Tools | Tab Selector                                        -->
                                             <!-- -------------------------------------------------------------- -->
-                                            <label for="radio-my-it-docs-web-dev" class="tab-selector">
+                                            <label for="radio-it-docs-it-tools" class="tab-selector">
 
                                                 <img src="media/img/icons/icons/it-icons/it-tools-black.png" class="img-h-1-3" alt="img">
                                                 <div>IT-Tools</div>
@@ -1695,7 +1747,7 @@
                                                 <!-- ---------------------- -->
                                                 <!-- Custom Radio -->
                                                 <!-- ---------------------- -->
-                                                <div class="custom-radio">
+                                                <div class="custom-radio-default">
                                                     <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                 </div>
 
@@ -1705,7 +1757,7 @@
                                             <!-- -------------------------------------------------------------- -->
                                             <!-- Backend | Tab Selector                                         -->
                                             <!-- -------------------------------------------------------------- -->
-                                            <label for="radio-my-it-docs-web-dev" class="tab-selector">
+                                            <label for="radio-it-docs-backend" class="tab-selector">
 
                                                 <img src="media/img/icons/icons/it-icons/backend-black.png" class="img-h-1-3" alt="img">
                                                 <div>Backend</div>
@@ -1713,7 +1765,7 @@
                                                 <!-- ---------------------- -->
                                                 <!-- Custom Radio -->
                                                 <!-- ---------------------- -->
-                                                <div class="custom-radio">
+                                                <div class="custom-radio-default">
                                                     <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                 </div>
 
@@ -1723,7 +1775,7 @@
                                             <!-- -------------------------------------------------------------- -->
                                             <!-- Data Science | Tab Selector                                    -->
                                             <!-- -------------------------------------------------------------- -->
-                                            <label for="radio-my-it-docs-web-dev" class="tab-selector">
+                                            <label for="radio-it-docs-data-science" class="tab-selector">
 
                                                 <img src="media/img/icons/icons/it-icons/ai-ds-black.png" class="img-h-1-5" alt="img">
                                                 <div>Data Science</div>
@@ -1731,11 +1783,13 @@
                                                 <!-- ---------------------- -->
                                                 <!-- Custom Radio -->
                                                 <!-- ---------------------- -->
-                                                <div class="custom-radio">
+                                                <div class="custom-radio-default">
                                                     <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
                                                 </div>
 
                                             </label>
+
+
 
 
 
@@ -1767,7 +1821,258 @@
                                             <!-- --------------------------------------------------- -->
                                             <div id="my-it-docs-container">
 
-                                                My IT Docs Container ( header + nav + docs )
+
+                                                <!-- -------------------------------------------------- -->
+                                                <!-- Angular 17 | Doc Row Category Container -->
+                                                <!-- -------------------------------------------------- -->
+                                                <div class="doc-row-category-container">
+
+                                                    <!-- ----------------------------------------------- -->
+                                                    <!-- Header -->
+                                                    <!-- ----------------------------------------------- -->
+                                                    <header>
+                                                        <img src="media/img/icons/tech-icons/angular.png" class="img-h-1-6" alt="img">
+                                                        <div>Angular 17 (2023)</div>
+                                                    </header>
+
+                                                    <!-- ----------------------------------------------- -->
+                                                    <!-- Main -->
+                                                    <!-- ----------------------------------------------- -->
+                                                    <main>
+
+                                                        <!-- ---------------------------------------------- -->
+                                                        <!-- Angular 1 -  | Doc Card Container -->
+                                                        <!-- ---------------------------------------------- -->
+                                                        <div class="doc-card-container">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Img Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-1-oeko.png" class="img-doc-view" alt="img">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Link Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <a href="" target="_blank" class="link-doc-container">
+
+                                                                <div>PDF | Anschauen </div>
+                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                            </a>
+
+
+                                                        </div>
+
+                                                        <!-- ---------------------------------------------- -->
+                                                        <!-- Angular 2 -  | Doc Card Container -->
+                                                        <!-- ---------------------------------------------- -->
+                                                        <div class="doc-card-container">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Img Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-2-cli-projekt.png" class="img-doc-view" alt="img">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Link Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <a href="" target="_blank" class="link-doc-container">
+
+                                                                <div>PDF | Anschauen </div>
+                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                            </a>
+
+
+                                                        </div>
+
+                                                        <!-- ---------------------------------------------- -->
+                                                        <!-- Angular 3 -  | Doc Card Container -->
+                                                        <!-- ---------------------------------------------- -->
+                                                        <div class="doc-card-container">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Img Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-3-komponenten.png" class="img-doc-view" alt="img">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Link Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <a href="" target="_blank" class="link-doc-container">
+
+                                                                <div>PDF | Anschauen </div>
+                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                            </a>
+
+
+                                                        </div>
+
+                                                        <!-- ---------------------------------------------- -->
+                                                        <!-- Angular 4 -  | Doc Card Container -->
+                                                        <!-- ---------------------------------------------- -->
+                                                        <div class="doc-card-container">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Img Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-4-di.png" class="img-doc-view" alt="img">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Link Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <a href="" target="_blank" class="link-doc-container">
+
+                                                                <div>PDF | Anschauen </div>
+                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                            </a>
+
+
+                                                        </div>
+
+                                                        <!-- ---------------------------------------------- -->
+                                                        <!-- Angular 5 -  | Doc Card Container -->
+                                                        <!-- ---------------------------------------------- -->
+                                                        <div class="doc-card-container">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Img Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/05-06/ang17-05-erweiterte.png" class="img-doc-view" alt="img">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Link Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <a href="" target="_blank" class="link-doc-container">
+
+                                                                <div>PDF | Anschauen </div>
+                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                            </a>
+
+
+                                                        </div>
+
+                                                        <!-- ---------------------------------------------- -->
+                                                        <!-- Angular 6 -  | Doc Card Container -->
+                                                        <!-- ---------------------------------------------- -->
+                                                        <div class="doc-card-container">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Img Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/05-06/ang17-06-routing.png" class="img-doc-view" alt="img">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Link Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <a href="" target="_blank" class="link-doc-container">
+
+                                                                <div>PDF | Anschauen </div>
+                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                            </a>
+
+
+                                                        </div>
+
+                                                    </main>
+
+                                                </div>
+
+                                                <!-- -------------------------------------------------- -->
+                                                <!-- NodeJS,NestJS | Doc Row Category Container -->
+                                                <!-- -------------------------------------------------- -->
+                                                <div class="doc-row-category-container">
+
+                                                    <!-- ----------------------------------------------- -->
+                                                    <!-- Header -->
+                                                    <!-- ----------------------------------------------- -->
+                                                    <header>
+                                                        <img src="media/img/icons/icons/sand-der-zeit.png" class="img-h-1-6" alt="img">
+                                                        <div>JS-Webserver </div>
+                                                    </header>
+
+                                                    <!-- ----------------------------------------------- -->
+                                                    <!-- Main -->
+                                                    <!-- ----------------------------------------------- -->
+                                                    <main>
+
+                                                        <!-- ---------------------------------------------- -->
+                                                        <!-- NodeJS -  | Doc Card Container -->
+                                                        <!-- ---------------------------------------------- -->
+                                                        <div class="doc-card-container">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Img Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <img src="media/img/content/it-docs/01-web-dev/03-js-webservers/nodejs-grundlagen.png" class="img-doc-view" alt="img">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Link Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <a href="" target="_blank" class="link-doc-container">
+
+                                                                <div>PDF | Anschauen </div>
+                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                            </a>
+
+
+                                                        </div>
+
+                                                        <!-- ---------------------------------------------- -->
+                                                        <!-- NestJS -  | Doc Card Container -->
+                                                        <!-- ---------------------------------------------- -->
+                                                        <div class="doc-card-container">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Img Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <img src="media/img/content/it-docs/01-web-dev/03-js-webservers/nestjs-grundlagen.png" class="img-doc-view" alt="img">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Link Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <a href="" target="_blank" class="link-doc-container">
+
+                                                                <div>PDF | Anschauen </div>
+                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                            </a>
+
+
+                                                        </div>
+
+                                                        <!-- ---------------------------------------------- -->
+                                                        <!-- NextJS -  | Doc Card Container -->
+                                                        <!-- ---------------------------------------------- -->
+                                                        <div class="doc-card-container">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Img Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <img src="media/img/content/it-docs/01-web-dev/03-js-webservers/nextjs-grundlagen.png" class="img-doc-view" alt="img">
+
+                                                            <!-- ---------------------------------------------- -->
+                                                            <!-- Doc Link Container -->
+                                                            <!-- ---------------------------------------------- -->
+                                                            <a href="" target="_blank" class="link-doc-container">
+
+                                                                <div>PDF | Anschauen </div>
+                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                            </a>
+
+
+                                                        </div>
+
+                                                    </main>
+
+                                                </div>
+
 
                                             </div>
 

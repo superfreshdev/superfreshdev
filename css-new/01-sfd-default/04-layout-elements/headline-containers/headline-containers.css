@@ -45,7 +45,7 @@
 
     font-weight: bold;
 
-    border-radius: .8em;
+    border-radius: 1em;
 
     background-color: wheat;
 
@@ -77,8 +77,6 @@
 
 .headline-sub-topic-dark-element {
 
-    border: 1px solid grey;
-
     border: 1px solid rgb(78, 78, 78);
 
 }
@@ -86,5 +84,79 @@
 .headline-sub-topic-light-element {
 
     border: 4px solid red;
+
+}
+
+
+/* ----------------------------------------- */
+/* ⚠️ Experiment
+/* ----------------------------------------- */
+
+.sub-headline-category-container {
+
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+/* --------------------------------------------------- */
+/* img + title */
+/* --------------------------------------------------- */
+
+.sub-headline-category-container > div:nth-of-type(1) {
+
+    height: 5.5em;
+    padding: 0 1.3em;
+
+    display: flex;
+    align-items: center;
+    column-gap: 1.3em;
+
+    border-radius: 1.3em;
+
+    background-color: rgb(28, 28, 28);
+}
+
+.sub-headline-category-container > div:nth-of-type(1) > div:nth-of-type(1) {
+
+    display: grid;
+    row-gap: .3em;
+}
+
+.sub-headline-category-container > div:nth-of-type(1) > div:nth-of-type(1) .title-sub-headline-category {
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+    color:white;
+
+}
+
+.sub-headline-category-container > div:nth-of-type(1) > div:nth-of-type(1) .sub-title-sub-headline-category {
+
+   font-size: 1.125em;
+   color:grey;
+}
+
+/* --------------------------------------------------- */
+/* number of category */
+/* --------------------------------------------------- */
+
+.sub-headline-category-container > div:nth-of-type(2) {
+
+    font-size: 1.125em;
+
+    height: 3em;
+    width: 3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .8em;
+
+    border: 1px solid rgb(75, 75, 75);
+
+    color:rgb(97, 97, 97);
 
 }
