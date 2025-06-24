@@ -1,21 +1,16 @@
 /* -------------------------------------------------------------- */
-/* > my-it-projects.css
+/* > it-project-video-container.css
 /*
-/* : styles my it projects
+/* : styles the video container of it project card
 /* -------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------- */
-/* My IT Projects Container
+/* It Project Video Container
 /* ------------------------------------------------------------- */
 
-#my-it-projects-container {
+.it-project-video-container {
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap:3em;
-
-  background-color: blue;
+  background-color: red;
 
 }

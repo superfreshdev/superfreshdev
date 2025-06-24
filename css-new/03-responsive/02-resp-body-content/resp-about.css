@@ -9,15 +9,15 @@
 /* >= 340px
 /* ------------------------------------------------------------------- */
 
-@media ( min-width: 340px ) {
+@media ( min-width: 320px ) {
 
     /* ------------------------------------------------ */
-    /* ⚠️ Img Professional Me About ( umbennen ) */
+    /*  Img About Quick Info Me as Real */
     /* ------------------------------------------------ */
 
-    #img-professional-me-about {
+    #img-about-quick-info-me-as-real {
 
-        width: 80%;
+        width: 90%;
     }
 
 }
@@ -28,13 +28,32 @@
 
 @media ( min-width: 340px ) {
 
+
     /* ------------------------------------------------ */
-    /* ⚠️ Img Professional Me About */
+    /*  Img About Quick Info Me as Real */
     /* ------------------------------------------------ */
 
-    #img-professional-me-about {
+    #img-about-quick-info-me-as-real {
 
-        width: 60%;
+        width: 85%;
+    }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 400px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 400px ) {
+
+
+    /* ------------------------------------------------ */
+    /*  Img About Quick Info Me as Real */
+    /* ------------------------------------------------ */
+
+    #img-about-quick-info-me-as-real {
+
+        width: 80%;
     }
 
 }
@@ -46,12 +65,12 @@
 @media ( min-width: 450px ) {
 
     /* ------------------------------------------------ */
-    /* ⚠️ Img Professional Me About */
+    /*  Img About Quick Info Me as Real */
     /* ------------------------------------------------ */
 
-    #img-professional-me-about {
+    #img-about-quick-info-me-as-real {
 
-        width: 40%;
+        width: 60%;
     }
 
 }
@@ -63,23 +82,13 @@
 @media ( min-width: 500px ) {
 
     /* ------------------------------------------------ */
-    /* ⚠️ Img Professional Me About */
+    /*  Img About Quick Info Me as Real */
     /* ------------------------------------------------ */
 
-    #img-professional-me-about {
+    #img-about-quick-info-me-as-real {
 
         width: 15em;
     }
-
-}
-
-
-/* ------------------------------------------------------------------- */
-/* >= 600px
-/* ------------------------------------------------------------------- */
-
-@media ( min-width: 600px ) {
-
 
 }
 
@@ -95,12 +104,8 @@
 
     #about-quick-info-container {
 
-
-        /* mobile */
+       /* bring elements in the middle of each other */
        align-items: center;
-       /* important to let elements left by using max-width */
-       /* justify-content: flex-start; */
-
 
        grid-template-areas:
         'img arrow info'
@@ -109,16 +114,25 @@
         grid-template-rows: auto auto;
         grid-template-columns: auto auto auto;
 
-        column-gap: 1em;
+        column-gap: 1.3em;
 
     }
 
     #about-quick-info {
 
         max-width: 35em;
+
+        justify-items: start;
+        row-gap: 1em;
     }
 
-    #about-arrow-container > div:nth-of-type(1) {
+    #about-quick-info > main {
+
+        text-align: left;
+
+    }
+
+    #arrow-about-quick-info {
 
         transform: rotate(0deg);
 
@@ -126,29 +140,14 @@
 
 }
 
+
 /* ------------------------------------------------------------------- */
 /* >= 800px
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 800px ) {
 
-    /* -------------------------------------------------- */
-    /* My IT Skills Container | Main
-    /* -------------------------------------------------- */
 
-    #about-my-it-skills-container > main {
-
-        grid-template-areas:
-
-        'web-dev software-mobile-dev'
-        'backend backend'
-        'quote quote'
-        'number number';
-
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 1fr 1.2fr;
-
-    }
 
     /* --------------------------------------------------------------*/
     /* More Private Info Container                                   */
@@ -208,8 +207,9 @@
 
 @media ( min-width: 900px ) {
 
+
     /* ------------------------------------------- */
-    /* Quick Info Container
+    /* About Quick Info Container
     /* ------------------------------------------- */
 
     #about-quick-info-container {
@@ -217,8 +217,7 @@
         /* deskotp */
         padding: 2em 0em;
 
-        column-gap: 1.5em;
-
+        /* background-color: red; */
     }
 
     /* ------------------------------------------------ */
@@ -231,13 +230,13 @@
 
     }
 
-    /* ------------------------------------------------ */
-    /* It Skills Container                              */
-    /* ------------------------------------------------ */
+    /* -------------------------------------------------- */
+    /* My IT Skills Container
+    /* -------------------------------------------------- */
 
     #about-my-it-skills-container {
 
-        padding: 4em 0em;
+        padding: 3.5em 0em;
 
     }
 

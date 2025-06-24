@@ -1,0 +1,299 @@
+/* -------------------------------------------------------------- */
+/* > about-it-skills.css
+/*
+/* : style about it skill containers
+/* -------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------*/
+/* Header | About IT Skills | Container                         */
+/* ------------------------------------------------------------- */
+
+/* i: with this id we can manipulate our
+      headline-sub-container  */
+
+#about-header-it-skills-container {
+
+  width: 100%;
+  /* background-color: red; */
+
+}
+
+/* --------------------------------------------------- */
+/* Img Clipart Laptop
+/* --------------------------------------------------- */
+
+#img-about-it-skills-clipart-laptop {
+
+  height: 12em;
+
+}
+
+/* --------------------------------------------------------------*/
+/* About My IT Skills Container                                  */
+/* ------------------------------------------------------------- */
+
+#about-my-it-skills-container {
+
+  width: 100%;
+  padding: 3.5em .8em;
+
+  display: grid;
+  justify-items: center;
+
+  grid-template-areas:
+
+    'web-dev'
+    'software-mobile-dev'
+    'backend'
+    'about-skill-quote-number';
+
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+
+  row-gap: 3em;
+
+  /* background-color: rgb(239, 239, 239); */
+
+}
+
+/* --------------------------------------------------------------*/
+/* About Skill Category Container                                */
+/* ------------------------------------------------------------- */
+
+.about-skill-category-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 3em;
+}
+
+#about-skill-web-dev {
+
+  grid-area: web-dev;
+
+}
+
+#about-skill-software-mobile-dev {
+
+  grid-area: software-mobile-dev;
+
+}
+
+#about-skill-backend {
+
+  grid-area: backend;
+
+}
+
+/* --------------------------------------------------------------*/
+/* [1/2] | Header | About Skill Category Container               */
+/* ------------------------------------------------------------- */
+
+.about-skill-category-container > header {
+
+  /* width: 100%; */
+  padding: .8em;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: .8em;
+
+  border-radius: .8em;
+
+  background-color: rgb(28, 28, 28);
+
+}
+
+.about-skill-category-container > header > div:nth-of-type(1) {
+
+  font-size: 1.125em;
+
+  line-height: 1.3em;
+
+  font-weight: bold;
+
+  color:rgb(211, 211, 211);
+}
+
+
+/* --------------------------------------------------------------*/
+/* [2/2] | Main | About Skill Category Container
+/* --------------------------------------------------------------*/
+
+.about-skill-category-container > main {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:.8em;
+
+}
+
+
+/* ------------------------------------------------------------------ */
+/* About Link Skill Item                                              */
+/* ------------------------------------------------------------------ */
+
+.about-link-skill-item {
+
+  text-decoration: none;
+
+  height: 3em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  border-radius: .8em;
+
+  /* font-weight: bold; */
+
+  /* s1 */
+  border: 1px solid rgb(49, 49, 49);
+  background-color: rgb(34, 34, 34);
+  color:rgb(84, 84, 84);
+
+  /* s2 */
+  border: 1px solid rgb(203, 203, 203);
+  background-color: rgb(241, 241, 241);
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.about-link-skill-item > div {
+
+  font-size: 1.125em;
+}
+
+
+.about-link-skill-item:visited {
+
+  color:rgb(98, 98, 98);
+
+}
+
+.about-link-skill-item:hover {
+
+  background-color: wheat;
+  color:black;
+
+}
+
+/* ----------------------------------------------------------- */
+/* About Skill Quote & Number Container
+/* ----------------------------------------------------------- */
+
+#about-skill-quote-number-container {
+
+  grid-area: about-skill-quote-number;
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1em;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------- */
+/* About Skill Quote Container
+/* ------------------------------------------- */
+
+#about-skill-quote-container {
+
+  height: 6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+
+  font-weight: bold;
+
+  /* opacity: .8; */
+
+  color:rgb(28, 28, 28);
+
+  /* background-color: red; */
+}
+
+#about-skill-quote-container > div {
+
+  font-size: 1.25em;
+}
+
+#about-skill-quote-container > div:nth-of-type(2) {
+
+  padding: .2em .4em;
+
+  border-radius: .4em;
+
+  color:wheat;
+  background-color: rgb(28, 28, 28);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------*/
+/* 🟣 Auslagern -> Headline Container | Headline Sub Container  */
+/* ------------------------------------------------------------- */
+
+/* light, light-grey, light-dark, left,right,center */
+
+.headline-sub-container {
+
+  padding: 2em 0em;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
+
+  background-color: rgb(28, 28, 28);
+
+}
+
+.headline-sub-title {
+
+  height: 4em;
+  padding: 0 1em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  border-radius: .8em;
+
+  border: 2px solid rgb(125, 125, 125);
+
+}
+
+.headline-sub-title > div {
+
+  font-size: 1.125em;
+
+  font-weight: bold;
+
+  color:rgb(223, 223, 223);
+  /* color:rgb(125, 125, 125); */
+}
+
+/* --------------------------------------------------------------*/
+/* 🟣🟣🟣🟣                                                    */
+/* ------------------------------------------------------------- */

@@ -35,3 +35,14 @@
 
   font-family: 'Courier New', Courier, monospace;
 }
+
+/* ---------------------------------------------------- */
+/* Text Emphasis
+/* ---------------------------------------------------- */
+
+.text-emph {
+
+  color:rgb(98, 98, 98);
+  font-weight: bold;
+
+}

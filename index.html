@@ -60,7 +60,8 @@
             <!-- ------------------------------------------------------------ -->
 
                 <!-- headline containers -->
-                <link rel="stylesheet" href="css-new/01-sfd-default/04-layout-elements/headline-containers/headline-containers.css">
+                <link rel="stylesheet" href="css-new/01-sfd-default/04-layout-elements/headline-containers/headline-beginning.css">
+                <link rel="stylesheet" href="css-new/01-sfd-default/04-layout-elements/headline-containers/headline-category.css">
 
                 <!-- open / close containers -->
                 <link rel="stylesheet" href="css-new/01-sfd-default/04-layout-elements/open-close-containers/open-close-containers.css">
@@ -132,11 +133,11 @@
                 <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about.css">
                 <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-nav.css">
 
-                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-quick-info.css">
-                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-it-skills.css">
+                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-quick-info.css">
+                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-it-skills.css">
 
-                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-more-private.css">
-                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-contact.css">
+                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-more-private.css">
+                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-contact.css">
 
                 <!-- ---------------------- -->
                 <!-- my it                  -->
@@ -156,6 +157,9 @@
                     <!-- it projects | my it -->
                     <!-- -------------------------------- -->
                     <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/02-my-top-it-projects/my-top-it-projects.css">
+
+                    <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/02-my-top-it-projects/it-project-card.css">
+                    <link rel="stylesheet" href="css-new/02-body/02-body-content/my-it/02-my-top-it-projects/it-project-video-container.css">
 
 
                 <!-- ---------------------- -->
@@ -208,7 +212,7 @@
                 <link rel="stylesheet" href="css-new/03-responsive/02-resp-body-content/resp-about.css">
 
                 <!-- resp my it  -->
-                <link rel="stylesheet" href="css-new/03-responsive/02-resp-body-content/resp-it-docs.css">
+                <link rel="stylesheet" href="css-new/03-responsive/02-resp-body-content/resp-it.css">
 
                 <!-- resp my private  -->
                 <link rel="stylesheet" href="css-new/03-responsive/02-resp-body-content/resp-private.css">
@@ -658,8 +662,6 @@
             <!-- ----------------------------------------------------------------------------- -->
             <!-- 🟩[1/5] | Welcome Container                                                   -->
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- i: to allow child elements easy using paddings  -->
-            <!-- i: flex jc-c 100%  -->
             <div class="row-content-container bgc-anthracite">
 
                 <!-- --------------------------------------------------------------- -->
@@ -731,16 +733,800 @@
             </div>
 
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- ➡️🟥[2/5] | About Container                                                     -->
+            <!-- 🟥[2/5] | About Container                                                     -->
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- i: to allow child elements easy using paddings  -->
-            <!-- i: flex jc-c 100%  -->
-            <div class="row-content-container">
+            <div id="about-container">
+
+                <!-- ------------------------------------------------ -->
+                <!-- Checkbox - About Nav Handling                    -->
+                <!-- ------------------------------------------------ -->
+                <input type="checkbox" id="chk-about-nav">
 
                 <!-- --------------------------------------------------------------- -->
-                <!-- Resp Max Content                                                -->
+                <!-- 🟩 [1/2] | Header & Nav | About                                 -->
                 <!-- --------------------------------------------------------------- -->
-                <div class="resp-max-content-area">
+                <div class="resp-max-content-area" id="chk-about-header-container">
+
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- width & heihgt 100% (sets)                                  -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="w-100p h-100p flex jc-c">
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- RESP Main Content                                           -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div class="resp-main-content-area">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- width & heihgt 100% (sets)                                  -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="w-100p h-100p flex jc-c">
+
+
+                                <!-- ----------------------------------------------------------- -->
+                                <!-- About Header Container                                      -->
+                                <!-- ----------------------------------------------------------- -->
+                                <div id="about-header-container">
+
+                                    <!-- ------------------------------------------- -->
+                                    <!-- Headline Beginning Title                    -->
+                                    <!-- ------------------------------------------- -->
+
+                                    <div class="headline-beginning-title">
+                                        <img src="media/img/icons/icons/nav-main-body/about-black.png" id="img-icon-about-headline" alt="img">
+                                        <div>About</div>
+                                    </div>
+
+                                    <!-- ------------------------------------------- -->
+                                    <!-- About Nav Element                           -->
+                                    <!-- ------------------------------------------- -->
+                                    <label for="chk-about-nav" id="about-nav-element">
+
+                                        <div id="about-nav-text-read">Read</div>
+                                        <div id="about-nav-text-close">Close About</div>
+                                        <img src="media/img/icons/icons/arrow-down-black.png" alt="img">
+
+                                    </label>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- --------------------------------------------------------------- -->
+                <!-- ❓🟥 [2/2] | About Content Container                              -->
+                <!-- --------------------------------------------------------------- -->
+                <div class="resp-max-content-area" id="chk-about-content-container">
+
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- width & heihgt 100% (sets)                                  -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="w-100p h-100p flex jc-c">
+
+                        <!-- --------------------------------------------------------------- -->
+                        <!-- ⬇️⬆️ | Open Close | About Content Container                    -->
+                        <!-- --------------------------------------------------------------- -->
+                        <main id="open-close-about-content-container">
+
+                            <!-- -------------------------------------------------- -->
+                            <!-- Overflow Hidden -->
+                            <!-- -------------------------------------------------- -->
+                            <!-- i: important, without overflow hidden -
+                                no smooth open/close effect -
+                                grid template row concept -->
+
+                            <div class="overflow-hidden">
+
+                                <!-- --------------------------------------------------------------- -->
+                                <!-- 🟩 [1/?] | Quick Info |                                         -->
+                                <!-- --------------------------------------------------------------- -->
+                                <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p flex jc-c">
+
+                                        <!-- --------------------------------------------------------------- -->
+                                        <!-- RESP Main  -->
+                                        <!-- --------------------------------------------------------------- -->
+                                        <div class="resp-main-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
+
+                                                <!-- --------------------------------------------------------------- -->
+                                                <!-- About Quick Info Container                                      -->
+                                                <!-- --------------------------------------------------------------- -->
+                                                <div id="about-quick-info-container" style="background-color: rgb(255, 255, 255);">
+
+                                                    <!-- -------------------------------------------- -->
+                                                    <!-- 🟩 [1/4] | Quick Info Text Container       -->
+                                                    <!-- -------------------------------------------- -->
+                                                    <div id="about-quick-info" class="quick-info-text-container">
+
+                                                        <header class="header-quick-info">
+                                                            <img src="media/img/icons/icons/thunder-grey.png" class="img-h-1-3" alt="img">
+                                                            <div>Quick Info</div>
+                                                        </header>
+
+                                                        <main>
+                                                            My Name is Marko (SuperfreshDev) and I'm from Germany.
+                                                            <br>
+                                                            I am a Fullstack Software Developer in building <br>
+                                                            <span class="text-emph" >Web-Plattforms</span> ,
+                                                            <span class="text-emph">Software/Mobile-Solutions</span>
+                                                            and creating scalable
+                                                            running <span class="text-emph">Backend-Systems</span>.
+                                                        </main>
+
+
+                                                    </div>
+
+                                                    <!-- -------------------------------------------- -->
+                                                    <!-- 🟩 [2/4] | Arrow About Quick Info             -->
+                                                    <!-- -------------------------------------------- -->
+                                                    <div id="arrow-about-quick-info">»</div>
+
+                                                    <!-- -------------------------------------------- -->
+                                                    <!-- 🟩 [3/4] | Img About Container -->
+                                                    <!-- -------------------------------------------- -->
+                                                    <div id="img-about-container">
+
+                                                        <img src="media/img/content/about/ich-mobile.png" id="img-about-quick-info-me-as-real" alt="img">
+
+                                                    </div>
+
+                                                    <!-- --------------------------------------------------- -->
+                                                    <!-- 🟩 [4/4] | Number Container Light Right             -->
+                                                    <!-- --------------------------------------------------- -->
+                                                    <div id="about-quick-info-number-container" class="number-container-light-right">
+
+                                                        <div class="number-item">
+                                                                1/4
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- --------------------------------------------------------------- -->
+                                <!-- 🟥 [1/?] | Header Category | My IT-Stack |                      -->
+                                <!-- --------------------------------------------------------------- -->
+                                <div class="resp-max-content-area" style="background-color: rgb(28, 28, 28);">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p flex jc-c">
+
+                                        <!-- --------------------------------------------------------------- -->
+                                        <!-- RESP Main  -->
+                                        <!-- --------------------------------------------------------------- -->
+                                        <div class="resp-main-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
+
+                                                <!-- --------------------------------------------------------------- -->
+                                                <!-- [1/2] | Header Sub Container -->
+                                                <!-- --------------------------------------------------------------- -->
+                                                <div id="about-header-it-skills-container" class="headline-sub-container">
+
+                                                    <!-- --------------------------------------------------- -->
+                                                    <!-- [1/2] | Headline Sub Title  -->
+                                                    <!-- --------------------------------------------------- -->
+                                                    <div class="headline-sub-title">
+
+                                                        <img src="media/img/icons/icons/it-icons/binary-type-1-white.png" style="opacity: .5;" class="img-h-2" alt="img">
+                                                        <div>My IT-Stack</div>
+
+                                                    </div>
+
+                                                    <!-- --------------------------------------------------- -->
+                                                    <!-- [2/2] | Img Clipart Laptop -->
+                                                    <!-- --------------------------------------------------- -->
+                                                    <img src="media/img/icons/clipart/me-with-laptop.png" id="img-about-it-skills-clipart-laptop" alt="img">
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <!-- --------------------------------------------------------------- -->
+                                <!-- 🟥 [2/?] | My It Skills Container | Ny IT-Stack                -->
+                                <!-- --------------------------------------------------------------- -->
+                                <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p flex jc-c">
+
+                                        <!-- ----------------------------------------------------------- -->
+                                        <!-- Resp Very Small                                             -->
+                                        <!-- ----------------------------------------------------------- -->
+                                        <div class="resp-very-small-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
+
+                                                <!-- --------------------------------------------------------------- -->
+                                                <!-- My IT Skills Container -->
+                                                <!-- --------------------------------------------------------------- -->
+                                                <div id="about-my-it-skills-container" class="-">
+
+
+                                                    <!-- ---------------------------------------------------------------- -->
+                                                    <!-- [1/5] | Web-Dev | About Skill Category Container                         -->
+                                                    <!-- ---------------------------------------------------------------- -->
+                                                    <div id="about-skill-web-dev" class="about-skill-category-container">
+
+                                                        <!-- ------------------------------------------------- -->
+                                                        <!-- Header -->
+                                                        <!-- ------------------------------------------------- -->
+                                                        <header>
+                                                            <img src="media/img/icons/icons/it-icons/web-code-light-brown.png" class="img-h-1-5" alt="img">
+                                                            <div>Web-Development</div>
+                                                        </header>
+
+                                                        <!-- ------------------------------------------------- -->
+                                                        <!-- Main -->
+                                                        <!-- ------------------------------------------------- -->
+                                                        <main>
+
+                                                            <!-- angular -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Angular ?!" href="https://www.google.com/search?q=angular&sca_esv=574dbc9e6ebca954&ei=FGdIaKXDJbmG9u8PzrnD0Ak&ved=0ahUKEwilnYm3rOeNAxU5g_0HHc7cEJoQ4dUDCBA&uact=5&oq=angular&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2FuZ3VsYXIyEBAAGIAEGLEDGEMYgwEYigUyChAAGIAEGEMYigUyCxAAGIAEGLEDGIMBMgoQABiABBhDGIoFMggQABiABBixAzIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTILEAAYgAQYsQMYgwEyBRAAGIAEMgsQABiABBixAxiDAUjsDFAAWOQLcAF4AZABAJgBaKABlQWqAQM3LjG4AQPIAQD4AQGYAgmgAsgFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICDhAuGIAEGLEDGNEDGMcBwgIQEC4YgAQY0QMYQxjHARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgINEAAYgAQYsQMYQxiKBcICDRAuGIAEGLEDGEMYigXCAggQLhiABBixA8ICChAuGIAEGEMYigXCAhwQLhiABBixAxhDGIoFGJcFGNwEGN4EGN8E2AEBmAMAugYGCAEQARgUkgcDNy4yoAebUbIHAzYuMrgHwgXCBwUyLTcuMsgHLA&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/angular19.png" class="img-h-1-4" alt="img" >
+                                                                <div>Angular</div>
+                                                            </a>
+
+                                                            <!-- react -->
+                                                            <a target="_blank" class="about-link-skill-item" title="React ?!" href="https://www.google.com/search?q=react&sca_esv=574dbc9e6ebca954&ei=ePxFaJu6EsiN9u8P7O3r6Q0&ved=0ahUKEwib1oq93uKNAxXIhv0HHez2Ot0Q4dUDCBA&uact=5&oq=react&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXJlYWN0MgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHSJYFUKADWKADcAF4ApABAJgBAKABAKoBALgBA8gBAPgBAZgCAqACCsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFmAMA4gMFEgExIECIBgGQBgiSBwEyoAcAsgcAuAcAwgcDMi0yyAcH&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/react-atom.png" class="img-h-1-4" alt="img" >
+                                                                <div>React</div>
+                                                            </a>
+
+                                                            <!-- nextjs -->
+                                                            <a target="_blank" class="about-link-skill-item" title="NextJS ?!" href="https://www.google.com/search?q=nextjs&sca_esv=d2fd9f04d01169bd&biw=1278&bih=1270&ei=41RJaPKAPeSD9u8Pksnq0Ag&ved=0ahUKEwiy_s-cj-mNAxXkgf0HHZKkGooQ4dUDCBA&uact=5&oq=nextjs&gs_lp=Egxnd3Mtd2l6LXNlcnAiBm5leHRqczINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBUiAClAAWOcIcAB4AZABAJgBYaABiwSqAQE2uAEDyAEA-AEBmAIGoAKgBMICCxAAGIAEGLEDGIMBwgIQEC4YgAQY0QMYQxjHARiKBcICEBAAGIAEGLEDGEMYgwEYigWYAwCSBwM1LjGgB9ohsgcDNS4xuAegBMIHBTAuMy4zyAcS&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/nextjs.png" class="img-h-1-4" alt="img" >
+                                                                <div>NextJS</div>
+                                                            </a>
+
+                                                            <!-- css -->
+                                                            <a target="_blank" class="about-link-skill-item" title="CSS ?!" href="https://www.google.com/search?q=css&sca_esv=574dbc9e6ebca954&ei=eE9JaOTnJ5SB9u8P2qfjMQ&ved=0ahUKEwjkg4uHiumNAxWUgP0HHdrTOAYQ4dUDCBA&uact=5&oq=css&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2NzczINEAAYgAQYsQMYQxiKBTIFEAAYgAQyDRAAGIAEGLEDGIMBGAoyChAAGIAEGEMYigUyCBAAGIAEGLEDMgoQABiABBhDGIoFMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFSI4NUIYJWO0LcAF4AZABAJgBU6AB7wGqAQEzuAEDyAEA-AEBmAIEoAKHAsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIQEAAYgAQYsQMYgwEYigUYCsICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAgsQABiABBixAxiDAcICDhAuGIAEGMcBGI4FGK8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAgUQLhiABMICDhAAGIAEGLEDGIMBGIoFwgILEC4YgAQYsQMYgwHCAggQLhiABBixA5gDAIgGAZAGCpIHATSgB-AfsgcBM7gHgQLCBwMyLTTIBxQ&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/css.png" class="img-h-1-4" alt="img" >
+                                                                <div>CSS</div>
+                                                            </a>
+
+                                                            <!-- sass -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Sass ?!" href="https://www.google.com/search?q=sass&sca_esv=574dbc9e6ebca954&ei=iU9JaIHlFev87_UPz5PV2As&ved=0ahUKEwjBzYaPiumNAxVr_rsIHc9JFbsQ4dUDCBA&uact=5&oq=sass&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHNhc3MyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyCxAuGIAEGMcBGK8BMggQLhiABBixAzIIEC4YgAQYsQMyCBAAGIAEGLEDMgsQLhiABBjHARivATIFEC4YgAQyCxAAGIAEGLEDGIMBMggQABiABBixA0jUBlAAWJ0FcAB4AZABAJgBiwGgAfcCqgEDMy4xuAEDyAEA-AEBmAIEoAKUA8ICEBAuGIAEGNEDGEMYxwEYigXCAgUQABiABMICCxAuGIAEGLEDGIMBwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYxwEYjgUYrwGYAwC6BgYIARABGBSSBwMzLjGgB-FOsgcDMy4xuAeUA8IHBTItMy4xyAcb&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/sass.png" class="img-h-1-4" alt="img" >
+                                                                <div>Sass</div>
+                                                            </a>
+
+                                                            <!-- storybook -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Storybook ?!" href="https://www.google.com/search?q=storybook&sca_esv=574dbc9e6ebca954&ei=lE9JaNOIHNv97_UPoNKM2QU&ved=0ahUKEwjToqyUiumNAxXb_rsIHSApI1sQ4dUDCBA&uact=5&oq=storybook&gs_lp=Egxnd3Mtd2l6LXNlcnAiCXN0b3J5Ym9vazIIEAAYgAQYsQMyBRAAGIAEMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIhANQAFgAcAB4AZABAJgBU6ABU6oBATG4AQPIAQD4AQL4AQGYAgGgAlmYAwCSBwExoAfVBLIHATG4B1nCBwMyLTHIBwQ&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/storybook.png" class="img-h-1-4" alt="img" >
+                                                                <div>Storybook</div>
+                                                            </a>
+
+                                                            <!-- js -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Java Script ?!" href="https://www.google.com/search?q=java+script&sca_esv=574dbc9e6ebca954&ei=o09JaN-EE8qB9u8PkZDdyQ8&ved=0ahUKEwif4rabiumNAxXKgP0HHRFIN_kQ4dUDCBA&uact=5&oq=java+script&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2phdmEgc2NyaXB0MgcQABiABBgKMgUQABiABDIHEAAYgAQYCjIFEAAYgAQyBxAAGIAEGAoyBRAAGIAEMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSJAfUABY6B1wB3gBkAEAmAGBAaAB1QiqAQQxMi4yuAEDyAEA-AEBmAIVoAKxCcICChAAGIAEGEMYigXCAg4QLhiABBjHARiOBRivAcICCxAuGIAEGLEDGIMBwgIIEAAYgAQYsQPCAg4QLhiABBixAxiDARiKBcICBRAuGIAEwgIIEC4YgAQYsQPCAgsQLhiABBixAxjUAsICERAuGIAEGMcBGJgFGJ4FGK8BwgILEAAYgAQYsQMYgwHCAgoQABiABBixAxgKmAMAkgcEMTkuMqAH658BsgcEMTIuMrgHlAnCBwYwLjIuMTnIB1E&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/js.png" class="img-h-1-4" alt="img">
+                                                                <div>Java Script</div>
+                                                            </a>
+
+                                                            <!-- ts -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Type Script ?!" href="https://www.google.com/search?q=type+script&sca_esv=574dbc9e6ebca954&ei=tE9JaJnqI-eM9u8PjJTLmQk&ved=0ahUKEwiZlNWjiumNAxVnhv0HHQzKMpMQ4dUDCBA&uact=5&oq=type+script&gs_lp=Egxnd3Mtd2l6LXNlcnAiC3R5cGUgc2NyaXB0MgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSNRwUMVlWJxvcAB4A5ABAJgBX6AB2gaqAQIxMbgBA8gBAPgBAZgCDaACmQfCAgQQABhHwgIKEAAYgAQYQxiKBcICBRAAGIAEwgILEAAYgAQYsQMYgwHCAgsQLhiABBixAxiDAcICEBAAGIAEGLEDGEMYgwEYigXCAggQABiABBixA8ICBBAAGAPCAggQLhiABBixA8ICBxAuGIAEGArCAg4QLhiABBjHARiOBRivAZgDAOIDBRIBMSBAiAYBkAYIkgcCMTOgB6FZsgcCMTG4B5AHwgcIMC4yLjEwLjHIBzg&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/ts.png" class="img-h-1-4" alt="img" >
+                                                                <div>Type Script</div>
+                                                            </a>
+
+                                                            <!-- nodejs -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Type Script ?!" href="https://www.google.com/search?sca_esv=d2fd9f04d01169bd&q=node+js&spell=1&sa=X&ved=2ahUKEwjl2O2bj-mNAxUWhP0HHU6EBk8QBSgAegQICRAB&biw=1278&bih=1270&dpr=1.5">
+                                                                <img src="media/img/icons/tech-icons/nodejs.png" class="img-h-1-4" alt="img" >
+                                                                <div>NodeJS</div>
+                                                            </a>
+
+                                                            <!-- nestjs -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Type Script ?!" href="https://www.google.com/search?q=nestjs&sca_esv=d2fd9f04d01169bd&ei=i1RJaNehLruC9u8P_Yy92Qc&ved=0ahUKEwiXk8byjumNAxU7gf0HHX1GL3sQ4dUDCBA&uact=5&oq=nestjs&gs_lp=Egxnd3Mtd2l6LXNlcnAiBm5lc3RqczIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiuC1AAWK0KcAB4AZABAJgBXKABzwOqAQE2uAEDyAEA-AEBmAIGoALzA8ICChAAGIAEGEMYigXCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIQEC4YgAQY0QMYQxjHARiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAgsQLhiABBjRAxjHAcICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAhQQLhiABBixAxiDARjHARiKBRivAcICBRAuGIAEwgILEC4YgAQYsQMY1AKYAwCSBwM1LjGgB845sgcDNS4xuAfzA8IHAzItNsgHHg&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/nestjs.svg" class="img-h-1-4" alt="img" >
+                                                                <div>NestJS</div>
+                                                            </a>
+
+                                                        </main>
+
+                                                    </div>
+
+                                                    <!-- ---------------------------------------------------------------- -->
+                                                    <!-- [2/5] | Software/Mobile-Dev | About Skill Category Container             -->
+                                                    <!-- ---------------------------------------------------------------- -->
+                                                    <div id="about-skill-software-mobile-dev" class="about-skill-category-container">
+
+                                                        <header>
+                                                            <img src="media/img/icons/icons/it-icons/brackets-light-brown.png"  class="img-h-1-5" alt="img">
+                                                            <div>Software/Mobile-Development</div>
+                                                        </header>
+
+                                                        <main>
+
+                                                            <!-- java -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Java ?!" href="https://dev.java/">
+                                                                <img src="media/img/icons/tech-icons/java-black.png" style="padding-bottom: .3em;" class="img-h-1-6" alt="img" >
+                                                                <div>Java</div>
+                                                            </a>
+
+                                                            <!-- spring boot -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Spring Boot ?!" href="https://www.google.com/search?q=spring+boot&oq=spring+boot&gs_lcrp=EgZjaHJvbWUqDwgAEEUYOxiDARixAxiABDIPCAAQRRg7GIMBGLEDGIAEMgYIARBFGEAyBggCEEUYPTIGCAMQRRg8MgYIBBBFGDwyBggFEEUYQTIGCAYQRRhBMgYIBxBFGEHSAQgyNzM1ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8">
+                                                                <img src="media/img/icons/tech-icons/springboot2.png" class="img-h-1-4" alt="img" >
+                                                                <div>Spring Boot</div>
+                                                            </a>
+
+                                                            <!-- rest api -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Rest Api ?!" href="https://www.google.com/search?q=rest+api&sca_esv=d2fd9f04d01169bd&ei=YFJJaMGHIMy79u8PuNqPkQk&ved=0ahUKEwjBt-XpjOmNAxXMnf0HHTjtI5IQ4dUDCBA&uact=5&oq=rest+api&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHJlc3QgYXBpMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMUMUABY5QpwAHgBkAEBmAGxAaABhwaqAQM2LjK4AQPIAQD4AQGYAgegAvUEwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIIEAAYgAQYkgPCAgsQABiABBiSAxiKBcICCBAAGIAEGMkDwgIQEAAYgAQYsQMYQxiDARiKBZgDAJIHAzUuMqAHkS2yBwM1LjK4B_UEwgcFMC4xLjbIBxo&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/rest.png" class="img-h-1-4" alt="img" >
+                                                                <div>Rest Api</div>
+                                                            </a>
+
+                                                            <!-- graphql -->
+                                                            <a target="_blank" class="about-link-skill-item" title="GraphQL ?!" href="https://www.google.com/search?q=graphql&sca_esv=d2fd9f04d01169bd&ei=bVJJaITVFuGB9u8Pu9nHoAo&ved=0ahUKEwjEv_XvjOmNAxXhgP0HHbvsEaQQ4dUDCBA&uact=5&oq=graphql&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2dyYXBocWwyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOYKUABY2ghwAHgBkAEAmAFloAHTBKoBAzYuMbgBA8gBAPgBAZgCB6AC8gTCAhAQLhiABBjRAxhDGMcBGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICDhAuGIAEGLEDGIMBGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAgsQABiABBixAxiDAcICCxAuGIAEGLEDGIMBwgIOEC4YgAQYxwEYjgUYrwHCAggQABiABBixA8ICCBAuGIAEGLEDmAMAkgcDNi4xoAfDNrIHAzYuMbgH8gTCBwMyLTfIBxo&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/graph.png" class="img-h-1-4" alt="img" >
+                                                                <div>GraphQL</div>
+                                                            </a>
+
+                                                            <!-- python -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Python ?!" href="https://www.google.com/search?q=python&sca_esv=d2fd9f04d01169bd&ei=dlJJaNvHDIv97_UPt4_QuQk&ved=0ahUKEwjb2pD0jOmNAxWL_rsIHbcHNJcQ4dUDCBA&uact=5&oq=python&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnB5dGhvbjINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIIEAAYgAQYsQMyChAAGIAEGEMYigUyChAAGIAEGEMYigUyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgARI3QhQAFjkBnAAeAGQAQCYAbcBoAHgBKoBAzQuMrgBA8gBAPgBAZgCBqAC-gTCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwGYAwCSBwM0LjKgB9MgsgcDNC4yuAf6BMIHAzItNsgHFg&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/python.png" class="img-h-1-4" alt="img" >
+                                                                <div>Python</div>
+                                                            </a>
+
+                                                            <!-- react native -->
+                                                            <a target="_blank" class="about-link-skill-item" title="React Native ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/react-atom.png" class="img-h-1-4" alt="img" >
+                                                                <div>React Native</div>
+                                                            </a>
+
+                                                            <!-- scrum -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Scrum ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/scrum.png" class="img-h-1-5" alt="img" >
+                                                                <div>Scrum</div>
+                                                            </a>
+
+                                                            <!-- clean code -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Clean Code ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/clean-code.png" class="img-h-1-4" alt="img" >
+                                                                <div>Clean Code</div>
+                                                            </a>
+
+                                                            <!-- ddd -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Domain Driven Design ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/ddd.png" class="img-h-1-2" alt="img" >
+                                                            </a>
+
+                                                        </main>
+
+                                                    </div>
+
+                                                    <!-- ---------------------------------------------------------------- -->
+                                                    <!-- [3/5] | Backend | About Skill Category Container                         -->
+                                                    <!-- ---------------------------------------------------------------- -->
+                                                    <div id="about-skill-backend" class="about-skill-category-container">
+
+                                                        <header>
+                                                            <img src="media/img/icons/icons/it-icons/backend-wheat.png" class="img-h-1-5" alt="img">
+                                                            <div>Backend</div>
+                                                        </header>
+
+                                                        <main>
+
+                                                            <!-- PostgreSQL -->
+                                                            <a target="_blank" class="about-link-skill-item" title="PostgreSQL ?!" href="https://www.google.com/search?q=postgresql&sca_esv=d2fd9f04d01169bd&ei=SVRJaMmWF6P97_UPveKsSQ&ved=0ahUKEwiJ3_LSjumNAxWj_rsIHT0xKwkQ4dUDCBA&uact=5&oq=postgresql&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnBvc3RncmVzcWwyEBAAGIAEGLEDGEMYgwEYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIjg5QAFi2DHAAeAGQAQCYAYoBoAHWBqoBAzguMrgBA8gBAPgBAZgCCqAC_AbCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwHCAgoQLhiABBhDGIoFwgIOEC4YgAQYsQMY0QMYxwHCAg0QABiABBixAxhDGIoFwgIOEC4YgAQYxwEYjgUYrwGYAwCSBwM3LjOgB9hFsgcDNy4zuAf8BsIHBTAuNC42yAcj&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/postgre.png" class="img-h-1-5" alt="img" >
+                                                                <div>PostgreSQL</div>
+                                                            </a>
+
+                                                            <!-- MongoDB -->
+                                                            <a target="_blank" class="about-link-skill-item" title="MongoDB ?!" href="https://www.google.com/search?q=mongodb&oq=mongodb+&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEggBEAAYQxiDARixAxiABBiKBTIMCAIQABhDGIAEGIoFMgwIAxAAGEMYgAQYigUyDAgEEAAYQxiABBiKBTIMCAUQABhDGIAEGIoFMgwIBhAAGEMYgAQYigUyBwgHEAAYgAQyDAgIEAAYQxiABBiKBTIHCAkQABiABNIBCDM4ODZqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8">
+                                                                <img src="media/img/icons/tech-icons/mongodb.png" class="img-h-1-4" alt="img" >
+                                                                <div>MongoDB</div>
+                                                            </a>
+
+                                                            <!-- Docker -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Docker ?!" href="https://www.google.com/search?q=docker&sca_esv=d2fd9f04d01169bd&ei=K1RJaN-GCor_7_UPzZ3vsAQ&ved=0ahUKEwifyL7EjumNAxWK_7sIHc3OG0YQ4dUDCBA&uact=5&oq=docker&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmRvY2tlcjINEAAYgAQYsQMYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIIEAAYgAQYsQMyDRAAGIAEGLEDGEMYigUyEBAAGIAEGLEDGEMYgwEYigUyChAAGIAEGEMYigVIxgVQAFi9BHAAeAGQAQCYAXOgAZ8EqgEDNS4xuAEDyAEA-AEBmAIGoAK_BMICBRAuGIAEwgIQEC4YgAQY0QMYQxjHARiKBcICCxAuGIAEGNEDGMcBwgIIEC4YgAQYsQOYAwCSBwMzLjOgB_UtsgcDMy4zuAe_BMIHAzItNsgHGg&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/docker.png" class="img-h-1-4" alt="img" >
+                                                                <div>Docker</div>
+                                                            </a>
+
+                                                            <!-- Kubernetes -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Kubernetes ?!" href="https://www.google.com/search?q=kubernetes&sca_esv=d2fd9f04d01169bd&ei=DVRJaIfuLr777_UPvrqCiQY&ved=0ahUKEwjHqLy2jumNAxW-_bsIHT6dIGEQ4dUDCBA&uact=5&oq=kubernetes&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmt1YmVybmV0ZXMyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARItQxQAFjuC3AAeAGQAQCYAW-gAeAGqgEDNy4zuAEDyAEA-AEBmAIKoAKMB8ICChAAGIAEGEMYigXCAgoQLhiABBhDGIoFwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICCBAuGIAEGLEDwgILEC4YgAQYxwEYrwGYAwCSBwM2LjSgB_JKsgcDNi40uAeMB8IHBTAuMy43yAcl&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/kubernetes.png" class="img-h-1-5" alt="img" >
+                                                                <div>Kubernetes</div>
+                                                            </a>
+
+                                                            <!-- Apache Kafka -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Apache Kafka ?!" href="https://www.google.com/search?q=apache+kafka&sca_esv=d2fd9f04d01169bd&ei=AVRJaODxM7-G9u8P-ovT4Ac&ved=0ahUKEwig9uSwjumNAxU_g_0HHfrFFHwQ4dUDCBA&uact=5&oq=apache+kafka&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGFwYWNoZSBrYWZrYTILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI5hNQAFi-EnABeAGQAQCYAWegAfIHqgEEMTIuMbgBA8gBAPgBAZgCDqACsQjCAgoQABiABBhDGIoFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgIQEC4YgAQY0QMYQxjHARiKBcICCBAAGIAEGLEDwgIQEAAYgAQYsQMYQxiDARiKBcICCxAAGIAEGLEDGIoFwgIIEC4YgAQYsQPCAg0QABiABBixAxhDGIoFwgIOEAAYgAQYsQMYgwEYigXCAgUQLhiABMICBxAAGIAEGAqYAwCSBwQxMy4xoAfBbrIHBDEyLjG4B60IwgcGMC4xLjEzyAc0&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/kafka.png" class="img-h-1-5" alt="img" >
+                                                                <div>Apache Kafka</div>
+                                                            </a>
+
+                                                            <!-- Nginx -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Nginx ?!" href="https://www.google.com/search?q=nginx&oq=nginx+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDINCAIQABiDARixAxiABDIKCAMQABixAxiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBBzcwMGowajmoAgCwAgE&sourceid=chrome&ie=UTF-8">
+                                                                <img src="media/img/icons/tech-icons/nginx.png" class="img-h-1-4" alt="img" >
+                                                                <div>Nginx</div>
+                                                            </a>
+
+                                                            <!-- Grafana -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Grafana ?!" href="https://www.google.com/search?q=grafana&oq=grafana&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDIKCAEQABixAxiABDINCAIQABiDARixAxiABDIHCAMQABiABDIKCAQQABixAxiABDIGCAUQRRhBMgYIBhBFGDwyBggHEEUYPNIBCDEzODdqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8">
+                                                                <img src="media/img/icons/tech-icons/grafana.png" class="img-h-1-4" alt="img" >
+                                                                <div>Grafana</div>
+                                                            </a>
+
+                                                            <!-- Promotheus -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Promotheus ?!" href="https://www.google.com/search?sca_esv=343d2d438bcb4bf0&q=Prometheus+(Software)&si=AMgyJEuJ9LO9fEldowAiSPVZwE1yNt005fFn8_v7u3nGVoXCXhsnsFpi84dKiodHgfTsAjtENzHF8oV8moYhIaYs2e7qTQdImckSE3bn6Z7LhAWLBq6mP9ZSJ-SxuAE8061dWFQkol85vZQ2Ost0X9EJhixXaUaqxCmBta4DsX5nqnjIY86ZE9rtu0YNGl6FGl_qg6CJwCo4&sa=X&ved=2ahUKEwjCheK7_PeNAxV8_7sIHUMYKSoQ3LoBegQIBRAB&biw=1162&bih=1154&dpr=1.65">
+                                                                <img src="media/img/icons/tech-icons/prometheus.png" class="img-h-1-4" alt="img" >
+                                                                <div>Prometheus</div>
+                                                            </a>
+
+                                                            <!-- Jaeger -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Jaeger ?!" href="https://www.google.com/search?q=jeager+software&sca_esv=343d2d438bcb4bf0&biw=1162&bih=1154&ei=gB5RaMjpCpDn7_UPm52MwAQ&ved=0ahUKEwjIqZ29_PeNAxWQ87sIHZsOA0gQ4dUDCBA&uact=5&oq=jeager+software&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2plYWdlciBzb2Z0d2FyZTIHEAAYgAQYDTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgKGB4yCBAAGBYYChgeMggQABiABBiiBDIFEAAY7wUyBRAAGO8FMggQABiiBBiJBUj_DFAAWN4LcAB4AZABAJgBe6ABgwuqAQQxMS40uAEDyAEA-AEBmAIPoALDC8ICChAAGIAEGEMYigXCAg4QLhiABBjHARiOBRivAcICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAgUQLhiABMICCxAAGIAEGLEDGIMBwgIOEAAYgAQYsQMYgwEYigXCAgsQLhiABBixAxiDAcICDhAuGIAEGLEDGIMBGIoFwgIIEC4YgAQYsQPCAhQQLhiABBixAxiDARjHARiKBRivAcICBRAAGIAEwgIKEC4YgAQYQxiKBcICDhAAGIAEGJIDGLgEGIoFwgILEAAYgAQYkgMYigXCAg0QABiABBhDGMkDGIoFwgIQEC4YgAQYxwEYChiOBRivAcICEBAuGIAEGLEDGNEDGMcBGArCAgoQABiABBixAxgKwgIHEAAYgAQYCsICDRAuGIAEGMcBGAoYrwHCAg0QABiABBixAxiDARgKwgIGEAAYDRgemAMAkgcDOS42oAegygGyBwM5Lja4B8MLwgcGMC4yLjEzyAc4&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/jaeger.png" class="img-h-1-5" alt="img" >
+                                                                <div>Jaeger</div>
+                                                            </a>
+
+                                                            <!-- DevOps -->
+                                                            <a target="_blank" class="about-link-skill-item" title="DevOps ?!" href="https://www.google.com/search?q=devops&sca_esv=d2fd9f04d01169bd&ei=-FNJaKCHF8anhbIP0p3j-As&ved=0ahUKEwig46KsjumNAxXGU0EAHdLOGL8Q4dUDCBA&uact=5&oq=devops&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmRldm9wczIFEAAYgAQyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgoQABiABBhDGIoFMgUQABiABDIKEAAYgAQYQxiKBTIFEAAYgAQyChAAGIAEGEMYigVIxghQAFifB3AAeAGQAQCYAaQBoAH1BKoBAzQuMrgBA8gBAPgBAZgCBqACnAXCAhAQLhiABBjRAxhDGMcBGIoFwgIFEC4YgATCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYsQMY0QMYxwHCAh8QLhiABBjRAxhDGMcBGIoFGJcFGNwEGN4EGOAE2AEBwgIQEAAYgAQYsQMYQxiDARiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAhQQLhiABBixAxjRAxiDARjHARjJA8ICCxAAGIAEGJIDGLgEwgIIEAAYgAQYkgPCAg4QABiABBixAxiDARiKBcICCxAuGIAEGLEDGNQCwgIIEC4YgAQYsQPCAggQABiABBixA5gDALoGBggBEAEYFJIHAzIuNKAH8kiyBwMyLjS4B5wFwgcFMi01LjHIByQ&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/devops.png" class="img-h-1-5" alt="img" >
+                                                                <div>DevOps</div>
+                                                            </a>
+
+                                                            <!-- Cloud -->
+                                                            <a target="_blank" class="about-link-skill-item" title="Cloud ?!" href="https://www.google.com/search?q=cloud+computing&sca_esv=d2fd9f04d01169bd&ei=jVJJaJvIHLSJ9u8P4Oua8QI&ved=0ahUKEwjbwpz_jOmNAxW0hP0HHeC1Ji4Q4dUDCBA&uact=5&oq=cloud+computing&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2Nsb3VkIGNvbXB1dGluZzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIpA5QAFj3DHAAeAGQAQCYAXygAesJqgEEMTEuNLgBA8gBAPgBAZgCD6ACtwrCAgoQABiABBhDGIoFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICEBAAGIAEGLEDGIMBGIoFGArCAhAQABiABBixAxhDGIMBGIoFwgILEAAYgAQYsQMYgwHCAg4QLhiABBjHARiOBRivAcICERAuGIAEGLEDGNEDGIMBGMcBwgIKEC4YgAQYQxiKBcICEBAuGIAEGNEDGEMYxwEYigXCAhQQLhiABBixAxiDARjHARiOBRivAcICCxAuGIAEGLEDGIMBwgINEAAYgAQYsQMYgwEYCsICCxAAGIAEGLEDGIoFwgIHEAAYgAQYCsICCxAuGIAEGMcBGK8BwgIdEC4YgAQYxwEYjgUYrwEYlwUY3AQY3gQY4ATYAQGYAwC6BgYIARABGBSSBwQxMS40oAf5hwGyBwQxMS40uAe3CsIHBDItMTXIB0E&sclient=gws-wiz-serp">
+                                                                <img src="media/img/icons/tech-icons/cloud-engine.png" class="img-h-1-2" alt="img" >
+                                                                <div>Cloud</div>
+                                                            </a>
+
+                                                        </main>
+
+                                                    </div>
+
+                                                    <!-- ---------------------------------------------------------------- -->
+                                                    <!-- [4/4] | About Quote & Number Container                           -->
+                                                    <!-- ---------------------------------------------------------------- -->
+                                                    <div id="about-skill-quote-number-container">
+
+
+                                                        <!-- ---------------------------------------------------------------- -->
+                                                        <!-- [1/2] | About Skill Quote Container                                      -->
+                                                        <!-- ---------------------------------------------------------------- -->
+                                                        <div id="about-skill-quote-container">
+
+                                                            <div>Dream it.</div>
+                                                            <div>Build it.</div>
+                                                            <div>Live it.</div>
+
+                                                        </div>
+
+                                                        <!-- --------------------------------------------------- -->
+                                                        <!-- [2/2] | Number Container                            -->
+                                                        <!-- --------------------------------------------------- -->
+                                                        <div class="number-container-light-left">
+
+                                                            <div class="number-item">
+                                                                2/4
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+
+
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- --------------------------------------------------------------- -->
+                                <!-- 🟥 [3/?] | More | ...                -->
+                                <!-- --------------------------------------------------------------- -->
+                                <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p flex jc-c">
+
+                                        <!-- ----------------------------------------------------------- -->
+                                        <!-- Resp Very Small                                             -->
+                                        <!-- ----------------------------------------------------------- -->
+                                        <div class="resp-very-small-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
+
+                                                <!-- --------------------------------------------------------------- -->
+                                                <!-- How I Think And Who I am -->
+                                                <!-- --------------------------------------------------------------- -->
+                                                <div id="about-how-and-who">
+
+                                                    How I think and who I am
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- --------------------------------------------------------------- -->
+                                <!-- 🟥 [2/?] | Contact | ...                -->
+                                <!-- --------------------------------------------------------------- -->
+                                <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p flex jc-c">
+
+                                        <!-- ----------------------------------------------------------- -->
+                                        <!-- Resp Very Small                                             -->
+                                        <!-- ----------------------------------------------------------- -->
+                                        <div class="resp-very-small-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
+
+                                                <!-- --------------------------------------------------------------- -->
+                                                <!-- Contact -->
+                                                <!-- --------------------------------------------------------------- -->
+                                                <div id="about-x-contact">
+
+                                                    Contact
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                </div>
+
+                        </main>
+
+                                <!-- ❌❌❌❌❌ -->
+
+                                <!-- ----------------------------------------------------------- -->
+                                <!-- RESP Main Content                                           -->
+                                <!-- ----------------------------------------------------------- -->
+                                <div style="display: none;" class="resp-main-content-area">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p flex jc-c">
+
+                                        <!-- --------------------------------------------------------------- -->
+                                        <!-- ⬇️⬆️ | Open Close | About Content Container                    -->
+                                        <!-- --------------------------------------------------------------- -->
+                                        <main id="open-close-about-content-container">
+
+                                            <!-- -------------------------------------------------- -->
+                                            <!-- Overflow Hidden -->
+                                            <!-- -------------------------------------------------- -->
+                                            <!-- i: important, without overflow hidden -
+                                                no smooth open/close effect -
+                                                grid template row concept -->
+
+                                            <div class="overflow-hidden">
+
+                                                <!-- --------------------------------------------------------------- -->
+                                                <!--  About Content Container                                 -->
+                                                <!-- --------------------------------------------------------------- -->
+                                                <div id="about-content-container">
+
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <!-- 🟥 [1/5] | About Quick Info | Container -->
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <div id="about-quick-info-container" style="background-color: red;">
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- ➡️🟥 [1/4] | Quick Info Text Container       -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div id="about-quick-info" class="quick-info-text-container">
+
+                                                            <header class="left">
+                                                                <img src="media/img/icons/icons/thunder-grey.png" class="img-h-1-3" alt="img">
+                                                                <div>Quick Info</div>
+                                                            </header>
+
+                                                            <main class="info-quick-main-container">
+                                                                My Name is Marko (SuperfreshDev) and I'm from Germany.
+                                                                <br>
+                                                                I am a Fullstack Software Developer in building <br>
+                                                                <span class="text-emph" >Web-Plattforms</span> ,
+                                                                <span class="text-emph">Software/Mobile-Solutions</span>
+                                                                and creating scalable
+                                                                running <span class="text-emph">Backend-Systems</span>.
+                                                            </main>
+
+
+                                                        </div>
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- 🟥[2/4] | Arrow About Quick Info             -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div id="arrow-about-quick-info">»</div>
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- 🟥[3/4] | Img About Container -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div id="img-about-container">
+
+                                                            <img src="media/img/content/about/ich-mobile.png" id="img-about-quick-info-me-as-real" alt="img">
+
+                                                        </div>
+
+                                                        <!-- --------------------------------------------------- -->
+                                                        <!-- 🟥[4/4] | Number Container Light Right                -->
+                                                        <!-- --------------------------------------------------- -->
+                                                        <div id="about-quick-info-number-container" class="number-container-light-right">
+
+                                                            <div class="number-item">
+                                                                    1/4
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <!-- 🟥 [2/5] | About It Skills | Container -->
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <div id="about-it-skills-container">
+
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- [1/2] | Headline Category | IT Skills                       -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="resp-max-content-area" style="background-color: yellow;">
+
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- width & heihgt 100% (sets)                                  -->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <div class="w-100p h-100p flex jc-c">
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- RESP Main Content                                           -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="resp-main-content-area">
+
+                                                                    <!-- ----------------------------------------------------------- -->
+                                                                    <!-- width & heihgt 100% (sets)                                  -->
+                                                                    <!-- ----------------------------------------------------------- -->
+                                                                    <div class="w-100p h-100p flex jc-c">
+
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <!-- Headline Catgegory Container -->
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <div class="headline-sub-container">
+
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <!-- [1/2] | Headline Sub Title  -->
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <div class="headline-sub-title">
+
+                                                                                <img src="media/img/icons/icons/it-icons/binary-type-1-white.png" class="img-h-2" alt="img">
+                                                                                <div>My IT-Stack</div>
+
+                                                                            </div>
+
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <!-- [2/2] | Img Clipart Laptop -->
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <img src="media/img/icons/clipart/me-with-laptop.png" id="img-about-it-skills-clipart-laptop" alt="img">
+
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <!-- 🟥 [3/5] | About More Private | Container -->
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <div>
+                                                        some personal sides of me | korrektes Englisch
+                                                    </div>
+
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <!-- 🟥 [4/5] | About Contact | Container -->
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <div>
+                                                        About Quick Info Container
+                                                    </div>
+
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <!-- 🟥 [5/5] | About White | Container -->
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <div>
+                                                        About White Container
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </main>
+
+                                    </div>
+
+                                </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ❌❌❌ Trash  -->
+                <div style="display: none;" class="resp-max-content-area">
 
                     <!-- ----------------------------------------------------------- -->
                     <!-- width & heihgt 100% (sets)                                  -->
@@ -753,7 +1539,7 @@
                         <div id="about-container">
 
                             <!-- ---------------------------------------------------- -->
-                            <!-- 🟥🟩[1/3] | Header | About                          -->
+                            <!-- 🟥[1/3] | Header | About                          -->
                             <!-- ---------------------------------------------------- -->
                             <div class="row-content-container">
 
@@ -771,9 +1557,9 @@
                                         <!-- [1/3] | Header | About                               -->
                                         <!-- ---------------------------------------------------- -->
                                         <!-- i: sfd-defaults -->
-                                        <header id="about" class="main-headline-container headline-center-container">
+                                        <header id="about" class="main-headline-container headline-beginning-container-center">
 
-                                            <div class="headline-topic-element">
+                                            <div class="headline-beginning-title">
                                                 <img src="media/img/icons/icons/nav-main-body/about-black.png" id="img-icon-about-headline" alt="img">
                                                 <div>About</div>
                                             </div>
@@ -1503,64 +2289,130 @@
             <!-- ----------------------------------------------------------------------------- -->
             <!-- 🟥[3/5] | My IT Container                                                     -->
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- i: to allow child elements easy using paddings  -->
-            <!-- i: flex jc-c 100%  -->
-            <div class="row-content-container">
+            <div class="row-content-container" id="di" style="background-color: rgb(28, 28, 28); display: none;">
 
-                <!-- --------------------------------------------------------------- -->
-                <!-- Resp Max Content                                                -->
-                <!-- --------------------------------------------------------------- -->
+                <!-- --------------------------------------------------- -->
+                <!-- 🟥 [1/4] | Headline | My IT                         -->
+                <!-- --------------------------------------------------- -->
                 <div class="resp-max-content-area">
 
                     <!-- ----------------------------------------------------------- -->
                     <!-- width & heihgt 100% (sets)                                  -->
                     <!-- ----------------------------------------------------------- -->
-                    <div class="w-100p h-100p flex jc-c">
+                    <div class="w-100p h-100p flex jc-c" >
 
-                        <!-- ----------------------------------------------------------- -->
-                        <!-- 🟥 My IT Container                                             -->
-                        <!-- ----------------------------------------------------------- -->
-                        <div id="my-it-container">
+                        <!-- --------------------------------------------------- -->
+                        <!-- 🟥 [1/4] | Headline | My IT                         -->
+                        <!-- --------------------------------------------------- -->
+                        <div class="resp-main-content-area">
 
-                            <!-- --------------------------------------------------- -->
-                            <!-- 🟥 [1/4] | Headline | My IT                          -->
-                            <!-- --------------------------------------------------- -->
-                            <div class="row-content-container" style="background-color: rgb(28, 28, 28);">
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- width & heihgt 100% (sets)                                  -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="w-100p h-100p flex jc-c">
 
-                                    <!-- ----------------------------------------------------------- -->
-                                    <!-- RESP Main Content                                           -->
-                                    <!-- ----------------------------------------------------------- -->
-                                    <div class="resp-main-content-area">
+                                <!-- --------------------------------------------------- -->
+                                <!-- Headline | My IT                                    -->
+                                <!-- --------------------------------------------------- -->
+                                <div class="row-content-container" style="background-color: rgb(28, 28, 28);">
 
                                         <!-- ----------------------------------------------------------- -->
-                                        <!-- width & heihgt 100% (sets)                                  -->
+                                        <!-- RESP Main Content                                           -->
                                         <!-- ----------------------------------------------------------- -->
-                                        <div class="w-100p h-100p flex jc-c">
+                                        <div class="resp-main-content-area">
 
-                                            <!-- --------------------------------------------------- -->
-                                            <!-- Headline | My IT                                    -->
-                                            <!-- --------------------------------------------------- -->
-                                            <!-- i: sfd-defaults -->
-                                            <header id="it" style="background-color: rgb(28, 28, 28);" class="main-headline-container headline-left-container">
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
 
-                                                <div class="headline-topic-element">
-                                                    <img src="media/img/icons/icons/it-icons/brackets-black.png" id="img-icon-it-headline" alt="img">
-                                                    <div>My IT</div>
-                                                </div>
+                                                <!-- --------------------------------------------------- -->
+                                                <!-- Headline | My IT                                    -->
+                                                <!-- --------------------------------------------------- -->
+                                                <!-- i: sfd-defaults -->
+                                                <header id="it" style="background-color: rgb(28, 28, 28);" class="main-headline-container headline-beginning-container-left">
 
-                                            </header>
+                                                    <div class="headline-beginning-title">
+                                                        <img src="media/img/icons/icons/it-icons/brackets-black.png" id="img-icon-it-headline" alt="img">
+                                                        <div>My IT</div>
+                                                    </div>
+
+                                                </header>
+
+                                            </div>
 
                                         </div>
 
-                                    </div>
+
+                                </div>
 
 
                             </div>
 
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- --------------------------------------------------- -->
+                <!-- 🟥 [2/4] | Nave | My IT                         -->
+                <!-- --------------------------------------------------- -->
+                <div class="resp-max-content-area">
+
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- width & heihgt 100% (sets)                                  -->
+                    <!-- ----------------------------------------------------------- -->
+                    <div class="w-100p h-100p flex jc-c" >
+
+                        <!-- --------------------------------------------------- -->
+                        <!-- 🟥 [1/4] | Headline | My IT                         -->
+                        <!-- --------------------------------------------------- -->
+                        <div class="resp-main-content-area">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- width & heihgt 100% (sets)                                  -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="w-100p h-100p flex jc-c">
+
+                                <div id="xw">
+
+                                    Nav - Nav
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ❌❌❌❌❌❌ Müll  -->
+                <!-- ----------------------------------------------------------- -->
+                <!-- 🟥 My IT Container                                             -->
+                <!-- ----------------------------------------------------------- -->
+                <div style="display: none;" id="my-it-container">
+
+
+                        <!-- -------------------------------------------------- -->
+                    <!-- 🟥 [1/4] | Category Headline | My IT               -->
+                    <!-- --------------------------------------------------- -->
+                    <div class="resp-main-content-area">
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width & heihgt 100% (sets)                                  -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div class="w-100p h-100p flex jc-c">
+
+                            <!-- -------------------------------------------------- -->
+                            <!-- Category Headline | My IT                          -->
                             <!-- --------------------------------------------------- -->
-                            <!-- 🟥 [1/4] | Category Headline | My IT                          -->
-                            <!-- --------------------------------------------------- -->
-                            <div class="row-content-container" style="background-color: rgb(193, 193, 193); height: 10em;">
+
+                            <div class="row-content-container" id="testi">
 
                                 <!-- ----------------------------------------------------------- -->
                                 <!-- RESP Main Content                                           -->
@@ -1572,24 +2424,24 @@
                                     <!-- ----------------------------------------------------------- -->
                                     <div class="w-100p h-100p flex jc-c">
 
-                                        <div class="sub-headline-category-container resp-handling-sub-headline-category">
+                                        <div id="haduso">
 
                                             <!-- ----------------------------------------- -->
                                             <!-- My IT Docs | Sub Headline Category -->
                                             <!-- ----------------------------------------- -->
-                                            <div>
+                                            <div id="header-testi">
 
                                                 <img src="media/img/icons/emojies/emoji-books.png" class="img-h-1-8" alt="img">
                                                 <div>
                                                     <div class="title-sub-headline-category">My IT-Docs</div>
-                                                    <div class="sub-title-sub-headline-category">Content Only in German</div>
+                                                    <div class="sub-title-sub-headline-category">» Content Only in German</div>
                                                 </div>
                                             </div>
 
                                             <!-- ----------------------------------------- -->
                                             <!-- Number Category | Sub Headline Category -->
                                             <!-- ----------------------------------------- -->
-                                            <div>
+                                            <div id="xx">
                                                 1/2
                                             </div>
 
@@ -1599,20 +2451,35 @@
                                 </div>
                             </div>
 
-                            <!-- radio boxes -->
-                            <input type="radio" id="radio-it-docs-filter-close" name="radio-it-docs" style="display: none;">
+                        </div>
 
-                            <input type="radio" id="radio-it-docs-web-dev" name="radio-it-docs" style="display: none;">
-                            <input type="radio" id="radio-it-docs-software-concepts" name="radio-it-docs" style="display: none;">
-                            <input type="radio" id="radio-it-docs-software-mobile-dev" name="radio-it-docs" style="display: none;">
-                            <input type="radio" id="radio-it-docs-software-architecture" name="radio-it-docs" style="display: none;">
-                            <input type="radio" id="radio-it-docs-quality-engineering" name="radio-it-docs" style="display: none;">
-                            <input type="radio" id="radio-it-docs-it-tools" name="radio-it-docs" style="display: none;">
-                            <input type="radio" id="radio-it-docs-backend" name="radio-it-docs" style="display: none;">
-                            <input type="radio" id="radio-it-docs-data-science" name="radio-it-docs" style="display: none;">
+                    </div>
+
+                    <!-- radio boxes -->
+                    <input type="radio" id="radio-it-docs-filter-close" name="radio-it-docs" style="display: none;">
+
+                    <input type="radio" id="radio-it-docs-web-dev" name="radio-it-docs" style="display: none;">
+                    <input type="radio" id="radio-it-docs-software-concepts" name="radio-it-docs" style="display: none;">
+                    <input type="radio" id="radio-it-docs-software-mobile-dev" name="radio-it-docs" style="display: none;">
+                    <input type="radio" id="radio-it-docs-software-architecture" name="radio-it-docs" style="display: none;">
+                    <input type="radio" id="radio-it-docs-quality-engineering" name="radio-it-docs" style="display: none;">
+                    <input type="radio" id="radio-it-docs-it-tools" name="radio-it-docs" style="display: none;">
+                    <input type="radio" id="radio-it-docs-backend" name="radio-it-docs" style="display: none;">
+                    <input type="radio" id="radio-it-docs-data-science" name="radio-it-docs" style="display: none;">
+
+
+                    <!-- --------------------------------------------------- -->
+                    <!-- 🟥 [3/4] | Nav | My IT                             -->
+                    <!-- --------------------------------------------------- -->
+                    <div class="resp-main-content-area">
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width & heihgt 100% (sets)                                  -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div class="w-100p h-100p flex jc-c">
 
                             <!-- --------------------------------------------------- -->
-                            <!-- 🟥 [2/4] | Nav | My IT                             -->
+                            <!-- Nav | My IT                             -->
                             <!-- --------------------------------------------------- -->
                             <div id="my-it-docs-nav-radio-handle" class="row-content-container">
 
@@ -1803,581 +2670,687 @@
                                 </div>
                             </div>
 
-                            <!-- --------------------------------------------------- -->
-                            <!-- 🟥 [3/4] | My IT Docs Container                     -->
-                            <!-- --------------------------------------------------- -->
-                            <div class="row-content-container">
+                        </div>
 
-                                    <!-- ----------------------------------------------------------- -->
-                                    <!-- RESP Main Content                                           -->
-                                    <!-- ----------------------------------------------------------- -->
-                                    <div class="resp-main-content-area">
-
-                                        <!-- ----------------------------------------------------------- -->
-                                        <!-- width & heihgt 100% (sets)                                  -->
-                                        <!-- ----------------------------------------------------------- -->
-                                        <div class="w-100p h-100p flex jc-c">
-
-                                            <!-- --------------------------------------------------- -->
-                                            <!-- 🟥 [2/3] | My IT Docs Container                     -->
-                                            <!-- --------------------------------------------------- -->
-                                            <div id="my-it-docs-container">
+                    </div>
 
 
-                                                <!-- -------------------------------------------------- -->
-                                                <!-- Angular 17 | Doc Row Category Container -->
-                                                <!-- -------------------------------------------------- -->
-                                                <div class="doc-row-category-container">
+                    <!-- --------------------------------------------------- -->
+                    <!-- 🟥 [3/4] | My IT Docs Container                     -->
+                    <!-- --------------------------------------------------- -->
+                    <div class="row-content-container">
 
-                                                    <!-- ----------------------------------------------- -->
-                                                    <!-- Header -->
-                                                    <!-- ----------------------------------------------- -->
-                                                    <header>
-                                                        <img src="media/img/icons/tech-icons/angular.png" class="img-h-1-6" alt="img">
-                                                        <div>Angular 17 (2023)</div>
-                                                    </header>
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- RESP Main Content                                           -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="resp-main-content-area">
 
-                                                    <!-- ----------------------------------------------- -->
-                                                    <!-- Main -->
-                                                    <!-- ----------------------------------------------- -->
-                                                    <main>
+                                <!-- ----------------------------------------------------------- -->
+                                <!-- width & heihgt 100% (sets)                                  -->
+                                <!-- ----------------------------------------------------------- -->
+                                <div class="w-100p h-100p flex jc-c">
 
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- Angular 1 -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container-in-progress">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- In Progress Info -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <div class="doc-card-in-progress-info">
-
-                                                                <div>Actually In Progress</div>
-                                                                <img src="media/img/icons/icons/gear-black.png" class="anim-rotate360-4s" alt="img">
-
-                                                            </div>
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-1-oeko.png" class="img-doc-view" alt="img">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
+                                    <!-- --------------------------------------------------- -->
+                                    <!-- 🟥 [2/3] | My IT Docs Container                     -->
+                                    <!-- --------------------------------------------------- -->
+                                    <div id="my-it-docs-container">
 
 
-                                                        </div>
+                                        <!-- -------------------------------------------------- -->
+                                        <!-- Angular 17 | Doc Row Category Container -->
+                                        <!-- -------------------------------------------------- -->
+                                        <div class="doc-row-category-container">
 
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- Angular 2 -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container-no-priority">
+                                            <!-- ----------------------------------------------- -->
+                                            <!-- Header -->
+                                            <!-- ----------------------------------------------- -->
+                                            <header>
+                                                <img src="media/img/icons/tech-icons/angular.png" class="img-h-1-6" alt="img">
+                                                <div>Angular 17 (2023)</div>
+                                            </header>
 
+                                            <!-- ----------------------------------------------- -->
+                                            <!-- Main -->
+                                            <!-- ----------------------------------------------- -->
+                                            <main>
 
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- No Prio Info -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <div class="doc-card-no-priority-info">
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Angular 1 -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container-in-progress">
 
-                                                                <div>Actually No Prio</div>
-                                                                <img src="media/img/icons/icons/double-arrow-right-grey.png" alt="img">
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- In Progress Info -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <div class="doc-card-in-progress-info">
 
-                                                            </div>
+                                                        <div>Actually In Progress</div>
+                                                        <img src="media/img/icons/icons/gear-black.png" class="anim-rotate360-4s" alt="img">
 
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-2-cli-projekt.png" class="img-doc-view" alt="img">
+                                                    </div>
 
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-1-oeko.png" class="img-doc-view" alt="img">
 
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
 
-                                                            </a>
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
 
+                                                    </a>
 
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- Angular 3 -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-3-komponenten.png" class="img-doc-view" alt="img">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
-
-
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- Angular 4 -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-4-di.png" class="img-doc-view" alt="img">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
-
-
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- Angular 5 -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/05-06/ang17-05-erweiterte.png" class="img-doc-view" alt="img">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
-
-
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- Angular 6 -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/05-06/ang17-06-routing.png" class="img-doc-view" alt="img">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
-
-
-                                                        </div>
-
-                                                    </main>
 
                                                 </div>
 
-                                                <!-- -------------------------------------------------- -->
-                                                <!-- NodeJS,NestJS | Doc Row Category Container -->
-                                                <!-- -------------------------------------------------- -->
-                                                <div class="doc-row-category-container">
-
-                                                    <!-- ----------------------------------------------- -->
-                                                    <!-- Header -->
-                                                    <!-- ----------------------------------------------- -->
-                                                    <header>
-                                                        <img src="media/img/icons/icons/sand-der-zeit.png" class="img-h-1-6" alt="img">
-                                                        <div>JS-Webserver </div>
-                                                    </header>
-
-                                                    <!-- ----------------------------------------------- -->
-                                                    <!-- Main -->
-                                                    <!-- ----------------------------------------------- -->
-                                                    <main>
-
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- NodeJS -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/01-web-dev/03-js-webservers/nodejs-grundlagen.png" class="img-doc-view" alt="img">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Angular 2 -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container-no-priority">
 
 
-                                                        </div>
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- No Prio Info -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <div class="doc-card-no-priority-info">
 
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- NestJS -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
+                                                        <div>Actually No Prio</div>
+                                                        <img src="media/img/icons/icons/double-arrow-right-grey.png" alt="img">
 
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/01-web-dev/03-js-webservers/nestjs-grundlagen.png" class="img-doc-view" alt="img">
+                                                    </div>
 
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-2-cli-projekt.png" class="img-doc-view" alt="img">
 
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
 
-                                                            </a>
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
 
+                                                    </a>
 
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- NextJS -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/01-web-dev/03-js-webservers/nextjs-grundlagen.png" class="img-doc-view" alt="img">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                               <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
-
-
-                                                        </div>
-
-                                                    </main>
 
                                                 </div>
 
-                                                <!-- -------------------------------------------------- -->
-                                                <!-- Java | Doc Row Category Container -->
-                                                <!-- -------------------------------------------------- -->
-                                                <div class="doc-row-category-container">
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Angular 3 -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
 
-                                                    <!-- ----------------------------------------------- -->
-                                                    <!-- Header -->
-                                                    <!-- ----------------------------------------------- -->
-                                                    <header>
-                                                        <img src="media/img/icons/icons/sword-black.png" class="img-h-1-6" alt="img">
-                                                        <div>Software Development </div>
-                                                    </header>
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-3-komponenten.png" class="img-doc-view" alt="img">
 
-                                                    <!-- ----------------------------------------------- -->
-                                                    <!-- Main -->
-                                                    <!-- ----------------------------------------------- -->
-                                                    <main>
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
 
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- NodeJS -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
 
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/02-software-dev/02-java/03-Java-Grundlagen/java-g1-sprachkonzepte.png" class="img-doc-view" alt="img">
+                                                    </a>
 
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
-
-
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- NestJS -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/02-software-dev/02-java/03-Java-Grundlagen/java-g2-fehlerbehandlung-stream.png" class="img-doc-view" alt="img">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
-
-
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------- -->
-                                                        <!-- NextJS -  | Doc Card Container -->
-                                                        <!-- ---------------------------------------------- -->
-                                                        <div class="doc-card-container">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Img Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <img src="media/img/content/it-docs/02-software-dev/02-java/03-Java-Grundlagen/java-g3-generics.png" class="img-doc-view" alt="img">
-
-                                                            <!-- ---------------------------------------------- -->
-                                                            <!-- Doc Link Container -->
-                                                            <!-- ---------------------------------------------- -->
-                                                            <a href="" target="_blank" class="link-doc-container">
-
-                                                                <div>PDF |</div>
-                                                                <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
-
-                                                            </a>
-
-
-                                                        </div>
-
-                                                    </main>
 
                                                 </div>
 
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Angular 4 -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
 
-                                            </div>
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/01-04/ang17-4-di.png" class="img-doc-view" alt="img">
 
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
+
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                    </a>
+
+
+                                                </div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Angular 5 -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/05-06/ang17-05-erweiterte.png" class="img-doc-view" alt="img">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
+
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                    </a>
+
+
+                                                </div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- Angular 6 -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/01-web-dev/02-frameworks/02-angular-17/05-06/ang17-06-routing.png" class="img-doc-view" alt="img">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
+
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                    </a>
+
+
+                                                </div>
+
+                                            </main>
 
                                         </div>
 
+                                        <!-- -------------------------------------------------- -->
+                                        <!-- NodeJS,NestJS | Doc Row Category Container -->
+                                        <!-- -------------------------------------------------- -->
+                                        <div class="doc-row-category-container">
+
+                                            <!-- ----------------------------------------------- -->
+                                            <!-- Header -->
+                                            <!-- ----------------------------------------------- -->
+                                            <header>
+                                                <img src="media/img/icons/icons/sand-der-zeit.png" class="img-h-1-6" alt="img">
+                                                <div>JS-Webserver </div>
+                                            </header>
+
+                                            <!-- ----------------------------------------------- -->
+                                            <!-- Main -->
+                                            <!-- ----------------------------------------------- -->
+                                            <main>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- NodeJS -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/01-web-dev/03-js-webservers/nodejs-grundlagen.png" class="img-doc-view" alt="img">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
+
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                    </a>
+
+
+                                                </div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- NestJS -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/01-web-dev/03-js-webservers/nestjs-grundlagen.png" class="img-doc-view" alt="img">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
+
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                    </a>
+
+
+                                                </div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- NextJS -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/01-web-dev/03-js-webservers/nextjs-grundlagen.png" class="img-doc-view" alt="img">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
+
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                    </a>
+
+
+                                                </div>
+
+                                            </main>
+
+                                        </div>
+
+                                        <!-- -------------------------------------------------- -->
+                                        <!-- Java | Doc Row Category Container -->
+                                        <!-- -------------------------------------------------- -->
+                                        <div class="doc-row-category-container">
+
+                                            <!-- ----------------------------------------------- -->
+                                            <!-- Header -->
+                                            <!-- ----------------------------------------------- -->
+                                            <header>
+                                                <img src="media/img/icons/icons/sword-black.png" class="img-h-1-6" alt="img">
+                                                <div>Software Development </div>
+                                            </header>
+
+                                            <!-- ----------------------------------------------- -->
+                                            <!-- Main -->
+                                            <!-- ----------------------------------------------- -->
+                                            <main>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- NodeJS -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/02-software-dev/02-java/03-Java-Grundlagen/java-g1-sprachkonzepte.png" class="img-doc-view" alt="img">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
+
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                    </a>
+
+
+                                                </div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- NestJS -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/02-software-dev/02-java/03-Java-Grundlagen/java-g2-fehlerbehandlung-stream.png" class="img-doc-view" alt="img">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
+
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                    </a>
+
+
+                                                </div>
+
+                                                <!-- ---------------------------------------------- -->
+                                                <!-- NextJS -  | Doc Card Container -->
+                                                <!-- ---------------------------------------------- -->
+                                                <div class="doc-card-container">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Img Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <img src="media/img/content/it-docs/02-software-dev/02-java/03-Java-Grundlagen/java-g3-generics.png" class="img-doc-view" alt="img">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Doc Link Container -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <a href="" target="_blank" class="link-doc-container">
+
+                                                        <div>PDF |</div>
+                                                        <img src="media/img/icons/icons/external-link-black.png" class="img-h-1-2" alt="img">
+
+                                                    </a>
+
+
+                                                </div>
+
+                                            </main>
+
+                                        </div>
+
+
                                     </div>
+
+
+                                </div>
 
                             </div>
 
-                            <!-- --------------------------------------------------- -->
-                            <!-- 🟥 [4/4] | My IT Projects Container                 -->
-                            <!-- --------------------------------------------------- -->
-                            <div class="row-content-container">
+                    </div>
+
+                    <!-- --------------------------------------------------- -->
+                    <!-- 🟥 [4/4] | My IT Projects Container                 -->
+                    <!-- --------------------------------------------------- -->
+                    <div class="row-content-container">
+
+                        <!-- --------------------------------------------------- -->
+                        <!-- ➡️🟥 [1/4] | My IT Docs | Headline Category           -->
+                        <!-- --------------------------------------------------- -->
+                        <div class="resp-max-content-area">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- width & heihgt 100% (sets)                                  -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="w-100p h-100p flex jc-c">
+
+                                <!-- ----------------------------------------------------------- -->
+                                <!-- RESP Main Content                                           -->
+                                <!-- ----------------------------------------------------------- -->
+                                <div class="resp-main-content-area">
 
                                     <!-- ----------------------------------------------------------- -->
-                                    <!-- RESP Main Content                                           -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
                                     <!-- ----------------------------------------------------------- -->
-                                    <div class="resp-main-content-area">
+                                    <div class="w-100p h-100p flex jc-c">
+
+
+                                        <!-- --------------------------------------------- -->
+                                        <!-- Headline Category Container -->
+                                        <!-- --------------------------------------------- -->
+                                        <header class="headline-category-container">
+
+
+                                            <!-- ----------------------------------------------- -->
+                                            <!-- Title | Headline Category -->
+                                            <!-- ----------------------------------------------- -->
+                                            <div class="headline-category-title">
+
+                                                <img src="media/img/icons/emojies/emoji-books.png" id="img-icon-headline-category-it-docs" alt="img">
+
+                                                <div>
+                                                    <div class="hc-title">My IT-Doc's</div>
+                                                    <div class="hc-sub-title">» Content Only in German</div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- ----------------------------------------------- -->
+                                            <!-- Nr | Headline Category -->
+                                            <!-- ----------------------------------------------- -->
+                                            <div class="headline-category-nr">1/2</div>
+
+
+                                        </header>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- ❌❌❌ TRASH ❌❌❌ RESP Main Content                                           -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div style="display: none;" class="resp-main-content-area">
+
+                            <!-- ----------------------------------------------------------- -->
+                            <!-- width & heihgt 100% (sets)                                  -->
+                            <!-- ----------------------------------------------------------- -->
+                            <div class="w-100p h-100p flex jc-c">
+
+                                <!-- --------------------------------------------------- -->
+                                <!-- 🟥 [3/3] | My IT Projects Container                 -->
+                                <!-- --------------------------------------------------- -->
+                                <div id="my-it-projects-container">
+
+
+                                    <!-- --------------------------------------------------- -->
+                                    <!-- 🟥 [1/4] | Category Headline | My IT                          -->
+                                    <!-- --------------------------------------------------- -->
+                                    <div class="row-content-container" style="background-color: rgb(193, 193, 193); height: 10em;">
 
                                         <!-- ----------------------------------------------------------- -->
-                                        <!-- width & heihgt 100% (sets)                                  -->
+                                        <!-- RESP Main Content                                           -->
                                         <!-- ----------------------------------------------------------- -->
-                                        <div class="w-100p h-100p flex jc-c">
+                                        <div class="resp-main-content-area">
 
-                                            <!-- --------------------------------------------------- -->
-                                            <!-- 🟥 [3/3] | My IT Projects Container                 -->
-                                            <!-- --------------------------------------------------- -->
-                                            <div id="my-it-projects-container">
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
 
+                                                <div class="sub-headline-category-container resp-handling-sub-headline-category">
 
-                                                <!-- --------------------------------------------------- -->
-                                                <!-- 🟥 [1/4] | Category Headline | My IT                          -->
-                                                <!-- --------------------------------------------------- -->
-                                                <div class="row-content-container" style="background-color: rgb(193, 193, 193); height: 10em;">
+                                                    <!-- ----------------------------------------- -->
+                                                    <!-- My IT Docs | Sub Headline Category -->
+                                                    <!-- ----------------------------------------- -->
+                                                    <div>
 
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <!-- RESP Main Content                                           -->
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <div class="resp-main-content-area">
-
-                                                        <!-- ----------------------------------------------------------- -->
-                                                        <!-- width & heihgt 100% (sets)                                  -->
-                                                        <!-- ----------------------------------------------------------- -->
-                                                        <div class="w-100p h-100p flex jc-c">
-
-                                                            <div class="sub-headline-category-container resp-handling-sub-headline-category">
-
-                                                                <!-- ----------------------------------------- -->
-                                                                <!-- My IT Docs | Sub Headline Category -->
-                                                                <!-- ----------------------------------------- -->
-                                                                <div>
-
-                                                                    <img src="media/img/icons/emojies/emoji-books.png" class="img-h-1-8" alt="img">
-                                                                    <div>
-                                                                        <div class="title-sub-headline-category">My Top 3x3 IT-Project's</div>
-                                                                        <div class="sub-title-sub-headline-category">Web-Design | Web-Dev | Java</div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- ----------------------------------------- -->
-                                                                <!-- Number Category | Sub Headline Category -->
-                                                                <!-- ----------------------------------------- -->
-                                                                <div>
-                                                                    2/2
-                                                                </div>
-
-                                                            </div>
-
+                                                        <img src="media/img/icons/emojies/emoji-books.png" class="img-h-1-8" alt="img">
+                                                        <div>
+                                                            <div class="title-sub-headline-category">My Top 3x3 IT-Project's</div>
+                                                            <div class="sub-title-sub-headline-category">Web-Design | Web-Dev | Java</div>
                                                         </div>
                                                     </div>
+
+                                                    <!-- ----------------------------------------- -->
+                                                    <!-- Number Category | Sub Headline Category -->
+                                                    <!-- ----------------------------------------- -->
+                                                    <div>
+                                                        2/2
+                                                    </div>
+
                                                 </div>
 
-                                                <!-- --------------------------------------------------- -->
-                                                <!-- 🟥 [2/4] | Nav | My IT                             -->
-                                                <!-- --------------------------------------------------- -->
-                                                <div id="my-it-docs-nav-radio-handle"  class="row-content-container">
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <!-- RESP Main Content                                           -->
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <div class="resp-main-content-area">
+                                    <!-- --------------------------------------------------- -->
+                                    <!-- 🟥 [2/4] | Nav | My IT                             -->
+                                    <!-- --------------------------------------------------- -->
+                                    <div id="my-it-docs-nav-radio-handle"  class="row-content-container">
 
-                                                        <!-- ----------------------------------------------------------- -->
-                                                        <!-- width & heihgt 100% (sets)                                  -->
-                                                        <!-- ----------------------------------------------------------- -->
-                                                        <div class="w-100p h-100p flex jc-c">
+                                        <!-- ----------------------------------------------------------- -->
+                                        <!-- RESP Main Content                                           -->
+                                        <!-- ----------------------------------------------------------- -->
+                                        <div class="resp-main-content-area">
 
-                                                            <!-- ------------------------------------------------------- -->
-                                                            <!-- NAV | Tab Filte Panel                                   -->
-                                                            <!-- ------------------------------------------------------- -->
-                                                            <nav id="my-it-docs-nav" class="tab-filter-panel">
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
 
-                                                                <!-- -------------------------------- -->
-                                                                <!-- Label | Unselect -->
-                                                                <!-- -------------------------------- -->
-                                                                <label for="chk-my-it-docs-unselect" class="tab-unselector">
+                                                <!-- ------------------------------------------------------- -->
+                                                <!-- NAV | Tab Filte Panel                                   -->
+                                                <!-- ------------------------------------------------------- -->
+                                                <nav id="my-it-docs-nav" class="tab-filter-panel">
 
-                                                                    <img src="media/img/icons/icons/filter-black.png" class="img-h-1-3" alt="img">
+                                                    <!-- -------------------------------- -->
+                                                    <!-- Label | Unselect -->
+                                                    <!-- -------------------------------- -->
+                                                    <label for="chk-my-it-docs-unselect" class="tab-unselector">
 
-                                                                </label>
+                                                        <img src="media/img/icons/icons/filter-black.png" class="img-h-1-3" alt="img">
 
-                                                                <!-- -------------------------------------------------------------- -->
-                                                                <!-- Web-Dev | Tab Selector                                 -->
-                                                                <!-- -------------------------------------------------------------- -->
-                                                                <label for="XXX-radio-it-docs-web-dev" class="tab-selector">
+                                                    </label>
 
-                                                                    <!-- ---------------------- -->
-                                                                    <!-- Label Img Container    -->
-                                                                    <!-- ---------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/icons/it-icons/web-code-black.png" class="img-h-1-3" alt="img">
-                                                                    </div>
+                                                    <!-- -------------------------------------------------------------- -->
+                                                    <!-- Web-Dev | Tab Selector                                 -->
+                                                    <!-- -------------------------------------------------------------- -->
+                                                    <label for="XXX-radio-it-docs-web-dev" class="tab-selector">
 
-                                                                    <!-- ---------------------- -->
-                                                                    <!-- Label Text Container    -->
-                                                                    <!-- ---------------------- -->
-                                                                    <div>
-                                                                        <div>Web-Design</div>
-                                                                    </div>
-
-
-                                                                    <!-- ---------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- ---------------------- -->
-                                                                    <div class="custom-radio-default">
-                                                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-                                                                <!-- -------------------------------------------------------------- -->
-                                                                <!-- Software Concepts | Tab Selector                               -->
-                                                                <!-- -------------------------------------------------------------- -->
-                                                                <label for="XXX-radio-it-docs-software-concepts" class="tab-selector">
-
-                                                                    <img src="media/img/icons/icons/software-concepts.png" class="img-h-1-3" alt="img">
-                                                                    <div>Web-Dev</div>
-
-                                                                    <!-- ---------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- ---------------------- -->
-                                                                    <div class="custom-radio-default">
-                                                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-                                                                <!-- -------------------------------------------------------------- -->
-                                                                <!-- Software/Mobile-Dev | Tab Selector                             -->
-                                                                <!-- -------------------------------------------------------------- -->
-                                                                <label for="XXX-radio-it-docs-software-mobile-dev" class="tab-selector">
-
-                                                                    <img src="media/img/icons/icons/it-icons/brackets-black.png" class="img-h-1-3" alt="img">
-                                                                    <div>Java</div>
-
-                                                                    <!-- ---------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- ---------------------- -->
-                                                                    <div class="custom-radio-default">
-                                                                        <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-
-                                                            </nav>
-
+                                                        <!-- ---------------------- -->
+                                                        <!-- Label Img Container    -->
+                                                        <!-- ---------------------- -->
+                                                        <div>
+                                                            <img src="media/img/icons/icons/it-icons/web-code-black.png" class="img-h-1-3" alt="img">
                                                         </div>
 
-                                                    </div>
-                                                </div>
+                                                        <!-- ---------------------- -->
+                                                        <!-- Label Text Container    -->
+                                                        <!-- ---------------------- -->
+                                                        <div>
+                                                            <div>Web-Design</div>
+                                                        </div>
 
 
+                                                        <!-- ---------------------- -->
+                                                        <!-- Custom Radio -->
+                                                        <!-- ---------------------- -->
+                                                        <div class="custom-radio-default">
+                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
+                                                        </div>
+
+                                                    </label>
+
+                                                    <!-- -------------------------------------------------------------- -->
+                                                    <!-- Software Concepts | Tab Selector                               -->
+                                                    <!-- -------------------------------------------------------------- -->
+                                                    <label for="XXX-radio-it-docs-software-concepts" class="tab-selector">
+
+                                                        <img src="media/img/icons/icons/software-concepts.png" class="img-h-1-3" alt="img">
+                                                        <div>Web-Dev</div>
+
+                                                        <!-- ---------------------- -->
+                                                        <!-- Custom Radio -->
+                                                        <!-- ---------------------- -->
+                                                        <div class="custom-radio-default">
+                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
+                                                        </div>
+
+                                                    </label>
+
+                                                    <!-- -------------------------------------------------------------- -->
+                                                    <!-- Software/Mobile-Dev | Tab Selector                             -->
+                                                    <!-- -------------------------------------------------------------- -->
+                                                    <label for="XXX-radio-it-docs-software-mobile-dev" class="tab-selector">
+
+                                                        <img src="media/img/icons/icons/it-icons/brackets-black.png" class="img-h-1-3" alt="img">
+                                                        <div>Java</div>
+
+                                                        <!-- ---------------------- -->
+                                                        <!-- Custom Radio -->
+                                                        <!-- ---------------------- -->
+                                                        <div class="custom-radio-default">
+                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="img-cr-x" alt="img">
+                                                        </div>
+
+                                                    </label>
 
 
-                                                <!-- --------------------------------------------------- -->
-                                                <!-- 🟥 [4/4] | More IT Projects Container               -->
-                                                <!-- --------------------------------------------------- -->
-                                                <div id="more-it-projects-container">
-
-                                                    More IT Projects
-
-                                                </div>
-
+                                                </nav>
 
                                             </div>
 
                                         </div>
+                                    </div>
+
+                                    <!-- --------------------------------------------------- -->
+                                    <!-- 🟥 [4/5] | My Top 3x3 IT-Project Container          -->
+                                    <!-- --------------------------------------------------- -->
+                                    <div id="my-it-projects-container">
+
+                                        <!-- ---------------------------------------------------------- -->
+                                        <!-- Project Card #1 -->
+                                        <!-- ---------------------------------------------------------- -->
+                                        <div class="XXXit-project-card">
+
+                                            <!-- ------------------------------------------------------ -->
+                                            <!-- Header                                                 -->
+                                            <!-- ------------------------------------------------------ -->
+                                            <header>
+                                                Hedader IT PRoject
+                                            </header>
+
+                                            <!-- ------------------------------------------------------ -->
+                                            <!-- Main                                                   -->
+                                            <!-- ------------------------------------------------------ -->
+                                            <main>
+                                                Main IT PRoject
+                                            </main>
+
+                                        </div>
 
                                     </div>
+
+
+                                    <!-- --------------------------------------------------- -->
+                                    <!-- 🟥 [4/5] | More IT Projects Container               -->
+                                    <!-- --------------------------------------------------- -->
+                                    <div id="more-it-projects-container">
+
+                                        <!-- ---------------------------------------------------------- -->
+                                        <!-- Project Card #1 -->
+                                        <!-- ---------------------------------------------------------- -->
+                                        <div class="XXXit-project-card">
+
+                                            <!-- ------------------------------------------------------ -->
+                                            <!-- Header                                                 -->
+                                            <!-- ------------------------------------------------------ -->
+                                            <header>
+                                                Hedader IT PRoject
+                                            </header>
+
+                                            <!-- ------------------------------------------------------ -->
+                                            <!-- Main                                                   -->
+                                            <!-- ------------------------------------------------------ -->
+                                            <main>
+                                                Main IT PRoject
+                                            </main>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
 
                             </div>
 
@@ -2385,17 +3358,16 @@
 
                     </div>
 
-
                 </div>
+
 
             </div>
 
             <!-- ----------------------------------------------------------------------------- -->
             <!-- 🟥[4/5] | My Private Container                                                -->
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- i: to allow child elements easy using paddings  -->
-            <!-- i: flex jc-c 100%  -->
-            <div class="row-content-container">
+
+            <div class="row-content-container" style="display: none;">
 
 
                 <!-- --------------------------------------------------------------- -->
@@ -2416,7 +3388,7 @@
                             <!-- ---------------------------------------------------- -->
                             <!-- 🟥[1/3] | Header | Private                               -->
                             <!-- ---------------------------------------------------- -->
-                            <div class="row-content-container" style="background-color: yellow;">
+                            <div class="row-content-container" style="background-color: rgb(28, 28, 28); padding: 2em .8em;">
 
                                 <!-- ----------------------------------------------------------- -->
                                 <!-- RESP Main Content                                           -->
@@ -2426,15 +3398,15 @@
                                     <!-- ----------------------------------------------------------- -->
                                     <!-- width & heihgt 100% (sets)                                  -->
                                     <!-- ----------------------------------------------------------- -->
-                                    <div class="w-100p h-100p flex jc-c">
+                                    <div class="w-100p h-100p flex jc-fs">
 
                                         <!-- ---------------------------------------------------- -->
                                         <!-- [1/3] | Header | About                               -->
                                         <!-- ---------------------------------------------------- -->
                                         <!-- i: sfd-defaults -->
-                                        <header id="private" class="main-headline-container headline-left-container">
+                                        <header id="private" class="headline-beginning-container-left">
 
-                                            <div class="headline-topic-element">
+                                            <div class="headline-beginning-title">
                                                 <img src="media/img/icons/icons/it-icons/clean-code.png" id="img-icon-private-headline" alt="img">
                                                 <div>My Private</div>
                                             </div>

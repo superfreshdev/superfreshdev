@@ -1,16 +1,15 @@
 /* -------------------------------------------------------------- */
 /* > about-quick-info.css
 /*
-/* : style the about quick info area
+/* : style the about quick info container & elements
 /* -------------------------------------------------------------- */
+
 
 /* ------------------------------------------- */
 /* About Quick Info Container
 /* ------------------------------------------- */
 
 #about-quick-info-container {
-
-  /* width: 100%; */
 
   /* mobile */
   padding: 2em .8em;
@@ -37,23 +36,22 @@
 
   grid-area: info;
 
+  row-gap: 2em;
+
+}
+
+#about-quick-info > header {
+
+  justify-content: flex-end;
 }
 
 /* ------------------------------------------- */
 /* [2/4] | Arrow Container
 /* ------------------------------------------- */
 
-#about-arrow-container {
+#arrow-about-quick-info {
 
   grid-area: arrow;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-#about-arrow-container > div:nth-of-type(1) {
 
   font-size: 1.75em;
   font-weight: bold;
@@ -72,15 +70,17 @@
 
   grid-area: img;
 
+  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
 
-#img-professional-me-about {
+#img-about-quick-info-me-as-real {
 
-  width: 100%;
+  width: 95%;
   border-radius: 2em;
 }
 

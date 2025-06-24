@@ -5,42 +5,48 @@
 /* -------------------------------------------------------------- */
 
 
-/* -------------------------------------------------------------- */
-/* About Nav
-/* -------------------------------------------------------------- */
+/* ------------------------------------------- */
+/* About Nav Element
+/* ------------------------------------------- */
 
-#about-nav {
+#about-nav-element {
 
-  width: 100%;
+  height: 4em;
+  padding: 0 1.3em;
 
-  height: 6em;
-  padding: 0 .8em;
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
 
-  /* background-color: green; */
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  /* background-color: rgb(216, 216, 216); */
+  background-color: rgb(232, 232, 232);
+
+  transition: all .4s;
+  cursor: pointer;
 
 }
 
-/* -------------------------------------------------------------- */
-/* Label | About Nav Open Close
-/* -------------------------------------------------------------- */
+#about-nav-element:hover {
 
-#lbl-about-nav-open-close {
-
-  /* min-width: 8em; */
-
+  background-color: wheat;
 }
 
-/* img arrow position fixing */
-#img-icon-open-close-arrow-about {
+#about-nav-element > div {
 
-  height: .8em;
-  padding-top: .1em;
+  font-size: 1.125em;
+}
 
-  transition: all .4s ease;
+#about-nav-element > img {
+
+  height: .7em;
 }
 
 /* -------------------------------------------------------------- */
-/* Label Handling | Styling
+/* Handling | Styling
 /* -------------------------------------------------------------- */
 
 /* default unshown */
@@ -50,63 +56,56 @@
 }
 
 /* default unshown "close about" */
-#about-nav .about-nav-text-close {
+#about-nav-text-close {
 
   display: none;
 }
 
-#chk-about-nav:checked + .row-content-container #about-nav .lbl-open-close-element {
+#chk-about-nav:checked + #chk-about-header-container #about-nav-element {
 
   background-color: rgb(246, 132, 132);
 }
 
-#chk-about-nav:checked + .row-content-container #about-nav .about-nav-text-close {
+/* state checked -> hover  */
+#chk-about-nav:checked + #chk-about-header-container #about-nav-element:hover {
+
+  background-color: rgb(232, 232, 232);
+}
+
+#chk-about-nav:checked + #chk-about-header-container #about-nav-element > #about-nav-text-close {
 
   display: flex;
 }
 
-#chk-about-nav:checked + .row-content-container #about-nav .about-nav-text-read {
+#chk-about-nav:checked + #chk-about-header-container #about-nav-element > #about-nav-text-read {
 
   display: none;
 }
 
-#chk-about-nav:checked + .row-content-container #about-nav .lbl-open-close-element > img:nth-of-type(1) {
+#chk-about-nav:checked + #chk-about-header-container #about-nav-element > img:nth-of-type(1) {
 
   transform: rotate(180deg);
 }
 
-
 /* -------------------------------------------------------------- */
-/* Label Handling | Hover Styling
-/* -------------------------------------------------------------- */
-
-/* State: not open */
-#about-nav .lbl-open-close-element:hover {
-
-  background-color: wheat;
-}
-
-/* State: open */
-#chk-about-nav:checked + .row-content-container #about-nav .lbl-open-close-element:hover {
-
-  background-color: wheat;
-}
-
-/* -------------------------------------------------------------- */
-/* Label Handling | Move
+/* Handling | Move
 /* -------------------------------------------------------------- */
 
-#open-close-main-about {
+/* -------------------------------------------------------------- */
+/* ⬇️⬆️ | Open Close | About Content Container */
+/* -------------------------------------------------------------- */
+
+#open-close-about-content-container {
+
+  width: 100%;
 
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 300ms ease-in-out;
 
-  /* background-color: grey; */
-
 }
 
-#chk-about-nav:checked ~ #open-close-main-about {
+#chk-about-nav:checked ~ #chk-about-content-container #open-close-about-content-container {
 
   grid-template-rows: 1fr;
 }
