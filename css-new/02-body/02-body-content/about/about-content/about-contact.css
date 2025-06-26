@@ -4,6 +4,17 @@
 /* : style about contact layout
 /* -------------------------------------------------------------- */
 
+
+/* ------------------------------------------- */
+/* Header About Contact
+/* ------------------------------------------- */
+
+#about-header-contact {
+
+    width: 100%;
+
+}
+
 /* ------------------------------------------- */
 /* About Contact Container
 /* ------------------------------------------- */
@@ -11,70 +22,39 @@
 #about-contact-container {
 
     width: 100%;
-    padding: 4em .8em;
+    padding: 1em .8em 4em .8em;
 
     display: grid;
     justify-items: center;
-    row-gap: 2em;
+    row-gap: 2.5em;
 
     /* color:rgb(19, 19, 19); */
     /* background-color: rgb(148, 148, 148); */
 
+    background-color: rgb(28, 28, 28);
+
 }
 
-/* ------------------------------------------- */
-/* Header | About Contact Container
-/* ------------------------------------------- */
-
-#about-contact-container > header {
+#about-contact-text-block {
 
     display: grid;
-    justify-items: center;
-    row-gap: 2em;
-
-    color: rgb(224, 224, 224);
-
+    row-gap: .3em;
 }
 
-#about-contact-container > header > div:nth-of-type(1) > div {
-
-    font-size: 1.25em;
-    font-weight: bold;
-
-}
-
-/* ------------------------------------------- */
-/* About Contact Sub Info
-/* ------------------------------------------- */
-
-#about-contact-sub-info {
-
-    font-size: 1.125em;
-    line-height: 1.8em;
+#about-contact-question {
 
     text-align: center;
-    /* color:red; */
-}
 
-#about-contact-sub-info > header {
-
-    color: wheat;
     font-weight: bold;
+    color:wheat
 }
 
+#about-contact-text-contact-me {
 
-/* ------------------------------------------- */
-/* Main | About Contact Container
-/* ------------------------------------------- */
-
-#about-contact-container > main {
-
-    width: 100%;
-
-    display: grid;
-    row-gap: 3em;
-
+    text-align: center;
+    color:white;
 }
+
 
 /* ------------------------------------------- */
 /* Link | About Contact Container
@@ -96,46 +76,39 @@
     font-weight: bold;
 
     /* background-color: grey; */
-    color: wheat;
+
+
+    background-color: wheat;
+    color:rgb(28, 28, 28);
+
+    transition: all .4s;
+}
+
+#about-contact-my-link-container:hover {
+
+    color:rgb(28, 28, 28);
+    background-color: rgb(182, 182, 182);
 }
 
 #about-contact-my-link-container:visited {
 
-    color: wheat;
+    color:rgb(28, 28, 28);
 }
 
+
+
 /* ------------------------------------------- */
-/* Img Container | About Contact Container
+/* Img | About Contact Container
 /* ------------------------------------------- */
 
-#about-contact-img-container {
-
-    display: flex;
-    justify-content: center;
-
-    /* border: 1px solid black; */
-
-    /* background-color: red; */
-}
-
-#about-contact-img-container > img {
+#img-about-contact {
 
     height: 10em;
 }
 
-
 /* ------------------------------------------- */
-/* About Contact Close About Container
+/* About Contact Close About
 /* ------------------------------------------- */
-
-#about-contact-close-about-container {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* background-color: yellow; */
-}
 
 #about-contact-close-about {
 
@@ -182,7 +155,7 @@
 
 #about-contact-number-container {
 
-    width: 100%;
-    /* border: 1px solid black; */
+     padding: 0em 0 2em 0;
+
 
 }
