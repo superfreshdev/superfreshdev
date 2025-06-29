@@ -25,21 +25,23 @@
 /* ⚠️ Just for Layout Testing
 /* --------------------------------------------------- */
 
-#nav-header-body > a:first-child {
+.set-header-nav-link {
 
-     background-color: wheat;
-     color:black;
+    background-color: wheat;
+    color:black;
 
 }
 
-#nav-header-body > a:nth-of-type(2),
-#nav-header-body > a:nth-of-type(3) {
-
-    color:rgb(130, 130, 130);
-    color:black;
+.unset-header-nav-link {
 
     border: 1px solid rgb(85, 85, 85);
-    color:rgb(200, 200, 200);
+    color:#c8c8c8;
+}
+
+.unset-header-nav-link:visited {
+
+    border: 1px solid rgb(85, 85, 85);
+    color:#c8c8c8;
 
 }
 
@@ -48,6 +50,7 @@
     background-color: wheat;
     color:black;
 }
+
 
 /* ---------------------------------------------------------------- */
 /* Anker Link Header Body
@@ -69,8 +72,6 @@
 
     border-radius: .8em;
 
-    color:black;
-
     transition: all .4s;
 
 }
@@ -79,10 +80,4 @@
 
     /* mobile */
     display: none;
-}
-
-
-.anker-link-header-body:visited {
-
-    color: black;
 }

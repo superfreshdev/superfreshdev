@@ -4,46 +4,63 @@
 /* : style about more private infos
 /* -------------------------------------------------------------- */
 
+/* 🟥⚠️
 
+  about-more-points-from-me.css
+
+*/
 
 /* --------------------------------------------------------------*/
-/* Header | About More Private Container                         */
+/* Aboure More | Header                                          */
 /* ------------------------------------------------------------- */
 
-#about-header-more-private-container {
+#about-more-header {
 
   width: 100%;
 
 }
 
-#img-about-more-private-clipart-me {
+#img-about-more-clipart-me {
 
   height: 8em;
 
 }
 
 /* --------------------------------------------------------------*/
-/* List More About Private                                       */
+/* About More Container                                         */
 /* ------------------------------------------------------------- */
 
-#list-more-about-private {
+#about-more-container {
 
-  padding: 4em .8em;
+  padding: 0 .8em;
 
   display: grid;
-  row-gap: 2em;
+  justify-items: center;
+  /* background-color: blue; */
 
 }
 
 /* --------------------------------------------------------------*/
-/* List Item More About Private                                  */
+/* About More | List Container                                   */
 /* ------------------------------------------------------------- */
 
-.list-item-more-about-private {
+#about-more-list-container {
 
-  display: flex;
-  align-items: center;
-  column-gap: 3em;
+  padding: 4.5em 0em 0em 0em;
+
+  display: grid;
+  row-gap: 1.3em;
+
+}
+
+/* --------------------------------------------------------------*/
+/* About More | List Item                                        */
+/* ------------------------------------------------------------- */
+
+.about-more-list-item {
+
+  display: grid;
+  row-gap: 1.5em;
 
 }
 
@@ -51,193 +68,75 @@
 /* Div 1 | Img Block
 /* ---------------------------------------- */
 
-.list-item-more-about-private > div:nth-of-type(1) {
+.about-more-list-item > div:nth-of-type(1) {
 
-  min-height: 5em;
-  min-width: 5em;
+  /* min-height: 5em; */
+  /* min-width: 13em; */
+
+  padding: 1em 1.3em;
+
+  min-width: 14em;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  column-gap: 1.3em;
 
   border-radius: .8em;
 
-  background-color: green;
+  background-color: rgb(215, 215, 215);
 
+  /* background-color: rgb(242, 242, 242); */
+
+}
+
+/* imgs of list items */
+#img-about-more-list-item-community {
+
+  height: 2em;
+  opacity: .6;
+}
+
+#img-about-more-list-item-challenge {
+
+  height: 2em;
+  opacity: .6;
+}
+
+#img-about-more-list-item-explore-my-page {
+
+  height: 2em;
+  opacity: .6;
+
+}
+
+.about-more-list-item > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  font-size: 1.125em;
 }
 
 /* ---------------------------------------- */
 /* Div 2 | Text Block
 /* ---------------------------------------- */
 
-.list-item-more-about-private > div:nth-of-type(2) {
+.about-more-list-item > div:nth-of-type(2) {
 
-
-  color:red;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ❌❌❌❌ müll */
-
-
-/* --------------------------------------------------------------*/
-/* Header | About More Private Container                                  */
-/* ------------------------------------------------------------- */
-
-/* --------------------------------------------------------------*/
-/* Main | About More Private Container                                  */
-/* ------------------------------------------------------------- */
-
-/* --------------------------------------------------------------*/
-/* About More Private Layout Container                                  */
-/* ------------------------------------------------------------- */
-
-#about-more-private-layout-container {
-
-  width: 100%;
-  padding: 4em .8em;
-
-  display: grid;
-
-  grid-template-areas:
-
-    'info'
-    'arrow'
-    'my-wishes'
-    'number';
-
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 1fr;
-
-  row-gap: 3.3em;
-
-  /* background-color: rgb(255, 0, 212); */
-
-}
-
-/* --------------------------------------------------------------*/
-/* About More Private Info                                       */
-/* ------------------------------------------------------------- */
-
-#about-more-private-info {
-
-  grid-area: info;
-
-  display: grid;
-  row-gap: 4em;
-
-  /* background-color: green; */
-}
-
-/* --------------------------------------------------------------*/
-/* Main | About More Private Info                                */
-/* ------------------------------------------------------------- */
-
-#about-more-private-info > main {
-
-  display: grid;
-  row-gap: 3em;
-}
-
-/* --------------------------------------------------------------*/
-/* Main Div | About More Private Info                            */
-/* ------------------------------------------------------------- */
-
-#about-more-private-info > main > div {
-
-  display: grid;
-  justify-items: center;
-  row-gap: 2em;
-
-}
-
-/* --------------------------------------------------------------*/
-/* About More Private Img Coffee                                 */
-/* ------------------------------------------------------------- */
-
-#about-more-private-img-coffee {
-
-  grid-area: img-coffee;
-
-  display: none;
-
-  /* background-color: red; */
-}
-
-#img-about-img-coffee {
-
-  height: 13em;
-}
-
-/* --------------------------------------------------------------*/
-/* About More Private Arrow                                      */
-/* ------------------------------------------------------------- */
-
-#about-more-private-arrow {
-
-  grid-area: arrow;
-
-}
-
-/* --------------------------------------------------------------*/
-/* About More Private My Wishes                                 */
-/* ------------------------------------------------------------- */
-
-#about-more-private-my-wishes {
-
-  grid-area: my-wishes;
-
-  text-align: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: .2em;
-
-  /* background-color: yellow; */
-
-}
-
-#about-more-private-my-wishes > div {
+  padding: 1em 1em;
 
   font-size: 1.125em;
-  font-weight: bold;
+  line-height: 1.8em;
+  /* color:red; */
+  color: rgb(128, 128, 128);
+
 }
 
-
 /* -------------------------------------------------- */
-/* More Priavte | Numebr Container
+/* About More Number Container
 /* -------------------------------------------------- */
 
-#about-more-private-number-container {
+#about-more-number-container {
 
-  padding: 2em 0;
-
+  padding: 2em 0em;
   /* background-color: red; */
-
 
 }

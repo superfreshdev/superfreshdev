@@ -4,7 +4,7 @@ console.log("🟨 close-about-view.js")
 const chkAboutNav = document.getElementById("chk-about-nav");
 
 // click element to close about view
-var divCloseAboutView = document.getElementById("about-contact-close-about");
+var divCloseAboutView = document.getElementById("about-close-about-block");
 
 
 /* --------------------------------------------------------- */

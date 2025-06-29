@@ -148,57 +148,6 @@
 @media ( min-width: 800px ) {
 
 
-
-    /* --------------------------------------------------------------*/
-    /* More Private Info Container                                   */
-    /* ------------------------------------------------------------- */
-
-    #about-more-private-container {
-
-        grid-template-areas:
-
-            'info img-coffee'
-            'arrow arrow'
-            'my-wishes my-wishes'
-            'number number';
-
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 1fr auto;
-
-    }
-
-    /* --------------------------------------------------------------*/
-    /* More Private Info | Main                                      */
-    /* ------------------------------------------------------------- */
-
-    #about-more-private-info > main {
-
-        padding: 0 1.5em;
-
-    }
-
-    /* --------------------------------------------------------------*/
-    /* More Private Info | Main Div                                  */
-    /* ------------------------------------------------------------- */
-
-    #about-more-private-info > main > div {
-
-        display: flex;
-        align-items: center;
-        column-gap: 1.5em;
-
-    }
-
-    /* --------------------------------------------------------------*/
-    /* More Private Info | Img Coffee                                */
-    /* ------------------------------------------------------------- */
-
-    #about-more-private-img-coffee {
-
-        display: flex;
-
-    }
-
 }
 
 /* ------------------------------------------------------------------- */
@@ -241,12 +190,12 @@
     }
 
     /* --------------------------------------------------------------*/
-    /* More Private Container                                        */
+    /* More Container                                                */
     /* ------------------------------------------------------------- */
 
-    #about-more-private-container {
+    #about-more-container {
 
-        padding: 4em 0em;
+        padding: 0em 0em;
 
     }
 
@@ -256,7 +205,7 @@
 
     #about-contact-container {
 
-         padding: 1em 0em 4em 0em;
+        padding: 0em 0em;
 
     }
 

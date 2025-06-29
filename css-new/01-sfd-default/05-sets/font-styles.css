@@ -37,12 +37,26 @@
 }
 
 /* ---------------------------------------------------- */
-/* Text Emphasis
+/* Text Bold
 /* ---------------------------------------------------- */
 
-.text-emph {
+.text-bold-dark-grey {
 
   color:rgb(98, 98, 98);
+  font-weight: bold;
+
+}
+
+.text-bold-light-brown {
+
+  color:wheat;
+  font-weight: bold;
+
+}
+
+.text-bold-light-red {
+
+  color:rgb(237, 132, 132);
   font-weight: bold;
 
 }
