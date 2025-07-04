@@ -1,0 +1,79 @@
+/* -------------------------------------------------------------- */
+/* > wrapper.css
+/*
+/* : style wrapper container for child layout container
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------- */
+/* Content Wrapper
+/* ------------------------------------------------------- */
+
+.content-wrapper {
+
+  width: 100%;
+
+}
+
+/* ------------------------------------------------------- */
+/* Padding Wrapper
+/* ------------------------------------------------------- */
+
+.padding-t1-b2-0-8-wrapper,
+.padding-t0-b2-0-8-wrapper,
+.padding-0-0-8-wrapper,
+.padding-0-5-0-8-wrapper,
+.padding-1-0-8-wrapper,
+.padding-2-0-8-wrapper,
+.padding-3-0-8-wrapper {
+
+   width: 100%;
+
+}
+
+.padding-t1-b2-0-8-wrapper {
+
+  padding: 1em .8em 2em .8em;
+
+}
+
+.padding-t0-b2-0-8-wrapper {
+
+  padding: 0 .8em 2em .8em;
+
+}
+
+.padding-0-0-8-wrapper {
+
+  /* mobile */
+  padding: 0em .8em;
+
+}
+
+.padding-0-5-0-8-wrapper {
+
+  /* mobile */
+  padding: .5em .8em;
+
+}
+
+.padding-1-0-8-wrapper {
+
+  /* mobile */
+  padding: 1em .8em;
+
+}
+
+.padding-2-0-8-wrapper {
+
+  /* mobile */
+  padding: 2em .8em;
+
+}
+
+.padding-3-0-8-wrapper {
+
+  /* mobile */
+  padding: 3em .8em;
+
+}

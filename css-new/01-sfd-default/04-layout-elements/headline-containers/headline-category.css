@@ -111,3 +111,52 @@
 
     height: 2em;
 }
+
+
+
+/* --------------------------------------------------------------*/
+/* 🟣 Auslagern -> Headline Container | Headline Sub Container  */
+/* ------------------------------------------------------------- */
+
+/* light, light-grey, light-dark, left,right,center */
+
+.headline-sub-container {
+
+  padding: 2em 0em;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
+
+  background-color: rgb(28, 28, 28);
+
+}
+
+.headline-sub-title {
+
+  height: 4em;
+  padding: 0 1em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  border-radius: .8em;
+
+  border: 2px solid rgb(125, 125, 125);
+
+}
+
+.headline-sub-title > div {
+
+  font-size: 1.125em;
+
+  font-weight: bold;
+
+  color:rgb(223, 223, 223);
+  /* color:rgb(125, 125, 125); */
+}
+
+/* --------------------------------------------------------------*/
+/* 🟣🟣🟣🟣                                                    */
+/* ------------------------------------------------------------- */

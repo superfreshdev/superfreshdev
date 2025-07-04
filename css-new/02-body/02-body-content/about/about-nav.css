@@ -22,7 +22,6 @@
 
   border-radius: .8em;
 
-  /* background-color: rgb(216, 216, 216); */
   background-color: rgb(232, 232, 232);
 
   transition: all .4s;
@@ -100,6 +99,7 @@
   width: 100%;
 
   display: grid;
+  justify-items: center;
   grid-template-rows: 0fr;
   transition: grid-template-rows 300ms ease-in-out;
 

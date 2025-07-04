@@ -59,7 +59,10 @@
             <!--  04 | layout-elements                                        -->
             <!-- ------------------------------------------------------------ -->
 
-                <!-- headline containers -->
+                <!-- Header Containers -->
+                <link rel="stylesheet" href="css-new/01-sfd-default/04-layout-elements/header-containers/header-containers.css">
+
+                <!-- ❌ Später Löschen  |  headline containers -->
                 <link rel="stylesheet" href="css-new/01-sfd-default/04-layout-elements/headline-containers/headline-beginning.css">
                 <link rel="stylesheet" href="css-new/01-sfd-default/04-layout-elements/headline-containers/headline-category.css">
 
@@ -91,6 +94,12 @@
             <!-- ------------------------------------------------------------ -->
 
             <link rel="stylesheet" href="css-new/01-sfd-default/06-animations/animations.css">
+
+            <!-- ------------------------------------------------------------ -->
+            <!--  07 | wrapper                                                -->
+            <!-- ------------------------------------------------------------ -->
+
+            <link rel="stylesheet" href="css-new/01-sfd-default/07-wrapper/wrapper.css">
 
         <!-- ------------------------------------------------------------ -->
         <!-- 🔵🔵🔵 [2/3] | BODY                                         -->
@@ -134,9 +143,9 @@
                 <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-nav.css">
 
                 <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-quick-info.css">
-                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-it-skills.css">
+                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-my-it-skills.css">
 
-                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-more-private.css">
+                <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-more-details.css">
                 <link rel="stylesheet" href="css-new/02-body/02-body-content/about/about-content/about-contact.css">
 
                 <!-- ---------------------- -->
@@ -469,16 +478,14 @@
             <!-- Resp | Default                     -->
             <!-- ---------------------------------- -->
 
-                <!-- --------------------------------------------------- -->
-                <!-- Resp | Handle Content Areas                         -->
-                <!-- --------------------------------------------------- -->
+                <!-- Resp Handle Content Areas -->
                 <link rel="stylesheet" href="css/03-responsive/resp-default/02-others/resp-handle-content-areas/resp-handle-content-areas.css">
 
+                <!-- Resp Wrapper -->
+                <link rel="stylesheet" href="css-new/03-responsive/00-resp-sfd-default/resp-wrapper.css">
 
 
-                <!-- --------------------------------------------------- -->
-                <!-- Resp | Body Main                                    -->
-                <!-- --------------------------------------------------- -->
+                <!-- Resp Main Body -->
                 <link rel="stylesheet" href="css/03-responsive/resp-default/01-resp-body/resp-main-body/resp-main.css">
 
                 <link rel="stylesheet" href="css/03-responsive/resp-default/01-resp-body/resp-main-body/resp-main-header.css">
@@ -577,14 +584,14 @@
     -->
 
     <!-- ----------------------------------------------------------------------------- -->
-    <!-- 🟩 Header Fixed Body | ( jc-c )                                                  -->
+    <!-- 🟩 Header Fixed Body                                                          -->
     <!-- ----------------------------------------------------------------------------- -->
     <header id="header-fixed-body" >
 
         <!-- --------------------------------------------- -->
-        <!-- [Resp] Main Content Area                      -->
+        <!-- Resp Min                                      -->
         <!-- --------------------------------------------- -->
-        <div class="resp-main-content-area">
+        <div class="resp-min-content-area">
 
             <!-- ----------------------------------------------------------------------------- -->
             <!-- Width: 100% ( Allow Layouts to use max width ) -->
@@ -684,67 +691,79 @@
         <div id="main-body-container">
 
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- 🟩[1/5] | Welcome Container                                                   -->
+            <!-- 🟩 [1/5] | Welcome Container                                                -->
             <!-- ----------------------------------------------------------------------------- -->
-            <div class="row-content-container bgc-anthracite">
+            <div class="resp-max-content-area" style="background-color: rgb(28, 28, 28);">
 
-                <!-- --------------------------------------------------------------- -->
-                <!-- Resp Min Content                                               -->
-                <!-- --------------------------------------------------------------- -->
-                <div class="resp-min-content-area">
+                <!-- ----------------------------------------------------------- -->
+                <!-- width & heihgt 100% (sets)                                  -->
+                <!-- ----------------------------------------------------------- -->
+                <div class="w-100p h-100p flex jc-c">
 
-                    <!-- ----------------------------------------------------------- -->
-                    <!-- width & heihgt 100% (sets)                                  -->
-                    <!-- ----------------------------------------------------------- -->
-                    <div class="w-100p h-100p flex jc-c">
+                    <!-- --------------------------------------------------------------- -->
+                    <!-- Resp Min Content                                               -->
+                    <!-- --------------------------------------------------------------- -->
+                    <div class="resp-min-content-area">
 
-                        <!-- ------------------------------------------------------------------ -->
-                        <!-- 🟩 Welcome Container                                               -->
-                        <!-- ------------------------------------------------------------------ -->
-                        <!-- i: Responsive Grid Tempalte Areas -->
+                        <!-- ----------------------------------------------------------- -->
+                        <!-- width & heihgt 100% (sets)                                  -->
+                        <!-- ----------------------------------------------------------- -->
+                        <div class="w-100p h-100p flex jc-c">
 
-                        <div id="welcome-container">
+                            <!-- ------------------------------------------------------------------ -->
+                            <!-- Padding Wrapper                                                    -->
+                            <!-- ------------------------------------------------------------------ -->
+                            <div class="padding-0-0-8-wrapper">
 
-                            <!-- ------------------------------------------------------- -->
-                            <!-- [1/4] | Welcome Img Container -->
-                            <!-- ------------------------------------------------------- -->
+                                <!-- ------------------------------------------------------------------ -->
+                                <!-- 🟩 Welcome Container                                               -->
+                                <!-- ------------------------------------------------------------------ -->
+                                <div id="welcome-container">
 
-                            <div class="welcome-img-container">
-                                <img src="media/img/icons/clipart/me-hi.png" id="img-welcome-clipart-me" alt="img">
-                            </div>
+                                    <!-- ------------------------------------------------------- -->
+                                    <!-- [1/4] | Welcome Img Container -->
+                                    <!-- ------------------------------------------------------- -->
 
-                            <!-- ------------------------------------------------------- -->
-                            <!-- [2/4] | Welcome Title Container -->
-                            <!-- ------------------------------------------------------- -->
+                                    <div class="welcome-img-container">
+                                        <img src="media/img/icons/clipart/me-hi.png" id="img-welcome-clipart-me" alt="img">
+                                    </div>
 
-                            <div class="welcome-title-container">
+                                    <!-- ------------------------------------------------------- -->
+                                    <!-- [2/4] | Welcome Title Container -->
+                                    <!-- ------------------------------------------------------- -->
 
-                                <div id="text-welcome-to">Welcome to</div>
-                                <div id="text-superfreshdev">SuperfreshDEV</div>
+                                    <div class="welcome-title-container">
 
-                            </div>
+                                        <div id="text-welcome-to">Welcome to</div>
+                                        <div id="text-superfreshdev">SuperfreshDEV</div>
 
-                            <!-- ------------------------------------------------------- -->
-                            <!-- [3/4] | Welcome Motto Container -->
-                            <!-- ------------------------------------------------------- -->
+                                    </div>
 
-                            <div class="welcome-motto-container">
+                                    <!-- ------------------------------------------------------- -->
+                                    <!-- [3/4] | Welcome Motto Container -->
+                                    <!-- ------------------------------------------------------- -->
 
-                                <div>» Fullstack Software Developer</div>
-                                <div>» Let's build sexy IT-Systems</div>
+                                    <div class="welcome-motto-container">
 
-                            </div>
+                                        <div>» Fullstack Software Developer</div>
+                                        <div>» Let's build sexy IT-Systems</div>
 
-                            <!-- ------------------------------------------------------- -->
-                            <!-- [4/4] | Welcome Date Container -->
-                            <!-- ------------------------------------------------------- -->
+                                    </div>
 
-                            <div class="welcome-date-container">
+                                    <!-- ------------------------------------------------------- -->
+                                    <!-- [4/4] | Welcome Date Container -->
+                                    <!-- ------------------------------------------------------- -->
 
-                                <span id="txt-welcome-today">today,</span>
-                                <span id="js-txt-day"> js</span>
-                                <span id="js-txt-month"> js</span>
-                                <span id="js-txt-year"> js</span>
+                                    <div class="welcome-date-container">
+
+                                        <span id="txt-welcome-today">today,</span>
+                                        <span id="js-txt-day"> js</span>
+                                        <span id="js-txt-month"> js</span>
+                                        <span id="js-txt-year"> js</span>
+
+                                    </div>
+
+                                </div>
 
                             </div>
 
@@ -754,10 +773,11 @@
 
                 </div>
 
+
             </div>
 
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- 🟥[2/5] | About Container                                                     -->
+            <!-- 🟩 [2/5] | About Container                                                     -->
             <!-- ----------------------------------------------------------------------------- -->
             <div id="about-container">
 
@@ -777,33 +797,33 @@
                     <div class="w-100p h-100p flex jc-c">
 
                         <!-- ----------------------------------------------------------- -->
-                        <!-- RESP Main Content                                           -->
+                        <!-- RESP Very Small                                             -->
                         <!-- ----------------------------------------------------------- -->
-                        <div class="resp-main-content-area">
+                        <div class="resp-very-small-content-area">
 
                             <!-- ----------------------------------------------------------- -->
                             <!-- width & heihgt 100% (sets)                                  -->
                             <!-- ----------------------------------------------------------- -->
                             <div class="w-100p h-100p flex jc-c">
 
-
                                 <!-- ----------------------------------------------------------- -->
                                 <!-- About Header Container                                      -->
                                 <!-- ----------------------------------------------------------- -->
-                                <div id="about-header-container">
+                                <div id="about-header-container" class="header-center-content-container">
 
                                     <!-- ------------------------------------------- -->
-                                    <!-- Headline Beginning Title                    -->
+                                    <!-- Header Content Title                        -->
                                     <!-- ------------------------------------------- -->
 
-                                    <div class="headline-beginning-title">
-                                        <img src="media/img/icons/icons/nav-main-body/about-black.png" id="img-icon-about-headline" alt="img">
+                                    <div class="header-content-title">
+                                        <img src="media/img/icons/icons/nav-main-body/about-black.png" id="icon-about-header" alt="img">
                                         <div>About</div>
                                     </div>
 
                                     <!-- ------------------------------------------- -->
                                     <!-- About Nav Element                           -->
                                     <!-- ------------------------------------------- -->
+
                                     <label for="chk-about-nav" id="about-nav-element">
 
                                         <div id="about-nav-text-read">Read</div>
@@ -814,8 +834,6 @@
 
                                 </div>
 
-
-
                             </div>
 
                         </div>
@@ -825,7 +843,7 @@
                 </div>
 
                 <!-- --------------------------------------------------------------- -->
-                <!-- ❓🟥 [2/2] | About Content Container                              -->
+                <!-- 🟩 [2/2] | About Content Container                           -->
                 <!-- --------------------------------------------------------------- -->
                 <div class="resp-max-content-area" id="chk-about-content-container">
 
@@ -846,74 +864,106 @@
                                 no smooth open/close effect -
                                 grid template row concept -->
 
-                            <div class="overflow-hidden">
+                            <div class="overflow-hidden grid ji-c w-100p">
 
                                 <!-- --------------------------------------------------------------- -->
-                                <!-- 🟩 [1/?] | Quick Info |                                         -->
+                                <!-- 🟩 [1/4] | Quick Info                                          -->
                                 <!-- --------------------------------------------------------------- -->
-                                <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
+                                <div class="resp-max-content-area">
 
                                     <!-- ----------------------------------------------------------- -->
                                     <!-- width & heihgt 100% (sets)                                  -->
                                     <!-- ----------------------------------------------------------- -->
-                                    <div class="w-100p h-100p flex jc-c">
+                                    <div class="w-100p h-100p grid ji-c">
 
                                         <!-- --------------------------------------------------------------- -->
-                                        <!-- RESP Main  -->
+                                        <!-- [1/2] | Quick Info Container  -->
                                         <!-- --------------------------------------------------------------- -->
-                                        <div class="resp-main-content-area">
+                                        <div class="resp-very-small-content-area">
 
                                             <!-- ----------------------------------------------------------- -->
                                             <!-- width & heihgt 100% (sets)                                  -->
                                             <!-- ----------------------------------------------------------- -->
                                             <div class="w-100p h-100p flex jc-c">
 
+
                                                 <!-- --------------------------------------------------------------- -->
-                                                <!-- About Quick Info Container                                      -->
+                                                <!-- Padding Wrapper                                                 -->
                                                 <!-- --------------------------------------------------------------- -->
-                                                <div id="about-quick-info-container" style="background-color: rgb(255, 255, 255);">
+                                                <div class="padding-1-0-8-wrapper">
 
-                                                    <!-- -------------------------------------------- -->
-                                                    <!-- 🟩 [1/4] | Quick Info Text Container       -->
-                                                    <!-- -------------------------------------------- -->
-                                                    <div id="about-quick-info" class="quick-info-text-container">
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- About Quick Info Container                                      -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <div id="about-quick-info-container">
 
-                                                        <header class="header-quick-info">
-                                                            <img src="media/img/icons/icons/thunder-grey.png" class="img-h-1-3" alt="img">
-                                                            <div>Quick Info</div>
-                                                        </header>
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- 🟩 [1/43 | About Quick Info                  -->
+                                                        <!-- -------------------------------------------- -->
 
-                                                        <main>
-                                                            My Name is Marko (SuperfreshDev) and I'm from Germany.
-                                                            <br>
-                                                            I am a Fullstack Software Developer in building <br>
-                                                            <span class="text-bold-dark-grey" >Web-Plattforms</span> ,
-                                                            <span class="text-bold-dark-grey">Software/Mobile-Solutions</span>
-                                                            and creating scalable
-                                                            running <span class="text-bold-dark-grey">Backend-Systems</span>.
-                                                        </main>
+                                                        <div id="about-quick-info" class="quick-info-text-container">
+
+                                                            <header class="header-quick-info">
+                                                                <img src="media/img/icons/icons/thunder-grey.png" class="img-h-1-3" alt="img">
+                                                                <div>Quick Info</div>
+                                                            </header>
+
+                                                            <main>
+                                                                My Name is Marko (SuperfreshDev) and I'm from Germany.
+                                                                <br>
+                                                                I am a Fullstack Software Developer in building <br>
+                                                                <span class="text-bold-dark-grey" >Web-Plattforms</span> ,
+                                                                <span class="text-bold-dark-grey">Software/Mobile-Solutions</span>
+                                                                and creating scalable
+                                                                running <span class="text-bold-dark-grey">Backend-Systems</span>.
+                                                            </main>
 
 
-                                                    </div>
+                                                        </div>
 
-                                                    <!-- -------------------------------------------- -->
-                                                    <!-- 🟩 [2/4] | Arrow About Quick Info             -->
-                                                    <!-- -------------------------------------------- -->
-                                                    <div id="arrow-about-quick-info">»</div>
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- 🟩 [2/3] | About Quick Info Arrow            -->
+                                                        <!-- -------------------------------------------- -->
 
-                                                    <!-- -------------------------------------------- -->
-                                                    <!-- 🟩 [3/4] | Img About Container -->
-                                                    <!-- -------------------------------------------- -->
-                                                    <div id="img-about-container">
+                                                        <div id="about-quick-info-arrow">»</div>
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- 🟩 [3/3] | Img About Container -->
+                                                        <!-- -------------------------------------------- -->
 
                                                         <img src="media/img/content/about/ich-mobile.png" id="img-about-quick-info-me-as-real" alt="img">
 
+
+
                                                     </div>
 
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- --------------------------------------------------------------- -->
+                                        <!-- [2/2] | Number Container  -->
+                                        <!-- --------------------------------------------------------------- -->
+                                        <div class="resp-very-small-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
+
+
+                                                <!-- --------------------------------------------------------------- -->
+                                                <!-- Padding Wrapper                                                 -->
+                                                <!-- --------------------------------------------------------------- -->
+                                                <div class="padding-t1-b2-0-8-wrapper">
+
                                                     <!-- --------------------------------------------------- -->
-                                                    <!-- 🟩 [4/4] | Number Container Light Right             -->
+                                                    <!-- About Quick Info Number Container                   -->
                                                     <!-- --------------------------------------------------- -->
-                                                    <div id="about-quick-info-number-container" class="number-container-light-right">
+                                                    <div class="number-container-light-right">
 
                                                         <div class="number-item">
                                                                 1/4
@@ -932,562 +982,7 @@
                                 </div>
 
                                 <!-- --------------------------------------------------------------- -->
-                                <!-- 🟥 [2/?] | Header Category | My IT-Stack |                      -->
-                                <!-- --------------------------------------------------------------- -->
-                                <div class="resp-max-content-area" style="background-color: rgb(28, 28, 28);">
-
-                                    <!-- ----------------------------------------------------------- -->
-                                    <!-- width & heihgt 100% (sets)                                  -->
-                                    <!-- ----------------------------------------------------------- -->
-                                    <div class="w-100p h-100p flex jc-c">
-
-                                        <!-- --------------------------------------------------------------- -->
-                                        <!-- RESP Main  -->
-                                        <!-- --------------------------------------------------------------- -->
-                                        <div class="resp-main-content-area">
-
-                                            <!-- ----------------------------------------------------------- -->
-                                            <!-- width & heihgt 100% (sets)                                  -->
-                                            <!-- ----------------------------------------------------------- -->
-                                            <div class="w-100p h-100p flex jc-c">
-
-                                                <!-- --------------------------------------------------------------- -->
-                                                <!-- [1/2] | Header Sub Container -->
-                                                <!-- --------------------------------------------------------------- -->
-                                                <div id="about-header-it-skills-container" class="headline-sub-container">
-
-                                                    <!-- --------------------------------------------------- -->
-                                                    <!-- [1/2] | Headline Sub Title  -->
-                                                    <!-- --------------------------------------------------- -->
-                                                    <div class="headline-sub-title">
-
-                                                        <img src="media/img/icons/icons/it-icons/binary-type-1-white.png" style="opacity: .5;" class="img-h-2" alt="img">
-                                                        <div>My IT-Stack</div>
-
-                                                    </div>
-
-                                                    <!-- --------------------------------------------------- -->
-                                                    <!-- [2/2] | Img Clipart Laptop -->
-                                                    <!-- --------------------------------------------------- -->
-                                                    <img src="media/img/icons/clipart/me-with-laptop.png" id="img-about-it-skills-clipart-laptop" alt="img">
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-                                <!-- --------------------------------------------------------------- -->
-                                <!-- 🟥 [3/?] | My It Skills Container | Ny IT-Stack                -->
-                                <!-- --------------------------------------------------------------- -->
-                                <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
-
-                                    <!-- ----------------------------------------------------------- -->
-                                    <!-- width & heihgt 100% (sets)                                  -->
-                                    <!-- ----------------------------------------------------------- -->
-                                    <div class="w-100p h-100p flex jc-c">
-
-                                        <!-- ----------------------------------------------------------- -->
-                                        <!-- Resp Very Small                                             -->
-                                        <!-- ----------------------------------------------------------- -->
-                                        <div class="resp-very-small-content-area">
-
-                                            <!-- ----------------------------------------------------------- -->
-                                            <!-- width & heihgt 100% (sets)                                  -->
-                                            <!-- ----------------------------------------------------------- -->
-                                            <div class="w-100p h-100p flex jc-c">
-
-                                                <!-- --------------------------------------------------------------- -->
-                                                <!-- My IT Skills Container -->
-                                                <!-- --------------------------------------------------------------- -->
-                                                <div id="about-my-it-skills-container" class="-">
-
-
-                                                    <!-- ---------------------------------------------------------------- -->
-                                                    <!-- [1/5] | Web-Dev | About Skill Category Container                         -->
-                                                    <!-- ---------------------------------------------------------------- -->
-                                                    <div id="about-skill-web-dev" class="about-skill-category-container">
-
-                                                        <!-- ------------------------------------------------- -->
-                                                        <!-- Header -->
-                                                        <!-- ------------------------------------------------- -->
-                                                        <header>
-                                                            <img src="media/img/icons/icons/it-icons/web-code-light-brown.png" class="img-h-1-5" alt="img">
-                                                            <div>Web-Development</div>
-                                                        </header>
-
-                                                        <!-- ------------------------------------------------- -->
-                                                        <!-- Main -->
-                                                        <!-- ------------------------------------------------- -->
-                                                        <main>
-
-                                                            <!-- angular -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Angular ?!" href="https://www.google.com/search?q=angular&sca_esv=574dbc9e6ebca954&ei=FGdIaKXDJbmG9u8PzrnD0Ak&ved=0ahUKEwilnYm3rOeNAxU5g_0HHc7cEJoQ4dUDCBA&uact=5&oq=angular&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2FuZ3VsYXIyEBAAGIAEGLEDGEMYgwEYigUyChAAGIAEGEMYigUyCxAAGIAEGLEDGIMBMgoQABiABBhDGIoFMggQABiABBixAzIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTILEAAYgAQYsQMYgwEyBRAAGIAEMgsQABiABBixAxiDAUjsDFAAWOQLcAF4AZABAJgBaKABlQWqAQM3LjG4AQPIAQD4AQGYAgmgAsgFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICDhAuGIAEGLEDGNEDGMcBwgIQEC4YgAQY0QMYQxjHARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgINEAAYgAQYsQMYQxiKBcICDRAuGIAEGLEDGEMYigXCAggQLhiABBixA8ICChAuGIAEGEMYigXCAhwQLhiABBixAxhDGIoFGJcFGNwEGN4EGN8E2AEBmAMAugYGCAEQARgUkgcDNy4yoAebUbIHAzYuMrgHwgXCBwUyLTcuMsgHLA&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/angular19.png" class="img-h-1-4" alt="img" >
-                                                                <div>Angular</div>
-                                                            </a>
-
-                                                            <!-- react -->
-                                                            <a target="_blank" class="about-link-skill-item" title="React ?!" href="https://www.google.com/search?q=react&sca_esv=574dbc9e6ebca954&ei=ePxFaJu6EsiN9u8P7O3r6Q0&ved=0ahUKEwib1oq93uKNAxXIhv0HHez2Ot0Q4dUDCBA&uact=5&oq=react&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXJlYWN0MgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHSJYFUKADWKADcAF4ApABAJgBAKABAKoBALgBA8gBAPgBAZgCAqACCsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFmAMA4gMFEgExIECIBgGQBgiSBwEyoAcAsgcAuAcAwgcDMi0yyAcH&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/react-atom.png" class="img-h-1-4" alt="img" >
-                                                                <div>React</div>
-                                                            </a>
-
-                                                            <!-- nextjs -->
-                                                            <a target="_blank" class="about-link-skill-item" title="NextJS ?!" href="https://www.google.com/search?q=nextjs&sca_esv=d2fd9f04d01169bd&biw=1278&bih=1270&ei=41RJaPKAPeSD9u8Pksnq0Ag&ved=0ahUKEwiy_s-cj-mNAxXkgf0HHZKkGooQ4dUDCBA&uact=5&oq=nextjs&gs_lp=Egxnd3Mtd2l6LXNlcnAiBm5leHRqczINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBUiAClAAWOcIcAB4AZABAJgBYaABiwSqAQE2uAEDyAEA-AEBmAIGoAKgBMICCxAAGIAEGLEDGIMBwgIQEC4YgAQY0QMYQxjHARiKBcICEBAAGIAEGLEDGEMYgwEYigWYAwCSBwM1LjGgB9ohsgcDNS4xuAegBMIHBTAuMy4zyAcS&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/nextjs.png" class="img-h-1-4" alt="img" >
-                                                                <div>NextJS</div>
-                                                            </a>
-
-                                                            <!-- css -->
-                                                            <a target="_blank" class="about-link-skill-item" title="CSS ?!" href="https://www.google.com/search?q=css&sca_esv=574dbc9e6ebca954&ei=eE9JaOTnJ5SB9u8P2qfjMQ&ved=0ahUKEwjkg4uHiumNAxWUgP0HHdrTOAYQ4dUDCBA&uact=5&oq=css&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2NzczINEAAYgAQYsQMYQxiKBTIFEAAYgAQyDRAAGIAEGLEDGIMBGAoyChAAGIAEGEMYigUyCBAAGIAEGLEDMgoQABiABBhDGIoFMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFSI4NUIYJWO0LcAF4AZABAJgBU6AB7wGqAQEzuAEDyAEA-AEBmAIEoAKHAsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIQEAAYgAQYsQMYgwEYigUYCsICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAgsQABiABBixAxiDAcICDhAuGIAEGMcBGI4FGK8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAgUQLhiABMICDhAAGIAEGLEDGIMBGIoFwgILEC4YgAQYsQMYgwHCAggQLhiABBixA5gDAIgGAZAGCpIHATSgB-AfsgcBM7gHgQLCBwMyLTTIBxQ&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/css.png" class="img-h-1-4" alt="img" >
-                                                                <div>CSS</div>
-                                                            </a>
-
-                                                            <!-- sass -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Sass ?!" href="https://www.google.com/search?q=sass&sca_esv=574dbc9e6ebca954&ei=iU9JaIHlFev87_UPz5PV2As&ved=0ahUKEwjBzYaPiumNAxVr_rsIHc9JFbsQ4dUDCBA&uact=5&oq=sass&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHNhc3MyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyCxAuGIAEGMcBGK8BMggQLhiABBixAzIIEC4YgAQYsQMyCBAAGIAEGLEDMgsQLhiABBjHARivATIFEC4YgAQyCxAAGIAEGLEDGIMBMggQABiABBixA0jUBlAAWJ0FcAB4AZABAJgBiwGgAfcCqgEDMy4xuAEDyAEA-AEBmAIEoAKUA8ICEBAuGIAEGNEDGEMYxwEYigXCAgUQABiABMICCxAuGIAEGLEDGIMBwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYxwEYjgUYrwGYAwC6BgYIARABGBSSBwMzLjGgB-FOsgcDMy4xuAeUA8IHBTItMy4xyAcb&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/sass.png" class="img-h-1-4" alt="img" >
-                                                                <div>Sass</div>
-                                                            </a>
-
-                                                            <!-- storybook -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Storybook ?!" href="https://www.google.com/search?q=storybook&sca_esv=574dbc9e6ebca954&ei=lE9JaNOIHNv97_UPoNKM2QU&ved=0ahUKEwjToqyUiumNAxXb_rsIHSApI1sQ4dUDCBA&uact=5&oq=storybook&gs_lp=Egxnd3Mtd2l6LXNlcnAiCXN0b3J5Ym9vazIIEAAYgAQYsQMyBRAAGIAEMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIhANQAFgAcAB4AZABAJgBU6ABU6oBATG4AQPIAQD4AQL4AQGYAgGgAlmYAwCSBwExoAfVBLIHATG4B1nCBwMyLTHIBwQ&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/storybook.png" class="img-h-1-4" alt="img" >
-                                                                <div>Storybook</div>
-                                                            </a>
-
-                                                            <!-- js -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Java Script ?!" href="https://www.google.com/search?q=java+script&sca_esv=574dbc9e6ebca954&ei=o09JaN-EE8qB9u8PkZDdyQ8&ved=0ahUKEwif4rabiumNAxXKgP0HHRFIN_kQ4dUDCBA&uact=5&oq=java+script&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2phdmEgc2NyaXB0MgcQABiABBgKMgUQABiABDIHEAAYgAQYCjIFEAAYgAQyBxAAGIAEGAoyBRAAGIAEMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSJAfUABY6B1wB3gBkAEAmAGBAaAB1QiqAQQxMi4yuAEDyAEA-AEBmAIVoAKxCcICChAAGIAEGEMYigXCAg4QLhiABBjHARiOBRivAcICCxAuGIAEGLEDGIMBwgIIEAAYgAQYsQPCAg4QLhiABBixAxiDARiKBcICBRAuGIAEwgIIEC4YgAQYsQPCAgsQLhiABBixAxjUAsICERAuGIAEGMcBGJgFGJ4FGK8BwgILEAAYgAQYsQMYgwHCAgoQABiABBixAxgKmAMAkgcEMTkuMqAH658BsgcEMTIuMrgHlAnCBwYwLjIuMTnIB1E&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/js.png" class="img-h-1-4" alt="img">
-                                                                <div>Java Script</div>
-                                                            </a>
-
-                                                            <!-- ts -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Type Script ?!" href="https://www.google.com/search?q=type+script&sca_esv=574dbc9e6ebca954&ei=tE9JaJnqI-eM9u8PjJTLmQk&ved=0ahUKEwiZlNWjiumNAxVnhv0HHQzKMpMQ4dUDCBA&uact=5&oq=type+script&gs_lp=Egxnd3Mtd2l6LXNlcnAiC3R5cGUgc2NyaXB0MgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSNRwUMVlWJxvcAB4A5ABAJgBX6AB2gaqAQIxMbgBA8gBAPgBAZgCDaACmQfCAgQQABhHwgIKEAAYgAQYQxiKBcICBRAAGIAEwgILEAAYgAQYsQMYgwHCAgsQLhiABBixAxiDAcICEBAAGIAEGLEDGEMYgwEYigXCAggQABiABBixA8ICBBAAGAPCAggQLhiABBixA8ICBxAuGIAEGArCAg4QLhiABBjHARiOBRivAZgDAOIDBRIBMSBAiAYBkAYIkgcCMTOgB6FZsgcCMTG4B5AHwgcIMC4yLjEwLjHIBzg&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/ts.png" class="img-h-1-4" alt="img" >
-                                                                <div>Type Script</div>
-                                                            </a>
-
-                                                            <!-- nodejs -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Type Script ?!" href="https://www.google.com/search?sca_esv=d2fd9f04d01169bd&q=node+js&spell=1&sa=X&ved=2ahUKEwjl2O2bj-mNAxUWhP0HHU6EBk8QBSgAegQICRAB&biw=1278&bih=1270&dpr=1.5">
-                                                                <img src="media/img/icons/tech-icons/nodejs.png" class="img-h-1-4" alt="img" >
-                                                                <div>NodeJS</div>
-                                                            </a>
-
-                                                            <!-- nestjs -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Type Script ?!" href="https://www.google.com/search?q=nestjs&sca_esv=d2fd9f04d01169bd&ei=i1RJaNehLruC9u8P_Yy92Qc&ved=0ahUKEwiXk8byjumNAxU7gf0HHX1GL3sQ4dUDCBA&uact=5&oq=nestjs&gs_lp=Egxnd3Mtd2l6LXNlcnAiBm5lc3RqczIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiuC1AAWK0KcAB4AZABAJgBXKABzwOqAQE2uAEDyAEA-AEBmAIGoALzA8ICChAAGIAEGEMYigXCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIQEC4YgAQY0QMYQxjHARiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAgsQLhiABBjRAxjHAcICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAhQQLhiABBixAxiDARjHARiKBRivAcICBRAuGIAEwgILEC4YgAQYsQMY1AKYAwCSBwM1LjGgB845sgcDNS4xuAfzA8IHAzItNsgHHg&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/nestjs.svg" class="img-h-1-4" alt="img" >
-                                                                <div>NestJS</div>
-                                                            </a>
-
-                                                        </main>
-
-                                                    </div>
-
-                                                    <!-- ---------------------------------------------------------------- -->
-                                                    <!-- [2/5] | Software/Mobile-Dev | About Skill Category Container             -->
-                                                    <!-- ---------------------------------------------------------------- -->
-                                                    <div id="about-skill-software-mobile-dev" class="about-skill-category-container">
-
-                                                        <header>
-                                                            <img src="media/img/icons/icons/it-icons/brackets-light-brown.png"  class="img-h-1-5" alt="img">
-                                                            <div>Software/Mobile-Development</div>
-                                                        </header>
-
-                                                        <main>
-
-                                                            <!-- java -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Java ?!" href="https://dev.java/">
-                                                                <img src="media/img/icons/tech-icons/java-black.png" style="padding-bottom: .3em;" class="img-h-1-6" alt="img" >
-                                                                <div>Java</div>
-                                                            </a>
-
-                                                            <!-- spring boot -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Spring Boot ?!" href="https://www.google.com/search?q=spring+boot&oq=spring+boot&gs_lcrp=EgZjaHJvbWUqDwgAEEUYOxiDARixAxiABDIPCAAQRRg7GIMBGLEDGIAEMgYIARBFGEAyBggCEEUYPTIGCAMQRRg8MgYIBBBFGDwyBggFEEUYQTIGCAYQRRhBMgYIBxBFGEHSAQgyNzM1ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8">
-                                                                <img src="media/img/icons/tech-icons/springboot2.png" class="img-h-1-4" alt="img" >
-                                                                <div>Spring Boot</div>
-                                                            </a>
-
-                                                            <!-- rest api -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Rest Api ?!" href="https://www.google.com/search?q=rest+api&sca_esv=d2fd9f04d01169bd&ei=YFJJaMGHIMy79u8PuNqPkQk&ved=0ahUKEwjBt-XpjOmNAxXMnf0HHTjtI5IQ4dUDCBA&uact=5&oq=rest+api&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHJlc3QgYXBpMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMUMUABY5QpwAHgBkAEBmAGxAaABhwaqAQM2LjK4AQPIAQD4AQGYAgegAvUEwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIIEAAYgAQYkgPCAgsQABiABBiSAxiKBcICCBAAGIAEGMkDwgIQEAAYgAQYsQMYQxiDARiKBZgDAJIHAzUuMqAHkS2yBwM1LjK4B_UEwgcFMC4xLjbIBxo&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/rest.png" class="img-h-1-4" alt="img" >
-                                                                <div>Rest Api</div>
-                                                            </a>
-
-                                                            <!-- graphql -->
-                                                            <a target="_blank" class="about-link-skill-item" title="GraphQL ?!" href="https://www.google.com/search?q=graphql&sca_esv=d2fd9f04d01169bd&ei=bVJJaITVFuGB9u8Pu9nHoAo&ved=0ahUKEwjEv_XvjOmNAxXhgP0HHbvsEaQQ4dUDCBA&uact=5&oq=graphql&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2dyYXBocWwyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOYKUABY2ghwAHgBkAEAmAFloAHTBKoBAzYuMbgBA8gBAPgBAZgCB6AC8gTCAhAQLhiABBjRAxhDGMcBGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICDhAuGIAEGLEDGIMBGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAgsQABiABBixAxiDAcICCxAuGIAEGLEDGIMBwgIOEC4YgAQYxwEYjgUYrwHCAggQABiABBixA8ICCBAuGIAEGLEDmAMAkgcDNi4xoAfDNrIHAzYuMbgH8gTCBwMyLTfIBxo&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/graph.png" class="img-h-1-4" alt="img" >
-                                                                <div>GraphQL</div>
-                                                            </a>
-
-                                                            <!-- python -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Python ?!" href="https://www.google.com/search?q=python&sca_esv=d2fd9f04d01169bd&ei=dlJJaNvHDIv97_UPt4_QuQk&ved=0ahUKEwjb2pD0jOmNAxWL_rsIHbcHNJcQ4dUDCBA&uact=5&oq=python&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnB5dGhvbjINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIIEAAYgAQYsQMyChAAGIAEGEMYigUyChAAGIAEGEMYigUyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgARI3QhQAFjkBnAAeAGQAQCYAbcBoAHgBKoBAzQuMrgBA8gBAPgBAZgCBqAC-gTCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwGYAwCSBwM0LjKgB9MgsgcDNC4yuAf6BMIHAzItNsgHFg&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/python.png" class="img-h-1-4" alt="img" >
-                                                                <div>Python</div>
-                                                            </a>
-
-                                                            <!-- react native -->
-                                                            <a target="_blank" class="about-link-skill-item" title="React Native ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/react-atom.png" class="img-h-1-4" alt="img" >
-                                                                <div>React Native</div>
-                                                            </a>
-
-                                                            <!-- scrum -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Scrum ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/scrum.png" class="img-h-1-5" alt="img" >
-                                                                <div>Scrum</div>
-                                                            </a>
-
-                                                            <!-- clean code -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Clean Code ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/clean-code.png" class="img-h-1-4" alt="img" >
-                                                                <div>Clean Code</div>
-                                                            </a>
-
-                                                            <!-- ddd -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Domain Driven Design ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/ddd.png" class="img-h-1-2" alt="img" >
-                                                            </a>
-
-                                                        </main>
-
-                                                    </div>
-
-                                                    <!-- ---------------------------------------------------------------- -->
-                                                    <!-- [3/5] | Backend | About Skill Category Container                         -->
-                                                    <!-- ---------------------------------------------------------------- -->
-                                                    <div id="about-skill-backend" class="about-skill-category-container">
-
-                                                        <header>
-                                                            <img src="media/img/icons/icons/it-icons/backend-wheat.png" class="img-h-1-5" alt="img">
-                                                            <div>Backend</div>
-                                                        </header>
-
-                                                        <main>
-
-                                                            <!-- PostgreSQL -->
-                                                            <a target="_blank" class="about-link-skill-item" title="PostgreSQL ?!" href="https://www.google.com/search?q=postgresql&sca_esv=d2fd9f04d01169bd&ei=SVRJaMmWF6P97_UPveKsSQ&ved=0ahUKEwiJ3_LSjumNAxWj_rsIHT0xKwkQ4dUDCBA&uact=5&oq=postgresql&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnBvc3RncmVzcWwyEBAAGIAEGLEDGEMYgwEYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIjg5QAFi2DHAAeAGQAQCYAYoBoAHWBqoBAzguMrgBA8gBAPgBAZgCCqAC_AbCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwHCAgoQLhiABBhDGIoFwgIOEC4YgAQYsQMY0QMYxwHCAg0QABiABBixAxhDGIoFwgIOEC4YgAQYxwEYjgUYrwGYAwCSBwM3LjOgB9hFsgcDNy4zuAf8BsIHBTAuNC42yAcj&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/postgre.png" class="img-h-1-5" alt="img" >
-                                                                <div>PostgreSQL</div>
-                                                            </a>
-
-                                                            <!-- MongoDB -->
-                                                            <a target="_blank" class="about-link-skill-item" title="MongoDB ?!" href="https://www.google.com/search?q=mongodb&oq=mongodb+&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEggBEAAYQxiDARixAxiABBiKBTIMCAIQABhDGIAEGIoFMgwIAxAAGEMYgAQYigUyDAgEEAAYQxiABBiKBTIMCAUQABhDGIAEGIoFMgwIBhAAGEMYgAQYigUyBwgHEAAYgAQyDAgIEAAYQxiABBiKBTIHCAkQABiABNIBCDM4ODZqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8">
-                                                                <img src="media/img/icons/tech-icons/mongodb.png" class="img-h-1-4" alt="img" >
-                                                                <div>MongoDB</div>
-                                                            </a>
-
-                                                            <!-- Docker -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Docker ?!" href="https://www.google.com/search?q=docker&sca_esv=d2fd9f04d01169bd&ei=K1RJaN-GCor_7_UPzZ3vsAQ&ved=0ahUKEwifyL7EjumNAxWK_7sIHc3OG0YQ4dUDCBA&uact=5&oq=docker&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmRvY2tlcjINEAAYgAQYsQMYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIIEAAYgAQYsQMyDRAAGIAEGLEDGEMYigUyEBAAGIAEGLEDGEMYgwEYigUyChAAGIAEGEMYigVIxgVQAFi9BHAAeAGQAQCYAXOgAZ8EqgEDNS4xuAEDyAEA-AEBmAIGoAK_BMICBRAuGIAEwgIQEC4YgAQY0QMYQxjHARiKBcICCxAuGIAEGNEDGMcBwgIIEC4YgAQYsQOYAwCSBwMzLjOgB_UtsgcDMy4zuAe_BMIHAzItNsgHGg&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/docker.png" class="img-h-1-4" alt="img" >
-                                                                <div>Docker</div>
-                                                            </a>
-
-                                                            <!-- Kubernetes -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Kubernetes ?!" href="https://www.google.com/search?q=kubernetes&sca_esv=d2fd9f04d01169bd&ei=DVRJaIfuLr777_UPvrqCiQY&ved=0ahUKEwjHqLy2jumNAxW-_bsIHT6dIGEQ4dUDCBA&uact=5&oq=kubernetes&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmt1YmVybmV0ZXMyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARItQxQAFjuC3AAeAGQAQCYAW-gAeAGqgEDNy4zuAEDyAEA-AEBmAIKoAKMB8ICChAAGIAEGEMYigXCAgoQLhiABBhDGIoFwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICCBAuGIAEGLEDwgILEC4YgAQYxwEYrwGYAwCSBwM2LjSgB_JKsgcDNi40uAeMB8IHBTAuMy43yAcl&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/kubernetes.png" class="img-h-1-5" alt="img" >
-                                                                <div>Kubernetes</div>
-                                                            </a>
-
-                                                            <!-- Apache Kafka -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Apache Kafka ?!" href="https://www.google.com/search?q=apache+kafka&sca_esv=d2fd9f04d01169bd&ei=AVRJaODxM7-G9u8P-ovT4Ac&ved=0ahUKEwig9uSwjumNAxU_g_0HHfrFFHwQ4dUDCBA&uact=5&oq=apache+kafka&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGFwYWNoZSBrYWZrYTILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI5hNQAFi-EnABeAGQAQCYAWegAfIHqgEEMTIuMbgBA8gBAPgBAZgCDqACsQjCAgoQABiABBhDGIoFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgIQEC4YgAQY0QMYQxjHARiKBcICCBAAGIAEGLEDwgIQEAAYgAQYsQMYQxiDARiKBcICCxAAGIAEGLEDGIoFwgIIEC4YgAQYsQPCAg0QABiABBixAxhDGIoFwgIOEAAYgAQYsQMYgwEYigXCAgUQLhiABMICBxAAGIAEGAqYAwCSBwQxMy4xoAfBbrIHBDEyLjG4B60IwgcGMC4xLjEzyAc0&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/kafka.png" class="img-h-1-5" alt="img" >
-                                                                <div>Apache Kafka</div>
-                                                            </a>
-
-                                                            <!-- Nginx -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Nginx ?!" href="https://www.google.com/search?q=nginx&oq=nginx+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDINCAIQABiDARixAxiABDIKCAMQABixAxiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBBzcwMGowajmoAgCwAgE&sourceid=chrome&ie=UTF-8">
-                                                                <img src="media/img/icons/tech-icons/nginx.png" class="img-h-1-4" alt="img" >
-                                                                <div>Nginx</div>
-                                                            </a>
-
-                                                            <!-- Grafana -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Grafana ?!" href="https://www.google.com/search?q=grafana&oq=grafana&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDIKCAEQABixAxiABDINCAIQABiDARixAxiABDIHCAMQABiABDIKCAQQABixAxiABDIGCAUQRRhBMgYIBhBFGDwyBggHEEUYPNIBCDEzODdqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8">
-                                                                <img src="media/img/icons/tech-icons/grafana.png" class="img-h-1-4" alt="img" >
-                                                                <div>Grafana</div>
-                                                            </a>
-
-                                                            <!-- Promotheus -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Promotheus ?!" href="https://www.google.com/search?sca_esv=343d2d438bcb4bf0&q=Prometheus+(Software)&si=AMgyJEuJ9LO9fEldowAiSPVZwE1yNt005fFn8_v7u3nGVoXCXhsnsFpi84dKiodHgfTsAjtENzHF8oV8moYhIaYs2e7qTQdImckSE3bn6Z7LhAWLBq6mP9ZSJ-SxuAE8061dWFQkol85vZQ2Ost0X9EJhixXaUaqxCmBta4DsX5nqnjIY86ZE9rtu0YNGl6FGl_qg6CJwCo4&sa=X&ved=2ahUKEwjCheK7_PeNAxV8_7sIHUMYKSoQ3LoBegQIBRAB&biw=1162&bih=1154&dpr=1.65">
-                                                                <img src="media/img/icons/tech-icons/prometheus.png" class="img-h-1-4" alt="img" >
-                                                                <div>Prometheus</div>
-                                                            </a>
-
-                                                            <!-- Jaeger -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Jaeger ?!" href="https://www.google.com/search?q=jeager+software&sca_esv=343d2d438bcb4bf0&biw=1162&bih=1154&ei=gB5RaMjpCpDn7_UPm52MwAQ&ved=0ahUKEwjIqZ29_PeNAxWQ87sIHZsOA0gQ4dUDCBA&uact=5&oq=jeager+software&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2plYWdlciBzb2Z0d2FyZTIHEAAYgAQYDTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgKGB4yCBAAGBYYChgeMggQABiABBiiBDIFEAAY7wUyBRAAGO8FMggQABiiBBiJBUj_DFAAWN4LcAB4AZABAJgBe6ABgwuqAQQxMS40uAEDyAEA-AEBmAIPoALDC8ICChAAGIAEGEMYigXCAg4QLhiABBjHARiOBRivAcICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAgUQLhiABMICCxAAGIAEGLEDGIMBwgIOEAAYgAQYsQMYgwEYigXCAgsQLhiABBixAxiDAcICDhAuGIAEGLEDGIMBGIoFwgIIEC4YgAQYsQPCAhQQLhiABBixAxiDARjHARiKBRivAcICBRAAGIAEwgIKEC4YgAQYQxiKBcICDhAAGIAEGJIDGLgEGIoFwgILEAAYgAQYkgMYigXCAg0QABiABBhDGMkDGIoFwgIQEC4YgAQYxwEYChiOBRivAcICEBAuGIAEGLEDGNEDGMcBGArCAgoQABiABBixAxgKwgIHEAAYgAQYCsICDRAuGIAEGMcBGAoYrwHCAg0QABiABBixAxiDARgKwgIGEAAYDRgemAMAkgcDOS42oAegygGyBwM5Lja4B8MLwgcGMC4yLjEzyAc4&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/jaeger.png" class="img-h-1-5" alt="img" >
-                                                                <div>Jaeger</div>
-                                                            </a>
-
-                                                            <!-- DevOps -->
-                                                            <a target="_blank" class="about-link-skill-item" title="DevOps ?!" href="https://www.google.com/search?q=devops&sca_esv=d2fd9f04d01169bd&ei=-FNJaKCHF8anhbIP0p3j-As&ved=0ahUKEwig46KsjumNAxXGU0EAHdLOGL8Q4dUDCBA&uact=5&oq=devops&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmRldm9wczIFEAAYgAQyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgoQABiABBhDGIoFMgUQABiABDIKEAAYgAQYQxiKBTIFEAAYgAQyChAAGIAEGEMYigVIxghQAFifB3AAeAGQAQCYAaQBoAH1BKoBAzQuMrgBA8gBAPgBAZgCBqACnAXCAhAQLhiABBjRAxhDGMcBGIoFwgIFEC4YgATCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYsQMY0QMYxwHCAh8QLhiABBjRAxhDGMcBGIoFGJcFGNwEGN4EGOAE2AEBwgIQEAAYgAQYsQMYQxiDARiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAhQQLhiABBixAxjRAxiDARjHARjJA8ICCxAAGIAEGJIDGLgEwgIIEAAYgAQYkgPCAg4QABiABBixAxiDARiKBcICCxAuGIAEGLEDGNQCwgIIEC4YgAQYsQPCAggQABiABBixA5gDALoGBggBEAEYFJIHAzIuNKAH8kiyBwMyLjS4B5wFwgcFMi01LjHIByQ&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/devops.png" class="img-h-1-5" alt="img" >
-                                                                <div>DevOps</div>
-                                                            </a>
-
-                                                            <!-- Cloud -->
-                                                            <a target="_blank" class="about-link-skill-item" title="Cloud ?!" href="https://www.google.com/search?q=cloud+computing&sca_esv=d2fd9f04d01169bd&ei=jVJJaJvIHLSJ9u8P4Oua8QI&ved=0ahUKEwjbwpz_jOmNAxW0hP0HHeC1Ji4Q4dUDCBA&uact=5&oq=cloud+computing&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2Nsb3VkIGNvbXB1dGluZzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIpA5QAFj3DHAAeAGQAQCYAXygAesJqgEEMTEuNLgBA8gBAPgBAZgCD6ACtwrCAgoQABiABBhDGIoFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICEBAAGIAEGLEDGIMBGIoFGArCAhAQABiABBixAxhDGIMBGIoFwgILEAAYgAQYsQMYgwHCAg4QLhiABBjHARiOBRivAcICERAuGIAEGLEDGNEDGIMBGMcBwgIKEC4YgAQYQxiKBcICEBAuGIAEGNEDGEMYxwEYigXCAhQQLhiABBixAxiDARjHARiOBRivAcICCxAuGIAEGLEDGIMBwgINEAAYgAQYsQMYgwEYCsICCxAAGIAEGLEDGIoFwgIHEAAYgAQYCsICCxAuGIAEGMcBGK8BwgIdEC4YgAQYxwEYjgUYrwEYlwUY3AQY3gQY4ATYAQGYAwC6BgYIARABGBSSBwQxMS40oAf5hwGyBwQxMS40uAe3CsIHBDItMTXIB0E&sclient=gws-wiz-serp">
-                                                                <img src="media/img/icons/tech-icons/cloud-engine.png" class="img-h-1-2" alt="img" >
-                                                                <div>Cloud</div>
-                                                            </a>
-
-                                                        </main>
-
-                                                    </div>
-
-                                                    <!-- ---------------------------------------------------------------- -->
-                                                    <!-- [4/4] | About Quote & Number Container                           -->
-                                                    <!-- ---------------------------------------------------------------- -->
-                                                    <div id="about-skill-quote-number-container">
-
-
-                                                        <!-- ---------------------------------------------------------------- -->
-                                                        <!-- [1/2] | About Skill Quote Container                                      -->
-                                                        <!-- ---------------------------------------------------------------- -->
-                                                        <div id="about-skill-quote-container">
-
-                                                            <div>Dream it.</div>
-                                                            <div>Build it.</div>
-                                                            <div>Live it.</div>
-
-                                                        </div>
-
-                                                        <!-- --------------------------------------------------- -->
-                                                        <!-- [2/2] | Number Container                            -->
-                                                        <!-- --------------------------------------------------- -->
-                                                        <div class="number-container-light-left">
-
-                                                            <div class="number-item">
-                                                                2/4
-                                                            </div>
-
-                                                        </div>
-
-
-                                                    </div>
-
-
-
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <!-- --------------------------------------------------------------- -->
-                                <!-- 🟥 [4/?] | More Points of Me |                                  -->
-                                <!-- --------------------------------------------------------------- -->
-                                <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
-
-                                    <!-- ----------------------------------------------------------- -->
-                                    <!-- width & heihgt 100% (sets)                                  -->
-                                    <!-- ----------------------------------------------------------- -->
-                                    <div class="w-100p h-100p grid ji-c">
-
-                                        <!-- ----------------------------------------------------------- -->
-                                        <!-- 🟥[1/2] | About More Header                                -->
-                                        <!-- ----------------------------------------------------------- -->
-                                        <div class="resp-max-content-area" style="background-color: rgb(28, 28, 28);">
-
-                                            <!-- ----------------------------------------------------------- -->
-                                            <!-- width & heihgt 100% (sets)                                  -->
-                                            <!-- ----------------------------------------------------------- -->
-                                            <div class="w-100p h-100p grid ji-c">
-
-                                                <!-- ----------------------------------------------------------- -->
-                                                <!-- Header | About More Header                                  -->
-                                                <!-- ----------------------------------------------------------- -->
-                                                <div class="resp-min-content-area">
-
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <!-- width & heihgt 100% (sets)                                  -->
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <div class="w-100p h-100p flex jc-c">
-
-                                                        <!-- --------------------------------------------------------------- -->
-                                                        <!-- [1/2] | Header | About More Header  -->
-                                                        <!-- --------------------------------------------------------------- -->
-                                                        <div id="about-more-header" class="headline-sub-container">
-
-                                                            <!-- --------------------------------------------------- -->
-                                                            <!-- [1/2] | Headline Sub Title  -->
-                                                            <!-- --------------------------------------------------- -->
-                                                            <div class="headline-sub-title">
-
-                                                                <img src="media/img/icons/icons/it-icons/stars-light-grey.png" style="opacity: .5;" class="img-h-2" alt="img">
-                                                                <div>More Point's from Me </div>
-
-                                                            </div>
-
-                                                            <!-- --------------------------------------------------- -->
-                                                            <!-- [2/2] | Img Clipart Laptop -->
-                                                            <!-- --------------------------------------------------- -->
-                                                            <img src="media/img/icons/clipart/clipart-me.png" id="img-about-more-clipart-me" alt="img">
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                        <!-- ----------------------------------------------------------- -->
-                                        <!-- 🟥[2/2] | About More Container                              -->
-                                        <!-- ----------------------------------------------------------- -->
-                                        <div id="about-more-container">
-
-                                            <!-- ----------------------------------------------------------- -->
-                                            <!-- ➡️🟥[1/2] | About More List Container                      -->
-                                            <!-- ----------------------------------------------------------- -->
-                                            <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
-
-                                                <!-- ----------------------------------------------------------- -->
-                                                <!-- width & heihgt 100% (sets)                                  -->
-                                                <!-- ----------------------------------------------------------- -->
-                                                <div class="w-100p h-100p grid ji-c">
-
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <!-- Resp Very Small                                             -->
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <div class="resp-very-small-content-area">
-
-                                                        <!-- ----------------------------------------------------------- -->
-                                                        <!-- width & heihgt 100% (sets)                                  -->
-                                                        <!-- ----------------------------------------------------------- -->
-                                                        <div class="w-100p h-100p flex jc-c">
-
-                                                            <!-- ------------------------------------------- -->
-                                                            <!-- About More List Container                   -->
-                                                            <!-- ------------------------------------------- -->
-                                                            <div id="about-more-list-container">
-
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- 🟥[1/3] | List Item                        -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <div class="about-more-list-item">
-
-                                                                    <div>
-                                                                        <img src="media/img/icons/icons/colors/icons-anthracite/team-anthracite.png" id="img-about-more-list-item-community" alt="img">
-                                                                        <div class="text-bold-dark-grey">Open for new contact's ...</div>
-                                                                    </div>
-
-                                                                    <div>
-                                                                        <span class="text-bold-dark-grey">I like to connecting </span>
-
-                                                                        with people from different backgrounds to talk about business, IT,
-                                                                        and other fun and inspiring topics.
-                                                                        <!-- I'm passionate about learning new technologies in a practical and
-                                                                        meaningful context. I often build small projects to apply and
-                                                                        deepen my knowledge. -->
-
-                                                                    </div>
-
-                                                                </div>
-
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- 🟥[2/3] | List Item                      -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <div class="about-more-list-item">
-
-                                                                    <div>
-                                                                        <img src="media/img/icons/icons/colors/icons-anthracite/big-swords-anthracite.png" id="img-about-more-list-item-challenge" alt="img">
-                                                                        <div class="text-bold-dark-grey">Love to challenging myself ...</div>
-                                                                    </div>
-
-                                                                    <div>
-                                                                        <span class="text-bold-dark-grey">In my private time, </span>
-                                                                        I love challenging myself—whether it's through
-                                                                        sports, playing the violin, or learning more about cooking, cultures, and languages.
-                                                                        To support these interests, I'm currently developing small web views
-                                                                        that give me reusable access to everything I'm exploring and working on.
-                                                                    </div>
-
-                                                                </div>
-
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- 🟥[3/3] | List Item                        -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <div class="about-more-list-item">
-
-                                                                    <div>
-                                                                        <img src="media/img/icons/icons/colors/icons-anthracite/cursor-anthracite.png" id="img-about-more-list-item-explore-my-page" alt="img">
-                                                                        <div class="text-bold-dark-grey">Have fun to explore my Webpage ...</div>
-                                                                    </div>
-
-                                                                    <div>
-                                                                        <span class="text-bold-dark-grey">If you’d like to see more</span>
-                                                                        about my work in tech or how I spend my
-                                                                        free time, feel free to check out the links under "My IT" or "My Private".<br>
-                                                                        Finally if you like to Contact me, feel free to write me an E-Mail.
-                                                                    </div>
-
-                                                                </div>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <!-- ----------------------------------------------------------- -->
-                                            <!-- ➡️🟥[2/2] | Numner Container                                  -->
-                                            <!-- ----------------------------------------------------------- -->
-                                            <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
-
-                                                <!-- ----------------------------------------------------------- -->
-                                                <!-- width & heihgt 100% (sets)                                  -->
-                                                <!-- ----------------------------------------------------------- -->
-                                                <div class="w-100p h-100p grid ji-c">
-
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <!-- About More Private Container                                -->
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <div class="resp-very-small-content-area">
-
-
-                                                        <!-- --------------------------------------------------- -->
-                                                        <!-- [2/2] | Number Container                            -->
-                                                        <!-- --------------------------------------------------- -->
-                                                        <div id="about-more-number-container" class="number-container-light-right">
-
-                                                            <div class="number-item">
-                                                                3/4
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <!-- --------------------------------------------------------------- -->
-                                <!-- 🟥 [5/?] | Contact | ...                -->
+                                <!-- 🟩 [2/4] | My IT Skills                                         -->
                                 <!-- --------------------------------------------------------------- -->
                                 <div class="resp-max-content-area">
 
@@ -1496,15 +991,517 @@
                                     <!-- ----------------------------------------------------------- -->
                                     <div class="w-100p h-100p grid ji-c">
 
-                                        <!-- ----------------------------------------------------------- -->
-                                        <!-- 🟥[1/2] | About Contact Header                            -->
-                                        <!-- ----------------------------------------------------------- -->
-                                        <div class="resp-max-content-area" style="background-color: rgb(28 , 28, 28);">
+                                        <!-- ------------------------------------------------- -->
+                                        <!-- 🟩[1/4] | Header Content Container              -->
+                                        <!-- ------------------------------------------------- -->
+                                        <div class="resp-max-content-area" style="background-color: rgb(28, 28, 28)">
 
                                             <!-- ----------------------------------------------------------- -->
                                             <!-- width & heihgt 100% (sets)                                  -->
                                             <!-- ----------------------------------------------------------- -->
-                                            <div class="w-100p h-100p flex jc-c">
+                                            <div class="w-100p h-100p grid ji-c">
+
+                                                <!-- ----------------------------------------------------------- -->
+                                                <!-- Resp Very Small                                          -->
+                                                <!-- ----------------------------------------------------------- -->
+                                                <div class="resp-very-small-content-area">
+
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <!-- width & heihgt 100% (sets)                                  -->
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <div class="w-100p h-100p flex jc-c">
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- Header Topic Container                                      -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="header-topic-container">
+
+                                                            <!-- --------------------------------------------------- -->
+                                                            <!-- [1/2] | Header Topic Title  -->
+                                                            <!-- --------------------------------------------------- -->
+                                                            <div class="header-topic-title">
+
+                                                                <img src="media/img/icons/icons/it-icons/binary-type-1-white.png" style="opacity: .5;" class="img-h-2" alt="img">
+                                                                <div>My IT-Stack</div>
+
+                                                            </div>
+
+                                                            <!-- --------------------------------------------------- -->
+                                                            <!-- [2/2] | Img Header Topic                            -->
+                                                            <!-- --------------------------------------------------- -->
+                                                            <img src="media/img/icons/clipart/me-with-laptop.png" class="img-header-topic" alt="img">
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- ------------------------------------------------- -->
+                                        <!-- 🟩 About My It Skills Container                   -->
+                                        <!-- ------------------------------------------------- -->
+                                        <div id="about-my-it-skills-container">
+
+                                            <!-- ------------------------------------------------- -->
+                                            <!-- 🟩[2/4] | My IT Skills List Container -->
+                                            <!-- ------------------------------------------------- -->
+                                            <div class="resp-max-content-area">
+
+                                                <!-- ----------------------------------------------------------- -->
+                                                <!-- width & heihgt 100% (sets)                                  -->
+                                                <!-- ----------------------------------------------------------- -->
+                                                <div class="w-100p h-100p grid ji-c">
+
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <!-- Resp Very Small                                          -->
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <div class="resp-very-small-content-area">
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- width & heihgt 100% (sets)                                  -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="w-100p h-100p flex jc-c">
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Padding Wrapper -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="padding-2-0-8-wrapper">
+
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <!-- About My IT Skills List Container -->
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <div id="about-my-it-skills-list-container">
+
+                                                                    <!-- --------------------------------------------------- -->
+                                                                    <!-- [1/3] | Web Dev Skill | Container  -->
+                                                                    <!-- --------------------------------------------------- -->
+                                                                    <div class="about-my-it-skills-item-container">
+
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <!-- Header -->
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <header>
+                                                                            <img src="media/img/icons/icons/it-icons/web-code-light-brown.png" class="img-h-1-5" alt="img">
+                                                                            <div>Web-Development</div>
+                                                                        </header>
+
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <!-- Main -->
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <main>
+
+                                                                            <!-- angular -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Angular ?!" href="https://www.google.com/search?q=angular&sca_esv=574dbc9e6ebca954&ei=FGdIaKXDJbmG9u8PzrnD0Ak&ved=0ahUKEwilnYm3rOeNAxU5g_0HHc7cEJoQ4dUDCBA&uact=5&oq=angular&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2FuZ3VsYXIyEBAAGIAEGLEDGEMYgwEYigUyChAAGIAEGEMYigUyCxAAGIAEGLEDGIMBMgoQABiABBhDGIoFMggQABiABBixAzIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTILEAAYgAQYsQMYgwEyBRAAGIAEMgsQABiABBixAxiDAUjsDFAAWOQLcAF4AZABAJgBaKABlQWqAQM3LjG4AQPIAQD4AQGYAgmgAsgFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICDhAuGIAEGLEDGNEDGMcBwgIQEC4YgAQY0QMYQxjHARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgINEAAYgAQYsQMYQxiKBcICDRAuGIAEGLEDGEMYigXCAggQLhiABBixA8ICChAuGIAEGEMYigXCAhwQLhiABBixAxhDGIoFGJcFGNwEGN4EGN8E2AEBmAMAugYGCAEQARgUkgcDNy4yoAebUbIHAzYuMrgHwgXCBwUyLTcuMsgHLA&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/angular19.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Angular</div>
+                                                                            </a>
+
+                                                                            <!-- react -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="React ?!" href="https://www.google.com/search?q=react&sca_esv=574dbc9e6ebca954&ei=ePxFaJu6EsiN9u8P7O3r6Q0&ved=0ahUKEwib1oq93uKNAxXIhv0HHez2Ot0Q4dUDCBA&uact=5&oq=react&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXJlYWN0MgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHSJYFUKADWKADcAF4ApABAJgBAKABAKoBALgBA8gBAPgBAZgCAqACCsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFmAMA4gMFEgExIECIBgGQBgiSBwEyoAcAsgcAuAcAwgcDMi0yyAcH&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/react-atom.png" class="img-h-1-4" alt="img" >
+                                                                                <div>React</div>
+                                                                            </a>
+
+                                                                            <!-- nextjs -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="NextJS ?!" href="https://www.google.com/search?q=nextjs&sca_esv=d2fd9f04d01169bd&biw=1278&bih=1270&ei=41RJaPKAPeSD9u8Pksnq0Ag&ved=0ahUKEwiy_s-cj-mNAxXkgf0HHZKkGooQ4dUDCBA&uact=5&oq=nextjs&gs_lp=Egxnd3Mtd2l6LXNlcnAiBm5leHRqczINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBUiAClAAWOcIcAB4AZABAJgBYaABiwSqAQE2uAEDyAEA-AEBmAIGoAKgBMICCxAAGIAEGLEDGIMBwgIQEC4YgAQY0QMYQxjHARiKBcICEBAAGIAEGLEDGEMYgwEYigWYAwCSBwM1LjGgB9ohsgcDNS4xuAegBMIHBTAuMy4zyAcS&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/nextjs.png" class="img-h-1-4" alt="img" >
+                                                                                <div>NextJS</div>
+                                                                            </a>
+
+                                                                            <!-- css -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="CSS ?!" href="https://www.google.com/search?q=css&sca_esv=574dbc9e6ebca954&ei=eE9JaOTnJ5SB9u8P2qfjMQ&ved=0ahUKEwjkg4uHiumNAxWUgP0HHdrTOAYQ4dUDCBA&uact=5&oq=css&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2NzczINEAAYgAQYsQMYQxiKBTIFEAAYgAQyDRAAGIAEGLEDGIMBGAoyChAAGIAEGEMYigUyCBAAGIAEGLEDMgoQABiABBhDGIoFMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFSI4NUIYJWO0LcAF4AZABAJgBU6AB7wGqAQEzuAEDyAEA-AEBmAIEoAKHAsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIQEAAYgAQYsQMYgwEYigUYCsICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAgsQABiABBixAxiDAcICDhAuGIAEGMcBGI4FGK8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAgUQLhiABMICDhAAGIAEGLEDGIMBGIoFwgILEC4YgAQYsQMYgwHCAggQLhiABBixA5gDAIgGAZAGCpIHATSgB-AfsgcBM7gHgQLCBwMyLTTIBxQ&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/css.png" class="img-h-1-4" alt="img" >
+                                                                                <div>CSS</div>
+                                                                            </a>
+
+                                                                            <!-- sass -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Sass ?!" href="https://www.google.com/search?q=sass&sca_esv=574dbc9e6ebca954&ei=iU9JaIHlFev87_UPz5PV2As&ved=0ahUKEwjBzYaPiumNAxVr_rsIHc9JFbsQ4dUDCBA&uact=5&oq=sass&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHNhc3MyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyCxAuGIAEGMcBGK8BMggQLhiABBixAzIIEC4YgAQYsQMyCBAAGIAEGLEDMgsQLhiABBjHARivATIFEC4YgAQyCxAAGIAEGLEDGIMBMggQABiABBixA0jUBlAAWJ0FcAB4AZABAJgBiwGgAfcCqgEDMy4xuAEDyAEA-AEBmAIEoAKUA8ICEBAuGIAEGNEDGEMYxwEYigXCAgUQABiABMICCxAuGIAEGLEDGIMBwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYxwEYjgUYrwGYAwC6BgYIARABGBSSBwMzLjGgB-FOsgcDMy4xuAeUA8IHBTItMy4xyAcb&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/sass.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Sass</div>
+                                                                            </a>
+
+                                                                            <!-- storybook -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Storybook ?!" href="https://www.google.com/search?q=storybook&sca_esv=574dbc9e6ebca954&ei=lE9JaNOIHNv97_UPoNKM2QU&ved=0ahUKEwjToqyUiumNAxXb_rsIHSApI1sQ4dUDCBA&uact=5&oq=storybook&gs_lp=Egxnd3Mtd2l6LXNlcnAiCXN0b3J5Ym9vazIIEAAYgAQYsQMyBRAAGIAEMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIhANQAFgAcAB4AZABAJgBU6ABU6oBATG4AQPIAQD4AQL4AQGYAgGgAlmYAwCSBwExoAfVBLIHATG4B1nCBwMyLTHIBwQ&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/storybook.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Storybook</div>
+                                                                            </a>
+
+                                                                            <!-- js -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Java Script ?!" href="https://www.google.com/search?q=java+script&sca_esv=574dbc9e6ebca954&ei=o09JaN-EE8qB9u8PkZDdyQ8&ved=0ahUKEwif4rabiumNAxXKgP0HHRFIN_kQ4dUDCBA&uact=5&oq=java+script&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2phdmEgc2NyaXB0MgcQABiABBgKMgUQABiABDIHEAAYgAQYCjIFEAAYgAQyBxAAGIAEGAoyBRAAGIAEMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSJAfUABY6B1wB3gBkAEAmAGBAaAB1QiqAQQxMi4yuAEDyAEA-AEBmAIVoAKxCcICChAAGIAEGEMYigXCAg4QLhiABBjHARiOBRivAcICCxAuGIAEGLEDGIMBwgIIEAAYgAQYsQPCAg4QLhiABBixAxiDARiKBcICBRAuGIAEwgIIEC4YgAQYsQPCAgsQLhiABBixAxjUAsICERAuGIAEGMcBGJgFGJ4FGK8BwgILEAAYgAQYsQMYgwHCAgoQABiABBixAxgKmAMAkgcEMTkuMqAH658BsgcEMTIuMrgHlAnCBwYwLjIuMTnIB1E&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/js.png" class="img-h-1-4" alt="img">
+                                                                                <div>Java Script</div>
+                                                                            </a>
+
+                                                                            <!-- ts -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Type Script ?!" href="https://www.google.com/search?q=type+script&sca_esv=574dbc9e6ebca954&ei=tE9JaJnqI-eM9u8PjJTLmQk&ved=0ahUKEwiZlNWjiumNAxVnhv0HHQzKMpMQ4dUDCBA&uact=5&oq=type+script&gs_lp=Egxnd3Mtd2l6LXNlcnAiC3R5cGUgc2NyaXB0MgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKMgcQABiABBgKSNRwUMVlWJxvcAB4A5ABAJgBX6AB2gaqAQIxMbgBA8gBAPgBAZgCDaACmQfCAgQQABhHwgIKEAAYgAQYQxiKBcICBRAAGIAEwgILEAAYgAQYsQMYgwHCAgsQLhiABBixAxiDAcICEBAAGIAEGLEDGEMYgwEYigXCAggQABiABBixA8ICBBAAGAPCAggQLhiABBixA8ICBxAuGIAEGArCAg4QLhiABBjHARiOBRivAZgDAOIDBRIBMSBAiAYBkAYIkgcCMTOgB6FZsgcCMTG4B5AHwgcIMC4yLjEwLjHIBzg&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/ts.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Type Script</div>
+                                                                            </a>
+
+                                                                            <!-- nodejs -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Type Script ?!" href="https://www.google.com/search?sca_esv=d2fd9f04d01169bd&q=node+js&spell=1&sa=X&ved=2ahUKEwjl2O2bj-mNAxUWhP0HHU6EBk8QBSgAegQICRAB&biw=1278&bih=1270&dpr=1.5">
+                                                                                <img src="media/img/icons/tech-icons/nodejs.png" class="img-h-1-4" alt="img" >
+                                                                                <div>NodeJS</div>
+                                                                            </a>
+
+                                                                            <!-- nestjs -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Type Script ?!" href="https://www.google.com/search?q=nestjs&sca_esv=d2fd9f04d01169bd&ei=i1RJaNehLruC9u8P_Yy92Qc&ved=0ahUKEwiXk8byjumNAxU7gf0HHX1GL3sQ4dUDCBA&uact=5&oq=nestjs&gs_lp=Egxnd3Mtd2l6LXNlcnAiBm5lc3RqczIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiuC1AAWK0KcAB4AZABAJgBXKABzwOqAQE2uAEDyAEA-AEBmAIGoALzA8ICChAAGIAEGEMYigXCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIQEC4YgAQY0QMYQxjHARiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAgsQLhiABBjRAxjHAcICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAhQQLhiABBixAxiDARjHARiKBRivAcICBRAuGIAEwgILEC4YgAQYsQMY1AKYAwCSBwM1LjGgB845sgcDNS4xuAfzA8IHAzItNsgHHg&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/nestjs.svg" class="img-h-1-4" alt="img" >
+                                                                                <div>NestJS</div>
+                                                                            </a>
+
+                                                                        </main>
+
+                                                                    </div>
+
+                                                                    <!-- --------------------------------------------------- -->
+                                                                    <!-- [2/3] | Software-Mobile Dev | Skill Container -->
+                                                                    <!-- --------------------------------------------------- -->
+                                                                    <div class="about-my-it-skills-item-container">
+
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <!-- Header -->
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <header>
+                                                                            <img src="media/img/icons/icons/it-icons/brackets-light-brown.png"  class="img-h-1-5" alt="img">
+                                                                            <div>Software/Mobile-Development</div>
+                                                                        </header>
+
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <!-- Main -->
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <main>
+
+                                                                            <!-- java -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Java ?!" href="https://dev.java/">
+                                                                                <img src="media/img/icons/tech-icons/java-black.png" style="padding-bottom: .3em;" class="img-h-1-6" alt="img" >
+                                                                                <div>Java</div>
+                                                                            </a>
+
+                                                                            <!-- spring boot -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Spring Boot ?!" href="https://www.google.com/search?q=spring+boot&oq=spring+boot&gs_lcrp=EgZjaHJvbWUqDwgAEEUYOxiDARixAxiABDIPCAAQRRg7GIMBGLEDGIAEMgYIARBFGEAyBggCEEUYPTIGCAMQRRg8MgYIBBBFGDwyBggFEEUYQTIGCAYQRRhBMgYIBxBFGEHSAQgyNzM1ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8">
+                                                                                <img src="media/img/icons/tech-icons/springboot2.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Spring Boot</div>
+                                                                            </a>
+
+                                                                            <!-- rest api -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Rest Api ?!" href="https://www.google.com/search?q=rest+api&sca_esv=d2fd9f04d01169bd&ei=YFJJaMGHIMy79u8PuNqPkQk&ved=0ahUKEwjBt-XpjOmNAxXMnf0HHTjtI5IQ4dUDCBA&uact=5&oq=rest+api&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHJlc3QgYXBpMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMUMUABY5QpwAHgBkAEBmAGxAaABhwaqAQM2LjK4AQPIAQD4AQGYAgegAvUEwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIIEAAYgAQYkgPCAgsQABiABBiSAxiKBcICCBAAGIAEGMkDwgIQEAAYgAQYsQMYQxiDARiKBZgDAJIHAzUuMqAHkS2yBwM1LjK4B_UEwgcFMC4xLjbIBxo&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/rest.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Rest Api</div>
+                                                                            </a>
+
+                                                                            <!-- graphql -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="GraphQL ?!" href="https://www.google.com/search?q=graphql&sca_esv=d2fd9f04d01169bd&ei=bVJJaITVFuGB9u8Pu9nHoAo&ved=0ahUKEwjEv_XvjOmNAxXhgP0HHbvsEaQQ4dUDCBA&uact=5&oq=graphql&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2dyYXBocWwyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOYKUABY2ghwAHgBkAEAmAFloAHTBKoBAzYuMbgBA8gBAPgBAZgCB6AC8gTCAhAQLhiABBjRAxhDGMcBGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICDhAuGIAEGLEDGIMBGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAgsQABiABBixAxiDAcICCxAuGIAEGLEDGIMBwgIOEC4YgAQYxwEYjgUYrwHCAggQABiABBixA8ICCBAuGIAEGLEDmAMAkgcDNi4xoAfDNrIHAzYuMbgH8gTCBwMyLTfIBxo&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/graph.png" class="img-h-1-4" alt="img" >
+                                                                                <div>GraphQL</div>
+                                                                            </a>
+
+                                                                            <!-- python -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Python ?!" href="https://www.google.com/search?q=python&sca_esv=d2fd9f04d01169bd&ei=dlJJaNvHDIv97_UPt4_QuQk&ved=0ahUKEwjb2pD0jOmNAxWL_rsIHbcHNJcQ4dUDCBA&uact=5&oq=python&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnB5dGhvbjINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIIEAAYgAQYsQMyChAAGIAEGEMYigUyChAAGIAEGEMYigUyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgARI3QhQAFjkBnAAeAGQAQCYAbcBoAHgBKoBAzQuMrgBA8gBAPgBAZgCBqAC-gTCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwGYAwCSBwM0LjKgB9MgsgcDNC4yuAf6BMIHAzItNsgHFg&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/python.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Python</div>
+                                                                            </a>
+
+                                                                            <!-- react native -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="React Native ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/react-atom.png" class="img-h-1-4" alt="img" >
+                                                                                <div>React Native</div>
+                                                                            </a>
+
+                                                                            <!-- scrum -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Scrum ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/scrum.png" class="img-h-1-5" alt="img" >
+                                                                                <div>Scrum</div>
+                                                                            </a>
+
+                                                                            <!-- clean code -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Clean Code ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/clean-code.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Clean Code</div>
+                                                                            </a>
+
+                                                                            <!-- ddd -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Domain Driven Design ?!" href="https://www.google.com/search?q=react+native&sca_esv=d2fd9f04d01169bd&ei=g1JJaI6oEfPh7_UPv4Ll-AU&ved=0ahUKEwjO9a76jOmNAxXz8LsIHT9BGV8Q4dUDCBA&uact=5&oq=react+native&gs_lp=Egxnd3Mtd2l6LXNlcnAiDHJlYWN0IG5hdGl2ZTIQEAAYgAQYsQMYQxiDARiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi8C1AAWKwKcAB4AZABAZgBcKABjAeqAQQxMS4xuAEDyAEA-AEBmAILoALLBsICEBAuGIAEGNEDGEMYxwEYigXCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgIfEC4YgAQY0QMYQxjHARiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIoFwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFmAMAugYGCAEQARgUkgcCMTGgB4JPsgcCMTG4B8sGwgcFMC40LjfIByg&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/ddd.png" class="img-h-1-2" alt="img" >
+                                                                            </a>
+
+                                                                        </main>
+
+                                                                    </div>
+
+                                                                    <!-- --------------------------------------------------- -->
+                                                                    <!-- [3/3] | Backend | Skill Container -->
+                                                                    <!-- --------------------------------------------------- -->
+                                                                    <div class="about-my-it-skills-item-container">
+
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <!-- Header -->
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <header>
+                                                                            <img src="media/img/icons/icons/it-icons/backend-wheat.png" class="img-h-1-5" alt="img">
+                                                                            <div>Backend</div>
+                                                                        </header>
+
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <!-- Main -->
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <main>
+
+                                                                            <!-- PostgreSQL -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="PostgreSQL ?!" href="https://www.google.com/search?q=postgresql&sca_esv=d2fd9f04d01169bd&ei=SVRJaMmWF6P97_UPveKsSQ&ved=0ahUKEwiJ3_LSjumNAxWj_rsIHT0xKwkQ4dUDCBA&uact=5&oq=postgresql&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnBvc3RncmVzcWwyEBAAGIAEGLEDGEMYgwEYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIjg5QAFi2DHAAeAGQAQCYAYoBoAHWBqoBAzguMrgBA8gBAPgBAZgCCqAC_AbCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwHCAgoQLhiABBhDGIoFwgIOEC4YgAQYsQMY0QMYxwHCAg0QABiABBixAxhDGIoFwgIOEC4YgAQYxwEYjgUYrwGYAwCSBwM3LjOgB9hFsgcDNy4zuAf8BsIHBTAuNC42yAcj&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/postgre.png" class="img-h-1-5" alt="img" >
+                                                                                <div>PostgreSQL</div>
+                                                                            </a>
+
+                                                                            <!-- MongoDB -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="MongoDB ?!" href="https://www.google.com/search?q=mongodb&oq=mongodb+&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEggBEAAYQxiDARixAxiABBiKBTIMCAIQABhDGIAEGIoFMgwIAxAAGEMYgAQYigUyDAgEEAAYQxiABBiKBTIMCAUQABhDGIAEGIoFMgwIBhAAGEMYgAQYigUyBwgHEAAYgAQyDAgIEAAYQxiABBiKBTIHCAkQABiABNIBCDM4ODZqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8">
+                                                                                <img src="media/img/icons/tech-icons/mongodb.png" class="img-h-1-4" alt="img" >
+                                                                                <div>MongoDB</div>
+                                                                            </a>
+
+                                                                            <!-- Docker -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Docker ?!" href="https://www.google.com/search?q=docker&sca_esv=d2fd9f04d01169bd&ei=K1RJaN-GCor_7_UPzZ3vsAQ&ved=0ahUKEwifyL7EjumNAxWK_7sIHc3OG0YQ4dUDCBA&uact=5&oq=docker&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmRvY2tlcjINEAAYgAQYsQMYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIIEAAYgAQYsQMyDRAAGIAEGLEDGEMYigUyEBAAGIAEGLEDGEMYgwEYigUyChAAGIAEGEMYigVIxgVQAFi9BHAAeAGQAQCYAXOgAZ8EqgEDNS4xuAEDyAEA-AEBmAIGoAK_BMICBRAuGIAEwgIQEC4YgAQY0QMYQxjHARiKBcICCxAuGIAEGNEDGMcBwgIIEC4YgAQYsQOYAwCSBwMzLjOgB_UtsgcDMy4zuAe_BMIHAzItNsgHGg&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/docker.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Docker</div>
+                                                                            </a>
+
+                                                                            <!-- Kubernetes -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Kubernetes ?!" href="https://www.google.com/search?q=kubernetes&sca_esv=d2fd9f04d01169bd&ei=DVRJaIfuLr777_UPvrqCiQY&ved=0ahUKEwjHqLy2jumNAxW-_bsIHT6dIGEQ4dUDCBA&uact=5&oq=kubernetes&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmt1YmVybmV0ZXMyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARItQxQAFjuC3AAeAGQAQCYAW-gAeAGqgEDNy4zuAEDyAEA-AEBmAIKoAKMB8ICChAAGIAEGEMYigXCAgoQLhiABBhDGIoFwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICCBAuGIAEGLEDwgILEC4YgAQYxwEYrwGYAwCSBwM2LjSgB_JKsgcDNi40uAeMB8IHBTAuMy43yAcl&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/kubernetes.png" class="img-h-1-5" alt="img" >
+                                                                                <div>Kubernetes</div>
+                                                                            </a>
+
+                                                                            <!-- Apache Kafka -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Apache Kafka ?!" href="https://www.google.com/search?q=apache+kafka&sca_esv=d2fd9f04d01169bd&ei=AVRJaODxM7-G9u8P-ovT4Ac&ved=0ahUKEwig9uSwjumNAxU_g_0HHfrFFHwQ4dUDCBA&uact=5&oq=apache+kafka&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGFwYWNoZSBrYWZrYTILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI5hNQAFi-EnABeAGQAQCYAWegAfIHqgEEMTIuMbgBA8gBAPgBAZgCDqACsQjCAgoQABiABBhDGIoFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgIQEC4YgAQY0QMYQxjHARiKBcICCBAAGIAEGLEDwgIQEAAYgAQYsQMYQxiDARiKBcICCxAAGIAEGLEDGIoFwgIIEC4YgAQYsQPCAg0QABiABBixAxhDGIoFwgIOEAAYgAQYsQMYgwEYigXCAgUQLhiABMICBxAAGIAEGAqYAwCSBwQxMy4xoAfBbrIHBDEyLjG4B60IwgcGMC4xLjEzyAc0&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/kafka.png" class="img-h-1-5" alt="img" >
+                                                                                <div>Apache Kafka</div>
+                                                                            </a>
+
+                                                                            <!-- Nginx -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Nginx ?!" href="https://www.google.com/search?q=nginx&oq=nginx+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDINCAIQABiDARixAxiABDIKCAMQABixAxiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBBzcwMGowajmoAgCwAgE&sourceid=chrome&ie=UTF-8">
+                                                                                <img src="media/img/icons/tech-icons/nginx.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Nginx</div>
+                                                                            </a>
+
+                                                                            <!-- Grafana -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Grafana ?!" href="https://www.google.com/search?q=grafana&oq=grafana&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDIKCAEQABixAxiABDINCAIQABiDARixAxiABDIHCAMQABiABDIKCAQQABixAxiABDIGCAUQRRhBMgYIBhBFGDwyBggHEEUYPNIBCDEzODdqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8">
+                                                                                <img src="media/img/icons/tech-icons/grafana.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Grafana</div>
+                                                                            </a>
+
+                                                                            <!-- Promotheus -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Promotheus ?!" href="https://www.google.com/search?sca_esv=343d2d438bcb4bf0&q=Prometheus+(Software)&si=AMgyJEuJ9LO9fEldowAiSPVZwE1yNt005fFn8_v7u3nGVoXCXhsnsFpi84dKiodHgfTsAjtENzHF8oV8moYhIaYs2e7qTQdImckSE3bn6Z7LhAWLBq6mP9ZSJ-SxuAE8061dWFQkol85vZQ2Ost0X9EJhixXaUaqxCmBta4DsX5nqnjIY86ZE9rtu0YNGl6FGl_qg6CJwCo4&sa=X&ved=2ahUKEwjCheK7_PeNAxV8_7sIHUMYKSoQ3LoBegQIBRAB&biw=1162&bih=1154&dpr=1.65">
+                                                                                <img src="media/img/icons/tech-icons/prometheus.png" class="img-h-1-4" alt="img" >
+                                                                                <div>Prometheus</div>
+                                                                            </a>
+
+                                                                            <!-- Jaeger -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Jaeger ?!" href="https://www.google.com/search?q=jeager+software&sca_esv=343d2d438bcb4bf0&biw=1162&bih=1154&ei=gB5RaMjpCpDn7_UPm52MwAQ&ved=0ahUKEwjIqZ29_PeNAxWQ87sIHZsOA0gQ4dUDCBA&uact=5&oq=jeager+software&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2plYWdlciBzb2Z0d2FyZTIHEAAYgAQYDTIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgKGB4yCBAAGBYYChgeMggQABiABBiiBDIFEAAY7wUyBRAAGO8FMggQABiiBBiJBUj_DFAAWN4LcAB4AZABAJgBe6ABgwuqAQQxMS40uAEDyAEA-AEBmAIPoALDC8ICChAAGIAEGEMYigXCAg4QLhiABBjHARiOBRivAcICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAgUQLhiABMICCxAAGIAEGLEDGIMBwgIOEAAYgAQYsQMYgwEYigXCAgsQLhiABBixAxiDAcICDhAuGIAEGLEDGIMBGIoFwgIIEC4YgAQYsQPCAhQQLhiABBixAxiDARjHARiKBRivAcICBRAAGIAEwgIKEC4YgAQYQxiKBcICDhAAGIAEGJIDGLgEGIoFwgILEAAYgAQYkgMYigXCAg0QABiABBhDGMkDGIoFwgIQEC4YgAQYxwEYChiOBRivAcICEBAuGIAEGLEDGNEDGMcBGArCAgoQABiABBixAxgKwgIHEAAYgAQYCsICDRAuGIAEGMcBGAoYrwHCAg0QABiABBixAxiDARgKwgIGEAAYDRgemAMAkgcDOS42oAegygGyBwM5Lja4B8MLwgcGMC4yLjEzyAc4&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/jaeger.png" class="img-h-1-5" alt="img" >
+                                                                                <div>Jaeger</div>
+                                                                            </a>
+
+                                                                            <!-- DevOps -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="DevOps ?!" href="https://www.google.com/search?q=devops&sca_esv=d2fd9f04d01169bd&ei=-FNJaKCHF8anhbIP0p3j-As&ved=0ahUKEwig46KsjumNAxXGU0EAHdLOGL8Q4dUDCBA&uact=5&oq=devops&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmRldm9wczIFEAAYgAQyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgoQABiABBhDGIoFMgUQABiABDIKEAAYgAQYQxiKBTIFEAAYgAQyChAAGIAEGEMYigVIxghQAFifB3AAeAGQAQCYAaQBoAH1BKoBAzQuMrgBA8gBAPgBAZgCBqACnAXCAhAQLhiABBjRAxhDGMcBGIoFwgIFEC4YgATCAgsQABiABBixAxiDAcICERAuGIAEGLEDGNEDGIMBGMcBwgIOEC4YgAQYsQMY0QMYxwHCAh8QLhiABBjRAxhDGMcBGIoFGJcFGNwEGN4EGOAE2AEBwgIQEAAYgAQYsQMYQxiDARiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAhQQLhiABBixAxjRAxiDARjHARjJA8ICCxAAGIAEGJIDGLgEwgIIEAAYgAQYkgPCAg4QABiABBixAxiDARiKBcICCxAuGIAEGLEDGNQCwgIIEC4YgAQYsQPCAggQABiABBixA5gDALoGBggBEAEYFJIHAzIuNKAH8kiyBwMyLjS4B5wFwgcFMi01LjHIByQ&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/devops.png" class="img-h-1-5" alt="img" >
+                                                                                <div>DevOps</div>
+                                                                            </a>
+
+                                                                            <!-- Cloud -->
+                                                                            <a target="_blank" class="about-my-it-skills-link" title="Cloud ?!" href="https://www.google.com/search?q=cloud+computing&sca_esv=d2fd9f04d01169bd&ei=jVJJaJvIHLSJ9u8P4Oua8QI&ved=0ahUKEwjbwpz_jOmNAxW0hP0HHeC1Ji4Q4dUDCBA&uact=5&oq=cloud+computing&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2Nsb3VkIGNvbXB1dGluZzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIpA5QAFj3DHAAeAGQAQCYAXygAesJqgEEMTEuNLgBA8gBAPgBAZgCD6ACtwrCAgoQABiABBhDGIoFwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICEBAAGIAEGLEDGIMBGIoFGArCAhAQABiABBixAxhDGIMBGIoFwgILEAAYgAQYsQMYgwHCAg4QLhiABBjHARiOBRivAcICERAuGIAEGLEDGNEDGIMBGMcBwgIKEC4YgAQYQxiKBcICEBAuGIAEGNEDGEMYxwEYigXCAhQQLhiABBixAxiDARjHARiOBRivAcICCxAuGIAEGLEDGIMBwgINEAAYgAQYsQMYgwEYCsICCxAAGIAEGLEDGIoFwgIHEAAYgAQYCsICCxAuGIAEGMcBGK8BwgIdEC4YgAQYxwEYjgUYrwEYlwUY3AQY3gQY4ATYAQGYAwC6BgYIARABGBSSBwQxMS40oAf5hwGyBwQxMS40uAe3CsIHBDItMTXIB0E&sclient=gws-wiz-serp">
+                                                                                <img src="media/img/icons/tech-icons/cloud-engine.png" class="img-h-1-2" alt="img" >
+                                                                                <div>Cloud</div>
+                                                                            </a>
+
+                                                                        </main>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+
+                                            <!-- ------------------------------------------------- -->
+                                            <!-- 🟩[3/4] | My IT Skills Quote Container         -->
+                                            <!-- ------------------------------------------------- -->
+                                            <div class="resp-max-content-area" >
+
+                                                <!-- ----------------------------------------------------------- -->
+                                                <!-- width & heihgt 100% (sets)                                  -->
+                                                <!-- ----------------------------------------------------------- -->
+                                                <div class="w-100p h-100p grid ji-c">
+
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <!-- Resp Very Small                                          -->
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <div class="resp-very-small-content-area">
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- width & heihgt 100% (sets)                                  -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="w-100p h-100p flex jc-c">
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Padding Wrapper  -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="padding-0-0-8-wrapper">
+
+                                                                <!-- --------------------------------------------------------------- -->
+                                                                <!-- About My IT Skills Quote Container                              -->
+                                                                <!-- --------------------------------------------------------------- -->
+                                                                <div id="about-my-it-skills-quote-container">
+
+                                                                    <div>Dream it.</div>
+                                                                    <div>Build it.</div>
+                                                                    <div>Live it.</div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <!-- ------------------------------------------------- -->
+                                            <!-- 🟩[4/4] | My IT Skills Number Container         -->
+                                            <!-- ------------------------------------------------- -->
+                                            <div class="resp-max-content-area" >
+
+                                                <!-- ----------------------------------------------------------- -->
+                                                <!-- width & heihgt 100% (sets)                                  -->
+                                                <!-- ----------------------------------------------------------- -->
+                                                <div class="w-100p h-100p grid ji-c">
+
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <!-- Resp Very Small                                          -->
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <div class="resp-very-small-content-area">
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- width & heihgt 100% (sets)                                  -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="w-100p h-100p flex jc-c">
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Padding Wrapper  -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="padding-t1-b2-0-8-wrapper">
+
+                                                                <!-- --------------------------------------------------------------- -->
+                                                                <!-- About My IT Skills Number Container                                -->
+                                                                <!-- --------------------------------------------------------------- -->
+                                                                <div class="number-container-light-left">
+
+                                                                    <div class="number-item">
+                                                                        2/4
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <!-- --------------------------------------------------------------- -->
+                                <!-- 🟩 [3/4] | More Details                                      -->
+                                <!-- --------------------------------------------------------------- -->
+                                <div class="resp-max-content-area">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p grid ji-c">
+
+                                        <!-- ------------------------------------------------- -->
+                                        <!-- 🟩[1/3] | Header Content Container                -->
+                                        <!-- ------------------------------------------------- -->
+                                        <div class="resp-max-content-area" style="background-color: rgb(28, 28, 28);">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p grid ji-c">
+
+                                                <!-- ----------------------------------------------------------- -->
+                                                <!-- Resp Very Small                                          -->
+                                                <!-- ----------------------------------------------------------- -->
+                                                <div class="resp-very-small-content-area">
+
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <!-- width & heihgt 100% (sets)                                  -->
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <div class="w-100p h-100p flex jc-c">
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- Header Topic Container                                      -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="header-topic-container">
+
+                                                            <!-- --------------------------------------------------- -->
+                                                            <!-- [1/2] | Header Topic Title  -->
+                                                            <!-- --------------------------------------------------- -->
+                                                            <div class="header-topic-title">
+
+                                                                <img src="media/img/icons/icons/it-icons/stars-light-grey.png" style="opacity: .5;" class="img-h-2" alt="img">
+                                                                <div>More Detail's</div>
+
+                                                            </div>
+
+                                                            <!-- --------------------------------------------------- -->
+                                                            <!-- [2/2] | Img Header Topic                            -->
+                                                            <!-- --------------------------------------------------- -->
+                                                            <img src="media/img/icons/clipart/clipart-me.png" class="img-smaller-header-topic" alt="img">
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- ------------------------------------------------- -->
+                                        <!-- 🟩[2/3] | About More Details Container            -->
+                                        <!-- ------------------------------------------------- -->
+                                        <div class="resp-max-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p grid ji-c">
 
                                                 <!-- ----------------------------------------------------------- -->
                                                 <!-- Resp Min                                                    -->
@@ -1516,29 +1513,132 @@
                                                     <!-- ----------------------------------------------------------- -->
                                                     <div class="w-100p h-100p flex jc-c">
 
-                                                        <!-- --------------------------------------------------------------- -->
-                                                        <!-- About Contact Header -->
-                                                        <!-- --------------------------------------------------------------- -->
-                                                        <div id="about-contact-header" class="headline-sub-container">
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <!-- Padding Wrapper -->
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <div class="padding-3-0-8-wrapper">
 
-                                                            <!-- --------------------------------------------------- -->
-                                                            <!-- [1/2] | About Contact Header                        -->
-                                                            <!-- --------------------------------------------------- -->
-                                                            <div class="headline-sub-title">
 
-                                                                <img src="media/img/icons/icons/email-grey.png" style="opacity: .5;" class="img-h-2" alt="img">
-                                                                <div>Contact </div>
+                                                            <!-- ------------------------------------------- -->
+                                                            <!-- 🟩 About More Details Container           -->
+                                                            <!-- ------------------------------------------- -->
+                                                            <div id="about-more-details-container">
+
+                                                                <!-- ---------------------------------------- -->
+                                                                <!-- 🟩[1/3] | List Item                        -->
+                                                                <!-- ---------------------------------------- -->
+                                                                <div class="about-more-details-item">
+
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- [1/3] | IMG -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <img src="media/img/icons/clipart/about-team.png" class="img-about-more-details" alt="img">
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- [2/3] | Header -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <header>
+
+                                                                        <div class="about-more-details-header-category">
+                                                                            <img src="media/img/icons/icons/colors/icons-anthracite/team-anthracite.png" id="img-about-more-details-team" alt="img">
+                                                                            <div>Community</div>
+                                                                        </div>
+
+                                                                    </header>
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- [3/3] | Main (Text) -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <main>
+                                                                        <span class="text-bold-dark-grey">I like to connecting </span>
+
+                                                                        with people from different backgrounds to talk about business, IT,
+                                                                        and other fun and inspiring topics.
+                                                                    </main>
+
+
+
+                                                                </div>
+
+                                                                <!-- ---------------------------------------- -->
+                                                                <!-- 🟩[2/3] | List Item                      -->
+                                                                <!-- ---------------------------------------- -->
+                                                                <div class="about-more-details-item">
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- [1/3] | IMG -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <img src="media/img/icons/clipart/about-challenge.png" class="img-about-more-details" alt="img">
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- [2/3] |Header -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <header>
+
+                                                                        <div class="about-more-details-header-category">
+                                                                            <img src="media/img/icons/icons/colors/icons-anthracite/big-swords-anthracite.png" id="img-about-more-details-challenge" alt="img">
+                                                                            <div>Love Challenging</div>
+                                                                        </div>
+
+                                                                    </header>
+
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- [3/3] | Main (Text) -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <main>
+                                                                        <span class="text-bold-dark-grey">In my private time, </span>
+                                                                        I love challenging myself—whether it's through
+                                                                        sports, playing the violin, or learning more about cooking, cultures, and languages.
+                                                                        To support these interests, I'm currently developing small web views
+                                                                        that give me reusable access to everything I'm exploring and working on.
+                                                                    </main>
+
+
+
+                                                                </div>
+
+                                                                <!-- ---------------------------------------- -->
+                                                                <!-- 🟩[3/3] | List Item                        -->
+                                                                <!-- ---------------------------------------- -->
+                                                                <div class="about-more-details-item">
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- [1/3] | IMG -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <img src="media/img/icons/clipart/explore-superfreshdev.png" class="img-about-more-details" alt="img">
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- [2/3] |Header -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <header>
+
+                                                                        <div class="about-more-details-header-category">
+                                                                            <img src="media/img/icons/icons/colors/icons-anthracite/cursor-anthracite.png" id="img-about-more-details-explore" alt="img">
+                                                                            <div>Have fun on my Webpage</div>
+                                                                        </div>
+
+                                                                    </header>
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- [3/3] | Main (Text) -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <main>
+                                                                        <span class="text-bold-dark-grey">If you’d like to see more</span>
+                                                                        about my work in tech or how I spend my
+                                                                        free time, feel free to check out the links under "My IT" or "My Private".<br>
+                                                                        Finally if you like to Contact me, feel free to write me an E-Mail.
+                                                                    </main>
+
+
+
+                                                                </div>
 
                                                             </div>
 
-                                                            <!-- --------------------------------------------------- -->
-                                                            <!-- [2/2] | Img Clipart Laptop -->
-                                                            <!-- --------------------------------------------------- -->
-                                                            <img src="media/img/icons/clipart/message-talk.png" id="img-about-contact-clipart-me" alt="img">
-
 
                                                         </div>
-
 
                                                     </div>
 
@@ -1548,40 +1648,150 @@
 
                                         </div>
 
-                                        <!-- ----------------------------------------------------------- -->
-                                        <!-- 🟥[2/2] | About Contact Container                                     -->
-                                        <!-- ----------------------------------------------------------- -->
-                                        <div id="about-contact-container">
+                                        <!-- ------------------------------------------------- -->
+                                        <!-- 🟩[3/3] | About More Details Number Container     -->
+                                        <!-- ------------------------------------------------- -->
+                                        <div class="resp-max-content-area" >
 
                                             <!-- ----------------------------------------------------------- -->
-                                            <!-- ➡️🟥[1/2] About Contact Container                               -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
                                             <!-- ----------------------------------------------------------- -->
-                                            <div class="resp-max-content-area">
+                                            <div class="w-100p h-100p grid ji-c">
 
                                                 <!-- ----------------------------------------------------------- -->
-                                                <!-- width & heihgt 100% (sets)                                  -->
+                                                <!-- Resp Min                                                 -->
                                                 <!-- ----------------------------------------------------------- -->
-                                                <div class="w-100p h-100p flex jc-c">
+                                                <div class="resp-min-content-area">
 
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <!-- About Contact Container                                     -->
+                                                    <!-- width & heihgt 100% (sets)                                  -->
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <div class="resp-min-content-area">
+                                                    <div class="w-100p h-100p flex jc-c">
 
-                                                        <!-- ----------------------------------------------------------- -->
-                                                        <!-- width & heihgt 100% (sets)                                  -->
-                                                        <!-- ----------------------------------------------------------- -->
-                                                        <div class="w-100p h-100p flex jc-c">
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <!-- Padding Wrapper  -->
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <div class="padding-t0-b2-0-8-wrapper">
 
                                                             <!-- --------------------------------------------------------------- -->
-                                                            <!-- About Contact Info Container  -->
+                                                            <!-- About My IT Skills Number Container                                -->
                                                             <!-- --------------------------------------------------------------- -->
-                                                            <div id="about-contact-info-container">
+                                                            <div class="number-container-light-left">
+
+                                                                <div class="number-item">
+                                                                    3/4
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- --------------------------------------------------------------- -->
+                                <!-- 🟩 [4/4] | Contact                                            -->
+                                <!-- --------------------------------------------------------------- -->
+                                <div class="resp-max-content-area">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p grid ji-c">
+
+                                        <!-- ------------------------------------------------- -->
+                                        <!-- 🟩[1/3] | Header Content Container                -->
+                                        <!-- ------------------------------------------------- -->
+                                        <div class="resp-max-content-area" style="background-color: rgb(28, 28, 28);">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p grid ji-c">
+
+                                                <!-- ----------------------------------------------------------- -->
+                                                <!-- Resp Very Small                                          -->
+                                                <!-- ----------------------------------------------------------- -->
+                                                <div class="resp-very-small-content-area">
+
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <!-- width & heihgt 100% (sets)                                  -->
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <div class="w-100p h-100p flex jc-c">
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- Header Topic Container                                      -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="header-topic-container">
+
+                                                            <!-- --------------------------------------------------- -->
+                                                            <!-- [1/2] | Header Topic Title  -->
+                                                            <!-- --------------------------------------------------- -->
+                                                            <div class="header-topic-title">
+
+                                                                <img src="media/img/icons/icons/email-grey.png" style="opacity: .5;" class="img-h-1-8" alt="img">
+                                                                <div>Contact Me</div>
+
+                                                            </div>
+
+                                                            <!-- --------------------------------------------------- -->
+                                                            <!-- [2/2] | Img Header Topic                            -->
+                                                            <!-- --------------------------------------------------- -->
+                                                            <img src="media/img/icons/clipart/message-talk.png" class="img-smaller-header-topic" alt="img">
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- ------------------------------------------------- -->
+                                        <!-- 🟩[2/3] | About Contact Container                -->
+                                        <!-- ------------------------------------------------- -->
+                                        <div class="resp-max-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p grid ji-c">
+
+                                                <!-- ----------------------------------------------------------- -->
+                                                <!-- Resp Very Small                                          -->
+                                                <!-- ----------------------------------------------------------- -->
+                                                <div class="resp-very-small-content-area">
+
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <!-- width & heihgt 100% (sets)                                  -->
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <div class="w-100p h-100p flex jc-c">
+
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <!-- Padding Wrapper -->
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <div class="padding-2-0-8-wrapper">
+
+
+                                                            <!-- ------------------------------------------------------------ -->
+                                                            <!-- About Contact Container -->
+                                                            <!-- ------------------------------------------------------------ -->
+                                                            <div id="about-contact-container">
 
                                                                 <!-- ------------------------------------------------ -->
-                                                                <!-- [1/3] | Contact Info Block -->
+                                                                <!-- 🟩[1/3] | Contact Info Block -->
                                                                 <!-- ------------------------------------------------ -->
-
                                                                 <div id="about-contact-info-block">
 
                                                                     <div id="arrow-about-contact-me">
@@ -1598,16 +1808,13 @@
                                                                 </div>
 
                                                                 <!-- ------------------------------------------------ -->
-                                                                <!-- [2/3] | Contact E-Mail Block -->
+                                                                <!-- 🟩[2/3] | Contact E-Mail Block -->
                                                                 <!-- ------------------------------------------------ -->
-
                                                                 <a href="mailto:superfreshdev@gmx.de" id="about-contact-email-block"> superfreshde@gmx.de </a>
 
-
                                                                 <!-- ------------------------------------------------ -->
-                                                                <!-- [3/3] | Close About Block                       -->
+                                                                <!-- 🟩[3/3] | Close About Block                       -->
                                                                 <!-- ------------------------------------------------ -->
-
                                                                 <div id="about-close-about-block">
 
                                                                     <img src="media/img/icons/icons/arrow-down-black.png" class="img-h-0-8" alt="img">
@@ -1622,35 +1829,46 @@
 
                                                     </div>
 
-
-
                                                 </div>
 
                                             </div>
 
+                                        </div>
+
+                                        <!-- ------------------------------------------------- -->
+                                        <!-- 🟩[3/3] | About Contact Number Container         -->
+                                        <!-- ------------------------------------------------- -->
+                                        <div class="resp-max-content-area" >
+
                                             <!-- ----------------------------------------------------------- -->
-                                            <!-- 🟥[2/2] | Number Container                                  -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
                                             <!-- ----------------------------------------------------------- -->
-                                            <div class="resp-max-content-area" style="background-color: rgb(255, 255, 255);">
+                                            <div class="w-100p h-100p grid ji-c">
 
                                                 <!-- ----------------------------------------------------------- -->
-                                                <!-- width & heihgt 100% (sets)                                  -->
+                                                <!-- Resp Very Small                                          -->
                                                 <!-- ----------------------------------------------------------- -->
-                                                <div class="w-100p h-100p grid ji-c">
+                                                <div class="resp-very-small-content-area">
 
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <!-- Very Small                                 -->
+                                                    <!-- width & heihgt 100% (sets)                                  -->
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <div class="resp-very-small-content-area">
+                                                    <div class="w-100p h-100p flex jc-c">
 
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <!-- Padding Wrapper  -->
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <div class="padding-t0-b2-0-8-wrapper">
 
-                                                        <!-- --------------------------------------------------- -->
-                                                        <!-- Number Container                            -->
-                                                        <!-- --------------------------------------------------- -->
-                                                        <div id="about-contact-number-container" class="number-container-light-left">
+                                                            <!-- --------------------------------------------------------------- -->
+                                                            <!-- About My IT Skills Number Container                                -->
+                                                            <!-- --------------------------------------------------------------- -->
+                                                            <div class="number-container-light-right">
 
-                                                            <div class="number-item">
-                                                                4/4
+                                                                <div class="number-item">
+                                                                    4/4
+                                                                </div>
+
                                                             </div>
 
                                                         </div>
@@ -1663,9 +1881,11 @@
 
                                         </div>
 
+
                                     </div>
 
                                 </div>
+
 
                             </div>
 

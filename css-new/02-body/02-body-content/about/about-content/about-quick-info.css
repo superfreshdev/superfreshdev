@@ -12,24 +12,20 @@
 #about-quick-info-container {
 
   /* mobile */
-  padding: 2em .8em;
-
-  /* mobile */
   display: grid;
   justify-items: center;
 
   grid-template-areas:
     'img'
     'arrow'
-    'info'
-    'number';
+    'info';
 
   row-gap: 2em;
 
 }
 
 /* ------------------------------------------- */
-/* [1/4] | About Quick Info
+/* [1/3] | About Quick Info
 /* ------------------------------------------- */
 
 #about-quick-info {
@@ -40,16 +36,11 @@
 
 }
 
-#about-quick-info > header {
-
-  justify-content: flex-end;
-}
-
 /* ------------------------------------------- */
-/* [2/4] | Arrow Container
+/* [2/3] | About Quick Info Arrow
 /* ------------------------------------------- */
 
-#arrow-about-quick-info {
+#about-quick-info-arrow {
 
   grid-area: arrow;
 
@@ -63,35 +54,13 @@
 }
 
 /* ------------------------------------------- */
-/* [3/4] | Img About Container
+/* [3/3] | Img About Quick Info Me as Real
 /* ------------------------------------------- */
-
-#img-about-container {
-
-  grid-area: img;
-
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
 
 #img-about-quick-info-me-as-real {
 
+  grid-area: img;
+
   width: 95%;
   border-radius: 2em;
-}
-
-/* -------------------------------------------------- */
-/* [4/4] | Quick Info | Number Container
-/* -------------------------------------------------- */
-
-#about-quick-info-number-container {
-
-  grid-area: number;
-
-  /* border: 1px solid black; */
-
 }

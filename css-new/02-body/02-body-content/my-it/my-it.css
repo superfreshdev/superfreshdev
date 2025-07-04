@@ -4,6 +4,13 @@
 /* : styles for about nav ( open / close view )
 /* -------------------------------------------------------------- */
 
+
+/* 🟣 Auslagern in my it */
+#icon-my-it-header {
+
+  height: 2em;
+}
+
 #di {
 
     display: grid;

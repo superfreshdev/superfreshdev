@@ -17,33 +17,22 @@
 
 }
 
-/* ------------------------------------------- */
+/* ------------------------------------------------------------------- */
 /* About Header Container
-/* ------------------------------------------- */
+/* ------------------------------------------------------------------- */
 
 #about-header-container {
 
   height: 8em;
-
-  display: flex;
-  align-items: center;
-  column-gap: .8em;
 }
 
-#img-icon-about-headline {
+/* ------------------------------------------------------------------- */
+/* Icon About Header ( resp individuell sizes )
+/* ------------------------------------------------------------------- */
 
-    /* mobile */
-    height: 2.5em;
-}
+#icon-about-header {
 
-/* ------------------------------------------- */
-/* About Content Container
-/* ------------------------------------------- */
-
-#about-content-container {
-
-  width: 100%;
-  display: grid;
-  justify-items: center;
+  /* mobile */
+  height: 2em;
 
 }

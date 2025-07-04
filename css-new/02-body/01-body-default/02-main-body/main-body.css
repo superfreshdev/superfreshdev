@@ -53,6 +53,8 @@
 /* i: to let style background behind layout element */
 /* i: is a universal layout element in the main container */
 
+/* ❌ Delete  */
+
 .row-content-container {
 
   width: 100%;
@@ -61,6 +63,7 @@
   justify-content: center;
 
 }
+
 
 /* ------------------------------------------- */
 /* Main Headline Container

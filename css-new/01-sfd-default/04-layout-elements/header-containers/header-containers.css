@@ -1,0 +1,139 @@
+/* ------------------------------------------------------------------- */
+/* > header-containers.css
+/*
+/* : style all art of header containers
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* [1/2] | Header Content Container
+/* ------------------------------------------------------------------- */
+
+/* i: the main header containers */
+
+.header-left-content-container,
+.header-right-content-container,
+.header-center-content-container,
+.header-space-between-content-container {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+}
+
+.header-right-content-container {
+
+  justify-content: flex-end;
+
+}
+
+.header-center-content-container {
+
+  justify-content: center;
+}
+
+.header-space-between-content-container {
+
+  justify-content: space-between;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header Content Title
+/* ------------------------------------------------------------------- */
+
+.header-content-title {
+
+  /* mobile */
+  height: 4em;
+  padding: 0 1em;
+
+  display: flex;
+  column-gap: .6em;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  border-radius: 1em;
+
+  background-color: wheat;
+
+}
+
+.header-content-title > div:nth-of-type(1) {
+
+    /* 24px */
+    font-size: 1.125em;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* [2/2] | Header Topic Container
+/* ------------------------------------------------------------------- */
+
+/* i: the sub main header containers "topics of content header" */
+
+.header-topic-container {
+
+  width: 100%;
+  padding: 2.5em 0;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
+
+  background-color: rgb(28, 28, 28);
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Header Topic Title
+/* ------------------------------------------------------------------- */
+
+.header-topic-title {
+
+  height: 4em;
+  padding: 0 1em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  border: 2px solid rgb(125, 125, 125);
+
+  color:rgb(223, 223, 223);
+
+}
+
+
+.header-topic-title > div {
+
+  font-size: 1.125em;
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Img Header Topic
+/* ------------------------------------------------------------------- */
+
+.img-header-topic {
+
+  /* mobile */
+  height: 10em;
+
+}
+
+.img-smaller-header-topic {
+
+  /* mobile */
+  height: 8em;
+
+}
