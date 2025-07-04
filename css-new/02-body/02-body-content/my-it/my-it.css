@@ -5,29 +5,28 @@
 /* -------------------------------------------------------------- */
 
 
+/* ------------------------------------------------------------- */
+/* My IT Header Container
+/* ------------------------------------------------------------- */
+
+#my-it-header-container {
+
+    width: 100%;
+    height: 10em;
+
+    padding: 0 .8em;
+
+    background-color: rgb(28, 28, 28);
+
+    /* background-color: red; */
+}
+
 /* 🟣 Auslagern in my it */
 #icon-my-it-header {
 
   height: 2em;
 }
 
-#di {
-
-    display: grid;
-}
-
-#xw {
-
-    width: 100%;
-
-    padding: 4em .8em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: white;
-}
 
 /* ------------------------------------------------------------- */
 /* My IT Container
@@ -38,6 +37,8 @@
     width: 100%;
     display: grid;
     justify-items: center;
+
+    /* background-color: red; */
 
     /* row-gap: 3em; */
 
