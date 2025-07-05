@@ -12,7 +12,7 @@
 #my-it-header-container {
 
     width: 100%;
-    height: 10em;
+    height: 4em;
 
     /* padding: 0 .8em; */
 
@@ -24,7 +24,22 @@
 /* 🟣 Auslagern in my it */
 #icon-my-it-header {
 
-  height: 2em;
+  height: 1.6em;
+}
+
+/* ------------------------------------------------- */
+/* 🟣 Auslagern | Header Sub Content Container
+/* ------------------------------------------------- */
+
+.header-sub-content-container {
+
+    height: 8em;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+
+    background-color: grey;
 }
 
 
@@ -46,6 +61,33 @@
 
     /* background-color: rgb(28, 28, 28); */
 }
+
+
+
+/* ------------------------------------------- */
+/* My IT Doc (css.datei ) -> my-it-it-docs.css | my-it-it-proejcts.css ( ordner )
+/* ------------------------------------------- */
+
+#my-it-doc-container {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+
+    background-color: green;
+
+    /* display: none; */
+}
+
+#cont {
+
+    background-color: red;
+    padding: .8em;
+}
+
+
+
 
 /* ------------------------------------------- */
 /* Img Icon Headline It

@@ -11,15 +11,81 @@
 
 #my-it-docs-container {
 
+  width: 100%;
+
+  display: grid;
+  row-gap: 2em;
+
+  /* border: 1px solid black; */
+
+
+}
+
+
+
+/* ------------------------------------------------------------- */
+/* Header | My IT Docs Container
+/* ------------------------------------------------------------- */
+
+.sub-header-content-container {
+
+  height: 6em;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+
+  background-color: rgb(230, 230, 230);
+}
+
+.header-block-element {
+
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+
+}
+
+#icon-my-it-docs {
+
+  height: 1.8em;
+}
+
+.header-block-element > div:nth-of-type(1) {
+
+  display: grid;
+  row-gap: .1em;
+
+}
+
+/* 🟣 Auslagern  */
+
+.title-sub-header {
+
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.sub-title-sub-header {
+
+  font-size: 1em;
+  color:grey;
+}
+
+/* ------------------------------------------------------------- */
+/* Nav | My IT Docs Container
+/* ------------------------------------------------------------- */
+
+#my-it-docs-container > nav {
 
 
 }
 
 /* ------------------------------------------------------------- */
-/* ...
+/* Main | My IT Docs Container
 /* ------------------------------------------------------------- */
 
+#my-it-docs-container > main {
 
-/* ------------------------------------------------------------- */
-/* ...
-/* ------------------------------------------------------------- */
+
+}

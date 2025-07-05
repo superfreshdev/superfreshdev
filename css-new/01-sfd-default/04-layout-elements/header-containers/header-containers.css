@@ -5,6 +5,18 @@
 /* ------------------------------------------------------------------- */
 
 
+                                /* main-header-container
+                                sub-main-header-container
+
+                                topic-header-container
+
+                                1. header-container
+                                2. sub-header-container
+
+                                3. topic-header-container
+                       */
+
+
 /* ------------------------------------------------------------------- */
 /* [1/2] | Header Content Container
 /* ------------------------------------------------------------------- */
@@ -38,6 +50,11 @@
   justify-content: space-between;
 
 }
+
+/* ------------------------------------------------- */
+/* Header Sub Content Container
+/* ------------------------------------------------- */
+
 
 /* ------------------------------------------------------------------- */
 /* Header Content Title
