@@ -145,10 +145,9 @@
 
   font-weight: bold;
 
-  color:grey;
+  color:rgb(177, 177, 177);
 
 }
-
 
 
 /* ------------------------------------------------------------------- */
@@ -157,9 +156,7 @@
 
 /* i: big presentation header which comes with title and img */
 
-
-/* ❌ alt  */
-.header-topic-container {
+.presentation-header-container {
 
   width: 100%;
   padding: 2.5em 0;
@@ -172,13 +169,11 @@
 
 }
 
-
 /* ------------------------------------------------------------------- */
-/* Header Topic Title
+/* Title Presentation Header
 /* ------------------------------------------------------------------- */
 
-/* ❌ alt  */
-.header-topic-title {
+.title-presentation-header {
 
   height: 4em;
   padding: 0 1em;
@@ -197,8 +192,7 @@
 
 }
 
-/* ❌ alt  */
-.header-topic-title > div {
+.title-presentation-header > div {
 
   font-size: 1.125em;
 
@@ -206,17 +200,17 @@
 
 
 /* ------------------------------------------------------------------- */
-/* Img Header Topic
+/* Img Presenetation Header
 /* ------------------------------------------------------------------- */
-/* ❌ alt  */
-.img-header-topic {
+
+.img-presentation-header {
 
   /* mobile */
   height: 10em;
 
 }
 
-.img-smaller-header-topic {
+.img-smaller-presentation-header {
 
   /* mobile */
   height: 8em;
