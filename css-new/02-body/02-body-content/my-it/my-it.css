@@ -9,7 +9,7 @@
 /* My IT Container
 /* ------------------------------------------------------------- */
 
-#my-it-container {
+.my-it-container {
 
     width: 100%;
     display: grid;
@@ -19,6 +19,7 @@
     /* background-color: red; */
 
 }
+
 
 /* ------------------------------------------------------------- */
 /* My IT Header Container

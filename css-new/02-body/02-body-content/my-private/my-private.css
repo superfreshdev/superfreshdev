@@ -17,11 +17,14 @@
 /* My Private Container
 /* ------------------------------------------------------------- */
 
-#my-private-container {
+.my-private-container {
 
-    width: 100%;
-    display: grid;
+   width: 100%;
+  display: grid;
+
 }
+
+
 
 /* ------------------------------------------- */
 /* Img Icon Headline Private

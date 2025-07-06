@@ -9,11 +9,11 @@
 /* About Container
 /* ------------------------------------------- */
 
-#about-container {
+.about-container {
 
-    width: 100%;
-    display: grid;
-    justify-items: center;
+   width: 100%;
+   display: grid;
+   justify-items: center;
 
 }
 
