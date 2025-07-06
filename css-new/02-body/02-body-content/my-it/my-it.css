@@ -1,9 +1,24 @@
 /* -------------------------------------------------------------- */
 /* > my-it.css
 /*
-/* : styles for about nav ( open / close view )
+/* : default styles for my it container
 /* -------------------------------------------------------------- */
 
+
+/* ------------------------------------------------------------- */
+/* My IT Container
+/* ------------------------------------------------------------- */
+
+#my-it-container {
+
+    width: 100%;
+    display: grid;
+    justify-items: center;
+
+    /* row-gap: 3em; */
+    /* background-color: red; */
+
+}
 
 /* ------------------------------------------------------------- */
 /* My IT Header Container
@@ -18,158 +33,25 @@
 
     background-color: rgb(28, 28, 28);
 
-    /* background-color: red; */
 }
 
-/* 🟣 Auslagern in my it */
 #icon-my-it-header {
 
   height: 1.6em;
-}
 
-/* ------------------------------------------------- */
-/* 🟣 Auslagern | Header Sub Content Container
-/* ------------------------------------------------- */
-
-.header-sub-content-container {
-
-    height: 8em;
-
-    display: flex;
-    align-items: center;
-    /* justify-content: flex-start; */
-
-    background-color: grey;
 }
 
 
 /* ------------------------------------------------------------- */
-/* My IT Container
+/* My IT Content Container
 /* ------------------------------------------------------------- */
 
-#my-it-container {
+#my-it-content-container {
 
     width: 100%;
+
     display: grid;
     justify-items: center;
 
-    /* background-color: red; */
-
-    /* row-gap: 3em; */
-
-    /* background-color: rgb(205, 205, 205); */
-
-    /* background-color: rgb(28, 28, 28); */
-}
-
-
-
-/* ------------------------------------------- */
-/* My IT Doc (css.datei ) -> my-it-it-docs.css | my-it-it-proejcts.css ( ordner )
-/* ------------------------------------------- */
-
-#my-it-doc-container {
-
-    width: 100%;
-
-    display: flex;
-    justify-content: flex-start;
-
-    background-color: green;
-
-    /* display: none; */
-}
-
-#cont {
-
-    background-color: red;
-    padding: .8em;
-}
-
-
-
-
-/* ------------------------------------------- */
-/* Img Icon Headline It
-/* ------------------------------------------- */
-
-#img-icon-it-headline {
-
-    /* mobile */
-    height: 1.8em;
-}
-
-
-#testi {
-
-    height: 10em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: rgb(239, 239, 239);
-
-}
-
-#haduso {
-
-    display: flex;
-    align-items: center;
-    column-gap: 1.5em;;
-}
-
-#haduso > #xx {
-
-    height: 3em;
-    width: 3em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 2px solid grey;
-
-    border-radius: .8em;
-
-    color:grey;
-    font-weight: bold;
-
-    background-color: rgb(192, 192, 192);
-}
-
-#header-testi {
-
-    height: 5em;
-    padding: 0 1em;
-
-    display: flex;
-    align-items: center;
-    column-gap: .8em;
-
-    border-radius: 1em;
-
-    background-color: rgb(28, 28, 28);
-}
-
-#header-testi > div:nth-of-type(1) {
-
-    display: grid;
-    row-gap: .2em;
-}
-
-#header-testi .title-sub-headline-category {
-
-    font-size: 1.125em;
-
-    font-weight: bold;
-    color:white;
-}
-
-#header-testi .sub-title-sub-headline-category {
-
-
-    font-size: 1.125em;
-    /* font-weight: bold; */
-    color:grey;
+    /* background-color: gold; */
 }

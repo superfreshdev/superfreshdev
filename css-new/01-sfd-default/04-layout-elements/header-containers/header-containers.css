@@ -5,23 +5,11 @@
 /* ------------------------------------------------------------------- */
 
 
-                                /* main-header-container
-                                sub-main-header-container
-
-                                topic-header-container
-
-                                1. header-container
-                                2. sub-header-container
-
-                                3. topic-header-container
-                       */
-
-
 /* ------------------------------------------------------------------- */
 /* [1/2] | Header Content Container
 /* ------------------------------------------------------------------- */
 
-/* i: the main header containers */
+/* i: header of my body header nav topics */
 
 .header-left-content-container,
 .header-right-content-container,
@@ -50,11 +38,6 @@
   justify-content: space-between;
 
 }
-
-/* ------------------------------------------------- */
-/* Header Sub Content Container
-/* ------------------------------------------------- */
-
 
 /* ------------------------------------------------------------------- */
 /* Header Content Title
@@ -85,13 +68,81 @@
     font-size: 1.125em;
 }
 
+/* ------------------------------------------------- */
+/* [2/2] | Sub Header Content Container
+/* ------------------------------------------------- */
+
+/* i: sub header of header content container */
+
+.sub-header-left-content-container,
+.sub-header-right-content-container,
+.sub-header-center-content-container,
+.sub-header-space-between-content-container {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+}
+
+.sub-header-right-content-container {
+
+  justify-content: flex-end;
+
+}
+
+.sub-header-center-content-container {
+
+  justify-content: center;
+}
+
+.sub-header-space-between-content-container {
+
+  justify-content: space-between;
+
+}
 
 /* ------------------------------------------------------------------- */
-/* [2/2] | Header Topic Container
+/* Sub Header Content Title
 /* ------------------------------------------------------------------- */
 
-/* i: the sub main header containers "topics of content header" */
+.sub-header-content-title {
 
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+
+}
+
+.sub-header-content-title > div:nth-of-type(1) {
+
+  display: grid;
+  row-gap: .1em;
+
+}
+
+.title-sub-header {
+
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.sub-title-sub-header {
+
+  font-size: 1em;
+  color:grey;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* Presentation Header Container
+/* ------------------------------------------------------------------- */
+
+/* i: big presentation header which comes with title and img */
+
+
+/* ❌ alt  */
 .header-topic-container {
 
   width: 100%;
@@ -110,6 +161,7 @@
 /* Header Topic Title
 /* ------------------------------------------------------------------- */
 
+/* ❌ alt  */
 .header-topic-title {
 
   height: 4em;
@@ -129,7 +181,7 @@
 
 }
 
-
+/* ❌ alt  */
 .header-topic-title > div {
 
   font-size: 1.125em;
@@ -140,7 +192,7 @@
 /* ------------------------------------------------------------------- */
 /* Img Header Topic
 /* ------------------------------------------------------------------- */
-
+/* ❌ alt  */
 .img-header-topic {
 
   /* mobile */
