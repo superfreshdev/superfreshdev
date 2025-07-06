@@ -777,7 +777,7 @@
             </div>
 
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- 🟩 [2/5] | About Container                                                     -->
+            <!-- 🟥🟩 [2/5] | About Container                                                     -->
             <!-- ----------------------------------------------------------------------------- -->
             <div id="about" class="about-container">
 
@@ -843,7 +843,7 @@
                 </div>
 
                 <!-- --------------------------------------------------------------- -->
-                <!-- 🟩 [2/2] | About Content Container                           -->
+                <!-- 🟥 [2/2] | About Content Container                           -->
                 <!-- --------------------------------------------------------------- -->
                 <div class="resp-max-content-area" id="chk-about-content-container">
 
@@ -867,7 +867,7 @@
                             <div class="overflow-hidden grid ji-c w-100p">
 
                                 <!-- --------------------------------------------------------------- -->
-                                <!-- 🟩 [0/4] | Quick Info                                          -->
+                                <!-- 🟥 [0/4] | Quick Info                                          -->
                                 <!-- --------------------------------------------------------------- -->
                                 <div class="resp-max-content-area">
 
@@ -982,7 +982,7 @@
                                 </div>
 
                                 <!-- --------------------------------------------------------------- -->
-                                <!-- 🟩 [1/4] | My IT Skills                                         -->
+                                <!-- 🟥 [1/4] | My IT Skills                                         -->
                                 <!-- --------------------------------------------------------------- -->
                                 <div class="resp-max-content-area">
 
@@ -1434,7 +1434,7 @@
                                 </div>
 
                                 <!-- --------------------------------------------------------------- -->
-                                <!-- 🟩 [2/4] | More Details                                      -->
+                                <!-- 🟥 [2/4] | More Details                                      -->
                                 <!-- --------------------------------------------------------------- -->
                                 <div class="resp-max-content-area">
 
@@ -1699,7 +1699,7 @@
                                 </div>
 
                                 <!-- --------------------------------------------------------------- -->
-                                <!-- 🟩 [3/4] | My Mindset                                          -->
+                                <!-- 🟥 [3/4] | My Mindset                                          -->
                                 <!-- --------------------------------------------------------------- -->
                                 <div class="resp-max-content-area">
 
@@ -1887,7 +1887,7 @@
                                 </div>
 
                                 <!-- --------------------------------------------------------------- -->
-                                <!-- 🟩 [4/4] | Contact                                            -->
+                                <!-- 🟥 [4/4] | Contact                                            -->
                                 <!-- --------------------------------------------------------------- -->
                                 <div class="resp-max-content-area">
 
@@ -2251,8 +2251,434 @@
                                                     <!-- ----------------------------------------------------------- -->
                                                     <!-- Content Switch Navigation -->
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <div>
-                                                        IT Doc Nav (Drop-Down/Filter Tab Panel)
+                                                    <div id="my-it-docs-nav">
+
+                                                        <input type="checkbox" id="chk-my-it-doc-selected">
+
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <!-- [0/0] | Selected Choosen IT Doc Container -->
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <label for="chk-my-it-doc-selected" id="selected-choosen-it-doc-container">
+
+                                                            <!-- ------------------------------------------------ -->
+                                                            <!-- Select Title Container -->
+                                                            <!-- ------------------------------------------------ -->
+                                                            <div class="select-title-container">
+
+                                                                <img src="media/img/icons/icons/choose.png" class="img-select-title" alt="img">
+                                                                <div>Choose Doc Category ...</div>
+
+                                                            </div>
+
+                                                            <!-- ------------------------------------------------ -->
+                                                            <!-- Img Arrow -->
+                                                            <!-- ------------------------------------------------ -->
+                                                            <img src="media/img/icons/icons/arrow-down-black.png" class="img-h-0-8" alt="img">
+
+                                                        </label>
+
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <!-- Select List of IT Docs Views -->
+                                                        <!-- ---------------------------------------------------------- -->
+
+                                                        <!-- ----------------------------------------- -->
+                                                        <!-- Radio Choose | IT Doc Categories          -->
+                                                        <!-- ----------------------------------------- -->
+
+                                                        <input type="radio" id="radio-my-it-docs-choose-category" name="radio-it-docs-choose-category">
+
+                                                        <input type="radio" id="radio-my-it-docs-choose-web-basic" name="radio-it-docs-choose-category">
+                                                        <input type="radio" id="radio-my-it-docs-choose-software-basic" name="radio-it-docs-choose-category">
+                                                        <input type="radio" id="radio-my-it-docs-choose-it-tools" name="radio-it-docs-choose-category">
+
+                                                        <input type="radio" id="radio-my-it-docs-choose-expertise" name="radio-it-docs-choose-category">
+
+                                                        <input type="radio" id="radio-my-it-docs-choose-algo" name="radio-it-docs-choose-category">
+                                                        <input type="radio" id="radio-my-it-docs-choose-software-quality" name="radio-it-docs-choose-category">
+                                                        <input type="radio" id="radio-my-it-docs-choose-web-dev" name="radio-it-docs-choose-category">
+                                                        <input type="radio" id="radio-my-it-docs-choose-software-mobile-dev" name="radio-it-docs-choose-category">
+                                                        <input type="radio" id="radio-my-it-docs-choose-database" name="radio-it-docs-choose-category">
+
+                                                        <input type="radio" id="radio-my-it-docs-choose-software-architecture" name="radio-it-docs-choose-category">
+                                                        <input type="radio" id="radio-my-it-docs-choose-dev-ops" name="radio-it-docs-choose-category">
+                                                        <input type="radio" id="radio-my-it-docs-choose-data-science" name="radio-it-docs-choose-category">
+
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <!-- Open / Close | Select List My IT Docs View              -->
+                                                        <!-- ------------------------------------------------------- -->
+
+                                                        <div id="open-close-select-list-my-it-docs-view">
+
+                                                            <div class="overflow-hidden w-100p">
+
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <!-- My IT Doc Select List Container -->
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <div id="my-it-doc-select-list-container">
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- XX | Arrow Down Container -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <div class="arrow-down-container">
+                                                                        <div>»</div>
+                                                                    </div>
+
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 00 | Choose Doc Category (Reset) -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-category" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>00</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/choose.png" class="img-select-title" alt="img">
+                                                                            <div>Choose Doc Category ...</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩01 | Web-Basic -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-web-basic" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>01</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/flag.png" class="img-select-title" alt="img">
+                                                                            <div>Web-Basic</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩02 | Software-Basic -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-software-basic" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>02</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/flag.png" class="img-select-title" alt="img">
+                                                                            <div>Software-Basic</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩04 | IT-Tools -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-it-tools" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>04</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/it-icons/it-tools-black.png" class="img-select-title" alt="img">
+                                                                            <div>IT-Tool's</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩05 | Expertise (Fachwissen) -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-expertise" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>05</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/team-black.png" class="img-select-title" alt="img">
+                                                                            <div>Expertise</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <br><br>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩06 | Algorithmn & Datastructures -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-algo" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>06</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/it-icons/algorithmn.png" class="img-h-1-5" alt="img">
+                                                                            <div>Algorithmn & Datastructures</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩08 | Software Qualitiy -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-software-quality" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>08</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/it-icons/clean-code.png" class="img-h-1-6" alt="img">
+                                                                            <div>Software Qualitiy</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩06 | Web-Dev -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-web-dev" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>06</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/it-icons/web-code-black.png" class="img-select-title" alt="img">
+                                                                            <div>Web-Dev</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩07 | Software-Mobile-Dev -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-software-mobile-dev" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>07</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/it-icons/brackets-black.png" class="img-h-1-4" alt="img">
+                                                                            <div>Software-Mobile-Dev</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩09 | Database -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-database" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>09</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/it-icons/backend-black.png" class="img-h-1-3" alt="img">
+                                                                            <div>Database</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <br><br>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩10 | Software Architecture -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-software-architecture" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>10</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/diversity.png" class="img-h-1-4" alt="img">
+                                                                            <div>Software Architecture</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩11 | DevOps -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-dev-ops" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>11</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/it-icons/layers.png" class="img-h-1-4" alt="img">
+                                                                            <div>DevOps</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- 🟩12 | Data Science -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <label for="radio-my-it-docs-choose-data-science" class="my-it-doc-select-list-item">
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Select Title Container -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="select-title-container">
+
+                                                                            <div>12</div>
+                                                                            <div>|</div>
+                                                                            <img src="media/img/icons/icons/it-icons/ai-ds-black.png" class="img-h-1-6" alt="img">
+                                                                            <div>Data Science</div>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <!-- Radio Block -->
+                                                                        <!-- ------------------------------------------------ -->
+                                                                        <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/icons/ui-elements/custom-select/x-creative-black.png" class="" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
                                                     </div>
 
                                                 </div>
