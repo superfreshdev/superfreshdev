@@ -1,0 +1,49 @@
+/* -------------------------------------------------------------- */
+/* > main-body.css
+/*
+/* : default sets for main body
+/* -------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* Main Body
+/* ---------------------------------------------------------------- */
+
+#main-body {
+
+    /* important: to stretch max height of parent body-container */
+    width: 100%;
+    height: 100%;
+
+    /* i: ji-c to let layout in the middle  */
+    display: grid;
+    justify-items: center;
+
+    /* background-color: yellow; */
+    background-color: white;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Main Body Container
+/* ---------------------------------------------------------------- */
+
+/* i: important for correct full height grid stretching -
+      because of div parent-child concept */
+
+#main-body-container {
+
+  width: 100%;
+  /* height: 100%; */
+
+  /* because of fixed header height 5.5em */
+  padding-top: 5.5em;
+
+  display: grid;
+  justify-items: center;
+
+  /* welcome, about, my-it, my-private, to be fresh */
+  grid: auto auto auto auto 1fr / 1fr;
+
+
+}
