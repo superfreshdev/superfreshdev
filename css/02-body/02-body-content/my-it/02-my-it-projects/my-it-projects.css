@@ -5,6 +5,34 @@
 /* -------------------------------------------------------------- */
 
 
+.test {
+
+  width: 100%;
+
+  padding: 3em 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 2em;
+  row-gap: 3em;
+
+  /* background-color: red; */
+
+}
+
+.test > img {
+
+  height: 15em;
+
+  border-radius: 1em;
+
+  border:1px solid rgb(144, 144, 144);
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
 /* ------------------------------------------------------------- */
 /* My IT Projects Container
 /* ------------------------------------------------------------- */
