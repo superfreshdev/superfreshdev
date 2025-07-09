@@ -58,7 +58,11 @@
 
   display: grid;
   row-gap: 2em;
+
+
 }
+
+
 
 
 /* ------------------------------------------------------------- */
@@ -121,6 +125,17 @@
   justify-items: center;
   row-gap: .8em;
 
+  border: 6px solid rgb(255, 255, 255);
+  border-radius: 1em;
+
+  transition: all .4s;
+
+}
+
+.my-it-doc-card-item:hover {
+
+  background-color: grey;
+  border: 6px solid grey;
 }
 
 .new-img-it-doc-card {
