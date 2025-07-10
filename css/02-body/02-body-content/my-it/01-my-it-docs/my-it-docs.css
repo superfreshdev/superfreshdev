@@ -125,7 +125,8 @@
   justify-items: center;
   row-gap: .8em;
 
-  border: 6px solid rgb(255, 255, 255);
+  border: 6px solid rgb(221, 221, 221);
+  background-color: rgb(221, 221, 221);
   border-radius: 1em;
 
   transition: all .4s;
@@ -134,8 +135,11 @@
 
 .my-it-doc-card-item:hover {
 
-  background-color: grey;
-  border: 6px solid grey;
+  background-color: rgb(28 , 28, 28);
+  border: 6px solid rgb(28, 28, 28);
+
+  color:white;
+
 }
 
 .new-img-it-doc-card {
