@@ -100,7 +100,7 @@
 
   display: grid;
   justify-items: center;
-  grid-template-rows: 0fr;
+  grid-template-rows: 1fr;
   transition: grid-template-rows 300ms ease-in-out;
 
 }
