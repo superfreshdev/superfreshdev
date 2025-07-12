@@ -68,22 +68,100 @@
 }
 
 
-
 /* -------------------------------------------------------------- */
-/*  [2/2] | My It Doc Select List Container
+/* Nav Choose Container
 /* -------------------------------------------------------------- */
 
-#my-it-doc-select-list-container {
+#my-it-docs-nav-choose-container {
 
   width: 100%;
-  padding: 4em 0 2em 0;
+  display: grid;
+  justify-items: center;
+  /* row-gap: 1em; */
+
+}
+
+/* -------------------------------------------------------------- */
+/* Nav Choose List Container
+/* -------------------------------------------------------------- */
+
+#my-it-docs-nav-choose-list-container {
+
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* mobile */
+  grid-template-areas:
+
+    'my-it-docs-nav-list-1'
+    'my-it-docs-nav-seperator-1'
+    'my-it-docs-nav-list-2'
+    'my-it-docs-nav-seperator-2'
+    'my-it-docs-nav-list-3';
+
+   column-gap: 2em;
+
+}
+
+#my-it-docs-nav-grid-area-list-1 {
+
+  grid-area: my-it-docs-nav-list-1;
+
+}
+
+#my-it-docs-nav-grid-area-list-2 {
+
+   grid-area: my-it-docs-nav-list-2;
+
+}
+
+#my-it-docs-nav-grid-area-list-3 {
+
+   grid-area: my-it-docs-nav-list-3;
+
+}
+
+#my-it-docs-nav-grid-area-seperator-1 {
+
+  grid-area: my-it-docs-nav-seperator-1;
+
+}
+
+#my-it-docs-nav-grid-area-seperator-2 {
+
+  grid-area: my-it-docs-nav-seperator-2;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Choose List Container
+/* -------------------------------------------------------------- */
+
+.choose-list-container {
 
   display: grid;
+  row-gap: .6em;
 
-  grid: auto / 1.3fr 1.3fr 1fr;
+  border: 1px solid black;
 
-  column-gap: 2em;
-  row-gap: 1em;
+}
+
+/* -------------------------------------------------------------- */
+/* Mobile Nav Art Seperator
+/* -------------------------------------------------------------- */
+
+.my-it-docs-mobile-nav-art-seperator {
+
+  height: 6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: green; */
 
 }
 
@@ -119,7 +197,7 @@
 
   display: grid;
   justify-items: center;
-  grid-template-rows: 0fr;
+  grid-template-rows: 1fr;
   transition: grid-template-rows 300ms ease-in-out;
 
 }
@@ -137,6 +215,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  column-gap: .8em;
 
   border-radius: .8em;
 

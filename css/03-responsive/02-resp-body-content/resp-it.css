@@ -105,6 +105,44 @@
 
 @media (min-width: 450px ) {
 
+
+  /* ------------------------------------------ */
+  /* Row Container -> Main
+  /* ------------------------------------------ */
+
+  .my-it-docs-card-row-container > main {
+
+    /* width: 100%; */
+
+    /* desktop */
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 2em;
+
+    /* mobile */
+    /* display: grid;
+    grid: auto / 1fr 1fr;
+    gap: 1em; */
+
+    /* background-color: red; */
+
+  }
+
+  /* ------------------------------------------ */
+  /* Doc Card Item
+  /* ------------------------------------------ */
+
+  .my-it-doc-card-item {
+
+    /* desktop */
+    width: 12em;
+
+  }
+
+
+
   /* ------------------------------------------ */
   /* Doc Card Containers
   /* ------------------------------------------ */
@@ -172,10 +210,74 @@
 }
 
 /* -------------------------------------------------------------- */
+/* >= 800px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 800px ) {
+
+
+  /* ------------------------------------------ */
+  /* Doc Card Item
+  /* ------------------------------------------ */
+
+  .my-it-doc-card-item {
+
+    /* desktop */
+    width: 15em;
+
+  }
+
+  /* -------------------------------------------- */
+  /* IT Docs Nav
+  /* -------------------------------------------- */
+  #my-it-docs-nav-choose-list-container {
+
+
+    /* desktop */
+    grid-template-areas:
+    'my-it-docs-nav-list-1 my-it-docs-nav-list-2'
+    'my-it-docs-nav-list-1 my-it-docs-nav-list-3';
+
+     row-gap: 2em;
+
+  }
+
+  .my-it-docs-mobile-nav-art-seperator {
+
+    display: none;
+
+  }
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1000px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 1000px ) {
+
+
+
+}
+
+/* -------------------------------------------------------------- */
 /* >= 1200px width
 /* -------------------------------------------------------------- */
 
 @media (min-width: 1200px ) {
 
+
+  /* -------------------------------------------- */
+  /* IT Docs Nav
+  /* -------------------------------------------- */
+  #my-it-docs-nav-choose-list-container {
+
+
+    /* desktop */
+    grid-template-areas:
+    'my-it-docs-nav-list-1 my-it-docs-nav-list-2 my-it-docs-nav-list-3';
+
+  }
 
 }
