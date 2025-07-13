@@ -12,9 +12,12 @@
 
 #my-it-docs-cards-container {
 
+  width: 100%;
+
   display: grid;
   justify-items: flex-start;
   row-gap: 4em;
+
 }
 
 /* ------------------------------------------------------------- */
@@ -26,6 +29,8 @@
   width: 100%;
 
   display: grid;
+  justify-items: center;
+  /* justify-content: center; */
   row-gap: 4em;
 
 }
@@ -36,7 +41,23 @@
 
 .my-it-docs-topic-cards-container > header {
 
-  justify-self: flex-start;
+  /* justify-self: flex-start; */
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+
+  background-color: red;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header > Div | Topic Card Container | My It Docs
+/* ------------------------------------------------------------- */
+
+.my-it-docs-topic-cards-container > header > div:nth-of-type(1) {
 
   padding: .8em 1.3em;
 
@@ -49,14 +70,12 @@
 
   border-radius: .8em;
 
-  background-color: rgb(233, 233, 233);
 
   background-color: rgb(28, 28, 28);
   color:rgb(186, 186, 186);
-
 }
 
-.my-it-docs-topic-cards-container > header > div {
+.my-it-docs-topic-cards-container > header > div:nth-of-type(1) > div:nth-of-type(1) {
 
   font-size: 1.125em;
 }
@@ -83,6 +102,8 @@
 
 .my-it-doc-card-item {
 
+  position: relative;
+
   /* mobile */
   width: 100%;
 
@@ -96,6 +117,8 @@
   border-radius: 1em;
 
   background-color: rgb(237, 237, 237);
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   transition: all .4s;
 
@@ -176,5 +199,106 @@
 
 
 /* ------------------------------------------------------------- */
-/* 🟥 In Progress, Coming Soon, Actually No Priority
+/* In Progress, Coming Soon, Actually No Priority
 /* ------------------------------------------------------------- */
+
+.my-it-doc-card-coming-soon > .my-it-doc-card-img,
+.my-it-doc-card-actually-no-priority > .my-it-doc-card-img {
+
+  opacity: .3;
+  filter: grayscale(1);
+
+}
+
+.my-it-doc-card-in-progress-status,
+.my-it-doc-card-coming-soon-status,
+.my-it-doc-card-acutally-no-priority-status {
+
+  height: 43%;
+
+  padding: 0 .8em;
+
+  position: absolute;
+  left:0;
+  right:0;
+  bottom: 3.8em;
+  z-index: 2;
+
+  display: grid;
+  justify-items: center;
+  align-content: center;
+
+  row-gap: .6em;
+
+  text-align: center;
+
+  border-radius: 0 0 0 0;
+
+}
+
+.my-it-doc-card-in-progress-status > div:nth-of-type(1),
+.my-it-doc-card-coming-soon-status > div:nth-of-type(1),
+.my-it-doc-card-acutally-no-priority-status > div:nth-of-type(1) {
+
+  font-weight: bold;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* In Progress | My IT Doc Card
+/* ------------------------------------------------------------- */
+
+.my-it-doc-card-in-progress-status {
+
+  background-color: rgb(236, 224, 92);
+
+}
+
+.my-it-doc-card-img-status-in-progress {
+
+  height: 1.5em;
+  animation: rotate360deg 4s ease infinite;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Coming Soon | My IT Doc Card
+/* ------------------------------------------------------------- */
+
+.my-it-doc-card-coming-soon-status {
+
+  background-color: rgb(103, 186, 254);
+
+}
+
+.my-it-doc-card-img-status-coming-soon {
+
+  height: 1.5em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Actually no priority | My IT Doc Card
+/* ------------------------------------------------------------- */
+
+.my-it-doc-card-acutally-no-priority-status {
+
+  background-color: rgb(116, 116, 116);
+  color:rgb(188, 188, 188);
+
+}
+
+.my-it-doc-card-img-status-no-priority {
+
+  height: 2.3em;
+}
+
+/* ------------------------------------------------------------- */
+/* Status Container | My IT Doc Card
+/* ------------------------------------------------------------- */
+
+.my-it-doc-card-status-container {
+
+
+}

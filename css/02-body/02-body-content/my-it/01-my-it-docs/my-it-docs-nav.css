@@ -26,8 +26,6 @@
 
 #open-close-my-it-docs-seleciton-list-container {
 
-  width: 100%;
-
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr;
