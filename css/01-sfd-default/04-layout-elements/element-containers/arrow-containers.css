@@ -16,6 +16,8 @@
 .arrow-down-container-center,
 .arrow-container-center {
 
+  height: 4em;
+
   display: flex;
   align-items: center;
 

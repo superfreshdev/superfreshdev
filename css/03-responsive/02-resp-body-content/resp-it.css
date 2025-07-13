@@ -11,29 +11,7 @@
 
 @media (min-width: 330px ) {
 
-  /* ------------------------------------------ */
-  /* Doc Card Containers
-  /* ------------------------------------------ */
 
-  .doc-card-container,
-  .doc-card-container-in-progress,
-  .doc-card-container-no-priority {
-
-    width: 9em;
-
-  }
-
-
-  /* ------------------------------------------ */
-  /* Doc Card In Progress / No Prio
-  /* ------------------------------------------ */
-
-  .doc-card-in-progress-info,
-  .doc-card-no-priority-info {
-
-    top: 6em;
-
-  }
 
 }
 
@@ -43,28 +21,7 @@
 
 @media (min-width: 370px ) {
 
-  /* ------------------------------------------ */
-  /* Doc Card Containers
-  /* ------------------------------------------ */
 
-  .doc-card-container,
-  .doc-card-container-in-progress,
-  .doc-card-container-no-priority {
-
-    width: 10em;
-
-  }
-
-  /* ------------------------------------------ */
-  /* Doc Card In Progress / No Prio
-  /* ------------------------------------------ */
-
-  .doc-card-in-progress-info,
-  .doc-card-no-priority-info {
-
-    top: 6.8em;
-
-  }
 
 }
 
@@ -74,28 +31,7 @@
 
 @media (min-width: 420px ) {
 
-  /* ------------------------------------------ */
-  /* Doc Card Containers
-  /* ------------------------------------------ */
 
-  .doc-card-container,
-  .doc-card-container-in-progress,
-  .doc-card-container-no-priority {
-
-    width: 11em;
-
-  }
-
-  /* ------------------------------------------ */
-  /* Doc Card In Progress / No Prio
-  /* ------------------------------------------ */
-
-  .doc-card-in-progress-info,
-  .doc-card-no-priority-info {
-
-    top: 7.5em;
-
-  }
 
 }
 
@@ -107,10 +43,10 @@
 
 
   /* ------------------------------------------ */
-  /* Row Container -> Main
+  /* Main | Topic Cards Container
   /* ------------------------------------------ */
 
-  .my-it-docs-card-row-container > main {
+  .my-it-docs-topic-cards-container > main {
 
     /* width: 100%; */
 
@@ -120,11 +56,6 @@
     flex-wrap: wrap;
 
     gap: 2em;
-
-    /* mobile */
-    /* display: grid;
-    grid: auto / 1fr 1fr;
-    gap: 1em; */
 
     /* background-color: red; */
 
@@ -142,40 +73,6 @@
   }
 
 
-
-  /* ------------------------------------------ */
-  /* Doc Card Containers
-  /* ------------------------------------------ */
-
-  .doc-card-container,
-  .doc-card-container-in-progress,
-  .doc-card-container-no-priority {
-
-    width: 12em;
-
-  }
-
-  /* ------------------------------------------ */
-  /* Doc Card In Progress / No Prio
-  /* ------------------------------------------ */
-
-  .doc-card-in-progress-info,
-  .doc-card-no-priority-info {
-
-    top: 8.2em;
-
-  }
-
-  /* -------------------------------------------------------------- */
-  /* Tab Selector | Mobile
-  /* -------------------------------------------------------------- */
-
-  #my-it-docs-nav .tab-selector {
-
-    /* mobile */
-    width: auto;
-  }
-
 }
 
 /* -------------------------------------------------------------- */
@@ -184,28 +81,7 @@
 
 @media (min-width: 520px ) {
 
-  /* ------------------------------------------ */
-  /* Doc Card Containers
-  /* ------------------------------------------ */
 
-  .doc-card-container,
-  .doc-card-container-in-progress,
-  .doc-card-container-no-priority {
-
-    width: 14em;
-
-  }
-
-  /* ------------------------------------------ */
-  /* Doc Card In Progress / No Prio
-  /* ------------------------------------------ */
-
-  .doc-card-in-progress-info,
-  .doc-card-no-priority-info {
-
-    top: 9.5em;
-
-  }
 
 }
 
@@ -215,6 +91,32 @@
 
 @media (min-width: 800px ) {
 
+
+  /* -------------------------------------------- */
+  /* Nav
+  /* -------------------------------------------- */
+
+  #my-it-docs-selection-list-container {
+
+    /* desktop */
+    grid-template-areas:
+    'my-it-docs-grid-area-1 my-it-docs-grid-area-2'
+    'my-it-docs-grid-area-1 my-it-docs-grid-area-3';
+
+     row-gap: 2em;
+
+  }
+
+  /* -------------------------------------------- */
+  /* Only Mobile | Art Seperator
+  /* -------------------------------------------- */
+
+  #only-mobile-my-it-docs-art-seperator-1,
+  #only-mobile-my-it-docs-art-seperator-2 {
+
+    display: none;
+
+  }
 
   /* ------------------------------------------ */
   /* Doc Card Item
@@ -226,28 +128,6 @@
     width: 15em;
 
   }
-
-  /* -------------------------------------------- */
-  /* IT Docs Nav
-  /* -------------------------------------------- */
-  #my-it-docs-nav-choose-list-container {
-
-
-    /* desktop */
-    grid-template-areas:
-    'my-it-docs-nav-list-1 my-it-docs-nav-list-2'
-    'my-it-docs-nav-list-1 my-it-docs-nav-list-3';
-
-     row-gap: 2em;
-
-  }
-
-  .my-it-docs-mobile-nav-art-seperator {
-
-    display: none;
-
-  }
-
 
 }
 
@@ -269,14 +149,16 @@
 
 
   /* -------------------------------------------- */
-  /* IT Docs Nav
+  /* Nav
   /* -------------------------------------------- */
-  #my-it-docs-nav-choose-list-container {
 
+  #my-it-docs-selection-list-container {
 
     /* desktop */
+    justify-content: center;
+
     grid-template-areas:
-    'my-it-docs-nav-list-1 my-it-docs-nav-list-2 my-it-docs-nav-list-3';
+    'my-it-docs-grid-area-1 my-it-docs-grid-area-2 my-it-docs-grid-area-3';
 
   }
 

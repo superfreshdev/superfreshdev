@@ -1,0 +1,22 @@
+/* -------------------------------------------------------------- */
+/* > art-seperator-container.css
+
+/* : styles my art seperator container , "hand stripes"
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Art Seperator Container
+/* -------------------------------------------------------------- */
+
+.art-seperator-container {
+
+  height: 6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: red; */
+
+}

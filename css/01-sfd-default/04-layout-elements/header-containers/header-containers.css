@@ -6,7 +6,143 @@
 
 
 /* ------------------------------------------------------------------- */
-/* [1/2] | Header Content Container
+/* [1/2] | Header Container ( left, right, sb, center )
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------*/
+/* Background Color for Header Container
+/* ------------------------------------------------*/
+
+.bgc-header-container {
+
+  background-color: rgb(216, 216, 216);
+
+}
+
+.header-container-left,
+.header-container-right,
+.header-container-space-between,
+.header-container-center {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+}
+
+.header-container-right {
+
+  justify-content: flex-end;
+
+}
+
+.header-container-space-between {
+
+  justify-content: space-between;
+
+}
+.header-container-center {
+
+  justify-content: center;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header Title Item Container
+/* ------------------------------------------------------------------- */
+
+.header-title-item-container {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header Title Item
+/* ------------------------------------------------------------------- */
+
+.header-title-item{
+
+  display: grid;
+  row-gap: .1em;
+
+}
+
+.header-title-text {
+
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.header-sub-title-text {
+
+  font-size: 1em;
+  color:grey;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header Title Nr
+/* ------------------------------------------------------------------- */
+
+.header-title-nr {
+
+  font-size: 1.25em;
+  letter-spacing: 2px;
+
+  font-weight: bold;
+
+  color:rgb(177, 177, 177);
+
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* [2/2] | Header Impress Container
+/* ------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- */
+/* ⚠️ Wird so nicht gebraucht [1/2] | Header Content Container
 /* ------------------------------------------------------------------- */
 
 /* i: header of my body header nav topics */

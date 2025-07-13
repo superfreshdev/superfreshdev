@@ -5,193 +5,26 @@
 /*
 /* ------------------------------------------------------------------- */
 
-/* -------------------------------------------------------------- */
-/* My IT Docs Nav
-/* -------------------------------------------------------------- */
-
-#my-it-docs-nav {
-
-  display: grid;
-  /* row-gap: 2em; */
-
-}
-
-/* ----------------------------------------------------------- */
-/* [1/2] | Drop Down Menue
-/* ----------------------------------------------------------- */
-
-#selected-choosen-it-doc-container {
-
-  height: 4em;
-  padding: 0 1em;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 1.3em;
-
-
-  border-radius: .8em;
-
-  background-color: rgb(216, 216, 216);
-
-  cursor: pointer;
-
-  transition: all .4s;
-
-
-}
-
-#selected-choosen-it-doc-container:hover {
-
-  background-color: wheat;
-}
-
-.select-title-container {
-
-  display: flex;
-  align-items: center;
-  column-gap: .6em;
-
-  font-weight: bold;
-
-}
-
-.select-title-container > div:nth-of-type(1) {
-
-  opacity: .6;
-}
-
-.img-select-title {
-
-  height: 1.2em;
-}
-
 
 /* -------------------------------------------------------------- */
-/* Nav Choose Container
+/* My IT Docs Nav Container
 /* -------------------------------------------------------------- */
 
-#my-it-docs-nav-choose-container {
+#my-it-docs-nav-container {
 
+  /* to allow child layouts to get max width */
   width: 100%;
+
   display: grid;
   justify-items: center;
-  /* row-gap: 1em; */
 
 }
 
 /* -------------------------------------------------------------- */
-/* Nav Choose List Container
+/* ⬇️⬆️ | Open Close | My IT Docs Selection List Container       */
 /* -------------------------------------------------------------- */
 
-#my-it-docs-nav-choose-list-container {
-
-  width: 100%;
-  height: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: flex-start;
-
-  /* mobile */
-  grid-template-areas:
-
-    'my-it-docs-nav-list-1'
-    'my-it-docs-nav-seperator-1'
-    'my-it-docs-nav-list-2'
-    'my-it-docs-nav-seperator-2'
-    'my-it-docs-nav-list-3';
-
-   column-gap: 2em;
-
-}
-
-#my-it-docs-nav-grid-area-list-1 {
-
-  grid-area: my-it-docs-nav-list-1;
-
-}
-
-#my-it-docs-nav-grid-area-list-2 {
-
-   grid-area: my-it-docs-nav-list-2;
-
-}
-
-#my-it-docs-nav-grid-area-list-3 {
-
-   grid-area: my-it-docs-nav-list-3;
-
-}
-
-#my-it-docs-nav-grid-area-seperator-1 {
-
-  grid-area: my-it-docs-nav-seperator-1;
-
-}
-
-#my-it-docs-nav-grid-area-seperator-2 {
-
-  grid-area: my-it-docs-nav-seperator-2;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Choose List Container
-/* -------------------------------------------------------------- */
-
-.choose-list-container {
-
-  display: grid;
-  row-gap: .6em;
-
-  border: 1px solid black;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Mobile Nav Art Seperator
-/* -------------------------------------------------------------- */
-
-.my-it-docs-mobile-nav-art-seperator {
-
-  height: 6em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* background-color: green; */
-
-}
-
-/* -------------------------------------------------------------- */
-/*  Arrow Down Container
-/* -------------------------------------------------------------- */
-
-.arrow-down-container {
-
-  height: 4em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.arrow-down-container > div {
-
-  font-size: 1.25em;
-  font-weight: bold;
-
-  transform: rotate(90deg);
-}
-
-/* -------------------------------------------------------------- */
-/* ⬇️⬆️ | Open Close | Select List My IT Docs View */
-/* -------------------------------------------------------------- */
-
-#open-close-select-list-my-it-docs-view {
+#open-close-my-it-docs-seleciton-list-container {
 
   width: 100%;
 
@@ -202,45 +35,99 @@
 
 }
 
-
 /* -------------------------------------------------------------- */
-/*  My It Doc Select List Item
+/* Seleciton List Container | My IT Docs
 /* -------------------------------------------------------------- */
 
-.my-it-doc-select-list-item {
+#my-it-docs-selection-list-container {
 
-  height: 4em;
-  padding: 0 1em;
+  width: 100%;
+  height: 100%;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  align-items: flex-start;
 
-  column-gap: .8em;
+  /* mobile */
+  grid-template-areas:
 
-  border-radius: .8em;
+    'my-it-docs-grid-area-1'
+    'my-it-docs-art-seperator-1'
+    'my-it-docs-grid-area-2'
+    'my-it-docs-art-seperator-2'
+    'my-it-docs-grid-area-3';
 
-  background-color: rgb(216, 216, 216);
+   column-gap: 2em;
 
-  cursor: pointer;
-
-  transition: all .4s;
 }
 
-.my-it-doc-select-list-item:hover {
+/* -------------------------------------------------------------- */
+/* Grid Areas | Selection List Container
+/* -------------------------------------------------------------- */
 
-  background-color: wheat;
+/* -------------------------------------------------------------- */
+/* [1/2] | Only Mobile | Art Seperator Container
+/* -------------------------------------------------------------- */
+
+#only-mobile-my-it-docs-art-seperator-1 {
+
+  grid-area: my-it-docs-art-seperator-1;
+
+}
+
+#only-mobile-my-it-docs-art-seperator-2 {
+
+  grid-area: my-it-docs-art-seperator-2;
+
+}
+
+/* -------------------------------------------------------------- */
+/* [2/2] | Selection Grid Area ( 1,2,3 ) | My IT Docs
+/* -------------------------------------------------------------- */
+
+#my-it-docs-selection-grid-area-1 {
+
+  grid-area: my-it-docs-grid-area-1;
+
+}
+
+#my-it-docs-selection-grid-area-2 {
+
+  grid-area: my-it-docs-grid-area-2;
+
+}
+
+#my-it-docs-selection-grid-area-3 {
+
+  grid-area: my-it-docs-grid-area-3;
+
 }
 
 
-
-
 /* -------------------------------------------------------------- */
-/*  Handling | Styling | Drow Down Selector
+/* Selection List | My IT Docs
 /* -------------------------------------------------------------- */
 
-#chk-my-it-doc-selected,
-input[name="radio-it-docs-choose-category"] {
+.my-it-docs-selection-list {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: .6em;
+
+  /* padding: .8em; */
+  /* border: 1px solid rgb(227, 227, 227); */
+  border-radius: .6em;
+
+  /* background-color: green; */
+
+}
+
+/* -------------------------------------------------------------- */
+/*  Handling | Styling |
+/* -------------------------------------------------------------- */
+
+#chk-selected-my-it-docs,
+input[name="radio-nav-my-it-docs"] {
 
   display: none;
 }
@@ -249,24 +136,24 @@ input[name="radio-it-docs-choose-category"] {
 /* set background */
 /* ---------------------------------- */
 
-#chk-my-it-doc-selected:checked + #selected-choosen-it-doc-container {
+#chk-selected-my-it-docs:checked + #lbl-selected-my-it-docs {
 
   background-color: wheat;
 }
 
-#radio-my-it-docs-choose-category:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-category"],
-#radio-my-it-docs-choose-web-basic:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-web-basic"],
-#radio-my-it-docs-choose-software-basic:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-software-basic"],
-#radio-my-it-docs-choose-it-tools:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-it-tools"],
-#radio-my-it-docs-choose-expertise:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-expertise"],
-#radio-my-it-docs-choose-algo:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-algo"],
-#radio-my-it-docs-choose-software-quality:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-software-quality"],
-#radio-my-it-docs-choose-web-dev:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-web-dev"],
-#radio-my-it-docs-choose-software-mobile-dev:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-software-mobile-dev"],
-#radio-my-it-docs-choose-database:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-database"],
-#radio-my-it-docs-choose-software-architecture:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-software-architecture"],
-#radio-my-it-docs-choose-dev-ops:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-dev-ops"],
-#radio-my-it-docs-choose-data-science:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-data-science"] {
+#radio-my-it-docs-category:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-category"],
+#radio-my-it-docs-web-basic:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-web-basic"],
+#radio-my-it-docs-software-basic:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-software-basic"],
+#radio-my-it-docs-it-tools:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-it-tools"],
+#radio-my-it-docs-expertise:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-expertise"],
+#radio-my-it-docs-algorithmn:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-algorithmn"],
+#radio-my-it-docs-software-quality:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-software-quality"],
+#radio-my-it-docs-web-dev:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-web-dev"],
+#radio-my-it-docs-software-mobile-dev:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-software-mobile-dev"],
+#radio-my-it-docs-database:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-database"],
+#radio-my-it-docs-software-architecture:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-software-architecture"],
+#radio-my-it-docs-dev-ops:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-dev-ops"],
+#radio-my-it-docs-data-science:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-data-science"] {
 
   background-color: wheat;
 
@@ -276,7 +163,7 @@ input[name="radio-it-docs-choose-category"] {
 /* change orientation */
 /* ---------------------------------- */
 
-#chk-my-it-doc-selected:checked + #selected-choosen-it-doc-container > img:last-child {
+#chk-selected-my-it-docs:checked + #lbl-selected-my-it-docs > img:last-child {
 
   transform: rotate(180deg);
 
@@ -286,187 +173,29 @@ input[name="radio-it-docs-choose-category"] {
 /* set x */
 /* ---------------------------------- */
 
-#radio-my-it-docs-choose-category:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-category"] .custom-radio-default > img,
-#radio-my-it-docs-choose-web-basic:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-web-basic"] .custom-radio-default > img,
-#radio-my-it-docs-choose-software-basic:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-software-basic"] .custom-radio-default > img,
-#radio-my-it-docs-choose-it-tools:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-it-tools"] .custom-radio-default > img,
-#radio-my-it-docs-choose-expertise:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-expertise"] .custom-radio-default > img,
-#radio-my-it-docs-choose-algo:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-algo"] .custom-radio-default > img,
-#radio-my-it-docs-choose-software-quality:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-software-quality"] .custom-radio-default > img,
-#radio-my-it-docs-choose-web-dev:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-web-dev"] .custom-radio-default > img,
-#radio-my-it-docs-choose-software-mobile-dev:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-software-mobile-dev"] .custom-radio-default > img,
-#radio-my-it-docs-choose-database:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-database"] .custom-radio-default > img,
-#radio-my-it-docs-choose-software-architecture:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-software-architecture"] .custom-radio-default > img,
-#radio-my-it-docs-choose-dev-ops:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-dev-ops"] .custom-radio-default > img,
-#radio-my-it-docs-choose-data-science:checked ~ #open-close-select-list-my-it-docs-view #my-it-doc-select-list-container label[for="radio-my-it-docs-choose-data-science"] .custom-radio-default > img {
+#radio-my-it-docs-category:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-category"] .custom-radio-default > img,
+#radio-my-it-docs-web-basic:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-web-basic"] .custom-radio-default > img,
+#radio-my-it-docs-software-basic:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-software-basic"] .custom-radio-default > img,
+#radio-my-it-docs-it-tools:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-it-tools"] .custom-radio-default > img,
+#radio-my-it-docs-expertise:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-expertise"] .custom-radio-default > img,
+#radio-my-it-docs-algorithmn:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-algorithmn"] .custom-radio-default > img,
+#radio-my-it-docs-software-quality:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-software-quality"] .custom-radio-default > img,
+#radio-my-it-docs-web-dev:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-web-dev"] .custom-radio-default > img,
+#radio-my-it-docs-software-mobile-dev:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-software-mobile-dev"] .custom-radio-default > img,
+#radio-my-it-docs-database:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-database"] .custom-radio-default > img,
+#radio-my-it-docs-software-architecture:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-software-architecture"] .custom-radio-default > img,
+#radio-my-it-docs-dev-ops:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-dev-ops"] .custom-radio-default > img,
+#radio-my-it-docs-data-science:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-data-science"] .custom-radio-default > img {
 
   display: flex;
 
 }
-
 
 /* -------------------------------------------------------------- */
 /*  Handling | Move | Drow Down Selector
 /* -------------------------------------------------------------- */
 
-#chk-my-it-doc-selected:checked ~ #open-close-select-list-my-it-docs-view {
+#chk-my-it-doc-selected:checked ~ #open-close-my-it-docs-seleciton-list-container {
 
   grid-template-rows: 1fr;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------------------------------------- */
-/* 🟣 Universal Drop Down -> Tab Filter Panel
-/* -------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------------------------------------- */
-/* ❌❌❌ Müll , IT Docs Nav - Handling ❌❌❌
-/* -------------------------------------------------------------- */
-
-
-
-
-/* -------------------------------------------------------------- */
-/* Tab Selector | Mobile
-/* -------------------------------------------------------------- */
-
-#my-it-docs-nav .tab-selector {
-
-  /* mobile */
-  width: 100%;
-}
-
-
-/* -------------------------------------------------------------- */
-/* Nav Handling | Style
-/* -------------------------------------------------------------- */
-
-/* default  */
-#radio-it-docs-web-dev:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-web-dev"] > .custom-radio-default > img,
-#radio-it-docs-software-concepts:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-software-concepts"] > .custom-radio-default > img,
-#radio-it-docs-software-mobile-dev:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-software-mobile-dev"] > .custom-radio-default > img,
-#radio-it-docs-software-architecture:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-software-architecture"] > .custom-radio-default > img,
-#radio-it-docs-quality-engineering:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-quality-engineering"] > .custom-radio-default > img,
-#radio-it-docs-it-tools:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-it-tools"] > .custom-radio-default > img,
-#radio-it-docs-backend:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-backend"] > .custom-radio-default > img,
-#radio-it-docs-data-science:checked ~ #my-it-docs-nav-radio-handle label[for="radio-it-docs-data-science"] > .custom-radio-default > img {
-
-  display: flex;
-
-}
-
-
-
-/* -------------------------------------------------------------- */
-/* Nav Handling | Move
-/* -------------------------------------------------------------- */

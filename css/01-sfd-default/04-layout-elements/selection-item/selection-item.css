@@ -1,0 +1,63 @@
+/* ------------------------------------------------------------------- */
+/* > selection-item.css
+/*
+/* Styles selection item for different layout use cases
+/* for example content tab filter list
+/*
+/* ------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------- */
+/* Selection Item
+/* --------------------------------------------------- */
+
+.selection-item {
+
+  height: 4em;
+  padding: 0 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1.3em;
+
+  border-radius: .8em;
+
+  background-color: rgb(240, 239, 239);
+
+  cursor: pointer;
+
+  transition: all .4s;
+
+}
+
+.selection-item:hover {
+
+  background-color: wheat;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Selection Title Item
+/* ----------------------------------------------------------- */
+
+.selection-title-container {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+}
+
+.selection-title-container > div:nth-of-type(1) {
+
+  opacity: .6;
+}
+
+.selection-item-img {
+
+  height: 1.2em;
+
+}
