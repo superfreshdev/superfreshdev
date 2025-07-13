@@ -1,0 +1,68 @@
+/* -------------------------------------------------------------- */
+/* > my-it-projects-nav.css
+/*
+/* : styles the it project nav container
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Nav | My IT Projects
+/* ------------------------------------------------------------- */
+
+#my-it-projects-nav-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: .8em;
+  row-gap: .8em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav > Label | My IT Projects
+/* ------------------------------------------------------------- */
+
+#my-it-projects-nav-container > label {
+
+  /* mobile */
+  width: 100%;
+
+}
+
+
+/* -------------------------------------------------------------- */
+/*  Handling | Styling |
+/* -------------------------------------------------------------- */
+
+input[name="name-radio-it-projects-nav3"] {
+
+  display: none;
+}
+
+
+/* ---------------------------------- */
+/* set background */
+/* ---------------------------------- */
+
+#radio-my-it-projects-web-desgin:checked ~ #css-finder-my-it-projects-nav-container label[for="radio-my-it-projects-web-desgin"],
+#radio-my-it-projects-web-dev:checked ~ #css-finder-my-it-projects-nav-container label[for="radio-my-it-projects-web-dev"],
+#radio-my-it-projects-software-dev:checked ~ #css-finder-my-it-projects-nav-container label[for="radio-my-it-projects-software-dev"] {
+
+  background-color: wheat;
+
+}
+
+
+/* ---------------------------------- */
+/* set x */
+/* ---------------------------------- */
+
+#radio-my-it-projects-web-desgin:checked ~ #css-finder-my-it-projects-nav-container label[for="radio-my-it-projects-web-desgin"] .custom-radio-default > img,
+#radio-my-it-projects-web-dev:checked ~ #css-finder-my-it-projects-nav-container label[for="radio-my-it-projects-web-dev"] .custom-radio-default > img,
+#radio-my-it-projects-software-dev:checked ~ #css-finder-my-it-projects-nav-container label[for="radio-my-it-projects-software-dev"] .custom-radio-default > img {
+
+  display: flex;
+
+}

@@ -24,11 +24,11 @@
 /* ⬇️⬆️ | Open Close | My IT Docs Selection List Container       */
 /* -------------------------------------------------------------- */
 
-#open-close-my-it-docs-seleciton-list-container {
+#open-close-my-it-docs-selection-list-container {
 
   display: grid;
   justify-items: center;
-  grid-template-rows: 1fr;
+  grid-template-rows: 0fr;
   transition: grid-template-rows 300ms ease-in-out;
 
 }
@@ -193,7 +193,7 @@ input[name="radio-nav-my-it-docs"] {
 /*  Handling | Move | Drow Down Selector
 /* -------------------------------------------------------------- */
 
-#chk-my-it-doc-selected:checked ~ #open-close-my-it-docs-seleciton-list-container {
+#chk-selected-my-it-docs:checked ~ #open-close-my-it-docs-selection-list-container {
 
   grid-template-rows: 1fr;
 }
