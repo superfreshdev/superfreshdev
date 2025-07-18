@@ -1,0 +1,40 @@
+/* -------------------------------------------------------------- */
+/* > layout-containers.css
+/*
+/* : styles many often using layout containers
+     reason: dont create everytime new layouts for basic aspects
+
+/* -------------------------------------------------------------- */
+
+/* ------------------------------------------------------------- */
+/* Grid - Layout Containers
+/* ------------------------------------------------------------- */
+
+/* ------------------------------------------------------------- */
+/* Justify-Items: Center & Row Gap: 1 & P: .5em .8em
+/* ------------------------------------------------------------- */
+
+.grid-ji-c-rg-1-p-0-5-0-8 {
+
+  padding: .5em .8em;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1em;
+
+  /* background-color: rgb(223, 223, 223); */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Flex - Layout Containers
+/* ------------------------------------------------------------- */
+
+.flex-ai-c-p-b-0-5 {
+
+  padding-bottom: .5em;
+
+  display: flex;
+  align-items: center;
+
+}

@@ -1,0 +1,65 @@
+/* -------------------------------------------------------------- */
+/* > my-it-projects-top-more-containers.css
+/*
+/* : styles the top & more containers for my it projects container
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* My IT Projects Top More Container
+/* ------------------------------------------------------------- */
+
+#my-it-projects-top-more-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  /* align-items: flex-start; */
+
+  row-gap: 3em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* [1/2] | Top Container | My IT Projects
+/* ------------------------------------------------------------- */
+
+#my-it-projects-top-container {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: flex-start;
+
+
+  column-gap: 2em;
+  row-gap: 3em;
+
+  /* background-color: grey; */
+}
+
+
+/* ------------------------------------------------------------- */
+/* [2/2] | More Container | My IT Projects
+/* ------------------------------------------------------------- */
+
+#my-it-projects-more-container {
+
+  width: 100%;
+
+  padding: 2em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  color:green;
+
+  border:1px solid black;
+
+}
