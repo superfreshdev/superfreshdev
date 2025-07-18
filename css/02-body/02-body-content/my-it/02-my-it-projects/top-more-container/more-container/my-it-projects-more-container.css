@@ -15,19 +15,113 @@
 
   padding: 2em 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
+
 
   border:1px solid black;
 
 }
+
+
+/* ------------------------------------------------------------- */
+/* Nav | Open Close | More Project Cards Container
+/* ------------------------------------------------------------- */
+
+#my-it-projects-more-container > nav:nth-of-type(1) {
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: mediumaquamarine;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Label | Open Close | More Project Cards Container
+/* ------------------------------------------------------------- */
+
+label[for="chk-open-close-more-project-container"] {
+
+  height: 2.8em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(234, 234, 234);
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+label[for="chk-open-close-more-project-container"]:hover {
+
+  background-color: wheat;
+}
+
+/* ------------------------------------------------------------- */
+/* Open Close | More Project Cards Container
+/* ------------------------------------------------------------- */
+
+#open-close-more-project-cards-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms ease-in-out;
+
+}
+
+/* Handlings */
+
+
+#chk-open-close-more-project-container {
+
+  display: none;
+}
+
+#chk-open-close-more-project-container:checked ~ #open-close-more-project-cards-container {
+
+  grid-template-rows: 1fr;
+
+}
+
 
 /* ------------------------------------------------------------- */
 /* Nav | My IT Projects
 /* 🟣 Optional, only good for more than 20 projects
 /* ------------------------------------------------------------- */
 
+
+/* ------------------------------------------------------------- */
+/* More It Project Card List
+/* ------------------------------------------------------------- */
+
+#more-it-project-card-list {
+
+  width: 100%;
+  padding-top: 5em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:2em;
+
+  /* background-color: red; */
+
+}
 
 
 /* ------------------------------------------------------------- */
@@ -70,6 +164,7 @@
 
 .more-it-project-card-title {
 
+  font-size: 1.125em;
 
 }
 
