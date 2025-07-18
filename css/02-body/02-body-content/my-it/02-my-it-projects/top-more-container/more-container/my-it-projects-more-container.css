@@ -1,0 +1,170 @@
+/* -------------------------------------------------------------- */
+/* > my-it-projects-more-container.css
+/*
+/* : style the it projects more container
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* More Container | My IT Projects
+/* ------------------------------------------------------------- */
+
+#my-it-projects-more-container {
+
+  width: 100%;
+
+  padding: 2em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:1px solid black;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav | My IT Projects
+/* 🟣 Optional, only good for more than 20 projects
+/* ------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------- */
+/* More It Project Card
+/* ------------------------------------------------------------- */
+
+.more-it-project-card {
+
+  width: 18em;
+
+  display: grid;
+  justify-items: center;
+
+  row-gap: 1em;
+  border-radius: .8em;
+
+  transition: all .4s;
+
+}
+
+.more-it-project-card:hover {
+
+  background-color: rgb(225, 225, 225);
+}
+
+/* ------------------------------------------------------------- */
+/* Img | More It Project Card
+/* ------------------------------------------------------------- */
+
+.more-it-project-card-img {
+
+  width: 100%;
+  border-radius: .8em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Title | More It Project Card
+/* ------------------------------------------------------------- */
+
+.more-it-project-card-title {
+
+
+}
+
+.more-it-project-card-title > span {
+
+  font-weight: bold;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Tech Stack | More It Project Card
+/* ------------------------------------------------------------- */
+
+.more-it-project-card-tech-stack {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
+
+  background-color: green;
+
+}
+
+.more-it-project-card-tech-stack > div {
+
+  height: 1.8em;
+  padding: 0 .4em;
+
+  font-size: .9em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .3em;
+
+  background-color: rgb(200, 200, 200);
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* zip github | More It Project Card
+/* ------------------------------------------------------------- */
+
+.more-it-project-card-zip-github {
+
+  width: 100%;
+  padding: 0em 0 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  column-gap: .6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* a | zip & github
+/* ------------------------------------------------------------- */
+
+.more-it-project-card-zip-github > a {
+
+  text-decoration: none;
+
+  height: 2.3em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  border-radius: .4em;
+
+  font-weight: bold;
+
+  background-color: rgb(28, 28, 28);
+  color:rgb(214, 214, 214);
+
+  transition: all .4s;
+
+
+}
+
+.more-it-project-card-zip-github > a:visited {
+
+ color:rgb(214, 214, 214);
+
+}
+
+.more-it-project-card-zip-github > a:hover {
+
+ background-color: wheat;
+
+}
