@@ -53,6 +53,7 @@
 
 #lbl-useful-links-body-footer {
 
+    height: 2.5em;
     padding: 0 .8em;
 
     display: flex;
@@ -197,7 +198,7 @@
 
 
 /* Default unshown max area content  */
-#chk-useful-links-body-footer:checked ~ .handle-max-content-area #smooth-open-close-useful-links-body-footer {
+#chk-useful-links-body-footer:checked ~ .resp-max-content-area #smooth-open-close-useful-links-body-footer {
 
     grid: 1fr / 1fr;
     /* grid-template-rows: 1fr 1fr; */

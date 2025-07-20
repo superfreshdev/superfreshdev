@@ -1,0 +1,56 @@
+/* -------------------------------------------------------------- */
+/* > my-it-project-top.css
+/*
+/* : style my it project top container where u can see my
+     top 3 it projects
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Top Container | My IT Projects
+/* ------------------------------------------------------------- */
+
+#my-it-projects-top-container {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  column-gap: 2em;
+  row-gap: 3em;
+
+  /* background-color: grey; */
+}
+
+
+/* 🟥🟥🟥 Nav in project top container */
+
+/* ------------------------------------------------------------- */
+/* Nav | My IT Projects
+/* ------------------------------------------------------------- */
+
+#my-it-projects-nav {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: .8em;
+  row-gap: .8em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav > Label | My IT Projects
+/* ------------------------------------------------------------- */
+
+#my-it-projects-nav-container > label {
+
+  /* mobile */
+  width: 100%;
+
+}

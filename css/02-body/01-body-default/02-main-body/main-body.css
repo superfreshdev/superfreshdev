@@ -43,7 +43,7 @@
   justify-items: center;
 
   /* welcome, about, my-it, my-private, to be fresh */
-  grid: auto auto auto auto 1fr / 1fr;
+  grid: auto auto auto 1fr / 1fr;
 
 
 }

@@ -1,0 +1,22 @@
+/* -------------------------------------------------------------- */
+/* > my-it-projects-top-more-container.css
+/*
+/* : styles the top & more container. There are
+     inside top & more it project container
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Top More Container | My IT Projects
+/* ------------------------------------------------------------- */
+
+#my-it-projects-top-more-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  /* align-items: flex-start; */
+  /* row-gap: 3em; */
+
+}

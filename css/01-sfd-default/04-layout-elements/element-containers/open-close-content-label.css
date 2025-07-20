@@ -1,0 +1,38 @@
+/* -------------------------------------------------------------- */
+/* > open-close-content-label.css
+/*
+/* : styles open close content label
+
+/* -------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------- */
+/* Open Close Content Label
+/* ------------------------------------------------------------- */
+
+.open-close-content-label {
+
+  height: 2.8em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  /* background-color: rgb(234, 234, 234); */
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.open-close-content-label:hover {
+
+  background-color: wheat;
+}

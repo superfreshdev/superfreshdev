@@ -74,6 +74,9 @@
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/arrow-containers.css">
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/art-seperator-container.css">
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/close-content-button-container.css">
+                <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/open-close-content-label.css">
+                <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/zip-github-link-container.css">
+                <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/focial-points-container.css">
 
                 <!--inputs -->
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/inputs/custom-radio.css">
@@ -147,13 +150,13 @@
             <!-- ------------------------------------------------------------ -->
 
                 <!-- ---------------------- -->
-                <!-- [1/4] | welcome        -->
+                <!-- [1/4] | Welcome        -->
                 <!-- ---------------------- -->
 
                 <link rel="stylesheet" href="css/02-body/02-body-content/welcome/welcome.css">
 
                 <!-- ---------------------- -->
-                <!-- [2/4] | about          -->
+                <!-- [2/4] | About          -->
                 <!-- ---------------------- -->
 
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/about.css">
@@ -168,34 +171,40 @@
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/about-content/about-contact.css">
 
                 <!-- ---------------------- -->
-                <!-- [3/4] | my it          -->
+                <!-- [3/4] | My IT          -->
                 <!-- ---------------------- -->
 
                 <link rel="stylesheet" href="css/02-body/02-body-content/my-it/my-it.css">
 
-                    <!-- -------------------------------- -->
-                    <!-- my it docs | my it -->
-                    <!-- -------------------------------- -->
+                    <!-- -------------------------------------------------------- -->
+                    <!-- [1/2] | My IT Doc's | My IT                              -->
+                    <!-- -------------------------------------------------------- -->
+
                     <link rel="stylesheet" href="css/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs.css">
                     <link rel="stylesheet" href="css/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs-nav.css">
                     <link rel="stylesheet" href="css/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs-card-container.css">
 
-                    <!-- -------------------------------- -->
-                    <!-- my it projects | my it -->
-                    <!-- -------------------------------- -->
+                    <!-- -------------------------------------------------------- -->
+                    <!-- [2/2] | My IT Projects | My IT                           -->
+                    <!-- -------------------------------------------------------- -->
+
                     <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/my-it-projects.css">
-                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/my-it-projects-nav.css">
 
-                    <!-- top & more container -->
-                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-container/my-it-projects-top-more-containers.css">
+                    <!-- top & more it projects container -->
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-projects/my-it-projects-top-more-container.css">
 
-                    <!-- top container -->
-                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-container/my-it-projects-card.css">
-                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-container/video-categories-link-container/video-categories-link-container.css">
-                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-container/video-categories-link-container/video-categories-link-container-nav.css">
+                    <!-- top | it projects container -->
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-projects/top-projects/my-it-project-top.css">
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-projects/top-projects/my-it-project-top-nav.css">
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-projects/top-projects/my-it-project-top-card.css">
 
-                    <!-- more container -->
-                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-container/more-container/my-it-projects-more-container.css">
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-projects/top-projects/video-categories-link/video-categories-link-container.css">
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-projects/top-projects/video-categories-link/video-categories-link-container-nav.css">
+
+                    <!-- more | it projects container -->
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-projects/more-projects/my-it-projects-more.css">
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-projects/more-projects/my-it-projects-more-nav.css">
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-more-projects/more-projects/my-it-project-more-card.css">
 
                 <!-- ---------------------- -->
                 <!-- [4/4] | my private      -->
@@ -469,6 +478,10 @@
 
 
             </div>
+
+            <!-- ----------------------------------------------------------------------------- -->
+            <!-- 🟥 [2/5] | Header Nav  ⚠️Überlegung für welcome und header in einem container | js handling -->
+            <!-- ----------------------------------------------------------------------------- -->
 
             <!-- ----------------------------------------------------------------------------- -->
             <!-- 🟥 [2/5] | About Container                                                     -->
@@ -5587,51 +5600,62 @@
                                                     <div id="my-it-projects-top-more-container">
 
                                                         <!-- ------------------------------------------------------------------------ -->
-                                                        <!-- ➡️🟨🟥 [1/2] | Top Container | My It Projects Container                 -->
+                                                        <!-- ➡️🟥 [1/2] | Top Container |                                          -->
                                                         <!-- ------------------------------------------------------------------------ -->
                                                         <div id="my-it-projects-top-container">
 
+                                                            <!--
+                                                                ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+                                                                ⚠️⚠️⚠️ 3er Nav - sind nur 3 Elemente
+                                                                kann explizit teil des max project sein
+
+                                                            -->
+
                                                             <!-- ---------------------------------------------- -->
-                                                            <!-- 🟨🟥[1/3] | My IT Project Card                 -->
+                                                            <!-- 🟩 [1/3] | My IT Project Card                 -->
                                                             <!-- ---------------------------------------------- -->
-                                                            <div class="my-it-project-card">
+                                                            <div class="my-it-project-top-card">
 
 
+                                                                <!-- ⚠️⚠️⚠️  2. Bereiche -->
+
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <!-- 🟩 [1/6] | Header | It Project Card  -->
+                                                                <!-- 🟩 [1/6] | Header | It Project Top Card  -->
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <header class="my-it-project-card-header">
+                                                                <header class="my-it-project-top-card-header">
 
                                                                     <!-- --------------------------------------- -->
                                                                     <!-- [1/2] | Header Info  -->
                                                                     <!-- --------------------------------------- -->
-                                                                    <div class="my-it-project-card-header-info">Project #1:</div>
+                                                                    <div class="my-it-project-top-card-header-info">
+                                                                        Project 1
+                                                                    </div>
 
                                                                     <!-- --------------------------------------- -->
                                                                     <!-- [2/2] | Status  -->
                                                                     <!-- --------------------------------------- -->
-                                                                    <div class="my-it-project-card-status-in-progress">in progress</div>
+                                                                    <div class="my-it-project-top-card-status-in-progress">in progress</div>
 
                                                                 </header>
 
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <!-- 🟩 [2/6] | Media Container | It Project Card  -->
+                                                                <!-- 🟩 [2/6] | Media Container | It Project Top Card  -->
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <div class="my-it-project-card-media-container">
+                                                                <div class="my-it-project-top-card-media-container">
 
-                                                                    <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-1/project-1-sass-dashboard.png" class="my-it-project-card-img" alt="img">
+                                                                    <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-1/project-1-sass-dashboard.png" class="my-it-project-card-top-img" alt="img">
 
                                                                 </div>
 
                                                                 <!-- -------------------------------------------------------  -->
-                                                                <!-- ➡️🟥 Layout Container ( sfd default ) -->
+                                                                <!-- Main -->
                                                                 <!-- -------------------------------------------------------  -->
-                                                                <div class="grid-ji-c-rg-1-p-0-5-0-8">
+                                                                <main>
 
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <!-- 🟩 [3/6] | Title | It Project Card  -->
+                                                                    <!-- 🟩 [3/6] | Title | It Project Top Card  -->
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <div class="my-it-project-card-title">
+                                                                    <div class="my-it-project-top-card-title">
 
                                                                         <span>Responsive Data Dashboard #1:</span> CSS & SASS Solution from
                                                                         Design to Solution. You can find my step by step Video Tutorial only in German.
@@ -5639,9 +5663,9 @@
                                                                     </div>
 
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <!-- 🟩 [4/6] | Focial Points | It Project Card  -->
+                                                                    <!-- 🟩 [4/6] | Focial Points Container | sfd-defaults  -->
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <div class="my-it-project-card-focial-points">
+                                                                    <div class="focial-points-container">
 
                                                                         <div>css</div>
                                                                         <div>sass</div>
@@ -5652,16 +5676,16 @@
                                                                     </div>
 
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <!-- 🟩 [5/6] | zip github | It Project Card  -->
+                                                                    <!-- 🟩 [5/6] | Zip Github Link Container | sfd-default       -->
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <div class="my-it-project-card-zip-github">
+                                                                    <div class="zip-github-link-container">
 
                                                                         <!-- --------------------------------------------- -->
                                                                         <!-- ZIP -->
                                                                         <!-- --------------------------------------------- -->
                                                                         <a href="" target="_blank">
 
-                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-9" alt="img">
+                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-8" alt="img">
                                                                             <div>.zip</div>
 
                                                                         </a>
@@ -5671,7 +5695,7 @@
                                                                         <!-- --------------------------------------------- -->
                                                                         <a href="" target="_blank">
 
-                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1-3" alt="img">
+                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1" alt="img">
                                                                             <div>GitHub</div>
 
                                                                         </a>
@@ -5679,25 +5703,26 @@
                                                                     </div>
 
                                                                     <!-- -------------------------------------------------------------------------------- -->
-                                                                    <!-- ➡️🟨🟥 [6/6] | Video Categories Link Container | It Project Card                   -->
+                                                                    <!-- 🟩 [6/6] | Video Categories Link Container | It Project Top Card               -->
                                                                     <!-- -------------------------------------------------------------------------------- -->
                                                                     <div class="video-categories-link-container">
 
                                                                         <!-- ----------------------------------------------------------------- -->
                                                                         <!-- 🟩 [1/2] | Open Close | Video Category List -->
                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                        <input type="checkbox" id="chk-open-close-video-category-list-1" name="name-chk-open-close-video-categroy-list">
+                                                                        <input type="checkbox" id="chk-open-close-it-project-top-card-video-category-list-1"
+                                                                         name="name-chk-open-close-it-project-top-card-video-category-list">
                                                                         <nav>
-                                                                            <label for="chk-open-close-video-category-list-1" class="open-close-label-video-category-list">
+                                                                            <label for="chk-open-close-it-project-top-card-video-category-list-1" class="open-close-content-label">
                                                                                  <div>Open Video Tutorial</div>
                                                                                 <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-7" alt="img">
                                                                             </label>
                                                                         </nav>
 
                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                        <!-- ➡️🟥 [2/2] | Open Close | Video Category List -->
+                                                                        <!-- 🟩 [2/2] | Open Close | Video Category List | 1/2/3 -->
                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                        <div id="open-close-video-category-list-1" class="open-close-video-category-list" >
+                                                                        <div id="open-close-it-project-top-card-video-category-list-1" class="open-close-it-project-top-card-video-category-list" >
 
                                                                             <!-- ------------------------------------------------------ -->
                                                                             <!-- Overflow Hidden | (important for smooth concept)       -->
@@ -5717,9 +5742,9 @@
                                                                                         <!-- ----------------------------------------------------------------- -->
                                                                                         <!-- 🟩 [1/2] | Open Close | Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <input type="checkbox" id="chk-open-close-video-category-link-list-1-1" name="name-chk-open-close-video-category-link-list">
+                                                                                        <input type="checkbox" id="chk-open-close-it-project-top-card-video-category-link-1-1" name="name-chk-open-close-video-category-links">
                                                                                         <nav>
-                                                                                            <label for="chk-open-close-video-category-link-list-1-1" class="open-close-label-video-category-link-list">
+                                                                                            <label for="chk-open-close-it-project-top-card-video-category-link-1-1">
 
                                                                                                 <!-- ---------------------------------------------------- -->
                                                                                                 <!-- [1/2] | Title Block -->
@@ -5742,9 +5767,9 @@
                                                                                         </nav>
 
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <!-- ➡️🟥 [2/2] | Open Close |  Video Category Link List -->
+                                                                                        <!-- 🟩 [2/2] | Open Close |  Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <div id="open-close-video-category-link-list-1-1" class="open-close-video-category-link-list">
+                                                                                        <div id="open-close-it-project-top-card-video-category-link-list-1-1" class="open-close-it-project-top-card-video-category-link-list">
 
                                                                                             <!-- ------------------------------------------------------ -->
                                                                                             <!-- Overflow Hidden | (important for smooth concept)       -->
@@ -5888,9 +5913,9 @@
                                                                                         <!-- ----------------------------------------------------------------- -->
                                                                                         <!-- 🟩 [1/2] | Open Close | Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <input type="checkbox" id="chk-open-close-video-category-link-list-1-2" name="name-chk-open-close-video-category-link-list">
+                                                                                        <input type="checkbox" id="chk-open-close-it-project-top-card-video-category-link-1-2" name="name-chk-open-close-video-category-links">
                                                                                         <nav>
-                                                                                            <label for="chk-open-close-video-category-link-list-1-2" class="open-close-label-video-category-link-list">
+                                                                                            <label for="chk-open-close-it-project-top-card-video-category-link-1-2" class="open-close-label-video-category-link-list">
 
                                                                                                 <!-- ---------------------------------------------------- -->
                                                                                                 <!-- [1/2] | Title Block -->
@@ -5915,7 +5940,7 @@
                                                                                         <!-- ----------------------------------------------------------------- -->
                                                                                         <!-- 🟩 [2/2] | Open Close |  Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <div id="open-close-video-category-link-list-1-2" class="open-close-video-category-link-list">
+                                                                                        <div id="open-close-it-project-top-card-video-category-link-list-1-2" class="open-close-it-project-top-card-video-category-link-list">
 
                                                                                             <!-- ------------------------------------------------------ -->
                                                                                             <!-- Overflow Hidden | (important for smooth concept)       -->
@@ -6051,16 +6076,16 @@
                                                                                     </div>
 
                                                                                     <!-- -------------------------------------------------------- -->
-                                                                                    <!-- ➡️🟥 Video Category #3 -->
+                                                                                    <!-- 🟩 Video Category #3 -->
                                                                                     <!-- -------------------------------------------------------- -->
                                                                                     <div class="video-category">
 
                                                                                         <!-- ----------------------------------------------------------------- -->
                                                                                         <!-- 🟩 [1/2] | Open Close | Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <input type="checkbox" id="chk-open-close-video-category-link-list-1-3" name="name-chk-open-close-video-category-link-list">
+                                                                                        <input type="checkbox" id="chk-open-close-it-project-top-card-video-category-link-1-3" name="name-chk-open-close-video-category-links">
                                                                                         <nav>
-                                                                                            <label for="chk-open-close-video-category-link-list-1-3" class="open-close-label-video-category-link-list">
+                                                                                            <label for="chk-open-close-it-project-top-card-video-category-link-1-3" class="open-close-label-video-category-link-list">
 
                                                                                                 <!-- ---------------------------------------------------- -->
                                                                                                 <!-- [1/2] | Title Block -->
@@ -6085,7 +6110,7 @@
                                                                                         <!-- ----------------------------------------------------------------- -->
                                                                                         <!-- 🟩 [2/2] | Open Close |  Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <div id="open-close-video-category-link-list-1-3" class="open-close-video-category-link-list">
+                                                                                        <div id="open-close-it-project-top-card-video-category-link-list-1-3" class="open-close-it-project-top-card-video-category-link-list">
 
                                                                                             <!-- ------------------------------------------------------ -->
                                                                                             <!-- Overflow Hidden | (important for smooth concept)       -->
@@ -6229,84 +6254,88 @@
                                                                     </div>
 
 
-                                                                </div>
+                                                                </main>
 
 
                                                             </div>
 
                                                             <!-- ---------------------------------------------- -->
-                                                            <!-- 🟨🟥[2/3] | My IT Project Card              -->
+                                                            <!-- 🟩 [2/3] | My IT Project Card                 -->
                                                             <!-- ---------------------------------------------- -->
-                                                            <div class="my-it-project-card">
+                                                            <div class="my-it-project-top-card">
 
 
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <!-- 🟩 [1/6] | Header | It Project Card  -->
+                                                                <!-- 🟩 [1/6] | Header | It Project Top Card  -->
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <header class="my-it-project-card-header">
+                                                                <header class="my-it-project-top-card-header">
 
                                                                     <!-- --------------------------------------- -->
                                                                     <!-- [1/2] | Header Info  -->
                                                                     <!-- --------------------------------------- -->
-                                                                    <div class="my-it-project-card-header-info">Project #2:</div>
+                                                                    <div class="my-it-project-top-card-header-info">
+                                                                        Project 2
+                                                                    </div>
 
                                                                     <!-- --------------------------------------- -->
                                                                     <!-- [2/2] | Status  -->
                                                                     <!-- --------------------------------------- -->
-                                                                    <div class="my-it-project-card-status-coming-soon">coming soon</div>
+                                                                    <div class="my-it-project-top-card-status-coming-soon">coming soon</div>
 
                                                                 </header>
 
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <!-- 🟩 [2/6] | Media Container | It Project Card  -->
+                                                                <!-- 🟩 [2/6] | Media Container | It Project Top Card  -->
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <div class="my-it-project-card-media-container">
+                                                                <div class="my-it-project-top-card-media-container">
 
-                                                                    <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-2/project-2-sass-dashboard.png" class="my-it-project-card-img" alt="img">
+                                                                    <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-2/project-2-sass-dashboard.png" class="my-it-project-card-top-img" alt="img">
 
                                                                 </div>
 
                                                                 <!-- -------------------------------------------------------  -->
-                                                                <!-- ➡️🟥 Layout Container ( sfd default ) -->
+                                                                <!-- Main -->
                                                                 <!-- -------------------------------------------------------  -->
-                                                                <div class="grid-ji-c-rg-1-p-0-5-0-8">
+                                                                <main>
 
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <!-- 🟩 [3/6] | Title | It Project Card  -->
+                                                                    <!-- 🟩 [3/6] | Title | It Project Top Card  -->
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <div class="my-it-project-card-title">
+                                                                    <div class="my-it-project-top-card-title">
 
                                                                         <span>Responsive Data Dashboard #2:</span> CSS & SASS Solution from
-                                                                        Design to Solution. Here can be some more Text writen.
-                                                                        Dont ask me why, but its just an example.
-                                                                        You can find my step by step Video Tutorial only in German.
+                                                                        Design to Solution. You can find my step by step Video Tutorial only in German.
+                                                                        Here we write some more text and you know what i mean about and so on.
+                                                                        You remember what i mean.
 
                                                                     </div>
 
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <!-- 🟩 [4/6] | Focial Points | It Project Card  -->
+                                                                    <!-- 🟩 [4/6] | Focial Points Container | sfd-defaults  -->
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <div class="my-it-project-card-focial-points">
+                                                                    <div class="focial-points-container">
 
                                                                         <div>css</div>
                                                                         <div>sass</div>
                                                                         <div>responsive</div>
                                                                         <div>java script</div>
                                                                         <div>web-desgin concepts</div>
+                                                                        <div>linux</div>
+                                                                        <div>nodeJS</div>
 
                                                                     </div>
 
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <!-- 🟩 [5/6] | zip github | It Project Card  -->
+                                                                    <!-- 🟩 [5/6] | Zip Github Link Container | sfd-default       -->
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <div class="my-it-project-card-zip-github">
+                                                                    <div class="zip-github-link-container">
 
                                                                         <!-- --------------------------------------------- -->
                                                                         <!-- ZIP -->
                                                                         <!-- --------------------------------------------- -->
                                                                         <a href="" target="_blank">
 
-                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-9" alt="img">
+                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-8" alt="img">
                                                                             <div>.zip</div>
 
                                                                         </a>
@@ -6316,7 +6345,7 @@
                                                                         <!-- --------------------------------------------- -->
                                                                         <a href="" target="_blank">
 
-                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1-3" alt="img">
+                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1" alt="img">
                                                                             <div>GitHub</div>
 
                                                                         </a>
@@ -6324,25 +6353,26 @@
                                                                     </div>
 
                                                                     <!-- -------------------------------------------------------------------------------- -->
-                                                                    <!-- ➡️🟨🟥 [6/6] | Video Categories Link Container | It Project Card                   -->
+                                                                    <!-- 🟩 [6/6] | Video Categories Link Container | It Project Top Card               -->
                                                                     <!-- -------------------------------------------------------------------------------- -->
                                                                     <div class="video-categories-link-container">
 
                                                                         <!-- ----------------------------------------------------------------- -->
                                                                         <!-- 🟩 [1/2] | Open Close | Video Category List -->
                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                        <input type="checkbox" id="chk-open-close-video-category-list-2" name="name-chk-open-close-video-categroy-list">
+                                                                        <input type="checkbox" id="chk-open-close-it-project-top-card-video-category-list-2"
+                                                                         name="name-chk-open-close-it-project-top-card-video-category-list">
                                                                         <nav>
-                                                                            <label for="chk-open-close-video-category-list-2" class="open-close-label-video-category-list">
+                                                                            <label for="chk-open-close-it-project-top-card-video-category-list-2" class="open-close-content-label">
                                                                                  <div>Open Video Tutorial</div>
                                                                                 <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-7" alt="img">
                                                                             </label>
                                                                         </nav>
 
                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                        <!-- ➡️🟥 [2/2] | Open Close | Video Category List -->
+                                                                        <!-- 🟩 [2/2] | Open Close | Video Category List | 1/2/3 -->
                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                        <div id="open-close-video-category-list-2" class="open-close-video-category-list" >
+                                                                        <div id="open-close-it-project-top-card-video-category-list-2" class="open-close-it-project-top-card-video-category-list" >
 
                                                                             <!-- ------------------------------------------------------ -->
                                                                             <!-- Overflow Hidden | (important for smooth concept)       -->
@@ -6362,9 +6392,9 @@
                                                                                         <!-- ----------------------------------------------------------------- -->
                                                                                         <!-- 🟩 [1/2] | Open Close | Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <input type="checkbox" id="chk-open-close-video-category-link-list-2-1" name="name-chk-open-close-video-category-link-list">
+                                                                                        <input type="checkbox" id="chk-open-close-it-project-top-card-video-category-link-2-1" name="name-chk-open-close-video-category-links">
                                                                                         <nav>
-                                                                                            <label for="chk-open-close-video-category-link-list-2-1" class="open-close-label-video-category-link-list">
+                                                                                            <label for="chk-open-close-it-project-top-card-video-category-link-2-1">
 
                                                                                                 <!-- ---------------------------------------------------- -->
                                                                                                 <!-- [1/2] | Title Block -->
@@ -6387,9 +6417,9 @@
                                                                                         </nav>
 
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <!-- ➡️🟥 [2/2] | Open Close |  Video Category Link List -->
+                                                                                        <!-- 🟩 [2/2] | Open Close |  Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <div id="open-close-video-category-link-list-2-1" class="open-close-video-category-link-list">
+                                                                                        <div id="open-close-it-project-top-card-video-category-link-list-2-1" class="open-close-it-project-top-card-video-category-link-list">
 
                                                                                             <!-- ------------------------------------------------------ -->
                                                                                             <!-- Overflow Hidden | (important for smooth concept)       -->
@@ -6533,9 +6563,9 @@
                                                                                         <!-- ----------------------------------------------------------------- -->
                                                                                         <!-- 🟩 [1/2] | Open Close | Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <input type="checkbox" id="chk-open-close-video-category-link-list-2-2" name="name-chk-open-close-video-category-link-list">
+                                                                                        <input type="checkbox" id="chk-open-close-it-project-top-card-video-category-link-2-2" name="name-chk-open-close-video-category-links">
                                                                                         <nav>
-                                                                                            <label for="chk-open-close-video-category-link-list-2-2" class="open-close-label-video-category-link-list">
+                                                                                            <label for="chk-open-close-it-project-top-card-video-category-link-2-2" class="open-close-label-video-category-link-list">
 
                                                                                                 <!-- ---------------------------------------------------- -->
                                                                                                 <!-- [1/2] | Title Block -->
@@ -6560,7 +6590,7 @@
                                                                                         <!-- ----------------------------------------------------------------- -->
                                                                                         <!-- 🟩 [2/2] | Open Close |  Video Category Link List -->
                                                                                         <!-- ----------------------------------------------------------------- -->
-                                                                                        <div id="open-close-video-category-link-list-2-2" class="open-close-video-category-link-list">
+                                                                                        <div id="open-close-it-project-top-card-video-category-link-list-2-2" class="open-close-it-project-top-card-video-category-link-list">
 
                                                                                             <!-- ------------------------------------------------------ -->
                                                                                             <!-- Overflow Hidden | (important for smooth concept)       -->
@@ -6705,84 +6735,87 @@
                                                                     </div>
 
 
-                                                                </div>
+                                                                </main>
 
 
                                                             </div>
 
                                                             <!-- ---------------------------------------------- -->
-                                                            <!-- 🟨🟥[3/3] | My IT Project Card              -->
+                                                            <!-- 🟩 [2/3] | My IT Project Card                 -->
                                                             <!-- ---------------------------------------------- -->
-                                                            <div class="my-it-project-card">
+                                                            <div class="my-it-project-top-card">
 
 
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <!-- 🟩 [1/6] | Header | It Project Card  -->
+                                                                <!-- 🟩 [1/6] | Header | It Project Top Card  -->
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <header class="my-it-project-card-header">
+                                                                <header class="my-it-project-top-card-header">
 
                                                                     <!-- --------------------------------------- -->
                                                                     <!-- [1/2] | Header Info  -->
                                                                     <!-- --------------------------------------- -->
-                                                                    <div class="my-it-project-card-header-info">Project #3:</div>
+                                                                    <div class="my-it-project-top-card-header-info">
+                                                                        Project 3
+                                                                    </div>
 
                                                                     <!-- --------------------------------------- -->
                                                                     <!-- [2/2] | Status  -->
                                                                     <!-- --------------------------------------- -->
-                                                                    <div class="my-it-project-card-status-coming-soon">coming soon</div>
+                                                                    <div class="my-it-project-top-card-status-coming-soon">coming soon</div>
 
                                                                 </header>
 
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <!-- 🟩 [2/6] | Media Container | It Project Card  -->
+                                                                <!-- 🟩 [2/6] | Media Container | It Project Top Card  -->
                                                                 <!-- -------------------------------------------------------- -->
-                                                                <div class="my-it-project-card-media-container">
+                                                                <div class="my-it-project-top-card-media-container">
 
-                                                                    <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-3/project-3-sass-dashboard.png" class="my-it-project-card-img" alt="img">
+                                                                    <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-3/project-3-sass-dashboard.png" class="my-it-project-card-top-img" alt="img">
 
                                                                 </div>
 
                                                                 <!-- -------------------------------------------------------  -->
-                                                                <!-- ➡️🟥 Layout Container ( sfd default ) -->
+                                                                <!-- Main -->
                                                                 <!-- -------------------------------------------------------  -->
-                                                                <div class="grid-ji-c-rg-1-p-0-5-0-8">
+                                                                <main>
 
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <!-- 🟩 [3/6] | Title | It Project Card  -->
+                                                                    <!-- 🟩 [3/6] | Title | It Project Top Card  -->
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <div class="my-it-project-card-title">
+                                                                    <div class="my-it-project-top-card-title">
 
                                                                         <span>Responsive Data Dashboard #3:</span> CSS & SASS Solution from
-                                                                        Design to Solution. Here can be some more Text writen.
-                                                                        Dont ask me why, but its just an example.
-                                                                        You can find my step by step Video Tutorial only in German.
+                                                                        Design to Solution. You can find my step by step Video Tutorial only in German.
+                                                                        Here we write some more text and you know what i mean about and so on.
+                                                                        You remember what i mean.
 
                                                                     </div>
 
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <!-- 🟩 [4/6] | Focial Points | It Project Card  -->
+                                                                    <!-- 🟩 [4/6] | Focial Points Container | sfd-defaults  -->
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <div class="my-it-project-card-focial-points">
+                                                                    <div class="focial-points-container">
 
                                                                         <div>css</div>
                                                                         <div>sass</div>
-                                                                        <div>responsive</div>
-                                                                        <div>java script</div>
+
                                                                         <div>web-desgin concepts</div>
+                                                                        <div>linux</div>
+                                                                        <div>nodeJS</div>
 
                                                                     </div>
 
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <!-- 🟩 [5/6] | zip github | It Project Card  -->
+                                                                    <!-- 🟩 [5/6] | Zip Github Link Container | sfd-default       -->
                                                                     <!-- -------------------------------------------------------- -->
-                                                                    <div class="my-it-project-card-zip-github">
+                                                                    <div class="zip-github-link-container">
 
                                                                         <!-- --------------------------------------------- -->
                                                                         <!-- ZIP -->
                                                                         <!-- --------------------------------------------- -->
                                                                         <a href="" target="_blank">
 
-                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-9" alt="img">
+                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-8" alt="img">
                                                                             <div>.zip</div>
 
                                                                         </a>
@@ -6792,7 +6825,7 @@
                                                                         <!-- --------------------------------------------- -->
                                                                         <a href="" target="_blank">
 
-                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1-3" alt="img">
+                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1" alt="img">
                                                                             <div>GitHub</div>
 
                                                                         </a>
@@ -6800,7 +6833,8 @@
                                                                     </div>
 
 
-                                                                </div>
+
+                                                                </main>
 
 
                                                             </div>
@@ -6808,187 +6842,413 @@
 
                                                         </div>
 
-                                                        <!-- ------------------------------------------------------ -->
-                                                        <!-- ➡️🟥 [2/2] | More Container | My It Projects Container    -->
-                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- ------------------------------------------------------------------------ -->
+                                                        <!-- 🟩 [2/2] | More Container |                                           -->
+                                                        <!-- ------------------------------------------------------------------------ -->
                                                         <div id="my-it-projects-more-container">
 
+
                                                             <!-- ---------------------------------------------------------------- -->
-                                                            <!-- Open Close -->
+                                                            <!-- 🟩 Open Close | My It Project More List -->
                                                             <!-- ---------------------------------------------------------------- -->
-                                                            <input type="checkbox" id="chk-open-close-more-project-container">
+                                                            <input type="checkbox" id="chk-open-close-my-it-project-more-list">
                                                             <nav>
-                                                                <label for="chk-open-close-more-project-container">
-                                                                    Show More Small Project's | X
+                                                                <label for="chk-open-close-my-it-project-more-list" class="open-close-content-label">
+
+                                                                    <div>See More Small Project's</div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-7" alt="img">
+
                                                                 </label>
                                                             </nav>
 
-
                                                             <!-- ---------------------------------------------------------------- -->
-                                                            <!-- Open Close Smooth | More Project Cards Container -->
+                                                            <!-- 🟩⬇️⬆️ | Open Close | My It Project More List -->
                                                             <!-- ---------------------------------------------------------------- -->
-                                                            <div id="open-close-more-project-cards-container">
+                                                            <div id="open-close-my-it-project-more-list">
 
                                                                 <!-- ------------------------------------------------------ -->
                                                                 <!-- Overflow Hidden -->
                                                                 <!-- ------------------------------------------------------ -->
                                                                 <div class="overflow-hidden grid ji-c w-100p">
 
-
                                                                     <!-- ---------------------------------------------------------------- -->
-                                                                    <!-- Nav | Optional -->
+                                                                    <!-- My It Project More List -->
                                                                     <!-- ---------------------------------------------------------------- -->
-
-
-                                                                    <!-- ---------------------------------------------------------------- -->
-                                                                    <!-- More It Project Card List -->
-                                                                    <!-- ---------------------------------------------------------------- -->
-                                                                    <div id="more-it-project-card-list">
+                                                                    <div id="my-it-project-more-list">
 
                                                                         <!-- ---------------------------------------------------------------- -->
-                                                                        <!-- More It Project Card 1 -->
+                                                                        <!-- My It Project More Card | 1 -->
                                                                         <!-- ---------------------------------------------------------------- -->
-                                                                        <div class="more-it-project-card">
+                                                                        <div class="my-it-project-more-card">
 
 
                                                                             <!-- --------------------------------------------------- -->
-                                                                            <!-- Img | More IT Project Card -->
+                                                                            <!-- [1/2] | Img     -->
                                                                             <!-- --------------------------------------------------- -->
-                                                                            <img src="media/img/content/04-it-projects/02-others-projects/mini-project-default.png" alt="img" class="more-it-project-card-img">
+                                                                            <img src="media/img/content/04-it-projects/02-others-projects/mini-project-default.png" alt="img" class="my-it-project-more-card-img">
 
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <!-- Title | More IT Project Card -->
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <div class="more-it-project-card-title">
-                                                                                <span>Mini Project 1:</span>
-                                                                                I develop anything you like to do
-                                                                                and here we can write some text
-                                                                                that could be very interesting.
-                                                                                If you understand what i mean.
-                                                                            </div>
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <!-- [2/2] | Main    -->
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <main>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Title | More IT Project Card -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="my-it-project-more-card-title">
+                                                                                    <span>Mini Project 1:</span>
+                                                                                    I develop anything you like to do
+                                                                                    and here we can write some text
+                                                                                    that could be very interesting.
+                                                                                    If you understand what i mean.
+                                                                                </div>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Focial Points Container | sfd-defaults  -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="focial-points-container">
+
+                                                                                    <div>sass</div>
+                                                                                    <div>react</div>
+                                                                                    <div>next.js</div>
+                                                                                    <div>postgreSQL</div>
+                                                                                    <div>spring boot</div>
+                                                                                    <div>graphana</div>
+                                                                                    <div>docker</div>
+
+                                                                                </div>
+
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <!-- Zip Github Link Container | sfd-default      -->
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <div class="zip-github-link-container">
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- ZIP -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-8" alt="img">
+                                                                                        <div>.zip</div>
+
+                                                                                    </a>
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- Github -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1" alt="img">
+                                                                                        <div>GitHub</div>
+
+                                                                                    </a>
 
 
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <!-- Tech Stack | More IT Project Card -->
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <div class="more-it-project-card-tech-stack">
+                                                                                </div>
 
-                                                                                <div>sass</div>
-                                                                                <div>react</div>
-                                                                                <div>next.js</div>
-                                                                                <div>postgreSQL</div>
-                                                                                <div>spring boot</div>
-                                                                                <div>graphana</div>
-                                                                                <div>docker</div>
-
-
-                                                                            </div>
-
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <!-- zip & github | More IT Project Card -->
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <div class="more-it-project-card-zip-github">
-
-                                                                                <!-- --------------------------------------------- -->
-                                                                                <!-- ZIP -->
-                                                                                <!-- --------------------------------------------- -->
-                                                                                <a href="" target="_blank">
-
-                                                                                    <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-9" alt="img">
-                                                                                    <div>.zip</div>
-
-                                                                                </a>
-
-                                                                                <!-- --------------------------------------------- -->
-                                                                                <!-- Github -->
-                                                                                <!-- --------------------------------------------- -->
-                                                                                <a href="" target="_blank">
-
-                                                                                    <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1-3" alt="img">
-                                                                                    <div>GitHub</div>
-
-                                                                                </a>
-
-
-                                                                            </div>
+                                                                            </main>
 
 
                                                                         </div>
 
-                                                                         <!-- ---------------------------------------------------------------- -->
-                                                                        <!-- More It Project Card 2 -->
                                                                         <!-- ---------------------------------------------------------------- -->
-                                                                        <div class="more-it-project-card">
+                                                                        <!-- My It Project More Card | 2 -->
+                                                                        <!-- ---------------------------------------------------------------- -->
+                                                                        <div class="my-it-project-more-card">
 
 
                                                                             <!-- --------------------------------------------------- -->
-                                                                            <!-- Img | More IT Project Card -->
+                                                                            <!-- [1/2] | Img     -->
                                                                             <!-- --------------------------------------------------- -->
-                                                                            <img src="media/img/content/04-it-projects/02-others-projects/mini-project-default.png" alt="img" class="more-it-project-card-img">
+                                                                            <img src="media/img/content/04-it-projects/02-others-projects/mini-project-default.png" alt="img" class="my-it-project-more-card-img">
 
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <!-- Title | More IT Project Card -->
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <div class="more-it-project-card-title">
-                                                                                <span>Mini Project 2:</span>
-                                                                                I develop anything you like to do
-                                                                                and here we can write some text
-                                                                                that could be very interesting.
-                                                                                If you understand what i mean.
-                                                                            </div>
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <!-- [2/2] | Main    -->
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <main>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Title | More IT Project Card -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="my-it-project-more-card-title">
+                                                                                    <span>Mini Project 2:</span>
+                                                                                    I develop anything you like to do
+                                                                                    and here we can write some text
+                                                                                    that could be very interesting.
+                                                                                    If you understand what i mean.
+                                                                                    and here we can write some text
+                                                                                    that could be very interesting.
+                                                                                    If you understand what i mean.
+                                                                                    and here we can write some text
+                                                                                    that could be very interesting.
+                                                                                    If you understand what i mean.
+                                                                                </div>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Focial Points Container | sfd-defaults  -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="focial-points-container">
+
+                                                                                    <div>sass</div>
+                                                                                    <div>react</div>
+                                                                                    <div>next.js</div>
+                                                                                    <div>postgreSQL</div>
+                                                                                    <div>spring boot</div>
+                                                                                    <div>graphana</div>
+                                                                                    <div>docker</div>
+                                                                                    <div>docker</div>
+                                                                                    <div>graphana</div>
+                                                                                    <div>linux</div>
+                                                                                    <div>grapqhl</div>
+
+                                                                                </div>
+
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <!-- Zip Github Link Container | sfd-default      -->
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <div class="zip-github-link-container">
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- ZIP -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-8" alt="img">
+                                                                                        <div>.zip</div>
+
+                                                                                    </a>
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- Github -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1" alt="img">
+                                                                                        <div>GitHub</div>
+
+                                                                                    </a>
 
 
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <!-- Tech Stack | More IT Project Card -->
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <div class="more-it-project-card-tech-stack">
+                                                                                </div>
 
-                                                                                <div>sass</div>
-                                                                                <div>react</div>
-                                                                                <div>next.js</div>
-                                                                                <div>postgreSQL</div>
-                                                                                <div>spring boot</div>
-                                                                                <div>graphana</div>
-                                                                                <div>docker</div>
-
-
-                                                                            </div>
-
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <!-- zip & github | More IT Project Card -->
-                                                                            <!-- --------------------------------------------------- -->
-                                                                            <div class="more-it-project-card-zip-github">
-
-                                                                                <!-- --------------------------------------------- -->
-                                                                                <!-- ZIP -->
-                                                                                <!-- --------------------------------------------- -->
-                                                                                <a href="" target="_blank">
-
-                                                                                    <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-9" alt="img">
-                                                                                    <div>.zip</div>
-
-                                                                                </a>
-
-                                                                                <!-- --------------------------------------------- -->
-                                                                                <!-- Github -->
-                                                                                <!-- --------------------------------------------- -->
-                                                                                <a href="" target="_blank">
-
-                                                                                    <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1-3" alt="img">
-                                                                                    <div>GitHub</div>
-
-                                                                                </a>
-
-
-                                                                            </div>
+                                                                            </main>
 
 
                                                                         </div>
+
+                                                                        <!-- ---------------------------------------------------------------- -->
+                                                                        <!-- My It Project More Card | 3 -->
+                                                                        <!-- ---------------------------------------------------------------- -->
+                                                                        <div class="my-it-project-more-card">
+
+
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <!-- [1/2] | Img     -->
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <img src="media/img/content/04-it-projects/02-others-projects/mini-project-default.png" alt="img" class="my-it-project-more-card-img">
+
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <!-- [2/2] | Main    -->
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <main>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Title | More IT Project Card -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="my-it-project-more-card-title">
+                                                                                    <span>Mini Project 3:</span>
+                                                                                    I develop anything you like to do
+                                                                                    and here we can write some text
+
+                                                                                </div>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Focial Points Container | sfd-defaults  -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="focial-points-container">
+
+                                                                                    <div>swagger</div>
+                                                                                    <div>react</div>
+                                                                                    <div>next.js</div>
+
+                                                                                </div>
+
+
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <!-- Zip Github Link Container | sfd-default      -->
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <div class="zip-github-link-container">
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- ZIP -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-8" alt="img">
+                                                                                        <div>.zip</div>
+
+                                                                                    </a>
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- Github -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1" alt="img">
+                                                                                        <div>GitHub</div>
+
+                                                                                    </a>
+
+
+                                                                                </div>
+
+                                                                            </main>
+
+
+                                                                        </div>
+
+                                                                        <!-- ---------------------------------------------------------------- -->
+                                                                        <!-- My It Project More Card | 4 -->
+                                                                        <!-- ---------------------------------------------------------------- -->
+                                                                        <div class="my-it-project-more-card">
+
+
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <!-- [1/2] | Img     -->
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <img src="media/img/content/04-it-projects/02-others-projects/mini-project-default.png" alt="img" class="my-it-project-more-card-img">
+
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <!-- [2/2] | Main    -->
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <main>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Title | More IT Project Card -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="my-it-project-more-card-title">
+                                                                                    <span>Mini Project 4:</span>
+                                                                                    I develop anything you like to do
+                                                                                    and here we can write some text
+
+                                                                                </div>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Focial Points Container | sfd-defaults  -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="focial-points-container">
+
+                                                                                    <div>swagger</div>
+                                                                                    <div>react</div>
+                                                                                    <div>next.js</div>
+
+                                                                                </div>
+
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <!-- Zip Github Link Container | sfd-default      -->
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <div class="zip-github-link-container">
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- ZIP -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-8" alt="img">
+                                                                                        <div>.zip</div>
+
+                                                                                    </a>
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- Github -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1" alt="img">
+                                                                                        <div>GitHub</div>
+
+                                                                                    </a>
+
+
+                                                                                </div>
+
+                                                                            </main>
+
+
+                                                                        </div>
+
+                                                                        <!-- ---------------------------------------------------------------- -->
+                                                                        <!-- My It Project More Card | 5 -->
+                                                                        <!-- ---------------------------------------------------------------- -->
+                                                                        <div class="my-it-project-more-card">
+
+
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <!-- [1/2] | Img     -->
+                                                                            <!-- --------------------------------------------------- -->
+                                                                            <img src="media/img/content/04-it-projects/02-others-projects/mini-project-default.png" alt="img" class="my-it-project-more-card-img">
+
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <!-- [2/2] | Main    -->
+                                                                            <!-- ------------------------------------------------------------------ -->
+                                                                            <main>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Title | More IT Project Card -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="my-it-project-more-card-title">
+                                                                                    <span>Mini Project 4:</span>
+                                                                                    I develop anything you like to do
+                                                                                    and here we can write some text
+
+                                                                                </div>
+
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <!-- Focial Points Container | sfd-defaults  -->
+                                                                                <!-- --------------------------------------------------- -->
+                                                                                <div class="focial-points-container">
+
+                                                                                    <div>swagger</div>
+                                                                                    <div>react</div>
+                                                                                    <div>next.js</div>
+
+                                                                                </div>
+
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <!-- Zip Github Link Container | sfd-default      -->
+                                                                                <!-- -------------------------------------------------------- -->
+                                                                                <div class="zip-github-link-container">
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- ZIP -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-download-arrow.png" class="img-h-0-8" alt="img">
+                                                                                        <div>.zip</div>
+
+                                                                                    </a>
+
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <!-- Github -->
+                                                                                    <!-- --------------------------------------------- -->
+                                                                                    <a href="" target="_blank">
+
+                                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-github.png" class="img-h-1" alt="img">
+                                                                                        <div>GitHub</div>
+
+                                                                                    </a>
+
+
+                                                                                </div>
+
+                                                                            </main>
+
+
+                                                                        </div>
+
 
                                                                     </div>
-
-
-
 
                                                                 </div>
 
@@ -7025,205 +7285,9 @@
             <!-- ----------------------------------------------------------------------------- -->
             <!-- 🟥[4/5] | My Private Container                                                -->
             <!-- ----------------------------------------------------------------------------- -->
-            <!-- anker-private -->
-            <div id="private" class="my-private-container">
+            <div style="display: none;" id="private" class="my-private-container">
 
-                <!-- --------------------------------------------------------------- -->
-                <!-- 🟩 [1/2] | Header | My IT                                       -->
-                <!-- --------------------------------------------------------------- -->
-                <header class="resp-max-content-area" id="css-finder-my-it-header-container" style="background-color: rgb(28, 28, 28);">
-
-                    <!-- ----------------------------------------------------------- -->
-                    <!-- width & heihgt 100% (sets)                                  -->
-                    <!-- ----------------------------------------------------------- -->
-                    <div class="w-100p h-100p flex jc-c">
-
-                        <!-- ----------------------------------------------------------- -->
-                        <!-- RESP Min                                                    -->
-                        <!-- ----------------------------------------------------------- -->
-                        <div class="resp-min-content-area">
-
-                            <!-- ----------------------------------------------------------- -->
-                            <!-- width & heihgt 100% (sets)                                  -->
-                            <!-- ----------------------------------------------------------- -->
-                            <div class="w-100p h-100p flex jc-c">
-
-                                <!-- ----------------------------------------------------------- -->
-                                <!-- Padding Wrapper                                             -->
-                                <!-- ----------------------------------------------------------- -->
-                                <div class="padding-2-0-8-wrapper">
-
-                                    <!-- ----------------------------------------------------------- -->
-                                    <!-- My IT | Header | Right | Content Container                  -->
-                                    <!-- ----------------------------------------------------------- -->
-                                    <div id="my-it-header-container" class="header-right-content-container">
-
-                                        <div class="header-content-title">
-                                            <img src="media/img/icons/icons/it-icons/clean-code.png" id="icon-my-it-header" alt="img">
-                                            <div>My Private</div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </header>
-
-            </div>
-
-            <!-- ❌❌❌ Müll -->
-            <div class="row-content-container" style="display: none;">
-
-
-                <!-- --------------------------------------------------------------- -->
-                <!-- 🟥 Resp Max Content                                             -->
-                <!-- --------------------------------------------------------------- -->
-                <div class="resp-max-content-area">
-
-                    <!-- ----------------------------------------------------------- -->
-                    <!-- width & heihgt 100% (sets)                                  -->
-                    <!-- ----------------------------------------------------------- -->
-                    <div class="w-100p h-100p flex jc-c">
-
-                        <!-- --------------------------------------------------------------- -->
-                        <!-- 🟥[4/5] | My Private Container                                  -->
-                        <!-- --------------------------------------------------------------- -->
-                        <div id="my-private-container">
-
-                            <!-- ---------------------------------------------------- -->
-                            <!-- 🟥[1/3] | Header | Private                               -->
-                            <!-- ---------------------------------------------------- -->
-                            <div class="row-content-container" style="background-color: rgb(28, 28, 28); padding: 2em .8em;">
-
-                                <!-- ----------------------------------------------------------- -->
-                                <!-- RESP Main Content                                           -->
-                                <!-- ----------------------------------------------------------- -->
-                                <div class="resp-main-content-area">
-
-                                    <!-- ----------------------------------------------------------- -->
-                                    <!-- width & heihgt 100% (sets)                                  -->
-                                    <!-- ----------------------------------------------------------- -->
-                                    <div class="w-100p h-100p flex jc-fs">
-
-                                        <!-- ---------------------------------------------------- -->
-                                        <!-- [1/3] | Header | About                               -->
-                                        <!-- ---------------------------------------------------- -->
-                                        <!-- i: sfd-defaults -->
-                                        <header id="private" class="headline-beginning-container-left">
-
-                                            <div class="headline-beginning-title">
-                                                <img src="media/img/icons/icons/it-icons/clean-code.png" id="img-icon-private-headline" alt="img">
-                                                <div>My Private</div>
-                                            </div>
-
-                                        </header>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- ---------------------------------------------------- -->
-                            <!-- 🟥[2/3] | Nav | Private                                -->
-                            <!-- ---------------------------------------------------- -->
-                            <div class="row-content-container" style="background-color: yellow;">
-
-                                <!-- ----------------------------------------------------------- -->
-                                <!-- 🟥RESP Main Content                                           -->
-                                <!-- ----------------------------------------------------------- -->
-                                <div class="resp-main-content-area">
-
-                                    <!-- ----------------------------------------------------------- -->
-                                    <!-- width & heihgt 100% (sets)                                  -->
-                                    <!-- ----------------------------------------------------------- -->
-                                    <div class="w-100p h-100p flex jc-c">
-
-                                        <!-- ---------------------------------------------------- -->
-                                        <!-- 🟥[2/3] | Nav | Private                                -->
-                                        <!-- ---------------------------------------------------- -->
-                                        <nav style="background-color: red;">
-                                            Nav - Private XX
-                                        </nav>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- ---------------------------------------------------- -->
-                            <!-- 🟥[3/3] | Main | Private                               -->
-                            <!-- ---------------------------------------------------- -->
-                            <main class="row-content-container" style="background-color: rgb(148, 148, 109);">
-
-                                <!-- ----------------------------------------------------------- -->
-                                <!-- 🟥RESP Main Content                                         -->
-                                <!-- ----------------------------------------------------------- -->
-                                <div class="resp-main-content-area">
-
-                                    <!-- ----------------------------------------------------------- -->
-                                    <!-- width & heihgt 100% (sets)                                  -->
-                                    <!-- ----------------------------------------------------------- -->
-                                    <div class="w-100p h-100p flex jc-c">
-
-                                        <!-- ---------------------------------------------------- -->
-                                        <!-- 🟥[3/3] | Main | Private                             -->
-                                        <!-- ---------------------------------------------------- -->
-                                        <div style="background-color: red; width: 100%;">
-                                            Main - Private Container ( sport - softksills - books - food - violine )
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </main>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- ----------------------------------------------------------------------------- -->
-            <!-- 🟥[5/5] | to be fresh Container                                               -->
-            <!-- ----------------------------------------------------------------------------- -->
-            <!-- i: to allow child elements easy using paddings  -->
-            <!-- i: flex jc-c 100%  -->
-            <div class="row-content-container">
-
-                <!-- --------------------------------------------------------------- -->
-                <!-- 🟥 Resp Max Content                                             -->
-                <!-- --------------------------------------------------------------- -->
-                <div class="resp-max-content-area">
-
-                    <!-- ----------------------------------------------------------- -->
-                    <!-- width & heihgt 100% (sets)                                  -->
-                    <!-- ----------------------------------------------------------- -->
-                    <div class="w-100p h-100p flex jc-c">
-
-                        <!-- --------------------------------------------------------------- -->
-                        <!-- 🟥[5/5] | to be fresh Container                                   -->
-                        <!-- --------------------------------------------------------------- -->
-                        <div id="to-be-fresh-container">
-                            to be fresh Container <br>
-                            to be fresh Container <br>
-                            to be fresh Container <br>
-                            to be fresh Container <br>
-                        </div>
-
-                    </div>
-
-                </div>
+               My Private Page
 
             </div>
 
@@ -7281,14 +7345,14 @@
                             <label for="chk-useful-links-body-footer"
                                 id="lbl-useful-links-body-footer" class="container-less-smaller" name="name-chk-useful-links-body-footer">
 
-                                <img src="media/img/icons/clipart/show-left.png" alt="img">
+                                <img src="media/img/content/01-default/clipart/show-left.png" alt="img">
 
                                 <img src="media/img/icons/icons/bueroklammer-light-grey.png"
                                 id="img-paper-clip-body-footer" alt="img">
 
                                 <div id="txt-lbl-useful-links-body-footer">Useful Links</div>
 
-                                <img src="media/img/icons/icons/arrow-down-light-grey.png" alt="img">
+                                <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" alt="img">
 
                             </label>
 
@@ -7296,7 +7360,7 @@
                             <!-- SFD Copyright                                -->
                             <!-- -------------------------------------------- -->
                             <div id="sfd-copyright-body-footer">
-                                <img src="media/img/icons/icons/copyright-light-brown.png" alt="img">
+                                <img src="media/img/icons/02-icon-colors/02-white/codepen.png" alt="img">
                                 <div>SuperfreshDEV |</div>
                                 <div id="js-txt-year-copyright">year</div>
                             </div>
@@ -7310,7 +7374,7 @@
                 <!-- -------------------------------------------------------------------------- -->
                 <!-- ⬇️⬆️ | Smooth Open Close | Useful Links | Body Footer                     -->
                 <!-- -------------------------------------------------------------------------- -->
-                <div style="display: none;" id="smooth-open-close-useful-links-body-footer">
+                <div id="smooth-open-close-useful-links-body-footer">
 
 
                     <div class="w-100p grid ji-c overflow-hidden">

@@ -1,0 +1,39 @@
+/* -------------------------------------------------------------- */
+/* > focial-points-container.css
+/*
+/* : styles the foical points container
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Focial Points Container
+/* ------------------------------------------------------------- */
+
+.focial-points-container {
+
+  width: 100%;
+  /* padding-bottom: 1em; */
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
+
+}
+
+.focial-points-container > div {
+
+  height: 1.8em;
+  padding: 0 .4em;
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: .4em;
+
+  background-color: rgb(234, 234, 234);
+  color:rgb(137, 137, 137);
+
+}

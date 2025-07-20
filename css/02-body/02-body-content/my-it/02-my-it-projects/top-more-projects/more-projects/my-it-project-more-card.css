@@ -1,0 +1,82 @@
+/* -------------------------------------------------------------- */
+/* > my-it-project-more-card.css
+/*
+/* : style my it project more card
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* My IT Project More Card
+/* ------------------------------------------------------------- */
+
+.my-it-project-more-card {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  border-radius: .8em;
+
+  border: 1px solid rgba(28, 28, 28, 1);
+
+  transition: all .4s;
+
+}
+
+.my-it-project-more-card:hover {
+
+  background-color: rgb(225, 225, 225);
+}
+
+
+/* ------------------------------------------------------------- */
+/* Main | My IT Project More Card
+/* ------------------------------------------------------------- */
+
+.my-it-project-more-card  > main {
+
+  padding: 1em .8em;
+
+  display: grid;
+  row-gap: 1em;
+
+  border-radius: 0 0 .8em .8em;
+
+  /* background-color: magenta; */
+
+}
+
+/* special optimal layout fix */
+.my-it-project-more-card  > main .focial-points-container {
+
+  padding-bottom: 1em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | My IT Project More Card
+/* ------------------------------------------------------------- */
+
+.my-it-project-more-card-img {
+
+  width: 100%;
+  border-radius: .8em .8em 0 0;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Title | More It Project Card
+/* ------------------------------------------------------------- */
+
+.my-it-project-more-card-title {
+
+  font-size: 1em;
+
+}
+
+.my-it-project-more-card-title > span {
+
+  font-weight: bold;
+
+}

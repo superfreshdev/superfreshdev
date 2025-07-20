@@ -1,0 +1,39 @@
+/* -------------------------------------------------------------- */
+/* > my-it-projects-more-nav.css
+/*
+/* : handle the open / close handling of
+     my it projects more container
+/* -------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------- */
+/* Handling | Styling
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+#chk-open-close-my-it-project-more-list {
+
+  display: none;
+
+}
+
+/* checked | label backround */
+#chk-open-close-my-it-project-more-list:checked + nav > label {
+
+  background-color: wheat;
+
+}
+/* checked | change icon direction */
+#chk-open-close-my-it-project-more-list:checked + nav > label > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* checked | ⬇️⬆️ Open / Close Smooth Container */
+#chk-open-close-my-it-project-more-list:checked ~ #open-close-my-it-project-more-list {
+
+  grid-template-rows: 1fr;
+
+}
