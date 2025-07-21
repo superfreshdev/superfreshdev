@@ -6,21 +6,11 @@
 /* -------------------------------------------------------------- */
 
 
-
 /* ------------------------------------------------------------- */
-/* Handling | Styling
+/* Handling | Styling | Label
 /* ------------------------------------------------------------- */
 
-/*  ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️ */
-/* ⚠️ Clean Code !!!  */
-/*  ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️ */
-
-
-/* -------------------------------------------------------------- */
-/*  Handling | Styling
-/* -------------------------------------------------------------- */
-
-input[name="name-radio-it-projects-nav-3"] {
+input[name="name-radio-my-it-projects-top-nav-3"] {
 
   display: none;
 }
@@ -29,9 +19,9 @@ input[name="name-radio-it-projects-nav-3"] {
 /* set background */
 /* ---------------------------------- */
 
-#radio-my-it-projects-web-desgin:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-web-desgin"],
-#radio-my-it-projects-web-dev:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-web-dev"],
-#radio-my-it-projects-software-dev:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-software-dev"] {
+#radio-my-it-projects-top-web-desgin:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-top-web-desgin"],
+#radio-my-it-projects-top-web-dev:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-top-web-dev"],
+#radio-my-it-projects-top-software-dev:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-top-software-dev"] {
 
   background-color: wheat;
 
@@ -41,9 +31,9 @@ input[name="name-radio-it-projects-nav-3"] {
 /* set x */
 /* ---------------------------------- */
 
-#radio-my-it-projects-web-desgin:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-web-desgin"] .custom-radio-default > img,
-#radio-my-it-projects-web-dev:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-web-dev"] .custom-radio-default > img,
-#radio-my-it-projects-software-dev:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-software-dev"] .custom-radio-default > img {
+#radio-my-it-projects-top-web-desgin:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-top-web-desgin"] .custom-radio-default > img,
+#radio-my-it-projects-top-web-dev:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-top-web-dev"] .custom-radio-default > img,
+#radio-my-it-projects-top-software-dev:checked ~ nav:nth-of-type(1) label[for="radio-my-it-projects-top-software-dev"] .custom-radio-default > img {
 
   display: flex;
 

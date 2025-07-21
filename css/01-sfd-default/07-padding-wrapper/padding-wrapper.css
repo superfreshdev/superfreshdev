@@ -15,6 +15,7 @@
 .padding-0-5-0-8-wrapper,
 .padding-1-0-8-wrapper,
 .padding-2-0-8-wrapper,
+.padding-2-0-8-wrapper-no-delete,
 .padding-3-0-8-wrapper {
 
    width: 100%;
@@ -58,6 +59,12 @@
 
   /* mobile */
   padding: 2em .8em;
+
+}
+
+.padding-2-0-8-wrapper-no-delete {
+
+   padding: 2em .8em;
 
 }
 

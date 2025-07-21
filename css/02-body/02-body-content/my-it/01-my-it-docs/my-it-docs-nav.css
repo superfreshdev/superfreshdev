@@ -66,6 +66,13 @@
 /* [1/2] | Only Mobile | Art Seperator Container
 /* -------------------------------------------------------------- */
 
+#only-mobile-my-it-docs-art-seperator-1,
+#only-mobile-my-it-docs-art-seperator-2 {
+
+  height: 6em;
+
+}
+
 #only-mobile-my-it-docs-art-seperator-1 {
 
   grid-area: my-it-docs-art-seperator-1;

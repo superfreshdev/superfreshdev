@@ -50,28 +50,8 @@
 
 @media (min-width: 450px ) {
 
-
   /* ------------------------------------------ */
-  /* Main | Topic Cards Container
-  /* ------------------------------------------ */
-
-  .my-it-docs-topic-cards-container > main {
-
-    /* width: 100%; */
-
-    /* desktop */
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 2em;
-
-    /* background-color: red; */
-
-  }
-
-  /* ------------------------------------------ */
-  /* Doc Card Item
+  /* My It Docs | Doc Card Item
   /* ------------------------------------------ */
 
   .my-it-doc-card-item {
@@ -81,7 +61,15 @@
 
   }
 
+  /* ------------------------------------------ */
+  /* My IT Project | Top Card List
+  /* ------------------------------------------ */
 
+  #my-it-project-top-card-list {
+
+    grid-template-columns: 24em;
+
+  }
 
 }
 
@@ -92,26 +80,17 @@
 @media (min-width: 500px ) {
 
   /* ------------------------------------------------------------- */
-  /* Nav > Label | My IT Projects
+  /* IT Projects | Nav Label
   /* ------------------------------------------------------------- */
 
-  #my-it-projects-nav-container > label {
-
-    /* Desktop */
-    width: auto;
-
-  }
-
-  /* ------------------------------------------------------------- */
-  /* My IT Project | Top Card
-  /* ------------------------------------------------------------- */
-
-  .my-it-project-top-card {
+  #my-it-projects-top-container > nav:nth-of-type(1) > label {
 
     /* desktop */
-    width: 28em;
+    width:auto;
 
-  }
+}
+
+
 
 }
 
@@ -123,7 +102,7 @@
 
 
   /* -------------------------------------------- */
-  /* Nav
+  /* My IT Docs | Nav
   /* -------------------------------------------- */
 
   #my-it-docs-selection-list-container {
@@ -140,7 +119,7 @@
   }
 
   /* -------------------------------------------- */
-  /* Only Mobile | Art Seperator
+  /* My IT Docs | Only Mobile | Art Seperator
   /* -------------------------------------------- */
 
   #only-mobile-my-it-docs-art-seperator-1,
@@ -151,7 +130,7 @@
   }
 
   /* ------------------------------------------ */
-  /* Doc Card Item
+  /* My IT Docs | Doc Card Item
   /* ------------------------------------------ */
 
   .my-it-doc-card-item {
@@ -159,6 +138,42 @@
     /* desktop */
     width: 15em;
 
+  }
+
+  /* ------------------------------------------ */
+  /* My IT Project | Top Card List
+  /* ------------------------------------------ */
+
+  #my-it-project-top-card-list {
+
+    grid-template-areas:
+
+    'it-project-top-card-1 it-project-top-card-seperator-1 it-project-top-card-2'
+    'it-project-top-card-seperator-2 it-project-top-card-seperator-2 it-project-top-card-seperator-2'
+    'it-project-top-card-3 it-project-top-card-3 it-project-top-card-3'
+    ;
+
+    grid-template-columns: 24em 9em 24em;
+
+  }
+
+  /* ------------------------------------------ */
+  /* My It Project | Project Top Card
+  /* ------------------------------------------ */
+
+  .my-it-project-top-card {
+
+    /* extra case for project top card 3 */
+    width: 24em;
+
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* My IT Project | Project Card Seperator 1 | center to project cards
+  /* ------------------------------------------------------------------------ */
+  #grid-area-top-it-project-card-seperator-1 {
+
+    align-self: center;
   }
 
 }
@@ -170,10 +185,7 @@
 @media (min-width: 1000px ) {
 
 
-  #my-top-it-project-cards-container {
 
-    column-gap: 6em;
-  }
 
 }
 
@@ -185,7 +197,7 @@
 
 
   /* -------------------------------------------- */
-  /* Nav
+  /* My IT Docs | Nav
   /* -------------------------------------------- */
 
   #my-it-docs-selection-list-container {
@@ -197,6 +209,95 @@
     'my-it-docs-grid-area-1 my-it-docs-grid-area-2 my-it-docs-grid-area-3';
 
     grid-template-columns: 1.2fr 1fr 1fr;
+
+  }
+
+
+  /* ------------------------------------------------------------- */
+  /* My IT Project | Top Card
+  /* ------------------------------------------------------------- */
+  .my-it-project-top-card {
+
+    /* let it project top card auto, to handle it by grid area */
+    width: auto;
+
+  }
+
+  /* ------------------------------------------ */
+  /* My IT Project | Top Card List
+  /* ------------------------------------------ */
+
+  #my-it-project-top-card-list {
+
+    grid-template-areas:
+
+    'it-project-top-card-1 it-project-top-card-seperator-1 it-project-top-card-2 it-project-top-card-seperator-2 it-project-top-card-3'
+
+    ;
+
+    grid-template-columns: 22em 4em 22em 4em 22em;
+
+
+  }
+
+  /* ------------------------------------------ */
+  /* My IT Project | Card Seperator
+  /* ------------------------------------------ */
+
+  .my-it-project-top-card-seperator > img {
+
+    transform: rotate(90deg);
+
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* My IT Project | Project Card Seperator 2 | center to project cards
+  /* ------------------------------------------------------------------------ */
+  #grid-area-top-it-project-card-seperator-2 {
+
+    align-self: center;
+  }
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1400px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 1400px ) {
+
+
+  /* ------------------------------------------ */
+  /* My IT Project | Top Card List
+  /* ------------------------------------------ */
+
+  #my-it-project-top-card-list {
+
+
+    grid-template-columns: 24em 4em 24em 4em 24em;
+
+
+  }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1600px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 1600px ) {
+
+
+  /* ------------------------------------------ */
+  /* My IT Project | Top Card List
+  /* ------------------------------------------ */
+
+  #my-it-project-top-card-list {
+
+
+    grid-template-columns: 24em 6em 24em 6em 24em;
+
 
   }
 

@@ -14,26 +14,21 @@
 
   width: 100%;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  justify-items: center;
 
-  justify-content: center;
-  align-items: flex-start;
-
-  column-gap: 2em;
-  row-gap: 3em;
+  row-gap: 4em;
 
   /* background-color: grey; */
 }
 
-
-/* 🟥🟥🟥 Nav in project top container */
-
 /* ------------------------------------------------------------- */
-/* Nav | My IT Projects
+/* Nav | Top Container
 /* ------------------------------------------------------------- */
 
-#my-it-projects-nav {
+#my-it-projects-top-container > nav:nth-of-type(1) {
+
+  width: 100%;
 
   display: flex;
   flex-wrap: wrap;
@@ -42,15 +37,74 @@
   column-gap: .8em;
   row-gap: .8em;
 
+  background-color: blue;
 }
 
+
 /* ------------------------------------------------------------- */
-/* Nav > Label | My IT Projects
+/* Nav Label | Top Container
 /* ------------------------------------------------------------- */
 
-#my-it-projects-nav-container > label {
+#my-it-projects-top-container > nav:nth-of-type(1) > label {
 
   /* mobile */
   width: 100%;
 
+}
+
+/* ------------------------------------------------------------- */
+/* My It Project Top Card List | Top Container
+/* ------------------------------------------------------------- */
+
+#my-it-project-top-card-list {
+
+  width: 100%;
+
+  /* mobile */
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+
+  align-items: flex-start;
+
+  grid-template-areas:
+
+    'it-project-top-card-1'
+    'it-project-top-card-seperator-1'
+    'it-project-top-card-2'
+    'it-project-top-card-seperator-2'
+    'it-project-top-card-3'
+  ;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Seperator | My IT Project Top Card
+/* ------------------------------------------------------------- */
+
+.my-it-project-top-card-seperator {
+
+  height: 6em;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: red;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Grid Areas for 2 Top IT Project Card Seperators
+/* ------------------------------------------------------------- */
+
+#grid-area-top-it-project-card-seperator-1 {
+
+  grid-area: it-project-top-card-seperator-1;
+}
+
+#grid-area-top-it-project-card-seperator-2 {
+
+  grid-area: it-project-top-card-seperator-2;
 }

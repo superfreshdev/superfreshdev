@@ -4,6 +4,25 @@
 /* : styles the it project top card
 /* -------------------------------------------------------------- */
 
+/* ------------------------------------------------------------- */
+/* Grid Areas for 3 Top IT Project Cards
+/* ------------------------------------------------------------- */
+
+#grid-area-top-it-project-card-1 {
+
+  grid-area: it-project-top-card-1;
+}
+
+#grid-area-top-it-project-card-2 {
+
+  grid-area: it-project-top-card-2;
+
+}
+
+#grid-area-top-it-project-card-3 {
+
+  grid-area: it-project-top-card-3;
+}
 
 /* ------------------------------------------------------------- */
 /* My IT Project Top Card
