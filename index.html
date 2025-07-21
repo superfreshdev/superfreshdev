@@ -177,15 +177,15 @@
                 <link rel="stylesheet" href="css/02-body/02-body-content/my-it/my-it.css">
 
                     <!-- -------------------------------------------------------- -->
-                    <!-- [1/2] | My IT Doc's | My IT                              -->
+                    <!-- [1/2] | My IT Doc's                              -->
                     <!-- -------------------------------------------------------- -->
 
                     <link rel="stylesheet" href="css/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs.css">
                     <link rel="stylesheet" href="css/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs-nav.css">
-                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs-card-container.css">
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs-card.css">
 
                     <!-- -------------------------------------------------------- -->
-                    <!-- [2/2] | My IT Projects | My IT                           -->
+                    <!-- [2/2] | My IT Projects                           -->
                     <!-- -------------------------------------------------------- -->
 
                     <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/my-it-projects.css">
@@ -1802,7 +1802,7 @@
                 <!-- --------------------------------------------------------------- -->
                 <!-- ⚠️🟩 ( wird später nicht gebraucht ) [1/2] | Header | My IT    -->
                 <!-- --------------------------------------------------------------- -->
-                <header class="resp-max-content-area" id="css-finder-my-it-header-container" >
+                <header style="display: none;" class="resp-max-content-area" id="css-finder-my-it-header-container" >
 
                     <!-- ----------------------------------------------------------- -->
                     <!-- width & heihgt 100% (sets)                                  -->
@@ -1867,9 +1867,9 @@
                             <div id="my-it-docs-container">
 
                                 <!-- -------------------------------------------------------------------- -->
-                                <!-- 🟥 [1/3] | Header Container (sb) | My IT Docs                      -->
+                                <!-- 🟩 [1/2] | Header | My IT Docs                                     -->
                                 <!-- -------------------------------------------------------------------- -->
-                                <header style="display: none;" class="resp-max-content-area bgc-header-container">
+                                <div class="resp-max-content-area bgc-header-container">
 
                                     <!-- ----------------------------------------------------------- -->
                                     <!-- width & heihgt 100% (sets)                                  -->
@@ -1891,32 +1891,61 @@
                                                 <!-- ----------------------------------------------------------- -->
                                                 <div class="padding-2-0-8-wrapper">
 
-                                                    <!-- ------------------------------------------------------ -->
-                                                    <!-- Header Container (sb) | My IT Docs                     -->
-                                                    <!-- ------------------------------------------------------ -->
-                                                    <header class="header-container-space-between">
-
-                                                        <!-- ------------------------------ -->
-                                                        <!-- Header Title Item Container    -->
-                                                        <!-- ------------------------------ -->
-                                                        <div class="header-title-item-container">
+                                                    <!-- -------------------------------------------------------------------- -->
+                                                    <!--  Header | My IT Docs ( sfd-defaults )                                -->
+                                                    <!-- -------------------------------------------------------------------- -->
+                                                    <header class="header-beginning-topic-container">
 
 
-                                                            <img src="media/img/icons/03-emojies/01-things/emoji-books.png" id="my-it-docs-header-icon" alt="img">
+                                                        <!-- --------------------------------------------------------------------- -->
+                                                        <!-- [1/2] | Title of Topic  -->
+                                                        <!-- --------------------------------------------------------------------- -->
+                                                        <div class="header-beginning-topic-title-element">
 
-                                                            <div class="header-title-item">
-                                                                <div class="header-title-text">My IT Doc's</div>
-                                                                <div class="header-sub-title-text ">Doc's only in German.</div>
+                                                            <img src="media/img/icons/03-emojies/01-things/emoji-books.png" id="my-it-docs-header-beginning-img" alt="img">
+
+                                                            <div>
+                                                                <div class="header-beginning-topic-title">My IT Doc's</div>
+                                                                <div class="header-beginning-topic-sub-title">» Only in German.</div>
                                                             </div>
 
                                                         </div>
 
-                                                        <!-- ------------------------------ -->
-                                                        <!-- Header Title Nr                -->
-                                                        <!-- ------------------------------ -->
-                                                        <div class="header-title-nr">
-                                                            1/2
+                                                        <!-- --------------------------------------------------------------------- -->
+                                                        <!-- [2/2] | Nr of Topic  -->
+                                                        <!-- --------------------------------------------------------------------- -->
+                                                        <div class="header-beginning-topic-nr-element">
+                                                            <div>1/2</div>
                                                         </div>
+
+
+
+
+                                                        <header style="display: none;" class="header-container-space-between">
+
+                                                            <!-- ------------------------------ -->
+                                                            <!-- ❌Header Title Item Container    -->
+                                                            <!-- ------------------------------ -->
+                                                            <div style="display: none;" class="header-title-item-container">
+
+
+                                                                <img src="media/img/icons/03-emojies/01-things/emoji-books.png" id="my-it-docs-header-icon" alt="img">
+
+                                                                <div class="header-title-item">
+                                                                    <div class="header-title-text">My IT Doc's</div>
+                                                                    <div class="header-sub-title-text ">Doc's only in German.</div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <!-- ------------------------------ -->
+                                                            <!-- Header Title Nr                -->
+                                                            <!-- ------------------------------ -->
+                                                            <div style="display: none;" class="header-title-nr">
+                                                                1/2
+                                                            </div>
+
+                                                        </header>
 
                                                     </header>
 
@@ -1928,10 +1957,335 @@
 
                                     </div>
 
-                                </header>
+                                </div>
 
                                 <!-- -------------------------------------------------------------------- -->
-                                <!-- 🟥 [2/3] | Nav                                                    -->
+                                <!-- ➡️🟥 [2/2] | My It Docs Content ( Nav + Content )      -->
+                                <!-- -------------------------------------------------------------------- -->
+                                <div class="resp-max-content-area">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p flex jc-c">
+
+                                        <!-- ----------------------------------------------------------- -->
+                                        <!-- RESP Min                                                    -->
+                                        <!-- ----------------------------------------------------------- -->
+                                        <div class="resp-min-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
+
+                                                <!-- ----------------------------------------------------------- -->
+                                                <!-- Padding Wrapper                                             -->
+                                                <!-- ----------------------------------------------------------- -->
+                                                <div class="padding-2-0-8-wrapper">
+
+                                                    <!-- ---------------------------------------------------------- -->
+                                                    <!-- My It Docs Content -->
+                                                    <!-- ---------------------------------------------------------- -->
+                                                    <div id="my-it-docs-content">
+
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <!-- [1/2] | My It Docs Nav List -->
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <nav id="my-it-docs-nav-list">
+
+                                                            <div>Open Close Nav List</div>
+                                                            <div>Nav List</div>
+
+                                                        </nav>
+
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <!-- [2/2] | Open Close | My It Docs Content List -->
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <div id="open-close-my-it-docs-content-list">
+
+                                                            <!-- ------------------------------------------------------------ -->
+                                                            <!-- Overflow Hidden -->
+                                                            <!-- ------------------------------------------------------------ -->
+                                                            <div class="overflow-hidden grid ji-c w-100p">
+
+
+                                                                <!-- ---------------------------------------------------------- -->
+                                                                <!-- [2/2] | My It Docs Content List -->
+                                                                <!-- ---------------------------------------------------------- -->
+                                                                <div id="my-it-docs-content-list">
+
+                                                                    <!-- ---------------------------------------------------------------- -->
+                                                                    <!-- My It Docs Card Container #1 -->
+                                                                    <!-- ---------------------------------------------------------------- -->
+                                                                    <div class="my-it-docs-card-container">
+
+                                                                        <!-- ------------------------------------------------------ -->
+                                                                        <!-- Header -->
+                                                                        <!-- ------------------------------------------------------ -->
+                                                                        <header class="my-it-docs-card-container-header">
+
+                                                                            <div class="my-it-docs-card-container-header-title">
+
+                                                                                <img src="media/img/icons/02-icon-colors/02-white/web-code-white.png" class="img-h-1-2" alt="img">
+                                                                                <div>Web-Basic's</div>
+
+                                                                            </div>
+
+                                                                        </header>
+
+                                                                        <!-- ------------------------------------------------------ -->
+                                                                        <!-- My It Docs Card List -->
+                                                                        <!-- ------------------------------------------------------ -->
+                                                                        <div class="my-it-docs-card-list">
+
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <!-- My It Docs Card #1 -->
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <div class="my-it-docs-card">
+
+                                                                                <img src="media/img/content/03-it-docs/01-frontend/01-web-dev/01-web-basic/sass-grundlagen.png" class="my-it-docs-card-img" alt="img">
+
+                                                                                <div class="my-it-docs-card-link-container">
+                                                                                    <a href="" target="_blank">Show PDF</a>
+                                                                                </div>
+
+                                                                                <!-- <div class="it-doc-in-progress-element">
+                                                                                    In Progress 25
+                                                                                </div> -->
+
+
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <!-- My It Docs Card #2 -->
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <div class="my-it-docs-card-coming-soon">
+
+                                                                                <img src="media/img/content/03-it-docs/01-frontend/01-web-dev/01-web-basic/sass-grundlagen.png" class="my-it-docs-card-img" alt="img">
+
+                                                                                <div class="my-it-docs-card-link-container">
+                                                                                    <a href="" target="_blank">Show PDF</a>
+                                                                                </div>
+
+                                                                                <div class="it-doc-coming-soon-element">
+                                                                                    Coming Soon 25
+                                                                                </div>
+
+
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <!-- My It Docs Card #3 -->
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <div class="my-it-docs-card-in-progress">
+
+                                                                                <img src="media/img/content/03-it-docs/01-frontend/01-web-dev/01-web-basic/sass-grundlagen.png" class="my-it-docs-card-img" alt="img">
+
+                                                                                <div class="my-it-docs-card-link-container">
+                                                                                    <a href="" target="_blank">Show PDF</a>
+                                                                                </div>
+
+                                                                                <div class="it-doc-in-progress-element">
+                                                                                    In Progress 25
+                                                                                </div>
+
+
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <!-- My It Docs Card #4 -->
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <div class="my-it-docs-card-actually-no-priority">
+
+                                                                                <img src="media/img/content/03-it-docs/01-frontend/01-web-dev/01-web-basic/sass-grundlagen.png" class="my-it-docs-card-img" alt="img">
+
+                                                                                <div class="my-it-docs-card-link-container">
+                                                                                    <a href="" target="_blank">Show PDF</a>
+                                                                                </div>
+
+                                                                                <div class="it-doc-acutally-no-priority-element">
+                                                                                    Actually No Priority
+                                                                                </div>
+
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <!-- ---------------------------------------------------------------- -->
+                                                                    <!-- My It Docs Card Container #1 -->
+                                                                    <!-- ---------------------------------------------------------------- -->
+                                                                    <div class="my-it-docs-card-container">
+
+                                                                        <!-- ------------------------------------------------------ -->
+                                                                        <!-- Header -->
+                                                                        <!-- ------------------------------------------------------ -->
+                                                                        <header class="my-it-docs-card-container-header">
+
+                                                                            <div class="my-it-docs-card-container-header-title">
+
+                                                                                <img src="media/img/icons/02-icon-colors/02-white/web-code-white.png" class="img-h-1-2" alt="img">
+                                                                                <div>Web-Basic's</div>
+
+                                                                            </div>
+
+                                                                        </header>
+
+                                                                        <!-- ------------------------------------------------------ -->
+                                                                        <!-- My It Docs Card List -->
+                                                                        <!-- ------------------------------------------------------ -->
+                                                                        <div class="my-it-docs-card-list">
+
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <!-- My It Docs Card #1 -->
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <div class="my-it-docs-card">
+
+                                                                                <img src="media/img/content/03-it-docs/01-frontend/01-web-dev/01-web-basic/sass-grundlagen.png" class="my-it-docs-card-img" alt="img">
+
+                                                                                <div class="my-it-docs-card-link-container">
+                                                                                    <a href="" target="_blank">Show PDF</a>
+                                                                                </div>
+
+                                                                                <!-- <div class="it-doc-acutally-no-priority-element">
+                                                                                    Actually No Priority
+                                                                                </div> -->
+
+
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <!-- My It Docs Card #2 -->
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <div class="my-it-docs-card">
+
+                                                                                <img src="media/img/content/03-it-docs/01-frontend/01-web-dev/01-web-basic/sass-grundlagen.png" class="my-it-docs-card-img" alt="img">
+
+                                                                                <div class="my-it-docs-card-link-container">
+                                                                                    <a href="" target="_blank">Show PDF</a>
+                                                                                </div>
+
+                                                                                <!-- <div class="it-doc-acutally-no-priority-element">
+                                                                                    Actually No Priority
+                                                                                </div> -->
+
+
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <!-- My It Docs Card #3 -->
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <div class="my-it-docs-card">
+
+                                                                                <img src="media/img/content/03-it-docs/01-frontend/01-web-dev/01-web-basic/sass-grundlagen.png" class="my-it-docs-card-img" alt="img">
+
+                                                                                <div class="my-it-docs-card-link-container">
+                                                                                    <a href="" target="_blank">Show PDF</a>
+                                                                                </div>
+
+                                                                                <!-- <div class="it-doc-acutally-no-priority-element">
+                                                                                    Actually No Priority
+                                                                                </div> -->
+
+
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <!-- My It Docs Card #4 -->
+                                                                            <!-- -------------------------------------------------- -->
+                                                                            <div class="my-it-docs-card">
+
+                                                                                <img src="media/img/content/03-it-docs/01-frontend/01-web-dev/01-web-basic/sass-grundlagen.png" class="my-it-docs-card-img" alt="img">
+
+                                                                                <div class="my-it-docs-card-link-container">
+                                                                                    <a href="" target="_blank">Show PDF</a>
+                                                                                </div>
+
+                                                                                <!-- <div class="it-doc-acutally-no-priority-element">
+                                                                                    Actually No Priority
+                                                                                </div> -->
+
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+                                <div class="resp-max-content-area">
+
+                                    <!-- ----------------------------------------------------------- -->
+                                    <!-- width & heihgt 100% (sets)                                  -->
+                                    <!-- ----------------------------------------------------------- -->
+                                    <div class="w-100p h-100p flex jc-c">
+
+                                        <!-- ----------------------------------------------------------- -->
+                                        <!-- RESP Min                                                    -->
+                                        <!-- ----------------------------------------------------------- -->
+                                        <div class="resp-min-content-area">
+
+                                            <!-- ----------------------------------------------------------- -->
+                                            <!-- width & heihgt 100% (sets)                                  -->
+                                            <!-- ----------------------------------------------------------- -->
+                                            <div class="w-100p h-100p flex jc-c">
+
+                                                <!-- ----------------------------------------------------------- -->
+                                                <!-- Padding Wrapper                                             -->
+                                                <!-- ----------------------------------------------------------- -->
+                                                <div class="padding-2-0-8-wrapper">
+
+                                                    <!-- -------------------------------------------------------------------- -->
+                                                    <!-- ➡️🟥 Nav | My IT Docs                                               -->
+                                                    <!-- -------------------------------------------------------------------- -->
+                                                    <nav id="my-it-docs-nav-list">
+                                                        My It Docs Nav List
+                                                    </nav>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+
+                                <!-- -------------------------------------------------------------------- -->
+                                <!-- ❌🟥 [2/3] | Nav                                                    -->
                                 <!-- -------------------------------------------------------------------- -->
                                 <nav class="resp-max-content-area">
 
@@ -2438,7 +2792,7 @@
                                 </nav>
 
                                 <!-- -------------------------------------------------------------------- -->
-                                <!-- ➡️🟥 [3/3] | My IT Doc List                                          -->
+                                <!-- ❌➡️🟥 [3/3] | My IT Doc List                                          -->
                                 <!-- -------------------------------------------------------------------- -->
                                 <div class="resp-max-content-area">
 
@@ -2651,8 +3005,6 @@
 
 
                                 </div>
-
-
 
                                 <!-- -------------------------------------------------------------------- -->
                                 <!-- ❌ [3/3] | Main -->

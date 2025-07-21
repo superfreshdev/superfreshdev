@@ -26,14 +26,283 @@
 }
 
 /* ------------------------------------------------------------- */
-/* My IT Docs List
+/* My IT Docs Content
 /* ------------------------------------------------------------- */
 
-#my-it-docs-list {
+#my-it-docs-content {
 
-  padding: 5em 0;
+  display: grid;
+  row-gap: 2em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* [1/2] | My It Docs Nav List
+/* ------------------------------------------------------------- */
+
+#my-it-docs-nav-list {
+
+  /* to allow child layouts to get max width */
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  background-color: rgb(162, 249, 255);
+
+}
+
+/* ------------------------------------------------------------- */
+/* [2/2] ⬇️⬆️ | Open Close | My IT Docs Content List
+/* ------------------------------------------------------------- */
+
+#open-close-my-it-docs-content-list {
+
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 300ms ease-in-out;
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Content List
+/* ------------------------------------------------------------- */
+
+#my-it-docs-content-list {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  row-gap: 2em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Card Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  row-gap: 2em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | My IT Docs Card Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-container-header {
+
+  width: 100%;
+  height: 3em;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: .8em;
+
+  background-color: grey;
+
+}
+
+.my-it-docs-card-container-header-title {
+
+  height: 100%;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  background-color: rgb(28, 28, 28);
+  color:white;
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Card List
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-list {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap:2em;
+
+  /* background-color: rgb(194, 194, 194); */
+
+}
+
+
+
+
+/* 🟣🟣🟣 🟣🟣🟣 🟣🟣🟣 🟣🟣🟣  */
+/* 🟣🟣🟣 Auslagern in > my-it-docs-card.css */
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Card + Basic Status
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card,
+.my-it-docs-card-in-progress,
+.my-it-docs-card-coming-soon,
+.my-it-docs-card-actually-no-priority {
+
+  position: relative;
+
+  width: 15em;
 
   display: grid;
 
-  border-top: 1px solid rgb(216, 216, 216);
+  align-items: center;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | My IT Docs Card
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-img {
+
+  width: 100%;
+  border-radius: .8em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Link Container | My IT Docs Card
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-link-container {
+
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  border-radius: 0 0 .7em .7em;
+
+  /* background-color: red; */
+}
+
+/* ------------------------------------------------------------- */
+/* a Link | My IT Docs Card
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-link-container > a {
+
+  text-decoration: none;
+
+  height: 100%;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  border-radius: .7em 0 .7em 0;
+
+  background-color: rgb(181, 181, 181);
+
+  transition: all .4s;
+
+}
+
+.my-it-docs-card-link-container > a:visited {
+
+  color:black;
+}
+
+.my-it-docs-card-link-container > a:hover {
+
+  background-color: wheat;
+}
+
+/* ------------------------------------------------------------- */
+/* 3x Status Container | In Progress, Coming Soon, No Prio
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-in-progress .my-it-docs-card-img,
+.my-it-docs-card-coming-soon .my-it-docs-card-img,
+.my-it-docs-card-actually-no-priority .my-it-docs-card-img {
+
+  filter: grayscale(1);
+
+}
+
+/* ------------------------------------------------------------- */
+/* 3x Status Elements | In Progress, Coming Soon, No Prio
+/* ------------------------------------------------------------- */
+
+.it-doc-in-progress-element,
+.it-doc-coming-soon-element,
+.it-doc-acutally-no-priority-element {
+
+  position: absolute;
+  left:0;
+  right:0;
+
+  padding: .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  text-align: center;
+
+}
+
+/* ------------------------------------------------------------- */
+/* In Progress | Status Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-in-progress .it-doc-in-progress-element {
+
+  background-color: rgb(233, 213, 0);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Coming Soon | Status Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-coming-soon .it-doc-coming-soon-element {
+
+  background-color: rgb(37, 190, 255);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Actually no Priority | Status Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-actually-no-priority .it-doc-acutally-no-priority-element {
+
+  background-color: black;
+  color:white;
+
 }
