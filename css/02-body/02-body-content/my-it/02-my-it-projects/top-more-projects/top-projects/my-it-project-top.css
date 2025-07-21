@@ -14,10 +14,11 @@
 
   width: 100%;
 
+
   display: grid;
   justify-items: center;
 
-  row-gap: 4em;
+  row-gap: 3em;
 
   /* background-color: grey; */
 }
@@ -59,6 +60,11 @@
 #my-it-project-top-card-list {
 
   width: 100%;
+
+  padding: 4em 0;
+
+  border-top: 1px solid rgb(140, 140, 140);
+  border-bottom: 1px solid rgb(140, 140, 140);
 
   /* mobile */
   display: grid;
