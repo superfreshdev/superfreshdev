@@ -34,12 +34,13 @@
   width: 100%;
 
   display: grid;
-  justify-items: center;
+  /* justify-items: center; */
   align-content: flex-start;
 
   border-radius: .8em;
 
-  border:1px solid rgb(144, 144, 144);
+  border:4px solid white;
+  background-color: rgb(245, 245, 245);
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 
   transition: all .4s;
@@ -48,7 +49,7 @@
 
 .my-it-project-top-card:hover {
 
-  /* background-color: rgb(166, 166, 166); */
+  border:4px solid rgb(144, 144, 144);
 }
 
 /* ------------------------------------------------------------- */
@@ -79,7 +80,8 @@
 .my-it-project-top-card-header {
 
   height: 4em;
-  width: 100%;
+  /* width: 100%; */
+  padding: 0 .8em;
 
   display: flex;
   align-items: center;
@@ -118,7 +120,7 @@
 
   padding: 0 .4em;
 
-  font-size: 1.125em;
+  /* font-size: 1.125em; */
 
   display: flex;
   align-items: center;

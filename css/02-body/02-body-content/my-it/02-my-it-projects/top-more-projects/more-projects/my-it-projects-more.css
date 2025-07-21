@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: center;
 
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 
 }
 
@@ -48,8 +48,10 @@
 
   display: grid;
   justify-items: center;
-  grid-template-rows: 1fr;
+  grid-template-rows: 0fr;
   transition: grid-template-rows 300ms ease-in-out;
+
+  background-color: rgb(243, 243, 243);
 
 }
 

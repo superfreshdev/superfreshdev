@@ -1,19 +1,21 @@
 /* -------------------------------------------------------------- */
 /* > open-close-content-label.css
 /*
-/* : styles open close content label
+/* : styles small & bigger open close content label
+     - small for layout insides
+     - bigger for page layouts
 
 /* -------------------------------------------------------------- */
 
 
 
 /* ------------------------------------------------------------- */
-/* Open Close Content Label
+/* Small | Bigger | Open Close Content Label
 /* ------------------------------------------------------------- */
 
-.open-close-content-label {
+.open-close-content-label-small,
+.open-close-content-label-bigger {
 
-  height: 2.5em;
   padding: 0 .8em;
 
   display: flex;
@@ -25,22 +27,43 @@
 
   font-weight: bold;
 
-  /* background-color: rgb(234, 234, 234); */
-
   background-color: rgb(234, 234, 234);
-  color:rgb(137, 137, 137);
+  color:#898989;
+
 
   cursor: pointer;
   transition: all .4s;
 
 }
 
-.open-close-content-label > div {
+.open-close-content-label-small:hover,
+.open-close-content-label-bigger:hover {
 
-  font-size: 14.5px;
+   background-color: wheat;
+
 }
 
-.open-close-content-label:hover {
+/* -------------------------------------------------------- */
+/* Small | Open Close Content Label
+/* -------------------------------------------------------- */
 
-  background-color: wheat;
+.open-close-content-label-small {
+
+  height: 2.3em;
+}
+
+.open-close-content-label-small > div {
+
+  /* 14.5px */
+  font-size: .90625em;
+}
+
+/* -------------------------------------------------------- */
+/* Bigger | Open Close Content Label
+/* -------------------------------------------------------- */
+
+
+.open-close-content-label-bigger {
+
+  height: 2.8em;
 }

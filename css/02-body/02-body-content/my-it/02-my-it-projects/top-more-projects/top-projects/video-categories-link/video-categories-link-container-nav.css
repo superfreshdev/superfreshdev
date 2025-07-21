@@ -25,7 +25,7 @@ input[name="name-chk-open-close-it-project-top-card-video-category-list"] {
 #chk-open-close-it-project-top-card-video-category-list-2:checked + nav > label,
 #chk-open-close-it-project-top-card-video-category-list-3:checked + nav > label {
 
-  background-color: wheat;
+  background-color: rgb(246, 132, 132);
 
 }
 
@@ -66,8 +66,8 @@ input[name="name-chk-open-close-it-project-top-card-video-category-list"] {
 
 .video-category-list:not( .video-category:nth-of-type(2) ) .video-category:first-child > nav:nth-of-type(1) > label {
 
-  border-radius: .8em;
-  background-color: red;
+  border-radius: .6em;
+  /* background-color: red; */
 }
 
 /* ------------------------------------------------------ */
@@ -76,7 +76,7 @@ input[name="name-chk-open-close-it-project-top-card-video-category-list"] {
 
 .video-category-list > .video-category:last-child a:last-child {
 
-  border-radius: 0em 0em .8em .8em;
+  border-radius: 0em 0em .6em .6em;
 }
 
 
@@ -87,8 +87,8 @@ input[name="name-chk-open-close-it-project-top-card-video-category-list"] {
 .video-category-list:not( .video-category:nth-of-type(2) ) .video-category:first-child #chk-open-close-it-project-top-card-video-category-link-1-1:checked + nav > label,
 .video-category-list:not( .video-category:nth-of-type(2) ) .video-category:first-child #chk-open-close-it-project-top-card-video-category-link-2-1:checked + nav > label {
 
-  border-radius: .8em .8em 0 0;
-  background-color: rgb(161, 161, 251);
+  border-radius: .6em .6em 0 0;
+  /* background-color: rgb(161, 161, 251); */
 }
 
 /* ------------------------------------------------------ */
@@ -98,15 +98,15 @@ input[name="name-chk-open-close-it-project-top-card-video-category-list"] {
 /* First Category Link */
 .video-category-list:has( .video-category:nth-of-type(2) ) .video-category:first-child > nav:nth-of-type(1) > label {
 
-  border-radius: .8em .8em 0 0;
-  background-color: orange;
+  border-radius: .6em .6em 0 0;
+  /* background-color: orange; */
 }
 
 /* Last Category Link */
 .video-category-list:has( .video-category:nth-of-type(2) ) .video-category:last-child > nav:nth-of-type(1) > label {
 
-  border-radius: 0 0 .8em .8em;
-  background-color: brown;
+  border-radius: 0 0 .6em .6em;
+  /* background-color: brown; */
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -123,7 +123,7 @@ input[name="name-chk-open-close-it-project-top-card-video-category-list"] {
 .video-category-list:has( .video-category:nth-of-type(2) ) .video-category:last-child > #chk-open-close-it-project-top-card-video-category-link-2-2:checked + nav > label {
 
   border-radius: 0 0 0 0;
-  background-color: magenta;
+  /* background-color: magenta; */
 
 }
 

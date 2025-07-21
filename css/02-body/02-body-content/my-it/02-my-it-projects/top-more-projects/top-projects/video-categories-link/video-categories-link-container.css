@@ -26,6 +26,10 @@
 .video-categories-link-container > nav:nth-of-type(1) {
 
   width: 100%;
+  padding: 1em 0 0 0;
+  margin-top: .5em;
+
+  border-top: 1px solid rgb(211, 211, 211);
 
   display: flex;
   align-items: center;
@@ -64,7 +68,7 @@
 .video-category-list {
 
   width: 100%;
-  padding-top: 1.5em;
+  padding-top: 1em;
 
   display: grid;
   justify-items: center;
@@ -72,6 +76,8 @@
   /* background-color: red; */
 
 }
+
+
 
 /* ------------------------------------------------------------- */
 /* Video Category
@@ -124,6 +130,16 @@
   cursor: pointer;
   transition: all .4s;
 
+}
+
+.video-category-list :not(.video-category:last-child) nav:nth-of-type(1) {
+
+  border-bottom: 2px solid rgb(167, 167, 167);
+}
+
+.video-category > nav:nth-of-type(1) > label:hover {
+
+  background-color: wheat;
 }
 
 /* ------------------------------------------------------------- */
@@ -226,7 +242,7 @@
   justify-content: space-between;
   column-gap: 1em;
 
- background-color: rgb(230, 230, 230);
+ background-color: rgb(255, 255, 255);
 
   transition: all .4s;
 
