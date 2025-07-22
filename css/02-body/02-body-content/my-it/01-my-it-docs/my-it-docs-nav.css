@@ -6,132 +6,13 @@
 /* ------------------------------------------------------------------- */
 
 
-/* -------------------------------------------------------------- */
-/* My IT Docs Nav Container
-/* -------------------------------------------------------------- */
 
-#my-it-docs-nav-container {
-
-  /* to allow child layouts to get max width */
-  width: 100%;
-
-  display: grid;
-  justify-items: center;
-
-}
-
-/* -------------------------------------------------------------- */
-/* ⬇️⬆️ | Open Close | My IT Docs Selection List Container       */
-/* -------------------------------------------------------------- */
-
-#open-close-my-it-docs-selection-list-container {
-
-  display: grid;
-  justify-items: center;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 300ms ease-in-out;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Seleciton List Container | My IT Docs
-/* -------------------------------------------------------------- */
-
-#my-it-docs-selection-list-container {
-
-  width: 100%;
-  height: 100%;
-
-  display: grid;
-  align-items: flex-start;
-
-  /* mobile */
-  grid-template-areas:
-
-    'my-it-docs-grid-area-1'
-    'my-it-docs-art-seperator-1'
-    'my-it-docs-grid-area-2'
-    'my-it-docs-art-seperator-2'
-    'my-it-docs-grid-area-3';
-
-   column-gap: 2em;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Grid Areas | Selection List Container
-/* -------------------------------------------------------------- */
-
-/* -------------------------------------------------------------- */
-/* [1/2] | Only Mobile | Art Seperator Container
-/* -------------------------------------------------------------- */
-
-#only-mobile-my-it-docs-art-seperator-1,
-#only-mobile-my-it-docs-art-seperator-2 {
-
-  height: 6em;
-
-}
-
-#only-mobile-my-it-docs-art-seperator-1 {
-
-  grid-area: my-it-docs-art-seperator-1;
-
-}
-
-#only-mobile-my-it-docs-art-seperator-2 {
-
-  grid-area: my-it-docs-art-seperator-2;
-
-}
-
-/* -------------------------------------------------------------- */
-/* [2/2] | Selection Grid Area ( 1,2,3 ) | My IT Docs
-/* -------------------------------------------------------------- */
-
-#my-it-docs-selection-grid-area-1 {
-
-  grid-area: my-it-docs-grid-area-1;
-
-}
-
-#my-it-docs-selection-grid-area-2 {
-
-  grid-area: my-it-docs-grid-area-2;
-
-}
-
-#my-it-docs-selection-grid-area-3 {
-
-  grid-area: my-it-docs-grid-area-3;
-
-}
-
-
-/* -------------------------------------------------------------- */
-/* Selection List | My IT Docs
-/* -------------------------------------------------------------- */
-
-.my-it-docs-selection-list {
-
-  width: 100%;
-
-  display: grid;
-  row-gap: .6em;
-
-  /* padding: .8em; */
-  /* border: 1px solid rgb(227, 227, 227); */
-  border-radius: .6em;
-
-  /* background-color: green; */
-
-}
 
 /* -------------------------------------------------------------- */
 /*  Handling | Styling |
 /* -------------------------------------------------------------- */
 
-#chk-selected-my-it-docs,
+#chk-open-close-my-it-docs-nav-list,
 input[name="radio-nav-my-it-docs"] {
 
   display: none;
@@ -200,7 +81,7 @@ input[name="radio-nav-my-it-docs"] {
 /*  Handling | Move | Drow Down Selector
 /* -------------------------------------------------------------- */
 
-#chk-selected-my-it-docs:checked ~ #open-close-my-it-docs-selection-list-container {
+#chk-open-close-my-it-docs-nav-list:checked ~ #open-close-it-docs-nav-list-container {
 
   grid-template-rows: 1fr;
 }

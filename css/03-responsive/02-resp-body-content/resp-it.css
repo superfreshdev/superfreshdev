@@ -35,11 +35,21 @@
 }
 
 /* -------------------------------------------------------------- */
-/* >= 420px width
+/* >= 400px width
 /* -------------------------------------------------------------- */
 
-@media (min-width: 420px ) {
+@media (min-width: 400px ) {
 
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav
+  /* ------------------------------------------ */
+
+  .my-it-docs-nav {
+
+    width: 22em;
+
+  }
 
 
 }
@@ -49,6 +59,7 @@
 /* -------------------------------------------------------------- */
 
 @media (min-width: 450px ) {
+
 
   /* ------------------------------------------ */
   /* My It Docs | Doc Card Item
@@ -60,22 +71,6 @@
     width: 12em;
 
   }
-
-  /* ------------------------------------------ */
-  /* My IT Project | Top Card List
-  /* ------------------------------------------ */
-
-  .my-it-project-top-card {
-
-    width: 22em;
-
-  }
-
-  /* #my-it-project-top-card-list {
-
-    grid-template-columns: 22em;
-
-  } */
 
 }
 
@@ -101,50 +96,72 @@
 }
 
 /* -------------------------------------------------------------- */
+/* >= 600px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 600px ) {
+
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav List
+  /* ------------------------------------------ */
+
+  #my-it-docs-nav-list {
+
+    grid-template-areas:
+
+      'my-it-docs-nav-grid-area-1 my-it-docs-nav-grid-area-2'
+      'my-it-docs-nav-grid-area-1 my-it-docs-nav-grid-area-3'
+    ;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 1em;
+    row-gap: 3em;
+
+  }
+
+    /* ------------------------------------------ */
+    /* My It Docs | Nav
+    /* ------------------------------------------ */
+
+    .my-it-docs-nav {
+
+      /* width: 17em; */
+      width: 100%;
+
+    }
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav Art Seperator 1
+  /* ------------------------------------------ */
+
+  #only-mobile-my-it-docs-nav-art-seperator-1,
+  #only-mobile-my-it-docs-nav-art-seperator-2 {
+
+    display: none;
+  }
+
+
+}
+
+/* -------------------------------------------------------------- */
 /* >= 800px width
 /* -------------------------------------------------------------- */
 
 @media (min-width: 800px ) {
 
 
-  /* -------------------------------------------- */
-  /* My IT Docs | Nav
-  /* -------------------------------------------- */
-
-  #my-it-docs-selection-list-container {
-
-    /* desktop */
-    grid-template-areas:
-    'my-it-docs-grid-area-1 my-it-docs-grid-area-2'
-    'my-it-docs-grid-area-1 my-it-docs-grid-area-3';
-
-     row-gap: 2em;
-
-     grid-template-columns: 1fr 1fr;
-
-  }
-
-  /* -------------------------------------------- */
-  /* My IT Docs | Only Mobile | Art Seperator
-  /* -------------------------------------------- */
-
-  #only-mobile-my-it-docs-art-seperator-1,
-  #only-mobile-my-it-docs-art-seperator-2 {
-
-    display: none;
-
-  }
-
   /* ------------------------------------------ */
-  /* My IT Docs | Doc Card Item
+  /* My It Docs | Nav List
   /* ------------------------------------------ */
 
-  .my-it-doc-card-item {
+    #my-it-docs-nav-list {
 
-    /* desktop */
-    width: 15em;
 
-  }
+      grid-template-columns: 18em 18em;
+
+    }
 
   /* ------------------------------------------ */
   /* My It Project | Project Top Card
@@ -197,12 +214,45 @@
 }
 
 /* -------------------------------------------------------------- */
+/* >= 900px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 950px ) {
+
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav List
+  /* ------------------------------------------ */
+
+    #my-it-docs-nav-list {
+
+      grid-template-areas:
+
+        'my-it-docs-nav-grid-area-1 my-it-docs-nav-grid-area-2 my-it-docs-nav-grid-area-3'
+      ;
+
+      grid-template-columns: 17em 17em 17em;
+
+    }
+
+}
+
+/* -------------------------------------------------------------- */
 /* >= 1000px width
 /* -------------------------------------------------------------- */
 
 @media (min-width: 1000px ) {
 
 
+  /* ------------------------------------------ */
+  /* My It Docs | Nav List
+  /* ------------------------------------------ */
+
+    #my-it-docs-nav-list {
+
+      grid-template-columns: 19em 19em 19em;
+
+    }
 
 
 }

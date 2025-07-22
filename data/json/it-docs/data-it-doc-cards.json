@@ -1,0 +1,42 @@
+{
+    "defaults": {
+
+        "img_path_white_imgs": "media/img/02-icon-colors/02-white/",
+        "img_path_tech_imgs": "media/img/icons/04-tech-logos/",
+        "img_path_img_card": "media/img/content/03-it-docs/",
+        "pdf_text": "Show PDF"
+    },
+
+    "web_basic": [
+
+        {
+            "header_title": "Web-Basic's",
+            "header_img_classname": "img-h-1-3",
+
+            "default_img_doc_card_path": "01-frontend/01-frontend/01-web-dev/01-web-basic/",
+
+            "it_doc_cards": [
+
+
+                {
+                    "img_filename": "sass-grundlagen.png",
+                    "pdf_url":"www.google.de",
+                    "status_text": "In Progress 25"
+                },
+                {
+                    "img_filename": "js-sprachgrundlagen.png",
+                    "pdf_url":"www.google.de",
+                    "status_text": "Coming Soon 25"
+                },
+                {
+                    "img_filename": "js-programmiertechniken.png",
+                    "pdf_url":"www.google.de",
+                    "status_text": "Actually No Priority"
+                }
+
+            ]
+        }
+
+    ]
+
+}

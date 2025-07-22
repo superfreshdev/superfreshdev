@@ -31,8 +31,11 @@
 
 .custom-radio-small {
 
-    height: .8em;
-    width: .8em;
+    min-height: .8em;
+    min-width: .8em;
+
+    max-height: .8em;
+    max-width: .8em;
 }
 
 .custom-radio-small > img:nth-of-type(1) {
@@ -50,8 +53,11 @@
 
 .custom-radio-default {
 
-    height: 1em;
-    width: 1em;
+    min-height: 1em;
+    min-width: 1em;
+
+    max-height: 1em;
+    max-width: 1em;
 
 }
 .custom-radio-default > img:nth-of-type(1) {
@@ -68,8 +74,11 @@
 
 .custom-radio-big {
 
-    height: 1.2em;
-    width: 1.2em;
+    min-height: 1.2em;
+    min-width: 1.2em;
+
+    max-height: 1.2em;
+    max-width: 1.2em;
 
 }
 

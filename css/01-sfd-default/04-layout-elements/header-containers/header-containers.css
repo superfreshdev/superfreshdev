@@ -80,8 +80,8 @@
 
 .header-beginning-topic-nr-element {
 
-  height: 4em;
-  width: 4em;
+  height: 3em;
+  width: 3em;
 
   display: flex;
   align-items: center;
@@ -95,11 +95,13 @@
   background-color: black;
   color:white;
 
+  opacity: .5;
+
 }
 
 .header-beginning-topic-nr-element > div {
 
-  font-size: 1.25em;
+  font-size: 1.125em;
   letter-spacing: 2px;
 
 }

@@ -14,7 +14,8 @@
 /* ------------------------------------------------------------- */
 
 .open-close-content-label-small,
-.open-close-content-label-bigger {
+.open-close-content-label-medium,
+.open-close-content-label-big {
 
   padding: 0 .8em;
 
@@ -37,7 +38,8 @@
 }
 
 .open-close-content-label-small:hover,
-.open-close-content-label-bigger:hover {
+.open-close-content-label-big:hover,
+.open-close-content-label-medium:hover {
 
    background-color: wheat;
 
@@ -59,11 +61,19 @@
 }
 
 /* -------------------------------------------------------- */
-/* Bigger | Open Close Content Label
+/* Medium | Open Close Content Label
 /* -------------------------------------------------------- */
 
+.open-close-content-label-medium {
 
-.open-close-content-label-bigger {
+  height: 3em;
+}
 
-  height: 2.8em;
+/* -------------------------------------------------------- */
+/* Big | Open Close Content Label
+/* -------------------------------------------------------- */
+
+.open-close-content-label-big {
+
+  height: 3.3em;
 }

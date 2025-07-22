@@ -17,12 +17,16 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Icon | Header Container
+/* Img Header | My IT Docs Card Container
 /* ------------------------------------------------------------- */
 
-#my-it-docs-header-icon {
+/* reminder: header is used by
+             universal element from sfd-defaults */
 
-  height: 1.8em;
+#my-it-docs-header-books-img {
+
+  height: 2.5em;
+
 }
 
 /* ------------------------------------------------------------- */
@@ -32,15 +36,15 @@
 #my-it-docs-content {
 
   display: grid;
-  row-gap: 2em;
+  row-gap: 4em;
 
 }
 
 /* ------------------------------------------------------------- */
-/* [1/2] | My It Docs Nav List
+/* [1/2] | My It Docs Nav Container
 /* ------------------------------------------------------------- */
 
-#my-it-docs-nav-list {
+#my-it-docs-nav-container {
 
   /* to allow child layouts to get max width */
   width: 100%;
@@ -51,6 +55,202 @@
   background-color: rgb(162, 249, 255);
 
 }
+
+/* ------------------------------------------------------------- */
+/* ⬇️⬆️ | Open Close | My IT Docs Nav List Container
+/* ------------------------------------------------------------- */
+
+#open-close-it-docs-nav-list-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms ease-in-out;
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Nav List Container
+/* ------------------------------------------------------------- */
+
+#my-it-docs-nav-list-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  /* row-gap: 1em; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Nav List
+/* ------------------------------------------------------------- */
+
+#my-it-docs-nav-list {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+
+  justify-content: center;
+
+  grid-template-areas:
+
+    'my-it-docs-nav-grid-area-1'
+    'my-it-docs-nav-art-seperator-1'
+    'my-it-docs-nav-grid-area-2'
+    'my-it-docs-nav-art-seperator-2'
+    'my-it-docs-nav-grid-area-3'
+  ;
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav {
+
+  width: 100%;
+  display: grid;
+  row-gap: .6em;
+
+  font-weight: bold;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Grid Area ( 1,2,3 ) | My IT Docs Nav
+/* -------------------------------------------------------------- */
+
+#my-it-docs-nav-grid-area-1 {
+
+  grid-area: my-it-docs-nav-grid-area-1;
+
+}
+
+#my-it-docs-nav-grid-area-2 {
+
+  grid-area: my-it-docs-nav-grid-area-2;
+
+}
+
+#my-it-docs-nav-grid-area-3 {
+
+  grid-area: my-it-docs-nav-grid-area-3;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Only Mobile | Art Seperator Container
+/* -------------------------------------------------------------- */
+
+#only-mobile-my-it-docs-nav-art-seperator-1,
+#only-mobile-my-it-docs-nav-art-seperator-2 {
+
+  height: 6em;
+
+}
+
+#only-mobile-my-it-docs-nav-art-seperator-1 {
+
+  grid-area: my-it-docs-nav-art-seperator-1;
+
+}
+
+#only-mobile-my-it-docs-nav-art-seperator-2 {
+
+  grid-area: my-it-docs-nav-art-seperator-2;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Label | My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav > label {
+
+  height: 3.8em;
+  padding: .0em .8em;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1em;
+
+  border-radius: .8em;
+
+  background-color: rgb(240, 239, 239);
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.my-it-docs-nav > label:hover {
+
+  background-color: wheat;
+}
+
+/* ------------------------------------------------------------- */
+/* Nr & Title | My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav-label-nr-title {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nr | My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav-label-nr {
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
+
+  opacity: .6;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Title | My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav-label-title {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ⚠️ My IT Docs Content Card List  */
 
 /* ------------------------------------------------------------- */
 /* [2/2] ⬇️⬆️ | Open Close | My IT Docs Content List
@@ -120,7 +320,7 @@
 
   display: flex;
   align-items: center;
-  column-gap: .4em;
+  column-gap: .8em;
 
   font-weight: bold;
 
@@ -148,6 +348,23 @@
 
 }
 
+/* ------------------------------------------------------------- */
+/* Extra Close Label | My It Docs Content List
+/* ------------------------------------------------------------- */
+
+#nav-extra-close-label-my-it-docs-content-list {
+
+  width: 100%;
+  height: 8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: red;
+
+}
 
 
 
@@ -249,6 +466,7 @@
 .my-it-docs-card-actually-no-priority .my-it-docs-card-img {
 
   filter: grayscale(1);
+  opacity: .1;
 
 }
 
