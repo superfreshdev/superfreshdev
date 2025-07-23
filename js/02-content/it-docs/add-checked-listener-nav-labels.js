@@ -35,7 +35,7 @@ const string_Ids_Of_It_Docs_Nav = [
 
 // var data_file_it_doc_cards = "/../../../data/json/it-docs/data-it-doc-cards.json";
 
-var data_file_it_doc_cards = "/data/json/it-docs/data-it-doc-cards.json";
+var data_file_it_doc_cards = "data/json/it-docs/data-it-doc-cards.json";
 
 
 
