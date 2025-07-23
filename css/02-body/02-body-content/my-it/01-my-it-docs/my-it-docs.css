@@ -4,6 +4,13 @@
 /* : styles my it docs
 /* -------------------------------------------------------------- */
 
+/* ⚠️⚠️⚠️ Test JS  */
+
+#js-add-it-docs {
+
+  padding: .8em;
+  border: 3px solid black;
+}
 
 /* ------------------------------------------------------------- */
 /* My IT Docs Container
@@ -66,7 +73,7 @@
 
   display: grid;
   justify-items: center;
-  grid-template-rows: 0fr;
+  grid-template-rows: 1fr;
   transition: grid-template-rows 300ms ease-in-out;
 
 }
