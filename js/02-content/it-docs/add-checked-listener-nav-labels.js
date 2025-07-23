@@ -1,6 +1,16 @@
 console.log("🟨 add-checked-listener-nav-labels.js")
 
 
+
+
+
+// var fileTest = "js/02-content/it-docs/data-it-doc-cards.json";
+
+// testJson( fileTest );
+
+
+
+
 /* -------------------------------------------------------- */
 /* DOM Elements
 /* -------------------------------------------------------- */
@@ -23,7 +33,9 @@ const string_Ids_Of_It_Docs_Nav = [
 /* Var
 /* -------------------------------------------------------- */
 
-var data_file_it_doc_cards = "/../../../data/json/it-docs/data-it-doc-cards.json";
+// var data_file_it_doc_cards = "/../../../data/json/it-docs/data-it-doc-cards.json";
+
+var data_file_it_doc_cards = "/data/json/it-docs/data-it-doc-cards.json";
 
 
 

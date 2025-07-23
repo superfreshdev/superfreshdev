@@ -110,3 +110,66 @@ async function get_data_from_it_doc_cards( filename, clickedIndex ) {
 // var data_file_it_doc_cards = "../../../data/json/it-docs/data-it-doc-cards.json";
 
 // get_data_from_it_doc_cards( data_file_it_doc_cards )
+
+
+async function testJson( filename ) {
+
+
+  try {
+
+        // try to get json file
+        const response = await fetch( filename );
+
+        // if not ok
+        if( !response.ok ) {
+            console.log("🔴: Can't get JSON-File | " + response.status )
+            return false;
+        }
+
+        // try to read json file
+        const data = await response.json();
+
+        /* -------------------------------------------------- */
+        /* Read Data Object by clicked radio nav index
+        /* -------------------------------------------------- */
+
+        // console.log( "1|🦍🦍🦍: " + data.web_basic.defaults.img_path_folder )
+
+
+
+        console.log( "2|🍌🍌🍌: " + data.defaults.img_path_white_imgs )
+
+
+        /* ------------------------------------------------------------ */
+        /* System bauen um einzelne Elemente heraus zu picken
+        /* ------------------------------------------------------------ */
+
+        // var newDivElement = createDivClassText( "class-Marko", parsed_data.defaults.img_path_folder );
+
+
+        // add_point_it_docs_content.append( newDivElement )
+
+        // add_point_it_docs_content.append(  newDivElement  )
+
+
+        // addDomElementToParent( newDivElement , add_point_it_docs_content )
+
+
+
+
+
+        // Step 1: Create Filter IT Docs Panel
+
+
+        // addPointItDocs.append(  createDivClassText( "class-Marko", data.test ) )
+        // addPointItDocs.append(  createDivClassText( "class-Marko", data.test ) )
+        // addPointItDocs.append(  createDivClassText( "class-Marko", data.test ) )
+
+
+
+    } catch (error) {
+        console.log("🔴: Can't get JSON-File (error) | " + error )
+        //return error;
+    }
+
+}

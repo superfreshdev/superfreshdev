@@ -1,0 +1,322 @@
+{
+    "defaults": {
+
+        "img_path_white_imgs": "media/img/02-icon-colors/02-white/",
+        "img_path_tech_imgs": "media/img/icons/04-tech-logos/",
+        "img_path_img_card": "media/img/content/03-it-docs/",
+        "pdf_text": "Show PDF"
+    },
+
+    "web_basic": {
+
+        "defaults": {
+            "img_path_folder": "01-basic-dev/01-web-basic/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "container-header": {
+
+                    "header_img_filename": "white-brackets-open-close.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Web-Basic's"
+
+                },
+
+                "container-card-list": [
+
+                    {
+                        "img_filename": "sass-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": "In Progress 25"
+                    },
+                    {
+                        "img_filename": "java-script/js-sprachgrundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": "Coming Soon 25"
+                    },
+                    {
+                        "img_filename": "java-script/js-programmiertechniken.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": "Actually No Priority"
+                    },
+                    {
+                        "img_filename": "java-script/js-debugging.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    },
+                    {
+                        "img_filename": "java-script/js-unit-testing.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    }
+
+                ]
+
+            }
+
+        ]
+    },
+
+    "software_basic": {
+
+        "defaults": {
+            "img_path_folder": "01-basic-dev/02-software-basic/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "container-header": {
+
+                    "header_img_filename": "white-brackets-open-close.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Software Basic's"
+
+                },
+
+                "container-card-list": [
+
+                     {
+                        "img_filename": "oop-grundlagen.png",
+                        "pdf_url":"www.google.de"
+                    },
+                    {
+                        "img_filename": "uml-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    },
+                    {
+                        "img_filename": "agile-software-entwicklung-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": "Actually No Priority"
+                    },
+                    {
+                        "img_filename": "ddd-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    }
+                ]
+
+            }
+
+        ]
+    },
+
+    "algorithmn": {
+
+        "defaults": {
+            "img_path_folder": "01-basic-dev/03-algorithmn/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "container-header": {
+
+                    "header_img_filename": "white-brackets-open-close.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Algorithmn & Datastructures"
+
+                },
+
+                "container-card-list": [
+
+                     {
+                        "img_filename": "aud-grundlagen.png",
+                        "pdf_url":"www.google.de"
+                    },
+                    {
+                        "img_filename": "mathematik-fuer-programmierer-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    },
+                    {
+                        "img_filename": "11-Data-Structures-Amigocode.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": "Actually No Priority"
+                    },
+                    {
+                        "img_filename": "types-of-algos.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    }
+                ]
+
+            }
+
+        ]
+    },
+
+    "web_dev": {
+
+        "defaults": {
+            "img_path_folder": "02-web-dev/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "container-header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Type Script"
+
+                },
+
+                "container-card-list": [
+
+                    {
+                        "img_filename": "01-type-script/ts-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
+            },
+
+            {
+                "it_doc_cards_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Angular 17 (2022)"
+
+                },
+
+                "it_doc_cards": [
+
+                    {
+                        "img_filename": "01-angular17/ang17-oekosystem.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "01-angular17/ang17-cli.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "01-angular17/ang17-komponenten-bindungen-module.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "01-angular17/ang17-di.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
+            }
+
+        ]
+    },
+
+    "software_dev": {
+
+        "defaults": {
+            "img_path_folder": "01-frontend/02-software-mobile-dev/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "container-header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Java",
+                    "img_path_card_folder": "01-Java-World/01-Java/"
+
+                },
+
+                "container-card-list": [
+
+                    {
+                        "img_filename": "java-1-3-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "java-2-3-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "java-3-3-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
+            },
+
+            {
+                "defaults": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Spring Boot (1/4)",
+                    "img_path_card_folder": "01-Java-World/01-Java/"
+
+                },
+
+                "id_doc_cards": [
+
+                    {
+                        "img_filename": "java-1-3-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "java-2-3-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "java-3-3-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
+            },
+
+            {
+                "defaults": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Spring Boot (2/4)",
+                    "img_path_card_folder": "01-Java-World/01-Java/"
+
+                },
+
+                "id_doc_cards": [
+
+                    {
+                        "img_filename": "java-1-3-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "java-2-3-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "java-3-3-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
+            }
+
+        ]
+    }
+
+}
