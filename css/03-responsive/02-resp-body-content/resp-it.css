@@ -142,6 +142,36 @@
     display: none;
   }
 
+  /* ------------------------------------------------------------- */
+  /* My IT Docs Card List
+  /* ------------------------------------------------------------- */
+
+  .my-it-docs-card-list {
+
+    /* desktop */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2em;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* My IT Docs Card + Basic Status
+  / * ------------------------------------------------------------- */
+
+  .my-it-docs-card,
+  .my-it-docs-card-in-progress,
+  .my-it-docs-card-coming-soon,
+  .my-it-docs-card-actually-no-priority {
+
+    position: relative;
+
+    /* desktop */
+    width: 15em;
+
+
+  }
 
 }
 

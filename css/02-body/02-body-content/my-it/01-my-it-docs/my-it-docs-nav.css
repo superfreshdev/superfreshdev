@@ -6,82 +6,102 @@
 /* ------------------------------------------------------------------- */
 
 
-
-
 /* -------------------------------------------------------------- */
-/*  Handling | Styling |
+/*  Default |
+/* 1. open close | it docs nav list
+/* 2. close | it docs content list
+/* 3. all it docs nav labels
 /* -------------------------------------------------------------- */
 
+/* default unshown radio box */
 #chk-open-close-my-it-docs-nav-list,
+#chk-extra-close-label-my-it-docs-content-list,
 input[name="radio-nav-my-it-docs"] {
 
   display: none;
 }
 
-/* ---------------------------------- */
-/* set background */
-/* ---------------------------------- */
+/* -------------------------------------------------------------- */
+/*  Styling Checked | open / close | My It Docs Nav List
+/* -------------------------------------------------------------- */
 
-#chk-selected-my-it-docs:checked + #lbl-selected-my-it-docs {
+#chk-open-close-my-it-docs-nav-list:checked + nav > label {
 
+  background-color: rgb(246, 132, 132);
   background-color: wheat;
 }
 
-#radio-my-it-docs-category:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-category"],
-#radio-my-it-docs-web-basic:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-web-basic"],
-#radio-my-it-docs-software-basic:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-software-basic"],
-#radio-my-it-docs-it-tools:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-it-tools"],
-#radio-my-it-docs-expertise:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-expertise"],
-#radio-my-it-docs-algorithmn:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-algorithmn"],
-#radio-my-it-docs-software-quality:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-software-quality"],
-#radio-my-it-docs-web-dev:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-web-dev"],
-#radio-my-it-docs-software-mobile-dev:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-software-mobile-dev"],
-#radio-my-it-docs-database:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-database"],
-#radio-my-it-docs-software-architecture:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-software-architecture"],
-#radio-my-it-docs-dev-ops:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-dev-ops"],
-#radio-my-it-docs-data-science:checked ~ #open-close-my-it-docs-seleciton-list-container #my-it-doc-select-list-container label[for="radio-my-it-docs-data-science"] {
-
-  background-color: wheat;
-
-}
-
-/* ---------------------------------- */
-/* change orientation */
-/* ---------------------------------- */
-
-#chk-selected-my-it-docs:checked + #lbl-selected-my-it-docs > img:last-child {
+/* change arrow orientation */
+#chk-open-close-my-it-docs-nav-list:checked + nav > label > img:last-child {
 
   transform: rotate(180deg);
 
 }
 
-/* ---------------------------------- */
-/* set x */
-/* ---------------------------------- */
+/* -------------------------------------------------------------- */
+/*  Styling Checked | My IT Docs Nav Labels
+/* -------------------------------------------------------------- */
 
-#radio-my-it-docs-category:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-category"] .custom-radio-default > img,
-#radio-my-it-docs-web-basic:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-web-basic"] .custom-radio-default > img,
-#radio-my-it-docs-software-basic:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-software-basic"] .custom-radio-default > img,
-#radio-my-it-docs-it-tools:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-it-tools"] .custom-radio-default > img,
-#radio-my-it-docs-expertise:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-expertise"] .custom-radio-default > img,
-#radio-my-it-docs-algorithmn:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-algorithmn"] .custom-radio-default > img,
-#radio-my-it-docs-software-quality:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-software-quality"] .custom-radio-default > img,
-#radio-my-it-docs-web-dev:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-web-dev"] .custom-radio-default > img,
-#radio-my-it-docs-software-mobile-dev:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-software-mobile-dev"] .custom-radio-default > img,
-#radio-my-it-docs-database:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-database"] .custom-radio-default > img,
-#radio-my-it-docs-software-architecture:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-software-architecture"] .custom-radio-default > img,
-#radio-my-it-docs-dev-ops:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-dev-ops"] .custom-radio-default > img,
-#radio-my-it-docs-data-science:checked ~ #open-close-my-it-docs-seleciton-list-container label[for="radio-my-it-docs-data-science"] .custom-radio-default > img {
+#radio-my-it-docs-category:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-category"],
+#radio-my-it-docs-web-basic:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-web-basic"],
+#radio-my-it-docs-software-basic:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-software-basic"],
+#radio-my-it-docs-algorithmn:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-algorithmn"],
+#radio-my-it-docs-it-tools:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-it-tools"],
+#radio-my-it-docs-expertise:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-expertise"],
+#radio-my-it-docs-web-dev:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-web-dev"],
+#radio-my-it-docs-software-dev:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-software-dev"],
+#radio-my-it-docs-apis:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-apis"],
+#radio-my-it-docs-software-quality:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-software-quality"],
+#radio-my-it-docs-data-science:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-data-science"],
+#radio-my-it-docs-software-architecture:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-software-architecture"],
+#radio-my-it-docs-database:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-database"],
+#radio-my-it-docs-dev-ops:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-dev-ops"] {
 
-  display: flex;
+  background-color: wheat;
+  /* background-color: magenta; */
 
 }
 
 /* -------------------------------------------------------------- */
-/*  Handling | Move | Drow Down Selector
+/*  Set X | Checked | My IT Docs Nav Labels
 /* -------------------------------------------------------------- */
+
+#radio-my-it-docs-category:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-category"] .custom-radio-default > img,
+#radio-my-it-docs-web-basic:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-web-basic"] .custom-radio-default > img,
+#radio-my-it-docs-software-basic:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-software-basic"] .custom-radio-default > img,
+#radio-my-it-docs-algorithmn:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-algorithmn"] .custom-radio-default > img,
+#radio-my-it-docs-it-tools:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-it-tools"] .custom-radio-default > img,
+#radio-my-it-docs-expertise:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-expertise"] .custom-radio-default > img,
+#radio-my-it-docs-web-dev:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-web-dev"] .custom-radio-default > img,
+#radio-my-it-docs-software-dev:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-software-dev"] .custom-radio-default > img,
+#radio-my-it-docs-apis:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-apis"] .custom-radio-default > img,
+#radio-my-it-docs-software-quality:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-software-quality"] .custom-radio-default > img,
+#radio-my-it-docs-data-science:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-data-science"] .custom-radio-default > img,
+#radio-my-it-docs-software-architecture:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-software-architecture"] .custom-radio-default > img,
+#radio-my-it-docs-database:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-database"] .custom-radio-default > img,
+#radio-my-it-docs-dev-ops:checked ~ #my-it-docs-nav-container label[for="radio-my-it-docs-dev-ops"] .custom-radio-default > img {
+
+    display: flex;
+
+}
+
+/* -------------------------------------------------------------------------------------- */
+/*  ⬇️⬆️ Open | Checked | Open Close IT Docs Nav List Container
+/* -------------------------------------------------------------------------------------- */
 
 #chk-open-close-my-it-docs-nav-list:checked ~ #open-close-it-docs-nav-list-container {
 
   grid-template-rows: 1fr;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/*  ⬇️⬆️  Close | Checked | Open Close IT Docs Nav List Container
+/* -------------------------------------------------------------------------------------- */
+
+#chk-extra-close-label-my-it-docs-content-list:checked ~ #open-close-my-it-docs-content-list {
+
+  /* grid-template-rows: 0fr; */
+  background-color: rgb(228, 175, 175);
+
 }

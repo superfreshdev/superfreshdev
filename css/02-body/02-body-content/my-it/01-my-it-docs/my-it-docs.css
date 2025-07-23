@@ -178,7 +178,6 @@
   height: 3.8em;
   padding: .0em .8em;
 
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -187,6 +186,8 @@
   border-radius: .8em;
 
   background-color: rgb(240, 239, 239);
+
+  user-select: none;
 
   cursor: pointer;
   transition: all .4s;
@@ -338,11 +339,18 @@
 
   width: 100%;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* mobile */
+  display: grid;
+  grid: auto / 1fr 1fr;
 
-  gap:2em;
+  column-gap: .6em;
+  row-gap: 1em;
+
+  /* desktop */
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  /* gap:2em; */
 
   /* background-color: rgb(194, 194, 194); */
 
@@ -367,6 +375,12 @@
 }
 
 
+label[for="chk-extra-close-label-my-it-docs-content-list"] > img{
+
+  transform: rotate(180deg);
+
+}
+
 
 /* 🟣🟣🟣 🟣🟣🟣 🟣🟣🟣 🟣🟣🟣  */
 /* 🟣🟣🟣 Auslagern in > my-it-docs-card.css */
@@ -382,7 +396,8 @@
 
   position: relative;
 
-  width: 15em;
+  /* mobile */
+  width: 100%;
 
   display: grid;
 
