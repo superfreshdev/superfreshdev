@@ -26,7 +26,9 @@ const string_Ids_Of_It_Docs_Nav = [
   "radio-my-it-docs-software-basic",
   "radio-my-it-docs-algorithmn",
   "radio-my-it-docs-it-tools",
-  "radio-my-it-docs-expertise"
+  "radio-my-it-docs-expertise",
+  "radio-my-it-docs-web-dev",
+  "radio-my-it-docs-software-dev"
 ]
 
 /* -------------------------------------------------------- */
