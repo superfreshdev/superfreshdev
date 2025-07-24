@@ -20,7 +20,13 @@ function get_it_doc_category_data( jsonData, clickedIndex ) {
     case 3:
       return jsonData.algorithmn;
     case 4:
+      return jsonData.it_tools
+    case 5:
+      return jsonData.expertise
+    case 6:
       return jsonData.web_dev
+    case 7:
+      return jsonData.software_dev
 
     default:
       return -1;
