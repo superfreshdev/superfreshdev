@@ -163,38 +163,20 @@ console.log("🟨 read-it-docs-data.js")
             var test = data_doc_category.it_doc_card_containers[0].container_header.header_title;
 
 
+            var countDivs = addRootPointDomElement.querySelectorAll( ".class-Marko").length;
+
+            // delete first, if there exist 1 div
+            if( countDivs == 1 ) {
+              addRootPointDomElement.querySelectorAll( ".class-Marko")[0].remove();
+            }
+
             // new div
             var newDivElement = createDivClassText( "class-Marko", test );
 
-            // exist there 2nd div ?
-            // if( addRootPointDomElement)
-
-            // console.log("Length = " + addRootPointDomElement.querySelectorAll( ".class-Marko").length )
-
-            var countDivs = addRootPointDomElement.querySelectorAll( ".class-Marko").length;
-
-            if( countDivs == 1) {
-
-              // delete old div, thats the first one
-              addRootPointDomElement.querySelectorAll( ".class-Marko")[0].remove();
-
-            }
-
+            // add new div to root
             addRootPointDomElement.append(  newDivElement  )
 
-            // get old div
-            // var oldDivElement = addRootPointDomElement.querySelector(".class-Marko");
 
-            // replace old with new
-
-
-
-
-
-
-            // delete old layout if it exist
-            // var divMarkos = document.querySelectorAll("#js-add-it-docs > .class-Marko")[0];
-            // divMarkos.remove();
 
 
 
