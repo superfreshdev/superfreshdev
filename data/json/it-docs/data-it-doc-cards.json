@@ -18,7 +18,7 @@
             {
                 "img_path_folder": "",
 
-                "container-header": {
+                "container_header": {
 
                     "header_img_filename": "white-brackets-open-close.png",
                     "header_img_classname": "img-h-1-3",
@@ -26,7 +26,7 @@
 
                 },
 
-                "container-card-list": [
+                "container_card_list": [
 
                     {
                         "img_filename": "sass-grundlagen.png",
@@ -72,7 +72,7 @@
             {
                 "img_path_folder": "",
 
-                "container-header": {
+                "container_header": {
 
                     "header_img_filename": "white-brackets-open-close.png",
                     "header_img_classname": "img-h-1-3",
@@ -80,11 +80,12 @@
 
                 },
 
-                "container-card-list": [
+                "container_card_list": [
 
                      {
                         "img_filename": "oop-grundlagen.png",
-                        "pdf_url":"www.google.de"
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
                     },
                     {
                         "img_filename": "uml-grundlagen.png",
@@ -120,7 +121,7 @@
 
                 "img_path_folder": "",
 
-                "container-header": {
+                "container_header": {
 
                     "header_img_filename": "white-brackets-open-close.png",
                     "header_img_classname": "img-h-1-3",
@@ -128,11 +129,12 @@
 
                 },
 
-                "container-card-list": [
+                "container_card_list": [
 
                      {
                         "img_filename": "aud-grundlagen.png",
-                        "pdf_url":"www.google.de"
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
                     },
                     {
                         "img_filename": "mathematik-fuer-programmierer-grundlagen.png",
@@ -167,7 +169,7 @@
             {
                 "img_path_folder": "01-git-world/",
 
-                "container-header": {
+                "container_header": {
 
                     "header_img_filename": "white-brackets-open-close.png",
                     "header_img_classname": "img-h-1-3",
@@ -176,11 +178,12 @@
                 },
 
 
-                "container-card-list": [
+                "container_card_list": [
 
                     {
                         "img_filename": "git-github-grundlagen.png",
-                        "pdf_url":"www.google.de"
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
                     },
                     {
                         "img_filename": "git-grundkurs.png",
@@ -219,7 +222,126 @@
                     }
                 ]
 
+            },
+
+            {
+                "img_path_folder": "02-nexus/",
+
+                "container_header": {
+
+                    "header_img_filename": "white-brackets-open-close.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Nexus Repo"
+
+                },
+
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "01-yt-nexus-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    },
+
+                    {
+                        "img_filename": "02-yt-nexus-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "03-jenkins/",
+
+                "container_header": {
+
+                    "header_img_filename": "white-brackets-open-close.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Jenkins"
+
+                },
+
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "jenkins-ci-cd-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "04-ide-terminal/",
+
+                "container_header": {
+
+                    "header_img_filename": "white-brackets-open-close.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "IDE's & Windows Terminal"
+
+                },
+
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "vscode-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    },
+                    {
+                        "img_filename": "intellij-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    },
+                    {
+                        "img_filename": "windows-terminal-app-grundlagen.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "05-confluence-jira-outlook-slack/",
+
+                "container_header": {
+
+                    "header_img_filename": "white-brackets-open-close.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Confluence & Jira"
+
+                },
+
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "01-yt-confluence-tutorial.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    },
+                    {
+                        "img_filename": "01-yt-jira-tutorial.png",
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
+                    }
+
+                ]
+
             }
+
+
 
         ]
     },
@@ -235,7 +357,7 @@
             {
                 "img_path_folder": "",
 
-                "container-header": {
+                "container_header": {
 
                     "header_img_filename": "white-brackets-open-close.png",
                     "header_img_classname": "img-h-1-3",
@@ -244,11 +366,12 @@
                 },
 
 
-                "container-card-list": [
+                "container_card_list": [
 
                     {
                         "img_filename": "versicherungen-grundlagen.png",
-                        "pdf_url":"www.google.de"
+                        "pdf_url":"www.google.de",
+                        "status_text": ""
                     },
                     {
                         "img_filename": "fuehrungsqualitaeten-entwickeln.png",
@@ -274,7 +397,7 @@
             {
                 "img_path_folder": "01-type-script/",
 
-                "container-header": {
+                "container_header": {
 
                     "header_img_filename": "java-black.png",
                     "header_img_classname": "img-h-1-3",
@@ -282,7 +405,7 @@
 
                 },
 
-                "container-card-list": [
+                "container_card_list": [
 
                     {
                         "img_filename": "ts-grundlagen.png",
@@ -294,7 +417,7 @@
             },
 
             {
-                "img_path_folder": "01-angular17/",
+                "img_path_folder": "02-angular/01-angular17/",
 
                 "it_doc_cards_header": {
 
@@ -351,7 +474,7 @@
             },
 
             {
-                "img_path_folder": "02-angular19",
+                "img_path_folder": "02-angular/02-angular19",
 
                 "it_doc_cards_header": {
 
@@ -376,6 +499,115 @@
 
                 ]
 
+            },
+
+            {
+                "img_path_folder": "03-react/",
+
+                "it_doc_cards_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "React"
+
+                },
+
+                "it_doc_cards": [
+
+                    {
+                        "img_filename": "React-Grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "04-js-backend/",
+
+                "it_doc_cards_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "JS Backend"
+
+                },
+
+                "it_doc_cards": [
+
+                    {
+                        "img_filename": "nodejs-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "nestjs-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "nextjs-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "05-web-it-tools/",
+
+                "it_doc_cards_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Web IT-Tool's"
+
+                },
+
+                "it_doc_cards": [
+
+                    {
+                        "img_filename": "npm-coder-codeer.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "storybook-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "06-react-native-lynx/",
+
+                "it_doc_cards_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "React Native ( Mobile Dev )"
+
+                },
+
+                "it_doc_cards": [
+
+                    {
+                        "img_filename": "react-native-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
             }
 
         ]
@@ -392,14 +624,14 @@
             {
                 "img_path_folder": "01-java-world/01-java/",
 
-                "container-header": {
+                "container_header": {
 
                     "header_img_filename": "java-black.png",
                     "header_img_classname": "img-h-1-3",
                     "header_title": "Java"
                 },
 
-                "container-card-list": [
+                "container_card_list": [
 
                     {
                         "img_filename": "java-1-3-grundlagen.png",
@@ -423,14 +655,14 @@
             {
                 "img_path_folder": "01-java-world/02-maven-gradle/",
 
-                "container-header": {
+                "container_header": {
 
                     "header_img_filename": "java-black.png",
                     "header_img_classname": "img-h-1-3",
                     "header_title": "Maven & Gradle"
                 },
 
-                "container-card-list": [
+                "container_card_list": [
 
                     {
                         "img_filename": "01-yt-maven-grundlagen.png",
@@ -459,14 +691,14 @@
             {
                 "img_path_folder": "01-java-world/03-spring-boot/01-spring-boot/",
 
-                "container-header": {
+                "container_header": {
 
                     "header_img_filename": "java-black.png",
                     "header_img_classname": "img-h-1-3",
                     "header_title": "Spring Boot (1/4)"
                 },
 
-                "container-card-list": [
+                "container_card_list": [
 
                     {
                         "img_filename": "spring-boot-grundlagen.png",
@@ -478,6 +710,745 @@
                         "pdf_url":"https://dev.java/",
                         "status_text": "Coming Soon"
                     }
+                ]
+
+            },
+
+            {
+                "img_path_folder": "01-java-world/03-spring-boot/02-spring-boot/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Spring Boot (2/4)"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "01-Amigocode-MS-Spring-Cloud-1.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "01-Amigocode-MS-Spring-Cloud-2.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "03-Amigocode-Service-Discovery-MS.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "04-Amigocode-Loadbalancer.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "01-java-world/03-spring-boot/03-spring-boot/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Spring Boot (3/4)"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "01-yt-amigo-spring-boot-2025.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "02-yt-amigo-10-mistakes.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "03-yt-amigo-exception-handling.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "04-yt-amigo-spring-boot-ai.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "05-yt-amigo-json-web-token.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "06-yt-amigo-jwt-auth.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "01-java-world/03-spring-boot/04-spring-boot/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Spring Boot (4/4)"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "07-yt-building-web-app-spring-boot.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "08-yt-amigo-spring-boot-angular.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "09-yt-amigo-spring-boot-react-aws.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "10-yt-spring-boot-postgresql.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "11-yt-spring-security-login-email.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
+            },
+
+            {
+                "img_path_folder": "01-java-world/04-jakarta-ee-quarkus/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Jakarta EE & Quarkus"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "jakarta-ee-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
+            },
+
+            {
+                "img_path_folder": "01-java-world/06-junit-mockito-spring-boot/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Unit & Integrationtest ( JUnit & Mockito )"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "02-yt-unit-integration-testing-amigocode.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "01-yt-junit-mockito-spring-boot-testing.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
+            }
+
+        ]
+    },
+
+    "apis": {
+
+        "defaults": {
+            "img_path_folder": "03-software-dev/03-apis/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "img_path_folder": "01-apis/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "API's"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "apis-webservices.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "rest-api-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "graphql-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "03-rest-graphql-grpc.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "stripe-api-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "chartjs-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+                ]
+
+            },
+
+            {
+                "img_path_folder": "02-swagger/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Swagger"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "01-swagger-doku-expressjs-crud.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "02-swagger-doku.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "03-swagger-spring-boot-jwt.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "04-swagger-to-spring-boot-java-brain.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                    {
+                        "img_filename": "05-swagger-configure-in-spring-boot-java-brain.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "03-postman/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Postman"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "07-postman-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            }
+
+
+
+        ]
+    },
+
+    "software_quality": {
+
+        "defaults": {
+            "img_path_folder": "03-software-dev/04-software-quality/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "img_path_folder": "",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Software Quality"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "01-clean-code-solid-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+                     {
+                        "img_filename": "02-qe-testen-refactoring-metriken.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            }
+
+        ]
+    },
+
+    "data_science": {
+
+        "defaults": {
+            "img_path_folder": "03-software-dev/05-data-science/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "img_path_folder": "01-statistic/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Statistic"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "01-Statistik.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "02-Statistik.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "03-Statistik.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "04-Statistik.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "02-data-science/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Data Science"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "data-science-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            }
+
+        ]
+    },
+
+    "software_architecture": {
+
+        "defaults": {
+            "img_path_folder": "04-backend/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "img_path_folder": "01-software-architecture/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Software Architecture"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "sa-1-grundbegriffe.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "sa-2-architekturmuster.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "sa-3-architekturbewertung.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "sa-4-architekturdokumentation.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "sa-5-qualitaetsmerkmale.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "sa-6-moderne-webarchitekturen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "sa-7-isaqb.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            }
+
+        ]
+    },
+
+    "database": {
+
+        "defaults": {
+            "img_path_folder": "04-backend/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "img_path_folder": "02-database/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Database"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "db-normalformen-er.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "sql-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "postgresql-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "mongodb-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            }
+
+        ]
+    },
+
+    "devops": {
+
+        "defaults": {
+            "img_path_folder": "04-backend/"
+        },
+
+        "it_doc_card_containers": [
+
+            {
+                "img_path_folder": "03-devops/01-dev-ops-grundlagen/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "DevOps Grundlagen"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "dev-ops-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "02-microservices/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Microservice Grundlagen"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "microservice-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "03-apache-kafka/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Apache Kafka"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "kafka-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "kafka-erweiterte-konzepte.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "kafka-entscheidungstraeger.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "01-yt-apache-kafka-ms-concepts.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "02-yt-spring-boot-kafka-java-guides.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "01-yt-kafka-spring-boot-microservices.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "05-docker-kubernetes/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Docker & Kubernetes"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "docker-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    },
+
+                    {
+                        "img_filename": "kubernetes-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "06-cloud-architecture/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Cloud Architecture"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "cloud-architekt-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "08-linux/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Linux"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "linux-befehelszeile-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
+                ]
+
+            },
+
+            {
+                "img_path_folder": "09-graphana-prometheus/",
+
+                "container_header": {
+
+                    "header_img_filename": "java-black.png",
+                    "header_img_classname": "img-h-1-3",
+                    "header_title": "Graphana & Prometheus"
+                },
+
+                "container_card_list": [
+
+                    {
+                        "img_filename": "graphana-prometheus-grundlagen.png",
+                        "pdf_url":"https://dev.java/",
+                        "status_text": "Coming Soon"
+                    }
+
                 ]
 
             }
