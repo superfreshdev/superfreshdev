@@ -117,23 +117,25 @@
 
 
       // Parent Header
-      var newHeader = createHeaderClass( "my-it-docs-card-container-header");
+      const newHeader = createHeaderClass( "my-it-docs-card-container-header");
 
-          // create dom
-          var newTitleElement = createDivClass( "my-it-docs-card-container-header-title" );
+        // create dom
+        var newTitleElement = createDivClass( "my-it-docs-card-container-header-title" );
 
-          // create doms
-          var imgTitle = createImg( dataHeader.img_filename, dataHeader.img_css_class ) ;
-          var textTitle = createDivText( dataHeader.title )
+        // create doms
+        var imgTitle = createImg( dataHeader.img_filename, dataHeader.img_css_class ) ;
+        var textTitle = createDivText( dataHeader.title )
 
-          // add doms to 'newTitleElement'
-          newTitleElement.append( imgTitle );
-          newTitleElement.append( textTitle );
+        // add doms to 'newTitleElement'
+        newTitleElement.append( imgTitle );
+        newTitleElement.append( textTitle );
 
-          // add 'newTitleElement' to 'new header'
-          newHeader.append( newTitleElement );
+        // add 'newTitleElement' to 'new header'
+        newHeader.append( newTitleElement );
 
-          add_root_point_it_docs_content.append( newHeader )
+
+        // add 'new header' to 'root element'
+        add_root_point_it_docs_content.append( newHeader )
 
     }
 
@@ -173,7 +175,7 @@
             const data = await response.json();
 
             /* -------------------------------------------------- */
-            /* Step 1 | Get Default
+            /* Step 1 | Get Default Datas
             /* -------------------------------------------------- */
 
             var def_img_path_img_card = data.defaults.img_path_img_card;
@@ -185,69 +187,68 @@
             // console.log("⚠️⚠️⚠️⚠️")
 
             /* -------------------------------------------------- */
-            /* Step 2 | Get Concrete Data Obj by Setted Index
+            /* Step 2 | Get Data Obj by Setted Index
             /* -------------------------------------------------- */
-
 
             var data_doc_category =  get_data_it_doc_category_by_index( data, settedIndex )
 
 
-              // if "Concrete Data Obj" was not found by setted Index
-              if( data_doc_category == -1 ) {
+            // Was Data Obj by Setted Index found ?
+            if( data_doc_category != -1 ) {
 
-                console.log( "🔴| No Data Object was found in json file");
+              // was found
+
+              console.log( "🦍:(settedIndex)= " + settedIndex)
+              console.log( "🦍:(objData)= " + data_doc_category.defaults.img_path_folder )
+
+              /* --------------------------------------------------------- */
+              /* Step 1 | Delete old Doc Containers if any exist
+              /* --------------------------------------------------------- */
+
+              // removeAllGivenDomElements( add_root_point_it_docs_content, "header" )
+
+              var selectorCheck = document.querySelectorAll( "#js-add-it-docs > header" )
+              var deleteSelectors = selectorCheck.length;
+
+              if( deleteSelectors > 0 ) {
+
+                console.log( "🔥 to delete = " + deleteSelectors )
+
+                for( let i=0; i < deleteSelectors; i++ ) {
+
+                   console.log( i + ": Delete= " + selectorCheck[i].innerHTML )
+
+                   selectorCheck[i].remove();
+                }
+
+
 
               } else {
 
-                // was found
-
-                console.log("🦍:(settedIndex)= " + settedIndex)
-                console.log( "🦍:(objData)= " + data_doc_category.defaults.img_path_folder )
-
+                console.log( "🌵 nothing to delete = " + deleteSelectors )
 
               }
 
-            /* ---------------------------------------------------------------- */
-            /* 🟥 Step 2: Use Data to Create New Layout & Delete Old Layout
-            /* ---------------------------------------------------------------- */
 
-                /* -------------------------------------------------------- */
-                /* Step 2.1 | Check | Exist Layout then delete first
-                /* -------------------------------------------------------- */
+              /* --------------------------------------------------------- */
+              /* Step 2 | Create Layout Doc Containers
+              /* --------------------------------------------------------- */
 
-                // Universal, dom element und query selector 1
+              var dataDocContainers = data_doc_category.it_doc_card_containers;
+              var maxDocContainers = data_doc_category.it_doc_card_containers.length;
 
-                /* -------------------------------------------------------- */
-                /* Step 2.2 | Create | It Doc Card Container Header
-                /* -------------------------------------------------------- */
-
-                  /* ---------------------------------------------- */
-                  /* Step 1: get all data of it doc card containers
-                  /* ---------------------------------------------- */
-
-                  var data_it_doc_containers = data_doc_category.it_doc_card_containers;
-
-                  // lenght of it doc containers
-                  var count_it_doc_containers = data_it_doc_containers.length;
-
-                  console.log( "🌳 Doc Container Count = " + count_it_doc_containers );
+              console.log( "🌳 (Max Doc Containers) = " + maxDocContainers );
 
 
-                  /* ---------------------------------------------------------- */
-                  /* Delete old 'doc container header' if they exist
-                  /* ---------------------------------------------------------- */
-                  removeAllGivenDomElements( add_root_point_it_docs_content, "header" )
 
-
-                  // Step 2: Add Each Doc Container to add Root Element
-                  for( let i=0; i < count_it_doc_containers; i++ ) {
+                  for( let i=0; i < maxDocContainers; i++ ) {
 
 
                     /* -------------------------------------------------- */
                     /* [1/3] | Create It Doc Container Header
                     /* -------------------------------------------------- */
-                    create_layout_it_doc_card_container_header( data_it_doc_containers[i].container_header )
 
+                    create_layout_it_doc_card_container_header( dataDocContainers[i].container_header )
 
                     /* -------------------------------------------------- */
                     /* [2/3] | Create It Doc Container Header
@@ -260,11 +261,22 @@
                   }
 
 
+            } else {
+
+               console.log( "🔴:{data_doc_category = -1}: No Data Object was found in json file");
+
+            }
+
+
+
+
+
+
 
 
         } catch (error) {
 
-            console.log("🔴: Can't get JSON-File (error) | " + error )
+            console.log("🔴: Can't get / work with JSON-File correctly - " + error )
 
         }
 
