@@ -1,4 +1,4 @@
-console.log("🟨 close-about-view.js")
+// console.log("🟨 close-about-view.js")
 
 // checkbox about nav
 const chkAboutNav = document.getElementById("chk-about-nav");

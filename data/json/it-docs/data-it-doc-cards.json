@@ -1,8 +1,6 @@
 {
     "defaults": {
 
-        "img_path_white_imgs": "media/img/02-icon-colors/02-white/",
-        "img_path_tech_imgs": "media/img/icons/04-tech-logos/",
         "img_path_img_card": "media/img/content/03-it-docs/",
         "pdf_text": "Show PDF"
     },
@@ -20,9 +18,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "white-brackets-open-close.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Web-Basic's"
+                    "img_filename": "media/img/icons/02-icon-colors/02-white/white-mini-flag.png",
+                    "img_css_class": "img-h-1-2",
+                    "title": "Web-Basic's"
 
                 },
 
@@ -70,13 +68,12 @@
         "it_doc_card_containers": [
 
             {
-                "img_path_folder": "",
 
                 "container_header": {
 
-                    "header_img_filename": "white-brackets-open-close.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Software Basic's"
+                    "img_filename": "media/img/icons/02-icon-colors/02-white/white-mini-flag.png",
+                    "img_css_class": "img-h-1-2",
+                    "title": "Software Basic's"
 
                 },
 
@@ -123,9 +120,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "white-brackets-open-close.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Algorithmn & Datastructures"
+                    "img_filename": "media/img/icons/02-icon-colors/02-white/white-algorithmn.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Algorithmn & Datastructures"
 
                 },
 
@@ -171,9 +168,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "white-brackets-open-close.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Git World"
+                    "img_filename": "media/img/icons/04-tech-logos/git.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Git World"
 
                 },
 
@@ -229,9 +226,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "white-brackets-open-close.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Nexus Repo"
+                    "img_filename": "media/img/icons/04-tech-logos/nexus.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Nexus Repo"
 
                 },
 
@@ -259,9 +256,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "white-brackets-open-close.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Jenkins"
+                    "img_filename": "media/img/icons/04-tech-logos/jenkins.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Jenkins"
 
                 },
 
@@ -283,9 +280,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "white-brackets-open-close.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "IDE's & Windows Terminal"
+                    "img_filename": "media/img/icons/02-icon-colors/02-white/white-binary-small.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "IDE's & Windows Terminal"
 
                 },
 
@@ -317,9 +314,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "white-brackets-open-close.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Confluence & Jira"
+                    "img_filename": "media/img/icons/02-icon-colors/02-white/white-star-winner.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Confluence & Jira"
 
                 },
 
@@ -359,9 +356,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "white-brackets-open-close.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Expertise"
+                    "img_filename": "media/img/icons/02-icon-colors/02-white/white-open-book.png",
+                    "img_css_class": "img-h-1-1",
+                    "title": "Expertise"
 
                 },
 
@@ -399,9 +396,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Type Script"
+                    "img_filename": "media/img/icons/04-tech-logos/ts.png",
+                    "img_css_class": "img-h-1-2",
+                    "title": "Type Script"
 
                 },
 
@@ -419,15 +416,15 @@
             {
                 "img_path_folder": "02-angular/01-angular17/",
 
-                "it_doc_cards_header": {
+                "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Angular 17 (2022)"
+                    "img_filename": "media/img/icons/04-tech-logos/angular.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Angular 17 (2022)"
 
                 },
 
-                "it_doc_cards": [
+                "container_card_list": [
 
                     {
                         "img_filename": "ang17-oekosystem.png",
@@ -476,15 +473,15 @@
             {
                 "img_path_folder": "02-angular/02-angular19",
 
-                "it_doc_cards_header": {
+                "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Angular 19 (2023+)"
+                    "img_filename": "media/img/icons/04-tech-logos/angular19.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Angular 19 (2023+)"
 
                 },
 
-                "it_doc_cards": [
+                "container_card_list": [
 
                     {
                         "img_filename": "ang19-rxjs.png",
@@ -504,15 +501,15 @@
             {
                 "img_path_folder": "03-react/",
 
-                "it_doc_cards_header": {
+                "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "React"
+                    "img_filename": "media/img/icons/04-tech-logos/react-new.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "React"
 
                 },
 
-                "it_doc_cards": [
+                "container_card_list": [
 
                     {
                         "img_filename": "React-Grundlagen.png",
@@ -527,15 +524,15 @@
             {
                 "img_path_folder": "04-js-backend/",
 
-                "it_doc_cards_header": {
+                "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "JS Backend"
+                    "img_filename": "media/img/icons/02-icons-colors/settings.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "JS Backend"
 
                 },
 
-                "it_doc_cards": [
+                "container_card_list": [
 
                     {
                         "img_filename": "nodejs-grundlagen.png",
@@ -562,15 +559,15 @@
             {
                 "img_path_folder": "05-web-it-tools/",
 
-                "it_doc_cards_header": {
+                "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Web IT-Tool's"
+                    "img_filename": "media/img/icons/02-icons-colors/settings.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Web IT-Tool's"
 
                 },
 
-                "it_doc_cards": [
+                "container_card_list": [
 
                     {
                         "img_filename": "npm-coder-codeer.png",
@@ -591,15 +588,15 @@
             {
                 "img_path_folder": "06-react-native-lynx/",
 
-                "it_doc_cards_header": {
+                "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "React Native ( Mobile Dev )"
+                    "img_filename": "media/img/icons/04-tech-logos/react-new.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "React Native ( Mobile Dev )"
 
                 },
 
-                "it_doc_cards": [
+                "container_card_list": [
 
                     {
                         "img_filename": "react-native-grundlagen.png",
@@ -626,9 +623,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Java"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Java"
                 },
 
                 "container_card_list": [
@@ -657,9 +654,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Maven & Gradle"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Maven & Gradle"
                 },
 
                 "container_card_list": [
@@ -693,9 +690,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Spring Boot (1/4)"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Spring Boot (1/4)"
                 },
 
                 "container_card_list": [
@@ -719,9 +716,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Spring Boot (2/4)"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Spring Boot (2/4)"
                 },
 
                 "container_card_list": [
@@ -759,9 +756,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Spring Boot (3/4)"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Spring Boot (3/4)"
                 },
 
                 "container_card_list": [
@@ -811,9 +808,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Spring Boot (4/4)"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Spring Boot (4/4)"
                 },
 
                 "container_card_list": [
@@ -856,9 +853,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Jakarta EE & Quarkus"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Jakarta EE & Quarkus"
                 },
 
                 "container_card_list": [
@@ -877,9 +874,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Unit & Integrationtest ( JUnit & Mockito )"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Unit & Integrationtest ( JUnit & Mockito )"
                 },
 
                 "container_card_list": [
@@ -914,9 +911,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "API's"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "API's"
                 },
 
                 "container_card_list": [
@@ -960,9 +957,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Swagger"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Swagger"
                 },
 
                 "container_card_list": [
@@ -1002,9 +999,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Postman"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Postman"
                 },
 
                 "container_card_list": [
@@ -1037,9 +1034,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Software Quality"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Software Quality"
                 },
 
                 "container_card_list": [
@@ -1075,9 +1072,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Statistic"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Statistic"
                 },
 
                 "container_card_list": [
@@ -1115,9 +1112,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Data Science"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Data Science"
                 },
 
                 "container_card_list": [
@@ -1148,9 +1145,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Software Architecture"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Software Architecture"
                 },
 
                 "container_card_list": [
@@ -1217,9 +1214,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Database"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Database"
                 },
 
                 "container_card_list": [
@@ -1268,9 +1265,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "DevOps Grundlagen"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "DevOps Grundlagen"
                 },
 
                 "container_card_list": [
@@ -1290,9 +1287,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Microservice Grundlagen"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Microservice Grundlagen"
                 },
 
                 "container_card_list": [
@@ -1312,9 +1309,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Apache Kafka"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Apache Kafka"
                 },
 
                 "container_card_list": [
@@ -1364,9 +1361,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Docker & Kubernetes"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Docker & Kubernetes"
                 },
 
                 "container_card_list": [
@@ -1392,9 +1389,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Cloud Architecture"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Cloud Architecture"
                 },
 
                 "container_card_list": [
@@ -1414,9 +1411,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Linux"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Linux"
                 },
 
                 "container_card_list": [
@@ -1436,9 +1433,9 @@
 
                 "container_header": {
 
-                    "header_img_filename": "java-black.png",
-                    "header_img_classname": "img-h-1-3",
-                    "header_title": "Graphana & Prometheus"
+                    "img_filename": "java-black.png",
+                    "img_css_class": "img-h-1-3",
+                    "title": "Graphana & Prometheus"
                 },
 
                 "container_card_list": [
