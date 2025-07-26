@@ -99,11 +99,11 @@
       /* > Get Datas from 'Doc Container Header'
       /* ------------------------------------------------------ */
 
-      console.log('⭐ = ' + dataHeader.title )
-      console.log('🪲 = ' + dataHeader.img_filename )
-      console.log('😶‍🌫️ = ' + dataHeader.img_css_class )
+      // console.log('⭐ = ' + dataHeader.title )
+      // console.log('🪲 = ' + dataHeader.img_filename )
+      // console.log('😶‍🌫️ = ' + dataHeader.img_css_class )
 
-      console.log('-------------')
+      // console.log('-------------')
 
       /* ------------------------------------------------------ */
       /* Step 2:
@@ -179,10 +179,10 @@
             var def_img_path_img_card = data.defaults.img_path_img_card;
             var def_pdf_text = data.defaults.pdf_text;
 
-            console.log("⚠️⚠️⚠️⚠️")
-            console.log("🛠️ = " + def_img_path_img_card )
-            console.log("🛠️ = " + def_pdf_text )
-            console.log("⚠️⚠️⚠️⚠️")
+            // console.log("⚠️⚠️⚠️⚠️")
+            // console.log("🛠️ = " + def_img_path_img_card )
+            // console.log("🛠️ = " + def_pdf_text )
+            // console.log("⚠️⚠️⚠️⚠️")
 
             /* -------------------------------------------------- */
             /* Step 2 | Get Concrete Data Obj by Setted Index
@@ -202,7 +202,7 @@
                 // was found
 
                 console.log("🦍:(settedIndex)= " + settedIndex)
-                console.log( "🦍🦍🦍: " + data_doc_category.defaults.img_path_folder )
+                console.log( "🦍:(objData)= " + data_doc_category.defaults.img_path_folder )
 
 
               }
@@ -230,7 +230,7 @@
                   // lenght of it doc containers
                   var count_it_doc_containers = data_it_doc_containers.length;
 
-                  console.log( "🌳 = " + count_it_doc_containers );
+                  console.log( "🌳 Doc Container Count = " + count_it_doc_containers );
 
 
                   /* ---------------------------------------------------------- */
@@ -248,9 +248,6 @@
                     /* -------------------------------------------------- */
                     create_layout_it_doc_card_container_header( data_it_doc_containers[i].container_header )
 
-                    // console.log('⭐ = ' + data_it_doc_containers[i].container_header.header_title )
-
-
 
                     /* -------------------------------------------------- */
                     /* [2/3] | Create It Doc Container Header
@@ -261,68 +258,6 @@
                     /* -------------------------------------------------- */
 
                   }
-
-
-
-
-                  // create_layout_it_doc_card_container_header(  )
-
-                  // delete first Dom Element
-                  // removeFirstDomElement( addRootPointDomElement, ".marko-class" )
-
-
-
-
-                /* -------------------------------------------------------- */
-                /* Step 2.3 |  Create | it doc card container list
-                /* -------------------------------------------------------- */
-
-
-
-
-
-
-
-
-            /* --------------------------------------- */
-            /* ❌❌❌ Müll
-            /* --------------------------------------- */
-
-              /*  for( let i=0; i < 2; i++ ) {
-
-                    console.log('🟨 Schleifen Durchlauf ' + i )
-
-                    // try to delete first dom element if exist
-                    removeFirstDomElement( addRootPointDomElement, ".marko-class" )
-
-                    // Create | Header Element
-                    var text = "fixi-foxy = " + (i+1);
-                    var newHeader = createHeaderClassText( "marko-class", text );
-
-                    // add new div to root
-                    addRootPointDomElement.append(  newHeader  )
-
-                  }
-            */
-
-            // get first Header Title of Doc Category
-            // var test = data_doc_category.it_doc_card_containers[0].container_header.header_title;
-
-
-            // var countDivs = addRootPointDomElement.querySelectorAll( ".class-Marko").length;
-
-            // delete first, if there exist 1 div
-            // if( countDivs == 1 ) {
-            //   addRootPointDomElement.querySelectorAll( ".class-Marko")[0].remove();
-            // }
-
-            // new div
-            // var newDivElement = createDivClassText( "class-Marko", test );
-
-            // add new div to root
-            // addRootPointDomElement.append(  newDivElement  )
-
-
 
 
 

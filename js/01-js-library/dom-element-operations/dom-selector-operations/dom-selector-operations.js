@@ -38,20 +38,24 @@
 
 
     var countSelectors = parentDom.querySelectorAll( querySelectorAll ).length;
-    console.log("🔥 (length) = " + countSelectors )
+    console.log("🔥 Delete before (length) = " + countSelectors )
 
     if( countSelectors >= 1 ) {
 
       // delete all dom elements
       for( let i=0; i < countSelectors; i++ ) {
 
+        /* ------------------------------------------------------ */
+        /* 🛑🛑🛑 BUG Array Index - bis 3 soll aber bis 5 - element dont exist
+        /* ------------------------------------------------------ */
+
+        console.log("🔥🔥🔥 = " + i )
+        console.log( parentDom.querySelectorAll( querySelectorAll )[i] )
+
         parentDom.querySelectorAll( querySelectorAll )[i].remove();
 
       }
 
-    } else {
-
-      console.log("⚠️: cant removing all dom elements - no existing any one ")
     }
 
   }
