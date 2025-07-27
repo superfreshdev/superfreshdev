@@ -5,7 +5,7 @@
 /* Create Img ( img path & class name )
 /* ----------------------------------------------------------------------------------- */
 
-function createImg( imgPath, className ) {
+function createImgClass( imgPath, className ) {
 
     var newImg = document.createElement('img');
 

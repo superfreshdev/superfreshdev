@@ -1,5 +1,6 @@
-// console.log("🟨 read-it-docs-data.js")
+console.log("🟨 read-it-docs-data.js")
 
+// ⚠️⚠️⚠️ umändern -> Create It Doc Category Container
 
 /*
 
@@ -7,41 +8,41 @@
   ### Logic Steps ###
   #################################################
 
-  # 🟥 Step 1:
-  > Relation to Setted Index and Data ( it docs json file )
-    > Extra Method
+  #🟥 Step 1/2:
+  > Read Concrete Data Obj from Json File by given settedIndex
+  from setted IT Doc Category
 
-  # 🟥 Step 2:
-  > If another Content is setted, than overwrite old layout with new one
-    > Extra Check Method
-  > Method to read complete Data Strucutre & by the way it create the layout & close nav list
-    > List of Methods
-
-  # 🟥 Step X1:
-  > if "choose doc category" is setted, delete layout structure and close nav list
-    > Extra Method
+  #🟥 Step 2/2:
+  > Create to 'add Parent Point' the docs card containers
+  with their 'container header' & 'container card list'
 
 ###################################################
 
 */
 
-/* -------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 /* ⬛ DOM Elements
-/* -------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 
-/* -------------------------------------------------------- */
+// parent Dom Element to add all layouts
+const add_to_it_docs_content_list = document.getElementById('my-it-docs-content-list');
+
+
+/* ------------------------------------------------------------------------------ */
 /* ⬛ VAR Elements
-/* -------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 
-/* -------------------------------------------------------- */
+// parent of 'container header' & 'container card list'
+var string_class_docs_card_container = "my-it-docs-card-container";
+
+
+/* ------------------------------------------------------------------------------ */
 /* ⬛ Functions
-/* -------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ */
 
-  /* ------------------------------- */
-  /* Help Function
-  /* ------------------------------- */
-
-    // Get Data from Json File by setted index
+    // Get Concrete Data from Json File By Setted Index
+    // i: i want json file more readable so i define first elements by name
+    //    & not by array index
     function get_data_it_doc_category_by_index ( jsonData, settedIndex ) {
 
 
@@ -81,40 +82,22 @@
 
     }
 
-
-  /* ----------------------------------------------------- */
-  /* Create Layout Element Functions
-  /* ----------------------------------------------------- */
-
-    /* --------------------------------------- */
-    /* Create IT Doc Card Container Header
-    /* --------------------------------------- */
-
+    // Create Layout - IT Doc Card Container Header
     function create_layout_it_doc_card_container_header( dataHeader ) {
 
 
-
       /* ------------------------------------------------------ */
-      /* Step 1:
-      /* > Get Datas from 'Doc Container Header'
+      /* Just for Testing to get Data
       /* ------------------------------------------------------ */
 
       // console.log('⭐ = ' + dataHeader.title )
       // console.log('🪲 = ' + dataHeader.img_filename )
       // console.log('😶‍🌫️ = ' + dataHeader.img_css_class )
-
       // console.log('-------------')
-
-      /* ------------------------------------------------------ */
-      /* Step 2:
-      /* > Build Layout 'Doc Container Header'
-      /* ------------------------------------------------------ */
-
 
       /* --------------------------------------------------------- */
       /* Create Layout Process | Doc Container Header
       /* --------------------------------------------------------- */
-
 
       // Parent Header
       const newHeader = createHeaderClass( "my-it-docs-card-container-header");
@@ -123,7 +106,7 @@
         var newTitleElement = createDivClass( "my-it-docs-card-container-header-title" );
 
         // create doms
-        var imgTitle = createImg( dataHeader.img_filename, dataHeader.img_css_class ) ;
+        var imgTitle = createImgClass( dataHeader.img_filename, dataHeader.img_css_class ) ;
         var textTitle = createDivText( dataHeader.title )
 
         // add doms to 'newTitleElement'
@@ -133,11 +116,97 @@
         // add 'newTitleElement' to 'new header'
         newHeader.append( newTitleElement );
 
-
-        // add 'new header' to 'root element'
-        add_root_point_it_docs_content.append( newHeader )
+        return newHeader
 
     }
+
+    // Create Layout - IT Doc Card Container Card List
+    function create_layout_it_doc_card_container_card_list( defaultImgPath, dataCardList ) {
+
+
+      /* ------------------------------------------------------ */
+      /* Just for Testing to get Data
+      /* ------------------------------------------------------ */
+
+       // default img card path
+      console.log("🐸 (default Img Path)= " + defaultImgPath )
+
+      for( let i=0; i < dataCardList.length; i++ ) {
+
+        console.log('⭐ = ' + dataCardList[i].img_filename )
+        console.log('🪲 = ' + dataCardList[i].pdf_url )
+        console.log('😶‍🌫️ = ' + dataCardList[i].status_text )
+        console.log('-------------')
+
+      }
+
+      /* ------------------------------------- */
+      /* Dom Elements of Container Card List
+      /* ------------------------------------- */
+
+      // container card list
+      var string_class_docs_card_container_card_list = "my-it-docs-card-container-card-list";
+
+      // ny ut dics card
+      var string_class_docs_card = "my-it-docs-card";
+      var string_class_docs_card_img = "my-it-docs-card-img";
+      var string_class_docs_card_link_container = "my-it-docs-card-link-container";
+
+      // Status Divs
+      var string_class_docs_in_progress_element = "it-doc-in-progress-element";
+      var string_class_docs_coming_soon_element = "it-doc-coming-soon-element";
+      var string_class_docs_acutally_no_priority_element = "it-doc-actually_no_priority-element";
+
+
+      /* --------------------------------------------------------- */
+      /* Create Layout Process
+      /* > Create Container Card List with all IT Doc Cards
+      /* --------------------------------------------------------- */
+
+      // create | container card list
+      var newCardList = createDivClass( string_class_docs_card_container_card_list )
+
+
+      // create | tt doc card's
+      for( let i=0; i < dataCardList.length; i++ ) {
+
+        // create | it doc card
+        var newItDocCard = createDivClass( string_class_docs_card );
+
+            // -------------------------------------- */
+            /* Create IMG & ADD
+            /* -------------------------------------- */
+
+            var imgPath = defaultImgPath + dataCardList[i].img_filename;
+            var newImgItDocCard = createImgClass( imgPath, string_class_docs_card_img )
+
+            // add img to 'it docs card'
+            newItDocCard.append( newImgItDocCard )
+
+            // -------------------------------------- */
+            /* Create Link & ADD
+            /* -------------------------------------- */
+
+            // create optional
+            // status: in progress, coming soon, actually no priority
+
+        // -------------------------------------- */
+        /* Add to 'new card list'
+        /* -------------------------------------- */
+
+        newCardList.append( newItDocCard );
+
+      }
+
+      return newCardList;
+
+    }
+
+
+
+
+
+
 
 
 
@@ -149,21 +218,20 @@
     /* ---------------------------------------------------------- */
     /*  Get JSON File |
     /* > read data by settedIndex
-    /* > use add root point to add the data layout elements
-    /* > create data layout elements
+    /* > use add Parent Point to adding all creating layouts
     /* ---------------------------------------------------------- */
 
-    async function get_data_from_it_doc_cards( filename, settedIndex, addRootPointDomElement ) {
+    async function get_data_from_it_doc_cards( jsonFile , settedIndex ) {
 
-
-      /* ---------------------------------------------------------------- */
-      /* Try to get JSON File, Read & Create Layout Elements
-      /* ---------------------------------------------------------------- */
 
       try {
 
+            /* -------------------------------------------------- */
+            /* Step 1 | Try to Get & Read Json File
+            /* -------------------------------------------------- */
+
             // try to get json file
-            const response = await fetch( filename );
+            const response = await fetch( jsonFile );
 
             // if not ok
             if( !response.ok ) {
@@ -175,25 +243,28 @@
             const data = await response.json();
 
             /* -------------------------------------------------- */
-            /* Step 1 | Get Default Datas
+            /* Step 2 | Get Default Datas from JSON File
             /* -------------------------------------------------- */
 
-            var def_img_path_img_card = data.defaults.img_path_img_card;
-            var def_pdf_text = data.defaults.pdf_text;
+            var main_img_docs_path = data.defaults.img_doc_cards_path;
+            var pdf_docs_link_text = data.defaults.pdf_link_text;
 
-            // console.log("⚠️⚠️⚠️⚠️")
-            // console.log("🛠️ = " + def_img_path_img_card )
-            // console.log("🛠️ = " + def_pdf_text )
-            // console.log("⚠️⚠️⚠️⚠️")
+            console.log("⚠️⚠️⚠️⚠️")
+            console.log("🛠️ = " +  main_img_docs_path )
+            console.log("🛠️ = " + pdf_docs_link_text )
+            console.log("⚠️⚠️⚠️⚠️")
 
             /* -------------------------------------------------- */
-            /* Step 2 | Get Data Obj by Setted Index
+            /* Step 3 | Get Concrete Data by Setted Index
             /* -------------------------------------------------- */
 
-            var data_doc_category =  get_data_it_doc_category_by_index( data, settedIndex )
+            var data_doc_category =  get_data_it_doc_category_by_index( data , settedIndex )
 
 
-            // Was Data Obj by Setted Index found ?
+            /* -------------------------------------------------- */
+            /* Step 4 | Check if settedIndex was found
+            /* -------------------------------------------------- */
+
             if( data_doc_category != -1 ) {
 
               // was found
@@ -205,57 +276,64 @@
               /* Step 1 | Delete old Doc Containers if any exist
               /* --------------------------------------------------------- */
 
-              // removeAllGivenDomElements( add_root_point_it_docs_content, "header" )
-
-              var selectorCheck = document.querySelectorAll( "#js-add-it-docs > header" )
-              var deleteSelectors = selectorCheck.length;
-
-              if( deleteSelectors > 0 ) {
-
-                console.log( "🔥 to delete = " + deleteSelectors )
-
-                for( let i=0; i < deleteSelectors; i++ ) {
-
-                   console.log( i + ": Delete= " + selectorCheck[i].innerHTML )
-
-                   selectorCheck[i].remove();
-                }
-
-
-
-              } else {
-
-                console.log( "🌵 nothing to delete = " + deleteSelectors )
-
-              }
-
+              // delete class elements
+              removeDomElementsBySelector( add_to_it_docs_content_list , "."+string_class_docs_card_container )
 
               /* --------------------------------------------------------- */
               /* Step 2 | Create Layout Doc Containers
               /* --------------------------------------------------------- */
 
+              // get full img path of doc category
+              var category_img_path = data_doc_category.defaults.img_card_path;
+              var img_docs_path = main_img_docs_path + category_img_path;
+
+              // data Doc Containers & Count of Doc Containers
               var dataDocContainers = data_doc_category.it_doc_card_containers;
               var maxDocContainers = data_doc_category.it_doc_card_containers.length;
 
               console.log( "🌳 (Max Doc Containers) = " + maxDocContainers );
 
 
+                  /* -------------------------------------------------- */
+                  /* Creating Containers with "It Doc Cards"
+                  /* -------------------------------------------------- */
 
                   for( let i=0; i < maxDocContainers; i++ ) {
 
 
                     /* -------------------------------------------------- */
-                    /* [1/3] | Create It Doc Container Header
+                    /* [1/5] | Create | Card Container
                     /* -------------------------------------------------- */
 
-                    create_layout_it_doc_card_container_header( dataDocContainers[i].container_header )
+                    var newDocCardContainer = createDivClass( string_class_docs_card_container );
+
+                        /* -------------------------------------------------- */
+                        /* Create | Container Header
+                        /* -------------------------------------------------- */
+
+                        var newHeader = create_layout_it_doc_card_container_header( dataDocContainers[i].container_header )
+
+                        // add 'new header' to 'new Doc Card Container'
+                        newDocCardContainer.append( newHeader )
+
+
+                        /* -------------------------------------------------- */
+                        /* Create | Container Card List
+                        /* -------------------------------------------------- */
+
+                        var newCardListContainer = create_layout_it_doc_card_container_card_list( img_docs_path , dataDocContainers[i].container_card_list )
+
+                        // add 'new card list' to 'new Doc Card Container'
+                        newDocCardContainer.append( newCardListContainer )
 
                     /* -------------------------------------------------- */
-                    /* [2/3] | Create It Doc Container Header
+                    /* [4/5] | Final | Add to Parent
                     /* -------------------------------------------------- */
 
+                    add_to_it_docs_content_list.append( newDocCardContainer )
+
                     /* -------------------------------------------------- */
-                    /* [3/3] | Add Finished IT Doc Container to Root
+                    /* [5/5] | Add Extra Link Close Nav List
                     /* -------------------------------------------------- */
 
                   }
@@ -266,12 +344,6 @@
                console.log( "🔴:{data_doc_category = -1}: No Data Object was found in json file");
 
             }
-
-
-
-
-
-
 
 
         } catch (error) {

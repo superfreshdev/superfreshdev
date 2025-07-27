@@ -143,10 +143,10 @@
   }
 
   /* ------------------------------------------------------------- */
-  /* My IT Docs Card List
+  /* My IT Docs Card Container Card List
   /* ------------------------------------------------------------- */
 
-  .my-it-docs-card-list {
+  .my-it-docs-card-container-card-list {
 
     /* desktop */
     display: flex;

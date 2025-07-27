@@ -7,18 +7,14 @@
   ### Logic Steps ###
   #################################################
 
-  # 🟩 Step 1:
-  > Get Add Root Point Dom Element
-  > Get IDs of all existing IT Doc Category Radios
+  # 🟩 Step 1/2:
+  > Create to all it doc categories an 'change event listener'
+  to read concrete data from json file by setted index
 
-  # 🟥 Step 2:
-  > Create to all Radios an Change Listener to let read the correct record from json file
-
-  # 🟥 Step X1:
-  > Radio Index 0 = "choose doc category" reset layout and close nav list
-
-  # 🟥 Step X2:
-  > by new change update setted doc category
+  # 🟥 Step 2/2:
+  > Create for it doc categories 'choose doc category' an
+  extra 'change event listener' to allow to close nav list
+  & remove the layout card
 
 ###################################################
 
@@ -27,14 +23,15 @@
 /* ⬛ DOM Elements
 /* -------------------------------------------------------- */
 
-// Add Root Point - IT Docs Content
-const add_root_point_it_docs_content = document.getElementById('js-add-it-docs');
+// IT Doc Category "Choose Doc Category"
+const radio_it_docs_category_choose = document.getElementById('radio-my-it-docs-category');
 
-// ID of IT Docs Nav Radio "Choose Doc Category"
-const radio_id_it_docs_nav_choose = document.getElementById('radio-my-it-docs-category');
+/* -------------------------------------------------------- */
+/* ⬛ VAR Elements
+/* -------------------------------------------------------- */
 
-// ID List of IT Docs Nav Radios
-const radio_ids_of_it_docs_nav = [
+// IDs of IT Docs Nav Radios
+const radio_ids_of_it_docs_categories = [
 
   "radio-my-it-docs-web-basic",
   "radio-my-it-docs-software-basic",
@@ -51,11 +48,8 @@ const radio_ids_of_it_docs_nav = [
   "radio-my-it-docs-dev-ops"
 ]
 
-/* -------------------------------------------------------- */
-/* ⬛ VAR Elements
-/* -------------------------------------------------------- */
-
-var file_data_it_doc_cards = "data/json/it-docs/data-it-doc-cards.json";
+// file of it docs
+var file_it_docs_data = "data/json/it-docs/data-it-doc-cards.json";
 
 /* -------------------------------------------------------- */
 /* ⬛ Functions
@@ -65,8 +59,7 @@ var file_data_it_doc_cards = "data/json/it-docs/data-it-doc-cards.json";
   /* Add Change Listeners to "Doc Categories (radios)"
   /* ------------------------------------------------------- */
 
-  function add_change_listeners_to_it_doc_nav_radios ( stringIds ) {
-
+  function add_change_listeners_on_it_doc_categories_nav  ( stringIds ) {
 
     // Radio ID Elements
     for( let i=0; i < stringIds.length; i++ ) {
@@ -78,7 +71,7 @@ var file_data_it_doc_cards = "data/json/it-docs/data-it-doc-cards.json";
         /* -------------------------------------------------------- */
         /* Read Data Object by settedIndex from JSON File
         /* -------------------------------------------------------- */
-         get_data_from_it_doc_cards( file_data_it_doc_cards, i, add_root_point_it_docs_content )
+        get_data_from_it_doc_cards( file_it_docs_data , i )
 
       })
 
@@ -98,18 +91,20 @@ var file_data_it_doc_cards = "data/json/it-docs/data-it-doc-cards.json";
   /* ------------------------------------------------------- */
   /* Add Change Listeners to "Choose Doc Category"
   /* ------------------------------------------------------- */
-  radio_id_it_docs_nav_choose.addEventListener( 'change', () => {
+  radio_it_docs_category_choose.addEventListener( 'change', () => {
 
     // just testing
-    console.log("👷🏽‍♂️ Clicked | " + radio_id_it_docs_nav_choose.getAttribute("id") )
+    console.log("👷🏽‍♂️ Clicked | " + radio_it_docs_category_choose.getAttribute("id") )
 
   } )
 
-/* -------------------------------------------------------- */
+/* ------------------------------------------------------------------------ */
 /* ⬛ Execute
-/* -------------------------------------------------------- */
+/* ------------------------------------------------------------------------ */
 
-  /* ------------------------------------------- */
-  /* Action 1: Get Data by Setted Doc Category
-  /* ------------------------------------------- */
-  add_change_listeners_to_it_doc_nav_radios ( radio_ids_of_it_docs_nav )
+  /* ---------------------------------------------------------------------- */
+  /* Action 1:
+  /* > Create Change Listenrs on all IT Doc Categories Nav (radios)
+  /* ---------------------------------------------------------------------- */
+
+  add_change_listeners_on_it_doc_categories_nav ( radio_ids_of_it_docs_categories )

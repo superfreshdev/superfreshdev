@@ -7,54 +7,32 @@
 
 
   /* ----------------------------------------------------------------------------------- */
-  /* 🟩 Remove First Dom Element
+  /* 🟩 Remove All Given Dom Elements by given deleteSelector String
   /* ----------------------------------------------------------------------------------- */
 
-  function removeFirstDomElement( parentDom, querySelectorAll ) {
+  function removeDomElementsBySelector( parentDom , deleteSelector  ) {
 
-    // Step 1: get length of all selector Elements
+    // find all dom elements to delete
+    var selectorElements = parentDom.querySelectorAll( deleteSelector )
 
-    var countSelectors = parentDom.querySelectorAll( querySelectorAll ).length;
-    console.log("🌵 (length) = " + countSelectors )
+    // count all delete elements
+    var deleteElements = selectorElements.length;
 
-    if( countSelectors >= 1 ) {
+    // delete only by minimum found 1
+    if( deleteElements > 0 ) {
 
-      // delete first dom element by index 0
-      parentDom.querySelectorAll( querySelectorAll )[0].remove();
+      console.log( "🔥 to delete = " + deleteElements )
+
+      for( let i=0; i < deleteElements; i++ ) {
+
+        console.log( i + ": Delete= " + selectorElements[i].innerHTML )
+
+        selectorElements [i].remove();
+      }
 
     } else {
 
-      console.log("⚠️: no removing 'first-dom-element' ")
-    }
-
-
-  }
-
-  /* ----------------------------------------------------------------------------------- */
-  /* 🟩 Remove All Given Dom Elements
-  /* ----------------------------------------------------------------------------------- */
-
-  function removeAllGivenDomElements( parentDom, querySelectorAll ) {
-
-
-    var countSelectors = parentDom.querySelectorAll( querySelectorAll ).length;
-    console.log("🔥 Delete before (length) = " + countSelectors )
-
-    if( countSelectors >= 1 ) {
-
-      // delete all dom elements
-      for( let i=0; i < countSelectors; i++ ) {
-
-        /* ------------------------------------------------------ */
-        /* 🛑🛑🛑 BUG Array Index - bis 3 soll aber bis 5 - element dont exist
-        /* ------------------------------------------------------ */
-
-        console.log("🔥🔥🔥 = " + i )
-        console.log( parentDom.querySelectorAll( querySelectorAll )[i] )
-
-        parentDom.querySelectorAll( querySelectorAll )[i].remove();
-
-      }
+      console.log( "🌵 nothing to delete = " + deleteElements )
 
     }
 
