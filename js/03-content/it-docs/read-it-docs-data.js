@@ -171,6 +171,22 @@ var string_class_docs_card_container = "my-it-docs-card-container";
       for( let i=0; i < dataCardList.length; i++ ) {
 
         // create | it doc card
+
+        switch( dataCardList[i].status_text ) {
+
+          case "In Progress":
+            string_class_docs_card = "my-it-docs-card-in-progress";
+            break;
+          case "Coming Soon":
+            string_class_docs_card = "my-it-docs-card-coming-soon";
+            break;
+          case "Actually No Priority":
+            string_class_docs_card = "my-it-docs-card-actually-no-priority";
+            break;
+
+
+        }
+
         var newItDocCard = createDivClass( string_class_docs_card );
 
             // -------------------------------------- */
