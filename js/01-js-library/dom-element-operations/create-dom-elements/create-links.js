@@ -24,3 +24,27 @@ function createLink( linkPath ) {
     return newLink;
 
 }
+
+/* ----------------------------------------------------------------------------------- */
+/* Create Link ( link path )
+/* ----------------------------------------------------------------------------------- */
+
+function createLinkText( linkPath, text ) {
+
+    var newLink = document.createElement('a');
+    var linkTextNode = document.createTextNode( text );
+
+    // add css padding for better layout
+    newLink.style.padding = "0 6px";
+
+    newLink.appendChild( linkTextNode );
+
+    // set attribut src path
+    newLink.setAttribute( 'href' , linkPath );
+
+    // set attribut target for new tab
+    newLink.setAttribute( 'target' , '_blank' );
+
+    return newLink;
+
+}

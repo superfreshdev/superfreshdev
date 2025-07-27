@@ -28,28 +28,28 @@
                     {
                         "img_filename": "sass-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": "In Progress 25"
+                        "status_text": ""
                     },
 
                     {
                         "img_filename": "java-script/js-sprachgrundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": "Coming Soon 25"
+                        "status_text": "Coming Soon"
                     },
                     {
                         "img_filename": "java-script/js-programmiertechniken.png",
                         "pdf_url":"www.google.de",
-                        "status_text": "Actually No Priority"
+                        "status_text": "Coming Soon"
                     },
                     {
                         "img_filename": "java-script/js-debugging.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "Coming Soon"
                     },
                     {
                         "img_filename": "java-script/js-unit-testing.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "Coming Soon"
                     }
 
                 ]
@@ -92,7 +92,7 @@
                     {
                         "img_filename": "agile-software-entwicklung-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": "Actually No Priority"
+                        "status_text": ""
                     },
                     {
                         "img_filename": "ddd-grundlagen.png",
@@ -130,22 +130,22 @@
                     {
                         "img_filename": "aud-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "mathematik-fuer-programmierer-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "11-Data-Structures-Amigocode.png",
                         "pdf_url":"www.google.de",
-                        "status_text": "Actually No Priority"
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "types-of-algos.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "Actually No Priority"
                     }
 
                 ]
@@ -179,42 +179,42 @@
                     {
                         "img_filename": "01-git-world/git-github-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "01-git-world/git-grundkurs.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "01-git-world/git-tipps.png",
                         "pdf_url":"www.google.de",
-                        "status_text": "Actually No Priority"
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "01-git-world/git-github-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "01-git-world/git-amigocode.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "01-git-world/01-yt-gitlab-ci-cd-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "01-git-world/02-yt-gitlab-ci-cd-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "01-git-world/git-vscode-sourcetree-intellij.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     }
                 ]
 
@@ -236,13 +236,13 @@
                     {
                         "img_filename": "02-nexus/01-yt-nexus-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
 
                     {
                         "img_filename": "02-nexus/02-yt-nexus-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     }
 
                 ]
@@ -265,7 +265,7 @@
                     {
                         "img_filename": "03-jenkins/jenkins-ci-cd-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     }
 
                 ]
@@ -362,12 +362,12 @@
                     {
                         "img_filename": "versicherungen-grundlagen.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "fuehrungsqualitaeten-entwickeln.png",
                         "pdf_url":"www.google.de",
-                        "status_text": ""
+                        "status_text": "In Progress"
                     }
 
                 ]
@@ -400,7 +400,7 @@
                     {
                         "img_filename": "01-type-script/ts-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     }
                 ]
 
@@ -619,17 +619,17 @@
                     {
                         "img_filename": "01-java-world/01-java/java-1-3-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
                      {
                         "img_filename": "01-java-world/01-java/java-2-3-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Actually No Priority"
+                        "status_text": ""
                     },
                      {
                         "img_filename": "01-java-world/01-java/java-3-3-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "In Progress"
+                        "status_text": ""
                     }
                 ]
 
@@ -649,22 +649,22 @@
                     {
                         "img_filename": "01-java-world/02-maven-gradle/01-yt-maven-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
                      {
                         "img_filename": "01-java-world/02-maven-gradle/maven-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "01-java-world/02-maven-gradle/01-yt-gradle-grundlagen-1-2.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "01-java-world/02-maven-gradle/01-yt-gradle-grundlagen-2-2.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     }
                 ]
 
@@ -684,12 +684,12 @@
                     {
                         "img_filename": "01-java-world/03-spring-boot/01-spring-boot/spring-boot-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
                      {
                         "img_filename": "01-java-world/03-spring-boot/01-spring-boot/spring-boot-microservices.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     }
                 ]
 
@@ -901,12 +901,12 @@
                     {
                         "img_filename": "01-apis/apis-webservices.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
                      {
                         "img_filename": "01-apis/rest-api-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
                     {
                         "img_filename": "01-apis/graphql-grundlagen.png",
@@ -947,27 +947,27 @@
                     {
                         "img_filename": "02-swagger/01-swagger-doku-expressjs-crud.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
                      {
                         "img_filename": "02-swagger/02-swagger-doku.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "02-swagger/03-swagger-spring-boot-jwt.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "02-swagger/04-swagger-to-spring-boot-java-brain.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
                     {
                         "img_filename": "02-swagger/05-swagger-configure-in-spring-boot-java-brain.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     }
 
                 ]
@@ -988,7 +988,7 @@
                     {
                         "img_filename": "03-postman/07-postman-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     }
 
                 ]
@@ -1023,12 +1023,12 @@
                     {
                         "img_filename": "01-clean-code-solid-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
-                     {
+                    {
                         "img_filename": "02-qe-testen-refactoring-metriken.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     }
 
                 ]
@@ -1133,13 +1133,13 @@
                     {
                         "img_filename": "01-software-architecture/sa-1-grundbegriffe.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
 
                     {
                         "img_filename": "01-software-architecture/sa-2-architekturmuster.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
 
                     {
@@ -1201,25 +1201,25 @@
                     {
                         "img_filename": "02-database/db-normalformen-er.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
 
                     {
                         "img_filename": "02-database/sql-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
 
                     {
                         "img_filename": "02-database/postgresql-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
 
                     {
                         "img_filename": "02-database/mongodb-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     }
 
                 ]
@@ -1252,7 +1252,7 @@
                     {
                         "img_filename": "03-devops/01-dev-ops-grundlagen/dev-ops-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     }
 
                 ]
@@ -1273,7 +1273,7 @@
                     {
                         "img_filename": "03-devops/02-microservices/microservice-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     }
 
                 ]
@@ -1295,37 +1295,37 @@
                     {
                         "img_filename": "03-devops/03-apache-kafka/kafka-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
 
                     {
                         "img_filename": "03-devops/03-apache-kafka/kafka-erweiterte-konzepte.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
 
                     {
                         "img_filename": "03-devops/03-apache-kafka/kafka-entscheidungstraeger.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
 
                     {
                         "img_filename": "03-devops/03-apache-kafka/01-yt-apache-kafka-ms-concepts.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
 
                     {
                         "img_filename": "03-devops/03-apache-kafka/02-yt-spring-boot-kafka-java-guides.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     },
 
                     {
                         "img_filename": "03-devops/03-apache-kafka/01-yt-kafka-spring-boot-microservices.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "In Progress"
                     }
 
                 ]
@@ -1347,13 +1347,13 @@
                     {
                         "img_filename": "03-devops/05-docker-kubernetes/docker-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     },
 
                     {
                         "img_filename": "03-devops/05-docker-kubernetes/kubernetes-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     }
 
                 ]
@@ -1374,7 +1374,7 @@
                     {
                         "img_filename": "03-devops/06-cloud-architecture/cloud-architekt-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": ""
                     }
 
                 ]
@@ -1396,7 +1396,7 @@
                     {
                         "img_filename": "03-devops/08-linux/linux-befehelszeile-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "Actually No Priority"
                     }
 
                 ]
@@ -1418,7 +1418,7 @@
                     {
                         "img_filename": "03-devops/09-graphana-prometheus/graphana-prometheus-grundlagen.png",
                         "pdf_url":"https://dev.java/",
-                        "status_text": "Coming Soon"
+                        "status_text": "Actually No Priority"
                     }
 
                 ]

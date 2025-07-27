@@ -147,15 +147,20 @@ var string_class_docs_card_container = "my-it-docs-card-container";
       // container card list
       var string_class_docs_card_container_card_list = "my-it-docs-card-container-card-list";
 
-      // ny ut dics card
+      // my it docs card
       var string_class_docs_card = "my-it-docs-card";
-      var string_class_docs_card_img = "my-it-docs-card-img";
-      var string_class_docs_card_link_container = "my-it-docs-card-link-container";
+      // status of my it docs card
+      var string_class_docs_card_in_progress = "my-it-docs-card-in-progress";
+      var string_class_docs_card_coming_soon = "my-it-docs-card-coming-soon";
+      var string_class_docs_card_actually_no_priority = "my-it-docs-card-actually-no-priority";
 
       // Status Divs
       var string_class_docs_in_progress_element = "it-doc-in-progress-element";
       var string_class_docs_coming_soon_element = "it-doc-coming-soon-element";
-      var string_class_docs_acutally_no_priority_element = "it-doc-actually_no_priority-element";
+      var string_class_docs_acutally_no_priority_element = "it-doc-actually-no-priority-element";
+
+      var string_class_docs_card_img = "my-it-docs-card-img";
+      var string_class_docs_card_link_container = "my-it-docs-card-link-container";
 
 
       /* --------------------------------------------------------- */
@@ -163,35 +168,70 @@ var string_class_docs_card_container = "my-it-docs-card-container";
       /* > Create Container Card List with all IT Doc Cards
       /* --------------------------------------------------------- */
 
-      // create | container card list
-      var newCardList = createDivClass( string_class_docs_card_container_card_list )
+        /* -------------------------------------------------- */
+        /* Create | Container Card List
+        /* -------------------------------------------------- */
+        var newCardList = createDivClass( string_class_docs_card_container_card_list )
 
 
-      // create | tt doc card's
-      for( let i=0; i < dataCardList.length; i++ ) {
+          /* ------------------------------------------------------ */
+          /* Create & Add | 'IT Doc Card's' to ' Card List'
+          /* ------------------------------------------------------ */
 
-        // create | it doc card
-
-        switch( dataCardList[i].status_text ) {
-
-          case "In Progress":
-            string_class_docs_card = "my-it-docs-card-in-progress";
-            break;
-          case "Coming Soon":
-            string_class_docs_card = "my-it-docs-card-coming-soon";
-            break;
-          case "Actually No Priority":
-            string_class_docs_card = "my-it-docs-card-actually-no-priority";
-            break;
+          for( let i=0; i < dataCardList.length; i++ ) {
 
 
-        }
+            /* -------------------------------------------------- */
+            /* Create & Add | My It Docs Card 'Status Art'
+            /* -------------------------------------------------- */
 
-        var newItDocCard = createDivClass( string_class_docs_card );
+            switch( dataCardList[i].status_text ) {
 
-            // -------------------------------------- */
-            /* Create IMG & ADD
-            /* -------------------------------------- */
+              case "In Progress":
+
+                // create 'in progress' - it doc card
+                var newItDocCard = createDivClass( string_class_docs_card_in_progress );
+
+                // create & add 'in progress element'
+                var newInProgressElement = createDivClassText( string_class_docs_in_progress_element, dataCardList[i].status_text );
+                newItDocCard.append( newInProgressElement )
+
+                break;
+
+              case "Coming Soon":
+
+                // create 'coming soon' - it doc card
+                var newItDocCard = createDivClass( string_class_docs_card_coming_soon );
+
+                // create & add 'coming soon element'
+                var newComingSoonElement = createDivClassText( string_class_docs_coming_soon_element, dataCardList[i].status_text );
+                newItDocCard.append( newComingSoonElement )
+
+                break;
+
+              case "Actually No Priority":
+
+                // create 'actually no priority' - it doc card
+                var newItDocCard = createDivClass( string_class_docs_card_actually_no_priority );
+
+                // create & add 'actually no priority element'
+                var newActuallyNoPriorityElement = createDivClassText( string_class_docs_acutally_no_priority_element, dataCardList[i].status_text );
+                newItDocCard.append( newActuallyNoPriorityElement )
+
+                break;
+
+              default:
+
+                // create 'actually no priority' - it doc card
+                var newItDocCard = createDivClass( string_class_docs_card );
+
+                break;
+
+            }
+
+            /* -------------------------------------------------- */
+            /* Create & Add | Img to 'My IT Docs Card'
+            /* -------------------------------------------------- */
 
             var imgPath = defaultImgPath + dataCardList[i].img_filename;
             var newImgItDocCard = createImgClass( imgPath, string_class_docs_card_img )
@@ -199,22 +239,28 @@ var string_class_docs_card_container = "my-it-docs-card-container";
             // add img to 'it docs card'
             newItDocCard.append( newImgItDocCard )
 
-            // -------------------------------------- */
-            /* Create Link & ADD
-            /* -------------------------------------- */
+            /* -------------------------------------------------- */
+            /* Create | Link to 'My IT Docs Card'
+            /* -------------------------------------------------- */
 
-            // create optional
-            // status: in progress, coming soon, actually no priority
+            var newDocLinkContainer = createDivClass( string_class_docs_card_link_container )
+            var newDocLink = createLinkText( dataCardList[i].pdf_url, "Show PDF🐸" )
 
-        // -------------------------------------- */
-        /* Add to 'new card list'
-        /* -------------------------------------- */
+            newDocLinkContainer.append( newDocLink )
 
-        newCardList.append( newItDocCard );
+            newItDocCard.append( newDocLinkContainer )
 
-      }
 
-      return newCardList;
+            // ---------------------------------------------------------- */
+            /* Add 'My IT Doc Card' to 'new card list'
+            /* ---------------------------------------------------------- */
+
+            newCardList.append( newItDocCard );
+
+          }
+
+
+        return newCardList;
 
     }
 

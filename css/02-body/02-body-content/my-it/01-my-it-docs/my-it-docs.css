@@ -408,7 +408,17 @@ label[for="chk-extra-close-label-my-it-docs-content-list"] > img{
 
   display: grid;
 
+  border-radius: .8em;
+
   align-items: center;
+
+}
+
+.my-it-docs-card-in-progress,
+.my-it-docs-card-coming-soon,
+.my-it-docs-card-actually-no-priority {
+
+  border: 3px solid rgb(107, 107, 107);
 
 }
 
@@ -464,6 +474,7 @@ label[for="chk-extra-close-label-my-it-docs-content-list"] > img{
   border-radius: .7em 0 .7em 0;
 
   background-color: rgb(181, 181, 181);
+  color:black;
 
   transition: all .4s;
 
@@ -498,7 +509,7 @@ label[for="chk-extra-close-label-my-it-docs-content-list"] > img{
 
 .it-doc-in-progress-element,
 .it-doc-coming-soon-element,
-.it-doc-acutally-no-priority-element {
+.it-doc-actually-no-priority-element {
 
   position: absolute;
   left:0;
@@ -540,7 +551,7 @@ label[for="chk-extra-close-label-my-it-docs-content-list"] > img{
 /* Actually no Priority | Status Container
 /* ------------------------------------------------------------- */
 
-.my-it-docs-card-actually-no-priority .it-doc-acutally-no-priority-element {
+.my-it-docs-card-actually-no-priority .it-doc-actually-no-priority-element {
 
   background-color: black;
   color:white;
