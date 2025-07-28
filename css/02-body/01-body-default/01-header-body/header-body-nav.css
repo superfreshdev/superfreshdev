@@ -13,7 +13,9 @@
 
     grid-area: hb-nav;
 
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+
+    border-bottom: 1px solid rgb(56, 56, 56);
 
     display: flex;
     flex-wrap: wrap;
