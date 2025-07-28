@@ -13,7 +13,7 @@
 
     grid-area: hb-nav;
 
-    /* padding-bottom: 2em; */
+    padding-bottom: 2em;
 
     display: flex;
     flex-wrap: wrap;

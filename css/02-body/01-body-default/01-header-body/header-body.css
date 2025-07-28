@@ -43,9 +43,10 @@
     /* mobile */
     grid-template-areas:
 
+        'hb-nav'
         'hb-logo'
         'hb-date'
-        'hb-nav'
+
 
     ;
     /* row-gap: 1em; */
