@@ -13,6 +13,8 @@
 
     grid-area: hb-nav;
 
+    /* padding-bottom: 2em; */
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -59,10 +61,16 @@ trotzdem individuell stylbar ?  */
     background-color: rgb(192, 192, 192);
 }
 
+.header-body-nav-label > img {
+
+    display: none;
+}
+
 .header-body-nav-label > div {
 
     font-weight: bold;
-    /* font-size: 1.125em; */
+    /* 14,5px */
+    font-size: .90625em;
 }
 
 
