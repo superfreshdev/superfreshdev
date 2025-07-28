@@ -6,14 +6,12 @@
 
 
 /* ---------------------------------------------------------------- */
-/* Header Fixed Body
+/* Header Body Scroll Fix
 /* ---------------------------------------------------------------- */
 
-#header-fixed-body {
+#header-body-scroll-fix {
 
     z-index: 99;
-
-    height: 5.5em;
     width: 100%;
 
     position: fixed;
@@ -28,27 +26,52 @@
 
     background-color: rgb(28, 28, 28);
 
-    /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply; */
-
-    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+    color:white;
 
 }
 
 /* ---------------------------------------------------------------- */
-/* Header Fixed Body Layout
+/* Header Body Scroll Fix Container
 /* ---------------------------------------------------------------- */
 
-#header-fixed-body-layout {
+#header-body-scroll-fix-container {
 
-    padding: 0 .8em;
+    padding: 2em 0;
+
+    display: grid;
 
     /* mobile */
-    display: grid;
+    grid-template-areas:
+
+        'hb-logo'
+        'hb-date'
+        'hb-nav'
+    ;
+
+    /* background-color: red; */
+}
+
+
+
+
+
+
+
+
+/* 🟣 Auslaggern nav */
+
+/* ---------------------------------------------------------------- */
+/* Header Body Nav
+/* ---------------------------------------------------------------- */
+
+#header-body-nav {
+
+    grid-area: hb-nav;
+
+    display: flex;
     align-items: center;
     justify-content: flex-end;
-    grid: auto / 1fr;
 
-    column-gap: .8em;
+    background-color: grey;
 
 }

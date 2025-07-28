@@ -28,15 +28,7 @@
 
 @media (min-width: 400px ) {
 
-    /* ------------------------------------ */
-    /* Header Nav
-    /* ------------------------------------ */
 
-    .anker-link-header-body > img {
-
-        display: flex;
-
-    }
 
 }
 
@@ -47,51 +39,6 @@
 @media (min-width: 500px ) {
 
 
-    #header-fixed-body-layout {
-
-        /* mobile */
-
-        /* ⚠️ first unshown, we let layout bring right */
-        justify-content: flex-end;
-        grid: auto / 1fr;
-
-        /* ⚠️ js solution by scrolling down */
-        /* justify-content: space-between;
-        grid: auto / auto 1fr; */
-
-        /* background-color: blue; */
-
-
-    }
-
-    /* ------------------------------------ */
-    /* Header Company
-    /* ------------------------------------ */
-
-    #header-company-body {
-
-        /* width: 100%;
-        display: flex; */
-
-        /* ⚠️ first unshown, this will just show by js scrolling down */
-        display: none;
-
-    }
-
-    #img-company-logo-container {
-
-        display: flex;
-    }
-
-    #img-company-logo {
-
-        display: flex;
-    }
-
-    #img-company-logo-container > div:nth-of-type(1) {
-
-        display: flex;
-    }
 
 }
 
@@ -101,17 +48,7 @@
 
 @media (min-width: 800px ) {
 
-    /* ------------------------------------ */
-    /* Header Company
-    /* ------------------------------------ */
 
-    #header-company-title-container {
-
-        /* small mobile default unshown */
-        display: grid;
-        /* background-color: red; */
-
-    }
 
 }
 
@@ -121,15 +58,7 @@
 
 @media (min-width: 900px ) {
 
-    /* ------------------------------------ */
-    /* Header Fixed Body Layout
-    /* ------------------------------------ */
 
-    #header-fixed-body-layout {
-
-        padding: 0em;
-
-    }
 
 }
 
@@ -139,45 +68,5 @@
 
 @media (min-width: 1200px ) {
 
-
-    #header-fixed-body {
-        height: 6.5em;
-    }
-
-    /* ------------------------------------ */
-    /* Header Company
-    /* ------------------------------------ */
-
-    #header-company-body {
-        height: 3.5em;
-    }
-
-    #header-title-company-logo {
-
-        line-height: 2em;
-    }
-
-    #img-company-logo {
-        height: 4em;
-    }
-
-    #header-company-title-container {
-
-        row-gap: .1em;
-        /* background-color: red; */
-
-    }
-
-    #text-header-company-title {
-        /* 20px */
-        font-size: 1.25rem;
-    }
-
-    #text-header-company-sub-title {
-
-        /* 1rem = 16px */
-        font-size: 1rem;
-
-    }
 
 }

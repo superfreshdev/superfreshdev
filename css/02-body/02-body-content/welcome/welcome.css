@@ -68,28 +68,6 @@
 
 }
 
-#text-welcome-to {
-
-    /* mobile size  */
-    font-size: 1.25em;
-
-    font-weight: bold;
-
-    /* color:rgb(185, 185, 185); */
-    color:wheat;
-}
-
-#text-superfreshdev {
-
-    /* mobile size  */
-    font-size: 1.375em;
-
-    font-weight: bold;
-
-    color:white;
-
-}
-
 
 /* --------------------------------------------- */
 /* [3/4] | Welcome Motto Container

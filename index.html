@@ -134,8 +134,9 @@
 
                 <!-- header body  -->
                 <link rel="stylesheet" href="css/02-body/01-body-default/01-header-body/header-body.css">
-                <link rel="stylesheet" href="css/02-body/01-body-default/01-header-body/header-company-body.css">
-                <link rel="stylesheet" href="css/02-body/01-body-default/01-header-body/header-nav-body.css">
+                <link rel="stylesheet" href="css/02-body/01-body-default/01-header-body/header-body-logo-date.css">
+                <link rel="stylesheet" href="css/02-body/01-body-default/01-header-body/header-body-nav.css">
+                <link rel="stylesheet" href="css/02-body/01-body-default/01-header-body/resp-header-body/resp-header-body.css">
 
                 <!-- main body  -->
                 <link rel="stylesheet" href="css/02-body/01-body-default/02-main-body/main-body.css">
@@ -284,9 +285,125 @@
 <!-- ----------------------------------------------------------------------------- -->
 <body>
 
+    <!--
+
+        header | header-body-scroll-fix
+
+        main | main-body | main-body-container
+
+        footer | footer-body
+
+    -->
+
     <!-- ----------------------------------------------------------------------------- -->
-    <!-- 🟩 Header Fixed Body                                                          -->
+    <!-- ➡️🟥❇️  Header Body | Scroll Fix                                                -->
     <!-- ----------------------------------------------------------------------------- -->
+
+    <header id="header-body-scroll-fix">
+
+        <!-- --------------------------------------------------------------- -->
+        <!-- Resp Min Content                                               -->
+        <!-- --------------------------------------------------------------- -->
+        <div class="resp-min-content-area">
+
+            <!-- ----------------------------------------------------------- -->
+            <!-- width & heihgt 100% (sets)                                  -->
+            <!-- ----------------------------------------------------------- -->
+            <div class="w-100p h-100p flex jc-c">
+
+                <!-- ------------------------------------------------------------------ -->
+                <!-- Padding Wrapper                                                    -->
+                <!-- ------------------------------------------------------------------ -->
+                <div class="padding-0-0-8-wrapper">
+
+                    <!-- --------------------------------------------------------- -->
+                    <!-- ➡️🟥 Scroll Fix Container -->
+                    <!-- --------------------------------------------------------- -->
+                    <div id="header-body-scroll-fix-container">
+
+                        <!-- -------------------------------------------------- -->
+                        <!-- [1/3] | Logo Title Container -->
+                        <!-- -------------------------------------------------- -->
+                        <div id="header-body-logo-title-container">
+
+                            <!-- ------------------------------------- -->
+                            <!-- IMG LOGO -->
+                            <!-- ------------------------------------- -->
+                            <img src="media/img/content/01-default/clipart/me-hi.png" id="header-body-img-logo" alt="img">
+
+                            <!-- ------------------------------------- -->
+                            <!-- Title Container -->
+                            <!-- ------------------------------------- -->
+                            <div id="header-body-title-container">
+
+                                <!-- ----------------------------------- -->
+                                <!-- Title -->
+                                <!-- ----------------------------------- -->
+                                <div id="header-body-title">
+
+                                    <div id="text-welcome-to">Welcome to</div>
+                                    <div id="text-superfreshdev">SuperfreshDEV</div>
+
+                                </div>
+
+                                <!-- ----------------------------------- -->
+                                <!-- Sub Title -->
+                                <!-- ----------------------------------- -->
+                                <div id="header-body-sub-title">
+
+                                    <div>» Fullstack Software Developer</div>
+                                    <div>» Let's build sexy IT-Systems</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- -------------------------------------------------- -->
+                        <!-- [2/3] | Date Container -->
+                        <!-- -------------------------------------------------- -->
+                        <div id="header-body-date-container">
+
+                            <div id="text-date-today">today,</div>
+
+                            <div>
+                                <div id="js-date-day">14th</div>
+                                <div id="js-date-month">Jan</div>
+                                <div id="js-date-year">2025</div>
+                            </div>
+
+
+                        </div>
+
+                        <!-- -------------------------------------------------- -->
+                        <!-- [3/3] | Nav -->
+                        <!-- -------------------------------------------------- -->
+                        <nav id="header-body-nav">
+                            Nav
+                        </nav>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+
+    <br><br>
+
+
+
+    <!-- -------------------------------------------------------------- -->
+    <!-- ❌❌❌ OlD - DELETE -->
+    <!-- -------------------------------------------------------------- -->
 
     <header id="header-fixed-body" style="display: none;">
 
@@ -322,7 +439,7 @@
                         <div id="header-company-title-container">
 
                             <div id="text-header-company-title">SuperfreshDEV</div>
-                            <div id="text-header-company-sub-title">Fullstack Software Developer</div>
+                            <div id="text-header-company-sub-title">Software Engineer</div>
 
                         </div>
 
@@ -380,7 +497,7 @@
     </header>
 
     <!-- ----------------------------------------------------------------------------- -->
-    <!-- 🟥 Body Main -->
+    <!-- 🟥 Main Body | Body Main Container                                            -->
     <!-- ----------------------------------------------------------------------------- -->
 
     <main id="main-body">
@@ -2645,7 +2762,7 @@
                                                                 <!-- ---------------------------------------------------------- -->
                                                                 <div id="my-it-docs-content-list">
 
-                                                                    Moritz
+
 
                                                                 </div>
 
@@ -8201,9 +8318,9 @@
 
     </main>
 
-    <!-- ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️   -->
+
     <!-- ------------------------------------------------------------------------------- -->
-    <!-- 🟥⚠️ [ Zukunft | schöner machen ] Body Footer |                                 -->
+    <!-- 🟥 Footer Body                               -->
     <!-- ------------------------------------------------------------------------------- -->
     <footer id="body-footer">
 
@@ -9840,23 +9957,10 @@
     </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- ----------------------------------------------------------------------------- -->
     <!-- 🟡 JS | Bindings -->
     <!-- ----------------------------------------------------------------------------- -->
+
 
 
         <!-- ------------------------------------------ -->

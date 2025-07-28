@@ -37,7 +37,7 @@
   /* height: 100%; */
 
   /* because of fixed header height 5.5em */
-  padding-top: 5.5em;
+  /* padding-top: 5.5em; */
 
   display: grid;
   justify-items: center;
