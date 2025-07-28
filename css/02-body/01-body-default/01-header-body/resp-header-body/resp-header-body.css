@@ -70,8 +70,8 @@
       /* desktop */
       grid-template-areas:
 
-        'hb-logo hb-date'
-        'hb-nav hb-nav'
+       'hb-nav hb-nav'
+       'hb-logo hb-date'
       ;
 
       row-gap: 1.5em;
@@ -96,11 +96,15 @@
     /* desktop */
     grid-template-areas:
 
+      'hb-nav hb-nav'
       'hb-logo hb-date'
-      'hb-logo hb-nav'
+
     ;
 
     row-gap: 0;
+
+    border-bottom: 1px solid rgb(56, 56, 56);
+    margin-bottom: 1em;
 
   }
 
