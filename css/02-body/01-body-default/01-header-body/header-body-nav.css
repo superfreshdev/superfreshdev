@@ -1,25 +1,80 @@
 /* -------------------------------------------------------------- */
 /* > header-nav-body.css
 /*
-/* : default sets for header nav body
+/* : styhe the nav of header body
 /* -------------------------------------------------------------- */
 
 
 /* ---------------------------------------------------------------- */
-/* [2/2] Nav Header Body
+/* Header Body Nav
 /* ---------------------------------------------------------------- */
 
-#nav-header-body {
+#header-body-nav {
 
-    width: 100%;
+    grid-area: hb-nav;
 
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: flex-end;
-    grid: auto / auto .7fr 1.1fr;
 
     column-gap: .8em;
+    row-gap: .8em;
+
+    /* background-color: grey; */
 
 }
+
+#header-body-nav > label:nth-of-type(1) {
+
+    background-color: wheat;
+    color:black;
+}
+
+/* 🟣🟣 Universell, radio label buttons erstellen ?
+trotzdem individuell stylbar ?  */
+
+/* ---------------------------------------------------------------- */
+/* Label | Header Body Nav
+/* ---------------------------------------------------------------- */
+
+.header-body-nav-label {
+
+    padding: .6em 1em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+    border-radius: .8em;
+
+    border: 3px solid rgb(73, 73, 73);
+
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.header-body-nav-label:hover {
+
+    background-color: rgb(192, 192, 192);
+}
+
+.header-body-nav-label > div {
+
+    font-weight: bold;
+    /* font-size: 1.125em; */
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* ❌❌❌❌
+/* ---------------------------------------------------------------- */
+
 
 /* --------------------------------------------------- */
 /* ⚠️ Just for Layout Testing

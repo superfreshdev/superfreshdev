@@ -50,28 +50,3 @@
 
     /* background-color: red; */
 }
-
-
-
-
-
-
-
-
-/* 🟣 Auslaggern nav */
-
-/* ---------------------------------------------------------------- */
-/* Header Body Nav
-/* ---------------------------------------------------------------- */
-
-#header-body-nav {
-
-    grid-area: hb-nav;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    background-color: grey;
-
-}
