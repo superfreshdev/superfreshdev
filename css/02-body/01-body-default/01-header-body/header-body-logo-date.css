@@ -27,6 +27,8 @@
 
 #header-body-img-logo {
 
+    order: 2;
+
     /* mobile */
     height: 7em;
     transform:  scaleX(-1);
@@ -40,8 +42,11 @@
 
 #header-body-title-container {
 
+    order: 1;
+
     display: grid;
     row-gap: .6em;
+    align-content: flex-start;
 
 }
 
