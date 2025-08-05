@@ -27,28 +27,45 @@
 
 */
 
+/* -------------------------------------------------------- */
+/* Set to All HTML Elements
+/* -------------------------------------------------------- */
+
+/* reminder: e.g width 100% & padding-right: 10px will add
+                 inside box & dont go over box by 100% + 10px */
+
+* {
+
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------------- */
+/* Html, Body
+/* -------------------------------------------------------- */
+
 html,body {
 
     /* important for correct page layout handling with css grid  */
     margin: 0;
-
-    /* 1rem = 16px  */
-    font-size: 1rem;
-
-
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5rem;
 
     min-height: 100vh;
 
     display: grid;
     align-items: flex-start;
 
-    /* Reminder: our body header is fixed and
-       not belong to an layout */
 
-    /* body-main, body-footer */
+    /* reminder: our header-body is fixed
+                 & dont belong direct to body layout */
+
+    /* main-body, footer-body */
     grid: 1fr auto / 1fr;
+
+    /* 1rem = 16px  */
+    font-size: 1rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+
 
     /* for smooth anker scrolling */
     scroll-behavior: smooth;

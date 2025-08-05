@@ -1,0 +1,55 @@
+/* -------------------------------------------------------------- */
+/* > header-logo-container-body.css
+/*
+/* : default sets for header logo container from body
+/* -------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* Header Logo Container Body
+/* ---------------------------------------------------------------- */
+
+#header-logo-container-body {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  /* mobile */
+  display: none;
+
+  /* background-color: rgb(75, 75, 75); */
+
+}
+
+/* ---------------------------------------------------------------- */
+/* [1/2] | Img | Header Logo
+/* ---------------------------------------------------------------- */
+
+#img-logo-superfreshdev {
+
+    height: 3em;
+    border-radius: .4em;
+
+
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    /* mobile */
+    display: none;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* [2/2] | Title | Header Logo
+/* ---------------------------------------------------------------- */
+
+#header-logo-title-body {
+
+  font-weight: bold;
+  color:rgb(196, 196, 196);
+
+  /* mobile */
+  display: none;
+
+}

@@ -1,0 +1,63 @@
+/* -------------------------------------------------------------- */
+/* > page-container-push-slider.css
+/*
+/* : style the default of page container push slider &
+/*   all single page container slide & active
+/* -------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------- */
+/* Page Container Push Slider
+/* -------------------------------------------------------------- */
+
+.page-container-push-slider {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: 3em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Page Container Slide
+/* -------------------------------------------------------------- */
+
+.page-container-slide {
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Active | Page Container Slide
+/* -------------------------------------------------------------- */
+
+.page-container-slide.active {
+
+
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* Page 1,2,3
+/* -------------------------------------------------------------- */
+
+#page-1 {
+
+  background-color: rgb(202, 102, 102);
+}
+
+#page-2 {
+
+  background-color: rgb(232, 190, 52);
+}
+
+#page-3 {
+
+  background-color: rgb(158, 212, 208);
+}

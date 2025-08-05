@@ -5,107 +5,142 @@
 /* -------------------------------------------------------------- */
 
 
+
 /* -------------------------------------------------------------- */
-/* >= 350px width
+/* >= 405px width
 /* -------------------------------------------------------------- */
 
-@media (min-width: 350px ) {
+@media (min-width: 405px ) {
 
-    /* ------------------------------------ */
-    /* Img | Logo Title Container
-    /* ------------------------------------ */
+    /* ---------------------------------------------------- */
+    /* Nav Header Body | Handlings
+    /* ---------------------------------------------------- */
 
-    #header-body-img-logo {
+    /* let all imgs of label nav header show */
+    .label-nav-header-body > img {
 
-        /* mobile */
+        display: flex;
+    }
+
+    /* ------------------------------ */
+    /* Hover Handling
+    /* ------------------------------ */
+
+    /* unshown white img */
+    .label-nav-header-body:hover img:nth-of-type(1) {
+
+        display: none;
+    }
+
+    /* shown black img */
+    .label-nav-header-body:hover img:nth-of-type(2) {
+
+        display: flex;
+    }
+
+     /* shown max opicity */
+    .label-nav-header-body:hover {
+
+        opacity: 1;
+    }
+
+    /* ------------------------------ */
+    /* Checked Handling
+    /* ------------------------------ */
+
+    /* unshown white img */
+    #radio-about:checked ~ label[for="radio-about"] > img:nth-of-type(1),
+    #radio-my-it:checked ~ label[for="radio-my-it"] > img:nth-of-type(1),
+    #radio-my-private:checked ~ label[for="radio-my-private"] > img:nth-of-type(1) {
+
+        display: none;
+
+    }
+
+    /* show black img */
+    #radio-about:checked ~ label[for="radio-about"] > img:nth-of-type(2),
+    #radio-my-it:checked ~ label[for="radio-my-it"] > img:nth-of-type(2),
+    #radio-my-private:checked ~ label[for="radio-my-private"] > img:nth-of-type(2) {
+
         display: flex;
 
     }
-}
 
-
-/* -------------------------------------------------------------- */
-/* >= 550px width
-/* -------------------------------------------------------------- */
-
-@media (min-width: 550px ) {
-
-
-    /* ---------------------------------------------------------------- */
-    /* [1/2] | Logo Title Container | Header Body
-    /* ---------------------------------------------------------------- */
-
-    #header-body-logo-title-container {
-
-        justify-content: flex-start;
-
-    }
-
-    /* ------------------------------------ */
-    /* Img | Logo Title Container
-    /* ------------------------------------ */
-
-    #header-body-img-logo {
-
-       order: 1;
-      transform:  scaleX(1);
-
-    }
-
-    /* ---------------------------------------------------------------- */
-    /* Title Container | Logo Title Container
-    /* ---------------------------------------------------------------- */
-
-    #header-body-title-container {
-
-        order: 2;
-    }
-
-    /* ------------------------------------ */
-    /* Scroll Fix Container
-    /* ------------------------------------ */
-
-    #header-body-scroll-fix-container {
-
-      /* desktop */
-      grid-template-areas:
-
-       'hb-nav hb-nav'
-       'hb-logo hb-date'
-      ;
-
-      row-gap: 1.5em;
-
-    }
 
 }
 
 /* -------------------------------------------------------------- */
-/* >= 850px width
+/* >= 480px width
 /* -------------------------------------------------------------- */
 
-@media (min-width: 850px ) {
+@media (min-width: 480px ) {
 
 
-  /* ------------------------------------ */
-  /* Scroll Fix Container
-  /* ------------------------------------ */
+    /* ---------------------------------------------------- */
+    /* Header Fixed Container Body
+    /* ---------------------------------------------------- */
 
-  #header-body-scroll-fix-container {
+    #header-fixed-container-body {
 
-    /* desktop */
-    grid-template-areas:
+        /* desktop */
+        justify-content: space-between;
 
-      'hb-nav hb-nav'
-      'hb-logo hb-date'
+    }
 
-    ;
+    /* ---------------------------------------------------- */
+    /* Header Logo Container Body
+    /* ---------------------------------------------------- */
 
-    row-gap: 0;
+    #header-logo-container-body {
 
-    border-bottom: 1px solid rgb(56, 56, 56);
-    margin-bottom: 1em;
+        display: flex;
 
-  }
+    }
+
+    #img-logo-superfreshdev {
+
+        display: block;
+    }
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 650px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 650px ) {
+
+
+    /* ---------------------------------------------------- */
+    /* Header Logo Container Body
+    /* ---------------------------------------------------- */
+
+    #header-logo-title-body {
+
+        /* desktop */
+        display: flex;
+
+    }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 750px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 750px ) {
+
+
+    /* ---------------------------------------------------- */
+    /* Header Logo Container Body
+    /* ---------------------------------------------------- */
+
+    #header-logo-title-body {
+
+       /* desktop */
+       font-size: 1.125em;
+
+    }
 
 }
