@@ -45,8 +45,13 @@
 
 .label-nav-header-body {
 
-    height: 2.5em;
+    /* mobile */
+    height: 2.8em;
     padding: 0em .8em;
+
+    /* desktop */
+    /* height: 2.5em;
+    padding: 0em .8em; */
 
     display: flex;
     align-items: center;
@@ -58,11 +63,11 @@
 
     /* border: 3px solid rgb(77, 77, 77) ; */
 
-    background-color: rgb(203, 203, 203);
+    /* background-color: rgb(203, 203, 203); */
 
-    background-color: rgb(71, 71, 71);
+    /* background-color: rgb(71, 71, 71); */
 
-    color:black;
+    color:rgb(203, 203, 203);
 
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
@@ -120,6 +125,6 @@ input[name="name-radio-nav-header-body"] {
     background-color: wheat;
     color:black;
 
-    opacity: 1;
+    /* opacity: 1; */
 
 }
