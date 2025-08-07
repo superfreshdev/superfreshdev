@@ -19,19 +19,52 @@
 
 #welcome-container-new {
 
+
+
     width: 100%;
 
     height: 7em;
     /* height: 100%; */
 
-    display: grid;
+    display: flex;
     align-items: center;
+    column-gap: 1em;
+
     padding: .8em;
 
     background-color: rgb(28, 28, 28);
     color:white;
 
 
+}
+
+#img-clipart-welcome {
+
+    height: 3em;
+
+}
+
+#welcome-title-container {
+
+    display: grid;
+    line-height: 2em;
+
+}
+
+#welcome-title-container > div:nth-of-type(1) {
+
+    font-weight: bold;
+    color:grey;
+
+    font-size: 1.25em;
+}
+
+#welcome-title-container > div:nth-of-type(2) {
+
+    font-weight: bold;
+    color:white;
+
+    font-size: 1.5em;
 }
 
 
