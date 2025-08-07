@@ -59,10 +59,12 @@
 
     border-radius: .6em;
 
-    /* opacity: .6; */
+    opacity: .4;
 
     /* border: 3px solid rgb(50, 50, 50) ; */
     background-color: rgb(50, 50, 50) ;
+
+
 
     /* background-color: rgb(203, 203, 203); */
     /* background-color: rgb(71, 71, 71); */
@@ -125,6 +127,6 @@ input[name="name-radio-nav-header-body"] {
     background-color: wheat;
     color:black;
 
-    /* opacity: 1; */
+    opacity: 1;
 
 }

@@ -18,7 +18,7 @@
 
   display: grid;
 
-  overflow: hidden;
+  overflow-x: hidden;
 
 }
 
@@ -35,8 +35,9 @@
   width: 100%;
 
   display: grid;
-  align-content: center;
   justify-content: center;
+  /* align-content: center; */
+  /* justify-content: center; */
 
   /* default all pages behind the right corner */
   z-index: 1;
