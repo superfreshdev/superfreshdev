@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------- */
-/* > page-container-push-slider.css
+/* > push-slider.css
 /*
 /* : style the default of page container push slider &
 /*   all single page container slide & active
@@ -7,12 +7,10 @@
 
 
 /* -------------------------------------------------------------- */
-/* Push Page Slider
+/* Push Slider
 /* -------------------------------------------------------------- */
 
-/* push-page-slider */
-
-.push-page-slider {
+.push-slider {
 
   position: relative;
   width: 100%;
@@ -24,14 +22,11 @@
 
 }
 
-
 /* -------------------------------------------------------------- */
-/* Push Page Slide ( default all unshwon )
+/* Push Content Slide ( default all unshwon )
 /* -------------------------------------------------------------- */
 
-/* push-page-slide */
-
-.push-page-slide {
+.push-content-slide {
 
   position: absolute;
   top: 0;
@@ -52,18 +47,16 @@
 
 }
 
-
 /* -------------------------------------------------------------- */
-/* Active | Push Page Slide ( show )
+/* Active | Push Content Slide ( show )
 /* -------------------------------------------------------------- */
 
-.push-page-slide.active {
+.push-content-slide.active {
 
   z-index: 2;
   transform: translateX(0);
 
 }
-
 
 /* -------------------------------------------------------------- */
 /* Page 1,2,3

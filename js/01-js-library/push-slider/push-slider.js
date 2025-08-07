@@ -1,12 +1,10 @@
-console.log("(🟨Lib) page-container-push-slider.js ")
+console.log("(🟨Lib) push-slider.js ")
 
 
 /* ------------------------------------------------------ */
 /* Function:
 /* > Handle correct Page Push Slide by Clicked Index
 /* ------------------------------------------------------ */
-
-// slides, currentIndex, nextIndex
 
 
   /* ---------------------------------------------------------------------- */

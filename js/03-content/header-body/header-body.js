@@ -5,7 +5,7 @@ console.log("🟨 header-body.js ")
 /* DOM Elements
 /* -------------------------------------------------------- */
 
-const body_slides = document.querySelectorAll('.push-page-slide');
+const body_slides = document.querySelectorAll('#body-push-page-slider .push-content-slide');
 const header_body_links =  document.querySelectorAll('.label-nav-header-body');
 
 /* ------------------------------------------------------ */
