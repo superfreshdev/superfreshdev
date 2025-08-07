@@ -5,7 +5,6 @@
 /* -------------------------------------------------------------- */
 
 
-
 /* -------------------------------------------------------------- */
 /* >= 405px width
 /* -------------------------------------------------------------- */
@@ -13,18 +12,18 @@
 @media (min-width: 405px ) {
 
     /* ---------------------------------------------------- */
-    /* Nav Header Body | Handlings
+    /* Label | Nav Header Body
     /* ---------------------------------------------------- */
 
-    /* let all imgs of label nav header show */
+    /* reminder: default img unshown by very small mobile */
     .label-nav-header-body > img {
 
         display: flex;
     }
 
-    /* ------------------------------ */
-    /* Hover Handling
-    /* ------------------------------ */
+    /* ---------------------------------------------------- */
+    /* Label Hover | Nav Header Body
+    /* ---------------------------------------------------- */
 
     /* unshown white img */
     .label-nav-header-body:hover img:nth-of-type(1) {
@@ -44,9 +43,11 @@
         opacity: 1;
     }
 
-    /* ------------------------------ */
-    /* Checked Handling
-    /* ------------------------------ */
+    /* ---------------------------------------------------- */
+    /* Radios | Nav Header Body
+    /* ---------------------------------------------------- */
+
+    /* reminder: only add whit & black img handling by bigger size */
 
     /* unshown white img */
     #radio-about:checked ~ label[for="radio-about"] > img:nth-of-type(1),
@@ -65,7 +66,6 @@
         display: flex;
 
     }
-
 
 }
 
@@ -121,26 +121,6 @@
         /* desktop */
         display: grid;
         line-height: 1.3em;
-
-    }
-
-}
-
-/* -------------------------------------------------------------- */
-/* >= 750px width
-/* -------------------------------------------------------------- */
-
-@media (min-width: 750px ) {
-
-
-    /* ---------------------------------------------------- */
-    /* Header Logo Container Body
-    /* ---------------------------------------------------- */
-
-    #header-logo-title-body {
-
-       /* desktop */
-       /* font-size: 1.125em; */
 
     }
 
