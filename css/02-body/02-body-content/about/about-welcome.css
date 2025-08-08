@@ -4,11 +4,33 @@
 /* : styles welcome of about
 /* -------------------------------------------------------------- */
 
+
+/* --------------------------------------------------- */
+/* ❌❌ Delete
+/* --------------------------------------------------- */
+
 #test {
 
   width: 100%;
-  background-color: rgb(183, 255, 0);
+  height: 7em;
+
+  display: grid;
+  justify-items: center;
+
+
+
+  background-color: rgb(130, 130, 130);
 }
+
+
+#test > div:nth-of-type(1) {
+
+  width: 100%;
+  background-color: red;
+}
+
+
+
 
 /* ------------------------------------------- */
 /* Welcome Container
@@ -17,27 +39,28 @@
 #welcome-container {
 
     width: 100%;
-    padding: 2em 0;
+    padding: 1.3em 1.3em;
+    margin: 1em 0;
     /* height: 7em; */
 
     display: grid;
+    align-items: center;
     align-content: center;
 
-
     grid-template-areas:
-    'welcome-img welcome-title '
+    'welcome-title welcome-title'
     'welcome-date welcome-date'
     ;
 
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
 
     column-gap: 1.5em;
     row-gap: 1em;
 
-
-
     /* column-gap: .8em; */
+
+    border-radius: 1.3em;
 
     background-color: rgb(28, 28, 28);
     color:white;
@@ -52,8 +75,11 @@
 
   grid-area: welcome-img;
 
+  transform: scaleX(-1);
+
   /* mobile */
-  height: 3em;
+  display: none;
+  /* height: 3em; */
 
 }
 
@@ -66,7 +92,7 @@
     grid-area: welcome-title;
 
     display: grid;
-    row-gap: .3em;
+    row-gap: .8em;
 }
 
 /* ----------------------------------------- */
@@ -85,6 +111,7 @@
 
   font-weight: bold;
   color:grey;
+  color:wheat;
 
 }
 
@@ -106,6 +133,8 @@
   font-size: 14.5px;
   font-weight: bold;
 
+  line-height: 1.6em;
+
   color:rgb(92, 92, 92);
 
 }
@@ -118,13 +147,19 @@
 
   grid-area: welcome-date;
 
+  width: 100%;
+
+  font-size: 14.5px;
+  font-weight: bold;
+
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   column-gap: .4em;
 
   opacity: .4;
 
-  font-weight: bold;
+  /* background-color: red; */
 
 }
 

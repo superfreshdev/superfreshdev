@@ -6,18 +6,64 @@
 
 
 /* ------------------------------------------------------------------- */
-/* >= 340px
+/* >= 380px
 /* ------------------------------------------------------------------- */
 
-@media ( min-width: 320px ) {
+@media ( min-width: 380px ) {
 
     /* ------------------------------------------------ */
-    /*  Img About Quick Info Me as Real */
+    /*  Welcome | Welcome Container */
     /* ------------------------------------------------ */
 
-    #img-about-quick-info-me-as-real {
+    #welcome-container {
 
-        width: 90%;
+      /* width: 100%;
+      padding: 1.3em 1.3em;
+      margin: 1em 0; */
+      /* height: 7em; */
+
+      grid-template-areas:
+      'welcome-title welcome-img'
+      'welcome-date welcome-date'
+      ;
+
+      grid-template-columns: 1fr auto;
+
+      /*
+      column-gap: 1.5em;
+      row-gap: 1em; */
+
+    }
+
+    /* ------------------------------------------------ */
+    /*  Welcome | Img Cartoon */
+    /* ------------------------------------------------ */
+
+    #img-clipart-welcome {
+
+      /* mobile */
+      display: block;
+      height: 6em;
+
+    }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 45px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 450px ) {
+
+
+    /* ------------------------------------------------ */
+    /*  Welcome | Welcome Container */
+    /* ------------------------------------------------ */
+
+    #welcome-container {
+
+      width: 28em;
+
     }
 
 }
