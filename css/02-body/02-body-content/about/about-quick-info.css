@@ -1,26 +1,15 @@
 /* -------------------------------------------------------------- */
-/* > about.css
+/* > about-quick-info.css
 /*
-/* : styles about
+/* : styles the quick info container of about
 /* -------------------------------------------------------------- */
 
 
 /* ------------------------------------------- */
-/* About Page Container
+/* Quick Info Container About
 /* ------------------------------------------- */
 
-#about-page-container {
+#quick-info-container-about {
 
-  padding-top: 5em;
-
-
-
-  display: grid;
 
 }
-
-/* #about-page-container > div {
-
-  padding: 0 .8em;
-
-} */

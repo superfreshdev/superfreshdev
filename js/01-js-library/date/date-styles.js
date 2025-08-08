@@ -1,7 +1,8 @@
-//console.log('[🟡|js-library| ➡️ formatted-date-styles.js]')
+console.log('🟡(js-lib) | date-styles.js]')
+
 
 /* ------------------------------------------- */
-/* Day 1st, 2nd, 3rd, 4th, 5th,...
+/* Get by Index 1st, 2nd, 3rd, 4th, 5th,...
 /* ------------------------------------------- */
 
 function getEnglishDaySuffix( day ) {
@@ -21,7 +22,7 @@ function getEnglishDaySuffix( day ) {
 }
 
 /* ------------------------------------------- */
-/* Month 0=Jan, 1=Feb, 2=Mar, 4=Apr , ...
+/* Get Month 0=Jan, 1=Feb, 2=Mar, 4=Apr , ...
 /* ------------------------------------------- */
 
 function getEnglishShortMonthName( month ) {
@@ -55,64 +56,63 @@ function getEnglishShortMonthName( month ) {
 
         default:
             return "-1"
-        
+
     }
 }
 
 /* ------------------------------------------- */
-/* printFullMonthShortYear()
+/* Print Full Month Name & Short Year
+/* e.g March 25 ( March 2025 )
 /* ------------------------------------------- */
 
-function printFullMonthShortYear( indexMonth, year ) {
+function printFullMonthNameAndShorYear( indexMonth, year ) {
 
-    var strDate = "";
+    var strMonth = "";
     var strYear = year.toString();
 
     switch( indexMonth ) {
 
         case 0:
-            strDate = "January"
+            strMonth = "January"
             break;
         case 1:
-            strDate = "February"
+            strMonth = "February"
             break;
         case 2:
-            strDate = "March"
+            strMonth = "March"
             break;
         case 3:
-            strDate = "April"
+            strMonth = "April"
             break;
         case 4:
-            strDate = "May"
+            strMonth = "May"
             break;
         case 5:
-            strDate = "June"
+            strMonth = "June"
             break;
         case 6:
-            strDate = "July"
+            strMonth = "July"
             break;
         case 7:
-            strDate = "August"
+            strMonth = "August"
             break;
         case 8:
-            strDate = "September"
+            strMonth = "September"
             break;
         case 9:
-            strDate = "October"
+            strMonth = "October"
             break;
         case 10:
-            strDate = "November"
+            strMonth = "November"
             break;
         case 11:
-            strDate = "December"
+            strMonth = "December"
             break;
 
         default:
-            strDate = "-1"
-        
+            strMonth = "-1"
+
     }
 
-    return strDate + " " + strYear.substring(2,4);
+    return strMonth + " " + strYear.substring(2,4);
 }
-
-
