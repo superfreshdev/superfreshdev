@@ -5,11 +5,211 @@
 /* -------------------------------------------------------------- */
 
 
+
 /* ------------------------------------------- */
-/* Quick Info Container About
+/* About Quick Info Row Container
 /* ------------------------------------------- */
 
-#quick-info-container-about {
+#about-quick-info-row-container {
 
+  width: 100%;
+  height: 100%;
+
+  padding-top: .8em;
+  padding-bottom: .8em;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: rgb(255, 255, 255);
+}
+
+/* ------------------------------------------------------------------- */
+/* Quick Info Container
+/* ------------------------------------------------------------------- */
+
+#about-quick-info-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1.5em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Img | Quick Info
+/* ------------------------------------------------------------------- */
+
+#img-quick-info-about {
+
+  height: 15em;
+
+  border-radius: 1.3em;
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Quick Info Text Container
+/* ------------------------------------------------------------------- */
+
+#about-quick-info-text-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: flex-start;
+
+  row-gap: 1em;
+
+  line-height: 1.8em;
+
+  /* background-color: grey; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* [1/3] | Mini Label | Quick Info Text Container
+/* ------------------------------------------------------------------- */
+
+.mini-label-header {
+
+  height: 2em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .5em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(209, 209, 209);
+  opacity: .6;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* [2/3] | Quick Info Text | Quick Info Text Container
+/* ------------------------------------------------------------------- */
+
+#about-quick-info-text {
+
+  padding: 0 .4em;
+
+  color:grey;
+}
+
+/* ------------------------------------------------------------------- */
+/* [3/3] | Why Superfreshdev | Quick Info Text Container
+/* ------------------------------------------------------------------- */
+
+#about-why-superfreshdev-info-container {
+
+  padding: 0 .4em;
+
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------------------- */
+/* Label | Why Superfreshdev
+/* ------------------------------------------------------------------- */
+
+#label-why-superfreshdev {
+
+  height: 2em;
+  padding: 0 .6em;
+
+  display: inline-flex;
+  align-items: center;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  background-color: rgb(209, 209, 209);
+  opacity: .6;
+
+  transition: all .4s;
+
+}
+
+#label-why-superfreshdev:hover {
+
+  background-color: wheat;
+}
+
+#label-why-superfreshdev > img {
+
+ transition: all .4s;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Label Handling | Why Superfreshdev
+/* ------------------------------------------------------------------- */
+
+/* default unshown */
+#chk-about-why-superfreshdev {
+
+  display: none;
+}
+
+/* set background  */
+#chk-about-why-superfreshdev:checked + label {
+
+  background-color: wheat;
+}
+
+/* change img arrow */
+#chk-about-why-superfreshdev:checked + label > img {
+
+  transform: rotate(180deg);
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Smooth Open/Close Container | Why Superfreshdev
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-about-why-superfreshdev {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms ease-in-out;
+
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Why Superfreshdev Text Container
+/* ------------------------------------------------------------------- */
+
+#why-superfreshdev-text-container {
+
+  padding-top: .8em;
+
+  line-height: 1.8em;
+
+  color:red;
+
+  background-color: lightblue;
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Handling | Smooth Open/Close Container | Why Superfreshdev
+/* ------------------------------------------------------------------- */
+
+/* smooth open/close */
+#chk-about-why-superfreshdev:checked ~ #smooth-open-close-about-why-superfreshdev {
+
+   grid-template-rows: 1fr;
 
 }

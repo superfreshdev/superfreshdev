@@ -17,11 +17,6 @@
 
     #welcome-container {
 
-      /* width: 100%;
-      padding: 1.3em 1.3em;
-      margin: 1em 0; */
-      /* height: 7em; */
-
       grid-template-areas:
       'welcome-title welcome-img'
       'welcome-date welcome-date'
@@ -29,9 +24,6 @@
 
       grid-template-columns: 1fr auto;
 
-      /*
-      column-gap: 1.5em;
-      row-gap: 1em; */
 
     }
 
@@ -50,7 +42,7 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 45px
+/* >= 450px
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 450px ) {
@@ -63,6 +55,26 @@
     #welcome-container {
 
       width: 28em;
+
+    }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 800px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 800px ) {
+
+    /* ------------------------------------------------ */
+    /*  Welcome | Welcome Row Container */
+    /* ------------------------------------------------ */
+    #welcome-row-container {
+
+      justify-content: flex-start;
+
+      /* padding-top: 1.5em;
+      padding-bottom: 1.5em; */
 
     }
 

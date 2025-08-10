@@ -1,7 +1,10 @@
 /* -------------------------------------------------------------- */
-/* > wrapper.css
+/* > resp-padding-wrappers.css
 /*
-/* : style wrapper container for child layout container
+/* : style padding wrappers which can use to define basic
+     padding layouts.
+     The padding wrapper had an special handling of
+     responsive sizes which u can find an extra resp file
 /* -------------------------------------------------------------- */
 
 
@@ -38,7 +41,8 @@
 .padding-0-0-8-wrapper {
 
   /* mobile */
-  padding: 0em .8em;
+  padding-left: .8em;
+  padding-right: .8em;
 
 }
 

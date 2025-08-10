@@ -19,14 +19,8 @@
   justify-items: center;
   align-content: flex-start;
 
-  row-gap: 2em;
+  /* row-gap: 2em; */
 
   background-color: rgb(102, 168, 63);
 
 }
-
-/* #about-page-container > div {
-
-  padding: 0 .8em;
-
-} */
