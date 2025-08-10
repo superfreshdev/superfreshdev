@@ -122,11 +122,12 @@
 /* >= 800px
 /* ------------------------------------------------------------------- */
 
-@media ( min-width: 600px ) {
+@media ( min-width: 720px ) {
 
     /* ------------------------------------------------ */
     /*  Welcome | Welcome Row Container */
     /* ------------------------------------------------ */
+
     #welcome-row-container {
 
       justify-content: flex-start;
@@ -136,8 +137,27 @@
 
     }
 
+    /* ------------------------------------------- */
+    /* Row Container | Quick Info
+    /* ------------------------------------------- */
+
+    #row-container-about-quick-info {
+
+      width: 100%;
+      height: 100%;
+
+      padding-top: 2em;
+      padding-bottom: 2em;
+
+      display: grid;
+      justify-items: center;
+
+
+      background-color: rgb(255, 255, 255);
+    }
+
     /* ------------------------------------------------ */
-    /* Quick Info Container */
+    /* Img | Quick Info Container */
     /* ------------------------------------------------ */
 
     #img-quick-info-about {
@@ -145,24 +165,50 @@
       margin-bottom: 0em;
     }
 
+
+    /* ------------------------------------------------ */
+    /* Quick Info Text Container */
+    /* ------------------------------------------------ */
+
+    #about-quick-info-text-container {
+
+      grid-area: quick-info;
+
+      width: 100%;
+
+      display: grid;
+      justify-items: center;
+      row-gap: .8em;
+
+      line-height: 1.8em;
+
+      /* background-color: rgb(230, 230, 230); */
+
+    }
+
+    /* ------------------------------------------------ */
+    /* Quick Info Container */
+    /* ------------------------------------------------ */
+
     #about-quick-info-container {
 
-      /* grid-template-areas:
+    width: 30em;
+
+     grid-template-areas:
         'img-about quick-info'
         'img-about label-why-superfreshdev'
         'smooth-why-superfreshdev smooth-why-superfreshdev';
 
 
       justify-items: center;
+      justify-content: center;
 
-      align-content: center;
-      justify-items: center;
 
       column-gap: 1.3em;
-      row-gap: 0em;
+      /* row-gap: 0em; */
 
       grid-template-columns: auto 1fr;
-      grid-template-rows: auto; */
+      grid-template-rows: auto;
 
     }
 
