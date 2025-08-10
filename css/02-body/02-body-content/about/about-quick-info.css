@@ -5,12 +5,11 @@
 /* -------------------------------------------------------------- */
 
 
-
 /* ------------------------------------------- */
-/* About Quick Info Row Container
+/* Row Container | Quick Info
 /* ------------------------------------------- */
 
-#about-quick-info-row-container {
+#row-container-about-quick-info {
 
   width: 100%;
   height: 100%;
@@ -18,8 +17,9 @@
   padding-top: .8em;
   padding-bottom: .8em;
 
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
+
 
   background-color: rgb(255, 255, 255);
 }
@@ -33,45 +33,58 @@
   width: 100%;
 
   display: grid;
+
+  grid-template-areas:
+  'img-about'
+  'quick-info'
+  'label-why-superfreshdev'
+  'smooth-why-superfreshdev';
+
   justify-items: center;
   row-gap: 1.5em;
+
+  /* grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr; */
 
 }
 
 /* ------------------------------------------------------------------- */
-/* Img | Quick Info
+/* [1/4] | Img | Quick Info
 /* ------------------------------------------------------------------- */
 
 #img-quick-info-about {
 
+  grid-area: img-about;
+
   height: 15em;
+  margin-bottom: .5em;
 
   border-radius: 1.3em;
 
 }
 
-
 /* ------------------------------------------------------------------- */
-/* Quick Info Text Container
+/* [2/4] | Quick Info Text Container
 /* ------------------------------------------------------------------- */
 
 #about-quick-info-text-container {
 
+  grid-area: quick-info;
+
   width: 100%;
 
   display: grid;
-  justify-items: flex-start;
-
-  row-gap: 1em;
+  justify-items: center;
+  row-gap: 1.3em;
 
   line-height: 1.8em;
 
-  /* background-color: grey; */
+  /* background-color: rgb(230, 230, 230); */
 
 }
 
 /* ------------------------------------------------------------------- */
-/* [1/3] | Mini Label | Quick Info Text Container
+/* Mini Label | Quick Info Text Container
 /* ------------------------------------------------------------------- */
 
 .mini-label-header {
@@ -93,32 +106,28 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* [2/3] | Quick Info Text | Quick Info Text Container
+/* Quick Info Text | Quick Info Text Container
 /* ------------------------------------------------------------------- */
 
 #about-quick-info-text {
 
+  width: 100%;
+
   padding: 0 .4em;
 
   color:grey;
+
+  /* background-color: green; */
 }
 
-/* ------------------------------------------------------------------- */
-/* [3/3] | Why Superfreshdev | Quick Info Text Container
-/* ------------------------------------------------------------------- */
-
-#about-why-superfreshdev-info-container {
-
-  padding: 0 .4em;
-
-  font-weight: bold;
-}
 
 /* ------------------------------------------------------------------- */
-/* Label | Why Superfreshdev
+/* [3/4] | Label | Why Superfreshdev
 /* ------------------------------------------------------------------- */
 
 #label-why-superfreshdev {
+
+  grid-area: label-why-superfreshdev;
 
   height: 2em;
   padding: 0 .6em;
@@ -129,9 +138,12 @@
 
   border-radius: .6em;
 
+  font-weight: bold;
+
   background-color: rgb(209, 209, 209);
   opacity: .6;
 
+  cursor: pointer;
   transition: all .4s;
 
 }
@@ -171,10 +183,12 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Smooth Open/Close Container | Why Superfreshdev
+/* [4/4] | Smooth Open/Close Container | Why Superfreshdev
 /* ------------------------------------------------------------------- */
 
 #smooth-open-close-about-why-superfreshdev {
+
+  grid-area: smooth-why-superfreshdev;
 
   width: 100%;
 
@@ -182,7 +196,6 @@
   justify-items: center;
   grid-template-rows: 0fr;
   transition: grid-template-rows 300ms ease-in-out;
-
 
 }
 
@@ -192,7 +205,7 @@
 
 #why-superfreshdev-text-container {
 
-  padding-top: .8em;
+  /* padding-top: .8em; */
 
   line-height: 1.8em;
 
