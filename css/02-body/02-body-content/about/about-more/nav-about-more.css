@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------------- */
+/* > nav-about-more.css
+/*
+/* : styles the nav about more to handle content
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Nav About More
+/* ------------------------------------------------------------------- */
+
+#nav-about-more {
+
+   height: 3em;
+  /* width: 100%; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: grey;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Label | Nav About More
+/* ------------------------------------------------------------------- */
+
+#nav-about-more > label {
+
+  height: 100%;
+  padding: 0 .8em;
+
+  background-color: rgb(198, 198, 198);
+
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+#nav-about-more > label:hover {
+
+  background-color: wheat;
+}
+
+#nav-about-more > :not(label:last-child) {
+
+  border-right: 1px solid rgb(158, 158, 158);
+}
+
+
+#nav-about-more > label:nth-of-type(1) {
+
+  border-radius: .8em 0 0 .8em;
+}
+
+#nav-about-more > label:last-child {
+
+  border-radius: 0 .8em .8em 0;
+}
+
+/* ------------------------------------------------------------------- */
+/* Handling | Nav About More
+/* ------------------------------------------------------------------- */
