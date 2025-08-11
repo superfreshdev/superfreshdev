@@ -68,3 +68,18 @@
 /* ------------------------------------------------------------------- */
 /* Handling | Nav About More
 /* ------------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-nav-about-more"] {
+
+  display: none;
+}
+
+/* set background  */
+#radio-nav-about-it-skills:checked ~ #nav-about-more label[for="radio-nav-about-it-skills"],
+#radio-nav-about-mindset:checked ~ #nav-about-more label[for="radio-nav-about-mindset"],
+#radio-nav-about-contact:checked ~ #nav-about-more label[for="radio-nav-about-contact"] {
+
+  background-color: wheat;
+
+}
