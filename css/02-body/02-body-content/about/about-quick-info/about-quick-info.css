@@ -1,0 +1,117 @@
+/* -------------------------------------------------------------- */
+/* > about-quick-info.css
+/*
+/* : styles the quick info container of about
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Quick Info Container
+/* ------------------------------------------------------------------- */
+
+#about-quick-info-container {
+
+  padding: 1.5em 0;
+
+  display: grid;
+  row-gap: 1em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* [1/2] | Quick Info
+/* ------------------------------------------------------------------- */
+
+#about-quick-info {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  /* mobile */
+  justify-content: center;
+
+  column-gap: 1em;
+  row-gap: 1em;
+
+  /* background-color: green; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* [1/2] | Img | Quick Info
+/* ------------------------------------------------------------------- */
+
+#img-about-quick-info {
+
+  /* grid-area: img-about; */
+  height: 15em;
+  /* margin-bottom: .5em; */
+  border-radius: 1.3em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Img Arrow Seperator | About Quick Info
+/* ------------------------------------------------------------------- */
+
+#img-arrow-seperator-about-quick-info {
+
+  height: .8em;
+
+  /* mobile */
+  display: none;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* [2/2] | Content | Quick Info
+/* ------------------------------------------------------------------- */
+
+#about-quick-info-content {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1em;
+
+}
+
+/* ----------------------------------------------------------- */
+/* 🟣🟣🟣🟣🟣🟣🟣🟣🟣
+/* 🟣 Auslagern extra für Mini Label Headers ?
+/* 🟣🟣🟣🟣🟣🟣🟣🟣🟣
+/* Mini Header
+/* ----------------------------------------------------------- */
+
+.mini-header {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .5em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(209, 209, 209);
+  opacity: .6;
+
+}
+
+/* ----------------------------------------------------------- */
+/* Quick Info Text
+/* ----------------------------------------------------------- */
+
+#about-quick-info-text {
+
+  text-align: center;
+  line-height: 1.8em;
+
+  color:grey;
+
+}

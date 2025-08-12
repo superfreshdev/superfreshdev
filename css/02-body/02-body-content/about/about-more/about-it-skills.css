@@ -11,6 +11,9 @@
 
 #about-it-skills {
 
+  padding: .8em;
+
+  display: none;
   background-color: red;
 
 }

@@ -19,6 +19,8 @@
   justify-items: center;
   align-content: flex-start;
 
+  grid: auto auto 1fr / 1fr;
+
   /* row-gap: 2em; */
 
   background-color: rgb(102, 168, 63);

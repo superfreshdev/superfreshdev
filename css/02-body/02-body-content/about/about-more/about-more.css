@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------- */
 /* > about-more.css
 /*
-/* : styles the about more conntainer
+/* : styles the about more & content conntainer
 /* -------------------------------------------------------------- */
 
 
@@ -11,5 +11,9 @@
 
 #about-more-container {
 
+  height: 100%;
+
   display: grid;
+  grid: auto 1fr / 1fr;
+
 }
