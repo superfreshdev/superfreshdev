@@ -6,35 +6,20 @@
 
 
 /* ------------------------------------------------------------------- */
-/* Quick Info Container
+/* About Quick Info Container
 /* ------------------------------------------------------------------- */
 
 #about-quick-info-container {
 
   padding: 1.5em 0;
 
-  display: grid;
-  row-gap: 1em;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* [1/2] | Quick Info
-/* ------------------------------------------------------------------- */
-
-#about-quick-info {
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
-  /* mobile */
   justify-content: center;
 
-  column-gap: 1em;
-  row-gap: 1em;
-
-  /* background-color: green; */
+  row-gap: 2em;
 
 }
 
@@ -74,14 +59,12 @@
 
   display: grid;
   justify-items: center;
-  row-gap: 1em;
+  row-gap: 1.5em;
 
 }
 
 /* ----------------------------------------------------------- */
-/* 🟣🟣🟣🟣🟣🟣🟣🟣🟣
 /* 🟣 Auslagern extra für Mini Label Headers ?
-/* 🟣🟣🟣🟣🟣🟣🟣🟣🟣
 /* Mini Header
 /* ----------------------------------------------------------- */
 

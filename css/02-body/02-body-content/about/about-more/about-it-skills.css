@@ -11,9 +11,105 @@
 
 #about-it-skills {
 
-  padding: .8em;
 
-  display: none;
   background-color: red;
 
+}
+
+/* ------------------------------------------- */
+/* About My IT Skills Container
+/* ------------------------------------------- */
+
+#about-my-it-skills-container {
+
+  display: grid;
+  row-gap: 3em;
+
+}
+
+/* ------------------------------------------- */
+/* About My IT Skills Content
+/* ------------------------------------------- */
+
+.about-my-it-skills-content {
+
+  display: grid;
+  justify-items: flex-start;
+  row-gap: 2em;
+
+}
+
+/* ------------------------------------------- */
+/* Header | About My IT Skills Content
+/* ------------------------------------------- */
+
+.about-my-it-skills-content > header {
+
+
+  height: 3em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  background-color: grey;
+
+}
+
+/* ------------------------------------------- */
+/* Main | About My IT Skills Content
+/* ------------------------------------------- */
+
+.about-my-it-skills-content > main {
+
+  width: 100%;
+  padding: .8em 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6em;
+
+  border: 1px solid black;
+
+}
+
+/* ------------------------------------------- */
+/* About It Skill
+/* ------------------------------------------- */
+
+.about-it-skill {
+
+  height: 2.5em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(225, 225, 225);
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* layout fix for text */
+.about-it-skill > div {
+
+  padding-top: 1px;
+
+}
+
+.about-it-skill:hover {
+
+  background-color: wheat;
 }

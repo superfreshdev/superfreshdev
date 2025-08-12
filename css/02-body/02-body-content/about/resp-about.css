@@ -11,32 +11,6 @@
 
 @media ( min-width: 380px ) {
 
-    /* ------------------------------------------------ */
-    /*  Welcome | Welcome Container */
-    /* ------------------------------------------------ */
-
-    #welcome-container {
-
-      grid-template-areas:
-      'welcome-title welcome-img'
-      'welcome-date welcome-date'
-      ;
-
-      grid-template-columns: 1fr auto;
-
-    }
-
-    /* ------------------------------------------------ */
-    /*  Welcome | Img Cartoon */
-    /* ------------------------------------------------ */
-
-    #img-clipart-welcome {
-
-      /* mobile */
-      display: block;
-      height: 6em;
-
-    }
 
     /* ------------------------------------------------ */
     /* More Container | Nav Img */
@@ -51,25 +25,6 @@
 
 }
 
-/* ------------------------------------------------------------------- */
-/* >= 450px
-/* ------------------------------------------------------------------- */
-
-@media ( min-width: 450px ) {
-
-
-    /* ------------------------------------------------ */
-    /*  Welcome | Welcome Container */
-    /* ------------------------------------------------ */
-
-    #welcome-container {
-
-      width: 28em;
-
-    }
-
-}
-
 
 /* ------------------------------------------------------------------- */
 /* >= 650px
@@ -79,20 +34,15 @@
 
 
   /* ------------------------------------------------ */
-  /* Quick Info                                       */
+  /* Quick Info Container                             */
   /* ------------------------------------------------ */
 
-  #about-quick-info {
+  #about-quick-info-container {
 
-    display: flex;
     flex-wrap: nowrap;
-    align-items: center;
 
-    /* mobile */
-    justify-content: center;
-
+    /* desktop */
     column-gap: 1em;
-    row-gap: 1em;
 
     /* background-color: white; */
 
@@ -133,24 +83,6 @@
 
 }
 
-/* ------------------------------------------------------------------- */
-/* >= 720px
-/* ------------------------------------------------------------------- */
-
-@media ( min-width: 720px ) {
-
-    /* ------------------------------------------------ */
-    /* More Container | Nav */
-    /* ------------------------------------------------ */
-
-    #nav-about-more {
-
-      /* desktop */
-      justify-content: flex-start;
-
-    }
-
-}
 
 /* ------------------------------------------------------------------- */
 /* >= 750px
@@ -158,18 +90,6 @@
 
 @media ( min-width: 750px ) {
 
-  /* ------------------------------------------------ */
-  /*  Welcome | Row Container */
-  /* ------------------------------------------------ */
-
-  #welcome-row-container {
-
-    justify-content: flex-start;
-
-    /* padding-top: 1.5em;
-    padding-bottom: 1.5em; */
-
-  }
 
   /* ------------------------------------------------ */
   /*  Quick Info | Container  */
@@ -180,18 +100,17 @@
     /* desktop */
     padding: 2em 0;
 
-    justify-items: flex-end;
 
   }
 
-  /* ------------------------------------------------ */
-  /*  Quick Info  */
-  /* ------------------------------------------------ */
+  /* ------------------------------------------------------------------- */
+  /* About Quick Info Container
+  /* ------------------------------------------------------------------- */
 
-  #about-quick-info {
+  #about-quick-info-container {
 
     /* desktop */
-    width: 45em;
+    width: 48em;
 
     /* background-color: yellow; */
 
@@ -207,15 +126,5 @@
 
   }
 
-  /* -------------------------------------------------------------- */
-  /*  Quick Info | Smooth Open Close Why Superfreshdev              */
-  /* -------------------------------------------------------------- */
-
-  #smooth-open-close-about-why-superfreshdev {
-
-    /* desktop */
-    width: 45em;
-
-  }
 
 }
