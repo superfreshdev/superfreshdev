@@ -26,7 +26,7 @@
 
   position: relative;
 
-  padding: 1.5em .8em;
+  /* padding: 1.5em .8em; */
 
   display: grid;
   align-items: flex-start;
@@ -44,24 +44,23 @@
 .about-more-content-header {
 
   position: absolute;
-  top:.8em;
-  right:.8em;
+  right:0em;
 
-  height: 4em;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
 
-  background-color: yellow;
+  /* background-color: yellow; */
 
 
 }
 
 .about-more-content-header > div {
 
-  width: 4em;
-  height: 4em;
+  /* mobile */
+  width: 2.5em;
+  height: 2.5em;
 
   display: flex;
   align-items: center;
@@ -71,4 +70,15 @@
 
   background-color: rgb(28, 28, 28);
 
+}
+
+.about-more-content-header img {
+
+  height: 1.4em;
+}
+
+/* special img because email is default bigger */
+#about-contact > .about-more-content-header img {
+
+  height: 1em;
 }
