@@ -11,8 +11,15 @@
 
 #about-it-skills {
 
-  /* border: 1px solid black; */
-  /* background-color: red; */
+  position: relative;
+
+  /* padding: 1.5em .8em; */
+
+  display: grid;
+  align-items: flex-start;
+  grid: 1fr / 1fr;
+
+  display: none;
 
 }
 

@@ -1,0 +1,41 @@
+/* -------------------------------------------------------------- */
+/* > arrow-seperators.css
+
+/* : styles arrow seperators which use an arrow img
+     to seperate two content
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Arrow Contaienr
+/* -------------------------------------------------------------- */
+
+.arrow-seperator,
+.arrow-seperator-img-90deg,
+.arrow-seperator-padd-1-0 {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* ------------------------------------------------ */
+/* Paddings | Arrow Container
+/* ------------------------------------------------ */
+
+.arrow-seperator-padd-1-0 {
+
+  padding: 1em 0em;
+
+}
+
+/* ------------------------------------------------ */
+/* Img Rotations | Arrow Container
+/* ------------------------------------------------ */
+
+.arrow-seperator-img-90deg > img {
+
+  transform: rotate(90deg);
+}

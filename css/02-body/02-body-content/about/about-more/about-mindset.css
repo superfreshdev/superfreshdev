@@ -16,20 +16,28 @@
 }
 
 /* ------------------------------------------- */
-/* About Mindset Content
+/* About Mindset Container
 /* ------------------------------------------- */
 
-#about-mindset-content {
+#about-mindset-container {
 
   padding: 3.5em 0;
+  height: 100%;
+
+  display: grid;
+  grid: auto auto 1fr / 1fr;
+
+  row-gap: 1em;
+
+  background-color: red;
 
 }
 
 /* ------------------------------------------- */
-/* Header | About Mindset Content
+/* [1/2] | Header | About Mindset Content
 /* ------------------------------------------- */
 
-#about-mindset-content > header {
+#about-mindset-header-quote {
 
   height: 2em;
 
@@ -43,11 +51,12 @@
 
   /* background-color: red; */
 
+
 }
 
-#about-mindset-content > header > div:nth-of-type(1),
-#about-mindset-content > header > div:nth-of-type(2),
-#about-mindset-content > header > div:nth-of-type(3) {
+#about-mindset-header-quote > div:nth-of-type(1),
+#about-mindset-header-quote > div:nth-of-type(2),
+#about-mindset-header-quote > div:nth-of-type(3) {
 
   height: 2em;
   padding: 0 .4em;
@@ -61,48 +70,139 @@
 
 }
 
-#about-mindset-content > header > div:nth-of-type(1),
-#about-mindset-content > header > div:nth-of-type(3) {
+#about-mindset-header-quote > div:nth-of-type(1),
+#about-mindset-header-quote > div:nth-of-type(3) {
 
   background-color: grey;
+
 }
 
-#about-mindset-content > header > div:nth-of-type(2) {
+#about-mindset-header-quote > div:nth-of-type(2) {
 
   background-color: wheat;
 
+}
+
+
+/* ------------------------------------------- */
+/* [2/2] | Main | About Mindset Content
+/* ------------------------------------------- */
+
+#about-mindset-content {
+
+  height: 100%;
+  padding: 1em 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3em;
+  row-gap: 3em;
+
+  background-color: yellow;
 
 }
 
 /* ------------------------------------------- */
-/* Arrow Down
+/* Mindset Video Container
 /* ------------------------------------------- */
 
-#header-arrow-down {
+.about-mindset-video-container {
 
-  padding: 2em 0;
+  /* mobile */
+  width: 100%;
+
+  display: grid;
+  row-gap: 1.3em;
+
+  border:1px solid black;
+
+}
+
+/* ------------------------------------------- */
+/* Header | Mindset Video Container
+/* ------------------------------------------- */
+
+.about-mindset-video-container > header {
+
+  display: grid;
+  row-gap: .2em;
+}
+
+.about-mindset-video-container > header > div:nth-of-type(1) {
+
+  /* belongs to parent grid */
+  justify-self: flex-start;
+
+  height: 1.8em;
+  padding: 0 .4em;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  border-radius: .4em;
+
+  font-weight: bold;
+
+  background-color: wheat;
 
 }
 
-#header-arrow-down > img {
+.about-mindset-video-container > header > div:nth-of-type(2) {
 
-  transform: rotate(90deg);
-  height: .8em;
+  /* font-weight: bold; */
+  color:rgb(98, 98, 98);
 }
 
 
 /* ------------------------------------------- */
-/* Main | About Mindset Content
+/* Video Element
 /* ------------------------------------------- */
 
-#about-mindset-content > main {
+.about-mindset-video-element {
+
+  width: 100%;
+  height: 100%;
+  position: relative;
 
   display: grid;
   justify-items: center;
-  row-gap: 3em;
+  align-items: center;
+
+  /* display: grid; */
+  /* justify-items: center; */
+
+
+}
+
+.about-mindset-video-element > video {
+
+  width: 100%;
+  height: 20em;
+  /* object-fit: fill; */
+  object-fit: cover;
+  /* object-fit: fill; */
+  /* object-fit: contain; */
+
+  border-radius: .4em;
+
+}
+
+/* ----------------------------------------------------- */
+/* Video Banner
+/* ----------------------------------------------------- */
+
+#video-banner {
+
+  position: absolute;
+  bottom: 10em;
+
+  padding: .8em;
+
+  border-radius: .8em;
+
+  font-weight: bold;
+  color: wheat;
 
 }

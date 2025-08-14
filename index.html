@@ -73,6 +73,9 @@
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/info-text-containers/quick-info-text-container.css">
 
                 <!-- element containers -->
+
+                <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/arrow-seperators.css">
+
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/number-containers.css">
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/arrow-containers.css">
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/art-seperator-container.css">
@@ -602,7 +605,7 @@
                                                 <div class="about-more-content" id="about-it-skills">
 
                                                     <!-- --------------------------------------------------------- -->
-                                                    <!-- 🟨 Header | About More Content -->
+                                                    <!-- 🟨 [1/2] | Header | About More Content -->
                                                     <!-- --------------------------------------------------------- -->
                                                     <header class="about-more-content-header">
 
@@ -613,7 +616,7 @@
                                                     </header>
 
                                                     <!-- --------------------------------------------------------- -->
-                                                    <!-- ➡️🟥 About My IT Skills Container -->
+                                                    <!-- 🟨 [2/2] | About My IT Skills Container -->
                                                     <!-- --------------------------------------------------------- -->
                                                     <div id="about-my-it-skills-container">
 
@@ -841,7 +844,7 @@
                                                 <div class="about-more-content" id="about-mindset">
 
                                                     <!-- --------------------------------------------------------- -->
-                                                    <!-- Header | About More Content -->
+                                                    <!-- [1/2] | Header | About More Content (absolute) -->
                                                     <!-- --------------------------------------------------------- -->
                                                     <header class="about-more-content-header">
 
@@ -852,14 +855,14 @@
                                                     </header>
 
                                                     <!-- --------------------------------------------------------- -->
-                                                    <!-- About Mindset Content -->
+                                                    <!-- ➡️🟥 [2/2] | About Mindset Container -->
                                                     <!-- --------------------------------------------------------- -->
-                                                    <div id="about-mindset-content">
+                                                    <div id="about-mindset-container">
 
                                                         <!-- --------------------------------------------------------- -->
-                                                        <!-- Header | About Mindset Content -->
+                                                        <!-- [1/2] | Header | About Mindset Content -->
                                                         <!-- --------------------------------------------------------- -->
-                                                        <header>
+                                                        <header id="about-mindset-header-quote">
 
                                                             <div>Dream it.</div>
                                                             <div>Build it.</div>
@@ -868,29 +871,40 @@
                                                         </header>
 
                                                         <!-- --------------------------------------------------------- -->
-                                                        <!-- Arrow Down -->
+                                                        <!-- 🟣 Arrow Seperator | Img 90deg  -->
                                                         <!-- --------------------------------------------------------- -->
-                                                        <div id="header-arrow-down">
-                                                            <img src="media/img/icons/02-icon-colors/01-black/black-double-arrow-right.png" alt="img">
+                                                        <div class="arrow-seperator-img-90deg">
+                                                            <img class="img-h-1-1" src="media/img/icons/02-icon-colors/01-black/black-double-arrow-right.png" alt="img">
                                                         </div>
 
                                                         <!-- --------------------------------------------------------- -->
-                                                        <!-- Main | About Mindset Content -->
+                                                        <!-- [2/2] | Main | About Mindset Content -->
                                                         <!-- --------------------------------------------------------- -->
-                                                        <main>
+                                                        <main id="about-mindset-content">
 
                                                             <!-- ------------------------------------------------------ -->
                                                             <!-- Video 1 | Reflect your Situation -->
                                                             <!-- ------------------------------------------------------ -->
-                                                            <div>
+                                                            <div class="about-mindset-video-container">
 
                                                                 <header>
                                                                     <div>Step 1/2:</div>
-                                                                    <div>Reflect your Situation ...</div>
+                                                                    <div>» Reflect your Situation ...</div>
                                                                 </header>
 
-                                                                <main>
-                                                                    Video 1
+                                                                <main class="about-mindset-video-element">
+
+                                                                    <video preload="metadata" controls>
+                                                                        <source src="media/video/content/about/reflect.mp4" type="video/mp4">
+                                                                    </video>
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- Video Banner -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <div id="video-banner">
+                                                                        Video Banner - Text fehlt noch
+                                                                    </div>
+
                                                                 </main>
 
                                                             </div>
@@ -898,23 +912,26 @@
                                                             <!-- ------------------------------------------------------ -->
                                                             <!-- Video 2 | Go Final & Change your point of view -->
                                                             <!-- ------------------------------------------------------ -->
-                                                            <div>
+                                                            <div class="about-mindset-video-container">
 
 
                                                                  <header>
                                                                     <div>Step 2/2:</div>
-                                                                    <div>Go Final & Change your point of view ...</div>
+                                                                    <div>» Go Final & Change your point of view ...</div>
                                                                 </header>
 
-                                                                <main>
-                                                                    Video 2
+                                                                <main class="about-mindset-video-element">
+
+                                                                    <video preload="metadata" controls>
+                                                                        <source src="media/video/content/about/go-final.mp4" type="video/mp4">
+                                                                    </video>
+
                                                                 </main>
 
 
                                                             </div>
 
                                                         </main>
-
 
 
                                                     </div>
