@@ -1,0 +1,96 @@
+/* -------------------------------------------------------------------------------- */
+/* > about-mindset.css
+/*
+/* : styles mindset of about
+/* -------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------- */
+/* About Mindset
+/* ------------------------------------------- */
+
+#about-mindset {
+
+  background-color: rgb(164, 164, 248);
+
+  /* default unshown only handled by radio checked */
+  display: none;
+
+}
+
+/* ------------------------------------------- */
+/* About Mindset Container
+/* ------------------------------------------- */
+
+#about-mindset-container {
+
+  height: 100%;
+
+  display: grid;
+  grid: auto 1fr / 1fr;
+
+  row-gap: 1em;
+
+  background-color: red;
+
+}
+
+/* ------------------------------------------- */
+/* About Mindset Header
+/* ------------------------------------------- */
+
+#about-mindset-header {
+
+  display: grid;
+  row-gap: 1em;
+
+  background-color: yellow;
+
+}
+
+/* ------------------------------------------- */
+/* About Mindset Header Quote
+/* ------------------------------------------- */
+
+#about-mindset-header-quote {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  /* background-color: red; */
+
+}
+
+#about-mindset-header-quote > div:nth-of-type(1),
+#about-mindset-header-quote > div:nth-of-type(2),
+#about-mindset-header-quote > div:nth-of-type(3) {
+
+  height: 2em;
+  padding: 0 .4em;
+
+  display: flex;
+  align-items: center;
+
+  opacity: .7;
+
+  border-radius: .6em;
+
+}
+
+#about-mindset-header-quote > div:nth-of-type(1),
+#about-mindset-header-quote > div:nth-of-type(3) {
+
+  background-color: grey;
+
+}
+
+#about-mindset-header-quote > div:nth-of-type(2) {
+
+  background-color: wheat;
+
+}

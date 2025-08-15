@@ -13,4 +13,7 @@
 
   background-color: yellow;
 
+  /* default unshown only handled by radio checked */
+  display: none;
+
 }

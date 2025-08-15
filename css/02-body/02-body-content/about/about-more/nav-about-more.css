@@ -56,6 +56,7 @@
 #nav-about-more > label:hover {
 
   background-color: wheat;
+
 }
 
 #nav-about-more > :not(label:last-child) {
@@ -90,6 +91,8 @@ input[name="name-radio-nav-about-more"] {
 #radio-nav-about-contact:checked ~ #nav-about-more label[for="radio-nav-about-contact"] {
 
   background-color: wheat;
+  background-color: rgb(28, 28, 28);
+  color:white;
   opacity: 1;
 
 }

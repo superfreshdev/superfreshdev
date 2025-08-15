@@ -167,13 +167,17 @@
                 <!-- ---------------------- -->
 
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/about.css">
-                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info.css">
+
+                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/about-quick-info.css">
 
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/about-more/about-more.css">
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/about-more/nav-about-more.css">
 
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/about-more/about-it-skills.css">
-                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-more/about-mindset.css">
+
+                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-more/about-mindset/about-mindset.css">
+                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-more/about-mindset/about-mindset-content.css">
+
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/about-more/about-contact.css">
 
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/resp-about.css">
@@ -251,7 +255,7 @@
             <!-- ------------------------------------------------------------ -->
 
             <link rel="stylesheet" href="css/03-responsive/00-resp-sfd-default/resp-handle-content-areas.css">
-            <link rel="stylesheet" href="css/03-responsive/00-resp-sfd-default/resp-padding-wrapper.css">
+            <!-- <link rel="stylesheet" href="css/03-responsive/00-resp-sfd-default/resp-padding-wrapper.css"> -->
 
             <!-- ------------------------------------------------------------ -->
             <!--  01 | resp | body default                                    -->
@@ -582,17 +586,17 @@
                                                 <nav id="nav-about-more">
 
                                                     <label for="radio-nav-about-it-skills">
-                                                        <img src="media/img/icons/02-icon-colors/01-black/black-binary-small.png" class="img-h-1-1" alt="img">
+                                                        <img src="media/img/icons/02-icon-colors/02-white/white-binary-small.png" class="img-h-1-1" alt="img">
                                                         <div>IT Skill's</div>
                                                     </label>
 
                                                     <label  for="radio-nav-about-mindset">
-                                                        <img src="media/img/icons/02-icon-colors/01-black/black-thunder.png" class="img-h-1-1" alt="img">
+                                                        <img src="media/img/icons/02-icon-colors/02-white/white-thunder.png" class="img-h-1-1" alt="img">
                                                         <div>Mindset</div>
                                                     </label>
 
                                                     <label  for="radio-nav-about-contact">
-                                                        <img src="media/img/icons/02-icon-colors/01-black/black-email.png" class="img-h-0-8" alt="img">
+                                                        <img src="media/img/icons/02-icon-colors/02-white/white-email.png" class="img-h-0-8" alt="img">
                                                         <div>Contact</div>
                                                     </label>
 
@@ -844,7 +848,7 @@
                                                 <div class="about-more-content" id="about-mindset">
 
                                                     <!-- --------------------------------------------------------- -->
-                                                    <!-- [1/2] | Header | About More Content (absolute) -->
+                                                    <!-- [1/2] | Header | About More Content -->
                                                     <!-- --------------------------------------------------------- -->
                                                     <header class="about-more-content-header">
 
@@ -859,75 +863,146 @@
                                                     <!-- --------------------------------------------------------- -->
                                                     <div id="about-mindset-container">
 
-                                                        <!-- --------------------------------------------------------- -->
-                                                        <!-- [1/2] | Header | About Mindset Content -->
-                                                        <!-- --------------------------------------------------------- -->
-                                                        <header id="about-mindset-header-quote">
 
-                                                            <div>Dream it.</div>
-                                                            <div>Build it.</div>
-                                                            <div>Live it.</div>
+                                                        <!-- --------------------------------------------------------- -->
+                                                        <!-- [1/2] | Header | About Mindset -->
+                                                        <!-- --------------------------------------------------------- -->
+                                                        <header id="about-mindset-header">
+
+                                                            <!-- --------------------------------------------------------- -->
+                                                            <!-- Header Quote | About Mindset -->
+                                                            <!-- --------------------------------------------------------- -->
+                                                            <header id="about-mindset-header-quote">
+
+                                                                <div>Dream it.</div>
+                                                                <div>Build it.</div>
+                                                                <div>Live it.</div>
+
+                                                            </header>
+
+                                                            <!-- --------------------------------------------------------- -->
+                                                            <!-- 🟣 Arrow Seperator | Img 90deg  -->
+                                                            <!-- --------------------------------------------------------- -->
+                                                            <div class="arrow-seperator-img-90deg">
+                                                                <img class="img-h-1-1" src="media/img/icons/02-icon-colors/01-black/black-double-arrow-right.png" alt="img">
+                                                            </div>
 
                                                         </header>
-
-                                                        <!-- --------------------------------------------------------- -->
-                                                        <!-- 🟣 Arrow Seperator | Img 90deg  -->
-                                                        <!-- --------------------------------------------------------- -->
-                                                        <div class="arrow-seperator-img-90deg">
-                                                            <img class="img-h-1-1" src="media/img/icons/02-icon-colors/01-black/black-double-arrow-right.png" alt="img">
-                                                        </div>
 
                                                         <!-- --------------------------------------------------------- -->
                                                         <!-- [2/2] | Main | About Mindset Content -->
                                                         <!-- --------------------------------------------------------- -->
                                                         <main id="about-mindset-content">
 
-                                                            <!-- ------------------------------------------------------ -->
-                                                            <!-- Video 1 | Reflect your Situation -->
-                                                            <!-- ------------------------------------------------------ -->
+                                                            <!-- ------------------------------------------------------------------------ -->
+                                                            <!-- Video Container 1 | Reflect your Situation             -->
+                                                            <!-- ------------------------------------------------------------------------ -->
                                                             <div class="about-mindset-video-container">
 
-                                                                <header>
-                                                                    <div>Step 1/2:</div>
-                                                                    <div>» Reflect your Situation ...</div>
+                                                                <!-- ----------------------------------------------- -->
+                                                                <!-- Checkbox | Handle Audio & Video -->
+                                                                <!-- ----------------------------------------------- -->
+                                                                <input type="checkbox" id="chk-about-mindset-video-reflect">
+
+                                                                <!-- ----------------------------------------------- -->
+                                                                <!-- Audio Element  -->
+                                                                <!-- ----------------------------------------------- -->
+                                                                <audio id="audio-about-mindset-reflect" controls>
+                                                                    <source src="media/audio/content/about/reflect-audio.mp3" type="audio/mpeg">
+                                                                </audio>
+
+                                                                 <audio id="audio-about-mindset-reflectXX" controls>
+                                                                    <source src="media/audio/content/about/x-bird-spirit.mp3" type="audio/mpeg">
+                                                                </audio>
+
+                                                                <!-- ----------------------------------------------- -->
+                                                                <!-- Header | Video Container         -->
+                                                                <!-- ----------------------------------------------- -->
+                                                                <header class="about-mindset-video-header-2col">
+
+                                                                    <!-- -------------------------------------- -->
+                                                                    <!-- Title -->
+                                                                    <!-- -------------------------------------- -->
+                                                                    <div>
+                                                                        <div>Step 1/2:</div>
+                                                                        <div>» Reflect your Situation ...</div>
+                                                                    </div>
+
+                                                                    <!-- -------------------------------------- -->
+                                                                    <!-- Play/Pause | Label -->
+                                                                    <!-- -------------------------------------- -->
+                                                                    <label for="chk-about-mindset-video-reflect" id="label-play-pause-about-mindset-video-reflect">
+
+                                                                        <!-- img play -->
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-mp3-play.png" class="img-h-2" alt="img">
+                                                                        <!-- img pause -->
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-mp3-pause.png" class="img-h-2" alt="img">
+
+                                                                    </label>
+
                                                                 </header>
 
-                                                                <main class="about-mindset-video-element">
+                                                                <!-- ----------------------------------------------- -->
+                                                                <!-- Video Wrapper Container                         -->
+                                                                <!-- ----------------------------------------------- -->
+                                                                <main class="about-mindset-video-wrapper-container">
 
-                                                                    <video preload="metadata" controls>
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- Video Source -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <video id="video-about-mindset-reflect" preload="metadata" controls muted loop>
                                                                         <source src="media/video/content/about/reflect.mp4" type="video/mp4">
                                                                     </video>
 
                                                                     <!-- ------------------------------------------------ -->
-                                                                    <!-- Video Banner -->
+                                                                    <!-- Video Banner | Reflect Video -->
                                                                     <!-- ------------------------------------------------ -->
-                                                                    <div id="video-banner">
-                                                                        Video Banner - Text fehlt noch
+                                                                    <div id="video-banner-reflect-video">
+                                                                        Accept what you can't change,<br>
+                                                                        & <br>
+                                                                         take fearless action on what you can.
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- Audio Banner - Reflect -->
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <div id="audio-banner-reflect">
+                                                                        <div id="audio-min-reflect">04</div>
+                                                                        <div>:</div>
+                                                                        <div id="audio-sec-reflect">38</div>
                                                                     </div>
 
                                                                 </main>
 
                                                             </div>
 
-                                                            <!-- ------------------------------------------------------ -->
-                                                            <!-- Video 2 | Go Final & Change your point of view -->
-                                                            <!-- ------------------------------------------------------ -->
-                                                            <div class="about-mindset-video-container">
+                                                            <!-- ------------------------------------------------------------------------ -->
+                                                            <!-- Video Container 2 | Go Final & Change your point of view                 -->
+                                                            <!-- ------------------------------------------------------------------------ -->
+                                                            <div style="display: none;" class="about-mindset-video-container">
 
-
+                                                                <!-- ----------------------------------------------- -->
+                                                                <!-- Header | Video Container         -->
+                                                                <!-- ----------------------------------------------- -->
                                                                  <header>
                                                                     <div>Step 2/2:</div>
                                                                     <div>» Go Final & Change your point of view ...</div>
                                                                 </header>
 
-                                                                <main class="about-mindset-video-element">
+                                                                <!-- ----------------------------------------------- -->
+                                                                <!-- Video Wrapper Container                         -->
+                                                                <!-- ----------------------------------------------- -->
+                                                                <main class="about-mindset-video-wrapper-container">
 
+                                                                    <!-- ------------------------------------------------ -->
+                                                                    <!-- Video Source -->
+                                                                    <!-- ------------------------------------------------ -->
                                                                     <video preload="metadata" controls>
                                                                         <source src="media/video/content/about/go-final.mp4" type="video/mp4">
                                                                     </video>
 
-                                                                </main>
 
+                                                                </main>
 
                                                             </div>
 
@@ -1070,8 +1145,8 @@
             <!-- Date -->
             <!-- --------------------------------------------- -->
 
-            <script src="js/01-js-library/date/date-styles.js"></script>
-            <script src="js/01-js-library/date/date-helper.js"></script>
+            <!-- <script src="js/01-js-library/date/date-styles.js"></script>
+            <script src="js/01-js-library/date/date-helper.js"></script> -->
 
             <!-- --------------------------------------------- -->
             <!-- Helpfull -->
@@ -1136,6 +1211,8 @@
             <!-- 🟥 About                                         -->
             <!-- ------------------------------------------------ -->
 
+                <script src="js/03-content/about/about-mindset/play-pause-video-audio-about-mindset.js"></script>
+
                 <!-- <script src="js/03-content/about/play-pause-audio-about.js"></script> -->
 
                  <!-- <script src="js/03-content/about/close-about-view.js"></script> -->
@@ -1171,7 +1248,7 @@
             <!-- ------------------------------------------------ -->
 
                 <!-- My Sport Challenges -->
-                <script src="js/03-content/my-private-lifestyle/my-sport-challenges.js"></script>
+                <!-- <script src="js/03-content/my-private-lifestyle/my-sport-challenges.js"></script> -->
 
 
         <!-- ------------------------------------------ -->
@@ -1187,7 +1264,7 @@
             <!-- <script src="js/01-default/header-link-nav.js"></script> -->
 
             <!-- windows on load -->
-            <script src="js/02-default/windowsOnLoad.js"></script>
+            <!-- <script src="js/02-default/windowsOnLoad.js"></script> -->
 
 
 

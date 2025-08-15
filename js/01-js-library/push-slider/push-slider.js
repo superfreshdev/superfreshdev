@@ -1,4 +1,4 @@
-console.log("(🟨Lib) push-slider.js ")
+console.log("🟡(Lib) push-slider.js ")
 
 
 /* ------------------------------------------------------ */
