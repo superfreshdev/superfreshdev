@@ -1,0 +1,39 @@
+/* -------------------------------------------------------------- */
+/* > label-close-tabs.css
+/*
+/* : styles the the label to close content
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Label Close Tab
+/* ------------------------------------------------------------------- */
+
+.lbl-close-tab {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  background-color: rgb(227, 87, 87) ;
+  color:black;
+
+  transition: all .4s;
+
+}
+
+.lbl-close-tab:hover {
+
+  background-color: rgb(236, 115, 115) ;
+
+}

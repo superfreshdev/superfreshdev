@@ -18,11 +18,64 @@ var videoFileMindsetReflect = document.getElementById("video-about-mindset-refle
 /* Varialbles
 /* ------------------------------------------------------------ */
 
+var audioDurationToBeFresh = 0;
+var savedAudioDurationToBeFresh = 0;
+
 
 /* ------------------------------------------------------------ */
-/* Functions
+/* 🟨 Functions
 /* ------------------------------------------------------------ */
 
+
+/* -------------------------------------------------------- */
+/*  🟨 Get | Minutes By Seconds
+/* -------------------------------------------------------- */
+
+function getMinutesBySeconds( maxSeconds ) {
+
+    return ( Math.floor( maxSeconds / 60 ) )
+}
+
+
+
+/* -------------------------------------------------------- */
+/*  🟨 Get | Rest Seconds by Elimanting Full Minutes
+/* -------------------------------------------------------- */
+
+function getRestSecondsFromMinutes( maxSeconds ) {
+
+    return ( Math.floor( maxSeconds % 60 ) )
+}
+
+/* -------------------------------------------------------------- */
+/* Set Audio Countdown by sec by sec
+/* -------------------------------------------------------------- */
+
+function audioCountdownIncrement() {
+
+    // stop increment if second is zero
+    if( audioDurationToBeFresh-1 != -1 ) {
+
+        audioDurationToBeFresh-=1;
+        // console.log('[⌚ Countdown| ??? ]: ' + audioDurationToBeFresh + ' Seconds' )
+    }
+
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* Set Zero Styling By Numbers
+/* -------------------------------------------------------------------------- */
+
+function setZeroStylingByNumbers ( number ) {
+
+    if( number >= 0 && number <= 9 ) {
+
+        return String('0' + number)
+    }
+
+    return number;
+}
 
 
 
@@ -70,3 +123,35 @@ chkPlayPauseVideoMindsetReflect.addEventListener( 'change', ()=> {
 
 
 })
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/*  timeupdate Event |
+/*  Event for Audio Src to listen on running time of playing audio
+/*  ( second by second )
+/* ---------------------------------------------------------------------- */
+
+audioFileMindsetReflect.addEventListener("timeupdate", () => {
+
+
+    // console.log("The currentTime attribute has been updated. Again. - " + audioSrcToBeFresh.currentTime );
+
+    // Just Increment Time (Minutes : Seconds ) by full detected second, not by milli seconds
+    if( 1 == getFullSecond( audioFileMindsetReflect.currentTime ) ) {
+
+        audioCountdownIncrement()
+
+        // console.log('> Increment = ' + audioDurationToBeFresh )
+
+        // Set Incremented Minutes
+        txtMinReflect.innerText = setZeroStylingByNumbers( getMinutesBySeconds( audioDurationToBeFresh ) );
+
+        // Set Incremented Seconds
+        txtSecReflect.innerText = setZeroStylingByNumbers( getRestSecondsFromMinutes( audioDurationToBeFresh ) );
+
+    }
+
+
+});

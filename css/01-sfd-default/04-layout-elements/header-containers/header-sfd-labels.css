@@ -1,0 +1,79 @@
+/* -------------------------------------------------------------- */
+/* > header-sfd-labels.css
+/*
+/* : header sfd label layouts for min, default, max header labels
+     & background colors should be define on your own
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------- */
+/* Min, Default, Max
+/* -------------------------------------------------------------------- */
+
+.min-header-sfd-label,
+.default-header-sfd-label,
+.max-header-sfd-label {
+
+  display: flex;
+  align-items: center;
+  column-gap: .5em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(209, 209, 209);
+  opacity: .6;
+
+}
+
+/* ------------------------------------------------ */
+/* Min | header sfd label
+/* ------------------------------------------------ */
+
+.min-header-sfd-label {
+
+  height: 2em;
+  padding: 0 .6em;
+
+}
+
+.min-header-sfd-label > div {
+
+  /* 14px */
+  font-size: .875em;
+
+}
+
+/* ------------------------------------------------ */
+/* Default | header sfd label
+/* ------------------------------------------------ */
+
+.default-header-sfd-label {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------ */
+/* Max | header sfd label
+/* ------------------------------------------------ */
+
+.max-header-sfd-label {
+
+  height: 3em;
+  padding: 0 .6em;
+
+  /* background-color: rgb(249, 184, 184); */
+
+}
+
+.max-header-sfd-label > div {
+
+  /* 18px */
+  font-size: 1.125em;
+
+}

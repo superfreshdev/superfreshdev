@@ -11,7 +11,8 @@
 
 #about-quick-info-container {
 
-  padding: 1.5em 0;
+  width: 100%;
+  padding: 1.5em .8em;
 
   display: flex;
   flex-wrap: wrap;
@@ -19,25 +20,47 @@
 
   justify-content: center;
 
-  row-gap: 2em;
+  row-gap: 1.5em;
+
+  /* background-color: red; */
+  /* background-color: rgb(83, 72, 72); */
+  background-color: white;
 
 }
 
 /* ------------------------------------------------------------------- */
-/* [1/2] | Img | Quick Info
+/* [1/2] | About Quick Info
 /* ------------------------------------------------------------------- */
 
-#img-about-quick-info {
+#about-quick-info {
 
-  /* grid-area: img-about; */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* mobile */
+  justify-content: center;
+
+  /* mobile */
+  row-gap: 1.5em;
+
+  /* background-color: green; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Img | About Quick Info
+/* ------------------------------------------------------------------- */
+
+#img-prof-me-about-quick-info {
+
   height: 15em;
-  /* margin-bottom: .5em; */
+
   border-radius: 1.3em;
 
 }
 
 /* ------------------------------------------------------------------- */
-/* Img Arrow Seperator | About Quick Info
+/* Img - Arrow Seperator | About Quick Info
 /* ------------------------------------------------------------------- */
 
 #img-arrow-seperator-about-quick-info {
@@ -45,37 +68,67 @@
   height: .8em;
 
   /* mobile */
-  display: none;
+  /* display: none; */
 
 }
 
 /* ------------------------------------------------------------------- */
-/* [2/2] | Content | Quick Info
+/* Text Container | About Quick Info
 /* ------------------------------------------------------------------- */
 
-#about-quick-info-content {
+#about-quick-info-text-container {
+
+  display: grid;
+  row-gap: 1.5em;
+
+  /* color:red; */
+
+}
+
+#about-quick-info-text-container > .default-header-sfd-label:nth-of-type(1) {
+
+  justify-self: center;
+
+}
+
+#about-quick-info-text {
+
+  text-align: center;
+  line-height: 1.8em;
+
+  color:grey;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* [2/2] | About Read More
+/* ------------------------------------------------------------------- */
+
+#about-read-more {
 
   width: 100%;
 
   display: grid;
   justify-items: center;
-  row-gap: 1.5em;
+
+  /* background-color: grey; */
 
 }
 
-/* ----------------------------------------------------------- */
-/* 🟣 Auslagern extra für Mini Label Headers ?
-/* Mini Header
-/* ----------------------------------------------------------- */
 
-.mini-header {
+/* ------------------------------------------------------------------- */
+/* Label | Open / Close | About Read More
+/* ------------------------------------------------------------------- */
+
+#lbl-open-close-about-read-more {
 
   height: 2.3em;
   padding: 0 .6em;
 
   display: flex;
   align-items: center;
-  column-gap: .5em;
+  column-gap: .6em;
+
 
   border-radius: .6em;
 
@@ -84,17 +137,112 @@
   background-color: rgb(209, 209, 209);
   opacity: .6;
 
+  cursor: pointer;
+  transition: all .4s;
+
 }
 
-/* ----------------------------------------------------------- */
-/* Quick Info Text
-/* ----------------------------------------------------------- */
+#lbl-open-close-about-read-more:hover {
 
-#about-quick-info-text {
+  background-color: wheat;
+  opacity: 1;
 
-  text-align: center;
-  line-height: 1.8em;
+}
 
-  color:grey;
+#lbl-open-close-about-read-more > img {
+
+  transition:  all .4s;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ | Smooth Open Close About Read More
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-about-read-more {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* About Read More Content
+/* ------------------------------------------------------------------- */
+
+#about-read-more-content {
+
+  display: grid;
+  row-gap: 1em;
+
+  padding: 1.5em 0em;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Label | About Read More Content
+/* ------------------------------------------------------------------- */
+
+.lbl-about-read-more-content {
+
+  padding: .4em .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  background-color: #d1d1d1;
+  opacity: .6;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+
+.lbl-about-read-more-content:hover {
+
+  background-color: wheat;
+  opacity: 1;
+
+}
+
+.lbl-about-read-more-content > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  font-weight: bold;
+}
+
+
+.lbl-about-read-more-content > img:nth-of-type(1) {
+
+  transition:  all .4s;
+
+}
+
+/* ----------------------------------------------------------------- */
+/* About Tilde Seperator
+/* ----------------------------------------------------------------- */
+
+.about-tilde-seperator {
+
+  font-size: 1.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
 
 }

@@ -14,10 +14,11 @@
   /* padding-top: 5em; */
 
   width: 100%;
+  /* padding: 2em 0; */
 
   display: grid;
   justify-items: center;
-  align-content: flex-start;
+  /* align-content: flex-start; */
 
   grid: auto 1fr / 1fr;
 
