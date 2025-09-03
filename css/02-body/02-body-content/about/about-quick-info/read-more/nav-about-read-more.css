@@ -1,0 +1,65 @@
+/* -------------------------------------------------------------- */
+/* > nav-about-quick-info.css
+/*
+/* : styles the nav about quick info
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Handling | Label & Smooth Open Close
+/* ------------------------------------------------------------------- */
+
+#chk-about-open-close-read-more,
+#radio-about-read-more-my-mission,
+#radio-about-read-more-my-hobbies,
+#radio-about-read-more-story  {
+
+  display: none;
+
+}
+
+/* change rotation */
+#chk-about-open-close-read-more:checked + label > img {
+
+  transform: scale(-1);
+
+}
+
+/* set radio x */
+#radio-about-read-more-my-mission:checked ~ #nav-about-read-more > label[for="radio-about-read-more-my-mission"] > .custom-radio-default > img:nth-of-type(1),
+#radio-about-read-more-my-hobbies:checked ~ #nav-about-read-more > label[for="radio-about-read-more-my-hobbies"] > .custom-radio-default > img:nth-of-type(1),
+#radio-about-read-more-story:checked ~ #nav-about-read-more > label[for="radio-about-read-more-story"] > .custom-radio-default > img:nth-of-type(1)  {
+
+ display: flex;
+
+}
+
+/* set background */
+#chk-about-open-close-read-more:checked + label,
+#radio-about-read-more-my-mission:checked ~ #nav-about-read-more > label[for="radio-about-read-more-my-mission"],
+#radio-about-read-more-my-hobbies:checked ~ #nav-about-read-more > label[for="radio-about-read-more-my-hobbies"],
+#radio-about-read-more-story:checked ~ #nav-about-read-more > label[for="radio-about-read-more-story"] {
+
+  background-color: rgb(227, 87, 87);
+  opacity: 1;
+
+}
+
+/* show smoot open close */
+#chk-about-open-close-read-more:checked ~ #smooth-open-close-about-read-more,
+#radio-about-read-more-my-mission:checked ~ #smooth-open-close-about-read-more-content,
+#radio-about-read-more-my-hobbies:checked ~ #smooth-open-close-about-read-more-content,
+#radio-about-read-more-story:checked ~ #smooth-open-close-about-read-more-content {
+
+  grid-template-rows: 1fr;
+
+}
+
+/* switch content */
+#radio-about-read-more-my-mission:checked ~ #smooth-open-close-about-read-more-content #about-read-more-my-mission,
+#radio-about-read-more-my-hobbies:checked ~ #smooth-open-close-about-read-more-content #about-read-more-my-hobbies,
+#radio-about-read-more-story:checked ~ #smooth-open-close-about-read-more-content #about-read-more-story {
+
+  display: grid;
+
+}

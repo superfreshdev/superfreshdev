@@ -1,15 +1,15 @@
 /* -------------------------------------------------------------- */
-/* > label-close-tabs.css
+/* > close-content-tab.css
 /*
-/* : styles the the label to close content
+/* : styles the close content tab
 /* -------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------------- */
-/* Label Close Tab
+/* Close Content Tab
 /* ------------------------------------------------------------------- */
 
-.lbl-close-tab {
+.close-content-tab {
 
   height: 2.3em;
   padding: 0 .6em;
@@ -32,7 +32,7 @@
 
 }
 
-.lbl-close-tab:hover {
+.close-content-tab:hover {
 
   background-color: rgb(236, 115, 115) ;
 

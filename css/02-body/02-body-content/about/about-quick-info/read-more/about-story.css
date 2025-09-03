@@ -6,33 +6,24 @@
 
 
 /* ------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close | Story
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-about-story {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-}
-
-/* ------------------------------------------------------------------- */
 /* Story | About Read More
 /* ------------------------------------------------------------------- */
 
 #about-read-more-story {
 
-  padding: 2em .6em;
+  width: 100%;
+  padding: 2em .6em 0em .6em;
 
   display: grid;
   row-gap: 1em;
 
   line-height: 1.8em;
 
+  /* background-color: green; */
   color:#808080;
+
+  /* default unshown */
+  display: none;
 
 }
 

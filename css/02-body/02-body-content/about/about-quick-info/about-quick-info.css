@@ -1,8 +1,8 @@
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 /* > about-quick-info.css
 /*
 /* : styles the quick info container of about
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------------- */
@@ -29,7 +29,7 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* [1/2] | About Quick Info
+/* About Quick Info
 /* ------------------------------------------------------------------- */
 
 #about-quick-info {
@@ -97,152 +97,5 @@
   line-height: 1.8em;
 
   color:grey;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* [2/2] | About Read More
-/* ------------------------------------------------------------------- */
-
-#about-read-more {
-
-  width: 100%;
-
-  display: grid;
-  justify-items: center;
-
-  /* background-color: grey; */
-
-}
-
-
-/* ------------------------------------------------------------------- */
-/* Label | Open / Close | About Read More
-/* ------------------------------------------------------------------- */
-
-#lbl-open-close-about-read-more {
-
-  height: 2.3em;
-  padding: 0 .6em;
-
-  display: flex;
-  align-items: center;
-  column-gap: .6em;
-
-
-  border-radius: .6em;
-
-  font-weight: bold;
-
-  background-color: rgb(209, 209, 209);
-  opacity: .6;
-
-  cursor: pointer;
-  transition: all .4s;
-
-}
-
-#lbl-open-close-about-read-more:hover {
-
-  background-color: wheat;
-  opacity: 1;
-
-}
-
-#lbl-open-close-about-read-more > img {
-
-  transition:  all .4s;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* ⬇️⬆️ | Smooth Open Close About Read More
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-about-read-more {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 1fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* About Read More Content
-/* ------------------------------------------------------------------- */
-
-#about-read-more-content {
-
-  display: grid;
-  row-gap: 1em;
-
-  padding: 1.5em 0em;
-
-  /* background-color: red; */
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Label | About Read More Content
-/* ------------------------------------------------------------------- */
-
-.lbl-about-read-more-content {
-
-  padding: .4em .6em;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: .6em;
-
-  border-radius: .6em;
-
-  background-color: #d1d1d1;
-  opacity: .6;
-
-  cursor: pointer;
-  transition: all .4s;
-
-}
-
-
-.lbl-about-read-more-content:hover {
-
-  background-color: wheat;
-  opacity: 1;
-
-}
-
-.lbl-about-read-more-content > div:nth-of-type(1) {
-
-  display: flex;
-  align-items: center;
-  column-gap: .8em;
-
-  font-weight: bold;
-}
-
-
-.lbl-about-read-more-content > img:nth-of-type(1) {
-
-  transition:  all .4s;
-
-}
-
-/* ----------------------------------------------------------------- */
-/* About Tilde Seperator
-/* ----------------------------------------------------------------- */
-
-.about-tilde-seperator {
-
-  font-size: 1.5em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: bold;
 
 }

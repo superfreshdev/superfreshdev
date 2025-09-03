@@ -6,32 +6,23 @@
 
 
 /* ------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close | Hobbies
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-about-my-hobbies {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-}
-
-/* ------------------------------------------------------------------- */
 /* My Hobbies | About Read More
 /* ------------------------------------------------------------------- */
 
 #about-read-more-my-hobbies {
 
-  padding: 1em 0em;
+  width: 100%;
+  padding: 2em 0em;
 
   display: grid;
   justify-items: center;
   row-gap: 1.5em;
 
-  color:#808080;
+  /* background-color: yellow; */
+  /* color:#808080; */
+
+  /* default unshown */
+  display: none;
 
 }
 

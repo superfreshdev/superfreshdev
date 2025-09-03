@@ -6,32 +6,22 @@
 
 
 /* ------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close | Mission
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-about-my-mission {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-}
-
-/* ------------------------------------------------------------------- */
 /* My Mission | About Read More
 /* ------------------------------------------------------------------- */
 
 #about-read-more-my-mission {
 
-  padding: 1em 0em;
+  width: 100%;
+  padding: 2em 0em;
 
   display: grid;
   justify-items: center;
   row-gap: 1.5em;
 
   /* background-color: rgb(230, 230, 230); */
+
+  /* default unshown */
+  display: none;
 
 }
 

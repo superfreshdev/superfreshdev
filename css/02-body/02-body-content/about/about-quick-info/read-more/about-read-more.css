@@ -1,0 +1,118 @@
+/* ------------------------------------------------------------------- */
+/* > about-read-more.css
+/*
+/* : styles the about read more layout
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* About Read More
+/* ------------------------------------------------------------------- */
+
+#about-read-more {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  /* background-color: grey; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ | Smooth Open Close | About Read More
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-about-read-more {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* About Read More Content
+/* ------------------------------------------------------------------- */
+
+#about-read-more-content {
+
+  display: grid;
+  padding: 1.5em 0em;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Nav | Read More
+/* ------------------------------------------------------------------- */
+
+#nav-about-read-more {
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Laebl | Read More
+/* ------------------------------------------------------------------- */
+
+#nav-about-read-more > label {
+
+  /* mobile */
+  width: 100%;
+
+
+}
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | About Read More Content
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-about-read-more-content {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+  /* border: 1px solid black; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* About Read More Content Container
+/* ------------------------------------------------------------------- */
+
+#about-read-more-content-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1em;
+
+}
+
+/* ----------------------------------------------------------------- */
+/* About Tilde Seperator
+/* ----------------------------------------------------------------- */
+
+.about-tilde-seperator {
+
+  font-size: 1.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+}

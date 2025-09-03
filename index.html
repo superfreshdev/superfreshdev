@@ -77,7 +77,9 @@
 
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/arrow-seperators.css">
 
-                <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/label-close-tab.css">
+                <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/close-content-tab.css">
+                <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/label-open-close-content.css">
+
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/number-containers.css">
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/arrow-containers.css">
                 <link rel="stylesheet" href="css/01-sfd-default/04-layout-elements/element-containers/art-seperator-container.css">
@@ -172,10 +174,15 @@
 
                 <!-- quick info -->
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/about-quick-info.css">
-                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/about-my-mission.css">
-                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/about-my-hobbies.css">
-                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/about-story.css">
-                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/nav-about-quick-info.css">
+
+                <!-- read more -->
+                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/read-more/about-read-more.css">
+
+                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/read-more/about-my-mission.css">
+                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/read-more/about-my-hobbies.css">
+                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/read-more/about-story.css">
+
+                <link rel="stylesheet" href="css/02-body/02-body-content/about/about-quick-info/read-more/nav-about-read-more.css">
 
                 <!-- about details -->
                 <link rel="stylesheet" href="css/02-body/02-body-content/about/about-details/about-details.css">
@@ -576,7 +583,7 @@
                                                    <!-- ----------------------------------------------- -->
                                                    <!-- Label -->
                                                    <!-- ----------------------------------------------- -->
-                                                   <label for="chk-about-open-close-read-more" id="lbl-open-close-about-read-more">
+                                                   <label for="chk-about-open-close-read-more" class="lbl-open-close-content">
 
                                                         <div>Read More </div>
                                                         <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-5" alt="img">
@@ -598,17 +605,24 @@
                                                             <!-- ------------------------------------------------ -->
                                                             <div id="about-read-more-content">
 
-                                                                <!-- ---------------------------------------------------- -->
-                                                                <!-- 🟨🟩 [1/3] | My Mission | Smooth Open Close          -->
-                                                                <!-- ---------------------------------------------------- -->
-                                                                <div>
 
-                                                                    <input type="radio" id="radio-about-read-more-my-mission" name="name-radio-about-read-more-topics">
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- Radio Nav | Read More -->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <input type="radio" id="radio-about-read-more-my-mission" name="name-radio-about-read-more-topics">
+                                                                <input type="radio" id="radio-about-read-more-my-hobbies" name="name-radio-about-read-more-topics">
+                                                                <input type="radio" id="radio-about-read-more-story" name="name-radio-about-read-more-topics">
+
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- ❇️ Nav | Read More -->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <nav id="nav-about-read-more">
+
 
                                                                     <!-- -------------------------------------------- -->
-                                                                    <!-- Label -->
+                                                                    <!-- My Mission | Label -->
                                                                     <!-- -------------------------------------------- -->
-                                                                    <label for="radio-about-read-more-my-mission" class="lbl-about-read-more-content">
+                                                                    <label for="radio-about-read-more-my-mission" class="lbl-open-close-content">
 
                                                                         <div>
                                                                             <img src="media/img/icons/02-icon-colors/01-black/black-3-arrow-cricle.png" class="img-h-1-3" alt="img">
@@ -623,12 +637,57 @@
                                                                     </label>
 
                                                                     <!-- -------------------------------------------- -->
-                                                                    <!-- Smooth Open Close                            -->
+                                                                    <!-- My Hobbies | Label -->
                                                                     <!-- -------------------------------------------- -->
-                                                                    <div id="smooth-open-close-about-my-mission">
+                                                                    <label for="radio-about-read-more-my-hobbies" class="lbl-open-close-content">
 
-                                                                        <div class="overflow-hidden">
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-4-geometries-1.png" class="img-h-1-2" alt="img">
+                                                                            <div>My Hobbies</div>
+                                                                        </div>
 
+                                                                         <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <!-- Story | Label -->
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <label for="radio-about-read-more-story" class="lbl-open-close-content">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-shower.png" class="img-h-1-3" alt="img">
+                                                                            <div>Story behind "Superfresh DEV"</div>
+                                                                        </div>
+
+                                                                         <div class="custom-radio-default">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+                                                                </nav>
+
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- ⬇️⬆️ Smooth Open Close | Read More Content        -->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <div id="smooth-open-close-about-read-more-content">
+
+                                                                    <!-- ------------------------------------ -->
+                                                                    <!-- Overflow Hidden -->
+                                                                    <!-- ------------------------------------ -->
+                                                                    <div class="overflow-hidden">
+
+                                                                        <!-- --------------------------------------------- -->
+                                                                        <!-- Read More Content Container -->
+                                                                        <!-- --------------------------------------------- -->
+                                                                        <div id="about-read-more-content-container">
+
+                                                                            <!-- ----------------------------------------------------- -->
+                                                                            <!-- [1/3] | Content: My Mission -->
+                                                                            <!-- ----------------------------------------------------- -->
                                                                             <div id="about-read-more-my-mission">
 
                                                                                 <!-- ------------------------------------- -->
@@ -844,56 +903,12 @@
 
                                                                                 </main>
 
-                                                                                <!-- ------------------------------------- -->
-                                                                                <!-- Label Close Tab -->
-                                                                                <!-- ------------------------------------- -->
-                                                                                <label for="" id="lbl-about-close-my-mission" class="lbl-close-tab">
-
-                                                                                    <div>Close Tab</div>
-                                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-x.png" class="img-h-0-8" alt="img">
-
-                                                                                </label>
-
 
                                                                             </div>
 
-                                                                        </div>
-
-                                                                    </div>
-
-
-                                                                </div>
-
-                                                                <!-- ---------------------------------------------------- -->
-                                                                <!-- 🟨🟩 [2/3] | My Hobbies | Smooth Open Close          -->
-                                                                <!-- ---------------------------------------------------- -->
-                                                                <div>
-
-                                                                    <input type="radio" id="radio-about-read-more-my-hobbies" name="name-radio-about-read-more-topics">
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Label -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <label for="radio-about-read-more-my-hobbies" class="lbl-about-read-more-content">
-
-                                                                        <div>
-                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-4-geometries-1.png" class="img-h-1-2" alt="img">
-                                                                            <div>My Hobbies</div>
-                                                                        </div>
-
-                                                                         <div class="custom-radio-default">
-                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                        </div>
-
-                                                                    </label>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Smooth Open Close -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div id="smooth-open-close-about-my-hobbies">
-
-                                                                        <div class="overflow-hidden">
-
+                                                                            <!-- ----------------------------------------------------- -->
+                                                                            <!-- [2/3] | Content: My Hobbies -->
+                                                                            <!-- ----------------------------------------------------- -->
                                                                             <div id="about-read-more-my-hobbies">
 
                                                                                 <!-- ------------------------------------- -->
@@ -1168,62 +1183,12 @@
 
                                                                                 </main>
 
-                                                                                <!-- ------------------------------------- -->
-                                                                                <!-- Label Close Tab -->
-                                                                                <!-- ------------------------------------- -->
-                                                                                <label for="" id="lbl-about-close-my-hobbies" class="lbl-close-tab">
+                                                                             </div>
 
-                                                                                    <div>Close Tab</div>
-                                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-x.png" class="img-h-0-8" alt="img">
-
-                                                                                </label>
-
-
-
-
-
-
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                    </div>
-
-
-                                                                </div>
-
-                                                                <!-- --------------------------------------------------------------------------- -->
-                                                                <!-- 🟨🟩 [3/3] | Story behind "Superfresh DEV" | Smooth Open Close       -->
-                                                                <!-- --------------------------------------------------------------------------- -->
-                                                                <div>
-
-                                                                    <input type="radio" id="radio-about-read-more-story" name="name-radio-about-read-more-topics">
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Label -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <label for="radio-about-read-more-story" class="lbl-about-read-more-content">
-
-                                                                        <div>
-                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-shower.png" class="img-h-1-3" alt="img">
-                                                                            <div>Story behind "Superfresh DEV"</div>
-                                                                        </div>
-
-                                                                         <div class="custom-radio-default">
-                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                        </div>
-
-                                                                    </label>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Smooth Open Close -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div id="smooth-open-close-about-story">
-
-                                                                        <div class="overflow-hidden">
-
+                                                                            <!-- ----------------------------------------------------- -->
+                                                                            <!-- [3/3] | Content: Story -->
+                                                                            <!-- ----------------------------------------------------- -->
                                                                             <div id="about-read-more-story">
-
 
                                                                                <!-- ----------------------------------------- -->
                                                                                <!-- Audio Listening Story -->
@@ -1236,7 +1201,7 @@
                                                                                <!-- ----------------------------------------- -->
                                                                                <!-- Block Story 1 -->
                                                                                <!-- ----------------------------------------- -->
-                                                                                <div>
+                                                                               <div>
 
                                                                                     <img src="media/img/content/01-default/clipart/cold-shower-clipart.png" id="img-about-cold-shower" alt="img">
 
@@ -1250,7 +1215,7 @@
                                                                                         Suddenly I started laughing and decided to actually enjoy the freezing water.
                                                                                     </div>
 
-                                                                                </div>
+                                                                               </div>
 
                                                                                <!-- ----------------------------------------- -->
                                                                                <!-- Tilde Seperator -->
@@ -1262,14 +1227,14 @@
                                                                                <!-- ----------------------------------------- -->
                                                                                <!-- Block Story 2 -->
                                                                                <!-- ----------------------------------------- -->
-                                                                                <div>
+                                                                               <div>
                                                                                     When I stepped out, I couldn’t stop smiling. I felt clean,
                                                                                     powerful, and one word popped into my mind: super fresh. <br>
                                                                                     <img src="media/img/content/02-about/funny-me.png" id="img-about-funny-me" alt="img">
                                                                                     That was the moment I fell in love with this idea.
                                                                                     Being super fresh isn’t just about feeling clean — it’s about feeling happy,
                                                                                     full of energy, and ready to take on the next challenge of the day.
-                                                                                </div>
+                                                                               </div>
 
                                                                                <!-- ----------------------------------------- -->
                                                                                <!-- Tilde Seperator -->
@@ -1281,7 +1246,7 @@
                                                                                <!-- ----------------------------------------- -->
                                                                                <!-- Block Story 3 -->
                                                                                <!-- ----------------------------------------- -->
-                                                                                <div>
+                                                                               <div>
                                                                                     A few days later, I decided to turn this feeling into a personal statement.
                                                                                     Everything I do, I want it to be super fresh.
                                                                                     <img src="media/img/content/02-about/wave-rocket.png" id="img-about-wave-rocket" alt="img">
@@ -1289,28 +1254,26 @@
                                                                                     Whether it’s pushing myself in sports,
                                                                                     developing software, exploring healthy food, or starting new projects — it should bring joy,
                                                                                     energy, and something valuable, both to me and to others.
-                                                                                </div>
-
-                                                                                <!-- ------------------------------------- -->
-                                                                                <!-- Label Close Tab -->
-                                                                                <!-- ------------------------------------- -->
-                                                                                <label for="" id="lbl-about-close-story" class="lbl-close-tab">
-
-                                                                                    <div>Close Tab</div>
-                                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-x.png" class="img-h-0-8" alt="img">
-
-                                                                                </label>
+                                                                               </div>
 
                                                                                 <!-- close float styling & important to dont crash next layouts -->
                                                                                 <span style="clear: both;"></span>
 
+                                                                            </div>
+
+                                                                            <!-- ----------------------------------------------------- -->
+                                                                            <!-- Close Tab | Content -->
+                                                                            <!-- ----------------------------------------------------- -->
+                                                                            <div id="js-about-close-tab-read-more-content" class="close-content-tab">
+
+                                                                                <div>Close Tab</div>
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-x.png" class="img-h-0-8" alt="img">
 
                                                                             </div>
 
                                                                         </div>
 
                                                                     </div>
-
 
                                                                 </div>
 

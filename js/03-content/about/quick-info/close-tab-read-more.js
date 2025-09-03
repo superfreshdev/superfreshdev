@@ -8,47 +8,52 @@ console.log("🟨 close-tab-read-more.js")
 // radio
 var radios_about_read_more_topics = [
 
-  "radio-about-read-more-my-mission",
-  "radio-about-read-more-my-hobbies",
-  "radio-about-read-more-story"
+  document.getElementById("radio-about-read-more-my-mission"),
+  document.getElementById("radio-about-read-more-my-hobbies"),
+  document.getElementById("radio-about-read-more-story")
 ]
 
 // string ids of label close tabs
-var close_tabs_about_read_more_topics = [
-
-  "lbl-about-close-my-mission",
-  "lbl-about-close-my-hobbies",
-  "lbl-about-close-story"
-]
+var close_tab_read_more_topics = document.getElementById("js-about-close-tab-read-more-content")
 
 /* ----------------------------------------------------------------- */
 /*  Methods
 /* ----------------------------------------------------------------- */
 
-function addUnsetViewByRadio( clickUnsets, radioUnsets ) {
+function getUnsetRadioIndex( radios ) {
 
-  console.log("Length(clicks)= " + clickUnsets.length )
-  console.log("Length(radios)= " + radioUnsets.length )
+  console.log( "Length(radios) = " + radios.length )
 
-  // add click listeners to unshown topic by unset radio
+  for( let i=0; i < radios.length; i++ ) {
 
-  for( let i=0; i < clickUnsets.length; i++ ) {
-
-    document.getElementById( clickUnsets[i] ).addEventListener( 'click', ()=> {
-
-      // console.log("click ###");
-
-      // unset radio by index
-      document.getElementById( radioUnsets[i] ).checked = false;
-
-    })
+    if( radios[i].checked == true ) {
+      return i;
+    }
 
   }
+
+  // no setted index found
+  return -1;
 
 }
 
 /* ----------------------------------------------------------------- */
-/*  Execute
+/* Events
 /* ----------------------------------------------------------------- */
 
-addUnsetViewByRadio( close_tabs_about_read_more_topics , radios_about_read_more_topics )
+// unset radio to unshown content
+close_tab_read_more_topics.addEventListener( "click" , ()=> {
+
+  //  console.log("getUnsetRadioIndex = " + getUnsetRadioIndex( radios_about_read_more_topics ) )
+
+  var unsetRadioIndex = getUnsetRadioIndex( radios_about_read_more_topics );
+
+  if( unsetRadioIndex != -1 ) {
+    radios_about_read_more_topics[ unsetRadioIndex ].checked = false;
+  }
+
+})
+
+/* ----------------------------------------------------------------- */
+/*  Execute
+/* ----------------------------------------------------------------- */
