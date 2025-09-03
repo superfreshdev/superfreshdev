@@ -82,7 +82,7 @@
   /* About Details | Img Label                        */
   /* ------------------------------------------------ */
 
-   #nav-about-details > label > img {
+   #nav-about-details > label > img:nth-of-type(1) {
 
     /* desktop */
     display: flex;
