@@ -18,7 +18,6 @@
 
 }
 
-
 /* ------------------------------------------------------------------- */
 /* Header | About Details Container
 /* ------------------------------------------------------------------- */
@@ -28,12 +27,10 @@
   width: 100%;
   padding: 2em .8em;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  justify-items: center;
   column-gap: .8em;
   row-gap: 2em;
-
-
 
   /* mobile */
   justify-content: center;
@@ -41,7 +38,11 @@
 
 }
 
-#about-details-container > header > div:nth-of-type(1) {
+/* -------------------------------------- */
+/* Header Title
+/* -------------------------------------- */
+
+#about-details-header-title {
 
   padding-left: .8em;
 
@@ -51,7 +52,7 @@
 
 }
 
-#about-details-container > header > div:nth-of-type(1) > div:nth-of-type(1) {
+#about-details-header-title > div:nth-of-type(1) {
 
   font-size: 1.5em;
   font-weight: bold;
@@ -59,7 +60,7 @@
   color:white;
 }
 
-#about-details-container > header > div:nth-of-type(1) > img {
+#about-details-header-title > img {
 
   /* mobile */
   height: 2.5em;
@@ -68,10 +69,10 @@
 
 
 /* ------------------------------------------------------------------- */
-/* Nav | About Details Container
+/* Nav About Details
 /* ------------------------------------------------------------------- */
 
-#about-details-container > header > nav {
+#nav-about-details {
 
   display: flex;
   align-items: center;
@@ -80,10 +81,10 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Label | Nav | About Details Container
+/* Label | Nav About Details
 /* ------------------------------------------------------------------- */
 
-#about-details-container > header > nav > label {
+#nav-about-details > label {
 
   /* mobile */
     height: 2.3em;
@@ -99,35 +100,47 @@
 
     border-radius: .6em;
 
-    border: 1px solid white;
+    font-weight: bold;
 
-    /* opacity: .4; */
+    opacity: .4;
 
-    /* border: 3px solid rgb(50, 50, 50) ; */
+    border: 1px solid rgb(163, 163, 163);
+
     background-color: rgb(50, 50, 50) ;
     color:rgb(203, 203, 203);
 
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
-    font-weight: bold;
-
     user-select: none;
     cursor: pointer;
     transition: all .4s;
 
-
-
 }
 
-/* ------------------------------------------------------- */
-/* Handling | Hover
-/* ------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* Img | Label | Nav About Details
+/* ------------------------------------------------------------------- */
 
-#about-details-container > header > nav > label:hover {
+#nav-about-details > label > img {
+
+  /* mobile unshown */
+  display: none;
+}
+
+/* ------------------------------------------------------------------- */
+/* Hover | Label | Nav About Details
+/* ------------------------------------------------------------------- */
+
+#nav-about-details > label:hover {
+
+    opacity: 1;
 
     background-color: wheat;
     color:black;
 }
+
+
+
 
 
 
