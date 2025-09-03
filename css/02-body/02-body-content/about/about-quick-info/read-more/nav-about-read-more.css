@@ -35,12 +35,19 @@
 }
 
 /* set background */
-#chk-about-open-close-read-more:checked + label,
+#chk-about-open-close-read-more:checked + label {
+
+  background-color: rgb(227, 87, 87);
+  opacity: 1;
+
+}
+
+/* set light brown background */
 #radio-about-read-more-my-mission:checked ~ #nav-about-read-more > label[for="radio-about-read-more-my-mission"],
 #radio-about-read-more-my-hobbies:checked ~ #nav-about-read-more > label[for="radio-about-read-more-my-hobbies"],
 #radio-about-read-more-story:checked ~ #nav-about-read-more > label[for="radio-about-read-more-story"] {
 
-  background-color: rgb(227, 87, 87);
+  background-color: wheat;
   opacity: 1;
 
 }
