@@ -67,6 +67,15 @@
 
     }
 
+    /* ------------------------------------------- */
+    /* About Details | Mindset Video Container
+    /* ------------------------------------------- */
+   .about-mindset-video-container  {
+
+    width: 20em;
+
+   }
+
 
 
 }
@@ -120,20 +129,7 @@
 
 @media ( min-width: 420px ) {
 
-  /* ------------------------------------------- */
-  /* About Details | Mindset Video Container
-  /* ------------------------------------------- */
 
-  .about-mindset-video-container {
-
-    width: 25em;
-
-    display: grid;
-    row-gap: .5em;
-
-    border:1px solid black;
-
-  }
 
 
 
@@ -239,6 +235,14 @@
 
   }
 
+
+  #about-mindset-video-content-container {
+
+    grid: auto / 1fr 1fr;
+    column-gap: 2em;
+
+  }
+
 }
 
 
@@ -285,5 +289,23 @@
 
   }
 
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* >= 800px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 800px ) {
+
+    /* ------------------------------------------- */
+    /* About Details | Mindset Video Container
+    /* ------------------------------------------- */
+   .about-mindset-video-container  {
+
+    width: 100%;
+
+   }
 
 }

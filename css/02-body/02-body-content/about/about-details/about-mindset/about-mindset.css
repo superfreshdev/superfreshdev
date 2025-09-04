@@ -11,6 +11,12 @@
 
 #about-mindset {
 
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
+
   background-color: rgb(164, 164, 248);
 
   /* default unshown only handled by radio checked */
@@ -18,57 +24,155 @@
 
 }
 
-/* ------------------------------------------- */
-/* About Mindset Container
-/* ------------------------------------------- */
+/* ------------------------------------------------------- */
+/* About Mindset Video Content Container
+/* ------------------------------------------------------- */
 
-#about-mindset-container {
+#about-mindset-video-content-container {
 
-  height: 100%;
-
-  display: grid;
-  grid: auto 1fr / 1fr;
-
-  row-gap: 1em;
-
-  background-color: red;
-
-}
-
-/* ------------------------------------------- */
-/* About Mindset Header
-/* ------------------------------------------- */
-
-#about-mindset-header {
+  width: 100%;
 
   display: grid;
-  row-gap: 1em;
+  justify-items: center;
+  row-gap: 2em;
 
   background-color: yellow;
 
 }
 
-/* ------------------------------------------- */
-/* About Mindset Header Quote
-/* ------------------------------------------- */
+/* ------------------------------------------------------- */
+/* Mindset Video Container
+/* ------------------------------------------------------- */
 
-#about-mindset-header-quote {
+.about-mindset-video-container {
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  column-gap: .6em;
-
-  font-weight: bold;
-
-  /* background-color: red; */
+  width: 100%;
+  display: grid;
+  justify-items: center;
 
 }
 
-#about-mindset-header-quote > div:nth-of-type(1),
-#about-mindset-header-quote > div:nth-of-type(2),
-#about-mindset-header-quote > div:nth-of-type(3) {
+
+/* ------------------------------------------------------- */
+/* Header | Mindset Video Container
+/* ------------------------------------------------------- */
+
+.about-mindset-video-container > header {
+
+  width: 100%;
+  padding: .5em 0;
+
+  display: grid;
+  row-gap: .3em;
+
+  background-color: rgb(142, 142, 212);
+
+}
+
+/* div 1 | header */
+.about-mindset-video-container > header > div:nth-of-type(1) {
+
+  justify-self: flex-start;
+
+  padding: .2em .4em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+  background-color: wheat;
+  color:black;
+
+}
+
+/* div 2 | header */
+.about-mindset-video-container > header > div:nth-of-type(2) {
+
+  color:rgb(79, 79, 79);
+
+}
+
+/* ------------------------------------------------------- */
+/* Main | Mindset Video Container
+/* ------------------------------------------------------- */
+
+.about-mindset-video-container > main {
+
+  width: 100%;
+  /* height: 100%; */
+  position: relative;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+/* ------------------------------------------------------- */
+/* Video | Main | Mindset Video Container
+/* ------------------------------------------------------- */
+
+.about-mindset-video-container > main > video {
+
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+  /* object-fit: fill; */
+  /* object-fit: contain; */
+
+  border-radius: .4em;
+
+}
+
+/* ----------------------------------------------------- */
+/* Video Banner Reflect Video
+/* ----------------------------------------------------- */
+
+#video-banner-reflect-video {
+
+  position: absolute;
+  bottom: 4.3em;
+
+  padding: .8em 1.5em;
+
+  border-radius: .8em;
+
+  text-align: center;
+
+  font-weight: bold;
+  color: wheat;
+
+  /* background-color: rgb(28, 28, 28); */
+
+}
+
+/* ----------------------------------------------------- */
+/* Minset 3 Steps Quote Container
+/* ----------------------------------------------------- */
+
+#about-mindset-3-steps-quote-container {
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1.5em;
+
+}
+
+/* ----------------------------------------------------- */
+/* Minset 3 Steps Quote
+/* ----------------------------------------------------- */
+
+#about-mindset-3-steps-quote {
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+/* Divs | Mindset3 Steps Quote */
+#about-mindset-3-steps-quote > div {
 
   height: 2em;
   padding: 0 .4em;
@@ -76,20 +180,22 @@
   display: flex;
   align-items: center;
 
-  opacity: .7;
+  font-weight: bold;
 
   border-radius: .6em;
 
 }
 
-#about-mindset-header-quote > div:nth-of-type(1),
-#about-mindset-header-quote > div:nth-of-type(3) {
+/* Div 1,3 | Mindset3 Steps Quote */
+#about-mindset-3-steps-quote > div:nth-of-type(1),
+#about-mindset-3-steps-quote > div:nth-of-type(3) {
 
   background-color: grey;
 
 }
 
-#about-mindset-header-quote > div:nth-of-type(2) {
+/* Div 2 | Mindset3 Steps Quote */
+#about-mindset-3-steps-quote > div:nth-of-type(2) {
 
   background-color: wheat;
 
