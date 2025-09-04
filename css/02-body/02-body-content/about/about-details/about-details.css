@@ -116,6 +116,13 @@
 
 }
 
+#nav-about-details > label:hover {
+
+  opacity: 1;
+  background-color: wheat;
+  color:black;
+}
+
 /* ------------------------------------------------------------------- */
 /* Img | Label | Nav About Details
 /* ------------------------------------------------------------------- */
