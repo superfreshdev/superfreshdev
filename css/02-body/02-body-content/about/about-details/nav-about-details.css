@@ -45,12 +45,12 @@ input[name="name-radio-nav-about-details"] {
 
 }
 
-
 /* set more content  */
-#radio-nav-about-it-skills:checked ~ #about-it-skills,
-#radio-nav-about-mindset:checked ~ #about-mindset,
-#radio-nav-about-contact:checked ~ #about-contact {
+#radio-about-it-skills:checked ~ #smooth-open-close-about-details #about-it-skills,
+#radio-about-mindset:checked ~ #smooth-open-close-about-details #about-mindset,
+#radio-about-contact:checked ~ #smooth-open-close-about-details #about-contact {
 
   display: grid;
+  /* background-color: yellow; */
 
 }

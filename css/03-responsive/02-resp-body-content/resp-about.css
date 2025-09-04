@@ -82,12 +82,33 @@
   /* About Details | Img Label                        */
   /* ------------------------------------------------ */
 
-   #nav-about-details > label > img:nth-of-type(1) {
+  #nav-about-details label[for="radio-about-it-skills"] > img:nth-of-type(1),
+  #nav-about-details label[for="radio-about-mindset"] > img:nth-of-type(1),
+  #nav-about-details label[for="radio-about-contact"] > img:nth-of-type(1) {
 
     /* desktop */
     display: flex;
 
   }
+
+  /* hover effect unshown light icon */
+  #nav-about-details label[for="radio-about-it-skills"]:hover > img:nth-of-type(1),
+  #nav-about-details label[for="radio-about-mindset"]:hover > img:nth-of-type(1),
+  #nav-about-details label[for="radio-about-contact"]:hover > img:nth-of-type(1) {
+
+    display: none;
+
+  }
+
+  /* hover effect show black icon */
+  #nav-about-details label[for="radio-about-it-skills"]:hover > img:nth-of-type(2),
+  #nav-about-details label[for="radio-about-mindset"]:hover > img:nth-of-type(2),
+  #nav-about-details label[for="radio-about-contact"]:hover > img:nth-of-type(2) {
+
+    display: flex;
+
+  }
+
 
 
 }

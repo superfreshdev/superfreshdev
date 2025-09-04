@@ -67,7 +67,6 @@
 
 }
 
-
 /* ------------------------------------------------------------------- */
 /* Nav About Details
 /* ------------------------------------------------------------------- */
@@ -128,111 +127,74 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Hover | Label | Nav About Details
+/* ⬇️⬆️ Smooth Open Close | About Details
 /* ------------------------------------------------------------------- */
 
-#nav-about-details > label:hover {
+#smooth-open-close-about-details {
 
-    opacity: 1;
-
-    background-color: wheat;
-    color:black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- */
-/* About More Container
-/* ------------------------------------------------------------------- */
-
-#about-more-container {
-
-  height: 100%;
+  width: 100%;
+  /* height: 100%; */
 
   display: grid;
-  grid: auto 1fr / 1fr;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.3s ease-out;
 
 }
 
-/* ------------------------------------------------------------------- */
-/* About More Content
-/* ------------------------------------------------------------------- */
+/* ------------------------------------------- */
+/* About Details Content Layout
+/* ------------------------------------------- */
 
-.about-more-content {
+#about-details-content-layout {
 
-  position: relative;
-  height: 100%;
+  width: 100%;
+  padding: 2em .8em;
+  /* height: 100%; */
 
   display: grid;
-  align-items: flex-start;
-  grid: auto 1fr / 1fr;
+  justify-items: center;
+  grid: auto auto / 1fr;
+
+  /* row-gap: 1em; */
+
+  background-color: rgb(255, 255, 255);
 
 }
 
-/* ------------------------------------------------------------------- */
-/* Header | About More Content
-/* ------------------------------------------------------------------- */
+/* ------------------------------------------- */
+/* Have a Look Container
+/* ------------------------------------------- */
 
-.about-more-content-header {
+#about-details-have-a-look-container {
 
-  padding: 1em 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-  background-color: rgb(30, 255, 0);
-
-}
-
-.about-more-content-header > div {
-
-  /* mobile */
-  width: 2.5em;
-  height: 2.5em;
+  width: 100%;
+  /* height: 100%; */
 
   display: flex;
-  align-items: center;
   justify-content: center;
 
-  border-radius: .8em ;
-
-  background-color: rgb(28, 28, 28);
+  background-color: red;
 
 }
 
-.about-more-content-header img {
+/* ------------------------------------------- */
+/* Img | Have a Look Container
+/* ------------------------------------------- */
 
-  height: 1.4em;
+#img-about-details-have-a-look {
+
+  /* mobile */
+  height: 4.5em;
+
 }
 
-/* special img because email is default bigger */
-#about-contact > .about-more-content-header img {
+/* ------------------------------------------- */
+/* Tab X
+/* ------------------------------------------- */
 
-  height: 1em;
+#js-about-close-tab-details-content {
+
+
+  display: none;
+
 }
