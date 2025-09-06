@@ -28,6 +28,20 @@
 /* About Mindset Video Content Container
 /* ------------------------------------------------------- */
 
+/*
+
+  about-mindset-video-container
+
+    .about-mindset-video-item | header | main
+      - header, space-between - timer
+      - main relative, .video-about-mindset
+
+      #video-banner-about-mindset-reflect
+
+
+
+*/
+
 #about-mindset-video-content-container {
 
   width: 100%;
@@ -62,34 +76,87 @@
   width: 100%;
   padding: .5em 0;
 
-  display: grid;
-  row-gap: .3em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 
   background-color: rgb(142, 142, 212);
 
 }
 
-/* div 1 | header */
+/* ------------------------------------------------------- */
+/* Div 1 | Header | Mindset Video Container
+/* ------------------------------------------------------- */
+
 .about-mindset-video-container > header > div:nth-of-type(1) {
+
+  display: grid;
+  row-gap: .3em;
+
+}
+
+.about-mindset-video-container > header > div:nth-of-type(1) > div:nth-of-type(1) {
 
   justify-self: flex-start;
 
   padding: .2em .4em;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   border-radius: .6em;
 
   font-weight: bold;
+
   background-color: wheat;
   color:black;
 
 }
 
-/* div 2 | header */
-.about-mindset-video-container > header > div:nth-of-type(2) {
+/* ------------------------------------------------------- */
+/* Div 2 | Header | Mindset Video Container
+/* ------------------------------------------------------- */
+
+.about-mindset-video-container > header > div:nth-of-type(1) > div:nth-of-type(2)  {
 
   color:rgb(79, 79, 79);
 
 }
+
+/* ------------------------------------------------------- */
+/* Music Countdown | Header | Mindset Video Container
+/* ------------------------------------------------------- */
+
+#about-mindset-video-reflect-music-countdown {
+
+  padding: .3em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
+
+  font-weight: bold;
+
+  border-radius: .6em;
+
+  background-color: wheat;
+
+  /* background-color: red; */
+
+}
+
+#about-mindset-video-reflect-music-countdown > div:nth-of-type(1) {
+
+  width: 3.3em;
+  display: flex;
+  justify-content: center;
+
+  background-color: grey;
+
+}
+
+
 
 /* ------------------------------------------------------- */
 /* Main | Mindset Video Container
