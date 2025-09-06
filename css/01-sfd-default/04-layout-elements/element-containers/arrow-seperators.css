@@ -12,6 +12,7 @@
 
 .arrow-seperator,
 .arrow-seperator-img-90deg,
+.arrow-seperator-img-minus-90deg,
 .arrow-seperator-padd-1-0 {
 
   width: 100%;
@@ -38,4 +39,10 @@
 .arrow-seperator-img-90deg > img {
 
   transform: rotate(90deg);
+}
+
+
+.arrow-seperator-img-minus-90deg > img {
+
+  transform: rotate(-90deg);
 }

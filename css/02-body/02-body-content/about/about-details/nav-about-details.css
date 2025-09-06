@@ -54,3 +54,23 @@ input[name="name-radio-nav-about-details"] {
   /* background-color: yellow; */
 
 }
+
+/* unshown have a look  */
+#radio-about-it-skills:checked ~ #smooth-open-close-about-details #about-details-have-a-look-container ,
+#radio-about-mindset:checked ~ #smooth-open-close-about-details #about-details-have-a-look-container ,
+#radio-about-contact:checked ~ #smooth-open-close-about-details #about-details-have-a-look-container  {
+
+  display: none;
+  /* background-color: yellow; */
+
+}
+
+/* show close content tab x  */
+#radio-about-it-skills:checked ~ #smooth-open-close-about-details #about-details-close-tab-container,
+#radio-about-mindset:checked ~ #smooth-open-close-about-details #about-details-close-tab-container,
+#radio-about-contact:checked ~ #smooth-open-close-about-details #about-details-close-tab-container {
+
+  display: grid;
+  /* background-color: yellow; */
+
+}

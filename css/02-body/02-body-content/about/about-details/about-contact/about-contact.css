@@ -11,9 +11,89 @@
 
 #about-contact {
 
+  width: 100%;
+
   background-color: yellow;
 
   /* default unshown only handled by radio checked */
   display: none;
+
+  justify-items: center;
+
+}
+
+/* ------------------------------------------- */
+/* About Contact Info Container
+/* ------------------------------------------- */
+
+#about-contact-info-container {
+
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+
+}
+
+/* ------------------------------------------- */
+/* Img | Clipart Coffee
+/* ------------------------------------------- */
+
+#img-clipart-coffee {
+
+  height: 6em;
+  transform: scaleX(-1);
+
+}
+
+/* ------------------------------------------- */
+/* Main | About Contact Info Container
+/* ------------------------------------------- */
+
+#about-contact-info-container > main {
+
+  display: grid;
+  row-gap: 1em;
+
+}
+
+/* ------------------------------------------- */
+/* Header | About Contact Info Container
+/* ------------------------------------------- */
+
+#about-contact-info-container > main > header {
+
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+
+/* ------------------------------------------- */
+/* E-Mail Link | Superfresdev
+/* ------------------------------------------- */
+
+#about-contact-info-container > main > a {
+
+  padding: .3em .6em;
+
+  /* font-size: 1em; */
+  font-weight: bold;
+
+  border-radius: .6em;
+
+  background-color: rgb(228, 228, 228);
+  color:black;
+
+  transition: all .4s;
+
+}
+
+#about-contact-info-container > main > a:hover {
+
+  background-color: wheat;
+}
+
+#about-contact-info-container > main > a:visited {
+
+  color:black;
 
 }

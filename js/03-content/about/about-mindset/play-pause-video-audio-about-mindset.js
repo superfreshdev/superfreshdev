@@ -1,4 +1,3 @@
-console.log('### content -> about -> mindset ###')
 console.log('🟡 play-pause-video-audio-about-mindset.js')
 
 

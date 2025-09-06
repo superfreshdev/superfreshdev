@@ -201,7 +201,7 @@
   /* Quick Info | Info Text Container | label
   /* ------------------------------------------------------------------- */
 
-  #about-quick-info-text-container > .min-header-sfd-label:nth-of-type(1) {
+  #about-quick-info-text-container > .default-header-sfd-label:nth-of-type(1) {
 
     /* desktop */
 
@@ -299,13 +299,31 @@
 
 @media ( min-width: 800px ) {
 
-    /* ------------------------------------------- */
-    /* About Details | Mindset Video Container
-    /* ------------------------------------------- */
+   /* ------------------------------------------- */
+   /* About Details | Mindset Video Container
+   /* ------------------------------------------- */
    .about-mindset-video-container  {
 
     width: 100%;
 
    }
+
+   /* ------------------------------------------- */
+   /* About Details | Contact
+   /* ------------------------------------------- */
+   #img-clipart-coffee  {
+
+    height: 9em;
+
+   }
+
+   /* ------------------------------------------- */
+   /* About Details | Contact
+   /* ------------------------------------------- */
+   #about-contact-info-container {
+
+    column-gap: 1.5em;
+
+  }
 
 }

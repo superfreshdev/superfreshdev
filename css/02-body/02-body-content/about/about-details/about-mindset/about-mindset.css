@@ -141,6 +141,8 @@
   font-weight: bold;
   color: wheat;
 
+  user-select: none;
+
   /* background-color: rgb(28, 28, 28); */
 
 }
@@ -154,6 +156,9 @@
   display: grid;
   justify-items: center;
   row-gap: 1.5em;
+
+  /* extra place for better mindset layout */
+  padding-bottom: 2em;
 
 }
 

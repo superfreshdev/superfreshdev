@@ -20,6 +20,8 @@ var close_tab_read_more_topics = document.getElementById("js-about-close-tab-rea
 /*  Methods
 /* ----------------------------------------------------------------- */
 
+//  ⚠️ getSettedRadioIndex
+
 function getUnsetRadioIndex( radios ) {
 
   console.log( "Length(radios) = " + radios.length )
