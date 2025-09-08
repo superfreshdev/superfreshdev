@@ -9,20 +9,95 @@
 /* My IT Container
 /* ------------------------------------------------------------- */
 
-.my-it-container {
+#my-it-container {
 
     width: 100%;
     display: grid;
     justify-items: center;
 
-    /* row-gap: 3em; */
-    /* background-color: red; */
+    grid: auto auto 1fr / 1fr;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav My It | My IT Container
+/* ------------------------------------------------------------- */
+
+#nav-my-it {
+
+    width: 100%;
+    padding: 1.5em 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 1em;
+    row-gap: 1em;
+
+    background-color: rgb(255, 255, 255);
+}
+
+/* ------------------------------------------------------------- */
+/* Label | Nav My It
+/* ------------------------------------------------------------- */
+
+.lbl-nav-my-it {
+
+    height: 3em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .8em;
+
+    border-radius: .8em;
+
+    font-weight: bold;
+
+    background-color: rgb(185, 185, 185);
+
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+.lbl-nav-my-it:hover {
+
+    background-color: wheat;
+}
+
+.lbl-nav-my-it > div:nth-of-type(1) {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
 
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------- */
-/* My IT Header Container
+/* ❌❌❌ My IT Header Container
 /* ------------------------------------------------------------- */
 
 #my-it-header-container {
