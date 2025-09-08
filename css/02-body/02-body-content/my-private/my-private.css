@@ -5,25 +5,73 @@
 /* -------------------------------------------------------------- */
 
 
-/* 🟣 Auslagern in my private */
-#icon-my-private-header {
-
-  height: 2em;
-
-}
-
-
 /* ------------------------------------------------------------- */
 /* My Private Container
 /* ------------------------------------------------------------- */
 
-.my-private-container {
+#my-private-container {
 
-   width: 100%;
+  width: 100%;
   display: grid;
+  justify-items: center;
+
+  grid: auto 1fr / 1fr;
 
 }
 
+
+/* ------------------------------------------------------------- */
+/* Nav My Private
+/* ------------------------------------------------------------- */
+
+#nav-my-private {
+
+  width: 100%;
+    padding: 1.5em 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+
+    column-gap: 1em;
+    row-gap: 1em;
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* 🟣 My Sport Container
+/* ------------------------------------------------------------- */
+
+#my-sport-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  background-color: grey;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* 🟣 My Book Container
+/* ------------------------------------------------------------- */
+
+#my-book-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  background-color: red;
+
+}
 
 
 /* ------------------------------------------- */
