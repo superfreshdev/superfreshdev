@@ -5,17 +5,16 @@
 /* -------------------------------------------------------------------------------- */
 
 
-/* ------------------------------------------- */
-/* About Mindset
-/* ------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* About Mindset Container
+/* ---------------------------------------------------------------------- */
 
-#about-mindset {
+#about-mindset-container {
 
   width: 100%;
 
   display: grid;
   justify-items: center;
-  row-gap: 2em;
 
   background-color: rgb(164, 164, 248);
 
@@ -24,25 +23,11 @@
 
 }
 
-/* ------------------------------------------------------- */
-/* About Mindset Video Content Container
-/* ------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* [1/2] | About Mindset Video Container
+/* ---------------------------------------------------------------------- */
 
-/*
-
-  about-mindset-video-container
-
-    .about-mindset-video-item | header | main
-      - header, space-between - timer
-      - main relative, .video-about-mindset
-
-      #video-banner-about-mindset-reflect
-
-
-
-*/
-
-#about-mindset-video-content-container {
+#about-mindset-video-container {
 
   width: 100%;
 
@@ -54,11 +39,11 @@
 
 }
 
-/* ------------------------------------------------------- */
-/* Mindset Video Container
-/* ------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* About Mindset Video Box
+/* ---------------------------------------------------------------------- */
 
-.about-mindset-video-container {
+.about-mindset-video-box {
 
   width: 100%;
   display: grid;
@@ -66,12 +51,11 @@
 
 }
 
+/* ---------------------------------------------------------------------- */
+/* Header | About Mindset Video Box
+/* ---------------------------------------------------------------------- */
 
-/* ------------------------------------------------------- */
-/* Header | Mindset Video Container
-/* ------------------------------------------------------- */
-
-.about-mindset-video-container > header {
+.about-mindset-video-box > header {
 
   width: 100%;
   padding: .5em 0;
@@ -84,28 +68,33 @@
 
 }
 
-/* ------------------------------------------------------- */
-/* Div 1 | Header | Mindset Video Container
-/* ------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* About Mindset Video Header | Header
+/* --------------------------------------------------------------- */
 
-.about-mindset-video-container > header > div:nth-of-type(1) {
+.about-mindset-video-header {
 
   display: grid;
   row-gap: .3em;
 
 }
 
-.about-mindset-video-container > header > div:nth-of-type(1) > div:nth-of-type(1) {
+/* --------------------------------------------------------------- */
+/* About Mindset Video Nr | Header
+/* --------------------------------------------------------------- */
+
+.about-mindset-video-nr {
 
   justify-self: flex-start;
 
-  padding: .2em .4em;
+  height: 1.6em;
+  padding: 0 .6em;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  border-radius: .6em;
+  border-radius: .5em;
 
   font-weight: bold;
 
@@ -114,55 +103,43 @@
 
 }
 
-/* ------------------------------------------------------- */
-/* Div 2 | Header | Mindset Video Container
-/* ------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* About Mindset Video Title | Header
+/* --------------------------------------------------------------- */
 
-.about-mindset-video-container > header > div:nth-of-type(1) > div:nth-of-type(2)  {
+.about-mindset-video-title {
 
   color:rgb(79, 79, 79);
 
 }
 
-/* ------------------------------------------------------- */
-/* Music Countdown | Header | Mindset Video Container
-/* ------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* About Mindset Video Music Countdown | Header
+/* --------------------------------------------------------------- */
 
-#about-mindset-video-reflect-music-countdown {
+.about-mindset-video-music-countdown {
 
-  padding: .3em;
+  width: 3.5em;
+  padding: 0 .4em;
 
   display: flex;
   align-items: center;
-  column-gap: .3em;
+  justify-content: center;
+  column-gap: 1px;
 
   font-weight: bold;
 
-  border-radius: .6em;
+  border-radius: .4em;
 
   background-color: wheat;
 
-  /* background-color: red; */
-
 }
 
-#about-mindset-video-reflect-music-countdown > div:nth-of-type(1) {
+/* ---------------------------------------------------------------------- */
+/* Main | About Mindset Video Box
+/* ---------------------------------------------------------------------- */
 
-  width: 3.3em;
-  display: flex;
-  justify-content: center;
-
-  background-color: grey;
-
-}
-
-
-
-/* ------------------------------------------------------- */
-/* Main | Mindset Video Container
-/* ------------------------------------------------------- */
-
-.about-mindset-video-container > main {
+.about-mindset-video-box > main {
 
   width: 100%;
   /* height: 100%; */
@@ -174,11 +151,11 @@
 
 }
 
-/* ------------------------------------------------------- */
-/* Video | Main | Mindset Video Container
-/* ------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* About Mindset Video
+/* ---------------------------------------------------------------------- */
 
-.about-mindset-video-container > main > video {
+.about-mindset-video {
 
   width: 100%;
   height: 15em;
@@ -191,15 +168,15 @@
 }
 
 /* ----------------------------------------------------- */
-/* Video Banner Reflect Video
+/* Video Banner | About Mindset Video Reflect
 /* ----------------------------------------------------- */
 
-#video-banner-reflect-video {
+#video-banner-about-mindset-video-reflect {
 
   width: 75%;
 
   position: absolute;
-  bottom: 3.3em;
+  bottom: 3em;
 
   padding: .8em 1.5em;
 
@@ -209,6 +186,7 @@
 
   font-weight: bold;
   color: wheat;
+  opacity: .4;
 
   user-select: none;
 
@@ -216,26 +194,28 @@
 
 }
 
-/* ----------------------------------------------------- */
-/* Minset 3 Steps Quote Container
-/* ----------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* [2/2] | About Mindset Quote Container
+/* ---------------------------------------------------------------------- */
 
-#about-mindset-3-steps-quote-container {
+#about-mindset-quote-container {
+
+  width: 100%;
+  padding: 1.5em 0;
 
   display: grid;
-  justify-items: center;
+  justify-content: center;
   row-gap: 1.5em;
 
-  /* extra place for better mindset layout */
-  padding-bottom: 2em;
+  background-color: green;
 
 }
 
-/* ----------------------------------------------------- */
-/* Minset 3 Steps Quote
-/* ----------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* About Mindset Quote Element
+/* ---------------------------------------------------------------------- */
 
-#about-mindset-3-steps-quote {
+#about-mindset-quote-element {
 
   width: 100%;
 
@@ -245,14 +225,18 @@
 
 }
 
-/* Divs | Mindset3 Steps Quote */
-#about-mindset-3-steps-quote > div {
+/* ---------------------------------------------------------------------- */
+/* Div | About Mindset Quote Element
+/* ---------------------------------------------------------------------- */
+
+#about-mindset-quote-element > div {
 
   height: 2em;
-  padding: 0 .4em;
+  padding: 0 .6em;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   font-weight: bold;
 
@@ -260,17 +244,30 @@
 
 }
 
-/* Div 1,3 | Mindset3 Steps Quote */
-#about-mindset-3-steps-quote > div:nth-of-type(1),
-#about-mindset-3-steps-quote > div:nth-of-type(3) {
+/* ---------------------------------------------------------------------- */
+/* Div 1,3 | About Mindset Quote Element
+/* ---------------------------------------------------------------------- */
+
+#about-mindset-quote-element > div:nth-of-type(1),
+#about-mindset-quote-element > div:nth-of-type(3) {
 
   background-color: grey;
 
 }
 
-/* Div 2 | Mindset3 Steps Quote */
-#about-mindset-3-steps-quote > div:nth-of-type(2) {
+/* ---------------------------------------------------------------------- */
+/* Div 2 | About Mindset Quote Element
+/* ---------------------------------------------------------------------- */
+
+#about-mindset-quote-element > div:nth-of-type(2) {
 
   background-color: wheat;
 
 }
+
+
+
+
+
+
+/* 🟣img-arrow-seperator-up,down */

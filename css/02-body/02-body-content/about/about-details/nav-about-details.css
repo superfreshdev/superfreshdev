@@ -47,7 +47,7 @@ input[name="name-radio-nav-about-details"] {
 
 /* set more content  */
 #radio-about-it-skills:checked ~ #smooth-open-close-about-details #about-it-skills,
-#radio-about-mindset:checked ~ #smooth-open-close-about-details #about-mindset,
+#radio-about-mindset:checked ~ #smooth-open-close-about-details #about-mindset-container,
 #radio-about-contact:checked ~ #smooth-open-close-about-details #about-contact {
 
   display: grid;
