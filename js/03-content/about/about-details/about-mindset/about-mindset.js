@@ -155,6 +155,7 @@ video_reflect.addEventListener("loadedmetadata", () => {
 
   //  console.log("🟩 Audio Time = " + audio_max_duration )
 
+
 })
 
 /* ------------------------------------------------------------------------------------ */
