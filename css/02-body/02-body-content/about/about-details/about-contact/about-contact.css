@@ -11,14 +11,17 @@
 
 #about-contact {
 
-  width: 100%;
-
-  background-color: yellow;
+  /* width: 100%; */
+  padding: 0 1em 0 1em;
 
   /* default unshown only handled by radio checked */
   display: none;
 
   justify-items: center;
+
+   border-radius: 3em 5em 15px 10em;
+
+  background-color: rgb(240, 240, 240);
 
 }
 
@@ -64,8 +67,8 @@
 
   font-size: 1.125em;
   font-weight: bold;
-}
 
+}
 
 /* ------------------------------------------- */
 /* E-Mail Link | Superfresdev
@@ -73,15 +76,15 @@
 
 #about-contact-info-container > main > a {
 
-  padding: .3em .6em;
+  padding: .2em .5em;
 
   /* font-size: 1em; */
   font-weight: bold;
 
   border-radius: .6em;
 
-  background-color: rgb(228, 228, 228);
-  color:black;
+  background-color: rgb(206, 206, 206);
+  color:rgb(66, 66, 66);
 
   transition: all .4s;
 
@@ -90,6 +93,7 @@
 #about-contact-info-container > main > a:hover {
 
   background-color: wheat;
+
 }
 
 #about-contact-info-container > main > a:visited {

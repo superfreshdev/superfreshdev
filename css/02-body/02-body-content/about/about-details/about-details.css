@@ -88,10 +88,6 @@
     height: 2.3em;
     padding: 0em .8em;
 
-    /* desktop */
-    /* height: 2.5em;
-    padding: 0em .8em; */
-
     display: flex;
     align-items: center;
     column-gap: .6em;
@@ -179,7 +175,7 @@
   display: grid;
   justify-items: center;
 
-  background-color: red;
+  /* background-color: red; */
 
 }
 
@@ -206,8 +202,9 @@
   display: grid;
   justify-items: center;
 
-  background-color: rgb(148, 148, 148);
-
+  /* default unshown because default no content shown */
   display: none;
+
+  /* background-color: rgb(148, 148, 148); */
 
 }

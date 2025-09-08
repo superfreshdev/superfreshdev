@@ -1,18 +1,18 @@
 /* -------------------------------------------------------------- */
 /* > arrow-seperators.css
 
-/* : styles arrow seperators which use an arrow img
-     to seperate two content
+/* : styles arrow seperators which use an img arrow
+     to seperate two contents, u can choose
+     if img should be up or down or other paddings styles
 /* -------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------- */
-/* Arrow Contaienr
+/* Arrow Seperators
 /* -------------------------------------------------------------- */
 
-.arrow-seperator,
-.arrow-seperator-img-90deg,
-.arrow-seperator-img-minus-90deg,
+.arrow-seperator-img-up,
+.arrow-seperator-img-down,
 .arrow-seperator-padd-1-0 {
 
   width: 100%;
@@ -22,27 +22,31 @@
 
 }
 
-/* ------------------------------------------------ */
-/* Paddings | Arrow Container
-/* ------------------------------------------------ */
+/* -------------------------------------------------------------- */
+/* Up | Arrow Seperators
+/* -------------------------------------------------------------- */
+
+.arrow-seperator-img-up > img {
+
+  transform: rotate(-90deg);
+
+}
+
+/* -------------------------------------------------------------- */
+/* Down | Arrow Seperators
+/* -------------------------------------------------------------- */
+
+.arrow-seperator-img-down > img {
+
+  transform: rotate(90deg);
+}
+
+/* -------------------------------------------------------------- */
+/* Paddings | Arrow Seperators
+/* -------------------------------------------------------------- */
 
 .arrow-seperator-padd-1-0 {
 
   padding: 1em 0em;
 
-}
-
-/* ------------------------------------------------ */
-/* Img Rotations | Arrow Container
-/* ------------------------------------------------ */
-
-.arrow-seperator-img-90deg > img {
-
-  transform: rotate(90deg);
-}
-
-
-.arrow-seperator-img-minus-90deg > img {
-
-  transform: rotate(-90deg);
 }

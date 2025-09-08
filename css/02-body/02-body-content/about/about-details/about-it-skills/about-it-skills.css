@@ -6,50 +6,49 @@
 
 
 /* ------------------------------------------- */
-/* About It Skills
+/* About It Skills Container
 /* ------------------------------------------- */
 
-#about-it-skills {
+#about-it-skills-container {
 
   width: 100%;
+  padding-top: 2em;
 
   display: grid;
   align-items: flex-start;
   justify-items: center;
   grid: 1fr / 1fr;
 
-  background-color: rgb(228, 228, 228);
-
+  /* background-color: rgb(84, 84, 84); */
   background-color: rgb(234, 234, 234);
 
-  border-radius: .8em;
+  border-radius: 1em;
 
   /* default unshown only handled by radio checked */
   display: none;
 
 }
 
-
 /* ---------------------------------------------------------------- */
-/* It Skills Container
+/* It Skills Box
 /* ---------------------------------------------------------------- */
 
-.about-it-skills-container {
+.about-it-skills-box {
 
   width: 100%;
   display: grid;
-  /* justify-items: center; */
+  justify-items: center;
 
 }
 
 /* ---------------------------------------------------------------- */
-/* Header | It Skills Container
+/* Header | It Skills Box
 /* ---------------------------------------------------------------- */
 
-.about-it-skills-container > header {
+.about-it-skills-box > header {
 
   height: 2.5em;
-  width: 100%;
+  /* width: 100%; */
 
   padding: 0 .8em;
 
@@ -68,14 +67,15 @@
 }
 
 /* ---------------------------------------------------------------- */
-/* Main | It Skills Container
+/* Main | It Skills Box
 /* ---------------------------------------------------------------- */
 
-.about-it-skills-container > main {
+.about-it-skills-box > main {
 
   padding: 2em .8em;
 
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: .8em;
 
@@ -85,7 +85,7 @@
 /* Div (Skill Item) | Main | It Skills Container
 /* ---------------------------------------------------------------- */
 
-.about-it-skills-container > main > div {
+.about-it-skills-box > main > div {
 
   height: 2em;
   padding: 0 .6em;
@@ -107,7 +107,7 @@
 
 }
 
-.about-it-skills-container > main > div:hover {
+.about-it-skills-box > main > div:hover {
 
   /* background-color: rgba(28, 28, 28 );
   color:white; */
@@ -116,7 +116,7 @@
 
 }
 
-.about-it-skills-container > main > div > div:nth-of-type(1) {
+.about-it-skills-box > main > div > div:nth-of-type(1) {
 
   font-size: 14.5px;
 }

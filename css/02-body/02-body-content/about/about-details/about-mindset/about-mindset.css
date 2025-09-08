@@ -16,7 +16,7 @@
   display: grid;
   justify-items: center;
 
-  background-color: rgb(164, 164, 248);
+  /* background-color: rgb(164, 164, 248); */
 
   /* default unshown only handled by radio checked */
   display: none;
@@ -35,7 +35,7 @@
   justify-items: center;
   row-gap: 2em;
 
-  background-color: yellow;
+  /* background-color: yellow; */
 
 }
 
@@ -46,6 +46,8 @@
 .about-mindset-video-box {
 
   width: 100%;
+
+  /* mobile */
   display: grid;
   justify-items: center;
 
@@ -64,7 +66,7 @@
   align-items: flex-start;
   justify-content: space-between;
 
-  background-color: rgb(142, 142, 212);
+  /* background-color: rgb(142, 142, 212); */
 
 }
 
@@ -87,8 +89,10 @@
 
   justify-self: flex-start;
 
-  height: 1.6em;
-  padding: 0 .6em;
+  height: 1.8em;
+  padding: 0 .4em;
+
+  font-size: 14.5px;
 
   display: flex;
   align-items: center;
@@ -109,6 +113,7 @@
 
 .about-mindset-video-title {
 
+  font-style: italic;
   color:rgb(79, 79, 79);
 
 }
@@ -119,7 +124,7 @@
 
 .about-mindset-video-music-countdown {
 
-  width: 3.5em;
+  width: 3.3em;
   padding: 0 .4em;
 
   display: flex;
@@ -131,8 +136,14 @@
 
   border-radius: .4em;
 
-  background-color: wheat;
+  background-color: rgb(209, 209, 209);
+  color: rgb(101, 101, 101);
 
+}
+
+.about-mindset-video-music-countdown > div {
+
+  font-size: 14.5px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -149,6 +160,7 @@
   justify-items: center;
   align-items: center;
 
+
 }
 
 /* ---------------------------------------------------------------------- */
@@ -163,34 +175,9 @@
   /* object-fit: fill; */
   /* object-fit: contain; */
 
-  border-radius: .4em;
-
-}
-
-/* ----------------------------------------------------- */
-/* Video Banner | About Mindset Video Reflect
-/* ----------------------------------------------------- */
-
-#video-banner-about-mindset-video-reflect {
-
-  width: 75%;
-
-  position: absolute;
-  bottom: 3em;
-
-  padding: .8em 1.5em;
-
   border-radius: .8em;
 
-  text-align: center;
-
-  font-weight: bold;
-  color: wheat;
-  opacity: .4;
-
-  user-select: none;
-
-  /* background-color: rgb(28, 28, 28); */
+  border: 6px solid wheat;
 
 }
 
@@ -201,13 +188,13 @@
 #about-mindset-quote-container {
 
   width: 100%;
-  padding: 1.5em 0;
+  padding: 3em 0 1.5em 0;
 
   display: grid;
   justify-content: center;
   row-gap: 1.5em;
 
-  background-color: green;
+  /* background-color: green; */
 
 }
 
@@ -264,10 +251,3 @@
   background-color: wheat;
 
 }
-
-
-
-
-
-
-/* 🟣img-arrow-seperator-up,down */
