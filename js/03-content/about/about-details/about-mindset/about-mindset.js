@@ -9,9 +9,6 @@ console.log("🟨 about-mindset.js" )
 var audio_min_reflect_video = document.getElementById("js-audio-min-mindset-reflect-video");
 var audio_sec_reflect_video = document.getElementById("js-audio-sec-mindset-reflect-video");
 
-// audio src
-var audio_from_reflect_video = document.getElementById("audio-mindset-reflect-video");
-
 // video src
 var video_reflect = document.getElementById("js-video-about-mindset-reflect");
 
@@ -111,27 +108,25 @@ function audioCountdownIncrement() {
 
 }
 
-
 /* ------------------------------------------------------------------------------------ */
 /* 🪄 Events
 /* ------------------------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------------------------ */
-/* Timeupdate
-
-> it starts only by playing audio & then it will print many milliseconds from
+/* Event | Timeupdate
+/* ------------------------------------------------------------------------------------ */
+/*   it starts only by playing audio & then it will print many milliseconds from
      running audio - we like just detect full seconds, so thats why we
      check if second number is full second, for example time event prints:
      0.5, 0.8, 1.1 | by 1.1 we detect 1 Second, then we print this and so on
-
 /* ------------------------------------------------------------------------------------ */
 
-audio_from_reflect_video.addEventListener("timeupdate", () => {
+video_reflect.addEventListener("timeupdate", () => {
 
     // console.log("The currentTime attribute has been updated. Again. - " + audioSrcToBeFresh.currentTime );
 
     // Just Increment Time (Minutes : Seconds ) by full detected second, not by milli seconds
-    if( 1 == getFullSecond( audio_from_reflect_video.currentTime ) ) {
+    if( 1 == getFullSecond( video_reflect.currentTime ) ) {
 
         audioCountdownIncrement()
 
@@ -146,49 +141,37 @@ audio_from_reflect_video.addEventListener("timeupdate", () => {
     }
 
 
-    // Set Video Duration
-    video_reflect.duration = ( video_reflect.duration + 500 )
-    console.log("🟣🚀 Video Time = " + video_reflect.duration )
-
-    // Video Duration Update by Audio
-    if( video_reflect.duration > 0 ) {
-
-      // scale audio position to video length
-      // const scale = video_reflect.duration / audio_from_reflect_video.duration;
-      // video_reflect.currentTime = (  audio_from_reflect_video.currentTime * scale ) % video_reflect.duration;
-
-      // video_reflect.currentTime = 120;
-
-      console.log("🟩🚀 Video Time = " + video_reflect.duration )
-      console.log("🟩🚀 Video Current Time = " + video_reflect.currentTime )
-
-    }
-
 });
 
-// get src data at the beginning
+/* ------------------------------------------------------------------------------------ */
+/* Event | loadmetadata
+/* ------------------------------------------------------------------------------------ */
+/*   loads src of data by clicking active for example play
+/* ------------------------------------------------------------------------------------ */
 
 video_reflect.addEventListener("loadedmetadata", () => {
 
    console.log("🟩 Video Time = " + video_reflect.duration )
-   console.log("🟩 Audio Time = " + audio_max_duration )
+
+  //  console.log("🟩 Audio Time = " + audio_max_duration )
 
 })
 
-
-
-
+/* ------------------------------------------------------------------------------------ */
+/* Event | play
+/* ------------------------------------------------------------------------------------ */
+/*   if src is play
+/* ------------------------------------------------------------------------------------ */
 
 video_reflect.addEventListener("play", ()=> {
 
   console.log("🟩 Video startet")
 
 
-
   /* -------------------------------------- */
-  /* Play Audio
+  /* Play Video
   /* -------------------------------------- */
-  audio_from_reflect_video.play();
+  video_reflect.play();
 
   // set audio duration to video duration because its only 10sec
   // and we dont like to create an loop because then we dont cant handle
@@ -199,15 +182,15 @@ video_reflect.addEventListener("play", ()=> {
 
 })
 
+/* ------------------------------------------------------------------------------------ */
+/* Event | pause
+/* ------------------------------------------------------------------------------------ */
+/*   if src is pause or ended, triggered same time
+/* ------------------------------------------------------------------------------------ */
 
 video_reflect.addEventListener("pause", ()=> {
 
     console.log("🟩 Video Pause/(Ended ?!)")
-
-  /* -------------------------------------- */
-  /* Pause Audio
-  /* -------------------------------------- */
-  audio_from_reflect_video.pause();
 
   /* -------------------------------------- */
   /* Pause Video
@@ -216,14 +199,16 @@ video_reflect.addEventListener("pause", ()=> {
 
 })
 
+/* ------------------------------------------------------------------------------------ */
+/* Event | ended
+/* ------------------------------------------------------------------------------------ */
+/*   if src is running to end
+/* ------------------------------------------------------------------------------------ */
+
 video_reflect.addEventListener("ended", ()=> {
 
   alert(" 🟥 Video Ende ")
 
-  /* -------------------------------------- */
-  /* Pause Audio
-  /* -------------------------------------- */
-  audio_from_reflect_video.pause();
 
   /* -------------------------------------- */
   /* Pause Video
@@ -242,6 +227,27 @@ video_reflect.addEventListener("ended", ()=> {
   audio_sec_reflect_video.innerText = setZeroStylingByNumbers( getRestSecondsFromMinutes( audio_max_duration ) );
 
 })
+
+/* ------------------------------------------------------------------------------------ */
+/* Event | seeking
+/* ------------------------------------------------------------------------------------ */
+/*   if audio src is seeking forward or backward
+/* ------------------------------------------------------------------------------------ */
+
+video_reflect.addEventListener("seeking", ()=> {
+
+  console.log(" 😈 Seeking " + video_reflect.currentTime )
+
+  // max audio time (save) - actually seek time = actually time to play
+  audio_max_duration =  ( audio_save_duration - video_reflect.currentTime) +1;
+
+  // get Time and Update to global max duration
+
+
+})
+
+
+
 
 /* ------------------------------------------------------------ */
 /* Execute
@@ -285,7 +291,7 @@ function getAudioDuration( src ) {
 
 // Set Audio Timer by using promise function
 
-getAudioDuration( audio_from_reflect_video.getAttribute('src') )
+getAudioDuration( video_reflect.querySelector("source").src )
 
     .then( ( audioDuration ) => {
 
