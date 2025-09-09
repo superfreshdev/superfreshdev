@@ -66,27 +66,27 @@ for( let clickedIndex=0; clickedIndex < radios_body_header.length ; clickedIndex
 /* Execute
 /* ------------------------------------------------------ */
 
-// Set the content by radio checked
+    // Set the content by radio checked
 
-for( let clickedIndex=0; clickedIndex < radios_body_header.length ; clickedIndex++ ) {
+    for( let clickedIndex=0; clickedIndex < radios_body_header.length ; clickedIndex++ ) {
 
 
-  if( radios_body_header[clickedIndex].checked == true ) {
+    if( radios_body_header[clickedIndex].checked == true ) {
 
-      console.log("🟣🟣🟣 Start Page = " + clickedIndex )
+        console.log("🟣🟣🟣 Start Page = " + clickedIndex )
 
-      /* ----------------------------------------------------- */
-      /* Step 1: Do Push Slide
-      /* ----------------------------------------------------- */
+        /* ----------------------------------------------------- */
+        /* Step 1: Do Push Slide
+        /* ----------------------------------------------------- */
 
-      doPushSlide( body_slides, currentIndex, clickedIndex )
+        doPushSlide( body_slides, currentIndex, clickedIndex )
 
-      /* ----------------------------------------------------- */
-      /* Step 2: Update new Current Index
-      /* ----------------------------------------------------- */
+        /* ----------------------------------------------------- */
+        /* Step 2: Update new Current Index
+        /* ----------------------------------------------------- */
 
-      currentIndex = clickedIndex;
+        currentIndex = clickedIndex;
 
-  }
+    }
 
-}
+    }

@@ -1,23 +1,10 @@
 /* -------------------------------------------------------------- */
-/* > my-it-docs.css
+/* > nav-my-it-docs.css
 /*
-/* : styles my it docs
+/* : styles my it docs nav
 /* -------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------- */
-/* My IT Docs Container
+/* Ny My IT Docs
 /* ------------------------------------------------------------- */
-
-#my-it-docs-container {
-
-  width: 100%;
-
-  display: grid;
-  justify-items: center;
-
-  grid: auto auto 1fr / 1fr;
-
-  background-color: rgb(156, 156, 156);
-
-}

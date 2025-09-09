@@ -1,0 +1,105 @@
+/* -------------------------------------------------------------- */
+/* > nav-my-it.css
+/*
+/* : styles nav of my it
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Nav My It | My IT Container
+/* ------------------------------------------------------------- */
+
+#nav-my-it {
+
+    width: 100%;
+    padding: 1.5em 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 1em;
+    row-gap: 1em;
+
+    background-color: rgb(255, 255, 255);
+}
+
+/* ------------------------------------------------------------- */
+/* Label | Nav My It
+/* ------------------------------------------------------------- */
+
+.lbl-nav-my-it {
+
+    height: 2.8em;
+    padding: 0 .8em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .8em;
+
+    border-radius: .6em;
+
+    font-weight: bold;
+
+    background-color: rgb(185, 185, 185);
+
+    user-select: none;
+
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+.lbl-nav-my-it:hover {
+
+    background-color: wheat;
+}
+
+.lbl-nav-my-it > div:nth-of-type(1) {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+}
+
+.lbl-nav-my-it > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+}
+
+/* ------------------------------------------------------------- */
+/* Handling
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-my-it"] {
+
+  display: none;
+}
+
+/* set label background */
+#radio-my-it-projects:checked ~ #css-my-it-nav-area label[for="radio-my-it-projects"],
+#radio-my-it-docs:checked ~ #css-my-it-nav-area label[for="radio-my-it-docs"]{
+
+  background-color: wheat;
+
+}
+
+/* show x by radio */
+#radio-my-it-projects:checked ~ #css-my-it-nav-area label[for="radio-my-it-projects"] > .custom-radio-default > img,
+#radio-my-it-docs:checked ~ #css-my-it-nav-area label[for="radio-my-it-docs"] > .custom-radio-default > img {
+
+  display: flex;
+
+}
+
+/* show content */
+#radio-my-it-projects:checked ~ #css-my-it-projects-area,
+#radio-my-it-docs:checked ~ #css-my-it-docs-area {
+
+  display: grid;
+
+}

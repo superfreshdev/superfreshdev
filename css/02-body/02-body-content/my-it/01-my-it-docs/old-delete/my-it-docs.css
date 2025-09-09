@@ -1,0 +1,559 @@
+/* -------------------------------------------------------------- */
+/* > my-it-docs.css
+/*
+/* : styles my it docs
+/* -------------------------------------------------------------- */
+
+/* ⚠️⚠️⚠️ Test JS  */
+
+#js-add-it-docs {
+
+  padding: .8em;
+  border: 3px solid black;
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Container
+/* ------------------------------------------------------------- */
+
+#my-it-docs-container {
+
+  width: 100%;
+  display: grid;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img Header | My IT Docs Card Container
+/* ------------------------------------------------------------- */
+
+/* reminder: header is used by
+             universal element from sfd-defaults */
+
+#my-it-docs-header-books-img {
+
+  height: 2.5em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Content
+/* ------------------------------------------------------------- */
+
+#my-it-docs-content {
+
+  display: grid;
+  row-gap: 4em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* [1/2] | My It Docs Nav Container
+/* ------------------------------------------------------------- */
+
+#my-it-docs-nav-container {
+
+  /* to allow child layouts to get max width */
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  background-color: rgb(162, 249, 255);
+
+}
+
+/* ------------------------------------------------------------- */
+/* ⬇️⬆️ | Open Close | My IT Docs Nav List Container
+/* ------------------------------------------------------------- */
+
+#open-close-it-docs-nav-list-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 300ms ease-in-out;
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Nav List Container
+/* ------------------------------------------------------------- */
+
+#my-it-docs-nav-list-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  /* row-gap: 1em; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Nav List
+/* ------------------------------------------------------------- */
+
+#my-it-docs-nav-list {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+
+  justify-content: center;
+
+  grid-template-areas:
+
+    'my-it-docs-nav-grid-area-1'
+    'my-it-docs-nav-art-seperator-1'
+    'my-it-docs-nav-grid-area-2'
+    'my-it-docs-nav-art-seperator-2'
+    'my-it-docs-nav-grid-area-3'
+  ;
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav {
+
+  width: 100%;
+  display: grid;
+  row-gap: .6em;
+
+  font-weight: bold;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Grid Area ( 1,2,3 ) | My IT Docs Nav
+/* -------------------------------------------------------------- */
+
+#my-it-docs-nav-grid-area-1 {
+
+  grid-area: my-it-docs-nav-grid-area-1;
+
+}
+
+#my-it-docs-nav-grid-area-2 {
+
+  grid-area: my-it-docs-nav-grid-area-2;
+
+}
+
+#my-it-docs-nav-grid-area-3 {
+
+  grid-area: my-it-docs-nav-grid-area-3;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Only Mobile | Art Seperator Container
+/* -------------------------------------------------------------- */
+
+#only-mobile-my-it-docs-nav-art-seperator-1,
+#only-mobile-my-it-docs-nav-art-seperator-2 {
+
+  height: 6em;
+
+}
+
+#only-mobile-my-it-docs-nav-art-seperator-1 {
+
+  grid-area: my-it-docs-nav-art-seperator-1;
+
+}
+
+#only-mobile-my-it-docs-nav-art-seperator-2 {
+
+  grid-area: my-it-docs-nav-art-seperator-2;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Label | My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav > label {
+
+  height: 3.8em;
+  padding: .0em .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1em;
+
+  border-radius: .8em;
+
+  background-color: rgb(240, 239, 239);
+
+  user-select: none;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.my-it-docs-nav > label:hover {
+
+  background-color: wheat;
+}
+
+/* ------------------------------------------------------------- */
+/* Nr & Title | My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav-label-nr-title {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nr | My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav-label-nr {
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
+
+  opacity: .6;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Title | My IT Docs Nav
+/* ------------------------------------------------------------- */
+
+.my-it-docs-nav-label-title {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ⚠️ My IT Docs Content Card List  */
+
+/* ------------------------------------------------------------- */
+/* [2/2] ⬇️⬆️ | Open Close | My IT Docs Content List
+/* ------------------------------------------------------------- */
+
+#open-close-my-it-docs-content-list {
+
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 300ms ease-in-out;
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Content List
+/* ------------------------------------------------------------- */
+
+#my-it-docs-content-list {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  row-gap: 2em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Card Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  row-gap: 2em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | My IT Docs Card Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-container-header {
+
+  width: 100%;
+  height: 3em;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: .8em;
+
+  background-color: grey;
+
+}
+
+.my-it-docs-card-container-header-title {
+
+  height: 100%;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  background-color: rgb(28, 28, 28);
+  color:white;
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Card Container Card List
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-container-card-list {
+
+  width: 100%;
+
+  /* mobile */
+  display: grid;
+  grid: auto / 1fr 1fr;
+
+  column-gap: .6em;
+  row-gap: 1em;
+
+  /* desktop */
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  /* gap:2em; */
+
+  /* background-color: rgb(194, 194, 194); */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Extra Close Label | My It Docs Content List
+/* ------------------------------------------------------------- */
+
+#nav-extra-close-label-my-it-docs-content-list {
+
+  width: 100%;
+  height: 8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: red;
+
+}
+
+
+label[for="chk-extra-close-label-my-it-docs-content-list"] > img{
+
+  transform: rotate(180deg);
+
+}
+
+
+/* 🟣🟣🟣 🟣🟣🟣 🟣🟣🟣 🟣🟣🟣  */
+/* 🟣🟣🟣 Auslagern in > my-it-docs-card.css */
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Card + Basic Status
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card,
+.my-it-docs-card-in-progress,
+.my-it-docs-card-coming-soon,
+.my-it-docs-card-actually-no-priority {
+
+  position: relative;
+
+  /* mobile */
+  width: 100%;
+
+  display: grid;
+
+  border-radius: .8em;
+
+  align-items: center;
+
+}
+
+.my-it-docs-card-in-progress,
+.my-it-docs-card-coming-soon,
+.my-it-docs-card-actually-no-priority {
+
+  border: 3px solid rgb(107, 107, 107);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | My IT Docs Card
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-img {
+
+  width: 100%;
+  border-radius: .8em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Link Container | My IT Docs Card
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-link-container {
+
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  border-radius: 0 0 .7em .7em;
+
+  /* background-color: red; */
+}
+
+/* ------------------------------------------------------------- */
+/* a Link | My IT Docs Card
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-link-container > a {
+
+  text-decoration: none;
+
+  height: 100%;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  border-radius: .7em 0 .7em 0;
+
+  background-color: rgb(181, 181, 181);
+  color:black;
+
+  transition: all .4s;
+
+}
+
+.my-it-docs-card-link-container > a:visited {
+
+  color:black;
+}
+
+.my-it-docs-card-link-container > a:hover {
+
+  background-color: wheat;
+}
+
+/* ------------------------------------------------------------- */
+/* 3x Status Container | In Progress, Coming Soon, No Prio
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-in-progress .my-it-docs-card-img,
+.my-it-docs-card-coming-soon .my-it-docs-card-img,
+.my-it-docs-card-actually-no-priority .my-it-docs-card-img {
+
+  filter: grayscale(1);
+  opacity: .1;
+
+}
+
+/* ------------------------------------------------------------- */
+/* 3x Status Elements | In Progress, Coming Soon, No Prio
+/* ------------------------------------------------------------- */
+
+.it-doc-in-progress-element,
+.it-doc-coming-soon-element,
+.it-doc-actually-no-priority-element {
+
+  position: absolute;
+  left:0;
+  right:0;
+
+  padding: .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  text-align: center;
+
+}
+
+/* ------------------------------------------------------------- */
+/* In Progress | Status Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-in-progress .it-doc-in-progress-element {
+
+  background-color: rgb(233, 213, 0);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Coming Soon | Status Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-coming-soon .it-doc-coming-soon-element {
+
+  background-color: rgb(37, 190, 255);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Actually no Priority | Status Container
+/* ------------------------------------------------------------- */
+
+.my-it-docs-card-actually-no-priority .it-doc-actually-no-priority-element {
+
+  background-color: black;
+  color:white;
+
+}
