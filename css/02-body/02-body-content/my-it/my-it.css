@@ -162,6 +162,34 @@
 
 }
 
+.lbl-my-it-content-header {
+
+    height: 2.3em;
+    padding: 0em .8em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    border-radius: .6em;
+
+    font-weight: bold;
+
+    opacity: .4;
+
+    border: 1px solid rgb(163, 163, 163);
+
+    background-color: rgb(50, 50, 50) ;
+    color:rgb(203, 203, 203);
+
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    user-select: none;
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
 .lbl-my-it-content-header:hover {
 
     background-color: wheat;
