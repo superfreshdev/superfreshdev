@@ -11,18 +11,19 @@
 
 #nav-my-it {
 
-    width: 100%;
-    padding: 1.5em 0;
+  width: 100%;
+  padding: 1.5em .8em;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-    column-gap: 1em;
-    row-gap: 1em;
+  column-gap: 1em;
+  row-gap: 1em;
 
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+
 }
 
 /* ------------------------------------------------------------- */
@@ -33,6 +34,9 @@
 
     height: 2.8em;
     padding: 0 .8em;
+
+    /* mobile */
+    width: 15em;
 
     display: flex;
     align-items: center;

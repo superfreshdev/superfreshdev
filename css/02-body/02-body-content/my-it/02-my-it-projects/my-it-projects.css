@@ -17,7 +17,6 @@
 
 }
 
-
 /* ------------------------------------------------------------- */
 /* My It Projects Content Box
 /* ------------------------------------------------------------- */
@@ -29,76 +28,6 @@
 
 }
 
-/* ------------------------------------------------------------- */
-/* Header | My It Projects Content Box
-/* ------------------------------------------------------------- */
-
-.my-it-projects-header {
-
-  width: 100%;
-  padding: 1em .8em;
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-  column-gap: .8em;
-  row-gap: .8em;
-
-  background-color: rgb(28, 28, 28);
-  color:white;
-
-
-
-}
-
-/* ------------------------------------------------------------- */
-/* Title Element | Header
-/* ------------------------------------------------------------- */
-
-.my-it-projects-header-title-element {
-
-  display: flex;
-  align-items: center;
-  column-gap: .8em;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Div 1 | Title Element | Header
-/* ------------------------------------------------------------- */
-
-.my-it-projects-header-title-element > div:nth-of-type(1) {
-
-  display: grid;
-  row-gap: .2em;
-
-}
-
-/* div 1 -> div 1 */
-.my-it-projects-header-title-element > div:nth-of-type(1) > div:nth-of-type(1) {
-
-  font-size: 1.125em;
-  font-weight: bold;
-
-}
-
-/* div 1 -> div 2 */
-.my-it-projects-header-title-element > div:nth-of-type(1) > div:nth-of-type(2) {
-
-  color:grey;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Img | Title Element | Header
-/* ------------------------------------------------------------- */
-
-#img-it-project-header {
-
-  height: 2.5em;
-}
 
 /* ------------------------------------------------------------- */
 /* My It Top Projects Container
