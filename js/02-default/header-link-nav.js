@@ -81,7 +81,7 @@ linkHeaderMyit.addEventListener("click", ()=> {
 
 
 /* --------------------------------------------------------- */
-/* [3/3] |Click Listener | Link Header My Private
+/* [3/3] | Click Listener | Link Header My Private
 /* --------------------------------------------------------- */
 
 linkHeaderMyprivate.addEventListener("click", ()=> {
