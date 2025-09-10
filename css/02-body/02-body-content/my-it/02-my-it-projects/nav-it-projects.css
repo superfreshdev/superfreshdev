@@ -10,10 +10,56 @@
 /* ------------------------------------------------------------- */
 
 /* default unshown */
-input[name="name-radio-top-it-project"] {
+input[name="name-radio-top-it-project"],
+#chk-top-it-project-selector {
 
   display: none;
 }
+
+/* set background | top it projects selector */
+#chk-top-it-project-selector:checked ~ #css-my-it-top-project-header label[for="chk-top-it-project-selector"] {
+
+  opacity: 1;
+  background-color: wheat;
+  color:black;
+
+}
+
+/* unshown light img | top it projects selector */
+#chk-top-it-project-selector:checked ~ #css-my-it-top-project-header label[for="chk-top-it-project-selector"]> div:nth-of-type(1) > img:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* show black img | top it projects selector */
+#chk-top-it-project-selector:checked ~ #css-my-it-top-project-header label[for="chk-top-it-project-selector"]> div:nth-of-type(1) > img:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+/* rotate img arrow | top it projects selector */
+#chk-top-it-project-selector:checked ~ #css-my-it-top-project-header label[for="chk-top-it-project-selector"] > img {
+
+  transform: rotate(180deg)
+
+}
+
+/* unshown white img arrow */
+#chk-top-it-project-selector:checked ~ #css-my-it-top-project-header label[for="chk-top-it-project-selector"] > img:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* shown black img arrow */
+#chk-top-it-project-selector:checked ~ #css-my-it-top-project-header label[for="chk-top-it-project-selector"] > img:nth-of-type(2) {
+
+  display: flex;
+
+}
+
 
 /* set x | top it projects */
 #radio-top-it-project-web-design:checked ~ #css-my-it-top-project-header label[for="radio-top-it-project-web-design"] > div:nth-of-type(2) > img,

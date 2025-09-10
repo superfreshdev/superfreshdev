@@ -136,33 +136,8 @@
 
 .lbl-my-it-content-header {
 
-    /* parent grid | mobile */
+   /* parent grid | mobile */
     justify-self: flex-end;
-
-    height: 2.3em;
-    padding: 0 .8em;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    column-gap: .8em;
-
-    font-weight: bold;
-
-    border-radius: .6em;
-
-    background-color: grey;
-    color:black;
-
-    user-select: none;
-    cursor: pointer;
-
-    transition: all .4s;
-
-}
-
-.lbl-my-it-content-header {
 
     height: 2.3em;
     padding: 0em .8em;
@@ -192,8 +167,36 @@
 
 .lbl-my-it-content-header:hover {
 
+    opacity: 1;
     background-color: wheat;
+    color:black;
 }
+
+/* unshown white img - icon */
+.lbl-my-it-content-header:hover > div:nth-of-type(1) > img:nth-of-type(1) {
+
+  display: none;
+}
+
+/* shown black img - icon  */
+.lbl-my-it-content-header:hover > div:nth-of-type(1) > img:nth-of-type(2) {
+
+    display: flex;
+}
+
+/* shown black img - arrow */
+.lbl-my-it-content-header:hover > img:nth-of-type(1) {
+
+    display: none;
+}
+
+/* shown black img - arrow */
+.lbl-my-it-content-header:hover > img:nth-of-type(2) {
+
+    display: flex;
+}
+
+
 
 /* ------------------------------------------------------------- */
 /* Div 1 | Label | My It Content Header
@@ -204,4 +207,12 @@
     display: flex;
     align-items: center;
     column-gap: .6em;
+}
+
+/* default unshown black img - icon & arrow */
+.lbl-my-it-content-header > div > img:nth-of-type(2),
+.lbl-my-it-content-header > img:nth-of-type(2) {
+
+  display: none;
+
 }
