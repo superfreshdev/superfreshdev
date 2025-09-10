@@ -34,16 +34,15 @@
 
 
     /* ------------------------------------------ */
-    /* My It | Nav | Label
+    /* My It | Nav | Label | Img
     /* ------------------------------------------ */
 
-    .lbl-nav-my-it {
+    .lbl-nav-my-it > div:nth-of-type(1) > img:nth-of-type(1) {
 
       /* desktop */
-      width: auto;
+      display: flex;
 
     }
-
 
   /* ------------------------------------------ */
   /* My It Docs | Nav
