@@ -1,0 +1,39 @@
+/* -------------------------------------------------------------- */
+/* > nav-it-projects.css
+/*
+/* : styles my nav it projects
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Handlings
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-top-it-project"] {
+
+  display: none;
+}
+
+/* set x | top it projects */
+#radio-top-it-project-web-design:checked ~ #css-my-it-top-project-header label[for="radio-top-it-project-web-design"] > div:nth-of-type(2) > img,
+#radio-top-it-project-web-dev:checked ~ #css-my-it-top-project-header label[for="radio-top-it-project-web-dev"] > div:nth-of-type(2) > img,
+#radio-top-it-project-software-dev:checked ~ #css-my-it-top-project-header label[for="radio-top-it-project-software-dev"] > div:nth-of-type(2) > img {
+
+  display: flex;
+
+}
+
+/* set background | top it projects */
+#radio-top-it-project-web-design:checked ~ #css-my-it-top-project-header label[for="radio-top-it-project-web-design"],
+#radio-top-it-project-web-dev:checked ~ #css-my-it-top-project-header label[for="radio-top-it-project-web-dev"],
+#radio-top-it-project-software-dev:checked ~ #css-my-it-top-project-header label[for="radio-top-it-project-software-dev"] {
+
+  opacity: 1;
+  background-color: wheat;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Handlings
+/* ------------------------------------------------------------- */

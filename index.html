@@ -209,10 +209,12 @@
                 <link rel="stylesheet" href="css/02-body/02-body-content/my-it/nav-my-it.css">
 
                 <!-- My IT Projects -->
-                <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/my-it-projects.css">
+                <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/it-projects.css">
+                <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/nav-it-projects.css">
 
-                <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-it-projects/top-it-projects.css">
-                <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/more-it-projects/more-it-projects.css">
+                    <!-- top & more it projects -->
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/top-projects/it-top-projects.css">
+                    <link rel="stylesheet" href="css/02-body/02-body-content/my-it/02-my-it-projects/more-projects/it-more-projects.css">
 
                 <!-- My It Docs -->
                 <link rel="stylesheet" href="css/02-body/02-body-content/my-it/01-my-it-docs/my-it-docs.css">
@@ -2015,9 +2017,16 @@
                                                 <div class="my-it-projects-content-box">
 
                                                     <!-- --------------------------------------------------------------- -->
+                                                    <!-- Radios | Nav Top It Projects                                    -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <input type="radio" id="radio-top-it-project-web-design" name="name-radio-top-it-project">
+                                                    <input type="radio" id="radio-top-it-project-web-dev" name="name-radio-top-it-project">
+                                                    <input type="radio" id="radio-top-it-project-software-dev" name="name-radio-top-it-project">
+
+                                                    <!-- --------------------------------------------------------------- -->
                                                     <!-- Header | 📐 Resp Min Content                                    -->
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <div class="resp-min-content-area">
+                                                    <div class="resp-min-content-area" id="css-my-it-top-project-header">
 
                                                         <!-- ----------------------------------------------------------- -->
                                                         <!-- width & heihgt 100% (sets)                                  -->
@@ -2025,47 +2034,126 @@
                                                         <div class="w-100p h-100p flex jc-c">
 
                                                             <!-- --------------------------------------------------------------- -->
-                                                            <!-- Header                                                          -->
+                                                            <!-- My It Top Project Header                                                          -->
                                                             <!-- --------------------------------------------------------------- -->
-                                                            <header class="my-it-content-header-container">
+                                                            <header id="my-it-top-project-header">
 
-                                                                <!-- -------------------------------------------------------- -->
-                                                                <!-- Header Element -->
-                                                                <!-- -------------------------------------------------------- -->
-                                                                <div class="my-it-header-element">
+                                                                <!-- --------------------------------------------------------------- -->
+                                                                <!-- Header                                                          -->
+                                                                <!-- --------------------------------------------------------------- -->
+                                                                <div class="my-it-content-header-container">
 
-                                                                    <!-- header img -->
-                                                                    <img src="media/img/icons/03-emojies/01-things/emoji-rocket.png"
-                                                                     class="img-it-top-projects-my-it-header-content" alt="img">
+                                                                    <!-- -------------------------------------------------------- -->
+                                                                    <!-- Header Element -->
+                                                                    <!-- -------------------------------------------------------- -->
+                                                                    <div class="my-it-header-element">
 
-                                                                    <!-- header title -->
-                                                                    <div class="my-it-header-content-title">
-                                                                        <div>Top IT-Project's</div>
-                                                                        <div>» Web-Design | Web-Dev | Software-Dev </div>
+                                                                        <!-- header img -->
+                                                                        <img src="media/img/icons/03-emojies/01-things/emoji-rocket.png"
+                                                                        class="img-it-top-projects-my-it-header-content" alt="img">
+
+                                                                        <!-- header title -->
+                                                                        <div class="my-it-header-content-title">
+                                                                            <div>Top IT-Project's</div>
+                                                                            <div>» Web-Design | Web-Dev | Software-Dev </div>
+                                                                        </div>
+
                                                                     </div>
+
+                                                                    <!-- -------------------------------------------------------- -->
+                                                                    <!-- Label -->
+                                                                    <!-- -------------------------------------------------------- -->
+                                                                    <label for="" class="lbl-my-it-content-header">
+
+                                                                        <!-- ------------------------------ -->
+                                                                        <!-- Block 1 -->
+                                                                        <!-- ------------------------------ -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/02-white/white-art.png" class="img-h-1" alt="img">
+                                                                            <div>Web-Design</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------------ -->
+                                                                        <!-- Block 2 -->
+                                                                        <!-- ------------------------------ -->
+                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-arrow-clap-down.png" class="img-h-0-5" alt="img">
+
+
+                                                                    </label>
 
                                                                 </div>
 
-                                                                <!-- -------------------------------------------------------- -->
-                                                                <!-- Label -->
-                                                                <!-- -------------------------------------------------------- -->
-                                                                <label for="" class="lbl-my-it-content-header">
+                                                                <!-- --------------------------------------------------------------- -->
+                                                                <!-- ⬇️⬆️ Smooth Nav Label | It Top Projects                              -->
+                                                                <!-- --------------------------------------------------------------- -->
+                                                                <div id="smooth-nav-label-it-top-projects">
 
-                                                                    <!-- ------------------------------ -->
-                                                                    <!-- Block 1 -->
-                                                                    <!-- ------------------------------ -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/02-white/white-art.png" class="img-h-1" alt="img">
-                                                                        <div>Web-Design</div>
+                                                                    <!-- --------------------------------------------------------------- -->
+                                                                    <!-- Overflow Hidden                                      -->
+                                                                    <!-- --------------------------------------------------------------- -->
+                                                                    <div class="overflow-hidden">
+
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <!-- Nav                                     -->
+                                                                        <!-- --------------------------------------------------------------- -->
+                                                                        <nav id="nav-it-top-projects">
+
+                                                                            <!-- ------------------------------------------------ -->
+                                                                            <!-- Label 1 | -->
+                                                                            <!-- ------------------------------------------------ -->
+                                                                            <label for="radio-top-it-project-web-design" class="lbl-open-close-content">
+
+                                                                                <div>
+                                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-art.png" class="img-h-1-1" alt="img">
+                                                                                    <div>Web-Design</div>
+                                                                                </div>
+
+                                                                                <div class="custom-radio-default">
+                                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                                </div>
+
+                                                                            </label>
+
+                                                                            <!-- ------------------------------------------------ -->
+                                                                            <!-- Web-Dev | Label -->
+                                                                            <!-- ------------------------------------------------ -->
+                                                                            <label for="radio-top-it-project-web-dev" class="lbl-open-close-content">
+
+                                                                                <div>
+                                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-1-1" alt="img">
+                                                                                    <div>Web-Dev</div>
+                                                                                </div>
+
+                                                                                <div class="custom-radio-default">
+                                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                                </div>
+
+                                                                            </label>
+
+                                                                            <!-- ------------------------------------------------ -->
+                                                                            <!-- Softare-Dev | Label -->
+                                                                            <!-- ------------------------------------------------ -->
+                                                                            <label for="radio-top-it-project-software-dev" class="lbl-open-close-content">
+
+                                                                                <div>
+                                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1-1" alt="img">
+                                                                                    <div>Software-Dev</div>
+                                                                                </div>
+
+                                                                                <div class="custom-radio-default">
+                                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                                </div>
+
+                                                                            </label>
+
+                                                                        </nav>
+
+
                                                                     </div>
 
-                                                                    <!-- ------------------------------ -->
-                                                                    <!-- Block 2 -->
-                                                                    <!-- ------------------------------ -->
-                                                                    <img src="media/img/icons/02-icon-colors/02-white/white-arrow-clap-down.png" class="img-h-0-5" alt="img">
 
+                                                                </div>
 
-                                                                </label>
 
                                                             </header>
 
@@ -2073,14 +2161,149 @@
 
                                                     </div>
 
-                                                    <!-- ------------------------------------------------------------------ -->
-                                                    <!-- My IT Top Projects Container -->
-                                                    <!-- ------------------------------------------------------------------ -->
-                                                    <main id="my-it-top-projects-container">
 
-                                                        Main - Top Projects Container
+                                                    <!-- ------------------------------------------------------------------ -->
+                                                    <!-- Main | My IT Top Projects Container -->
+                                                    <!-- ------------------------------------------------------------------ -->
+                                                    <main id="my-it-top-project-cards-container">
+
+                                                        <!-- content will be loaded by json file -->
+
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <!-- Top IT Project Card -->
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <div class="top-it-project-card">
+
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- IMG Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-img-container">
+                                                                IMG Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Title Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-title-container">
+                                                                Title Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Skill list Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-skill-list-container">
+                                                                Skills Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Zip & GitHub Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-zip-github-container">
+                                                                Zip Github Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- [Optional] | Video Tutorial Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-video-tutorial-container">
+                                                                Video Tutorial Container
+                                                            </div>
+
+
+                                                        </div>
+
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <!-- Top IT Project Card -->
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <div class="top-it-project-card">
+
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- IMG Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-img-container">
+                                                                IMG Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Title Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-title-container">
+                                                                Title Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Skill list Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-skill-list-container">
+                                                                Skills Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Zip & GitHub Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-zip-github-container">
+                                                                Zip Github Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- [Optional] | Video Tutorial Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-video-tutorial-container">
+                                                                Video Tutorial Container
+                                                            </div>
+
+
+                                                        </div>
+
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <!-- Top IT Project Card -->
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <div class="top-it-project-card">
+
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- IMG Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-img-container">
+                                                                IMG Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Title Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-title-container">
+                                                                Title Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Skill list Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-skill-list-container">
+                                                                Skills Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Zip & GitHub Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-zip-github-container">
+                                                                Zip Github Container
+                                                            </div>
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- [Optional] | Video Tutorial Container -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="top-it-project-card-video-tutorial-container">
+                                                                Video Tutorial Container
+                                                            </div>
+
+
+                                                        </div>
+
 
                                                     </main>
+
 
                                                 </div>
 
