@@ -1,0 +1,96 @@
+/* ------------------------------------------------------------------- */
+/* > ghost-lbl-open-close.css
+/*
+/* : styles open, close label in ghost style,
+     border and no background and font very dark grey
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Label Open Close Ghost
+/* ------------------------------------------------------------------- */
+
+.lbl-open-close-ghost {
+
+    height: 2.3em;
+    padding: 0em .8em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+    font-weight: bold;
+
+    border-radius: .6em;
+
+    opacity: .4;
+
+    border: 1px solid rgb(163, 163, 163);
+
+    background-color: rgb(50, 50, 50);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    color:rgb(203, 203, 203);
+
+    user-select: none;
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Div 1 | Label Open Close Ghost
+/* ------------------------------------------------------------- */
+
+.lbl-open-close-ghost > div {
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+}
+
+/* ------------------------------------------------------------- */
+/* Default | Unshown Black Imgs
+/* ------------------------------------------------------------- */
+
+.lbl-open-close-ghost > div:nth-of-type(1) > img:nth-of-type(2),
+.lbl-open-close-ghost > img:nth-of-type(2) {
+
+  display: none;
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Hover | Label Open Close Ghost
+/* ------------------------------------------------------------------- */
+
+.lbl-open-close-ghost:hover {
+
+    opacity: 1;
+    background-color: wheat;
+    color:black;
+}
+
+/* ------------------------------------------------------------------- */
+/* Hover | Div 1 > Img | Label Open Close Ghost
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------ */
+/* Unshown White Img | Icon & Arrow
+/* ------------------------------------------------------ */
+
+.lbl-open-close-ghost:hover > div:nth-of-type(1) > img:nth-of-type(1),
+.lbl-open-close-ghost:hover > img:nth-of-type(1) {
+
+  display: none;
+}
+
+/* ---------------------------------------- */
+/* Show Black Img | Icon & Arrow
+/* ---------------------------------------- */
+
+.lbl-open-close-ghost:hover > div:nth-of-type(1) > img:nth-of-type(2),
+.lbl-open-close-ghost:hover > img:nth-of-type(2) {
+
+    display: flex;
+}

@@ -1,90 +1,71 @@
 /* -------------------------------------------------------------- */
-/* > it-projects.css
+/* > header-begin-container.css
 /*
-/* : default styles for my it projects
+/* : default styles header begin container -
+     every new topic need and begin header - this
+     header is dark and had maxium 2 columns which are
+     space-between, so max left and right
 /* -------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------- */
-/* My IT Projects Container
+/* Header Begin Container
 /* ------------------------------------------------------------- */
 
-#my-it-projects-container {
+.header-begin-container {
 
   width: 100%;
+  padding: 1em .8em;
+
+  /* mobile */
+  display: grid;
+  row-gap: .8em;
+
+  background-color: rgb(28, 28, 28);
+  color:white;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header Begin Title Box
+/* ------------------------------------------------------------- */
+
+.header-begin-title-box {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header Begin Title
+/* ------------------------------------------------------------- */
+
+.header-begin-title {
 
   display: grid;
-  grid: auto 1fr / 1fr;
-
-  /* background-color: red; */
+  row-gap: .2em;
 
 }
 
 /* ------------------------------------------------------------- */
-/* My It Projects Content Box
+/* Div 1 | Header Begin Title
 /* ------------------------------------------------------------- */
 
-.my-it-projects-content-box {
+.header-begin-title > div:nth-of-type(1) {
 
-  width: 100%;
-
-  display: grid;
-  grid: auto 1fr / 1fr;
-  justify-items: center;
+  font-size: 1.125em;
+  font-weight: bold;
 
 }
 
 /* ------------------------------------------------------------- */
-/* My It Top Projects Container
+/* Div 2 | Header Begin Title
 /* ------------------------------------------------------------- */
 
-#my-it-top-projects-container {
+.header-begin-title > div:nth-of-type(2) {
 
-  width: 100%;
-  padding: 1.5em .8em;
-
-  background-color: rgb(112, 112, 139);
-
-}
-
-
-/* 🟣🟣🟣  */
-/* ------------------------------------------------------------- */
-/* Imgs (Emojie) | Header Title Box | My It
-/* ------------------------------------------------------------- */
-
-/* rocket */
-#img-header-top-it-projects {
-
-  height: 2.2em;
-
-}
-
-/* folder */
-#img-header-more-it-projects {
-
-  height: 2em;
-
-}
-
-
-/* books */
-#img-header-it-docs {
-
-   height: 2em;
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* Label | Header Container My IT
-/* ------------------------------------------------------------- */
-
-label[for="chk-top-it-projects"],
-label[for="chk-more-it-projects"] {
-
-  /* parent grid | mobile */
-  justify-self: flex-end;
-
+  color:grey;
 
 }
