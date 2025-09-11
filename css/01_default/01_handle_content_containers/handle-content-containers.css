@@ -1,0 +1,45 @@
+/* -------------------------------------------------------------- */
+/* > handle-content-containers.css
+/*
+/* : styles different responsive content containers which we can
+     maximum use to style our other layouts in it
+/* -------------------------------------------------------------- */
+
+/* ⚠️ */
+
+/* ------------------------------------------------------------ */
+/* Resp | Very Small, Min,Main,Max
+/* ------------------------------------------------------------ */
+
+.resp-very-small-content-area,
+.resp-min-content-area,
+.resp-main-content-area,
+.resp-max-content-area {
+
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------- */
+/* Just for Testing with background colors                              */
+/* -------------------------------------------------------------------- */
+
+.resp-very-small-content-area {
+
+    background-color: greenyellow;
+}
+
+.resp-min-content-area {
+
+    /* background-color: orange; */
+}
+
+.resp-main-content-area {
+
+    /* background-color: yellow; */
+    /* background-color: aquamarine; */
+}
+
+.resp-max-content-area  {
+
+    /* background-color: rgb(210, 5, 5); */
+}

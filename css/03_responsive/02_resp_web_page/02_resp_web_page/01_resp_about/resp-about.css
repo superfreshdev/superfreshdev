@@ -1,0 +1,296 @@
+/* -------------------------------------------------------------- */
+/* > resp-about.css
+/*
+/* : responsive sets for about page elements
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* >= 360px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 360px ) {
+
+  /* ------------------------------------------------ */
+  /* Read More | Nav About Read More */
+  /* ------------------------------------------------ */
+
+  #nav-about-read-more {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: .6em;
+    row-gap: .6em;
+
+  }
+
+  /* ------------------------------------------------ */
+  /* Read More | Nav About Read More | Label          */
+  /* ------------------------------------------------ */
+
+  #nav-about-read-more > label {
+
+    width: auto;
+
+  }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 380px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 380px ) {
+
+
+  /* ------------------------------------------------ */
+  /* Quick Info | */
+  /* ------------------------------------------------ */
+
+  /* ------------------------------------------------ */
+  /* Read More | */
+  /* ------------------------------------------------ */
+
+  /* ------------------------------------------------ */
+  /* About Details | Nav About More | Label | Img  */
+  /* ------------------------------------------------ */
+
+  #nav-about-more > label > img {
+
+    display: flex;
+
+  }
+
+  /* --------------------------------------------------------- */
+  /* About Details | About Mindset Video Box
+  /* --------------------------------------------------------- */
+
+  .about-mindset-video-box  {
+
+    width: 22em;
+
+  }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 400px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 400px ) {
+
+
+  /* ------------------------------------------------ */
+  /* About Details | Label | Img                      */
+  /* ------------------------------------------------ */
+
+  #nav-about-details label[for="radio-about-it-skills"] > img:nth-of-type(1),
+  #nav-about-details label[for="radio-about-mindset"] > img:nth-of-type(1),
+  #nav-about-details label[for="radio-about-contact"] > img:nth-of-type(1) {
+
+    /* desktop */
+    display: flex;
+
+  }
+
+  /* hover effect unshown light icon */
+  #nav-about-details label[for="radio-about-it-skills"]:hover > img:nth-of-type(1),
+  #nav-about-details label[for="radio-about-mindset"]:hover > img:nth-of-type(1),
+  #nav-about-details label[for="radio-about-contact"]:hover > img:nth-of-type(1) {
+
+    display: none;
+
+  }
+
+  /* hover effect show black icon */
+  #nav-about-details label[for="radio-about-it-skills"]:hover > img:nth-of-type(2),
+  #nav-about-details label[for="radio-about-mindset"]:hover > img:nth-of-type(2),
+  #nav-about-details label[for="radio-about-contact"]:hover > img:nth-of-type(2) {
+
+    display: flex;
+
+  }
+
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* >= 580px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 580px ) {
+
+
+  /* ------------------------------------------- */
+  /* About Details | Header
+  /* ------------------------------------------- */
+
+   #about-details-container > header {
+
+    /* desktop */
+    display: flex;
+    justify-content: space-between;
+
+    /* background-color: red; */
+
+
+  }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 650px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 650px ) {
+
+
+  /* ------------------------------------------------ */
+  /* Quick Info |                                     */
+  /* ------------------------------------------------ */
+
+  #about-quick-info {
+
+    width: 100%;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid: auto / auto 1fr;
+
+    column-gap: 1em;
+    /* background-color: green; */
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Quick Info | Img Arrow Seperator
+  /* ------------------------------------------------------------------- */
+
+  #img-arrow-seperator-about-quick-info {
+
+    /* desktop */
+    display: flex;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Quick Info | Info Text Container | label ( default )
+  /* ------------------------------------------------------------------- */
+
+  #about-quick-info-text-container > .default-header-sfd-label:nth-of-type(1) {
+
+    /* desktop */
+    justify-self: flex-start;
+
+  }
+
+  /* ----------------------------------------------------------- */
+  /* Quick Info | Text
+  /* ----------------------------------------------------------- */
+
+  #about-quick-info-text {
+
+    /* desktop */
+    text-align: left;
+
+  }
+
+  /* ----------------------------------------------------------- */
+  /* Read More | Hobbies -> Main
+  /* ----------------------------------------------------------- */
+
+  #about-read-more-my-mission > main,
+  #about-read-more-my-hobbies > main {
+
+    display: grid;
+
+    grid: auto / 1fr 1fr;
+
+    column-gap: .8em;
+
+  }
+
+  /* ----------------------------------------------------------- */
+  /* About Details | About Mindet Video Box
+  /* ----------------------------------------------------------- */
+
+  .about-mindset-video-box  {
+
+    width: 100%;
+
+  }
+
+  /* ----------------------------------------------------------- */
+  /* About Details | About Mindset Video Container
+  /* ----------------------------------------------------------- */
+
+  #about-mindset-video-container {
+
+    grid: auto / 1fr 1fr;
+    column-gap: 2em;
+
+  }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 750px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 750px ) {
+
+
+  /* ------------------------------------------------ */
+  /*  Quick Info | Why Superfreshdev  */
+  /* ------------------------------------------------ */
+
+  #about-why-superfreshdev {
+
+    justify-items: flex-end;
+
+  }
+
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 800px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 800px ) {
+
+
+   /* ------------------------------------------- */
+   /* About Details | Mindset Video Container
+   /* ------------------------------------------- */
+
+   .about-mindset-video-container  {
+
+    width: 100%;
+
+   }
+
+   /* ------------------------------------------- */
+   /* About Details | Contact
+   /* ------------------------------------------- */
+
+   #img-clipart-coffee  {
+
+    height: 9em;
+
+   }
+
+   /* ------------------------------------------- */
+   /* About Details | Contact
+   /* ------------------------------------------- */
+
+   #about-contact-info-container {
+
+    column-gap: 1.5em;
+
+  }
+
+}

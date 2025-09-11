@@ -1,0 +1,445 @@
+/* -------------------------------------------------------------- */
+/* > resp-it.css
+/*
+/* : responsive sets for it docs
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* >= 330px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 350px ) {
+
+  /* ------------------------------------------------------------- */
+  /* My IT Projects | More Card
+  /* ------------------------------------------------------------- */
+
+  .my-it-project-more-card {
+
+    width: 18em;
+
+  }
+
+
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* >= 400px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 400px ) {
+
+
+    /* ------------------------------------------ */
+    /* My It | Nav | Label | Img
+    /* ------------------------------------------ */
+
+    .lbl-nav-my-it > div:nth-of-type(1) > img:nth-of-type(1) {
+
+      /* desktop */
+      display: flex;
+
+    }
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav
+  /* ------------------------------------------ */
+
+  .my-it-docs-nav {
+
+    width: 22em;
+
+  }
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 450px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 450px ) {
+
+
+  /* ------------------------------------------ */
+  /* My It Docs | Doc Card Item
+  /* ------------------------------------------ */
+
+  .my-it-doc-card-item {
+
+    /* desktop */
+    width: 12em;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* My It Projects | It More Project Card
+  /* ------------------------------------------------------------- */
+
+  .it-more-project-card {
+
+    /* desktop */
+    width: 24em;
+
+  }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 500px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 500px ) {
+
+  /* ------------------------------------------------------------- */
+  /* IT Projects | Nav Label
+  /* ------------------------------------------------------------- */
+
+  #my-it-projects-top-container > nav:nth-of-type(1) > label {
+
+    /* desktop */
+    width:auto;
+
+}
+
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 600px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 600px ) {
+
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav List
+  /* ------------------------------------------ */
+
+  #my-it-docs-nav-list {
+
+    grid-template-areas:
+
+      'my-it-docs-nav-grid-area-1 my-it-docs-nav-grid-area-2'
+      'my-it-docs-nav-grid-area-1 my-it-docs-nav-grid-area-3'
+    ;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 1em;
+    row-gap: 3em;
+
+  }
+
+    /* ------------------------------------------ */
+    /* My It Docs | Nav
+    /* ------------------------------------------ */
+
+    .my-it-docs-nav {
+
+      /* width: 17em; */
+      width: 100%;
+
+    }
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav Art Seperator 1
+  /* ------------------------------------------ */
+
+  #only-mobile-my-it-docs-nav-art-seperator-1,
+  #only-mobile-my-it-docs-nav-art-seperator-2 {
+
+    display: none;
+  }
+
+  /* ------------------------------------------------------------- */
+  /* My IT Docs Card Container Card List
+  /* ------------------------------------------------------------- */
+
+  .my-it-docs-card-container-card-list {
+
+    /* desktop */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2em;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* My IT Docs Card + Basic Status
+  / * ------------------------------------------------------------- */
+
+  .my-it-docs-card,
+  .my-it-docs-card-in-progress,
+  .my-it-docs-card-coming-soon,
+  .my-it-docs-card-actually-no-priority {
+
+    position: relative;
+
+    /* desktop */
+    width: 15em;
+
+
+  }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 700px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 700px ) {
+
+
+  /* ------------------------------------------ */
+  /* My It | Content Header Container
+  /* ------------------------------------------ */
+
+  /* ⚠️ Template, besser dazu zusätzlich eigene Klasse machen,
+        denn wenn wo anders das Template verwendet wird,
+        dann wird da auch mit übernommen !!! */
+
+  .header-begin-container {
+
+    /* desktop */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 800px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 800px ) {
+
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav List
+  /* ------------------------------------------ */
+
+    #my-it-docs-nav-list {
+
+
+      grid-template-columns: 18em 18em;
+
+    }
+
+  /* ------------------------------------------ */
+  /* My It Project | Project Top Card
+  /* ------------------------------------------ */
+
+  .my-it-project-top-card {
+
+    /* extra case for project top card 3 */
+    width: 22em;
+
+  }
+
+  /* ------------------------------------------ */
+  /* My IT Project | Card Seperator 1
+  /* ------------------------------------------ */
+
+  #grid-area-top-it-project-card-seperator-1 > img {
+
+    transform: rotate(90deg);
+
+  }
+
+  /* ------------------------------------------ */
+  /* My IT Project | Top Card List
+  /* ------------------------------------------ */
+
+  #my-it-project-top-card-list {
+
+    grid-template-areas:
+
+    'it-project-top-card-1 it-project-top-card-seperator-1 it-project-top-card-2'
+    'it-project-top-card-seperator-2 it-project-top-card-seperator-2 it-project-top-card-seperator-2'
+    'it-project-top-card-3 it-project-top-card-3 it-project-top-card-3'
+    ;
+
+    grid-template-columns: auto 4em auto;
+
+  }
+
+
+
+  /* ------------------------------------------------------------------------ */
+  /* My IT Project | Project Card Seperator 1 | center to project cards
+  /* ------------------------------------------------------------------------ */
+  #grid-area-top-it-project-card-seperator-1 {
+
+    align-self: center;
+  }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 900px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 950px ) {
+
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav List
+  /* ------------------------------------------ */
+
+    #my-it-docs-nav-list {
+
+      grid-template-areas:
+
+        'my-it-docs-nav-grid-area-1 my-it-docs-nav-grid-area-2 my-it-docs-nav-grid-area-3'
+      ;
+
+      grid-template-columns: 17em 17em 17em;
+
+    }
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1000px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 1000px ) {
+
+
+  /* ------------------------------------------ */
+  /* My It Docs | Nav List
+  /* ------------------------------------------ */
+
+    #my-it-docs-nav-list {
+
+      grid-template-columns: 19em 19em 19em;
+
+    }
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1200px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 1200px ) {
+
+
+  /* -------------------------------------------- */
+  /* My IT Docs | Nav
+  /* -------------------------------------------- */
+
+  #my-it-docs-selection-list-container {
+
+    /* desktop */
+    justify-content: center;
+
+    grid-template-areas:
+    'my-it-docs-grid-area-1 my-it-docs-grid-area-2 my-it-docs-grid-area-3';
+
+    /* grid-template-columns: 1.2fr 1fr 1fr; */
+
+  }
+
+
+  /* ------------------------------------------------------------- */
+  /* My IT Project | Top Card
+  /* ------------------------------------------------------------- */
+  .my-it-project-top-card {
+
+    /* let it project top card auto, to handle it by grid area */
+    width: auto;
+
+  }
+
+  /* ------------------------------------------ */
+  /* My IT Project | Top Card List
+  /* ------------------------------------------ */
+
+  #my-it-project-top-card-list {
+
+    grid-template-areas:
+
+    'it-project-top-card-1 it-project-top-card-seperator-1 it-project-top-card-2 it-project-top-card-seperator-2 it-project-top-card-3'
+
+    ;
+
+    grid-template-columns: 22em 4em 22em 4em 22em;
+
+
+  }
+
+  /* ------------------------------------------ */
+  /* My IT Project | Card Seperator 2
+  /* ------------------------------------------ */
+
+  #grid-area-top-it-project-card-seperator-2 > img {
+
+    transform: rotate(90deg);
+
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* My IT Project | Project Card Seperator 2 | center to project cards
+  /* ------------------------------------------------------------------------ */
+  #grid-area-top-it-project-card-seperator-2 {
+
+    align-self: center;
+  }
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1400px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 1400px ) {
+
+
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* >= 1600px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 1600px ) {
+
+  /* ------------------------------------------ */
+  /* My It Project | Project Top Card
+  /* ------------------------------------------ */
+
+  .my-it-project-top-card {
+
+    /* extra case for project top card 3 */
+    width: 24em;
+
+  }
+
+
+  /* ------------------------------------------ */
+  /* My IT Project | Top Card List
+  /* ------------------------------------------ */
+
+  #my-it-project-top-card-list {
+
+
+    grid-template-columns: auto 6em auto 6em auto;
+
+
+  }
+
+}

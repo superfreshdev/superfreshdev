@@ -1,0 +1,136 @@
+/* -------------------------------------------------------------- */
+/* > about-my-mission.css
+/*
+/* : styles my mission info
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* My Mission | About Read More
+/* ------------------------------------------------------------------- */
+
+#about-read-more-my-mission {
+
+  width: 100%;
+  padding: 2em 0em;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1.5em;
+
+
+  /* default unshown */
+  display: none;
+
+  /* background-color: rgb(230, 230, 230); */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header | My Mission
+/* ------------------------------------------------------------------- */
+
+#about-read-more-my-mission > header {
+
+  padding: .1em .4em;
+
+  font-style: italic;
+  font-weight: bold;
+
+  border-radius: .6em;
+
+  background-color: rgb(28, 28, 28);
+  color:#ffffff;
+  /* opacity: .6; */
+
+  /* 14.5px */
+  font-size: .90625em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* My Mission List | About Read More
+/* ------------------------------------------------------------------- */
+
+#about-read-more-my-mission-list {
+
+  padding: 1.5em .8em;
+
+  display: grid;
+  row-gap: 1em;
+
+  /* background-color: rgb(212, 212, 212); */
+  border-radius: .8em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* My Mission List Item | My Mission List
+/* ------------------------------------------------------------------- */
+
+.about-my-mission-list-item {
+
+  border-radius: .8em;
+
+  border: 3px solid rgb(28, 28, 28);
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header | My Mission List Item
+/* ------------------------------------------------------------------- */
+
+.about-my-mission-list-item > header {
+
+  width: 100%;
+  height: 2.3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: .6em .6em 0 0;
+
+  background-color: #ebebeb;
+  background-color: rgb(28, 28, 28);
+
+}
+
+.about-my-mission-list-item > header > div {
+
+  height: 100%;
+  width: 2.8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* nr box */
+.about-my-mission-list-item > header > div:nth-of-type(1) {
+
+  /* optimal layout fix */
+  padding-left: .4em;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+  color:rgb(175, 175, 175);
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Main | My Mission List Item
+/* ------------------------------------------------------------------- */
+
+.about-my-mission-list-item > main {
+
+  padding: .8em;
+
+  /* font-weight: bold; */
+  color:#808080;
+
+  color:rgb(175, 175, 175);
+
+}

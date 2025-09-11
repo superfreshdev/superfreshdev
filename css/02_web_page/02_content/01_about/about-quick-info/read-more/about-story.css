@@ -1,0 +1,84 @@
+/* -------------------------------------------------------------- */
+/* > about-story.css
+/*
+/* : styles the story about superfresh dev
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Story | About Read More
+/* ------------------------------------------------------------------- */
+
+#about-read-more-story {
+
+  width: 100%;
+  padding: 4em .4em 0em .4em;
+
+  display: grid;
+  row-gap: 1em;
+
+  line-height: 1.8em;
+
+  /* background-color: green; */
+  color:#808080;
+
+  /* default unshown */
+  display: none;
+
+}
+
+#about-read-more-story > label:nth-of-type(1) {
+
+  /* more space from last block story */
+  margin-top: 1.3em;
+
+  justify-self: center;
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Imgs | Cold Shower, Vikings, ...
+/* ------------------------------------------------------------------- */
+
+#img-about-cold-shower {
+
+  float: right;
+  padding: 0 0 .4em .4em;
+
+  /* mobile */
+  height: 7.5em;
+
+}
+
+#img-about-viking {
+
+  float: left;
+  margin: .8em .8em .4em 0em;
+
+  /* mobile */
+  height: 6em;
+
+  border-radius: .8em .8em .8em .8em;
+
+}
+
+#img-about-funny-me {
+
+  float: right;
+  padding: 0 0 .4em .4em;
+
+  /* mobile */
+  height: 8em;
+
+}
+
+#img-about-wave-rocket {
+
+  float: left;
+  padding: .4em .8em .4em 0;
+
+  /* mobile */
+  height: 5.5em;
+
+}
