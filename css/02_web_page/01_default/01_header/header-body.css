@@ -6,10 +6,10 @@
 
 
 /* ---------------------------------------------------------------- */
-/* Header Fixed Body
+/* Header Fixed Body Container
 /* ---------------------------------------------------------------- */
 
-#header-fixed-body {
+#header-fixed-body-container {
 
     z-index: 100;
 
@@ -32,10 +32,10 @@
 }
 
 /* ---------------------------------------------------------------- */
-/* Header Fixed Container Body
+/* Header Body Container
 /* ---------------------------------------------------------------- */
 
-#header-fixed-container-body {
+#header-body-container {
 
     width: 100%;
 
@@ -46,61 +46,5 @@
     justify-content: center;
 
     /* background-color: red; */
-
-}
-
-
-
-
-/* ---------------------------------------------------------------- */
-/* Img | Header Body Scroll Fix Container
-/* ---------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------- */
-/* ❌❌❌ Müll
-/* ---------------------------------------------------------------- */
-
-
-/* ---------------------------------------------------------------- */
-/* Header Body Scroll Fix
-/* ---------------------------------------------------------------- */
-
-#header-body-scroll-fix {
-
-    z-index: 99;
-    width: 100%;
-
-    position: fixed;
-    left:0;
-    right: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-bottom: 1px solid rgb(53, 53, 53);
-
-    background-color: rgb(28, 28, 28);
-
-    color:white;
-
-}
-
-/* ---------------------------------------------------------------- */
-/* Header Body Scroll Fix Container
-/* ---------------------------------------------------------------- */
-
-#header-body-scroll-fix-container {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
 }

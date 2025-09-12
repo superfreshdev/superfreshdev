@@ -12,52 +12,34 @@
 @media (min-width: 900px ) {
 
 
-  .padding-t1-b2-0-8-wrapper {
+  /* -------------------------------------------- */
+  /* Only | Left & Right
+  /* -------------------------------------------- */
 
-    padding: 1em 0em 2em 0em;
+  .resp-padding-wrapper-0-08 {
 
-  }
-
-  .padding-t0-b2-0-8-wrapper {
-
-    padding: 0 .8em 2em .8em;
-
-  }
-
-  .padding-0-0-8-wrapper {
-
-    /* mobile */
-    padding-left: 0em;
-    padding-right: 0em;
+    /* desktop */
+    padding: 0 0;
 
   }
 
-  .padding-0-5-0-8-wrapper {
+  /* -------------------------------------------- */
+  /* Only | Top & Bottom
+  /* -------------------------------------------- */
 
-    /* mobile */
-    padding: .5em 0em;
+  /* -------------------------------------------- */
+  /* 2 Diffrent | Top-Bottom, Left-Right
+  /* -------------------------------------------- */
 
-  }
+  .resp-padding-wrapper-2-08 {
 
-  .padding-1-0-8-wrapper {
-
-    /* mobile */
-    padding: 1em 0em;
-
-  }
-
-  .padding-2-0-8-wrapper {
-
-    /* mobile */
     padding: 2em 0em;
 
   }
 
-  .padding-3-0-8-wrapper {
 
-  /* mobile */
-  padding: 3em 0em;
 
-  }
+
+
 
 }

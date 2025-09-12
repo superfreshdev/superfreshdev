@@ -1,15 +1,15 @@
 /* -------------------------------------------------------------- */
-/* > header-logo-container-body.css
+/* > header-logo-body.css
 /*
 /* : default sets for header logo container from body
 /* -------------------------------------------------------------- */
 
 
 /* ---------------------------------------------------------------- */
-/* Header Logo Container Body
+/* Header Logo Body
 /* ---------------------------------------------------------------- */
 
-#header-logo-container-body {
+#header-logo-body {
 
   display: flex;
   align-items: center;
@@ -23,29 +23,43 @@
 }
 
 /* ---------------------------------------------------------------- */
-/* [1/2] | Img | Header Logo
+/* [1/2] | Img | Header Logo Body
 /* ---------------------------------------------------------------- */
 
-#img-logo-superfreshdev {
+#img-header-body-superfrehsdev {
 
-    height: 3em;
-    border-radius: .4em;
+  height: 2.7em;
+  width: 2.7em;
 
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    border: 3px solid rgb(68, 68, 68);
+  border-radius: .4em;
 
-    /* mobile */
-    display: none;
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  border: .1em solid rgb(68, 68, 68);
+
+  /* mobile */
+  display: none;
+
 }
 
 /* ---------------------------------------------------------------- */
-/* [2/2] | Title | Header Logo
+/* [2/2] | Title | Header Logo Body
 /* ---------------------------------------------------------------- */
 
 #header-logo-title-body {
 
   font-weight: bold;
-  color:rgb(97, 97, 97);
+
+  /* ---------------------------------------------------------------------------- */
+  /*  ⚠️ Color in Testing, which looks decent & good
+  /* ---------------------------------------------------------------------------- */
+
+  color: var(--c-dark-grey);
+  /* color:#616161; */
+
+  color: rgb(198, 198, 198);
 
   /* mobile */
   display: none;

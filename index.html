@@ -36,10 +36,10 @@
                        an individual content style -->
 
             <!-- ------------------------------------------------------------------------------------------- -->
-            <!--  01 | Handle Content Containers                                                             -->
+            <!--  01 | Handle Content Areas                                                                  -->
             <!-- ------------------------------------------------------------------------------------------- -->
 
-                <link rel="stylesheet" href="css/01_default/01_handle_content_containers/handle-content-containers.css">
+                <link rel="stylesheet" href="css/01_default/01_handle_content_areas/handle-content-areas.css">
 
             <!-- ------------------------------------------------------------------------------------------- -->
             <!--  02 | Colors                                                                                -->
@@ -113,10 +113,7 @@
                 <!-- Layout Wrappers -->
                 <!-- ------------------------------------- -->
                 <!-- ⁉️ -->
-                <link rel="stylesheet" href="css/01_default/04_layout_containers/layout-wrappers/layout-wrappers.css">
                 <link rel="stylesheet" href="css/01_default/04_layout_containers/layout-wrappers/padding-wrappers.css">
-                <link rel="stylesheet" href="css/01_default/04_layout_containers/layout-wrappers/resp-layout-wrappers.css">
-                <link rel="stylesheet" href="css/01_default/04_layout_containers/layout-wrappers/resp-padding-wrapper.css">
 
                 <!-- ------------------------------------- -->
                 <!-- Layout Containers -->
@@ -186,7 +183,7 @@
 
                 <!-- header body  -->
                 <link rel="stylesheet" href="css/02_web_page/01_default/01_header/header-body.css">
-                <link rel="stylesheet" href="css/02_web_page/01_default/01_header/header-logo-container-body.css">
+                <link rel="stylesheet" href="css/02_web_page/01_default/01_header/header-logo-body.css">
                 <link rel="stylesheet" href="css/02_web_page/01_default/01_header/nav-header-body.css">
 
                 <!-- main body  -->
@@ -317,17 +314,25 @@
             <!--  [1/2] | Resp | Default                                      -->
             <!-- ------------------------------------------------------------ -->
 
-                <!-- resp hadnle content containers -->
-                <link rel="stylesheet" href="css/03_responsive/01_resp_default/resp-handle-content-containers.css">
+                <!-- resp | handle content areas -->
+                <link rel="stylesheet" href="css/03_responsive/02_resp_web_page/01_resp_default/resp-handle-content-areas.css">
 
-                <!-- resp header body  -->
-                <link rel="stylesheet" href="css/03_responsive/01_resp_default/01_resp_header/resp-header-body.css">
+                <!-- resp | header body  -->
+                <link rel="stylesheet" href="css/03_responsive/02_resp_web_page/01_resp_default/resp-header-body.css">
 
                 <!-- resp main body  -->
                 <!-- <link rel="stylesheet" href="css/03_responsive/01_resp_default/02_resp_main/"> -->
 
                 <!-- resp footer body  -->
                 <!-- <link rel="stylesheet" href="css/03_responsive/01_resp_default/03_resp_footer/"> -->
+
+                <!-- ---------------------------------------------- -->
+                <!-- Resp | Layout Wrappers -->
+                <!-- ---------------------------------------------- -->
+
+                <!-- resp padding wrappers -->
+                <link rel="stylesheet" href="css/01_default/04_layout_containers/layout-wrappers/resp-padding-wrapper.css">
+
 
             <!-- ------------------------------------------------------------ -->
             <!--  [2/2] | Resp | Web Page                                     -->
@@ -353,9 +358,9 @@
 <body>
 
     <!-- ----------------------------------------------------------------------------- -->
-    <!-- 🟩 Header Fixed Body                                                       -->
+    <!-- 🟩 Header Fixed Body Container                                                -->
     <!-- ----------------------------------------------------------------------------- -->
-    <header id="header-fixed-body">
+    <header id="header-fixed-body-container">
 
         <!-- --------------------------------------------------------------- -->
         <!-- 📐 Resp Min Content                                               -->
@@ -368,24 +373,25 @@
             <div class="w-100p h-100p flex jc-c">
 
                 <!-- ------------------------------------------------------------------ -->
-                <!-- 📏 Padding Wrapper                                                    -->
+                <!-- 📏 Resp | Padding Wrapper                                          -->
                 <!-- ------------------------------------------------------------------ -->
-                <div class="padding-0-0-8-wrapper">
+                <div class="resp-padding-wrapper-0-08">
 
                     <!-- --------------------------------------------------------- -->
-                    <!-- 🟩 Header Fixed Container Body -->
+                    <!-- 🟩 Header Body Container -->
                     <!-- --------------------------------------------------------- -->
-                    <div id="header-fixed-container-body">
+                    <div id="header-body-container">
 
                         <!-- --------------------------------------------------------- -->
-                        <!-- 🟩 [1/2] | Header Logo Container Body                  -->
+                        <!-- 🟩 [1/2] | Header Logo Body                              -->
                         <!-- --------------------------------------------------------- -->
-                        <div id="header-logo-container-body">
+                        <div id="header-logo-body">
 
                             <!-- ----------------------------------- -->
-                            <!-- [1/2] | Img | Header Logo -->
+                            <!-- [1/2] | Img | Header Body          -->
                             <!-- ----------------------------------- -->
-                            <img src="media/img/content/01-default/small-superfreshdev-me.png" id="img-logo-superfreshdev" alt="img">
+                            <img src="media/img/content/01-default/small-superfreshdev-me.png"
+                                 id="img-header-body-superfrehsdev" alt="img">
 
                             <!-- ----------------------------------- -->
                             <!-- [2/2] | Title | Header Logo  -->
@@ -413,11 +419,10 @@
                             <!-- -------------------------------------------------------------- -->
                             <!-- About | Label -->
                             <!-- -------------------------------------------------------------- -->
-                            <label for="radio-about" class="label-nav-header-body">
+                            <label for="radio-about" class="lbl-nav-header-body">
 
                                 <img src="media/img/icons/02-icon-colors/02-white/about-white.png" class="img-h-1-6" alt="img">
                                 <img src="media/img/icons/02-icon-colors/01-black/black-about.png" class="img-h-1-6" alt="img">
-                                <!-- <img src="media/img/icons/02-icon-colors/01-black/black-about.png" class="img-h-1-6" alt="img"> -->
                                 <div>About</div>
 
                             </label>
@@ -425,17 +430,16 @@
                             <!-- ------------------------------------------ -->
                             <!-- Seperator -->
                             <!-- ------------------------------------------ -->
-                            <img src="media/img/icons/02-icon-colors/05-light-brown/light-brown-left-right-tag.png" class="img-seperataor-nav-header-body" alt="img">
-                            <!-- <img src="media/img/icons/02-icon-colors/02-white/white-left-right-tag.png" class="img-seperataor-nav-header-body" alt="img"> -->
+                            <img src="media/img/icons/02-icon-colors/05-light-brown/light-brown-left-right-tag.png"
+                                 class="img-seperataor-nav-header-body" alt="img">
 
                             <!-- -------------------------------------------------------------- -->
                             <!-- My IT | Label -->
                             <!-- -------------------------------------------------------------- -->
-                            <label for="radio-my-it" class="label-nav-header-body">
+                            <label for="radio-my-it" class="lbl-nav-header-body">
 
                                 <img src="media/img/icons/02-icon-colors/02-white/white-brackets-open-close.png" class="img-h-1-2" alt="img">
                                 <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1-2" alt="img">
-                                <!-- <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1-2" alt="img"> -->
                                 <div>My IT</div>
 
                             </label>
@@ -443,18 +447,16 @@
                             <!-- ------------------------------------------ -->
                             <!-- Seperator -->
                             <!-- ------------------------------------------ -->
-                            <img src="media/img/icons/02-icon-colors/05-light-brown/light-brown-left-right-tag.png" class="img-seperataor-nav-header-body" alt="img">
-                            <!-- <img src="media/img/icons/02-icon-colors/02-white/white-left-right-tag.png" class="img-seperataor-nav-header-body" alt="img"> -->
+                            <img src="media/img/icons/02-icon-colors/05-light-brown/light-brown-left-right-tag.png"
+                                 class="img-seperataor-nav-header-body" alt="img">
 
                             <!-- -------------------------------------------------------------- -->
                             <!-- My Private | Label -->
                             <!-- -------------------------------------------------------------- -->
-                            <label for="radio-my-private" class="label-nav-header-body" >
+                            <label for="radio-my-private" class="lbl-nav-header-body" >
 
                                 <img src="media/img/icons/02-icon-colors/02-white/white-thunder.png" class="img-h-1-2" alt="img">
                                 <img src="media/img/icons/02-icon-colors/01-black/black-thunder.png" class="img-h-1-2" alt="img">
-                                <!-- <img src="media/img/icons/02-icon-colors/01-black/black-thunder.png" class="img-h-1-2" alt="img"> -->
-
                                 <div>My Private</div>
 
                             </label>
@@ -3108,10 +3110,9 @@
     </main>
 
     <!-- ------------------------------------------------------------------------------- -->
-    <!-- 🟨🟥 Footer Body                               -->
+    <!-- 🟨🟥 Footer Body Container                              -->
     <!-- ------------------------------------------------------------------------------- -->
-    <footer id="body-footer" style="color:white;">
-
+    <footer id="footer-body-container" style="color:white;">
 
         <!-- --------------------------------------------------------------- -->
         <!-- 📐 Resp Min Content                                               -->
@@ -3126,13 +3127,12 @@
                 <!-- ------------------------------------------------------------------ -->
                 <!-- 📏 Padding Wrapper                                                 -->
                 <!-- ------------------------------------------------------------------ -->
-                <div class="padding-0-0-8-wrapper">
+                <div class="resp-padding-wrapper-0-08">
 
                     <!-- ------------------------------------------------------------------ -->
-                    <!-- Body Footer Container                                              -->
+                    <!-- Footer Body Content Container                                      -->
                     <!-- ------------------------------------------------------------------ -->
-                    <div id="body-footer-container">
-
+                    <div id="footer-body-content-container">
 
                         <!-- ------------------------------------------------------------ -->
                         <!-- ⚠️ Future | Drop Down my youtubers, links und co -->
@@ -3140,9 +3140,9 @@
                         <div style="display: none;"> Future Drop Down Link</div>
 
                         <!-- ------------------------------------------------------------ -->
-                        <!-- Copyright Superfreshdev  -->
+                        <!-- Copyright Container Superfreshdev  -->
                         <!-- ------------------------------------------------------------ -->
-                        <div id="copyright-superfreshdev">
+                        <div id="copyright-container-superfreshdev">
 
                             <img src="media/img/icons/02-icon-colors/02-white/white-copyright.png" class="img-h-1" alt="img">
                             <div>SuperfreshDEV</div>

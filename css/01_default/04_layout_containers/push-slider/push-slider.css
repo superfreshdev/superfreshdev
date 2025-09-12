@@ -19,6 +19,7 @@
   display: grid;
 
   overflow-x: hidden;
+  /* overflow-y: hidden; */
 
 }
 

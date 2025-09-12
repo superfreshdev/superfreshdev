@@ -1,44 +1,134 @@
 /* -------------------------------------------------------------- */
-/* > resp-header-fixed-body.css
+/* > resp-header-body.css
 /*
-/* : responsive sets for resp header fixed body
+/* : responsive sets for resp header body
 /* -------------------------------------------------------------- */
 
+
 /* -------------------------------------------------------------- */
-/* >= 320px width
+/* >= 405px width
 /* -------------------------------------------------------------- */
 
-@media (min-width: 320px ) {
+@media (min-width: 405px ) {
 
-    /* ------------------------------------ */
-    /* Header Nav
-    /* ------------------------------------ */
 
-    #nav-header-body {
+    /* ---------------------------------------------------- */
+    /* Label | Nav Header Body
+    /* ---------------------------------------------------- */
 
-        grid: auto / auto auto auto;
-        /* background-color: blue; */
+    /* reminder: default img unshown by very small mobile */
+    .lbl-nav-header-body > img {
+
+        display: flex;
+    }
+
+    /* ---------------------------------------------------- */
+    /* Label Img Hover | Nav Header Body
+    /* ---------------------------------------------------- */
+
+    /* imgs of header body labels will only display by 405px
+       and thats the reason why we add hover show
+       img black or white handlings in this case  */
+
+    /* unshown white img */
+    .lbl-nav-header-body:hover img:nth-of-type(1) {
+
+        display: none;
+    }
+
+    /* shown black img */
+    .lbl-nav-header-body:hover img:nth-of-type(2) {
+
+        display: flex;
+    }
+
+     /* shown max opicity */
+    .lbl-nav-header-body:hover {
+
+        opacity: 1;
+    }
+
+    /* ---------------------------------------------------- */
+    /* Radio Checked Img | Nav Header Body
+    /* ---------------------------------------------------- */
+
+    /* reminder: only add white & black img handling by bigger size */
+
+    /* unshown white img */
+    #radio-about:checked ~ label[for="radio-about"] > img:nth-of-type(1),
+    #radio-my-it:checked ~ label[for="radio-my-it"] > img:nth-of-type(1),
+    #radio-my-private:checked ~ label[for="radio-my-private"] > img:nth-of-type(1) {
+
+        display: none;
+
+    }
+
+    /* show black img */
+    #radio-about:checked ~ label[for="radio-about"] > img:nth-of-type(2),
+    #radio-my-it:checked ~ label[for="radio-my-it"] > img:nth-of-type(2),
+    #radio-my-private:checked ~ label[for="radio-my-private"] > img:nth-of-type(2) {
+
+        display: flex;
+
     }
 
 }
 
 /* -------------------------------------------------------------- */
-/* >= 400px width
+/* >= 480px width
 /* -------------------------------------------------------------- */
 
-@media (min-width: 400px ) {
+@media (min-width: 480px ) {
 
 
+    /* ---------------------------------------------------- */
+    /* Header Body Container
+    /* ---------------------------------------------------- */
 
+    #header-body-container {
+
+        /* desktop */
+        justify-content: space-between;
+
+    }
+
+    /* ------------------------------------ */
+    /* Header Logo Body
+    /* ------------------------------------ */
+
+    #header-logo-body {
+
+        display: flex;
+
+    }
+
+    /* ------------------------------------ */
+    /* Img | Header Logo Body
+    /* ------------------------------------ */
+
+    #img-header-body-superfrehsdev {
+
+        display: block;
+    }
 }
 
 /* -------------------------------------------------------------- */
-/* >= 500px width
+/* >= 550px width
 /* -------------------------------------------------------------- */
 
-@media (min-width: 500px ) {
+@media (min-width: 550px ) {
 
+    /* ---------------------------------------------------- */
+    /* Title | Header Logo Body
+    /* ---------------------------------------------------- */
 
+    #header-logo-title-body {
+
+        /* desktop */
+        display: grid;
+        line-height: 1.3em;
+
+    }
 
 }
 
@@ -49,7 +139,6 @@
 @media (min-width: 800px ) {
 
 
-
 }
 
 /* -------------------------------------------------------------- */
@@ -57,7 +146,6 @@
 /* -------------------------------------------------------------- */
 
 @media (min-width: 900px ) {
-
 
 
 }

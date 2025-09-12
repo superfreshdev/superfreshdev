@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------- */
 /* > resp-footer-body.css
-/*  
+/*
 /* : responsive sets for body footer
 /* -------------------------------------------------------------- */
 
@@ -10,34 +10,19 @@
 /* -------------------------------------------------------------- */
 @media (min-width: 420px ) {
 
-    /* show txt useful links */
-    #txt-lbl-useful-links-body-footer {
-        display: flex;
-    }
 
-    /* unshown paper clip from mobile version */
-    #img-paper-clip-body-footer {
-        display: none;
-    }
 
 }
 
 
 /* -------------------------------------------------------------- */
-/* >= 420px width
+/* >=650px width
 /* -------------------------------------------------------------- */
 @media (min-width: 650px ) {
 
-    /* link container body footer  */
-    .item-links-container-body-footer {
 
-        max-width: 19em;
-    
-    }
 
 }
-
-
 
 /* -------------------------------------------------------------- */
 /* >= 1200px width
@@ -45,28 +30,5 @@
 @media (min-width: 1200px ) {
 
 
-    /* delete mobile padding */
-    #main-body-footer {
 
-        padding: 2.3em 0em;    
-    
-    }
-
-    /* delelte mobile padding left,right from header body footer */
-    #header-body-footer { 
-        padding: 0;
-    }
-
-    /* delete mobile padding left,right from tab panel body footer */
-    #tab-panel-body-footer {
-        padding: 0;
-    }
-
-    /* Mixery Links Container */
-    #resp-mixery-links-container-body-footer {
-
-        /* same widht like main-content-area */
-        max-width: 65em;
-    }
 }
-

@@ -1,87 +1,169 @@
 /* -------------------------------------------------------------- */
-/* > resp-padding-wrappers.css
+/* > padding-wrappers.css
 /*
 /* : style padding wrappers which can use to define basic
      padding layouts.
      The padding wrapper had an special handling of
      responsive sizes which u can find an extra resp file
+
 /* -------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------- */
-/* Padding Wrapper
+/* Padding Wrappers
 /* ------------------------------------------------------- */
 
-.padding-t1-b2-0-8-wrapper,
-.padding-t0-b2-0-8-wrapper,
-.padding-0-0-8-wrapper,
-.padding-0-5-0-8-wrapper,
-.padding-1-0-8-wrapper,
-.padding-1-0-8-wrapper-no-delete,
-.padding-2-0-8-wrapper,
-.padding-2-0-8-wrapper-no-delete,
-.padding-3-0-8-wrapper {
 
-   width: 100%;
+/* --------------------------------------------- */
+/* only: left & right  */
+/* --------------------------------------------- */
 
-}
+.resp-padding-wrapper-0-08,
+.resp-padding-wrapper-0-1,
+.resp-padding-wrapper-0-1_3 {
 
-.padding-t1-b2-0-8-wrapper {
-
-  padding: 1em .8em 2em .8em;
+  width: 100%;
 
 }
 
-.padding-t0-b2-0-8-wrapper {
+.resp-padding-wrapper-0-08 {
 
-  padding: 0 .8em 2em .8em;
+  padding: 0 .8em;
 
-}
-
-.padding-0-0-8-wrapper {
-
-  /* mobile */
-  padding-left: .8em;
-  padding-right: .8em;
+  /* background-color: magenta; */
 
 }
 
-.padding-0-5-0-8-wrapper {
+.resp-padding-wrapper-0-1 {
 
-  /* mobile */
-  padding: .5em .8em;
+  padding: 0 1em;
 
 }
 
-.padding-1-0-8-wrapper {
+.resp-padding-wrapper-0-1_3 {
 
-  /* mobile */
+  padding: 0 1.3em;
+
+}
+
+/* --------------------------------------------- */
+/* only: top & bottom  */
+/* --------------------------------------------- */
+
+.resp-padding-wrapper-08-0,
+.resp-padding-wrapper-1-0,
+.resp-padding-wrapper-1_3-0 {
+
+  width: 100%;
+
+}
+
+.resp-padding-wrapper-08-0 {
+
+  padding: .8em 0;
+
+}
+
+.resp-padding-wrapper-1-0 {
+
+  padding: 1em 0;
+
+}
+
+.resp-padding-wrapper-1_3-0 {
+
+  padding: 1.3em 0;
+
+}
+
+/* --------------------------------------------- */
+/* all same: top, bottom, left,right  */
+/* --------------------------------------------- */
+
+.resp-padding-wrapper-08,
+.resp-padding-wrapper-1,
+.resp-padding-wrapper-1_3 {
+
+  width: 100%;
+
+}
+
+.resp-padding-wrapper-08 {
+
+  padding: .8em;
+
+}
+
+.resp-padding-wrapper-1 {
+
+  padding: 1em;
+
+}
+
+.resp-padding-wrapper-1_3 {
+
+  padding: 1.3em;
+
+}
+
+/* --------------------------------------------- */
+/* 2 different: top, bottom, left,right  */
+/* --------------------------------------------- */
+
+.resp-padding-wrapper-1-08,
+.resp-padding-wrapper-1_3-08,
+.resp-padding-wrapper-1_5-08,
+.resp-padding-wrapper-2-08 {
+
+  width: 100%;
+
+}
+
+.resp-padding-wrapper-1-08 {
+
   padding: 1em .8em;
 
 }
 
-.padding-1-0-8-wrapper-no-delete {
+.resp-padding-wrapper-1_3-08 {
 
-   padding: 1em .8em;
+  padding: 1.3em .8em;
 
 }
 
-.padding-2-0-8-wrapper {
+.resp-padding-wrapper-1_5-08 {
 
-  /* mobile */
+  padding: 1.5em .8em;
+
+}
+
+.resp-padding-wrapper-2-08 {
+
   padding: 2em .8em;
 
-}
-
-.padding-2-0-8-wrapper-no-delete {
-
-   padding: 2em .8em;
+  /* background-color: rgb(0, 238, 255); */
 
 }
 
-.padding-3-0-8-wrapper {
+/* ------------------------------------------------------------- */
+/* No Resp | 2 different: top, bottom, left,right  */
+/* ------------------------------------------------------------- */
 
-  /* mobile */
-  padding: 3em .8em;
+.no-resp-padding-wrapper-1-08,
+.no-resp-padding-wrapper-2-08 {
+
+  width: 100%;
+
+}
+
+.no-resp-padding-wrapper-1-08 {
+
+  padding: 1em .8em;
+
+}
+
+.no-resp-padding-wrapper-2-08 {
+
+  padding: 2em .8em;
 
 }

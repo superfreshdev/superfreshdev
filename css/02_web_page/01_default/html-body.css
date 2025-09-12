@@ -72,4 +72,7 @@ html,body {
 
     scroll-padding-top: 5.5em;
 
+    /* overflow-y: scroll; */
+    /* overscroll-behavior-y: contain; */
+
 }
