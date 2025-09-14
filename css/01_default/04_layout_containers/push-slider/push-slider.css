@@ -13,13 +13,12 @@
 .push-slider {
 
   position: relative;
-  width: 100%;
   height: 100%;
 
   display: grid;
+  /* grid: 1fr / 1fr; */
 
-  overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow: hidden;
 
 }
 
@@ -29,16 +28,20 @@
 
 .push-content-slide {
 
+  /* because of fixed header */
+  /* margin-top: 10em; */
+
   position: absolute;
   top: 0;
 
-  height: 100%;
   width: 100%;
+  height: 100%;
+
 
   display: grid;
-  /* justify-content: center; */
-  /* align-content: center; */
-  /* justify-content: center; */
+  justify-items: center;
+  align-items: flex-start;
+  grid: 1fr / 1fr;
 
   /* default all pages behind the right corner */
   z-index: 1;
@@ -55,6 +58,7 @@
 
 .push-content-slide.active {
 
+  position: relative;
   z-index: 2;
   transform: translateX(0);
 
@@ -64,17 +68,47 @@
 /* Page 1,2,3
 /* -------------------------------------------------------------- */
 
-#page-1 {
+#test-slide-1 {
+
+  width: 100%;
+  height: 100%;
+
+  padding: 2em;
 
   background-color: rgb(202, 102, 102);
+
+
+
 }
 
-#page-2 {
+#test-slide-2 {
 
+  width: 100%;
+  height: 100%;
+
+  padding: 2em;
   background-color: rgb(232, 190, 52);
+
 }
 
-#page-3 {
+.big-content {
 
+  display: grid;
+  row-gap: 2em;
+
+}
+
+#test-slide-3 {
+
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  justify-items: center;
+  align-content: flex-start;
+  row-gap: .5em;
+
+  padding: 2em;
   background-color: rgb(158, 212, 208);
+
 }

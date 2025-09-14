@@ -19,13 +19,9 @@
 
     /* i: ji-c to let layout in the middle  */
     display: grid;
-    justify-items: center;
+    /* grid: 1fr / 1fr; */
 
-    /* background-color: yellow; */
     background-color: white;
-
-    /* background-color: rgb(207, 207, 207); */
-    /* background-color: red; */
 
 }
 
