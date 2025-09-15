@@ -16,7 +16,7 @@
   height: 100%;
 
   display: grid;
-  /* grid: 1fr / 1fr; */
+  grid: 1fr / 1fr;
 
   overflow: hidden;
 
@@ -39,9 +39,9 @@
 
 
   display: grid;
-  justify-items: center;
-  align-items: flex-start;
-  grid: 1fr / 1fr;
+  /* justify-items: center; */
+  /* align-items: flex-start; */
+  /* grid: 1fr / 1fr; */
 
   /* default all pages behind the right corner */
   z-index: 1;
@@ -63,6 +63,26 @@
   transform: translateX(0);
 
 }
+
+
+
+/* -------------------------------------------------------------- */
+/* 🟣🟣🟣 About Details Container
+/* -------------------------------------------------------------- */
+
+#about-details-container-new {
+
+  width: 100%;
+  padding: .8em;
+
+  border-radius: 1em;
+
+  background-color: yellow;
+
+}
+
+
+
 
 /* -------------------------------------------------------------- */
 /* Page 1,2,3
@@ -107,6 +127,8 @@
 #img-white-background {
 
   /* because of header fixed | dont need because parent is relative and thats new point */
+
+  z-index: 1;
 
   position: absolute;
   width: 100%;

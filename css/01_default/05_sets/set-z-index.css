@@ -1,0 +1,43 @@
+/* -------------------------------------------------------------- */
+/* > set-z-index.css
+/*
+/* : style z-index for layout elements that means
+     the layer position, default is 0 , -1 is behind layout
+     and if the number is higher it overlay other layouts
+
+/* -------------------------------------------------------------- */
+
+
+/* --------------------------------------------------- */
+/* Z-Index
+/* --------------------------------------------------- */
+
+.z-index-minus-1 {
+
+  z-index: -1;
+
+}
+
+.z-index-0 {
+
+  z-index: 1;
+
+}
+
+.z-index-1 {
+
+  z-index: 1;
+
+}
+
+.z-index-2 {
+
+  z-index: 2;
+
+}
+
+.z-index-3 {
+
+  z-index: 3;
+
+}

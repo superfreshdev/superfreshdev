@@ -115,7 +115,6 @@
 
 }
 
-
 /* ------------------------------------------------------------------- */
 /* >= 580px
 /* ------------------------------------------------------------------- */
@@ -148,25 +147,50 @@
 
 
   /* ------------------------------------------------ */
-  /* Quick Info |                                     */
+  /* Quick Info Container                             */
   /* ------------------------------------------------ */
 
-  #about-quick-info {
+  #about-quick-info-container {
 
-    width: 100%;
+    background-color: magenta;
 
-    display: grid;
-    justify-content: center;
+    /* --------------------------------------- */
+    /* Grid Template Area Layout
+    /* --------------------------------------- */
+
+    /* desktop */
+    /* justify-items: flex-start; */
     align-items: center;
-    grid: auto / auto 1fr;
 
-    column-gap: 1em;
-    /* background-color: green; */
+    column-gap: 1.5em;
+    row-gap: 1em;
+
+    grid-template-areas:
+
+      'img_quick_info_business quick_info_content_container'
+      'read_more_container read_more_container'
+
+    ;
 
   }
 
   /* ------------------------------------------------------------------- */
-  /* Quick Info | Img Arrow Seperator
+  /* Quick Info Content Container
+  /* ------------------------------------------------------------------- */
+
+  #about-quick-info-content-container {
+
+    background-color: brown;
+
+    /* mobile */
+    display: flex;
+    align-items: center;
+    column-gap: 1.5em;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Img Arrow Seperator | Quick Info Content Container
   /* ------------------------------------------------------------------- */
 
   #img-arrow-seperator-about-quick-info {
@@ -175,6 +199,46 @@
     display: flex;
 
   }
+
+  /* ------------------------------------------------------------------- */
+  /* Quick Info Content Box | Quick Info Content Container
+  /* ------------------------------------------------------------------- */
+
+  #about-quick-info-content-box {
+
+    display: grid;
+    row-gap: .8em;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Label Quick Info | Quick Info Content Box
+  /* ------------------------------------------------------------------- */
+
+  #about-quick-info-content-box > div:nth-of-type(1) {
+
+    justify-self: flex-start;
+
+  }
+
+
+
+
+
+
+
+
+  /* ------------------------------------------------------------------- */
+  /* ⚠️⚠️⚠️
+  /* ------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
 
   /* ------------------------------------------------------------------- */
   /* Quick Info | Info Text Container | label ( default )
@@ -292,5 +356,53 @@
     column-gap: 1.5em;
 
   }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 850px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 850px ) {
+
+
+  /* ------------------------------------------------ */
+  /* Quick Info Container                             */
+  /* ------------------------------------------------ */
+
+  #about-quick-info-container {
+
+    background-color: rgb(0, 255, 76);
+
+    /* --------------------------------------- */
+    /* Grid Template Area Layout
+    /* --------------------------------------- */
+
+    /* desktop */
+    /* justify-items: flex-start; */
+    align-items: flex-end;
+
+    column-gap: 1.5em;
+    row-gap: 0em;
+
+    grid-template-areas:
+
+      'img_quick_info_business quick_info_content_container'
+      'img_quick_info_business read_more_container'
+
+    ;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Label Read More | About Read More Container
+  /* ------------------------------------------------------------------- */
+
+  #about-read-more-container > label:nth-of-type(1) {
+
+    justify-self: flex-end;
+
+  }
+
 
 }

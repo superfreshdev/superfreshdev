@@ -5,77 +5,72 @@
 /* ------------------------------------------------------------------- */
 
 
-/* ------------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
 /* About Quick Info Container
-/* ------------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
 
 #about-quick-info-container {
 
   width: 100%;
-  padding: 1.5em .8em;
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
-  justify-content: center;
-
-  row-gap: 1.5em;
-
-  /* background-color: red; */
-  /* background-color: rgb(83, 72, 72); */
-  background-color: white;
-
-  border-radius: .8em;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* About Quick Info
-/* ------------------------------------------------------------------- */
-
-#about-quick-info {
-
-  display: flex;
-  flex-wrap: wrap;
-
-  /* mobile */
-  justify-content: center;
-
-  /* mobile */
-  row-gap: 1.5em;
-
-  /* background-color: green; */
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Img Container | About Quick Info
-/* ------------------------------------------------------------------- */
-
-#about-quick-info-img-container {
-
-  display: flex;
-  align-items: center;
-  column-gap: 1em;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Img | About Quick Info
-/* ------------------------------------------------------------------- */
-
-#img-prof-me-about-quick-info {
-
-  height: 15em;
+  padding: .8em;
 
   border-radius: 1.3em;
 
+  /* --------------------------------------- */
+  /* Grid Template Area Layout
+  /* --------------------------------------- */
+
+  /* mobile */
+  display: grid;
+  justify-items: center;
+
+  row-gap: 1.5em;
+
+  grid-template-areas:
+
+    'img_quick_info_business'
+    'quick_info_content_container'
+    'read_more_container'
+
+  ;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(28, 28, 28); */
+
 }
 
-/* ------------------------------------------------------------------- */
-/* Img - Arrow Seperator | About Quick Info
-/* ------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+/* Img | About Quick Info Container
+/* -------------------------------------------------------------- */
+
+#img-quick-info-business {
+
+  grid-area: img_quick_info_business;
+
+  height: 15em;
+  border-radius: 2em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* About Quick Info Content Container
+/* -------------------------------------------------------------- */
+
+#about-quick-info-content-container {
+
+  grid-area: quick_info_content_container;
+
+  /* mobile */
+  display: grid;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Img Arrow Seperator | About Quick Info Content
+/* -------------------------------------------------------------- */
 
 #img-arrow-seperator-about-quick-info {
 
@@ -86,24 +81,30 @@
 
 }
 
-/* ------------------------------------------------------------------- */
-/* Text Container | About Quick Info
-/* ------------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+/* About Quick Info Content Box
+/* -------------------------------------------------------------- */
 
-#about-quick-info-text-container {
+#about-quick-info-content-box {
 
   display: grid;
   row-gap: 1.5em;
 
-  /* color:red; */
-
 }
 
-#about-quick-info-text-container > .default-header-sfd-label:nth-of-type(1) {
+/* -------------------------------------------------------------- */
+/* Quick Info | About Quick Info Content Box
+/* -------------------------------------------------------------- */
+
+#about-quick-info-content-box > div:nth-of-type(1) {
 
   justify-self: center;
 
 }
+
+/* -------------------------------------------------------------- */
+/* Quick Info Text | About Quick Info Content Box
+/* -------------------------------------------------------------- */
 
 #about-quick-info-text {
 

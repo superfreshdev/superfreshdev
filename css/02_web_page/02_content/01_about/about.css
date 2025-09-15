@@ -11,19 +11,12 @@
 
 #about-page-container {
 
-  /* padding-top: 5em; */
-
+  z-index: 2;
   width: 100%;
-  /* padding: 2em 0; */
+  /* height: 100%; */
 
   display: grid;
-  justify-items: center;
-  /* align-content: flex-start; */
-
-  grid: auto 1fr / 1fr;
-
-  /* row-gap: 2em; */
-
-  background-color: rgb(102, 168, 63);
+  /* grid: auto 1fr / 1fr; */
+  row-gap: 1.5em;
 
 }
