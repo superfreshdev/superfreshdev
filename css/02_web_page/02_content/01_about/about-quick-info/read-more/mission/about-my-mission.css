@@ -16,7 +16,7 @@
 
   display: grid;
   justify-items: center;
-  row-gap: 1.5em;
+  /* row-gap: 1.5em; */
 
 
   /* default unshown */
@@ -132,5 +132,7 @@
   color:#808080;
 
   color:rgb(175, 175, 175);
+
+  color:rgb(28, 28, 28);
 
 }
