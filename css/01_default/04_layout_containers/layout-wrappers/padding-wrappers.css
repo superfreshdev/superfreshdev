@@ -113,7 +113,9 @@
 .resp-padding-wrapper-1-08,
 .resp-padding-wrapper-1_3-08,
 .resp-padding-wrapper-1_5-08,
-.resp-padding-wrapper-2-08 {
+.resp-padding-wrapper-2-08,
+.resp-padding-wrapper-2-1_3,
+.resp-padding-wrapper-2-1_5 {
 
   width: 100%;
 
@@ -142,6 +144,18 @@
   padding: 2em .8em;
 
   /* background-color: rgb(0, 238, 255); */
+
+}
+
+.resp-padding-wrapper-2-1_3 {
+
+  padding: 2em 1.3em;
+
+}
+
+.resp-padding-wrapper-2-1_5 {
+
+   padding: 2em 1.5em;
 
 }
 
