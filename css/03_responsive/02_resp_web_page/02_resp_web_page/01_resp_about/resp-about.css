@@ -152,7 +152,7 @@
 
   #about-quick-info-container {
 
-    background-color: magenta;
+    /* background-color: magenta; */
 
     /* --------------------------------------- */
     /* Grid Template Area Layout
@@ -180,7 +180,7 @@
 
   #about-quick-info-content-container {
 
-    background-color: brown;
+    /* background-color: brown; */
 
     /* mobile */
     display: flex;
@@ -372,7 +372,7 @@
 
   #about-quick-info-container {
 
-    background-color: rgb(0, 255, 76);
+    /* background-color: rgb(0, 255, 76); */
 
     /* --------------------------------------- */
     /* Grid Template Area Layout
