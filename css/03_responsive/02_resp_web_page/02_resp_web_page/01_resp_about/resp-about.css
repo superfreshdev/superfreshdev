@@ -12,10 +12,10 @@
 @media ( min-width: 360px ) {
 
   /* ------------------------------------------------ */
-  /* Read More | Nav About Read More */
+  /* Read More | Mav Read More Container */
   /* ------------------------------------------------ */
 
-  #nav-about-read-more {
+  #nav-read-more-container {
 
     display: flex;
     flex-wrap: wrap;
@@ -25,12 +25,13 @@
 
   }
 
-  /* ------------------------------------------------ */
-  /* Read More | Nav About Read More | Label          */
-  /* ------------------------------------------------ */
+  /* ------------------------------------------------------------------- */
+  /* Read More | Read More Label Open / Close
+  /* ------------------------------------------------------------------- */
 
-  #nav-about-read-more > label {
+  #nav-read-more-container > label {
 
+    /* desktop */
     width: auto;
 
   }
@@ -146,8 +147,52 @@
 @media ( min-width: 650px ) {
 
 
-  /* ------------------------------------------------ */
-  /* Quick Info Container                             */
+  /* ----------------------------------------------------------- */
+  /* Read More | Hobbies -> Main
+  /* ----------------------------------------------------------- */
+
+  #about-read-more-my-mission > main,
+  #about-read-more-my-hobbies > main {
+
+    display: grid;
+
+    grid: auto / 1fr 1fr;
+
+    column-gap: .8em;
+
+  }
+
+  /* ----------------------------------------------------------- */
+  /* About Details | About Mindet Video Box
+  /* ----------------------------------------------------------- */
+
+  .about-mindset-video-box  {
+
+    width: 100%;
+
+  }
+
+  /* ----------------------------------------------------------- */
+  /* About Details | About Mindset Video Container
+  /* ----------------------------------------------------------- */
+
+  #about-mindset-video-container {
+
+    grid: auto / 1fr 1fr;
+    column-gap: 2em;
+
+  }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 700px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 700px ) {
+
+    /* ------------------------------------------------ */
+  /* Quick Info | Quick Info Container                */
   /* ------------------------------------------------ */
 
   #about-quick-info-container {
@@ -163,16 +208,18 @@
     align-items: center;
 
     column-gap: 1.5em;
-    row-gap: 1em;
+    /* row-gap: .3em; */
 
     grid-template-areas:
 
       'img_quick_info_business quick_info_content_container'
-      'read_more_container read_more_container'
+      'read_more_label read_more_label'
+      'read_more_smooth_container read_more_smooth_container'
 
     ;
 
   }
+
 
   /* ------------------------------------------------------------------- */
   /* Quick Info Content Container
@@ -212,7 +259,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Label Quick Info | Quick Info Content Box
+  /* Quick Info Sticker | Quick Info Content Box
   /* ------------------------------------------------------------------- */
 
   #about-quick-info-content-box > div:nth-of-type(1) {
@@ -221,26 +268,17 @@
 
   }
 
-
-
-
-
-
-
-
   /* ------------------------------------------------------------------- */
-  /* ⚠️⚠️⚠️
+  /* Quick Info Text | Quick Info Content Box
   /* ------------------------------------------------------------------- */
 
+  #about-quick-info-text {
 
+    padding: 0 0em;
 
+  }
 
-
-
-
-
-
-  /* ------------------------------------------------------------------- */
+    /* ------------------------------------------------------------------- */
   /* Quick Info | Info Text Container | label ( default )
   /* ------------------------------------------------------------------- */
 
@@ -259,42 +297,6 @@
 
     /* desktop */
     text-align: left;
-
-  }
-
-  /* ----------------------------------------------------------- */
-  /* Read More | Hobbies -> Main
-  /* ----------------------------------------------------------- */
-
-  #about-read-more-my-mission > main,
-  #about-read-more-my-hobbies > main {
-
-    display: grid;
-
-    grid: auto / 1fr 1fr;
-
-    column-gap: .8em;
-
-  }
-
-  /* ----------------------------------------------------------- */
-  /* About Details | About Mindet Video Box
-  /* ----------------------------------------------------------- */
-
-  .about-mindset-video-box  {
-
-    width: 100%;
-
-  }
-
-  /* ----------------------------------------------------------- */
-  /* About Details | About Mindset Video Container
-  /* ----------------------------------------------------------- */
-
-  #about-mindset-video-container {
-
-    grid: auto / 1fr 1fr;
-    column-gap: 2em;
 
   }
 
@@ -365,6 +367,40 @@
 
 @media ( min-width: 850px ) {
 
+  /* ------------------------------------------------ */
+  /* Qucik Info | Img Business                        */
+  /* ------------------------------------------------ */
+
+  #img-quick-info-business {
+
+    grid-area: img_quick_info_business;
+
+    margin-bottom: 0em;
+
+  }
+
+  /* ------------------------------------------------ */
+  /* Quick Info | Quick Info Text           */
+  /* ------------------------------------------------ */
+
+  #about-quick-info-text {
+
+    margin-bottom: 0em;
+
+  }
+
+  /* ------------------------------------------------ */
+  /* Img | Quick Info Container                       */
+  /* ------------------------------------------------ */
+
+  #img-quick-info-business {
+
+    grid-area: img_quick_info_business;
+
+    margin-bottom: 0em;
+
+  }
+
 
   /* ------------------------------------------------ */
   /* Quick Info Container                             */
@@ -380,15 +416,16 @@
 
     /* desktop */
     /* justify-items: flex-start; */
-    align-items: flex-end;
+    /* align-items: flex-end; */
 
     column-gap: 1.5em;
-    row-gap: 0em;
+    /* row-gap: 1em; */
 
     grid-template-areas:
 
       'img_quick_info_business quick_info_content_container'
-      'img_quick_info_business read_more_container'
+      'img_quick_info_business read_more_label'
+      'read_more_smooth_container read_more_smooth_container'
 
     ;
 
@@ -398,10 +435,29 @@
   /* Label Read More | About Read More Container
   /* ------------------------------------------------------------------- */
 
-  #about-read-more-container > label:nth-of-type(1) {
+  label[for="chk-about-open-close-read-more"] {
 
     justify-self: flex-end;
 
+  }
+
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* >= 850px Extra only for 14 Zoll Laptop
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 850px ) and ( min-height: 550px ) {
+
+
+  #img-quick-info-business {
+    /* display: none; */
+
+    /* border: 3px solid red;
+
+    height: 11em; */
   }
 
 

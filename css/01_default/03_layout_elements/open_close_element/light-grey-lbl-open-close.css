@@ -25,7 +25,8 @@
   font-weight: bold;
 
   background-color: rgb(209, 209, 209);
-  opacity: .6;
+  background-color: rgb(171, 171, 171);
+  /* opacity: .6; */
 
   user-select: none;
 

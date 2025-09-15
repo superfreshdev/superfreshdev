@@ -6,67 +6,33 @@
 
 
 /* ------------------------------------------------------------------- */
-/* About Read More Container
+/* Label Read More
 /* ------------------------------------------------------------------- */
 
-#about-read-more-container {
+label[for="chk-about-open-close-read-more"] {
 
-  grid-area: read_more_container;
+  grid-area: read_more_label;
 
-  width: 100%;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Label Read More | About Read More Container
-/* ------------------------------------------------------------------- */
-
-#about-read-more-container > label:nth-of-type(1) {
+  /* because of text, read more and close read */
+  width: 8.2em;
 
   justify-self: center;
 
 }
 
-/* ------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close Container | Nav Read More
-/* ------------------------------------------------------------------- */
+/* default unshown div2 text = close read */
+label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
 
-#smooth-open-close-nav-read-more {
-
-  padding-top: 1.5em;
-
-  background-color: red;
-
-}
-
-
-
-
-/* ------------------------------------------------------------------- */
-/* ❌❌❌
-/* ------------------------------------------------------------------- */
-
-
-/* ------------------------------------------------------------------- */
-/* About Read More
-/* ------------------------------------------------------------------- */
-
-#about-read-more {
-
-  width: 100%;
-
-  display: grid;
-  justify-items: center;
-
-  /* background-color: grey; */
-
+  display: none;
 }
 
 /* ------------------------------------------------------------------- */
-/* ⬇️⬆️ | Smooth Open Close | About Read More
+/* ⬇️⬆️ Smooth Open Close | Read More Container
 /* ------------------------------------------------------------------- */
 
-#smooth-open-close-about-read-more {
+#smooth-open-close-read-more-container {
+
+  grid-area: read_more_smooth_container;
 
   width: 100%;
 
@@ -74,19 +40,8 @@
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s ease-out;
 
-
-}
-
-/* ------------------------------------------------------------------- */
-/* About Read More Content
-/* ------------------------------------------------------------------- */
-
-#about-read-more-content {
-
-  display: grid;
-  padding: 1.5em 0em;
-
   /* background-color: red; */
+
 
 }
 
@@ -94,11 +49,17 @@
 /* Nav | Read More
 /* ------------------------------------------------------------------- */
 
-#nav-about-read-more {
+#nav-read-more-container {
 
-  display: grid;
-  justify-items: center;
+  padding: 2em 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: .6em;
   row-gap: 1em;
+
+  background-color: rgba(128, 128, 128, .7);
 
 }
 
@@ -106,7 +67,7 @@
 /* Laebl | Read More
 /* ------------------------------------------------------------------- */
 
-#nav-about-read-more > label {
+#nav-read-more-container > label {
 
   /* mobile */
   width: 100%;
@@ -157,4 +118,11 @@
 
   font-weight: bold;
 
+}
+
+#about-read-more-my-mission,
+#about-read-more-my-hobbies,
+#about-read-more-story {
+
+  display: none;
 }

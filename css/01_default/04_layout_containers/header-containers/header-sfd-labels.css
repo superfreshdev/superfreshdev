@@ -5,6 +5,76 @@
      & background colors should be define on your own
 /* -------------------------------------------------------------- */
 
+/* ⚠️⚠️⚠️ Sticker  */
+/* min-info-sticker, info-sticker, max-info-sticker */
+
+
+/* -------------------------------------------------------------------- */
+/* Info Sticker Sticker | Min, Medium, Max
+/* -------------------------------------------------------------------- */
+
+.min-info-sticker-dark-grey,
+.medium-info-sticker-dark-grey,
+.max-info-sticker-dark-grey {
+
+  display: flex;
+  align-items: center;
+  column-gap: .5em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(171, 171, 171);
+
+}
+
+.min-info-sticker-dark-grey > div:nth-of-type(1),
+.medium-info-sticker-dark-grey > div:nth-of-type(1),
+.max-info-sticker-dark-grey > div:nth-of-type(1) {
+
+  /* 14.5px */
+  font-size: .90625em;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Min | Info Sticker
+/* -------------------------------------------------------------------- */
+
+.min-info-sticker-dark-grey {
+
+  height: 1.8em;
+  padding: 0 .6em;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Medium | Info Sticker
+/* -------------------------------------------------------------------- */
+
+.medium-info-sticker-dark-grey {
+
+  height: 2em;
+  padding: 0 .6em;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Max | Info Sticker
+/* -------------------------------------------------------------------- */
+
+.max-info-sticker-dark-grey {
+
+  height: 2.5em;
+  padding: 0 .6em;
+
+}
+
+
+/* -------------------------------------------------------------------- */
+/* ❌❌❌
+/* -------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------- */
 /* Min, Default, Max
@@ -23,7 +93,17 @@
   font-weight: bold;
 
   background-color: rgb(209, 209, 209);
+  background-color: rgb(130, 130, 130);
   opacity: .6;
+
+}
+
+.min-header-sfd-label > div:nth-of-type(1),
+.default-header-sfd-label > div:nth-of-type(1),
+.max-header-sfd-label > div:nth-of-type(1) {
+
+  /* 14.5px */
+  font-size: .90625em;
 
 }
 
@@ -51,7 +131,7 @@
 
 .default-header-sfd-label {
 
-  height: 2.3em;
+  height: 2em;
   padding: 0 .6em;
 
   /* background-color: red; */
