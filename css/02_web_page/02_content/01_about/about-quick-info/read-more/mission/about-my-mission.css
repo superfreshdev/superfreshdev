@@ -18,6 +18,9 @@
   display: grid;
   /* row-gap: 1.5em; */
 
+  /* default unshown */
+  display: none;
+
 }
 
 /* 🟣🟣🟣 | */
