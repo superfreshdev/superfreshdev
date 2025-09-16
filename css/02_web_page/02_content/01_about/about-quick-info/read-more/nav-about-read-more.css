@@ -60,6 +60,8 @@ label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
   border-radius: .8em;
 
   background-color: rgb(214, 214, 214);
+
+  background-color: rgb(28, 28, 28);
   /* border: 3px solid rgb(171, 171, 171); */
 
 }

@@ -15,6 +15,6 @@
 
   display: grid;
   justify-items: center;
-  row-gap: 1em;
+  /* row-gap: 1em; */
 
 }

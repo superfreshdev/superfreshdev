@@ -50,8 +50,15 @@
   /* ------------------------------------------------ */
 
   /* ------------------------------------------------ */
-  /* Read More | */
+  /* Read More | Img Info Box | Mission               */
   /* ------------------------------------------------ */
+
+  .img-about-content-info-box {
+
+    /* desktop */
+    display: flex;
+
+  }
 
   /* ------------------------------------------------ */
   /* About Details | Nav About More | Label | Img  */
@@ -206,6 +213,11 @@
 
     /* desktop */
     column-gap: 1em;
+
+    /* grid: auto 1fr / 1fr; */
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
 
     grid-template-areas:
 
