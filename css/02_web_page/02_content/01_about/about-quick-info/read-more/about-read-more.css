@@ -6,91 +6,6 @@
 
 
 /* ------------------------------------------------------------------- */
-/* Label Read More
-/* ------------------------------------------------------------------- */
-
-label[for="chk-about-open-close-read-more"] {
-
-  grid-area: read_more_label;
-
-  /* because of text, read more and close read */
-  width: 8.2em;
-
-  justify-self: center;
-
-}
-
-/* default unshown div2 text = close read */
-label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
-
-  display: none;
-}
-
-/* ------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close | Read More Container
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-read-more-container {
-
-  grid-area: read_more_smooth_container;
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-  /* background-color: red; */
-
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Nav | Read More
-/* ------------------------------------------------------------------- */
-
-#nav-read-more-container {
-
-  padding: 2em 0;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: .6em;
-  row-gap: 1em;
-
-  background-color: rgba(128, 128, 128, .7);
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Laebl | Read More
-/* ------------------------------------------------------------------- */
-
-#nav-read-more-container > label {
-
-  /* mobile */
-  width: 100%;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close | About Read More Content
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-about-read-more-content {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-  /* border: 1px solid black; */
-
-}
-
-/* ------------------------------------------------------------------- */
 /* About Read More Content Container
 /* ------------------------------------------------------------------- */
 
@@ -102,27 +17,4 @@ label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
   justify-items: center;
   row-gap: 1em;
 
-}
-
-/* ----------------------------------------------------------------- */
-/* About Tilde Seperator
-/* ----------------------------------------------------------------- */
-
-.about-tilde-seperator {
-
-  font-size: 1.5em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: bold;
-
-}
-
-#about-read-more-my-mission,
-#about-read-more-my-hobbies,
-#about-read-more-story {
-
-  display: none;
 }

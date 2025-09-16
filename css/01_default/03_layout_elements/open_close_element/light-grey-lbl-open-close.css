@@ -11,7 +11,7 @@
 
 .lbl-open-close-content {
 
-  height: 2.3em;
+  height: 2em;
   padding: 0 .6em;
 
   display: flex;
@@ -24,7 +24,7 @@
 
   font-weight: bold;
 
-  background-color: rgb(209, 209, 209);
+  /* background-color: rgb(209, 209, 209); */
   background-color: rgb(171, 171, 171);
   /* opacity: .6; */
 
@@ -36,8 +36,21 @@
 }
 
 /* ------------------------------------------------------------------- */
+/* Divs | Label Open Close Content
+/* ------------------------------------------------------------------- */
+
+.lbl-open-close-content > div {
+
+  /* 14.5px */
+  font-size: .90625em;
+
+}
+
+/* ------------------------------------------------------------------- */
 /* Div 1 | Label Open Close Content
 /* ------------------------------------------------------------------- */
+
+/* reminder: if we like img and text than we bring that in first div */
 
 .lbl-open-close-content > div:nth-of-type(1) {
 

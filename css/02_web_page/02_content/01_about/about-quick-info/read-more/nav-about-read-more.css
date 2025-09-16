@@ -1,9 +1,95 @@
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 /* > nav-about-quick-info.css
 /*
 /* : styles the nav about quick info
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 
+
+/* ------------------------------------------------------------------- */
+/* Label Read More | Open, Close
+/* ------------------------------------------------------------------- */
+
+label[for="chk-about-open-close-read-more"] {
+
+  grid-area: read_more_label;
+
+  /* because of text, read more and close read */
+  width: 8.2em;
+
+}
+
+/* default unshown div2 text = close read */
+label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
+
+  display: none;
+}
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | Read More Container
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-read-more-container {
+
+  grid-area: read_more_smooth_container;
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Nav Read More Container
+/* ------------------------------------------------------------------- */
+
+#nav-read-more-container {
+
+  margin-top: 1.5em;
+  padding: 1.5em 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: .6em;
+  row-gap: 1em;
+
+  border-radius: .8em;
+
+  background-color: rgb(214, 214, 214);
+  /* border: 3px solid rgb(171, 171, 171); */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Laebl | Nav Read More Container
+/* ------------------------------------------------------------------- */
+
+#nav-read-more-container > label {
+
+  /* mobile */
+  width: 100%;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | About Read More Content
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-about-read-more-content {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+  /* border: 1px solid black; */
+
+}
 
 /* ------------------------------------------------------------------- */
 /* Handling | Label & Smooth Open Close
@@ -19,7 +105,7 @@
 }
 
 /* ----------------------------------------------------------------- */
-/* Handle | Read More
+/* Handle | Checkbox | Read More | Open, Close
 /* ----------------------------------------------------------------- */
 
 /* change rotation */
@@ -51,22 +137,28 @@
 
 }
 
+/* show smooth read more container */
+#chk-about-open-close-read-more:checked ~ #smooth-open-close-read-more-container {
+
+  grid-template-rows: 1fr;
+
+}
+
 /* ----------------------------------------------------------------- */
-/* Handle | Nav Read More ( mission, hobbies, stroy )
+/* Handle | Radios | Nav Read More ( mission, hobbies, story )
 /* ----------------------------------------------------------------- */
 
 /* set light brown background */
-#radio-about-read-more-my-mission:checked ~ #nav-about-read-more > label[for="radio-about-read-more-my-mission"],
-#radio-about-read-more-my-hobbies:checked ~ #nav-about-read-more > label[for="radio-about-read-more-my-hobbies"],
-#radio-about-read-more-story:checked ~ #nav-about-read-more > label[for="radio-about-read-more-story"] {
+#radio-about-read-more-my-mission:checked ~ #nav-read-more-container > label[for="radio-about-read-more-my-mission"],
+#radio-about-read-more-my-hobbies:checked ~ #nav-read-more-container > label[for="radio-about-read-more-my-hobbies"],
+#radio-about-read-more-story:checked ~ #nav-read-more-container > label[for="radio-about-read-more-story"] {
 
   background-color: wheat;
   opacity: 1;
 
 }
 
-/* show smoot open close */
-#chk-about-open-close-read-more:checked ~ #smooth-open-close-read-more-container,
+/* show smooth read more content */
 #radio-about-read-more-my-mission:checked ~ #smooth-open-close-about-read-more-content,
 #radio-about-read-more-my-hobbies:checked ~ #smooth-open-close-about-read-more-content,
 #radio-about-read-more-story:checked ~ #smooth-open-close-about-read-more-content {
@@ -75,11 +167,12 @@
 
 }
 
-/* switch content */
+/* show read more content ( mission, hobbies, story ) */
 #radio-about-read-more-my-mission:checked ~ #smooth-open-close-about-read-more-content #about-read-more-my-mission,
 #radio-about-read-more-my-hobbies:checked ~ #smooth-open-close-about-read-more-content #about-read-more-my-hobbies,
 #radio-about-read-more-story:checked ~ #smooth-open-close-about-read-more-content #about-read-more-story {
 
+  width: 100%;
   display: grid;
 
 }

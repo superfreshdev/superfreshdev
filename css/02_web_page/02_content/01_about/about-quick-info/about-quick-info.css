@@ -24,12 +24,10 @@
   display: grid;
   justify-items: center;
 
-  /* row-gap: 1.5em; */
-
   grid-template-areas:
 
     'img_quick_info_business'
-    'quick_info_content_container'
+    'quick_info_content'
     'read_more_label'
     'read_more_smooth_container'
 
@@ -43,7 +41,7 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Img | About Quick Info Container
+/* Img | Quick Info Business
 /* -------------------------------------------------------------- */
 
 #img-quick-info-business {
@@ -67,16 +65,16 @@
 
 #about-quick-info-content-container {
 
-  grid-area: quick_info_content_container;
+  grid-area: quick_info_content;
 
   /* mobile */
   display: grid;
 
 }
 
-/* -------------------------------------------------------------- */
-/* Img Arrow Seperator | About Quick Info Content
-/* -------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* Img Arrow Seperator | About Quick Info Content Container
+/* --------------------------------------------------------------------------- */
 
 #img-arrow-seperator-about-quick-info {
 
@@ -87,9 +85,9 @@
 
 }
 
-/* -------------------------------------------------------------- */
-/* About Quick Info Content Box
-/* -------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* About Quick Info Content Box | About Quick Info Content Container
+/* ---------------------------------------------------------------------------- */
 
 #about-quick-info-content-box {
 
@@ -99,10 +97,10 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Quick Info | About Quick Info Content Box
+/* Quick Info Sticker | About Quick Info Content Box
 /* -------------------------------------------------------------- */
 
-#about-quick-info-content-box > div:nth-of-type(1) {
+#about-quick-info-content-box > .medium-info-sticker-dark-grey:nth-of-type(1) {
 
   justify-self: center;
 
@@ -114,12 +112,12 @@
 
 #about-quick-info-text {
 
-  padding: 0 .8em;
-  margin-bottom: 1.5em;
+  padding: 0 .8em 1.5em .8em;
 
   text-align: center;
   line-height: 1.8em;
 
-  color:grey;
+  /* color:rgb(87, 87, 87); */
+  color: var(--c-dark-grey);
 
 }

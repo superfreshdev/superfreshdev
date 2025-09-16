@@ -11,17 +11,17 @@
 
 #main-body {
 
-    /* important: to go by max height of parent element */
-    height: 100%;
+  /* important: to go by max height of parent element */
+  height: 100%;
 
-    /* because of fixed header height 5em default */
-    padding-top: 5em;
+  /* because of fixed header height 5em default */
+  padding-top: 5em;
 
-    /* i: ji-c to let layout in the middle  */
-    display: grid;
-    /* grid: 1fr / 1fr; */
+  /* i: ji-c to let layout in the middle  */
+  display: grid;
+  /* grid: 1fr / 1fr; */
 
-    background-color: white;
+  background-color: white;
 
 }
 

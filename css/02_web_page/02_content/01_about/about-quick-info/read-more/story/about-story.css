@@ -94,3 +94,20 @@
   height: 5.5em;
 
 }
+
+
+/* ----------------------------------------------------------------- */
+/* About Tilde Seperator ( 🟣🟣🟣 my mission )
+/* ----------------------------------------------------------------- */
+
+.about-tilde-seperator {
+
+  font-size: 1.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+}

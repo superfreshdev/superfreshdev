@@ -28,6 +28,9 @@
 
 .push-content-slide {
 
+  /* default all pages behind the right corner */
+  z-index: 1;
+
   /* because of fixed header */
   /* margin-top: 10em; */
 
@@ -37,14 +40,9 @@
   width: 100%;
   height: 100%;
 
-
   display: grid;
-  /* justify-items: center; */
-  /* align-items: flex-start; */
-  /* grid: 1fr / 1fr; */
 
-  /* default all pages behind the right corner */
-  z-index: 1;
+  /* default start animation  */
   transform: translateX(100%);
 
   /* transition effect */
@@ -61,187 +59,5 @@
   position: relative;
   z-index: 2;
   transform: translateX(0);
-
-}
-
-
-
-/* -------------------------------------------------------------- */
-/* 🟣🟣🟣 About Details Container
-/* -------------------------------------------------------------- */
-
-#about-details-container-new {
-
-  width: 100%;
-  padding: .8em;
-
-  border-radius: 1em;
-
-  background-color: yellow;
-
-}
-
-
-
-
-/* -------------------------------------------------------------- */
-/* Page 1,2,3
-/* -------------------------------------------------------------- */
-
-#test-slide-1 {
-
-  /* margin-top: 3em; */
-
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-
-  display: grid;
-  /* grid: 1fr / 1fr; */
-
-  /* padding: 2em; */
-
-  margin: 2em .8em 0 .8em;
-
-  border-left: 3px solid rgb(88, 88, 88);
-  border-right: 3px solid rgb(88, 88, 88);
-
-  border: 3px solid rgb(88, 88, 88);
-
-  background-color: rgba(255, 255, 255, .6);
-
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-  border-radius: 1em;
-
-}
-
-#page-1 {
-
- background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-
-
-
-}
-
-#img-white-background {
-
-  /* because of header fixed | dont need because parent is relative and thats new point */
-
-  z-index: 1;
-
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-  background-image: url("../../../../media/img/content/sky_cloud_clouds_175163_3840x2400.jpg");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  /* background-repeat: repeat-x; */
-  /* background-repeat: repeat-y;  Vertikal wiederholen */
-  /* background-size: 100% auto;   Bild füllt Breite, Höhe bleibt proportional */
-
-}
-
-#img-white-background-my-it {
-
-  /* because of header fixed | dont need because parent is relative and thats new point */
-
-  z-index: 1;
-
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-
-  /* background-image: url("../../../../media/img/content/sky_cloud_clouds_175163_3840x2400.jpg");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-
-  /* background-repeat: repeat-x; */
-  /* background-repeat: repeat-y;  Vertikal wiederholen */
-  /* background-size: 100% auto;   Bild füllt Breite, Höhe bleibt proportional */
-
-}
-
-#img-white-background-my-private {
-
-  /* because of header fixed | dont need because parent is relative and thats new point */
-
-  z-index: 1;
-
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-
-  background-image: url("../../../../media/img/content/sky_cloud_clouds_175163_3840x2400.jpg");
-
-  background-image: url("../../../../media/img/content/canyon-1852921.jpg");
-
-  /* background-image: url("../../../../media/img/content/green-meadow-grass-field-blue-sky-foggy-landscape-scenery-5k-6000x4000-7807.jpg"); */
-
-  /* background-image: url("../../../../media/img/content/particles_tilt_background_1186408_3840x2160.jpg"); */
-
-  /* background-image: url("../../../../media/img/content/mountain_slope_trees_330922_3840x2400.jpg"); */
-
-  /* background-image: url("../../../../media/img/content/forest_nature_trees_1325912_3840x2160.jpg"); */
-
-  /* background-image: url("../../../../media/img/content/pexels-drift-shutterbug-2085998.jpg"); */
-
-  /* background-image: url("../../../../media/img/content/grass_dew_drops_158971_3840x2400.jpg"); */
-
-  /* background-image: url("../../../../media/img/content/tents_night_starry_sky_114917_3840x2400.jpg"); */
-
-  /* background-image: url("../../../../media/img/content/trail_forest_trees_917434_3840x2400.jpg"); */
-
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-
-}
-
-#test-slide-2 {
-
-  z-index: 3;
-
-  width: 40%;
-  height: 100%;
-
-  padding: 2em;
-  background-color: rgb(232, 190, 52);
-
-}
-
-.big-content {
-
-  display: grid;
-  row-gap: 2em;
-
-}
-
-#test-slide-3 {
-
-   z-index: 3;
-
-  width: 40%;
-  height: 100%;
-
-  display: grid;
-  justify-items: center;
-  align-content: flex-start;
-  row-gap: .5em;
-
-  padding: 2em;
-  background-color: rgb(158, 212, 208);
 
 }

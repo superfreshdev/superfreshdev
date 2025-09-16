@@ -9,7 +9,7 @@ console.log("🟡 header-body.js")
 /* DOM Elements
 /* -------------------------------------------------------- */
 
-const body_page_slides = document.querySelectorAll("#body-push-page-slider .push-content-slide");
+const body_page_slides = document.querySelectorAll("#main-body > .push-slider:nth-of-type(1) .push-content-slide");
 const radios_body_header =  document.querySelectorAll("input[name='name-radio-nav-header-body']");
 
 /* ------------------------------------------------------ */
