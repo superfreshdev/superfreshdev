@@ -17,6 +17,9 @@
 
   #nav-read-more-container {
 
+    /* Desktop */
+    padding: 1.5em 0;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,6 +27,8 @@
     row-gap: .6em;
 
   }
+
+
 
   /* ------------------------------------------------------------------- */
   /* Read More | Read More Label Open / Close

@@ -49,7 +49,9 @@ label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
 #nav-read-more-container {
 
   margin-top: 1.5em;
-  padding: 1.5em 0;
+
+  /* mobile */
+  /* padding: 1.5em 0; */
 
   display: flex;
   flex-wrap: wrap;
