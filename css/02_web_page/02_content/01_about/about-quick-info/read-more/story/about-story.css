@@ -74,7 +74,7 @@
 .read-more-story-nr-container > div {
 
   height: 1.8em;
-  width: 3.5em;
+  width: 3.8em;
 
   display: flex;
   align-items: center;
@@ -89,7 +89,8 @@
   user-select: none;
 
   background-color: rgb(201, 201, 201);
-  color:rgb(133, 133, 133);
+  background-color: rgb(28, 28, 28);
+  color:rgb(232, 232, 232);
 
    /* 14.5px */
   font-size: .90625em;
@@ -125,6 +126,7 @@
   background-color: rgba(205, 205, 205, .3);
 
   border: 3px solid #616161;
+  border: 3px solid #d6d6d6d6;
 
 }
 
