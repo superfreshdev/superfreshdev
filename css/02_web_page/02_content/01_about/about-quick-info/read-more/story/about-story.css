@@ -6,16 +6,16 @@
 
 
 /* ------------------------------------------------------------------- */
-/* Story | About Read More
+/* Read More Story Container
 /* ------------------------------------------------------------------- */
 
-#about-read-more-story {
+#read-more-story-container {
 
   width: 100%;
-  padding: 4em .4em 0em .4em;
+  padding: 2em 0em 1.5em 0em;
 
   display: grid;
-  row-gap: 1em;
+  /* row-gap: 1em; */
 
   line-height: 1.8em;
 
@@ -28,25 +28,117 @@
 
 }
 
-#about-read-more-story > label:nth-of-type(1) {
+/* ------------------------------------------------------------------- */
+/* Audio Read More Container | Read More Story Container
+/* ------------------------------------------------------------------- */
 
-  /* more space from last block story */
-  margin-top: 1.3em;
+#audio-read-more-container {
 
-  justify-self: center;
+
+  display: flex;
+  align-items: center;
+
+  /* background-color: red; */
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Read More Story Content List
+/* ------------------------------------------------------------------- */
+
+#read-more-story-content-list {
+
+  display: grid;
 
 }
 
-#about-read-more-story > div:nth-of-type(1),
-#about-read-more-story > div:nth-of-type(3),
-#about-read-more-story > div:nth-of-type(5)   {
 
-  border: 3px solid rgb(184, 184, 184);
+
+/* ------------------------------------------------------------------- */
+/* Nr Container | Read More Story Content List
+/* ------------------------------------------------------------------- */
+
+.read-more-story-nr-container {
+
+  width: 100%;
+  padding: 1.5em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  /* background-color: blue; */
+
+}
+
+.read-more-story-nr-container > div {
+
+  height: 1.8em;
+  width: 3.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 1px;
+
+  font-weight: bold;
+
+  border-radius: .4em;
+
+  user-select: none;
+
+  background-color: rgb(201, 201, 201);
+  color:rgb(133, 133, 133);
+
+   /* 14.5px */
+  font-size: .90625em;
+
+}
+
+/* ⚠️ Warum 3 ? sollte doch 2 sein  */
+
+#read-more-story-content-list > .read-more-story-nr-container:nth-of-type(3) {
+
+  /* background-color: brown; */
+  justify-content: flex-start;
+
+}
+
+/* #read-more-story-content-list > .read-more-story-nr-container:nth-of-type(1),
+#read-more-story-content-list > .read-more-story-nr-container:nth-of-type(3) {
+
+  justify-self: flex-end;
+} */
+
+/* ------------------------------------------------------------------- */
+/* Read More Block Story | Read More Story Content List
+/* ------------------------------------------------------------------- */
+
+#read-more-story-content-list > .read-more-block-story {
+
   padding: .8em;
 
   border-radius: .8em;
+  /* border: 3px solid rgb(70, 118, 207); */
+
+  background-color: rgba(205, 205, 205, .3);
+
+  border: 3px solid #616161;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------------------------------------------------------------- */

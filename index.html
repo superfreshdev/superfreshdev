@@ -517,9 +517,9 @@
                             <div class="w-100p h-100p grid ji-c">
 
                                 <!-- ------------------------------------------------------------------- -->
-                                <!-- 📏 Padding Wrapper | Resp Padding: 2em 1.5em -->
+                                <!-- 📏 Padding Wrapper | Resp Padding: 2em .8em -->
                                 <!-- ------------------------------------------------------------------- -->
-                                <div class="resp-padding-wrapper-2-1_5 z-index-2">
+                                <div class="resp-padding-wrapper-2-08 z-index-2">
 
                                     <!-- -------------------------------------------------------------- -->
                                     <!-- ➡️🟥 About Page Container  -->
@@ -612,7 +612,7 @@
                                                     <!-- ----------------------------------------------------------- -->
                                                     <input type="radio" id="radio-about-read-more-my-mission" name="name-radio-about-read-more-topics">
                                                     <input type="radio" id="radio-about-read-more-my-hobbies" name="name-radio-about-read-more-topics">
-                                                    <input type="radio" id="radio-about-read-more-story" name="name-radio-about-read-more-topics">
+                                                    <input checked type="radio" id="radio-about-read-more-story" name="name-radio-about-read-more-topics">
 
                                                     <!-- ----------------------------------------------------------- -->
                                                     <!-- Nav Read More Container -->
@@ -1081,29 +1081,14 @@
                                                                 </div>
 
                                                                 <!-- ----------------------------------------------------------- -->
-                                                                <!-- ➡️🟥 [4/5] | My Story | Read More -->
+                                                                <!-- ➡️🟥 [4/5] | Read More Story Container -->
                                                                 <!-- ----------------------------------------------------------- -->
-                                                                <div id="about-read-more-story">
+                                                                <div id="read-more-story-container">
 
-                                                                    <!-- -------------------------------------------------------------- -->
-                                                                    <!-- ⚠️⚠️⚠️ Test Story -->
-                                                                    <!-- -------------------------------------------------------------- -->
-                                                                     <div id="new-read-more-my-story">
-
-                                                                        <header> Test - Story </header>
-                                                                        <main>
-
-                                                                            <div> Hallo Marko</div>
-                                                                             <div> Hallo Welt</div>
-
-                                                                        </main>
-
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------------------------- -->
-                                                                    <!-- ⚠️⚠️⚠️ Unshown -->
-                                                                    <!-- -------------------------------------------------------------- -->
-                                                                    <div style="display: none;">
+                                                                    <!-- ------------------------------------------------------- -->
+                                                                    <!-- [1/2] | Audio My Story Container -->
+                                                                    <!-- ------------------------------------------------------- -->
+                                                                    <div id="audio-read-more-container">
 
                                                                         <!-- ----------------------------------------- -->
                                                                         <!-- Audio Listening Story -->
@@ -1111,6 +1096,92 @@
                                                                         <audio controls controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar">
                                                                             <source src="media/audio/content/about/about-story.ogg" type="audio/ogg">
                                                                         </audio>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------------------- -->
+                                                                    <!-- [2/2] | About Read More Story  -->
+                                                                    <!-- ------------------------------------------------------- -->
+                                                                    <div id="read-more-story-content-list">
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- Nr Block Container -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div class="read-more-story-nr-container">
+                                                                            <div>01/03</div>
+                                                                        </div>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- Block Story 1 -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div class="read-more-block-story">
+
+                                                                            <img src="media/img/content/01-default/clipart/cold-shower-clipart.png" id="img-about-cold-shower" alt="img">
+
+                                                                            <div>
+                                                                                One day, after a tough workout, I jumped into an ice-cold shower. At first,
+                                                                                it felt brutal — but then I grabbed some amazing-smelling shampoo, closed my eyes,
+                                                                                and imagined myself as a fearless Viking from Norway.
+                                                                                Cold? <br>
+                                                                                <img src="media/img/content/02-about/viking-2.png" id="img-about-viking" alt="img">
+                                                                                That’s in my blood!
+                                                                                Suddenly I started laughing and decided to actually enjoy the freezing water.
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- Nr Block Container -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div class="read-more-story-nr-container">
+                                                                            <div>02/03</div>
+                                                                        </div>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- Block Story 2 -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div class="read-more-block-story">
+                                                                            When I stepped out, I couldn’t stop smiling. I felt clean,
+                                                                            powerful, and one word popped into my mind: super fresh. <br>
+                                                                            <img src="media/img/content/02-about/funny-me.png" id="img-about-funny-me" alt="img">
+                                                                            That was the moment I fell in love with this idea.
+                                                                            Being super fresh isn’t just about feeling clean — it’s about feeling happy,
+                                                                            full of energy, and ready to take on the next challenge of the day.
+                                                                        </div>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- Nr Block Container -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div class="read-more-story-nr-container">
+                                                                            <div>03/03</div>
+                                                                        </div>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- Block Story 3 -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div class="read-more-block-story">
+                                                                            A few days later, I decided to turn this feeling into a personal statement.
+                                                                            Everything I do, I want it to be super fresh.
+                                                                            <img src="media/img/content/02-about/wave-rocket.png" id="img-about-wave-rocket" alt="img">
+                                                                            <br>
+                                                                            Whether it’s pushing myself in sports,
+                                                                            developing software, exploring healthy food, or starting new projects — it should bring joy,
+                                                                            energy, and something valuable, both to me and to others.
+                                                                        </div>
+
+                                                                        <!-- close float styling & important to dont crash next layouts -->
+                                                                        <span style="clear: both;"></span>
+
+
+                                                                    </div>
+
+
+                                                                    <!-- -------------------------------------------------------------- -->
+                                                                    <!-- ⚠️⚠️⚠️ Unshown -->
+                                                                    <!-- -------------------------------------------------------------- -->
+                                                                    <div style="display: none;">
+
+
 
 
                                                                         <!-- ----------------------------------------- -->

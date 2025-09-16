@@ -174,7 +174,7 @@ label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
 /* show read more content ( mission, hobbies, story ) */
 #radio-about-read-more-my-mission:checked ~ #smooth-open-close-about-read-more-content #read-more-my-mission-container,
 #radio-about-read-more-my-hobbies:checked ~ #smooth-open-close-about-read-more-content #about-read-more-my-hobbies,
-#radio-about-read-more-story:checked ~ #smooth-open-close-about-read-more-content #about-read-more-story {
+#radio-about-read-more-story:checked ~ #smooth-open-close-about-read-more-content #read-more-story-container {
 
   width: 100%;
   display: grid;
