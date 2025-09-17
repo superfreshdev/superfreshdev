@@ -8,9 +8,9 @@ console.log("🟨 close-tab-read-more.js")
 // radio
 var radios_about_read_more_topics = [
 
-  document.getElementById("radio-about-read-more-my-mission"),
-  document.getElementById("radio-about-read-more-my-hobbies"),
-  document.getElementById("radio-about-read-more-story")
+  document.getElementById("radio-read-more-my-mission"),
+  document.getElementById("radio-read-more-my-hobbies"),
+  document.getElementById("radio-read-more-story")
 ]
 
 // string ids of label close tabs

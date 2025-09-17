@@ -6,6 +6,96 @@
 
 
 /* ------------------------------------------------------------------- */
+/* Label Read More (checkbox)
+/* ------------------------------------------------------------------- */
+
+label[for="chk-about-read-more"] {
+
+  grid-area: read_more_label;
+
+  /* because of text, read more and close read */
+  width: 8.2em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Div 2 (unshown, text = close read ) | Label Read More (checkbox)
+/* ------------------------------------------------------------------- */
+
+label[for="chk-about-read-more"] > div:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | Read More Container
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-read-more-container {
+
+  grid-area: read_more_smooth_container;
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Nav Read More Container
+/* ------------------------------------------------------------------- */
+
+#nav-read-more-container {
+
+  margin-top: 1.5em;
+
+  /* mobile */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: .6em;
+  row-gap: 1em;
+
+  border-radius: .8em;
+
+  /* background-color: rgb(214, 214, 214); */
+  /* background-color: rgba(28, 28, 28, 1); */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Laebl | Nav Read More Container
+/* ------------------------------------------------------------------- */
+
+#nav-read-more-container > label {
+
+  /* mobile */
+  width: 100%;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | Read More Content Contianer
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-read-more-content-container {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+  /* border: 1px solid black; */
+
+}
+
+/* ------------------------------------------------------------------- */
 /* About Read More Content Container
 /* ------------------------------------------------------------------- */
 

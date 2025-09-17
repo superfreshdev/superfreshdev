@@ -29,18 +29,17 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Audio Read More Container | Read More Story Container
+/* Audio Story Container
 /* ------------------------------------------------------------------- */
 
-#audio-read-more-container {
-
+#about-audio-story-container {
 
   display: flex;
   align-items: center;
 
   /* background-color: red; */
-}
 
+}
 
 /* ------------------------------------------------------------------- */
 /* Read More Story Content List

@@ -5,16 +5,16 @@
 /* ------------------------------------------------------------------- */
 
 
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 /* About Quick Info Container
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 
 #about-quick-info-container {
 
   width: 100%;
-  padding: 1.5em .8em;
 
-  border-radius: 1em;
+  /* mobile */
+  padding: 1.5em .8em;
 
   /* --------------------------------------- */
   /* Grid Template Area Layout
@@ -30,8 +30,9 @@
     'quick_info_content'
     'read_more_label'
     'read_more_smooth_container'
-
   ;
+
+  border-radius: 1em;
 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
@@ -48,6 +49,7 @@
 
   grid-area: img_quick_info_business;
 
+  /* mobile */
   margin-bottom: 2em;
 
   height: 15em;
@@ -102,6 +104,7 @@
 
 #about-quick-info-content-box > .medium-info-sticker-dark-grey:nth-of-type(1) {
 
+  /* mobile, dont let element stretch max width, be center */
   justify-self: center;
 
 }

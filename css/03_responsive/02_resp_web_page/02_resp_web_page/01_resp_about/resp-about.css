@@ -11,6 +11,7 @@
 
 @media ( min-width: 360px ) {
 
+
   /* ------------------------------------------------ */
   /* Read More | Mav Read More Container */
   /* ------------------------------------------------ */
@@ -20,19 +21,12 @@
     /* Desktop */
     padding: 1.5em 0;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: .6em;
-    row-gap: .6em;
 
   }
 
-
-
-  /* ------------------------------------------------------------------- */
-  /* Read More | Read More Label Open / Close
-  /* ------------------------------------------------------------------- */
+  /* ---------------------------------------------------------------------------------------------- */
+  /* Read More | Labels of Nav Read More Container ( mission, hobbies, story )
+  /* ---------------------------------------------------------------------------------------------- */
 
   #nav-read-more-container > label {
 
@@ -55,7 +49,7 @@
   /* ------------------------------------------------ */
 
   /* ------------------------------------------------ */
-  /* Read More | Img Info Box | Mission               */
+  /* ⁉️ Read More | Img Info Box | Mission           */
   /* ------------------------------------------------ */
 
   .img-about-content-info-box {
@@ -147,7 +141,6 @@
 
     /* background-color: red; */
 
-
   }
 
 }
@@ -158,21 +151,6 @@
 
 @media ( min-width: 650px ) {
 
-
-  /* ----------------------------------------------------------- */
-  /* Read More | Hobbies -> Main
-  /* ----------------------------------------------------------- */
-
-  #about-read-more-my-mission > main,
-  #about-read-more-my-hobbies > main {
-
-    display: grid;
-
-    grid: auto / 1fr 1fr;
-
-    column-gap: .8em;
-
-  }
 
   /* ----------------------------------------------------------- */
   /* About Details | About Mindet Video Box
@@ -210,6 +188,7 @@
 
   #about-quick-info-container {
 
+    /* desktop */
     padding: 1em .8em;
 
     /* --------------------------------------- */
@@ -217,13 +196,6 @@
     /* --------------------------------------- */
 
     /* desktop */
-    column-gap: 1em;
-
-    /* grid: auto 1fr / 1fr; */
-
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto;
-
     grid-template-areas:
 
       'img_quick_info_business quick_info_content'
@@ -231,6 +203,11 @@
       'read_more_smooth_container read_more_smooth_container'
 
     ;
+
+    column-gap: 1em;
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
 
     /* background-color: magenta; */
 
@@ -242,6 +219,7 @@
 
   #img-quick-info-business {
 
+      /* desktop */
       margin-bottom: 0em;
 
   }
@@ -251,10 +229,6 @@
   /* ------------------------------------------------------------------- */
 
   #about-quick-info-content-container {
-
-    height: 100%;
-
-    /* padding-top: 1em; */
 
     /* desktop */
     display: flex;
@@ -313,9 +287,11 @@
   /* Read More | Read More Label | Open Close
   /* ------------------------------------------------------------------- */
 
-  label[for="chk-about-open-close-read-more"] {
+  label[for="chk-about-read-more"] {
 
+    /* bring right */
     justify-self: flex-end;
+    /* bring down */
     align-self: flex-end;
 
   }
@@ -331,7 +307,7 @@
 
 
   /* ------------------------------------------------ */
-  /*  Quick Info | Why Superfreshdev  */
+  /* Quick Info | Why Superfreshdev  */
   /* ------------------------------------------------ */
 
   #about-why-superfreshdev {

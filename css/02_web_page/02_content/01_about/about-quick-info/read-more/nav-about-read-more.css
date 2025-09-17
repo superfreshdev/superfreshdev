@@ -6,103 +6,10 @@
 
 
 /* ------------------------------------------------------------------- */
-/* Label Read More | Open, Close
-/* ------------------------------------------------------------------- */
-
-label[for="chk-about-open-close-read-more"] {
-
-  grid-area: read_more_label;
-
-  /* because of text, read more and close read */
-  width: 8.2em;
-
-}
-
-/* default unshown div2 text = close read */
-label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
-
-  display: none;
-}
-
-/* ------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close | Read More Container
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-read-more-container {
-
-  grid-area: read_more_smooth_container;
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-  /* background-color: red; */
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Nav Read More Container
-/* ------------------------------------------------------------------- */
-
-#nav-read-more-container {
-
-  margin-top: 1.5em;
-
-  /* mobile */
-  /* padding: 1.5em 0; */
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: .6em;
-  row-gap: 1em;
-
-  border-radius: .8em;
-
-  background-color: rgb(214, 214, 214);
-
-  background-color: rgb(28, 28, 28);
-  /* border: 3px solid rgb(171, 171, 171); */
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Laebl | Nav Read More Container
-/* ------------------------------------------------------------------- */
-
-#nav-read-more-container > label {
-
-  /* mobile */
-  width: 100%;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close | About Read More Content
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-about-read-more-content {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-  /* border: 1px solid black; */
-
-}
-
-/* ------------------------------------------------------------------- */
 /* Handling | Label & Smooth Open Close
 /* ------------------------------------------------------------------- */
 
-#chk-about-open-close-read-more,
-#radio-about-read-more-my-mission,
-#radio-about-read-more-my-hobbies,
-#radio-about-read-more-story  {
+#chk-about-read-more {
 
   display: none;
 
@@ -113,14 +20,14 @@ label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
 /* ----------------------------------------------------------------- */
 
 /* change rotation */
-#chk-about-open-close-read-more:checked ~ label[for="chk-about-open-close-read-more"] > img {
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > img {
 
   transform: scale(-1);
 
 }
 
 /* set background */
-#chk-about-open-close-read-more:checked ~ label[for="chk-about-open-close-read-more"] {
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"] {
 
   background-color: rgb(227, 87, 87);
   opacity: 1;
@@ -128,21 +35,21 @@ label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
 }
 
 /* unshown text: read more */
-#chk-about-open-close-read-more:checked ~ label[for="chk-about-open-close-read-more"] > div:nth-of-type(1) {
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > div:nth-of-type(1) {
 
   display: none;
 
 }
 
 /* show text: close read */
-#chk-about-open-close-read-more:checked ~ label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > div:nth-of-type(2) {
 
   display: flex;
 
 }
 
 /* show smooth read more container */
-#chk-about-open-close-read-more:checked ~ #smooth-open-close-read-more-container {
+#chk-about-read-more:checked ~ #smooth-open-close-read-more-container {
 
   grid-template-rows: 1fr;
 
@@ -152,10 +59,16 @@ label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
 /* Handle | Radios | Nav Read More ( mission, hobbies, story )
 /* ----------------------------------------------------------------- */
 
+input[name="name-radio-read-more"] {
+
+  display: none;
+
+}
+
 /* set light brown background */
-#radio-about-read-more-my-mission:checked ~ #nav-read-more-container > label[for="radio-about-read-more-my-mission"],
-#radio-about-read-more-my-hobbies:checked ~ #nav-read-more-container > label[for="radio-about-read-more-my-hobbies"],
-#radio-about-read-more-story:checked ~ #nav-read-more-container > label[for="radio-about-read-more-story"] {
+#radio-read-more-my-mission:checked ~ #nav-read-more-container > label[for="radio-read-more-my-mission"],
+#radio-read-more-my-hobbies:checked ~ #nav-read-more-container > label[for="radio-read-more-my-hobbies"],
+#radio-read-more-story:checked ~ #nav-read-more-container > label[for="radio-read-more-story"] {
 
   background-color: wheat;
   opacity: 1;
@@ -163,18 +76,18 @@ label[for="chk-about-open-close-read-more"] > div:nth-of-type(2) {
 }
 
 /* show smooth read more content */
-#radio-about-read-more-my-mission:checked ~ #smooth-open-close-about-read-more-content,
-#radio-about-read-more-my-hobbies:checked ~ #smooth-open-close-about-read-more-content,
-#radio-about-read-more-story:checked ~ #smooth-open-close-about-read-more-content {
+#radio-read-more-my-mission:checked ~ #smooth-open-close-read-more-content-container,
+#radio-read-more-my-hobbies:checked ~ #smooth-open-close-read-more-content-container,
+#radio-read-more-story:checked ~ #smooth-open-close-read-more-content-container {
 
   grid-template-rows: 1fr;
 
 }
 
 /* show read more content ( mission, hobbies, story ) */
-#radio-about-read-more-my-mission:checked ~ #smooth-open-close-about-read-more-content #read-more-my-mission-container,
-#radio-about-read-more-my-hobbies:checked ~ #smooth-open-close-about-read-more-content #about-read-more-my-hobbies,
-#radio-about-read-more-story:checked ~ #smooth-open-close-about-read-more-content #read-more-story-container {
+#radio-read-more-my-mission:checked ~ #smooth-open-close-read-more-content-container #read-more-my-mission-container,
+#radio-read-more-my-hobbies:checked ~ #smooth-open-close-read-more-content-container #read-more-my-hobbies-container,
+#radio-read-more-story:checked ~ #smooth-open-close-read-more-content-container #read-more-story-container {
 
   width: 100%;
   display: grid;
