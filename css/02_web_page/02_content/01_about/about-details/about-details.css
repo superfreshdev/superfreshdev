@@ -12,10 +12,15 @@
 #about-details-container {
 
   width: 100%;
-  padding: .8em;
+  padding: .8em .8em .8em .8em;
+
+  display: grid;
+  /* row-gap: 2em; */
 
   border-radius: 1em;
-  background-color: yellow;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: rgba(255, 255, 255, .8);
 
 }
 
@@ -23,10 +28,10 @@
 /* Header | About Details Container
 /* ------------------------------------------------------------------- */
 
-#about-details-container > header {
+#header-about-details-container {
 
   width: 100%;
-  padding: 2em .8em;
+  padding: 1em 0em;
 
   display: grid;
   justify-items: center;
@@ -35,9 +40,134 @@
 
   /* mobile */
   justify-content: center;
-  background-color: rgb(28, 28, 28);
+  /* background-color: rgb(28, 28, 28); */
+  /* background-color: lightgrey; */
 
 }
+
+/* ------------------------------------------------------------------- */
+/* Header Title | Header
+/* ------------------------------------------------------------------- */
+
+#header-about-details-title {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Div 1 | Header Title
+/* ------------------------------------------------------------------- */
+
+#header-about-details-title > div:nth-of-type(1) {
+
+  font-size: 1.25em;
+  font-weight: bold;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Img | Header Title
+/* ------------------------------------------------------------------- */
+
+#img-about-header-details {
+
+  /* mobile */
+  height: 2.5em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Nav | Header About Details
+/* ------------------------------------------------------------------- */
+
+#nav-header-about-details {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+  row-gap: .8em;
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Label Img (unshown) | Nav
+/* ------------------------------------------------------------------- */
+
+#nav-header-about-details > label > img:nth-of-type(1) {
+
+  /* very small mobile unshown */
+  display: none;
+
+}
+
+
+
+
+
+/* 🟣🟣🟣 Auslagern */
+/* ------------------------------------------------------------------- */
+/* Label img 1 (unshown) | Nav
+/* ------------------------------------------------------------------- */
+
+.dots-closed-container {
+
+  padding: .6em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: red; */
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | About Details Container
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-about-details-container {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+  /* background-color: aqua; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------- */
+/* ❌❌❌❌ Trash
+/* -------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -------------------------------------- */
 /* Header Title
@@ -199,14 +329,19 @@
 #about-details-close-tab-container {
 
   width: 100%;
-  padding-top: 3em;
 
-  display: grid;
-  justify-items: center;
+
+  display: flex;
+  justify-content: center;
 
   /* default unshown because default no content shown */
-  display: none;
+  /* display: none; */
 
   /* background-color: rgb(148, 148, 148); */
 
 }
+
+/* #about-details-close-tab-container > div {
+
+  justify-self: center;
+} */

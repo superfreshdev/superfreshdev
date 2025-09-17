@@ -12,18 +12,6 @@
 @media ( min-width: 360px ) {
 
 
-  /* ------------------------------------------------ */
-  /* Read More | Mav Read More Container */
-  /* ------------------------------------------------ */
-
-  #nav-read-more-container {
-
-    /* Desktop */
-    padding: 1.5em 0;
-
-
-  }
-
   /* ---------------------------------------------------------------------------------------------- */
   /* Read More | Labels of Nav Read More Container ( mission, hobbies, story )
   /* ---------------------------------------------------------------------------------------------- */
@@ -45,19 +33,26 @@
 
 
   /* ------------------------------------------------ */
-  /* Quick Info | */
+  /* Read More | Nav Header About Details | Label Img  */
   /* ------------------------------------------------ */
 
-  /* ------------------------------------------------ */
-  /* ⁉️ Read More | Img Info Box | Mission           */
-  /* ------------------------------------------------ */
-
-  .img-about-content-info-box {
+  #nav-header-about-details > label > img:nth-of-type(1) {
 
     /* desktop */
     display: flex;
 
   }
+
+  /* ------------------------------------------------ */
+  /* Read More | Img About Content Info Box  */
+  /* ------------------------------------------------ */
+
+  .img-about-content-info-box {
+
+    display: flex;
+
+  }
+
 
   /* ------------------------------------------------ */
   /* About Details | Nav About More | Label | Img  */
@@ -129,11 +124,14 @@
 @media ( min-width: 580px ) {
 
 
-  /* ------------------------------------------- */
-  /* About Details | Header
-  /* ------------------------------------------- */
+  /* ---------------------------------------------------------------------- */
+  /* About Details | Header About Details Container
+  /* ---------------------------------------------------------------------- */
 
-   #about-details-container > header {
+   #header-about-details-container {
+
+    /*header title more inside looks better */
+    padding-left: .8em;
 
     /* desktop */
     display: flex;
