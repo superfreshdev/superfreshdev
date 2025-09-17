@@ -1,5 +1,4 @@
-console.log('🟡 play-pause-video-audio-about-mindset.js')
-
+// console.log('🟡 play-pause-video-audio-about-mindset.js')
 
 /* ------------------------------------------------------------ */
 /* DOM Elements
@@ -20,14 +19,12 @@ var videoFileMindsetReflect = document.getElementById("video-about-mindset-refle
 var audioDurationToBeFresh = 0;
 var savedAudioDurationToBeFresh = 0;
 
-
 /* ------------------------------------------------------------ */
-/* 🟨 Functions
+/* Functions
 /* ------------------------------------------------------------ */
-
 
 /* -------------------------------------------------------- */
-/*  🟨 Get | Minutes By Seconds
+/* Get | Minutes By Seconds
 /* -------------------------------------------------------- */
 
 function getMinutesBySeconds( maxSeconds ) {
@@ -35,10 +32,8 @@ function getMinutesBySeconds( maxSeconds ) {
     return ( Math.floor( maxSeconds / 60 ) )
 }
 
-
-
 /* -------------------------------------------------------- */
-/*  🟨 Get | Rest Seconds by Elimanting Full Minutes
+/*  Get | Rest Seconds by Elimanting Full Minutes
 /* -------------------------------------------------------- */
 
 function getRestSecondsFromMinutes( maxSeconds ) {
@@ -59,7 +54,6 @@ function audioCountdownIncrement() {
         // console.log('[⌚ Countdown| ??? ]: ' + audioDurationToBeFresh + ' Seconds' )
     }
 
-
 }
 
 /* -------------------------------------------------------------------------- */
@@ -75,9 +69,6 @@ function setZeroStylingByNumbers ( number ) {
 
     return number;
 }
-
-
-
 
 /* ------------------------------------------------------------ */
 /* Events
@@ -104,7 +95,6 @@ chkPlayPauseVideoMindsetReflect.addEventListener( 'change', ()=> {
 
   } else {
 
-
     console.log("🤚[checkbox] = Pause Audio ")
 
     /* -------------------------------------- */
@@ -117,13 +107,9 @@ chkPlayPauseVideoMindsetReflect.addEventListener( 'change', ()=> {
     /* -------------------------------------- */
     videoFileMindsetReflect.pause();
 
-
   }
 
-
 })
-
-
 
 
 /* ---------------------------------------------------------------------- */
@@ -133,7 +119,6 @@ chkPlayPauseVideoMindsetReflect.addEventListener( 'change', ()=> {
 /* ---------------------------------------------------------------------- */
 
 audioFileMindsetReflect.addEventListener("timeupdate", () => {
-
 
     // console.log("The currentTime attribute has been updated. Again. - " + audioSrcToBeFresh.currentTime );
 
@@ -151,6 +136,5 @@ audioFileMindsetReflect.addEventListener("timeupdate", () => {
         txtSecReflect.innerText = setZeroStylingByNumbers( getRestSecondsFromMinutes( audioDurationToBeFresh ) );
 
     }
-
 
 });

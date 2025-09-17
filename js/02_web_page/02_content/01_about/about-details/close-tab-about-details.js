@@ -1,4 +1,4 @@
-console.log("🟨 close-tab-content-about-details.js")
+console.log("🟨 close-tab-about-details.js")
 
 /* ------------------------------------------------------------ */
 /* DOM Elements
@@ -13,31 +13,6 @@ var radioList_about_details = [
   document.getElementById("radio-about-contact"),
 
 ]
-
-/* ------------------------------------------------------------ */
-/* Function
-/* ------------------------------------------------------------ */
-
-function unsetRadio( radios ) {
-
-  // console.log("radio.length = " + radios.length )
-
-  for( let i=0; i < radios.length; i++ ) {
-
-    if( radios[i].checked == true ) {
-
-      // console.log("Index = " + i)
-      radios[i].checked = false;
-
-      return;
-
-    }
-
-  }
-
-  return -1;
-
-}
 
 /* ------------------------------------------------------------ */
 /* Event

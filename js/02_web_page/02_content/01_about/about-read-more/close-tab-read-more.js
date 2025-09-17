@@ -1,4 +1,4 @@
-console.log("🟨 close-tab-read-more.js")
+// console.log("🟨 close-tab-read-more.js")
 
 
 /* ----------------------------------------------------------------- */
@@ -16,28 +16,6 @@ var radios_about_read_more_topics = [
 // string ids of label close tabs
 var close_tab_read_more_topics = document.getElementById("js-about-close-tab-read-more-content")
 
-/* ----------------------------------------------------------------- */
-/*  Methods
-/* ----------------------------------------------------------------- */
-
-//  ⚠️ getSettedRadioIndex
-
-function getUnsetRadioIndex( radios ) {
-
-  console.log( "Length(radios) = " + radios.length )
-
-  for( let i=0; i < radios.length; i++ ) {
-
-    if( radios[i].checked == true ) {
-      return i;
-    }
-
-  }
-
-  // no setted index found
-  return -1;
-
-}
 
 /* ----------------------------------------------------------------- */
 /* Events
@@ -55,7 +33,3 @@ close_tab_read_more_topics.addEventListener( "click" , ()=> {
   }
 
 })
-
-/* ----------------------------------------------------------------- */
-/*  Execute
-/* ----------------------------------------------------------------- */

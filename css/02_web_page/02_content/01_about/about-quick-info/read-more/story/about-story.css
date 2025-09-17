@@ -51,8 +51,6 @@
 
 }
 
-
-
 /* ------------------------------------------------------------------- */
 /* Nr Container | Read More Story Content List
 /* ------------------------------------------------------------------- */
@@ -69,8 +67,10 @@
   /* background-color: blue; */
 
 }
-
 .read-more-story-nr-container > div {
+
+  /* 14.5px */
+  font-size: .90625em;
 
   height: 1.8em;
   width: 3.8em;
@@ -87,16 +87,18 @@
 
   user-select: none;
 
-  background-color: rgb(201, 201, 201);
+  /* background-color: rgb(201, 201, 201); */
   background-color: rgb(28, 28, 28);
   color:rgb(232, 232, 232);
 
-   /* 14.5px */
-  font-size: .90625em;
-
 }
 
-/* ⚠️ Warum 3 ? sollte doch 2 sein  */
+/* --------------------------------------------------------- */
+/* Nr Container 2 (only right) | Nr Container
+/* --------------------------------------------------------- */
+
+/* ⚠️ Warum 3 ? sollte doch 2 sein, der selector ist eigentlich
+      korrekt - 3 ist der 3te div eintrag  */
 
 #read-more-story-content-list > .read-more-story-nr-container:nth-of-type(3) {
 
@@ -104,12 +106,6 @@
   justify-content: flex-start;
 
 }
-
-/* #read-more-story-content-list > .read-more-story-nr-container:nth-of-type(1),
-#read-more-story-content-list > .read-more-story-nr-container:nth-of-type(3) {
-
-  justify-self: flex-end;
-} */
 
 /* ------------------------------------------------------------------- */
 /* Read More Block Story | Read More Story Content List
@@ -124,23 +120,10 @@
 
   background-color: rgba(205, 205, 205, .3);
 
-  border: 3px solid #616161;
+  /* border: 3px solid #616161; */
   border: 3px solid #d6d6d6d6;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------------------------------------------- */
 /* Imgs | Cold Shower, Vikings, ...
@@ -185,22 +168,5 @@
 
   /* mobile */
   height: 5.5em;
-
-}
-
-
-/* ----------------------------------------------------------------- */
-/* About Tilde Seperator ( 🟣🟣🟣 my mission )
-/* ----------------------------------------------------------------- */
-
-.about-tilde-seperator {
-
-  font-size: 1.5em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: bold;
 
 }
