@@ -27,6 +27,9 @@
 
   background-color: rgb(171, 171, 171);
 
+  background-color: rgb(184, 184, 184);
+  border: 2px solid rgb(121, 121, 121);
+
 }
 
 .min-info-sticker-dark-grey > div:nth-of-type(1),
@@ -55,7 +58,7 @@
 
 .medium-info-sticker-dark-grey {
 
-  height: 2em;
+  height: 1.8em;
   padding: 0 .6em;
 
 }

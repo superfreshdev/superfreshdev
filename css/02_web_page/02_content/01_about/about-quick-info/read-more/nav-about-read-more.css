@@ -19,17 +19,34 @@
 /* Handle | Checkbox | Read More | Open, Close
 /* ----------------------------------------------------------------- */
 
-/* change rotation */
+/* unshown grey img */
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > img:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* show black img */
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > img:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+/* change img arrow rotation */
 #chk-about-read-more:checked ~ label[for="chk-about-read-more"] > img {
 
   transform: scale(-1);
 
 }
 
+
 /* set background */
 #chk-about-read-more:checked ~ label[for="chk-about-read-more"] {
 
   background-color: rgb(227, 87, 87);
+  color:black;
+
   opacity: 1;
 
 }
@@ -71,7 +88,26 @@ input[name="name-radio-read-more"] {
 #radio-read-more-story:checked ~ #nav-read-more-container > label[for="radio-read-more-story"] {
 
   background-color: wheat;
+  color:black;
   opacity: 1;
+
+}
+
+/* unshown grey img */
+#radio-read-more-my-mission:checked ~ #nav-read-more-container > label[for="radio-read-more-my-mission"] > div:nth-of-type(1) > img:nth-of-type(1),
+#radio-read-more-my-hobbies:checked ~ #nav-read-more-container > label[for="radio-read-more-my-hobbies"] > div:nth-of-type(1) > img:nth-of-type(1),
+#radio-read-more-story:checked ~ #nav-read-more-container > label[for="radio-read-more-story"] > div:nth-of-type(1) > img:nth-of-type(1) {
+
+ display: none;
+
+}
+
+/* show black img */
+#radio-read-more-my-mission:checked ~ #nav-read-more-container > label[for="radio-read-more-my-mission"] > div:nth-of-type(1) > img:nth-of-type(2),
+#radio-read-more-my-hobbies:checked ~ #nav-read-more-container > label[for="radio-read-more-my-hobbies"] > div:nth-of-type(1) > img:nth-of-type(2),
+#radio-read-more-story:checked ~ #nav-read-more-container > label[for="radio-read-more-story"] > div:nth-of-type(1) > img:nth-of-type(2) {
+
+ display: flex;
 
 }
 

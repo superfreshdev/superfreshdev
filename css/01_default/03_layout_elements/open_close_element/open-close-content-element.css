@@ -1,0 +1,116 @@
+/* ------------------------------------------------------------------- */
+/* > open-close-content-element.css
+/*
+/* : styles the element to open or close contents, it could
+     be for example and drop down element, switch content tab, ...
+/* ------------------------------------------------------------------- */
+
+
+/*
+
+  content-info-sticker-small
+  content-info-sticker-medium
+  content-info-sticker-big
+
+  open-close-content-element-small
+  open-close-content-element-medium
+
+*/
+
+/* ------------------------------------------------------------------- */
+/* Open Close Content Elements
+/* ------------------------------------------------------------------- */
+
+.open-close-content-element-small,
+.open-close-content-element-medium {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgba(28, 28, 28, 1);
+
+  border: 2px solid rgba(28, 28, 28, .6);
+
+  color:rgb(203, 203, 203);
+
+  user-select: none;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+
+.open-close-content-element-small > div:nth-of-type(1),
+.open-close-content-element-medium > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+/* reminder: extra div because we dont want set font size on
+   img icon */
+.open-close-content-element-small > div:nth-of-type(1) > div
+.open-close-content-element-medium > div:nth-of-type(1) > div {
+
+  /* 14.5px */
+  font-size: .90625em;
+
+}
+
+
+
+/* Img | Transition */
+.open-close-content-element-small > div:nth-of-type(1) > img,
+.open-close-content-element-medium > div:nth-of-type(1) > img {
+
+  transition:  all .4s;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Hover
+/* ------------------------------------------------------------------- */
+
+.open-close-content-element-small:hover,
+.open-close-content-element-medium:hover {
+
+  background-color: wheat;
+  color:black;
+  opacity: 1;
+
+}
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* Small | Open Close Content Elements
+/* ------------------------------------------------------------------- */
+
+/* ⚠️ Actually no use case  */
+.open-close-content-element-small {
+
+  height: 2em;
+  padding: 0 .6em;
+
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Medium | Open Close Content Elements
+/* ------------------------------------------------------------------- */
+
+.open-close-content-element-medium {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+}

@@ -50,7 +50,7 @@
 
     opacity: .4;
 
-    border: 1px solid rgb(163, 163, 163);
+    border: 2px solid rgb(163, 163, 163);
 
     /* border: 3px solid rgb(50, 50, 50) ; */
     background-color: rgb(50, 50, 50) ;
@@ -71,6 +71,7 @@
 .lbl-nav-header-body:hover {
 
     background-color: wheat;
+    border: 2px solid wheat;
     color:black;
 }
 
@@ -111,6 +112,8 @@ input[name="name-radio-nav-header-body"] {
 
     background-color: wheat;
     color:black;
+
+    border: 2px solid wheat;
 
     opacity: 1;
 

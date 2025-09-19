@@ -19,10 +19,20 @@ label[for="chk-about-read-more"] {
 }
 
 /* ------------------------------------------------------------------- */
-/* Div 2 (unshown, text = close read ) | Label Read More (checkbox)
+/* Div 2 (unshown, text = close read )
 /* ------------------------------------------------------------------- */
 
 label[for="chk-about-read-more"] > div:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Img 2 (unshown = black img, default = grey img )
+/* ------------------------------------------------------------------- */
+
+label[for="chk-about-read-more"] > img:nth-of-type(2) {
 
   display: none;
 
@@ -52,7 +62,7 @@ label[for="chk-about-read-more"] > div:nth-of-type(2) {
 
 #nav-read-more-container {
 
-  margin-top: 1.5em;
+  margin: 3.5em 0 2em 0;
 
   /* mobile */
   display: flex;
@@ -63,19 +73,27 @@ label[for="chk-about-read-more"] > div:nth-of-type(2) {
 
   border-radius: .8em;
 
-  /* background-color: rgb(214, 214, 214); */
-  /* background-color: rgba(28, 28, 28, 1); */
 
 }
 
 /* ------------------------------------------------------------------- */
-/* Laebl | Nav Read More Container
+/* Laebel | Nav Read More Container
 /* ------------------------------------------------------------------- */
 
 #nav-read-more-container > label {
 
   /* mobile */
   width: 100%;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Label Img 2 (unshown = black img )
+/* ------------------------------------------------------------------- */
+
+#nav-read-more-container > label > div:nth-of-type(1) > img:nth-of-type(2) {
+
+ display: none;
 
 }
 

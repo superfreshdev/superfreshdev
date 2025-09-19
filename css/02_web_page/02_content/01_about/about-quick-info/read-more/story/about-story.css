@@ -12,7 +12,7 @@
 #read-more-story-container {
 
   width: 100%;
-  padding: 2em 0em 1.5em 0em;
+  padding-bottom: 1.5em;
 
   display: grid;
   /* row-gap: 1em; */
@@ -121,7 +121,9 @@
   background-color: rgba(205, 205, 205, .3);
 
   /* border: 3px solid #616161; */
-  border: 3px solid #d6d6d6d6;
+  border: 3px solid #d6d6d6;
+
+  color:#616161;
 
 }
 

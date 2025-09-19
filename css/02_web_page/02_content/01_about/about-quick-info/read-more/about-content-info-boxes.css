@@ -34,7 +34,12 @@
 
   border-radius: .6em;
 
-  background-color: rgb(214, 214, 214);
+  background-color: rgba(205, 205, 205, .3);
+
+  border: 3px solid rgb(214, 214, 214);
+
+
+
 
 }
 
