@@ -75,3 +75,14 @@ input[name="name-radio-nav-about-details"] {
   /* background-color: yellow; */
 
 }
+
+
+/* show content */
+#radio-about-it-skills:checked ~ #smooth-open-close-about-details-container #about-details-it-skills-container,
+#radio-about-mindset:checked ~ #smooth-open-close-about-details-container #about-details-mindset-container,
+#radio-about-contact:checked ~ #smooth-open-close-about-details-container #about-details-contact-container {
+
+  display: grid;
+  /* background-color: yellow; */
+
+}

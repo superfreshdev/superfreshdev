@@ -19,6 +19,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
   column-gap: .5em;
 
   border-radius: .6em;
@@ -58,7 +59,7 @@
 
 .medium-info-sticker-dark-grey {
 
-  height: 1.8em;
+  height: 2.3em;
   padding: 0 .6em;
 
 }

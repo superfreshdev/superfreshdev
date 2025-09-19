@@ -5,6 +5,45 @@
 /* -------------------------------------------------------------- */
 
 
+#my-it-page-container {
+
+  /* padding: 0 .8em; */
+
+  display: grid;
+  row-gap: 2em;
+
+  /* background-color: brown; */
+
+}
+
+#nav-my-it {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: .8em;
+
+}
+
+
+
+.my-it-project-container {
+
+  width: 100%;
+  padding: .8em .8em .8em .8em;
+
+  display: grid;
+  /* row-gap: 2em; */
+
+  border-radius: 1em;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: rgba(255, 255, 255, .8);
+
+}
+
+
+
 /* ------------------------------------------------------------- */
 /* My IT Container
 /* ------------------------------------------------------------- */
@@ -72,13 +111,13 @@
   /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
 
   /* background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); */
-
+/*
   background-color: #E4E4E1;
   background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
- 	background-blend-mode: normal, multiply;
+ 	background-blend-mode: normal, multiply; */
 
 
-  /* background-image: url("../../../../media/img/content/sky_cloud_clouds_175163_3840x2400.jpg");*/
+  background-image: url("../../../../media/img/content/grass_dew_drops_158971_3840x2400.jpg");
 
 }
 
