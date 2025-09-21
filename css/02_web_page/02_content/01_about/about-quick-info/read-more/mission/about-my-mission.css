@@ -11,20 +11,10 @@
 
 #read-more-my-mission-container {
 
-  width: 100%;
-
-  display: grid;
-  row-gap: 3em;
+  /* width: 100%; */
+  /* display: grid; */
 
   /* default unshown */
   display: none;
-
-}
-
-label[for="radio-read-more-my-mission"] {
-
-  /* background-color: green; */
-
-
 
 }

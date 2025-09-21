@@ -1,4 +1,4 @@
-// console.log("🟨 close-tab-read-more.js")
+// console.log("🟨 close-tab-x-read-more.js")
 
 
 /* ----------------------------------------------------------------- */
@@ -14,7 +14,7 @@ var radios_about_read_more_topics = [
 ]
 
 // string ids of label close tabs
-var close_tab_read_more_topics = document.getElementById("js-about-close-tab-read-more-content")
+var close_tab_read_more_topics = document.getElementById("js-tab-x-about-read-more")
 
 
 /* ----------------------------------------------------------------- */

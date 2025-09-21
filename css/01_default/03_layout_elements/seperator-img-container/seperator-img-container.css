@@ -1,0 +1,50 @@
+/* -------------------------------------------------------------- */
+/* > sperator-img-containers.css
+
+/* : styles arrow containers to showing content directoin
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Seperator Img Container
+/* -------------------------------------------------------------- */
+
+.seperator-img-container-p-2-0,
+.seperator-img-container-pt-1-pb-2,
+.seperator-img-containerr-pb-2  {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: magenta; */
+
+}
+
+/* -------------------------------------------------------------- */
+/* Top & Down | Padding
+/* -------------------------------------------------------------- */
+
+.seperator-img-container-p-2-0 {
+
+  padding: 2em 0;
+
+}
+
+.seperator-img-container-pt-1-pb-2 {
+
+  padding-top: 1em;
+  padding-bottom: 2em;
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* Down | Padding
+/* -------------------------------------------------------------- */
+
+.seperator-img-container-pb-2 {
+
+  padding-bottom: 2em;
+
+}

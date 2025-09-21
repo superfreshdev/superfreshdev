@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------------- */
+/* > tab-close-x.css
+/*
+/* : styles the tab close x to close e.g content
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Tab X Mini Close | Content Container
+/* ------------------------------------------------------------------- */
+
+.tab-x-mini-close-content-container {
+
+  width: 100%;
+
+  margin: 1.5em 0 0em 0;
+  padding: 0em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: rgb(132, 132, 253);
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Tab X Mini Element | Tab X Mini Close Content Container
+/* ------------------------------------------------------------------- */
+
+.tab-x-mini-element {
+
+  height: 2.8em;
+  width: 2.8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .6em;
+
+  background-color: rgb(222, 222, 222);
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.tab-x-mini-element:hover {
+
+  /* background-color: rgb(227, 87, 87); */
+  background-color: rgb(234, 120, 120);
+
+}

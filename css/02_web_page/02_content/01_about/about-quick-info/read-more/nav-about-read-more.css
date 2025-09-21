@@ -6,6 +6,47 @@
 
 
 /* ------------------------------------------------------------------- */
+/* Nav About Read More
+/* ------------------------------------------------------------------- */
+
+#nav-about-read-more {
+
+  margin: 1.5em 0 0em 0;
+
+  /* mobile */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: .6em;
+  row-gap: 1em;
+
+  border-radius: .8em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Laebel | Nav About Read More
+/* ------------------------------------------------------------------- */
+
+#nav-about-read-more > label {
+
+  /* mobile */
+  width: 100%;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Label Img 2 (unshown = black img )
+/* ------------------------------------------------------------------- */
+
+#nav-about-read-more > label > div:nth-of-type(1) > img:nth-of-type(2) {
+
+ display: none;
+
+}
+
+
+/* ------------------------------------------------------------------- */
 /* Handling | Label & Smooth Open Close
 /* ------------------------------------------------------------------- */
 
@@ -105,5 +146,22 @@ input[name="name-radio-read-more"] {
 
   /* width: 100%; */
   display: grid;
+
+}
+
+/* set background - tab close x */
+#radio-read-more-my-mission:checked ~ #smooth-open-close-read-more-content-container .tab-x-mini-element:nth-of-type(1),
+#radio-read-more-my-hobbies:checked ~ #smooth-open-close-read-more-content-container .tab-x-mini-element:nth-of-type(1),
+#radio-read-more-story:checked ~ #smooth-open-close-read-more-content-container .tab-x-mini-element:nth-of-type(1) {
+
+  background-color: rgb(227, 87, 87);
+
+}
+
+#radio-read-more-my-mission:checked ~ #smooth-open-close-read-more-content-container .tab-x-mini-element:nth-of-type(1):hover,
+#radio-read-more-my-hobbies:checked ~ #smooth-open-close-read-more-content-container .tab-x-mini-element:nth-of-type(1):hover,
+#radio-read-more-story:checked ~ #smooth-open-close-read-more-content-container .tab-x-mini-element:nth-of-type(1):hover {
+
+  background-color: rgb(234, 120, 120);
 
 }

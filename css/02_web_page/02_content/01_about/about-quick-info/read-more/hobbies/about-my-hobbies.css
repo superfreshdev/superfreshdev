@@ -11,12 +11,6 @@
 
 #read-more-my-hobbies-container {
 
-  width: 100%;
-
-
-  display: grid;
-  row-gap: 3em;
-
   /* default unshown */
   display: none;
 
