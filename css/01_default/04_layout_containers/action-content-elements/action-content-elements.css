@@ -1,0 +1,91 @@
+/* -------------------------------------------------------------- */
+/* > action-content-elements.css
+/*
+/* : styles action content elements it can be used for
+     labels for open content or for an drop down selector, ...
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------- */
+/* Action Content Element | Medium, Max
+/* -------------------------------------------------------------------- */
+
+.action-content-element-medium,
+.action-content-element-big {
+
+  display: flex;
+  align-items: center;
+  /* because template should be div(img+text) + optional img arrow (up/down) */
+  justify-content: space-between;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(184, 184, 184);
+  background-color: rgb(205, 205, 205);
+  color:black;
+
+  user-select: none;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Hover | Action Content Element | Medium, Max
+/* -------------------------------------------------------------------- */
+
+.action-content-element-medium:hover,
+.action-content-element-big:hover {
+
+  background-color: wheat;
+}
+
+/* -------------------------------------------------------------------- */
+/* Div 1 (img+text) + Img Arrow up/down | Action Content Element
+/* -------------------------------------------------------------------- */
+
+/* reminder: if we use in our div 1 block an img + text */
+
+.action-content-element-medium > div:nth-of-type(1),
+.action-content-element-big > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+.action-content-element-medium > div:nth-of-type(1) > div,
+.action-content-element-big > div:nth-of-type(1) > div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+
+/* -------------------------------------------------------------------- */
+/* Mediu | Action Content Element
+/* -------------------------------------------------------------------- */
+
+.action-content-element-medium {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Big | Action Content Element
+/* -------------------------------------------------------------------- */
+
+.action-content-element-big {
+
+  height: 3em;
+  padding: 0 .6em;
+
+}

@@ -19,27 +19,27 @@
 /* Handle | Checkbox | Read More | Open, Close
 /* ----------------------------------------------------------------- */
 
-/* unshown grey img */
-#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > img:nth-of-type(1) {
+
+/* unshown text: read more */
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > div:nth-of-type(1) > div:nth-of-type(1) {
 
   display: none;
 
 }
 
-/* show black img */
-#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > img:nth-of-type(2) {
+/* show text: close read */
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > div:nth-of-type(1) > div:nth-of-type(2) {
 
   display: flex;
 
 }
 
 /* change img arrow rotation */
-#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > img {
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > img:nth-of-type(1) {
 
   transform: scale(-1);
 
 }
-
 
 /* set background */
 #chk-about-read-more:checked ~ label[for="chk-about-read-more"] {
@@ -51,19 +51,6 @@
 
 }
 
-/* unshown text: read more */
-#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > div:nth-of-type(1) {
-
-  display: none;
-
-}
-
-/* show text: close read */
-#chk-about-read-more:checked ~ label[for="chk-about-read-more"] > div:nth-of-type(2) {
-
-  display: flex;
-
-}
 
 /* show smooth read more container */
 #chk-about-read-more:checked ~ #smooth-open-close-read-more-container {
