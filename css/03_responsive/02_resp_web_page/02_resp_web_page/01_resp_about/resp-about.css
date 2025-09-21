@@ -187,6 +187,18 @@
 @media ( min-width: 700px ) {
 
 
+
+
+
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 750px
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 750px ) {
+
   /* ------------------------------------------------ */
   /* Quick Info | Quick Info Container                */
   /* ------------------------------------------------ */
@@ -194,6 +206,8 @@
   #about-quick-info-container {
 
     /* desktop */
+    /* reminder: we overwrite that padding
+       from default css class because of selector id prio */
     padding: 1em .8em;
 
     /* --------------------------------------- */
@@ -224,8 +238,8 @@
 
   #img-quick-info-business {
 
-      /* desktop */
-      margin-bottom: 0em;
+    /* desktop */
+    margin-bottom: 0em;
 
   }
 
@@ -270,7 +284,7 @@
   /* Quick Info | Quick Info Sticker
   /* ------------------------------------------------------------------- */
 
-  #about-quick-info-content-box > .medium-info-sticker-dark-grey:nth-of-type(1) {
+  #about-quick-info-content-box > .header-sticker-medium:nth-of-type(1) {
 
     justify-self: flex-start;
 
@@ -312,16 +326,6 @@
     justify-content: flex-end;
 
   }
-
-
-
-}
-
-/* ------------------------------------------------------------------- */
-/* >= 750px
-/* ------------------------------------------------------------------- */
-
-@media ( min-width: 750px ) {
 
 
   /* ------------------------------------------------ */

@@ -11,11 +11,6 @@
 
 #about-quick-info-container {
 
-  width: 100%;
-
-  /* mobile */
-  padding: 1.5em .8em;
-
   /* --------------------------------------- */
   /* Grid Template Area Layout
   /* --------------------------------------- */
@@ -32,13 +27,6 @@
     'read_more_smooth_container'
   ;
 
-  border-radius: 1em;
-
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
-  background-color: rgba(255, 255, 255, .8);
-  /* background-color: rgb(28, 28, 28); */
-
 }
 
 /* -------------------------------------------------------------- */
@@ -53,11 +41,9 @@
   margin-bottom: 2em;
 
   height: 15em;
-  border-radius: .4em 2em .4em 2em;
+  border-radius: 1em;
 
-  border-radius: .4em;
-
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
@@ -102,7 +88,7 @@
 /* Quick Info Sticker | About Quick Info Content Box
 /* -------------------------------------------------------------- */
 
-#about-quick-info-content-box > .medium-info-sticker-dark-grey:nth-of-type(1) {
+#about-quick-info-content-box > .header-sticker-medium:nth-of-type(1) {
 
   /* mobile, dont let element stretch max width, be center */
   justify-self: center;

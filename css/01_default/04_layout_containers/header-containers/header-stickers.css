@@ -1,13 +1,97 @@
 /* -------------------------------------------------------------- */
-/* > header-sfd-labels.css
+/* > header-stickers.css
 /*
-/* : header sfd label layouts for min, default, max header labels
-     & background colors should be define on your own
+/* : styles header stickers for contents, e.g u can use these
+     stickers for small texts contents
 /* -------------------------------------------------------------- */
 
-/* ⚠️⚠️⚠️ Sticker  */
-/* min-info-sticker, info-sticker, max-info-sticker */
 
+/* -------------------------------------------------------------------- */
+/* Header Sticker | Min, Medium, Max
+/* -------------------------------------------------------------------- */
+
+.header-sticker-min,
+.header-sticker-medium,
+.header-sticker-max {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(184, 184, 184);
+  color:black;
+
+}
+
+.header-sticker-min > div:nth-of-type(1),
+.header-sticker-medium > div:nth-of-type(1),
+.header-sticker-max > div:nth-of-type(1) {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Min | Header Sticker
+/* -------------------------------------------------------------------- */
+
+.header-sticker-min {
+
+  height: 1.8em;
+  padding: 0 .6em;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Medium | Header Sticker
+/* -------------------------------------------------------------------- */
+
+.header-sticker-medium {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Max | Header Sticker
+/* -------------------------------------------------------------------- */
+
+.header-sticker-max {
+
+  height: 2.5em;
+  padding: 0 .6em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ❌❌❌ */
 
 /* -------------------------------------------------------------------- */
 /* Info Sticker Sticker | Min, Medium, Max
