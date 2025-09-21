@@ -13,11 +13,13 @@
 
   width: 100%;
 
-  border-radius: 2em 1em 6em 1em;
+  border-radius: 1.3em 1em 1.3em 1em;
 
   /* border: 3px solid #ababab; */
   border: 3px solid rgb(28, 28, 28);
   border: 3px solid rgb(214, 214, 214);
+
+  background-color: rgba(205, 205, 205, .3);
 
 }
 
@@ -32,7 +34,7 @@
   display: flex;
   align-items: center;
 
-  border-radius: 1.8em 0em 0em 0em;
+  border-radius: 1.3em 0em 0em 0em;
 
   background-color: rgba(205, 205, 205, .3);
 
@@ -50,10 +52,10 @@
   width: 4.5em;
 
   position: relative;
-  left: -3px;
+  left: -2px;
   /* top:-3px; */
 
-  border-radius: 1.8em 0 0 0em;
+  border-radius: 1em 0 0 0em;
 
   /* mobile */
   display: none;
@@ -139,7 +141,7 @@
 /* Ul (1/2 Arts) - ul sub blocks | About Read More Info Card
 /* ------------------------------------------------------------------- */
 
-.about-content-info-boxes > .about-ul-sub-blocks {
+.about-read-more-info-card > .about-ul-sub-blocks {
 
   /* change default ul style */
   margin: 0;
@@ -159,7 +161,7 @@
 /* About Ul Sub Blocks > li > ul
 /* ------------------------------------------------------------------- */
 
-.about-content-info-boxes > .about-ul-sub-blocks > li > ul {
+.about-read-more-info-card > .about-ul-sub-blocks > li > ul {
 
   margin: 0;
   padding: 0;

@@ -11,17 +11,11 @@
 
 #read-more-story-container {
 
-  width: 100%;
-  padding-bottom: 1.5em;
-
   display: grid;
-  /* row-gap: 1em; */
 
   line-height: 1.8em;
 
   /* background-color: green; */
-  color:#808080;
-  color:rgb(28, 28, 28);
 
   /* default unshown */
   display: none;
@@ -32,7 +26,7 @@
 /* Audio Story Container
 /* ------------------------------------------------------------------- */
 
-#about-audio-story-container {
+#about-read-more-audio-story-container  {
 
   display: flex;
   align-items: center;
@@ -40,13 +34,16 @@
 
   /* background-color: red; */
 
+  /* very small mobile */
+  display: none;
+
 }
 
 /* ------------------------------------------------------------------- */
-/* Read More Story Content List
+/* About Read More Story Content List
 /* ------------------------------------------------------------------- */
 
-#read-more-story-content-list {
+#about-read-more-story-content-list {
 
   display: grid;
 
@@ -63,11 +60,11 @@
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 
   /* background-color: blue; */
 
 }
+
 .read-more-story-nr-container > div {
 
   /* 14.5px */
@@ -84,46 +81,28 @@
 
   font-weight: bold;
 
-  border-radius: .4em;
+  border-radius: .6em;
 
-  user-select: none;
-
-  /* background-color: rgb(201, 201, 201); */
   background-color: rgba(156, 156, 156, 0.6);
   color:rgb(72, 72, 72);
 
-}
-
-/* --------------------------------------------------------- */
-/* Nr Container 2 (only right) | Nr Container
-/* --------------------------------------------------------- */
-
-/* ⚠️ Warum 3 ? sollte doch 2 sein, der selector ist eigentlich
-      korrekt - 3 ist der 3te div eintrag  */
-
-#read-more-story-content-list > .read-more-story-nr-container:nth-of-type(3) {
-
-  /* background-color: brown; */
-  justify-content: flex-start;
+  user-select: none;
 
 }
 
 /* ------------------------------------------------------------------- */
-/* Read More Block Story | Read More Story Content List
+/* About Read More Story Card
 /* ------------------------------------------------------------------- */
 
-#read-more-story-content-list > .read-more-block-story {
+.about-read-more-story-card {
 
   padding: .8em;
 
-  border-radius: .8em;
-  /* border: 3px solid rgb(70, 118, 207); */
+  border-radius: 1em;
+
+  border: 3px solid rgb(214, 214, 214);
 
   background-color: rgba(205, 205, 205, .3);
-
-  /* border: 3px solid #616161; */
-  border: 3px solid #d6d6d6;
-
   color:#616161;
 
 }
@@ -145,12 +124,12 @@
 #img-about-viking {
 
   float: left;
-  margin: .8em .8em .4em 0em;
+  margin: .6em 1em .4em 0em;
 
   /* mobile */
   height: 6em;
 
-  border-radius: .8em .8em .8em .8em;
+  border-radius: 2em 1em 2em 1em;
 
 }
 
@@ -173,9 +152,3 @@
   height: 5.5em;
 
 }
-
-
-
-/* ------------------------------------------------------------------- */
-/* ❇️ About Read More Story Card
-/* ------------------------------------------------------------------- */

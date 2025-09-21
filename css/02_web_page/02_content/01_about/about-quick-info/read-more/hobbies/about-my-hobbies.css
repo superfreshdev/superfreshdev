@@ -16,12 +16,11 @@
 
 }
 
-
 /* ------------------------------------------------------------------- */
-/* Audio Hobbies Violine Container
+/* About Read More | Audio Violine Container
 /* ------------------------------------------------------------------- */
 
-#about-audio-hobbies-violine-container {
+#about-read-more-audio-violine-container {
 
   padding: 0 0em 1.5em 0em;
 
@@ -31,4 +30,16 @@
   color: #616161;
   font-weight: bold;
 
+  /* mobile under 380px unshown because of my layout */
+  display: none;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header | About Read More | Audio Violine Container
+/* ------------------------------------------------------------------- */
+
+#about-read-more-audio-violine-container > header {
+
+  padding-left: .8em;
 }
