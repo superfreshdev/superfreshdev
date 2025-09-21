@@ -6,6 +6,22 @@
 
 
 /* ------------------------------------------------------------------- */
+/* Nav | Header About Details
+/* ------------------------------------------------------------------- */
+
+#nav-header-about-details {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  column-gap: .8em;
+  row-gap: .8em;
+
+}
+
+/* ------------------------------------------------------------------- */
 /* Handling | Nav About More
 /* ------------------------------------------------------------------- */
 
@@ -17,46 +33,62 @@ input[name="name-radio-nav-about-details"] {
 
 /* set background  */
 #radio-about-it-skills:checked ~ #header-about-details-container label[for="radio-about-it-skills"],
-#radio-about-mindset:checked ~ header #header-about-details-container label[for="radio-about-mindset"],
-#radio-about-contact:checked ~ header #header-about-details-container label[for="radio-about-contact"] {
+#radio-about-mindset:checked ~ #header-about-details-container label[for="radio-about-mindset"],
+#radio-about-contact:checked ~ #header-about-details-container label[for="radio-about-contact"] {
 
   opacity: 1;
 
   background-color: wheat;
   color:black;
 
-}
-
-/* set more content  */
-#radio-about-it-skills:checked ~ #smooth-open-close-about-details #about-it-skills-container,
-#radio-about-mindset:checked ~ #smooth-open-close-about-details #about-mindset-container,
-#radio-about-contact:checked ~ #smooth-open-close-about-details #about-contact {
-
-  display: grid;
-  /* background-color: yellow; */
+  border: 3px solid rgba(28, 28, 28, .3);
 
 }
 
-/* unshown have a look  */
-#radio-about-it-skills:checked ~ #smooth-open-close-about-details #about-details-have-a-look-container ,
-#radio-about-mindset:checked ~ #smooth-open-close-about-details #about-details-have-a-look-container ,
-#radio-about-contact:checked ~ #smooth-open-close-about-details #about-details-have-a-look-container  {
+/* unshown 3 dots seperator img container  */
+#radio-about-it-skills:checked ~ .seperator-img-container-pt-2:nth-of-type(1),
+#radio-about-mindset:checked ~ .seperator-img-container-pt-2:nth-of-type(1),
+#radio-about-contact:checked ~ .seperator-img-container-pt-2:nth-of-type(1)  {
 
   display: none;
-  /* background-color: yellow; */
 
 }
 
-/* show close content tab x  */
-#radio-about-it-skills:checked ~ #smooth-open-close-about-details #about-details-close-tab-container,
-#radio-about-mindset:checked ~ #smooth-open-close-about-details #about-details-close-tab-container,
-#radio-about-contact:checked ~ #smooth-open-close-about-details #about-details-close-tab-container {
+/* show close tab x -> to close later content  */
+#radio-about-it-skills:checked ~ .tab-x-mini-close-content-container,
+#radio-about-mindset:checked ~ .tab-x-mini-close-content-container,
+#radio-about-contact:checked ~ .tab-x-mini-close-content-container  {
 
-  display: grid;
-  /* background-color: yellow; */
+  display: flex;
 
 }
 
+/* set background | tab x  */
+#radio-about-it-skills:checked ~ .tab-x-mini-close-content-container > div,
+#radio-about-mindset:checked ~ .tab-x-mini-close-content-container > div,
+#radio-about-contact:checked ~ .tab-x-mini-close-content-container > div  {
+
+  background-color: rgb(227, 87, 87);
+
+}
+
+/* set hover | tab x  */
+#radio-about-it-skills:checked ~ .tab-x-mini-close-content-container > div:hover,
+#radio-about-mindset:checked ~ .tab-x-mini-close-content-container > div:hover,
+#radio-about-contact:checked ~ .tab-x-mini-close-content-container > div:hover  {
+
+  background-color: rgb(234, 120, 120);
+
+}
+
+/* show close tab x -> to close later content  */
+#radio-about-it-skills:checked ~ .tab-x-mini-close-content-container,
+#radio-about-mindset:checked ~ .tab-x-mini-close-content-container,
+#radio-about-contact:checked ~ .tab-x-mini-close-content-container  {
+
+  display: flex;
+
+}
 
 /* show content */
 #radio-about-it-skills:checked ~ #smooth-open-close-about-details-container #about-details-it-skills-container,
