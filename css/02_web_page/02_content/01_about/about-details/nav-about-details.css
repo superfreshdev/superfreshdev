@@ -27,25 +27,6 @@ input[name="name-radio-nav-about-details"] {
 
 }
 
-/* unshown grey img */
-#radio-about-it-skills:checked ~ #header-about-details-container label[for="radio-about-it-skills"] > div:nth-of-type(1) > img:nth-of-type(1),
-#radio-about-mindset:checked ~ #header-about-details-container label[for="radio-about-mindset"] > div:nth-of-type(1) > img:nth-of-type(1),
-#radio-about-contact:checked ~ #header-about-details-container label[for="radio-about-contact"] > div:nth-of-type(1) > img:nth-of-type(1) {
-
-  display: none;
-
-}
-
-/* shown black img */
-#radio-about-it-skills:checked ~ #header-about-details-container label[for="radio-about-it-skills"] > div:nth-of-type(1) > img:nth-of-type(2),
-#radio-about-mindset:checked ~ #header-about-details-container label[for="radio-about-mindset"] > div:nth-of-type(1) > img:nth-of-type(2),
-#radio-about-contact:checked ~ #header-about-details-container label[for="radio-about-contact"] > div:nth-of-type(1) > img:nth-of-type(2) {
-
-  display: flex;
-
-}
-
-
 /* set more content  */
 #radio-about-it-skills:checked ~ #smooth-open-close-about-details #about-it-skills-container,
 #radio-about-mindset:checked ~ #smooth-open-close-about-details #about-mindset-container,

@@ -51,6 +51,12 @@
 
 }
 
+/* set lighter red background by checked  */
+#chk-about-read-more:checked ~ label[for="chk-about-read-more"]:hover {
+
+ background-color: rgb(234, 120, 120);
+
+}
 
 /* show smooth read more container */
 #chk-about-read-more:checked ~ #smooth-open-close-read-more-container {
@@ -70,35 +76,20 @@ input[name="name-radio-read-more"] {
 }
 
 /* set light brown background */
-#radio-read-more-my-mission:checked ~ #nav-read-more-container > label[for="radio-read-more-my-mission"],
-#radio-read-more-my-hobbies:checked ~ #nav-read-more-container > label[for="radio-read-more-my-hobbies"],
-#radio-read-more-story:checked ~ #nav-read-more-container > label[for="radio-read-more-story"] {
+#radio-read-more-my-mission:checked ~ #nav-about-read-more > label[for="radio-read-more-my-mission"],
+#radio-read-more-my-hobbies:checked ~ #nav-about-read-more > label[for="radio-read-more-my-hobbies"],
+#radio-read-more-story:checked ~ #nav-about-read-more > label[for="radio-read-more-story"] {
 
   background-color: wheat;
   color:black;
+
+  border: 3px solid black;
+
   opacity: 1;
 
 }
 
-/* unshown grey img */
-#radio-read-more-my-mission:checked ~ #nav-read-more-container > label[for="radio-read-more-my-mission"] > div:nth-of-type(1) > img:nth-of-type(1),
-#radio-read-more-my-hobbies:checked ~ #nav-read-more-container > label[for="radio-read-more-my-hobbies"] > div:nth-of-type(1) > img:nth-of-type(1),
-#radio-read-more-story:checked ~ #nav-read-more-container > label[for="radio-read-more-story"] > div:nth-of-type(1) > img:nth-of-type(1) {
-
- display: none;
-
-}
-
-/* show black img */
-#radio-read-more-my-mission:checked ~ #nav-read-more-container > label[for="radio-read-more-my-mission"] > div:nth-of-type(1) > img:nth-of-type(2),
-#radio-read-more-my-hobbies:checked ~ #nav-read-more-container > label[for="radio-read-more-my-hobbies"] > div:nth-of-type(1) > img:nth-of-type(2),
-#radio-read-more-story:checked ~ #nav-read-more-container > label[for="radio-read-more-story"] > div:nth-of-type(1) > img:nth-of-type(2) {
-
- display: flex;
-
-}
-
-/* show smooth read more content */
+/* show smooth read more | content container */
 #radio-read-more-my-mission:checked ~ #smooth-open-close-read-more-content-container,
 #radio-read-more-my-hobbies:checked ~ #smooth-open-close-read-more-content-container,
 #radio-read-more-story:checked ~ #smooth-open-close-read-more-content-container {
@@ -112,7 +103,7 @@ input[name="name-radio-read-more"] {
 #radio-read-more-my-hobbies:checked ~ #smooth-open-close-read-more-content-container #read-more-my-hobbies-container,
 #radio-read-more-story:checked ~ #smooth-open-close-read-more-content-container #read-more-story-container {
 
-  width: 100%;
+  /* width: 100%; */
   display: grid;
 
 }

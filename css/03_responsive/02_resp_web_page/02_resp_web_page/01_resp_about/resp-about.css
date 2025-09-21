@@ -16,7 +16,7 @@
   /* Read More | Labels of Nav Read More Container ( mission, hobbies, story )
   /* ---------------------------------------------------------------------------------------------- */
 
-  #nav-read-more-container > label {
+  #nav-about-read-more > label {
 
     /* desktop */
     width: auto;
@@ -316,17 +316,16 @@
   }
 
   /* ---------------------------------------------------------------------------------------------- */
-  /* Read More | Nav Read More Container
+  /* Read More | Nav About Read More
   /* ---------------------------------------------------------------------------------------------- */
 
-  #nav-read-more-container  {
+  #nav-about-read-more  {
 
     /* desktop */
-    margin: 1.5em 0 0em 0;
+    /* margin: 1.5em 0 0em 0; */
     justify-content: flex-end;
 
   }
-
 
   /* ------------------------------------------------ */
   /* Quick Info | Why Superfreshdev  */

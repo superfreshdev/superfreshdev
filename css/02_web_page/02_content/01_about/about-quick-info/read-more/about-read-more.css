@@ -14,7 +14,7 @@ label[for="chk-about-read-more"] {
   grid-area: read_more_label;
 
   /* because of text, read more and close read */
-  width: 7.8em;
+  width: 8em;
 
 }
 
@@ -27,7 +27,6 @@ label[for="chk-about-read-more"] > div:nth-of-type(1) > div:nth-of-type(2) {
   display: none;
 
 }
-
 
 /* ------------------------------------------------------------------- */
 /* ⬇️⬆️ Smooth Open Close | Read More Container
@@ -48,12 +47,12 @@ label[for="chk-about-read-more"] > div:nth-of-type(1) > div:nth-of-type(2) {
 }
 
 /* ------------------------------------------------------------------- */
-/* Nav Read More Container
+/* Nav About Read More
 /* ------------------------------------------------------------------- */
 
-#nav-read-more-container {
+#nav-about-read-more {
 
-  margin: 3.5em 0 2em 0;
+  margin: 1.5em 0 0em 0;
 
   /* mobile */
   display: flex;
@@ -68,10 +67,10 @@ label[for="chk-about-read-more"] > div:nth-of-type(1) > div:nth-of-type(2) {
 }
 
 /* ------------------------------------------------------------------- */
-/* Laebel | Nav Read More Container
+/* Laebel | Nav About Read More
 /* ------------------------------------------------------------------- */
 
-#nav-read-more-container > label {
+#nav-about-read-more > label {
 
   /* mobile */
   width: 100%;
@@ -82,7 +81,7 @@ label[for="chk-about-read-more"] > div:nth-of-type(1) > div:nth-of-type(2) {
 /* Label Img 2 (unshown = black img )
 /* ------------------------------------------------------------------- */
 
-#nav-read-more-container > label > div:nth-of-type(1) > img:nth-of-type(2) {
+#nav-about-read-more > label > div:nth-of-type(1) > img:nth-of-type(2) {
 
  display: none;
 
@@ -115,5 +114,56 @@ label[for="chk-about-read-more"] > div:nth-of-type(1) > div:nth-of-type(2) {
   display: grid;
   justify-items: center;
   /* row-gap: 1em; */
+
+}
+
+
+/* 🟣🟣🟣 Auslagern */
+
+/* ------------------------------------------------------------------- */
+/* Tab X Mini Close Content Container
+/* ------------------------------------------------------------------- */
+.tab-x-mini-close-content-container {
+
+  width: 100%;
+
+  margin: 1.5em 0 0em 0;
+  padding: 0em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: rgb(132, 132, 253);
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Tab X Mini Element | Tab X Mini Close Content Container
+/* ------------------------------------------------------------------- */
+
+.tab-x-mini-element {
+
+  height: 2.8em;
+  width: 2.8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .6em;
+
+  background-color: rgb(222, 222, 222);
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.tab-x-mini-element:hover {
+
+  /* background-color: rgb(227, 87, 87); */
+  background-color: rgb(234, 120, 120);
 
 }
