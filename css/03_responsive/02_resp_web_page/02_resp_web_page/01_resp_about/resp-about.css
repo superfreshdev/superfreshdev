@@ -158,6 +158,27 @@
   }
 
 
+  /* --------------------------------------------------------- */
+  /* About Details | Contact Info Box -> Main
+  /* --------------------------------------------------------- */
+
+  #about-details-contact-info-box > main {
+
+    justify-items: flex-start;
+
+  }
+
+  /* ------------------------------------------- */
+  /* About Details | Img | Clipart Coffee
+  /* ------------------------------------------- */
+
+  #img-clipart-coffee {
+
+    /* bring img to the left side */
+    order:0;
+
+  }
+
 
 }
 
