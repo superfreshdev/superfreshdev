@@ -37,9 +37,11 @@
   row-gap: 1.5em;
   column-gap: 1.3em;
 
-  border-radius: 1em;
+  border-radius: 2em 3em 3em 4em;
 
   background-color: rgb(184, 184, 184);
+
+  background-color: rgba(165, 165, 165, .6);
 
 }
 
