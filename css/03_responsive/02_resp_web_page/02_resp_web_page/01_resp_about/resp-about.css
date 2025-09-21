@@ -84,15 +84,7 @@
 
   }
 
-  /* --------------------------------------------------------- */
-  /* About Details | About Mindset Video Box
-  /* --------------------------------------------------------- */
 
-  .about-mindset-video-box  {
-
-    width: 22em;
-
-  }
 
 }
 
@@ -145,9 +137,23 @@
 
   }
 
+  /* --------------------------------------------------------- */
+  /* Read More | Img About Read More topics
+  /* --------------------------------------------------------- */
+
   .img-about-read-more-topics {
 
     display: flex;
+
+  }
+
+  /* --------------------------------------------------------- */
+  /* About Details | About Mindset Video Box
+  /* --------------------------------------------------------- */
+
+  .about-mindset-video-box  {
+
+    width: 20em;
 
   }
 
@@ -187,6 +193,16 @@
 
 @media ( min-width: 650px ) {
 
+  /* ----------------------------------------------------------- */
+  /* About Details | About Mindset Video Container
+  /* ----------------------------------------------------------- */
+
+  #about-mindset-video-container-list {
+
+    grid: auto / 1fr 1fr;
+    column-gap: 2em;
+
+  }
 
   /* ----------------------------------------------------------- */
   /* About Details | About Mindet Video Box
@@ -198,16 +214,6 @@
 
   }
 
-  /* ----------------------------------------------------------- */
-  /* About Details | About Mindset Video Container
-  /* ----------------------------------------------------------- */
-
-  #about-mindset-video-container {
-
-    grid: auto / 1fr 1fr;
-    column-gap: 2em;
-
-  }
 
 }
 

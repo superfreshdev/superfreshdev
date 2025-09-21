@@ -20,6 +20,11 @@
     transform: rotate(90deg);
 }
 
+.rot-minus-90 {
+    transform: rotate(-90deg);
+}
+
+
 .rot-135 {
     transform: rotate(135deg);
 }
