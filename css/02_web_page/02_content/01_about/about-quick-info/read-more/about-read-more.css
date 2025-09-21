@@ -39,7 +39,7 @@ label[for="chk-about-read-more"] > div:nth-of-type(1) > div:nth-of-type(2) {
   width: 100%;
 
   display: grid;
-  grid-template-rows: 0fr;
+  grid-template-rows: 1fr;
   transition: grid-template-rows 0.3s ease-out;
 
   /* background-color: red; */

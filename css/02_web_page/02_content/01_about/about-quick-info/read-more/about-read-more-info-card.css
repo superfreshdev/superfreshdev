@@ -1,20 +1,19 @@
 /* ------------------------------------------------------------------- */
-/* > about-content-info-boxes.css
+/* > about-read-more-info-card.css
 /*
-/* : styles my about content info boxes which we only use
-     in about read more
+/* : styles my about read more info card with header & ul style arts
 /* ------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------------- */
-/* About Content Info Boxes
+/* About Read More Info Card
 /* ------------------------------------------------------------------- */
 
-.about-content-info-boxes {
+.about-read-more-info-card {
 
   width: 100%;
 
-  border-radius: .8em;
+  border-radius: 2em 1em 6em 1em;
 
   /* border: 3px solid #ababab; */
   border: 3px solid rgb(28, 28, 28);
@@ -23,26 +22,21 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Header | About Content Info Boxes
+/* Header | About Read More Info Card
 /* ------------------------------------------------------------------- */
 
-.about-content-info-boxes > header {
+.about-read-more-info-card > header {
 
   height: 4.5em;
 
   display: flex;
   align-items: center;
 
-  border-radius: .6em .6em 0 0;
+  border-radius: 1.8em 0em 0em 0em;
 
   background-color: rgba(205, 205, 205, .3);
 
   border-bottom: 3px solid rgb(214, 214, 214);
-
-  /* border: 3px solid rgb(214, 214, 214); */
-
-
-
 
 }
 
@@ -50,7 +44,7 @@
 /* Img | Header
 /* ------------------------------------------------------------------- */
 
-.img-about-content-info-box {
+.img-about-read-more-topics {
 
   height: calc(4.5em + 2px);
   width: 4.5em;
@@ -59,8 +53,7 @@
   left: -3px;
   /* top:-3px; */
 
-
-  border-radius: .6em 0 0 0em;
+  border-radius: 1.8em 0 0 0em;
 
   /* mobile */
   display: none;
@@ -68,10 +61,10 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* About Content Info Box Title | Header
+/* About Read More Info Card Title Box | Header
 /* ------------------------------------------------------------------- */
 
-.about-content-info-box-title {
+.about-read-more-info-card-title-box {
 
   padding: 0em 1em;
 
@@ -82,10 +75,10 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Nr (Div 1) | About Content Info Box Title
+/* Nr (Div 1) | About Read More Info Card Title Box
 /* ------------------------------------------------------------------- */
 
-.about-content-info-box-title > div:nth-of-type(1) {
+.about-read-more-info-card-title-box > div:nth-of-type(1) {
 
   height: 1.3em;
   width: 2.3em;
@@ -107,60 +100,52 @@
 
 }
 
-.about-content-info-box-title > div:nth-of-type(1) > div:nth-of-type(1) {
+.about-read-more-info-card-title-box > div:nth-of-type(1) > div:nth-of-type(1) {
 
   /* 14.5px */
   font-size: .90625em;
 }
 
 /* ------------------------------------------------------------------- */
-/* Title (Div 2) | About Content Info Box Title
+/* Title (Div 2) | About Read More Info Card Title Box
 /* ------------------------------------------------------------------- */
 
-.about-content-info-box-title > div:nth-of-type(2) {
+.about-read-more-info-card-title-box > div:nth-of-type(2) {
 
   font-weight: bold;
 
 }
 
 /* ------------------------------------------------------------------- */
-/* ul | About Content Info Boxes
+/* Ul (1/2 Arts) - default | About Read More Info Card
 /* ------------------------------------------------------------------- */
 
-.about-content-info-boxes > ul {
+.about-read-more-info-card > ul {
 
   /* change default ul style */
   margin: 0;
-
-  padding-left: 1.5em;
-  padding-right: 1em;
-
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 1em 2em 1.5em;
 
   display: grid;
   row-gap: 1.5em;
 
   color:#616161;
 
-
+  border-radius: 0em 0em 3em 0em;
 
 }
 
 /* ------------------------------------------------------------------- */
-/* ul about-ul-block | About Content Info Boxes
+/* Ul (1/2 Arts) - ul sub blocks | About Read More Info Card
 /* ------------------------------------------------------------------- */
 
-.about-content-info-boxes > .about-ul-block {
+.about-content-info-boxes > .about-ul-sub-blocks {
 
+  /* change default ul style */
   margin: 0;
+  padding: 2em 1em 2em 1.5em;
 
-  padding-left: 1.5em;
-  padding-right: 1em;
-
-  padding-top: 2em;
-  padding-bottom: 2em;
-
+  /* in sub ul we dont like extra dots*/
   list-style-type: none;
 
   display: grid;
@@ -171,14 +156,15 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* about-ul-block > li > ul | About Content Info Boxes
+/* About Ul Sub Blocks > li > ul
 /* ------------------------------------------------------------------- */
 
-.about-content-info-boxes > .about-ul-block > li > ul {
+.about-content-info-boxes > .about-ul-sub-blocks > li > ul {
 
   margin: 0;
   padding: 0;
 
+  /* define in sub ul disc like on the first ul li layer */
   list-style-type: disc;
 
   display: grid;
