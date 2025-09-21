@@ -14,7 +14,7 @@
   width: 100%;
 
   display: grid;
-  /* row-gap: 1.5em; */
+  row-gap: 3em;
 
   /* default unshown */
   display: none;
