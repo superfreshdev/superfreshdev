@@ -1,0 +1,91 @@
+/* -------------------------------------------------------------- */
+/* > very-small-padding.css
+/*
+/* : styles extra very small handle padding wrapper container
+/* -------------------------------------------------------------- */
+
+
+/* --------------------------------------------- */
+/* Left & Right | Padding                        */
+/* --------------------------------------------- */
+
+.resp-very-small-padding-0-08,
+.resp-very-small-padding-0-1,
+.resp-very-small-padding-0-1_3 {
+
+  width: 100%;
+
+}
+
+.resp-very-small-padding-0-08 {
+
+  padding: 0 .8em;
+  /* background-color: magenta; */
+
+}
+
+.resp-very-small-padding-0-1 {
+
+  padding: 0 1em;
+
+}
+
+.resp-very-small-padding-0-1_3 {
+
+  padding: 0 1.3em;
+
+}
+
+/* --------------------------------------------- */
+/* 2 Same | Top-Bottom & Left-Right
+/* --------------------------------------------- */
+
+.resp-very-small-padding-1-08,
+.resp-very-small-padding-1_3-08,
+.resp-very-small-padding-1_5-08,
+.resp-very-small-padding-2-08,
+.resp-very-small-padding-2-1_3,
+.resp-very-small-padding-2-1_5 {
+
+  width: 100%;
+
+}
+
+.resp-very-small-padding-1-08 {
+
+  padding: 1em .8em;
+
+}
+
+.resp-very-small-padding-1_3-08 {
+
+  padding: 1.3em .8em;
+
+}
+
+.resp-very-small-padding-1_5-08 {
+
+  padding: 1.5em .8em;
+
+}
+
+.resp-very-small-padding-2-08 {
+
+  padding: 2em .8em;
+
+  /* background-color: rgb(0, 238, 255); */
+
+}
+
+
+.resp-very-small-padding-2-1_3 {
+
+  padding: 2em 1.3em;
+
+}
+
+.resp-very-small-padding-2-1_5 {
+
+   padding: 2em 1.5em;
+
+}

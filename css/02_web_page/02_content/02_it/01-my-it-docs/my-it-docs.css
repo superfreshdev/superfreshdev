@@ -12,6 +12,11 @@
 #my-it-docs-container {
 
   width: 100%;
+  z-index: 2;
+
+  padding: 2em 0;
+
+  font-weight: bold;
 
   display: grid;
   justify-items: center;
@@ -19,5 +24,8 @@
   grid: auto auto 1fr / 1fr;
 
   background-color: rgb(156, 156, 156);
+
+  /* default unshown */
+  display: none;
 
 }

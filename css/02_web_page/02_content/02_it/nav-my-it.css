@@ -11,6 +11,9 @@
 
 #nav-my-it {
 
+  width: 100%;
+  margin-bottom: 1.5em;
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -21,95 +24,6 @@
 
 }
 
-/* 🟣🟣  */
-/* ------------------------------------------------------------- */
-/* Switch Activ Inactive Container
-/* ------------------------------------------------------------- */
-
-.switch-active-inactive-container {
-
-  z-index: 1;
-
-  position: relative;
-  top:0;
-
-  display: flex;
-  align-items: center;
-
-  border-radius: 1.5em 1.5em 1.5em 1.5em;
-
-  background-color: rgb(204, 204, 204);
-
-  cursor: pointer;
-  transition: all .4s;
-
-}
-
-.switch-active-inactive-container:hover {
-
-  background-color: rgb(95, 95, 95);
-
-}
-
-/* ------------------------------------------------------------- */
-/* Label | Switch Activ Inactive Container
-/* ------------------------------------------------------------- */
-
-.switch-active-inactive-container > label {
-
-  height: 2.5em;
-  padding: 0 .8em;
-
-  display: flex;
-  align-items: center;
-  column-gap: .6em;
-
-  font-weight: bold;
-
-  user-select: none;
-
-  cursor: pointer;
-  transition: all .4s;
-
-}
-
-.switch-active-inactive-container > label > div {
-
-  /* 14.5px | 14.5 / 16px= 0.90625 */
-  font-size: .90625em;
-}
-
-.switch-active-inactive-container > label:hover {
-
-  /* background-color: wheat; */
-
-}
-
-/* ------------------------------------------------------------- */
-/* Label 1 | Switch Activ Inactive Container
-/* ------------------------------------------------------------- */
-
-.switch-active-inactive-container > label:nth-of-type(1) {
-
-
-  border-radius: 1.5em 1.5em 1.5em 1.5em;
-
-  /* border-right: 2px solid rgb(108, 108, 108); */
-  /* background-color: rgb(204, 204, 204); */
-
-}
-
-/* ------------------------------------------------------------- */
-/* Label 2 | Switch Activ Inactive Container
-/* ------------------------------------------------------------- */
-
-.switch-active-inactive-container > label:nth-of-type(2) {
-
-  border-radius: 1.5em 1.5em 1.5em 1.5em;
-
-  /* opacity: .6; */
-
-}
 
 /* ------------------------------------------------------------- */
 /* Handling
@@ -122,8 +36,8 @@ input[name="name-radio-nav-my-it"] {
 }
 
 /* set label background */
-#radio-nav-my-it-projects:checked ~ label[for="radio-nav-my-it-projects"],
-#radio-nav-my-it-docs:checked ~ label[for="radio-nav-my-it-docs"]{
+#radio-nav-my-it-projects:checked ~ #css-nav-my-it label[for="radio-nav-my-it-projects"],
+#radio-nav-my-it-docs:checked ~ #css-nav-my-it label[for="radio-nav-my-it-docs"]{
 
   z-index: 3;
   background-color: wheat;
@@ -131,22 +45,10 @@ input[name="name-radio-nav-my-it"] {
 }
 
 
-/* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------- */
-
-/* show x by radio */
-#radio-my-it-projects:checked ~ #css-my-it-nav-area label[for="radio-my-it-projects"] > .custom-radio-default > img,
-#radio-my-it-docs:checked ~ #css-my-it-nav-area label[for="radio-my-it-docs"] > .custom-radio-default > img {
-
-  display: flex;
-
-}
-
 /* show content */
-#radio-my-it-projects:checked ~ #css-my-it-projects-area,
-#radio-my-it-docs:checked ~ #css-my-it-docs-area {
+#radio-nav-my-it-projects:checked ~ #my-it-projects-container,
+#radio-nav-my-it-docs:checked ~ #my-it-docs-container {
 
-  display: grid;
+  display: block;
 
 }

@@ -15,7 +15,9 @@
 .resp-main-content-area,
 .resp-max-content-area {
 
+    z-index: 2;
     width: 100%;
+
 }
 
 /* -------------------------------------------------------------------- */
@@ -30,15 +32,18 @@
 .resp-min-content-area {
 
     /* background-color: orange; */
+
 }
 
 .resp-main-content-area {
 
     /* background-color: yellow; */
+
     /* background-color: aquamarine; */
 }
 
 .resp-max-content-area  {
 
     /* background-color: rgb(210, 5, 5); */
+
 }

@@ -1,0 +1,67 @@
+/* -------------------------------------------------------------- */
+/* > resp-very-small-padding.css
+/*
+/* : styles resp very small paddings
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* >= 750px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 750px ) {
+
+
+  /* --------------------------------------------- */
+  /* Left & Right | Padding                        */
+  /* --------------------------------------------- */
+
+  .resp-very-small-padding-0-08,
+  .resp-very-small-padding-0-1,
+  .resp-very-small-padding-0-1_3 {
+
+    padding: 0 0;
+
+  }
+
+/* --------------------------------------------- */
+/* 2 Same | Top-Bottom & Left-Right
+/* --------------------------------------------- */
+
+  .resp-very-small-padding-1-08 {
+
+    padding: 1em 0;
+
+  }
+
+  .resp-very-small-padding-1_3-08 {
+
+    padding: 1.3em 0;
+
+  }
+
+  .resp-very-small-padding-1_5-08 {
+
+    padding: 1.5em 0;
+
+  }
+
+  .resp-very-small-padding-2-08 {
+
+    padding: 2em 0;
+
+  }
+
+  .resp-very-small-padding-2-1_3 {
+
+    padding: 2em 0;
+
+  }
+
+  .resp-very-small-padding-2-1_5 {
+
+    padding: 2em 0;
+
+  }
+
+}

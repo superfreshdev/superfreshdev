@@ -1,0 +1,97 @@
+/* -------------------------------------------------------------- */
+/* > switch-active-inactive.css
+
+/* : default styles for switch active inactive
+
+/* -------------------------------------------------------------- */
+
+/* ⚠️ chatGbt Solution  */
+
+/* ------------------------------------------------------------- */
+/* Switch Activ Inactive Container
+/* ------------------------------------------------------------- */
+
+.switch-active-inactive-container {
+
+  z-index: 1;
+
+  position: relative;
+  top:0;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+
+  background-color: rgb(204, 204, 204);
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.switch-active-inactive-container:hover {
+
+  background-color: rgb(95, 95, 95);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Label | Switch Activ Inactive Container
+/* ------------------------------------------------------------- */
+
+.switch-active-inactive-container > label {
+
+  height: 2.5em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  user-select: none;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.switch-active-inactive-container > label > div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+}
+
+.switch-active-inactive-container > label:hover {
+
+  /* background-color: wheat; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Label 1 | Switch Activ Inactive Container
+/* ------------------------------------------------------------- */
+
+.switch-active-inactive-container > label:nth-of-type(1) {
+
+
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+
+  /* border-right: 2px solid rgb(108, 108, 108); */
+  /* background-color: rgb(204, 204, 204); */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Label 2 | Switch Activ Inactive Container
+/* ------------------------------------------------------------- */
+
+.switch-active-inactive-container > label:nth-of-type(2) {
+
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+
+  /* opacity: .6; */
+
+}

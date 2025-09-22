@@ -5,67 +5,31 @@
 /* -------------------------------------------------------------- */
 
 
-/* ⚠️ my-it-top-projects.css | my-it-more-projects.css */
-
-
 /* ------------------------------------------------------------- */
-/* My It Top Projects Container
+/* My It Projects Container
 /* ------------------------------------------------------------- */
 
-#my-it-top-projects-container {
+#my-it-projects-container {
 
-  /* width: 100%;
-  padding: 1.5em .8em;
+  width: 100%;
 
-  background-color: rgb(112, 112, 139); */
+  /* default unshown */
+  display: none;
 
 }
 
-
 /* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------- */
-
-
-
-
-/* 🟣🟣🟣  */
-/* ------------------------------------------------------------- */
-/* Imgs (Emojie) | Header Title Box | My It
+/* My It Projects Content Container
 /* ------------------------------------------------------------- */
 
-/* rocket */
-#img-header-top-it-projects {
+#my-it-projects-content-container {
 
-  height: 2.2em;
+  display: grid;
+  row-gap: 1.5em;
 
 }
 
-/* folder */
-#img-header-more-it-projects {
-
-  height: 2em;
-
-}
-
-
-/* books */
-#img-header-it-docs {
-
-   height: 2em;
-
-}
-
-
+/*  ⚠️ to do */
 /* ------------------------------------------------------------- */
-/* Label | Header Container My IT
+/* Header | My IT Projects Container
 /* ------------------------------------------------------------- */
-
-label[for="chk-top-it-projects"],
-label[for="chk-more-it-projects"] {
-
-  /* parent grid | mobile */
-  justify-self: flex-end;
-
-
-}

@@ -1,0 +1,136 @@
+/* -------------------------------------------------------------- */
+/* > it-more-project-card.css
+/*
+/* : styles my it more projects
+/* -------------------------------------------------------------- */
+
+
+/* 🟣 Auslagern  */
+/* ------------------------------------------------------------- */
+/* It More Project Card
+/* ------------------------------------------------------------- */
+
+.it-more-project-card {
+
+  padding: .8em;
+
+  /* mobile */
+  width: 100%;
+
+  display: grid;
+  row-gap: .8em;
+
+  border-radius: .8em;
+
+  border: 1px solid black;
+
+  transition: all .4s;
+
+}
+
+.it-more-project-card:hover {
+
+  background-color: rgb(246, 246, 246);
+}
+
+/* ------------------------------------------------------------- */
+/* Header | It More Project Card
+/* ------------------------------------------------------------- */
+
+.it-more-project-card > header {
+
+  display: grid;
+  row-gap: .3em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Mini Icon Header | Header
+/* ------------------------------------------------------------- */
+
+.it-more-project-card-mini-icon-header {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap:.4em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Title Header | Header
+/* ------------------------------------------------------------- */
+
+.it-more-project-card-mini-title-header {
+
+  font-weight: bold;
+  font-size: 14.5px;
+  color:rgb(126, 126, 126);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Footer | It More Project Card
+/* ------------------------------------------------------------- */
+
+.it-more-project-card > footer {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: .6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Link | Zip / Github
+/* ------------------------------------------------------------- */
+
+/* 🟣 */
+
+.link-button {
+
+  /* delete default link style */
+  text-decoration: none;
+
+  height: 1.8em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+  font-weight: bold;
+
+  border-radius: .6em;
+
+  background-color: rgb(234, 234, 234);
+
+  transition: all .4s;
+
+}
+
+.link-button:visited {
+
+  color:black;
+
+}
+
+.link-button > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+
+}
+
+.link-button:hover {
+
+  background-color: wheat;
+}
+
+.link-button > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
