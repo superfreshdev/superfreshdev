@@ -6,82 +6,109 @@
 
 
 /* ------------------------------------------------------------- */
-/* Nav My It | My IT Container
+/* Nav My It
 /* ------------------------------------------------------------- */
 
 #nav-my-it {
 
-  /* width: 100%; */
-  /* padding: 1.5em .8em 1.5em .8em;
-
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   justify-content: flex-end;
 
-  column-gap: 1em;
-  row-gap: 1em;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
 
-  background-color: rgb(255, 255, 255);
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(208, 82, 82);
 
-  border-bottom: 1px solid rgb(53, 53, 53); */
+}
+
+/* 🟣🟣  */
+/* ------------------------------------------------------------- */
+/* Switch Activ Inactive Container
+/* ------------------------------------------------------------- */
+
+.switch-active-inactive-container {
+
+  z-index: 1;
+
+  position: relative;
+  top:0;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+
+  background-color: rgb(204, 204, 204);
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.switch-active-inactive-container:hover {
+
+  background-color: rgb(95, 95, 95);
 
 }
 
 /* ------------------------------------------------------------- */
-/* Label | Nav My It
+/* Label | Switch Activ Inactive Container
 /* ------------------------------------------------------------- */
 
-.lbl-nav-my-it {
+.switch-active-inactive-container > label {
 
-    height: 2.3em;
-    padding: 0 .8em;
+  height: 2.5em;
+  padding: 0 .8em;
 
-    /* mobile */
-    width: auto;
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: .8em;
+  font-weight: bold;
 
-    border-radius: .6em;
+  user-select: none;
 
-    font-weight: bold;
-
-    background-color: rgb(185, 185, 185);
-
-    user-select: none;
-
-    cursor: pointer;
-    transition: all .4s;
+  cursor: pointer;
+  transition: all .4s;
 
 }
 
-.lbl-nav-my-it:hover {
+.switch-active-inactive-container > label > div {
 
-    background-color: wheat;
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
 }
 
-.lbl-nav-my-it > div:nth-of-type(1) {
+.switch-active-inactive-container > label:hover {
 
-    display: flex;
-    align-items: center;
-    column-gap: .6em;
+  /* background-color: wheat; */
 
 }
 
-.lbl-nav-my-it > div:nth-of-type(1) > img:nth-of-type(1) {
+/* ------------------------------------------------------------- */
+/* Label 1 | Switch Activ Inactive Container
+/* ------------------------------------------------------------- */
 
-    /* very small mobile */
-    display: none;
+.switch-active-inactive-container > label:nth-of-type(1) {
+
+
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+
+  /* border-right: 2px solid rgb(108, 108, 108); */
+  /* background-color: rgb(204, 204, 204); */
+
 }
 
-.lbl-nav-my-it > div:nth-of-type(1) > div:nth-of-type(1) {
+/* ------------------------------------------------------------- */
+/* Label 2 | Switch Activ Inactive Container
+/* ------------------------------------------------------------- */
 
-  font-size: 14.5px;
+.switch-active-inactive-container > label:nth-of-type(2) {
+
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+
+  /* opacity: .6; */
+
 }
 
 /* ------------------------------------------------------------- */
@@ -89,18 +116,24 @@
 /* ------------------------------------------------------------- */
 
 /* default unshown */
-input[name="name-radio-my-it"] {
+input[name="name-radio-nav-my-it"] {
 
   display: none;
 }
 
 /* set label background */
-#radio-my-it-projects:checked ~ #css-my-it-nav-area label[for="radio-my-it-projects"],
-#radio-my-it-docs:checked ~ #css-my-it-nav-area label[for="radio-my-it-docs"]{
+#radio-nav-my-it-projects:checked ~ label[for="radio-nav-my-it-projects"],
+#radio-nav-my-it-docs:checked ~ label[for="radio-nav-my-it-docs"]{
 
+  z-index: 3;
   background-color: wheat;
 
 }
+
+
+/* ------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------- */
 
 /* show x by radio */
 #radio-my-it-projects:checked ~ #css-my-it-nav-area label[for="radio-my-it-projects"] > .custom-radio-default > img,

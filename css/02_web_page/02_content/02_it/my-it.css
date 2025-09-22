@@ -5,72 +5,21 @@
 /* -------------------------------------------------------------- */
 
 
+/* -------------------------------------------------------------- */
+/* My IT Page Container
+/* -------------------------------------------------------------- */
+
 #my-it-page-container {
 
   /* padding: 0 .8em; */
 
   display: grid;
-  row-gap: 2em;
+  row-gap: 1.5em;
 
   /* background-color: brown; */
 
 }
 
-#nav-my-it {
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  column-gap: .8em;
-
-}
-
-
-
-.my-it-project-container {
-
-  width: 100%;
-  padding: .8em .8em .8em .8em;
-
-  display: grid;
-  /* row-gap: 2em; */
-
-  border-radius: 1em;
-
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  background-color: rgba(255, 255, 255, .8);
-
-}
-
-
-
-/* ------------------------------------------------------------- */
-/* My IT Container
-/* ------------------------------------------------------------- */
-
-#my-it-container {
-
-    width: 100%;
-    display: grid;
-    justify-items: center;
-
-    grid: auto 1fr / 1fr;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Areas | It Projects, It Docs to open/close content
-/* ------------------------------------------------------------- */
-
-/* 🟣 open-close-my-it-projects-content | ...  */
-
-#css-my-it-projects-area,
-#css-my-it-docs-area {
-
-  /* default unshown, show only by checked radio */
-  display: none;
-
-}
 
 /* ------------------------------------------- */
 /* Img Background | My IT Page Container
@@ -123,24 +72,5 @@
 
 
   background-image: url("../../../../media/img/content/building_windows_light_718903_3840x2400.jpg");
-
-}
-
-#test-slide-2 {
-
-  z-index: 3;
-
-  width: 40%;
-  height: 100%;
-
-  padding: 2em;
-  background-color: rgb(232, 190, 52);
-
-}
-
-.big-content {
-
-  display: grid;
-  row-gap: 2em;
 
 }

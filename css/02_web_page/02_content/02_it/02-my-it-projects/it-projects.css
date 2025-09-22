@@ -5,34 +5,8 @@
 /* -------------------------------------------------------------- */
 
 
-/* ------------------------------------------------------------- */
-/* My IT Projects Container
-/* ------------------------------------------------------------- */
+/* ⚠️ my-it-top-projects.css | my-it-more-projects.css */
 
-#my-it-projects-container {
-
-  width: 100%;
-
-  display: grid;
-  grid: auto 1fr / 1fr;
-
-  /* background-color: red; */
-
-}
-
-/* ------------------------------------------------------------- */
-/* My It Projects Content Box
-/* ------------------------------------------------------------- */
-
-.my-it-projects-content-box {
-
-  width: 100%;
-
-  display: grid;
-  grid: auto 1fr / 1fr;
-  justify-items: center;
-
-}
 
 /* ------------------------------------------------------------- */
 /* My It Top Projects Container
@@ -40,12 +14,19 @@
 
 #my-it-top-projects-container {
 
-  width: 100%;
+  /* width: 100%;
   padding: 1.5em .8em;
 
-  background-color: rgb(112, 112, 139);
+  background-color: rgb(112, 112, 139); */
 
 }
+
+
+/* ------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------- */
+
+
 
 
 /* 🟣🟣🟣  */
