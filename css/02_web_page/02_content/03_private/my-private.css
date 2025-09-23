@@ -6,18 +6,50 @@
 
 
 /* ------------------------------------------------------------- */
-/* My Private Container
+/* My Private Page Container
 /* ------------------------------------------------------------- */
 
-#my-private-container {
+#my-private-page-container {
 
   width: 100%;
   display: grid;
-  justify-items: center;
-
-  grid: 1fr / 1fr;
 
 }
+
+/* 🟣 Auslagern */
+/* ------------------------------------------------------------- */
+/* My Private Sport Container
+/* ------------------------------------------------------------- */
+
+#my-private-sport-container {
+
+  width: 100%;
+  z-index: 2;
+
+  display: grid;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* My Private Sport Content Container
+/* ------------------------------------------------------------- */
+
+#my-private-sport-content-container {
+
+  display: grid;
+
+}
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------------- */
 /* Img Background | My Private Page Container

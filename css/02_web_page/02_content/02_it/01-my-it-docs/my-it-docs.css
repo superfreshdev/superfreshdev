@@ -14,18 +14,102 @@
   width: 100%;
   z-index: 2;
 
-  padding: 2em 0;
-
-  font-weight: bold;
-
   display: grid;
-  justify-items: center;
 
-  grid: auto auto 1fr / 1fr;
-
-  background-color: rgb(156, 156, 156);
 
   /* default unshown */
   display: none;
 
+}
+
+/* ------------------------------------------------------------- */
+/* My IT Docs Content Container
+/* ------------------------------------------------------------- */
+
+#my-it-docs-content-container {
+
+  display: grid;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | My IT Docs Container
+/* ------------------------------------------------------------- */
+
+#header-my-it-docs-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Header Title Block | My It Docs
+/* ------------------------------------------------------------- */
+
+#header-title-block-my-it-docs {
+
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+
+}
+
+
+#header-title-block-my-it-docs > div:nth-of-type(1) {
+
+  line-height: 1.4em;
+
+}
+
+/* header title */
+#header-title-block-my-it-docs > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  font-size: 1.125em;
+  font-weight: bold;
+
+}
+
+/* header sub title */
+#header-title-block-my-it-docs > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  font-weight: bold;
+  color:rgb(200, 51, 51);
+  color:rgb(121, 121, 121);
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* 🟣🟣🟣 Auslagern
+/* ------------------------------------------------------------- */
+
+#img-it-docs-books {
+
+  height: 2.3em;
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Category My IT Docs
+/* ------------------------------------------------------------- */
+
+#nav-category-my-it-docs {
+
+  padding: 2em 0 0 0;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: .6em;
+
+}
+
+#nav-category-my-it-docs > div {
+
+  padding: .2em;
+
+  border: 3px solid grey;
+  border-radius: .8em;
 }
