@@ -11,9 +11,8 @@
 
 #my-it-page-container {
 
-  width: 100%;
-
   padding: 2em 0em;
+  width: 100%;
 
   display: grid;
   row-gap: 1.5em;
@@ -22,14 +21,13 @@
 
 }
 
-
 /* ------------------------------------------- */
 /* Img Background | My IT Page Container
 /* ------------------------------------------- */
 
 #img-background-my-it {
 
-   z-index: 1;
+  z-index: 1;
 
   /* reminder: it orient by parent element which is pos=relative */
   position: absolute;

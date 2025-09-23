@@ -16,7 +16,9 @@
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+
+  /* mobile */
+  justify-content: center;
 
   border-radius: 1.5em 1.5em 1.5em 1.5em;
 
@@ -43,7 +45,6 @@ input[name="name-radio-nav-my-it"] {
   background-color: wheat;
 
 }
-
 
 /* show content */
 #radio-nav-my-it-projects:checked ~ #my-it-projects-container,

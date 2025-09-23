@@ -1,0 +1,25 @@
+/* -------------------------------------------------------------- */
+/* > nav-top-it-projects.css
+/*
+/* : styles nav top it projects
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Nav Top It Projects
+/* ------------------------------------------------------------- */
+
+#nav-my-top-it-projects {
+
+  padding-top: 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap:.6em;
+
+
+  background-color: rgb(144, 144, 144);
+
+}
