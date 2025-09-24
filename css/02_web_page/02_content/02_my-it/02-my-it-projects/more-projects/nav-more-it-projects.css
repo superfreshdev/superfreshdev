@@ -1,15 +1,15 @@
 /* -------------------------------------------------------------- */
-/* > nav-top-it-projects.css
+/* > nav-more-it-projects.css
 /*
-/* : styles nav top it projects
+/* : styles nav more it projects
 /* -------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------- */
-/* Nav Top It Projects
+/* Nav More It Projects
 /* ------------------------------------------------------------- */
 
-#nav-my-top-it-projects {
+#nav-more-it-projects {
 
   width: 100%;
 
@@ -22,16 +22,18 @@
   justify-content: center;
   gap:.6em;
 
+
   /* background-color: rgb(144, 144, 144); */
+
   background-color: red;
 
 }
 
 /* ------------------------------------------------------------- */
-/* ⬇️⬆️ | Smooth Open Close | Nav Top IT Projects
+/* ⬇️⬆️ | Smooth Open Close | Nav More IT Projects
 /* ------------------------------------------------------------- */
 
-#smooth-open-close-nav-top-it-projects {
+#smooth-open-close-nav-more-it-projects {
 
   width: 100%;
 
@@ -47,8 +49,8 @@
 /* ------------------------------------------------------------- */
 
 /* default unshown */
-#chk-top-it-projects,
-input[name="name-radio-top-it-projects"] {
+#chk-more-it-projects,
+input[name="name-radio-more-it-projects"] {
 
   display: none;
 
@@ -59,7 +61,7 @@ input[name="name-radio-top-it-projects"] {
 /* change img arrow rotation */
 
 /* show content */
-#chk-top-it-projects:checked ~ #css-nav-top-it-projects #smooth-open-close-nav-top-it-projects {
+#chk-more-it-projects:checked ~ #smooth-open-close-nav-more-it-projects {
 
   grid-template-rows: 1fr;
 

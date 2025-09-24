@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------- */
 /* > it-projects.css
 /*
-/* : default styles for my it projects
+/* : style for my it projects container & content container
 /* -------------------------------------------------------------- */
 
 
@@ -29,7 +29,21 @@
 
 }
 
-/*  ⚠️ to do */
+
 /* ------------------------------------------------------------- */
-/* Header | My IT Projects Container
+/* Imgs | Header
 /* ------------------------------------------------------------- */
+
+/* img top it projects */
+#img-top-it-project-header {
+
+  height: 2.2em;
+
+}
+
+/* img more it projects */
+#img-more-project-header {
+
+  height: 2.2em;
+
+}

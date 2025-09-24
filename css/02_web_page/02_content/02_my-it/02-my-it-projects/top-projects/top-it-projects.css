@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------- */
 /* > top-it-projects.css
 /*
-/* : styles my it top projects
+/* : styles my it top project container
 /* -------------------------------------------------------------- */
 
 
@@ -19,34 +19,6 @@
   /* background-color: red; */
 
 }
-
-/* ------------------------------------------------------------- */
-/* Imgs | Header
-/* ------------------------------------------------------------- */
-
-/* rocket */
-#img-header-top-it-projects {
-
-  height: 2.2em;
-
-}
-
-/* folder */
-#img-header-more-it-projects {
-
-  height: 2em;
-
-}
-
-
-/* books */
-#img-header-it-docs {
-
-   height: 2em;
-
-}
-
-
 
 /* ------------------------------------------------------------- */
 /* My IT Top Projects Card Container
@@ -69,60 +41,23 @@
 
 }
 
-
 /* ------------------------------------------------------------- */
-/* My Top IT Project Card
+/* Header Top IT Projects
 /* ------------------------------------------------------------- */
 
-.my-top-it-project-card {
-
-  width: 20em;
-
-  display: grid;
-  row-gap: 1em;
-
-}
-
-.my-top-it-project-card > img {
+#header-top-it-projects {
 
   width: 100%;
 
-  border-radius: 1.3em;
-  border: 4px solid grey;
+  /* mobile */
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
 
 }
 
-/* ------------------------------------------------------------- */
-/* Header | My Top It Project Card
-/* ------------------------------------------------------------- */
+#header-top-it-projects > .header-main-title-block {
 
-.my-top-it-project-card > header {
-
-  /* font-size: 1.125em; */
-  font-weight: bold;
-
-}
-
-.my-top-it-project-card > header > span {
-
-  /* height: 1.5em; */
-  padding: 0em .6em;
-  margin-right: .3em;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: bold;
-
-  border-radius: .6em;
-
-  background-color: rgb(189, 189, 189);
-
-}
-
-.my-top-it-project-card > header > span > span {
-
- font-size: 14.5px;
+  width: 100%;
 
 }

@@ -127,20 +127,16 @@
             <!--  04 | Layout Containers                                                                     -->
             <!-- ------------------------------------------------------------------------------------------- -->
 
-                <!-- ⁉️ Default Layout Containers -->
-                <link rel="stylesheet" href="css/01_default/04_layout_containers/layout-containers.css">
-
-
-
-
-
                 <!-- ------------------------------------- -->
                 <!-- Header Containers -->
                 <!-- ------------------------------------- -->
-                <!-- ⁉️ -->
-                <link rel="stylesheet" href="css/01_default/04_layout_containers/header-containers/header-begin-container.css">
-                <link rel="stylesheet" href="css/01_default/04_layout_containers/header-containers/header-containers.css">
                 <link rel="stylesheet" href="css/01_default/04_layout_containers/header-containers/header-stickers.css">
+                <link rel="stylesheet" href="css/01_default/04_layout_containers/header-containers/header-main-container.css">
+
+                <!-- ------------------------------------- -->
+                <!-- Main Content Boxes -->
+                <!-- ------------------------------------- -->
+                <link rel="stylesheet" href="css/01_default/04_layout_containers/main-containers/main-content-boxes.css">
 
                 <!-- ------------------------------------- -->
                 <!-- Push Slider -->
@@ -270,7 +266,6 @@
 
                     <!-- My IT Projects -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/02_my-it/02-my-it-projects/it-projects.css">
-                    <link rel="stylesheet" href="css/02_web_page/02_content/02_my-it/02-my-it-projects/nav-it-projects.css">
 
                     <!-- My Top | IT Projects -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/02_my-it/02-my-it-projects/top-projects/nav-top-it-projects.css">
@@ -279,6 +274,8 @@
                     <link rel="stylesheet" href="css/02_web_page/02_content/02_my-it/02-my-it-projects/top-projects/top-it-project-card.css">
 
                     <!-- My More | IT Projects -->
+                    <link rel="stylesheet" href="css/02_web_page/02_content/02_my-it/02-my-it-projects/more-projects/it-more-projects.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/02_my-it/02-my-it-projects/more-projects/nav-more-it-projects.css">
                     <link rel="stylesheet" href="css/02_web_page/02_content/02_my-it/02-my-it-projects/more-projects/it-more-project-card.css">
 
 
@@ -1930,7 +1927,7 @@
                     </div>
 
                     <!-- --------------------------------------------------------------- -->
-                    <!-- 🟥 [2/3] | My IT Top & More Projects Container                  -->
+                    <!-- ➡️🟥 [2/3] | My IT Top & More Projects Container                  -->
                     <!-- --------------------------------------------------------------- -->
                     <div id="my-it-projects-container">
 
@@ -1947,7 +1944,7 @@
                                 <!-- ----------------------------------------------------------- -->
                                 <!-- Projects | 📐 Resp Very Small Content                                  -->
                                 <!-- ----------------------------------------------------------- -->
-                                <div class="resp-main-content-area">
+                                <div class="resp-min-content-area">
 
                                     <!-- ----------------------------------------------------------- -->
                                     <!-- width & heihgt 100% (sets)                                  -->
@@ -1957,30 +1954,34 @@
                                         <!-- ------------------------------------------------------------------ -->
                                         <!-- 📏 Resp | Padding Wrapper                                          -->
                                         <!-- ------------------------------------------------------------------ -->
-                                        <div class="resp-main-padding-0-08">
+                                        <div class="resp-min-padding-0-08">
 
                                             <!-- --------------------------------------------------------------- -->
-                                            <!-- 🟥 My It Projects Content Container                                -->
+                                            <!-- ➡️🟥 My It Projects Content Container                                -->
                                             <!-- --------------------------------------------------------------- -->
                                             <div id="my-it-projects-content-container">
 
                                                 <!-- ------------------------------------------------------------------- -->
-                                                <!-- 🟥 [1/2] | My IT Top Projects Container  -->
+                                                <!-- ➡️🟥 [1/2] | My IT Top Projects Container  -->
                                                 <!-- ------------------------------------------------------------------- -->
                                                 <div id="my-it-top-projects-container" class="main-light-white-content-box">
 
                                                     <!-- ----------------------------------------------------------------- -->
-                                                    <!-- Checkbox Set -->
+                                                    <!-- Checkbox | Top IT Projects -->
                                                     <!-- ----------------------------------------------------------------- -->
+                                                    <input type="checkbox" id="chk-top-it-projects">
 
                                                     <!-- ----------------------------------------------------------------- -->
                                                     <!-- Radios Set -->
                                                     <!-- ----------------------------------------------------------------- -->
+                                                    <input type="radio" id="radio-top-it-project-web-design" name="name-radio-top-it-projects">
+                                                    <input type="radio" id="radio-top-it-project-web-dev" name="name-radio-top-it-projects">
+                                                    <input type="radio" id="radio-top-it-project-software-dev" name="name-radio-top-it-projects">
 
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <!-- Projects | 📐 Resp Very Small Content                                  -->
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <div class="resp-min-content-area">
+                                                    <!-- ----------------------------------------------------------------- -->
+                                                    <!-- [1/2] | Header & Nav                                              -->
+                                                    <!-- ----------------------------------------------------------------- -->
+                                                    <div class="resp-min-content-area" id="css-nav-top-it-projects">
 
                                                         <!-- ----------------------------------------------------------- -->
                                                         <!-- width & heihgt 100% (sets)                                  -->
@@ -1990,7 +1991,7 @@
                                                             <!-- ----------------------------------------------------------------- -->
                                                             <!-- Header Main Container -->
                                                             <!-- ----------------------------------------------------------------- -->
-                                                            <header class="header-main-container">
+                                                            <header id="header-top-it-projects">
 
                                                                 <!-- -------------------------------------- -->
                                                                 <!-- Title Block -->
@@ -2008,15 +2009,15 @@
                                                                 </div>
 
                                                                 <!-- -------------------------------------- -->
-                                                                <!-- Drop Down Element -->
+                                                                <!-- Action Content Element -->
                                                                 <!-- -------------------------------------- -->
-                                                                <label for="" class="drop-down-element">
+                                                                <label for="chk-top-it-projects" class="action-content-element-medium">
 
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Title Block -->
                                                                     <!-- ---------------------------------------- -->
-                                                                    <div class="drop-down-title-block-element">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-art.png" class="img-h-1" alt="img">
+                                                                    <div>
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-art.png" class="img-h-1-1" alt="img">
                                                                         <div>Web-Design</div>
                                                                     </div>
 
@@ -2024,41 +2025,57 @@
                                                                     <!-- Img Arrow (open/close) -->
                                                                     <!-- ---------------------------------------- -->
                                                                     <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
-                                                                        class="img-h-0-6" alt="img">
+                                                                        class="img-h-0-5" alt="img">
 
                                                                 </label>
 
                                                             </header>
 
                                                             <!-- ----------------------------------------------------------------- -->
-                                                            <!-- Nav My Top It Projects -->
+                                                            <!-- ⬇️⬆️ | Smooth Open Close | Nav Top IT Projects -->
                                                             <!-- ----------------------------------------------------------------- -->
-                                                            <div id="nav-my-top-it-projects">
+                                                            <div id="smooth-open-close-nav-top-it-projects">
 
-                                                                <label for="" class="action-content-element-medium">
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <!-- Overflow Hidden -->
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <div class="overflow-hidden">
 
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-1-1" alt="img">
-                                                                    <div>Web-Dev</div>
+                                                                    <!-- ----------------------------------------------------------------- -->
+                                                                    <!-- Nav My Top It Projects -->
+                                                                    <!-- ----------------------------------------------------------------- -->
+                                                                    <div id="nav-my-top-it-projects">
 
-                                                                </label>
+                                                                        <label for="" class="action-content-element-medium">
 
-                                                                <label for="" class="action-content-element-medium">
+                                                                            <div>
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-1" alt="img">
+                                                                                <div>Web-Dev</div>
+                                                                            </div>
 
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1-1" alt="img">
-                                                                    <div>Software-Dev</div>
+                                                                        </label>
 
-                                                                </label>
+                                                                        <label for="" class="action-content-element-medium">
+
+                                                                            <div>
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1" alt="img">
+                                                                                <div>Software-Dev</div>
+                                                                            </div>
+
+                                                                        </label>
+
+                                                                    </div>
+
+                                                                </div>
 
                                                             </div>
-
 
                                                         </div>
 
                                                     </div>
 
-
                                                     <!-- ----------------------------------------------------------------- -->
-                                                    <!-- My It Top Projects Card Container -->
+                                                    <!-- [2/2] | My It Top Projects Card Container                         -->
                                                     <!-- ----------------------------------------------------------------- -->
                                                     <div id="my-it-top-projects-card-container">
 
@@ -2070,13 +2087,14 @@
                                                             <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-1/project-1-sass-dashboard.png"
                                                             id="img-a" alt="img">
                                                             <header>
+
                                                                 <span>
                                                                     <span>Project 1 </span>
                                                                 </span>
 
-                                                                Insurance Application with Login & Registration
+                                                                <span class="top-it-project-span">Insurance Application with Login & Registration
                                                                 to handle their contracs, send message and configure personal
-                                                                information.
+                                                                information.</span>
                                                             </header>
 
                                                         </div>
@@ -2093,9 +2111,9 @@
                                                                     <span>Project 2 </span>
                                                                 </span>
 
-                                                                Insurance Application with Login & Registration
+                                                                <span class="top-it-project-span">Insurance Application with Login & Registration
                                                                 to handle their contracs, send message and configure personal
-                                                                information.
+                                                                information. Here comes the sun from Beatles.</span>
                                                             </header>
 
                                                         </div>
@@ -2112,11 +2130,11 @@
                                                                     <span>Project 3 </span>
                                                                 </span>
 
-                                                                Insurance Application with Login & Registration
+                                                                <span class="top-it-project-span">Insurance Application with Login & Registration
                                                                 to handle their contracs, send message and configure personal
                                                                 information. And here come a little bit more text.
                                                                 To Show that could be longer than all others.
-                                                                So i hope you can understand that.
+                                                                So i hope you can understand that.</span>
                                                             </header>
 
                                                         </div>
@@ -2130,18 +2148,22 @@
                                                 <!-- ------------------------------------------------------------------- -->
                                                 <div id="my-it-more-projects-container" class="main-light-white-content-box">
 
-                                                     <!-- ----------------------------------------------------------------- -->
-                                                    <!-- Checkbox Set -->
                                                     <!-- ----------------------------------------------------------------- -->
+                                                    <!-- Checkbox | Top IT Projects -->
+                                                    <!-- ----------------------------------------------------------------- -->
+                                                    <input type="checkbox" id="chk-more-it-projects">
 
                                                     <!-- ----------------------------------------------------------------- -->
                                                     <!-- Radios Set -->
                                                     <!-- ----------------------------------------------------------------- -->
+                                                    <input type="radio" id="radio-more-it-project-exercices" name="name-radio-more-it-projects">
+                                                    <input type="radio" id="radio-more-it-project-leetcode" name="name-radio-more-it-projects">
+                                                    <input type="radio" id="radio-more-it-project-mini-projects" name="name-radio-more-it-projects">
 
                                                     <!-- ----------------------------------------------------------------- -->
                                                     <!-- Header Main Container -->
                                                     <!-- ----------------------------------------------------------------- -->
-                                                    <header class="header-main-container">
+                                                    <header id="header-more-it-projects">
 
                                                         <!-- -------------------------------------- -->
                                                         <!-- Title Block -->
@@ -2149,7 +2171,7 @@
                                                         <div class="header-main-title-block">
 
                                                             <img src="media/img/icons/03-emojies/04-hobbys/it-emoji.png"
-                                                                 id="img-top-it-project-header" alt="img">
+                                                                 id="img-more-project-header" alt="img">
 
                                                             <div class="header-main-title-area">
                                                                 <div class="header-main-title">More</div>
@@ -2159,15 +2181,15 @@
                                                         </div>
 
                                                         <!-- -------------------------------------- -->
-                                                        <!-- Drop Down Element -->
+                                                        <!-- Action Content Element -->
                                                         <!-- -------------------------------------- -->
-                                                        <label for="" class="drop-down-element">
+                                                        <label for="chk-more-it-projects" class="action-content-element-medium">
 
                                                             <!-- ---------------------------------------- -->
                                                             <!-- Title Block -->
                                                             <!-- ---------------------------------------- -->
-                                                            <div class="drop-down-title-block-element">
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-eye.png" class="img-h-0-8" alt="img">
+                                                            <div>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-eye.png" class="img-h-0-7" alt="img">
                                                                 <div>Show Me</div>
                                                             </div>
 
@@ -2175,41 +2197,60 @@
                                                             <!-- Img Arrow (open/close) -->
                                                             <!-- ---------------------------------------- -->
                                                             <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
-                                                                 class="img-h-0-6" alt="img">
+                                                                 class="img-h-0-5" alt="img">
 
                                                         </label>
 
                                                     </header>
 
+
                                                     <!-- ----------------------------------------------------------------- -->
-                                                    <!-- Nav My Top It Projects -->
+                                                    <!-- ⬇️⬆️ | Smooth Open Close | Nav More IT Projects -->
                                                     <!-- ----------------------------------------------------------------- -->
-                                                    <div id="nav-my-top-it-projects">
+                                                    <div id="smooth-open-close-nav-more-it-projects">
 
-                                                        <label for="" class="action-content-element-medium">
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <!-- Overflow Hidden -->
+                                                        <!-- -------------------------------------------------------- -->
+                                                        <div class="overflow-hidden">
 
-                                                            <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-1-1" alt="img">
-                                                            <div>Exercices (10)</div>
+                                                            <!-- ----------------------------------------------------------------- -->
+                                                            <!-- Nav More It Projects -->
+                                                            <!-- ----------------------------------------------------------------- -->
+                                                            <div id="nav-more-it-projects">
 
-                                                        </label>
+                                                                <label for="" class="action-content-element-medium">
 
-                                                        <label for="" class="action-content-element-medium">
+                                                                    <div>
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-1" alt="img">
+                                                                        <div>Exercices <span>(10)</span></div>
+                                                                    </div>
 
-                                                            <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1-1" alt="img">
-                                                            <div>LeetCode (0)</div>
+                                                                </label>
 
-                                                        </label>
+                                                                <label for="" class="action-content-element-medium">
 
-                                                         <label for="" class="action-content-element-medium">
+                                                                    <div>
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1-1" alt="img">
+                                                                        <div>LeetCode <span>(0)</span></div>
+                                                                    </div>
 
-                                                            <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1-1" alt="img">
-                                                            <div>Mini-Projects (4)</div>
+                                                                </label>
 
-                                                        </label>
+                                                                <label for="" class="action-content-element-medium">
+
+                                                                    <div>
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1-1" alt="img">
+                                                                        <div>Mini-Projects <span>(4)</span></div>
+                                                                    </div>
+
+                                                                </label>
+
+                                                            </div>
+
+                                                        </div>
 
                                                     </div>
-
-
 
 
                                                 </div>
@@ -2247,7 +2288,7 @@
                                 <!-- ----------------------------------------------------------- -->
                                 <!-- Projects | 📐 Resp Very Small Content                                  -->
                                 <!-- ----------------------------------------------------------- -->
-                                <div class="resp-main-content-area">
+                                <div class="resp-min-content-area">
 
                                     <!-- ----------------------------------------------------------- -->
                                     <!-- width & heihgt 100% (sets)                                  -->
@@ -2257,7 +2298,7 @@
                                         <!-- ------------------------------------------------------------------ -->
                                         <!-- 📏 Resp | Padding Wrapper                                          -->
                                         <!-- ------------------------------------------------------------------ -->
-                                        <div class="resp-main-padding-0-08">
+                                        <div class="resp-min-padding-0-08">
 
                                             <!-- --------------------------------------------------------------- -->
                                             <!-- 🟥 My IT Docs Content Container                     -->

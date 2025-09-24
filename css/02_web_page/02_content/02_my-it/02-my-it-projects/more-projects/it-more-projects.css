@@ -17,3 +17,25 @@
   /* background-color: blue; */
 
 }
+
+
+/* ------------------------------------------------------------- */
+/* Header More IT Projects
+/* ------------------------------------------------------------- */
+
+#header-more-it-projects {
+
+  width: 100%;
+
+  /* mobile */
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
+
+}
+
+#header-more-it-projects > .header-main-title-block {
+
+  width: 100%;
+
+}

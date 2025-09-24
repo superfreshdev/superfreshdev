@@ -1,0 +1,75 @@
+/* -------------------------------------------------------------- */
+/* > header-main-container.css
+/*
+/* : styles the header main container
+    ( img + title - block & aciton element e.g drop down )
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Header Main Container
+/* ------------------------------------------------------------- */
+
+.header-main-container {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+  row-gap: 2em;
+
+}
+
+/* ------------------------------------------------------- */
+/* Title Block | Header Main Container
+/* ------------------------------------------------------- */
+
+.header-main-title-block {
+
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+
+  /* background-color: rgb(73, 23, 23); */
+
+}
+
+#img-top-it-project-header {
+
+  height: 2.3em;
+}
+
+/* ------------------------------------------------------- */
+/* Title Area | Title Block
+/* ------------------------------------------------------- */
+
+.header-main-title-area {
+
+  line-height: 1.6em;
+
+}
+
+/* ------------------------------------------------------- */
+/* Title | Title Area
+/* ------------------------------------------------------- */
+
+.header-main-title {
+
+  font-size: 1.25em;
+  font-weight: bold;
+
+}
+
+/* ------------------------------------------------------- */
+/* Sub Title | Title Area
+/* ------------------------------------------------------- */
+
+.header-main-sub-title {
+
+  font-weight: bold;
+  color:grey;
+
+}

@@ -33,6 +33,19 @@
 @media (min-width: 400px ) {
 
 
+  /* ------------------------------------------------------------- */
+  /* Top IT Projects | Top IT Project Card
+  /* ------------------------------------------------------------- */
+
+  .my-top-it-project-card {
+
+    /* desktop */
+    width: 21em;
+
+
+  }
+
+
     /* ------------------------------------------ */
     /* My It | Nav | Label | Img
     /* ------------------------------------------ */
@@ -209,6 +222,98 @@
 }
 
 /* -------------------------------------------------------------- */
+/* >= 650px width
+/* -------------------------------------------------------------- */
+
+@media (min-width: 650px ) {
+
+
+  /* ------------------------------------------------------------------ */
+  /* Top IT Projects | Header
+  /* ------------------------------------------------------------------ */
+
+  #header-top-it-projects {
+
+    width: 100%;
+
+    /* desktop */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .8em;
+
+    /* background-color: magenta; */
+
+  }
+
+  #header-top-it-projects > .header-main-title-block {
+
+    width: auto;
+
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Top IT Projects | Nav
+  /* ------------------------------------------------------------------ */
+
+  #nav-my-top-it-projects {
+
+    /* desktop */
+    padding-top: 1em;
+
+    justify-content: flex-end;
+
+    /* background-color: rgb(144, 144, 144); */
+
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* More IT Projects | Header
+  /* ------------------------------------------------------------------ */
+
+  #header-more-it-projects {
+
+    width: 100%;
+
+    /* desktop */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .8em;
+
+    /* background-color: magenta; */
+
+  }
+
+  #header-more-it-projects > .header-main-title-block {
+
+    width: auto;
+
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* More IT Projects | Nav
+  /* ------------------------------------------------------------------ */
+
+  #nav-more-it-projects {
+
+    /* desktop */
+    padding-top: 1em;
+
+    justify-content: flex-end;
+
+    /* background-color: rgb(144, 144, 144); */
+
+  }
+
+
+
+
+}
+
+/* -------------------------------------------------------------- */
 /* >= 700px width
 /* -------------------------------------------------------------- */
 
@@ -353,6 +458,39 @@
 /* -------------------------------------------------------------- */
 
 @media (min-width: 1200px ) {
+
+  /* ------------------------------------------------------------- */
+  /* Top IT Projects | Top IT Project Card
+  /* ------------------------------------------------------------- */
+
+  .my-top-it-project-card {
+
+    /* desktop */
+    width: auto;
+
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* Top IT Projects | Top IT Projects Card Container
+  /* ------------------------------------------------------------- */
+
+  #my-it-top-projects-card-container {
+
+    /* width: 100%;
+    padding: 3.5em 0; */
+
+    /* desktop */
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
+
+    /* column-gap: 2em;
+    row-gap: 2em; */
+
+    /* background-color: yellow; */
+
+  }
+
 
 
   /* -------------------------------------------- */
