@@ -18,6 +18,10 @@
 
 }
 
+/* ------------------------------------------------------------- */
+/* [1/4] | Img | My Top IT Project Card
+/* ------------------------------------------------------------- */
+
 .my-top-it-project-card > img {
 
   width: 100%;
@@ -28,21 +32,28 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Header | My Top It Project Card
+/* [2/4] | Header | My Top It Project Card
 /* ------------------------------------------------------------- */
 
 .my-top-it-project-card > header {
 
-  /* font-size: 1.125em; */
+  display: grid;
+  justify-items: flex-start;
+  row-gap: .3em;
+
+
   font-weight: bold;
 
 }
 
-.my-top-it-project-card > header > span:nth-of-type(1) {
+/* ------------------------------------------------------------- */
+/* Nr Title | Header
+/* ------------------------------------------------------------- */
 
-  height: 1.4em;
+.top-it-project-nr-title {
+
+  height: 1.6em;
   padding: 0em .4em;
-  margin-right: .3em;
 
   display: inline-flex;
   align-items: center;
@@ -50,57 +61,42 @@
 
   font-weight: bold;
 
-  border-radius: .2em;
+  border-radius: .4em;
 
-  background-color: rgb(189, 189, 189);
+  background-color: rgba(28, 28, 28, .3);
 
-}
-
-.my-top-it-project-card > header > span:nth-of-type(1) > span {
-
- font-size: 14.5px;
+  /* background-color: rgba(28, 28, 28, 1);
+  color:rgb(70, 70, 70); */
 
 }
 
+.top-it-project-nr-title > div {
 
-.top-it-project-span {
-
-  color: rgb(71, 71, 71);
-}
-
-
-/* ------------------------------------------------------------- */
-/* Header | My Top It Project Card
-/* ------------------------------------------------------------- */
-
-.my-top-it-project-card > footer {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  /* font-size: 1.125em; */
-  font-weight: bold;
-
-}
-
-
-.my-top-it-project-card > footer {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  /* font-size: 1.125em; */
-  font-weight: bold;
+ /* 14.5px | 14.5 / 16px= 0.90625 */
+ font-size: .90625em;
 
 }
 
 /* ------------------------------------------------------------- */
-/* Zip GitHub Container
+/* Title | Header
 /* ------------------------------------------------------------- */
 
-.zip-github-container {
+.top-it-project-title {
+
+ /* 14.5px | 14.5 / 16px= 0.90625 */
+ font-size: .90625em;
+
+ line-height: 1.8em;
+
+ color: rgb(71, 71, 71);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Zip GitHub Top It Project Container
+/* ------------------------------------------------------------- */
+
+.zip-github-top-it-project-container {
 
   display: flex;
   align-items: center;
@@ -108,7 +104,7 @@
 
 }
 
-.zip-github-container > a {
+.zip-github-top-it-project-container > a {
 
   text-decoration: none;
 
@@ -118,9 +114,111 @@
 
 }
 
-.zip-github-container > a:visited {
+.zip-github-top-it-project-container > a:visited {
 
 
   color: black;
+
+}
+
+
+/* 🟣🟣🟣 Auslagern in Details - Verzeichnis  */
+
+/* ------------------------------------------------------------- */
+/* Details Top IT Project Container
+/* ------------------------------------------------------------- */
+
+.details-top-it-project-container {
+
+  display: grid;
+  row-gap: 1em;
+
+
+}
+
+.details-top-it-project-content-container {
+
+  padding: 1em;
+
+  border: 4px solid grey;
+
+  /* background-color: grey; */
+
+  border-radius: .8em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* UL |
+/* ------------------------------------------------------------- */
+
+.ul-top-it-project-detail-list {
+
+  margin: 0;
+  padding-left: .8em;
+
+
+
+  display: grid;
+  row-gap: .3em;
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+  color:rgb(0, 0, 0);
+
+}
+
+/* ------------------------------------------------------------- */
+/* UL Li > Span |
+/* ------------------------------------------------------------- */
+
+.ul-top-it-project-detail-list > li  {
+
+  color:rgb(52, 52, 52);
+
+}
+
+/* ------------------------------------------------------------- */
+/* UL Li > Span |
+/* ------------------------------------------------------------- */
+
+.ul-top-it-project-detail-list > li > span {
+
+  font-weight: bold;
+  color:black;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Video Tutorial Link Container Top It Projects
+/* ------------------------------------------------------------- */
+
+.video-tutorial-link-container-top-it-project {
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav | Video Tutorial Link Container Top It Projects
+/* ------------------------------------------------------------- */
+
+.nav-video-tutorial-top-it-project {
+
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+/* 🟣🟣 auslaggern */
+
+/* ------------------------------------------------------------- */
+/* Video Tutorial Link List Container
+/* ------------------------------------------------------------- */
+
+.video-tutorial-link-list-container {
+
+  display: grid;
 
 }
