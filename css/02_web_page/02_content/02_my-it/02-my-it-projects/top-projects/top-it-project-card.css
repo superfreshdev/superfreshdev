@@ -83,12 +83,17 @@
 
 .top-it-project-title {
 
+  padding-top: .5em;
+
  /* 14.5px | 14.5 / 16px= 0.90625 */
  font-size: .90625em;
 
  line-height: 1.8em;
 
+ font-weight: bold;
+
  color: rgb(71, 71, 71);
+ color:black;
 
 }
 
@@ -307,4 +312,9 @@
   border-bottom: 1px solid black;
 
 
+}
+
+#top-p1 {
+
+  display: none;
 }
