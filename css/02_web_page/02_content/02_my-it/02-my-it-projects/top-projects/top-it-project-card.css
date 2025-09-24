@@ -67,3 +67,60 @@
 
   color: rgb(71, 71, 71);
 }
+
+
+/* ------------------------------------------------------------- */
+/* Header | My Top It Project Card
+/* ------------------------------------------------------------- */
+
+.my-top-it-project-card > footer {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* font-size: 1.125em; */
+  font-weight: bold;
+
+}
+
+
+.my-top-it-project-card > footer {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* font-size: 1.125em; */
+  font-weight: bold;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Zip GitHub Container
+/* ------------------------------------------------------------- */
+
+.zip-github-container {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+.zip-github-container > a {
+
+  text-decoration: none;
+
+  /* border-radius: .6em; */
+
+  transition: all .4s;
+
+}
+
+.zip-github-container > a:visited {
+
+
+  color: black;
+
+}
