@@ -49,7 +49,7 @@
 /* ------------------------------------------------------------- */
 
 /* default unshown */
-#chk-more-it-projects,
+#chk-show-me-more-it-projects,
 input[name="name-radio-more-it-projects"] {
 
   display: none;
@@ -61,7 +61,7 @@ input[name="name-radio-more-it-projects"] {
 /* change img arrow rotation */
 
 /* show content */
-#chk-more-it-projects:checked ~ #smooth-open-close-nav-more-it-projects {
+#chk-show-me-more-it-projects:checked ~ #smooth-open-close-nav-more-it-projects {
 
   grid-template-rows: 1fr;
 

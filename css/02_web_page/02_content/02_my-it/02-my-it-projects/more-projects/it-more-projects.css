@@ -5,7 +5,6 @@
 /* -------------------------------------------------------------- */
 
 
-
 /* ------------------------------------------------------------- */
 /* My It More Projects Container
 /* ------------------------------------------------------------- */
@@ -17,7 +16,6 @@
   /* background-color: blue; */
 
 }
-
 
 /* ------------------------------------------------------------- */
 /* Header More IT Projects
@@ -37,5 +35,182 @@
 #header-more-it-projects > .header-main-title-block {
 
   width: 100%;
+
+}
+
+/* ------------------------------------------------------------- */
+/* More IT Project Card List
+/* ------------------------------------------------------------- */
+
+#more-it-project-card-list {
+
+  padding-top: 1.5em;
+
+  display: grid;
+  align-items: flex-start;
+  row-gap: 1.5em;
+  column-gap: 1.5em;
+
+}
+
+
+/* 🟣🟣🟣 auslagern */
+/* ------------------------------------------------------------- */
+/* More IT Project Card List
+/* ------------------------------------------------------------- */
+
+.more-it-project-card {
+
+  display: grid;
+
+
+  border-radius: 1em;
+
+  border: 3px solid rgba(115, 115, 115, .6);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | More IT Project Card List
+/* ------------------------------------------------------------- */
+
+.more-it-project-card > header {
+
+  padding: .6em .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  border-radius: .8em .8em 0 0;
+
+  background-color: grey;
+
+}
+
+/* nr box */
+.more-it-project-card > header > div:nth-of-type(1) {
+
+  height: 1.4em;
+  padding: 0em .3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+  letter-spacing: 1px;
+
+  font-weight: bold;
+
+  border-radius: .4em;
+
+  background-color: rgb(181, 181, 181);
+  color:rgb(86, 86, 86);
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Main | More IT Project Card List
+/* ------------------------------------------------------------- */
+
+.more-it-project-card > main {
+
+  padding: 1em .8em;
+
+  display: grid;
+  row-gap: .8em;
+
+  background-color: rgb(164, 164, 164);
+
+}
+
+/* div 1 - project title */
+.more-it-project-card > main > div:nth-of-type(1) {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+  font-weight: bold;
+
+}
+
+
+/* div 2 - project tech stack list */
+.more-it-project-card > main > div:nth-of-type(2) {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
+
+
+}
+
+/* tech stack items */
+.more-it-project-card > main > div:nth-of-type(2) > div {
+
+  height: 1.8em;
+  padding: 0 .4em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10.5px;
+  font-weight: bold;
+
+  border-radius: .6em;
+
+  background-color: rgb(198, 198, 198);
+  color:rgb(54, 54, 54);
+
+
+
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Footer | More IT Project Card List
+/* ------------------------------------------------------------- */
+
+.more-it-project-card > footer {
+
+  padding: .6em .4em;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: .6em;
+
+  border-radius: 0 0 .8em .8em;
+
+  background-color: grey;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Link Footer
+/* ------------------------------------------------------------- */
+
+.more-it-project-card > footer > a {
+
+  text-decoration: none;
+
+}
+
+.more-it-project-card > footer > a:visited {
+
+  color:black;
+
+}
+
+.more-it-project-card > footer > a div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
 
 }
