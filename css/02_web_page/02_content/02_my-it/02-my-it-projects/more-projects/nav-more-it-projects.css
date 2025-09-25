@@ -56,13 +56,39 @@ input[name="name-radio-more-it-projects"] {
 
 }
 
+/* ------------------------------------------ */
+/* Checkbox Hanlding
+/* ------------------------------------------ */
+
 /* set background | checkbox */
 
 /* change img arrow rotation */
+
 
 /* show content */
 #chk-show-me-more-it-projects:checked ~ #smooth-open-close-nav-more-it-projects {
 
   grid-template-rows: 1fr;
+
+}
+
+/* ------------------------------------------ */
+/* Radio Hanlding
+/* ------------------------------------------ */
+
+/* set background | radios */
+#radio-more-it-project-exercices:checked ~ #smooth-open-close-nav-more-it-projects label[for="radio-more-it-project-exercices"],
+#radio-more-it-project-leetcode:checked ~ #smooth-open-close-nav-more-it-projects label[for="radio-more-it-project-leetcode"],
+#radio-more-it-project-mini-projects:checked ~ #smooth-open-close-nav-more-it-projects label[for="radio-more-it-project-mini-projects"] {
+
+  background-color: wheat;
+}
+
+/* show content */
+#radio-more-it-project-exercices:checked ~ #smooth-open-close-nav-more-it-projects #exercise-it-projects-container,
+#radio-more-it-project-leetcode:checked ~ #smooth-open-close-nav-more-it-projects #leetcode-it-projects-container,
+#radio-more-it-project-mini-projects:checked ~ #smooth-open-close-nav-more-it-projects #mini-projects-it-projects-container {
+
+  display: grid;
 
 }

@@ -39,17 +39,31 @@
 }
 
 /* ------------------------------------------------------------- */
-/* More IT Project Card List
+/* More IT Project Card Content Container
 /* ------------------------------------------------------------- */
 
-#more-it-project-card-list {
+#more-it-project-card-content-container {
 
   padding-top: 1.5em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Exercice, LeetCode, Mini-Projects
+/* ------------------------------------------------------------- */
+
+#exercise-it-projects-container,
+#leetcode-it-projects-container,
+#mini-projects-it-projects-container {
 
   display: grid;
   align-items: flex-start;
   row-gap: 1.5em;
   column-gap: 1.5em;
+
+  /* default unshown */
+  display: none;
+
 
 }
 
@@ -80,6 +94,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
   column-gap: .6em;
 
   border-radius: .8em .8em 0 0;
@@ -88,15 +103,19 @@
 
 }
 
-/* nr box */
+/* ------------------------------------------------------ */
+/* Div 1 | Nr Block */
+/* ------------------------------------------------------ */
+
 .more-it-project-card > header > div:nth-of-type(1) {
 
   height: 1.4em;
-  padding: 0em .3em;
+  padding: 0em .6em;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: .6em;
 
   /* 14.5px | 14.5 / 16px= 0.90625 */
   font-size: .90625em;
@@ -105,10 +124,22 @@
 
   font-weight: bold;
 
-  border-radius: .4em;
+  border-radius: .6em;
 
   background-color: rgb(181, 181, 181);
   color:rgb(86, 86, 86);
+
+
+}
+
+/* ------------------------------------------------------ */
+/* Div 2 | Category Title */
+/* ------------------------------------------------------ */
+
+.more-it-project-card > header > div:nth-of-type(2) {
+
+  color:rgb(62, 62, 62);
+  font-weight: bold;
 
 }
 
@@ -165,7 +196,7 @@
   border-radius: .6em;
 
   background-color: rgb(198, 198, 198);
-  color:rgb(54, 54, 54);
+  color:rgb(138, 138, 138);
 
 
 

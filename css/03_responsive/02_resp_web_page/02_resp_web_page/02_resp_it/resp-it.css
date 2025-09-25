@@ -347,15 +347,22 @@
 
 
   /* ------------------------------------------------------------- */
-  /* More IT Project | Card List
+  /* More IT Project | Card List Containers
   /* ------------------------------------------------------------- */
 
-  #more-it-project-card-list {
+    #exercise-it-projects-container,
+    #leetcode-it-projects-container,
+    #mini-projects-it-projects-container {
 
-    display: grid;
-    grid: auto / 1fr 1fr;
+      display: grid;
+      grid: auto / 1fr 1fr;
 
-  }
+      /* default unshown */
+      display: none;
+
+    }
+
+
 
 
   /* ------------------------------------------ */
