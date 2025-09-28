@@ -11,7 +11,13 @@
 
 #it-skills-about-container {
 
-  background-color: red;
+  margin-bottom: 2em;
+  padding-top: 3em;
+
+  display: grid;
+  row-gap: 1em;
+
+  /* background-color: red; */
 
   /* default unshown */
   display: none;
@@ -19,46 +25,35 @@
 }
 
 
-/* ------------------------------------------------------------ */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------------- */
+/* IT Skill Content Box About
+/* ------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------ */
-/* About Details IT Skills Container
-/* ------------------------------------------------------------ */
+.it-skills-content-box-about {
 
-#about-details-it-skills-container {
-
-  margin-top: 1.5em;
-  padding: 2em 0 0 0;
-
-  border-radius: 3em 1.3em 3em 1.3em;
-
-  background-color: rgba(165, 165, 165, .6);
-
-  display: none;
-
-}
-
-/* ---------------------------------------------------------------- */
-/* It Skills Box
-/* ---------------------------------------------------------------- */
-
-.about-it-skills-box {
-
-  width: 100%;
   display: grid;
   justify-items: center;
 
 }
 
-/* ---------------------------------------------------------------- */
-/* Header | It Skills Box
-/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* Header | IT Skill Content Box About
+/* ------------------------------------------------------------------- */
 
-.about-it-skills-box > header {
+.header-it-skills-content-box-about {
 
-  height: 2.3em;
+  display: flex;
+  /* justify-content: center; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Div 1 | Header | IT Skill Content Box About
+/* ------------------------------------------------------------------- */
+
+.header-it-skills-content-box-about > div:nth-of-type(1) {
+
+   height: 2.3em;
   /* width: 100%; */
 
   padding: 0 .8em;
@@ -76,22 +71,12 @@
 
 }
 
-/* ---------------------------------------------------------------- */
-/* Div Header | It Skills Box
-/* ---------------------------------------------------------------- */
 
-.about-it-skills-box > header > div {
+/* ------------------------------------------------------------------- */
+/* Main | IT Skill Content Box About
+/* ------------------------------------------------------------------- */
 
-  /* 14.5px | 14.5 / 16px= 0.90625 */
-  font-size: .90625em;
-
-}
-
-/* ---------------------------------------------------------------- */
-/* Main | It Skills Box
-/* ---------------------------------------------------------------- */
-
-.about-it-skills-box > main {
+.it-skills-content-box-about > main {
 
   padding: 2em .8em;
 
@@ -102,11 +87,11 @@
 
 }
 
-/* ---------------------------------------------------------------- */
-/* Div (Skill Item) | Main | It Skills Container
-/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* About It Skill | Main
+/* ------------------------------------------------------------------- */
 
-.about-it-skills-box > main > div {
+.about-it-skill {
 
   height: 2em;
   padding: 0 .6em;
@@ -128,15 +113,17 @@
 
 }
 
-.about-it-skills-box > main > div:hover {
+.about-it-skill > div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+.about-it-skill:hover {
 
   /* background-color: wheat; */
   background-color: grey;
   color:rgb(224, 224, 224);
 
-}
-
-.about-it-skills-box > main > div > div:nth-of-type(1) {
-
-  font-size: 14.5px;
 }
