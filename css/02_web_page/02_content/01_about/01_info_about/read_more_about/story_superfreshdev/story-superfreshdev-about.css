@@ -1,0 +1,89 @@
+/* -------------------------------------------------------------- */
+/* > story-superfreshdev-about.css
+/*
+/* : style story superfreshdev about
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* My Story Superfreshdev About Container
+/* ------------------------------------------------------------------- */
+
+#my-story-about-container {
+
+  width: 100%;
+
+  margin-top: 2em;
+  padding: 2em 0;
+
+  display: grid;
+  row-gap: 1em;
+
+  border-top: 3px solid rgb(202, 202, 202);
+
+  /* default unshown  */
+  display: none;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Audio Story Read More About Container
+/* ------------------------------------------------------------------- */
+
+#audio-story-read-more-about-container {
+
+  margin-bottom: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Imgs | Cold Shower, Vikings, ...
+/* ------------------------------------------------------------------- */
+
+#img-about-cold-shower {
+
+  float: right;
+  padding: 0 0 .4em .4em;
+
+  /* mobile */
+  height: 7.5em;
+
+}
+
+#img-about-viking {
+
+  float: left;
+  margin: .6em 1em .4em 0em;
+
+  /* mobile */
+  height: 6em;
+
+  border-radius: 2em 1em 2em 1em;
+
+}
+
+#img-about-funny-me {
+
+  float: right;
+  padding: 0 0 .4em .4em;
+
+  /* mobile */
+  height: 8em;
+
+}
+
+#img-about-wave-rocket {
+
+  float: left;
+  padding: .4em .8em .4em 0;
+
+  /* mobile */
+  height: 5.5em;
+
+}

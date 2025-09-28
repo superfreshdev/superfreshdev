@@ -12,10 +12,9 @@
 #nav-my-top-it-projects {
 
   width: 100%;
+  padding-top: 1em;
 
   /* mobile */
-  padding-top: 2em;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -23,7 +22,7 @@
   gap:.6em;
 
   /* background-color: rgb(144, 144, 144); */
-  background-color: red;
+  background-color: rgb(155, 155, 155);
 
 }
 
@@ -57,9 +56,14 @@ input[name="name-radio-top-it-projects"] {
 /* set background | checkbox */
 
 /* change img arrow rotation */
+#chk-top-it-projects:checked ~ #header-nav-top-it-projects label[for="chk-top-it-projects"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
 
 /* show content */
-#chk-top-it-projects:checked ~ #css-nav-top-it-projects #smooth-open-close-nav-top-it-projects {
+#chk-top-it-projects:checked ~ #header-nav-top-it-projects #smooth-open-close-nav-top-it-projects {
 
   grid-template-rows: 1fr;
 

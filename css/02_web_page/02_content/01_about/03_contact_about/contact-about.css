@@ -1,0 +1,137 @@
+/* -------------------------------------------------------------- */
+/* > contact-about.css
+/*
+/* : style contact about
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* ...
+/* ------------------------------------------------------------------- */
+
+#contact-about-container {
+
+  background-color: wheat;
+
+  /* default unshown */
+  display: none;
+
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------ */
+/* About Details Contact Container
+/* ------------------------------------------------------------ */
+
+#about-details-contact-container {
+
+  margin-top: 2em;
+
+  display: grid;
+  justify-items: center;
+
+  display: none;
+
+}
+
+/* ------------------------------------------------------------ */
+/* About Details Contact Info Box
+/* ------------------------------------------------------------ */
+
+#about-details-contact-info-box {
+
+  /* mobile */
+  padding: .8em .8em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  row-gap: 1.5em;
+  column-gap: 1.3em;
+
+  border-radius: 2em 3em 3em 4em;
+
+  background-color: rgb(184, 184, 184);
+
+  background-color: rgba(165, 165, 165, .6);
+
+}
+
+
+/* ------------------------------------------- */
+/* Img | Clipart Coffee
+/* ------------------------------------------- */
+
+#img-clipart-coffee {
+
+  order:2;
+
+  height: 8em;
+  transform: scaleX(-1);
+
+}
+
+/* ------------------------------------------------------------ */
+/* Main | About Details Contact Info Box
+/* ------------------------------------------------------------ */
+
+#about-details-contact-info-box > main {
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1em;
+
+}
+
+/* ------------------------------------------------------------ */
+/* Main Header | About Details Contact Info Box
+/* ------------------------------------------------------------ */
+
+#about-details-contact-info-box > main > header {
+
+  /* font-size: 1.125em; */
+  font-weight: bold;
+
+}
+
+/* ------------------------------------------- */
+/* E-Mail Link | Superfresdev
+/* ------------------------------------------- */
+
+#about-details-contact-info-box > main > a {
+
+  padding: .2em .6em;
+
+  /* font-size: 1em; */
+  font-weight: bold;
+
+  border-radius: .6em;
+
+
+  background-color: rgb(28, 28, 28);
+  color:rgb(186, 186, 186);
+
+  transition: all .4s;
+
+}
+
+#about-details-contact-info-box > main > a:hover {
+
+  background-color: wheat;
+  color: black;
+
+}
+
+#about-details-contact-info-box > main > a:visited {
+
+  color:rgb(186, 186, 186);
+
+}

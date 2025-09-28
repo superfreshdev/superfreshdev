@@ -1,4 +1,4 @@
-console.log("🟡 header-body.js")
+// console.log("🟡 header-body.js")
 
 /* ----------------------------------------- */
 /* ⚠️ Clean Code bitte machen
@@ -72,7 +72,7 @@ var nextIndex = 0;
 
     if( radios_body_header[settedIndex].checked == true ) {
 
-        console.log("🟣🟣🟣 Start Page = " + settedIndex )
+        // console.log("🟣🟣🟣 Start Page = " + settedIndex )
 
         /* ----------------------------------------------------- */
         /* Step 1: Do Push Slide

@@ -1,0 +1,89 @@
+/* -------------------------------------------------------------- */
+/* > action-drop-down-element.css
+/*
+/* : style drop down element
+/* -------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------- */
+/* Action Drop Down Element
+/* ----------------------------------------------------- */
+
+.action-drop-down-element-medium,
+.action-drop-down-element-big {
+
+  display: flex;
+  align-items: center;
+  /* div(img+text) + e.g img arrow (up/down) */
+  justify-content: space-between;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  /* background-color: rgb(237, 237, 237); */
+  /* background-color: rgb(205, 205, 205); */
+  background-color: rgb(184, 184, 184);
+  color:black;
+
+  user-select: none;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.action-drop-down-element-medium:hover,
+.action-drop-down-element-big:hover {
+
+  background-color: rgb(160, 160, 160);
+
+}
+
+/* ----------------------------------------------------- */
+/* Div 1 | Action Drop Down Element
+/* ----------------------------------------------------- */
+
+.action-drop-down-element-medium > div:nth-of-type(1),
+.action-drop-down-element-big > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+/* ----------------------------------------------------- */
+/* Div 1 > Div | Action Drop Down Element
+/* ----------------------------------------------------- */
+
+.action-drop-down-element-medium > div:nth-of-type(1) > div,
+.action-drop-down-element-big > div:nth-of-type(1) > div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+/* ----------------------------------------------------- */
+/* Medium | Action Drop Down Element
+/* ----------------------------------------------------- */
+
+.action-drop-down-element-medium {
+
+  height: 2.5em;
+  padding: 0 .8em;
+
+}
+
+/* ----------------------------------------------------- */
+/* Big | Action Drop Down Element
+/* ----------------------------------------------------- */
+
+.action-drop-down-element-big {
+
+  height: 3em;
+  padding: 0 .8em;
+
+}

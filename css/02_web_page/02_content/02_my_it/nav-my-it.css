@@ -19,9 +19,9 @@
   /* mobile */
   justify-content: center;
 
-  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  /* border-radius: 1.5em 1.5em 1.5em 1.5em; */
 
-  /* background-color: rgb(208, 82, 82); */
+  background-color: rgb(208, 82, 82);
 
 }
 
@@ -30,24 +30,33 @@
 /* ------------------------------------------------------------- */
 
 /* default unshown */
-input[name="name-radio-nav-my-it"] {
+input[name="name-radio-my-it"] {
 
   display: none;
 }
 
-/* set label background */
-#radio-nav-my-it-projects:checked ~ #css-nav-my-it label[for="radio-nav-my-it-projects"],
-#radio-nav-my-it-docs:checked ~ #css-nav-my-it label[for="radio-nav-my-it-docs"]{
+/* set background | label */
+#radio-it-projects:checked ~ #nav-my-it label[for="radio-it-projects"],
+#radio-it-docs:checked ~ #nav-my-it label[for="radio-it-docs"]{
 
   z-index: 3;
   background-color: wheat;
 
 }
 
-/* show content */
-#radio-nav-my-it-projects:checked ~ #my-it-projects-container,
-#radio-nav-my-it-docs:checked ~ #my-it-docs-container {
+/* add hover by unchecked labels */
+#radio-it-projects:not(:checked) ~ #nav-my-it label[for="radio-it-projects"]:hover,
+#radio-it-docs:not(:checked) ~ #nav-my-it label[for="radio-it-docs"]:hover {
 
-  display: block;
+  z-index: 3;
+  background-color: rgb(204, 204, 204);
+
+}
+
+/* show content */
+#radio-it-projects:checked ~ #it-projects-container,
+#radio-it-docs:checked ~ #it-docs-container {
+
+  display: grid;
 
 }

@@ -49,7 +49,7 @@
 /* ------------------------------------------------------------- */
 
 /* default unshown */
-#chk-show-me-more-it-projects,
+#chk-more-it-projects,
 input[name="name-radio-more-it-projects"] {
 
   display: none;
@@ -61,12 +61,22 @@ input[name="name-radio-more-it-projects"] {
 /* ------------------------------------------ */
 
 /* set background | checkbox */
+#chk-more-it-projects:checked ~ #header-top-it-projects label[for="chk-more-it-projects"] {
 
-/* change img arrow rotation */
+  background-color: rgb(227, 87, 87);
+
+}
+
+/* rotate img arrow | show me */
+#chk-more-it-projects:checked ~ #header-top-it-projects label[for="chk-more-it-projects"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
 
 
 /* show content */
-#chk-show-me-more-it-projects:checked ~ #smooth-open-close-nav-more-it-projects {
+#chk-more-it-projects:checked ~ #smooth-open-close-nav-more-it-projects {
 
   grid-template-rows: 1fr;
 

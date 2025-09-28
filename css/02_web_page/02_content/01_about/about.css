@@ -11,11 +11,23 @@
 
 #about-page-container {
 
-  z-index: 2;
+  /* z-index: 2; */
+  width: 100%;
+  display: grid;
+  justify-items: center;
+
+}
+
+/* -------------------------------------------------------------- */
+/* About Page Content Container
+/* -------------------------------------------------------------- */
+
+#about-page-content-container {
+
   width: 100%;
 
   display: grid;
-  row-gap: 1.5em;
+  justify-items: center;
 
 }
 
@@ -39,5 +51,110 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* About Details Container
+/* ------------------------------------------------------------------- */
+
+#about-details-container {
+
+  display: grid;
+  /* row-gap: 2em; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Tax X Close Container | About Details Container
+/* ------------------------------------------------------------------- */
+
+#about-details-container > .tab-x-mini-close-content-container {
+
+  /* default unshown */
+  display: none;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header | About Details Container
+/* ------------------------------------------------------------------- */
+
+#header-about-details-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  column-gap: .8em;
+  row-gap: 2em;
+
+  /* mobile */
+  justify-content: center;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header Title | Header
+/* ------------------------------------------------------------------- */
+
+#header-about-details-title {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Div 1 | Header Title
+/* ------------------------------------------------------------------- */
+
+#header-about-details-title > div:nth-of-type(1) {
+
+  font-size: 1.25em;
+  font-weight: bold;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Img | About Details Header
+/* ------------------------------------------------------------------- */
+
+#img-about-details-header  {
+
+  /* mobile */
+  height: 2.5em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | About Details Container
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-about-details-container {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+  /* background-color: aqua; */
 
 }

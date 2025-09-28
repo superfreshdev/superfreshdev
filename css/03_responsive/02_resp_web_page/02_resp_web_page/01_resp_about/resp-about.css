@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------- */
-/* > resp-about.css
+/* > resp-about.css */
 /*
 /* : responsive sets for about page elements
 /* -------------------------------------------------------------- */
@@ -13,20 +13,31 @@
 
 
   /* ---------------------------------------------------------------------------------------------- */
-  /* Read More | Labels of Nav Read More Container ( mission, hobbies, story )
+  /* Read More | Labels (mission, hobbies, story ) */
   /* ---------------------------------------------------------------------------------------------- */
 
-  #nav-about-read-more > label {
+  #nav-list-read-more-about > label {
 
     /* desktop */
     width: auto;
 
   }
 
+  /* ---------------------------------------------------------------------------------------------- */
+  /* Read More | Violine Audio Container */
+  /* ---------------------------------------------------------------------------------------------- */
+
+  #violine-audio-container-read-more-about {
+
+    /* desktop */
+    display: grid;
+
+  }
+
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 380px
+/* >= 380px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 380px ) {
@@ -73,7 +84,6 @@
 
   }
 
-
   /* ------------------------------------------------ */
   /* About Details | Nav About More | Label | Img  */
   /* ------------------------------------------------ */
@@ -89,14 +99,14 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 400px
+/* >= 400px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 400px ) {
 
 
   /* --------------------------------------------------------- */
-  /* Read More | Audio Violine Container
+  /* Read More | Audio Violine Container */
   /* --------------------------------------------------------- */
 
   #about-read-more-audio-violine-container {
@@ -105,40 +115,8 @@
 
   }
 
-
-  /* ------------------------------------------------ */
-  /* About Details | Label | Img                      */
-  /* ------------------------------------------------ */
-
-  #nav-about-details label[for="radio-about-it-skills"] > img:nth-of-type(1),
-  #nav-about-details label[for="radio-about-mindset"] > img:nth-of-type(1),
-  #nav-about-details label[for="radio-about-contact"] > img:nth-of-type(1) {
-
-    /* desktop */
-    display: flex;
-
-  }
-
-  /* hover effect unshown light icon */
-  #nav-about-details label[for="radio-about-it-skills"]:hover > img:nth-of-type(1),
-  #nav-about-details label[for="radio-about-mindset"]:hover > img:nth-of-type(1),
-  #nav-about-details label[for="radio-about-contact"]:hover > img:nth-of-type(1) {
-
-    display: none;
-
-  }
-
-  /* hover effect show black icon */
-  #nav-about-details label[for="radio-about-it-skills"]:hover > img:nth-of-type(2),
-  #nav-about-details label[for="radio-about-mindset"]:hover > img:nth-of-type(2),
-  #nav-about-details label[for="radio-about-contact"]:hover > img:nth-of-type(2) {
-
-    display: flex;
-
-  }
-
   /* --------------------------------------------------------- */
-  /* Read More | Img About Read More topics
+  /* Read More | Img About Read More topics */
   /* --------------------------------------------------------- */
 
   .img-about-read-more-topics {
@@ -148,18 +126,7 @@
   }
 
   /* --------------------------------------------------------- */
-  /* About Details | About Mindset Video Box
-  /* --------------------------------------------------------- */
-
-  .about-mindset-video-box  {
-
-    width: 18.5em;
-
-  }
-
-
-  /* --------------------------------------------------------- */
-  /* About Details | Contact Info Box -> Main
+  /* About Details | Contact Info Box -> Main */
   /* --------------------------------------------------------- */
 
   #about-details-contact-info-box > main {
@@ -169,7 +136,7 @@
   }
 
   /* ------------------------------------------- */
-  /* About Details | Img | Clipart Coffee
+  /* About Details | Img | Clipart Coffee */
   /* ------------------------------------------- */
 
   #img-clipart-coffee {
@@ -183,14 +150,125 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 580px
+/* >= 450px */
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 450px ) {
+
+  /* --------------------------------------------------------- */
+  /* Mindset | Video Mindset Box About */
+  /* --------------------------------------------------------- */
+
+  .video-mindset-about-box  {
+
+    width: 22em;
+
+  }
+
+  /* ------------------------------------------------------ */
+  /* Mindset | Quote Mindset About Container */
+  /* ------------------------------------------------------ */
+
+  #quote-mindset-about-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  /* ------------------------------------------------------ */
+  /* Mindset | Quote Mindset About Container | Divs  */
+  /* ------------------------------------------------------ */
+
+  #quote-mindset-about-container > div {
+
+    width: auto;
+
+  }
+
+  /* ------------------------------------------------------ */
+  /* Mindset | Img Brace Quote Mindset */
+  /* ------------------------------------------------------ */
+
+  /* left */
+  #img-brace-left-quote-mindset-about {
+
+    /* desktop */
+    transform: scaleX(-1)
+
+  }
+
+  /* right */
+  #img-brace-right-quote-mindset-about {
+
+    /*desktop */
+    transform: rotate(0deg);
+
+  }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 480px */
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 480px ) {
+
+  /* ------------------------------------------------------------------- */
+  /* About | Nav About */
+  /* ------------------------------------------------------------------- */
+
+    #nav-about {
+
+      /* desktop */
+      justify-content: flex-end;
+
+      /* background-color: rgb(0, 69, 57); */
+
+    }
+
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Header Read More */
+  /* ------------------------------------------------------------------- */
+
+  #header-read-more-about {
+
+    /* desktop */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .8em;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Mindset | Header Nav Mindset */
+  /* ------------------------------------------------------------------- */
+
+  #header-nav-mindset-about {
+
+    /* desktop */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 0em;
+    column-gap: .8em;
+
+  }
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 580px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 580px ) {
 
 
   /* ---------------------------------------------------------------------- */
-  /* About Details | Header About Details Container
+  /* About Details | Header About Details Container */
   /* ---------------------------------------------------------------------- */
 
    #header-about-details-container {
@@ -209,27 +287,30 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 650px
+/* >= 650px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 650px ) {
 
   /* ----------------------------------------------------------- */
-  /* About Details | About Mindset Video Container
+  /* Mindset | Video Mindset About Container */
   /* ----------------------------------------------------------- */
 
-  #about-mindset-video-container-list {
+  #video-mindset-about-container {
 
+    /* desktop */
     grid: auto / 1fr 1fr;
     column-gap: 2em;
 
+    /* background-color: red; */
+
   }
 
-  /* ----------------------------------------------------------- */
-  /* About Details | About Mindet Video Box
-  /* ----------------------------------------------------------- */
+  /* --------------------------------------------------------- */
+  /* Mindset | Video Mindset About Box */
+  /* --------------------------------------------------------- */
 
-  .about-mindset-video-box  {
+  .video-mindset-about-box  {
 
     width: 100%;
 
@@ -239,20 +320,91 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 700px
+/* >= 700px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 700px ) {
 
 
+  /* -------------------------------------------------------------- */
+  /* Quick Info | Quick Info About Container */
+  /* -------------------------------------------------------------- */
 
+  #quick-info-about-container {
+
+    /* special case: overwrite tempalte -> main content box transparent white */
+    padding: 1em .8em;
+
+
+    width: 100%;
+    display: grid;
+    align-items: center;
+
+    /* mobile */
+    justify-items: center;
+    row-gap: 2em;
+
+    grid-template:
+
+    'img_business_quick_info img_arrow_quick_info content_quick_info_about'
+
+    ;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Quick Info | Img Arrow Seperator Quick Info */
+  /* -------------------------------------------------------------- */
+
+  #img-arrow-seperator-quick-info-about {
+
+    /* desktop*/
+    display: grid;
+
+    padding: 0 1.3em;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Quick Info | Quick Info Content Container */
+  /* -------------------------------------------------------------- */
+
+  #quick-info-content-container-about {
+
+    width: 100%;
+    display: grid;
+    align-content: center;
+    row-gap: .8em;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Quick Info | Quick Info Header Sticker */
+  /* -------------------------------------------------------------- */
+
+  #quick-info-content-container-about > div:nth-of-type(1) {
+
+    justify-self: flex-start;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Quick Info | Quick Info Text */
+  /* -------------------------------------------------------------- */
+
+  #quick-info-content-container-about > div:nth-of-type(2) {
+
+    /* desktop */
+    text-align: left;
+
+  }
 
 
 
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 750px
+/* >= 750px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 750px ) {
@@ -291,7 +443,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Quick Info | Img Quick Info Business
+  /* Quick Info | Img Quick Info Business */
   /* ------------------------------------------------------------------- */
 
   #img-quick-info-business {
@@ -302,7 +454,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Quick Info | Quick Info Content Container
+  /* Quick Info | Quick Info Content Container */
   /* ------------------------------------------------------------------- */
 
   #about-quick-info-content-container {
@@ -317,7 +469,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Quick Info | Img Arrow Seperator
+  /* Quick Info | Img Arrow Seperator */
   /* ------------------------------------------------------------------- */
 
   #img-arrow-seperator-about-quick-info {
@@ -328,7 +480,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Quick Info | Quick Info Content Box
+  /* Quick Info | Quick Info Content Box */
   /* ------------------------------------------------------------------- */
 
   #about-quick-info-content-box {
@@ -339,7 +491,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Quick Info | Quick Info Sticker
+  /* Quick Info | Quick Info Sticker */
   /* ------------------------------------------------------------------- */
 
   #about-quick-info-content-box > .header-sticker-medium:nth-of-type(1) {
@@ -349,7 +501,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Quick Info | Quick Info Text
+  /* Quick Info | Quick Info Text */
   /* ------------------------------------------------------------------- */
 
   #about-quick-info-text {
@@ -361,7 +513,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Read More Label | Open Close
+  /* Read More | Read More Label | Open Close */
   /* ------------------------------------------------------------------- */
 
   label[for="chk-about-read-more"] {
@@ -374,7 +526,7 @@
   }
 
   /* ---------------------------------------------------------------------------------------------- */
-  /* Read More | Nav About Read More
+  /* Read More | Nav About Read More */
   /* ---------------------------------------------------------------------------------------------- */
 
   #nav-about-read-more  {
@@ -399,24 +551,14 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 800px
+/* >= 800px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 800px ) {
 
 
    /* ------------------------------------------- */
-   /* About Details | Mindset Video Container
-   /* ------------------------------------------- */
-
-   .about-mindset-video-container  {
-
-    width: 100%;
-
-   }
-
-   /* ------------------------------------------- */
-   /* About Details | Contact
+   /* ❌ About Details | Contact */
    /* ------------------------------------------- */
 
    #img-clipart-coffee  {
@@ -426,7 +568,7 @@
    }
 
    /* ------------------------------------------- */
-   /* About Details | Contact
+   /* ❌ About Details | Contact */
    /* ------------------------------------------- */
 
    #about-contact-info-container {
@@ -438,7 +580,7 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 850px
+/* >= 850px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 850px ) {
@@ -452,11 +594,11 @@
 
 
 /* ------------------------------------------------------------------- */
-/* 🟣🟣🟣 Handle Extra 14 Zoll Laptops , heights
+/* 🟣🟣🟣 Handle Extra 14 Zoll Laptops , heights */
 /* ------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------- */
-/* >= 850px Extra only for 14 Zoll Laptop
+/* >= 850px Extra only for 14 Zoll Laptop */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 850px ) and ( min-height: 550px ) {

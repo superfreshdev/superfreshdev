@@ -1,0 +1,142 @@
+/* -------------------------------------------------------------- */
+/* > it-skills-about.css
+/*
+/* : style it-skills about
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* ...
+/* ------------------------------------------------------------------- */
+
+#it-skills-about-container {
+
+  background-color: red;
+
+  /* default unshown */
+  display: none;
+
+}
+
+
+/* ------------------------------------------------------------ */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/* About Details IT Skills Container
+/* ------------------------------------------------------------ */
+
+#about-details-it-skills-container {
+
+  margin-top: 1.5em;
+  padding: 2em 0 0 0;
+
+  border-radius: 3em 1.3em 3em 1.3em;
+
+  background-color: rgba(165, 165, 165, .6);
+
+  display: none;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* It Skills Box
+/* ---------------------------------------------------------------- */
+
+.about-it-skills-box {
+
+  width: 100%;
+  display: grid;
+  justify-items: center;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Header | It Skills Box
+/* ---------------------------------------------------------------- */
+
+.about-it-skills-box > header {
+
+  height: 2.3em;
+  /* width: 100%; */
+
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  border-radius: .6em;
+
+  background-color: rgba(28 , 28, 28, .8);
+  color:white;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Div Header | It Skills Box
+/* ---------------------------------------------------------------- */
+
+.about-it-skills-box > header > div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Main | It Skills Box
+/* ---------------------------------------------------------------- */
+
+.about-it-skills-box > main {
+
+  padding: 2em .8em;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .8em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Div (Skill Item) | Main | It Skills Container
+/* ---------------------------------------------------------------- */
+
+.about-it-skills-box > main > div {
+
+  height: 2em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(240, 240, 240);
+  background-color: white;
+  color:rgb(98, 98, 98);
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.about-it-skills-box > main > div:hover {
+
+  /* background-color: wheat; */
+  background-color: grey;
+  color:rgb(224, 224, 224);
+
+}
+
+.about-it-skills-box > main > div > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+}

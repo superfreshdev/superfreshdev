@@ -1,0 +1,67 @@
+/* -------------------------------------------------------------- */
+/* > nav-about.css
+/*
+/* : style nav about css ( info, it-skills, contact )
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Nav About
+/* ------------------------------------------------------------------- */
+
+#nav-about {
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  /* mobile */
+  justify-content: center;
+
+  /* border-radius: 1.5em 1.5em 1.5em 1.5em; */
+
+  /* background-color: rgb(208, 82, 82); */
+
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Handling |
+/* ------------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-nav-about"] {
+
+  display: none;
+}
+
+/* set background | label */
+#radio-info-about:checked ~ div:nth-of-type(1) label[for="radio-info-about"],
+#radio-it-skills-about:checked ~ div:nth-of-type(1) label[for="radio-it-skills-about"],
+#radio-contact-about:checked ~ div:nth-of-type(1) label[for="radio-contact-about"] {
+
+  background-color: wheat;
+  color:black;
+
+}
+
+/* add hover by unchecked labels */
+#radio-info-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-info-about"]:hover,
+#radio-it-skills-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-it-skills-about"]:hover,
+#radio-contact-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-contact-about"]:hover {
+
+  z-index: 3;
+  background-color: rgb(204, 204, 204);
+
+}
+
+
+/* show content | info, it-skills, contact */
+#radio-info-about:checked ~ div:nth-of-type(2) #info-about-container,
+#radio-it-skills-about:checked ~ div:nth-of-type(2) #it-skills-about-container,
+#radio-contact-about:checked ~ div:nth-of-type(2) #contact-about-container {
+
+  display: grid;
+
+}

@@ -1,0 +1,87 @@
+/* -------------------------------------------------------------- */
+/* > nav-mindset-about.css
+/*
+/* : style nav mindset about
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Label Mindset | ( open,close )
+/* ------------------------------------------------------------------- */
+
+label[for="chk-mindset-about"]  {
+
+   width: 5.8em;
+
+  /* dont let strech max widht */
+  justify-self: center;
+
+}
+
+/* default unshown text = close */
+label[for="chk-mindset-about"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | Mindset Content About Container
+/* ------------------------------------------------------------------- */
+
+#smooth-open-close-mindset-content-about-container {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Handlings
+/* ------------------------------------------------------------------- */
+
+/* default unshown */
+#chk-mindset-about {
+
+  display: none;
+
+}
+
+/* unshown text = open */
+#chk-mindset-about:checked ~ #header-nav-mindset-about label[for="chk-mindset-about"] > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* shown text = close */
+#chk-mindset-about:checked ~ #header-nav-mindset-about label[for="chk-mindset-about"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+/* set background */
+#chk-mindset-about:checked ~ #header-nav-mindset-about label[for="chk-mindset-about"] {
+
+  background-color: rgb(227, 87, 87);;
+
+}
+
+/* change img arrow rotation */
+#chk-mindset-about:checked ~ #header-nav-mindset-about label[for="chk-mindset-about"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* show content */
+#chk-mindset-about:checked ~ #smooth-open-close-mindset-content-about-container {
+
+  grid-template-rows: 1fr;
+
+}

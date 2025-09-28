@@ -1,0 +1,27 @@
+/* -------------------------------------------------------------- */
+/* > my-mission-about.css
+/*
+/* : style my mission about
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* My Mission About Container
+/* ------------------------------------------------------------------- */
+
+#my-mission-about-container {
+
+  width: 100%;
+
+  margin-top: 2em;
+  padding: 2em 0;
+
+  display: grid;
+  row-gap: 3em;
+
+  border-top: 3px solid rgb(202, 202, 202);
+
+  /* default unshown  */
+  display: none;
+
+}

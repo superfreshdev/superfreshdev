@@ -1,0 +1,207 @@
+/* -------------------------------------------------------------- */
+/* > read-more-info-box.css
+/*
+/* : styles read more info box
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Read More About Info Box
+/* ------------------------------------------------------------------- */
+
+.read-more-about-info-box {
+
+  display: grid;
+  row-gap: 1em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header | Read More About Info Box
+/* ------------------------------------------------------------------- */
+
+.header-read-more-about-info-box-left,
+.header-read-more-about-info-box-right {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+}
+
+/* right */
+.header-read-more-about-info-box-right {
+
+  justify-content: flex-end;
+
+}
+
+/* change position order */
+.header-read-more-about-info-box-right > .nr-box-read-more-about {
+
+  order: 3;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Nr Box | Header
+/* ------------------------------------------------------------------- */
+
+.nr-box-read-more-about {
+
+  position: relative;
+
+  height: 3.5em;
+  width: 3em;
+
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+
+
+  letter-spacing: 1px;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  background-color: rgba(28, 28, 28, .8);
+  color: rgb(194, 194, 194);
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Nr Box | Div 1
+/* ------------------------------------------------------------------- */
+
+.nr-box-read-more-about > div:nth-of-type(1) {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Nr Box | Div 2
+/* ------------------------------------------------------------------- */
+
+.nr-box-read-more-about > div:nth-of-type(2) {
+
+  width: 30px;
+  height: .05em;
+
+  background-color: rgb(113, 113, 113);
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Nr Box | Div 3
+/* ------------------------------------------------------------------- */
+
+.nr-box-read-more-about > div:nth-of-type(3) {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Title | Header
+/* ------------------------------------------------------------------- */
+
+.title-header-read-more {
+
+  height: 3.5em;
+  padding: 0 1em;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  line-height: 1.3em;
+
+  border-radius: 1em;
+
+  background-color: rgba(28, 28, 28, .8);
+  color: rgb(194, 194, 194);
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Main | Read More About Info Box
+/* ------------------------------------------------------------------- */
+
+.read-more-about-info-box > main {
+
+  padding: 2em 0;
+
+  border-radius: 1em;
+
+  line-height: 1.8em;
+
+  background-color: rgb(183, 183, 183);
+  color:rgb(77, 77, 77);
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Story Box Read More About | Story Superfreshdev
+/* ------------------------------------------------------------------- */
+
+.story-box-read-more-about {
+
+  padding: 0 1em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* UL Main (1/2) | Read More About Info Box
+/* ------------------------------------------------------------------- */
+
+.ul-read-more-about-info-box {
+
+  margin: 0;
+  padding: 0 0 0 2em;
+
+  display: grid;
+  row-gap: 2em;
+
+  /* float: left; */
+
+}
+
+/* ------------------------------------------------------------------- */
+/* UL Main (2/2) | Read More About Info Box
+/* ------------------------------------------------------------------- */
+
+.ul-big-read-more-about-info-box {
+
+  margin: 0;
+  padding: 0 0 0 2em;
+
+  display: grid;
+  row-gap: .5em;
+
+  /* float: left; */
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Img Read More About Mission (Float) | Main
+/* ------------------------------------------------------------------- */
+
+/* img read more about mission 1-3 */
+.img-read-more-about-mission {
+
+  height: 3.3em;
+
+  float: right;
+
+  margin-left: 2em;
+
+  border-radius: .8em 0 0 .8em;
+
+}

@@ -9,40 +9,31 @@
 /* My It Top Projects Container
 /* ------------------------------------------------------------- */
 
-#my-it-top-projects-container {
+#top-it-projects-container {
 
   width: 100%;
-
-  display: grid;
-  justify-items: center;
 
   /* background-color: red; */
 
 }
 
 /* ------------------------------------------------------------- */
-/* My IT Top Projects Card Container
+/* Header Nav | My It Top Projects Container
 /* ------------------------------------------------------------- */
 
-#my-it-top-projects-card-container {
+#header-nav-top-it-projects {
 
   width: 100%;
-  padding: 3.5em 0;
 
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* mobile */
+  display: grid;
+  justify-items: center;
 
-  column-gap: 2em;
-  row-gap: 2em;
-
-  /* background-color: yellow; */
 
 }
 
 /* ------------------------------------------------------------- */
-/* Header Top IT Projects
+/* Header | My It Top Projects Container
 /* ------------------------------------------------------------- */
 
 #header-top-it-projects {
@@ -56,8 +47,27 @@
 
 }
 
+/* ------------------------------------------------------------- */
+/* Header Main Title Block | Header
+/* ------------------------------------------------------------- */
+
 #header-top-it-projects > .header-main-title-block {
 
   width: 100%;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Top IT Project Card Container
+/* ------------------------------------------------------------- */
+
+#top-it-project-card-container {
+
+  margin-top: 2em;
+
+  display: grid;
+  row-gap: 2em;
+
+  background-color: green;
 
 }

@@ -9,12 +9,14 @@
 /* My IT Docs Container
 /* ------------------------------------------------------------- */
 
-#my-it-docs-container {
+#it-docs-container {
 
   width: 100%;
-  z-index: 2;
+  /* z-index: 2; */
+/*
+  display: grid; */
 
-  display: grid;
+  /* background-color: magenta; */
 
 
   /* default unshown */

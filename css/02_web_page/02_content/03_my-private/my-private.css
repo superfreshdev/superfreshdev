@@ -11,8 +11,12 @@
 
 #my-private-page-container {
 
+  /* z-index: 2; */
   width: 100%;
+  padding: 2em 0;
+
   display: grid;
+  row-gap: 2em;
 
 }
 
@@ -89,43 +93,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-}
-
-
-#test-slide-3 {
-
-   z-index: 3;
-
-  width: 40%;
-  height: 100%;
-
-  display: grid;
-  justify-items: center;
-  align-content: flex-start;
-  row-gap: .5em;
-
-  padding: 2em;
-  background-color: rgb(158, 212, 208);
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* Nav My Private
-/* ------------------------------------------------------------- */
-
-#nav-my-private {
-
-    width: 100%;
-    padding: 1.5em .8em;
-
-    display: grid;
-
-    column-gap: 1em;
-    row-gap: 1em;
-
-    background-color: rgb(255, 255, 255);
 
 }
 

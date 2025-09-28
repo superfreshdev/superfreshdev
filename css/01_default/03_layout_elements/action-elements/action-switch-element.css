@@ -1,0 +1,71 @@
+/* -------------------------------------------------------------- */
+/* > action-switch-element.css
+/*
+/* : style action switch element
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Action Switch Element
+/* -------------------------------------------------------------- */
+
+.action-switch-element {
+
+  position: relative;
+  top:0;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+
+  background-color: rgb(95, 95, 95);
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Label 1 | Action Switch Element
+/* -------------------------------------------------------------- */
+
+.action-switch-element > label {
+
+  height: 2.5em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+
+  background-color: rgb(95, 95, 95);
+
+  user-select: none;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* Label > Div */
+.action-switch-element > label > div:nth-of-type(1) {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* Label 1 | Action Switch Element
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Label Last | Action Switch Element
+/* -------------------------------------------------------------- */

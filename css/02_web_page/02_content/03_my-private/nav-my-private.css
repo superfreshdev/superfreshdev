@@ -1,0 +1,116 @@
+/* -------------------------------------------------------------- */
+/* > nav-my-private.css
+/*
+/* : styles my private
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Nav My Private
+/* ------------------------------------------------------------- */
+
+#nav-my-private {
+
+  width: 100%;
+
+  display: grid;
+
+  /* mobile */
+  justify-items: center;
+
+  background-color: magenta;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav List My Private
+/* ------------------------------------------------------------- */
+
+#nav-list-my-private {
+
+  margin-top: 1.5em;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* mobile */
+  justify-content: center;
+
+  gap: .6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* ⬇️⬆️ Smoot Open Close | Nav List My Private
+/* ------------------------------------------------------------- */
+
+#smooth-open-close-nav-list-my-private {
+
+  /* width: 100%; */
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Handlings
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+#chk-selected-my-private,
+input[name="name-radio-category-private"] {
+
+  display: none;
+}
+
+/* ------------------------------------------------------------- */
+/* Handling | Checkbox
+/* ------------------------------------------------------------- */
+
+/* set background | checkbox label */
+#chk-selected-my-private:checked ~ #nav-my-private label[for="chk-selected-my-private"] {
+
+  background-color: wheat;
+}
+
+/* change img arrow rotation | checkbox label */
+#chk-selected-my-private:checked ~ #nav-my-private label[for="chk-selected-my-private"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* open nav */
+#chk-selected-my-private:checked ~ #nav-my-private #smooth-open-close-nav-list-my-private {
+
+  grid-template-rows: 1fr;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Handling | Radios
+/* ------------------------------------------------------------- */
+
+
+/* set img x */
+#radio-sport-my-private:checked ~ #nav-my-private #smooth-open-close-nav-list-my-private label[for="radio-sport-my-private"] > .custom-radio-default > img,
+#radio-books-my-private:checked ~ #nav-my-private #smooth-open-close-nav-list-my-private label[for="radio-books-my-private"] > .custom-radio-default > img,
+#radio-food-my-private:checked ~ #nav-my-private #smooth-open-close-nav-list-my-private label[for="radio-food-my-private"] > .custom-radio-default > img,
+#radio-language-my-private:checked ~ #nav-my-private #smooth-open-close-nav-list-my-private label[for="radio-language-my-private"] > .custom-radio-default > img,
+#radio-mini-games-my-private:checked ~ #nav-my-private #smooth-open-close-nav-list-my-private label[for="radio-mini-games-my-private"] > .custom-radio-default > img {
+
+  display: flex;
+
+}
+
+/* show content */
+#radio-sport-my-private:checked ~ #my-sport-container-private,
+#radio-books-my-private:checked ~ #my-book-container-private,
+#radio-food-my-private:checked ~ #my-food-container-private,
+#radio-language-my-private:checked ~ #my-language-container-private,
+#radio-mini-games-my-private:checked ~ #my-mini-games-container-private {
+
+  display: grid;
+
+}

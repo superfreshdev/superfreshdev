@@ -1,4 +1,4 @@
-console.log('🟨(js-lib|utils|date) | date_functions.js]')
+// console.log('🟨(js-lib|utils|date) | date_functions.js]')
 
 
 /* ------------------------------------------------------------------------------- */
