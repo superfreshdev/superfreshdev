@@ -6,107 +6,76 @@
 
 
 /* ------------------------------------------------------------------- */
-/* ...
+/* Contact About Container
 /* ------------------------------------------------------------------- */
 
 #contact-about-container {
 
-  background-color: wheat;
+  display: grid;
+  justify-items: center;
 
   /* default unshown */
   display: none;
 
 }
 
+/* ------------------------------------------------------------------- */
+/* E-Mail Contact Box About */
+/* ------------------------------------------------------------------- */
 
-
-/* ------------------------------------------------------------ */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------ */
-
-
-/* ------------------------------------------------------------ */
-/* About Details Contact Container
-/* ------------------------------------------------------------ */
-
-#about-details-contact-container {
-
-  margin-top: 2em;
-
-  display: grid;
-  justify-items: center;
-
-  display: none;
-
-}
-
-/* ------------------------------------------------------------ */
-/* About Details Contact Info Box
-/* ------------------------------------------------------------ */
-
-#about-details-contact-info-box {
+#e-mail-contact-box-about {
 
   /* mobile */
-  padding: .8em .8em;
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* desktop */
+  /* display: flex;
   align-items: center;
-
-  row-gap: 1.5em;
-  column-gap: 1.3em;
-
-  border-radius: 2em 3em 3em 4em;
-
-  background-color: rgb(184, 184, 184);
-
-  background-color: rgba(165, 165, 165, .6);
+  column-gap: 1.5em; */
 
 }
 
+/* ------------------------------------------------------------------- */
+/* Img | E-Mail Contact Box About */
+/* ------------------------------------------------------------------- */
 
-/* ------------------------------------------- */
-/* Img | Clipart Coffee
-/* ------------------------------------------- */
-
-#img-clipart-coffee {
+#img-email-contact-about {
 
   order:2;
 
-  height: 8em;
+  height: 5em;
   transform: scaleX(-1);
 
 }
 
-/* ------------------------------------------------------------ */
-/* Main | About Details Contact Info Box
-/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------------- */
+/* Email Contact Title Container */
+/* ------------------------------------------------------------------- */
 
-#about-details-contact-info-box > main {
+#e-mail-contact-title-container-about {
 
   display: grid;
-  justify-items: center;
-  row-gap: 1em;
+  row-gap: .6em;
 
 }
 
-/* ------------------------------------------------------------ */
-/* Main Header | About Details Contact Info Box
-/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------------- */
+/* Header | Email Contact Title Container */
+/* ------------------------------------------------------------------- */
 
-#about-details-contact-info-box > main > header {
+#e-mail-contact-title-container-about > header {
 
-  /* font-size: 1.125em; */
   font-weight: bold;
 
 }
 
-/* ------------------------------------------- */
-/* E-Mail Link | Superfresdev
-/* ------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* a (Link) | Email Contact Title Container */
+/* ------------------------------------------------------------------- */
 
-#about-details-contact-info-box > main > a {
+#e-mail-contact-title-container-about > a {
 
   padding: .2em .6em;
 
@@ -123,14 +92,14 @@
 
 }
 
-#about-details-contact-info-box > main > a:hover {
+#e-mail-contact-title-container-about > a:hover {
 
   background-color: wheat;
   color: black;
 
 }
 
-#about-details-contact-info-box > main > a:visited {
+#e-mail-contact-title-container-about > a:visited {
 
   color:rgb(186, 186, 186);
 
