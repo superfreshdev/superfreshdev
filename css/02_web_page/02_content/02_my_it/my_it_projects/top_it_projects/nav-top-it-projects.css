@@ -22,7 +22,7 @@
   gap:.6em;
 
   /* background-color: rgb(144, 144, 144); */
-  background-color: rgb(155, 155, 155);
+  /* background-color: rgb(155, 155, 155); */
 
 }
 
@@ -45,6 +45,10 @@
 /* Handlings
 /* ------------------------------------------------------------- */
 
+/* ------------------------------------------------------------- */
+/* Handlings | Checkbox
+/* ------------------------------------------------------------- */
+
 /* default unshown */
 #chk-top-it-projects,
 input[name="name-radio-top-it-projects"] {
@@ -53,7 +57,12 @@ input[name="name-radio-top-it-projects"] {
 
 }
 
-/* set background | checkbox */
+/* set background | label */
+#chk-top-it-projects:checked ~ #header-nav-top-it-projects label[for="chk-top-it-projects"] {
+
+  background-color: rgb(227, 87, 87);
+
+}
 
 /* change img arrow rotation */
 #chk-top-it-projects:checked ~ #header-nav-top-it-projects label[for="chk-top-it-projects"] > img:nth-of-type(1) {
@@ -66,5 +75,18 @@ input[name="name-radio-top-it-projects"] {
 #chk-top-it-projects:checked ~ #header-nav-top-it-projects #smooth-open-close-nav-top-it-projects {
 
   grid-template-rows: 1fr;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Handlings | Radios ( choose 1, choose 2 )
+/* ------------------------------------------------------------- */
+
+/* set quick img x & than the nav view will closed */
+
+#radio-top-it-project-choose-1:checked ~ #header-nav-top-it-projects label[for="radio-top-it-project-choose-1"] > .custom-radio-default > img:nth-of-type(1),
+#radio-top-it-project-choose-2:checked ~ #header-nav-top-it-projects label[for="radio-top-it-project-choose-2"] > .custom-radio-default > img:nth-of-type(1) {
+
+  display: flex;
 
 }

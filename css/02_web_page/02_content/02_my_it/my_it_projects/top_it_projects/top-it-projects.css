@@ -17,6 +17,7 @@
 
 }
 
+
 /* ------------------------------------------------------------- */
 /* Header Nav | My It Top Projects Container
 /* ------------------------------------------------------------- */
@@ -28,7 +29,6 @@
   /* mobile */
   display: grid;
   justify-items: center;
-
 
 }
 
@@ -64,10 +64,13 @@
 #top-it-project-card-container {
 
   margin-top: 2em;
+  padding: 2em 0;
 
   display: grid;
-  row-gap: 2em;
+  row-gap: 3em;
 
-  background-color: green;
+  border-top: 3px solid rgb(202, 202, 202);
+
+  /* display: none;  */
 
 }

@@ -6,26 +6,41 @@
 
 
 /* ------------------------------------------------------------- */
+/* Label ( Open, Close ) | Checkbox
+/* ------------------------------------------------------------- */
+
+label[for="chk-more-it-projects"] {
+
+  width: 5.8em;
+
+}
+
+/* default text=close unshown */
+label[for="chk-more-it-projects"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* ------------------------------------------------------------- */
 /* Nav More It Projects
 /* ------------------------------------------------------------- */
 
 #nav-more-it-projects {
 
   width: 100%;
-
-  /* mobile */
-  padding-top: 2em;
+  margin-top: 2em;
+  padding: 1.5em .8em;
 
   display: flex;
+
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap:.6em;
+  gap: .6em;
 
+  border-radius: .8em;
 
-  /* background-color: rgb(144, 144, 144); */
-
-  background-color: red;
+  background-color: rgba(255, 255, 255, .4);
 
 }
 
@@ -60,6 +75,20 @@ input[name="name-radio-more-it-projects"] {
 /* Checkbox Hanlding
 /* ------------------------------------------ */
 
+/* unshown text=open */
+#chk-more-it-projects:checked ~ #header-top-it-projects [for="chk-more-it-projects"] > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* shown text=close */
+#chk-more-it-projects:checked ~ #header-top-it-projects label[for="chk-more-it-projects"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  display: flex;
+
+}
+
 /* set background | checkbox */
 #chk-more-it-projects:checked ~ #header-top-it-projects label[for="chk-more-it-projects"] {
 
@@ -74,7 +103,6 @@ input[name="name-radio-more-it-projects"] {
 
 }
 
-
 /* show content */
 #chk-more-it-projects:checked ~ #smooth-open-close-nav-more-it-projects {
 
@@ -87,17 +115,27 @@ input[name="name-radio-more-it-projects"] {
 /* ------------------------------------------ */
 
 /* set background | radios */
-#radio-more-it-project-exercices:checked ~ #smooth-open-close-nav-more-it-projects label[for="radio-more-it-project-exercices"],
-#radio-more-it-project-leetcode:checked ~ #smooth-open-close-nav-more-it-projects label[for="radio-more-it-project-leetcode"],
-#radio-more-it-project-mini-projects:checked ~ #smooth-open-close-nav-more-it-projects label[for="radio-more-it-project-mini-projects"] {
+#radio-more-it-project-exercices:checked ~ #header-nav-top-it-projects label[for="radio-more-it-project-exercices"],
+#radio-more-it-project-leetcode:checked ~ #header-nav-top-it-projects label[for="radio-more-it-project-leetcode"],
+#radio-more-it-project-mini-projects:checked ~ #header-nav-top-it-projects label[for="radio-more-it-project-mini-projects"] {
 
   background-color: wheat;
+
+}
+
+/* set X | radios */
+#radio-more-it-project-exercices:checked ~ #header-nav-top-it-projects label[for="radio-more-it-project-exercices"] > .custom-radio-default > img,
+#radio-more-it-project-leetcode:checked ~ #header-nav-top-it-projects label[for="radio-more-it-project-leetcode"] > .custom-radio-default > img,
+#radio-more-it-project-mini-projects:checked ~ #header-nav-top-it-projects label[for="radio-more-it-project-mini-projects"] > .custom-radio-default > img {
+
+  display: flex;
+
 }
 
 /* show content */
-#radio-more-it-project-exercices:checked ~ #smooth-open-close-nav-more-it-projects #exercise-it-projects-container,
-#radio-more-it-project-leetcode:checked ~ #smooth-open-close-nav-more-it-projects #leetcode-it-projects-container,
-#radio-more-it-project-mini-projects:checked ~ #smooth-open-close-nav-more-it-projects #mini-projects-it-projects-container {
+#radio-more-it-project-exercices:checked ~ #exercise-it-projects-container,
+#radio-more-it-project-leetcode:checked ~ #leetcode-it-projects-container,
+#radio-more-it-project-mini-projects:checked ~ #mini-projects-it-projects-container {
 
   display: grid;
 
