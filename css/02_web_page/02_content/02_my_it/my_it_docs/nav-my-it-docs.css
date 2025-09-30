@@ -58,7 +58,7 @@ label[for="chk-it-docs"] > div:nth-of-type(1) > div:nth-of-type(2) {
 }
 
 /* ------------------------------------------------------------- */
-/* Nav Cateogry (frontend,backend,ai) | My IT Docs
+/* [1/2] | Nav Cateogry (frontend,backend,ai) | My IT Docs
 /* ------------------------------------------------------------- */
 
 #nav-category-my-it-docs {
@@ -71,7 +71,7 @@ label[for="chk-it-docs"] > div:nth-of-type(1) > div:nth-of-type(2) {
   justify-content: center;
   gap: .6em;
 
-  background-color: red;
+  /* background-color: red; */
 
 }
 
@@ -87,7 +87,7 @@ label[for="chk-it-docs"] > div:nth-of-type(1) > div:nth-of-type(2) {
 }
 
 /* ------------------------------------------------------------- */
-/* Nav Sub Cateogry My IT Docs
+/* [2/2] | Nav Sub Cateogry My IT Docs
 /* ------------------------------------------------------------- */
 
 #nav-sub-category-my-it-docs {
@@ -113,15 +113,30 @@ label[for="chk-it-docs"] > div:nth-of-type(1) > div:nth-of-type(2) {
   padding-top: 1em;
 
   display: flex;
-
   flex-wrap: wrap;
   justify-content: center;
   gap: .6em;
 
   border-top: 3px solid rgb(202, 202, 202);
 
+  border-top: 3px solid rgb(225, 225, 225);
+
   /* default unshown */
   display: none;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Label | 3 Sub Nav Categories | Frontend, Backend, AI
+/* ------------------------------------------------------------- */
+
+#nav-sub-frontend-my-it-docs > label,
+#nav-sub-backend-my-it-docs > label,
+#nav-sub-ai-my-it-docs > label {
+
+  /* very small mobile */
+  width: 100%;
+
 
 }
 
@@ -210,7 +225,7 @@ input[name="name-radio-category-it-docs"] {
 #radio-backend-it-docs:checked ~ #header-nav-it-docs #nav-sub-backend-my-it-docs,
 #radio-ai-it-docs:checked ~ #header-nav-it-docs #nav-sub-ai-my-it-docs {
 
-  display: grid;
+  display: flex;
 
 }
 
@@ -218,3 +233,34 @@ input[name="name-radio-category-it-docs"] {
 /* ------------------------------------------------------------- */
 /* 🟥 Radios Nav Sub Category | Handlings
 /* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radios-sub-category-it-docs"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-dev-basic-it-docs:checked ~ #header-nav-it-docs label[for="radio-dev-basic-it-docs"],
+#radio-web-basic-it-docs:checked ~ #header-nav-it-docs label[for="radio-web-basic-it-docs"],
+#radio-web-dev-it-docs:checked ~ #header-nav-it-docs label[for="radio-web-dev-it-docs"],
+#radio-software-dev-it-docs:checked ~ #header-nav-it-docs label[for="radio-software-dev-it-docs"],
+#radio-it-architecture-it-docs:checked ~ #header-nav-it-docs label[for="radio-it-architecture-it-docs"],
+#radio-backend-tools-it-docs:checked ~ #header-nav-it-docs label[for="radio-backend-tools-it-docs"] {
+
+  background-color: wheat;
+
+}
+
+/* set x */
+#radio-dev-basic-it-docs:checked ~ #header-nav-it-docs label[for="radio-dev-basic-it-docs"] > .custom-radio-default > img,
+#radio-web-basic-it-docs:checked ~ #header-nav-it-docs label[for="radio-web-basic-it-docs"] > .custom-radio-default > img,
+#radio-web-dev-it-docs:checked ~ #header-nav-it-docs label[for="radio-web-dev-it-docs"] > .custom-radio-default > img,
+#radio-software-dev-it-docs:checked ~ #header-nav-it-docs label[for="radio-software-dev-it-docs"] > .custom-radio-default > img,
+#radio-it-architecture-it-docs:checked ~ #header-nav-it-docs label[for="radio-it-architecture-it-docs"] > .custom-radio-default > img,
+#radio-backend-tools-it-docs:checked ~ #header-nav-it-docs label[for="radio-backend-tools-it-docs"] > .custom-radio-default > img {
+
+  display: flex;
+
+}

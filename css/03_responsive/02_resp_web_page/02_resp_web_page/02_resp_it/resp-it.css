@@ -45,6 +45,18 @@
 
   }
 
+  /* ------------------------------------------------------------- */
+  /*  It Docs | nav sub (frontend,backend) | Label
+  /* ------------------------------------------------------------- */
+
+  #nav-sub-frontend-my-it-docs > label,
+  #nav-sub-backend-my-it-docs > label {
+
+    /* desktop */
+    width: auto;
+
+  }
+
 
 }
 

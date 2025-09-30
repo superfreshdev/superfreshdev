@@ -54,6 +54,191 @@
 
 }
 
+#tmp-it-doc-card-list-container {
+
+  margin-top: 2em;
+  padding-top: 2em;
+
+  display: grid;
+  row-gap: 2em;
+
+
+  border-top: 3px solid rgb(202, 202, 202);
+
+  /* display: none; */
+
+
+}
+
+#tmp-it-doc-card-container > header {
+
+  background-color: grey;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* IT Doc Card Row Container
+/* ------------------------------------------------------------- */
+
+.it-doc-card-row-container {
+
+  display: grid;
+  row-gap: 2em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | IT Doc Card Row Container
+/* ------------------------------------------------------------- */
+
+.it-doc-card-row-container > header {
+
+  padding: .8em;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  background-color: grey;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | IT Doc Card Row Container
+/* ------------------------------------------------------------- */
+
+.it-doc-card-row-container > main {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 2em;
+
+  /* background-color: blue; */
+
+}
+
+
+
+/* ------------------------------------------------------------- */
+/* IT Doc PDF Card
+/* ------------------------------------------------------------- */
+
+.it-doc-pdf-card {
+
+  position: relative;
+
+  opacity: .4;
+
+  width: 12em;
+  /* height: 100%; */
+
+  display: grid;
+  justify-items: flex-end;
+  align-content: space-between;
+  row-gap: 1em;
+
+
+  border-radius: 1em;
+
+  border: 3px solid transparent;
+
+  /* background-color: red; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  transition: all .4s;
+
+}
+
+.it-doc-pdf-card:hover {
+
+   opacity: 1;
+
+  background-color: grey;
+
+  border: 3px solid grey;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | IT Doc PDF Card
+/* ------------------------------------------------------------- */
+
+.it-doc-pdf-card > img {
+
+
+  width: 100%;
+
+  border-radius: 1em 1em 0 0;
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav | IT Doc PDF Card
+/* ------------------------------------------------------------- */
+
+.it-doc-pdf-card > nav {
+
+  position: absolute;
+  bottom:0em;
+
+  /* background-color: blue; */
+
+  border-radius: 0em 0 1em 1em;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* a link | Nav | IT Doc PDF Card
+/* ------------------------------------------------------------- */
+
+.it-doc-pdf-card > nav > a {
+
+  text-decoration: none;
+
+
+  height: 2em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  border-radius: .6em 0 .6em 0;
+
+  background-color: rgb(184, 184, 184);
+
+  user-select: none;
+  transition: all .4s;
+
+}
+
+.it-doc-pdf-card > nav > a > div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+.it-doc-pdf-card > nav > a:hover {
+
+  background-color: wheat;
+
+}
+
+.it-doc-pdf-card > nav > a:visited {
+
+  color: black;
+
+}
 
 
 
@@ -63,7 +248,14 @@
 
 
 
+/* ------------------------------------------------------------- */
+/* IT Doc Anki Card
+/* ------------------------------------------------------------- */
 
+.it-doc-pdf-card {
+
+
+}
 
 
 
