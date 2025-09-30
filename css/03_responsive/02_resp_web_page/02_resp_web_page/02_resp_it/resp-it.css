@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------- */
-/* > resp-it.css
-/*
-/* : responsive sets for it docs
+/* > resp-it.css */
+
+/* : responsive sets for it docs */
 /* -------------------------------------------------------------- */
 
 
@@ -13,7 +13,7 @@
 
 
   /* ------------------------------------------------------------- */
-  /* More Project | Nav More It Projects | Label
+  /* More Project | Nav More It Projects | Label */
   /* ------------------------------------------------------------- */
 
   #nav-more-it-projects > label {
@@ -24,7 +24,7 @@
   }
 
   /* ------------------------------------------------------------- */
-  /* My IT Projects | More Card
+  /* My IT Projects | More Card */
   /* ------------------------------------------------------------- */
 
   .my-it-project-more-card {
@@ -35,10 +35,10 @@
 
 
   /* ------------------------------------------------------------- */
-  /*  It Docs | Nav Category My IT Docs | Label
+  /*  It Docs | Nav Category IT Docs | Label */
   /* ------------------------------------------------------------- */
 
-  #nav-category-my-it-docs > label {
+  #nav-category-it-docs > label {
 
     /* desktop */
     width: auto;
@@ -49,8 +49,8 @@
   /*  It Docs | nav sub (frontend,backend) | Label
   /* ------------------------------------------------------------- */
 
-  #nav-sub-frontend-my-it-docs > label,
-  #nav-sub-backend-my-it-docs > label {
+  #nav-sub-category-frontend-it-docs > label,
+  #nav-sub-category-backend-it-docs > label {
 
     /* desktop */
     width: auto;
@@ -142,7 +142,7 @@
 @media (min-width: 480px ) {
 
   /* ------------------------------------------------------- */
-  /* IT Docs | Header IT Docs
+  /* IT Docs | Header IT Docs */
   /* ------------------------------------------------------- */
 
   #header-it-docs {
@@ -196,18 +196,6 @@
 
 @media (min-width: 500px ) {
 
-  /* ------------------------------------------------------------- */
-  /* IT Docs | Nav Category My It Docs
-  /* ------------------------------------------------------------- */
-
-  #nav-category-my-it-docs {
-
-    /* desktop */
-    justify-content: flex-start;
-
-    /* background-color: rgb(60, 255, 0); */
-
-  }
 
 }
 

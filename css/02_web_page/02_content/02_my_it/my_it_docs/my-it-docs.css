@@ -12,49 +12,19 @@
 #it-docs-container {
 
   width: 100%;
-  /* z-index: 2; */
-/*
-  display: grid; */
 
-  /* background-color: magenta; */
-
+  display: grid;
 
   /* default unshown */
   display: none;
 
 }
 
-
 /* ------------------------------------------------------------- */
-/* Header Nav IT Docs
-/* ------------------------------------------------------------- */
-
-#header-nav-it-docs {
-
-  width: 100%;
-
-  /* mobile */
-  display: grid;
-  justify-items: center;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Header IT Docs
+/* My IT Docs Card Content Container
 /* ------------------------------------------------------------- */
 
-#header-it-docs {
-
-  width: 100%;
-
-  /* mobile */
-  display: grid;
-  justify-items: center;
-  row-gap: 2em;
-
-}
-
-#tmp-it-doc-card-list-container {
+#it-docs-card-content-container {
 
   margin-top: 2em;
   padding-top: 2em;
@@ -62,26 +32,18 @@
   display: grid;
   row-gap: 2em;
 
-
   border-top: 3px solid rgb(202, 202, 202);
 
-  /* display: none; */
-
-
-}
-
-#tmp-it-doc-card-container > header {
-
-  background-color: grey;
+  /* default unshown */
+  display: none;
 
 }
 
-
 /* ------------------------------------------------------------- */
-/* IT Doc Card Row Container
+/* It Docs List Card Container
 /* ------------------------------------------------------------- */
 
-.it-doc-card-row-container {
+.it-docs-list-card-container {
 
   display: grid;
   row-gap: 2em;
@@ -89,26 +51,54 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Header | IT Doc Card Row Container
+/* Header | It Docs List Card Container
 /* ------------------------------------------------------------- */
 
-.it-doc-card-row-container > header {
+.it-docs-list-card-container > header {
 
   padding: .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
 
   font-weight: bold;
 
   border-radius: .8em;
 
-  background-color: grey;
+  background-color: rgba(28, 28, 28, .8);
+  color:rgb(188, 188, 188);
 
 }
 
 /* ------------------------------------------------------------- */
-/* Main | IT Doc Card Row Container
+/* Title | Header | It Docs List Card Container
 /* ------------------------------------------------------------- */
 
-.it-doc-card-row-container > main {
+.header-title-it-docs-list {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nr | Header | It Docs List Card Container
+/* ------------------------------------------------------------- */
+
+.header-title-nr-it-docs-list {
+
+  letter-spacing: 1px;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | It Docs List Card Container
+/* ------------------------------------------------------------- */
+
+.it-docs-list-card-container > main {
 
   width: 100%;
 
@@ -118,216 +108,4 @@
 
   gap: 2em;
 
-  /* background-color: blue; */
-
-}
-
-
-
-/* ------------------------------------------------------------- */
-/* IT Doc PDF Card
-/* ------------------------------------------------------------- */
-
-.it-doc-pdf-card {
-
-  position: relative;
-
-  opacity: .4;
-
-  width: 12em;
-  /* height: 100%; */
-
-  display: grid;
-  justify-items: flex-end;
-  align-content: space-between;
-  row-gap: 1em;
-
-
-  border-radius: 1em;
-
-  border: 3px solid transparent;
-
-  /* background-color: red; */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-  transition: all .4s;
-
-}
-
-.it-doc-pdf-card:hover {
-
-   opacity: 1;
-
-  background-color: grey;
-
-  border: 3px solid grey;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Img | IT Doc PDF Card
-/* ------------------------------------------------------------- */
-
-.it-doc-pdf-card > img {
-
-
-  width: 100%;
-
-  border-radius: 1em 1em 0 0;
-
-
-}
-
-/* ------------------------------------------------------------- */
-/* Nav | IT Doc PDF Card
-/* ------------------------------------------------------------- */
-
-.it-doc-pdf-card > nav {
-
-  position: absolute;
-  bottom:0em;
-
-  /* background-color: blue; */
-
-  border-radius: 0em 0 1em 1em;
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* a link | Nav | IT Doc PDF Card
-/* ------------------------------------------------------------- */
-
-.it-doc-pdf-card > nav > a {
-
-  text-decoration: none;
-
-
-  height: 2em;
-  padding: 0 .6em;
-
-  display: flex;
-  align-items: center;
-  column-gap: .6em;
-
-  font-weight: bold;
-
-  border-radius: .6em 0 .6em 0;
-
-  background-color: rgb(184, 184, 184);
-
-  user-select: none;
-  transition: all .4s;
-
-}
-
-.it-doc-pdf-card > nav > a > div {
-
-  /* 14.5px | 14.5 / 16px= 0.90625 */
-  font-size: .90625em;
-
-}
-
-.it-doc-pdf-card > nav > a:hover {
-
-  background-color: wheat;
-
-}
-
-.it-doc-pdf-card > nav > a:visited {
-
-  color: black;
-
-}
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------- */
-/* IT Doc Anki Card
-/* ------------------------------------------------------------- */
-
-.it-doc-pdf-card {
-
-
-}
-
-
-
-/* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------- */
-
-/* ------------------------------------------------------------- */
-/* My IT Docs Content Container
-/* ------------------------------------------------------------- */
-
-#my-it-docs-content-container {
-
-  display: grid;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Header | My IT Docs Container
-/* ------------------------------------------------------------- */
-
-#header-my-it-docs-container {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* Header Title Block | My It Docs
-/* ------------------------------------------------------------- */
-
-#header-title-block-my-it-docs {
-
-  display: flex;
-  align-items: center;
-  column-gap: 1em;
-
-}
-
-
-#header-title-block-my-it-docs > div:nth-of-type(1) {
-
-  line-height: 1.4em;
-
-}
-
-/* header title */
-#header-title-block-my-it-docs > div:nth-of-type(1) > div:nth-of-type(1) {
-
-  font-size: 1.125em;
-  font-weight: bold;
-
-}
-
-/* header sub title */
-#header-title-block-my-it-docs > div:nth-of-type(1) > div:nth-of-type(2) {
-
-  font-weight: bold;
-  color:rgb(200, 51, 51);
-  color:rgb(121, 121, 121);
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* 🟣🟣🟣 Auslagern
-/* ------------------------------------------------------------- */
-
-#img-it-docs-books {
-
-  height: 2.3em;
 }

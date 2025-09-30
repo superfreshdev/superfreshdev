@@ -5,6 +5,98 @@
 /* -------------------------------------------------------------- */
 
 
-/* ---------------------------------------------------------------- */
-/* ....
-/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* IT Doc PDF Card
+/* ------------------------------------------------------------- */
+
+.it-doc-pdf-card {
+
+  position: relative;
+
+  width: 12em;
+
+  display: grid;
+  justify-items: flex-end;
+  align-content: space-between;
+  row-gap: 1em;
+
+  border-radius: 1em;
+
+  opacity: .4;
+
+  border: 3px solid transparent;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  transition: all .4s;
+
+}
+
+.it-doc-pdf-card:hover {
+
+  opacity: 1;
+
+  border: 3px solid grey;
+  background-color: grey;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | IT Doc PDF Card
+/* ------------------------------------------------------------- */
+
+.it-doc-pdf-card > img {
+
+  width: 100%;
+
+  border-radius: 1em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* a link | Nav | IT Doc PDF Card
+/* ------------------------------------------------------------- */
+
+.it-doc-pdf-card  > a {
+
+  text-decoration: none;
+
+  position: absolute;
+  bottom:0em;
+
+  height: 2em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  border-radius: .6em 0 .9em 0;
+
+  background-color: rgb(184, 184, 184);
+
+  user-select: none;
+  transition: all .4s;
+
+}
+
+.it-doc-pdf-card > a > div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+}
+
+.it-doc-pdf-card > a:hover {
+
+  background-color: wheat;
+
+}
+
+.it-doc-pdf-card > a:visited {
+
+  color: black;
+
+}

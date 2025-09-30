@@ -1,0 +1,157 @@
+/* -------------------------------------------------------------- */
+/* > header-nav-it-docs.css */
+
+/* : styles for header nav it docs  */
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Header Nav | IT Docs
+/* -------------------------------------------------------------- */
+
+#header-nav-it-docs {
+
+  width: 100%;
+  display: grid;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Header | IT Docs
+/* -------------------------------------------------------------- */
+
+#header-it-docs {
+
+  width: 100%;
+
+  /* mobile */
+  display: grid;
+  row-gap: 2em;
+
+  /* background-color: red; */
+
+}
+
+/* -------------------------------------------------------------- */
+/* Label (open,close) Header | IT Docs
+/* -------------------------------------------------------------- */
+
+#header-it-docs > label[for="chk-it-docs"] {
+
+  /* very small mobile */
+  justify-self: center;
+
+  width: 5.8em;
+
+}
+
+/* default text=close unshown */
+label[for="chk-it-docs"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* ------------------------------------------------------------- */
+/* ⬇️⬆️ | Smooth Open Close | Nav It Docs
+/* ------------------------------------------------------------- */
+
+#smooth-open-close-nav-it-docs {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav It Docs Container
+/* ------------------------------------------------------------- */
+
+#nav-it-docs-container {
+
+  width: 100%;
+  margin-top: 2em;
+  padding: 1.5em .8em;
+
+  display: grid;
+  justify-items: center;
+
+  border-radius: .8em;
+
+  background-color: rgba(255, 255, 255, .4);
+
+}
+
+/* ------------------------------------------------------------- */
+/* [1/2] | Nav Category | Nav It Docs Container
+/* ------------------------------------------------------------- */
+
+#nav-category-it-docs {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* mobile */
+  justify-content: center;
+  gap: .6em;
+
+}
+
+/* label */
+#nav-category-it-docs > label {
+
+  /* very small mobile */
+  width: 100%;
+
+}
+
+/* ------------------------------------------------------------- */
+/* [2/2] | Nav Sub Category | Nav It Docs Container
+/* ------------------------------------------------------------- */
+
+#nav-sub-category-it-docs {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Frontend, Backend | Nav Sub Category
+/* ------------------------------------------------------------- */
+
+#nav-sub-category-frontend-it-docs,
+#nav-sub-category-backend-it-docs {
+
+   width: 100%;
+  margin-top: 1em;
+  padding-top: 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .6em;
+
+  border-top: 3px solid rgb(225, 225, 225);
+
+  /* default unshown */
+  display: none;
+
+}
+
+/* label */
+#nav-sub-category-frontend-it-docs > label,
+#nav-sub-category-backend-it-docs > label {
+
+  /* very small mobile */
+  width: 100%;
+
+}
