@@ -6,5 +6,215 @@
 
 
 /* ------------------------------------------------------------- */
-/* Ny My IT Docs
+/* Label ( Open, Close ) | Checkbox
+/* ------------------------------------------------------------- */
+
+label[for="chk-it-docs"] {
+
+  width: 5.8em;
+
+}
+
+/* default text=close unshown */
+label[for="chk-it-docs"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* ------------------------------------------------------------- */
+/* ⬇️⬆️ | Smooth Open Close | Nav It Docs
+/* ------------------------------------------------------------- */
+
+#smooth-open-close-nav-it-docs {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav My IT Docs Container
+/* ------------------------------------------------------------- */
+
+#nav-my-it-docs-container {
+
+  width: 100%;
+  margin-top: 2em;
+  padding: 1.5em .8em;
+
+  display: grid;
+  justify-items: center;
+  /* row-gap: 2em; */
+
+  border-radius: .8em;
+
+  background-color: rgba(255, 255, 255, .4);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Cateogry (frontend,backend,ai) | My IT Docs
+/* ------------------------------------------------------------- */
+
+#nav-category-my-it-docs {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* mobile */
+  justify-content: center;
+  gap: .6em;
+
+  background-color: red;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Label | Nav Cateogry (frontend,backend,ai)
+/* ------------------------------------------------------------- */
+
+#nav-category-my-it-docs > label {
+
+  /* very small mobile */
+  width: 100%;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Sub Cateogry My IT Docs
+/* ------------------------------------------------------------- */
+
+#nav-sub-category-my-it-docs {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* 3 Sub Nav Categories | Frontend, Backend, AI
+/* ------------------------------------------------------------- */
+
+#nav-sub-frontend-my-it-docs,
+#nav-sub-backend-my-it-docs,
+#nav-sub-ai-my-it-docs {
+
+  width: 100%;
+  margin-top: 1em;
+  padding-top: 1em;
+
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .6em;
+
+  border-top: 3px solid rgb(202, 202, 202);
+
+  /* default unshown */
+  display: none;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Handlings
+/* ------------------------------------------------------------- */
+
+/* ------------------------------------------------------------- */
+/* 🟩 Checkbox (open,close) | Handlings
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+#chk-it-docs {
+
+  display: none;
+
+}
+
+/* unshown text=open */
+#chk-it-docs:checked ~ #header-it-docs [for="chk-it-docs"] > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* shown text=close */
+#chk-it-docs:checked ~ #header-it-docs label[for="chk-it-docs"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+/* set background | checkbox */
+#chk-it-docs:checked ~ #header-it-docs label[for="chk-it-docs"] {
+
+  background-color: rgb(227, 87, 87);
+
+}
+
+/* rotate img arrow | show me */
+#chk-it-docs:checked ~ #header-it-docs label[for="chk-it-docs"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* show content */
+#chk-it-docs:checked ~ #smooth-open-close-nav-it-docs {
+
+  grid-template-rows: 1fr;
+
+}
+
+/* ------------------------------------------------------------- */
+/* 🟥 Radios Nav Category (frontend,backend,ai) | Handlings
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-category-it-docs"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-frontend-it-docs:checked ~ #header-nav-it-docs label[for="radio-frontend-it-docs"],
+#radio-backend-it-docs:checked ~ #header-nav-it-docs label[for="radio-backend-it-docs"],
+#radio-ai-it-docs:checked ~ #header-nav-it-docs label[for="radio-ai-it-docs"] {
+
+  background-color: wheat;
+
+}
+
+/* set X */
+#radio-frontend-it-docs:checked ~ #header-nav-it-docs label[for="radio-frontend-it-docs"] > .custom-radio-default > img,
+#radio-backend-it-docs:checked ~ #header-nav-it-docs label[for="radio-backend-it-docs"] > .custom-radio-default > img,
+#radio-ai-it-docs:checked ~ #header-nav-it-docs label[for="radio-ai-it-docs"] > .custom-radio-default > img {
+
+  display: flex;
+
+}
+
+/* set content */
+#radio-frontend-it-docs:checked ~ #header-nav-it-docs #nav-sub-frontend-my-it-docs,
+#radio-backend-it-docs:checked ~ #header-nav-it-docs #nav-sub-backend-my-it-docs,
+#radio-ai-it-docs:checked ~ #header-nav-it-docs #nav-sub-ai-my-it-docs {
+
+  display: grid;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* 🟥 Radios Nav Sub Category | Handlings
 /* ------------------------------------------------------------- */
