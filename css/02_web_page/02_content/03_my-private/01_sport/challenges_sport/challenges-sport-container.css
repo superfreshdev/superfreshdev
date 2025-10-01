@@ -1,0 +1,22 @@
+/* -------------------------------------------------------------- */
+/* > challenges-sport-container.css
+/*
+/* : styles challenges sport container
+/* -------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* 🟥 Challenges Sport Container
+/* ---------------------------------------------------------------- */
+
+#challenges-sport-container {
+
+  margin-top: 2em;
+  padding: 2em 0;
+
+  /* background-color: green; */
+
+  border-top: 3px solid rgb(202, 202, 202);
+
+  background-color: green;
+
+}

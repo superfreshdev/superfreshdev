@@ -101,18 +101,3 @@ label[for="chk-sport-category-selected-private"] {
   background-color: red;
 
 }
-
-/* ---------------------------------------------------------------- */
-/* 🟥 My Sport Content Container
-/* ---------------------------------------------------------------- */
-
-#my-sport-content-container {
-
-  margin-top: 2em;
-  padding: 2em 0;
-
-  /* background-color: green; */
-
-  border-top: 3px solid rgb(202, 202, 202);
-
-}

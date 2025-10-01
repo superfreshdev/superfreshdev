@@ -1,0 +1,23 @@
+/* -------------------------------------------------------------- */
+/* > training-plans-sport-container.css
+/*
+/* : styles trainig plans sport container
+/* -------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* 🟥 Training-Plans Sport Container
+/* ---------------------------------------------------------------- */
+
+#training-sport-plans-container {
+
+  margin-top: 2em;
+  padding: 2em 0;
+
+  /* background-color: green; */
+
+  border-top: 3px solid rgb(202, 202, 202);
+
+  background-color: mediumaquamarine;
+
+}
