@@ -23,7 +23,7 @@
 
   border-top: 3px solid rgb(202, 202, 202);
 
-  background-color: green;
+  /* background-color: green; */
 
 }
 
@@ -37,4 +37,14 @@
   border-radius: 1em;
 
   border: 4px solid grey;
+
+  opacity: .6;
+
+  transition: all .4s;
+}
+
+.img-challenges-sport:hover {
+
+  opacity: 1;
+
 }
