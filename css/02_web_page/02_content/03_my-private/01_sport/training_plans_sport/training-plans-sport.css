@@ -16,8 +16,20 @@
 
   /* background-color: green; */
 
+  display: flex;
+  justify-content: center;
+
   border-top: 3px solid rgb(202, 202, 202);
 
   background-color: mediumaquamarine;
+
+}
+
+
+.info-banner-status {
+
+  height: 5em;
+
+  border-radius: 1em;
 
 }

@@ -11,7 +11,13 @@
 
 #my-language-container-private {
 
-  background-color: rgb(106, 255, 0);
+  margin-top: 2em;
+  padding: 0em 0;
+
+  /* background-color: rgb(106, 255, 0); */
+
+  display: flex;
+  justify-content: center;
 
   /* default unshown */
   display: none;
