@@ -16,23 +16,46 @@
   /* My Private | Nav My Private
   /* ----------------------------------------------------- */
 
-  #nav-my-private {
+  #nav-my-private > label:nth-child(1) {
 
     /* desktop */
-    justify-items: flex-end;
-    background-color: rgb(24, 110, 63);
+    justify-self: flex-end;
+    /* background-color: rgb(24, 110, 63); */
+
+  }
+
+}
+
+/* ----------------------------------------------------- */
+/* 620px
+/* ----------------------------------------------------- */
+
+@media ( min-width: 620px ) {
+
+
+  /* ----------------------------------------------------- */
+  /* Sport | Header Sport Private
+  /* ----------------------------------------------------- */
+
+  #header-sport-private {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .8em;
 
   }
 
   /* ----------------------------------------------------- */
-  /* My Private | Nav List My Private
+  /* Sport | Nav Sport Private
   /* ----------------------------------------------------- */
 
-  #nav-list-my-private {
+  #nav-sport-private {
 
-    /* desktop */
     justify-content: flex-end;
 
+
   }
+
 
 }

@@ -5,6 +5,43 @@
 /* -------------------------------------------------------------- */
 
 
-/* ---------------------------------------------------------------- */
-/* ....
-/* ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
+/* Handlings
+/* ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- */
+/* Checkbox (selected) | Handlings
+/* ----------------------------------------------------------------- */
+
+
+/* default unshown */
+#chk-sport-category-selected-private {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-sport-category-selected-private:checked ~ #header-nav-sport-private label[for="chk-sport-category-selected-private"] {
+
+  background-color: rgb(227, 87, 87);
+
+}
+
+/* change img arrow rotation */
+#chk-sport-category-selected-private:checked ~ #header-nav-sport-private label[for="chk-sport-category-selected-private"] > img:nth-of-type(1)  {
+
+  transform: rotate(180deg);
+
+}
+
+/* set content */
+#chk-sport-category-selected-private:checked ~ #header-nav-sport-private #smooth-open-close-nav-sport-private {
+
+  grid-template-rows: 1fr;
+
+}
+
+/* ----------------------------------------------------------------- */
+/* Radio | Handlings
+/* ----------------------------------------------------------------- */

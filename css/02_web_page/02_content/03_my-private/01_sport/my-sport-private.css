@@ -11,9 +11,108 @@
 
 #my-sport-container-private {
 
-  background-color: red;
+  display: grid;
+  /* row-gap: 2em; */
+
+  /* background-color: red; */
 
   /* default unshown */
   display: none;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Header Nav | My Sport Container Private
+/* ---------------------------------------------------------------- */
+
+#header-nav-sport-private {
+
+   width: 100%;
+
+  /* mobile */
+  display: grid;
+  justify-items: center;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Header | My Sport Container Private
+/* ---------------------------------------------------------------- */
+
+#header-sport-private {
+
+  width: 100%;
+
+  /* mobile */
+  display: grid;
+  justify-items: center;
+  row-gap: 2em;
+
+}
+
+/* title block */
+#header-sport-private > .header-main-title-block:nth-of-type(1) {
+
+  justify-self: flex-start;
+
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Label (Open,Close) | Header Sport Private
+/* ---------------------------------------------------------------- */
+
+label[for="chk-sport-category-selected-private"] {
+
+  width: 11em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | Nav Sport Private
+/* ---------------------------------------------------------------- */
+
+#smooth-open-close-nav-sport-private {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Nav Sport Private | Smooth Open Close
+/* ---------------------------------------------------------------- */
+
+#nav-sport-private {
+
+  width: 100%;
+  padding-top: 1em;
+
+  /* mobile */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap:.6em;
+
+  background-color: red;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* 🟥 My Sport Content Container
+/* ---------------------------------------------------------------- */
+
+#my-sport-content-container {
+
+  margin-top: 2em;
+  padding: 2em 0;
+
+  /* background-color: green; */
+
+  border-top: 3px solid rgb(202, 202, 202);
 
 }
