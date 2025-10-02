@@ -24,6 +24,14 @@
 
 }
 
+
+#fixed-sport-container {
+
+  display: flex;
+  justify-content: center;
+
+}
+
 /* ---------------------------------------------------------------- */
 /* Header > Span 1 | Fixed Sport Container
 /* ---------------------------------------------------------------- */
