@@ -4,6 +4,39 @@
 /* : styles challenges sport container
 /* -------------------------------------------------------------- */
 
+#xxx {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+#xxx > div {
+
+  font-size: 12.5px;
+}
+
+/* ---------------------------------------------------------------- */
+/* New | Header main Sport Private
+/* ---------------------------------------------------------------- */
+
+#heder-main-sport-private {
+
+  display: grid;
+  row-gap: 1em;
+
+}
+
+#heder-main-sport-private > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+
+}
+
+
 /* ---------------------------------------------------------------- */
 /* 🟥 Challenges Sport Container
 /* ---------------------------------------------------------------- */
@@ -31,8 +64,11 @@
 
 #sport-challenges-content-container {
 
+  margin-top: 4em;
+  margin-bottom: 2em;
+
   display: grid;
-  row-gap: 1em;
+  row-gap: 4em;
 
 }
 
@@ -43,17 +79,12 @@
 .description-container-sport-challenges {
 
   margin-top: 2em;
-  padding: 1em 0;
+  padding-left: .8em;
 
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: .4em;
-  row-gap: .4em;
+  display: grid;
+  row-gap: .3em;
 
-
-  border-top: 3px solid rgb(202, 202, 202);
-  border-bottom: 3px solid rgb(202, 202, 202);
+  border-left: 4px solid rgb(99, 99, 99);
 
   /* color:green; */
   color: rgb(54, 54, 54);
@@ -61,7 +92,19 @@
 
 }
 
-.description-container-sport-challenges > div {
+.description-container-sport-challenges > div:nth-of-type(1)   {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: .4em;
+  row-gap: .4em;
+
+  /* opacity: .6; */
+
+}
+
+.description-container-sport-challenges > div:nth-of-type(1) > div  {
 
   font-size: 12.5px;
 
@@ -70,11 +113,13 @@
 
   display: flex;
   align-items: center;
-  column-gap: .6em;
+  column-gap: .4em;
 
   border-radius: .6em;
 
   background-color: rgb(196, 196, 196);
+
+
 
   opacity: .6;
 
@@ -94,6 +139,7 @@
 .header-content-sport-challenges {
 
   height: 2.5em;
+  width: 10%;
 
 
   display: flex;
@@ -104,7 +150,7 @@
 
   border-radius: .8em;
 
-  background-color: grey;
+  background-color: rgb(176, 176, 176);
 
 }
 
@@ -124,8 +170,9 @@
 #sport-challenges-content-container > main {
 
 
+
   display: grid;
-  row-gap: 3em;
+  /* row-gap: em; */
 
   /* display: grid;
   grid: auto / 1fr 1fr 1fr 1fr 1fr; */
@@ -241,6 +288,8 @@
 
   width: 100%;
   z-index: 1;
+
+  /* opacity: .3; */
 
   border-radius: .8em;
 

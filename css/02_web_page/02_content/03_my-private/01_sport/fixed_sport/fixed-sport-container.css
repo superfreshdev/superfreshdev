@@ -53,7 +53,8 @@
 
 #fixed-sport-container > main {
 
-  padding-top: 2em;
+  padding-top: 3em;
+  padding-bottom: 2em;
 
   /* reminder: maximum 3 fixed acutally video items */
   /* mobile */
@@ -63,7 +64,7 @@
   justify-content: center;
 
   row-gap: 2em;
-  column-gap: 1em;
+  column-gap: 2em;
 
 }
 
