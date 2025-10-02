@@ -42,8 +42,48 @@
 
 .description-container-sport-challenges {
 
-  color:green;
+  margin-top: 2em;
+  padding: 1em 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: .4em;
+  row-gap: .4em;
+
+
+  border-top: 3px solid rgb(202, 202, 202);
+  border-bottom: 3px solid rgb(202, 202, 202);
+
+  /* color:green; */
+  color: rgb(54, 54, 54);
   font-weight: bold;
+
+}
+
+.description-container-sport-challenges > div {
+
+  font-size: 12.5px;
+
+  height: 2em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  background-color: rgb(196, 196, 196);
+
+  opacity: .6;
+
+}
+
+.description-container-sport-challenges > div > div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
 
 }
 
@@ -51,9 +91,29 @@
 /* Header | Sport Challenges Container Container
 /* ---------------------------------------------------------------- */
 
-#sport-challenges-content-container > header {
+.header-content-sport-challenges {
+
+  height: 2.5em;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  border-radius: .8em;
 
   background-color: grey;
+
+}
+
+.header-content-sport-challenges > div {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+  letter-spacing: 1px;
 
 }
 
@@ -62,6 +122,34 @@
 /* ---------------------------------------------------------------- */
 
 #sport-challenges-content-container > main {
+
+
+  display: grid;
+  row-gap: 3em;
+
+  /* display: grid;
+  grid: auto / 1fr 1fr 1fr 1fr 1fr; */
+
+  column-gap: 1em;
+  row-gap: 2em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Card List Row Container
+/* ---------------------------------------------------------------- */
+
+.card-list-row-container {
+
+
+  display: grid;
+  row-gap: 2em;
+
+}
+
+
+.card-list-row-container > main {
+
 
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +160,7 @@
 
   column-gap: 1em;
   row-gap: 2em;
+
 
 }
 
