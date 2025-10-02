@@ -54,19 +54,25 @@ input[name="name-radio-sport-category"] {
 }
 
 /* set x */
+#radio-sport-category-fixed:checked ~ #header-nav-sport-private label[for="radio-sport-category-fixed"] > .custom-radio-default > img,
 #radio-sport-category-challenges:checked ~ #header-nav-sport-private label[for="radio-sport-category-challenges"] > .custom-radio-default > img,
-#radio-sport-category-training-plans:checked ~ #header-nav-sport-private label[for="radio-sport-category-training-plans"] > .custom-radio-default > img {
+#radio-sport-category-training-plans:checked ~ #header-nav-sport-private label[for="radio-sport-category-training-plans"] > .custom-radio-default > img  {
 
   display: flex;
 
 }
 
-/* set content ( fixed, challenges, trainings plan ) */
 
-/* ⚠️ Fixed is missing */
-#radio-sport-category-choose-1:checked ~ #header-nav-sport-private label[for="radio-sport-category-choose-1"] > .custom-radio-default > img,
-#radio-sport-category-choose-2:checked ~ #header-nav-sport-private label[for="radio-sport-category-choose-2"] > .custom-radio-default > img {
+/* set content ( fixed, challenges, trainings plan ) */
+#radio-sport-category-training-plans:checked ~ #training-sport-plans-container {
 
   display: flex;
 
+}
+
+/* new */
+#radio-sport-category-fixed:checked ~ #fixed-sport-container,
+#radio-sport-category-challenges:checked ~ #challenges-sport-container {
+
+  display: grid;
 }

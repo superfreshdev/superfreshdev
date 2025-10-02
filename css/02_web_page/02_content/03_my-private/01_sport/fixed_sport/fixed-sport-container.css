@@ -12,13 +12,15 @@
 #fixed-sport-container {
 
   margin-top: 2em;
-  padding: 2em 0;
+  padding-top: 2em;
 
-  /* background-color: green; */
+  display: grid;
 
   border-top: 3px solid rgb(202, 202, 202);
 
-  /* background-color: rgb(78, 90, 86); */
+  /* default unshown */
+  display: none;
+
 
 }
 
@@ -53,13 +55,18 @@
 
   padding-top: 2em;
 
+  /* reminder: maximum 3 fixed acutally video items */
+  /* mobile */
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-  gap:2em;
+  row-gap: 2em;
+  column-gap: 1em;
 
 }
+
 
 /* ---------------------------------------------------------------- */
 /* Fixed Sport Video Link Card
@@ -67,7 +74,11 @@
 
 .fixed-sport-video-link-card {
 
-  width: 10em;
+  /* mobile */
+  width: 8em;
+
+  /* desktop */
+  /* width: 10em; */
 
   position: relative;
 
@@ -114,7 +125,7 @@
   color:white;
   background-color: rgb(28, 28, 28);
 
-  border-radius: .8em 0 0 0;
+  border-radius: .8em 0 1em 0;
 
 }
 
