@@ -27,6 +27,55 @@
 }
 
 /* ----------------------------------------------------- */
+/* 450px
+/* ----------------------------------------------------- */
+
+@media ( min-width: 450px ) {
+
+
+  /* ----------------------------------------------------- */
+  /* Sport | Card List Row Container | Main
+  /* ----------------------------------------------------- */
+
+  .card-list-row-container > main {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+  }
+
+  /* ----------------------------------------------------- */
+  /* Sport | sport-challenges-video-link-card
+  /* ----------------------------------------------------- */
+
+  .sport-challenges-video-link-card {
+
+    position: relative;
+    z-index: 1;
+
+    /* very small mobile */
+    height: 10em;
+    width: 10em;
+
+    border-radius: 1em;
+
+    border: 4px solid grey;
+
+    opacity: .6;
+
+    transition: all .4s;
+
+  }
+
+
+}
+
+
+
+
+/* ----------------------------------------------------- */
 /* 620px
 /* ----------------------------------------------------- */
 
