@@ -66,16 +66,7 @@
 
   }
 
-  /* ------------------------------------------------------------- */
-  /* More Project | Nav More It Projects | Label */
-  /* ------------------------------------------------------------- */
 
-  #nav-more-it-projects > label {
-
-    /* desktop */
-    width: auto;
-
-  }
 
   /* ------------------------------------------------------------- */
   /*  It Docs | Nav Category IT Docs | Label */
@@ -88,17 +79,6 @@
 
   }
 
-  /* ------------------------------------------------------------- */
-  /*  It Docs | nav sub (frontend,backend) | Label
-  /* ------------------------------------------------------------- */
-
-  #nav-sub-category-frontend-it-docs > label,
-  #nav-sub-category-backend-it-docs > label {
-
-    /* desktop */
-    width: auto;
-
-  }
 
 }
 
@@ -130,6 +110,30 @@
     width: 24em;
 
   }
+
+  /* ------------------------------------------------------------- */
+  /* More Project | Nav More It Projects | Label */
+  /* ------------------------------------------------------------- */
+
+  #nav-more-it-projects > label {
+
+    /* desktop */
+    width: auto;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /*  It Docs | nav sub (frontend,backend) | Label
+  /* ------------------------------------------------------------- */
+
+  #nav-sub-category-frontend-it-docs > label,
+  #nav-sub-category-backend-it-docs > label {
+
+    /* desktop */
+    width: auto;
+
+  }
+
 
 
 }

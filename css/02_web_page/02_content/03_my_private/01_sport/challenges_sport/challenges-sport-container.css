@@ -4,18 +4,10 @@
 /* : styles challenges sport container
 /* -------------------------------------------------------------- */
 
-#xxx {
 
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
+/* ⚠️ 3 layout | more than 3 */
 
-}
 
-#xxx > div {
-
-  font-size: 12.5px;
-}
 
 /* ---------------------------------------------------------------- */
 /* New | Header main Sport Private
@@ -68,7 +60,7 @@
   margin-bottom: 2em;
 
   display: grid;
-  row-gap: 4em;
+  row-gap: 6em;
 
 }
 
@@ -78,13 +70,13 @@
 
 .description-container-sport-challenges {
 
+  position: relative;
+
   margin-top: 2em;
   padding-left: .8em;
 
   display: grid;
   row-gap: .3em;
-
-  border-left: 4px solid rgb(99, 99, 99);
 
   /* color:green; */
   color: rgb(54, 54, 54);
@@ -132,14 +124,48 @@
 
 }
 
+
+/* ------------------------------------------------- */
+/* Left Stripe Sport Fokus Description
+/* ------------------------------------------------- */
+
+.left-stripe-sport-fokus-description {
+
+  position: absolute;
+  left:0;
+
+  width: 4px;
+  height: 100%;
+
+  border-radius: .8em;
+
+  background-color:  rgba(28, 28, 28, .8);
+  background-color: grey;
+
+}
+
+#xxx {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+#xxx > div {
+
+  font-size: 12.5px;
+}
+
+
 /* ---------------------------------------------------------------- */
 /* Header | Sport Challenges Container Container
 /* ---------------------------------------------------------------- */
 
 .header-content-sport-challenges {
 
-  height: 2.5em;
-  width: 3em;
+  height: 2.3em;
+  width: 10em;
 
 
   display: flex;
@@ -150,7 +176,8 @@
 
   border-radius: .8em;
 
-  background-color: rgb(176, 176, 176);
+  background-color:  rgba(28, 28, 28, .8);
+  color: rgb(194, 194, 194);
 
 }
 
@@ -163,24 +190,6 @@
 
 }
 
-/* ---------------------------------------------------------------- */
-/* Main | Sport Challenges Container Container
-/* ---------------------------------------------------------------- */
-
-#sport-challenges-content-container > main {
-
-
-
-  display: grid;
-  /* row-gap: em; */
-
-  /* display: grid;
-  grid: auto / 1fr 1fr 1fr 1fr 1fr; */
-
-  column-gap: 1em;
-  row-gap: 2em;
-
-}
 
 /* ---------------------------------------------------------------- */
 /* Card List Row Container
@@ -188,12 +197,10 @@
 
 .card-list-row-container {
 
-
   display: grid;
   row-gap: 2em;
 
 }
-
 
 .card-list-row-container > main {
 
@@ -201,17 +208,8 @@
   display: grid;
   grid: auto / 1fr 1fr;
 
-  /* desktop */
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
-
-  /* display: grid;
-  grid: auto / 1fr 1fr 1fr 1fr 1fr; */
-
   column-gap: 1em;
   row-gap: 2em;
-
 
 }
 
@@ -230,7 +228,11 @@
 
   border-radius: 1em;
 
-  border: 4px solid grey;
+  /* border: 4px solid grey; */
+
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
   opacity: .6;
 

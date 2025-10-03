@@ -21,12 +21,12 @@
 }
 
 /* ---------------------------------------------------------------- */
-/* Header Nav | My Sport Container Private
+/* Header Nav Sport Container
 /* ---------------------------------------------------------------- */
 
-#header-nav-sport-private {
+#header-nav-sport-container {
 
-   width: 100%;
+  width: 100%;
 
   /* mobile */
   display: grid;
@@ -34,11 +34,14 @@
 
 }
 
+
 /* ---------------------------------------------------------------- */
-/* Header | My Sport Container Private
+/* [1/4] | Header Sport Container
 /* ---------------------------------------------------------------- */
 
-#header-sport-private {
+#header-sport-container {
+
+  /* #header-sport-private */
 
   width: 100%;
 
@@ -49,43 +52,38 @@
 
 }
 
-/* title block */
-#header-sport-private > .header-main-title-block:nth-of-type(1) {
+#header-sport-container > .header-main-title-block:nth-of-type(1) {
 
   justify-self: flex-start;
 
 }
 
-
 /* ---------------------------------------------------------------- */
-/* Label (Open,Close) | Header Sport Private
-/* ---------------------------------------------------------------- */
-
-label[for="chk-sport-category-selected-private"] {
-
-  width: 11em;
-
-}
-
-/* ---------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close | Nav Sport Private
+/* Nav Sport Drop Down Container
 /* ---------------------------------------------------------------- */
 
-#smooth-open-close-nav-sport-private {
-
-  width: 100%;
+#nav-sport-drop-down-container {
 
   display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
+  row-gap: .3em;
 
 }
 
 /* ---------------------------------------------------------------- */
-/* Nav Sport Private | Smooth Open Close
+/* Label | Nav Sport Drop Down Container
 /* ---------------------------------------------------------------- */
 
-#nav-sport-private {
+#nav-sport-drop-down-container > label {
+
+ width: 12em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* [2/4] | Nav Sport Container
+/* ---------------------------------------------------------------- */
+
+.nav-sport-container {
 
   width: 100%;
   padding-top: 1em;
@@ -98,5 +96,44 @@ label[for="chk-sport-category-selected-private"] {
   gap:.6em;
 
   background-color: red;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Label | Nav Sport Container
+/* ---------------------------------------------------------------- */
+
+.nav-sport-container > label {
+
+  /* very small mobile */
+  width: 100%;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* [3/4] | ⬇️⬆️ Smooth Open Close | Nav Sport
+/* ---------------------------------------------------------------- */
+
+#smooth-open-close-nav-sport {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* [4/4] | ⬇️⬆️ Smooth Open Close | Sub Nav Sport
+/* ---------------------------------------------------------------- */
+
+#smooth-open-close-sub-nav-sport {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
 
 }

@@ -10,40 +10,39 @@
 /* ----------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------- */
-/* Checkbox (selected) | Handlings
+/* 🟩 [1/4] | Checkbox | Sport Category Selected
 /* ----------------------------------------------------------------- */
 
-
 /* default unshown */
-#chk-sport-category-selected-private {
+#chk-sport-category-selected {
 
   display: none;
 
 }
 
 /* set background */
-#chk-sport-category-selected-private:checked ~ #header-nav-sport-private label[for="chk-sport-category-selected-private"] {
+#chk-sport-category-selected:checked ~ #header-nav-sport-container label[for="chk-sport-category-selected"] {
 
   background-color: rgb(227, 87, 87);
 
 }
 
 /* change img arrow rotation */
-#chk-sport-category-selected-private:checked ~ #header-nav-sport-private label[for="chk-sport-category-selected-private"] > img:nth-of-type(1)  {
+#chk-sport-category-selected:checked ~ #header-nav-sport-container label[for="chk-sport-category-selected"] > img:nth-of-type(1)  {
 
   transform: rotate(180deg);
 
 }
 
 /* set content */
-#chk-sport-category-selected-private:checked ~ #header-nav-sport-private #smooth-open-close-nav-sport-private {
+#chk-sport-category-selected:checked ~ #header-nav-sport-container #smooth-open-close-nav-sport {
 
   grid-template-rows: 1fr;
 
 }
 
 /* ----------------------------------------------------------------- */
-/* Radio | Handlings ( choose 1, choose 2 )
+/* 🟩 [2/4] | Radios | Sport Category Selected
 /* ----------------------------------------------------------------- */
 
 /* default unshown */
@@ -54,25 +53,65 @@ input[name="name-radio-sport-category"] {
 }
 
 /* set x */
-#radio-sport-category-fixed:checked ~ #header-nav-sport-private label[for="radio-sport-category-fixed"] > .custom-radio-default > img,
-#radio-sport-category-challenges:checked ~ #header-nav-sport-private label[for="radio-sport-category-challenges"] > .custom-radio-default > img,
-#radio-sport-category-training-plans:checked ~ #header-nav-sport-private label[for="radio-sport-category-training-plans"] > .custom-radio-default > img  {
+#radio-sport-category-newest:checked ~ #header-nav-sport-container label[for="radio-sport-category-newest"] > .custom-radio-default > img,
+#radio-sport-category-challenges:checked ~ #header-nav-sport-container label[for="radio-sport-category-challenges"] > .custom-radio-default > img,
+#radio-sport-category-training-plans:checked ~ #header-nav-sport-container label[for="radio-sport-category-training-plans"] > .custom-radio-default > img  {
 
   display: flex;
 
 }
 
 
-/* set content ( fixed, challenges, trainings plan ) */
-#radio-sport-category-training-plans:checked ~ #training-sport-plans-container {
+/* set content ( newest , challenges, trainings plan ) */
+#radio-sport-category-newest:checked ~ #new-sport-videos-container,
+#radio-sport-category-challenges:checked ~ #challenges-sport-container,
+#radio-sport-category-training-plans:checked ~ #training-sport-plans-container  {
 
   display: grid;
+}
+
+
+
+/* ----------------------------------------------------------------- */
+/* 🟥 [3/4] | Checkbox | Sport Sub Category Selected
+/* ----------------------------------------------------------------- */
+
+/* default unshown */
+#chk-sport-sub-category-selected {
+
+  display: none;
 
 }
 
-/* new */
-#radio-sport-category-fixed:checked ~ #fixed-sport-container,
-#radio-sport-category-challenges:checked ~ #challenges-sport-container {
+/* set background */
+#chk-sport-sub-category-selected:checked ~ #header-nav-sport-container label[for="chk-sport-sub-category-selected"] {
 
-  display: grid;
+  background-color: rgb(227, 87, 87);
+
+}
+
+/* change img arrow rotation */
+#chk-sport-sub-category-selected:checked ~ #header-nav-sport-container label[for="chk-sport-sub-category-selected"] > img:nth-of-type(1)  {
+
+  transform: rotate(180deg);
+
+}
+
+/* set content */
+#chk-sport-sub-category-selected:checked ~ #header-nav-sport-container #smooth-open-close-sub-nav-sport {
+
+  grid-template-rows: 1fr;
+
+}
+
+
+/* ----------------------------------------------------------------- */
+/* 🟥 [4/4] | Radios | Sport Sub Category Selected
+/* ----------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-sport-sub-category"] {
+
+  display: none;
+
 }

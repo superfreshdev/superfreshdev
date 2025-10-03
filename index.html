@@ -317,11 +317,9 @@
                 <!-- [3/3] | My Private     -->
                 <!-- ------------------------------------------------------------------------------- -->
 
-
                 <!-- default -->
                 <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/my-private.css">
                 <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/nav-my-private.css">
-
 
                     <!-- -------------------------------- -->
                     <!-- Sport | my Private               -->
@@ -331,9 +329,14 @@
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/01_sport/my-sport-private.css">
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/01_sport/nav-my-sport-private.css">
 
-                    <!-- new sport videos, challenges, training-plans -->
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/01_sport/new_sport_videos/new-sport-videos.css">
+                    <!-- new sport videos-->
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/01_sport/new_sport_videos/new-sport-videos-container.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/01_sport/new_sport_videos/new-sport-video-link-card.css">
+
+                    <!-- challenges -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/01_sport/challenges_sport/challenges-sport-container.css">
+
+                    <!-- training-plans  -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/01_sport/training_plans_sport/training-plans-sport.css">
 
                     <!-- -------------------------------- -->
@@ -3764,40 +3767,50 @@
                                         </nav>
 
                                         <!-- --------------------------------------------------------------- -->
-                                        <!-- 🟥 [2/6] | My Sport Private Container                           -->
+                                        <!-- ➡️🟥 [2/6] | My Sport Private Container                           -->
                                         <!-- --------------------------------------------------------------- -->
                                         <div id="my-sport-private-container" class="main-content-box-transparent-white">
 
                                             <!-- --------------------------------------------------------------- -->
-                                            <!-- Checkbox | Open,Close                                 -->
+                                            <!-- Checkbox (Open,Close) | x3 | Challenge X                        -->
                                             <!-- --------------------------------------------------------------- -->
-                                            <input type="checkbox" id="chk-sport-category-selected-private">
+                                            <input type="checkbox" id="chk-sport-category-selected">
+                                            <input type="checkbox" id="chk-sport-sub-category-selected">
+
 
                                             <!-- --------------------------------------------------------------- -->
-                                            <!-- Radios | ( fixed, challenges, trainings-plan )                      -->
+                                            <!-- Radios | ( newest, challenges, trainings-plan )                      -->
                                             <!-- --------------------------------------------------------------- -->
-                                            <input checked type="radio" id="radio-sport-category-fixed" name="name-radio-sport-category">
+                                            <input checked type="radio" id="radio-sport-category-newest" name="name-radio-sport-category">
+
                                             <input type="radio" id="radio-sport-category-challenges" name="name-radio-sport-category">
                                             <input type="radio" id="radio-sport-category-training-plans" name="name-radio-sport-category">
 
+                                            <!-- --------------------------------------------------------------- -->
+                                            <!-- Radios of Challenges                     -->
+                                            <!-- --------------------------------------------------------------- -->
+                                            <input type="radio" id="radio-sport-category-challenge-1" name="name-radio-sport-sub-category">
+                                            <input type="radio" id="radio-sport-category-challenge-2" name="name-radio-sport-sub-category">
+
+
                                             <!-- ------------------------------------------------------------------------- -->
-                                            <!-- 🟩 [1/4] Header Nav Sport  -->
+                                            <!-- 🟩 [1/4] Header Nav Sport Container  -->
                                             <!-- ------------------------------------------------------------------------- -->
-                                            <header id="header-nav-sport-private">
+                                            <header id="header-nav-sport-container">
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- 🟩 Header -->
+                                                <!-- 🟩 Header Sport Container -->
                                                 <!-- ------------------------------------------------------------ -->
-                                                <div id="header-sport-private" style="padding: 0 0 0 .5em;">
+                                                <div id="header-sport-container">
 
                                                     <!-- -------------------------------------- -->
-                                                    <!-- Title Block -->
+                                                    <!-- [1/2] | Title Block -->
                                                     <!-- -------------------------------------- -->
                                                     <div class="header-main-title-block">
 
 
-                                                        <img src="media/img/icons/02-icon-colors/01-black/black-board-needle.png"
-                                                            id="img-top-it-project-header" alt="img">
+                                                        <img src="media/img/icons/02-icon-colors/01-black/black-speaker.png"
+                                                            id="img-header-new-sport-video" alt="img">
 
                                                         <div class="header-main-title-area">
                                                             <div class="header-main-title">Newest Sport Video's</div>
@@ -3808,32 +3821,60 @@
                                                     </div>
 
                                                     <!-- -------------------------------------- -->
-                                                    <!-- Action Content Element -->
+                                                    <!-- [2/2] | Nav Sport Drop Down Container  -->
                                                     <!-- -------------------------------------- -->
-                                                    <label for="chk-sport-category-selected-private" class="action-content-element-medium">
+                                                    <div id="nav-sport-drop-down-container">
 
-                                                        <!-- ---------------------------------------- -->
-                                                        <!-- Title Block -->
-                                                        <!-- ---------------------------------------- -->
-                                                        <div>
-                                                            <img src="media/img/icons/02-icon-colors/01-black/black-board-needle.png" class="img-h-0-9" alt="img">
-                                                            <div>Fixed <span>(1)</span></div>
-                                                        </div>
+                                                        <!-- -------------------------------------------------- -->
+                                                        <!-- Main Category | Drop Down Element                  -->
+                                                        <!-- -------------------------------------------------- -->
+                                                        <label for="chk-sport-category-selected" class="action-content-element-medium">
 
-                                                        <!-- ---------------------------------------- -->
-                                                        <!-- Img Arrow (open/close) -->
-                                                        <!-- ---------------------------------------- -->
-                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
-                                                            class="img-h-0-5" alt="img">
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Title Block -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <div>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-1-1" alt="img">
+                                                                <div>Newest <span>(1)</span></div>
+                                                            </div>
 
-                                                    </label>
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Img Arrow (open/close) -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
+                                                                class="img-h-0-5" alt="img">
+
+                                                        </label>
+
+                                                        <!-- -------------------------------------------------- -->
+                                                        <!-- Sub Category | Drop Down Element                   -->
+                                                        <!-- -------------------------------------------------- -->
+                                                        <label for="chk-sport-sub-category-selected" class="action-content-element-medium">
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Title Block -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <div>
+                                                                <!-- <img src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-1-1" alt="img"> -->
+                                                                <div>Challenge #1</div>
+                                                            </div>
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Img Arrow (open/close) -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
+                                                                class="img-h-0-5" alt="img">
+
+                                                        </label>
+
+                                                    </div>
 
                                                 </div>
 
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <!-- 🟩⬇️⬆️ | Smooth Open Close | Nav Sport Private -->
+                                                <!-- 🟩⬇️⬆️ | Smooth Open Close | Nav Sport-->
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <div id="smooth-open-close-nav-sport-private">
+                                                <div id="smooth-open-close-nav-sport">
 
                                                     <!-- -------------------------------------------------------- -->
                                                     <!-- Overflow Hidden -->
@@ -3841,21 +3882,22 @@
                                                     <div class="overflow-hidden">
 
                                                         <!-- ----------------------------------------------------------------- -->
-                                                        <!-- Nav Sport Private -->
+                                                        <!-- Nav Sport Container -->
                                                         <!-- ----------------------------------------------------------------- -->
-                                                        <div id="nav-sport-private">
+                                                        <div class="nav-sport-container">
 
-                                                             <!-- ---------------------------------------------------------------- -->
-                                                            <!-- Label | Challenges -->
+
                                                             <!-- ---------------------------------------------------------------- -->
-                                                            <label for="radio-sport-category-fixed" class="action-content-element-medium">
+                                                            <!-- Label | Newest -->
+                                                            <!-- ---------------------------------------------------------------- -->
+                                                            <label for="radio-sport-category-newest" class="action-content-element-medium">
 
                                                                 <!-- -------------------------------------------- -->
                                                                 <!-- Title -->
                                                                 <!-- -------------------------------------------- -->
                                                                 <div>
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-0-9" alt="img">
-                                                                    <div>fixed</div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-1-2" alt="img">
+                                                                    <div>Newest</div>
                                                                 </div>
 
                                                                 <!-- -------------------------------------------- -->
@@ -3866,7 +3908,6 @@
                                                                 </div>
 
                                                             </label>
-
 
                                                             <!-- ---------------------------------------------------------------- -->
                                                             <!-- Label | Challenges -->
@@ -3899,7 +3940,7 @@
                                                                 <!-- Title -->
                                                                 <!-- -------------------------------------------- -->
                                                                 <div>
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-doc-plan-2.png" class="img-h-1" alt="img">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-doc-plan-2.png" class="img-h-1-1" alt="img">
                                                                     <div>Training Plan's</div>
                                                                 </div>
 
@@ -3919,12 +3960,100 @@
 
                                                 </div>
 
+                                                <!-- ----------------------------------------------------------------- -->
+                                                <!-- 🟩⬇️⬆️ | Smooth Open Close | Sub Nav Sport -->
+                                                <!-- ----------------------------------------------------------------- -->
+                                                <div id="smooth-open-close-sub-nav-sport">
+
+
+                                                    <!-- -------------------------------------------------------- -->
+                                                    <!-- Overflow Hidden -->
+                                                    <!-- -------------------------------------------------------- -->
+                                                    <div class="overflow-hidden">
+
+                                                        <!-- ----------------------------------------------------------------- -->
+                                                        <!-- Nav Sport Container -->
+                                                        <!-- ----------------------------------------------------------------- -->
+                                                        <div class="nav-sport-container">
+
+                                                            <!-- ---------------------------------------------------------------- -->
+                                                            <!-- Label | Challenges -->
+                                                            <!-- ---------------------------------------------------------------- -->
+                                                            <label for="radio-sport-category-fixed" class="action-content-element-medium">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+                                                                    <!-- <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-0-9" alt="img"> -->
+                                                                    <div>Challenge #2</div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-default">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                            <!-- ---------------------------------------------------------------- -->
+                                                            <!-- Label | Challenges -->
+                                                            <!-- ---------------------------------------------------------------- -->
+                                                            <label for="radio-sport-category-fixed" class="action-content-element-medium">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+                                                                    <!-- <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-0-9" alt="img"> -->
+                                                                    <div>Challenge #3</div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-default">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                            <!-- ---------------------------------------------------------------- -->
+                                                            <!-- Label | Challenges -->
+                                                            <!-- ---------------------------------------------------------------- -->
+                                                            <label for="radio-sport-category-fixed" class="action-content-element-medium">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+                                                                    <!-- <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-0-9" alt="img"> -->
+                                                                    <div>Challenge #4</div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-default">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
                                             </header>
 
                                             <!-- ------------------------------------------------------------------------- -->
-                                            <!-- 🟩 [2/4] Fixed Sport Container  -->
+                                            <!-- 🟩 [2/4] New Sport Videos Container  -->
                                             <!-- ------------------------------------------------------------------------- -->
-                                            <div id="fixed-sport-container">
+                                            <div id="new-sport-videos-container">
 
                                                 <!-- ----------------------------------------------------- -->
                                                 <!-- [1/2] | Header -->
@@ -3943,11 +4072,10 @@
                                                 <!-- ----------------------------------------------------- -->
                                                 <main>
 
-
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <!-- 1 | Fixed Sport Video Link Card -->
+                                                    <!-- 1 | New Sport Video Link Card -->
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <div class="fixed-sport-video-link-card">
+                                                    <div class="new-sport-video-link-card">
 
                                                         <!-- ----------------------------------------------------- -->
                                                         <!-- Nr Block -->
@@ -3975,9 +4103,9 @@
                                                     </div>
 
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <!-- 2 | Fixed Sport Video Link Card -->
+                                                    <!-- 2 | New Sport Video Link Card -->
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <div class="fixed-sport-video-link-card">
+                                                    <div class="new-sport-video-link-card">
 
                                                         <!-- ----------------------------------------------------- -->
                                                         <!-- Nr Block -->
@@ -4005,9 +4133,9 @@
                                                     </div>
 
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <!-- 3 | Fixed Sport Video Link Card -->
+                                                    <!-- 3 | New Sport Video Link Card -->
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <div class="fixed-sport-video-link-card">
+                                                    <div class="new-sport-video-link-card">
 
                                                         <!-- ----------------------------------------------------- -->
                                                         <!-- Nr Block -->
@@ -4083,26 +4211,7 @@
 
                                                             </div>
 
-                                                            <!-- -------------------------------------- -->
-                                                            <!-- Action Content Element -->
-                                                            <!-- -------------------------------------- -->
-                                                            <label for="chk-top-it-projects" class="action-content-element-medium">
 
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- Title Block -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <div>
-                                                                    <!-- <img src="media/img/icons/02-icon-colors/01-black/black-art.png" class="img-h-1-1" alt="img"> -->
-                                                                    <div>Challenge #1</div>
-                                                                </div>
-
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- Img Arrow (open/close) -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
-                                                                    class="img-h-0-5" alt="img">
-
-                                                            </label>
 
                                                         </div>
 
@@ -4208,52 +4317,51 @@
 
                                                 </header>
 
-                                                  <!-- ---------------------------------------------------------- -->
-                                                    <!-- Description Container Sport Challenge D -->
-                                                    <!-- ---------------------------------------------------------- -->
-                                                    <div class="description-container-sport-challenges" >
-
-                                                        <nav id="xxx">
-                                                            <img src="media/img/icons/03-emojies/04-hobbys/emojie-dart.png" class="img-h-1" alt="img">
-                                                            <div>Fokus:</div>
-                                                        </nav>
+                                                <!-- ---------------------------------------------------------- -->
+                                                <!-- ➡️🟥 Description Container Sport Challenge D -->
+                                                <!-- ---------------------------------------------------------- -->
+                                                <div class="description-container-sport-challenges" >
 
 
-                                                        <!-- ------------------------------------------- -->
-                                                        <!-- Div -->
-                                                        <!-- ------------------------------------------- -->
+
+                                                    <nav id="xxx">
+                                                        <img src="media/img/icons/03-emojies/04-hobbys/emojie-dart.png" class="img-h-1" alt="img">
+                                                        <div>Fokus:</div>
+                                                    </nav>
+
+                                                    <!-- ------------------------------------------- -->
+                                                    <!-- Div -->
+                                                    <!-- ------------------------------------------- -->
+
+                                                    <div>
+
 
                                                         <div>
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-running-human.png" class="img-h-1-1" alt="img">
+                                                            <div>running</div>
+                                                        </div>
 
+                                                        <div>
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-biceps.png" class="img-h-1" alt="img">
+                                                            <div>strenght</div>
+                                                        </div>
 
-                                                            <div>
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-running-human.png" class="img-h-1-1" alt="img">
-                                                                <div>running</div>
-                                                            </div>
-
-                                                            <div>
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-biceps.png" class="img-h-1" alt="img">
-                                                                <div>strenght</div>
-                                                            </div>
-
-                                                            <div>
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-human-flexibility.png" class="img-h-1-1" alt="img">
-                                                                <div>flexibility</div>
-                                                            </div>
-
-                                                         </div>
-
+                                                        <div>
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-human-flexibility.png" class="img-h-1-1" alt="img">
+                                                            <div>flexibility</div>
+                                                        </div>
 
                                                     </div>
 
+                                                    <div class="left-stripe-sport-fokus-description"></div>
+
+
+                                                </div>
 
                                                 <!-- --------------------------------------------------------------- -->
                                                 <!-- 🟥 Sport Challenges Content Container -->
                                                 <!-- --------------------------------------------------------------- -->
                                                 <div id="sport-challenges-content-container">
-
-
-
 
                                                     <!-- ----------------------------------------------------------------- -->
                                                     <!-- [1/2] | Card List Row Contianer -->
@@ -5211,7 +5319,6 @@
 
 
                                                     </div>
-
 
 
                                                 </div>
