@@ -124,3 +124,18 @@ function printFullMonthNameAndShorYear( indexMonth, year ) {
     // cut shot year in last 2 strings
     return strMonth + " " + strYear.substring(2,4);
 }
+
+/* ------------------------------------------------------------------------------- */
+/* printDate
+/* > print classic date, DD.MM.YYYY
+/* ------------------------------------------------------------------------------- */
+
+function printDate() {
+
+    var str_day = printTwoFormattedNumber( getDay() );
+    var str_month = printTwoFormattedNumber( getMonth() ); ;
+    var str_year = getYear();
+
+    return str_day + "." + str_month + "." + str_year;
+
+}

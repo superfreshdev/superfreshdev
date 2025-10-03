@@ -1,0 +1,65 @@
+/* -------------------------------------------------------------- */
+/* > info-working-status-container.css
+/*
+/* : styles info working status container
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Info Working Status Container
+/* ------------------------------------------------------------- */
+
+.info-working-status-container {
+
+  /* width: 12em; */
+
+  display: grid;
+  justify-items: flex-end;
+  align-content: flex-start;
+  row-gap: .4em;
+
+  /* background-color: red; */
+
+}
+
+/* -------------------------------------------------------- */
+/* Date | Info Working Status Container
+/* -------------------------------------------------------- */
+
+.date-info-working-status {
+
+  height: 1.5em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .4em;
+
+  font-weight: bold;
+
+  background-color: rgb(190, 190, 190);;
+
+}
+
+.date-info-working-status > div:nth-of-type(1) {
+
+  /* 14.5px | 14.5 / 16px= 0.90625 */
+  font-size: .90625em;
+
+  font-size: 12.5px;
+
+}
+
+/* -------------------------------------------------------- */
+/* Img | Info Working Status Container
+/* -------------------------------------------------------- */
+
+.info-banner-status {
+
+  height: 5em;
+
+  border-radius: 1em;
+
+}

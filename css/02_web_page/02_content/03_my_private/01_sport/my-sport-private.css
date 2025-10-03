@@ -6,15 +6,14 @@
 
 
 /* ---------------------------------------------------------------- */
-/* My Sport Container Private
+/* My Sport Private Container
 /* ---------------------------------------------------------------- */
 
-#my-sport-container-private {
+#my-sport-private-container {
+
+  margin-top: 2em;
 
   display: grid;
-  /* row-gap: 2em; */
-
-  /* background-color: red; */
 
   /* default unshown */
   display: none;

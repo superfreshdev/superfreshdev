@@ -90,7 +90,6 @@ input[name="name-radio-category-private"] {
 /* Handling | Radios
 /* ------------------------------------------------------------- */
 
-
 /* set img x */
 #radio-sport-my-private:checked ~ #nav-my-private #smooth-open-close-nav-list-my-private label[for="radio-sport-my-private"] > .custom-radio-default > img,
 #radio-books-my-private:checked ~ #nav-my-private #smooth-open-close-nav-list-my-private label[for="radio-books-my-private"] > .custom-radio-default > img,
@@ -103,11 +102,11 @@ input[name="name-radio-category-private"] {
 }
 
 /* show content */
-#radio-sport-my-private:checked ~ #my-sport-container-private,
-#radio-books-my-private:checked ~ #my-book-container-private,
-#radio-food-my-private:checked ~ #my-food-container-private,
-#radio-language-my-private:checked ~ #my-language-container-private,
-#radio-mini-games-my-private:checked ~ #my-mini-games-container-private {
+#radio-sport-my-private:checked ~ #my-sport-private-container,
+#radio-books-my-private:checked ~ #my-book-private-container,
+#radio-food-my-private:checked ~ #my-food-private-container,
+#radio-language-my-private:checked ~ #my-language-private-container,
+#radio-mini-games-my-private:checked ~ #my-mini-games-private-container {
 
   display: grid;
 

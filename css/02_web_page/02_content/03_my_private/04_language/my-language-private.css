@@ -1,24 +1,22 @@
 /* -------------------------------------------------------------- */
-/* > my-mini-games-private.css
+/* > my-language-private.css
 /*
-/* : styles mini-games private
+/* : styles language private
 /* -------------------------------------------------------------- */
 
 
 /* ---------------------------------------------------------------- */
-/* My Mini-Games Container Private
+/* My Language Private Container
 /* ---------------------------------------------------------------- */
 
-#my-mini-games-container-private {
+#my-language-private-container {
 
-  margin-top: 2em;
-  padding: 0em 0;
+  margin-top: 4em;
 
-  /* background-color: rgb(106, 255, 0); */
+  display: grid;
+  justify-items: center;
 
-  display: flex;
-  justify-content: center;
-
+  /* background-color: yellow; */
 
   /* default unshown */
   display: none;

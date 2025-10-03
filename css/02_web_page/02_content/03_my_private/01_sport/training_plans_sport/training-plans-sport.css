@@ -1,23 +1,27 @@
 /* -------------------------------------------------------------- */
-/* > my-language-private.css
+/* > training-plans-sport-container.css
 /*
-/* : styles language private
+/* : styles trainig plans sport container
 /* -------------------------------------------------------------- */
 
 
 /* ---------------------------------------------------------------- */
-/* My Language Container Private
+/* 🟥 Training-Plans Sport Container
 /* ---------------------------------------------------------------- */
 
-#my-language-container-private {
+#training-sport-plans-container {
 
   margin-top: 2em;
-  padding: 0em 0;
+  padding: 2em 0;
 
-  /* background-color: rgb(106, 255, 0); */
+  /* background-color: green; */
 
   display: flex;
   justify-content: center;
+
+  border-top: 3px solid rgb(202, 202, 202);
+
+  background-color: mediumaquamarine;
 
   /* default unshown */
   display: none;

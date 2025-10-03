@@ -1,17 +1,21 @@
 /* -------------------------------------------------------------- */
-/* > my-books-private.css
+/* > my-mini-games-private.css
 /*
-/* : styles books private
+/* : styles mini-games private
 /* -------------------------------------------------------------- */
 
 
 /* ---------------------------------------------------------------- */
-/* My Book Container Private
+/* My Mini-Games Private Container
 /* ---------------------------------------------------------------- */
 
-#my-book-container-private {
+#my-mini-games-private-container {
 
-  background-color: rgb(179, 179, 179);
+  margin-top: 4em;
+
+  display: grid;
+  justify-items: center;
+
 
   /* default unshown */
   display: none;
