@@ -11,6 +11,7 @@ var chk_sport_content = document.getElementById("chk-sport-category-selected-pri
 // radios sport content categories ( choose 1, choose 2 )
 var radios_sport_content_categories = [
 
+  document.getElementById("radio-sport-category-fixed"),
   document.getElementById("radio-sport-category-challenges"),
   document.getElementById("radio-sport-category-training-plans"),
 

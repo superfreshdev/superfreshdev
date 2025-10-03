@@ -66,7 +66,7 @@ input[name="name-radio-sport-category"] {
 /* set content ( fixed, challenges, trainings plan ) */
 #radio-sport-category-training-plans:checked ~ #training-sport-plans-container {
 
-  display: flex;
+  display: grid;
 
 }
 

@@ -20,6 +20,7 @@
   padding-top: 2em;
 
   display: grid;
+  justify-items: center;
 
   border-top: 3px solid rgb(202, 202, 202);
 
@@ -27,16 +28,9 @@
   display: none;
 
 
-}
-
-
-#fixed-sport-container {
-
-  display: grid;
-  justify-items: center;
-  row-gap: 0em;
 
 }
+
 
 /* ---------------------------------------------------------------- */
 /* Header > Span 1 | Fixed Sport Container
