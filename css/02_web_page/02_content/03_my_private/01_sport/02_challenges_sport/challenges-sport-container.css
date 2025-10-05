@@ -5,32 +5,8 @@
 /* -------------------------------------------------------------- */
 
 
-/* ⚠️ 3 layout | more than 3 */
-
-
-
 /* ---------------------------------------------------------------- */
-/* New | Header main Sport Private
-/* ---------------------------------------------------------------- */
-
-#heder-main-sport-private {
-
-  display: grid;
-  row-gap: 1em;
-
-}
-
-#heder-main-sport-private > div:nth-of-type(1) {
-
-  display: flex;
-  align-items: center;
-  column-gap: 1em;
-
-}
-
-
-/* ---------------------------------------------------------------- */
-/* 🟥 Challenges Sport Container
+/* Challenges Sport Container
 /* ---------------------------------------------------------------- */
 
 #challenges-sport-container {
@@ -39,123 +15,30 @@
   padding-top: 2em;
 
   display: grid;
-
-  /* gap:2em; */
+  row-gap: 2em;
 
   border-top: 3px solid rgb(202, 202, 202);
 
   /* default unshown */
   display: none;
 
-
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------------------------------------------------------------- */
-/* Sport Challenges Container Container
+/* ❌❌❌ Trash
 /* ---------------------------------------------------------------- */
 
-#sport-challenges-content-container {
-
-  margin-top: 4em;
-  margin-bottom: 2em;
-
-  display: grid;
-  row-gap: 6em;
-
-}
-
-/* ---------------------------------------------------------------- */
-/* Description Container Sport Challenges
-/* ---------------------------------------------------------------- */
-
-.description-container-sport-challenges {
-
-  position: relative;
-
-  margin-top: 2em;
-  padding-left: .8em;
-
-  display: grid;
-  row-gap: .3em;
-
-  /* color:green; */
-  color: rgb(54, 54, 54);
-  font-weight: bold;
-
-}
-
-.description-container-sport-challenges > div:nth-of-type(1)   {
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: .4em;
-  row-gap: .4em;
-
-  /* opacity: .6; */
-
-}
-
-.description-container-sport-challenges > div:nth-of-type(1) > div  {
-
-  font-size: 12.5px;
-
-  height: 2em;
-  padding: 0 .6em;
-
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
-
-  border-radius: .6em;
-
-  background-color: rgb(196, 196, 196);
-
-
-
-  opacity: .6;
-
-}
-
-.description-container-sport-challenges > div > div {
-
-  /* 14.5px | 14.5 / 16px= 0.90625 */
-  font-size: .90625em;
-
-}
-
-
-/* ------------------------------------------------- */
-/* Left Stripe Sport Fokus Description
-/* ------------------------------------------------- */
-
-.left-stripe-sport-fokus-description {
-
-  position: absolute;
-  left:0;
-
-  width: 4px;
-  height: 100%;
-
-  border-radius: .8em;
-
-  background-color:  rgba(28, 28, 28, .8);
-  background-color: grey;
-
-}
-
-#xxx {
-
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
-
-}
-
-#xxx > div {
-
-  font-size: 12.5px;
-}
 
 
 /* ---------------------------------------------------------------- */

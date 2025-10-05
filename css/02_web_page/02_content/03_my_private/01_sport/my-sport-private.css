@@ -137,3 +137,20 @@
   transition: grid-template-rows 0.3s ease-out;
 
 }
+
+
+/* ---------------------------------------------------------------------- */
+/* 🥭 Test Szenario
+/* ---------------------------------------------------------------------- */
+
+#sport-challenge-1,
+#sport-challenge-2,
+#sport-challenge-3 {
+
+  display: grid;
+
+  /* default unshown */
+  display: none;
+
+
+}

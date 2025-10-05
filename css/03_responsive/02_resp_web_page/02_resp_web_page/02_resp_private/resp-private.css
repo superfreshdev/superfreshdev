@@ -15,11 +15,12 @@
 
 @media ( min-width: 360px ) {
 
+
   /* ---------------------------------------------------------------- */
-  /* Sport | New Sport Video Link Card */
+  /* 🟣🟥 Three Video Sport Link Card
   /* ---------------------------------------------------------------- */
 
-  .new-sport-video-link-card {
+  .three-video-sport-link-card {
 
     width: 8.5em;
     height: 8.5em;
@@ -34,14 +35,16 @@
 
 @media ( min-width: 380px ) {
 
+
+
   /* ---------------------------------------------------------------- */
-  /* Sport | New Sport Video Link Card */
+  /* 🟣🟥 Three Video Sport Link Card
   /* ---------------------------------------------------------------- */
 
-  .new-sport-video-link-card {
+  .three-video-sport-link-card {
 
-    width: 9em;
-    height: 9em;
+     width: 9em;
+     height: 9em;
 
   }
 
@@ -63,11 +66,12 @@
 
   }
 
+
   /* ---------------------------------------------------------------- */
-  /* Sport | New Sport Video Link Card */
+  /* 🟣🟥 Three Video Sport Link Card
   /* ---------------------------------------------------------------- */
 
-  .new-sport-video-link-card {
+  .three-video-sport-link-card {
 
     width: 10em;
     height: 10em;
@@ -97,16 +101,42 @@
 
 
   /* ---------------------------------------------------------------- */
-  /* Sport | New Sport Video Link Card */
+  /* 🟣🟥 Three Video Sport Link Card
   /* ---------------------------------------------------------------- */
 
-  .new-sport-video-link-card {
+  .three-video-sport-link-card{
 
     width: 12em;
     height: 12em;
 
   }
 
+  /* -------------------------------------------------------------- */
+  /* Sport | Content Container More Sport Video Link | Main  */
+  /* -------------------------------------------------------------- */
+
+  .content-container-more-sport-video-link > main {
+
+    /* mobile */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    column-gap: 1em;
+    row-gap: 1em;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Sport | More Sport Video Link Card  */
+  /* -------------------------------------------------------------- */
+
+  .more-sport-video-link-card {
+
+    width: 10em;
+    height: 10em;
+
+  }
 
 }
 

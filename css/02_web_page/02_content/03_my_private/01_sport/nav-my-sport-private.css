@@ -115,3 +115,20 @@ input[name="name-radio-sport-sub-category"] {
   display: none;
 
 }
+
+/* set x */
+#radio-sport-challenge-1:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-1"] > .custom-radio-default > img,
+#radio-sport-challenge-2:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-2"] > .custom-radio-default > img,
+#radio-sport-challenge-3:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-3"] > .custom-radio-default > img  {
+
+  display: flex;
+
+}
+
+/* set content ( challenge 1,2,3 ) */
+#radio-sport-challenge-1:checked ~ #challenges-sport-container #sport-challenge-1,
+#radio-sport-challenge-2:checked ~ #challenges-sport-container #sport-challenge-2,
+#radio-sport-challenge-3:checked ~ #challenges-sport-container #sport-challenge-3  {
+
+  display: grid;
+}

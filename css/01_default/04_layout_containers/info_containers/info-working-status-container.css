@@ -18,6 +18,8 @@
   align-content: flex-start;
   row-gap: .4em;
 
+  color: #616161;
+
   /* background-color: red; */
 
 }
@@ -39,7 +41,8 @@
 
   font-weight: bold;
 
-  background-color: rgb(190, 190, 190);;
+  background-color: rgb(190, 190, 190);
+  color:rgb(112, 112, 112);
 
 }
 

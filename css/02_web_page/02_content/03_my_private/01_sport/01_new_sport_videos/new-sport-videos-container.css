@@ -73,14 +73,12 @@
 
 #new-sport-videos-container > main {
 
+  width: 100%;
+
   padding-top: 2em;
   padding-bottom: 1em;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  row-gap: 1em;
-  column-gap: 1em;
+  display: grid;
+  justify-items: center;
 
 }
