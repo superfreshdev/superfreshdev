@@ -4,21 +4,294 @@
 /* : styles my top it project card
 /* -------------------------------------------------------------- */
 
+/*
+
+  1. img
+
+  2. content
+
+      header ( Projekt 1 | in progres )
+      main ( header, main )
+      nav ( details, link-container )
+
+  3. content-details
+  4. content-video-step-by-step-tutorial
+
+
+*/
+
+
+/* ------------------------------------------------------------- */
+/* Top IT Project Card
+/* ------------------------------------------------------------- */
+
+.top-it-project-card {
+
+  padding: 1em;
+
+  display: grid;
+
+
+  column-gap: 1em;
+  row-gap: 1em;
+
+
+   border-radius: 20px;
+
+  /* background-color: white; */
+
+  /* background-color: rgba(255, 255, 255, .8); */
+
+  /* background-color: rgba(255, 255, 255, .4); */
+
+   /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); */
+
+    /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); */
+    border: 4px solid rgba(164, 164, 164, 0.1);
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, .8);
+
+    backdrop-filter: blur(12px);
+
+
+}
+
+@media ( min-width: 800px) {
+
+ .top-it-project-card {
+
+  padding: 1em;
+
+  display: grid;
+  grid: auto / 1fr 2fr;
+
+  column-gap: 1em;
+  row-gap: 1em;
+
+  }
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Content Details
+/* ------------------------------------------------------------- */
+
+.content-details {
+
+  display: grid;
+
+  align-content: flex-start;
+  /* align-content: center; */
+  /* align-content: space-between; */
+
+  /* row-gap: 1em; */
+
+  /* border: 1px solid grey; */
+
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | Content Details
+/* ------------------------------------------------------------- */
+
+.content-details > header {
+
+  padding: 1em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header Div 1 | Content Details
+/* ------------------------------------------------------------- */
+
+.content-details > header div:nth-of-type(1) {
+
+  font-weight: bold;
+
+  height: 1.5em;
+  padding: 0 .4em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .4em;
+  font-weight: 600;
+
+  /* background-color: rgb(202, 202, 202); */
+
+  background-color: rgba(204, 204, 204, .3);
+
+  color:grey;
+
+
+}
+
+.content-details > header div:nth-of-type(1) span {
+
+  font-size: 14.5px;
+  /* font-size: 12px; */
+}
+
+/* ------------------------------------------------------------- */
+/* Header Div 2 | Content Details
+/* ------------------------------------------------------------- */
+
+.content-details > header div:nth-of-type(2) {
+
+  background: #facc15;
+  color: #111;
+
+  height: 2em;
+  padding: 0 .8em;
+  border-radius: 1em;
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | Content Details
+/* ------------------------------------------------------------- */
+
+.content-details > main {
+
+  display: grid;
+  row-gap: .6em;
+
+
+
+    /* background-color: rgb(0, 89, 255); */
+
+}
+
+
+
+/* ------------------------------------------------------------- */
+/* Main Header | Content Details
+/* ------------------------------------------------------------- */
+
+.content-details > main > header {
+
+  font-weight: bold;
+
+  font-size: 18px;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Main Main | Content Details
+/* ------------------------------------------------------------- */
+
+.content-details > main > main {
+
+  /* background-color: rgb(0, 89, 255); */
+
+  color:rgb(36, 36, 36);
+
+  font-size: 14.5px;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav | Content Details
+/* ------------------------------------------------------------- */
+
+.content-details > nav {
+
+  padding-top: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+
+  color:rgb(36, 36, 36);
+
+}
+
+.content-details > nav > div:nth-of-type(1) {
+
+  height: 2em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .6em;
+
+ background-color: rgb(202, 202, 202);
+
+ font-weight: bold;
+
+  font-size: 14.5px;
+}
+
+
+
+.zip-github-link-container {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+}
+
+.zip-github-link-container > div {
+
+  height: 2em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .6em;
+
+  background-color: rgb(202, 202, 202);
+
+  font-weight: bold;
+
+  font-size: 14.5px;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Video Link List Tutorial
+/* ------------------------------------------------------------- */
+
+.video-link-list-tutorial {
+
+  border: 1px solid grey;
+  padding: 1em;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------- */
+
 
 /* ------------------------------------------------------------- */
 /* My Top IT Project Card
 /* ------------------------------------------------------------- */
 
-.top-it-project-card {
 
-  /* display: grid;
-  grid: auto / auto 1fr; */
 
- display: flex;
- flex-wrap: wrap;
-  gap:2em;
-
-}
 
 /* ------------------------------------------------------------- */
 /* [1/4] | IMG | Img Top IT Project Card
@@ -26,11 +299,13 @@
 
 .img-top-it-project-card {
 
-  width: 30%;
-  /* width: 40%; */
+  width: 100%;
+  height: 100%;
 
-  border-radius: 1.3em;
-  border: 4px solid rgb(197, 197, 197);
+  border-radius: 1em;
+
+
+  /* border: 4px solid rgb(197, 197, 197); */
 
 }
 
@@ -49,7 +324,8 @@
 
   /* background-color: blue; */
 
-  background-color: grey;
+  border: 1px solid grey;
+  padding: 1em;
 
 }
 
