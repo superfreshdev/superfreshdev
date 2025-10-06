@@ -17,7 +17,14 @@
   border-radius: 1em;
 
   /* border: 3px solid rgba(115, 115, 115, .6); */
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+
+  /* border: 3px solid grey; */
+
+  border: 3px solid rgba(189, 189, 189, 0.6);
+
+  /* background-color: rgba(255, 255, 255, .4);
+  background-color: white; */
 
   transition: all .4s;
 
@@ -25,9 +32,37 @@
 
 .more-it-project-card:hover {
 
-  background-color: #b8b8b8;
+  /* background-color: #b8b8b8; */
   /* background-color: rgb(197, 197, 197); */
-  background-color: wheat;
+  /* background-color: wheat; */
+
+   /* border: 3px solid rgba(99, 99, 99, 0.6); */
+
+   /* background-color: grey; */
+
+}
+
+.more-it-project-card:hover > main  {
+
+   background-color: rgb(186, 186, 186);
+
+}
+
+.more-it-project-card:hover > header {
+
+   border-bottom: 3px solid rgb(186, 186, 186);
+
+}
+
+.more-it-project-card:hover > footer {
+
+   border-top: 3px solid rgb(186, 186, 186);
+
+}
+
+.more-it-project-card:hover > main > header {
+
+  color:rgb(37, 37, 37);
 
 }
 
@@ -37,7 +72,7 @@
 
 .more-it-project-card > header {
 
-  height: 2.3em;
+  height: 2em;
   padding: 0 .8em 0 0;
 
   display: flex;
@@ -46,8 +81,14 @@
 
   border-radius: .8em .8em 0 0;
 
-  border-bottom: 3px solid rgba(107, 107, 107, 0.6);
-  background-color: #b8b8b8;
+  /* border-bottom: 3px solid rgba(107, 107, 107, 0.6); */
+
+  border-bottom: 3px solid rgba(189, 189, 189, 0.6);
+
+  background-color: rgb(208, 208, 208);
+
+  /* background-color: #b8b8b8; */
+  /* background-color: rgba(255, 255, 255, .4) */
 
 }
 
@@ -90,11 +131,22 @@
 
   border-radius: .8em 0 0 0;
 
-  border-right: 3px solid rgba(107, 107, 107, 0.6);
+  border-right: 3px solid rgba(189, 189, 189, 0.6);
 
-  color:rgba(107, 107, 107, 0.6);
+  color:rgba(52, 52, 52, 0.6);
+
+  color:black;
 
   background-color: #b8b8b8;
+
+  background-color: rgba(189, 189, 189, 0.6);
+
+
+}
+
+.more-it-project-card > header > div:nth-of-type(1) > div:nth-of-type(1) > span {
+
+  font-size: 12.5px;
 
 }
 
@@ -113,19 +165,41 @@
 
   font-style: italic;
 
-  border-right: 3px solid rgba(107, 107, 107, 0.6);
+  /* border-right: 3px solid rgba(107, 107, 107, 0.6); */
+
+  border-right: 3px solid rgba(189, 189, 189, 0.6);
+
+}
+
+.more-it-project-card > header > div:nth-of-type(1) > div:nth-of-type(2) > span {
+
+  font-size: 12.5px;
 
 }
 
 .status-bgcolor-in-progress {
 
-  background-color: rgb(230, 216, 67);
+  background-color: rgb(227, 212, 43);
+
+  color:rgb(92, 92, 92);
+
 
 }
 
 .status-bgcolor-coming-soon {
 
   background-color: #b8b8b8;
+
+  color: grey;
+
+}
+
+.status-bgcolor-finished {
+
+  background-color: rgb(63, 174, 4);
+
+  color:green;
+
 
 }
 
@@ -140,7 +214,9 @@
   display: grid;
   row-gap: .6em;
 
-  background-color: #b8b8b8;
+  /* background-color: #b8b8b8; */
+
+  background-color: rgb(208, 208, 208);
 
 }
 
@@ -166,34 +242,43 @@
 
 .more-it-project-card > main > footer  {
 
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: .4em;
 
-  color: rgba(97, 97, 97, .6);
-  font-weight: bold;
+  /* font-weight: bold; */
 
+  color: rgba(97, 97, 97, .6);
+
+  color:rgb(67, 67, 67);
 
 }
 
 .more-it-project-card > main > footer > div  {
 
-  /* 12.5px | 12.5 / 16 px = 0.78125  */
-  font-size: 0.78125em;
-
-  height: 1.8em;
-  padding: 0 .5em;
+  height: 1.3em;
+  padding: 0 .3em;
 
   display: flex;
   align-items: center;
   column-gap: .3em;
 
+  /* font-weight: bold; */
+
   border-radius: .4em;
   background-color: rgb(197, 197, 197);
 
   user-select: none;
+
+}
+
+.more-it-project-card > main > footer > div > div {
+
+  /* 12.5px | 12.5 / 16 px = 0.78125  */
+  font-size: 0.78125em;
+
+  font-size: 10.5px;
 
 }
 
@@ -212,9 +297,15 @@
 
   column-gap: .4em;
 
-  border-top: 3px solid rgba(107, 107, 107, 0.6);
+  border-radius: 0 0 .8em .8em;
 
-  background-color: #b8b8b8;
+  /* border-top: 3px solid rgba(107, 107, 107, 0.6); */
+
+  border-top: 3px solid rgba(189, 189, 189, 0.6);
+
+  background-color: rgb(208, 208, 208);
+
+  /* background-color: #b8b8b8; */
 
 }
 
@@ -239,6 +330,7 @@
 
   /* background-color: grey; */
   background-color: rgb(197, 197, 197);
+  color: rgba(97, 97, 97, .6);
 
   transition: all .4s;
 
@@ -264,6 +356,9 @@
 .more-it-project-card > footer > a > div {
 
   /* 14.5px | 14.5 / 16px= 0.90625 */
-  font-size: .90625em;
+  /* font-size: .90625em; */
+
+  /* 12.5px | 12.5 / 16 px = 0.78125  */
+  font-size: 0.78125em;
 
 }

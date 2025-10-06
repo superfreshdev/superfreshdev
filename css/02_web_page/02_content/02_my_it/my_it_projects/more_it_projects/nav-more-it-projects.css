@@ -42,6 +42,15 @@ label[for="chk-more-it-projects"] > div:nth-of-type(1) > div:nth-of-type(2) {
 
   background-color: rgba(255, 255, 255, .4);
 
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+
+  /*
+  background-color: rgb(28, 28, 28);
+
+  background-color: rgba(28, 28, 28, .8);
+
+  background-color: #808080; */
+
 }
 
 /* ------------------------------------------------------------- */
