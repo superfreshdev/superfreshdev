@@ -64,12 +64,23 @@
   padding: 1em;
 
   display: grid;
-  grid: auto / 1fr 2fr;
+  grid: auto / auto 1fr;
 
   column-gap: 1em;
   row-gap: 1em;
 
   }
+
+  .top-it-project-card > img {
+
+    width: 20em;
+
+    /* display: none; */
+
+
+
+  }
+
 
 }
 
