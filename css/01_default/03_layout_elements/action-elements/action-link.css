@@ -1,0 +1,94 @@
+/* -------------------------------------------------------------- */
+/* > action-link.css
+/* : styles action link element
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Action Link
+/* -------------------------------------------------------------- */
+
+.action-link-small,
+.action-link-medium,
+.action-link-big {
+
+  /* delete default link style */
+  text-decoration: none;
+
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: #b8b8b8;
+  background-color: #cacaca;
+
+  background-color: rgb(235, 235, 235);
+
+  opacity: .6;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.action-link-small > div,
+.action-link-medium > div,
+.action-link-big > div {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+.action-link-small:hover,
+.action-link-medium:hover,
+.action-link-big:hover {
+
+
+  background-color: wheat;
+
+}
+
+.action-link-small:visited,
+.action-link-medium:visited,
+.action-link-big:visited {
+
+  color:black;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Small | Action Link
+/* -------------------------------------------------------------- */
+
+.action-link-small {
+
+  height: 2em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Medium | Action Link
+/* -------------------------------------------------------------- */
+
+.action-link-medium {
+
+  height: 2.3em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Big | Action Link
+/* -------------------------------------------------------------- */
+
+.action-link-big {
+
+  height: 2.8em;
+
+}

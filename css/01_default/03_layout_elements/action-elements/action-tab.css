@@ -1,0 +1,115 @@
+/* -------------------------------------------------------------- */
+/* > action-tab.css
+/* : styles action tab element
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Action Tabs
+/* -------------------------------------------------------------- */
+
+.action-tab-small,
+.action-tab-medium,
+.action-tab-big {
+
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  background-color: #b8b8b8;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.action-tab-small > div:nth-of-type(1),
+.action-tab-medium > div:nth-of-type(1),
+.action-tab-big > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+.action-tab-small > div:nth-of-type(1) > div,
+.action-tab-medium > div:nth-of-type(1) > div,
+.action-tab-big > div:nth-of-type(1) > div {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Nr | Action Tabs
+/* -------------------------------------------------------------- */
+
+.action-tab-small > div:nth-of-type(2),
+.action-tab-medium > div:nth-of-type(2),
+.action-tab-big > div:nth-of-type(2) {
+
+  height: 1em;
+  padding: 0 .4em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1em;
+
+  background-color: rgb(211, 211, 211);
+  color:black;
+
+}
+
+.action-tab-small > div:nth-of-type(2) > span,
+.action-tab-medium > div:nth-of-type(2) > span,
+.action-tab-big > div:nth-of-type(2) > span {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .75em;
+
+
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* Small | Action Link
+/* -------------------------------------------------------------- */
+
+.action-tab-small {
+
+  height: 2em;
+  border-radius: 1em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Medium | Action Link
+/* -------------------------------------------------------------- */
+
+.action-tab-medium {
+
+  height: 2.3em;
+  border-radius: 1em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Big | Action Link
+/* -------------------------------------------------------------- */
+
+.action-tab-big {
+
+  height: 2.5em;
+  border-radius: 1.3em;
+
+}

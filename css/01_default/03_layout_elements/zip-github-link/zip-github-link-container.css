@@ -11,61 +11,8 @@
 
 .zip-github-link-container {
 
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-  column-gap: .4em;
-
-}
-
-/* ------------------------------------------------------------- */
-/* a | Zip Github Link Container
-/* ------------------------------------------------------------- */
-
-.zip-github-link-container > a {
-
-  text-decoration: none;
-
-  height: 2em;
-  padding: 0 .6em;
-
   display: flex;
   align-items: center;
   column-gap: .4em;
 
-  border-radius: .6em;
-
-  font-weight: bold;
-
-  background-color: rgb(28, 28, 28);
-  color:rgb(214, 214, 214);
-
-  transition: all .4s;
-
-
-}
-
-.zip-github-link-container > a:visited {
-
- color:rgb(214, 214, 214);
-
-}
-
-.zip-github-link-container > a:hover {
-
- background-color: rgb(108, 108, 108);
-
-}
-
-/* ------------------------------------------------------------- */
-/* a Div | Zip Github Link Container
-/* ------------------------------------------------------------- */
-
-.zip-github-link-container > a > div {
-
-  /* 14.5px | 14.5 / 16px= 0.90625 */
-  font-size: .90625em;
 }

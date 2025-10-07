@@ -85,6 +85,11 @@
                 <!-- ⚠️ Action Elements -->
                 <!-- ------------------------------------- -->
 
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-link.css">
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-drop-down.css">
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-tab.css">
+
+                <!-- ❌ Delete  -->
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-content-elements.css">
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-drop-down-element.css">
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-switch-element.css">
@@ -2365,307 +2370,1443 @@
                                                 <!-- ------------------------------------------------------------------------- -->
                                                 <div id="top-it-project-card-container">
 
-
                                                     <!-- -------------------------------------------------------------- -->
                                                     <!-- ➡️🟥Top IT Project Card #1 -->
                                                     <!-- -------------------------------------------------------------- -->
                                                     <div class="top-it-project-card">
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- ➡️ [1/4] | IMG -->
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-1/project-1-sass-dashboard.png"
-                                                                class="img-top-it-project-card" alt="img">
+                                                        <input type="checkbox" id="chk-details-top-project-webdesign-1" style="display: none;">
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- ➡️ [2/4] | Content -->
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <div class="content-details">
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- 🟩🟥[1/3] | Img Container | Top Projects -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="img-container-top-project-card">
 
-                                                            <!-- -------------------------------------------------- -->
-                                                            <!-- Header -->
-                                                            <!-- -------------------------------------------------- -->
+                                                            <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-1/project-1-sass-dashboard.png"
+                                                                 alt="img">
+
+                                                        </div>
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- ➡️🟥[1/3] | Content Container | Top Projects Card -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="content-container-top-project-card">
+
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- 🟩 Header -->
+                                                            <!-- ----------------------------------------------------------- -->
                                                             <header>
 
-                                                                <!-- --------------------------------------------- -->
-                                                                <!-- Project NR  -->
-                                                                <!-- --------------------------------------------- -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Project Nr Title -->
+                                                                <!-- ---------------------------------------------------- -->
                                                                 <div>
                                                                     <span>Project 1</span>
-
                                                                 </div>
 
-                                                                <!-- --------------------------------------------- -->
-                                                                <!-- Status Title -->
-                                                                <!-- --------------------------------------------- -->
-                                                                <div>
 
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Project Status Title -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <div class="status-in-progress-top-project">
                                                                     <span>in progress</span>
                                                                 </div>
 
+                                                                <!-- <div class="status-coming-soon-top-project">
+                                                                    <span>coming soon</span>
+                                                                </div> -->
+
+                                                                <!-- <div class="status-finished-top-project">
+                                                                    <span>finished</span>
+                                                                </div> -->
 
                                                             </header>
 
-                                                            <!-- -------------------------------------------------- -->
-                                                            <!-- Main-->
-                                                            <!-- -------------------------------------------------- -->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- 🟩 Main -->
+                                                            <!-- ----------------------------------------------------------- -->
                                                             <main>
 
-
-                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- ----------------------------------------------------------- -->
                                                                 <!-- Header -->
-                                                                <!-- -------------------------------------------------- -->
-                                                                <header>Insurance Web-Application</header>
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <header>
+                                                                    Insurance Web-Application
+                                                                </header>
 
-                                                                <!-- -------------------------------------------------- -->
-                                                                <!-- Main-->
-                                                                <!-- -------------------------------------------------- -->
-                                                                <main>Insurance Application with Login & Registration
-                                                                to handle their contracs, send message and configure personal
-                                                                information. Here we can write little bit more text but
-                                                                i would say it shouldnt be longer than this text.</main>
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- Main -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <main>
+                                                                    Insurance Application with Login & Registration
+                                                                    to handle their contracs, send message and configure personal
+                                                                    information. Here we can write little bit more text but
+                                                                    i would say it shouldnt be longer than this text.
+                                                                </main>
+
+
                                                             </main>
 
-                                                            <!-- -------------------------------------------------- -->
-                                                            <!-- Nav -->
-                                                            <!-- -------------------------------------------------- -->
-                                                            <nav>
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- 🟥 Footer -->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <footer>
 
-                                                                <!-- details -->
-                                                                <div>Details</div>
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Detail's Label | -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <label for="chk-details-top-project-webdesign-1" class="action-drop-down-small">
 
-                                                                <!-- zip & github link container -->
+                                                                    <div>
+                                                                        <!-- <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img"> -->
+                                                                        <div>Details</div>
+                                                                    </div>
+
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-5" alt="img">
+
+                                                                </label>
+
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Zip GitHub Link Container | -->
+                                                                <!-- ---------------------------------------------------- -->
                                                                 <div class="zip-github-link-container">
 
-                                                                    <div>zip</div>
-                                                                    <div>github</div>
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <!-- Link: Zip -->
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <a href="" class="action-link-small" target="_blank">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-download-arrow.png" class="img-h-0-9" alt="img">
+                                                                        <div>.zip</div>
+
+                                                                    </a>
+
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <!-- Link: GitHub -->
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <a href="" class="action-link-small" target="_blank">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-github.png" class="img-h-1" alt="img">
+                                                                        <div>GitHub</div>
+
+                                                                    </a>
 
                                                                 </div>
 
-                                                            </nav>
 
 
+                                                            </footer>
+
+
+                                                            <!--  🟣 list of actions elements  -->
+                                                            <div style="display: none;">
+                                                                <br>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟣 Action Links -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="test-layout">
+
+
+                                                                    <a href="" class="action-link-small">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                        <div>A-Link-S</div>
+
+                                                                    </a>
+
+                                                                    <a href="" class="action-link-medium">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                        <div>A-Link-M</div>
+
+                                                                    </a>
+
+                                                                    <a href="" class="action-link-big">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                        <div>A-Link-B</div>
+
+                                                                    </a>
+
+
+                                                                </div>
+
+                                                                <br>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟣 Action Drop Down -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="test-layout">
+
+
+                                                                    <div class="action-drop-down-small">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Drop-Down-S</div>
+                                                                        </div>
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+                                                                    </div>
+
+                                                                    <div class="action-drop-down-medium">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Drop-Down-M</div>
+                                                                        </div>
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+                                                                    </div>
+
+                                                                    <div class="action-drop-down-big">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Drop-Down-M</div>
+                                                                        </div>
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+                                                                    </div>
+
+
+                                                                </div>
+
+                                                                <br>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟣 Action Tab -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="test-layout">
+
+
+                                                                    <div class="action-tab-small">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Tab-S</div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <span>09</span>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="action-tab-medium">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Tab-M</div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <span>03</span>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="action-tab-big">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Tab-B</div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <span>123</span>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+                                                                </div>
+
+                                                            </div>
 
                                                         </div>
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- 🟥 [3/4] | Content Details -->
-                                                        <!-- ---------------------------------------------------------------------- -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- 🟥[3/3] | Details Container | Top Projects Card -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div id="smooth-open-close-details-top-project-1-1" class="smooth-open-close-container">
+
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- Overflow Hidden-->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <div class="overflow-hidden">
+
+                                                                 <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟥[3/3] | Details Container | Top Projects Card -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                 <div class="details-container-top-project-card">
+
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <!-- Header -->
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <header>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-3-layers.png" class="img-h-1" alt="img">
+                                                                <div>Technology-Stack:</div>
+                                                            </header>
+
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <!-- Main -->
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <main>
+
+                                                                <!-- frontend -->
+                                                                <div class="tech-stack-item-top-project">
+
+                                                                    <header>
+                                                                        <span>Frontend:</span>
+                                                                    </header>
+
+
+                                                                    <main>
+
+                                                                        Angular, Storybook, TypeScript, JavaScript
+
+                                                                    </main>
 
 
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- 🟥 [4/4] | Content Video Step by Step Tutorial -->
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                         <div class="video-link-list-tutorial">
-                                                            Step by Step
+
+                                                                </div>
+
+                                                                <!-- Testing -->
+                                                                <div class="tech-stack-item-top-project" >
+
+                                                                    <header>
+                                                                        <span>Testing:</span>
+                                                                    </header>
+
+                                                                    <main>
+
+                                                                        JUnit, Jest, Mockito, TestContainers
+
+                                                                    </main>
+
+                                                                </div>
+
+                                                                <!-- backend -->
+                                                                <div class="tech-stack-item-top-project" >
+
+                                                                    <header>
+                                                                        <span>Backend:</span>
+                                                                    </header>
+
+                                                                    <main>
+
+                                                                        Java, Spring Boot, Apache Kafka
+
+                                                                    </main>
+
+
+
+                                                                </div>
+
+                                                                <!-- infra -->
+                                                                <div class="tech-stack-item-top-project" >
+
+                                                                    <header>
+                                                                        <span>Infrastructure:</span>
+                                                                    </header>
+
+                                                                     <main>
+
+                                                                        <!-- <span>Docker,</span>
+                                                                        <span>Docker,</span>
+                                                                        <span>Docker,</span>
+                                                                        <span>Docker,</span> -->
+                                                                        Docker, Kubernetes, Jenkins, GitLab
+
+                                                                    </main>
+
+                                                                </div>
+
+
+                                                            </main>
+
+                                                                </div>
+
+                                                            </div>
+
                                                         </div>
-
-
 
 
 
                                                     </div>
 
-                                                    <!-- -------------------------------------------------------------- -->
-                                                    <!-- Top IT Project Card #2 -->
+                                                     <!-- -------------------------------------------------------------- -->
+                                                    <!-- ➡️🟥Top IT Project Card #1 -->
                                                     <!-- -------------------------------------------------------------- -->
                                                     <div class="top-it-project-card">
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- ➡️ [1/4] | IMG -->
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-2/project-2-sass-dashboard.png"
-                                                                class="img-top-it-project-card" alt="img">
+                                                        <input type="checkbox" id="chk-details-top-project-webdesign-1" style="display: none;">
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- ➡️ [2/4] | Content -->
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <div class="content-details">
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- 🟩🟥[1/3] | Img Container | Top Projects -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="img-container-top-project-card">
 
-                                                            <!-- -------------------------------------------------- -->
-                                                            <!-- Header -->
-                                                            <!-- -------------------------------------------------- -->
+                                                            <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-2/project-2-sass-dashboard.png"
+                                                                 alt="img">
+
+                                                        </div>
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- ➡️🟥[1/3] | Content Container | Top Projects Card -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="content-container-top-project-card">
+
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- 🟩 Header -->
+                                                            <!-- ----------------------------------------------------------- -->
                                                             <header>
 
-                                                                <!-- --------------------------------------------- -->
-                                                                <!-- Project NR  -->
-                                                                <!-- --------------------------------------------- -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Project Nr Title -->
+                                                                <!-- ---------------------------------------------------- -->
                                                                 <div>
                                                                     <span>Project 2</span>
-
                                                                 </div>
 
-                                                                <!-- --------------------------------------------- -->
-                                                                <!-- Status Title -->
-                                                                <!-- --------------------------------------------- -->
-                                                                <div>
 
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Project Status Title -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <div class="status-in-progress-top-project">
                                                                     <span>in progress</span>
                                                                 </div>
 
+                                                                <!-- <div class="status-coming-soon-top-project">
+                                                                    <span>coming soon</span>
+                                                                </div> -->
+
+                                                                <!-- <div class="status-finished-top-project">
+                                                                    <span>finished</span>
+                                                                </div> -->
 
                                                             </header>
 
-                                                            <!-- -------------------------------------------------- -->
-                                                            <!-- Main-->
-                                                            <!-- -------------------------------------------------- -->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- 🟩 Main -->
+                                                            <!-- ----------------------------------------------------------- -->
                                                             <main>
 
-
-                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- ----------------------------------------------------------- -->
                                                                 <!-- Header -->
-                                                                <!-- -------------------------------------------------- -->
-                                                                <header>Responsive Dashboard #2</header>
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <header>
+                                                                    Insurance Web-Application
+                                                                </header>
 
-                                                                <!-- -------------------------------------------------- -->
-                                                                <!-- Main-->
-                                                                <!-- -------------------------------------------------- -->
-                                                                <main>Insurance Application with Login & Registration
-                                                                to handle their contracs, send message and configure personal
-                                                                information. Here we can write little bit more text but
-                                                                i would say it shouldnt be longer than this text.</main>
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- Main -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <main>
+                                                                    Insurance Application with Login & Registration
+                                                                    to handle their contracs, send message and configure personal
+                                                                    information. Here we can write little bit more text but
+                                                                    i would say it shouldnt be longer than this text.
+                                                                </main>
+
+
                                                             </main>
 
-                                                            <!-- -------------------------------------------------- -->
-                                                            <!-- Nav -->
-                                                            <!-- -------------------------------------------------- -->
-                                                            <nav>
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- 🟥 Footer -->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <footer>
 
-                                                                <!-- details -->
-                                                                <div>Details</div>
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Detail's Label | -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <label for="chk-details-top-project-webdesign-1" class="action-drop-down-small">
 
-                                                                <!-- zip & github link container -->
+                                                                    <div>
+                                                                        <!-- <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img"> -->
+                                                                        <div>Details</div>
+                                                                    </div>
+
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-5" alt="img">
+
+                                                                </label>
+
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Zip GitHub Link Container | -->
+                                                                <!-- ---------------------------------------------------- -->
                                                                 <div class="zip-github-link-container">
 
-                                                                    <div>zip</div>
-                                                                    <div>github</div>
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <!-- Link: Zip -->
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <a href="" class="action-link-small" target="_blank">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-download-arrow.png" class="img-h-0-9" alt="img">
+                                                                        <div>.zip</div>
+
+                                                                    </a>
+
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <!-- Link: GitHub -->
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <a href="" class="action-link-small" target="_blank">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-github.png" class="img-h-1" alt="img">
+                                                                        <div>GitHub</div>
+
+                                                                    </a>
 
                                                                 </div>
 
-                                                            </nav>
 
 
+                                                            </footer>
+
+
+                                                            <!--  🟣 list of actions elements  -->
+                                                            <div style="display: none;">
+                                                                <br>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟣 Action Links -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="test-layout">
+
+
+                                                                    <a href="" class="action-link-small">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                        <div>A-Link-S</div>
+
+                                                                    </a>
+
+                                                                    <a href="" class="action-link-medium">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                        <div>A-Link-M</div>
+
+                                                                    </a>
+
+                                                                    <a href="" class="action-link-big">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                        <div>A-Link-B</div>
+
+                                                                    </a>
+
+
+                                                                </div>
+
+                                                                <br>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟣 Action Drop Down -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="test-layout">
+
+
+                                                                    <div class="action-drop-down-small">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Drop-Down-S</div>
+                                                                        </div>
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+                                                                    </div>
+
+                                                                    <div class="action-drop-down-medium">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Drop-Down-M</div>
+                                                                        </div>
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+                                                                    </div>
+
+                                                                    <div class="action-drop-down-big">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Drop-Down-M</div>
+                                                                        </div>
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+                                                                    </div>
+
+
+                                                                </div>
+
+                                                                <br>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟣 Action Tab -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="test-layout">
+
+
+                                                                    <div class="action-tab-small">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Tab-S</div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <span>09</span>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="action-tab-medium">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Tab-M</div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <span>03</span>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="action-tab-big">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Tab-B</div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <span>123</span>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+                                                                </div>
+
+                                                            </div>
 
                                                         </div>
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- 🟥 [3/4] | Content Details -->
-                                                        <!-- ---------------------------------------------------------------------- -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- 🟥[3/3] | Details Container | Top Projects Card -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div id="smooth-open-close-details-top-project-1-1" class="smooth-open-close-container">
+
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- Overflow Hidden-->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <div class="overflow-hidden">
+
+                                                                 <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟥[3/3] | Details Container | Top Projects Card -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                 <div class="details-container-top-project-card">
+
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <!-- Header -->
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <header>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-3-layers.png" class="img-h-1" alt="img">
+                                                                <div>Technology-Stack:</div>
+                                                            </header>
+
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <!-- Main -->
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <main>
+
+                                                                <!-- frontend -->
+                                                                <div class="tech-stack-item-top-project">
+
+                                                                    <header>
+                                                                        <span>Frontend:</span>
+                                                                    </header>
+
+
+                                                                    <main>
+
+                                                                        Angular, Storybook, TypeScript, JavaScript
+
+                                                                    </main>
 
 
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- 🟥 [4/4] | Content Video Step by Step Tutorial -->
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                         <div class="video-link-list-tutorial">
-                                                            Step by Step
+
+                                                                </div>
+
+                                                                <!-- Testing -->
+                                                                <div class="tech-stack-item-top-project" >
+
+                                                                    <header>
+                                                                        <span>Testing:</span>
+                                                                    </header>
+
+                                                                    <main>
+
+                                                                        JUnit, Jest, Mockito, TestContainers
+
+                                                                    </main>
+
+                                                                </div>
+
+                                                                <!-- backend -->
+                                                                <div class="tech-stack-item-top-project" >
+
+                                                                    <header>
+                                                                        <span>Backend:</span>
+                                                                    </header>
+
+                                                                    <main>
+
+                                                                        Java, Spring Boot, Apache Kafka
+
+                                                                    </main>
+
+
+
+                                                                </div>
+
+                                                                <!-- infra -->
+                                                                <div class="tech-stack-item-top-project" >
+
+                                                                    <header>
+                                                                        <span>Infrastructure:</span>
+                                                                    </header>
+
+                                                                     <main>
+
+                                                                        <!-- <span>Docker,</span>
+                                                                        <span>Docker,</span>
+                                                                        <span>Docker,</span>
+                                                                        <span>Docker,</span> -->
+                                                                        Docker, Kubernetes, Jenkins, GitLab
+
+                                                                    </main>
+
+                                                                </div>
+
+
+                                                            </main>
+
+                                                                </div>
+
+                                                            </div>
+
                                                         </div>
-
-
 
 
 
                                                     </div>
 
-                                                    <!-- -------------------------------------------------------------- -->
-                                                    <!-- Top IT Project Card #3 -->
+                                                      <!-- -------------------------------------------------------------- -->
+                                                    <!-- ➡️🟥Top IT Project Card #1 -->
                                                     <!-- -------------------------------------------------------------- -->
                                                     <div class="top-it-project-card">
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- ➡️ [1/4] | IMG -->
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-3/project-3-sass-dashboard.png"
-                                                                class="img-top-it-project-card" alt="img">
+                                                        <input type="checkbox" id="chk-details-top-project-webdesign-1" style="display: none;">
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- ➡️ [2/4] | Content -->
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <div class="content-details">
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- 🟩🟥[1/3] | Img Container | Top Projects -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="img-container-top-project-card">
 
-                                                            <!-- -------------------------------------------------- -->
-                                                            <!-- Header -->
-                                                            <!-- -------------------------------------------------- -->
+                                                            <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-3/project-3-sass-dashboard.png"
+                                                                 alt="img">
+
+                                                        </div>
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- ➡️🟥[1/3] | Content Container | Top Projects Card -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div class="content-container-top-project-card">
+
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- 🟩 Header -->
+                                                            <!-- ----------------------------------------------------------- -->
                                                             <header>
 
-                                                                <!-- --------------------------------------------- -->
-                                                                <!-- Project NR  -->
-                                                                <!-- --------------------------------------------- -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Project Nr Title -->
+                                                                <!-- ---------------------------------------------------- -->
                                                                 <div>
                                                                     <span>Project 3</span>
-
                                                                 </div>
 
-                                                                <!-- --------------------------------------------- -->
-                                                                <!-- Status Title -->
-                                                                <!-- --------------------------------------------- -->
-                                                                <div>
 
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Project Status Title -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <div class="status-in-progress-top-project">
                                                                     <span>in progress</span>
                                                                 </div>
 
+                                                                <!-- <div class="status-coming-soon-top-project">
+                                                                    <span>coming soon</span>
+                                                                </div> -->
+
+                                                                <!-- <div class="status-finished-top-project">
+                                                                    <span>finished</span>
+                                                                </div> -->
 
                                                             </header>
 
-                                                            <!-- -------------------------------------------------- -->
-                                                            <!-- Main-->
-                                                            <!-- -------------------------------------------------- -->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- 🟩 Main -->
+                                                            <!-- ----------------------------------------------------------- -->
                                                             <main>
 
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <header>
+                                                                    Insurance Web-Application
+                                                                </header>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- Main -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <main>
+                                                                    Insurance Application with Login & Registration
+                                                                    to handle their contracs, send message and configure personal
+                                                                    information. Here we can write little bit more text but
+                                                                    i would say it shouldnt be longer than this text.
+                                                                </main>
+
+
+                                                            </main>
+
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- 🟥 Footer -->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <footer>
+
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Detail's Label | -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <label for="chk-details-top-project-webdesign-1" class="action-drop-down-small">
+
+                                                                    <div>
+                                                                        <!-- <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img"> -->
+                                                                        <div>Details</div>
+                                                                    </div>
+
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-5" alt="img">
+
+                                                                </label>
+
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <!-- Zip GitHub Link Container | -->
+                                                                <!-- ---------------------------------------------------- -->
+                                                                <div class="zip-github-link-container">
+
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <!-- Link: Zip -->
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <a href="" class="action-link-small" target="_blank">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-download-arrow.png" class="img-h-0-9" alt="img">
+                                                                        <div>.zip</div>
+
+                                                                    </a>
+
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <!-- Link: GitHub -->
+                                                                    <!-- ------------------------------------------------------------ -->
+                                                                    <a href="" class="action-link-small" target="_blank">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-github.png" class="img-h-1" alt="img">
+                                                                        <div>GitHub</div>
+
+                                                                    </a>
+
+                                                                </div>
+
+
+
+                                                            </footer>
+
+
+                                                            <!--  🟣 list of actions elements  -->
+                                                            <div style="display: none;">
+                                                                <br>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟣 Action Links -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="test-layout">
+
+
+                                                                    <a href="" class="action-link-small">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                        <div>A-Link-S</div>
+
+                                                                    </a>
+
+                                                                    <a href="" class="action-link-medium">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                        <div>A-Link-M</div>
+
+                                                                    </a>
+
+                                                                    <a href="" class="action-link-big">
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                        <div>A-Link-B</div>
+
+                                                                    </a>
+
+
+                                                                </div>
+
+                                                                <br>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟣 Action Drop Down -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="test-layout">
+
+
+                                                                    <div class="action-drop-down-small">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Drop-Down-S</div>
+                                                                        </div>
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+                                                                    </div>
+
+                                                                    <div class="action-drop-down-medium">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Drop-Down-M</div>
+                                                                        </div>
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+                                                                    </div>
+
+                                                                    <div class="action-drop-down-big">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Drop-Down-M</div>
+                                                                        </div>
+
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+                                                                    </div>
+
+
+                                                                </div>
+
+                                                                <br>
+
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟣 Action Tab -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                <div class="test-layout">
+
+
+                                                                    <div class="action-tab-small">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Tab-S</div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <span>09</span>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="action-tab-medium">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Tab-M</div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <span>03</span>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="action-tab-big">
+
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                                                                            <div>A-Tab-B</div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <span>123</span>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <!-- 🟥[3/3] | Details Container | Top Projects Card -->
+                                                        <!-- ----------------------------------------------------------- -->
+                                                        <div id="smooth-open-close-details-top-project-1-1" class="smooth-open-close-container">
+
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <!-- Overflow Hidden-->
+                                                            <!-- ----------------------------------------------------------- -->
+                                                            <div class="overflow-hidden">
+
+                                                                 <!-- ----------------------------------------------------------- -->
+                                                                <!-- 🟥[3/3] | Details Container | Top Projects Card -->
+                                                                <!-- ----------------------------------------------------------- -->
+                                                                 <div class="details-container-top-project-card">
+
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <!-- Header -->
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <header>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-3-layers.png" class="img-h-1" alt="img">
+                                                                <div>Technology-Stack:</div>
+                                                            </header>
+
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <!-- Main -->
+                                                            <!-- ----------------------------------------------------- -->
+                                                            <main>
+
+                                                                <!-- frontend -->
+                                                                <div class="tech-stack-item-top-project">
+
+                                                                    <header>
+                                                                        <span>Frontend:</span>
+                                                                    </header>
+
+
+                                                                    <main>
+
+                                                                        Angular, Storybook, TypeScript, JavaScript
+
+                                                                    </main>
+
+
+
+
+                                                                </div>
+
+                                                                <!-- Testing -->
+                                                                <div class="tech-stack-item-top-project" >
+
+                                                                    <header>
+                                                                        <span>Testing:</span>
+                                                                    </header>
+
+                                                                    <main>
+
+                                                                        JUnit, Jest, Mockito, TestContainers
+
+                                                                    </main>
+
+                                                                </div>
+
+                                                                <!-- backend -->
+                                                                <div class="tech-stack-item-top-project" >
+
+                                                                    <header>
+                                                                        <span>Backend:</span>
+                                                                    </header>
+
+                                                                    <main>
+
+                                                                        Java, Spring Boot, Apache Kafka
+
+                                                                    </main>
+
+
+
+                                                                </div>
+
+                                                                <!-- infra -->
+                                                                <div class="tech-stack-item-top-project" >
+
+                                                                    <header>
+                                                                        <span>Infrastructure:</span>
+                                                                    </header>
+
+                                                                     <main>
+
+                                                                        <!-- <span>Docker,</span>
+                                                                        <span>Docker,</span>
+                                                                        <span>Docker,</span>
+                                                                        <span>Docker,</span> -->
+                                                                        Docker, Kubernetes, Jenkins, GitLab
+
+                                                                    </main>
+
+                                                                </div>
+
+
+                                                            </main>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+
+
+                                                    <!-- -------------------------------------------------------------- -->
+                                                    <!-- ❌❌❌ Trash -->
+                                                    <!-- -------------------------------------------------------------- -->
+
+
+                                                    <div class="top-it-project-card" style="display: none;">
+
+                                                        <!-- -------------------------------------------------------------- -->
+                                                        <!-- ➡️🟥Top IT Project Card #1 -->
+                                                        <!-- -------------------------------------------------------------- -->
+                                                        <div class="top-it-project-card">
+
+                                                            <!--
+
+                                                                top-it-project-card-with-video-tutorial
+
+                                                                top-it-project-card
+
+
+                                                            -->
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- ➡️ [1/4] | IMG -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-1/project-1-sass-dashboard.png"
+                                                                    class="img-top-it-project-card" alt="img">
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- ➡️ [2/4] | Content -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <div class="content-details">
 
                                                                 <!-- -------------------------------------------------- -->
                                                                 <!-- Header -->
                                                                 <!-- -------------------------------------------------- -->
-                                                                <header>Responsive Dashboard #3</header>
+                                                                <header>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Project NR  -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+                                                                        <span>Project 1</span>
+
+                                                                    </div>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Status Title -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <span>in progress</span>
+                                                                    </div>
+
+
+                                                                </header>
 
                                                                 <!-- -------------------------------------------------- -->
                                                                 <!-- Main-->
                                                                 <!-- -------------------------------------------------- -->
-                                                                <main>Insurance Application with Login & Registration
-                                                                to handle their contracs, send message and configure personal
-                                                                information. Here we can write little bit more text but
-                                                                i would say it shouldnt be longer than this text.</main>
-                                                            </main>
+                                                                <main>
 
-                                                            <!-- -------------------------------------------------- -->
-                                                            <!-- Nav -->
-                                                            <!-- -------------------------------------------------- -->
-                                                            <nav>
 
-                                                                <!-- details -->
-                                                                <div>Details</div>
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- Header -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <header>Insurance Web-Application</header>
 
-                                                                <!-- zip & github link container -->
-                                                                <div class="zip-github-link-container">
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- Main-->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <main>Insurance Application with Login & Registration
+                                                                    to handle their contracs, send message and configure personal
+                                                                    information. Here we can write little bit more text but
+                                                                    i would say it shouldnt be longer than this text.</main>
+                                                                </main>
 
-                                                                    <div>zip</div>
-                                                                    <div>github</div>
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- Nav -->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <nav>
 
-                                                                </div>
+                                                                    <!-- details -->
+                                                                    <div>Details</div>
 
-                                                            </nav>
+                                                                    <!-- zip & github link container -->
+                                                                    <div class="zip-github-link-container">
+
+                                                                        <div>zip</div>
+                                                                        <div>github</div>
+
+                                                                    </div>
+
+                                                                </nav>
+
+
+
+                                                            </div>
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- 🟥 [3/4] | Content Details -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <div class="content-ßßß">
+                                                                Content Details
+                                                            </div>
+
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- 🟥 [4/4] | Content Video Step by Step Tutorial -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <div class="video-link-list-tutorial">
+                                                                Step by Step
+                                                            </div>
+
+
 
 
 
                                                         </div>
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- 🟥 [3/4] | Content Details -->
-                                                        <!-- ---------------------------------------------------------------------- -->
+                                                        <!-- -------------------------------------------------------------- -->
+                                                        <!-- Top IT Project Card #2 -->
+                                                        <!-- -------------------------------------------------------------- -->
+                                                        <div class="top-it-project-card" style="display: none;">
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- ➡️ [1/4] | IMG -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-2/project-2-sass-dashboard.png"
+                                                                    class="img-top-it-project-card" alt="img">
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- ➡️ [2/4] | Content -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <div class="content-details">
+
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <header>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Project NR  -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+                                                                        <span>Project 2</span>
+
+                                                                    </div>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Status Title -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <span>in progress</span>
+                                                                    </div>
+
+
+                                                                </header>
+
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- Main-->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <main>
+
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- Header -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <header>Responsive Dashboard #2</header>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- Main-->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <main>Insurance Application with Login & Registration
+                                                                    to handle their contracs, send message and configure personal
+                                                                    information. Here we can write little bit more text but
+                                                                    i would say it shouldnt be longer than this text.</main>
+                                                                </main>
+
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- Nav -->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <nav>
+
+                                                                    <!-- details -->
+                                                                    <div>Details</div>
+
+                                                                    <!-- zip & github link container -->
+                                                                    <div class="zip-github-link-container">
+
+                                                                        <div>zip</div>
+                                                                        <div>github</div>
+
+                                                                    </div>
+
+                                                                </nav>
 
 
 
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                        <!-- 🟥 [4/4] | Content Video Step by Step Tutorial -->
-                                                        <!-- ---------------------------------------------------------------------- -->
-                                                         <div class="video-link-list-tutorial">
-                                                            Step by Step
+                                                            </div>
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- 🟥 [3/4] | Content Details -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+
+
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- 🟥 [4/4] | Content Video Step by Step Tutorial -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <div class="video-link-list-tutorial">
+                                                                Step by Step
+                                                            </div>
+
+
+
+
+
                                                         </div>
 
+                                                        <!-- -------------------------------------------------------------- -->
+                                                        <!-- Top IT Project Card #3 -->
+                                                        <!-- -------------------------------------------------------------- -->
+                                                        <div class="top-it-project-card" style="display: none;">
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- ➡️ [1/4] | IMG -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <img src="media/img/content/04-it-projects/01-top-3-3-projects/01-web-design/project-3/project-3-sass-dashboard.png"
+                                                                    class="img-top-it-project-card" alt="img">
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- ➡️ [2/4] | Content -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <div class="content-details">
+
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <header>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Project NR  -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+                                                                        <span>Project 3</span>
+
+                                                                    </div>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Status Title -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <span>in progress</span>
+                                                                    </div>
+
+
+                                                                </header>
+
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- Main-->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <main>
+
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- Header -->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <header>Responsive Dashboard #3</header>
+
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <!-- Main-->
+                                                                    <!-- -------------------------------------------------- -->
+                                                                    <main>Insurance Application with Login & Registration
+                                                                    to handle their contracs, send message and configure personal
+                                                                    information. Here we can write little bit more text but
+                                                                    i would say it shouldnt be longer than this text.</main>
+                                                                </main>
+
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- Nav -->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <nav>
+
+                                                                    <!-- details -->
+                                                                    <div>Details</div>
+
+                                                                    <!-- zip & github link container -->
+                                                                    <div class="zip-github-link-container">
+
+                                                                        <div>zip</div>
+                                                                        <div>github</div>
+
+                                                                    </div>
+
+                                                                </nav>
 
 
 
+                                                            </div>
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- 🟥 [3/4] | Content Details -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+
+
+
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <!-- 🟥 [4/4] | Content Video Step by Step Tutorial -->
+                                                            <!-- ---------------------------------------------------------------------- -->
+                                                            <div class="video-link-list-tutorial">
+                                                                Step by Step
+                                                            </div>
+
+
+
+
+
+                                                        </div>
 
                                                     </div>
 

@@ -1,0 +1,85 @@
+/* -------------------------------------------------------------- */
+/* > action-drop-down.css
+/* : styles action drop down element
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Action Drop Down
+/* -------------------------------------------------------------- */
+
+.action-drop-down-small,
+.action-drop-down-medium,
+.action-drop-down-big {
+
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: #b8b8b8;
+  background-color: #cacaca;
+
+  background-color: rgb(235, 235, 235);
+
+  opacity: .6;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.action-drop-down-small > div:nth-of-type(1),
+.action-drop-down-medium > div:nth-of-type(1),
+.action-drop-down-big > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+.action-drop-down-small > div:nth-of-type(1) > div,
+.action-drop-down-medium > div:nth-of-type(1) > div,
+.action-drop-down-big > div:nth-of-type(1) > div {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Small | Action Link
+/* -------------------------------------------------------------- */
+
+.action-drop-down-small {
+
+  height: 2em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Medium | Action Link
+/* -------------------------------------------------------------- */
+
+.action-drop-down-medium {
+
+  height: 2.3em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Big | Action Link
+/* -------------------------------------------------------------- */
+
+.action-drop-down-big {
+
+  height: 2.8em;
+
+}

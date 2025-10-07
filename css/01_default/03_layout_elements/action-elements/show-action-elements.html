@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <style>
+
+      .test-layout {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: .6em;
+
+      }
+
+      /* -------------------------------------------------------------- */
+      /* Action Link
+      /* -------------------------------------------------------------- */
+
+      .action-link-small,
+      .action-link-medium,
+      .action-link-big {
+
+        /* delete default link style */
+        text-decoration: none;
+
+        padding: 0 .6em;
+
+        display: flex;
+        align-items: center;
+        column-gap: .6em;
+
+        border-radius: .6em;
+
+        font-weight: bold;
+
+        background-color: #b8b8b8;
+
+        transition: all .4s;
+
+      }
+
+      .action-link-small > div,
+      .action-link-medium > div,
+      .action-link-big > div {
+
+        /* 14.5px = 14,5 / 16px (1em) = .90625em */
+        font-size: .90625em;
+
+      }
+
+      .action-link-small:hover,
+      .action-link-medium:hover,
+      .action-link-big:hover {
+
+
+        background-color: wheat;
+
+      }
+
+      .action-link-small:visited,
+      .action-link-medium:visited,
+      .action-link-big:visited {
+
+        color:black;
+
+      }
+
+      /* -------------------------------------------------------------- */
+      /* Small | Action Link
+      /* -------------------------------------------------------------- */
+
+      .action-link-small {
+
+        height: 2em;
+
+      }
+
+      /* -------------------------------------------------------------- */
+      /* Medium | Action Link
+      /* -------------------------------------------------------------- */
+
+      .action-link-medium {
+
+        height: 2.3em;
+
+      }
+
+      /* -------------------------------------------------------------- */
+      /* Big | Action Link
+      /* -------------------------------------------------------------- */
+
+      .action-link-big {
+
+        height: 2.8em;
+
+      }
+
+      /* -------------------------------------------------------------- */
+      /* Action Drop Down
+      /* -------------------------------------------------------------- */
+
+      .action-drop-down-small,
+      .action-drop-down-medium,
+      .action-drop-down-big {
+
+      padding: 0 .6em;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: .6em;
+
+        border-radius: .6em;
+
+        font-weight: bold;
+
+        background-color: #b8b8b8;
+
+        transition: all .4s;
+
+      }
+
+    .action-drop-down-small > div:nth-of-type(1),
+    .action-drop-down-medium > div:nth-of-type(1),
+    .action-drop-down-big > div:nth-of-type(1) {
+
+      display: flex;
+      align-items: center;
+      column-gap: .4em;
+
+    }
+
+    .action-drop-down-small > div:nth-of-type(1) > div,
+    .action-drop-down-medium > div:nth-of-type(1) > div,
+    .action-drop-down-big > div:nth-of-type(1) > div {
+
+      /* 14.5px = 14,5 / 16px (1em) = .90625em */
+      font-size: .90625em;
+
+    }
+
+    /* -------------------------------------------------------------- */
+    /* Small | Action Link
+    /* -------------------------------------------------------------- */
+
+    .action-drop-down-small {
+
+      height: 2em;
+
+    }
+
+    /* -------------------------------------------------------------- */
+    /* Medium | Action Link
+    /* -------------------------------------------------------------- */
+
+    .action-drop-down-medium {
+
+      height: 2.3em;
+
+    }
+
+    /* -------------------------------------------------------------- */
+    /* Big | Action Link
+    /* -------------------------------------------------------------- */
+
+    .action-drop-down-big {
+
+      height: 2.8em;
+
+    }
+
+    /* -------------------------------------------------------------- */
+    /* Action Tabs
+    /* -------------------------------------------------------------- */
+
+    .action-tab-small,
+    .action-tab-medium,
+    .action-tab-big {
+
+      padding: 0 .8em;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: .6em;
+
+      font-weight: bold;
+
+      background-color: #b8b8b8;
+
+      transition: all .4s;
+
+    }
+
+    .action-tab-small > div:nth-of-type(1),
+    .action-tab-medium > div:nth-of-type(1),
+    .action-tab-big > div:nth-of-type(1) {
+
+      display: flex;
+      align-items: center;
+      column-gap: .4em;
+
+    }
+
+    .action-tab-small > div:nth-of-type(1) > div,
+    .action-tab-medium > div:nth-of-type(1) > div,
+    .action-tab-big > div:nth-of-type(1) > div {
+
+      /* 14.5px = 14,5 / 16px (1em) = .90625em */
+      font-size: .90625em;
+
+    }
+
+    /* -------------------------------------------------------------- */
+    /* Nr | Action Tabs
+    /* -------------------------------------------------------------- */
+
+    .action-tab-small > div:nth-of-type(2),
+    .action-tab-medium > div:nth-of-type(2),
+    .action-tab-big > div:nth-of-type(2) {
+
+      height: 1em;
+      padding: 0 .4em;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 1em;
+
+      background-color: rgb(211, 211, 211);
+      color:black;
+
+    }
+
+    .action-tab-small > div:nth-of-type(2) > span,
+    .action-tab-medium > div:nth-of-type(2) > span,
+    .action-tab-big > div:nth-of-type(2) > span {
+
+      /* 14.5px = 14,5 / 16px (1em) = .90625em */
+      font-size: .75em;
+
+
+    }
+
+    /* -------------------------------------------------------------- */
+    /* Small | Action Link
+    /* -------------------------------------------------------------- */
+
+    .action-tab-small {
+
+      height: 2em;
+      border-radius: 1em;
+
+    }
+
+    /* -------------------------------------------------------------- */
+    /* Medium | Action Link
+    /* -------------------------------------------------------------- */
+
+    .action-tab-medium {
+
+      height: 2.3em;
+      border-radius: 1em;
+
+    }
+
+    /* -------------------------------------------------------------- */
+    /* Big | Action Link
+    /* -------------------------------------------------------------- */
+
+    .action-tab-big {
+
+      height: 2.5em;
+      border-radius: 1.3em;
+
+    }
+
+
+  </style>
+
+
+  <!-- -------------------------------------------------------- -->
+  <!-- Show Elements -->
+  <!-- -------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------- -->
+    <!-- 🟣 Action Links -->
+    <!-- ----------------------------------------------------------- -->
+    <div class="test-layout">
+
+
+        <a href="" class="action-link-small">
+
+            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+            <div>A-Link-S</div>
+
+        </a>
+
+        <a href="" class="action-link-medium">
+
+            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+            <div>A-Link-M</div>
+
+        </a>
+
+        <a href="" class="action-link-big">
+
+            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+            <div>A-Link-B</div>
+
+        </a>
+
+
+    </div>
+
+    <br>
+
+    <!-- ----------------------------------------------------------- -->
+    <!-- 🟣 Action Drop Down -->
+    <!-- ----------------------------------------------------------- -->
+    <div class="test-layout">
+
+
+        <div class="action-drop-down-small">
+
+            <div>
+                <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                <div>A-Drop-Down-S</div>
+            </div>
+
+            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+        </div>
+
+        <div class="action-drop-down-medium">
+
+            <div>
+                <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                <div>A-Drop-Down-M</div>
+            </div>
+
+            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+        </div>
+
+        <div class="action-drop-down-big">
+
+            <div>
+                <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                <div>A-Drop-Down-M</div>
+            </div>
+
+            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-6" alt="img">
+
+        </div>
+
+
+    </div>
+
+    <br>
+
+    <!-- ----------------------------------------------------------- -->
+    <!-- 🟣 Action Tab -->
+    <!-- ----------------------------------------------------------- -->
+    <div class="test-layout">
+
+
+        <div class="action-tab-small">
+
+            <div>
+                <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                <div>A-Tab-S</div>
+            </div>
+
+            <div>
+                <span>09</span>
+            </div>
+
+        </div>
+
+        <div class="action-tab-medium">
+
+            <div>
+                <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                <div>A-Tab-M</div>
+            </div>
+
+            <div>
+                <span>03</span>
+            </div>
+
+        </div>
+
+        <div class="action-tab-big">
+
+            <div>
+                <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-1" alt="img">
+                <div>A-Tab-B</div>
+            </div>
+
+              <div>
+                <span>123</span>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+
+
+
+
+</html>
