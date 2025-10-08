@@ -342,17 +342,22 @@
 /* header */
 .tech-stack-item-top-project > header {
 
-  font-weight: bold;
-
   width: 6.5em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
+
+  font-weight: bold;
+  text-decoration: underline;
 
   color:#808080;
 
-  text-decoration: underline;
+}
 
-  /* color:rgb(45, 45, 45); */
+.tech-stack-item-top-project > header > img {
 
-  /* background-color: red; */
+  opacity: .6;
 
 }
 
