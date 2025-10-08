@@ -5,6 +5,15 @@
 /* -------------------------------------------------------------- */
 
 
+#chk-details-top-project-webdesign-1:checked ~ #smooth-open-close-details-top-project-1-1 {
+
+  grid-template-rows: 1fr;
+
+}
+
+
+
+
 /* ------------------------------------------------------------- */
 /* Nav Top IT Project Container
 /* ------------------------------------------------------------- */

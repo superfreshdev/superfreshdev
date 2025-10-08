@@ -1,0 +1,31 @@
+/* -------------------------------------------------------------- */
+/* > smooth-open-close-container.css
+/*
+/* : styles smooth open close container
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* ⬇️⬆️ | Smooth Open Close Container
+/* ------------------------------------------------------------- */
+
+.smooth-open-close-container {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Overflow Hidden
+/* reminder: without overflow hidden box the smooth open
+/* close mechanism dont work
+/* ------------------------------------------------------------- */
+
+.overflow-hidden {
+
+  overflow: hidden;
+}

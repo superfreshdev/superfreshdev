@@ -4,65 +4,18 @@
 /* : styles my top it project card
 /* -------------------------------------------------------------- */
 
-
-#chk-details-top-project-webdesign-1:checked ~ #smooth-open-close-details-top-project-1-1 {
-
-  grid-template-rows: 1fr;
-
-}
-
-/* 🟣 test-layout */
-
-.test-layout {
-
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: .6em;
-
-}
-
-/* ➡️  Smooth-Open-Close-Container */
-
-.smooth-open-close-container {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-}
-
-
+/*  ⚠️ status auslagern  */
 
 /* ------------------------------------------------------------- */
-/* [1/2] | Top IT Project Card | Viwth Video Tutorial
+/* Top IT Project Card &
+/* Top IT Project Card | With Video Tutorial
 /* ------------------------------------------------------------- */
 
+.top-it-project-card,
 .top-it-project-card-with-video-tutorial {
 
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* [2/2] | Top IT Project Card
-/* ------------------------------------------------------------- */
-
-.top-it-project-card {
-
   display: grid;
-
-  grid-template-areas:
-
-    'img-container-top-project-card'
-    'content-container-top-project-card'
-    'details-container-top-project-card'
-  ;
-
   column-gap: 1em;
-  /* row-gap: 1em; */
 
   border-radius: 1em;
 
@@ -72,12 +25,43 @@
   background-color: rgba(255, 255, 255, .8);
   backdrop-filter: blur(12px);
 
-  /* opacity: .3; */
+}
+
+/* ------------------------------------------------------------- */
+/* Top IT Project Card | With Video Tutorial
+/* ------------------------------------------------------------- */
+
+.top-it-project-card-with-video-tutorial {
+
+  grid-template-areas:
+
+    'img-container-top-project-card'
+    'content-container-top-project-card'
+    'details-container-top-project-card'
+  ;
+
 
 }
 
 /* ------------------------------------------------------------- */
-/* [1/3] | Top IT Project Card
+/* Top IT Project Card
+/* ------------------------------------------------------------- */
+
+.top-it-project-card {
+
+  /* ⚠️ img-container-top-it-project-card */
+
+  grid-template-areas:
+
+    'img-container-top-project-card'
+    'content-container-top-project-card'
+    'details-container-top-project-card'
+  ;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img Container | Top IT Project Card
 /* ------------------------------------------------------------- */
 
 .img-container-top-project-card {
@@ -95,13 +79,12 @@
 .img-container-top-project-card > img {
 
   width: 100%;
-
-  border-radius: 1em 1em 0 1em;
+  border-radius: 1em 1em 0 0em;
 
 }
 
 /* ------------------------------------------------------------- */
-/* [2/3] | Top IT Project Card
+/* Content Container | Top IT Project Card
 /* ------------------------------------------------------------- */
 
 .content-container-top-project-card {
@@ -109,7 +92,6 @@
   grid-area: content-container-top-project-card;
 
   width: 100%;
-
   padding: 0 .6em;
 
 }
@@ -119,6 +101,9 @@
 /* ------------------------------------------------------------- */
 
 .content-container-top-project-card > header {
+
+  /* mobile */
+  margin-top: 1.3em;
 
   display: flex;
   align-items: center;
@@ -151,10 +136,8 @@
 
 .content-container-top-project-card > header > div:nth-of-type(1) > span {
 
-  /* 14.5px = 14,5 / 16px (1em) = .90625em */
-  font-size: .90625em;
-
-  font-size: 12px;
+  /* 12.5px */
+  font-size: .75em;
 
 }
 
@@ -219,8 +202,6 @@
   /* background-color: green; */
   color: rgb(35, 35, 35);
 
-
-
 }
 
 /* ------------------------------------------------------------- */
@@ -229,11 +210,9 @@
 
 .content-container-top-project-card > main > header {
 
+  /* 18px */
+  font-size: 1.125em;
   font-weight: bold;
-  /* color:red; */
-
-  font-size: 18px;
-
 }
 
 /* ------------------------------------------------------------- */
@@ -244,11 +223,9 @@
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
   font-size: .90625em;
-
   color:rgb(121, 121, 121);
 
 }
-
 
 /* ------------------------------------------------------------- */
 /* Footer | Top IT Project Card
@@ -269,28 +246,33 @@
 
 
 /* ------------------------------------------------------------- */
-/* [3/3] | Top IT Project Card
+/* Details Container | Top IT Project Card
 /* ------------------------------------------------------------- */
 
-/* smooth */
-
+/* smooth-open-close-details-top-it-project-1 */
 #smooth-open-close-details-top-project-1-1 {
 
-   grid-area: details-container-top-project-card;
+  grid-area: details-container-top-project-card;
+
+  /* grid-template-rows: 1fr; */
 
 }
 
 .details-container-top-project-card {
 
-
-
-  padding: 1em .8em .8em .8em;
+  /* mobile */
+  margin-top: 1.5em;
+  padding: 1.5em .8em .6em .8em;
 
   display: grid;
   justify-items: flex-start;
-  /* row-gap: 1em; */
 
-  /* background-color: green; */
+  border-radius: 0 0 1em 1em;
+
+  /* row-gap: 1em; */
+  background-color: #ebebeb;
+
+
 
 }
 
@@ -436,88 +418,3 @@
 /* ------------------------------------------------------------- */
 /* ❌❌❌ Trash
 /* ------------------------------------------------------------- */
-
-@media ( min-width: 500px) {
-
-  .top-it-project-card {
-
-    width: 23em;
-    /* background-color: red; */
-
-  }
-
-
-}
-
-@media ( min-width: 800px) {
-
- .top-it-project-card {
-
-    width: auto;
-
-    display: grid;
-    align-items: center;
-
-    grid-template-areas:
-
-      'img-container-top-project-card content-container-top-project-card'
-      'details-container-top-project-card details-container-top-project-card'
-    ;
-
-    grid-template-columns: 20em 1fr ;
-    grid-template-rows: auto auto;
-
-
-  }
-
-  .img-container-top-project-card > img {
-
-    border-radius: 1em 0 0 1em;
-
-  }
-
-  .content-container-top-project-card {
-
-    width: 100%;
-
-    padding: 0 .8em 0 0;
-
-  }
-
-  .details-container-top-project-card {
-
-    grid-area: details-container-top-project-card;
-
-    padding: .5em .8em .5em .8em;
-
-    display: grid;
-    justify-items: flex-start;
-    /* row-gap: 1em; */
-
-    /* background-color: green; */
-
-  }
-
-
-
-  .details-container-top-project-card > main {
-
-    padding: 1.5em 0em 1em .4em;
-
-    /* mobile */
-    display: grid;
-    grid: auto auto / 1fr 1fr;
-
-
-    column-gap: 2em;
-    row-gap: 1em;
-
-
-  }
-
-
-
-
-
-
-}
