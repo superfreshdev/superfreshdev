@@ -282,7 +282,7 @@
 
 .details-container-top-project-card > header {
 
-  height: 1.6em;
+  height: 1.8em;
   padding: 0 .6em;
 
   display: flex;
@@ -296,6 +296,9 @@
 
   background-color: rgba(204, 204, 204, .3);
   color:grey;
+
+  background-color: rgb(28, 28, 28);
+  color:rgb(233, 233, 233);
 
 }
 
