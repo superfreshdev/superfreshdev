@@ -8,6 +8,7 @@
 /* Action Link
 /* -------------------------------------------------------------- */
 
+.action-link-very-small,
 .action-link-small,
 .action-link-medium,
 .action-link-big {
@@ -19,9 +20,7 @@
 
   display: flex;
   align-items: center;
-  column-gap: .6em;
-
-  border-radius: .6em;
+  column-gap: .4em;
 
   font-weight: bold;
 
@@ -37,15 +36,23 @@
 
 }
 
+.action-link-very-small > div {
+
+  /* 12.5px = 12,5 / 16px (1em) = .78125em */
+  font-size: .78125em;
+
+}
+
 .action-link-small > div,
 .action-link-medium > div,
 .action-link-big > div {
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
-  font-size: .90625em;
+  font-size: .78125em;
 
 }
 
+.action-link-very-small:hover,
 .action-link-small:hover,
 .action-link-medium:hover,
 .action-link-big:hover {
@@ -55,11 +62,23 @@
 
 }
 
+.action-link-very-small:visited,
 .action-link-small:visited,
 .action-link-medium:visited,
 .action-link-big:visited {
 
   color:black;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Very Small | Action Link
+/* -------------------------------------------------------------- */
+
+.action-link-very-small {
+
+  height: 1.5em;
+  border-radius: .4em;
 
 }
 
@@ -70,6 +89,8 @@
 .action-link-small {
 
   height: 2em;
+  border-radius: .6em;
+
 
 }
 
@@ -80,6 +101,7 @@
 .action-link-medium {
 
   height: 2.3em;
+  border-radius: .6em;
 
 }
 
@@ -90,5 +112,6 @@
 .action-link-big {
 
   height: 2.8em;
+  border-radius: .6em;
 
 }
