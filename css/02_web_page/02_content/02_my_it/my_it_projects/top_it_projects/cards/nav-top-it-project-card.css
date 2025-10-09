@@ -5,15 +5,6 @@
 /* -------------------------------------------------------------- */
 
 
-#chk-details-top-project-webdesign-1:checked ~ #smooth-open-close-details-top-project-1-1 {
-
-  grid-template-rows: 1fr;
-
-}
-
-
-
-
 /* ------------------------------------------------------------- */
 /* Nav Top IT Project Container
 /* ------------------------------------------------------------- */
@@ -29,6 +20,35 @@
 
 }
 
+/* ⚠️ | Kommt nur mit Checkbox Details !!! Kategorie wird wo anders gemanaged  */
+
+/* default unshown */
+#chk-details-top-it-project-1 {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-details-top-it-project-1:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-1"] {
+
+  background-color: red;
+
+}
+
+/* change img arrow rotation */
+#chk-details-top-it-project-1:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-1"] > img {
+
+  transform: rotate(180deg);
+
+}
+
+/* Checkbox Details */
+#chk-details-top-it-project-1:checked ~ #smooth-open-close-details-top-it-project-1 {
+
+  grid-template-rows: 1fr;
+
+}
 
 /* ------------------------------------------------------------------------- */
 /* ⬇️⬆️ | Smooth Open Close | Nav Top IT Project Container (1,2,3)
@@ -86,7 +106,7 @@ input[name="name-chk-details-top-it-project"] {
 #chk-details-top-it-project-1:checked ~ div:nth-of-type(2),
 #chk-details-top-it-project-1:checked ~ div:nth-of-type(3) {
 
-  opacity: .1;
+  /* opacity: .1; */
 
 
 }
@@ -94,7 +114,7 @@ input[name="name-chk-details-top-it-project"] {
 #chk-details-top-it-project-2:checked ~ div:nth-of-type(1),
 #chk-details-top-it-project-2:checked ~ div:nth-of-type(3) {
 
-  opacity: .1;
+  /* opacity: .1; */
 
 
 
@@ -104,7 +124,7 @@ input[name="name-chk-details-top-it-project"] {
 #chk-details-top-it-project-3:checked ~ div:nth-of-type(1),
 #chk-details-top-it-project-3:checked ~ div:nth-of-type(2) {
 
-  opacity: .1;
+  /* opacity: .1; */
 
 
 }

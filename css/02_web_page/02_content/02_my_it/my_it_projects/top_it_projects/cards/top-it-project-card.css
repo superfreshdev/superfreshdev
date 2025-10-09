@@ -4,7 +4,6 @@
 /* : styles my top it project card
 /* -------------------------------------------------------------- */
 
-/*  ⚠️ status auslagern  */
 
 /* ------------------------------------------------------------- */
 /* Top IT Project Card &
@@ -28,6 +27,21 @@
 }
 
 /* ------------------------------------------------------------- */
+/* Top IT Project Card
+/* ------------------------------------------------------------- */
+
+.top-it-project-card {
+
+  grid-template-areas:
+
+    'img-container-top-it-project-card'
+    'content-container-top-it-project-card'
+    'details-container-top-it-project-card'
+  ;
+
+}
+
+/* ------------------------------------------------------------- */
 /* Top IT Project Card | With Video Tutorial
 /* ------------------------------------------------------------- */
 
@@ -35,38 +49,21 @@
 
   grid-template-areas:
 
-    'img-container-top-project-card'
-    'content-container-top-project-card'
-    'details-container-top-project-card'
-  ;
-
-
-}
-
-/* ------------------------------------------------------------- */
-/* Top IT Project Card
-/* ------------------------------------------------------------- */
-
-.top-it-project-card {
-
-  /* ⚠️ img-container-top-it-project-card */
-
-  grid-template-areas:
-
-    'img-container-top-project-card'
-    'content-container-top-project-card'
-    'details-container-top-project-card'
+    'img-container-top-it-project-card'
+    'content-container-top-it-project-card'
+    'details-container-top-it-project-card'
+    'video-link-container-top-it-project-card'
   ;
 
 }
 
 /* ------------------------------------------------------------- */
-/* Img Container | Top IT Project Card
+/* [1/4] | Img Container | Top IT Project Card
 /* ------------------------------------------------------------- */
 
-.img-container-top-project-card {
+.img-container-top-it-project-card {
 
-  grid-area: img-container-top-project-card;
+  grid-area: img-container-top-it-project-card;
 
   width: 100%;
 
@@ -76,7 +73,7 @@
 
 }
 
-.img-container-top-project-card > img {
+.img-container-top-it-project-card > img {
 
   width: 100%;
   border-radius: 1em 1em 0 0em;
@@ -84,23 +81,27 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Content Container | Top IT Project Card
+/* [2/4] | Content Container | Top IT Project Card
 /* ------------------------------------------------------------- */
 
-.content-container-top-project-card {
+.content-container-top-it-project-card {
 
-  grid-area: content-container-top-project-card;
+  grid-area: content-container-top-it-project-card;
 
   width: 100%;
   padding: 0 .6em;
 
+  /* opacity: .3; */
+
+  transition: all .4s;
+
 }
 
 /* ------------------------------------------------------------- */
-/* Header | Top IT Project Card
+/* Header | Content Container
 /* ------------------------------------------------------------- */
 
-.content-container-top-project-card > header {
+.content-container-top-it-project-card > header {
 
   /* mobile */
   margin-top: 1.3em;
@@ -116,7 +117,7 @@
 /* Project Nr Title | Header
 /* ------------------------------------------------------------- */
 
-.content-container-top-project-card > header > div:nth-of-type(1) {
+.content-container-top-it-project-card > header > div:nth-of-type(1) {
 
   height: 1.6em;
   padding: 0 .6em;
@@ -134,7 +135,7 @@
 
 }
 
-.content-container-top-project-card > header > div:nth-of-type(1) > span {
+.content-container-top-it-project-card > header > div:nth-of-type(1) > span {
 
   /* 12.5px */
   font-size: .75em;
@@ -142,57 +143,10 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Project Status Title | Header
+/* Main | Content Container
 /* ------------------------------------------------------------- */
 
-.content-container-top-project-card > header > div:nth-of-type(2) {
-
-  height: 1.6em;
-  padding: 0 .6em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: bold;
-
-  border-radius: 1em;
-
-}
-
-.status-in-progress-top-project {
-
-  background: #facc15;
-  color: #111;
-
-}
-
-.status-coming-soon-top-project {
-
-  background: #9b9b9b;
-  color: #111;
-
-}
-
-.status-finished-top-project {
-
-  background: #25b65c;
-  color: #111;
-
-}
-
-.content-container-top-project-card > header > div:nth-of-type(2) > span {
-
-  /* 12px = 12 / 16px (1em) = .75em; */
-  font-size: .75em;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Main | Top IT Project Card
-/* ------------------------------------------------------------- */
-
-.content-container-top-project-card > main {
+.content-container-top-it-project-card > main {
 
   margin: 1em 0;
 
@@ -205,10 +159,10 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Main Header | Top IT Project Card
+/* Main Header | Content Container
 /* ------------------------------------------------------------- */
 
-.content-container-top-project-card > main > header {
+.content-container-top-it-project-card > main > header {
 
   /* 18px */
   font-size: 1.125em;
@@ -216,10 +170,10 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Main Main | Top IT Project Card
+/* Main Main | Content Container
 /* ------------------------------------------------------------- */
 
-.content-container-top-project-card > main > main {
+.content-container-top-it-project-card > main > main {
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
   font-size: .90625em;
@@ -228,10 +182,10 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Footer | Top IT Project Card
+/* Footer | Content Container
 /* ------------------------------------------------------------- */
 
-.content-container-top-project-card > footer {
+.content-container-top-it-project-card > footer {
 
   width: 100%;
 
@@ -244,17 +198,18 @@
 
 }
 
+/* ➡️➡️➡️ Next Mission  */
 
 /* ------------------------------------------------------------- */
 /* Details Container | Top IT Project Card
 /* ------------------------------------------------------------- */
 
 /* smooth-open-close-details-top-it-project-1 */
-#smooth-open-close-details-top-project-1-1 {
+#smooth-open-close-details-top-it-project-1 {
 
-  grid-area: details-container-top-project-card;
+  grid-area: details-container-top-it-project-card;
 
-  /* grid-template-rows: 1fr; */
+  grid-template-rows: 0fr;
 
 }
 
@@ -297,8 +252,11 @@
   background-color: rgba(204, 204, 204, .3);
   color:grey;
 
-  background-color: rgb(28, 28, 28);
-  color:rgb(233, 233, 233);
+  /* background-color: rgb(28, 28, 28);
+  color:rgb(233, 233, 233); */
+
+  background-color: rgba(28, 28, 28, .8);
+  color: rgb(216, 216, 216);
 
 }
 
