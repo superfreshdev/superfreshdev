@@ -250,7 +250,7 @@
   border-radius: 0;
 
   /* row-gap: 1em; */
-  background-color: #ebebeb;
+  /* background-color: #ebebeb; */
 
   /* background-color: green; */
 
@@ -275,14 +275,17 @@
 
   border-radius: .4em;
 
-  background-color: rgba(204, 204, 204, .3);
+  /* background-color: rgba(204, 204, 204, .3); */
   color:grey;
 
   /* background-color: rgb(28, 28, 28);
   color:rgb(233, 233, 233); */
-
+/*
   background-color: rgba(28, 28, 28, .8);
-  color: rgb(216, 216, 216);
+  color: rgb(216, 216, 216); */
+
+   background-color: rgba(204, 204, 204, .3);
+    color: grey;
 
 }
 
@@ -318,7 +321,7 @@
   /* padding: .8em; */
 
   display: grid;
-  row-gap: .2em;
+  row-gap: .3em;
 
   /* border: 1px dashed #808080; */
 
@@ -363,7 +366,11 @@
   column-gap: .4em;
   row-gap: .4em; */
 
-  color: #232323;
+  padding-left: .4em;
+
+  color: #969696;
+
+  font-size: 14.5px;
 
 }
 
