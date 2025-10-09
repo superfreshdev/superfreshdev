@@ -188,6 +188,7 @@
 .content-container-top-it-project-card > footer {
 
   width: 100%;
+  /* padding-bottom: 1em; */
 
   display: flex;
   align-items: center;
@@ -197,8 +198,6 @@
   /* background-color: green; */
 
 }
-
-/* ➡️➡️➡️ Next Mission  */
 
 /* ------------------------------------------------------------- */
 /* Details Container | Top IT Project Card
@@ -213,7 +212,11 @@
 
 }
 
-.details-container-top-project-card {
+/* ----------------------------------------------------------------------------------- */
+/* Details Container (1/2) | Top IT Project Card
+/* ----------------------------------------------------------------------------------- */
+
+.top-it-project-card .smooth-open-close-container .details-container-top-it-project-card {
 
   /* mobile */
   margin-top: 1.5em;
@@ -227,15 +230,38 @@
   /* row-gap: 1em; */
   background-color: #ebebeb;
 
-
+  background-color: yellow;
 
 }
+
+/* ----------------------------------------------------------------------------------- */
+/* Details Container (2/2) | Top IT Project Card With Video Tutorials
+/* ----------------------------------------------------------------------------------- */
+
+.top-it-project-card-with-video-tutorial .smooth-open-close-container .details-container-top-it-project-card {
+
+   /* mobile */
+  margin-top: 1.5em;
+  padding: 1.5em .8em .6em .8em;
+
+  display: grid;
+  justify-items: flex-start;
+
+  border-radius: 0;
+
+  /* row-gap: 1em; */
+  background-color: #ebebeb;
+
+  /* background-color: green; */
+
+}
+
 
 /* ------------------------------------------------------------- */
 /* Header | Top IT Project Card
 /* ------------------------------------------------------------- */
 
-.details-container-top-project-card > header {
+.details-container-top-it-project-card > header {
 
   height: 1.8em;
   padding: 0 .6em;
@@ -260,7 +286,7 @@
 
 }
 
-.details-container-top-project-card > header > div {
+.details-container-top-it-project-card > header > div {
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
   font-size: .90625em;
@@ -271,7 +297,7 @@
 /* Main | Top IT Project Card
 /* ------------------------------------------------------------- */
 
-.details-container-top-project-card > main {
+.details-container-top-it-project-card > main {
 
   padding: 1.5em 0em 1em .4em;
 

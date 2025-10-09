@@ -10,6 +10,7 @@
 /* Status Stickers ( small, medium, big )
 /* ---------------------------------------------------------------- */
 
+.status-sticker-very-small,
 .status-sticker-small,
 .status-sticker-medium,
 .status-sticker-big {
@@ -24,12 +25,29 @@
 
 }
 
+.status-sticker-very-small > span {
+
+  font-size: 10.5px;;
+
+}
+
 .status-sticker-small > span,
 .status-sticker-medium > span,
 .status-sticker-big > span {
 
   /* 12px = 12 / 16px (1em) = .75em; */
   font-size: .75em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* very small | Status Stickers
+/* ---------------------------------------------------------------- */
+
+.status-sticker-very-small {
+
+  height: 1.3em;
+  padding: 0 .4em;
 
 }
 

@@ -4,24 +4,31 @@
 /* : styles only for top it project the video tutorial container
 /* -------------------------------------------------------------- */
 
+/* .video-link-tutorial-top-it-project-container */
+
+#smooth-open-close-video-link-list {
+
+  grid-template-rows: 0fr;
+
+}
 
 /* ---------------------------------------------------------------- */
 /* Video Link Tutorial Container
 /* ---------------------------------------------------------------- */
 
-.video-link-tutorial-container {
+.video-link-tutorial-top-it-project-container {
 
   grid-area: video-link-container-top-it-project-card;
 
-  align-self: flex-start;
-  height: 100%;
+  /* mobile */
+  margin-top: 1.5em;
+  padding: 1.5em .8em .6em .8em;
 
-  /* margin-top: 1.3em; */
-  padding: 1.3em .8em 0 .8em;
-
+  /* desktop */
+  /* align-self: flex-start; */
+  /* height: 100%; */
 
   border-radius: 0 0 1em 1em;
-
 
   background-color: rgb(236, 236, 236);
 
@@ -31,14 +38,14 @@
 /* Header | Video Link Tutorial Container
 /* ---------------------------------------------------------------- */
 
-.video-link-tutorial-container > header {
+.video-link-tutorial-top-it-project-container > header {
 
   display: flex;
   align-items: center;
 
 }
 
-.video-link-tutorial-container > header > div {
+.video-link-tutorial-top-it-project-container > header > div {
 
   height: 1.8em;
   padding: 0 .6em;
@@ -63,7 +70,21 @@
 
 }
 
-.video-link-tutorial-container > header > div > div {
+.video-link-tutorial-top-it-project-container > header > div > div:nth-of-type(1) {
+
+ display: flex;
+ align-items: center;
+ column-gap: .3em;
+
+}
+
+.video-link-tutorial-top-it-project-container > header > div > div:nth-of-type(1) > img:nth-of-type(1) {
+
+  opacity: .8;
+
+}
+
+.video-link-tutorial-top-it-project-container > header > div > div:nth-of-type(2) {
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
   font-size: .90625em;
@@ -71,16 +92,225 @@
 }
 
 /* ---------------------------------------------------------------- */
+/* Header | Video Link Tutorial Container
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------------------- */
 /* Main | Video Link Tutorial Container
 /* ---------------------------------------------------------------- */
 
-.video-link-tutorial-container > main {
+.video-link-tutorial-top-it-project-container > main {
 
-  padding: 1em;
+  padding: 1.5em 0em;
 
   display: grid;
   row-gap: .4em;
+  grid: auto / 1fr;
+
+  gap: 1em;
 
   border-radius: 0 0 1em 1em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Video Link List Box Top It Project | Main
+/* ---------------------------------------------------------------- */
+
+.video-link-list-box-top-it-project {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: 1em;
+
+
+
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Category Label | Video Link List Box Top It Project
+/* ---------------------------------------------------------------- */
+
+.video-link-list-box-top-it-project > label:nth-of-type(1) {
+
+  height: 2.3em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: bold;
+
+
+  border-radius: .6em;
+
+  background-color: rgb(167, 167, 167);
+  color:rgb(50, 50, 50);
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.video-link-list-box-top-it-project > label:nth-of-type(1):hover {
+
+  background-color: wheat;
+
+}
+
+.video-link-list-box-top-it-project > label:nth-of-type(1) > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
+
+}
+
+.video-link-list-box-top-it-project > label:nth-of-type(1) > div:nth-of-type(1) > div {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+.video-link-list-box-top-it-project > label:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  letter-spacing: 1px;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Video Sub Category Link List
+/* ---------------------------------------------------------------- */
+
+.video-sub-category-link-list {
+
+  display: grid;
+
+  background-color: rgb(222, 222, 222);
+
+  border-radius: .4em;
+
+}
+
+.video-sub-category-link-list > a:not(:last-child) {
+
+  border-bottom: 1px solid rgb(164, 164, 164);;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Link | Video Sub Category Link List
+/* ---------------------------------------------------------------- */
+
+.video-sub-category-link-list > a {
+
+  text-decoration: none;
+
+
+  padding: .6em .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+
+  /* border-radius: .4em; */
+
+  background-color: rgb(222, 222, 222);
+
+  transition: all .4s;
+
+}
+
+.video-sub-category-link-list > a:hover {
+
+  background-color: greenyellow;
+
+}
+
+.video-sub-category-link-list > a:visited {
+
+  color:rgb(59, 59, 59);
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Header | Link
+/* ---------------------------------------------------------------- */
+
+.video-sub-category-link-list > a > div:nth-of-type(1) > header {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+  font-weight: bold;
+
+}
+
+.video-sub-category-link-list > a > div:nth-of-type(1) > header > div {
+
+  font-size: 10.5px;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Nr | Header | Link
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* Video Lenght | Header | Link
+/* ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* Main | Link
+/* ---------------------------------------------------------------- */
+
+.video-sub-category-link-list > a > div:nth-of-type(1) > main {
+
+  line-height: 1.4em;
+  font-size: 12.5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close | Video Link List Box 1
+/* ---------------------------------------------------------------- */
+
+#smooth-open-close-video-link-list-box-1 {
+
+
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Video Link | Video Link List Box Top It Project
+/* ---------------------------------------------------------------- */
+
+.video-link-list-box-top-it-project > label:nth-of-type(1) {
+
 
 }

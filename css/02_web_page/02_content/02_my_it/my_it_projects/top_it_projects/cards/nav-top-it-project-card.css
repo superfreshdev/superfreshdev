@@ -44,11 +44,14 @@
 }
 
 /* Checkbox Details */
-#chk-details-top-it-project-1:checked ~ #smooth-open-close-details-top-it-project-1 {
+#chk-details-top-it-project-1:checked ~ #smooth-open-close-details-top-it-project-1,
+#chk-details-top-it-project-1:checked ~ #smooth-open-close-video-link-list  {
 
   grid-template-rows: 1fr;
 
 }
+
+
 
 /* ------------------------------------------------------------------------- */
 /* ⬇️⬆️ | Smooth Open Close | Nav Top IT Project Container (1,2,3)
