@@ -21,8 +21,8 @@
   grid-area: video-link-container-top-it-project-card;
 
   /* mobile */
-  margin-top: 1.5em;
-  padding: 1.5em .8em .6em .8em;
+  margin-top: .5em;
+  padding: .5em .8em .6em .8em;
 
   /* desktop */
   /* align-self: flex-start; */
@@ -48,7 +48,7 @@
 .video-link-tutorial-top-it-project-container > header > div {
 
   height: 1.8em;
-  padding: 0 .6em;
+  /* padding: 0 .6em; */
 
   display: flex;
   align-items: center;
@@ -68,8 +68,8 @@
   /* background-color: rgba(28, 28, 28, .8);
   color: rgb(216, 216, 216); */
 
-    background-color: rgba(204, 204, 204, .3);
-    color: grey;
+    /* background-color: rgba(204, 204, 204, .3);
+    color: grey; */
 
 }
 
@@ -153,7 +153,7 @@
 
   border-radius: .6em;
 
-  background-color: rgb(205, 205, 205);
+  background-color: rgb(238, 238, 238);
   color:rgb(50, 50, 50);
 
   user-select: none;
@@ -217,7 +217,7 @@
 
 .video-sub-category-link-list > a:not(:last-child) {
 
-  border-bottom: 1px solid rgb(164, 164, 164);;
+  border-bottom: 1px solid rgb(216, 215, 215);;
 
 }
 
@@ -240,7 +240,7 @@
 
   /* border-radius: .4em; */
 
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(249, 249, 249);
 
   transition: all .4s;
 
@@ -248,7 +248,7 @@
 
 .video-sub-category-link-list > a:hover {
 
-  background-color: greenyellow;
+  background-color: rgb(228, 228, 228);
 
 }
 

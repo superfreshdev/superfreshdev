@@ -188,7 +188,7 @@
 .content-container-top-it-project-card > footer {
 
   width: 100%;
-  /* padding-bottom: 1em; */
+  padding-bottom: 1em;
 
   display: flex;
   align-items: center;
@@ -219,7 +219,7 @@
 .top-it-project-card .smooth-open-close-container .details-container-top-it-project-card {
 
   /* mobile */
-  margin-top: 1.5em;
+  margin-top: .5em;
   padding: 1.5em .8em .6em .8em;
 
   display: grid;
@@ -241,7 +241,7 @@
 .top-it-project-card-with-video-tutorial .smooth-open-close-container .details-container-top-it-project-card {
 
    /* mobile */
-  margin-top: 1.5em;
+  margin-top: .5em;
   padding: 1.5em .8em .6em .8em;
 
   display: grid;
@@ -250,7 +250,7 @@
   border-radius: 0;
 
   /* row-gap: 1em; */
-  /* background-color: #ebebeb; */
+  background-color: #efefef;
 
   /* background-color: green; */
 
