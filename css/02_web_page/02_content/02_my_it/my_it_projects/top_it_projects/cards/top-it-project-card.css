@@ -4,6 +4,27 @@
 /* : styles my top it project card
 /* -------------------------------------------------------------- */
 
+#ding-dong {
+
+  display: flex;
+  align-items: center;
+}
+
+#ding-dong > div {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  border-radius: .6em;
+
+  background-color: grey;
+}
 
 /* ------------------------------------------------------------- */
 /* Top IT Project Card

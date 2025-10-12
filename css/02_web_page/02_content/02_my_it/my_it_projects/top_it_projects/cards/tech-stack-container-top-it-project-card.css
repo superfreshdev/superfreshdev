@@ -13,7 +13,7 @@
 
   width: 100%;
 
-  padding: 1.5em 1.3em;
+  padding: 2em 1.3em;
 
   display: grid;
   /* mobile */
@@ -23,6 +23,8 @@
   background-color: #ebebeb;
 
   background-color: white;
+
+
 
 }
 
@@ -102,7 +104,7 @@
   column-gap: .3em;
 
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 
   color:#808080;
 
@@ -132,5 +134,9 @@
   padding-left: .4em;
 
   color: #969696;
+
+  border: 2px solid #e3e3e3;;
+
+  border-radius: .6em;
 
 }

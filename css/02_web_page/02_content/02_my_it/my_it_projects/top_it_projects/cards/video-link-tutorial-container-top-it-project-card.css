@@ -12,7 +12,7 @@
 .video-link-tutorial-container-top-it-project-card {
 
   width: 100%;
-  padding: 1.5em .8em;
+  padding: 2em .8em;
 
   display: grid;
   row-gap: 1.5em;
@@ -24,6 +24,8 @@
   /* background-color: red; */
 
   background-color: white;
+
+  border-top: 4px solid rgb(206, 206, 206);
 
 }
 
@@ -41,7 +43,7 @@
 .video-link-tutorial-container-top-it-project-card > header > div {
 
   height: 1.8em;
-  /* padding: 0 .6em; */
+  padding: 0 .6em;
 
   display: flex;
   align-items: center;
@@ -61,8 +63,8 @@
   /* background-color: rgba(28, 28, 28, .8);
   color: rgb(216, 216, 216); */
 
-  /* background-color: rgba(204, 204, 204, .3);
-  color: grey; */
+  background-color: rgba(204, 204, 204, .3);
+  color: grey;
 
 }
 
