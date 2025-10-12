@@ -1,0 +1,134 @@
+/* -------------------------------------------------------------- */
+/* > tech-stack-container-top-it-project-card.css
+/*
+/* : styles my top it project card
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Tech Stack Container | Top It Project Card
+/* ------------------------------------------------------------- */
+
+.tech-stack-container-top-it-project-card {
+
+  width: 100%;
+
+  padding: 1.5em .8em;
+
+  display: grid;
+  /* mobile */
+  justify-items: flex-start;
+  row-gap: 2em;
+
+  background-color: #ebebeb;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | Tech Stack Container
+/* ------------------------------------------------------------- */
+
+.tech-stack-container-top-it-project-card > header {
+
+  height: 1.8em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  border-radius: .4em;
+
+  color:grey;
+
+  background-color: rgba(204, 204, 204, .3);
+  color: grey;
+
+}
+
+.tech-stack-container-top-it-project-card > header > div {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | Tech Stack Container
+/* ------------------------------------------------------------- */
+
+.tech-stack-container-top-it-project-card > main {
+
+  width: 100%;
+  padding-left: .4em;
+
+  display: grid;
+
+  row-gap: 1em;
+  column-gap: 2em;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Tech Stack Item Top IT Project | Main
+/* ------------------------------------------------------------- */
+
+.tech-stack-item-top-it-project {
+
+  display: grid;
+  row-gap: .3em;
+
+  border-radius: 1em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | Tech Stack Item Top IT Project
+/* ------------------------------------------------------------- */
+
+.tech-stack-item-top-it-project > header {
+
+  width: 6.5em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
+
+  font-weight: bold;
+  text-decoration: underline;
+
+  color:#808080;
+
+}
+
+.tech-stack-item-top-it-project > header > img {
+
+  opacity: .6;
+
+}
+
+.tech-stack-item-top-it-project > header > span {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | Tech Stack Item Top IT Project
+/* ------------------------------------------------------------- */
+
+.tech-stack-item-top-it-project > main {
+
+  font-size: 14.5px;
+
+  padding-left: .4em;
+
+  color: #969696;
+
+}

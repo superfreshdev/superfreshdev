@@ -1,0 +1,313 @@
+/* -------------------------------------------------------------- */
+/* > video-link-tutorial-container-top-it-project-card.css
+/*
+/* : styles only for top it project the video tutorial container
+/* -------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* Video Link Tutorial Container
+/* ---------------------------------------------------------------- */
+
+.video-link-tutorial-container-top-it-project-card {
+
+  width: 100%;
+  padding: 1.5em .8em;
+
+  display: grid;
+  row-gap: 1.5em;
+
+  border-radius: 0 0 1em 1em;
+
+  /* background-color: rgb(236, 236, 236); */
+
+  /* background-color: red; */
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Header | Video Link Tutorial Container
+/* ---------------------------------------------------------------- */
+
+.video-link-tutorial-container-top-it-project-card > header {
+
+  display: flex;
+  align-items: center;
+
+}
+
+.video-link-tutorial-container-top-it-project-card > header > div {
+
+  height: 1.8em;
+  /* padding: 0 .6em; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  border-radius: .4em;
+
+  /* background-color: rgba(204, 204, 204, .3);
+  color:grey; */
+
+  /* background-color: rgb(28, 28, 28);
+  color:rgb(233, 233, 233); */
+
+  /* background-color: rgba(28, 28, 28, .8);
+  color: rgb(216, 216, 216); */
+
+  /* background-color: rgba(204, 204, 204, .3);
+  color: grey; */
+
+}
+
+.video-link-tutorial-container-top-it-project-card > header > div > div:nth-of-type(1) {
+
+ display: flex;
+ align-items: center;
+ column-gap: .3em;
+
+}
+
+.video-link-tutorial-container-top-it-project-card > header > div > div:nth-of-type(1) > img:nth-of-type(1) {
+
+  opacity: .8;
+
+}
+
+.video-link-tutorial-container-top-it-project-card > header > div > div:nth-of-type(2) {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Main | Video Link Tutorial Container
+/* ---------------------------------------------------------------- */
+
+.video-link-tutorial-container-top-it-project-card > main {
+
+  width: 100%;
+
+  display: grid;
+
+  row-gap: 1em;
+  column-gap: 1em;
+
+  border-radius: 0 0 1em 1em;
+
+  /* background-color: red; */
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Video Link Tutorial Box | Main
+/* ---------------------------------------------------------------- */
+
+.video-link-tutorial-box-top-it-project {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: 1em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Video Category Link | Video Link Tutorial Box
+/* ---------------------------------------------------------------- */
+
+.video-category-link-top-it-project {
+
+  height: 2.3em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: bold;
+
+
+  border-radius: .6em;
+
+  background-color: #ebebeb;
+  color:rgb(50, 50, 50);
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.video-category-link-top-it-project > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
+
+}
+
+.video-category-link-top-it-project > div:nth-of-type(1) > div {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+.video-category-link-top-it-project > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  letter-spacing: 1px;
+
+}
+
+.video-category-link-top-it-project:hover {
+
+  background-color: wheat;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Video Link List Tutorial | Video Link Tutorial Box
+/* ---------------------------------------------------------------- */
+
+.video-link-list-tuorial-top-it-project {
+
+  display: grid;
+
+  border-radius: 1em;
+
+  /* background-color: rgb(222, 222, 222); */
+
+}
+
+/* ---------------------------------------------------------------- */
+/* a link | Video Link List Tutorial
+/* ---------------------------------------------------------------- */
+
+.video-link-list-tuorial-top-it-project > a {
+
+  padding: .8em 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+  text-decoration: none;
+
+  background-color: rgb(249, 249, 249);
+
+  background-color: #ebebeb;
+
+  transition: all .4s;
+
+}
+
+.video-link-list-tuorial-top-it-project > a:first-child {
+
+  border-radius: .8em .8em 0 0;
+
+}
+
+.video-link-list-tuorial-top-it-project > a:last-child {
+
+  border-radius: 0 0 .8em .8em;
+
+}
+
+.video-link-list-tuorial-top-it-project > a:not(:last-child) {
+
+  border-bottom: 1px solid rgb(216, 215, 215);;
+
+}
+
+.video-link-list-tuorial-top-it-project > a:hover {
+
+  background-color: rgb(254, 254, 254);
+
+}
+
+.video-link-list-tuorial-top-it-project > a:visited {
+
+  color:rgb(59, 59, 59);
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Div 1 | Header | a link
+/* ---------------------------------------------------------------- */
+
+.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) {
+
+  display: grid;
+  row-gap: .2em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Header | a link
+/* ---------------------------------------------------------------- */
+
+.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) > header {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+  font-weight: bold;
+
+  color:rgb(152, 152, 152);
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Div's | Header | a link
+/* ---------------------------------------------------------------- */
+
+.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) > header > div {
+
+  font-size: 12.5px;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Nr | Header | a link
+/* ---------------------------------------------------------------- */
+
+/* actually dont need extra styling */
+
+/* ---------------------------------------------------------------- */
+/* Seperator | Header | a link
+/* ---------------------------------------------------------------- */
+
+.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) > header > div:nth-of-type(2) {
+
+  /* better layout fix */
+  padding-bottom: 2px;
+  /* color:red; */
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Video Lenght | Header | a link
+/* ---------------------------------------------------------------- */
+
+/* actually dont need extra styling */
+
+/* ---------------------------------------------------------------- */
+/* Main | a link
+/* ---------------------------------------------------------------- */
+
+.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) > main {
+
+  line-height: 1.4em;
+  font-size: 14.5px;
+
+  color: #797979;
+
+}

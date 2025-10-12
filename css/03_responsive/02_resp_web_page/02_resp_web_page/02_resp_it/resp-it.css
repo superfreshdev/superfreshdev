@@ -541,27 +541,6 @@
 
     }
 
-    /* ------------------------------------------------------------------------ */
-    /* Top IT Project Card With Video Tutorial                                */
-    /* ------------------------------------------------------------------------ */
-
-    .top-it-project-card-with-video-tutorial {
-
-      width: auto;
-
-      display: grid;
-      align-items: center;
-
-      grid-template-areas:
-
-        'img-container-top-it-project-card content-container-top-it-project-card'
-        'details-container-top-it-project-card video-link-container-top-it-project-card'
-      ;
-
-      grid-template-columns: 20em 1fr ;
-      grid-template-rows: auto auto;
-
-    }
 
   /* ------------------------------------------------------------------------ */
   /* Top IT Project Card | Img Container > Img                                */
@@ -597,65 +576,40 @@
     }
 
   /* ----------------------------------------------------------------------------------- */
-  /*  Top IT Project Card | Details Container
+  /*  Top IT Project Card | Tech Stack Container
   /* ----------------------------------------------------------------------------------- */
 
-  .top-it-project-card .smooth-open-close-container .details-container-top-it-project-card {
+  .tech-stack-container-top-it-project-card  {
 
-    margin-top: 0em;
-    padding: 1.5em .8em .6em .8em;
+    justify-items: center;
 
   }
 
-  /* ----------------------------------------------------------------------------------- */
-  /*  Top IT Project Card With Video Tutorials | Details Container
-  /* ----------------------------------------------------------------------------------- */
+  /* header */
+  .tech-stack-container-top-it-project-card > header {
 
-  .top-it-project-card-with-video-tutorial .smooth-open-close-container .details-container-top-it-project-card {
-
-    margin-top: 0em;
-    padding: 1.5em .8em .6em .8em;
-
-    border-radius: 0 0 0em 1em;
+    justify-self: flex-start;
 
   }
 
-   /* ----------------------------------------------------------------------------------- */
-  /*  Top IT Project Card With Video Tutorials | Details Container
-  /* ----------------------------------------------------------------------------------- */
+  /* main */
+  .tech-stack-container-top-it-project-card > main {
 
-  .video-link-tutorial-top-it-project-container {
-
-    margin-top: 0em;
-    padding: 1.5em .8em .6em .8em;
-
-    /* desktop */
-    align-self: flex-start;
-    height: 100%;
-
-    border-radius: 0 0 1em 0em;
-
-    /* background-color: rgb(236, 236, 236); */
-
-  }
-
-  /* ------------------------------------------------------------------------ */
-  /* Top IT Project Card | Details Container | Main                           */
-  /* ------------------------------------------------------------------------ */
-
-  .details-container-top-project-card > main {
-
-    padding: 1.5em 0em 1em .4em;
-
-    /* mobile */
     display: grid;
-    grid: auto auto / 1fr 1fr;
-
-
-    column-gap: 2em;
-    row-gap: 1em;
+    grid: auto / auto auto auto auto;
 
   }
+
+  /* ----------------------------------------------------------------------------------- */
+  /*  Top IT Project Card | Video Link Tutorial | Main
+  /* ----------------------------------------------------------------------------------- */
+
+  .video-link-tutorial-container-top-it-project-card > main {
+
+    grid: auto / 1fr 1fr;
+
+  }
+
 
 }
 

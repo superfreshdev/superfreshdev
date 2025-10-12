@@ -6,15 +6,20 @@
 
 
 /* ------------------------------------------------------------- */
-/* Top IT Project Card &
-/* Top IT Project Card | With Video Tutorial
+/* Top IT Project Card
 /* ------------------------------------------------------------- */
 
-.top-it-project-card,
-.top-it-project-card-with-video-tutorial {
+.top-it-project-card {
 
   display: grid;
   column-gap: 1em;
+
+  grid-template-areas:
+
+    'img-container-top-it-project-card'
+    'content-container-top-it-project-card'
+    'details-container-top-it-project-card'
+  ;
 
   border-radius: 1em;
 
@@ -26,36 +31,6 @@
 
 }
 
-/* ------------------------------------------------------------- */
-/* Top IT Project Card
-/* ------------------------------------------------------------- */
-
-.top-it-project-card {
-
-  grid-template-areas:
-
-    'img-container-top-it-project-card'
-    'content-container-top-it-project-card'
-    'details-container-top-it-project-card'
-  ;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Top IT Project Card | With Video Tutorial
-/* ------------------------------------------------------------- */
-
-.top-it-project-card-with-video-tutorial {
-
-  grid-template-areas:
-
-    'img-container-top-it-project-card'
-    'content-container-top-it-project-card'
-    'details-container-top-it-project-card'
-    'video-link-container-top-it-project-card'
-  ;
-
-}
 
 /* ------------------------------------------------------------- */
 /* [1/4] | Img Container | Top IT Project Card
@@ -182,10 +157,10 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Footer | Content Container
+/* Nav | Content Container
 /* ------------------------------------------------------------- */
 
-.content-container-top-it-project-card > footer {
+.content-container-top-it-project-card > nav {
 
   width: 100%;
   padding-bottom: 1em;
@@ -200,10 +175,9 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Details Container | Top IT Project Card
+/* ⬇️⬆️ | Smooth Open Close | Details Top IT Project
 /* ------------------------------------------------------------- */
 
-/* smooth-open-close-details-top-it-project-1 */
 #smooth-open-close-details-top-it-project-1 {
 
   grid-area: details-container-top-it-project-card;
@@ -213,207 +187,16 @@
 }
 
 /* ----------------------------------------------------------------------------------- */
-/* Details Container (1/2) | Top IT Project Card
+/* Details Container | Top IT Project Card
 /* ----------------------------------------------------------------------------------- */
 
-.top-it-project-card .smooth-open-close-container .details-container-top-it-project-card {
-
-  /* mobile */
-  margin-top: .5em;
-  padding: 1.5em .8em .6em .8em;
+ .details-container-top-it-project-card {
 
   display: grid;
-  justify-items: flex-start;
 
   border-radius: 0 0 1em 1em;
 
-  /* row-gap: 1em; */
-  background-color: #ebebeb;
-
-  background-color: yellow;
+  /* background-color: #ebebeb; */
+  /* background-color: yellow; */
 
 }
-
-/* ----------------------------------------------------------------------------------- */
-/* Details Container (2/2) | Top IT Project Card With Video Tutorials
-/* ----------------------------------------------------------------------------------- */
-
-.top-it-project-card-with-video-tutorial .smooth-open-close-container .details-container-top-it-project-card {
-
-   /* mobile */
-  margin-top: .5em;
-  padding: 1.5em .8em .6em .8em;
-
-  display: grid;
-  justify-items: flex-start;
-
-  border-radius: 0;
-
-  /* row-gap: 1em; */
-  background-color: #efefef;
-
-  /* background-color: green; */
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* Header | Top IT Project Card
-/* ------------------------------------------------------------- */
-
-.details-container-top-it-project-card > header {
-
-  height: 1.8em;
-  padding: 0 .6em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: .6em;
-
-  font-weight: bold;
-
-  border-radius: .4em;
-
-  /* background-color: rgba(204, 204, 204, .3); */
-  color:grey;
-
-  /* background-color: rgb(28, 28, 28);
-  color:rgb(233, 233, 233); */
-/*
-  background-color: rgba(28, 28, 28, .8);
-  color: rgb(216, 216, 216); */
-
-   background-color: rgba(204, 204, 204, .3);
-    color: grey;
-
-}
-
-.details-container-top-it-project-card > header > div {
-
-  /* 14.5px = 14,5 / 16px (1em) = .90625em */
-  font-size: .90625em;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Main | Top IT Project Card
-/* ------------------------------------------------------------- */
-
-.details-container-top-it-project-card > main {
-
-  padding: 1.5em 0em 1em .4em;
-
-  /* mobile */
-  display: grid;
-  align-items: flex-start;
-  row-gap: 1em;
-
-
-}
-
-/* ------------------------------------------------------------- */
-/* Tech Stack Item Top Projects | Details
-/* ------------------------------------------------------------- */
-
-.tech-stack-item-top-project {
-
-  /* padding: .8em; */
-
-  display: grid;
-  row-gap: .3em;
-
-  /* border: 1px dashed #808080; */
-
-  border-radius: 1em;
-
-}
-
-/* header */
-.tech-stack-item-top-project > header {
-
-  width: 6.5em;
-
-  display: flex;
-  align-items: center;
-  column-gap: .3em;
-
-  font-weight: bold;
-  text-decoration: underline;
-
-  color:#808080;
-
-}
-
-.tech-stack-item-top-project > header > img {
-
-  opacity: .6;
-
-}
-
-.tech-stack-item-top-project > header > span {
-
-  /* 14.5px = 14,5 / 16px (1em) = .90625em */
-  font-size: .90625em;
-
-}
-
-.tech-stack-item-top-project > main {
-
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: .4em;
-  row-gap: .4em; */
-
-  padding-left: .4em;
-
-  color: #969696;
-
-  font-size: 14.5px;
-
-}
-
-
-/* divs */
-.tech-stack-item-top-project > main > div {
-
-  height: 1.5em;
-  /* padding: 0 .4em; */
-
-  display: flex;
-  align-items: center;
-  column-gap: .3em;
-
-  border-radius: .4em;
-
-  /* background-color: rgba(241, 241, 241, .4); */
-
-  /* font-weight: bold; */
-
-}
-
-.tech-stack-item-top-project > main > div > div {
-
-  /* 14.5px = 14,5 / 16px (1em) = .90625em */
-  font-size: .75em;
-
-  font-size: 14.5px;
-
-  color:rgb(169, 169, 169);
-
-  /* color:rgb(202, 202, 202); */
-
-}
-
-.tech-stack-item-top-project > main > div > img {
-
-  display: none;
-
-}
-
-
-
-/* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------- */
