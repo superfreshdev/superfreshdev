@@ -36,7 +36,7 @@
 .video-link-tutorial-container-top-it-project-card > header {
 
   width: 100%;
-  padding: 1.3em;
+  padding: .8em 1.3em;
 
   display: flex;
   align-items: center;
@@ -179,6 +179,287 @@
   background-color: wheat;
 
 }
+
+
+/* ---------------------------------------------------------------- */
+/* ⭐ Video Tutorial Link Box | Top IT Project Card
+/* ---------------------------------------------------------------- */
+
+.video-tutorial-link-box-top-it-project-card {
+
+  display: grid;
+  row-gap: 1em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* ⭐ [1/2] | Label Video Tutorial Category
+/* ---------------------------------------------------------------- */
+
+.lbl-video-tutorial-link-category {
+
+  height: 2.5em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  background-color: #e9e9e9;
+  color:rgb(133, 133, 133);
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.lbl-video-tutorial-link-category:hover {
+
+  background-color: wheat;
+}
+
+
+/* div 1 */
+.lbl-video-tutorial-link-category > div:nth-of-type(1) {
+
+
+  font-size: 14.5px;
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+
+
+}
+
+/* img (-), default unshown */
+.lbl-video-tutorial-link-category > img:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* ⭐ [2/2] | Video Tutorial Link List
+/* ---------------------------------------------------------------- */
+
+.video-tutorial-link-list {
+
+  display: grid;
+  row-gap: 1em;
+
+}
+
+.video-tutorial-link-list > a {
+
+  border-radius: 1em;
+
+}
+
+
+.video-tutorial-link-list > a:first-child {
+
+  /* border-radius: .8em .8em 0 0; */
+
+}
+
+.video-tutorial-link-list > a:last-child {
+
+  /* border-radius: 0 0 .8em .8em; */
+
+}
+
+
+/* ---------------------------------------------------------------- */
+/* ⭐ a Link | Video Tutorial Link List
+/* ---------------------------------------------------------------- */
+
+.link-video-tutorial {
+
+  text-decoration: none;
+
+  padding: .6em .6em;
+
+  display: grid;
+  row-gap: .6em;
+
+  /* border: 1px solid black; */
+
+  background-color: rgb(226, 226, 226);
+
+  color:black;
+
+  transition: all .4s;
+
+}
+
+.link-video-tutorial:hover {
+
+  background-color: rgb(198, 198, 198);
+
+}
+
+.link-video-tutoria:visited {
+
+  color:black;
+
+}
+
+
+/* ---------------------------------------------------------------- */
+/* ⭐ Header | a Link
+/* ---------------------------------------------------------------- */
+
+.link-video-tutorial > header {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+
+}
+
+/* ---------------------------------------------------------------- */
+/* ⭐ Meta Info Video Tutorial Link | Header | a Link
+/* ---------------------------------------------------------------- */
+
+.meta-info-video-tutorial-link {
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
+
+  font-weight: bold;
+
+}
+
+/* divs */
+.meta-info-video-tutorial-link > div {
+
+
+  height: 1.1em;
+  padding: 0 .3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .4em;
+
+  background-color: #bcbcbc;
+  color:rgb(64, 64, 64);
+
+}
+
+/* divs spans */
+.meta-info-video-tutorial-link > div > span {
+
+  font-size: 12px;
+
+}
+
+/* meta info video length */
+.meta-info-video-length {
+
+  display: flex;
+  align-items: center;
+  column-gap: .1em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* ⭐ Div 2 | Header | a Link
+/* ---------------------------------------------------------------- */
+
+.link-video-tutorial > header > div:nth-of-type(2) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+/* influence status extra small */
+.link-video-tutorial > header > div:nth-of-type(2) > div:nth-of-type(1) {
+
+  font-size: 12px;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* ⭐ Main | a Link
+/* ---------------------------------------------------------------- */
+
+.link-video-tutorial > main {
+
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* ⭐ Content Link Video Tutorial | Main | a Link
+/* ---------------------------------------------------------------- */
+
+.content-link-video-tutorial {
+
+  line-height: 1.3em;
+
+}
+
+/* img float */
+.content-link-video-tutorial > img {
+
+  float: left;
+  margin-right: 12px;
+
+  height: 3.5em;
+  width: 3.5em;
+
+  border-radius: .3em;
+
+}
+
+/* span */
+.content-link-video-tutorial > span {
+
+  font-size: 14.5px;
+
+
+  color:rgb(82, 82, 82);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ---------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- */
 /* Video Link List Tutorial | Video Link Tutorial Box
