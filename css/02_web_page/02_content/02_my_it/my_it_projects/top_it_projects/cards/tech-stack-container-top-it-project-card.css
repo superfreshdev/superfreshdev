@@ -29,6 +29,7 @@
 .tech-stack-container-top-it-project-card > header {
 
   width: 100%;
+  /* margin-top: 1em; */
   padding: 1.3em;
 
   display: flex;
@@ -42,6 +43,8 @@
 
 
   background-color: #ebebebeb;
+
+  background-color: rgba(164, 164, 164, 0.1);
 
   /* background-color: #808080; */
 
