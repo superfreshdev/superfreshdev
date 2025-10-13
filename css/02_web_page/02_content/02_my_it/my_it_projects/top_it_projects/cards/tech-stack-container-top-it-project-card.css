@@ -13,8 +13,12 @@
 
   width: 100%;
 
+ padding: 2em .8em;
+
   display: grid;
   justify-items: flex-start;
+
+  row-gap: 2em;
 
 
 
@@ -32,6 +36,7 @@
   /* margin-top: 1em; */
   padding: 1.3em;
 
+
   display: flex;
   align-items: center;
   column-gap: .6em;
@@ -41,10 +46,16 @@
   /* border-top: 1px solid rgb(186, 186, 186);
   border-bottom: 1px solid rgb(186, 186, 186); */
 
+  border-radius: 1em;
+
 
   background-color: #ebebebeb;
 
   background-color: rgba(164, 164, 164, 0.1);
+
+  background-color: rgb(184, 184, 184);
+
+  background-color: rgb(229, 229, 229);
 
   /* background-color: #808080; */
 
@@ -61,10 +72,66 @@
 /* Main | Tech Stack Container
 /* ------------------------------------------------------------- */
 
+/* ⭐ tech-stack-info-box */
+
+.tech-stack-info-box {
+
+  display: grid;
+  /* row-gap: 1em; */
+
+  border-radius: 1em;
+
+  border: 2px solid #b8b8b8b8;
+
+}
+
+.tech-stack-info-box > header {
+
+  height: 2em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
+
+  border-radius: .8em .8em 0 0;
+
+  font-weight: bold;
+
+  background-color: rgba(184, 184, 184, 1);
+  opacity: .6;
+
+
+
+
+
+}
+
+.tech-stack-info-box > header > div {
+
+  font-size: 14.5px;
+
+}
+
+.tech-stack-info-box > main {
+
+  padding: .8em;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: .3em;
+
+  font-size: 14.5px;
+
+  color:grey;
+
+}
+
 .tech-stack-container-top-it-project-card > main {
 
   width: 100%;
-  padding: 2em 1.5em;
+  padding: 0em 1.5em;
 
   display: grid;
   align-items: flex-start;
@@ -73,7 +140,7 @@
   column-gap: 2em;
 
   /* background-color: red; */
-  background-color: white;
+  /* background-color: white; */
 
 }
 
@@ -106,6 +173,7 @@
   /* text-decoration: underline; */
 
   color:#808080;
+
 
 }
 
