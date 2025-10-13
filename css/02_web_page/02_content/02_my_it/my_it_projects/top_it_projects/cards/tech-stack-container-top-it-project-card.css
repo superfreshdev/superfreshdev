@@ -13,16 +13,10 @@
 
   width: 100%;
 
-  padding: 2em 1.3em;
-
   display: grid;
-  /* mobile */
   justify-items: flex-start;
-  row-gap: 2em;
 
-  background-color: #ebebeb;
 
-  background-color: white;
 
 
 
@@ -34,29 +28,29 @@
 
 .tech-stack-container-top-it-project-card > header {
 
-  height: 1.8em;
-  padding: 0 .6em;
+  width: 100%;
+  padding: 1.3em;
 
   display: flex;
   align-items: center;
-  justify-content: center;
   column-gap: .6em;
 
   font-weight: bold;
 
-  border-radius: .4em;
+  /* border-top: 1px solid rgb(186, 186, 186);
+  border-bottom: 1px solid rgb(186, 186, 186); */
 
-  color:grey;
 
-  background-color: rgba(204, 204, 204, .3);
-  color: grey;
+  background-color: #ebebebeb;
+
+  /* background-color: #808080; */
 
 }
 
 .tech-stack-container-top-it-project-card > header > div {
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
-  font-size: .90625em;
+  /* font-size: .90625em; */
 
 }
 
@@ -67,14 +61,16 @@
 .tech-stack-container-top-it-project-card > main {
 
   width: 100%;
-  padding-left: .4em;
+  padding: 2em 1.5em;
 
   display: grid;
+  align-items: flex-start;
 
   row-gap: 1em;
   column-gap: 2em;
 
   /* background-color: red; */
+  background-color: white;
 
 }
 

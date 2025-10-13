@@ -548,7 +548,7 @@
 
     .img-container-top-it-project-card > img {
 
-      border-radius: 1em 0 0 0em;
+      border-radius: 1em 0 0 1em;
 
     }
 
@@ -607,6 +607,7 @@
   .video-link-tutorial-container-top-it-project-card > main {
 
     grid: auto / 1fr 1fr;
+    align-items: flex-start;
 
   }
 
