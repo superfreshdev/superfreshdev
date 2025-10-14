@@ -24,12 +24,9 @@
 
   font-weight: bold;
 
-  background-color: #b8b8b8;
+  /* background-color: #b8b8b8; */
+  /* background-color: rgb(235, 235, 235); */
   background-color: #cacaca;
-
-  background-color: rgb(235, 235, 235);
-
-  opacity: .6;
 
   cursor: pointer;
   transition: all .4s;

@@ -32,32 +32,23 @@
 
 .tech-stack-container-top-it-project-card > header {
 
-  width: 100%;
-  /* margin-top: 1em; */
-  padding: .8em 1.3em;
+  justify-self: flex-start;
+  /* width: 100%; */
 
+  height: 2.3em;
+  padding: 0em .8em;
 
   display: flex;
   align-items: center;
   column-gap: .6em;
 
+  border-radius: .6em;
+
   font-weight: bold;
 
-  /* border-top: 1px solid rgb(186, 186, 186);
-  border-bottom: 1px solid rgb(186, 186, 186); */
-
-  border-radius: 1em;
+  background-color: #cacaca;
 
 
-  background-color: #ebebebeb;
-
-  background-color: rgba(164, 164, 164, 0.1);
-
-  background-color: rgb(184, 184, 184);
-
-  background-color: rgb(229, 229, 229);
-
-  /* background-color: #808080; */
 
 }
 
@@ -99,6 +90,7 @@
   font-weight: bold;
 
   background-color: rgba(184, 184, 184, 1);
+   /* background-color: #cacaca; */
   opacity: .6;
 
 
@@ -131,12 +123,12 @@
 .tech-stack-container-top-it-project-card > main {
 
   width: 100%;
-  padding: 0em 1.5em;
+  padding: 0 .4em;
 
   display: grid;
   align-items: flex-start;
 
-  row-gap: 1em;
+  row-gap: 2em;
   column-gap: 2em;
 
   /* background-color: red; */
@@ -151,7 +143,7 @@
 .tech-stack-item-top-it-project {
 
   display: grid;
-  row-gap: .3em;
+  row-gap: .6em;
 
   border-radius: 1em;
 
@@ -163,7 +155,9 @@
 
 .tech-stack-item-top-it-project > header {
 
-  width: 6.5em;
+  /* width: 6.5em; */
+  height: 2em;
+  /* padding: 0 .8em; */
 
   display: flex;
   align-items: center;
@@ -172,7 +166,15 @@
   font-weight: bold;
   /* text-decoration: underline; */
 
-  color:#808080;
+  border-radius: .4em;
+
+  /* background-color: #eaeaea;
+
+  background-color: rgb(216, 216, 216); */
+
+  color:#2f2f2f;
+
+
 
 
 }
@@ -196,14 +198,43 @@
 
 .tech-stack-item-top-it-project > main {
 
-  font-size: 14.5px;
 
-  padding-left: .4em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3em;
 
-  color: #969696;
 
-  border: 2px solid #e3e3e3;;
+}
 
-  border-radius: .6em;
+
+/* ------------------------------------------------------------- */
+/* Divs | Main
+/* ------------------------------------------------------------- */
+
+.tech-stack-item-top-it-project > main > div {
+
+  height: 1.5em;
+  padding: 0 .4em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+  /* background-color: rgb(249, 249, 249); */
+  color:rgb(169, 169, 169);
+
+  border: 1px solid rgb(224, 224, 224);
+
+  border-radius: .4em;
+
+
+
+}
+
+.tech-stack-item-top-it-project > main > div > div {
+
+  font-size: 12.5px;
+  /* font-weight: bold; */
+  /* font-weight: 600; */
 
 }

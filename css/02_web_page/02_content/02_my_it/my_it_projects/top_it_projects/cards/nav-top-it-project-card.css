@@ -23,29 +23,37 @@
 /* ⚠️ | Kommt nur mit Checkbox Details !!! Kategorie wird wo anders gemanaged  */
 
 /* default unshown */
-#chk-details-top-it-project-1 {
+#chk-details-top-it-project-card-1 {
 
   display: none;
 
 }
 
-/* set background */
-#chk-details-top-it-project-1:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-1"] {
+/* change img border of top it project */
+#chk-details-top-it-project-card-1:checked ~ .img-container-top-it-project-card > img {
 
-  background-color: red;
+  border-radius: 1em 0 0 0em;
+
+}
+
+/* set background */
+#chk-details-top-it-project-card-1:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-card-1"] {
+
+  background-color: rgb(227, 87, 87);
+  background-color: #ff8080;
 
 }
 
 /* change img arrow rotation */
-#chk-details-top-it-project-1:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-1"] > img {
+#chk-details-top-it-project-card-1:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-card-1"] > img {
 
   transform: rotate(180deg);
 
 }
 
 /* Checkbox Details */
-#chk-details-top-it-project-1:checked ~ #smooth-open-close-details-top-it-project-1,
-#chk-details-top-it-project-1:checked ~ #smooth-open-close-video-link-list  {
+#chk-details-top-it-project-card-1:checked ~ #smooth-open-close-details-top-it-project-1,
+#chk-details-top-it-project-card-1:checked ~ #smooth-open-close-video-link-list  {
 
   grid-template-rows: 1fr;
 
