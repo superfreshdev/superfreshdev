@@ -12,15 +12,17 @@
 .tech-stack-container-top-it-project-card {
 
   width: 100%;
+  /* margin-top: 1em; */
 
- padding: 2em .8em;
+ /* padding: 2em .8em; */
 
   display: grid;
   justify-items: flex-start;
 
-  row-gap: 2em;
+  /* row-gap: 1.5em; */
 
 
+  /* background-color: rgb(227, 227, 227); */
 
 
 
@@ -32,21 +34,28 @@
 
 .tech-stack-container-top-it-project-card > header {
 
-  justify-self: flex-start;
-  /* width: 100%; */
+  /* justify-self: flex-start; */
+  width: 100%;
 
-  height: 2.3em;
-  padding: 0em .8em;
+  height: 3.5em;
+  padding: 0em 1em;
 
   display: flex;
   align-items: center;
   column-gap: .6em;
 
-  border-radius: .6em;
+
+  text-decoration: underline;
 
   font-weight: bold;
 
-  background-color: #cacaca;
+  /* background-color: #cacaca; */
+
+  background-color: rgba(164, 164, 164, 0.2);
+
+  /* background-color: white; */
+
+   /* border: 4px solid rgba(164, 164, 164, 0.4); */
 
 
 
@@ -55,7 +64,7 @@
 .tech-stack-container-top-it-project-card > header > div {
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
-  /* font-size: .90625em; */
+  font-size: .90625em;
 
 }
 
@@ -118,12 +127,14 @@
 
   color:grey;
 
+
+
 }
 
 .tech-stack-container-top-it-project-card > main {
 
   width: 100%;
-  padding: 0 .4em;
+  padding: 1.5em 1em;
 
   display: grid;
   align-items: flex-start;
@@ -133,6 +144,7 @@
 
   /* background-color: red; */
   /* background-color: white; */
+
 
 }
 
@@ -201,7 +213,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: .3em;
+  gap: .4em;
 
 
 }
@@ -221,11 +233,15 @@
   column-gap: .4em;
 
   /* background-color: rgb(249, 249, 249); */
-  color:rgb(169, 169, 169);
+  color:rgb(128, 128, 128);
 
-  border: 1px solid rgb(224, 224, 224);
+  border: 2px solid rgb(224, 224, 224);
+
+  /* background-color: rgb(238, 238, 238); */
 
   border-radius: .4em;
+
+  opacity: .8;
 
 
 

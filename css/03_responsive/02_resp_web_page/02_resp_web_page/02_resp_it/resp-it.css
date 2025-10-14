@@ -595,7 +595,7 @@
   /* main */
   .tech-stack-container-top-it-project-card > main {
 
-     padding: 0 1.5em;
+    padding: 1.5em;
 
     display: grid;
     grid: auto / auto auto auto auto;
@@ -610,6 +610,9 @@
 
     grid: auto / 1fr 1fr;
     align-items: flex-start;
+
+    column-gap: 1em;
+
 
   }
 
