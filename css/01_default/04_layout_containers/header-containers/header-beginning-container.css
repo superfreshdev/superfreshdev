@@ -1,0 +1,78 @@
+/* -------------------------------------------------------------- */
+/* > header-beginning-container.css
+/* : styles header beginning container
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Header Beginning Container
+/* ------------------------------------------------------------- */
+
+.header-beginning-container {
+
+  /* mobile */
+  display: grid;
+
+  column-gap: .8em;
+  row-gap: 1.8em;
+
+  /* background-color: rgb(201, 157, 157); */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header Beginning Title Box
+/* ------------------------------------------------------------- */
+
+.header-beginning-tilte-box {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Div | Header Beginning Title Box
+/* ------------------------------------------------------------- */
+
+.header-beginning-tilte-box > div:nth-of-type(1) {
+
+  line-height: 1.6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header Beginning Title | Header Beginning Title Box
+/* ------------------------------------------------------------- */
+
+.header-beginning-title {
+
+  font-size: 18px;
+  /* font-size: 1.25em; */
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------------- */
+/* Header Beginning Sub Title | Header Beginning Title Box
+/* ------------------------------------------------------------- */
+
+.header-beginning-sub-title {
+
+  font-size: 12.5px;
+  font-weight: bold;
+
+  color:grey;
+}
+
+
+/* ------------------------------------------------------------- */
+/* Label | Header Beginning Container
+/* ------------------------------------------------------------- */
+
+.header-beginning-container > label:nth-of-type(1) {
+
+  /* label center */
+  justify-self: center;
+
+}

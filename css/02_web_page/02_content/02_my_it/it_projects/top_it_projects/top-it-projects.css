@@ -1,0 +1,99 @@
+/* -------------------------------------------------------------- */
+/* > top-it-projects.css
+/* : styles the top it projects
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Top IT Project Container
+/* -------------------------------------------------------------- */
+
+#top-it-projects-container {
+
+  width: 100%;
+  /* width: 26em; */
+
+  display: grid;
+  row-gap: 2em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | Top IT Projects Container
+/* ------------------------------------------------------------- */
+
+#header-top-it-projects {
+
+  width: 100%;
+  display: grid;
+
+}
+
+/* header beginning container = 100% */
+#header-top-it-projects > .header-beginning-container {
+
+  width: 100%;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img (Rocket) | Header
+/* ------------------------------------------------------------- */
+
+#img-header-top-it-project {
+
+  /* mobile */
+  height: 1.6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Open Close Nav Top IT Proejcts | Header
+/* ------------------------------------------------------------- */
+
+#smooth-open-close-nav-top-it-projects {
+
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.3s ease-out;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Top It Projects
+/* ------------------------------------------------------------- */
+
+#nav-top-it-projects {
+
+  width: 100%;
+  margin-top: 1.5em;
+
+  padding: .6em .6em;
+
+  /* mobile */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap:.6em;
+
+  border-radius: .8em;
+
+  background-color: rgba(0, 0, 0, .8);
+
+  background-color: #5f5f5f;
+
+  border: 1px solid rgb(223, 223, 223);
+  background-color: rgb(241, 241, 241);
+
+}
+
+#nav-top-it-projects > label {
+
+  /* very small mobile */
+  width: 100%;
+
+}

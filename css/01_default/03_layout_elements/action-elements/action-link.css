@@ -28,6 +28,7 @@
   /* background-color: rgb(235, 235, 235); */
   background-color: #cacaca;
 
+  user-select: none;
   cursor: pointer;
   transition: all .4s;
 

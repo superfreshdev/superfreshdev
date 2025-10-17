@@ -1,16 +1,16 @@
 /* -------------------------------------------------------------- */
-/* > action-drop-down.css
-/* : styles action drop down element
+/* > action-radio.css
+/* : styles action radio element
 /* -------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------- */
-/* Action Drop Down
+/* Action Radio
 /* -------------------------------------------------------------- */
 
-.action-drop-down-small,
-.action-drop-down-medium,
-.action-drop-down-big {
+.action-radio-small,
+.action-radio-medium,
+.action-radio-big {
 
   padding: 0 .6em;
 
@@ -32,24 +32,24 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Hover | Action Drop Down
+/* Hover | Action Radio
 /* -------------------------------------------------------------- */
 
-.action-drop-down-small:hover,
-.action-drop-down-medium:hover,
-.action-drop-down-big:hover {
+.action-radio-small:hover,
+.action-radio-medium:hover,
+.action-radio-big:hover {
 
   background-color: wheat;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Div 1 | Action Drop Down
+/* Div 1 |  Action Radio
 /* -------------------------------------------------------------- */
 
-.action-drop-down-small > div:nth-of-type(1),
-.action-drop-down-medium > div:nth-of-type(1),
-.action-drop-down-big > div:nth-of-type(1) {
+.action-radio-small > div:nth-of-type(1),
+.action-radio-medium > div:nth-of-type(1),
+.action-radio-big > div:nth-of-type(1) {
 
   display: flex;
   align-items: center;
@@ -58,12 +58,12 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Div 1 | Div | Action Drop Down
+/* Div 1 | Div | Action Radio
 /* -------------------------------------------------------------- */
 
-.action-drop-down-small > div:nth-of-type(1) > div,
-.action-drop-down-medium > div:nth-of-type(1) > div,
-.action-drop-down-big > div:nth-of-type(1) > div {
+.action-radio-small > div:nth-of-type(1) > div,
+.action-radio-medium > div:nth-of-type(1) > div,
+.action-radio-big > div:nth-of-type(1) > div {
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
   font-size: .90625em;
@@ -71,30 +71,30 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Small | Action Link
+/* Small | Action Radio
 /* -------------------------------------------------------------- */
 
-.action-drop-down-small {
+.action-radio-small {
 
   height: 1.8em;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Medium | Action Link
+/* Medium | Action Radio
 /* -------------------------------------------------------------- */
 
-.action-drop-down-medium {
+.action-radio-medium {
 
   height: 2.3em;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Big | Action Link
+/* Big | Action Radio
 /* -------------------------------------------------------------- */
 
-.action-drop-down-big {
+.action-radio-big {
 
   height: 2.8em;
 

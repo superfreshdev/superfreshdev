@@ -18,7 +18,6 @@
   width: 100%;
   height: 100%;
 
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,7 +48,8 @@
   /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
 
   /* background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); */
-/*
+
+  /*
   background-color: #E4E4E1;
   background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
  	background-blend-mode: normal, multiply; */
@@ -60,7 +60,7 @@
 }
 
 /* -------------------------------------------------------------- */
-/* My IT Page Container
+/* My IT Page Container ( Nav, IT-Projects, IT-Docs )
 /* -------------------------------------------------------------- */
 
 #my-it-page-container {
