@@ -307,7 +307,7 @@
 
                         <!-- card -->
                         <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/top_it_projects/card/top-it-project-card.css">
-                        <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/top_it_projects/card/nav-top-it-project-card.css">
+                        <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/top_it_projects/card/handlings-top-it-project-card.css">
 
                         <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/top_it_projects/card/business_feature_container/business-feature-container.css">
                         <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/top_it_projects/card/tech_stack_container/tech-stack-container.css">
@@ -2316,7 +2316,7 @@
                                                     <!-- ----------------------------------------------------------------- -->
                                                     <!-- ⬇️⬆️ | Smooth Open Close | Nav Top IT Projects -->
                                                     <!-- ----------------------------------------------------------------- -->
-                                                    <div id="smooth-open-close-nav-top-it-projects">
+                                                    <div id="css-smooth-open-close-nav-top-it-projects" class="smooth-open-close-container">
 
                                                         <!-- -------------------------------------------------------- -->
                                                         <!-- Overflow Hidden -->
@@ -2404,22 +2404,49 @@
                                                 </header>
 
                                                 <!-- ------------------------------------------------------------------------- -->
-                                                <!-- ➡️🟥 [2/2] Top IT Project Card Container -->
+                                                <!-- ➡️🟥 [2/2] List Container | Top It Project Cards -->
                                                 <!-- ------------------------------------------------------------------------- -->
-                                                <div id="top-it-project-card-container">
+                                                <div id="list-container-top-it-project-cards">
 
-                                                    <!-- -------------------------------------------------------------- -->
-                                                    <!-- ➡️🟥 [1/3] | Top IT Project Card  -->
-                                                    <!-- -------------------------------------------------------------- -->
+                                                    <!--
+
+                                                    🟥/top_it_projects
+
+                                                        🟥/card
+
+                                                            🟥.top-it-project-card.css
+
+                                                            🟥/core_feature_container
+                                                                🟥 .core-feature-container.css
+                                                            🟥/tech_stack_container
+                                                                🟥 .tech-stack-container.css
+                                                            🟥/video_link_container
+                                                                🟥 .video-link-container.css
+                                                            🟥/img_container
+                                                                🟥 .img-container-container.css
+                                                            🟥/short_info_container
+                                                                🟥 .short-info-container.css
+
+
+
+
+                                                        🟩.handlings-top-it-project-card.css
+                                                        🟩.top-it-projects.css
+
+                                                    -->
+
+                                                    <!-- -------------------------------------------------------------------------- -->
+                                                    <!-- 🟥 [1/3] | Top IT Project Card  -->
+                                                    <!-- -------------------------------------------------------------------------- -->
                                                     <div class="top-it-project-card">
 
                                                         <!-- ---------------------------------------------------------------- -->
                                                         <!-- Checkbox | Details -->
                                                         <!-- ---------------------------------------------------------------- -->
-                                                        <input checked type="checkbox" id="chk-details-top-it-project-card-1">
+                                                        <input type="checkbox" id="chk-details-top-it-project-card-1">
 
                                                         <!-- ----------------------------------------------------------- -->
-                                                        <!-- 🟨🟩 [1/4] | Img Container | Top IT Project Card -->
+                                                        <!-- 🟨🟩 [1/3] | Img Container | Top IT Project Card           -->
                                                         <!-- ----------------------------------------------------------- -->
                                                         <div class="img-container-top-it-project-card">
 
@@ -2429,7 +2456,7 @@
                                                         </div>
 
                                                         <!-- ----------------------------------------------------------- -->
-                                                        <!-- 🟨🟩[2/4] | Content Container | Top IT Projects Card -->
+                                                        <!-- 🟨🟩 [2/3] | Content Container | Top IT Projects Card      -->
                                                         <!-- ----------------------------------------------------------- -->
                                                         <div class="content-container-top-it-project-card">
 
@@ -2497,7 +2524,7 @@
                                                                 <!-- ---------------------------------------------------- -->
                                                                 <!-- Detail's Label | -->
                                                                 <!-- ---------------------------------------------------- -->
-                                                                <label for="chk-details-top-it-project-card-1" class="action-drop-down-small" style="background-color: rgb(238, 238, 238);">
+                                                                <label for="chk-details-top-it-project-card-1" class="action-drop-down-medium">
 
                                                                     <div>
                                                                         <div>Details</div>
@@ -2515,7 +2542,7 @@
                                                                     <!-- ------------------------------------------------------------ -->
                                                                     <!-- Link: Zip -->
                                                                     <!-- ------------------------------------------------------------ -->
-                                                                    <a href="" class="action-link-small" target="_blank" style="background-color: rgb(238, 238, 238);">
+                                                                    <a href="" class="action-link-medium" target="_blank">
 
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-download-arrow.png" class="img-h-0-8" alt="img">
                                                                         <div>.zip</div>
@@ -2525,7 +2552,7 @@
                                                                     <!-- ------------------------------------------------------------ -->
                                                                     <!-- Link: GitHub -->
                                                                     <!-- ------------------------------------------------------------ -->
-                                                                    <a href="" class="action-link-small" target="_blank" style="background-color: rgb(238, 238, 238);">
+                                                                    <a href="" class="action-link-medium" target="_blank">
 
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-github.png" class="img-h-0-9" alt="img">
                                                                         <div>GitHub</div>
@@ -2541,7 +2568,7 @@
                                                         </div>
 
                                                         <!-- ----------------------------------------------------------- -->
-                                                        <!-- ➡️🟥[3/4] | Details Container | Top IT Projects Card -->
+                                                        <!-- ➡️🟥 [3/3] | Details Container | Top IT Projects Card      -->
                                                         <!-- ----------------------------------------------------------- -->
                                                         <div id="smooth-open-close-details-top-it-project-1" class="smooth-open-close-container">
 
@@ -4139,39 +4166,37 @@
                                                         </div>
 
 
-
                                                     </div>
 
-                                                    <!-- -------------------------------------------------------------- -->
-                                                    <!-- ➡️🟥 Label | Show More  -->
-                                                    <!-- -------------------------------------------------------------- -->
+                                                    <!-- -------------------------------------------------------------------------- -->
+                                                    <!-- 🟩 [2/3] | Label | Show More  -->
+                                                    <!-- -------------------------------------------------------------------------- -->
                                                     <input type="checkbox" id="chk-show-more-top-it-projects">
-
-                                                    <label for="chk-show-more-top-it-projects" style="margin-top: 2em;" class="action-drop-down-medium">
+                                                    <label for="chk-show-more-top-it-projects" class="action-drop-down-medium">
 
                                                         <div>
-                                                            <div>Show More (2)</div>
+                                                            <div>Show More <span>(2)</span></div>
                                                         </div>
 
                                                         <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-5" alt="img">
 
                                                     </label>
 
-                                                    <!-- ⚠️ Show More Top IT Projects Container | -> Top IT Project.css -->
-
-                                                    <!-- -------------------------------------------------------------- -->
-                                                    <!-- ➡️🟥 ⬇️⬆️ Smooth -->
-                                                    <!-- -------------------------------------------------------------- -->
-                                                    <div id="smooth-more-view-top-it-projects" class="smooth-open-close-container" >
+                                                    <!-- -------------------------------------------------------------------------- -->
+                                                    <!-- 🟩🟨 [3/3] | ⬇️⬆️ Smooth Open Close | Show More Top It Projects           -->
+                                                    <!-- -------------------------------------------------------------------------- -->
+                                                    <div id="css-smooth-open-close-show-more-top-it-projects" class="smooth-open-close-container" >
 
                                                         <div class="overflow-hidden">
 
                                                             <!-- ----------------------------------------------------- -->
-                                                            <!-- Show More View Container Top It Projects -->
+                                                            <!-- Show More Container | Top IT Project Cards -->
                                                             <!-- ----------------------------------------------------- -->
-                                                            <div id="show-more-view-container-top-it-projects">
+                                                            <div id="show-more-container-top-it-project-cards">
 
-                                                                <!-- ⭐ 1  -->
+                                                                <!-- ------------------------------------------------------------- -->
+                                                                <!-- 🟥🟨 Top IT Project Card 2 -->
+                                                                <!-- ------------------------------------------------------------- -->
                                                                 <div class="top-it-project-card">
 
                                                                     <!-- ---------------------------------------------------------------- -->
@@ -5741,7 +5766,9 @@
 
                                                                 </div>
 
-                                                                <!-- ⭐ 2  -->
+                                                                <!-- ------------------------------------------------------------- -->
+                                                                <!-- 🟥🟨 Top IT Project Card 3 -->
+                                                                <!-- ------------------------------------------------------------- -->
                                                                 <div class="top-it-project-card">
 
                                                                     <!-- ---------------------------------------------------------------- -->
@@ -7331,7 +7358,7 @@
                                                 <!-- ----------------------------------------------------------------- -->
                                                 <!-- Radios | Exercices, Leetcode, Mini-Projects -->
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <input checked type="radio" id="radio-more-it-project-exercices" name="name-radio-more-it-projects">
+                                                <input type="radio" id="radio-more-it-project-exercices" name="name-radio-more-it-projects">
                                                 <input type="radio" id="radio-more-it-project-leetcode" name="name-radio-more-it-projects">
                                                 <input type="radio" id="radio-more-it-project-mini-projects" name="name-radio-more-it-projects">
 

@@ -30,7 +30,7 @@
 }
 
 /* show content */
-#chk-selected-category-top-it-projects:checked ~ #header-top-it-projects #smooth-open-close-nav-top-it-projects {
+#chk-selected-category-top-it-projects:checked ~ #header-top-it-projects #css-smooth-open-close-nav-top-it-projects {
 
   grid-template-rows: 1fr;
 
@@ -39,6 +39,13 @@
 /* ------------------------------------------------------------- */
 /* Handlings | Radios ( web-desgin, web-dev, software-dev )
 /* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-category-top-it-projects"] {
+
+  display: none;
+
+}
 
 /* set background */
 #radio-category-top-it-project-web-desgin:checked ~ #header-top-it-projects label[for="radio-category-top-it-project-web-desgin"],
@@ -59,45 +66,35 @@
 }
 
 
-/* ------------------------------------------------------------- */
-/* Handlings | Radios ( Categories )
-/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* Handlings | Checkbox | Show More ( Top It Project Cards )
+/* ------------------------------------------------------------------------- */
 
 /* default unshown */
-input[name="name-radio-category-top-it-projects"] {
+#chk-show-more-top-it-projects {
 
   display: none;
 
 }
 
-/* set background | label */
+/* set background */
+#chk-show-more-top-it-projects:checked + label {
 
-
-/* set x */
-#radio-category-top-it-project-web-desgin:checked ~ #header-nav-top-it-projects label[for="radio-category-top-it-project-web-desgin"] > .custom-radio-default > img:nth-of-type(1),
-#radio-category-top-it-project-web-dev:checked ~ #header-nav-top-it-projects label[for="radio-category-top-it-project-web-dev"] > .custom-radio-default > img:nth-of-type(1),
-#radio-category-top-it-project-software-dev:checked ~ #header-nav-top-it-projects label[for="radio-category-top-it-project-software-dev"] > .custom-radio-default > img:nth-of-type(1){
-
-  display: flex;
+  background-color: #ff8080;
+  color:black;
 
 }
 
+/* change rotation , img arrow */
+#chk-show-more-top-it-projects:checked + label > img:nth-of-type(1) {
 
+  transform: rotate(180deg);
 
+}
 
+/* show content */
+#chk-show-more-top-it-projects:checked ~ #css-smooth-open-close-show-more-top-it-projects {
 
+  grid-template-rows: 1fr;
 
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------- */
+}

@@ -48,21 +48,6 @@
 }
 
 /* ------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close Nav Top IT Proejcts | Header
-/* ------------------------------------------------------------- */
-
-#smooth-open-close-nav-top-it-projects {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-
-  transition: grid-template-rows 0.3s ease-out;
-
-}
-
-/* ------------------------------------------------------------- */
 /* Nav Top It Projects
 /* ------------------------------------------------------------- */
 
@@ -95,5 +80,40 @@
 
   /* very small mobile */
   width: 100%;
+
+}
+
+/* ------------------------------------------------------------- */
+/* List Container | Top IT Projects Card                         */
+/* ( 1 Card, Show More, 2 Cards )                                */
+/* ------------------------------------------------------------- */
+
+#list-container-top-it-project-cards {
+
+  display: grid;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Label | Show More                                             */
+/* ------------------------------------------------------------- */
+
+label[for="chk-show-more-top-it-projects"] {
+
+  margin-top: 2em;
+  margin-bottom: .5em;
+  justify-self: center;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Show More Container Top It Project Cards      */
+/* ------------------------------------------------------------- */
+
+#show-more-container-top-it-project-cards {
+
+  margin-top: 1.5em;
+  display: grid;
+  row-gap: 3em;
 
 }
