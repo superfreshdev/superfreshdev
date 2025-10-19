@@ -1,0 +1,126 @@
+/* -------------------------------------------------------------- */
+/* > short-info-container-top-it-project-card.css
+/*
+/* : styles short info container top it project card
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Short Info Container | Top IT Project Card
+/* ------------------------------------------------------------- */
+
+.short-info-container-top-it-project-card {
+
+  grid-area: short-info-container-top-it-project-card;
+
+  width: 100%;
+  padding: 1em .8em;
+
+  /* opacity: .3; */
+
+  transition: all .4s;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | Content Container
+/* ------------------------------------------------------------- */
+
+.short-info-container-top-it-project-card > header {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Project Nr Title | Header
+/* ------------------------------------------------------------- */
+
+.short-info-container-top-it-project-card > header > div:nth-of-type(1) {
+
+  height: 1.5em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  border-radius: .4em;
+
+  background-color: #eeeeee;
+  color:#5d5d5d;
+
+}
+
+.short-info-container-top-it-project-card > header > div:nth-of-type(1) > span {
+
+  /* 12.5px */
+  font-size: 12px;
+  /* font-size: .78125em; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | Content Container
+/* ------------------------------------------------------------- */
+
+.short-info-container-top-it-project-card > main {
+
+  margin: 1em 0;
+
+  display: grid;
+  row-gap: .4em;
+
+  /* background-color: green; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main Header | Content Container
+/* ------------------------------------------------------------- */
+
+.short-info-container-top-it-project-card > main > header {
+
+  /* 18px */
+  font-size: 1.125em;
+  font-weight: bold;
+
+  color: rgb(35, 35, 35);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main Main | Content Container
+/* ------------------------------------------------------------- */
+
+.short-info-container-top-it-project-card > main > main {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+  color:rgb(121, 121, 121);
+
+  /* color:rgb(33, 33, 33); */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav | Content Container
+/* ------------------------------------------------------------- */
+
+.short-info-container-top-it-project-card > nav {
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+  /* background-color: green; */
+
+}

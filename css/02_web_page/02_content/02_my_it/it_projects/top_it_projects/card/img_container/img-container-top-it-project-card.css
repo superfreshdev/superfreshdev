@@ -1,0 +1,29 @@
+/* -------------------------------------------------------------- */
+/* > img-container-top-it-project-card.css
+/*
+/* : styles img container top it project card
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Img Container | Top IT Project Card
+/* ------------------------------------------------------------- */
+
+.img-container-top-it-project-card {
+
+  grid-area: img-container-top-it-project-card;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.img-container-top-it-project-card > img {
+
+  width: 100%;
+  border-radius: 1em 1em 0 0em;
+
+}

@@ -16,8 +16,6 @@
 
 }
 
-
-
 /* -------------------------------------------------------------- */
 /* >= 360px width */
 /* -------------------------------------------------------------- */
@@ -444,6 +442,8 @@
 @media (min-width: 800px ) {
 
 
+
+
   /* ------------------------------------------------------------- */
   /* More IT Project | Card List Containers */
   /* ------------------------------------------------------------- */
@@ -532,7 +532,7 @@
 
       grid-template-areas:
 
-        'img-container-top-it-project-card content-container-top-it-project-card'
+        'img-container-top-it-project-card short-info-container-top-it-project-card'
         'details-container-top-it-project-card details-container-top-it-project-card'
       ;
 
@@ -556,7 +556,7 @@
   /* Top IT Project Card | Content Container |                                */
   /* ------------------------------------------------------------------------ */
 
-    .content-container-top-it-project-card {
+    .short-info-container-top-it-project-card {
 
       width: 100%;
 
@@ -565,48 +565,50 @@
     }
 
   /* ------------------------------------------------------------------------ */
-  /* Top IT Project Card | Content Container | Header                         */
+  /* Top IT Project Card | Short Info Container | Header                      */
   /* ------------------------------------------------------------------------ */
 
-    .content-container-top-it-project-card > header {
+  .short-info-container-top-it-project-card > header {
 
 
       margin-top: 0em;
 
-    }
-
-  /* ----------------------------------------------------------------------------------- */
-  /*  Top IT Project Card | Tech Stack Container
-  /* ----------------------------------------------------------------------------------- */
-
-  .tech-stack-container-top-it-project-card  {
-
-    justify-items: center;
-
   }
 
-  /* header */
-  .tech-stack-container-top-it-project-card > header {
+  /* ----------------------------------------------------------------------------------- */
+  /*  Top IT Project Card | Tech Stack Container | Main */
+  /* ----------------------------------------------------------------------------------- */
 
-    justify-self: flex-start;
-
-  }
-
-  /* main */
   .tech-stack-container-top-it-project-card > main {
 
-    padding: 0 .5em;
+    padding: 0;
 
     display: grid;
-    grid: auto / auto auto auto auto;
+    grid: auto / 1fr 1fr 1fr 1fr;
+
+    /* background-color: red; */
+
+  }
+
+  /* main > tech stack content box */
+  .tech-stack-content-box {
+
+    padding: 1.5em 1em;
+
+  }
+
+  /* main > div lines */
+  .tech-stack-container-top-it-project-card > main > div:not(:last-child) {
+
+    border-right: 2px solid #ebebeb;
 
   }
 
   /* ----------------------------------------------------------------------------------- */
-  /*  Top IT Project Card | Video Link Tutorial | Main
+  /*  Top IT Project Card | Video Link Tutorial | Main */
   /* ----------------------------------------------------------------------------------- */
 
-  .video-link-tutorial-container-top-it-project-card > main {
+  .video-link-container-top-it-project-card > main {
 
     grid: auto / 1fr 1fr;
     align-items: flex-start;
