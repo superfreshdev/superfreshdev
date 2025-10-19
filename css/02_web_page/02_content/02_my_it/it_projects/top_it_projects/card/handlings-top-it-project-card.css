@@ -70,8 +70,8 @@
 
 /* unshow img + */
 #chk-tech-stack-top-it-project-1:checked ~ .tech-stack-container-top-it-project-card label[for="chk-tech-stack-top-it-project-1"] > img:nth-of-type(1),
-#chk-tech-stack-top-it-project-2 ~ .tech-stack-container-top-it-project-card label[for="chk-tech-stack-top-it-project-2"] > img:nth-of-type(1),
-#chk-tech-stack-top-it-project-3 ~ .tech-stack-container-top-it-project-card label[for="chk-tech-stack-top-it-project-3"] > img:nth-of-type(1) {
+#chk-tech-stack-top-it-project-2:checked ~ .core-features-container-top-it-project-card label[for="chk-tech-stack-top-it-project-2"] > img:nth-of-type(1),
+#chk-tech-stack-top-it-project-3:checked ~ .video-link-container-top-it-project-card label[for="chk-tech-stack-top-it-project-3"] > img:nth-of-type(1) {
 
   display: none;
 
@@ -79,8 +79,8 @@
 
 /* unshow img 2 */
 #chk-tech-stack-top-it-project-1:checked ~ .tech-stack-container-top-it-project-card label[for="chk-tech-stack-top-it-project-1"] > img:nth-of-type(2),
-#chk-tech-stack-top-it-project-2 ~ .tech-stack-container-top-it-project-card label[for="chk-tech-stack-top-it-project-2"] > img:nth-of-type(2),
-#chk-tech-stack-top-it-project-3 ~ .tech-stack-container-top-it-project-card label[for="chk-tech-stack-top-it-project-3"] > img:nth-of-type(2) {
+#chk-tech-stack-top-it-project-2:checked ~ .core-features-container-top-it-project-card label[for="chk-tech-stack-top-it-project-2"] > img:nth-of-type(2),
+#chk-tech-stack-top-it-project-3:checked ~ .video-link-container-top-it-project-card label[for="chk-tech-stack-top-it-project-3"] > img:nth-of-type(2) {
 
   display: flex;
 

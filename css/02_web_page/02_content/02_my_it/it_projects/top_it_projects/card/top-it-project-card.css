@@ -53,7 +53,7 @@
   background-color: #cacaca;
   color:rgb(57, 57, 57);
 
-  border-radius: .8em .8em 0 0;
+  border-radius: .8em;
 
   user-select: none;
   cursor: pointer;

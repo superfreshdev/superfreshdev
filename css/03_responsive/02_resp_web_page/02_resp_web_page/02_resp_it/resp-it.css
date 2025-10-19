@@ -579,7 +579,7 @@
   /*  Top IT Project Card | Tech Stack Container | Main */
   /* ----------------------------------------------------------------------------------- */
 
-  .tech-stack-container-top-it-project-card > main {
+  #tech-stack-content-container-top-it-project-card {
 
     padding: 0;
 
@@ -608,7 +608,7 @@
   /*  Top IT Project Card | Video Link Tutorial | Main */
   /* ----------------------------------------------------------------------------------- */
 
-  .video-link-container-top-it-project-card > main {
+  #video-link-content-container-top-it-project-card {
 
     grid: auto / 1fr 1fr;
     align-items: flex-start;
