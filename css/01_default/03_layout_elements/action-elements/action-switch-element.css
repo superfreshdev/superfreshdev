@@ -19,7 +19,10 @@
 
   border-radius: 1.5em 1.5em 1.5em 1.5em;
 
-  background-color: rgb(95, 95, 95);
+  /* background-color: rgb(95, 95, 95); */
+  background-color: rgb(104, 104, 104);
+
+
 
   cursor: pointer;
   transition: all .4s;
@@ -43,7 +46,9 @@
 
   border-radius: 1.5em 1.5em 1.5em 1.5em;
 
-  background-color: rgb(95, 95, 95);
+  /* background-color: rgb(95, 95, 95); */
+
+  background-color: rgb(104, 104, 104);
 
   user-select: none;
 

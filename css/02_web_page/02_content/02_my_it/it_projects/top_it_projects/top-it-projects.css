@@ -54,9 +54,9 @@
 #nav-top-it-projects {
 
   width: 100%;
-  margin-top: 1.5em;
+  margin-top: 1em;
 
-  padding: .6em .6em;
+  /* padding: .6em .6em; */
 
   /* mobile */
   display: flex;
@@ -80,6 +80,11 @@
 
   /* very small mobile */
   width: 100%;
+  font-size: 14.5px;
+
+  background-color: rgb(225, 225, 225);
+
+  opacity: .4;
 
 }
 

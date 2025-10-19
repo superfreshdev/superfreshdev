@@ -276,7 +276,8 @@
 
     /* dont let widht 100% */
     width: auto;
-    justify-self: flex-end;
+    /* justify-self: flex-end; */
+    justify-self: flex-start;
 
   }
 
