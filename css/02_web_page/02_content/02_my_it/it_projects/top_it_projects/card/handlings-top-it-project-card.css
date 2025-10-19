@@ -29,18 +29,18 @@
 }
 
 /* set background */
-#chk-details-top-it-project-card-1:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-card-1"],
-#chk-details-top-it-project-card-2:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-card-2"],
-#chk-details-top-it-project-card-3:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-card-3"] {
+#chk-details-top-it-project-card-1:checked ~ .short-info-container-top-it-project-card label[for="chk-details-top-it-project-card-1"],
+#chk-details-top-it-project-card-2:checked ~ .short-info-container-top-it-project-card label[for="chk-details-top-it-project-card-2"],
+#chk-details-top-it-project-card-3:checked ~ .short-info-container-top-it-project-card label[for="chk-details-top-it-project-card-3"] {
 
   background-color: #ff8080;
 
 }
 
 /* change img arrow rotation */
-#chk-details-top-it-project-card-1:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-card-1"] > img,
-#chk-details-top-it-project-card-2:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-card-2"] > img,
-#chk-details-top-it-project-card-3:checked ~ .content-container-top-it-project-card label[for="chk-details-top-it-project-card-3"] > img {
+#chk-details-top-it-project-card-1:checked ~ .short-info-container-top-it-project-card label[for="chk-details-top-it-project-card-1"] > img,
+#chk-details-top-it-project-card-2:checked ~ .short-info-container-top-it-project-card label[for="chk-details-top-it-project-card-2"] > img,
+#chk-details-top-it-project-card-3:checked ~ .short-info-container-top-it-project-card label[for="chk-details-top-it-project-card-3"] > img {
 
   transform: rotate(180deg);
 
