@@ -61,7 +61,6 @@
 /* Div 1 | Div | Action Radio
 /* -------------------------------------------------------------- */
 
-.action-radio-small > div:nth-of-type(1) > div,
 .action-radio-medium > div:nth-of-type(1) > div,
 .action-radio-big > div:nth-of-type(1) > div {
 
@@ -76,8 +75,13 @@
 
 .action-radio-small {
 
-  height: 1.8em;
+  height: 2.1em;
 
+}
+
+.action-radio-small > div:nth-of-type(1) > div {
+
+  font-size: 13px;
 }
 
 /* -------------------------------------------------------------- */

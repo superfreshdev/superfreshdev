@@ -15,3 +15,88 @@
   row-gap: 2em;
 
 }
+
+/* -------------------------------------------------------------- */
+/* Header | IT Projects Container
+/* -------------------------------------------------------------- */
+
+#header-it-project-container {
+
+  display: grid;
+  justify-content: space-between;
+
+  column-gap: .8em;
+  /* row-gap: .8em; */
+
+  grid-template-areas:
+
+  'header-block-it-project drop-down-category-it-project'
+  'nav-content-it-project nav-category-it-project';
+
+
+  /* background-color: rgb(202, 202, 202); */
+
+}
+
+/* -------------------------------------------------------------- */
+/* [1/4] | Header Content Block
+/* -------------------------------------------------------------- */
+
+#header-it-project-container > .header-content-block:nth-of-type(1) {
+
+  grid-area: header-block-it-project;
+
+}
+
+/* -------------------------------------------------------------- */
+/* [2/4] | Drop Down Category
+/* -------------------------------------------------------------- */
+
+label[for="chk-selected-category-top-it-projects"] {
+
+  width: 11.5em;
+  grid-area: drop-down-category-it-project;
+
+}
+
+/* -------------------------------------------------------------- */
+/* [3/4] | Nav Content
+/* -------------------------------------------------------------- */
+
+#nav-content-it-projects {
+
+  grid-area: nav-content-it-project;
+
+  margin-top: 1em;
+
+  display: flex;
+  align-content: center;
+  column-gap: .4em;
+
+  border-radius: .8em;
+
+  background-color: rgba(225, 225, 225, 1);
+  opacity: .4;
+
+}
+
+/* overwrite default layout */
+#nav-content-it-projects > label {
+
+  border-radius: .8em;
+  /* opacity: .4; */
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* [4/4] | Nav Category
+/* -------------------------------------------------------------- */
+
+#smooth-nav-category-it-projects {
+
+  grid-area: nav-category-it-project;
+
+  border: 1px solid black;
+
+}
