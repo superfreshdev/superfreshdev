@@ -31,11 +31,11 @@
 
 .custom-radio-small {
 
-    min-height: .8em;
-    min-width: .8em;
+    min-height: .9em;
+    min-width: .9em;
 
-    max-height: .8em;
-    max-width: .8em;
+    max-height: .9em;
+    max-width: .9em;
 }
 
 .custom-radio-small > img:nth-of-type(1) {

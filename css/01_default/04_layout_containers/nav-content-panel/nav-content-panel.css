@@ -1,0 +1,122 @@
+/* -------------------------------------------------------------- */
+/* > nav-content-panel.css
+/* : styles nav content panel
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Nav Content Panel ( small, medium )
+/* -------------------------------------------------------------- */
+
+.nav-content-panel-small,
+.nav-content-panel-medium {
+
+  display: flex;
+  align-content: center;
+
+  border-radius: .8em;
+
+  font-weight: bold;
+
+  border: 1px solid rgb(215, 215, 215);
+
+  background-color: rgb(243, 243, 243);
+
+  /* opacity: .5; */
+
+}
+
+/* seperator lines */
+.nav-content-panel-small > label:not(:last-child),
+.nav-content-panel-medium > label:not(:last-child) {
+
+  border-right: 2px solid rgb(191, 191, 191);
+}
+
+.nav-content-panel-small > label:nth-of-type(1),
+.nav-content-panel-medium > label:nth-of-type(1) {
+
+  border-radius: .8em 0 0 .8em;
+}
+
+.nav-content-panel-small > label:last-child,
+.nav-content-panel-medium > label:last-child {
+
+  border-radius: 0 .8em .8em 0;
+}
+
+
+/* -------------------------------------------------------------- */
+/* Label (Default) | Nav Content Panel ( small, medium )
+/* -------------------------------------------------------------- */
+
+.nav-content-panel-small > label,
+.nav-content-panel-medium > label {
+
+  padding: 0 .6em;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .6em;
+
+  background-color: #e0e0e0;
+  opacity: .4;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.nav-content-panel-small > label:hover,
+.nav-content-panel-medium > label:hover {
+
+  background-color: wheat;
+
+}
+
+.nav-content-panel-small > label > div:nth-of-type(1),
+.nav-content-panel-medium > label > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Small | Nav Content Panel
+/* -------------------------------------------------------------- */
+
+.nav-content-panel-small {
+
+  height: 2em;
+
+}
+
+/* label */
+.nav-content-panel-small > label > div:nth-of-type(1) > div {
+
+  font-size: 13.5px;
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* Medium | Nav Content Panel
+/* -------------------------------------------------------------- */
+
+.nav-content-panel-medium {
+
+  height: 2.3em;
+
+}
+
+/* label */
+.nav-content-panel-medium > label > div:nth-of-type(1) > div {
+
+  font-size: 14.5px;
+
+}

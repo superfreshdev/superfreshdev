@@ -4,67 +4,10 @@
 /* -------------------------------------------------------------- */
 
 
-/* ------------------------------------------------------------- */
-/* Handlings | Checkbox ( Selected Category )
-/* ------------------------------------------------------------- */
 
-/* default unshown */
-#chk-selected-category-top-it-projects {
 
-  display: none;
 
-}
-
-/* set background | label */
-#chk-selected-category-top-it-projects:checked ~ #header-top-it-projects label[for="chk-selected-category-top-it-projects"] {
-
-  background-color: rgb(239, 113, 113);
-
-}
-
-/* change img arrow rotation */
-#chk-selected-category-top-it-projects:checked ~ #header-top-it-projects label[for="chk-selected-category-top-it-projects"] > img:nth-of-type(1) {
-
-  transform: rotate(180deg);
-
-}
-
-/* show content */
-#chk-selected-category-top-it-projects:checked ~ #header-top-it-projects #css-smooth-open-close-nav-top-it-projects {
-
-  grid-template-rows: 1fr;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Handlings | Radios ( web-desgin, web-dev, software-dev )
-/* ------------------------------------------------------------- */
-
-/* default unshown */
-input[name="name-radio-category-top-it-projects"] {
-
-  display: none;
-
-}
-
-/* set background */
-#radio-category-top-it-project-web-desgin:checked ~ #header-top-it-projects label[for="radio-category-top-it-project-web-desgin"],
-#radio-category-top-it-project-web-dev:checked ~ #header-top-it-projects label[for="radio-category-top-it-project-web-dev"],
-#radio-category-top-it-project-software-dev:checked ~ #header-top-it-projects label[for="radio-category-top-it-project-software-dev"] {
-
-  background-color: wheat;
-  opacity: 1;
-
-}
-
-/* set x */
-#radio-category-top-it-project-web-desgin:checked ~ #header-top-it-projects label[for="radio-category-top-it-project-web-desgin"] > .custom-radio-default > img:nth-of-type(1),
-#radio-category-top-it-project-web-dev:checked ~ #header-top-it-projects label[for="radio-category-top-it-project-web-dev"] > .custom-radio-default > img:nth-of-type(1),
-#radio-category-top-it-project-software-dev:checked ~ #header-top-it-projects label[for="radio-category-top-it-project-software-dev"] > .custom-radio-default > img:nth-of-type(1) {
-
-  display: flex;
-
-}
+/* ⚠️⚠️⚠️ show more top it - projects */
 
 
 /* ------------------------------------------------------------------------- */

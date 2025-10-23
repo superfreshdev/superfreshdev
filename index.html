@@ -136,13 +136,18 @@
                 <!-- ------------------------------------- -->
                 <!-- Header Containers -->
                 <!-- ------------------------------------- -->
-                <link rel="stylesheet" href="css/01_default/04_layout_containers/header-containers/header-beginning-container.css">
+                <link rel="stylesheet" href="css/01_default/04_layout_containers/header-containers/header-content-container.css">
                 <link rel="stylesheet" href="css/01_default/04_layout_containers/header-containers/header-stickers.css">
 
                 <!-- ------------------------------------- -->
                 <!-- Page Content Card -->
                 <!-- ------------------------------------- -->
                 <link rel="stylesheet" href="css/01_default/04_layout_containers/page_content_card/page-content-card.css">
+
+                <!-- ------------------------------------- -->
+                <!-- Nav Content Panel -->
+                <!-- ------------------------------------- -->
+                <link rel="stylesheet" href="css/01_default/04_layout_containers/nav-content-panel/nav-content-panel.css">
 
                 <!-- ------------------------------------- -->
                 <!-- Info Containers -->
@@ -296,6 +301,7 @@
 
                     <!-- default  -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/it-projects.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/handlings-it-projects.css">
 
                         <!-- ---------------------------------------------- -->
                         <!-- 🟩 [1/2] | Top IT Projects  -->
@@ -781,27 +787,27 @@
                                                         <input type="checkbox" id="chk-open-read-more-about">
 
                                                         <!-- -------------------------------------------------------- -->
-                                                        <!-- ➡️🟥 [1/2] | Header Read More About-->
+                                                        <!-- ➡️🟥 [1/2] | Header Content Container -->
                                                         <!-- -------------------------------------------------------- -->
-                                                        <div class="header-beginning-container">
+                                                        <div class="header-content-container">
 
                                                             <!-- ------------------------------------------------------ -->
-                                                            <!-- [1/2] | Header Title Block -->
+                                                            <!-- [1/2] | Header Content Block -->
                                                             <!-- ------------------------------------------------------ -->
-                                                            <div class="header-beginning-tilte-box">
+                                                            <div class="header-content-block">
 
                                                                 <img src="media/img/content/01-default/clipart/me-hi.png"
                                                                     class="img-header-info-about" alt="img">
 
                                                                 <div>
-                                                                    <div class="header-beginning-title">Read More</div>
-                                                                    <div class="header-beginning-sub-title">» Lifecycle | Hobbies | Story </div>
+                                                                    <div class="header-content-title">Read More</div>
+                                                                    <div class="header-content-sub-title">» Lifecycle | Hobbies | Story </div>
                                                                 </div>
 
                                                             </div>
 
                                                             <!-- ------------------------------------------------------ -->
-                                                            <!-- [2/2] | Action Drop Down Element -->
+                                                            <!-- [2/2] | Drop Down Element                              -->
                                                             <!-- ------------------------------------------------------ -->
                                                             <label for="chk-open-read-more-about" class="action-drop-down-medium">
 
@@ -1624,21 +1630,21 @@
                                                     <input type="checkbox" id="chk-mindset-about">
 
                                                     <!-- ------------------------------------------------------------ -->
-                                                    <!-- Header Beginning Container (🟣) -->
+                                                    <!-- Header Content Container (🟣) -->
                                                     <!-- ------------------------------------------------------------ -->
-                                                    <div class="header-beginning-container">
+                                                    <div class="header-content-container">
 
                                                         <!-- -------------------------------------- -->
-                                                        <!-- Title Box (🟣) -->
+                                                        <!-- Header Content Block (🟣) -->
                                                         <!-- -------------------------------------- -->
-                                                        <div class="header-beginning-tilte-box">
+                                                        <div class="header-content-block">
 
                                                             <img src="media/img/content/01-default/clipart/focus-modified.png"
                                                                 id="img-header-mindset-about" alt="img">
 
                                                             <div>
-                                                                <div class="header-beginning-title" >Mindset</div>
-                                                                <div class="header-beginning-sub-title" >» 2 Step's </div>
+                                                                <div class="header-content-title" >Mindset</div>
+                                                                <div class="header-content-sub-title" >» 2 Step's </div>
                                                             </div>
 
                                                         </div>
@@ -2252,34 +2258,113 @@
                                         <div id="it-projects-container">
 
                                             <!-- -------------------------------------------------------------------------------- -->
-                                            <!-- ❇️ Neu |  -->
+                                            <!-- ➡️🟥 Page Content Card White | IT Projects  -->
                                             <!-- -------------------------------------------------------------------------------- -->
                                             <div class="page-content-card-white">
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- Header | It Project Container -->
+                                                <!-- Radios | Web-Desgin, Web-Dev, Software-Dev, ... (js) -->
+                                                <!-- ------------------------------------------------------------ -->
+                                                <input checked type="radio" id="radio-category-it-project-1" name="name-radio-topic-category-it-projects">
+                                                <input type="radio" id="radio-category-it-project-2" name="name-radio-topic-category-it-projects">
+                                                <input type="radio" id="radio-category-it-project-3" name="name-radio-topic-category-it-projects">
+
+                                                <!-- ------------------------------------------------------------ -->
+                                                <!-- ➡️🟥[1/2] | Header | It Project Container -->
                                                 <!-- ------------------------------------------------------------ -->
                                                 <div id="header-it-project-container">
 
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <!-- [1/4] Header -->
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <div class="header-content-block">
+                                                    <!-- ------------------------------------------------------------------ -->
+                                                    <!-- Checkbox | Selected Category -->
+                                                    <!-- ------------------------------------------------------------------ -->
+                                                    <input type="checkbox" id="chk-selected-category-top-it-projects">
 
-                                                        <!-- img -->
+                                                    <!-- ------------------------------------------------------------------ -->
+                                                    <!-- ➡️🟥[1/3] | Nav Container | IT Projects  -->
+                                                    <!-- ------------------------------------------------------------------ -->
+                                                    <div id="nav-container-it-projects">
+
+                                                        <!-- ------------------------------------------------------------------ -->
+                                                        <!-- ➡️🟥 IMG ICON Header  -->
+                                                        <!-- ------------------------------------------------------------------ -->
                                                         <img src="media/img/icons/03-emojies/01-things/emoji-rocket.png"
-                                                                    id="img-header-top-it-project" alt="img">
+                                                                        id="img-header-top-it-project" alt="img" style="display: none;">
 
-                                                        <!-- title & sub-title -->
-                                                        <div>
-                                                            <div class="header-beginning-title" >Top IT-Project's</div>
-                                                            <div class="header-beginning-sub-title">» Web-Design | Web-Dev | Software-Dev </div>
-                                                        </div>
+                                                        <!-- ------------------------------------------------------------------ -->
+                                                        <!-- 🟥 Nav | IT Project Container (js) -->
+                                                        <!-- ------------------------------------------------------------------ -->
+                                                        <nav class="nav-content-panel-medium">
+
+
+                                                            <!-- web-design -->
+                                                            <label for="radio-category-it-project-1">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-art.png" class="img-h-1" alt="img">
+                                                                    <div>Web-Design <span>(3)</span></div>
+
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                            <!-- web-dev -->
+                                                            <label for="radio-category-it-project-2">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-0-9" alt="img">
+                                                                    <div>Web-Dev <span>(3)</span></div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                            <!-- software-dev -->
+                                                            <label for="radio-category-it-project-3">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-0-9" alt="img">
+                                                                    <div>Software-Dev <span>(03)</span></div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                        </nav>
+
 
                                                     </div>
 
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <!-- [2/4] Drop Down Category -->
+                                                    <!-- 🟩🟨 [2/3] Drop Down Category -->
                                                     <!-- ----------------------------------------------------------- -->
                                                     <label for="chk-selected-category-top-it-projects" class="action-drop-down-medium">
 
@@ -2290,7 +2375,7 @@
                                                                 <!-- <img src="media/img/icons/02-icon-colors/01-black/black-binary-small.png" class="img-h-1-1" alt="img"> -->
                                                                 <img src="media/img/icons/02-icon-colors/01-black/black-rocket.png" class="img-h-1-1" alt="img">
                                                                 <!-- <div>More IT-Project's</div> -->
-                                                                <div>Top IT-Project's</div>
+                                                                <div>Top IT-Project's <span>(9)</span></div>
                                                             </div>
 
                                                             <!-- ---------------------------------------- -->
@@ -2302,83 +2387,9 @@
                                                     </label>
 
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <!-- [3/4] Nav Content -->
+                                                    <!-- 🟩🟨 [3/3] Drop Down Category List (js) -->
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <div id="nav-content-it-projects">
-
-                                                        <!-- ---------------------------------------------------------------- -->
-                                                        <!-- [1/3] | Label | Web Desgin -->
-                                                        <!-- ---------------------------------------------------------------- -->
-                                                        <label for="radio-category-top-it-project-web-desgin" class="action-radio-small">
-
-                                                            <!-- -------------------------------------------- -->
-                                                            <!-- Title -->
-                                                            <!-- -------------------------------------------- -->
-                                                            <div>
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-art.png" class="img-h-1" alt="img">
-                                                                <div>Web-Design (3)</div>
-                                                            </div>
-
-                                                            <!-- -------------------------------------------- -->
-                                                            <!-- Custom Radio -->
-                                                            <!-- -------------------------------------------- -->
-                                                            <div class="custom-radio-small">
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                            </div>
-
-                                                        </label>
-
-                                                        <!-- ---------------------------------------------------------------- -->
-                                                        <!-- [2/3] | Label | Web Dev -->
-                                                        <!-- ---------------------------------------------------------------- -->
-                                                        <label for="radio-category-top-it-project-web-dev" class="action-radio-small">
-
-                                                            <!-- -------------------------------------------- -->
-                                                            <!-- Title -->
-                                                            <!-- -------------------------------------------- -->
-                                                            <div>
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-1" alt="img">
-                                                                <div>Web-Dev (3)</div>
-                                                            </div>
-
-                                                            <!-- -------------------------------------------- -->
-                                                            <!-- Custom Radio -->
-                                                            <!-- -------------------------------------------- -->
-                                                            <div class="custom-radio-small">
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                            </div>
-
-                                                        </label>
-
-                                                        <!-- ---------------------------------------------------------------- -->
-                                                        <!-- [3/3] | Label | Software Dev -->
-                                                        <!-- ---------------------------------------------------------------- -->
-                                                        <label for="radio-category-top-it-project-software-dev" class="action-radio-small">
-
-                                                            <!-- -------------------------------------------- -->
-                                                            <!-- Title -->
-                                                            <!-- -------------------------------------------- -->
-                                                            <div>
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1" alt="img">
-                                                                <div>Software-Dev (3)</div>
-                                                            </div>
-
-                                                            <!-- -------------------------------------------- -->
-                                                            <!-- Custom Radio -->
-                                                            <!-- -------------------------------------------- -->
-                                                            <div class="custom-radio-small">
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                            </div>
-
-
-                                                        </label>
-
-                                                    </div>
-
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <!-- [4/4] Nav Category -->
-                                                    <!-- ----------------------------------------------------------- -->
-                                                    <div id="smooth-nav-category-it-projects" class="smooth-open-close-container">
+                                                    <div id="smooth-drop-down-category-list-it-projects" class="smooth-open-close-container">
 
                                                         <!-- ---------------------------------------------------- -->
                                                         <!-- Overflow Hidden -->
@@ -2386,12 +2397,56 @@
                                                         <div class="overflow-hidden">
 
                                                             <!-- ---------------------------------------------------- -->
-                                                            <!-- Nav Category Top It Project -->
+                                                            <!-- Drop Down Category List | IT Projects (js) -->
                                                             <!-- ---------------------------------------------------- -->
-                                                            <nav id="nav-category-top-it-project">
+                                                            <nav id="drop-down-category-list-it-projects">
 
-                                                                <div>Top IT-Projects</div>
-                                                                <div>More IT-Projects</div>
+                                                                <!-- ------------------------------------------------------ -->
+                                                                <!-- Label | Top IT Projects -->
+                                                                <!-- ------------------------------------------------------ -->
+                                                                <input checked type="radio" id="radio-category-top-it-projects" name="name-radio-category-it-projects">
+                                                                <label for="radio-category-top-it-projects" class="action-drop-down-medium">
+
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <!-- Title  -->
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <div>
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-rocket.png" class="img-h-1" alt="img">
+                                                                        <div>Top IT-Projects <span>(9)</span></div>
+                                                                    </div>
+
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <!-- Custom Radio -->
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <div class="custom-radio-small">
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                    </div>
+
+
+                                                                </label>
+                                                                <!-- ------------------------------------------------------ -->
+                                                                <!-- Label | More IT Projects -->
+                                                                <!-- ------------------------------------------------------ -->
+                                                                <input type="radio" id="radio-category-more-it-projects" name="name-radio-category-it-projects">
+                                                                <label for="radio-category-more-it-projects" class="action-drop-down-medium">
+
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <!-- Title  -->
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <div>
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-binary-small.png" class="img-h-1" alt="img">
+                                                                        <div>More IT-Projects <span>(34)</span></div>
+                                                                    </div>
+
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <!-- Custom Radio -->
+                                                                    <!-- -------------------------------------------- -->
+                                                                    <div class="custom-radio-small">
+                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                    </div>
+
+
+                                                                </label>
 
                                                             </nav>
 
@@ -2402,240 +2457,27 @@
 
                                                 </div>
 
+                                                <!-- ------------------------------------------------------------ -->
+                                                <!-- 🟥[2/3] | Top IT Projects Container -->
+                                                <!-- ------------------------------------------------------------ -->
+                                                <div id="top-it-projects-container">
+                                                    TOP IT Projects Container
+                                                </div>
+
+                                                <!-- ------------------------------------------------------------ -->
+                                                <!-- 🟥[3/3] | More IT Projects Container -->
+                                                <!-- ------------------------------------------------------------ -->
+                                                 <div id="more-it-projects-container">
+                                                    More IT Projects Container
+                                                </div>
+
                                             </div>
 
                                             <!-- ------------------------------------------------------------ -->
-                                            <!-- ➡️🟥 [1/2] | Top IT Projects Container                      -->
+                                            <!-- 🟥 [1/2] | Top IT Projects Container                      -->
                                             <!-- ------------------------------------------------------------ -->
                                             <div id="top-it-projects-container" class="page-content-card-white">
 
-                                                <!-- ----------------------------------------------------------------- -->
-                                                <!-- 🟨(js) Checkbox | Selected Category -->
-                                                <!-- ----------------------------------------------------------------- -->
-                                                <!-- ❇️ -->
-                                                <!-- <input checked type="checkbox" id="chk-selected-category-it-projects"> -->
-                                                <input checked type="checkbox" id="chk-selected-category-top-it-projects">
-
-                                                <!-- ----------------------------------------------------------------- -->
-                                                <!-- 🟨(js) Radios | Categories ( web-design, web-dev, software-dev ) -->
-                                                <!-- ----------------------------------------------------------------- -->
-                                                <input type="radio" id="radio-category-top-it-project-web-desgin" name="name-radio-category-top-it-projects">
-                                                <input type="radio" id="radio-category-top-it-project-web-dev" name="name-radio-category-top-it-projects">
-                                                <input type="radio" id="radio-category-top-it-project-software-dev" name="name-radio-category-top-it-projects">
-
-                                                <!-- ------------------------------------------------------------------------- -->
-                                                <!-- 🟩 [1/2] Header -->
-                                                <!-- ------------------------------------------------------------------------- -->
-                                                <header id="header-top-it-projects">
-
-
-
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <!-- 🟣 Header Beginning Container                                -->
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <div class="header-beginning-container">
-
-                                                        <!-- -------------------------------------- -->
-                                                        <!-- 🟨Header Beginning Title Box ( 🟣 ) -->
-                                                        <!-- -------------------------------------- -->
-                                                        <div class="header-beginning-tilte-box" style="display: none;">
-
-                                                            <img src="media/img/icons/03-emojies/01-things/emoji-rocket.png"
-                                                                id="img-header-top-it-project" alt="img">
-
-                                                            <div>
-                                                                <div class="header-beginning-title" >Top IT-Project's</div>
-                                                                <div class="header-beginning-sub-title" style="display: none;">» Web-Design | Web-Dev | Software-Dev </div>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <!-- ----------------------------------------------------------------- -->
-                                                        <!-- Nav My Top It Projects -->
-                                                        <!-- ----------------------------------------------------------------- -->
-                                                        <div id="nav-top-it-projects">
-
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <!-- [1/3] | Label | Web Desgin -->
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <label for="radio-category-top-it-project-web-desgin" class="action-radio-medium">
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Title -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-art.png" class="img-h-1" alt="img">
-                                                                        <div>Web-Design (3)</div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-default">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <!-- [2/3] | Label | Web Dev -->
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <label for="radio-category-top-it-project-web-dev" class="action-radio-medium">
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Title -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-1" alt="img">
-                                                                        <div>Web-Dev (3)</div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-default">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <!-- [3/3] | Label | Software Dev -->
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <label for="radio-category-top-it-project-software-dev" class="action-radio-medium">
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Title -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1" alt="img">
-                                                                        <div>Software-Dev (3)</div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-default">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-
-                                                                </label>
-
-                                                        </div>
-
-                                                        <!-- -------------------------------------- -->
-                                                        <!-- 🟨Action Content Element -->
-                                                        <!-- -------------------------------------- -->
-                                                        <label for="chk-selected-category-top-it-projects" class="action-drop-down-medium">
-
-                                                            <!-- ---------------------------------------- -->
-                                                            <!-- Title Block -->
-                                                            <!-- ---------------------------------------- -->
-                                                            <div>
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-rocket.png" class="img-h-1-1" alt="img">
-                                                                <div>Top IT-Project's</div>
-                                                            </div>
-
-                                                            <!-- ---------------------------------------- -->
-                                                            <!-- Img Arrow (open/close) -->
-                                                            <!-- ---------------------------------------- -->
-                                                            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
-                                                                class="img-h-0-5" alt="img">
-
-                                                        </label>
-
-                                                    </div>
-
-                                                    <!-- ----------------------------------------------------------------- -->
-                                                    <!-- ⬇️⬆️ | Smooth Open Close | Nav Top IT Projects -->
-                                                    <!-- ----------------------------------------------------------------- -->
-                                                    <div id="css-smooth-open-close-nav-top-it-projects" class="smooth-open-close-container">
-
-                                                        <!-- -------------------------------------------------------- -->
-                                                        <!-- Overflow Hidden -->
-                                                        <!-- -------------------------------------------------------- -->
-                                                        <div class="overflow-hidden">
-
-                                                            <!-- ----------------------------------------------------------------- -->
-                                                            <!-- Nav My Top It Projects -->
-                                                            <!-- ----------------------------------------------------------------- -->
-                                                            <div id="nav-top-it-projects">
-
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <!-- [1/3] | Label | Web Desgin -->
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <label for="radio-category-top-it-project-web-desgin" class="action-radio-medium">
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Title -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-art.png" class="img-h-1" alt="img">
-                                                                        <div>Web-Design (3)</div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-default">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <!-- [2/3] | Label | Web Dev -->
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <label for="radio-category-top-it-project-web-dev" class="action-radio-medium">
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Title -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-1" alt="img">
-                                                                        <div>Web-Dev (3)</div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-default">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <!-- [3/3] | Label | Software Dev -->
-                                                                <!-- ---------------------------------------------------------------- -->
-                                                                <label for="radio-category-top-it-project-software-dev" class="action-radio-medium">
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Title -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1" alt="img">
-                                                                        <div>Software-Dev (3)</div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-default">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-
-                                                                </label>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                </header>
 
                                                 <!-- ------------------------------------------------------------------------- -->
                                                 <!-- ➡️🟥 [2/2] List Container | Top It Project Cards -->
@@ -7710,27 +7552,27 @@
                                                     <input type="checkbox" id="chk-more-it-projects">
 
                                                     <!-- ------------------------------------------------------------ -->
-                                                    <!-- Header Beginning Container (🟣) -->
+                                                    <!-- Header Content Container (🟣) -->
                                                     <!-- ------------------------------------------------------------ -->
-                                                    <div class="header-beginning-container">
+                                                    <div class="header-content-container">
 
                                                         <!-- -------------------------------------- -->
-                                                        <!-- Title Box (🟣) -->
+                                                        <!-- [1/2] | Header Content Block  (🟣)     -->
                                                         <!-- -------------------------------------- -->
-                                                        <div class="header-beginning-tilte-box">
+                                                        <div class="header-content-block">
 
                                                             <img src="media/img/icons/03-emojies/04-hobbys/it-emoji.png"
                                                                 id="img-header-more-it-projects" alt="img">
 
                                                             <div>
-                                                                <div class="header-beginning-title" >More IT-Project's</div>
-                                                                <div class="header-beginning-sub-title" >» Exercices | LeetCode | Mini-Project's </div>
+                                                                <div class="header-content-title">More IT-Project's</div>
+                                                                <div class="header-content-sub-title">» Exercices | LeetCode | Mini-Project's </div>
                                                             </div>
 
                                                         </div>
 
                                                         <!-- -------------------------------------- -->
-                                                        <!-- Action Content Element -->
+                                                        <!-- [2/2] | Drop Down Element              -->
                                                         <!-- -------------------------------------- -->
                                                         <label for="chk-more-it-projects" class="action-drop-down-medium">
 
@@ -8845,29 +8687,29 @@
 
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- Header Beginning Container (🟣) -->
+                                                <!-- Header Content Container (🟣) -->
                                                 <!-- ------------------------------------------------------------ -->
-                                                <div class="header-beginning-container">
+                                                <div class="header-content-container">
 
                                                     <!-- -------------------------------------- -->
-                                                    <!-- Title Box (🟣) -->
+                                                    <!-- Header Content Block (🟣) -->
                                                     <!-- -------------------------------------- -->
-                                                    <div class="header-beginning-tilte-box">
+                                                    <div class="header-content-block">
 
                                                         <img src="media/img/icons/03-emojies/01-things/emoji-books.png"
                                                             id="img-header-it-docs" alt="img">
 
                                                         <div>
-                                                            <div class="header-beginning-title" >IT Doc's</div>
-                                                            <div class="header-beginning-sub-title" >» Frontend | Backend | AI </div>
+                                                            <div class="header-content-title">IT Doc's</div>
+                                                            <div class="header-content-sub-title">» Frontend | Backend | AI </div>
                                                         </div>
 
                                                     </div>
 
                                                     <!-- -------------------------------------- -->
-                                                    <!-- Open,Close | Action Content Element    -->
+                                                    <!-- Drop Down Element                      -->
                                                     <!-- -------------------------------------- -->
-                                                    <label for="chk-it-docs" class="action-content-element-medium">
+                                                    <label for="chk-it-docs" class="action-drop-down-medium">
 
                                                         <!-- ---------------------------------------- -->
                                                         <!-- Title Block -->
@@ -9871,21 +9713,21 @@
 
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- Header Beginning Container (🟣) -->
+                                                <!-- Header Content Container  (🟣) -->
                                                 <!-- ------------------------------------------------------------ -->
-                                                <div class="header-beginning-container">
+                                                <div class="header-content-container">
 
                                                     <!-- -------------------------------------- -->
-                                                    <!-- Title Box (🟣) -->
+                                                    <!-- Header Content Block (🟣) -->
                                                     <!-- -------------------------------------- -->
-                                                    <div class="header-beginning-tilte-box">
+                                                    <div class="header-content-block">
 
                                                         <img src="media/img/icons/02-icon-colors/01-black/black-speaker.png"
                                                             id="img-header-new-sport-video" alt="img">
 
                                                         <div>
-                                                            <div class="header-beginning-title" >Newest Sport Video's</div>
-                                                            <div class="header-beginning-sub-title" >» Max 3  </div>
+                                                            <div class="header-content-title">Newest Sport Video's</div>
+                                                            <div class="header-content-sub-title">» Max 3  </div>
                                                         </div>
 
                                                     </div>

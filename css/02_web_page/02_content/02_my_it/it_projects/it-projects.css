@@ -26,12 +26,11 @@
   justify-content: space-between;
 
   column-gap: .8em;
-  /* row-gap: .8em; */
 
   grid-template-areas:
 
-  'header-block-it-project drop-down-category-it-project'
-  'nav-content-it-project nav-category-it-project';
+  'nav-container-it-projects drop-down-category-it-project'
+  '. smooth-drop-down-category-list-it-projects';
 
 
   /* background-color: rgb(202, 202, 202); */
@@ -39,64 +38,104 @@
 }
 
 /* -------------------------------------------------------------- */
-/* [1/4] | Header Content Block
+/* [1/4] | Nav Container | IT Projects
 /* -------------------------------------------------------------- */
 
-#header-it-project-container > .header-content-block:nth-of-type(1) {
+#nav-container-it-projects {
 
-  grid-area: header-block-it-project;
+  grid-area: nav-container-it-projects;
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
 
 }
 
 /* -------------------------------------------------------------- */
-/* [2/4] | Drop Down Category
+/* Img Icons (rocket,laptop) | Nav Container
+/* -------------------------------------------------------------- */
+
+/* img rocket */
+#img-header-top-it-project {
+
+  /* mobile */
+  height: 1.6em;
+
+}
+
+/* img laptop human */
+#img-header-more-it-project {
+
+  /* mobile */
+  height: 1.6em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Label | Drop Down Category
 /* -------------------------------------------------------------- */
 
 label[for="chk-selected-category-top-it-projects"] {
 
-  width: 11.5em;
+  width: 13em;
   grid-area: drop-down-category-it-project;
 
 }
 
 /* -------------------------------------------------------------- */
-/* [3/4] | Nav Content
+/* Smooth Drop Down Category List | IT Projects
 /* -------------------------------------------------------------- */
 
-#nav-content-it-projects {
+#smooth-drop-down-category-list-it-projects {
 
-  grid-area: nav-content-it-project;
+  grid-area: smooth-drop-down-category-list-it-projects;
 
-  margin-top: 1em;
-
-  display: flex;
-  align-content: center;
-  column-gap: .4em;
-
-  border-radius: .8em;
-
-  background-color: rgba(225, 225, 225, 1);
-  opacity: .4;
+  /* grid-template-rows: 1fr; */
 
 }
 
-/* overwrite default layout */
-#nav-content-it-projects > label {
-
-  border-radius: .8em;
-  /* opacity: .4; */
-
-}
-
-
 /* -------------------------------------------------------------- */
-/* [4/4] | Nav Category
+/* Drop Down Category List
 /* -------------------------------------------------------------- */
 
-#smooth-nav-category-it-projects {
+#drop-down-category-list-it-projects {
 
-  grid-area: nav-category-it-project;
+  margin-top: .5em;
+
+  display: grid;
+  row-gap: .5em;
 
   border: 1px solid black;
+
+}
+
+/* -------------------------------------------------------------- */
+/* TOP & More IT Projects Container
+/* -------------------------------------------------------------- */
+
+#top-it-projects-container,
+#more-it-projects-container {
+
+  margin-top: 2em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* TOP IT Projects Container
+/* -------------------------------------------------------------- */
+
+#top-it-projects-container {
+
+  border-top: 1px solid black;
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* More IT Projects Container
+/* -------------------------------------------------------------- */
+
+#more-it-projects-container {
+
 
 }

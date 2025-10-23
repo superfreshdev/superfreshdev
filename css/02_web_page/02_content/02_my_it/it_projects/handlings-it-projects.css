@@ -1,0 +1,98 @@
+/* -------------------------------------------------------------- */
+/* > handlings-it-projects.css
+/* : styles all handlings of it projects
+/* : 1. checkbox selected category
+/* : 2. radio - top & more it projects
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Handlings | Checkbox ( Selected Category )
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+#chk-selected-category-top-it-projects {
+
+  display: none;
+
+}
+
+/* set background | label */
+#chk-selected-category-top-it-projects:checked ~ label[for="chk-selected-category-top-it-projects"] {
+
+  background-color: rgb(239, 113, 113);
+
+}
+
+/* change img arrow rotation */
+#chk-selected-category-top-it-projects:checked ~ label[for="chk-selected-category-top-it-projects"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* show content */
+#chk-selected-category-top-it-projects:checked ~ #smooth-drop-down-category-list-it-projects {
+
+  grid-template-rows: 1fr;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Handlings | Radios ( top it projects, more it projects )
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-category-it-projects"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-category-top-it-projects:checked + label,
+#radio-category-more-it-projects:checked + label {
+
+  background-color: wheat;
+
+}
+
+
+/* set x */
+#radio-category-top-it-projects:checked + label > .custom-radio-small > img,
+#radio-category-more-it-projects:checked + label > .custom-radio-small > img {
+
+  display: flex;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Handlings | Radios Content ( minimum 3 radios, ... )
+/* ------------------------------------------------------------- */
+
+
+/* default unshown */
+input[name="name-radio-topic-category-it-projects"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-category-it-project-1:checked ~ #header-it-project-container label[for="radio-category-it-project-1"],
+#radio-category-it-project-2:checked ~ #header-it-project-container label[for="radio-category-it-project-2"],
+#radio-category-it-project-3:checked ~ #header-it-project-container label[for="radio-category-it-project-3"] {
+
+  background-color: wheat;
+  opacity: 1;
+
+}
+
+/* set x */
+#radio-category-it-project-1:checked ~ #header-it-project-container label[for="radio-category-it-project-1"] > .custom-radio-small > img,
+#radio-category-it-project-2:checked ~ #header-it-project-container label[for="radio-category-it-project-2"] > .custom-radio-small > img,
+#radio-category-it-project-3:checked ~ #header-it-project-container label[for="radio-category-it-project-3"] > .custom-radio-small > img {
+
+  display: flex;
+
+}
