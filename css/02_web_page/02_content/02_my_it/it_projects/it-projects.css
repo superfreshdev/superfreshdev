@@ -17,78 +17,85 @@
 }
 
 /* -------------------------------------------------------------- */
+/* Page IT Project Card | Style Page Content Card White
+/* -------------------------------------------------------------- */
+
+#page-it-project-card {
+
+  display: grid;
+
+}
+
+/* -------------------------------------------------------------- */
 /* Header | IT Projects Container
 /* -------------------------------------------------------------- */
 
-#header-it-project-container {
+#header-it-projects-container {
 
   display: grid;
-  justify-content: space-between;
+  justify-items: center;
 
-  column-gap: .8em;
-
+  /* mobile */
   grid-template-areas:
 
-  'nav-container-it-projects drop-down-category-it-project'
-  '. smooth-drop-down-category-list-it-projects';
+  'drop-down-category-it-projects'
+  'smooth-drop-down-category-list-it-projects'
+  'nav-it-projects';
 
-
-  /* background-color: rgb(202, 202, 202); */
-
-}
-
-/* -------------------------------------------------------------- */
-/* [1/4] | Nav Container | IT Projects
-/* -------------------------------------------------------------- */
-
-#nav-container-it-projects {
-
-  grid-area: nav-container-it-projects;
-
-  display: flex;
-  align-items: center;
-  column-gap: .8em;
+  /* background-color: rgb(88, 88, 88); */
 
 }
 
+
 /* -------------------------------------------------------------- */
-/* Img Icons (rocket,laptop) | Nav Container
+/* [1/3] | Nav | It Projects
 /* -------------------------------------------------------------- */
 
-/* img rocket */
-#img-header-top-it-project {
+#nav-it-projects {
+
+  grid-area: nav-it-projects;
+
+  /* overwrite default nav content panel */
+  justify-content: center;
 
   /* mobile */
-  height: 1.6em;
+  width: 100%;
+  /* margin-top: 1em; */
+  padding: 1em .8em;
+
+  border-radius: 1.3em;
 
 }
 
-/* img laptop human */
-#img-header-more-it-project {
+#nav-it-projects > label {
 
-  /* mobile */
-  height: 1.6em;
+  /* very small mobile */
+  width: 100%;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Label | Drop Down Category
+/* [2/3] | Drop Down Category | IT Projects
 /* -------------------------------------------------------------- */
 
-label[for="chk-selected-category-top-it-projects"] {
+label[for="chk-selected-category-it-projects"] {
+
+  grid-area: drop-down-category-it-projects;
 
   width: 13em;
-  grid-area: drop-down-category-it-project;
+
 
 }
 
 /* -------------------------------------------------------------- */
-/* Smooth Drop Down Category List | IT Projects
+/* [3/3] | Smooth Drop Down Category List | IT Projects
 /* -------------------------------------------------------------- */
 
 #smooth-drop-down-category-list-it-projects {
 
   grid-area: smooth-drop-down-category-list-it-projects;
+
+  width: 13em;
 
   /* grid-template-rows: 1fr; */
 
@@ -105,7 +112,7 @@ label[for="chk-selected-category-top-it-projects"] {
   display: grid;
   row-gap: .5em;
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
 }
 
@@ -116,7 +123,7 @@ label[for="chk-selected-category-top-it-projects"] {
 #top-it-projects-container,
 #more-it-projects-container {
 
-  margin-top: 2em;
+  margin-top: 1em;
 
 }
 
@@ -126,8 +133,23 @@ label[for="chk-selected-category-top-it-projects"] {
 
 #top-it-projects-container {
 
-  border-top: 1px solid black;
 
+
+}
+
+/* -------------------------------------------------------------- */
+/* Label | Show More | Top IT Projects Container
+/* -------------------------------------------------------------- */
+
+#label-show-more-top-it-projects-container {
+
+  padding: 2em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: rgb(225, 225, 225); */
 
 }
 
@@ -137,5 +159,6 @@ label[for="chk-selected-category-top-it-projects"] {
 
 #more-it-projects-container {
 
+  background-color: green;
 
 }

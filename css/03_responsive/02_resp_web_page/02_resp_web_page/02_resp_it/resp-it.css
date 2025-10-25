@@ -442,6 +442,89 @@
 
 @media (min-width: 800px ) {
 
+  /* ------------------------------------------------------------- */
+  /* IT Project | Header It Projects Container */
+  /* ------------------------------------------------------------- */
+  #header-it-projects-container {
+
+    display: grid;
+    justify-content: space-between;
+
+    /* desktop */
+    grid-template-areas:
+
+    'nav-it-projects drop-down-category-it-projects'
+    '. smooth-drop-down-category-list-it-projects';
+
+    /* background-color: rgb(88, 88, 88); */
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* IT Project | Nav IT Projects */
+  /* ------------------------------------------------------------- */
+  #nav-it-projects > label {
+
+    width: auto;
+    border-radius: 0;
+
+  }
+
+  /* fist label */
+  #nav-it-projects > label:first-child {
+
+    border-radius: .8em 0 0 .8em;
+
+  }
+
+  /* last label */
+  #nav-it-projects > label:last-child {
+
+    border-radius: 0em .8em .8em 0em;
+
+  }
+
+  /* label 1 */
+  #nav-it-projects > label:nth-of-type(1) {
+
+    border-right: 2px solid rgb(218, 218, 218);
+
+  }
+
+  /* label 2 */
+  #nav-it-projects > label:nth-of-type(2) {
+
+    border-right: 2px solid rgb(218, 218, 218);
+    border-left: 2px solid rgb(218, 218, 218);
+
+  }
+
+  /* label 3 */
+  #nav-it-projects > label:nth-of-type(3) {
+
+    border-left: 2px solid rgb(218, 218, 218);
+
+  }
+
+  #nav-it-projects {
+
+    /* overwrite nav panel */
+    column-gap: 0em;
+
+    padding: 0;
+    border-radius: .8em;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* IT Project | Top & More IT Projects Container */
+  /* ------------------------------------------------------------- */
+  #top-it-projects-container,
+  #more-it-projects-container {
+
+    margin-top: 2em;
+
+  }
 
 
 

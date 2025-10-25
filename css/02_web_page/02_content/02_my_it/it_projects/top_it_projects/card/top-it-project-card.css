@@ -4,35 +4,6 @@
 /* : styles my top it project card
 /* -------------------------------------------------------------- */
 
-#over-header {
-
-  width: 100%;
-
-  padding: .5em 0 1em 0;
-  margin-bottom: 1em;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  column-gap: .4em;
-
-  border-bottom: 1px solid rgb(212, 212, 212);
-
-}
-
-#over-header > div {
-
-  height: 2em;
-  padding: 0 .6em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: grey;
-
-  border-radius: .5em;
-}
 
 /* ------------------------------------------------------------- */
 /* Top IT Project Card
@@ -65,6 +36,38 @@
   /* background-color: rgb(55, 55, 55); */
 
 }
+
+/* ----------------------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth Show More Top IT Projects Container
+/* ----------------------------------------------------------------------------------- */
+
+#smooth-show-more-top-it-projects-container {
+
+  /* grid-template-rows: 1fr; */
+
+  background-color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ----------------------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------- */
 /* Sub Header Top IT Project Card

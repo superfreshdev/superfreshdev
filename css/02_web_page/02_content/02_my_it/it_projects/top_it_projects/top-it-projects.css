@@ -8,18 +8,6 @@
 /* Top IT Project Container
 /* -------------------------------------------------------------- */
 
-#top-it-projects-container {
-
-  width: 100%;
-  /* width: 26em; */
-
-  display: grid;
-  row-gap: 2em;
-
-}
-
-
-
 
 
 
@@ -105,13 +93,7 @@
 /* Label | Show More                                             */
 /* ------------------------------------------------------------- */
 
-label[for="chk-show-more-top-it-projects"] {
 
-  margin-top: 2em;
-  margin-bottom: .5em;
-  justify-self: center;
-
-}
 
 /* ------------------------------------------------------------- */
 /* Show More Container Top It Project Cards      */
