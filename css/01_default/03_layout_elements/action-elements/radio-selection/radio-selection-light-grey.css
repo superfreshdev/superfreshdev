@@ -1,0 +1,116 @@
+/* -------------------------------------------------------------- */
+/* > radio-selection-light-grey.css
+/* :  styles radio selection light grey style
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Radio Selection | Light Grey
+/* -------------------------------------------------------------- */
+
+.radio-selection-light-grey-very-small,
+.radio-selection-light-grey-small,
+.radio-selection-light-grey-medium,
+.radio-selection-light-grey-big {
+
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: #eeeeee;
+  color:#5d5d5d;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Hover | Radio Selection | Light Grey
+/* -------------------------------------------------------------- */
+
+.radio-selection-light-grey-very-small:hover,
+.radio-selection-light-grey-small:hover,
+.radio-selection-light-grey-medium:hover,
+.radio-selection-light-grey-big:hover {
+
+  background-color: wheat;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Div 1 | Radio Selection | Light Grey
+/* -------------------------------------------------------------- */
+
+.radio-selection-light-grey-very-small > div:nth-of-type(1),
+.radio-selection-light-grey-small > div:nth-of-type(1),
+.radio-selection-light-grey-medium > div:nth-of-type(1),
+.radio-selection-light-grey-big > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Div 1 | Div | Radio Selection | Light Grey
+/* -------------------------------------------------------------- */
+
+.radio-selection-light-grey-very-small > div:nth-of-type(1) > div,
+.radio-selection-light-grey-small > div:nth-of-type(1) > div,
+.radio-selection-light-grey-medium > div:nth-of-type(1) > div,
+.radio-selection-light-grey-big > div:nth-of-type(1) > div {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Very Small | Radio Selection
+/* -------------------------------------------------------------- */
+
+.radio-selection-light-grey-very-small {
+
+  height: 1.8em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Small | Radio Selection
+/* -------------------------------------------------------------- */
+
+.radio-selection-light-grey-small {
+
+  height: 2em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Medium | Radio Selection
+/* -------------------------------------------------------------- */
+
+.radio-selection-light-grey-medium  {
+
+  height: 2.3em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Big | Radio Selection
+/* -------------------------------------------------------------- */
+
+.radio-selection-light-grey-big  {
+
+  height: 2.8em;
+
+}

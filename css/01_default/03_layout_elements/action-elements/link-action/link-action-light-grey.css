@@ -1,0 +1,103 @@
+/* -------------------------------------------------------------- */
+/* > link-action-light-grey.css
+/* :  styles link action light grey style
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Link Action | Light Grey
+/* -------------------------------------------------------------- */
+
+.link-action-light-grey-very-small,
+.link-action-light-grey-small,
+.link-action-light-grey-medium,
+.link-action-light-grey-big {
+
+  text-decoration: none;
+
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: #eeeeee;
+  color:#5d5d5d;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Hover | Link Action | Light Grey
+/* -------------------------------------------------------------- */
+
+.link-action-light-grey-very-small:hover,
+.link-action-light-grey-small:hover,
+.link-action-light-grey-medium:hover,
+.link-action-light-grey-big:hover {
+
+  background-color: wheat;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Div 1 | Link Action | Light Grey
+/* -------------------------------------------------------------- */
+
+.link-action-light-grey-very-small > div:nth-of-type(1),
+.link-action-light-grey-small > div:nth-of-type(1),
+.link-action-light-grey-medium > div:nth-of-type(1),
+.link-action-light-grey-big > div:nth-of-type(1) {
+
+   /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Very Small | Link Action
+/* -------------------------------------------------------------- */
+
+.link-action-light-grey-very-small {
+
+  height: 1.8em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Small | Link Action
+/* -------------------------------------------------------------- */
+
+.link-action-light-grey-small {
+
+  height: 2em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Medium | Link Action
+/* -------------------------------------------------------------- */
+
+.link-action-light-grey-medium  {
+
+  height: 2.3em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Big | Link Action
+/* -------------------------------------------------------------- */
+
+.link-action-light-grey-big  {
+
+  height: 2.8em;
+
+}

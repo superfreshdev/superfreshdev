@@ -31,7 +31,7 @@
 
 }
 
-/* show content */
+/* show drop down category list it projects */
 #chk-selected-category-it-projects:checked ~ #smooth-drop-down-category-list-it-projects {
 
   grid-template-rows: 1fr;
@@ -50,8 +50,8 @@ input[name="name-radio-category-it-projects"] {
 }
 
 /* set background */
-#radio-category-top-it-projects:checked + label,
-#radio-category-more-it-projects:checked + label {
+#radio-category-top-it-projects:checked ~ #header-it-projects-container label[for="radio-category-top-it-projects"],
+#radio-category-more-it-projects:checked ~ #header-it-projects-container label[for="radio-category-more-it-projects"] {
 
   background-color: wheat;
 
@@ -59,10 +59,19 @@ input[name="name-radio-category-it-projects"] {
 
 
 /* set x */
-#radio-category-top-it-projects:checked + label > .custom-radio-small > img,
-#radio-category-more-it-projects:checked + label > .custom-radio-small > img {
+#radio-category-top-it-projects:checked ~ #header-it-projects-container label[for="radio-category-top-it-projects"] > .custom-radio-small > img,
+#radio-category-more-it-projects:checked ~ #header-it-projects-container label[for="radio-category-more-it-projects"] > .custom-radio-small > img {
 
   display: flex;
+
+}
+
+
+/* show content, top it projects / more it proejcts */
+#radio-category-top-it-projects:checked ~ #top-it-projects-container,
+#radio-category-more-it-projects:checked ~ #more-it-projects-container {
+
+  display: grid;
 
 }
 

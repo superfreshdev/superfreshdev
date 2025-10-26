@@ -19,11 +19,18 @@
   align-items: center;
   justify-content: center;
 
+  border-radius: .9em .9em 0 0;
+
+  background-color: #eeeeee;
+
 }
 
 .img-container-top-it-project-card > img {
 
   width: 100%;
-  border-radius: 1em 1em 0 0em;
+  border-radius: .9em .9em 0 0;
+
+  /* border: 2px solid red; */
+
 
 }

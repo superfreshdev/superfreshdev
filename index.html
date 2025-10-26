@@ -82,13 +82,22 @@
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/selection-item/selection-item.css">
 
                 <!-- ------------------------------------- -->
-                <!-- ⚠️ Action Elements -->
+                <!-- 🟥 Action Elements -->
                 <!-- ------------------------------------- -->
 
-                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-link.css">
-                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-drop-down.css">
-                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-radio.css">
-                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-tab.css">
+                <!-- Drop Down Elements -->
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-light-grey.css">
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-grey.css">
+
+                <!-- Radio Selection -->
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/radio-selection/radio-selection-light-grey.css">
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/radio-selection/radio-selection-grey.css">
+
+                <!-- Link Action -->
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/link-action/link-action-light-grey.css">
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/link-action/link-action-grey.css">
+
+
 
                 <!-- ❌ Delete  -->
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-switch-element.css">
@@ -2263,6 +2272,12 @@
                                             <div id="page-it-project-card" class="style-page-content-card-white">
 
                                                 <!-- ------------------------------------------------------------ -->
+                                                <!-- Radios | Top IT Projects, More IT Projects (js) -->
+                                                <!-- ------------------------------------------------------------ -->
+                                                <input checked type="radio" id="radio-category-top-it-projects" name="name-radio-category-it-projects">
+                                                <input type="radio" id="radio-category-more-it-projects" name="name-radio-category-it-projects">
+
+                                                <!-- ------------------------------------------------------------ -->
                                                 <!-- Radios | Web-Desgin, Web-Dev, Software-Dev, ... (js) -->
                                                 <!-- ------------------------------------------------------------ -->
                                                 <input checked type="radio" id="radio-category-it-project-1" name="name-radio-topic-category-it-projects">
@@ -2270,7 +2285,7 @@
                                                 <input type="radio" id="radio-category-it-project-3" name="name-radio-topic-category-it-projects">
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- 🟩 [1/2] | Header | It Projects Container -->
+                                                <!-- 🟩🟨 [1/2] | Header | It Projects Container -->
                                                 <!-- ------------------------------------------------------------ -->
                                                 <div id="header-it-projects-container">
 
@@ -2355,7 +2370,7 @@
                                                     <!-- ----------------------------------------------------------- -->
                                                     <!-- 🟩🟨 [2/3] Drop Down Category -->
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <label for="chk-selected-category-it-projects" class="action-drop-down-medium">
+                                                    <label for="chk-selected-category-it-projects" class="drop-down-grey-medium">
 
                                                         <!-- ---------------------------------------- -->
                                                         <!-- Title Block -->
@@ -2363,8 +2378,8 @@
                                                         <div>
                                                             <!-- <img src="media/img/icons/02-icon-colors/01-black/black-binary-small.png" class="img-h-1-1" alt="img"> -->
                                                             <img src="media/img/icons/02-icon-colors/01-black/black-rocket.png" class="img-h-1-1" alt="img">
-                                                            <!-- <div>More IT-Project's</div> -->
-                                                            <div>Top IT-Project's <span>(9)</span></div>
+                                                            <div>More <span>(29)</span></div>
+                                                            <!-- <div>Top <span>(9)</span></div> -->
                                                         </div>
 
                                                         <!-- ---------------------------------------- -->
@@ -2393,15 +2408,14 @@
                                                                 <!-- ------------------------------------------------------ -->
                                                                 <!-- Label | Top IT Projects -->
                                                                 <!-- ------------------------------------------------------ -->
-                                                                <input checked type="radio" id="radio-category-top-it-projects" name="name-radio-category-it-projects">
-                                                                <label for="radio-category-top-it-projects" class="action-drop-down-medium">
+                                                                <label for="radio-category-top-it-projects" class="radio-selection-grey-medium">
 
                                                                     <!-- -------------------------------------------- -->
                                                                     <!-- Title  -->
                                                                     <!-- -------------------------------------------- -->
                                                                     <div>
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-rocket.png" class="img-h-1" alt="img">
-                                                                        <div>Top IT-Projects <span>(9)</span></div>
+                                                                        <div>Top <span>(9)</span></div>
                                                                     </div>
 
                                                                     <!-- -------------------------------------------- -->
@@ -2416,15 +2430,14 @@
                                                                 <!-- ------------------------------------------------------ -->
                                                                 <!-- Label | More IT Projects -->
                                                                 <!-- ------------------------------------------------------ -->
-                                                                <input type="radio" id="radio-category-more-it-projects" name="name-radio-category-it-projects">
-                                                                <label for="radio-category-more-it-projects" class="action-drop-down-medium">
+                                                                <label for="radio-category-more-it-projects" class="radio-selection-grey-medium">
 
                                                                     <!-- -------------------------------------------- -->
                                                                     <!-- Title  -->
                                                                     <!-- -------------------------------------------- -->
                                                                     <div>
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-binary-small.png" class="img-h-1" alt="img">
-                                                                        <div>More IT-Projects <span>(34)</span></div>
+                                                                        <div>More <span>(29)</span></div>
                                                                     </div>
 
                                                                     <!-- -------------------------------------------- -->
@@ -2447,13 +2460,13 @@
                                                 </div>
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- ➡️🟥 [2/3] | Top IT Projects Container -->
+                                                <!-- ➡️🟥 [2/3] | Top IT | Projects Container -->
                                                 <!-- ------------------------------------------------------------ -->
                                                 <div id="top-it-projects-container">
 
 
                                                     <!-- ---------------------------------------------------------------- -->
-                                                    <!-- ➡️🟥 [1/3] | Top IT Project Card Container -->
+                                                    <!-- ➡️🟥 [1/3] | Top IT Project Card -->
                                                     <!-- ---------------------------------------------------------------- -->
                                                     <div class="top-it-project-card">
 
@@ -2474,7 +2487,7 @@
                                                         </div>
 
                                                         <!-- ----------------------------------------------------------- -->
-                                                        <!-- 🟥 [2/3] | Short Info Container                          -->
+                                                        <!-- ➡️🟥 [2/3] | Short Info Container                          -->
                                                         <!-- ----------------------------------------------------------- -->
                                                         <div class="short-info-container-top-it-project-card">
 
@@ -2542,7 +2555,7 @@
                                                                 <!-- ---------------------------------------------------- -->
                                                                 <!-- Detail's Label | -->
                                                                 <!-- ---------------------------------------------------- -->
-                                                                <label for="chk-details-top-it-project-card-1" class="action-drop-down-small">
+                                                                <label for="chk-details-top-it-project-card-1" class="drop-down-light-grey-very-small">
 
                                                                     <div>
                                                                         <div>Details</div>
@@ -2560,7 +2573,7 @@
                                                                     <!-- ------------------------------------------------------------ -->
                                                                     <!-- Link: Zip -->
                                                                     <!-- ------------------------------------------------------------ -->
-                                                                    <a href="" class="action-link-small" target="_blank">
+                                                                    <a href="" class="link-action-light-grey-very-small" target="_blank">
 
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-download-arrow.png" class="img-h-0-8" alt="img">
                                                                         <div>.zip</div>
@@ -2570,7 +2583,7 @@
                                                                     <!-- ------------------------------------------------------------ -->
                                                                     <!-- Link: GitHub -->
                                                                     <!-- ------------------------------------------------------------ -->
-                                                                    <a href="" class="action-link-small" target="_blank">
+                                                                    <a href="" class="link-action-light-grey-very-small" target="_blank" >
 
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-github.png" class="img-h-0-9" alt="img">
                                                                         <div>GitHub</div>
@@ -4298,7 +4311,7 @@
                                                         <!-- ----------------------------------------- -->
                                                         <!-- Label | Show More -->
                                                         <!-- ----------------------------------------- -->
-                                                        <label for="chk-show-more-top-it-projects" class="action-drop-down-medium">
+                                                        <label for="chk-show-more-top-it-projects" class="drop-down-grey-medium">
 
                                                             <div>
                                                                 <div>Show More <span>(2)</span></div>
@@ -4344,7 +4357,7 @@
                                                 </div>
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- 🟥[3/3] | More IT Projects Container -->
+                                                <!-- 🟥 [3/3] | More IT | Projects Container -->
                                                 <!-- ------------------------------------------------------------ -->
                                                  <div id="more-it-projects-container">
                                                     More IT Projects Container
@@ -13527,13 +13540,17 @@
 
 
                 <!-- ----------------------------------------------------------- -->
-                <!-- 🟥 It -->
+                <!-- 🟥 My IT -->
                 <!-- ----------------------------------------------------------- -->
 
-                    <!-- 🟥 My IT Projects -->
+                    <!-- ----------------------------------------------------------- -->
+                    <!-- 🟥 IT Projects -->
+                    <!-- ----------------------------------------------------------- -->
+                    <script src="js/02_web_page/02_content/02_it/it-projects/close-drop-down-category-it-projects.js"></script>
+
                     <!-- <script src="js/02_web_page/02_content/02_it/my-top-3-it-projects/data-it-project-1.js"></script> -->
 
-                     <script src="js/02_web_page/02_content/02_it/it-projects/more-it-projects/unset-radios-more-it-projects.js"></script>
+                    <script src="js/02_web_page/02_content/02_it/it-projects/more-it-projects/unset-radios-more-it-projects.js"></script>
 
                     <!-- 🟥 My IT Docs -->
                     <script src="js/02_web_page/02_content/02_it/it-docs/unset-radios-it-docs.js"></script>

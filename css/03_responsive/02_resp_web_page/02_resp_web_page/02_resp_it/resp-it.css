@@ -24,7 +24,7 @@
 
 
   /* ------------------------------------------------------------- */
-  /* Top IT Projects | Img (Rocket) | Header
+  /* Top IT Projects | Img (Rocket) | Header */
   /* ------------------------------------------------------------- */
 
   #img-header-top-it-project {
@@ -43,6 +43,7 @@
     width: auto;
 
   }
+
   /* ------------------------------------------------------------- */
   /* My IT Projects | More Card */
   /* ------------------------------------------------------------- */
@@ -57,10 +58,30 @@
 }
 
 /* -------------------------------------------------------------- */
+/* >= 380px width */
+/* -------------------------------------------------------------- */
+
+@media (min-width: 380px ) {
+
+  /* ----------------------------------------------------------- */
+  /* TOP IT Projects | Nav IT Projects | Label | Img */
+  /* ----------------------------------------------------------- */
+  #nav-it-projects > label > div:nth-of-type(1) > img {
+
+    display: flex;
+
+  }
+
+}
+
+/* -------------------------------------------------------------- */
 /* >= 400px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 400px ) {
+
+
+
 
 
   /* ------------------------------------------------------------- */
@@ -97,8 +118,6 @@
 
   }
 
-
-
   /* ------------------------------------------------------------- */
   /*  It Docs | Nav Category IT Docs | Label */
   /* ------------------------------------------------------------- */
@@ -118,6 +137,28 @@
 /* -------------------------------------------------------------- */
 
 @media (min-width: 450px ) {
+
+
+  /* ------------------------------------------------------------------------ */
+  /* Top IT Project Card | Img Container                                      */
+  /* ------------------------------------------------------------------------ */
+
+  .img-container-top-it-project-card {
+
+    justify-content: flex-start;
+
+  }
+
+  .img-container-top-it-project-card > img {
+
+    width: 22em;
+    border-radius: .9em 0 0 0;
+
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* ⚠️⚠️⚠️ Check                                 */
+  /* ------------------------------------------------------------------------ */
 
 
   /* ------------------------------------------ */
@@ -154,7 +195,7 @@
   }
 
   /* ------------------------------------------------------------- */
-  /*  It Docs | nav sub (frontend,backend) | Label
+  /*  It Docs | nav sub (frontend,backend) | Label */
   /* ------------------------------------------------------------- */
 
   #nav-sub-category-frontend-it-docs > label,
@@ -191,7 +232,7 @@
   }
 
   /* ------------------------------------------------------- */
-  /* IT Projects | Nav My IT *&
+  /* IT Projects | Nav My IT */
   /* ------------------------------------------------------- */
 
   #nav-my-it {
@@ -218,7 +259,7 @@
   }
 
   /* ------------------------------------------------------------- */
-  /* IT Docs | IT Doc PDF Card
+  /* IT Docs | IT Doc PDF Card */
   /* ------------------------------------------------------------- */
 
   .it-doc-pdf-card {
@@ -245,19 +286,6 @@
     width:auto;
 
   }
-
-  /* ------------------------------------------------------------- */
-  /* Top IT Project | Top It Project Card
-  /* ------------------------------------------------------------- */
-
-  .top-it-project-card > .img-container-top-it-project-card{
-
-    width: 20em;
-    /* background-color: red; */
-
-  }
-
-
 
 }
 
@@ -409,30 +437,10 @@
 }
 
 /* -------------------------------------------------------------- */
-/* >= 700px width
+/* >= 700px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 700px ) {
-
-
-  /* ------------------------------------------ */
-  /* My It | Content Header Container
-  /* ------------------------------------------ */
-
-  /* ⚠️ Template, besser dazu zusätzlich eigene Klasse machen,
-        denn wenn wo anders das Template verwendet wird,
-        dann wird da auch mit übernommen !!! */
-
-  .header-begin-container {
-
-    /* desktop */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-  }
-
 
 }
 
@@ -445,6 +453,7 @@
   /* ------------------------------------------------------------- */
   /* IT Project | Header It Projects Container */
   /* ------------------------------------------------------------- */
+
   #header-it-projects-container {
 
     display: grid;
@@ -463,6 +472,7 @@
   /* ------------------------------------------------------------- */
   /* IT Project | Nav IT Projects */
   /* ------------------------------------------------------------- */
+
   #nav-it-projects > label {
 
     width: auto;
@@ -519,6 +529,7 @@
   /* ------------------------------------------------------------- */
   /* IT Project | Top & More IT Projects Container */
   /* ------------------------------------------------------------- */
+
   #top-it-projects-container,
   #more-it-projects-container {
 
@@ -526,115 +537,125 @@
 
   }
 
-
-
   /* ------------------------------------------------------------- */
   /* More IT Project | Card List Containers */
   /* ------------------------------------------------------------- */
 
-    #exercise-it-projects-container,
-    #leetcode-it-projects-container,
-    #mini-projects-it-projects-container {
+  #exercise-it-projects-container,
+  #leetcode-it-projects-container,
+  #mini-projects-it-projects-container {
 
-      display: grid;
-      grid: auto / 1fr 1fr;
+    display: grid;
+    grid: auto / 1fr 1fr;
 
-      /* default unshown */
-      display: none;
+    /* default unshown */
+    display: none;
 
-    }
+  }
 
   /* ------------------------------------------ */
   /* My It Docs | Nav List */
   /* ------------------------------------------ */
 
-    #my-it-docs-nav-list {
+  #my-it-docs-nav-list {
 
 
-      grid-template-columns: 18em 18em;
+    grid-template-columns: 18em 18em;
 
-    }
+  }
 
-  /* ------------------------------------------ */
-  /* My It Project | Project Top Card */
-  /* ------------------------------------------ */
 
-    .my-it-project-top-card {
-
-      /* extra case for project top card 3 */
-      width: 22em;
-
-    }
 
   /* ------------------------------------------ */
   /* My IT Project | Card Seperator 1 */
   /* ------------------------------------------ */
 
-    #grid-area-top-it-project-card-seperator-1 > img {
+  #grid-area-top-it-project-card-seperator-1 > img {
 
-      transform: rotate(90deg);
+    transform: rotate(90deg);
 
-    }
+  }
 
   /* ------------------------------------------ */
   /* My IT Project | Top Card List */
   /* ------------------------------------------ */
 
-    #my-it-project-top-card-list {
+  #my-it-project-top-card-list {
 
-      grid-template-areas:
+    grid-template-areas:
 
-      'it-project-top-card-1 it-project-top-card-seperator-1 it-project-top-card-2'
-      'it-project-top-card-seperator-2 it-project-top-card-seperator-2 it-project-top-card-seperator-2'
-      'it-project-top-card-3 it-project-top-card-3 it-project-top-card-3'
-      ;
+    'it-project-top-card-1 it-project-top-card-seperator-1 it-project-top-card-2'
+    'it-project-top-card-seperator-2 it-project-top-card-seperator-2 it-project-top-card-seperator-2'
+    'it-project-top-card-3 it-project-top-card-3 it-project-top-card-3'
+    ;
 
-      grid-template-columns: auto 4em auto;
+    grid-template-columns: auto 4em auto;
 
-    }
+  }
 
   /* ------------------------------------------------------------------------ */
   /* My IT Project | Project Card Seperator 1 | center to project cards */
   /* ------------------------------------------------------------------------ */
 
-    #grid-area-top-it-project-card-seperator-1 {
+  #grid-area-top-it-project-card-seperator-1 {
 
-      align-self: center;
+    align-self: center;
 
-    }
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Top IT Project Card | Img Container                                      */
+  /* ------------------------------------------------------------------------ */
+
+  .img-container-top-it-project-card {
+
+    justify-content: flex-start;
+    border-radius: .9em 0 0 .9em;
+
+  }
+
+  .img-container-top-it-project-card > img {
+
+    width: 100%;
+    border-radius: .9em 0 0 .9em;
+
+  }
 
   /* ------------------------------------------------------------------------ */
   /* Top IT Project Card                                                      */
   /* ------------------------------------------------------------------------ */
 
-    .top-it-project-card {
+  .top-it-project-card {
 
-      width: auto;
+    /* width: auto; */
+    /* width: 100%; */
 
-      display: grid;
-      align-items: center;
+    display: grid;
+    align-items: center;
 
-      grid-template-areas:
+    grid-template-areas:
 
-        'img-container-top-it-project-card short-info-container-top-it-project-card'
-        'details-container-top-it-project-card details-container-top-it-project-card'
-      ;
+      'img-container-top-it-project-card short-info-container-top-it-project-card'
+      'details-container-top-it-project-card details-container-top-it-project-card'
+    ;
 
-      grid-template-columns: 20em 1fr ;
-      grid-template-rows: auto auto;
+    grid-template-columns: 20em 1fr ;
+    grid-template-rows: auto auto;
 
-    }
+  }
 
 
   /* ------------------------------------------------------------------------ */
   /* Top IT Project Card | Img Container > Img                                */
   /* ------------------------------------------------------------------------ */
 
-    .img-container-top-it-project-card > img {
+  .img-container-top-it-project-card > img {
 
       border-radius: 1em 0 0 1em;
 
-    }
+
+
+  }
 
   /* ------------------------------------------------------------------------ */
   /* Top IT Project Card | Content Container |                                */

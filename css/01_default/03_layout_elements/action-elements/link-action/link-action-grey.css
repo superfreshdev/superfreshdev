@@ -1,29 +1,32 @@
 /* -------------------------------------------------------------- */
-/* > action-drop-down.css
-/* : styles action drop down element
+/* > link-action-grey.css
+/* : styles link action grey style
 /* -------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------- */
-/* Action Drop Down
+/* Link Action | Grey
 /* -------------------------------------------------------------- */
 
-.action-drop-down-small,
-.action-drop-down-medium,
-.action-drop-down-big {
+.link-action-grey-very-small,
+.link-action-grey-small,
+.link-action-grey-medium,
+.link-action-grey-big {
+
+  text-decoration: none;
 
   padding: 0 .6em;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  column-gap: .6em;
+  column-gap: .4em;
 
   border-radius: .6em;
 
   font-weight: bold;
 
-  background-color: rgb(207, 207, 207);
+  background-color: #eeeeee;
+  color:black;
 
   user-select: none;
   cursor: pointer;
@@ -32,38 +35,26 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Hover | Action Drop Down
+/* Hover | Link Action | Grey
 /* -------------------------------------------------------------- */
 
-.action-drop-down-small:hover,
-.action-drop-down-medium:hover,
-.action-drop-down-big:hover {
+.link-action-grey-very-small:hover,
+.link-action-grey-small:hover,
+.link-action-grey-medium:hover,
+.link-action-grey-big:hover {
 
   background-color: wheat;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Div 1 | Action Drop Down
+/* Div 1 | Link Action | Grey
 /* -------------------------------------------------------------- */
 
-.action-drop-down-small > div:nth-of-type(1),
-.action-drop-down-medium > div:nth-of-type(1),
-.action-drop-down-big > div:nth-of-type(1) {
-
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Div 1 | Div | Action Drop Down
-/* -------------------------------------------------------------- */
-
-.action-drop-down-small > div:nth-of-type(1) > div,
-.action-drop-down-medium > div:nth-of-type(1) > div,
-.action-drop-down-big > div:nth-of-type(1) > div {
+.link-action-grey-very-small > div:nth-of-type(1),
+.link-action-grey-small > div:nth-of-type(1),
+.link-action-grey-medium > div:nth-of-type(1),
+.link-action-grey-big > div:nth-of-type(1) {
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
   font-size: .90625em;
@@ -71,30 +62,40 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Small | Action Link
+/* Very Small | Link Action
 /* -------------------------------------------------------------- */
 
-.action-drop-down-small {
+.link-action-grey-very-small {
+
+  height: 1.8em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Small | Link Action
+/* -------------------------------------------------------------- */
+
+.link-action-grey-small {
 
   height: 2em;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Medium | Action Link
+/* Medium | Link Action
 /* -------------------------------------------------------------- */
 
-.action-drop-down-medium {
+.link-action-grey-medium  {
 
   height: 2.3em;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Big | Action Link
+/* Big | Link Action
 /* -------------------------------------------------------------- */
 
-.action-drop-down-big {
+.link-action-grey-big  {
 
   height: 2.8em;
 
