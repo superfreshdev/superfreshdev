@@ -23,12 +23,13 @@
 #tech-stack-content-container-top-it-project-card {
 
   width: 100%;
+  margin-top: 1em;
   padding: 2em 1em;
 
   display: grid;
   row-gap: 1.5em;
 
-  border-radius: 0em 0em .8em .8em;
+  border-radius: .8em;
   border: 1px solid #cacaca;
 
   background-color: white;
@@ -55,20 +56,22 @@
 
 .tech-stack-content-box > header {
 
-  /* text-decoration: underline; */
-
-  height: 2em;
+  height: 1.8em;
+  padding: 0 .6em;
 
   display: flex;
   align-items: center;
-  column-gap: .3em;
+  column-gap: .4em;
 
   border-radius: .4em;
 
   font-weight: bold;
 
   /* opacity: .6; */
+  background-color: #eeeeee;
   color: #848484;
+
+
 
 }
 
@@ -80,7 +83,7 @@
 
 .tech-stack-content-box > header > div {
 
-  font-size: 14.5px;
+  font-size: 13px;
 
 }
 
@@ -115,7 +118,7 @@
   border-radius: .4em;
 
   border: 1px solid rgb(230, 230, 230);
-  color:rgb(142, 142, 142);
+  color:rgb(162, 162, 162);
 
 }
 

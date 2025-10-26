@@ -84,7 +84,7 @@ label[for="chk-selected-category-it-projects"] {
 
   grid-area: drop-down-category-it-projects;
 
-  width: 9em;
+  width: 8.5em;
 
 
 }
@@ -97,7 +97,7 @@ label[for="chk-selected-category-it-projects"] {
 
   grid-area: smooth-drop-down-category-list-it-projects;
 
-  width: 9em;
+  width: 8.5em;
 
   /* grid-template-rows: 1fr; */
 

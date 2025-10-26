@@ -6,13 +6,32 @@
 
 
 /* ------------------------------------------------------------- */
-/* Zip Github Link Container
+/* Zip Github Link Container ( normal, opacity )
 /* ------------------------------------------------------------- */
 
-.zip-github-link-container {
+.zip-github-link-container,
+.zip-opacity-github-link-container {
 
   display: flex;
   align-items: center;
   column-gap: .4em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Opacity | Zip Github Link Container
+/* ------------------------------------------------------------- */
+
+.zip-opacity-github-link-container > a {
+
+  opacity: .4;
+
+  transition: all .4s;
+
+}
+
+.zip-opacity-github-link-container > a:hover {
+
+  opacity: 1;
 
 }

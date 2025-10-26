@@ -24,7 +24,8 @@
 #chk-details-top-it-project-card-2:checked ~ .img-container-top-it-project-card > img,
 #chk-details-top-it-project-card-3:checked ~ .img-container-top-it-project-card > img {
 
-  /* border-radius: 1em 0 0 0em; */
+  border-radius: 1em 0 0 0em;
+  /* border: 2px solid red; */
 
 }
 

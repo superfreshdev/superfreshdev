@@ -12,12 +12,13 @@
 
 #core-feature-content-container-top-it-project-card {
 
+  margin-top: 1em;
   padding: 1.5em 1em;
 
   display: grid;
   row-gap: 1.5em;
 
-  border-radius: 0 0 .8em .8em;
+  border-radius: .8em;
 
   border: 1px solid #cacaca;
   background-color: white;

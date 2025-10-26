@@ -14,13 +14,12 @@
   width: 100%;
 
   display: grid;
-  column-gap: 1em;
 
   grid-template-areas:
 
     'img-container-top-it-project-card'
     'short-info-container-top-it-project-card'
-    'details-container-top-it-project-card'
+    'details-container-top-it-project'
   ;
 
   border-radius: 1em;
@@ -34,7 +33,40 @@
 }
 
 /* ----------------------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Show More Top IT Projects Container
+/* ⬇️⬆️ Smooth | Details | Top IT Projects Container
+/* ----------------------------------------------------------------------------------- */
+
+#smooth-details-top-it-project-1,
+#smooth-details-top-it-project-2,
+#smooth-details-top-it-project-3 {
+
+  grid-area: details-container-top-it-project;
+
+  grid-template-rows: 1fr;
+
+  border-radius: 0 0 1em 1em;
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* Details Container | Top IT Project
+/* ----------------------------------------------------------------------------------- */
+
+.details-container-top-it-project {
+
+  padding: 2em .8em;
+
+  display: grid;
+  row-gap: .8em;
+
+  border-radius: 0 0 1em 1em;
+
+  background-color: rgb(242, 242, 242);
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth | Show More | Top IT Projects Container
 /* ----------------------------------------------------------------------------------- */
 
 #smooth-show-more-top-it-projects-container {
@@ -44,7 +76,6 @@
   background-color: red;
 
 }
-
 
 
 
@@ -111,46 +142,5 @@
 .sub-header-top-it-project-card > img:nth-of-type(2) {
 
   display: none;
-
-}
-
-/* ----------------------------------------------------------------------------------- */
-/* ⬇️⬆️ CSS Smooth Open Close Details Top IT Projects | Top IT Project Card
-/* ----------------------------------------------------------------------------------- */
-
-#css-smooth-open-close-details-top-it-project-1,
-#css-smooth-open-close-details-top-it-project-2,
-#css-smooth-open-close-details-top-it-project-3 {
-
-  grid-area: details-container-top-it-project-card;
-
-}
-
-/* ----------------------------------------------------------------------------------- */
-/* Details Container | Top IT Project Card
-/* ----------------------------------------------------------------------------------- */
-
- .details-container-top-it-project-card {
-
-  padding: 1em .8em;
-
-  display: grid;
-  row-gap: 1.5em;
-
-  /* background-color: #ebebeb; */
-  /* background-color: yellow; */
-
-}
-
-
-
-/* ----------------------------------------------------------------------------------- */
-/* ⬇️⬆️ CSS Smooth Open Close | Details Content Container
-/* ----------------------------------------------------------------------------------- */
-
-#css-smooth-open-close-details-content-container-1,
-#css-smooth-open-close-details-content-container-2,
-#css-smooth-open-close-details-content-container-3 {
-
 
 }

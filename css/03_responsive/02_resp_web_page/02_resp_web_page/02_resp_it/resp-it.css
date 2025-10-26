@@ -636,7 +636,7 @@
     grid-template-areas:
 
       'img-container-top-it-project-card short-info-container-top-it-project-card'
-      'details-container-top-it-project-card details-container-top-it-project-card'
+      'details-container-top-it-project details-container-top-it-project'
     ;
 
     grid-template-columns: 20em 1fr ;
@@ -658,18 +658,6 @@
   }
 
   /* ------------------------------------------------------------------------ */
-  /* Top IT Project Card | Content Container |                                */
-  /* ------------------------------------------------------------------------ */
-
-    .short-info-container-top-it-project-card {
-
-      width: 100%;
-
-      padding: 0 .8em 0 0;
-
-    }
-
-  /* ------------------------------------------------------------------------ */
   /* Top IT Project Card | Short Info Container | Header                      */
   /* ------------------------------------------------------------------------ */
 
@@ -686,10 +674,13 @@
 
   #tech-stack-content-container-top-it-project-card {
 
-    padding: 0;
+    padding: 1.5em 1em;
 
     display: grid;
-    grid: auto / 1fr 1fr 1fr 1fr;
+    row-gap: 1.5em;
+    column-gap: 1.5em;
+
+    grid: auto auto / 1fr 1fr;
 
     /* background-color: red; */
 
@@ -698,7 +689,7 @@
   /* main > tech stack content box */
   .tech-stack-content-box {
 
-    padding: 1.5em 1em;
+    padding: 0;
 
   }
 
