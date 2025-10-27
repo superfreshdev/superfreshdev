@@ -42,7 +42,7 @@
 
   grid-area: details-container-top-it-project;
 
-  grid-template-rows: 1fr;
+  /* grid-template-rows: 1fr; */
 
   border-radius: 0 0 1em 1em;
 
@@ -77,27 +77,94 @@
 
 }
 
+/* ------------------------------------------------------------- */
+/* Drop Down Details Category | Top IT Project
+/* ------------------------------------------------------------- */
 
+.drop-down-details-category-top-it-project {
 
+  width: 100%;
+  padding: .6em 1em;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
 
+  font-weight: bold;
 
+  /* background-color: rgb(28, 28, 28); */
+  background-color: #cacaca;
+  color:rgb(57, 57, 57);
 
+  border-radius: .8em;
 
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
 
-
-
-
-
-
-
-
-/* ----------------------------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ----------------------------------------------------------------------------------- */
+}
 
 /* ------------------------------------------------------------- */
-/* Sub Header Top IT Project Card
+/* Div 1 | Drop Down Details Category
+/* ------------------------------------------------------------- */
+
+.drop-down-details-category-top-it-project > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+/* better img flag position fix */
+.drop-down-details-category-top-it-project > div:nth-of-type(1) > img:nth-of-type(2) {
+
+  padding-top: 1px;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Div 1 | Div | Drop Down Details Category
+/* ------------------------------------------------------------- */
+
+.drop-down-details-category-top-it-project > div:nth-of-type(1) > div {
+
+  font-size: 14.5px;
+}
+
+/* ------------------------------------------------------------- */
+/* Img Minus (unshwon) | Drop Down Details Category
+/* ------------------------------------------------------------- */
+
+.drop-down-details-category-top-it-project > img:nth-of-type(2) {
+
+  display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+/* ❌❌❌ Trash
 /* ------------------------------------------------------------- */
 
 .sub-header-top-it-project-card {

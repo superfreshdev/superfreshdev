@@ -4,133 +4,60 @@
 /* : styles only for top it project the video tutorial container
 /* -------------------------------------------------------------- */
 
+/* ⚠️ /video-link-tutorial video-link-tutorial-container.css */
+/* ⚠️ handlings extra for video */
 
 /* ---------------------------------------------------------------- */
-/* Video Link Container
+/* Video Link Tutorial Container | Top IT Project
 /* ---------------------------------------------------------------- */
 
-.video-link-container-top-it-project-card {
+.video-link-tutorial-container-top-it-project {
+
+  display: grid;
+
+}
+
+/*  ⚠️ test */
+#smooth-content-top-it-project-video-tutorial-1 {
+
+  /* grid-template-rows: 1fr; */
+
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Content Top IT Project Video Tutorial | Top IT Project
+/* ------------------------------------------------------------------------------ */
+
+.content-top-it-project-video-tutorial {
 
   width: 100%;
+  margin-top: 1em;
+  padding: 1em 0;
 
   display: grid;
+  grid: auto auto / 1fr 1fr;
 
-  border-radius: 0 0 1em 1em;
+  row-gap: .8em;
+  column-gap: 1em;
 
-}
-
-/* layout img flag fix  */
-.video-link-container-top-it-project-card > header > div:nth-of-type(1) > img:nth-of-type(2) {
-
-  padding-top: 2px;
-}
-
-
-/* ---------------------------------------------------------------- */
-/* Main | Video Link Container
-/* ---------------------------------------------------------------- */
-
-#video-link-content-container-top-it-project-card {
-
-  width: 100%;
-  padding: 1.5em 1em;
-
-  display: grid;
-  /* justify-items: flex-start; */
-
-  row-gap: 1em;
-
-  border-radius: 0 0 .8em .8em;
-
-  border: 1px solid #cacaca;
-  background-color: white;
+  /* background-color: grey; */
 
 }
 
-/* ---------------------------------------------------------------- */
-/* Video Link Tutorial Box
-/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* Video Tutorial Category Box | Content Top IT Project Video Tutorial
+/* ------------------------------------------------------------------------------ */
 
-.video-link-tutorial-box-top-it-project {
+.video-tutorial-category-box {
 
-  width: 100%;
-
-  display: grid;
-  row-gap: 1em;
 
 }
 
-/* ---------------------------------------------------------------- */
-/* Video Category Link
-/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* Label | Video Tutorial Category Box
+/* ------------------------------------------------------------------------------ */
 
-.video-category-link-top-it-project {
-
-  height: 2em;
-  padding: 0 .8em;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  font-weight: bold;
-
-
-  border-radius: .6em;
-
-  background-color: #ebebeb;
-  color:#808080;
-
-  user-select: none;
-  cursor: pointer;
-  transition: all .4s;
-
-}
-
-.video-category-link-top-it-project > div:nth-of-type(1) {
-
-  display: flex;
-  align-items: center;
-  column-gap: .3em;
-
-}
-
-.video-category-link-top-it-project > div:nth-of-type(1) > div {
-
-  /* 14.5px = 14,5 / 16px (1em) = .90625em */
-  font-size: .90625em;
-
-}
-
-.video-category-link-top-it-project > div:nth-of-type(1) > div:nth-of-type(1) {
-
-  letter-spacing: 1px;
-
-}
-
-.video-category-link-top-it-project:hover {
-
-  background-color: wheat;
-
-}
-
-
-/* ---------------------------------------------------------------- */
-/* Video Tutorial Link Box
-/* ---------------------------------------------------------------- */
-
-.video-tutorial-link-box-top-it-project-card {
-
-  display: grid;
-  /* row-gap: 1em; */
-
-}
-
-/* ---------------------------------------------------------------- */
-/* ⭐ [1/2] | Label Video Tutorial Category
-/* ---------------------------------------------------------------- */
-
-.lbl-video-tutorial-link-category {
+.video-tutorial-category-box > label {
 
   height: 2.5em;
   padding: 0 .8em;
@@ -155,51 +82,44 @@
 
 }
 
-.lbl-video-tutorial-link-category:hover {
-
-  background-color: wheat;
-}
-
-
-/* div 1 */
-.lbl-video-tutorial-link-category > div:nth-of-type(1) {
-
-
-  font-size: 14.5px;
+.video-tutorial-category-box > label > div:nth-of-type(1) {
 
   display: flex;
   align-items: center;
-  column-gap: .4em;
+  column-gap: .3em;
 
-
+  font-size: 14.5px;
 
 }
 
-/* img (-), default unshown */
-.lbl-video-tutorial-link-category > img:nth-of-type(2) {
+/* default img minus unshwon */
+.video-tutorial-category-box > label > img:nth-of-type(2) {
 
   display: none;
 
 }
 
-/* ---------------------------------------------------------------- */
-/* ⭐ [2/2] | Video Tutorial Link List
-/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* Video Category Link List | Video Tutorial Category Box
+/* ------------------------------------------------------------------------------ */
 
-.video-tutorial-link-list {
+.video-category-link-list {
 
-  padding: 1em 0 0 0;
+  margin-top: 1em;
 
   display: grid;
-  row-gap: .6em;
+  row-gap: .4em;
+
+  /* background-color: red; */
+
 
 }
 
-/* ---------------------------------------------------------------- */
-/* ⭐ a Link | Video Tutorial Link List
-/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* Link Video Tutorial | Top IT Project
+/* ------------------------------------------------------------------------------ */
 
-.link-video-tutorial {
+.link-video-tutorial-top-it-project {
 
   text-decoration: none;
 
@@ -215,65 +135,68 @@
 
   background-color: rgb(244, 244, 244);
 
-
+  border: 1px solid rgb(223, 223, 223);
 
   transition: all .4s;
 
+
 }
 
-.link-video-tutorial:hover {
+/* ------------------------------------------------------------------------------ */
+/* Hover | Link Video Tutorial
+/* ------------------------------------------------------------------------------ */
+
+.link-video-tutorial-top-it-project:hover {
 
   background-color: rgb(205, 205, 205);
   background-color: #e0e0e0;
 
 }
 
-.link-video-tutorial:hover > main .content-link-video-tutorial > span {
+.link-video-tutorial-top-it-project:hover > main .content-link-video-tutorial > span {
 
   color:rgb(59, 59, 59);
 
 }
 
-.link-video-tutoria:visited {
+/* visited */
+.link-video-tutorial-top-it-project:visited {
 
   color:black;
 
 }
 
+/* ------------------------------------------------------------------------------ */
+/* Header | Link Video Tutorial
+/* ------------------------------------------------------------------------------ */
 
-/* ---------------------------------------------------------------- */
-/* ⭐ Header | a Link
-/* ---------------------------------------------------------------- */
-
-.link-video-tutorial > header {
+.link-video-tutorial-top-it-project > header {
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   column-gap: .8em;
 
-
 }
 
-/* ---------------------------------------------------------------- */
-/* ⭐ Meta Info Video Tutorial Link | Header | a Link
-/* ---------------------------------------------------------------- */
 
-.meta-info-video-tutorial-link {
+/* ------------------------------------------------------------------------------ */
+/* Video Nr Minutes Container | Top It Project
+/* ------------------------------------------------------------------------------ */
+
+.video-nr-minutes-container-top-it-project {
 
   display: flex;
   align-items: center;
-  column-gap: .3em;
-
-  /* font-weight: bold; */
+  column-gap: .4em;
 
 }
 
-/* divs */
-.meta-info-video-tutorial-link > div {
+/* nr + video lenght */
+.video-nr-minutes-container-top-it-project > div {
 
-  height: 1.3em;
-  padding: 0 .3em;
+  height: 1em;
+  padding: 0 .2em;
 
   display: flex;
   align-items: center;
@@ -281,7 +204,7 @@
 
   border-radius: .3em;
 
-  border: 2px solid rgb(202, 202, 202);
+  border: 1px solid rgb(202, 202, 202);
 
   /* background-color: white; */
   font-weight: bold;
@@ -291,55 +214,30 @@
 }
 
 /* divs spans */
-.meta-info-video-tutorial-link > div > span {
+.video-nr-minutes-container-top-it-project > div > span {
 
-  font-size: 12px;
+  font-size: 10.5px;
 
 }
 
-/* meta info video length */
-.meta-info-video-length {
+/* ------------------------------------------------------------------------------ */
+/* Status Img External Container | Top It Project
+/* ------------------------------------------------------------------------------ */
+
+.status-img-external-container-top-it-project {
 
   display: flex;
   align-items: center;
-  column-gap: .1em;
+  column-gap: .3em;
 
 }
 
-/* ---------------------------------------------------------------- */
-/* ⭐ Div 2 | Header | a Link
-/* ---------------------------------------------------------------- */
 
-.link-video-tutorial > header > div:nth-of-type(2) {
+/* ------------------------------------------------------------------------------ */
+/* Video Img Title Container | Top IT Project | Link Video Tutorial
+/* ------------------------------------------------------------------------------ */
 
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
-
-}
-
-.link-video-tutorial > header > div:nth-of-type(2) > img {
-
-  opacity: .4;
-}
-
-/* ---------------------------------------------------------------- */
-/* ⭐ Main | a Link
-/* ---------------------------------------------------------------- */
-
-.link-video-tutorial > main {
-
-  display: flex;
-  align-items: center;
-  column-gap: 1em;
-
-}
-
-/* ---------------------------------------------------------------- */
-/* ⭐ Content Link Video Tutorial | Main | a Link
-/* ---------------------------------------------------------------- */
-
-.content-link-video-tutorial {
+.video-img-title-container-top-it-project {
 
   position: relative;
   line-height: 1.3em;
@@ -347,7 +245,7 @@
 }
 
 /* img float */
-.content-link-video-tutorial > img {
+.video-img-title-container-top-it-project > img {
 
 
   float: left;
@@ -361,195 +259,10 @@
 }
 
 /* span */
-.content-link-video-tutorial > span {
+.video-img-title-container-top-it-project > span {
 
   font-size: 14.5px;
 
   color:rgb(168, 168, 168);
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ---------------------------------------------------------------- */
-
-/* ---------------------------------------------------------------- */
-/* Video Link List Tutorial | Video Link Tutorial Box
-/* ---------------------------------------------------------------- */
-
-.video-link-list-tuorial-top-it-project {
-
-  display: grid;
-
-  border-radius: 1em;
-
-  border: 1px solid rgb(216, 215, 215);;
-
-  /* background-color: rgb(222, 222, 222); */
-
-}
-
-/* ---------------------------------------------------------------- */
-/* a link | Video Link List Tutorial
-/* ---------------------------------------------------------------- */
-
-.video-link-list-tuorial-top-it-project > a {
-
-  padding: .8em 1em;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: .8em;
-
-  text-decoration: none;
-
-  /* background-color: rgb(249, 249, 249); */
-
-  /* background-color: #ebebeb; */
-
-  transition: all .4s;
-
-}
-
-.video-link-list-tuorial-top-it-project > a:first-child {
-
-  border-radius: .8em .8em 0 0;
-
-}
-
-.video-link-list-tuorial-top-it-project > a:last-child {
-
-  border-radius: 0 0 .8em .8em;
-
-}
-
-.video-link-list-tuorial-top-it-project > a:not(:last-child) {
-
-  border-bottom: 1px solid rgb(216, 215, 215);;
-
-}
-
-.video-link-list-tuorial-top-it-project > a:hover {
-
-  background-color: rgb(218, 218, 218);
-  background-color: #ebebeb;
-
-}
-
-.video-link-list-tuorial-top-it-project > a:visited {
-
-  color:rgb(59, 59, 59);
-
-}
-
-/* ---------------------------------------------------------------- */
-/* Div 1 | Header | a link
-/* ---------------------------------------------------------------- */
-
-.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) {
-
-  display: grid;
-  row-gap: .4em;
-
-}
-
-/* ---------------------------------------------------------------- */
-/* Header | a link
-/* ---------------------------------------------------------------- */
-
-.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) > header {
-
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
-
-  font-weight: bold;
-
-  color:rgb(152, 152, 152);
-
-}
-
-/* ---------------------------------------------------------------- */
-/* Div's | Header | a link
-/* ---------------------------------------------------------------- */
-
-.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) > header > div {
-
-  font-size: 12.5px;
-
-}
-
-/* ---------------------------------------------------------------- */
-/* Nr | Header | a link
-/* ---------------------------------------------------------------- */
-
-/* actually dont need extra styling */
-
-/* ---------------------------------------------------------------- */
-/* Seperator | Header | a link
-/* ---------------------------------------------------------------- */
-
-.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) > header > div:nth-of-type(2) {
-
-  /* better layout fix */
-  padding-bottom: 2px;
-  /* color:red; */
-
-}
-
-/* ---------------------------------------------------------------- */
-/* Video Lenght | Header | a link
-/* ---------------------------------------------------------------- */
-
-/* actually dont need extra styling */
-
-/* ---------------------------------------------------------------- */
-/* Main | a link
-/* ---------------------------------------------------------------- */
-
-.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) > main {
-
-  line-height: 1.4em;
-  font-size: 14.5px;
-
-  color: #797979;
-
-  color:rgb(55, 55, 55);
-
-}
-
-
-.video-link-list-tuorial-top-it-project > a > div:nth-of-type(1) > main > img {
-
-  float: left;
-
-  margin-right: 12px;
-  /* margin-bottom: 6px; */
-
-  height: 4em;
-  width: 4em;
-
-  border-radius: .3em;
-
 
 }

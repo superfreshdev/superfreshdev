@@ -704,7 +704,7 @@
   /*  Top IT Project Card | Video Link Tutorial | Main */
   /* ----------------------------------------------------------------------------------- */
 
-  #video-link-content-container-top-it-project-card {
+  .video-link-content-container-top-it-project {
 
     grid: auto / 1fr 1fr;
     align-items: flex-start;
