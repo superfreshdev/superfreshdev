@@ -21,18 +21,25 @@
 
         🟥 /more_it_projects
 
-        🟥 /top_it_projects
+        ➡️🟥 /top_it_projects
 
-        🟨 nav-it-projects.css ( top, more | web-design, web-dev, software-dev )
-        🟨 it-projects.css ( default )
+        🟩 nav-it-projects.css ( top, more | web-design, web-dev, software-dev )
+        🟩 it-projects.css ( default )
 
 
     ===================================================================================
 
       🟩 /top_it_projects
 
+        ⚠️ base_card_container
+            .top-it-project-card.css
+            .img-container.css
+            .quick-info-container.css
 
-        🟥 top-it-project-card.css ( default styles)
+        ⚠️ details_card_container
+
+
+        ➡️🟥 top-it-project-card.css ( default styles)
           -> img-container, quick-info-container
 
         🟥 /details_card_container

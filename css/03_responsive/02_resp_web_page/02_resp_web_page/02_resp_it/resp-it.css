@@ -462,8 +462,8 @@
     /* desktop */
     grid-template-areas:
 
-    'nav-it-projects drop-down-category-it-projects'
-    '. smooth-drop-down-category-it-project-list';
+    'nav-it-projects category-it-projects'
+    '. smooth-category-it-projects-list';
 
     /* background-color: rgb(88, 88, 88); */
 

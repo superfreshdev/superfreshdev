@@ -28,8 +28,8 @@
   /* mobile */
   grid-template-areas:
 
-  'drop-down-category-it-projects'
-  'smooth-drop-down-category-it-project-list'
+  'category-it-projects'
+  'smooth-category-it-projects-list'
   'nav-it-projects';
 
   /* background-color: rgb(88, 88, 88); */
@@ -71,7 +71,7 @@
 
 label[for="chk-selected-category-it-projects"] {
 
-  grid-area: drop-down-category-it-projects;
+  grid-area: category-it-projects;
 
   width: 13.8em;
 
@@ -81,9 +81,9 @@ label[for="chk-selected-category-it-projects"] {
 /* Smooth | Drop Down Category IT Project List | Header
 /* -------------------------------------------------------------- */
 
-#smooth-drop-down-category-it-project-list {
+#smooth-category-it-projects-list {
 
-  grid-area: smooth-drop-down-category-it-project-list;
+  grid-area: smooth-category-it-projects-list;
 
   width: 13.8em;
 
@@ -92,45 +92,19 @@ label[for="chk-selected-category-it-projects"] {
 }
 
 /* -------------------------------------------------------------- */
-/* Drop Down Category IT Project List | Header
+/* Category IT Projects List | Header
 /* -------------------------------------------------------------- */
 
-#drop-down-category-it-project-list {
+#category-it-projects-list {
 
   margin-top: .5em;
 
   display: grid;
   row-gap: .5em;
 
-  background-color: red;
-
+  /* background-color: red; */
 
 }
-
-/* -------------------------------------------------------------- */
-/* [2/3] | Top IT | Project Container
-/* -------------------------------------------------------------- */
-
-/* -------------------------------------------------------------- */
-/* [3/3] | More IT | Project Container
-/* -------------------------------------------------------------- */
-
-
-
-
-
-
-
-/* -------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* -------------------------------------------------------------- */
-
-
-
-/* -------------------------------------------------------------- */
-/* [3/3] | Smooth Drop Down Category List | IT Projects
-/* -------------------------------------------------------------- */
-
 
 /* -------------------------------------------------------------- */
 /* TOP & More IT Projects Container
@@ -147,7 +121,7 @@ label[for="chk-selected-category-it-projects"] {
 }
 
 /* -------------------------------------------------------------- */
-/* TOP IT Projects Container
+/* [2/3] | Top IT | Project Container
 /* -------------------------------------------------------------- */
 
 #top-it-projects-container {
@@ -157,14 +131,13 @@ label[for="chk-selected-category-it-projects"] {
   display: grid;
   justify-items: center;
 
-
 }
 
 /* -------------------------------------------------------------- */
-/* Label | Show More | Top IT Projects Container
+/* Label Show More Container | Top IT Projects
 /* -------------------------------------------------------------- */
 
-#label-show-more-top-it-projects-container {
+#label-show-more-container-top-it-projects {
 
   padding: 2em 0 .5em 0;
 
@@ -177,7 +150,7 @@ label[for="chk-selected-category-it-projects"] {
 }
 
 /* -------------------------------------------------------------- */
-/* More IT Projects Container
+/* [3/3] | More IT | Project Container
 /* -------------------------------------------------------------- */
 
 #more-it-projects-container {

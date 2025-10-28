@@ -44,14 +44,14 @@
 }
 
 /* show content */
-#chk-selected-category-it-projects:checked ~ #header-it-projects-container #smooth-drop-down-category-it-project-list {
+#chk-selected-category-it-projects:checked ~ #header-it-projects-container #smooth-category-it-projects-list {
 
   grid-template-rows: 1fr;
 
 }
 
 /* ------------------------------------------------------------------------------- */
-/* 🟥 [2/4] | Radio | Category | IT Projects ( top, more )
+/* 🟩 [2/4] | Radio | Category | IT Projects ( top, more )
 /* ------------------------------------------------------------------------------- */
 
 input[name="name-radio-category-it-projects"] {
@@ -77,7 +77,7 @@ input[name="name-radio-category-it-projects"] {
 }
 
 /* ------------------------------------------------------------------------------- */
-/* 🟥 [3/4] | Radios | Content Category ( web-design, web-dev, ... )
+/* 🟩 [3/4] | Radios | Content Category ( web-design, web-dev, ... )
 /* ------------------------------------------------------------------------------- */
 
 /* default unshown */
