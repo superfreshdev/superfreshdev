@@ -1,0 +1,105 @@
+/* -------------------------------------------------------------------------------- */
+/* > nav-it-projects.css
+/*
+/* : styles all nav handlings of
+/* : 1. checkbox selected category ( top, more )
+/* : 2. radio select categories ( top, more )
+/* : 3. radio content filter
+/* :    ( web-design, web-dev, software-dev)
+/* :    ( exercices, leet-code, mini-games )
+/* : 4. Show More Top IT Projects
+/* -------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------- */
+/* [1/4] | Checkbox | Selected Category | IT Projects ( top, more )
+/* ------------------------------------------------------------------------------- */
+
+/* default unshown */
+#chk-selected-category-it-projects {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-selected-category-it-projects:checked ~ #header-it-projects-container label[for="chk-selected-category-it-projects"] {
+
+  background-color: rgb(239, 113, 113);
+
+}
+
+/* change rotation | img arrow */
+#chk-selected-category-it-projects:checked ~ #header-it-projects-container label[for="chk-selected-category-it-projects"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* show content */
+#chk-selected-category-it-projects:checked ~ #header-it-projects-container #smooth-drop-down-category-it-project-list {
+
+  grid-template-rows: 1fr;
+
+}
+
+/* ------------------------------------------------------------------------------- */
+/* [2/4] | Radio | Select Categories | IT Projects ( top, more )
+/* ------------------------------------------------------------------------------- */
+
+input[name="name-radio-categories-it-projects"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-category-top-it-project:checked ~ #header-it-projects-container label[for="radio-category-top-it-project"],
+#radio-category-more-it-project:checked ~ #header-it-projects-container label[for="radio-category-more-it-project"] {
+
+  background-color: wheat;
+
+}
+
+/* set x */
+#radio-category-top-it-project:checked ~ #header-it-projects-container label[for="radio-category-top-it-project"] > .custom-radio-small > img,
+#radio-category-more-it-project:checked ~ #header-it-projects-container label[for="radio-category-more-it-project"] .custom-radio-small > img {
+
+  display: flex;
+
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* [3/4] | Radios | Category Filter ( web-design, web-dev, ... )
+/* ------------------------------------------------------------------------------- */
+
+/* default unshown */
+input[name="radio-category-it-project"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-category-it-project-1:checked ~ #header-it-projects-container label[for="radio-category-it-project-1"],
+#radio-category-it-project-2:checked ~ #header-it-projects-container label[for="radio-category-it-project-2"],
+#radio-category-it-project-3:checked ~ #header-it-projects-container label[for="radio-category-it-project-3"] {
+
+  background-color: wheat;
+  opacity: 1;
+
+}
+
+/* set x */
+#radio-category-it-project-1:checked ~ #header-it-projects-container label[for="radio-category-it-project-1"] > .custom-radio-small > img,
+#radio-category-it-project-2:checked ~ #header-it-projects-container label[for="radio-category-it-project-2"]  > .custom-radio-small > img,
+#radio-category-it-project-3:checked ~ #header-it-projects-container label[for="radio-category-it-project-3"]  > .custom-radio-small > img {
+
+  display: flex;
+
+}
+
+/* ------------------------------------------------------------------------------- */
+/* [4/4] | Checkbox | Show More | 2 Top IT Projects
+/* ------------------------------------------------------------------------------- */

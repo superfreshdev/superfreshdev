@@ -310,7 +310,7 @@
 
                     <!-- default  -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/it-projects.css">
-                    <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/handlings-it-projects.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/02_my_it/it_projects/nav-it-projects.css">
 
                         <!-- ---------------------------------------------- -->
                         <!-- 🟩 [1/2] | Top IT Projects  -->
@@ -2273,38 +2273,43 @@
                                             <!-- -------------------------------------------------------------------------------- -->
                                             <!-- ➡️🟥 Page Content Card White | IT Projects  -->
                                             <!-- -------------------------------------------------------------------------------- -->
-                                            <div id="page-it-project-card" class="style-page-content-card-white">
+                                            <div class="style-page-content-card-white">
+
+
+                                                <!-- ---------------------------------------------------- -->
+                                                <!-- ⚠️⚠️⚠️ Namen Richtig vergeben -->
+                                                <!-- ---------------------------------------------------- -->
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- Radios | Top IT Projects, More IT Projects (js) -->
+                                                <!-- 🟥 Checkbox | Seleted Category                                  -->
                                                 <!-- ------------------------------------------------------------ -->
-                                                <input checked type="radio" id="radio-category-top-it-projects" name="name-radio-category-it-projects">
-                                                <input type="radio" id="radio-category-more-it-projects" name="name-radio-category-it-projects">
+                                                <input type="checkbox" id="chk-selected-category-it-projects">
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- Radios | Web-Desgin, Web-Dev, Software-Dev, ... (js) -->
+                                                <!-- ➡️🟥 Radios | Select Categories                                   -->
                                                 <!-- ------------------------------------------------------------ -->
-                                                <input checked type="radio" id="radio-category-it-project-1" name="name-radio-topic-category-it-projects">
-                                                <input type="radio" id="radio-category-it-project-2" name="name-radio-topic-category-it-projects">
-                                                <input type="radio" id="radio-category-it-project-3" name="name-radio-topic-category-it-projects">
+                                                <input type="radio" id="radio-category-top-it-project" name="name-radio-categories-it-projects">
+                                                <input type="radio" id="radio-category-more-it-project" name="name-radio-categories-it-projects">
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- 🟩🟨 [1/2] | Header | It Projects Container -->
+                                                <!-- 🟥 Radios | Select Content Categories                           -->
+                                                <!-- ------------------------------------------------------------ -->
+                                                <input checked type="radio" id="radio-category-it-project-1" name="radio-category-it-project">
+                                                <input type="radio" id="radio-category-it-project-2" name="radio-category-it-project">
+                                                <input type="radio" id="radio-category-it-project-3" name="radio-category-it-project">
+
+                                                <!-- ------------------------------------------------------------ -->
+                                                <!-- 🟩 [1/3] | Header | It Projects Container -->
                                                 <!-- ------------------------------------------------------------ -->
                                                 <div id="header-it-projects-container">
 
                                                     <!-- ------------------------------------------------------------------ -->
-                                                    <!-- Checkbox | Selected Category -->
-                                                    <!-- ------------------------------------------------------------------ -->
-                                                    <input type="checkbox" id="chk-selected-category-it-projects">
-
-                                                    <!-- ------------------------------------------------------------------ -->
-                                                    <!-- 🟩 [1/3] | Nav | IT Projects Container (js) -->
+                                                    <!-- 🟩 [1/3] | Nav IT Projects -->
                                                     <!-- ------------------------------------------------------------------ -->
                                                     <nav id="nav-it-projects" class="nav-content-panel-medium">
 
                                                         <!-- ------------------------------------------------------ -->
-                                                        <!-- Label 1 -->
+                                                        <!-- Project Category 1 e.g web-design -->
                                                         <!-- ------------------------------------------------------ -->
                                                         <label for="radio-category-it-project-1">
 
@@ -2326,7 +2331,7 @@
                                                         </label>
 
                                                         <!-- ------------------------------------------------------ -->
-                                                        <!-- Label 2 -->
+                                                        <!-- Project Category 2 e.g web-dev -->
                                                         <!-- ------------------------------------------------------ -->
                                                         <label for="radio-category-it-project-2">
 
@@ -2348,7 +2353,7 @@
                                                         </label>
 
                                                         <!-- ------------------------------------------------------ -->
-                                                        <!-- Label 3 -->
+                                                        <!-- Project Category 3 e.g software-dev -->
                                                         <!-- ------------------------------------------------------ -->
                                                         <label for="radio-category-it-project-3">
 
@@ -2357,7 +2362,7 @@
                                                             <!-- -------------------------------------------- -->
                                                             <div>
                                                                 <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-0-9" alt="img">
-                                                                <div>Software-Dev <span>(03)</span></div>
+                                                                <div>Software-Dev <span>(3)</span></div>
                                                             </div>
 
                                                             <!-- -------------------------------------------- -->
@@ -2372,7 +2377,7 @@
                                                     </nav>
 
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <!-- 🟩🟨 [2/3] Drop Down Category -->
+                                                    <!-- ➡️🟥 [2/3] Selected Category | IT Projects  -->
                                                     <!-- ----------------------------------------------------------- -->
                                                     <label for="chk-selected-category-it-projects" class="drop-down-grey-medium">
 
@@ -2382,8 +2387,8 @@
                                                         <div>
                                                             <!-- <img src="media/img/icons/02-icon-colors/01-black/black-binary-small.png" class="img-h-1-1" alt="img"> -->
                                                             <img src="media/img/icons/02-icon-colors/01-black/black-rocket.png" class="img-h-1-1" alt="img">
-                                                            <div>More <span>(29)</span></div>
-                                                            <!-- <div>Top <span>(9)</span></div> -->
+                                                            <!-- <div>More IT-Project's <span>(29)</span></div> -->
+                                                            <div>Top | <span style="color:grey;">IT-Project's<span> (9)</span></span></div>
                                                         </div>
 
                                                         <!-- ---------------------------------------- -->
@@ -2395,9 +2400,9 @@
                                                     </label>
 
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <!-- 🟩🟨 [3/3] Drop Down Category List (js) -->
+                                                    <!-- 🟥 [3/3] Smooth Category IT Project Lists -->
                                                     <!-- ----------------------------------------------------------- -->
-                                                    <div id="smooth-drop-down-category-list-it-projects" class="smooth-open-close-container">
+                                                    <div id="smooth-drop-down-category-it-project-list" class="smooth-open-close-container">
 
                                                         <!-- ---------------------------------------------------- -->
                                                         <!-- Overflow Hidden -->
@@ -2405,21 +2410,21 @@
                                                         <div class="overflow-hidden">
 
                                                             <!-- ---------------------------------------------------- -->
-                                                            <!-- Drop Down Category List | IT Projects (js) -->
+                                                            <!-- 🟥 Drop Down Category List | IT Projects (js) -->
                                                             <!-- ---------------------------------------------------- -->
-                                                            <nav id="drop-down-category-list-it-projects">
+                                                            <nav id="drop-down-category-it-project-list">
 
                                                                 <!-- ------------------------------------------------------ -->
-                                                                <!-- Label | Top IT Projects -->
+                                                                <!-- Label | Category | Top IT Projects -->
                                                                 <!-- ------------------------------------------------------ -->
-                                                                <label for="radio-category-top-it-projects" class="radio-selection-grey-medium">
+                                                                <label for="radio-category-top-it-project" class="radio-selection-grey-medium">
 
                                                                     <!-- -------------------------------------------- -->
                                                                     <!-- Title  -->
                                                                     <!-- -------------------------------------------- -->
                                                                     <div>
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-rocket.png" class="img-h-1" alt="img">
-                                                                        <div>Top <span>(9)</span></div>
+                                                                        <div>Top | <span style="color:grey;">IT-Project's<span> (9)</span></span></div>
                                                                     </div>
 
                                                                     <!-- -------------------------------------------- -->
@@ -2431,17 +2436,18 @@
 
 
                                                                 </label>
+
                                                                 <!-- ------------------------------------------------------ -->
-                                                                <!-- Label | More IT Projects -->
+                                                                <!-- Label | Category | More IT Projects -->
                                                                 <!-- ------------------------------------------------------ -->
-                                                                <label for="radio-category-more-it-projects" class="radio-selection-grey-medium">
+                                                                <label for="radio-category-more-it-project" class="radio-selection-grey-medium">
 
                                                                     <!-- -------------------------------------------- -->
                                                                     <!-- Title  -->
                                                                     <!-- -------------------------------------------- -->
                                                                     <div>
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-binary-small.png" class="img-h-1" alt="img">
-                                                                        <div>More <span>(29)</span></div>
+                                                                        <div>More <span style="color:grey;">| IT-Project's <span> (29)</span></span></div>
                                                                     </div>
 
                                                                     <!-- -------------------------------------------- -->
@@ -2464,7 +2470,7 @@
                                                 </div>
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- ➡️🟥 [2/3] | Top IT | Projects Container -->
+                                                <!-- 🟥 [2/3] | Top IT | Projects Container -->
                                                 <!-- ------------------------------------------------------------ -->
                                                 <div id="top-it-projects-container">
 
@@ -2618,7 +2624,7 @@
                                                                  <div class="details-container-top-it-project">
 
                                                                     <!-- ----------------------------------------------------------------- -->
-                                                                    <!-- Checkboxes |  -->
+                                                                    <!-- Checkboxes | tech-stack, core-feature, video-tutorial  -->
                                                                     <!-- ----------------------------------------------------------------- -->
                                                                     <input type="checkbox" id="chk-tech-stack-top-it-project-1">
                                                                     <input type="checkbox" id="chk-core-feature-top-it-project-1">
@@ -2627,6 +2633,7 @@
                                                                     <!-- ----------------------------------------------------------------- -->
                                                                     <!-- 🟨 [1/3] | Tech Stack Container | Top IT Project Card -->
                                                                     <!-- ----------------------------------------------------------------- -->
+                                                                    <!--⚠️ tech-stack-container-top-it-project  -->
                                                                     <div class="tech-stack-container-top-it-project-card">
 
                                                                         <!-- ----------------------------------------------------- -->
@@ -2847,6 +2854,7 @@
                                                                     <!-- ----------------------------------------------------------------- -->
                                                                     <!-- 🟨 [2/3] | Core Features Container -->
                                                                     <!-- ----------------------------------------------------------------- -->
+                                                                    <!--⚠️ core-features-container-top-it-project  -->
                                                                     <div class="core-features-container-top-it-project-card">
 
                                                                         <!-- ----------------------------------------------------- -->
@@ -3215,10 +3223,6 @@
 
                                                                     </div>
 
-                                                                    <!-- ---------------------------------------------------------- -->
-                                                                    <!--❇️❇️❇️ NEW ❇️❇️❇️ -->
-                                                                    <!-- ---------------------------------------------------------- -->
-
                                                                     <!-- ----------------------------------------------------------------- -->
                                                                     <!-- ➡️🟥 [3/3] | Video Link Tutorial Container | Top IT Project      -->
                                                                     <!-- ----------------------------------------------------------------- -->
@@ -3228,7 +3232,7 @@
                                                                         <!-- ----------------------------------------------------------------------------- -->
                                                                         <!-- [1/2] | Open-Close | Video Tutorial  -->
                                                                         <!-- ----------------------------------------------------------------------------- -->
-                                                                        <input type="checkbox" id="chk-open-close-top-it-project-video-tutorial-1">
+                                                                        <input checked type="checkbox" id="chk-open-close-top-it-project-video-tutorial-1">
                                                                         <label for="chk-open-close-top-it-project-video-tutorial-1"
                                                                                 class="drop-down-details-category-top-it-project">
 
@@ -4378,13 +4382,6 @@
 
 
                                                                     </div>
-
-                                                                    <!-- ---------------------------------------------------------- -->
-                                                                    <!--❇️❇️❇️ NEW ❇️❇️❇️ -->
-                                                                    <!-- ---------------------------------------------------------- -->
-
-
-
 
 
                                                                 </div>
