@@ -9,53 +9,47 @@
 /* Tech Stack Container
 /* ------------------------------------------------------------- */
 
-.tech-stack-container-top-it-project-card {
+.tech-stack-container-top-it-project {
 
   width: 100%;
   display: grid;
 
 }
 
-
 /* ------------------------------------------------------------- */
-/* Main | Tech Stack Container
+/* Tech Stack Content Top It Project
 /* ------------------------------------------------------------- */
 
-#tech-stack-content-container-top-it-project-card {
+.tech-stack-content-top-it-project {
 
   width: 100%;
   margin-top: 1em;
-  padding: 2em 1em;
+  padding: 1em .3em;
 
   display: grid;
   row-gap: 1.5em;
 
-  border-radius: .8em;
-  border: 1px solid #cacaca;
-
-  background-color: white;
+  /* background-color: rgb(154, 154, 154); */
 
 }
 
 /* ------------------------------------------------------------- */
-/* Tech Stack Content Box
+/* Tech Stack Box | Top IT Project
 /* ------------------------------------------------------------- */
 
-.tech-stack-content-box {
+.tech-stack-box-top-it-project {
 
   display: grid;
   align-content: flex-start;
   row-gap: .6em;
 
-  /* border: 2px solid #b8b8b8b8; */
-
 }
 
 /* ------------------------------------------------------------- */
-/* Header | Tech Stack Content Box
+/* Header | Tech Stack Box
 /* ------------------------------------------------------------- */
 
-.tech-stack-content-box > header {
+.tech-stack-box-top-it-project > header {
 
   height: 1.8em;
   padding: 0 .6em;
@@ -68,31 +62,31 @@
 
   font-weight: bold;
 
+  text-decoration: underline;
+
   /* opacity: .6; */
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
   color: #848484;
-
-
 
 }
 
-.tech-stack-content-box > header > img {
+.tech-stack-box-top-it-project > header > img {
 
   opacity: .6;
 
 }
 
-.tech-stack-content-box > header > div {
+.tech-stack-box-top-it-project > header > div {
 
-  font-size: 13px;
+  font-size: 14.5px;
 
 }
 
 /* ------------------------------------------------------------- */
-/* Main | Tech Stack Content Box
+/* Main | Tech Stack Box
 /* ------------------------------------------------------------- */
 
-.tech-stack-content-box > main {
+.tech-stack-box-top-it-project > main {
 
   display: flex;
   flex-wrap: wrap;
@@ -104,10 +98,10 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Divs | Main | Tech Stack Content Box
+/* Main Div | Tech Stack Box
 /* ------------------------------------------------------------- */
 
-.tech-stack-content-box > main > div {
+.tech-stack-box-top-it-project > main > div {
 
   height: 1.6em;
   padding: 0 .4em;
@@ -118,12 +112,16 @@
 
   border-radius: .4em;
 
+  font-weight: bold;
+
   border: 1px solid rgb(230, 230, 230);
   color:rgb(162, 162, 162);
 
+  background-color: rgb(255, 255, 255);
+
 }
 
-.tech-stack-content-box > main > div > div {
+.tech-stack-box-top-it-project > main > div > div {
 
   font-size: 12.5px;
   /* font-weight: bold; */

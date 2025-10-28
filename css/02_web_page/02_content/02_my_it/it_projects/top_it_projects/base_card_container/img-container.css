@@ -1,17 +1,17 @@
 /* -------------------------------------------------------------- */
-/* > img-container-top-it-project-card.css
+/* > img-container.css
 /*
 /* : styles img container top it project card
 /* -------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------- */
-/* Img Container | Top IT Project Card
+/* Img Container | Top IT Project
 /* ------------------------------------------------------------- */
 
-.img-container-top-it-project-card {
+.img-container-top-it-project {
 
-  grid-area: img-container-top-it-project-card;
+  grid-area: img-container-top-it-project;
 
   width: 100%;
 
@@ -25,7 +25,7 @@
 
 }
 
-.img-container-top-it-project-card > img {
+.img-container-top-it-project > img {
 
   width: 100%;
   border-radius: .9em .9em 0 0;

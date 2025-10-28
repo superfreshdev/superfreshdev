@@ -1,0 +1,94 @@
+/* -------------------------------------------------------------------------------- */
+/* > nav-details-top-it-project-1.css
+/* : styles nav details of top it project 1
+/* -------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------- */
+/* 🟥 [1/3] | Checkbox | Open Details
+/* ------------------------------------------------------------------------------- */
+
+/* default unshown */
+#chk-details-top-it-project-1 {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-details-top-it-project-1:checked ~ .quick-info-container-top-it-project label[for="chk-details-top-it-project-1"] {
+
+  background-color: #ff8080;
+
+}
+
+/* change img arrow rotation */
+#chk-details-top-it-project-1:checked ~ .quick-info-container-top-it-project label[for="chk-details-top-it-project-1"] > img {
+
+  transform: rotate(180deg);
+
+}
+
+/* show content */
+#chk-details-top-it-project-1:checked ~ #smooth-details-top-it-project-1 {
+
+  grid-template-rows: 1fr;
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* 🟥 [2/3] | Checkbox | Details Category ( tech-stack, core-feature, video-tutorials)
+/* ------------------------------------------------------------------------------------------------- */
+
+/* default unshown */
+#chk-top-it-project-tech-stack-1,
+#chk-top-it-project-core-feature-1,
+#chk-top-it-project-video-tutorials-1 {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-top-it-project-tech-stack-1:checked + label,
+#chk-top-it-project-core-feature-1:checked + label,
+#chk-top-it-project-video-tutorials-1:checked + label {
+
+  background-color: #ff8080;
+
+}
+
+/* unshow img + */
+#chk-top-it-project-tech-stack-1:checked + label > img:nth-of-type(1),
+#chk-top-it-project-core-feature-1:checked + label > img:nth-of-type(1) ,
+#chk-top-it-project-video-tutorials-1:checked + label > img:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* unshow img - */
+#chk-top-it-project-tech-stack-1:checked + label > img:nth-of-type(2),
+#chk-top-it-project-core-feature-1:checked + label > img:nth-of-type(2) ,
+#chk-top-it-project-video-tutorials-1:checked + label > img:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+
+/* show content */
+#chk-top-it-project-tech-stack-1:checked  ~ #smooth-tech-stack-content-top-it-project-1,
+#chk-top-it-project-core-feature-1:checked ~ #smooth-core-feature-content-top-it-project-1,
+#chk-top-it-project-video-tutorials-1:checked ~ #smooth-video-tutorial-content-top-it-project-1 {
+
+  grid-template-rows: 1fr;
+
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* 🟥 [3/3] | Checkbox | Video Tutorials Category | ⚠️ Later JS Generated
+/* ------------------------------------------------------------------------------------------------- */

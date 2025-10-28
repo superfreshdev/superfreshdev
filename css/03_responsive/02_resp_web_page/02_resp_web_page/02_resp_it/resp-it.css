@@ -143,13 +143,13 @@
   /* Top IT Project Card | Img Container                                      */
   /* ------------------------------------------------------------------------ */
 
-  .img-container-top-it-project-card {
+  .img-container-top-it-project {
 
     justify-content: flex-start;
 
   }
 
-  .img-container-top-it-project-card > img {
+  .img-container-top-it-project > img {
 
     width: 22em;
     border-radius: .9em 0 0 0;
@@ -596,17 +596,17 @@
   }
 
   /* ------------------------------------------------------------------------ */
-  /* Top IT Project Card | Img Container                                      */
+  /* Top IT Project | Img Container                                      */
   /* ------------------------------------------------------------------------ */
 
-  .img-container-top-it-project-card {
+  .img-container-top-it-project {
 
     justify-content: flex-start;
     border-radius: .9em 0 0 .9em;
 
   }
 
-  .img-container-top-it-project-card > img {
+  .img-container-top-it-project > img {
 
     width: 100%;
     border-radius: .9em 0 0 .9em;
@@ -627,8 +627,8 @@
 
     grid-template-areas:
 
-      'img-container-top-it-project-card short-info-container-top-it-project-card'
-      'details-container-top-it-project details-container-top-it-project'
+      'img-container-top-it-project quick-info-container-top-it-project'
+      'details-content-top-it-project details-content-top-it-project'
     ;
 
     grid-template-columns: 20em 1fr ;
@@ -641,7 +641,7 @@
   /* Top IT Project Card | Img Container > Img                                */
   /* ------------------------------------------------------------------------ */
 
-  .img-container-top-it-project-card > img {
+  .img-container-top-it-project > img {
 
       border-radius: 1em 0 0 1em;
 
@@ -653,8 +653,7 @@
   /* Top IT Project Card | Short Info Container | Header                      */
   /* ------------------------------------------------------------------------ */
 
-  .short-info-container-top-it-project-card > header {
-
+  .quick-info-container-top-it-project > header {
 
       margin-top: 0em;
 

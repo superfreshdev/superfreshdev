@@ -1,0 +1,86 @@
+/* -------------------------------------------------------------- */
+/* > details-layout.css
+/*
+/* : styles details layout top it project card
+/* -------------------------------------------------------------- */
+
+/* ------------------------------------------------------------- */
+/* ⬇️⬆️ Smooth | Details Content Top IT Project
+/* ------------------------------------------------------------- */
+
+#smooth-details-top-it-project-1,
+#smooth-details-top-it-project-1,
+#smooth-details-top-it-project-1 {
+
+  grid-area: details-content-top-it-project;
+
+  /* grid-template-rows: 1fr; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Details Content Top IT Project
+/* ------------------------------------------------------------- */
+
+.details-content-top-it-project {
+
+  padding: 1.5em .8em;
+
+  display: grid;
+  row-gap: 1em;
+
+  border-radius: 0 0 1em 1em;
+
+  background-color: rgb(224, 224, 224);
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Details Content Category | Top IT Project
+/* ------------------------------------------------------------- */
+
+.details-content-category-top-it-project {
+
+  width: 100%;
+  padding: .6em 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+  font-weight: bold;
+
+  /* background-color: rgb(28, 28, 28); */
+  background-color: #cacaca;
+  color:rgb(57, 57, 57);
+
+  border-radius: .8em;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* div 1 | sub header */
+.details-content-category-top-it-project  > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+}
+
+.details-content-category-top-it-project  > div:nth-of-type(1) > div {
+
+  font-size: 14.5px;
+}
+
+/* img 2 = minus = unshown */
+.details-content-category-top-it-project > img:nth-of-type(2) {
+
+  display: none;
+
+}

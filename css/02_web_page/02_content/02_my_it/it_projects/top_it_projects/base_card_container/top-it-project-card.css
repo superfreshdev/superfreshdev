@@ -1,0 +1,32 @@
+/* -------------------------------------------------------------- */
+/* > top-it-project-card.css
+/* : styles the top it project card
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Top IT Project Card
+/* -------------------------------------------------------------- */
+
+.top-it-project-card {
+
+  width: 100%;
+
+  display: grid;
+
+  grid-template-areas:
+
+    'img-container-top-it-project'
+    'quick-info-container-top-it-project'
+    'details-content-top-it-project'
+  ;
+
+  border-radius: 1em;
+
+  border: 2px solid rgb(203, 203, 203);
+
+  background-color: white;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
