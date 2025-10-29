@@ -51,6 +51,8 @@
 
 .tech-stack-box-top-it-project > header {
 
+  text-decoration: underline;
+
   height: 2em;
   padding: 0 .6em;
 
@@ -63,7 +65,7 @@
   font-weight: bold;
 
   /* opacity: .6; */
-  background-color: rgb(193, 193, 193);
+  /* background-color: rgb(193, 193, 193); */
   color: #848484;
 
 }
