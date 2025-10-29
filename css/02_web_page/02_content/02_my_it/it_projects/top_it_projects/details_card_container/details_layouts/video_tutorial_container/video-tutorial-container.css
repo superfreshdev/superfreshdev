@@ -5,10 +5,10 @@
 
 
 /* ------------------------------------------------------------------------------ */
-/* Video Link Tutorial Container | Top IT Project
+/* Video Tutorial Container | Top IT Project
 /* ------------------------------------------------------------------------------ */
 
-.video-link-tutorial-container-top-it-project {
+.video-tutorial-container-top-it-project {
 
   width: 100%;
   display: grid;
@@ -16,10 +16,10 @@
 }
 
 /* ------------------------------------------------------------------------------ */
-/* Content Video Link Tutorial | Top IT Project
+/* Video Tutorial Content | Top IT Project
 /* ------------------------------------------------------------------------------ */
 
-.content-video-link-tutorial-top-it-project {
+.video-tutorial-content-top-it-project {
 
   width: 100%;
 
@@ -30,60 +30,5 @@
   row-gap: .8em;
   column-gap: 1em;
 
-}
-
-/* ------------------------------------------------------------------------------ */
-/* Video Tutorial Category Box
-/* ------------------------------------------------------------------------------ */
-
-.video-tutorial-category-box {
-
-  width: 100%;
-  display: grid;
-
-}
-
-/* ------------------------------------------------------------------------------ */
-/* Label | Video Tutorial Category Box
-/* ------------------------------------------------------------------------------ */
-
-.video-tutorial-category-box > label {
-
-  height: 2.5em;
-  padding: 0 .8em;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: .8em;
-
-  font-weight: bold;
-
-  border-radius: .8em;
-
-  background-color: rgba(164, 164, 164, 0.2);
-
-  color:rgb(75, 75, 75);
-
-  user-select: none;
-  cursor: pointer;
-  transition: all .4s;
-
-}
-
-.video-tutorial-category-box > label > div:nth-of-type(1) {
-
-  display: flex;
-  align-items: center;
-  column-gap: .3em;
-
-  font-size: 14.5px;
-
-}
-
-/* default img minus unshwon */
-.video-tutorial-category-box > label > img:nth-of-type(2) {
-
-  display: none;
 
 }

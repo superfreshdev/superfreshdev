@@ -449,14 +449,14 @@
 
   .tech-stack-content-top-it-project {
 
-    padding: 1.5em .6em .5em .6em;
+    /* padding: 1.5em .6em .5em .6em;
     width: 40em;
 
     display: grid;
     row-gap: 1.5em;
     column-gap: 1.5em;
 
-    grid: auto auto / 1fr 1fr;
+    grid: auto auto / 1fr 1fr; */
 
     /* background-color: red; */
 
@@ -696,10 +696,10 @@
   }
 
   /* ----------------------------------------------------------------------------------- */
-  /*  Content Video Link Tutorial | Top IT Project */
+  /*  Top IT Project | Video Tutorial Content  */
   /* ----------------------------------------------------------------------------------- */
 
-  .content-video-link-tutorial-top-it-project {
+  .video-tutorial-content-top-it-project {
 
     grid: auto auto / 1fr 1fr;
 
@@ -707,15 +707,6 @@
 
 
 
-  .video-link-content-container-top-it-project {
-
-    grid: auto / 1fr 1fr;
-    align-items: flex-start;
-
-    column-gap: 1em;
-
-
-  }
 
 
 }

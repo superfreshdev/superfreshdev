@@ -39,9 +39,12 @@
 
 .tech-stack-box-top-it-project {
 
+
   display: grid;
-  align-content: flex-start;
-  row-gap: 1.3em;
+  justify-items: flex-start;
+  row-gap: .6em;
+
+
 
 }
 
@@ -51,9 +54,7 @@
 
 .tech-stack-box-top-it-project > header {
 
-  text-decoration: underline;
-
-  height: 2em;
+  height: 1.6em;
   padding: 0 .6em;
 
   display: flex;
@@ -67,6 +68,8 @@
   /* opacity: .6; */
   /* background-color: rgb(193, 193, 193); */
   color: #848484;
+
+  color:black;
 
 }
 
@@ -111,14 +114,14 @@
   align-items: center;
   column-gap: .4em;
 
-  border-radius: .4em;
+  border-radius: .6em;
 
   font-weight: bold;
 
-  border: 1px solid rgb(230, 230, 230);
+  /* border: 1px solid rgb(205, 205, 205); */
   background-color: rgb(224, 224, 224);
 
-  color:rgb(162, 162, 162);
+  color:rgb(150, 150, 150);
 
 }
 

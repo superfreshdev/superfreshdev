@@ -141,9 +141,9 @@
 
 /* show content */
 #chk-video-category-top-it-project-1-1:checked ~ #smooth-content-video-category-top-it-project-1-1,
-#chk-video-category-top-it-project-1-2:checked  ~ #smooth-content-video-category-top-it-project-1-2,
-#chk-video-category-top-it-project-1-3:checked  ~ #smooth-content-video-category-top-it-project-1-3,
-#chk-video-category-top-it-project-1-4:checked  ~ #smooth-content-video-category-top-it-project-1-4 {
+#chk-video-category-top-it-project-1-2:checked ~ #smooth-content-video-category-top-it-project-1-2,
+#chk-video-category-top-it-project-1-3:checked ~ #smooth-content-video-category-top-it-project-1-3,
+#chk-video-category-top-it-project-1-4:checked ~ #smooth-content-video-category-top-it-project-1-4 {
 
   grid-template-rows: 1fr;
 
