@@ -6,7 +6,7 @@
 
 
 /* ------------------------------------------------------------- */
-/* Tech Stack Container
+/* Tech Stack Container | Top IT Project
 /* ------------------------------------------------------------- */
 
 .tech-stack-container-top-it-project {
@@ -17,14 +17,14 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Tech Stack Content Top It Project
+/* Tech Stack Content | Top It Project
 /* ------------------------------------------------------------- */
 
 .tech-stack-content-top-it-project {
 
   width: 100%;
-  margin-top: 1em;
-  padding: 1em .3em;
+  /* margin-top: 1em; */
+  padding: 1.5em .3em .5em .3em;
 
   display: grid;
   row-gap: 1.5em;
@@ -41,7 +41,7 @@
 
   display: grid;
   align-content: flex-start;
-  row-gap: .6em;
+  row-gap: 1.3em;
 
 }
 
@@ -51,7 +51,7 @@
 
 .tech-stack-box-top-it-project > header {
 
-  height: 1.8em;
+  height: 2em;
   padding: 0 .6em;
 
   display: flex;
@@ -62,10 +62,8 @@
 
   font-weight: bold;
 
-  text-decoration: underline;
-
   /* opacity: .6; */
-  /* background-color: #eeeeee; */
+  background-color: rgb(193, 193, 193);
   color: #848484;
 
 }
@@ -88,6 +86,7 @@
 
 .tech-stack-box-top-it-project > main {
 
+  padding-left: .3em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -115,14 +114,13 @@
   font-weight: bold;
 
   border: 1px solid rgb(230, 230, 230);
-  color:rgb(162, 162, 162);
+  background-color: rgb(224, 224, 224);
 
-  background-color: rgb(255, 255, 255);
+  color:rgb(162, 162, 162);
 
 }
 
 .tech-stack-box-top-it-project > main > div > div {
 
   font-size: 12.5px;
-  /* font-weight: bold; */
 }

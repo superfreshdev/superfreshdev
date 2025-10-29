@@ -9,8 +9,8 @@
 /* ------------------------------------------------------------- */
 
 #smooth-details-top-it-project-1,
-#smooth-details-top-it-project-1,
-#smooth-details-top-it-project-1 {
+#smooth-details-top-it-project-2,
+#smooth-details-top-it-project-3 {
 
   grid-area: details-content-top-it-project;
 
@@ -32,15 +32,15 @@
   border-radius: 0 0 1em 1em;
 
   background-color: rgb(224, 224, 224);
+  background-color: #eeeeee;
 
 }
 
-
 /* ------------------------------------------------------------- */
-/* Details Content Category | Top IT Project
+/* Lbl Open Close Details Category | Top IT Project
 /* ------------------------------------------------------------- */
 
-.details-content-category-top-it-project {
+.lbl-open-close-details-category-top-it-project  {
 
   width: 100%;
   padding: .6em 1em;
@@ -53,8 +53,10 @@
   font-weight: bold;
 
   /* background-color: rgb(28, 28, 28); */
-  background-color: #cacaca;
+  background-color: #cfcfcf;
   color:rgb(57, 57, 57);
+/*
+  border: 2px solid rgb(188, 188, 188); */
 
   border-radius: .8em;
 
@@ -65,7 +67,7 @@
 }
 
 /* div 1 | sub header */
-.details-content-category-top-it-project  > div:nth-of-type(1) {
+.lbl-open-close-details-category-top-it-project  > div:nth-of-type(1) {
 
   display: flex;
   align-items: center;
@@ -73,13 +75,13 @@
 
 }
 
-.details-content-category-top-it-project  > div:nth-of-type(1) > div {
+.lbl-open-close-details-category-top-it-project  > div:nth-of-type(1) > div {
 
   font-size: 14.5px;
 }
 
 /* img 2 = minus = unshown */
-.details-content-category-top-it-project > img:nth-of-type(2) {
+.lbl-open-close-details-category-top-it-project > img:nth-of-type(2) {
 
   display: none;
 

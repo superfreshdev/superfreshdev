@@ -7,7 +7,7 @@
 
 
 /* ---------------------------------------------------------------- */
-/* Status Stickers ( small, medium, big )
+/* Status Stickers ( very small, small, medium, big )
 /* ---------------------------------------------------------------- */
 
 .status-sticker-very-small,
@@ -20,8 +20,6 @@
   justify-content: center;
 
   font-weight: bold;
-
-  border-radius: 1em;
 
 }
 
@@ -41,7 +39,7 @@
 }
 
 /* ---------------------------------------------------------------- */
-/* very small | Status Stickers
+/* [1/4] | very small | Status Stickers
 /* ---------------------------------------------------------------- */
 
 .status-sticker-very-small {
@@ -49,10 +47,12 @@
   height: 1em;
   padding: 0 .3em;
 
+  border-radius: .6em;
+
 }
 
 /* ---------------------------------------------------------------- */
-/* small | Status Stickers
+/* [2/4] | small | Status Stickers
 /* ---------------------------------------------------------------- */
 
 .status-sticker-small {
@@ -60,10 +60,12 @@
   height: 1.3em;
   padding: 0 .4em;
 
+  border-radius: .6em;
+
 }
 
 /* ---------------------------------------------------------------- */
-/* Medium | Status Stickers
+/* [3/4] | Medium | Status Stickers
 /* ---------------------------------------------------------------- */
 
 .status-sticker-medium {
@@ -71,16 +73,20 @@
   height: 1.6em;
   padding: 0 .6em;
 
+  border-radius: .6em;
+
 }
 
 /* ---------------------------------------------------------------- */
-/* Big | Status Stickers
+/* [4/4] | Big | Status Stickers
 /* ---------------------------------------------------------------- */
 
 .status-sticker-big {
 
   height: 2em;
   padding: 0 .6em;
+
+  border-radius: .6em;
 
 }
 

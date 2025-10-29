@@ -442,6 +442,26 @@
 
 @media (min-width: 700px ) {
 
+
+  /* ----------------------------------------------------------------------------------- */
+  /* Top IT Project | Tech Stack Content  */
+  /* ----------------------------------------------------------------------------------- */
+
+  .tech-stack-content-top-it-project {
+
+    padding: 1.5em .6em .5em .6em;
+    width: 40em;
+
+    display: grid;
+    row-gap: 1.5em;
+    column-gap: 1.5em;
+
+    grid: auto auto / 1fr 1fr;
+
+    /* background-color: red; */
+
+  }
+
 }
 
 /* -------------------------------------------------------------- */
@@ -659,23 +679,7 @@
 
   }
 
-  /* ----------------------------------------------------------------------------------- */
-  /*  Top IT Project Card | Tech Stack Container | Main */
-  /* ----------------------------------------------------------------------------------- */
 
-  #tech-stack-content-container-top-it-project-card {
-
-    padding: 1.5em 1em;
-
-    display: grid;
-    row-gap: 1.5em;
-    column-gap: 1.5em;
-
-    grid: auto auto / 1fr 1fr;
-
-    /* background-color: red; */
-
-  }
 
   /* main > tech stack content box */
   .tech-stack-content-box {
@@ -692,8 +696,16 @@
   }
 
   /* ----------------------------------------------------------------------------------- */
-  /*  Top IT Project Card | Video Link Tutorial | Main */
+  /*  Content Video Link Tutorial | Top IT Project */
   /* ----------------------------------------------------------------------------------- */
+
+  .content-video-link-tutorial-top-it-project {
+
+    grid: auto auto / 1fr 1fr;
+
+  }
+
+
 
   .video-link-content-container-top-it-project {
 
