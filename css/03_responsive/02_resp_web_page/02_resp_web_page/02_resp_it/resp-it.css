@@ -449,6 +449,8 @@
 
   .tech-stack-content-top-it-project {
 
+    width: 42em;
+    grid: auto auto / 1fr 1fr;
     /* padding: 1.5em .6em .5em .6em;
     width: 40em;
 

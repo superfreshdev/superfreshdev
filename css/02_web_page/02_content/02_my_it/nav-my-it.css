@@ -59,3 +59,15 @@ input[name="name-radio-my-it"] {
   display: grid;
 
 }
+
+/* unshown it docs if it projects is checked */
+#radio-it-projects:checked ~ #it-docs-container {
+
+  display: none;
+
+}
+
+/* unshown it projects if it docs is checked */
+#radio-it-docs:checked ~ #it-projects-container {
+  display: none;
+}
