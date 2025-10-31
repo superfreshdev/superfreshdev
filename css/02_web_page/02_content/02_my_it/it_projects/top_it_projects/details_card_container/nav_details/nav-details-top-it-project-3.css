@@ -1,0 +1,152 @@
+/* -------------------------------------------------------------------------------- */
+/* > nav-details-top-it-project-3.css
+/* : styles nav details of top it project 3
+/* -------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------- */
+/* 🟩 [1/3] | Checkbox | Open Details
+/* ------------------------------------------------------------------------------- */
+
+/* default unshown */
+#chk-details-top-it-project-3 {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-details-top-it-project-3:checked ~ .quick-info-container-top-it-project label[for="chk-details-top-it-project-3"] {
+
+  background-color: #ff8080;
+
+}
+
+/* change border img */
+#chk-details-top-it-project-3:checked ~ .img-container-top-it-project > img {
+
+  border-radius: 1em 0 0 0em;
+
+}
+
+/* change img arrow rotation */
+#chk-details-top-it-project-3:checked ~ .quick-info-container-top-it-project label[for="chk-details-top-it-project-3"] > img {
+
+  transform: rotate(180deg);
+
+}
+
+/* show content */
+#chk-details-top-it-project-3:checked ~ #smooth-details-top-it-project-3 {
+
+  grid-template-rows: 1fr;
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* 🟩 [2/3] | Checkbox | Details Category ( tech-stack, core-feature, video-tutorials)
+/* ------------------------------------------------------------------------------------------------- */
+
+/* default unshown */
+#chk-top-it-project-tech-stack-3,
+#chk-top-it-project-core-feature-3,
+#chk-top-it-project-video-tutorials-3 {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-top-it-project-tech-stack-3:checked + label,
+#chk-top-it-project-core-feature-3:checked + label,
+#chk-top-it-project-video-tutorials-3:checked + label {
+
+  background-color: #ff8080;
+
+}
+
+/* unshow img + */
+#chk-top-it-project-tech-stack-3:checked + label > img:nth-of-type(1),
+#chk-top-it-project-core-feature-3:checked + label > img:nth-of-type(1) ,
+#chk-top-it-project-video-tutorials-3:checked + label > img:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* unshow img - */
+#chk-top-it-project-tech-stack-3:checked + label > img:nth-of-type(2),
+#chk-top-it-project-core-feature-3:checked + label > img:nth-of-type(2) ,
+#chk-top-it-project-video-tutorials-3:checked + label > img:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+
+/* show content */
+#chk-top-it-project-tech-stack-3:checked  ~ #smooth-tech-stack-content-top-it-project-3,
+#chk-top-it-project-core-feature-3:checked ~ #smooth-core-feature-content-top-it-project-3,
+#chk-top-it-project-video-tutorials-3:checked ~ #smooth-video-tutorial-content-top-it-project-3 {
+
+  grid-template-rows: 1fr;
+
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+/* 🟥 [3/3] | Checkbox | Video Tutorials Category | ⚠️ Later JS Generated
+/* ------------------------------------------------------------------------------------------------- */
+
+/* Reminder: Actually i dont want to create videos for Web-Design Top IT Project 3 */
+
+/* default unshown */
+#chk-video-category-top-it-project-3-1,
+#chk-video-category-top-it-project-3-2,
+#chk-video-category-top-it-project-3-3,
+#chk-video-category-top-it-project-3-4 {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-video-category-top-it-project-3-1:checked + label,
+#chk-video-category-top-it-project-3-2:checked + label,
+#chk-video-category-top-it-project-3-3:checked + label,
+#chk-video-category-top-it-project-3-4:checked + label {
+
+  background-color: #ff8080;
+
+}
+
+/* unshow img + */
+#chk-video-category-top-it-project-3-1:checked + label > img:nth-of-type(1),
+#chk-video-category-top-it-project-3-2:checked + label > img:nth-of-type(1),
+#chk-video-category-top-it-project-3-3:checked + label > img:nth-of-type(1),
+#chk-video-category-top-it-project-3-4:checked + label > img:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* unshow img - */
+#chk-video-category-top-it-project-3-1:checked + label > img:nth-of-type(2),
+#chk-video-category-top-it-project-3-2:checked + label > img:nth-of-type(2),
+#chk-video-category-top-it-project-3-3:checked + label > img:nth-of-type(2),
+#chk-video-category-top-it-project-3-4:checked + label > img:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+/* show content */
+#chk-video-category-top-it-project-3-1:checked ~ #smooth-content-video-category-top-it-project-3-1,
+#chk-video-category-top-it-project-3-2:checked ~ #smooth-content-video-category-top-it-project-3-2,
+#chk-video-category-top-it-project-3-3:checked ~ #smooth-content-video-category-top-it-project-3-3,
+#chk-video-category-top-it-project-3-4:checked ~ #smooth-content-video-category-top-it-project-3-4 {
+
+  grid-template-rows: 1fr;
+
+}

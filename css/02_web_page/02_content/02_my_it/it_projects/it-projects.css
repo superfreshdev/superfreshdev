@@ -150,6 +150,20 @@ label[for="chk-selected-category-it-projects"] {
 }
 
 /* -------------------------------------------------------------- */
+/* Show More Top IT Projects Container
+/* -------------------------------------------------------------- */
+
+#show-more-top-it-projects-container {
+
+  margin-top: 1em;
+  display: grid;
+  row-gap: 2em;
+
+}
+
+
+
+/* -------------------------------------------------------------- */
 /* [3/3] | More IT | Project Container
 /* -------------------------------------------------------------- */
 
