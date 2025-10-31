@@ -76,6 +76,33 @@ input[name="name-radio-category-it-projects"] {
 
 }
 
+/* show | top it project container */
+#radio-category-top-it-projects:checked ~ #top-it-projects-container {
+
+  display: grid;
+
+}
+/* unshown | more it project container */
+#radio-category-top-it-projects:checked ~ #more-it-projects-container {
+
+  display: none;
+
+}
+
+/* unshow | top it project container */
+#radio-category-more-it-projects:checked ~ #top-it-projects-container {
+
+  display: none;
+
+}
+
+/* show | more it project container */
+#radio-category-more-it-projects:checked ~ #more-it-projects-container {
+
+  display: grid;
+
+}
+
 /* ------------------------------------------------------------------------------- */
 /* 🟩 [3/4] | Radios | Content Category ( web-design, web-dev, ... )
 /* ------------------------------------------------------------------------------- */

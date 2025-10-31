@@ -115,9 +115,6 @@ label[for="chk-selected-category-it-projects"] {
 
   margin-top: 1em;
 
-  /* default unshown, handled by radios */
-  display: none;
-
 }
 
 /* -------------------------------------------------------------- */
@@ -130,6 +127,9 @@ label[for="chk-selected-category-it-projects"] {
 
   display: grid;
   justify-items: center;
+
+  /* default unshown, handled by radios */
+  display: none;
 
 }
 
@@ -168,6 +168,14 @@ label[for="chk-selected-category-it-projects"] {
 /* -------------------------------------------------------------- */
 
 #more-it-projects-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  /* default unshown, handled by radios */
+  display: none;
 
   background-color: green;
 
