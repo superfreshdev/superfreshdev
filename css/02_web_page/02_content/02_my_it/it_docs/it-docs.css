@@ -27,6 +27,75 @@
 }
 
 
+/* ------------------------------------------------------------- */
+/* Header IT Docs Container
+/* ------------------------------------------------------------- */
+
+#header-it-docs-container {
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Sub IT Docs
+/* ------------------------------------------------------------- */
+
+#nav-sub-it-docs {
+
+  margin-top: .6em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Label Unset | Nav Sub IT Docs
+/* ------------------------------------------------------------- */
+
+label[for="chk-unset-it-docs-nav-sub"] {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .6em;
+
+  border-radius: .8em;
+
+  background-color: #e0e0e0;
+  opacity: .3;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+label[for="chk-unset-it-docs-nav-sub"]_hover {
+
+  background-color: wheat;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Sub | (only frontend, backend )
+/* ------------------------------------------------------------- */
+
+#nav-sub-it-docs-frontend,
+#nav-sub-it-docs-backend {
+
+  flex-wrap: wrap;
+  gap: .4em;
+
+  display: none;
+}
+
 
 
 /* ------------------------------------------------------------- */

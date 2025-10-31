@@ -2232,8 +2232,8 @@
                                         <!-- ------------------------------------------------------------ -->
                                         <!-- Radios | ( IT-Projects , IT-Docs )                           -->
                                         <!-- ------------------------------------------------------------ -->
-                                        <input checked type="radio" id="radio-it-projects" name="name-radio-my-it">
-                                        <input type="radio" id="radio-it-docs" name="name-radio-my-it">
+                                        <input type="radio" id="radio-it-projects" name="name-radio-my-it">
+                                        <input checked type="radio" id="radio-it-docs" name="name-radio-my-it">
 
                                         <!-- -------------------------------------------------------------------------- -->
                                         <!-- 🟩 [1/3] | Nav My IT                                                       -->
@@ -12277,42 +12277,308 @@
 
 
                                             <!-- ----------------------------------------------------------------- -->
-                                            <!-- 🟩 Radios | Frontend, Backend, Ai -->
+                                            <!-- 🟥 Radios | Frontend, Backend, Ai -->
                                             <!-- ----------------------------------------------------------------- -->
-                                            <input type="radio" id="radio-frontend-it-docs" name="name-radio-category-it-docs">
-                                            <input type="radio" id="radio-backend-it-docs" name="name-radio-category-it-docs">
-                                            <input type="radio" id="radio-ai-it-docs" name="name-radio-category-it-docs">
+                                            <input checked type="radio" id="radio-it-docs-frontend" name="name-radio-it-docs-main-category">
+                                            <input type="radio" id="radio-it-docs-backend" name="name-radio-it-docs-main-category">
+                                            <input type="radio" id="radio-it-docs-ai" name="name-radio-it-docs-main-category">
 
                                             <!-- ----------------------------------------------------------------- -->
-                                            <!-- 🟩 Radios | IT Docs Categories -->
+                                            <!-- 🟥 Checkbox | Unset IT Docs Categories -->
+                                            <!-- ----------------------------------------------------------------- -->
+                                            <input type="checkbox" id="chk-unset-it-docs-nav-sub">
+
+                                            <!-- ----------------------------------------------------------------- -->
+                                            <!-- 🟥 Radios | IT Docs Categories -->
                                             <!-- ----------------------------------------------------------------- -->
 
                                             <!-- frontend radios -->
-                                            <input checked type="radio" id="radio-dev-basic-it-docs" name="name-radios-sub-category-it-docs">
-                                            <input type="radio" id="radio-web-basic-it-docs" name="name-radios-sub-category-it-docs">
-                                            <input type="radio" id="radio-web-dev-it-docs" name="name-radios-sub-category-it-docs">
-                                            <input type="radio" id="radio-software-dev-it-docs" name="name-radios-sub-category-it-docs">
+                                            <input checked type="radio" id="radio-it-docs-dev-basic" name="name-radios-it-docs-sub-category">
+                                            <input type="radio" id="radio-it-docs-web-basic" name="name-radios-it-docs-sub-category">
+                                            <input type="radio" id="radio-it-docs-web-dev" name="name-radios-it-docs-sub-category">
+
 
                                             <!-- backend radios -->
-                                            <input type="radio" id="radio-it-architecture-it-docs" name="name-radios-sub-category-it-docs">
-                                            <input type="radio" id="radio-backend-tools-it-docs" name="name-radios-sub-category-it-docs">
+                                            <input type="radio" id="radio-it-docs-software-dev" name="name-radios-it-docs-sub-category">
+                                            <input type="radio" id="radio-it-docs-it-architecture" name="name-radios-it-docs-sub-category">
+                                            <input type="radio" id="radio-it-docs-backend-tools" name="name-radios-it-docs-sub-category">
 
 
                                             <!-- ------------------------------------------------------------------------- -->
-                                            <!--🟩 [1/2] Header Nav -->
+                                            <!--➡️🟥 [1/2] Header IT Docs Contianer -->
                                             <!-- ------------------------------------------------------------------------- -->
-                                            <header id="header-nav-it-docs">
+                                            <header id="header-it-docs-container">
+
+                                                <!-- ----------------------------------------------------- -->
+                                                <!-- ➡️🟥 [1/2] | Nav Main It Docs -->
+                                                <!-- ----------------------------------------------------- -->
+                                                <nav id="nav-main-it-docs" class="nav-content-panel-medium">
+
+                                                    <!-- ------------------------------------------------------ -->
+                                                    <!-- IT Docs Category 1 e.g frontend -->
+                                                    <!-- ------------------------------------------------------ -->
+                                                    <label for="radio-it-docs-frontend">
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- Title -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div>
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-eye.png" class="img-h-0-7" alt="img">
+                                                            <div>Frontend <span>(29)</span></div>
+                                                        </div>
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- Custom Radio -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div class="custom-radio-small">
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                        </div>
+
+                                                    </label>
+
+                                                    <!-- ------------------------------------------------------ -->
+                                                    <!-- IT Docs Category 2 e.g backend -->
+                                                    <!-- ------------------------------------------------------ -->
+                                                    <label for="radio-it-docs-backend">
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- Title -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div>
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-cloud-server.png" class="img-h-1" alt="img">
+                                                            <div>Backend <span>(18)</span></div>
+                                                        </div>
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- Custom Radio -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div class="custom-radio-small">
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                        </div>
+
+                                                    </label>
+
+                                                    <!-- ------------------------------------------------------ -->
+                                                    <!-- IT Docs Category 3 e.g ai -->
+                                                    <!-- ------------------------------------------------------ -->
+                                                    <label for="radio-it-docs-ai">
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- Title -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div>
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-ai-data-science.png" class="img-h-1" alt="img">
+                                                            <div>AI <span>(3)</span></div>
+                                                        </div>
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- Custom Radio -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div class="custom-radio-small">
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                        </div>
+
+                                                    </label>
+
+                                                </nav>
+
+                                                <!-- ----------------------------------------------------- -->
+                                                <!-- ➡️🟥 [2/2] | Nav Sub It Docs -->
+                                                <!-- ----------------------------------------------------- -->
+                                                <div id="nav-sub-it-docs">
+
+                                                    <!-- ----------------------------------------------------- -->
+                                                    <!-- ➡️🟥 [1/3] | Label Unset | Nav Sub  -->
+                                                    <!-- ----------------------------------------------------- -->
+                                                    <label for="chk-unset-it-docs-nav-sub">
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- Title -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div>
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-x.png" class="img-h-0-8" alt="img">
+                                                        </div>
+
+                                                        <!-- -------------------------------------------- -->
+                                                        <!-- Custom Radio -->
+                                                        <!-- -------------------------------------------- -->
+                                                        <div class="custom-radio-small">
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                        </div>
+
+                                                    </label>
+
+
+                                                    <!-- ----------------------------------------------------- -->
+                                                    <!-- 🟥 [2/3] | Nav Sub It Docs | Frontend  -->
+                                                    <!-- ----------------------------------------------------- -->
+                                                    <nav id="nav-sub-it-docs-frontend" class="nav-content-panel-medium">
+
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- IT Docs Sub Category 1 e.g dev-basic -->
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <label for="radio-it-docs-dev-basic">
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Title -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-3-3-dots-menue.png" class="img-h-1" alt="img">
+                                                                <div>Dev-Basic <span>(12)</span></div>
+                                                            </div>
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Custom Radio -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div class="custom-radio-small">
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                            </div>
+
+                                                        </label>
+
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- IT Docs Sub Category 2 e.g web-basic -->
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <label for="radio-it-docs-web-basic">
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Title -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-earth.png" class="img-h-1" alt="img">
+                                                                <div>Web-Basic <span>(8)</span></div>
+                                                            </div>
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Custom Radio -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div class="custom-radio-small">
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                            </div>
+
+                                                        </label>
+
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- IT Docs Sub Category 3 e.g web-dev -->
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <label for="radio-it-docs-web-dev">
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Title -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-web-coding.png" class="img-h-1" alt="img">
+                                                                <div>Web-Dev <span>(28)</span></div>
+                                                            </div>
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Custom Radio -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div class="custom-radio-small">
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                            </div>
+
+                                                        </label>
+
+
+
+                                                    </nav>
+
+                                                    <!-- ----------------------------------------------------- -->
+                                                    <!-- 🟥 [3/3] | Nav Sub It Docs | Backend  -->
+                                                    <!-- ----------------------------------------------------- -->
+                                                    <nav id="nav-sub-it-docs-backend" class="nav-content-panel-medium">
+
+
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- IT Docs Sub Category 1 e.g software-dev -->
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <label for="radio-it-docs-software-dev">
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Title -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-open-close-brackets.png" class="img-h-1" alt="img">
+                                                                <div>Sofware-Dev <span>(24)</span></div>
+                                                            </div>
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Custom Radio -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div class="custom-radio-small">
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                            </div>
+
+                                                        </label>
+
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- IT Docs Sub Category 2 e.g it-architecture -->
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <label for="radio-it-docs-it-architecture">
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Title -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-2-triangles.png" class="img-h-1" alt="img">
+                                                                <div>IT-Architecture <span>(10)</span></div>
+                                                            </div>
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Custom Radio -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div class="custom-radio-small">
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                            </div>
+
+                                                        </label>
+
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- IT Docs Sub Category 3 e.g backend-tools -->
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <label for="radio-it-docs-backend-tools">
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Title -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-3-layers-gear.png" class="img-h-1" alt="img">
+                                                                <div>Backend-Tools <span>(6)</span></div>
+                                                            </div>
+
+                                                            <!-- -------------------------------------------- -->
+                                                            <!-- Custom Radio -->
+                                                            <!-- -------------------------------------------- -->
+                                                            <div class="custom-radio-small">
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                            </div>
+
+                                                        </label>
+
+
+                                                    </nav>
+
+
+                                                </div>
+
+
+
+
 
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <!-- 🟩 Checkbox | Show Me -->
+                                                <!-- ❌❌❌ Trash -->
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <input checked type="checkbox" id="chk-it-docs">
 
 
+                                                <!-- ----------------------------------------------------------------- -->
+                                                <!-- 🟥 Checkbox | Show Me -->
+                                                <!-- ----------------------------------------------------------------- -->
+
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- Header Content Container (🟣) -->
+                                                <!-- 🟥Header Content Container (🟣) -->
                                                 <!-- ------------------------------------------------------------ -->
-                                                <div class="header-content-container">
+                                                <div class="header-content-container" style="display: none;">
 
                                                     <!-- -------------------------------------- -->
                                                     <!-- Header Content Block (🟣) -->
@@ -12353,11 +12619,10 @@
 
                                                 </div>
 
-
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <!-- 🟩 ⬇️⬆️ | Smooth Open Close | More IT Projects Content -->
+                                                <!-- 🟥 ⬇️⬆️ | Smooth Open Close | More IT Projects Content -->
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <div id="smooth-open-close-nav-it-docs">
+                                                <div id="smooth-open-close-nav-it-docs" style="display: none;">
 
                                                     <!-- -------------------------------------------------------- -->
                                                     <!-- Overflow Hidden -->
@@ -12648,7 +12913,7 @@
                                             </header>
 
                                             <!-- ------------------------------------------------------------------------- -->
-                                            <!--🟩 [2/2] IT Docs Card Content Container -->
+                                            <!--🟥 [2/2] IT Docs Card Content Container -->
                                             <!-- ------------------------------------------------------------------------- -->
                                             <div id="it-docs-card-content-container">
 
