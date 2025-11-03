@@ -6,32 +6,19 @@
 
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 350px width */
+/* 🟩 >= 350px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 350px ) {
 
 
-
-
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 360px width */
+/* 🟨 >= 360px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 360px ) {
-
-
-  /* ------------------------------------------------------------- */
-  /* Top IT Projects | Img (Rocket) | Header */
-  /* ------------------------------------------------------------- */
-
-  #img-header-top-it-project {
-
-    height: 1.8em;
-
-  }
 
 
   /* -------------------------------------------------------------- */
@@ -45,7 +32,7 @@
   }
 
   /* ------------------------------------------------------------- */
-  /* My IT Projects | More Card */
+  /* ⚠️ My IT Projects | More Card */
   /* ------------------------------------------------------------- */
 
   .my-it-project-more-card {
@@ -54,18 +41,18 @@
 
   }
 
-
 }
 
 /* -------------------------------------------------------------- */
-/*🟥 >= 380px width */
+/* 🟩 >= 380px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 380px ) {
 
   /* ----------------------------------------------------------- */
-  /* TOP IT Projects | Nav IT Projects | Label | Img */
+  /* IT Projects | Nav IT Projects | Label | Img */
   /* ----------------------------------------------------------- */
+
   #nav-it-projects > label > div:nth-of-type(1) > img {
 
     display: flex;
@@ -75,68 +62,23 @@
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 400px width */
+/* 🟩 >= 400px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 400px ) {
-
-  /* ------------------------------------------ */
-  /* My It | Nav | Label | Img */
-  /* ------------------------------------------ */
-
-  .lbl-nav-my-it > div:nth-of-type(1) > img:nth-of-type(1) {
-
-    /* desktop */
-    display: flex;
-
-  }
-
-  /* ------------------------------------------------------------- */
-  /* Top IT Projects | Top IT Project Card */
-  /* ------------------------------------------------------------- */
-
-  .my-top-it-project-card {
-
-    /* desktop */
-    width: 21em;
-
-
-  }
-
-
-  /* ------------------------------------------ */
-  /* My It Docs | Nav */
-  /* ------------------------------------------ */
-
-  .my-it-docs-nav {
-
-    width: 22em;
-
-  }
-
-  /* ------------------------------------------------------------- */
-  /*  It Docs | Nav Category IT Docs | Label */
-  /* ------------------------------------------------------------- */
-
-  #nav-category-it-docs > label {
-
-    /* desktop */
-    width: auto;
-
-  }
 
 
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 450px width */
+/* 🟩 >= 450px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 450px ) {
 
 
   /* ------------------------------------------------------------------------ */
-  /* Top IT Project | Img Container                                      */
+  /* Top IT Project | Img Container                                           */
   /* ------------------------------------------------------------------------ */
 
   .img-container-top-it-project {
@@ -145,37 +87,14 @@
 
   }
 
+  /* ------------------------------------------------------------------------ */
+  /* Top IT Project | Img Container | Img                                     */
+  /* ------------------------------------------------------------------------ */
+
   .img-container-top-it-project > img {
 
     width: 22em;
     border-radius: .9em 0 0 0;
-
-  }
-
-  /* ------------------------------------------------------------------------ */
-  /* ⚠️⚠️⚠️ Check                                 */
-  /* ------------------------------------------------------------------------ */
-
-
-  /* ------------------------------------------ */
-  /* My It Docs | Doc Card Item */
-  /* ------------------------------------------ */
-
-  .my-it-doc-card-item {
-
-    /* desktop */
-    width: 12em;
-
-  }
-
-  /* ------------------------------------------------------------- */
-  /* My It Projects | It More Project Card */
-  /* ------------------------------------------------------------- */
-
-  .it-more-project-card {
-
-    /* desktop */
-    width: 24em;
 
   }
 
@@ -191,20 +110,9 @@
   }
 
   /* ------------------------------------------------------------- */
-  /*  It Docs | nav sub (frontend,backend) | Label */
-  /* ------------------------------------------------------------- */
-
-  #nav-sub-category-frontend-it-docs > label,
-  #nav-sub-category-backend-it-docs > label {
-
-    /* desktop */
-    width: auto;
-
-  }
-
-  /* ------------------------------------------------------------- */
   /*  It Docs | nav sub | labels */
   /* ------------------------------------------------------------- */
+
   #nav-sub-it-docs > label:not(:first-child) {
 
     width: auto;
@@ -212,29 +120,14 @@
   }
 
 
-
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 480px width */
+/* 🟩 >= 480px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 480px ) {
 
-  /* ------------------------------------------------------- */
-  /* IT Docs | Header IT Docs */
-  /* ------------------------------------------------------- */
-
-  #header-it-docs {
-
-    /* desktop */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    row-gap: 0em;
-    column-gap: .8em;
-
-  }
 
   /* ------------------------------------------------------- */
   /* IT Projects | Nav My IT */
@@ -276,26 +169,16 @@
 }
 
 /* -------------------------------------------------------------- */
-/*🟥  >= 500px width */
+/* 🟩  >= 500px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 500px ) {
 
-  /* ------------------------------------------------------------- */
-  /* Top IT Project | Top IT Project Container | Nav Label        */
-  /* ------------------------------------------------------------- */
-
-  #my-it-projects-top-container > nav:nth-of-type(1) > label {
-
-    /* desktop */
-    width:auto;
-
-  }
 
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 600px width */
+/* 🟨 >= 600px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 600px ) {
@@ -313,63 +196,8 @@
 
   }
 
-
-  /* ------------------------------------------ */
-  /* It Docs | Nav List */
-  /* ------------------------------------------ */
-
-  #my-it-docs-nav-list {
-
-    grid-template-areas:
-
-      'my-it-docs-nav-grid-area-1 my-it-docs-nav-grid-area-2'
-      'my-it-docs-nav-grid-area-1 my-it-docs-nav-grid-area-3'
-    ;
-
-    grid-template-columns: 1fr 1fr;
-
-    column-gap: 1em;
-    row-gap: 3em;
-
-  }
-
-    /* ------------------------------------------ */
-    /* My It Docs | Nav */
-    /* ------------------------------------------ */
-
-    .my-it-docs-nav {
-
-      /* width: 17em; */
-      width: 100%;
-
-    }
-
-  /* ------------------------------------------ */
-  /* My It Docs | Nav Art Seperator 1 */
-  /* ------------------------------------------ */
-
-  #only-mobile-my-it-docs-nav-art-seperator-1,
-  #only-mobile-my-it-docs-nav-art-seperator-2 {
-
-    display: none;
-  }
-
   /* ------------------------------------------------------------- */
-  /* My IT Docs Card Container Card List */
-  /* ------------------------------------------------------------- */
-
-  .my-it-docs-card-container-card-list {
-
-    /* desktop */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:2em;
-
-  }
-
-  /* ------------------------------------------------------------- */
-  /* My IT Docs Card + Basic Status */
+  /* ⚠️ IT Docs | Status Cards |  */
   /* ------------------------------------------------------------- */
 
   .my-it-docs-card,
@@ -388,60 +216,16 @@
 }
 
 /* -------------------------------------------------------------- */
-/*🟥  >= 650px width */
+/* 🟩 >= 650px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 650px ) {
 
 
-  /* ------------------------------------------------------------------ */
-  /* Top IT Projects | Header */
-  /* ------------------------------------------------------------------ */
-
-  #header-top-it-projects {
-
-    width: 100%;
-
-    /* desktop */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: .8em;
-
-    /* background-color: magenta; */
-
-  }
-
-
-
-
-
-
-  /* ------------------------------------------------------------------ */
-  /* More IT Projects | Header
-  /* ------------------------------------------------------------------ */
-
-  #header-more-it-projects {
-
-    width: 100%;
-
-    /* desktop */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: .8em;
-
-    /* background-color: magenta; */
-
-  }
-
-
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 700px width */
+/* 🟩 >= 700px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 700px ) {
@@ -471,6 +255,7 @@
   /* ------------------------------------------------------------- */
   /*  It Docs | nav main */
   /* ------------------------------------------------------------- */
+
   #nav-main-it-docs {
 
     justify-content: flex-start;
@@ -480,6 +265,7 @@
   /* ------------------------------------------------------------- */
   /*  It Docs | nav sub */
   /* ------------------------------------------------------------- */
+
   #nav-sub-it-docs {
 
     justify-content: flex-start;
@@ -489,7 +275,7 @@
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 800px width */
+/* 🟩 >= 800px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 800px ) {
@@ -560,8 +346,96 @@
 
   }
 
+
+  /* ------------------------------------------------------------------------ */
+  /* Top IT Project | Img Container                                           */
+  /* ------------------------------------------------------------------------ */
+
+  .img-container-top-it-project {
+
+    justify-content: flex-start;
+    border-radius: .9em 0 0 .9em;
+
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Top IT Project | Img Container | Img                                     */
+  /* ------------------------------------------------------------------------ */
+
+  .img-container-top-it-project > img {
+
+    width: 100%;
+    border-radius: .9em 0 0 .9em;
+
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Top IT Project | Top IT Project Card                                     */
+  /* ------------------------------------------------------------------------ */
+
+  .top-it-project-card {
+
+    /* width: auto; */
+    /* width: 100%; */
+
+    display: grid;
+    align-items: center;
+
+    grid-template-areas:
+
+      'img-container-top-it-project quick-info-container-top-it-project'
+      'details-content-top-it-project details-content-top-it-project'
+    ;
+
+    grid-template-columns: 20em 1fr ;
+    grid-template-rows: auto auto;
+
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Top IT Project Card | Img Container > Img                                */
+  /* ------------------------------------------------------------------------ */
+
+  .img-container-top-it-project > img {
+
+      border-radius: 1em 0 0 1em;
+
+
+
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Top IT Project | Quick Info Container Top It Project | Header            */
+  /* ------------------------------------------------------------------------ */
+
+  .quick-info-container-top-it-project > header {
+
+      margin-top: 0em;
+
+  }
+
+  /* ------------------------------------------------------------------------------------ */
+  /* Top IT Project | Tech Stack Container Top IT Project | Main | Div               */
+  /* ------------------------------------------------------------------------------------ */
+
+  .tech-stack-container-top-it-project > main > div:not(:last-child) {
+
+    border-right: 2px solid #ebebeb;
+
+  }
+
+  /* ----------------------------------------------------------------------------------- */
+  /*  Top IT Project | Video Tutorial Content  */
+  /* ----------------------------------------------------------------------------------- */
+
+  .video-tutorial-content-top-it-project {
+
+    grid: auto auto / 1fr 1fr;
+
+  }
+
   /* ------------------------------------------------------------- */
-  /* IT Project | Top & More IT Projects Container */
+  /* IT Project | Top & More | IT Projects Container */
   /* ------------------------------------------------------------- */
 
   #top-it-projects-container,
@@ -587,340 +461,48 @@
 
   }
 
-  /* ------------------------------------------ */
-  /* My It Docs | Nav List */
-  /* ------------------------------------------ */
-
-  #my-it-docs-nav-list {
-
-
-    grid-template-columns: 18em 18em;
-
-  }
-
-
-
-  /* ------------------------------------------ */
-  /* My IT Project | Card Seperator 1 */
-  /* ------------------------------------------ */
-
-  #grid-area-top-it-project-card-seperator-1 > img {
-
-    transform: rotate(90deg);
-
-  }
-
-  /* ------------------------------------------ */
-  /* My IT Project | Top Card List */
-  /* ------------------------------------------ */
-
-  #my-it-project-top-card-list {
-
-    grid-template-areas:
-
-    'it-project-top-card-1 it-project-top-card-seperator-1 it-project-top-card-2'
-    'it-project-top-card-seperator-2 it-project-top-card-seperator-2 it-project-top-card-seperator-2'
-    'it-project-top-card-3 it-project-top-card-3 it-project-top-card-3'
-    ;
-
-    grid-template-columns: auto 4em auto;
-
-  }
-
-  /* ------------------------------------------------------------------------ */
-  /* My IT Project | Project Card Seperator 1 | center to project cards */
-  /* ------------------------------------------------------------------------ */
-
-  #grid-area-top-it-project-card-seperator-1 {
-
-    align-self: center;
-
-  }
-
-  /* ------------------------------------------------------------------------ */
-  /* Top IT Project | Img Container                                      */
-  /* ------------------------------------------------------------------------ */
-
-  .img-container-top-it-project {
-
-    justify-content: flex-start;
-    border-radius: .9em 0 0 .9em;
-
-  }
-
-  .img-container-top-it-project > img {
-
-    width: 100%;
-    border-radius: .9em 0 0 .9em;
-
-  }
-
-  /* ------------------------------------------------------------------------ */
-  /* Top IT Project Card                                                      */
-  /* ------------------------------------------------------------------------ */
-
-  .top-it-project-card {
-
-    /* width: auto; */
-    /* width: 100%; */
-
-    display: grid;
-    align-items: center;
-
-    grid-template-areas:
-
-      'img-container-top-it-project quick-info-container-top-it-project'
-      'details-content-top-it-project details-content-top-it-project'
-    ;
-
-    grid-template-columns: 20em 1fr ;
-    grid-template-rows: auto auto;
-
-  }
-
-
-  /* ------------------------------------------------------------------------ */
-  /* Top IT Project Card | Img Container > Img                                */
-  /* ------------------------------------------------------------------------ */
-
-  .img-container-top-it-project > img {
-
-      border-radius: 1em 0 0 1em;
-
-
-
-  }
-
-  /* ------------------------------------------------------------------------ */
-  /* Top IT Project Card | Short Info Container | Header                      */
-  /* ------------------------------------------------------------------------ */
-
-  .quick-info-container-top-it-project > header {
-
-      margin-top: 0em;
-
-  }
-
-
-
-  /* main > tech stack content box */
-  .tech-stack-content-box {
-
-    padding: 0;
-
-  }
-
-  /* main > div lines */
-  .tech-stack-container-top-it-project-card > main > div:not(:last-child) {
-
-    border-right: 2px solid #ebebeb;
-
-  }
-
-  /* ----------------------------------------------------------------------------------- */
-  /*  Top IT Project | Video Tutorial Content  */
-  /* ----------------------------------------------------------------------------------- */
-
-  .video-tutorial-content-top-it-project {
-
-    grid: auto auto / 1fr 1fr;
-
-  }
-
-
-
-
-
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 900px width */
+/* 🟩 >= 900px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 950px ) {
 
 
-  /* ------------------------------------------ */
-  /* My It Docs | Nav List
-  /* ------------------------------------------ */
-
-    #my-it-docs-nav-list {
-
-      grid-template-areas:
-
-        'my-it-docs-nav-grid-area-1 my-it-docs-nav-grid-area-2 my-it-docs-nav-grid-area-3'
-      ;
-
-      grid-template-columns: 17em 17em 17em;
-
-    }
-
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 1000px width */
+/* 🟩 >= 1000px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 1000px ) {
 
 
-  /* ------------------------------------------ */
-  /* My It Docs | Nav List
-  /* ------------------------------------------ */
-
-    #my-it-docs-nav-list {
-
-      grid-template-columns: 19em 19em 19em;
-
-    }
-
-
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 1200px width */
+/* 🟩 >= 1200px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 1200px ) {
 
-  /* ------------------------------------------------------------- */
-  /* Top IT Projects | Top IT Project Card
-  /* ------------------------------------------------------------- */
-
-  .my-top-it-project-card {
-
-    /* desktop */
-    width: auto;
-
-
-  }
-
-  /* ------------------------------------------------------------- */
-  /* Top IT Projects | Top IT Projects Card Container
-  /* ------------------------------------------------------------- */
-
-  #my-it-top-projects-card-container {
-
-    /* width: 100%;
-    padding: 3.5em 0; */
-
-    /* desktop */
-    display: grid;
-    grid: auto / 1fr 1fr 1fr;
-
-    /* column-gap: 2em;
-    row-gap: 2em; */
-
-    /* background-color: yellow; */
-
-  }
-
-
-
-  /* -------------------------------------------- */
-  /* My IT Docs | Nav
-  /* -------------------------------------------- */
-
-  #my-it-docs-selection-list-container {
-
-    /* desktop */
-    justify-content: center;
-
-    grid-template-areas:
-    'my-it-docs-grid-area-1 my-it-docs-grid-area-2 my-it-docs-grid-area-3';
-
-    /* grid-template-columns: 1.2fr 1fr 1fr; */
-
-  }
-
-
-  /* ------------------------------------------------------------- */
-  /* My IT Project | Top Card
-  /* ------------------------------------------------------------- */
-  .my-it-project-top-card {
-
-    /* let it project top card auto, to handle it by grid area */
-    width: auto;
-
-  }
-
-  /* ------------------------------------------ */
-  /* My IT Project | Top Card List
-  /* ------------------------------------------ */
-
-  #my-it-project-top-card-list {
-
-    grid-template-areas:
-
-    'it-project-top-card-1 it-project-top-card-seperator-1 it-project-top-card-2 it-project-top-card-seperator-2 it-project-top-card-3'
-
-    ;
-
-    grid-template-columns: 22em 4em 22em 4em 22em;
-
-
-  }
-
-  /* ------------------------------------------ */
-  /* My IT Project | Card Seperator 2
-  /* ------------------------------------------ */
-
-  #grid-area-top-it-project-card-seperator-2 > img {
-
-    transform: rotate(90deg);
-
-  }
-
-  /* ------------------------------------------------------------------------ */
-  /* My IT Project | Project Card Seperator 2 | center to project cards
-  /* ------------------------------------------------------------------------ */
-  #grid-area-top-it-project-card-seperator-2 {
-
-    align-self: center;
-  }
-
-
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 1400px width */
+/* 🟩 >= 1400px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 1400px ) {
 
 
-
-
 }
 
 /* -------------------------------------------------------------- */
-/* 🟥 >= 1600px width */
+/* 🟩 >= 1600px width */
 /* -------------------------------------------------------------- */
 
 @media (min-width: 1600px ) {
 
-  /* ------------------------------------------ */
-  /* My It Project | Project Top Card
-  /* ------------------------------------------ */
-
-  .my-it-project-top-card {
-
-    /* extra case for project top card 3 */
-    width: 24em;
-
-  }
-
-
-  /* ------------------------------------------ */
-  /* My IT Project | Top Card List
-  /* ------------------------------------------ */
-
-  #my-it-project-top-card-list {
-
-
-    grid-template-columns: auto 6em auto 6em auto;
-
-
-  }
 
 }

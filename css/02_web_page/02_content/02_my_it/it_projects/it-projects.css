@@ -177,6 +177,6 @@ label[for="chk-selected-category-it-projects"] {
   /* default unshown, handled by radios */
   display: none;
 
-  background-color: green;
+  /* background-color: green; */
 
 }
