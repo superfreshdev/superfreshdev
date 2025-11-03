@@ -63,6 +63,13 @@ label[for="radio-it-docs-ai"]:hover {
 
 }
 
+/* unshown all sub labels by ai because we dont have any sub category */
+#radio-it-docs-ai:checked ~ #header-it-docs-container #nav-sub-it-docs {
+
+  display: none;
+}
+
+
 /* ------------------------------------------------------------------------------- */
 /* 🟩 [2/3] | Checkbox | Unset Nav Sub IT Docs (js)
 /* ------------------------------------------------------------------------------- */
@@ -144,6 +151,15 @@ label[for="radio-it-docs-web-dev"]:hover {
 
 }
 
+/* set content */
+#radio-it-docs-dev-basic:checked ~ #it-docs-content-container,
+#radio-it-docs-web-basic:checked ~ #it-docs-content-container,
+#radio-it-docs-web-dev:checked ~ #it-docs-content-container {
+
+  display: grid;
+
+}
+
 /* ---------------------------------------------------- */
 /* [2/2] | Sub Category | Backend
 /* ---------------------------------------------------- */
@@ -174,5 +190,14 @@ label[for="radio-it-docs-software-dev"]:hover {
 #radio-it-docs-software-dev:checked ~ #header-it-docs-container label[for="radio-it-docs-software-dev"] > .custom-radio-small > img {
 
   display: flex;
+
+}
+
+/* set content */
+#radio-it-docs-it-architecture:checked ~ #it-docs-content-container,
+#radio-it-docs-backend-tools:checked ~ #it-docs-content-container,
+#radio-it-docs-software-dev:checked ~ #it-docs-content-container {
+
+  display: grid;
 
 }

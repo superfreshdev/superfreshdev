@@ -87,12 +87,15 @@ label[for="radio-it-docs-backend-tools"] {
 }
 
 /* ------------------------------------------------------------- */
-/* My IT Docs Card Content Container
+/* It Docs Content Container
 /* ------------------------------------------------------------- */
 
-#it-docs-card-content-container {
+#it-docs-content-container {
 
   display: grid;
+
+  /* default unshown */
+  display: none;
 
 }
 
@@ -100,7 +103,7 @@ label[for="radio-it-docs-backend-tools"] {
 /* [1/2] | IT Docs Content Seperator Container
 /* ------------------------------------------------------------- */
 
-#it-docs-content-seperator-container {
+#it-docs-seperator-container {
 
   padding: 2em 0;
 
@@ -113,6 +116,13 @@ label[for="radio-it-docs-backend-tools"] {
 
 }
 
+#it-docs-seperator-container > div {
+
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+
 #img-it-docs-clipart-me {
 
   height: 4.5em;
@@ -121,19 +131,19 @@ label[for="radio-it-docs-backend-tools"] {
 
 #img-it-docs-pdf-seperator {
 
-  height: 2em;
+  height: 3em;
 }
 
 #img-it-docs-anki-seperator {
 
-  height: 2em;
+  height: 3em;
 }
 
 /* ------------------------------------------------------------- */
 /* [2/2] | It Docs Card List Content Container
 /* ------------------------------------------------------------- */
 
-#it-docs-card-list-content-container {
+#it-docs-card-content-container {
 
   display: grid;
   row-gap: 2em;
@@ -143,10 +153,10 @@ label[for="radio-it-docs-backend-tools"] {
 }
 
 /* ------------------------------------------------------------- */
-/* It Docs List Card Container
+/* It Docs Card List Container
 /* ------------------------------------------------------------- */
 
-.it-docs-list-card-container {
+.it-docs-card-list-container {
 
   display: grid;
   row-gap: 2em;
@@ -154,10 +164,10 @@ label[for="radio-it-docs-backend-tools"] {
 }
 
 /* ------------------------------------------------------------- */
-/* Header | It Docs List Card Container
+/* Header | It Docs Card List Container
 /* ------------------------------------------------------------- */
 
-.it-docs-list-card-container > header {
+.it-docs-card-list-container > header {
 
   padding: .8em;
 
@@ -172,15 +182,18 @@ label[for="radio-it-docs-backend-tools"] {
 
   /* background-color: rgba(14, 14, 14, 0.8); */
   background-color: rgba(26, 26, 26, 0.8);
-  color:rgb(188, 188, 188);
+
+  background-color: rgb(223, 223, 223);
+
+  color:rgb(92, 92, 92);
 
 }
 
 /* ------------------------------------------------------------- */
-/* Title | Header | It Docs List Card Container
+/* Header | Div 1 | It Docs Card List Container
 /* ------------------------------------------------------------- */
 
-.header-title-it-docs-list {
+.it-docs-card-list-container > header > div:nth-of-type(1) {
 
   display: flex;
   align-items: center;
@@ -189,20 +202,21 @@ label[for="radio-it-docs-backend-tools"] {
 }
 
 /* ------------------------------------------------------------- */
-/* Nr | Header | It Docs List Card Container
+/* Header | Div 2 | It Docs Card List Container
 /* ------------------------------------------------------------- */
 
-.header-title-nr-it-docs-list {
+.it-docs-card-list-container > header > div:nth-of-type(2) {
 
   letter-spacing: 1px;
 
 }
 
+
 /* ------------------------------------------------------------- */
-/* Main | It Docs List Card Container
+/* Main |  It Docs Card List Container
 /* ------------------------------------------------------------- */
 
-.it-docs-list-card-container > main {
+.it-docs-card-list-container > main {
 
   width: 100%;
 
