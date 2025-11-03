@@ -20,13 +20,6 @@
 
 }
 
-
-#img-header-it-docs {
-
-  height: 2em;
-}
-
-
 /* ------------------------------------------------------------- */
 /* Header IT Docs Container
 /* ------------------------------------------------------------- */
@@ -38,69 +31,60 @@
 }
 
 /* ------------------------------------------------------------- */
+/* Nav Main IT Docs
+/* ------------------------------------------------------------- */
+
+#nav-main-it-docs {
+
+  /* overwrite nav templates */
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+
+  padding-bottom: .5em;
+
+  border-bottom: 2px solid rgb(240, 240, 240);
+
+  /* background-color: rebeccapurple; */
+}
+
+/* ------------------------------------------------------------- */
 /* Nav Sub IT Docs
 /* ------------------------------------------------------------- */
 
 #nav-sub-it-docs {
 
-  margin-top: .6em;
+  padding-top: .5em;
+
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: .4em;
 
   /* background-color: red; */
 
 }
 
-/* ------------------------------------------------------------- */
-/* Label Unset | Nav Sub IT Docs
-/* ------------------------------------------------------------- */
+#nav-sub-it-docs > label:not(:first-child) {
 
-label[for="chk-unset-it-docs-nav-sub"] {
-
-  height: 2.3em;
-  padding: 0 .6em;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: .6em;
-
-  border-radius: .8em;
-
-  background-color: #e0e0e0;
-  opacity: .3;
-
-  user-select: none;
-  cursor: pointer;
-  transition: all .4s;
-
-}
-
-label[for="chk-unset-it-docs-nav-sub"]_hover {
-
-  background-color: wheat;
+  width: 100%;
 
 }
 
 /* ------------------------------------------------------------- */
-/* Nav Sub | (only frontend, backend )
+/* Labels | Nav Sub IT Docs
 /* ------------------------------------------------------------- */
 
-#nav-sub-it-docs-frontend,
-#nav-sub-it-docs-backend {
-
-  flex-wrap: wrap;
-  gap: .4em;
+label[for="radio-it-docs-dev-basic"],
+label[for="radio-it-docs-web-basic"],
+label[for="radio-it-docs-web-dev"],
+label[for="radio-it-docs-software-dev"],
+label[for="radio-it-docs-it-architecture"],
+label[for="radio-it-docs-backend-tools"] {
 
   display: none;
+
 }
-
-
-
-/* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------- */
 
 /* ------------------------------------------------------------- */
 /* My IT Docs Card Content Container
@@ -108,16 +92,53 @@ label[for="chk-unset-it-docs-nav-sub"]_hover {
 
 #it-docs-card-content-container {
 
-  margin-top: 2em;
-  padding-top: 2em;
+  display: grid;
+
+}
+
+/* ------------------------------------------------------------- */
+/* [1/2] | IT Docs Content Seperator Container
+/* ------------------------------------------------------------- */
+
+#it-docs-content-seperator-container {
+
+  padding: 2em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2em;
+
+  /* background-color: rgb(233, 233, 233); */
+
+}
+
+#img-it-docs-clipart-me {
+
+  height: 4.5em;
+
+}
+
+#img-it-docs-pdf-seperator {
+
+  height: 2em;
+}
+
+#img-it-docs-anki-seperator {
+
+  height: 2em;
+}
+
+/* ------------------------------------------------------------- */
+/* [2/2] | It Docs Card List Content Container
+/* ------------------------------------------------------------- */
+
+#it-docs-card-list-content-container {
 
   display: grid;
   row-gap: 2em;
 
-  border-top: 3px solid rgb(202, 202, 202);
-
-  /* default unshown */
-  display: none;
+  /* background-color: magenta; */
 
 }
 
@@ -147,9 +168,10 @@ label[for="chk-unset-it-docs-nav-sub"]_hover {
 
   font-weight: bold;
 
-  border-radius: .8em;
+  border-radius: 1em;
 
-  background-color: rgba(28, 28, 28, .8);
+  /* background-color: rgba(14, 14, 14, 0.8); */
+  background-color: rgba(26, 26, 26, 0.8);
   color:rgb(188, 188, 188);
 
 }
@@ -190,172 +212,5 @@ label[for="chk-unset-it-docs-nav-sub"]_hover {
 
   column-gap: .6em;
   row-gap: 2em;
-
-}
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------------------------------------- */
-/* > header-nav-it-docs.css */
-
-/* : styles for header nav it docs  */
-/* -------------------------------------------------------------- */
-
-
-/* -------------------------------------------------------------- */
-/* Header Nav | IT Docs
-/* -------------------------------------------------------------- */
-
-#header-nav-it-docs {
-
-  width: 100%;
-  display: grid;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Header | IT Docs
-/* -------------------------------------------------------------- */
-
-#header-it-docs {
-
-  width: 100%;
-
-  /* mobile */
-  display: grid;
-  row-gap: 2em;
-
-  /* background-color: red; */
-
-}
-
-/* -------------------------------------------------------------- */
-/* Label (open,close) Header | IT Docs
-/* -------------------------------------------------------------- */
-
-#header-it-docs > label[for="chk-it-docs"] {
-
-  /* very small mobile */
-  justify-self: center;
-
-  width: 5.8em;
-
-}
-
-/* default text=close unshown */
-label[for="chk-it-docs"] > div:nth-of-type(1) > div:nth-of-type(2) {
-
-  display: none;
-
-}
-
-/* ------------------------------------------------------------- */
-/* ⬇️⬆️ | Smooth Open Close | Nav It Docs
-/* ------------------------------------------------------------- */
-
-#smooth-open-close-nav-it-docs {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-
-  transition: grid-template-rows 0.3s ease-out;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Nav It Docs Container
-/* ------------------------------------------------------------- */
-
-#nav-it-docs-container {
-
-  width: 100%;
-  margin-top: 2em;
-  padding: 1.5em .8em;
-
-  display: grid;
-  justify-items: center;
-
-  border-radius: .8em;
-
-  background-color: rgba(255, 255, 255, .4);
-
-}
-
-/* ------------------------------------------------------------- */
-/* [1/2] | Nav Category | Nav It Docs Container
-/* ------------------------------------------------------------- */
-
-#nav-category-it-docs {
-
-  width: 100%;
-
-  display: flex;
-  flex-wrap: wrap;
-  /* mobile */
-  justify-content: center;
-  gap: .6em;
-
-}
-
-/* label */
-#nav-category-it-docs > label {
-
-  /* very small mobile */
-  width: 100%;
-
-}
-
-/* ------------------------------------------------------------- */
-/* [2/2] | Nav Sub Category | Nav It Docs Container
-/* ------------------------------------------------------------- */
-
-#nav-sub-category-it-docs {
-
-  width: 100%;
-
-  display: grid;
-  justify-items: center;
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* Frontend, Backend | Nav Sub Category
-/* ------------------------------------------------------------- */
-
-#nav-sub-category-frontend-it-docs,
-#nav-sub-category-backend-it-docs {
-
-   width: 100%;
-  margin-top: 1em;
-  padding-top: 1em;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: .6em;
-
-  border-top: 3px solid rgb(225, 225, 225);
-
-  /* default unshown */
-  display: none;
-
-}
-
-/* label */
-#nav-sub-category-frontend-it-docs > label,
-#nav-sub-category-backend-it-docs > label {
-
-  /* very small mobile */
-  width: 100%;
 
 }

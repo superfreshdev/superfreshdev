@@ -5,7 +5,7 @@
 
 
 /* ------------------------------------------------------------------------------- */
-/* 🟥 [1/3] | Radio | Main Category ( frontend, backend, ai )
+/* 🟩 [1/3] | Radio | Main Category ( frontend, backend, ai )
 /* ------------------------------------------------------------------------------- */
 
 /* default unshown */
@@ -25,6 +25,16 @@ input[name="name-radio-it-docs-main-category"] {
 
 }
 
+/* hover */
+label[for="radio-it-docs-frontend"]:hover,
+label[for="radio-it-docs-backend"]:hover,
+label[for="radio-it-docs-ai"]:hover {
+
+  background-color: wheat;
+  opacity: 1;
+
+}
+
 /* set x */
 #radio-it-docs-frontend:checked ~ #header-it-docs-container label[for="radio-it-docs-frontend"] > .custom-radio-small > img,
 #radio-it-docs-backend:checked ~ #header-it-docs-container label[for="radio-it-docs-backend"]  > .custom-radio-small > img,
@@ -35,27 +45,45 @@ input[name="name-radio-it-docs-main-category"] {
 }
 
 
-/* set nav sub ( only frontend, backend )*/
-#radio-it-docs-frontend:checked ~ #header-it-docs-container #nav-sub-it-docs-frontend,
-#radio-it-docs-backend:checked ~ #header-it-docs-container #nav-sub-it-docs-backend {
+/* set frontend labels */
+#radio-it-docs-frontend:checked ~ #header-it-docs-container label[for="radio-it-docs-dev-basic"],
+#radio-it-docs-frontend:checked ~ #header-it-docs-container label[for="radio-it-docs-web-basic"],
+#radio-it-docs-frontend:checked ~ #header-it-docs-container label[for="radio-it-docs-web-dev"] {
+
+  display: flex;
+
+}
+
+/* set backend labels */
+#radio-it-docs-backend:checked ~ #header-it-docs-container label[for="radio-it-docs-software-dev"],
+#radio-it-docs-backend:checked ~ #header-it-docs-container label[for="radio-it-docs-it-architecture"],
+#radio-it-docs-backend:checked ~ #header-it-docs-container label[for="radio-it-docs-backend-tools"] {
 
   display: flex;
 
 }
 
 /* ------------------------------------------------------------------------------- */
-/* 🟥 [2/3] | Checkbox | Unset Nav Sub IT Docs (js)
+/* 🟩 [2/3] | Checkbox | Unset Nav Sub IT Docs (js)
 /* ------------------------------------------------------------------------------- */
 
 /* default unshown unset sub category */
-#chk-unset-it-docs-nav-sub {
+#radio-unset-it-docs-nav-sub {
 
   display: none;
 
 }
 
 /* set background */
-#chk-unset-it-docs-nav-sub:checked ~ #header-it-docs-container label[for="chk-unset-it-docs-nav-sub"] {
+#radio-unset-it-docs-nav-sub:checked ~ #header-it-docs-container label[for="radio-unset-it-docs-nav-sub"] {
+
+  background-color: wheat;
+  opacity: 1;
+
+}
+
+/* hover */
+label[for="radio-unset-it-docs-nav-sub"]:hover {
 
   background-color: wheat;
   opacity: 1;
@@ -63,15 +91,17 @@ input[name="name-radio-it-docs-main-category"] {
 }
 
 /* set x */
-#chk-unset-it-docs-nav-sub:checked ~ #header-it-docs-container label[for="chk-unset-it-docs-nav-sub"] > .custom-radio-small > img {
+#radio-unset-it-docs-nav-sub:checked ~ #header-it-docs-container label[for="radio-unset-it-docs-nav-sub"] > .custom-radio-small > img {
 
   display: flex;
 
 }
 
 
+
+
 /* ------------------------------------------------------------------------------- */
-/* 🟥 [3/3] | Radio | Sub Main Category ( frontend, backend )
+/* 🟩 [3/3] | Radio | Sub Main Category ( frontend, backend )
 /*                    ( e.g web-basic, web-dev, ... )
 /* ------------------------------------------------------------------------------- */
 
@@ -86,9 +116,19 @@ input[name="name-radios-it-docs-sub-category"] {
 /* ---------------------------------------------------- */
 
 /* set background */
-#radio-it-docs-dev-basic:checked ~ #header-it-docs-container #nav-sub-it-docs-frontend label[for="radio-it-docs-dev-basic"],
-#radio-it-docs-web-basic:checked ~ #header-it-docs-container #nav-sub-it-docs-frontend label[for="radio-it-docs-web-basic"],
-#radio-it-docs-web-dev:checked ~ #header-it-docs-container #nav-sub-it-docs-frontend label[for="radio-it-docs-web-dev"] {
+#radio-it-docs-dev-basic:checked ~ #header-it-docs-container label[for="radio-it-docs-dev-basic"],
+#radio-it-docs-web-basic:checked ~ #header-it-docs-container label[for="radio-it-docs-web-basic"],
+#radio-it-docs-web-dev:checked ~ #header-it-docs-container label[for="radio-it-docs-web-dev"] {
+
+  background-color: wheat;
+  opacity: 1;
+
+}
+
+/* hover */
+label[for="radio-it-docs-dev-basic"]:hover,
+label[for="radio-it-docs-web-basic"]:hover,
+label[for="radio-it-docs-web-dev"]:hover {
 
   background-color: wheat;
   opacity: 1;
@@ -96,9 +136,9 @@ input[name="name-radios-it-docs-sub-category"] {
 }
 
 /* set x */
-#radio-it-docs-dev-basic:checked ~ #header-it-docs-container #nav-sub-it-docs-frontend label[for="radio-it-docs-dev-basic"] > .custom-radio-small > img,
-#radio-it-docs-web-basic:checked ~ #header-it-docs-container #nav-sub-it-docs-frontend label[for="radio-it-docs-web-basic"] > .custom-radio-small > img,
-#radio-it-docs-web-dev:checked ~ #header-it-docs-container #nav-sub-it-docs-frontend label[for="radio-it-docs-web-dev"] > .custom-radio-small > img {
+#radio-it-docs-dev-basic:checked ~ #header-it-docs-container label[for="radio-it-docs-dev-basic"] > .custom-radio-small > img,
+#radio-it-docs-web-basic:checked ~ #header-it-docs-container label[for="radio-it-docs-web-basic"] > .custom-radio-small > img,
+#radio-it-docs-web-dev:checked ~ #header-it-docs-container label[for="radio-it-docs-web-dev"] > .custom-radio-small > img {
 
   display: flex;
 
@@ -109,9 +149,19 @@ input[name="name-radios-it-docs-sub-category"] {
 /* ---------------------------------------------------- */
 
 /* set background */
-#radio-it-docs-it-architecture:checked ~ #header-it-docs-container #nav-sub-it-docs-backend label[for="radio-it-docs-it-architecture"],
-#radio-it-docs-backend-tools:checked ~ #header-it-docs-container #nav-sub-it-docs-backend label[for="radio-it-docs-backend-tools"],
-#radio-it-docs-software-dev:checked ~ #header-it-docs-container #nav-sub-it-docs-backend label[for="radio-it-docs-software-dev"] {
+#radio-it-docs-it-architecture:checked ~ #header-it-docs-container label[for="radio-it-docs-it-architecture"],
+#radio-it-docs-backend-tools:checked ~ #header-it-docs-container label[for="radio-it-docs-backend-tools"],
+#radio-it-docs-software-dev:checked ~ #header-it-docs-container label[for="radio-it-docs-software-dev"] {
+
+  background-color: wheat;
+  opacity: 1;
+
+}
+
+/* hover */
+label[for="radio-it-docs-it-architecture"]:hover,
+label[for="radio-it-docs-backend-tools"]:hover,
+label[for="radio-it-docs-software-dev"]:hover {
 
   background-color: wheat;
   opacity: 1;
@@ -119,9 +169,9 @@ input[name="name-radios-it-docs-sub-category"] {
 }
 
 /* set x */
-#radio-it-docs-it-architecture:checked ~ #header-it-docs-container #nav-sub-it-docs-backend label[for="radio-it-docs-it-architecture"] > .custom-radio-small > img,
-#radio-it-docs-backend-tools:checked ~ #header-it-docs-container #nav-sub-it-docs-backend label[for="radio-it-docs-backend-tools"] > .custom-radio-small > img,
-#radio-it-docs-software-dev:checked ~ #header-it-docs-container #nav-sub-it-docs-backend label[for="radio-it-docs-software-dev"] > .custom-radio-small > img {
+#radio-it-docs-it-architecture:checked ~ #header-it-docs-container label[for="radio-it-docs-it-architecture"] > .custom-radio-small > img,
+#radio-it-docs-backend-tools:checked ~ #header-it-docs-container label[for="radio-it-docs-backend-tools"] > .custom-radio-small > img,
+#radio-it-docs-software-dev:checked ~ #header-it-docs-container label[for="radio-it-docs-software-dev"] > .custom-radio-small > img {
 
   display: flex;
 
