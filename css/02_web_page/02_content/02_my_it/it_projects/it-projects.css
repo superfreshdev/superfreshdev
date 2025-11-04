@@ -173,6 +173,7 @@ label[for="chk-selected-category-it-projects"] {
 
   display: grid;
   justify-items: center;
+   row-gap: 1.5em;
 
   /* default unshown, handled by radios */
   display: none;

@@ -21,9 +21,6 @@
   align-items: center;
   column-gap: .4em;
 
-
-  border-radius: .6em;
-
   font-weight: bold;
 
   background-color: #eeeeee;
@@ -48,19 +45,6 @@
 
 }
 
-/* -------------------------------------------------------------- */
-/* Div 1 | Link Action | Light Grey
-/* -------------------------------------------------------------- */
-
-.link-action-light-grey-very-small > div:nth-of-type(1),
-.link-action-light-grey-small > div:nth-of-type(1),
-.link-action-light-grey-medium > div:nth-of-type(1),
-.link-action-light-grey-big > div:nth-of-type(1) {
-
-   /* 14.5px = 14,5 / 16px (1em) = .90625em */
-  font-size: .90625em;
-
-}
 
 /* -------------------------------------------------------------- */
 /* Very Small | Link Action
@@ -68,7 +52,15 @@
 
 .link-action-light-grey-very-small {
 
-  height: 1.8em;
+  height: 1.5em;
+
+  border-radius: .4em;
+
+}
+
+.link-action-light-grey-very-small > div:nth-of-type(1) {
+
+  font-size: 12px;
 
 }
 
@@ -80,6 +72,14 @@
 
   height: 2em;
 
+  border-radius: .6em;
+
+}
+
+.link-action-light-grey-small > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+
 }
 
 /* -------------------------------------------------------------- */
@@ -90,6 +90,14 @@
 
   height: 2.3em;
 
+  border-radius: .6em;
+
+}
+
+.link-action-light-grey-medium > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+
 }
 
 /* -------------------------------------------------------------- */
@@ -99,5 +107,13 @@
 .link-action-light-grey-big  {
 
   height: 2.8em;
+
+  border-radius: .6em;
+
+}
+
+.link-action-light-grey-big > div:nth-of-type(1) {
+
+  font-size: 14.5px;
 
 }

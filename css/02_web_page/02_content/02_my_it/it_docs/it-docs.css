@@ -100,44 +100,111 @@ label[for="radio-it-docs-backend-tools"] {
 }
 
 /* ------------------------------------------------------------- */
-/* [1/2] | IT Docs Content Seperator Container
+/* [1/2] | IT Docs Content Info Container
 /* ------------------------------------------------------------- */
 
-#it-docs-seperator-container {
+#it-docs-content-info-container {
 
-  padding: 2em 0;
+  position: relative;
+  margin: 1.5em 0;
+  padding: .3em 0 .3em 1em;
+
+  display: grid;
+  row-gap: .6em;
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* Left Curved Line | IT Docs Content Info Container
+/* ------------------------------------------------------------- */
+
+.left-curved-line {
+
+  position: absolute;
+  height: 100%;
+  width: 3px;
+
+  border-radius: 1em;
+
+  background-color: rgb(182, 182, 182);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | IT Docs Content Info Container
+/* ------------------------------------------------------------- */
+
+#it-docs-content-info-container > header {
+
+  font-size: 14.5px;
+  font-weight: bold;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | IT Docs Content Info Container
+/* ------------------------------------------------------------- */
+
+#it-docs-content-info-container > main {
+
+  display: grid;
+  row-gap: .4em;
+
+  color:rgb(101, 101, 101);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | Div | IT Docs Content Info Container
+/* ------------------------------------------------------------- */
+
+#it-docs-content-info-container > main > div {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | Div 2 | IT Docs Content Info Container
+/* ------------------------------------------------------------- */
+
+#it-docs-content-info-container > main > div > div:nth-of-type(2) {
+
+  width: 2.5em;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 2em;
 
-  /* background-color: rgb(233, 233, 233); */
-
-}
-
-#it-docs-seperator-container > div {
-
-  display: flex;
-  align-items: center;
-  column-gap: 1em;
-}
-
-#img-it-docs-clipart-me {
-
-  height: 3.5em;
+  /* background-color: red; */
 
 }
 
-#img-it-docs-pdf-seperator {
+/* ------------------------------------------------------------- */
+/* Main | Div 1 & 3 | IT Docs Content Info Container
+/* ------------------------------------------------------------- */
 
-  height: 3em;
+#it-docs-content-info-container > main > div > div:nth-of-type(1),
+#it-docs-content-info-container > main > div > div:nth-of-type(3) {
+
+  font-size: 14.5px;
+
 }
 
-#img-it-docs-anki-seperator {
+/* ------------------------------------------------------------- */
+/* Img Anki Icon | IT Docs Content Info Container
+/* ------------------------------------------------------------- */
 
-  height: 3em;
+#it-docs-content-info-container > main > div:nth-of-type(2) > div:nth-of-type(2) > img {
+
+  padding-left: 10px;
+
 }
+
+
 
 /* ------------------------------------------------------------- */
 /* [2/2] | It Docs Card List Content Container

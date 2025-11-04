@@ -272,6 +272,23 @@
 
   }
 
+  /* ------------------------------------------------------------- */
+  /*  More IT Projects | More It Projects Container */
+  /* ------------------------------------------------------------- */
+
+  #more-it-projects-container {
+
+  display: grid;
+  justify-items: center;
+  column-gap: 1.5em;
+
+  grid: auto / 1fr 1fr;
+
+
+  /* background-color:red; */
+
+}
+
 }
 
 /* -------------------------------------------------------------- */

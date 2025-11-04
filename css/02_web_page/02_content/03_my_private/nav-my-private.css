@@ -6,20 +6,43 @@
 
 
 /* ------------------------------------------------------------- */
-/* Nav My Private
+/* Radio | Category | My Private ( Sport, Others )
 /* ------------------------------------------------------------- */
 
-#nav-my-private {
+/* default unshown */
+input[name="name-radio-my-private-category"] {
 
-  width: 100%;
+  display: none;
+}
 
-  display: grid;
+/* set background */
+#radio-my-private-category-sport:checked ~ #nav-my-private label[for="radio-my-private-category-sport"],
+#radio-my-private-category-others:checked ~ #nav-my-private label[for="radio-my-private-category-others"] {
 
-  /* mobile */
-  justify-items: center;
-
+  background-color: wheat;
 
 }
+
+/* set content */
+#radio-my-private-category-sport:checked ~ #sport-container-my-private,
+#radio-my-private-category-others:checked ~ #others-container-my-private {
+
+  display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------- */
 
 /* ------------------------------------------------------------- */
 /* Nav List My Private

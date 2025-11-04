@@ -12,7 +12,7 @@
 .it-project-more-card {
 
   /* min-width: 100%; */
-  width: 10em;
+  width: 100%;
 
   display: grid;
 
@@ -20,6 +20,17 @@
 
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 
+  transition: all .4s;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Hover | IT Project More Card
+/* ------------------------------------------------------------- */
+
+.it-project-more-card:hover {
+
+  background-color: rgb(246, 246, 246);
 }
 
 /* ------------------------------------------------------------- */
@@ -28,136 +39,26 @@
 
 .it-project-more-card > header {
 
-  height: 2.3em;
-  padding: 0 .8em;
+  /* height: 2.3em; */
+  padding: .6em .8em;
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   font-weight: bold;
 
   border-radius: 1em 1em 0 0;
 
-  background-color: red;
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* Main | IT Project More Card
-/* ------------------------------------------------------------- */
-
-.it-project-more-card > main {
-
-  padding: .8em;
-
-  color:rgb(191, 182, 182);;
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* Footer | IT Project More Card
-/* ------------------------------------------------------------- */
-
-.it-project-more-card > footer {
-
-  height: 2.3em;
-  padding: 0 .8em;
-
-  display: flex;
-  align-items: center;
-
-  border-radius: 0em 0em 1em 1em;
-
-  color:rgb(191, 182, 182);
-  background-color: gold;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------- */
-
-/* ------------------------------------------------------------- */
-/* More It Project Card
-/* ------------------------------------------------------------- */
-
-.new-more-it-project-card {
-
-
-  display: grid;
-  grid: auto 1fr auto / 1fr;
-
-  border-radius: 1em;
-
-  border: 4px solid rgba(164, 164, 164, 0.1);
-  /* border: 4px solid rgba(164, 164, 164, 0.1); */
-  border-radius: 20px;
-  /* background-color: rgba(255, 255, 255, .8); */
-
-  /* background-color: rgb(210, 210, 210); */
-
-  backdrop-filter: blur(12px);
-
-  transition: all .4s;
-
-}
-
-.new-more-it-project-card:hover {
-
-   border: 4px solid rgba(164, 164, 164, 0.8);
+  /* background-color: red; */
 
 }
 
 /* ------------------------------------------------------------- */
-/* Header | More It Project Card
+/* Header | Div 1 | Span | IT Project More Card
 /* ------------------------------------------------------------- */
 
-.new-more-it-project-card > header {
-
-  padding: 1em;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: .8em;
-
-  border-radius: 1em 1em 0 0;
-
-  background-color: white;
-
-
-}
-
-/* ------------------------------------------------------------- */
-/* Nr Block | Header
-/* ------------------------------------------------------------- */
-
-.new-more-it-project-card > header > div:nth-of-type(1) {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: .8em;
-
-  font-weight: bold;
-
-}
-
-.new-more-it-project-card > header > div:nth-of-type(1) > div {
+.it-project-more-card > header > div:nth-of-type(1) > span {
 
   font-size: 14.5px;
   letter-spacing: 1px;
@@ -165,166 +66,117 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Status & Img Icon Block | Header
+/* Header | Div 2 |  IT Project More Card
 /* ------------------------------------------------------------- */
 
-.new-more-it-project-card > header > div:nth-of-type(2) {
+.it-project-more-card > header > div:nth-of-type(2) {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
   column-gap: .4em;
 
 }
 
-
-/* 🟣🟣🟣🟣  Auslagern , status-info / status-sticker */
 /* ------------------------------------------------------------- */
-/* Status | Header
+/* Main | IT Project More Card
 /* ------------------------------------------------------------- */
 
-.status-info-small {
+.it-project-more-card > main {
 
-  height: 1.5em;
+  padding: 0em .8em;
+
+  display: grid;
+  row-gap: .4em;
+
+  color:rgb(191, 182, 182);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | Div 1 |  IT Project More Card
+/* ------------------------------------------------------------- */
+
+.it-project-more-card > main > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Tech Stack More IT Projects Container | Main
+/* ------------------------------------------------------------- */
+
+.tech-stack-more-it-projects-container {
+
+  padding-bottom: .8em;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: .3em;
+  row-gap: .3em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Tech Stack More IT Projects Container | Div
+/* ------------------------------------------------------------- */
+
+.tech-stack-more-it-projects-container > div {
+
+  height: 1.3em;
   padding: 0 .4em;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  column-gap: .3em;
 
-  font-weight: bold;
+  border-radius: .4em;
 
-  border-radius: 1em;
+  border: 1px dashed rgb(217, 217, 217);
 
-  user-select: none;
+  /* background-color: rgb(247, 247, 247); */
 
 }
 
-.status-info-small > span,
-.status-info-small > div {
+/* ------------------------------------------------------------- */
+/* Tech Stack More IT Projects Container | Div |Div
+/* ------------------------------------------------------------- */
+
+.tech-stack-more-it-projects-container > div > div {
 
   font-size: 12px;
 
 }
 
-.in-progress {
-
-    background: #facc15;
-    color: #111;
-}
-
-.coming-soon {
-
-  background-color: #e4e4e4;
-
-}
-
-.finished {
-
-  background: #26b15b;
-
-}
-
 /* ------------------------------------------------------------- */
-/* 🟩 Main | More It Project Card
+/* Footer | IT Project More Card
 /* ------------------------------------------------------------- */
 
-.new-more-it-project-card > main {
+.it-project-more-card > footer {
 
-  padding: 0 1em;
-
-  display: grid;
-
-  color:#797979;
-
-  background-color: white;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Main Span | More It Project Card
-/* ------------------------------------------------------------- */
-
-.new-more-it-project-card > main > span {
-
- font-size: 14.5px;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Main Footer | More It Project Card
-/* ------------------------------------------------------------- */
-
-.new-more-it-project-card > main > footer {
-
-  padding: .6em 0 1em 0;
-
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: .2em;
-  row-gap: .3em;
-
-}
-
-.new-more-it-project-card > main > footer > div {
-
-  height: 1.3em;
-  padding: 0 .3em;
-
-  display: flex;
-  align-items: center;
-  column-gap: .3em;
-
-  /* font-weight: bold; */
-  border-radius: .4em;
-
-  background-color: rgb(189, 189, 189);
-  background-color: rgb(242, 242, 242);
-  opacity: .6;
-
-  font-weight: bold;
-
-  color:#797979;
-
-  color:rgb(98, 98, 98);
-
-  user-select: none;
-
-}
-
-.new-more-it-project-card > main > footer > div > div {
-
-  font-size: 10.5px;
-
-}
-
-/* ------------------------------------------------------------- */
-/* 🟩 Footer | More It Project Card
-/* ------------------------------------------------------------- */
-
-.new-more-it-project-card > footer {
-
-  padding: .6em 1em;
+  height: 2.8em;
+  margin: 0 .8em;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  column-gap: .3em;
 
-  /* background-color: rgb(198, 198, 198); */
+  border-radius: 0em 0em 1em 1em;
 
+  border-top: 1px solid rgb(223, 223, 223);
 
-  background-color: rgba(164, 164, 164, 0.1);
-
-  /* background-color: white; */
-  /* opacity: .8; */
-
-  border-radius: 0 0 1em 1em;
+  /* background-color: gold; */
 
 }
 
-.new-more-it-project-card > footer > div > a {
+/* ------------------------------------------------------------- */
+/* Zip Github Link Container | Footer
+/* ------------------------------------------------------------- */
 
-  border: 1px solid rgb(181, 181, 181);
+.zip-github-link-container-more-it-project {
+
+  display: flex;
+  align-items: center;
+  column-gap: .3em;
 
 }
