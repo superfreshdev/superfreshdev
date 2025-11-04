@@ -34,6 +34,13 @@
 
 }
 
+/*
+  /sport
+  /others
+    /food ...
+
+*/
+
 /* ------------------------------------------------------------- */
 /* Sport & Others Container | My Private
 /* ------------------------------------------------------------- */
@@ -41,8 +48,52 @@
 #sport-container-my-private,
 #others-container-my-private {
 
+
   display: none;
 
+}
+
+/* ------------------------------------------------------------- */
+/* Sport Container | My Private
+/* ------------------------------------------------------------- */
+
+#sport-container-my-private {
+
+  display: grid;
+  row-gap: 2em;
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header Nav Sport Container
+/* ------------------------------------------------------------- */
+
+#header-nav-sport-container {
+
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+  row-gap: 1em;
+
+  /* background-color: red; */
+
+}
+
+
+/* 🟣 Auslagern */
+/* ------------------------------------------------------------- */
+/* Nav Sport Container
+/* ------------------------------------------------------------- */
+#nav-sport-container {
+
+  display: grid;
+  /* row-gap: .3em; */
+
+  background-color: grey;
 }
 
 /* ------------------------------------------------------------------- */

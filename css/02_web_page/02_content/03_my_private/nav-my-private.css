@@ -28,6 +28,7 @@ input[name="name-radio-my-private-category"] {
 #radio-my-private-category-others:checked ~ #others-container-my-private {
 
   display: grid;
+
 }
 
 
