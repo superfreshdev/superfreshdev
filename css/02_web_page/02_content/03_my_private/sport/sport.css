@@ -1,0 +1,83 @@
+/* ------------------------------------------------------------------------- */
+/* > sport.css
+/* : styles sport of my private
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* 🟩 Sport Container | My Private
+/* ------------------------------------------------------------- */
+
+#sport-container-my-private {
+
+  display: grid;
+  row-gap: .5em;
+
+  /* default unshown */
+  display: none;
+
+}
+
+/* ------------------------------------------------------------- */
+/* 🟩 Header Nav | Sport Container
+/* ------------------------------------------------------------- */
+
+#header-nav-sport-container {
+
+  /* mobile */
+  display: grid;
+
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; */
+
+  column-gap: .8em;
+  row-gap: 1em;
+
+  /* background-color: red; */
+
+}
+
+/* let header content block on top */
+#header-nav-sport-container > .header-content-block {
+
+  align-self: flex-start;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* 🟥 Nav Sport Container
+/* ------------------------------------------------------------- */
+
+#nav-sport-container {
+
+  display: grid;
+  /* row-gap: .3em; */
+
+  background-color: grey;
+
+}
+
+/* ------------------------------------------------------------- */
+/* 🟥 Nav Sport Category
+/* ------------------------------------------------------------- */
+
+#nav-sport-category {
+
+  display: grid;
+
+}
+
+/* ------------------------------------------------------------- */
+/* 🟥 Content | Sport Container
+/* ------------------------------------------------------------- */
+
+#content-sport-container {
+
+  padding: 1.5em 0 .5em 0;
+
+  border-top: 3px solid rgb(233, 233, 233);
+
+}

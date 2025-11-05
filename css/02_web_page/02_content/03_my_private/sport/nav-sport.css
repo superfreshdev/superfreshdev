@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------------------- */
+/* > nav-sport.css
+/* : styles nav sport of my private
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Checkbox | Selected Category ( newest videos, challenges )
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+#chk-selected-category-sport-newest-videos {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-selected-category-sport-newest-videos:checked ~ #sport-container-my-private label[for="chk-selected-category-sport-newest-videos"] {
+
+  background-color: rgb(239, 113, 113);
+
+}
+
+#chk-selected-category-sport-newest-videos:checked ~ #sport-container-my-private label[for="chk-selected-category-sport-newest-videos"] .text-grey {
+
+  color:black;
+
+}
+
+/* change rotation img arrow */
+#chk-selected-category-sport-newest-videos:checked ~ #sport-container-my-private label[for="chk-selected-category-sport-newest-videos"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* set content */
+
+/* ⚠️ delete later */
+#smooth-nav-sport-category {
+
+  grid-template-rows: 1fr;
+}
+
+
+
+/* ------------------------------------------------------------- */
+/* Radios | Category ( newest videos, challenges )
+/* ------------------------------------------------------------- */

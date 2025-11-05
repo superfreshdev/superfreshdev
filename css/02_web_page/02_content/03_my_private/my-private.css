@@ -5,97 +5,6 @@
 /* -------------------------------------------------------------- */
 
 
-/* ------------------------------------------------------------- */
-/* My Private Page Container
-/* ------------------------------------------------------------- */
-
-#my-private-page-container {
-
-  /* z-index: 2; */
-  width: 100%;
-  padding: 2em 0;
-
-  display: grid;
-  /* row-gap: 2em; */
-
-}
-
-/* ------------------------------------------------------------- */
-/* Nav My Private
-/* ------------------------------------------------------------- */
-
-#nav-my-private {
-
-  margin-bottom: 2em;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-}
-
-/*
-  /sport
-  /others
-    /food ...
-
-*/
-
-/* ------------------------------------------------------------- */
-/* Sport & Others Container | My Private
-/* ------------------------------------------------------------- */
-
-#sport-container-my-private,
-#others-container-my-private {
-
-
-  display: none;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Sport Container | My Private
-/* ------------------------------------------------------------- */
-
-#sport-container-my-private {
-
-  display: grid;
-  row-gap: 2em;
-
-
-}
-
-/* ------------------------------------------------------------- */
-/* Header Nav Sport Container
-/* ------------------------------------------------------------- */
-
-#header-nav-sport-container {
-
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: .8em;
-  row-gap: 1em;
-
-  /* background-color: red; */
-
-}
-
-
-/* 🟣 Auslagern */
-/* ------------------------------------------------------------- */
-/* Nav Sport Container
-/* ------------------------------------------------------------- */
-#nav-sport-container {
-
-  display: grid;
-  /* row-gap: .3em; */
-
-  background-color: grey;
-}
-
 /* ------------------------------------------------------------------- */
 /* Img Background | My Private Page Container
 /* ------------------------------------------------------------------- */
@@ -137,135 +46,33 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------- */
-/* My Private Sport Container
+/* My Private Page Container
 /* ------------------------------------------------------------- */
 
+#my-private-page-container {
 
-/* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------- */
-
-/* 🟣 Auslagern */
-/* ------------------------------------------------------------- */
-/* My Private Sport Container
-/* ------------------------------------------------------------- */
-
-#my-private-sport-container {
-
+  /* z-index: 2; */
   width: 100%;
-  z-index: 2;
+  padding: 2em 0;
 
   display: grid;
-
-  /* background-color: red; */
-
-}
-
-/* ------------------------------------------------------------- */
-/* My Private Sport Content Container
-/* ------------------------------------------------------------- */
-
-#my-private-sport-content-container {
-
-  display: grid;
+  /* row-gap: 2em; */
 
 }
 
 /* ------------------------------------------------------------- */
-/* [1/2] | Selector Container
+/* Nav My Private
 /* ------------------------------------------------------------- */
 
-#my-private-selector-container {
+#nav-my-private {
 
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    column-gap: 1em;
-    row-gap: 1em;
-
-    background-color: rgb(255, 255, 255);
-
-    /* background-color: green; */
-
-}
-
-.lbl-selector-my-private {
-
-  height: 2.8em;
-  min-width: 15em;
-  padding: 0 .8em;
+  margin-bottom: 2em;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  column-gap: .8em;
+  justify-content: flex-end;
 
-  font-weight: bold;
-
-  border-radius: .8em;
-
-  user-select: none;
-
-  background-color: rgb(185, 185, 185);
-
-  transition: all .4s;
-
-}
-
-.lbl-selector-my-private:hover {
-
-  background-color: wheat;
-}
-
-.lbl-selector-my-private > div {
-
-  display: flex;
-  align-items: center;
-  column-gap: .6em;
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* [2/2] | Selector List Container
-/* ------------------------------------------------------------- */
-
-#my-private-selector-list-container {
-
-  width: 100%;
-    padding: 1.5em 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-
-    column-gap: 1em;
-    row-gap: 1em;
-
-    background-color: rgb(255, 255, 255);
+  /* background-color: green; */
 
 }

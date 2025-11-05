@@ -86,18 +86,15 @@
 
 @media ( min-width: 480px ) {
 
+  /* ---------------------------------------------------------------- */
+  /* Sport | Header Content Img
+  /* ---------------------------------------------------------------- */
+  #header-nav-sport-container > .header-content-block > img {
 
-  /* ----------------------------------------------------- */
-  /* My Private | Nav My Private */
-  /* ----------------------------------------------------- */
-
-  #nav-my-private > label:nth-child(1) {
-
-    /* desktop */
-    justify-self: flex-end;
-    /* background-color: rgb(24, 110, 63); */
+    display: flex;
 
   }
+
 
 
   /* ---------------------------------------------------------------- */
@@ -174,6 +171,34 @@
 
 
 }
+
+/* ----------------------------------------------------- */
+/* 500px */
+/* ----------------------------------------------------- */
+
+@media ( min-width: 500px ) {
+
+  /* ----------------------------------------------------- */
+  /* Sport | Header Nav Sport Container */
+  /* ----------------------------------------------------- */
+
+  #header-nav-sport-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: .8em;
+    row-gap: 1em;
+
+    /* background-color: red; */
+
+  }
+
+}
+
+
 
 /* ----------------------------------------------------- */
 /* 560px */
