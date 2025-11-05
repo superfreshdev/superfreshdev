@@ -48,27 +48,70 @@
 
 
 /* ------------------------------------------------------------- */
-/* 🟥 Nav Sport Container
+/* 🟩 Nav Sport Container
 /* ------------------------------------------------------------- */
 
 #nav-sport-container {
 
   display: grid;
-  /* row-gap: .3em; */
+  row-gap: .6em;
 
-  background-color: grey;
 
 }
 
 /* ------------------------------------------------------------- */
-/* 🟥 Nav Sport Category
+/* 🟩 Nav Sport General
 /* ------------------------------------------------------------- */
 
-#nav-sport-category {
+#nav-sport-general {
 
   display: grid;
 
 }
+
+/* ------------------------------------------------------------- */
+/* 🟩 Nav Sport Category Category
+/* ------------------------------------------------------------- */
+
+#nav-sport-general-category {
+
+  padding-top: .5em;
+  display: grid;
+  row-gap: .4em;
+
+  /* background-color: grey; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* 🟥 Nav Sport Challenges
+/* ------------------------------------------------------------- */
+
+#nav-sport-challenges {
+
+  display: grid;
+
+}
+
+/* ------------------------------------------------------------- */
+/* 🟥 Nav Sport Category Challenges
+/* ------------------------------------------------------------- */
+
+#nav-sport-category-challenges {
+
+  display: grid;
+  row-gap: .4em;
+
+}
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------- */
 /* 🟥 Content | Sport Container

@@ -9,36 +9,34 @@
 /* ------------------------------------------------------------- */
 
 /* default unshown */
-#chk-selected-category-sport-newest-videos {
+#chk-selected-category-sport {
 
   display: none;
 
 }
 
 /* set background */
-#chk-selected-category-sport-newest-videos:checked ~ #sport-container-my-private label[for="chk-selected-category-sport-newest-videos"] {
+#chk-selected-category-sport:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport"] {
 
   background-color: rgb(239, 113, 113);
 
 }
 
-#chk-selected-category-sport-newest-videos:checked ~ #sport-container-my-private label[for="chk-selected-category-sport-newest-videos"] .text-grey {
+#chk-selected-category-sport:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport"] .text-grey {
 
   color:black;
 
 }
 
 /* change rotation img arrow */
-#chk-selected-category-sport-newest-videos:checked ~ #sport-container-my-private label[for="chk-selected-category-sport-newest-videos"] > img:nth-of-type(1) {
+#chk-selected-category-sport:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport"] > img:nth-of-type(1) {
 
   transform: rotate(180deg);
 
 }
 
 /* set content */
-
-/* ⚠️ delete later */
-#smooth-nav-sport-category {
+#chk-selected-category-sport:checked ~ #header-nav-sport-container #smooth-nav-sport-general-category {
 
   grid-template-rows: 1fr;
 }
@@ -48,3 +46,82 @@
 /* ------------------------------------------------------------- */
 /* Radios | Category ( newest videos, challenges )
 /* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="radio-sport-category"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-sport-newest-video:checked ~ #header-nav-sport-container label[for="radio-sport-newest-video"],
+#radio-challenges-video:checked ~ #header-nav-sport-container label[for="radio-challenges-video"] {
+
+  background-color: wheat;
+
+}
+
+/* set x */
+#radio-sport-newest-video:checked ~ #header-nav-sport-container label[for="radio-sport-newest-video"] > .custom-radio-small > img,
+#radio-challenges-video:checked ~ #header-nav-sport-container label[for="radio-challenges-video"] > .custom-radio-small > img {
+
+  display: flex;
+
+}
+
+/* set content */
+
+
+
+/* ------------------------------------------------------------- */
+/* Checkbox | Selected Category Sport Challenge
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+#chk-selected-category-sport-challenges {
+
+  display: none;
+
+}
+
+
+/* set background */
+#chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport-challenges"] {
+
+  background-color: rgb(239, 113, 113);
+
+}
+
+/* change rotation img arrow */
+#chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport-challenges"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* set content */
+#chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container #smooth-nav-sport-category-challenges {
+
+  grid-template-rows: 1fr;
+}
+
+
+
+/* ------------------------------------------------------------- */
+/* Radios | Category Sport Challenge
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="radio-sport-challenges"] {
+
+  display: none;
+
+}
+
+/* set background */
+/* #radio-sport-challenge-1:checked ~ */
+
+/* set x */
+
+/* set content */

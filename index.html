@@ -88,6 +88,7 @@
                 <!-- Drop Down Elements -->
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-light-grey.css">
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-grey.css">
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-2-lines-grey.css">
 
                 <!-- Radio Selection -->
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/radio-selection/radio-selection-light-grey.css">
@@ -8572,10 +8573,7 @@
                                         <input checked type="radio" id="radio-my-private-category-sport" name="name-radio-my-private-category">
                                         <input type="radio" id="radio-my-private-category-others" name="name-radio-my-private-category">
 
-                                        <!-- --------------------------------------------------------- -->
-                                        <!-- 🟩 Checkbox | Selected Category -->
-                                        <!-- --------------------------------------------------------- -->
-                                        <input type="checkbox" id="chk-selected-category-sport-newest-videos">
+
 
                                         <!-- --------------------------------------------------------- -->
                                         <!-- 🟥 Radios Nav My Private (sport, food, ... ) -->
@@ -8622,6 +8620,27 @@
                                         <!-- --------------------------------------------------------------- -->
                                         <div id="sport-container-my-private" class="style-page-content-card-white">
 
+                                            <!-- --------------------------------------------------------- -->
+                                            <!-- 🟩 Checkbox | Selected Category -->
+                                            <!-- --------------------------------------------------------- -->
+                                            <input type="checkbox" id="chk-selected-category-sport">
+
+                                            <!-- ----------------------------------------------------------------- -->
+                                            <!-- 🟩 Radios | Category Sport ( newest videos, challenges ) -->
+                                            <!-- ----------------------------------------------------------------- -->
+                                            <input type="radio" id="radio-sport-newest-video" name="radio-sport-category">
+                                            <input type="radio" id="radio-challenges-video" name="radio-sport-category">
+
+                                            <!-- ----------------------------------------------------------------- -->
+                                            <!-- 🟩 Checkbox | Selected Category Sport Challenges -->
+                                            <!-- ----------------------------------------------------------------- -->
+                                            <input type="checkbox" id="chk-selected-category-sport-challenges">
+
+                                            <!-- ----------------------------------------------------------------- -->
+                                            <!-- 🟨 Radio | Category Sport Challenges -->
+                                            <!-- ----------------------------------------------------------------- -->
+                                            <input type="radio" id="radio-sport-challenge-1" name="radio-sport-challenges">
+
 
                                             <!-- ----------------------------------------------------------------- -->
                                             <!-- ➡️🟥 [1/2] | Header Nav | Sport Container -->
@@ -8644,63 +8663,157 @@
                                                 </div>
 
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <!-- ➡️🟨🟥 [2/2] | Nav Sport Container -->
+                                                <!-- ➡️🟥 [2/2] | Nav Sport Container -->
                                                 <!-- ----------------------------------------------------------------- -->
                                                 <div id="nav-sport-container">
 
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <!-- Label | Selected Category -->
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <label for="chk-selected-category-sport-newest-videos" class="drop-down-grey-medium">
+                                                    <!-- ----------------------------------------------------------------- -->
+                                                    <!-- 🟩 [1/2] | Nav Sport General -->
+                                                    <!-- ----------------------------------------------------------------- -->
+                                                    <div id="nav-sport-general">
 
-                                                        <!-- ---------------------------------------- -->
-                                                        <!-- Title Block -->
-                                                        <!-- ---------------------------------------- -->
-                                                        <div>
-                                                            <img src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-1-1" alt="img">
-                                                            <div>Newest Videos <span class="text-grey">(2)</span></div>
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <!-- 🟩 Label | Selected Category -->
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <label for="chk-selected-category-sport" class="drop-down-grey-medium">
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Title Block -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <div>
+                                                                <img src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-1-2" alt="img">
+                                                                <div>Newest Videos <span class="text-grey">(2)</span></div>
+                                                            </div>
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Img Arrow (open/close) -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
+                                                                class="img-h-0-5" alt="img">
+
+                                                        </label>
+
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <!-- 🟩 Smooth | Open Close (General) | Nav -->
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <div id="smooth-nav-sport-general-category" class="smooth-open-close-container">
+
+
+                                                            <!-- ------------------------------------------------------------ -->
+                                                            <!-- Overflow Hidden -->
+                                                            <!-- ------------------------------------------------------------ -->
+                                                            <div class="overflow-hidden">
+
+                                                                <!-- ------------------------------------------------------------ -->
+                                                                <!-- 🟩 Nav -->
+                                                                <!-- ------------------------------------------------------------ -->
+                                                                <nav id="nav-sport-general-category">
+
+                                                                    <!-- ------------------------------------------------------------------ -->
+                                                                    <!-- 🟩 Sport Category | Newest Videos -->
+                                                                    <!-- ------------------------------------------------------------------ -->
+                                                                    <label for="radio-sport-newest-video" class="drop-down-grey-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-1-2" alt="img">
+                                                                            <div>Newest Videos <span class="text-grey">(2)</span></div>
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+                                                                    </label>
+
+                                                                    <!-- ------------------------------------------------------------------ -->
+                                                                    <!-- 🟩 Sport Category | Challenges -->
+                                                                    <!-- ------------------------------------------------------------------ -->
+                                                                    <label for="radio-challenges-video" class="drop-down-grey-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-0-9" alt="img">
+                                                                            <div>Challenges <span class="text-grey">(1)</span></div>
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+                                                                    </label>
+
+
+                                                                </nav>
+
+                                                            </div>
+
                                                         </div>
 
-                                                        <!-- ---------------------------------------- -->
-                                                        <!-- Img Arrow (open/close) -->
-                                                        <!-- ---------------------------------------- -->
-                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
-                                                            class="img-h-0-5" alt="img">
 
-                                                    </label>
+                                                    </div>
 
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <!-- Smooth | Open Close | Nav -->
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <div id="smooth-nav-sport-category" class="smooth-open-close-container">
+                                                    <!-- ----------------------------------------------------------------- -->
+                                                    <!-- ➡️🟥 [2/2] | Nav Sport Challenges -->
+                                                    <!-- ----------------------------------------------------------------- -->
+                                                    <div id="nav-sport-challenges">
 
+                                                        <!-- ⚠️ Neues Template, 2 Lines by selected and one line by choose , drop-down-2-lines-grey-medium -->
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <!-- 🟩 Label | Selected Category Sport Challenges -->
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <label for="chk-selected-category-sport-challenges" class="drop-down-2-lines-grey-medium">
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Title Block -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <div>
+                                                                <div>Choose ...</div>
+                                                                <!-- <div>» Challenges</div> -->
+                                                                <!-- become fit again, calesthenics #1 -->
+                                                            </div>
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Img Arrow (open/close) -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
+                                                                class="img-h-0-5" alt="img">
+
+                                                        </label>
 
                                                         <!-- ------------------------------------------------------------ -->
-                                                        <!-- Overflow Hidden -->
+                                                        <!-- ➡️🟥 Smooth | Open Close (Challenges) | Nav -->
                                                         <!-- ------------------------------------------------------------ -->
-                                                        <div class="overflow-hidden">
+                                                        <div id="smooth-nav-sport-category-challenges" class="smooth-open-close-container">
 
                                                             <!-- ------------------------------------------------------------ -->
-                                                            <!-- Nav  -->
+                                                            <!-- Overflow Hidden -->
                                                             <!-- ------------------------------------------------------------ -->
-                                                            <nav id="nav-sport-category">
+                                                            <div class="overflow-hidden">
 
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <!-- Sport Category | Newest Videos -->
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <label for="">
-                                                                    Newest Video's
-                                                                </label>
+                                                                <!-- ------------------------------------------------------------ -->
+                                                                <!-- ➡️🟥 Nav Sport Category Challenges -->
+                                                                <!-- ------------------------------------------------------------ -->
+                                                                <div id="nav-sport-category-challenges">
 
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <!-- Sport Category | Challenges -->
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <label for="">
-                                                                    Challenges
-                                                                </label>
+                                                                    <div>Challenge #1</div>
+                                                                    <div>Challenge #2</div>
 
+                                                                </div>
 
-                                                            </nav>
+                                                            </div>
+
 
                                                         </div>
 
@@ -8708,6 +8821,7 @@
 
 
                                                 </div>
+
 
                                             </div>
 
