@@ -24,93 +24,115 @@
 
 #header-nav-sport-container {
 
-  /* mobile */
   display: grid;
 
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between; */
+  /* mobile */
+  grid-template:
 
-  column-gap: .8em;
-  row-gap: 1em;
+  'sport-nav-sport-general'
+  'sport-selected-category-sport-challenges'
+  'smooth-nav-sport-category-challenges'
 
-  /* background-color: red; */
+  ;
+
+  /* background-color: red;  'sport-header-content-block' */
 
 }
 
-/* let header content block on top */
+/* ------------------------------------------------------------- */
+/* [1/4] | Header Content Block
+/* ------------------------------------------------------------- */
+
 #header-nav-sport-container > .header-content-block {
+
+  grid-area: sport-header-content-block;
 
   align-self: flex-start;
 
-}
-
-
-/* ------------------------------------------------------------- */
-/* 🟩 Nav Sport Container
-/* ------------------------------------------------------------- */
-
-#nav-sport-container {
-
-  display: grid;
-  row-gap: .6em;
-
+  /* mobile */
+  display: none;
 
 }
 
+
 /* ------------------------------------------------------------- */
-/* 🟩 Nav Sport General
+/* [2/4] | Nav Sport Container
 /* ------------------------------------------------------------- */
 
-#nav-sport-general {
+#nav-sport-general  {
+
+  grid-area: sport-nav-sport-general;
+
+  /* mobile */
+  margin-top: 0em;
 
   display: grid;
 
+
 }
 
 /* ------------------------------------------------------------- */
-/* 🟩 Nav Sport Category Category
+/* Nav Sport Category Category
 /* ------------------------------------------------------------- */
 
 #nav-sport-general-category {
 
   padding-top: .5em;
   display: grid;
-  row-gap: .4em;
+  row-gap: .5em;
 
   /* background-color: grey; */
 
 }
 
 /* ------------------------------------------------------------- */
-/* 🟥 Nav Sport Challenges
+/* [3/4] | Label | Selected Category Sport Challenges
 /* ------------------------------------------------------------- */
 
-#nav-sport-challenges {
+label[for="chk-selected-category-sport-challenges"] {
 
-  display: grid;
+  margin-top: .5em;
+  grid-area: sport-selected-category-sport-challenges;
 
 }
 
 /* ------------------------------------------------------------- */
-/* 🟥 Nav Sport Category Challenges
+/* [4/4] | Smooth | Nav Sport Category Challenges
 /* ------------------------------------------------------------- */
 
+#smooth-nav-sport-category-challenges {
+
+  grid-area: smooth-nav-sport-category-challenges;
+
+  /* grid-template-rows: 1fr; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Sport Category Challenges
+/* ------------------------------------------------------------- */
+
+/* good for max 3 items */
 #nav-sport-category-challenges {
 
+  padding-top: .5em;
   display: grid;
-  row-gap: .4em;
+  row-gap: .5em;
+
+  background-color: red;
 
 }
 
 
+/* good for more than 3 items its flex buzzer layout */
+/* #nav-sport-category-challenges  {
 
+   padding-top: .5em;
+   display: grid;
+   grid: auto / 1fr 1fr 1fr 1fr;
+   gap: .4em;
 
-
-
-
-
+} */
 
 
 /* ------------------------------------------------------------- */

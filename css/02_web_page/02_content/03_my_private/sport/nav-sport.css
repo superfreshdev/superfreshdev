@@ -93,6 +93,14 @@ input[name="radio-sport-category"] {
 
 }
 
+/* set color black to challenges */
+#chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport-challenges"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  color:rgb(48, 48, 48);
+
+}
+
+
 /* change rotation img arrow */
 #chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport-challenges"] > img:nth-of-type(1) {
 
@@ -106,8 +114,6 @@ input[name="radio-sport-category"] {
   grid-template-rows: 1fr;
 }
 
-
-
 /* ------------------------------------------------------------- */
 /* Radios | Category Sport Challenge
 /* ------------------------------------------------------------- */
@@ -120,8 +126,21 @@ input[name="radio-sport-challenges"] {
 }
 
 /* set background */
-/* #radio-sport-challenge-1:checked ~ */
+#radio-sport-unset-challenge:checked ~ #header-nav-sport-container label[for="radio-sport-unset-challenge"],
+#radio-sport-challenge-1:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-1"],
+#radio-sport-challenge-2:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-2"] {
+
+  background-color: wheat;
+
+}
 
 /* set x */
+#radio-sport-unset-challenge:checked ~ #header-nav-sport-container label[for="radio-sport-unset-challenge"] > .custom-radio-small > img,
+#radio-sport-challenge-1:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-1"]  > .custom-radio-small > img,
+#radio-sport-challenge-2:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-2"] > .custom-radio-small > img {
+
+  display: flex;
+
+}
 
 /* set content */
