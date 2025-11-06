@@ -1,0 +1,230 @@
+/* -------------------------------------------------------------- */
+/* > sport-newest-videos.css
+/* : styles sport newest videos
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Sport Newest Video Container
+/* -------------------------------------------------------------- */
+
+#sport-newest-video-container {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: 2em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Reminder Sport Newest
+/* -------------------------------------------------------------- */
+
+#reminder-sport-newest-video {
+
+  /* mobile */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  text-align: center;
+
+  column-gap: .8em;
+  row-gap: .8em;
+
+  font-size: 14.5px;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Span 1 | Reminder Sport Newest
+/* -------------------------------------------------------------- */
+
+#reminder-sport-newest-video > span:nth-of-type(1) {
+
+  text-decoration: underline;
+  font-weight: bold;
+
+  color:rgb(88, 88, 88);
+
+}
+
+/* -------------------------------------------------------------- */
+/* Span 2 | Reminder Sport Newest
+/* -------------------------------------------------------------- */
+
+#reminder-sport-newest-video  > span:nth-of-type(2) {
+
+  color:grey;
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* Content Sport Newest Video
+/* -------------------------------------------------------------- */
+
+.content-sport-newest-video {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  column-gap: .8em;
+  row-gap: .8em;
+
+  /* background-color: red; */
+
+}
+
+/* -------------------------------------------------------------- */
+/* Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium,
+.video-link-box-large {
+
+  position: relative;
+
+  /* mobile */
+  width: 7.7em;
+
+  display: grid;
+  grid: 1fr auto / 1fr;
+
+  border-radius: .8em .8em;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+  transition: all .4s;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Hover | Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium:hover > img,
+.video-link-box-large:hover > img {
+
+  opacity: 1;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Nr | Div 1 | Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium > div:nth-of-type(1),
+.video-link-box-large > div:nth-of-type(1) {
+
+  position: absolute;
+  left:0;
+  top:0;
+
+  width: 1.8em;
+  height: 1.8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .6em 0 .6em 0;
+
+  background-color: black;
+
+  opacity: .8;
+
+}
+
+.video-link-box-medium > div:nth-of-type(1) > div,
+.video-link-box-large > div:nth-of-type(1) > div {
+
+  font-size: 13px;
+
+  font-weight: bold;
+  color: rgb(226, 226, 226);
+
+}
+
+/* -------------------------------------------------------------- */
+/* Img | Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium > img,
+.video-link-box-large > img {
+
+  width: 100%;
+  border-radius: .6em .6em 0 0;
+
+  opacity: .6;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Link Show Me | Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium > a,
+.video-link-box-large > a {
+
+  text-decoration: none;
+
+  height: 2em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .4em;
+
+  font-weight: bold;
+
+  border-radius: 0 0 .6em .6em;
+
+  background-color: rgb(202, 202, 202);
+  color:black;
+
+  transition: all .4s;
+
+}
+
+.video-link-box-medium > a > div,
+.video-link-box-large > a > div {
+
+  font-size: 14.5px;
+
+}
+
+.video-link-box-medium > a:hover,
+.video-link-box-large > a:hover {
+
+  background-color: wheat;
+
+}
+
+.video-link-box-medium > :a:visited,
+.video-link-box-large > a:visited {
+
+  color:black;
+
+}
+
+/* -------------------------------------------------------------- */
+/* History Sport Newest Video Container
+/* -------------------------------------------------------------- */
+
+#history-sport-newest-video-container {
+
+  padding-top: 1.5em;
+
+  display: flex;
+  justify-content: flex-end;
+
+  border-top: 3px solid rgb(233, 233, 233);
+
+}
