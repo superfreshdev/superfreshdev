@@ -69,14 +69,39 @@
 
   width: 100%;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  justify-items: center;
   justify-content: center;
+
+  grid-template:
+
+  'video-sport-newest-1 video-sport-newest-2'
+  'video-sport-newest-3 video-sport-newest-3'
+  ;
+
 
   column-gap: .8em;
   row-gap: .8em;
 
   /* background-color: red; */
+
+}
+
+.content-sport-newest-video > .video-link-box-medium:nth-of-type(1) {
+
+  grid-area: video-sport-newest-1;
+
+}
+
+.content-sport-newest-video > .video-link-box-medium:nth-of-type(2) {
+
+  grid-area: video-sport-newest-2;
+
+}
+
+.content-sport-newest-video > .video-link-box-medium:nth-of-type(3) {
+
+  grid-area: video-sport-newest-3;
 
 }
 
@@ -90,14 +115,15 @@
   position: relative;
 
   /* mobile */
-  width: 7.7em;
+  width:100%;
 
   display: grid;
-  grid: 1fr auto / 1fr;
 
-  border-radius: .8em .8em;
+  border-radius: 1.2em;
 
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+
+  border: 3px solid rgb(165, 165, 165);
 
 
   transition: all .4s;
@@ -133,10 +159,9 @@
   align-items: center;
   justify-content: center;
 
-  border-radius: .6em 0 .6em 0;
+  border-radius: 1em 0 1em 0;
 
   background-color: black;
-
   opacity: .8;
 
 }
@@ -159,7 +184,7 @@
 .video-link-box-large > img {
 
   width: 100%;
-  border-radius: .6em .6em 0 0;
+  border-radius: 1em;
 
   opacity: .6;
 
@@ -174,7 +199,11 @@
 
   text-decoration: none;
 
+  position: absolute;
+  bottom: 0;
+
   height: 2em;
+  width: 100%;
   padding: 0 .6em;
 
   display: flex;
@@ -184,10 +213,11 @@
 
   font-weight: bold;
 
-  border-radius: 0 0 .6em .6em;
+  border-radius: 0 0 1em 1em;
 
-  background-color: rgb(202, 202, 202);
-  color:black;
+  background-color: rgba(125, 125, 125, 0.6);
+
+  color:rgb(50, 50, 50);
 
   transition: all .4s;
 

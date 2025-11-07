@@ -15,13 +15,12 @@
   /* -------------------------------------------------------------- */
   /* Sport | Video Link Box (Medium, Large)
   /* -------------------------------------------------------------- */
-
-  .video-link-box-medium,
+  /* .video-link-box-medium,
   .video-link-box-large {
 
     width: 8.3em;
 
-  }
+  } */
 
 
 }
@@ -36,12 +35,12 @@
   /* Sport | Video Link Box (Medium, Large)
   /* -------------------------------------------------------------- */
 
-  .video-link-box-medium,
+  /* .video-link-box-medium,
   .video-link-box-large {
 
     width: 9em;
 
-  }
+  } */
 
 
   /* ---------------------------------------------------------------- */
@@ -67,12 +66,12 @@
   /* Sport | Video Link Box (Medium, Large)
   /* -------------------------------------------------------------- */
 
-  .video-link-box-medium,
+  /* .video-link-box-medium,
   .video-link-box-large {
 
     width: 9.6em;
 
-  }
+  } */
 
 
 
@@ -94,6 +93,18 @@
 /* ----------------------------------------------------- */
 
 @media ( min-width: 400px ) {
+
+
+  /* -------------------------------------------------------------- */
+  /* Sport | Video Link Box (Medium, Large)
+  /* -------------------------------------------------------------- */
+
+  .video-link-box-medium,
+  .video-link-box-large {
+
+    width: 10em;
+
+  }
 
   /* ---------------------------------------------------------------- */
   /* Sport | New Sport Container | Label */
@@ -321,7 +332,7 @@
 @media ( min-width: 600px ) {
 
   /* -------------------------------------------------------------- */
-  /* Sport | Reminder Sport Newest Video
+  /* Sport | Reminder Sport Newest Video */
   /* -------------------------------------------------------------- */
 
   #reminder-sport-newest-video {
@@ -332,15 +343,29 @@
   }
 
   /* -------------------------------------------------------------- */
+  /* Sport | Content Sport Newest Video
+  /* -------------------------------------------------------------- */
+
+  .content-sport-newest-video {
+
+    grid-template:
+
+    'video-sport-newest-1 video-sport-newest-2 video-sport-newest-3'
+
+    ;
+
+  }
+
+  /* -------------------------------------------------------------- */
   /* Sport | Video Link Box (Medium, Large)
   /* -------------------------------------------------------------- */
 
-  .video-link-box-medium,
+  /* .video-link-box-medium,
   .video-link-box-large {
 
     width: 10em;
 
-  }
+  } */
 
 }
 
@@ -353,6 +378,27 @@
 @media ( min-width: 620px ) {
 
 
+
+  /* -------------------------------------------------------------- */
+  /* Sport | Content Sport Newest Video
+  /* -------------------------------------------------------------- */
+
+  .content-sport-newest-video {
+
+    column-gap: 1.5em;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Sport | Video Link Box (Medium, Large)
+  /* -------------------------------------------------------------- */
+
+  .video-link-box-medium,
+  .video-link-box-large {
+
+    width: 11em;
+
+  }
 
 
   /* ----------------------------------------------------- */
@@ -399,12 +445,12 @@
   /* Sport | Video Link Box (Medium, Large)
   /* -------------------------------------------------------------- */
 
-  .video-link-box-medium,
+  /* .video-link-box-medium,
   .video-link-box-large {
 
     width: 11.5em;
 
-  }
+  } */
 
 
 }
