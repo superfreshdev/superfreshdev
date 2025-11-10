@@ -99,8 +99,8 @@
   /* Sport | Video Link Box (Medium, Large)
   /* -------------------------------------------------------------- */
 
-  #sport-newest-video-container .content-sport-newest-video .video-link-box-medium,
-  #sport-newest-video-container .content-sport-newest-video .video-link-box-large {
+  #sport-newest-video-container .sport-video-3-container .video-link-box-medium,
+  #sport-newest-video-container .sport-video-3-container .video-link-box-large {
 
     width: 10em;
 
@@ -358,18 +358,20 @@
   }
 
   /* -------------------------------------------------------------- */
-  /* Sport | Content Sport Newest Video
+  /* Sport | Sport Video 3 Container */
   /* -------------------------------------------------------------- */
 
-  .content-sport-newest-video {
+  .sport-video-3-container {
 
     grid-template:
 
-    'video-sport-newest-1 video-sport-newest-2 video-sport-newest-3'
+      'video-sport-newest-1 video-sport-newest-2 video-sport-newest-3'
 
     ;
 
   }
+
+
 
   /* -------------------------------------------------------------- */
   /* Sport | Video Link Box (Medium, Large)
@@ -393,12 +395,11 @@
 @media ( min-width: 620px ) {
 
 
-
   /* -------------------------------------------------------------- */
-  /* Sport | Content Sport Newest Video
+  /* Sport | Sport Video 3 Container */
   /* -------------------------------------------------------------- */
 
-  .content-sport-newest-video {
+  .sport-video-3-container {
 
     column-gap: 1.5em;
 
@@ -472,10 +473,10 @@
   }
 
   /* -------------------------------------------------------------- */
-  /* Sport | Content Sport Newest Video
+  /* Sport | Sport Video 3 Container */
   /* -------------------------------------------------------------- */
 
-  .content-sport-newest-video {
+  .sport-video-3-container {
 
     column-gap: 1.5em;
 

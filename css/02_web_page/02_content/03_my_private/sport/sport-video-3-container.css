@@ -1,0 +1,60 @@
+/* -------------------------------------------------------------- */
+/* > sport-video-3-container.css
+/* : styles sport video 3 container
+/* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+/* Sport Video 3 Container
+/* -------------------------------------------------------------- */
+
+.sport-video-3-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+
+  grid-template:
+
+  'video-sport-newest-1 video-sport-newest-2'
+  'video-sport-newest-3 video-sport-newest-3'
+  ;
+
+
+  column-gap: .8em;
+  row-gap: .8em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Video Link Box 1 | Sport Video 3 Container
+/* -------------------------------------------------------------- */
+
+.sport-video-3-container > .video-link-box-medium:nth-of-type(1) {
+
+  grid-area: video-sport-newest-1;
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* Video Link Box 1 | Sport Video 3 Container
+/* -------------------------------------------------------------- */
+
+.sport-video-3-container > .video-link-box-medium:nth-of-type(2) {
+
+  grid-area: video-sport-newest-2;
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* Sport Video 3 Container
+/* -------------------------------------------------------------- */
+
+.sport-video-3-container > .video-link-box-medium:nth-of-type(3) {
+
+  grid-area: video-sport-newest-3;
+
+}

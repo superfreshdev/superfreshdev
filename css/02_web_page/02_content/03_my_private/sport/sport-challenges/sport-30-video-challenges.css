@@ -5,38 +5,25 @@
 
 
 /* -------------------------------------------------------------- */
-/* Sport Challenge Quick Info
-/* -------------------------------------------------------------- */
-
-.quick-info-sport-challenge {
-
-  padding: 1.5em 0;
-  background-color: grey;
-
-}
-
-/* -------------------------------------------------------------- */
 /* Sport 30 Video Days Challenge Container
 /* -------------------------------------------------------------- */
 
 #sport-30-videos-challenge-container {
 
-  margin-top: 1em;
   padding: 1.5em 0 .5em 0;
 
   width: 100%;
 
   display: grid;
   justify-content: center;
-  row-gap: 2em;
+  row-gap: 1.5em;
 
-  border-top: 3px solid grey;
+  /* border-top: 3px solid grey; */
 
   /* default unshown */
   display: none;
 
 }
-
 
 /* -------------------------------------------------------------- */
 /* Sport 15 Video Days Challenge Container
@@ -48,7 +35,6 @@
   row-gap: 2em;
 
 }
-
 
 /* -------------------------------------------------------------- */
 /* Header | Sport 15 Video Days Challenge Container
@@ -65,7 +51,7 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Header 1/2 (right) | Sport 30 Video Days Challenge Container
+/* Header (right) | Sport 15 Video Days Challenge Container
 /* -------------------------------------------------------------- */
 
 #sport-30-videos-challenge-container > .sport-15-videos-challenge-container:nth-of-type(2) > header {
@@ -75,27 +61,14 @@
 
 }
 
-/* Div 1 */
-#sport-30-videos-challenge-container > .sport-15-videos-challenge-container:nth-of-type(2) > header > div {
-
-  border-radius: 3em 0em 0em 3em;
-
-}
-
-/* Div 2 */
-#sport-30-videos-challenge-container > .sport-15-videos-challenge-container:nth-of-type(3) > header > div {
-
-  border-radius: 0em 3em 3em 0em;
-
-}
-
 /* -------------------------------------------------------------- */
-/* Header | Div 1 | Sport 15 Video Days Challenge Container
+/* Header | Div | Sport 15 Video Days Challenge Container
 /* -------------------------------------------------------------- */
 
-.sport-15-videos-challenge-container > header > div:nth-of-type(1) {
+.sport-15-videos-challenge-container > header > div {
 
-  padding: 1.3em .8em;
+  height: 3.5em;
+  padding: 0 .6em;
 
   display: flex;
   align-items: center;
@@ -103,17 +76,19 @@
 
   font-weight: bold;
 
+  border-radius: 1em;;
+
   background-color: rgb(240, 240, 240);
 
 }
 
 /* -------------------------------------------------------------- */
-/* Header | Img 1 | Sport 15 Video Days Challenge Container
+/* Header | Img | Sport 15 Video Days Challenge Container
 /* -------------------------------------------------------------- */
 
-.sport-15-videos-challenge-container > header > div:nth-of-type(1) > img:nth-of-type(1) {
+.sport-15-videos-challenge-container > header > div > img:nth-of-type(1) {
 
-  height: 2.5em;
+  height: 2.3em;
 
 }
 
@@ -126,7 +101,6 @@
   width: 100%;
   display: grid;
   justify-items: center;
-
 
   grid: auto / 1fr 1fr;
 

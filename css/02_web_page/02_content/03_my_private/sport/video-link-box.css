@@ -1,0 +1,145 @@
+/* -------------------------------------------------------------- */
+/* > video-link-box.css
+/* : styles video link box
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium,
+.video-link-box-large {
+
+  position: relative;
+
+  /* mobile */
+  width:100%;
+
+  display: grid;
+
+  border-radius: 1.2em;
+
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+
+  border: 3px solid rgb(165, 165, 165);
+
+
+  transition: all .4s;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Hover | Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium:hover > img,
+.video-link-box-large:hover > img {
+
+  opacity: 1;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Nr | Div 1 | Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium > div:nth-of-type(1),
+.video-link-box-large > div:nth-of-type(1) {
+
+  position: absolute;
+  left:0;
+  top:0;
+
+  width: 1.8em;
+  height: 1.8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1em 0 1em 0;
+
+  background-color: black;
+  opacity: .8;
+
+}
+
+.video-link-box-medium > div:nth-of-type(1) > div,
+.video-link-box-large > div:nth-of-type(1) > div {
+
+  font-size: 13px;
+
+  font-weight: bold;
+  color: rgb(226, 226, 226);
+
+}
+
+/* -------------------------------------------------------------- */
+/* Img | Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium > img,
+.video-link-box-large > img {
+
+  width: 100%;
+  border-radius: 1em;
+
+  opacity: .6;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Link Show Me | Video Link Box (Medium, Large)
+/* -------------------------------------------------------------- */
+
+.video-link-box-medium > a,
+.video-link-box-large > a {
+
+  text-decoration: none;
+
+  position: absolute;
+  bottom: 0;
+
+  height: 2em;
+  width: 100%;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .4em;
+
+  font-weight: bold;
+
+  border-radius: 0 0 1em 1em;
+
+  background-color: rgba(125, 125, 125, 0.6);
+  background-color: rgba(121, 121, 121, 0.8);
+
+  color:rgb(50, 50, 50);
+
+  transition: all .4s;
+
+}
+
+.video-link-box-medium > a > div,
+.video-link-box-large > a > div {
+
+  font-size: 14.5px;
+
+}
+
+.video-link-box-medium > a:hover,
+.video-link-box-large > a:hover {
+
+  background-color: wheat;
+
+}
+
+.video-link-box-medium > :a:visited,
+.video-link-box-large > a:visited {
+
+  color:black;
+
+}
