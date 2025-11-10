@@ -92,6 +92,9 @@ label[for="chk-selected-category-sport-challenges"] {
   margin-top: .5em;
   grid-area: sport-selected-category-sport-challenges;
 
+  /* default unshown */
+  display: none;
+
 }
 
 /* ------------------------------------------------------------- */
@@ -117,7 +120,7 @@ label[for="chk-selected-category-sport-challenges"] {
   display: grid;
   row-gap: .5em;
 
-  background-color: red;
+  /* background-color: red; */
 
 }
 

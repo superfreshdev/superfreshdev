@@ -10,15 +10,14 @@
 
 #sport-newest-video-container {
 
-  margin-top: 1em;
-  padding-top: 1.5em;
+  margin-top: 1.5em;
 
   width: 100%;
 
   display: grid;
   row-gap: 2em;
 
-  border-top: 3px solid rgb(233, 233, 233);
+  /* border-top: 3px solid rgb(233, 233, 233); */
 
 }
 
@@ -256,11 +255,12 @@
 
 #history-sport-newest-video-container {
 
-  padding-top: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 
   display: grid;
 
-  border-top: 3px solid rgb(233, 233, 233);
+  /* border-top: 3px solid rgb(233, 233, 233); */
 
 }
 
