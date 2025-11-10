@@ -75,6 +75,11 @@ input[name="radio-sport-category"] {
 }
 
 /* set content */
+#radio-sport-newest-video:checked ~ #content-sport-container #sport-newest-video-container,
+#radio-challenges-video:checked ~ #content-sport-container #sport-30-videos-challenge-container {
+
+  display: grid;
+}
 
 /* ------------------------------------------------------------- */
 /* Checkbox | Open,Close | History ( Newest Sport )

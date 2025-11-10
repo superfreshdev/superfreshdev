@@ -5,5 +5,18 @@
 
 
 /* -------------------------------------------------------------- */
-/* ... |
+/* Sport 30 Videos
 /* -------------------------------------------------------------- */
+
+
+#sport-30-videos-challenge-container {
+
+  margin-top: 1.5em;
+
+  border-top: 3px solid grey;
+  color:green;
+
+  /* default unshown */
+  display: none;
+
+}
