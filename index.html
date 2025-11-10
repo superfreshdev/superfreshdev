@@ -8577,8 +8577,6 @@
                                         <input checked type="radio" id="radio-my-private-category-sport" name="name-radio-my-private-category">
                                         <input type="radio" id="radio-my-private-category-others" name="name-radio-my-private-category">
 
-
-
                                         <!-- --------------------------------------------------------- -->
                                         <!-- 🟥 Radios Nav My Private (sport, food, ... ) -->
                                         <!-- --------------------------------------------------------- -->
@@ -8632,7 +8630,7 @@
                                             <!-- ----------------------------------------------------------------- -->
                                             <!-- 🟩 Radios | Category Sport ( newest videos, challenges ) -->
                                             <!-- ----------------------------------------------------------------- -->
-                                            <input type="radio" id="radio-sport-newest-video" name="radio-sport-category">
+                                            <input checked type="radio" id="radio-sport-newest-video" name="radio-sport-category">
                                             <input type="radio" id="radio-challenges-video" name="radio-sport-category">
 
                                             <!-- ----------------------------------------------------------------- -->
@@ -8649,12 +8647,12 @@
 
 
                                             <!-- ----------------------------------------------------------------- -->
-                                            <!-- 🟨 [1/2] | Header Nav | Sport Container -->
+                                            <!-- 🟩 [1/2] | Header Nav | Sport Container -->
                                             <!-- ----------------------------------------------------------------- -->
                                             <div id="header-nav-sport-container">
 
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <!-- 🟨🟩 [1/4] | Header Content Block (🟣) -->
+                                                <!-- 🟩 [1/4] | Header Content Block (🟣) -->
                                                 <!-- ----------------------------------------------------------------- -->
                                                 <div class="header-content-block">
 
@@ -8669,7 +8667,7 @@
                                                 </div>
 
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <!-- 🟨🟩 [2/4] | Nav Sport General -->
+                                                <!-- 🟩 [2/4] | Nav Sport General -->
                                                 <!-- ----------------------------------------------------------------- -->
                                                 <div id="nav-sport-general">
 
@@ -8682,8 +8680,11 @@
                                                         <!-- Title Block -->
                                                         <!-- ---------------------------------------- -->
                                                         <div>
-                                                            <img src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-1-2" alt="img">
-                                                            <div>Newest Videos <span class="text-grey">(2)</span></div>
+                                                            <img id="js-img-selected-sport-category" src="media/img/icons/02-icon-colors/01-black/black-speaker.png" alt="img">
+                                                            <div>
+                                                                <span id="js-text-selected-sport-category"> Newest Videos </span>
+                                                                <span id="js-countText-selected-sport-category" class="text-grey">(?)</span>
+                                                            </div>
                                                         </div>
 
                                                         <!-- ---------------------------------------- -->
@@ -8766,7 +8767,7 @@
                                                 </div>
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- 🟨🟩 [3/4] | Label | Selected Category Sport Challenges -->
+                                                <!-- 🟩 [3/4] | Label | Selected Category Sport Challenges -->
                                                 <!-- ------------------------------------------------------------ -->
                                                 <label for="chk-selected-category-sport-challenges" class="drop-down-2-lines-grey-medium">
 
@@ -8788,7 +8789,7 @@
                                                 </label>
 
                                                 <!-- ------------------------------------------------------------ -->
-                                                <!-- 🟨🟩 [4/4] | Smooth | Open Close (Challenges) | Nav -->
+                                                <!-- 🟩 [4/4] | Smooth | Open Close (Challenges) | Nav -->
                                                 <!-- ------------------------------------------------------------ -->
                                                 <div id="smooth-nav-sport-category-challenges" class="smooth-open-close-container">
 
@@ -8914,7 +8915,7 @@
                                                     </div>
 
                                                     <!-- --------------------------------------------------------- -->
-                                                    <!-- 🟥🟨 First 3 Sport Newest Video  -->
+                                                    <!-- 🟩 First 3 Sport Newest Video  -->
                                                     <!-- --------------------------------------------------------- -->
                                                     <div class="content-sport-newest-video">
 
@@ -9007,26 +9008,246 @@
                                                         </div>
 
 
-
                                                     </div>
 
                                                     <!-- ------------------------------------------ -->
-                                                    <!-- 🟥🟨 History Sport Newest Video Container -->
+                                                    <!-- 🟩 History Sport Newest Video Container -->
                                                     <!-- ------------------------------------------ -->
                                                     <div id="history-sport-newest-video-container">
 
                                                         <!-- ----------------------------------------------------- -->
-                                                        <!-- Nav History Sport Newest Video -->
+                                                        <!-- Checkbox | History (6) -->
                                                         <!-- ----------------------------------------------------- -->
+                                                        <input type="checkbox" id="chk-history-newest-sport">
+                                                        <label for="chk-history-newest-sport" class="drop-down-grey-medium">
 
-                                                        History (6)
+                                                            <div>
+                                                                <div>History <span class="text-grey">(6)</span></div>
+                                                            </div>
+
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
+                                                             class="img-h-0-5" alt="img">
+
+                                                        </label>
 
                                                         <!-- ----------------------------------------------------- -->
-                                                        <!-- Content History Sport Newest Video -->
+                                                        <!-- Smooth | Content History Sport Newest Video -->
                                                         <!-- ----------------------------------------------------- -->
+                                                        <div id="smooth-content-history-sport-newest-video-container" class="smooth-open-close-container">
+
+                                                            <!-- ------------------------------------------------------------- -->
+                                                            <!-- Overflow Hidden -->
+                                                            <!-- ------------------------------------------------------------- -->
+                                                            <div class="overflow-hidden">
+
+
+                                                                <!-- ----------------------------------------------------- -->
+                                                                <!-- Content History Sport Newest Video -->
+                                                                <!-- ----------------------------------------------------- -->
+                                                                <div id="content-history-sport-newest-video-container">
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 4-6 Videos -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <div class="content-sport-newest-video">
+
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <!-- [4/9] | Video Link Box Large -->
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <div class="video-link-box-medium">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Nr -->
+                                                                            <!-- ------------------------ -->
+                                                                            <div>
+                                                                                <div>4.</div>
+                                                                            </div>
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- IMG -->
+                                                                            <!-- ------------------------ -->
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-1.png" alt="img">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Link Show More -->
+                                                                            <!-- ------------------------ -->
+                                                                            <a href="https://drive.google.com/file/d/1J9eMjm1CyoqzBIsSzrurCSb6t3eB_f8z/view?usp=sharing" target="_blank">
+
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                                <div>Show Me</div>
+
+                                                                            </a>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <!-- [5/9] | Video Link Box Large -->
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <div class="video-link-box-medium">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Nr -->
+                                                                            <!-- ------------------------ -->
+                                                                            <div>
+                                                                                <div>5.</div>
+                                                                            </div>
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- IMG -->
+                                                                            <!-- ------------------------ -->
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-2.png" alt="img">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Link Show More -->
+                                                                            <!-- ------------------------ -->
+                                                                            <a href="https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing" target="_blank">
+
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                                <div>Show Me</div>
+
+                                                                            </a>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <!-- [6/9] | Video Link Box Large -->
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <div class="video-link-box-medium">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Nr -->
+                                                                            <!-- ------------------------ -->
+                                                                            <div>
+                                                                                <div>6.</div>
+                                                                            </div>
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- IMG -->
+                                                                            <!-- ------------------------ -->
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-2.png" alt="img">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Link Show More -->
+                                                                            <!-- ------------------------ -->
+                                                                            <a href="https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing" target="_blank">
+
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                                <div>Show Me</div>
+
+                                                                            </a>
+
+                                                                        </div>
+
+
+                                                                    </div>
+
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 7-9 Videos -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <div class="content-sport-newest-video">
+
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <!-- [7/9] | Video Link Box Large -->
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <div class="video-link-box-medium">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Nr -->
+                                                                            <!-- ------------------------ -->
+                                                                            <div>
+                                                                                <div>7.</div>
+                                                                            </div>
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- IMG -->
+                                                                            <!-- ------------------------ -->
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-1.png" alt="img">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Link Show More -->
+                                                                            <!-- ------------------------ -->
+                                                                            <a href="https://drive.google.com/file/d/1J9eMjm1CyoqzBIsSzrurCSb6t3eB_f8z/view?usp=sharing" target="_blank">
+
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                                <div>Show Me</div>
+
+                                                                            </a>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <!-- [8/9] | Video Link Box Large -->
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <div class="video-link-box-medium">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Nr -->
+                                                                            <!-- ------------------------ -->
+                                                                            <div>
+                                                                                <div>8.</div>
+                                                                            </div>
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- IMG -->
+                                                                            <!-- ------------------------ -->
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-2.png" alt="img">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Link Show More -->
+                                                                            <!-- ------------------------ -->
+                                                                            <a href="https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing" target="_blank">
+
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                                <div>Show Me</div>
+
+                                                                            </a>
+
+                                                                        </div>
+
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <!-- [9/9] | Video Link Box Large -->
+                                                                        <!-- ------------------------------------------ -->
+                                                                        <div class="video-link-box-medium">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Nr -->
+                                                                            <!-- ------------------------ -->
+                                                                            <div>
+                                                                                <div>9.</div>
+                                                                            </div>
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- IMG -->
+                                                                            <!-- ------------------------ -->
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-2.png" alt="img">
+
+                                                                            <!-- ------------------------ -->
+                                                                            <!-- Link Show More -->
+                                                                            <!-- ------------------------ -->
+                                                                            <a href="https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing" target="_blank">
+
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                                <div>Show Me</div>
+
+                                                                            </a>
+
+                                                                        </div>
+
+
+                                                                    </div>
+
+
+                                                                </div>
+
+
+                                                            </div>
+
+                                                        </div>
+
+
 
                                                     </div>
-
 
 
                                                 </div>
@@ -11018,7 +11239,7 @@
                 <!-- ----------------------------------------------------------- -->
 
                 <!-- Set acutally date to unfinished elements -->
-                <script src="js/02_web_page/02_content/00_default/set-unfinished-date-to-all.js"></script>
+                <!-- <script src="js/02_web_page/02_content/00_default/set-unfinished-date-to-all.js"></script> -->
 
 
                 <!-- ----------------------------------------------------------- -->
@@ -11046,7 +11267,7 @@
                     <script src="js/02_web_page/02_content/02_it/it-projects/more-it-projects/unset-radios-more-it-projects.js"></script>
 
                     <!-- 🟥 My IT Docs -->
-                    <script src="js/02_web_page/02_content/02_it/it-docs/unset-radios-it-docs.js"></script>
+                    <!-- <script src="js/02_web_page/02_content/02_it/it-docs/unset-radios-it-docs.js"></script> -->
                     <!-- <script src="js/02_web_page/02_content/02_it/it-docs/add-checked-listeners-it-docs-nav-labels.js"></script> -->
                     <!-- <script src="js/02_web_page/02_content/02_it/it-docs/read-it-docs-data.js"></script> -->
 
@@ -11054,7 +11275,7 @@
                 <!-- Private -->
                 <!-- ----------------------------------------------------------- -->
 
-                <script src="js/02_web_page/02_content/03_private/sport-radio-handling.js"></script>
+                <script src="js/02_web_page/02_content/03_private/sport/sport-category-handling.js"></script>
 
 
 

@@ -41,8 +41,6 @@
   grid-template-rows: 1fr;
 }
 
-
-
 /* ------------------------------------------------------------- */
 /* Radios | Category ( newest videos, challenges )
 /* ------------------------------------------------------------- */
@@ -72,7 +70,43 @@ input[name="radio-sport-category"] {
 
 /* set content */
 
+/* ------------------------------------------------------------- */
+/* Checkbox | Open,Close | History ( Newest Sport )
+/* ------------------------------------------------------------- */
 
+/* default unshown */
+#chk-history-newest-sport {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-history-newest-sport:checked + label {
+
+  background-color: rgb(239, 113, 113);
+
+}
+
+/* set color black to challenges */
+#chk-history-newest-sport:checked + label .text-grey {
+
+  color:rgb(48, 48, 48);
+
+}
+
+/* change rotation img arrow */
+#chk-history-newest-sport:checked + label > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* set content */
+#chk-history-newest-sport:checked ~ #smooth-content-history-sport-newest-video-container {
+
+  grid-template-rows: 1fr;
+}
 
 /* ------------------------------------------------------------- */
 /* Checkbox | Selected Category Sport Challenge
@@ -84,7 +118,6 @@ input[name="radio-sport-category"] {
   display: none;
 
 }
-
 
 /* set background */
 #chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport-challenges"] {
@@ -100,7 +133,6 @@ input[name="radio-sport-category"] {
 
 }
 
-
 /* change rotation img arrow */
 #chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport-challenges"] > img:nth-of-type(1) {
 
@@ -115,7 +147,7 @@ input[name="radio-sport-category"] {
 }
 
 /* ------------------------------------------------------------- */
-/* Radios | Category Sport Challenge
+/* Radios | Category Sport Challenge ( Challenge 1,2, ... )
 /* ------------------------------------------------------------- */
 
 /* default unshown */

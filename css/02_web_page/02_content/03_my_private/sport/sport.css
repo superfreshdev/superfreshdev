@@ -35,7 +35,7 @@
 
   ;
 
-  /* background-color: red;  'sport-header-content-block' */
+  /* background-color: red; */
 
 }
 
@@ -54,12 +54,11 @@
 
 }
 
-
 /* ------------------------------------------------------------- */
 /* [2/4] | Nav Sport Container
 /* ------------------------------------------------------------- */
 
-#nav-sport-general  {
+#nav-sport-general {
 
   grid-area: sport-nav-sport-general;
 
@@ -67,7 +66,6 @@
   margin-top: 0em;
 
   display: grid;
-
 
 }
 
@@ -133,15 +131,12 @@ label[for="chk-selected-category-sport-challenges"] {
 
 } */
 
-
 /* ------------------------------------------------------------- */
 /* 🟥 Content | Sport Container
 /* ------------------------------------------------------------- */
 
 #content-sport-container {
 
-  padding: 1.5em 0 .5em 0;
-
-  border-top: 3px solid rgb(233, 233, 233);
+  display: grid;
 
 }

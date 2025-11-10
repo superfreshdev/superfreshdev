@@ -12,11 +12,11 @@ function doPushSlide( slides, currentIndex, newIndex ) {
   // termination condition, dont allow same index for new sliding
   if( newIndex === currentIndex ) return;
 
-  console.log("---------------------")
-  console.log("📏|slides.length= " + slides.length )
-  console.log("📏|currentIndex= " + currentIndex )
-  console.log("📏|newIndex= " + newIndex )
-  console.log("---------------------")
+  // console.log("---------------------")
+  // console.log("📏|slides.length= " + slides.length )
+  // console.log("📏|currentIndex= " + currentIndex )
+  // console.log("📏|newIndex= " + newIndex )
+  // console.log("---------------------")
 
   /* -------------------------------------------- */
   /* Step 1: Style Slide Push Direction
