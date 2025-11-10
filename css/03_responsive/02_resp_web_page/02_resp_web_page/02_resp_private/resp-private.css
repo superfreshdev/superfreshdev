@@ -99,8 +99,8 @@
   /* Sport | Video Link Box (Medium, Large)
   /* -------------------------------------------------------------- */
 
-  .video-link-box-medium,
-  .video-link-box-large {
+  #sport-newest-video-container .content-sport-newest-video .video-link-box-medium,
+  #sport-newest-video-container .content-sport-newest-video .video-link-box-large {
 
     width: 10em;
 
@@ -192,6 +192,21 @@
 /* ----------------------------------------------------- */
 
 @media ( min-width: 450px ) {
+
+
+  /* ----------------------------------------------------- */
+  /* Sport | 15 Videos Challenge Container */
+  /* ----------------------------------------------------- */
+
+  .sport-15-videos-challenge-container > main {
+
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
+
+    column-gap: .8em;
+    row-gap: .8em;
+
+  }
 
 
   /* ----------------------------------------------------- */
@@ -431,6 +446,31 @@
 
 @media ( min-width: 800px ) {
 
+
+  /* ----------------------------------------------------------------------- */
+  /* Sport | 15 Videos Challenge Container | Video Link Box Medium           */
+  /* ----------------------------------------------------------------------- */
+
+  .sport-15-videos-challenge-container > main > .video-link-box-medium {
+
+    width: 8.5em;
+
+  }
+
+  /* ----------------------------------------------------------------------- */
+  /* Sport | 15 Videos Challenge Container */
+  /* ----------------------------------------------------------------------- */
+
+  .sport-15-videos-challenge-container > main {
+
+    display: grid;
+    grid: auto / 1fr 1fr 1fr 1fr 1fr;
+
+    column-gap: .8em;
+    row-gap: .8em;
+
+  }
+
   /* -------------------------------------------------------------- */
   /* Sport | Content Sport Newest Video
   /* -------------------------------------------------------------- */
@@ -451,6 +491,22 @@
     width: 11.5em;
 
   } */
+
+
+}
+
+/* ----------------------------------------------------- */
+/* 1000px */
+/* ----------------------------------------------------- */
+
+@media ( min-width: 1000px ) {
+
+
+  .sport-15-videos-challenge-container > main > .video-link-box-medium {
+
+    width:100%;
+
+  }
 
 
 }
