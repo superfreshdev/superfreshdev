@@ -11,7 +11,7 @@
 #sport-container-my-private {
 
   display: grid;
-  row-gap: .5em;
+  /* row-gap: .5em; */
 
   /* default unshown */
   display: none;
