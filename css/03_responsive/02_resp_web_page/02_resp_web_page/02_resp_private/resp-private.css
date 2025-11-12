@@ -253,25 +253,16 @@
 
 @media ( min-width: 500px ) {
 
+
   /* -------------------------------------------------------------- */
-  /* Sport Newest Video Container
+  /* Sport | Sport Newest Video Container
   /* -------------------------------------------------------------- */
 
   #sport-newest-video-container {
 
-    margin-top: 3.5em;
-    /* margin-bottom: 1em; */
-
-    width: 100%;
-
-    display: grid;
-    row-gap: 2em;
-
-    /* default unshown */
-    display: none;
+    padding-top: 3em;
 
   }
-
 
   /* ----------------------------------------------------- */
   /* Sport | Header Content Block */

@@ -135,11 +135,12 @@ label[for="chk-selected-category-sport-challenges"] {
 } */
 
 /* ------------------------------------------------------------- */
-/* 🟥 Content | Sport Container
+/* 🟩 Content | Sport Container
 /* ------------------------------------------------------------- */
 
 #content-sport-container {
 
   display: grid;
+  /* background-color: blue; */
 
 }
