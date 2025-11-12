@@ -253,6 +253,25 @@
 
 @media ( min-width: 500px ) {
 
+  /* -------------------------------------------------------------- */
+  /* Sport Newest Video Container
+  /* -------------------------------------------------------------- */
+
+  #sport-newest-video-container {
+
+    margin-top: 3.5em;
+    /* margin-bottom: 1em; */
+
+    width: 100%;
+
+    display: grid;
+    row-gap: 2em;
+
+    /* default unshown */
+    display: none;
+
+  }
+
 
   /* ----------------------------------------------------- */
   /* Sport | Header Content Block */
@@ -451,6 +470,17 @@
 
 @media ( min-width: 1000px ) {
 
+
+  /* -------------------------------------------------------------- */
+  /* Sport | Video Link Box (Medium, Large)
+  /* -------------------------------------------------------------- */
+
+  #sport-newest-video-container .sport-video-3-container .video-link-box-medium,
+  #sport-newest-video-container .sport-video-3-container .video-link-box-large {
+
+    width: 13.5em;
+
+  }
 
   /* ----------------------------------------------------------------------- */
   /* Sport | 15 Videos Challenge Container | Main */
