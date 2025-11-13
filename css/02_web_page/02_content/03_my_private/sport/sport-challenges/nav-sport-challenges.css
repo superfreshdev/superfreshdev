@@ -1,0 +1,118 @@
+/* ------------------------------------------------------------------------------- */
+/* > nav-sport-challenges.css
+/* : styles nav sport challenges
+/* ------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------- */
+/* Radios | Category Sport Challenges ( choose, challenge 1, ... )
+/* ------------------------------------------------------------------------------- */
+
+/* default unshown */
+input[name="radio-sport-challenges"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-sport-choose-challenge:checked ~ #header-nav-sport-container label[for="radio-sport-choose-challenge"],
+#radio-sport-challenge-1:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-1"],
+#radio-sport-challenge-2:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-2"] {
+
+  background-color: wheat;
+
+}
+
+/* set x */
+#radio-sport-choose-challenge:checked ~ #header-nav-sport-container label[for="radio-sport-choose-challenge"] > .custom-radio-small > img,
+#radio-sport-challenge-1:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-1"]  > .custom-radio-small > img,
+#radio-sport-challenge-2:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-2"] > .custom-radio-small > img {
+
+  display: flex;
+
+}
+
+/* Show Content | Choose Challenges */
+#radio-sport-choose-challenge:checked ~ #content-sport-container #choose-info-container-sport-challenges {
+
+  display: flex;
+
+}
+
+/* Show Content | 30 Vidoes / 3 Videos Challenge Container */
+#radio-sport-challenge-1:checked ~ #content-sport-container #sport-challenge-30-videos-container,
+#radio-sport-challenge-2:checked ~ #content-sport-container #sport-challenge-3-videos-container {
+
+  display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* default unshown */
+#chk-selected-category-sport-challenges {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport-challenges"] {
+
+  background-color: rgb(239, 113, 113);
+
+}
+
+/* set color black to challenges */
+#chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport-challenges"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  color:rgb(48, 48, 48);
+
+}
+
+/* change rotation img arrow */
+#chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container label[for="chk-selected-category-sport-challenges"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* set content */
+#chk-selected-category-sport-challenges:checked ~ #header-nav-sport-container #smooth-nav-sport-category-challenges {
+
+  grid-template-rows: 1fr;
+}

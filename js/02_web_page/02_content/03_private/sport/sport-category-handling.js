@@ -31,8 +31,8 @@ var chk_sport_category = document.getElementById("chk-selected-category-sport");
 // radios sport content categories ( newest, challenges )
 var radios_sport_categories = [
 
-  document.getElementById("radio-sport-newest-video"),
-  document.getElementById("radio-challenges-video"),
+  document.getElementById("radio-sport-newest-videos"),
+  document.getElementById("radio-sport-challenge-videos"),
 
 ]
 

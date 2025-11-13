@@ -5,13 +5,14 @@
 
 
 /* -------------------------------------------------------------- */
-/* Sport 30 Video Days Challenge Container
+/* Sport Challenge | 30 Videos Container
 /* -------------------------------------------------------------- */
 
-#sport-30-videos-challenge-container {
+#sport-challenge-30-videos-container {
 
   width: 100%;
-  padding-top: 1.5em;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
 
   display: grid;
   justify-content: center;
@@ -25,10 +26,22 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Sport 15 Video Days Challenge Container
+/* Sport Challenges 2-15 Videos Container
 /* -------------------------------------------------------------- */
 
-.sport-15-videos-challenge-container {
+.sport-challenges-2-15-videos-container {
+
+  padding-top: 1.5em;
+  display: grid;
+  row-gap: 4em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Sport Challenge | 15 Videos Container
+/* -------------------------------------------------------------- */
+
+.sport-challenge-15-videos-container {
 
   display: grid;
   row-gap: 1.5em;
@@ -39,7 +52,7 @@
 /* Header | Sport 15 Video Days Challenge Container
 /* -------------------------------------------------------------- */
 
-.sport-15-videos-challenge-container > header {
+.sport-challenge-15-videos-container > header {
 
   width: 100%;
 
@@ -50,10 +63,10 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Header (right) | Sport 15 Video Days Challenge Container
+/* Header ( First ) | Sport Challenge 15 Videos Container
 /* -------------------------------------------------------------- */
 
-#sport-30-videos-challenge-container > .sport-15-videos-challenge-container:nth-of-type(2) > header {
+.sport-challenges-2-15-videos-container > .sport-challenge-15-videos-container:nth-of-type(1) > header {
 
   justify-content: flex-end;
   /* background-color: red; */
@@ -61,13 +74,13 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Header | Div | Sport 15 Video Days Challenge Container
+/* Header | Div | Sport Challenge 15 Videos Container
 /* -------------------------------------------------------------- */
 
-.sport-15-videos-challenge-container > header > div {
+.sport-challenge-15-videos-container > header > div {
 
-  height: 3em;
-  padding: 0 .8em;
+  height: 2.8em;
+  padding: 0 .6em;
 
   display: flex;
   align-items: center;
@@ -75,37 +88,40 @@
 
   font-weight: bold;
 
-  border-radius: 1em;;
+  border-radius: .4em;;
 
-  background-color: rgb(240, 240, 240);
+
+  background-color: rgb(41, 41, 41);
+  color:white;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Header | Img | Sport 15 Video Days Challenge Container
+/* Header | Img | Sport Challenge 15 Videos Container
 /* -------------------------------------------------------------- */
 
-.sport-15-videos-challenge-container > header > div > img:nth-of-type(1) {
+.sport-challenge-15-videos-container > header > div > img:nth-of-type(1) {
 
   height: 2em;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Header | Div | Div | Sport 15 Video Days Challenge Container
+/* Header | Div | Div | Sport Challenge 15 Videos Container
 /* -------------------------------------------------------------- */
 
-.sport-15-videos-challenge-container > header > div > div {
+.sport-challenge-15-videos-container > header > div > div {
 
   font-size: 14.5px;
+  font-style: italic;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Main | Sport 15 Video Days Challenge Container
+/* Main | Sport Challenge 15 Videos Container
 /* -------------------------------------------------------------- */
 
-.sport-15-videos-challenge-container > main {
+.sport-challenge-15-videos-container > main {
 
   width: 100%;
   display: grid;
@@ -115,5 +131,36 @@
 
   column-gap: .8em;
   row-gap: .8em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Sport Challenge 3 Videos Container
+/* -------------------------------------------------------------- */
+
+#sport-challenge-3-videos-container {
+
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+
+  display: grid;
+  justify-items: center;
+
+  grid: auto auto / 1fr;
+  row-gap: 3em;
+
+  /* default unshown */
+  display: none;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Divs | Sport Challenge 3 Videos Container
+/* -------------------------------------------------------------- */
+
+#sport-challenge-3-videos-container > div {
+
+  width: 100%;
 
 }

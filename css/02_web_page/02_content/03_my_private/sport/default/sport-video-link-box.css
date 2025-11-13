@@ -1,15 +1,15 @@
 /* -------------------------------------------------------------- */
-/* > video-link-box.css
-/* : styles video link box
+/* > sport-video-link-box.css
+/* : styles sport video link box
 /* -------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------- */
-/* Video Link Box (Medium, Large)
+/* Sport | Video Link Box (Medium, Large)
 /* -------------------------------------------------------------- */
 
-.video-link-box-medium,
-.video-link-box-large {
+.sport-video-link-box-medium,
+.sport-video-link-box-large {
 
   position: relative;
 
@@ -23,6 +23,7 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
   border: 3px solid rgb(240, 240, 240);
+
   background-color: rgba(255, 255, 255, .8);
 
 
@@ -31,22 +32,33 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Hover | Video Link Box (Medium, Large)
+/* Hover | Sport | Video Link Box (Medium, Large)
 /* -------------------------------------------------------------- */
 
-.video-link-box-medium:hover > img,
-.video-link-box-large:hover > img {
+/* hover img  */
+.sport-video-link-box-medium:hover > img,
+.sport-video-link-box-large:hover > img {
 
   opacity: 1;
 
 }
 
+/* hover border  */
+.sport-video-link-box-medium:hover,
+.sport-video-link-box-large:hover {
+
+  border: 3px solid rgb(41, 41, 41);
+
+}
+
+
+
 /* -------------------------------------------------------------- */
-/* Nr | Div 1 | Video Link Box (Medium, Large)
+/* Nr | Div 1 | Sport | Video Link Box (Medium, Large)
 /* -------------------------------------------------------------- */
 
-.video-link-box-medium > div:nth-of-type(1),
-.video-link-box-large > div:nth-of-type(1) {
+.sport-video-link-box-medium > div:nth-of-type(1),
+.sport-video-link-box-large > div:nth-of-type(1) {
 
   position: absolute;
   left:.4em;
@@ -71,8 +83,8 @@
 
 }
 
-.video-link-box-medium > div:nth-of-type(1) > div,
-.video-link-box-large > div:nth-of-type(1) > div {
+.sport-video-link-box-medium > div:nth-of-type(1) > div,
+.sport-video-link-box-large > div:nth-of-type(1) > div {
 
   font-size: 12px;
 
@@ -82,11 +94,11 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Img | Video Link Box (Medium, Large)
+/* Img | Sport | Video Link Box (Medium, Large)
 /* -------------------------------------------------------------- */
 
-.video-link-box-medium > img,
-.video-link-box-large > img {
+.sport-video-link-box-medium > img,
+.sport-video-link-box-large > img {
 
   width: 100%;
   border-radius: .6em;
@@ -96,11 +108,11 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Link Show Me | Video Link Box (Medium, Large)
+/* Link Show Me | Sport | Video Link Box (Medium, Large)
 /* -------------------------------------------------------------- */
 
-.video-link-box-medium > a,
-.video-link-box-large > a {
+.sport-video-link-box-medium > a,
+.sport-video-link-box-large > a {
 
   text-decoration: none;
 
@@ -129,22 +141,22 @@
 
 }
 
-.video-link-box-medium > a > div,
-.video-link-box-large > a > div {
+.sport-video-link-box-medium > a > div,
+.sport-video-link-box-large > a > div {
 
   font-size: 14.5px;
 
 }
 
-.video-link-box-medium > a:hover,
-.video-link-box-large > a:hover {
+.sport-video-link-box-medium > a:hover,
+.sport-video-link-box-large > a:hover {
 
   background-color: wheat;
 
 }
 
-.video-link-box-medium > :a:visited,
-.video-link-box-large > a:visited {
+.sport-video-link-box-medium > :a:visited,
+.sport-video-link-box-large > a:visited {
 
   color:black;
 

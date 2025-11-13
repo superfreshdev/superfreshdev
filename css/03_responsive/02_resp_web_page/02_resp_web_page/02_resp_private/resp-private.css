@@ -96,11 +96,10 @@
 
 
   /* -------------------------------------------------------------- */
-  /* Sport | Video Link Box (Medium, Large)
+  /* Sport | Video Link Box Large
   /* -------------------------------------------------------------- */
 
-  #sport-newest-video-container .sport-video-3-container .video-link-box-medium,
-  #sport-newest-video-container .sport-video-3-container .video-link-box-large {
+  .sport-video-link-box-large {
 
     width: 10em;
 
@@ -117,17 +116,6 @@
   }
 
 
-  /* ---------------------------------------------------------------- */
-  /* 🟣🟥 Three Video Sport Link Card
-  /* ---------------------------------------------------------------- */
-
-  .three-video-sport-link-card {
-
-    width: 10em;
-    height: 10em;
-
-  }
-
 }
 
 /* ----------------------------------------------------- */
@@ -137,11 +125,10 @@
 @media ( min-width: 450px ) {
 
   /* -------------------------------------------------------------- */
-  /* Sport | Video Link Box (Medium, Large)
+  /* Sport | Video Link Box Large
   /* -------------------------------------------------------------- */
 
-  #sport-newest-video-container .sport-video-3-container .video-link-box-medium,
-  #sport-newest-video-container .sport-video-3-container .video-link-box-large {
+  .sport-video-link-box-large {
 
     width: 12em;
 
@@ -151,7 +138,7 @@
   /* Sport | 15 Videos Challenge Container */
   /* ----------------------------------------------------- */
 
-  .sport-15-videos-challenge-container > main {
+  .sport-challenge-15-videos-container > main {
 
     display: grid;
     grid: auto / 1fr 1fr 1fr;
@@ -174,17 +161,6 @@
 
   }
 
-  /* ----------------------------------------------------- */
-  /* Sport | sport-challenges-video-link-card */
-  /* ----------------------------------------------------- */
-
-  .sport-challenges-video-link-card {
-
-    /* very small mobile */
-    height: 10em;
-    width: 10em;
-
-  }
 
 
 }
@@ -283,8 +259,8 @@
     grid-template:
 
     'sport-header-content-block sport-nav-sport-general'
-    '. sport-selected-category-sport-challenges'
-    '. smooth-nav-sport-category-challenges'
+    'sport-header-content-block sport-selected-category-sport-challenges'
+    'smooth-nav-sport-category-challenges smooth-nav-sport-category-challenges'
     ;
 
     grid-template-columns: 1fr 13em;
@@ -293,26 +269,35 @@
 
   }
 
-  /* ----------------------------------------------------- */
-  /* Sport | Nav Sport General */
-  /* ----------------------------------------------------- */
+  /* ------------------------------------------------------------- */
+  /* Nav Sport Category Challenges
+  /* ------------------------------------------------------------- */
 
-  #nav-sport-general  {
+  #nav-sport-category-challenges  {
 
-    margin-top: .3em;
-    margin-bottom: .5em;
+    padding-top: .5em;
+
+    /* desktop */
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap:.4em;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Sport Challenge 3 Videos Container
+  /* -------------------------------------------------------------- */
+
+  #sport-challenge-3-videos-container {
+
+
+    /* justify-items: center; */
+    /* background-color: red; */
+
 
   }
 
-  /* ----------------------------------------------------- */
-  /* Sport | Label | Selected Category Sport Challenges */
-  /* ----------------------------------------------------- */
-
-  label[for="chk-selected-category-sport-challenges"] {
-
-    margin-top: .0em;
-
-  }
 
 }
 
@@ -364,14 +349,15 @@
 
 @media ( min-width: 600px ) {
 
+
+
   /* -------------------------------------------------------------- */
-  /* Sport | Reminder Sport Newest Video */
+  /* Sport | Video Link Box Medium */
   /* -------------------------------------------------------------- */
 
-  #reminder-sport-newest-video {
+  .sport-video-link-box-medium {
 
-    flex-wrap: nowrap;
-    text-align: left;
+    width: 10em;
 
   }
 
@@ -410,7 +396,7 @@
   /* Sport | Sport Video 3 Container */
   /* -------------------------------------------------------------- */
 
-  .sport-video-3-container {
+  .sport-3-videos-container {
 
     grid-template:
 
@@ -423,13 +409,50 @@
   }
 
   /* -------------------------------------------------------------- */
-  /* Sport | 15 Videos Challenge Container */
+  /* Sport | Video Link Box Medium */
   /* -------------------------------------------------------------- */
 
-  .sport-15-videos-challenge-container > main .video-link-box-medium,
-  .sport-15-videos-challenge-container > main .video-link-box-large {
+  .sport-video-link-box-medium {
 
-    width: 12em;
+    width: 11em;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Divs | Sport Newest Video Container
+  /* -------------------------------------------------------------- */
+
+  #sport-newest-video-container > div {
+
+    /* mobile */
+    width: 39em;
+    /* background-color: green; */
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Sport | Reminder Sport Newest Video */
+  /* -------------------------------------------------------------- */
+
+  #reminder-sport-newest-video {
+
+    /* made textflow */
+    display: block;
+
+    /* background-color: rgb(242, 242, 242); */
+
+  }
+
+
+  /* -------------------------------------------------------------- */
+  /* Divs | Sport Challenge 3 Videos Container
+  /* -------------------------------------------------------------- */
+
+  #sport-challenge-3-videos-container > div {
+
+    width: 39em;
+
+    /* background-color: red; */
 
   }
 
@@ -446,7 +469,7 @@
   /* Sport | Sport Video 3 Container */
   /* -------------------------------------------------------------- */
 
-  .sport-video-3-container {
+  .sport-3-videos-container {
 
     column-gap: 1.5em;
 
@@ -463,11 +486,10 @@
 
 
   /* -------------------------------------------------------------- */
-  /* Sport | Video Link Box (Medium, Large)
+  /* Sport | Video Link Box Large
   /* -------------------------------------------------------------- */
 
-  #sport-newest-video-container .sport-video-3-container .video-link-box-medium,
-  #sport-newest-video-container .sport-video-3-container .video-link-box-large {
+  .sport-video-link-box-large {
 
     width: 13.5em;
 
@@ -477,12 +499,37 @@
   /* Sport | 15 Videos Challenge Container | Main */
   /* ----------------------------------------------------------------------- */
 
-  .sport-15-videos-challenge-container > main {
+  .sport-challenge-15-videos-container > main {
 
     display: grid;
     grid: auto / 1fr 1fr 1fr 1fr;
 
   }
+
+  /* -------------------------------------------------------------- */
+  /* Divs | Sport Newest Video Container
+  /* -------------------------------------------------------------- */
+
+  #sport-newest-video-container > div {
+
+    /* mobile */
+    width: 43.5em;
+    /* background-color: rgb(103, 104, 103); */
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Divs | Sport Challenge 3 Videos Container
+  /* -------------------------------------------------------------- */
+
+  #sport-challenge-3-videos-container > div {
+
+    width: 43.5em;
+
+    /* background-color: rgb(255, 170, 170); */
+
+  }
+
 
 
 }

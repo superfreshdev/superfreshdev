@@ -5,13 +5,12 @@
 
 
 /* ------------------------------------------------------------- */
-/* 🟩 Sport Container | My Private
+/* Sport Container | My Private
 /* ------------------------------------------------------------- */
 
 #sport-container-my-private {
 
   display: grid;
-  /* row-gap: .5em; */
 
   /* default unshown */
   display: none;
@@ -19,12 +18,13 @@
 }
 
 /* ------------------------------------------------------------- */
-/* 🟩 Header Nav | Sport Container
+/* Header Nav | Sport Container
 /* ------------------------------------------------------------- */
 
 #header-nav-sport-container {
 
   display: grid;
+  align-items: flex-start;
 
   /* mobile */
   grid-template:
@@ -63,9 +63,10 @@
   grid-area: sport-nav-sport-general;
 
   /* mobile */
-  margin-top: 0em;
+  /* margin-top: 0em; */
 
   display: grid;
+
 
 }
 
@@ -76,10 +77,11 @@
 #nav-sport-general-category {
 
   padding-top: .5em;
+
   display: grid;
   row-gap: .5em;
 
-  /* background-color: grey; */
+  /* background-color: blue; */
 
 }
 
@@ -113,29 +115,18 @@ label[for="chk-selected-category-sport-challenges"] {
 /* Nav Sport Category Challenges
 /* ------------------------------------------------------------- */
 
-/* good for max 3 items */
-#nav-sport-category-challenges {
+#nav-sport-category-challenges  {
 
-  padding-top: .5em;
-  display: grid;
-  row-gap: .5em;
+   padding-top: .5em;
 
-  /* background-color: red; */
+   /* mobile */
+   display: grid;
+   row-gap: .4em;
 
 }
 
-/* good for more than 3 items its flex buzzer layout */
-/* #nav-sport-category-challenges  {
-
-   padding-top: .5em;
-   display: grid;
-   grid: auto / 1fr 1fr 1fr 1fr;
-   gap: .4em;
-
-} */
-
 /* ------------------------------------------------------------- */
-/* 🟩 Content | Sport Container
+/* Content | Sport Container
 /* ------------------------------------------------------------- */
 
 #content-sport-container {

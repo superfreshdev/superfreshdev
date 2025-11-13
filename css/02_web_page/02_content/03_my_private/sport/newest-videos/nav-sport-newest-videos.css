@@ -1,0 +1,43 @@
+/* ------------------------------------------------------------------------- */
+/* > nav-sport-newest-videos.css
+/* : styles nav sport newest videos
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Checkbox | Open History
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+#chk-history-newest-sport {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-history-newest-sport:checked + label {
+
+  background-color: rgb(239, 113, 113);
+
+}
+
+/* set color black to challenges */
+#chk-history-newest-sport:checked + label .text-grey {
+
+  color:rgb(48, 48, 48);
+
+}
+
+/* change rotation img arrow */
+#chk-history-newest-sport:checked + label > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* set content */
+#chk-history-newest-sport:checked ~ #smooth-content-history-sport-newest-video-container {
+
+  grid-template-rows: 1fr;
+}

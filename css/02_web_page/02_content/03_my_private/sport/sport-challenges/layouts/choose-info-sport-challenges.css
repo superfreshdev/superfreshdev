@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------------- */
-/* > choose-sport-challenge-container.css
+/* > choose-info-sport-challenges.css
 /* : styles choose sport challenge container
 /* ------------------------------------------------------------------------- */
 
@@ -8,7 +8,7 @@
 /* Choose Sport Challenge Container
 /* ------------------------------------------------------------- */
 
-#choose-sport-challenge-container {
+#choose-info-container-sport-challenges {
 
   padding: 2em 0 .5em 0;
 
@@ -28,7 +28,7 @@
 /* Img | Choose Sport Challenge Container
 /* ------------------------------------------------------------- */
 
-#choose-sport-challenge-container > img {
+#choose-info-container-sport-challenges > img {
 
   height: 4.5em;
 
@@ -38,7 +38,7 @@
 /* Div (Text) | Choose Sport Challenge Container
 /* ------------------------------------------------------------- */
 
-#choose-sport-challenge-container > div {
+#choose-info-container-sport-challenges > div {
 
   font-size: 25px;
   font-weight: bold;

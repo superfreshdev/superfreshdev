@@ -10,11 +10,14 @@
 
 .quick-info-sport-challenge-container {
 
-  padding: 0em 0;
+  width: 100%;
 
   display: flex;
-  /* justify-content: center; */
-  /* background-color: grey; */
+
+  border-radius: .4em;
+
+
+  /* background-color: rgb(247, 247, 247); */
 
 }
 
@@ -24,14 +27,14 @@
 
 .quick-info-sport-challenge-box {
 
-  position: relative;
+  height: 100%;
+  padding: 1em .5em;
 
-  padding: .5em 0 .5em 1em;
+  position: relative;
 
   display: flex;
 
 }
-
 
 /* -------------------------------------------------------------- */
 /* Left Boder Stripe | Sport Challenge
@@ -58,8 +61,10 @@
 
 .info-box-sport-challenge {
 
+  padding-left: .5em;
+
   display: grid;
-  row-gap: .4em;
+  row-gap: .5em;
 
 }
 
@@ -107,18 +112,18 @@
 
 .info-box-sport-challenge > main > div {
 
-  height: 1.6em;
-  padding: 0em .3em;
+  height: 1.4em;
+  padding: 0em .4em;
 
   display: flex;
   align-items: center;
   column-gap: .4em;
 
-  font-weight: bold;
+  /* font-weight: bold; */
 
   border-radius: .6em;
 
-  border: 1px dashed rgb(77, 77, 77);
+  border: 1px solid rgb(173, 173, 173);
   color:grey;
 
 }

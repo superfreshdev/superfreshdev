@@ -377,17 +377,20 @@
                     <!-- default -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/sport.css">
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/nav-sport.css">
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/sport-video-3-container.css">
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/video-link-box.css">
+
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/default/sport-3-videos-container.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/default/sport-video-link-box.css">
 
                     <!-- newest videos -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/newest-videos/sport-newest-videos.css">
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/newest-videos/nav-sport-newest-videos.css">
 
                     <!-- challenges -->
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/sport-challenges/choose-sport-challenge-container.css">
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/sport-challenges/quick-info-sport-challenges.css">
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/sport-challenges/sport-30-video-challenges.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/sport-challenges/nav-sport-challenges.css">
+
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/sport-challenges/layouts/choose-info-sport-challenges.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/sport-challenges/layouts/quick-info-sport-challenges.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/sport/sport-challenges/layouts/sport-challenge-30-videos.css">
 
                     <!-- training plans & eatings -->
 
@@ -8583,7 +8586,7 @@
                                         <!-- --------------------------------------------------------- -->
                                         <!-- 🟥 Radios Nav My Private (sport, food, ... ) -->
                                         <!-- --------------------------------------------------------- -->
-                                        <input checked type="radio" id="radio-sport-my-private" name="name-radio-category-private">
+                                        <input type="radio" id="radio-sport-my-private" name="name-radio-category-private">
                                         <input type="radio" id="radio-books-my-private" name="name-radio-category-private">
                                         <input type="radio" id="radio-food-my-private" name="name-radio-category-private">
                                         <input type="radio" id="radio-language-my-private" name="name-radio-category-private">
@@ -8591,7 +8594,7 @@
 
 
                                         <!-- --------------------------------------------------------------------------------- -->
-                                        <!-- 🟩 [1/3] | Nav My Private            -->
+                                        <!-- 🟩 [1/3] | Nav My Private ( Sport, Others )            -->
                                         <!-- --------------------------------------------------------------------------------- -->
                                         <div id="nav-my-private">
 
@@ -8626,25 +8629,25 @@
                                         <div id="sport-container-my-private" class="style-page-content-card-white">
 
                                             <!-- --------------------------------------------------------- -->
-                                            <!-- 🟩 Checkbox | Selected Category -->
+                                            <!-- Checkbox | Selected Category -->
                                             <!-- --------------------------------------------------------- -->
                                             <input type="checkbox" id="chk-selected-category-sport">
 
                                             <!-- ----------------------------------------------------------------- -->
-                                            <!-- 🟩 Radios | Category Sport ( newest videos, challenges ) -->
+                                            <!-- ➡️🟥 Radios | Category Sport ( newest videos, challenges ) -->
                                             <!-- ----------------------------------------------------------------- -->
-                                            <input type="radio" id="radio-sport-newest-video" name="radio-sport-category">
-                                            <input checked type="radio" id="radio-challenges-video" name="radio-sport-category">
+                                            <input checked type="radio" id="radio-sport-newest-videos" name="radio-sport-category">
+                                            <input type="radio" id="radio-sport-challenge-videos" name="radio-sport-category">
 
                                             <!-- ----------------------------------------------------------------- -->
-                                            <!-- 🟩 Checkbox | Selected Category Sport Challenges -->
+                                            <!-- Checkbox | Selected Category Sport Challenges -->
                                             <!-- ----------------------------------------------------------------- -->
                                             <input type="checkbox" id="chk-selected-category-sport-challenges">
 
                                             <!-- ----------------------------------------------------------------- -->
-                                            <!-- 🟩 Radio | Category Sport Challenges -->
+                                            <!-- Radio | Category Sport Challenges -->
                                             <!-- ----------------------------------------------------------------- -->
-                                            <input checked type="radio" id="radio-sport-unset-challenge" name="radio-sport-challenges">
+                                            <input type="radio" id="radio-sport-choose-challenge" name="radio-sport-challenges">
                                             <input type="radio" id="radio-sport-challenge-1" name="radio-sport-challenges">
                                             <input type="radio" id="radio-sport-challenge-2" name="radio-sport-challenges">
 
@@ -8717,7 +8720,7 @@
                                                                 <!-- ------------------------------------------------------------------ -->
                                                                 <!-- 🟩 Sport Category | Newest Videos -->
                                                                 <!-- ------------------------------------------------------------------ -->
-                                                                <label for="radio-sport-newest-video" class="drop-down-grey-medium">
+                                                                <label for="radio-sport-newest-videos" class="drop-down-grey-medium">
 
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Title Block -->
@@ -8740,7 +8743,7 @@
                                                                 <!-- ------------------------------------------------------------------ -->
                                                                 <!-- 🟩 Sport Category | Challenges -->
                                                                 <!-- ------------------------------------------------------------------ -->
-                                                                <label for="radio-challenges-video" class="drop-down-grey-medium">
+                                                                <label for="radio-sport-challenge-videos" class="drop-down-grey-medium">
 
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Title Block -->
@@ -8809,7 +8812,7 @@
                                                             <!-- --------------------------------------------------- -->
                                                             <!-- Label | Unset Challenge -->
                                                             <!-- --------------------------------------------------- -->
-                                                            <label for="radio-sport-unset-challenge" class="drop-down-2-lines-grey-medium">
+                                                            <label for="radio-sport-choose-challenge" class="drop-down-2-lines-grey-medium">
 
                                                                 <!-- ---------------------------------------- -->
                                                                 <!-- Title Block -->
@@ -8891,27 +8894,13 @@
                                             </div>
 
                                             <!-- ----------------------------------------------------------------- -->
-                                            <!-- ➡️🟥 [2/2] | Content Sport Container -->
+                                            <!-- 🟩 [2/2] | Content Sport Container -->
                                             <!-- ----------------------------------------------------------------- -->
                                             <div id="content-sport-container">
 
-                                                <!--
-
-                                                    ⚠️⚠️⚠️
-
-                                                    #sport-newest-video-container
-                                                    #sport-challenges-video-container
-
-                                                        #choose-sport-challenge-container
-
-                                                        #sport-30-videos-challenge-container
-                                                        #sport-3-videos-challenge-container
-
-
-                                                -->
 
                                                 <!-- -------------------------------------------------- -->
-                                                <!-- 🟩 [1/4] | Sport Newest Video Container -->
+                                                <!-- 🟩 [1/2] | Sport Newest Video Container -->
                                                 <!-- -------------------------------------------------- -->
                                                 <div id="sport-newest-video-container">
 
@@ -8932,15 +8921,15 @@
                                                     </div>
 
                                                     <!-- --------------------------------------------------------- -->
-                                                    <!-- 🟩 [2/3] | Sport Video 3 Container                        -->
+                                                    <!-- 🟩 [2/3] | Sport 3 Videos Container                       -->
                                                     <!-- --------------------------------------------------------- -->
-                                                    <div class="sport-video-3-container">
+                                                    <div class="sport-3-videos-container">
 
 
                                                         <!-- ------------------------------------------ -->
-                                                        <!-- [1/9] | Video Link Box Large -->
+                                                        <!-- [1/9] | Sport Video Link Box Large -->
                                                         <!-- ------------------------------------------ -->
-                                                        <div class="video-link-box-medium">
+                                                        <div class="sport-video-link-box-large">
 
                                                             <!-- ------------------------ -->
                                                             <!-- Nr -->
@@ -8967,9 +8956,9 @@
                                                         </div>
 
                                                         <!-- ------------------------------------------ -->
-                                                        <!-- [2/9] | Video Link Box Large -->
+                                                        <!-- [2/9] | Sport Video Link Box Large -->
                                                         <!-- ------------------------------------------ -->
-                                                        <div class="video-link-box-medium">
+                                                        <div class="sport-video-link-box-large">
 
                                                             <!-- ------------------------ -->
                                                             <!-- Nr -->
@@ -8996,9 +8985,9 @@
                                                         </div>
 
                                                         <!-- ------------------------------------------ -->
-                                                        <!-- [3/9] | Video Link Box Large -->
+                                                        <!-- [3/9] | Sport Video Link Box Large -->
                                                         <!-- ------------------------------------------ -->
-                                                        <div class="video-link-box-medium">
+                                                        <div class="sport-video-link-box-large">
 
                                                             <!-- ------------------------ -->
                                                             <!-- Nr -->
@@ -9066,12 +9055,12 @@
                                                                     <!-- ------------------------------------------------------------- -->
                                                                     <!-- 4-6 Videos -->
                                                                     <!-- ------------------------------------------------------------- -->
-                                                                    <div class="sport-video-3-container">
+                                                                    <div class="sport-3-videos-container">
 
                                                                         <!-- ------------------------------------------ -->
                                                                         <!-- [4/9] | Video Link Box Large -->
                                                                         <!-- ------------------------------------------ -->
-                                                                        <div class="video-link-box-medium">
+                                                                        <div class="sport-video-link-box-large">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Nr -->
@@ -9100,7 +9089,7 @@
                                                                         <!-- ------------------------------------------ -->
                                                                         <!-- [5/9] | Video Link Box Large -->
                                                                         <!-- ------------------------------------------ -->
-                                                                        <div class="video-link-box-medium">
+                                                                        <div class="sport-video-link-box-large">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Nr -->
@@ -9129,7 +9118,7 @@
                                                                         <!-- ------------------------------------------ -->
                                                                         <!-- [6/9] | Video Link Box Large -->
                                                                         <!-- ------------------------------------------ -->
-                                                                        <div class="video-link-box-medium">
+                                                                        <div class="sport-video-link-box-large">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Nr -->
@@ -9161,12 +9150,12 @@
                                                                     <!-- ------------------------------------------------------------- -->
                                                                     <!-- 7-9 Videos -->
                                                                     <!-- ------------------------------------------------------------- -->
-                                                                    <div class="sport-video-3-container">
+                                                                    <div class="sport-3-videos-container">
 
                                                                         <!-- ------------------------------------------ -->
                                                                         <!-- [7/9] | Video Link Box Large -->
                                                                         <!-- ------------------------------------------ -->
-                                                                        <div class="video-link-box-medium">
+                                                                        <div class="sport-video-link-box-large">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Nr -->
@@ -9195,7 +9184,7 @@
                                                                         <!-- ------------------------------------------ -->
                                                                         <!-- [8/9] | Video Link Box Large -->
                                                                         <!-- ------------------------------------------ -->
-                                                                        <div class="video-link-box-medium">
+                                                                        <div class="sport-video-link-box-large">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Nr -->
@@ -9224,7 +9213,7 @@
                                                                         <!-- ------------------------------------------ -->
                                                                         <!-- [9/9] | Video Link Box Large -->
                                                                         <!-- ------------------------------------------ -->
-                                                                        <div class="video-link-box-medium">
+                                                                        <div class="sport-video-link-box-large">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Nr -->
@@ -9269,123 +9258,1131 @@
                                                 </div>
 
                                                 <!-- -------------------------------------------------- -->
-                                                <!-- 🟩 [2/4] | Choose Sport Challenge Container -->
+                                                <!-- ➡️🟥 [2/2] | Sport Challenges Video Container -->
                                                 <!-- -------------------------------------------------- -->
-                                                <div id="choose-sport-challenge-container">
+                                                <div id="sport-challenges-video-container">
 
-                                                    <img src="media/img/content/01-default/clipart/me-challenge.png" alt="img">
-                                                    <div>...</div>
 
-                                                </div>
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- 🟩 [1/3] | Choose Info Container -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <div id="choose-info-container-sport-challenges">
 
-                                                <!-- -------------------------------------------------- -->
-                                                <!-- 🟩 [3/4] | Sport 30 Videos Challenge Container -->
-                                                <!-- -------------------------------------------------- -->
-                                                <div id="sport-30-videos-challenge-container">
+                                                        <img src="media/img/content/01-default/clipart/me-challenge.png" alt="img">
+                                                        <div>...</div>
 
-                                                    <!-- ----------------------------------------------------------------------- -->
-                                                    <!-- 🟩 Quick Info | Sport Challenge Container -->
-                                                    <!-- ----------------------------------------------------------------------- -->
-                                                    <div class="quick-info-sport-challenge-container">
+                                                    </div>
 
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- 🟩 [2/3] | Sport Challenge | 30 Videos Container  -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <div id="sport-challenge-30-videos-container">
 
                                                         <!-- ----------------------------------------------------------------------- -->
-                                                        <!-- 🟩 Quick Info | Sport Challenge Box -->
+                                                        <!-- Quick Info | Sport Challenge Container -->
                                                         <!-- ----------------------------------------------------------------------- -->
-                                                        <div class="quick-info-sport-challenge-box">
+                                                        <div class="quick-info-sport-challenge-container">
 
-                                                            <!-- --------------------------------------- -->
-                                                            <!-- 🟩 Left Border Stripe | Sport Challenge    -->
-                                                            <!-- --------------------------------------- -->
-                                                            <div class="left-border-stripe-sport-challenge"></div>
 
-                                                            <!-- --------------------------------------- -->
-                                                            <!-- 🟩 Info Box | Sport Challenge    -->
-                                                            <!-- --------------------------------------- -->
-                                                            <div class="info-box-sport-challenge">
+                                                            <!-- ----------------------------------------------------------------------- -->
+                                                            <!-- 🟥 Quick Info | Sport Challenge Box -->
+                                                            <!-- ----------------------------------------------------------------------- -->
+                                                            <div class="quick-info-sport-challenge-box">
 
-                                                                <!-- -------------------------------------------------------------------- -->
-                                                                <!-- 🟩 Header -->
-                                                                <!-- -------------------------------------------------------------------- -->
-                                                                <header>
-                                                                    <img src="media/img/icons/03-emojies/04-hobbys/emojie-dart.png" class="img-h-1-1" alt="img">
-                                                                    <div>
-                                                                        <span>30 Days |</span>
-                                                                        <span>become fit again</span>
-                                                                    </div>
-                                                                </header>
+                                                                <!-- --------------------------------------- -->
+                                                                <!-- 🟩 Left Border Stripe | Sport Challenge    -->
+                                                                <!-- --------------------------------------- -->
+                                                                <div class="left-border-stripe-sport-challenge"></div>
 
-                                                                <!-- -------------------------------------------------------------------- -->
-                                                                <!-- 🟩 Main -->
-                                                                <!-- -------------------------------------------------------------------- -->
-                                                                <main>
+                                                                <!-- --------------------------------------- -->
+                                                                <!-- 🟩 Info Box | Sport Challenge    -->
+                                                                <!-- --------------------------------------- -->
+                                                                <div class="info-box-sport-challenge">
 
-                                                                    <!-- ----------------------------------------- -->
-                                                                    <!-- running -->
-                                                                    <!-- ----------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-running-human.png" class="img-h-0-9" alt="img">
-                                                                        <span>running</span>
-                                                                    </div>
+                                                                    <!-- -------------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Header -->
+                                                                    <!-- -------------------------------------------------------------------- -->
+                                                                    <header>
+                                                                        <img src="media/img/icons/03-emojies/04-hobbys/emojie-dart.png" class="img-h-1-1" alt="img">
+                                                                        <div>
+                                                                            <span>30 Days |</span>
+                                                                            <span>become fit again</span>
+                                                                        </div>
+                                                                    </header>
 
-                                                                    <!-- ----------------------------------------- -->
-                                                                    <!-- strenght -->
-                                                                    <!-- ----------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-biceps.png" class="img-h-0-8" alt="img">
-                                                                        <span>strength</span>
-                                                                    </div>
+                                                                    <!-- -------------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Main -->
+                                                                    <!-- -------------------------------------------------------------------- -->
+                                                                    <main>
 
-                                                                    <!-- ----------------------------------------- -->
-                                                                    <!-- flexibility -->
-                                                                    <!-- ----------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-human-flexibility.png" class="img-h-0-9" alt="img">
-                                                                        <span>flexibility</span>
-                                                                    </div>
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- running -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-running-human.png" class="img-h-0-9" alt="img">
+                                                                            <span>running</span>
+                                                                        </div>
 
-                                                                    <!-- ----------------------------------------- -->
-                                                                    <!-- calisthenics -->
-                                                                    <!-- ----------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-gymnastics.png" class="img-h-0-9" alt="img">
-                                                                        <span>calisthenics</span>
-                                                                    </div>
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- strenght -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-biceps.png" class="img-h-0-8" alt="img">
+                                                                            <span>strength</span>
+                                                                        </div>
 
-                                                                </main>
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- flexibility -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-human-flexibility.png" class="img-h-0-9" alt="img">
+                                                                            <span>flexibility</span>
+                                                                        </div>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- calisthenics -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-gymnastics.png" class="img-h-0-9" alt="img">
+                                                                            <span>calisthenics</span>
+                                                                        </div>
+
+                                                                    </main>
+
+                                                                </div>
+
 
                                                             </div>
 
 
                                                         </div>
 
+                                                        <!-- ----------------------------------------------------------------------- -->
+                                                        <!-- Sport Challenges 2-15 Videos Container -->
+                                                        <!-- ----------------------------------------------------------------------- -->
+                                                        <div class="sport-challenges-2-15-videos-container">
+
+                                                            <!-- ----------------------------------------------------------------------- -->
+                                                            <!-- [1/2] | Sport 15 Video Days Challenge Container -->
+                                                            <!-- ----------------------------------------------------------------------- -->
+                                                            <div class="sport-challenge-15-videos-container">
+
+                                                                <!-- ------------------------------------------------------- -->
+                                                                <!-- 🟩 Header -->
+                                                                <!-- ------------------------------------------------------- -->
+                                                                <header>
+                                                                    <div>
+                                                                        <img src="media/img/content/01-default/clipart/me-challenge.png" alt="img">
+                                                                        <div>15 of 30</div>
+                                                                    </div>
+                                                                </header>
+
+                                                                <!-- ------------------------------------------------------- -->
+                                                                <!-- 🟩 Main -->
+                                                                <!-- ------------------------------------------------------- -->
+                                                                <main>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [1/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>1</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-1-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1I5EK48PCepZJKiRy9BBqSmomDWw3Vaox/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [2/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>2</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-2-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/11nr-O5zDXWoVLdE2XM4oDdLDbhZd-9y6/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [3/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>3</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-3-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/13TrzU-vxNtUECKU8p6sX10g5r9S-QyTJ/view?usp=sharin" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [4/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>4</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-4-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1IYz7pCj6xQFg68EGWywCTMZjh8RSBLAh/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [5/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>5</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-5-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1OCfJ10fEBh9ivkR0Aa7QzqyT-4H8OgR7/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [6/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>6</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-6-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1zqDGdh8N6CEq07x8tM0jods0sgmakUmc/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [7/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>7</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-7-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/13rXW3o0OWsNqFtKkgNwZpQVuz5l9nogz/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [8/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>8</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-8-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1bVIa6UNuR2-R5f9L7gOBJU0SH1tpJM-c/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [9/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>9</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-9-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1AUYjnkwSuYyIlJJtwoHVkRw425EvJ7AR/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [10/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>10</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-10-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1R8O1eKULK0e-dJd7uReOmS6kGeQzZhpM/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [11/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>11</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-11-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1jS6x2NIJxAjSsPGZJdWOavA18pyiTwXX/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [12/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>12</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-12-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1lWgCn8po4BAAg0HBGgZBiYkS1iqqKfH0/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [13/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>13</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-13-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/16EZc3e84_kTl3PSub0wCtJdlrguoRIR5/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [14/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>14</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-14-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/17x8MYaO0gmdDs9uRqVAEP8uhDOFZZekc/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [15/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>15</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-15-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/190DApKRauwIaghNRapq584Gngts1Ksgs/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+
+
+
+                                                                </main>
+
+                                                            </div>
+
+                                                            <!-- ----------------------------------------------------------------------- -->
+                                                            <!-- [2/2] | Sport 15 Video Days Challenge Container -->
+                                                            <!-- ----------------------------------------------------------------------- -->
+                                                            <div class="sport-challenge-15-videos-container">
+
+                                                                <!-- ------------------------------------------------------- -->
+                                                                <!-- 🟩 Header -->
+                                                                <!-- ------------------------------------------------------- -->
+                                                                <header>
+                                                                    <div>
+                                                                        <img src="media/img/content/01-default/clipart/me-challenge.png" alt="img">
+                                                                        <div>30 of 30</div>
+                                                                    </div>
+                                                                </header>
+
+                                                                <!-- ------------------------------------------------------- -->
+                                                                <!-- 🟩 Main -->
+                                                                <!-- ------------------------------------------------------- -->
+                                                                <main>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [16/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>16</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-16-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/19qATUfv5jFsW4461Cm0mUtXEdakAFChf/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [17/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>17</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-17-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1BHD4V29ULkWcp6vUprni_YkTuN3sl7VI/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [18/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>18</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-18-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1GHBHhfA2xjHwnuWvQEIAPU_WnCoW95UF/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [19/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>19</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-19-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1Gd0mP5m-Ppn9UK0qhPGvS4tRdT4Q9ye1/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [20/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>20</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-20-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1GwpUvr_s8ksVlK8rSeSSaPki0zmhkoSi/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [21/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>21</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-21-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1HLgbUoMKfK8HDcNbD9ypnGYICSLYQjZq/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [22/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>22</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-22-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1IWhXP6mDiJwMbwiCz7v6OqhIioOmcP2Q/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [23/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>23</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-23-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1JeCnHkxaPRaAB3t4dkClGlL6POo-yHFj/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [24/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>24</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-24-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1JzjUi8l5slQM_ubT23Yq3LLYoN-uBP5A/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [25/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>25</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-25-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1LfXsw_50frHFHVL1AbZ85dc91Xr490o5/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [26/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>26</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-26-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1MgS4D6MiCkIm8CDxEZHRv6TPm4n9gigr/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [27/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>27</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-27-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1NyBgzHCt191TwNWt1wyjqegrKPcN8U-l/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [28/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>28</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-28-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1O6DLQ52kd_Z2MfwNEYftHLGYIRFgrGle/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [29/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>29</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-29-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1OOwEa9LHzbM2au7B23vrRY6FV8kNMVIU/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <!-- 🟩 [30/30] | Video Link Box Large -->
+                                                                    <!-- ------------------------------------------ -->
+                                                                    <div class="sport-video-link-box-medium">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Nr -->
+                                                                        <!-- ------------------------ -->
+                                                                        <div>
+                                                                            <div>30</div>
+                                                                        </div>
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- IMG -->
+                                                                        <!-- ------------------------ -->
+                                                                        <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-30-sport.png" alt="img">
+
+                                                                        <!-- ------------------------ -->
+                                                                        <!-- Link Show More -->
+                                                                        <!-- ------------------------ -->
+                                                                        <a href="https://drive.google.com/file/d/1OciU5FMT0cwRiFCgYiF1ElCwX7kpm6tM/view?usp=sharing" target="_blank">
+
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
+                                                                            <div>Show Me</div>
+
+                                                                        </a>
+
+                                                                    </div>
+
+
+                                                                </main>
+
+                                                            </div>
+
+                                                        </div>
 
                                                     </div>
 
-                                                    <!-- ----------------------------------------------------------------------- -->
-                                                    <!-- 🟩 [1/2] | Sport 15 Videos Challenge Container -->
-                                                    <!-- ----------------------------------------------------------------------- -->
-                                                    <div class="sport-15-videos-challenge-container">
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- 🟩 [3/3] | Sport Challenge | 3 Videos Container -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <div id="sport-challenge-3-videos-container">
 
-                                                        <!-- ------------------------------------------------------- -->
-                                                        <!-- 🟩 Header -->
-                                                        <!-- ------------------------------------------------------- -->
-                                                        <header>
-                                                            <div>
-                                                                <img src="media/img/content/01-default/clipart/me-challenge.png" alt="img">
-                                                                <div>15 of 30</div>
+                                                        <!-- ----------------------------------------------------------------------- -->
+                                                        <!-- [1/2] | Quick Info | Sport Challenge Container -->
+                                                        <!-- ----------------------------------------------------------------------- -->
+                                                        <div class="quick-info-sport-challenge-container">
+
+
+                                                            <!-- ----------------------------------------------------------------------- -->
+                                                            <!-- 🟩 Quick Info | Sport Challenge Box -->
+                                                            <!-- ----------------------------------------------------------------------- -->
+                                                            <div class="quick-info-sport-challenge-box">
+
+                                                                <!-- --------------------------------------- -->
+                                                                <!-- 🟩 Left Border Stripe | Sport Challenge    -->
+                                                                <!-- --------------------------------------- -->
+                                                                <div class="left-border-stripe-sport-challenge"></div>
+
+                                                                <!-- --------------------------------------- -->
+                                                                <!-- 🟩 Info Box | Sport Challenge    -->
+                                                                <!-- --------------------------------------- -->
+                                                                <div class="info-box-sport-challenge">
+
+                                                                    <!-- -------------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Header -->
+                                                                    <!-- -------------------------------------------------------------------- -->
+                                                                    <header>
+                                                                        <img src="media/img/icons/03-emojies/04-hobbys/emojie-dart.png" class="img-h-1-1" alt="img">
+                                                                        <div>
+                                                                            <span>30 Days |</span>
+                                                                            <span>Calisthenics Start</span>
+                                                                        </div>
+                                                                    </header>
+
+                                                                    <!-- -------------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Main -->
+                                                                    <!-- -------------------------------------------------------------------- -->
+                                                                    <main>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- running -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-running-human.png" class="img-h-0-9" alt="img">
+                                                                            <span>running</span>
+                                                                        </div>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- strenght -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-biceps.png" class="img-h-0-8" alt="img">
+                                                                            <span>strength</span>
+                                                                        </div>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- flexibility -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-human-flexibility.png" class="img-h-0-9" alt="img">
+                                                                            <span>flexibility</span>
+                                                                        </div>
+
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <!-- calisthenics -->
+                                                                        <!-- ----------------------------------------- -->
+                                                                        <div>
+                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-gymnastics.png" class="img-h-0-9" alt="img">
+                                                                            <span>calisthenics</span>
+                                                                        </div>
+
+                                                                    </main>
+
+                                                                </div>
+
+
                                                             </div>
-                                                        </header>
 
-                                                        <!-- ------------------------------------------------------- -->
-                                                        <!-- 🟩 Main -->
-                                                        <!-- ------------------------------------------------------- -->
-                                                        <main>
+
+                                                        </div>
+
+                                                        <!-- ----------------------------------------------------------------------- -->
+                                                        <!-- [2/2] | Sport 3 Videos Contianer -->
+                                                        <!-- ----------------------------------------------------------------------- -->
+                                                        <div class="sport-3-videos-container">
+
 
                                                             <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [1/30] | Video Link Box Large -->
+                                                            <!-- [1/3] | Sport Video Link Box Large -->
                                                             <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
+                                                            <div class="sport-video-link-box-large">
 
                                                                 <!-- ------------------------ -->
                                                                 <!-- Nr -->
@@ -9397,12 +10394,12 @@
                                                                 <!-- ------------------------ -->
                                                                 <!-- IMG -->
                                                                 <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-1-sport.png" alt="img">
+                                                                <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-1.png" alt="img">
 
                                                                 <!-- ------------------------ -->
                                                                 <!-- Link Show More -->
                                                                 <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1I5EK48PCepZJKiRy9BBqSmomDWw3Vaox/view?usp=sharing" target="_blank">
+                                                                <a href="https://drive.google.com/file/d/1J9eMjm1CyoqzBIsSzrurCSb6t3eB_f8z/view?usp=sharing" target="_blank">
 
                                                                     <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
                                                                     <div>Show Me</div>
@@ -9412,9 +10409,9 @@
                                                             </div>
 
                                                             <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [2/30] | Video Link Box Large -->
+                                                            <!-- [2/3] | Sport Video Link Box Large -->
                                                             <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
+                                                            <div class="sport-video-link-box-large">
 
                                                                 <!-- ------------------------ -->
                                                                 <!-- Nr -->
@@ -9426,12 +10423,12 @@
                                                                 <!-- ------------------------ -->
                                                                 <!-- IMG -->
                                                                 <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-2-sport.png" alt="img">
+                                                                <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-2.png" alt="img">
 
                                                                 <!-- ------------------------ -->
                                                                 <!-- Link Show More -->
                                                                 <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/11nr-O5zDXWoVLdE2XM4oDdLDbhZd-9y6/view?usp=sharing" target="_blank">
+                                                                <a href="https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing" target="_blank">
 
                                                                     <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
                                                                     <div>Show Me</div>
@@ -9441,9 +10438,9 @@
                                                             </div>
 
                                                             <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [3/30] | Video Link Box Large -->
+                                                            <!-- [3/3] | Sport Video Link Box Large -->
                                                             <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
+                                                            <div class="sport-video-link-box-large">
 
                                                                 <!-- ------------------------ -->
                                                                 <!-- Nr -->
@@ -9455,41 +10452,12 @@
                                                                 <!-- ------------------------ -->
                                                                 <!-- IMG -->
                                                                 <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-3-sport.png" alt="img">
+                                                                <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-2.png" alt="img">
 
                                                                 <!-- ------------------------ -->
                                                                 <!-- Link Show More -->
                                                                 <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/13TrzU-vxNtUECKU8p6sX10g5r9S-QyTJ/view?usp=sharin" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [4/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>4</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-4-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1IYz7pCj6xQFg68EGWywCTMZjh8RSBLAh/view?usp=sharing" target="_blank">
+                                                                <a href="https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing" target="_blank">
 
                                                                     <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
                                                                     <div>Show Me</div>
@@ -9499,797 +10467,12 @@
                                                             </div>
 
 
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [5/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>5</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-5-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1OCfJ10fEBh9ivkR0Aa7QzqyT-4H8OgR7/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [6/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>6</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-6-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1zqDGdh8N6CEq07x8tM0jods0sgmakUmc/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [7/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>7</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-7-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/13rXW3o0OWsNqFtKkgNwZpQVuz5l9nogz/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [8/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>8</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-8-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1bVIa6UNuR2-R5f9L7gOBJU0SH1tpJM-c/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [9/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>9</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-9-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1AUYjnkwSuYyIlJJtwoHVkRw425EvJ7AR/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [10/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>10</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-10-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1R8O1eKULK0e-dJd7uReOmS6kGeQzZhpM/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [11/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>11</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-11-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1jS6x2NIJxAjSsPGZJdWOavA18pyiTwXX/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [12/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>12</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-12-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1lWgCn8po4BAAg0HBGgZBiYkS1iqqKfH0/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [13/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>13</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-13-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/16EZc3e84_kTl3PSub0wCtJdlrguoRIR5/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [14/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>14</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-14-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/17x8MYaO0gmdDs9uRqVAEP8uhDOFZZekc/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [15/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>15</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-15-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/190DApKRauwIaghNRapq584Gngts1Ksgs/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-
-
-
-                                                        </main>
+                                                        </div>
 
                                                     </div>
 
-                                                    <!-- ----------------------------------------------------------------------- -->
-                                                    <!-- ➡️🟥 [2/2] | Sport 15 Videos Challenge Container -->
-                                                    <!-- ----------------------------------------------------------------------- -->
-                                                    <div class="sport-15-videos-challenge-container">
-
-                                                        <!-- ------------------------------------------------------- -->
-                                                        <!-- 🟩 Header -->
-                                                        <!-- ------------------------------------------------------- -->
-                                                        <header>
-                                                            <div>
-                                                                <img src="media/img/content/01-default/clipart/me-challenge.png" alt="img">
-                                                                <div>30 of 30</div>
-                                                            </div>
-                                                        </header>
-
-                                                        <!-- ------------------------------------------------------- -->
-                                                        <!-- 🟩 Main -->
-                                                        <!-- ------------------------------------------------------- -->
-                                                        <main>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [16/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>16</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-16-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/19qATUfv5jFsW4461Cm0mUtXEdakAFChf/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [17/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>17</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-17-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1BHD4V29ULkWcp6vUprni_YkTuN3sl7VI/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [18/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>18</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-18-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1GHBHhfA2xjHwnuWvQEIAPU_WnCoW95UF/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [19/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>19</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-19-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1Gd0mP5m-Ppn9UK0qhPGvS4tRdT4Q9ye1/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [20/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>20</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-20-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1GwpUvr_s8ksVlK8rSeSSaPki0zmhkoSi/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [21/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>21</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-21-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1HLgbUoMKfK8HDcNbD9ypnGYICSLYQjZq/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [22/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>22</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-22-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1IWhXP6mDiJwMbwiCz7v6OqhIioOmcP2Q/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [23/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>23</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-23-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1JeCnHkxaPRaAB3t4dkClGlL6POo-yHFj/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [24/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>24</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-24-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1JzjUi8l5slQM_ubT23Yq3LLYoN-uBP5A/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [25/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>25</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-25-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1LfXsw_50frHFHVL1AbZ85dc91Xr490o5/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [26/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>26</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-26-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1MgS4D6MiCkIm8CDxEZHRv6TPm4n9gigr/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [27/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>27</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-27-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1NyBgzHCt191TwNWt1wyjqegrKPcN8U-l/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [28/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>28</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-28-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1O6DLQ52kd_Z2MfwNEYftHLGYIRFgrGle/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [29/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>29</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-29-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1OOwEa9LHzbM2au7B23vrRY6FV8kNMVIU/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-                                                            <!-- ------------------------------------------ -->
-                                                            <!-- 🟩 [30/30] | Video Link Box Large -->
-                                                            <!-- ------------------------------------------ -->
-                                                            <div class="video-link-box-medium">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Nr -->
-                                                                <!-- ------------------------ -->
-                                                                <div>
-                                                                    <div>30</div>
-                                                                </div>
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- IMG -->
-                                                                <!-- ------------------------ -->
-                                                                <img src="media/img/content/05_my_private/01_sport/challenges_sport/challenge_1_sport/challenge-1-30-sport.png" alt="img">
-
-                                                                <!-- ------------------------ -->
-                                                                <!-- Link Show More -->
-                                                                <!-- ------------------------ -->
-                                                                <a href="https://drive.google.com/file/d/1OciU5FMT0cwRiFCgYiF1ElCwX7kpm6tM/view?usp=sharing" target="_blank">
-
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-9" alt="img">
-                                                                    <div>Show Me</div>
-
-                                                                </a>
-
-                                                            </div>
-
-
-                                                        </main>
-
-                                                    </div>
 
                                                 </div>
-
-                                                <!-- -------------------------------------------------- -->
-                                                <!-- 🟥 [4/4] | Sport 3 Videos Challenge Container -->
-                                                <!-- -------------------------------------------------- -->
 
                                             </div>
 
@@ -10303,28 +10486,9 @@
                                             Others Container My Private
                                         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                         <!-- --------------------------------------------------------------------------------- -->
                                         <!-- ❌❌❌ Trash             -->
                                         <!-- --------------------------------------------------------------------------------- -->
-
 
                                         <!-- --------------------------------------------------------------- -->
                                         <!-- 🟥 [3/6] | My Book Private Container                            -->
