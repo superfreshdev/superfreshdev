@@ -99,11 +99,11 @@
   /* Sport | Video Link Box Large
   /* -------------------------------------------------------------- */
 
-  .sport-video-link-box-large {
+  /* .sport-video-link-box-large {
 
     width: 10em;
 
-  }
+  } */
 
   /* ---------------------------------------------------------------- */
   /* Sport | New Sport Container | Label */
@@ -425,7 +425,7 @@
   #sport-newest-video-container > div {
 
     /* mobile */
-    width: 39em;
+    /* width: 39em; */
     /* background-color: green; */
 
   }
@@ -465,13 +465,19 @@
 @media ( min-width: 800px ) {
 
 
+  .sport-video-link-box-large {
+
+    width: 13em;
+
+  }
+
   /* -------------------------------------------------------------- */
   /* Sport | Sport Video 3 Container */
   /* -------------------------------------------------------------- */
 
   .sport-3-videos-container {
 
-    column-gap: 1.5em;
+    column-gap: .8em;
 
   }
 
@@ -489,9 +495,9 @@
   /* Sport | Video Link Box Large
   /* -------------------------------------------------------------- */
 
-  .sport-video-link-box-large {
+   .sport-video-link-box-large {
 
-    width: 13.5em;
+    width: 16em;
 
   }
 
@@ -513,7 +519,7 @@
   #sport-newest-video-container > div {
 
     /* mobile */
-    width: 43.5em;
+    /* width: 43.5em; */
     /* background-color: rgb(103, 104, 103); */
 
   }

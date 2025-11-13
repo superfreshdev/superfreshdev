@@ -25,7 +25,7 @@ input[name="name-radio-my-private-category"] {
 
 /* set content */
 #radio-my-private-category-sport:checked ~ #sport-container-my-private,
-#radio-my-private-category-others:checked ~ #others-container-my-private {
+#radio-my-private-category-others:checked ~ #my-private-others-container {
 
   display: grid;
 

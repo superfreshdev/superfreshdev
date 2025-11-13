@@ -1,0 +1,81 @@
+/* ------------------------------------------------------------------------- */
+/* > nav-others.css
+/* : styles nav others
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Checkbox | Selected Category Others */
+/* ------------------------------------------------------------- */
+
+/* default unshwon */
+#chk-selected-category-others {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-selected-category-others:checked ~ #header-nav-others-my-private label[for="chk-selected-category-others"] {
+
+  background-color: rgb(239, 113, 113);
+
+}
+
+/* change rotation img arrow */
+#chk-selected-category-others:checked ~ #header-nav-others-my-private label[for="chk-selected-category-others"] > img {
+
+   transform: rotate(180deg);
+
+}
+
+/* open smooth nav */
+#chk-selected-category-others:checked ~ #header-nav-others-my-private #smooth-nav-others-category-my-priavte {
+
+  grid-template-rows: 1fr;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Radio | Category Others */
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-category-others"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-others-choose:checked ~ #header-nav-others-my-private label[for="radio-others-choose"],
+#radio-others-book-listenings:checked ~ #header-nav-others-my-private label[for="radio-others-book-listenings"],
+#radio-others-meals:checked ~ #header-nav-others-my-private label[for="radio-others-meals"],
+#radio-others-languages:checked ~ #header-nav-others-my-private label[for="radio-others-languages"],
+#radio-others-mini-games:checked ~ #header-nav-others-my-private label[for="radio-others-mini-games"] {
+
+  background-color: wheat;
+
+}
+
+/* set x */
+#radio-others-choose:checked ~ #header-nav-others-my-private label[for="radio-others-choose"] > .custom-radio-small > img,
+#radio-others-book-listenings:checked ~ #header-nav-others-my-private label[for="radio-others-book-listenings"] > .custom-radio-small > img,
+#radio-others-meals:checked ~ #header-nav-others-my-private label[for="radio-others-meals"] > .custom-radio-small > img,
+#radio-others-languages:checked ~ #header-nav-others-my-private label[for="radio-others-languages"] > .custom-radio-small > img,
+#radio-others-mini-games:checked ~ #header-nav-others-my-private label[for="radio-others-mini-games"] > .custom-radio-small > img {
+
+  display: flex;
+
+}
+
+/* show content */
+#radio-others-book-listenings:checked ~ #book-listenings-container-my-private,
+#radio-others-meals:checked ~ #meals-container-my-private,
+#radio-others-languages:checked ~ #languages-container-my-private,
+#radio-others-mini-games:checked ~ #mini-games-container-my-private {
+
+  display: grid;
+
+}

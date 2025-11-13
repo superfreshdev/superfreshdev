@@ -8,7 +8,89 @@
 /* Others Container | My Private
 /* ------------------------------------------------------------- */
 
-#others-container-my-private {
+#my-private-others-container {
+
+  /* default unshown */
+  display: none;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Header Nav Others | My Private
+/* ------------------------------------------------------------- */
+
+#header-nav-others-my-private {
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Others | My Private
+/* ------------------------------------------------------------- */
+
+#nav-others-my-private {
+
+  display: grid;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Others Category | My Private
+/* ------------------------------------------------------------- */
+
+#nav-others-category-my-private {
+
+  padding-top: .5em;
+
+  display: grid;
+  row-gap: .5em;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------- */
+
+#book-listenings-container-my-private {
+
+  /* default unshown */
+  display: none;
+
+}
+
+#meals-container-my-private {
+
+  /* default unshown */
+  display: none;
+
+}
+
+#languages-container-my-private{
+
+  /* default unshown */
+  display: none;
+
+}
+
+#mini-games-container-my-private{
 
   /* default unshown */
   display: none;
