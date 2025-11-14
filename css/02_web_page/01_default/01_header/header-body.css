@@ -13,7 +13,7 @@
 
     z-index: 100;
 
-    height: 5em;
+    height: 4.5em;
     width: 100%;
 
     position: fixed;
@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
 
-    border-bottom: 1px solid rgb(53, 53, 53);
+    border-bottom: 3px solid rgb(36, 36, 36);
 
     background-color: rgb(28, 28, 28);
     color:white;

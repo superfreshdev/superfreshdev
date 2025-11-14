@@ -408,11 +408,11 @@
                     <!-- mini-games -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/mini-games/mini-games.css">
 
-                    <!-- audio-books -->
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/audio-books/auto-books.css">
+                    <!-- book listenings -->
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/book-listenings/book-listenings.css">
 
                     <!-- food -->
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/food/food.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/meals/meals.css">
 
                     <!-- -------------------------------- -->
                     <!-- ❌❌❌ Trash                    -->
@@ -8580,8 +8580,8 @@
                                         <!-- --------------------------------------------------------- -->
                                         <!-- 🟩 Radio | Category | My Private ( sport, others ) -->
                                         <!-- --------------------------------------------------------- -->
-                                        <input checked type="radio" id="radio-my-private-category-sport" name="name-radio-my-private-category">
-                                        <input type="radio" id="radio-my-private-category-others" name="name-radio-my-private-category">
+                                        <input type="radio" id="radio-my-private-category-sport" name="name-radio-my-private-category">
+                                        <input checked type="radio" id="radio-my-private-category-others" name="name-radio-my-private-category">
 
                                         <!-- --------------------------------------------------------- -->
                                         <!-- 🟥 Radios Nav My Private (sport, food, ... ) -->
@@ -8624,7 +8624,7 @@
                                         </div>
 
                                         <!-- --------------------------------------------------------------- -->
-                                        <!-- ➡️🟥 [2/3] | Sport Container | My Private                       -->
+                                        <!-- 🟥 [2/3] | My Private | Sport Container                         -->
                                         <!-- --------------------------------------------------------------- -->
                                         <div id="sport-container-my-private" class="style-page-content-card-white">
 
@@ -10480,8 +10480,31 @@
                                         </div>
 
                                         <!-- --------------------------------------------------------------- -->
-                                        <!-- 🟥 [3/3] | Others Container | My Private                     -->
+                                        <!-- ➡️🟥 [3/3] | My Private | Others Container                     -->
                                         <!-- --------------------------------------------------------------- -->
+
+                                        <!--
+
+                                        others.css
+                                            #my-private-others-container
+                                            #header-nav-others
+
+                                        nav-others.css
+
+
+
+                                            #book-listenings-container
+
+                                            #meals-container
+
+                                            #languages-container
+
+                                            #mini-games-container
+
+
+
+                                        -->
+
                                         <div id="my-private-others-container" class="style-page-content-card-white">
 
 
@@ -10491,24 +10514,22 @@
                                             <input type="checkbox" id="chk-selected-category-others">
 
                                             <!-- --------------------------------------------------------------- -->
-                                            <!-- Radios | Category Others ( book listenings, ... ) -->
+                                            <!-- Radios | Category Others ( chhose, book listenings, ... ) -->
                                             <!-- --------------------------------------------------------------- -->
                                              <input type="radio" id="radio-others-choose" name="name-radio-category-others">
 
                                             <input type="radio" id="radio-others-book-listenings" name="name-radio-category-others">
                                             <input type="radio" id="radio-others-meals" name="name-radio-category-others">
                                             <input type="radio" id="radio-others-languages" name="name-radio-category-others">
-                                            <input type="radio" id="radio-others-mini-games" name="name-radio-category-others">
-
-
+                                            <input checked type="radio" id="radio-others-mini-games" name="name-radio-category-others">
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- ➡️🟥 Header Nav Others | My Private -->
+                                            <!-- 🟨🟥 Header Nav Others Container -->
                                             <!-- --------------------------------------------------------------------- -->
-                                            <div id="header-nav-others-my-private">
+                                            <div id="header-nav-others-container">
 
                                                 <!-- ----------------------------------------------------------------- -->
-                                                <!-- 🟥 [1/?] | Header Content Block (🟣) -->
+                                                <!-- 🟥 [1/3] | Header Content Block (🟣) -->
                                                 <!-- ----------------------------------------------------------------- -->
                                                 <div class="header-content-block">
 
@@ -10522,169 +10543,161 @@
 
                                                 </div>
 
-                                                <!-- ----------------------------------------------------------------- -->
-                                                <!-- 🟥 [2/?] | Nav Others | My Private -->
-                                                <!-- ----------------------------------------------------------------- -->
-                                                <div id="nav-others-my-private">
+                                                <!-- ------------------------------------------------------------ -->
+                                                <!-- 🟥 [2/3] | Label | Selected Category -->
+                                                <!-- ------------------------------------------------------------ -->
+                                                <label for="chk-selected-category-others" class="drop-down-grey-medium">
 
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <!-- 🟥 Label | Selected Category -->
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <label for="chk-selected-category-others" class="drop-down-grey-medium">
-
-                                                        <!-- ---------------------------------------- -->
-                                                        <!-- Title Block -->
-                                                        <!-- ---------------------------------------- -->
+                                                    <!-- ---------------------------------------- -->
+                                                    <!-- Title Block -->
+                                                    <!-- ---------------------------------------- -->
+                                                    <div>
+                                                        <!-- <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-0-9" alt="img"> -->
                                                         <div>
-                                                            <!-- <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-0-9" alt="img"> -->
-                                                            <div>
-                                                                <span id="js-js"> Choose ... </span>
-                                                            </div>
+                                                            <span id="js-js"> Choose ... </span>
                                                         </div>
-
-                                                        <!-- ---------------------------------------- -->
-                                                        <!-- Img Arrow (open/close) -->
-                                                        <!-- ---------------------------------------- -->
-                                                        <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
-                                                            class="img-h-0-5" alt="img">
-
-                                                    </label>
-
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <!-- 🟥 Smooth | Nav Others Category | My Private -->
-                                                    <!-- ------------------------------------------------------------ -->
-                                                    <div id="smooth-nav-others-category-my-priavte" class="smooth-open-close-container">
-
-                                                        <!-- ------------------------------------------------------------ -->
-                                                        <!-- Overflow Hidden -->
-                                                        <!-- ------------------------------------------------------------ -->
-                                                        <div class="overflow-hidden">
-
-                                                            <!-- ------------------------------------------------------------ -->
-                                                            <!-- 🟥 Nav -->
-                                                            <!-- ------------------------------------------------------------ -->
-                                                            <nav id="nav-others-category-my-private">
-
-
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <!-- 🟥 Choose | Category  -->
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <label for="radio-others-choose" class="drop-down-grey-medium">
-
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <div>
-                                                                        <!-- <img src="media/img/icons/02-icon-colors/01-black/black-three-books.png" class="img-h-0-9" alt="img"> -->
-                                                                        <div>Choose ... </div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-small">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-
-                                                                </label>
-
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <!-- 🟥 Book Listenings | Category  -->
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <label for="radio-others-book-listenings" class="drop-down-grey-medium">
-
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-three-books.png" class="img-h-0-9" alt="img">
-                                                                        <div>Book Listenings </div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-small">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-
-                                                                </label>
-
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <!-- 🟥 Meals | Category -->
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <label for="radio-others-meals" class="drop-down-grey-medium">
-
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-spoon-knife.png" class="img-h-1" alt="img">
-                                                                        <div>Meals</div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-small">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <!-- 🟥 Languages | Category -->
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <label for="radio-others-languages" class="drop-down-grey-medium">
-
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-language-2.png" class="img-h-1-2" alt="img">
-                                                                        <div>Languages</div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-small">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <!-- 🟥 Mini-Games | Category -->
-                                                                <!-- ------------------------------------------------------------------ -->
-                                                                <label for="radio-others-mini-games" class="drop-down-grey-medium">
-
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ---------------------------------------- -->
-                                                                    <div>
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-gaming-controller.png" class="img-h-0-8" alt="img">
-                                                                        <div>Mini-Games</div>
-                                                                    </div>
-
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <!-- Custom Radio -->
-                                                                    <!-- -------------------------------------------- -->
-                                                                    <div class="custom-radio-small">
-                                                                        <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                    </div>
-
-                                                                </label>
-
-
-                                                            </nav>
-
-                                                        </div>
-
                                                     </div>
 
+                                                    <!-- ---------------------------------------- -->
+                                                    <!-- Img Arrow (open/close) -->
+                                                    <!-- ---------------------------------------- -->
+                                                    <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
+                                                        class="img-h-0-5" alt="img">
+
+                                                </label>
+
+                                                <!-- ------------------------------------------------------------ -->
+                                                <!-- 🟥 [3/3] | Smooth | Nav Others Category -->
+                                                <!-- ------------------------------------------------------------ -->
+                                                <div id="smooth-nav-others-category" class="smooth-open-close-container">
+
+                                                    <!-- ------------------------------------------------------------ -->
+                                                    <!-- Overflow Hidden -->
+                                                    <!-- ------------------------------------------------------------ -->
+                                                    <div class="overflow-hidden">
+
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <!-- ➡️🟥 Nav Others Category -->
+                                                        <!-- ------------------------------------------------------------ -->
+                                                        <nav id="nav-others-category">
+
+
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <!-- ➡️🟥 Choose | Category  -->
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <label for="radio-others-choose" class="drop-down-grey-medium">
+
+                                                                <!-- ---------------------------------------- -->
+                                                                <!-- Title Block -->
+                                                                <!-- ---------------------------------------- -->
+                                                                <div>
+                                                                    <!-- <img src="media/img/icons/02-icon-colors/01-black/black-three-books.png" class="img-h-0-9" alt="img"> -->
+                                                                    <div>Choose ... </div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+
+                                                            </label>
+
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <!-- 🟥 Book Listenings | Category  -->
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <label for="radio-others-book-listenings" class="drop-down-grey-medium">
+
+                                                                <!-- ---------------------------------------- -->
+                                                                <!-- Title Block -->
+                                                                <!-- ---------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-three-books.png" class="img-h-0-9" alt="img">
+                                                                    <div>Book Listenings </div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+
+                                                            </label>
+
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <!-- 🟥 Meals | Category -->
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <label for="radio-others-meals" class="drop-down-grey-medium">
+
+                                                                <!-- ---------------------------------------- -->
+                                                                <!-- Title Block -->
+                                                                <!-- ---------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-spoon-knife.png" class="img-h-1" alt="img">
+                                                                    <div>Meals</div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <!-- 🟥 Languages | Category -->
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <label for="radio-others-languages" class="drop-down-grey-medium">
+
+                                                                <!-- ---------------------------------------- -->
+                                                                <!-- Title Block -->
+                                                                <!-- ---------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-language-2.png" class="img-h-1-2" alt="img">
+                                                                    <div>Languages</div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <!-- 🟥 Mini-Games | Category -->
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <label for="radio-others-mini-games" class="drop-down-grey-medium">
+
+                                                                <!-- ---------------------------------------- -->
+                                                                <!-- Title Block -->
+                                                                <!-- ---------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-gaming-controller.png" class="img-h-0-8" alt="img">
+                                                                    <div>Mini-Games</div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+
+                                                        </nav>
+
+                                                    </div>
 
                                                 </div>
 
@@ -10692,36 +10705,136 @@
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- 🟥 Book Listenings Container | My Private -->
+                                            <!-- ➡️🟥 Book Listenings Container | My Private -->
                                             <!-- --------------------------------------------------------------------- -->
-                                            <div id="book-listenings-container-my-private">
+                                            <div id="book-listenings-container">
                                                 Book Listenings
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- 🟥 Meals Container | My Private -->
+                                            <!-- ➡️🟥 Meals Container | My Private -->
                                             <!-- --------------------------------------------------------------------- -->
-                                            <div id="meals-container-my-private">
+                                            <div id="meals-container">
                                                 Meals
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- 🟥 Languages Container | My Private -->
+                                            <!-- ➡️🟥 Languages Container | My Private -->
                                             <!-- --------------------------------------------------------------------- -->
-                                            <div id="languages-container-my-private">
+                                            <div id="languages-container">
                                                 Languages
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- 🟥 Mini Games Container | My Private -->
+                                            <!-- ➡️🟥 Mini Games Container | My Private -->
                                             <!-- --------------------------------------------------------------------- -->
-                                            <div id="mini-games-container-my-private">
-                                                Mini Games
+                                            <div id="mini-games-container">
+
+                                                <!-- ------------------------------------------------------------- -->
+                                                <!-- 🟥 [1/?] | Mini Games Container  -->
+                                                <!-- ------------------------------------------------------------- -->
+                                                <div id="info-mini-games">
+
+                                                    <img src="media/img/icons/02-icon-colors/01-black/black-interaction.png" class="img-h-1" alt="img">
+                                                    <span>These are my self programmed mini games ( CSS, Java Script ) which you can play
+                                                        in the Web-Browser alone against computer or you play with others in alternately mode.
+                                                    </span>
+
+                                                </div>
+
+                                                <!-- ------------------------------------------------------------- -->
+                                                <!-- 🟥 [2/?] | Brettspiel Game Container  -->
+                                                <!-- ------------------------------------------------------------- -->
+                                                <div class="gaming-category-container">
+
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <!-- Header -->
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <header>
+
+                                                        <img src="media/img/icons/02-icon-colors/01-black/black-2-triangles.png" class="img-h-1" alt="img">
+                                                        <div>Brettspiel</div>
+
+                                                    </header>
+
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <!-- Main -->
+                                                    <!-- ------------------------------------------------------------- -->
+                                                    <main>
+
+                                                        <!-- -------------------------------------------------- -->
+                                                        <!-- [1/3] | Mini Game Info Card -->
+                                                        <!-- -------------------------------------------------- -->
+                                                        <div class="mini-game-info-card">
+
+                                                           <!-- ------------------------------------------------------ -->
+                                                           <!-- IMG -->
+                                                           <!-- ------------------------------------------------------ -->
+                                                           <img src="" alt="img">
+
+                                                           <!-- ------------------------------------------------------ -->
+                                                           <!-- Header -->
+                                                           <!-- ------------------------------------------------------ -->
+                                                           <header>
+                                                                TicTacToe
+                                                           </header>
+
+                                                           <!-- ------------------------------------------------------ -->
+                                                           <!-- Footer -->
+                                                           <!-- ------------------------------------------------------ -->
+                                                           <footer>
+
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <!-- GitHub Sourcecode -->
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <div>
+                                                                    GitHub Sourcecode
+                                                                </div>
+
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <!-- Play Link -->
+                                                                <!-- -------------------------------------------------------- -->
+                                                                <a href="" target="_blank" class="link-action-grey-small">
+
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-external-link.png" class="img-h-0-8" alt="img">
+                                                                    <div>Play</div>
+                                                                </a>
+
+
+                                                           </footer>
+
+                                                        </div>
+
+                                                        <!-- -------------------------------------------------- -->
+                                                        <!-- [2/3] | Mini Game Info Card -->
+                                                        <!-- -------------------------------------------------- -->
+                                                        <div class="mini-game-info-card">
+
+                                                            Card 2
+
+                                                        </div>
+
+                                                        <!-- -------------------------------------------------- -->
+                                                        <!-- [3/3] | Mini Game Info Card -->
+                                                        <!-- -------------------------------------------------- -->
+                                                        <div class="mini-game-info-card">
+
+                                                            Card 3
+
+                                                        </div>
+
+                                                    </main>
+
+
+                                                </div>
+
+                                                <!-- ------------------------------------------------------------- -->
+                                                <!-- 🟥 [3/?] | Brain Games Container  -->
+                                                <!-- ------------------------------------------------------------- -->
+
+
+                                                <!-- Brettspiele, Brain-Games, Adventure-Games, Self-Games -->
                                             </div>
-
-
-
-
 
                                         </div>
 
@@ -10910,9 +11023,9 @@
     </main>
 
     <!-- ------------------------------------------------------------------------------- -->
-    <!-- 🟨🟥 Footer Body Container                              -->
+    <!-- 🟩 Footer Body Container                              -->
     <!-- ------------------------------------------------------------------------------- -->
-    <footer id="footer-body-container" style="color:white;">
+    <footer id="footer-body-container">
 
         <!-- --------------------------------------------------------------- -->
         <!-- 📐 Resp Min Content                                               -->
@@ -10935,11 +11048,6 @@
                     <div id="footer-body-content-container">
 
                         <!-- ------------------------------------------------------------ -->
-                        <!-- ⚠️ Future | Drop Down my youtubers, links und co -->
-                        <!-- ------------------------------------------------------------ -->
-                        <div style="display: none;"> Future Drop Down Link</div>
-
-                        <!-- ------------------------------------------------------------ -->
                         <!-- Copyright Container Superfreshdev  -->
                         <!-- ------------------------------------------------------------ -->
                         <div id="copyright-container-superfreshdev">
@@ -10959,7 +11067,6 @@
             </div>
 
         </div>
-
 
 
     </footer>

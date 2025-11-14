@@ -1,14 +1,14 @@
 /* ------------------------------------------------------------------------- */
-/* > book-listenings.css
-/* : styles book listenings default layout
+/* > meals.css
+/* : styles meals default layout
 /* ------------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------- */
-/* Book Listenings Container
+/* Meals Container
 /* ------------------------------------------------------------- */
 
-#book-listenings-container {
+#meals-container {
 
   margin-top: 1.5em;
   padding-top: 1.5em;

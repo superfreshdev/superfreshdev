@@ -15,84 +15,61 @@
 
 }
 
-
 /* ------------------------------------------------------------- */
 /* Header Nav Others | My Private
 /* ------------------------------------------------------------- */
 
-#header-nav-others-my-private {
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-
-
-}
-
-/* ------------------------------------------------------------- */
-/* Nav Others | My Private
-/* ------------------------------------------------------------- */
-
-#nav-others-my-private {
+#header-nav-others-container {
 
   display: grid;
+  align-items: center;
+
+  grid-template-areas:
+  'header-others selected-category-others'
+  'smooth-nav-others-category smooth-nav-others-category'
+  ;
+
+  grid-template-columns: 1fr 13em;
+  grid-template-rows: auto auto;
+
+}
+
+#header-nav-others-container > .header-content-block {
+
+  grid-area: header-others;
 
 }
 
 /* ------------------------------------------------------------- */
-/* Nav Others Category | My Private
+/* Label | Selected Category
 /* ------------------------------------------------------------- */
 
-#nav-others-category-my-private {
+label[for="chk-selected-category-others"] {
 
-  padding-top: .5em;
+  grid-area: selected-category-others;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Smooth Nav Others Category
+/* ------------------------------------------------------------- */
+
+#smooth-nav-others-category {
+
+  grid-area: smooth-nav-others-category;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Others Category ( Radio Items )
+/* ------------------------------------------------------------- */
+
+#nav-others-category {
+
+  padding-top: 1.5em;
 
   display: grid;
   row-gap: .5em;
 
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------- */
-
-#book-listenings-container-my-private {
-
-  /* default unshown */
-  display: none;
-
-}
-
-#meals-container-my-private {
-
-  /* default unshown */
-  display: none;
-
-}
-
-#languages-container-my-private{
-
-  /* default unshown */
-  display: none;
-
-}
-
-#mini-games-container-my-private{
-
-  /* default unshown */
-  display: none;
 
 }

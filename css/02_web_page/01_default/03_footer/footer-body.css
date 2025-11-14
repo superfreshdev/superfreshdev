@@ -16,13 +16,10 @@
     display: grid;
     justify-items: center;
 
-    /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply; */
+    border-top: 3px solid rgb(36, 36, 36);
 
     background-color: rgb(28, 28, 28);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-
-    border-top: 1px solid rgb(94, 94, 94);
 
 }
 
@@ -32,7 +29,7 @@
 
 #footer-body-content-container {
 
-    padding: 2.3em 0;
+    padding: 1.5em 0;
 
     display: flex;
     align-items: center;
@@ -52,8 +49,26 @@
 
     font-weight: bold;
 
-    opacity: .4;
+}
 
+/* ----------------------------------------------------- */
+/* Img Copyright | Copyright Superfreshdev
+/* ----------------------------------------------------- */
+
+#copyright-container-superfreshdev > img:nth-of-type(1) {
+
+    opacity: .4;
+}
+
+
+/* ----------------------------------------------------- */
+/* Div 1 | Copyright Superfreshdev
+/* ----------------------------------------------------- */
+
+#copyright-container-superfreshdev > div:nth-of-type(1) {
+
+    color:white;
+    opacity: .4;
 }
 
 /* ----------------------------------------------------- */
@@ -64,6 +79,7 @@
 #copyright-container-superfreshdev > div:nth-of-type(3) {
 
     color:wheat;
+    opacity: .8;
 }
 
 

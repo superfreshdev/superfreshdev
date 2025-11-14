@@ -1,21 +1,9 @@
 /* ------------------------------------------------------------------------- */
-/* > book-listenings.css
-/* : styles book listenings default layout
+/* > mini-gaming-card.css
+/* : styles mini gaming card
 /* ------------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------- */
-/* Book Listenings Container
+/* Mini Games Container
 /* ------------------------------------------------------------- */
-
-#book-listenings-container {
-
-  margin-top: 1.5em;
-  padding-top: 1.5em;
-
-  border-top: 3px solid rgb(237, 237, 237);
-
-  /* default unshown */
-  display: none;
-
-}
