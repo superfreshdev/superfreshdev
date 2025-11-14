@@ -11,12 +11,38 @@
 #mini-games-container {
 
   margin-top: 1.5em;
-  padding-top: 1.5em;
+
+  display: grid;
+  justify-items: center;
+
 
   border-top: 3px solid rgb(237, 237, 237);
 
   /* default unshown */
   display: none;
+
+}
+
+#mini-games-container > .status-line-under-construction {
+
+  width: 100%;
+
+  margin-top: 1.5em;
+  justify-self: flex-start;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Mini Games Content Container
+/* ------------------------------------------------------------- */
+
+#mini-games-content-container {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: .8em;
+
 
 }
 
@@ -26,7 +52,26 @@
 
 #info-mini-games {
 
-  margin-bottom: 1.5em;
+  width: 100%;
+
+  padding: 1.5em 0;
+  margin-bottom: .5em;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 3px solid rgb(237, 237, 237);
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* Div | Info Mini Games
+/* ------------------------------------------------------------- */
+
+#info-mini-games > div {
+
+  width: 100%;
 
 }
 
@@ -41,12 +86,11 @@
 
 }
 
-
 /* ------------------------------------------------------------- */
-/* Span | Info Mini Games
+/* Div Span | Info Mini Games
 /* ------------------------------------------------------------- */
 
-#info-mini-games > span {
+#info-mini-games > div span {
 
   font-size: 14.5px;
   color:grey;
@@ -60,124 +104,84 @@
 
 .gaming-category-container {
 
-  display: grid;
-  justify-items: center;
-  row-gap: 1.5em;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Header | Gaming Category Container
-/* ------------------------------------------------------------- */
-
-.gaming-category-container > header {
 
   width: 100%;
-  padding: 1em .8em;
-
-  display: flex;
-  align-items: center;
-
-  background-color: grey;
-
-}
-
-
-/* ------------------------------------------------------------- */
-/* Main | Gaming Category Container
-/* ------------------------------------------------------------- */
-
-.gaming-category-container > main {
 
   display: grid;
   justify-items: center;
-
-  column-gap: 1em;
-  row-gap: 1em;
+  /* justify-content: center; */
 
 }
 
-
-/* 🟣 Auslagern */
 /* ------------------------------------------------------------- */
-/* Mini Game Info Card
+/* Label Open Game Container | Gaming Category Container
 /* ------------------------------------------------------------- */
 
-.mini-game-info-card {
+.lbl-open-game-container {
 
   width: 100%;
-
-  display: grid;
-
-  border-radius: 1em;
-  border: 3px solid rgb(236, 236, 236);
-
-}
-
-/* ------------------------------------------------------------- */
-/* Img | Mini Game Info Card
-/* ------------------------------------------------------------- */
-
-.mini-game-info-card > img:nth-of-type(1) {
-
-  width: 100%;
-  border-radius: 1em 1em 0 0;
-
-  border-bottom: 3px solid rgb(236, 236, 236);
-
-}
-
-/* ------------------------------------------------------------- */
-/* Header | Mini Game Info Card
-/* ------------------------------------------------------------- */
-
-.mini-game-info-card > header {
-
-  padding: 1em .8em;
-
-  font-weight: bold;
-  /* font-size: 18px; */
-
-}
-
-/* ------------------------------------------------------------- */
-/* Footer | Mini Game Info Card
-/* ------------------------------------------------------------- */
-
-.mini-game-info-card > footer {
-
   height: 3.5em;
-  padding: 0em .8em;
+  padding: 0em 1em;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  border-radius: 0 0 .8em .8em;
+  font-weight: bold;
 
-  background-color: rgb(211, 211, 211);
+  border-radius: .6em;
+
+  background-color: rgb(231, 231, 231);
+
+  transition: all .4s;
+
+}
+
+/* hover */
+.lbl-open-game-container:hover {
+
+  background-color: wheat;
+}
+
+/* div 1 */
+.lbl-open-game-container > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .8em;
+
+}
+
+/* div 1 | span */
+.lbl-open-game-container > div:nth-of-type(1) span {
+
+ font-size: 14.5px;
+
+}
+
+/* default unshown img minus */
+.lbl-open-game-container > img:nth-of-type(2) {
+
+  display: none;
 
 }
 
 /* ------------------------------------------------------------- */
-/* GitHub Sourcecode Box | Footer
+/* Gaming Card Container
 /* ------------------------------------------------------------- */
 
-.github-sourcecode-box {
+.gaming-card-container {
+
+  /* width: 100%; */
+  padding: 2.5em 0 1.5em 0;
 
   display: grid;
   justify-items: center;
-  row-gap: 0em;
+  justify-content: center;
 
-}
+  align-items: flex-start;
 
-/* ------------------------------------------------------------- */
-/* Div 1 (Sourcecode) | GitHub Sourcecode Box
-/* ------------------------------------------------------------- */
-
-.github-sourcecode-box > div:nth-of-type(1) {
-
-  font-size: 14.5px;
-  color:grey;
+  column-gap: 1em;
+  row-gap: 1em;
 
 }

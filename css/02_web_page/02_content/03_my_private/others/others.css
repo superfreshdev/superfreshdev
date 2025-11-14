@@ -25,11 +25,11 @@
   align-items: center;
 
   grid-template-areas:
-  'header-others selected-category-others'
+  'selected-category-others selected-category-others'
   'smooth-nav-others-category smooth-nav-others-category'
   ;
 
-  grid-template-columns: 1fr 13em;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto;
 
 }

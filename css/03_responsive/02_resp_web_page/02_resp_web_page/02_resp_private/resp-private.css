@@ -99,7 +99,8 @@
   /* Main | Gaming Category Container
   /* ------------------------------------------------------------- */
 
-  .mini-game-info-card {
+  .mini-game-info-card,
+  .mini-game-info-card-coming-soon {
 
     width: 15em;
 
@@ -222,6 +223,29 @@
 @media ( min-width: 500px ) {
 
 
+  /* ------------------------------------------------------------- */
+  /* Mini Games | Mini Game Info Card
+  /* ------------------------------------------------------------- */
+
+  .mini-game-info-card,
+  .mini-game-info-card-coming-soon {
+
+    width: 100%;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* Mini Games | Gaming Card Container
+  /* ------------------------------------------------------------- */
+
+  .gaming-card-container {
+
+    grid: auto / auto auto;
+
+
+  }
+
+
   /* -------------------------------------------------------------- */
   /* Sport | Sport Newest Video Container
   /* -------------------------------------------------------------- */
@@ -299,12 +323,12 @@
 
 
 /* ----------------------------------------------------- */
-/* Mini Games | Gaming Category Container | Main  */
+/* Mini Games | Gaming Card Container
 /* ----------------------------------------------------- */
-.gaming-category-container > main {
+.gaming-card-container {
 
   display: grid;
-  grid: auto / 1fr 1fr;
+  grid: auto / auto auto;
 
 }
 
@@ -352,6 +376,18 @@
 
 
 
+
+  /* ------------------------------------------------------------- */
+  /* Mini Games | Mini Game Info Card
+  /* ------------------------------------------------------------- */
+
+  .mini-game-info-card,
+  .mini-game-info-card-coming-soon {
+
+    width: 14.5em;
+
+  }
+
   /* -------------------------------------------------------------- */
   /* Sport | Video Link Box Medium */
   /* -------------------------------------------------------------- */
@@ -384,6 +420,44 @@
   }
 
 
+
+}
+
+/* ----------------------------------------------------- */
+/* 🟥 680px */
+/* ----------------------------------------------------- */
+
+@media ( min-width: 680px ) {
+
+
+  /* ------------------------------------------------------------- */
+  /* Others | Header Nav Others
+  /* ------------------------------------------------------------- */
+
+  #header-nav-others-container {
+
+    display: grid;
+    align-items: center;
+
+    grid-template-areas:
+    'header-others selected-category-others'
+    'smooth-nav-others-category smooth-nav-others-category'
+    ;
+
+    grid-template-columns: 1fr 13em;
+    grid-template-rows: auto auto;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* Others | Header Nav Others
+  /* ------------------------------------------------------------- */
+
+  #header-nav-others-container > .header-content-block {
+
+    display: flex;
+
+  }
 
 }
 
@@ -465,14 +539,36 @@
 
 @media ( min-width: 800px ) {
 
+
   /* ----------------------------------------------------- */
-  /* Mini Games | Gaming Category Container | Main  */
+  /* Mini Games | Info Mini Games */
   /* ----------------------------------------------------- */
 
-  .gaming-category-container > main {
+  #info-mini-games {
+
+    justify-content: center;
+
+  }
+
+
+  /* ----------------------------------------------------- */
+  /* Mini Games | Info Mini Games | Div  */
+  /* ----------------------------------------------------- */
+
+  #info-mini-games > div{
+
+    width: 40em;
+
+  }
+
+  /* ----------------------------------------------------- */
+  /* Mini Games | Gaming Card Container  */
+  /* ----------------------------------------------------- */
+
+  .gaming-card-container {
 
     display: grid;
-    grid: auto / 1fr 1fr 1fr;
+    grid: auto / auto auto auto;
 
   }
 

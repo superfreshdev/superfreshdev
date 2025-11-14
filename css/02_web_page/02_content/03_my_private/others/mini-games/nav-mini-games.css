@@ -1,0 +1,52 @@
+/* ------------------------------------------------------------------------- */
+/* > nav-mini-games.css
+/* : styles nav mini games
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Checkbox | ( Board Games, Learning Games, Adventure Games )
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-chk-mini-games"] {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-board-games:checked + label,
+#chk-learning-games:checked + label,
+#chk-adventure-games:checked + label {
+
+  background-color: wheat;
+
+}
+
+/* unshown img | + */
+#chk-board-games:checked + label > img:nth-of-type(1),
+#chk-learning-games:checked + label > img:nth-of-type(1),
+#chk-adventure-games:checked + label > img:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* shown img | - */
+#chk-board-games:checked + label > img:nth-of-type(2),
+#chk-learning-games:checked + label > img:nth-of-type(2),
+#chk-adventure-games:checked + label > img:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+/* show content */
+#chk-board-games:checked ~ #smooth-board-games-container,
+#chk-learning-games:checked ~ #smooth-learning-games-container,
+#chk-adventure-games:checked ~ #smooth-adventure-games-container {
+
+  grid-template-rows: 1fr;
+
+}

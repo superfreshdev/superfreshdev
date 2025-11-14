@@ -5,5 +5,141 @@
 
 
 /* ------------------------------------------------------------- */
-/* Mini Games Container
+/* Mini Game Info Card
 /* ------------------------------------------------------------- */
+
+.mini-game-info-card,
+.mini-game-info-card-coming-soon  {
+
+  width: 100%;
+
+  position: relative;
+
+  display: grid;
+
+  border-radius: 1em;
+  border: 3px solid rgb(236, 236, 236);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | Mini Game Info Card
+/* ------------------------------------------------------------- */
+
+.mini-game-info-card > img:nth-of-type(1) {
+
+  width: 100%;
+  border-radius: 1em 1em 0 0;
+
+  border-bottom: 3px solid rgb(236, 236, 236);
+
+}
+
+.mini-game-info-card-coming-soon > img:nth-of-type(1) {
+
+  width: 100%;
+  border-radius: 1em 1em 0 0;
+
+  border-bottom: 3px solid rgb(236, 236, 236);
+
+  opacity: .4;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | Mini Game Info Card
+/* ------------------------------------------------------------- */
+
+.mini-game-info-card > header,
+.mini-game-info-card-coming-soon > header {
+
+  padding: 1em .8em;
+
+  font-weight: bold;
+  /* font-size: 18px; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Footer | Mini Game Info Card
+/* ------------------------------------------------------------- */
+
+.mini-game-info-card > footer,
+.mini-game-info-card-coming-soon > footer {
+
+  height: 3em;
+  padding: 0em .5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0 0 .8em .8em;
+
+  background-color: rgb(211, 211, 211);
+
+}
+
+/* ------------------------------------------------------------- */
+/* GitHub Sourcecode Box | Footer
+/* ------------------------------------------------------------- */
+
+.github-sourcecode-box {
+
+  display: grid;
+  justify-items: center;
+  row-gap: 0em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Div 1 (Sourcecode) | GitHub Sourcecode Box
+/* ------------------------------------------------------------- */
+
+.github-sourcecode-box > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+  color:grey;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Status Coming Soong | Mini Game Card
+/* ------------------------------------------------------------- */
+
+.status-coming-soon-mini-game-card {
+
+  z-index: 3;
+
+  width: 100%;
+  height: 4.5em;
+
+  padding-left: 1em;
+
+  position: absolute;
+  top:0em;
+
+  display: flex;
+  align-items: center;
+
+  column-gap: .8em;
+
+  font-weight: bold;
+
+  border-radius: .8em .8em 0 0;
+
+  background-color: rgb(251, 206, 24);
+
+  background-color: rgb(255, 250, 161);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | Status Coming Soong | Mini Game Card
+/* ------------------------------------------------------------- */
+
+.status-coming-soon-mini-game-card > img {
+
+  height: 2.6em;
+
+}

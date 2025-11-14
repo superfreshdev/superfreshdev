@@ -26,7 +26,7 @@
   font-weight: bold;
 
   background-color: #eeeeee;
-  color:black;
+  color:rgb(103, 103, 103);
 
   user-select: none;
   cursor: pointer;
@@ -51,7 +51,11 @@
 /* Div 1 | Link Action | Grey
 /* -------------------------------------------------------------- */
 
-.link-action-grey-very-small > div:nth-of-type(1),
+.link-action-grey-very-small > div:nth-of-type(1) {
+
+  font-size: 12.5px;
+}
+
 .link-action-grey-small > div:nth-of-type(1),
 .link-action-grey-medium > div:nth-of-type(1),
 .link-action-grey-big > div:nth-of-type(1) {
