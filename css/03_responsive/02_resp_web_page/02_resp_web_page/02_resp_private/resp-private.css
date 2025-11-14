@@ -95,15 +95,15 @@
 @media ( min-width: 400px ) {
 
 
-  /* -------------------------------------------------------------- */
-  /* Sport | Video Link Box Large
-  /* -------------------------------------------------------------- */
+  /* ------------------------------------------------------------- */
+  /* Main | Gaming Category Container
+  /* ------------------------------------------------------------- */
 
-  /* .sport-video-link-box-large {
+  .mini-game-info-card {
 
-    width: 10em;
+    width: 15em;
 
-  } */
+  }
 
   /* ---------------------------------------------------------------- */
   /* Sport | New Sport Container | Label */
@@ -171,14 +171,6 @@
 
 @media ( min-width: 480px ) {
 
-  /* ---------------------------------------------------------------- */
-  /* Sport | Header Content Img
-  /* ---------------------------------------------------------------- */
-  #header-nav-sport-container > .header-content-block > img {
-
-    /* display: flex; */
-
-  }
 
 
 
@@ -304,6 +296,17 @@
 /* ----------------------------------------------------- */
 
 @media ( min-width: 560px ) {
+
+
+/* ----------------------------------------------------- */
+/* Mini Games | Gaming Category Container | Main  */
+/* ----------------------------------------------------- */
+.gaming-category-container > main {
+
+  display: grid;
+  grid: auto / 1fr 1fr;
+
+}
 
   /* ----------------------------------------------------- */
   /* Sport | Header Content Block */
@@ -461,6 +464,17 @@
 /* ----------------------------------------------------- */
 
 @media ( min-width: 800px ) {
+
+  /* ----------------------------------------------------- */
+  /* Mini Games | Gaming Category Container | Main  */
+  /* ----------------------------------------------------- */
+
+  .gaming-category-container > main {
+
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
+
+  }
 
 
   .sport-video-link-box-large {

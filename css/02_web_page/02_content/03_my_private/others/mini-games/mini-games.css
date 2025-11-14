@@ -36,7 +36,8 @@
 
 #info-mini-games > img {
 
-  margin-right: 10px;
+  margin-right: 6px;
+  margin-left: 3px;
 
 }
 
@@ -60,6 +61,7 @@
 .gaming-category-container {
 
   display: grid;
+  justify-items: center;
   row-gap: 1.5em;
 
 }
@@ -70,8 +72,13 @@
 
 .gaming-category-container > header {
 
+  width: 100%;
+  padding: 1em .8em;
+
   display: flex;
   align-items: center;
+
+  background-color: grey;
 
 }
 
@@ -83,7 +90,10 @@
 .gaming-category-container > main {
 
   display: grid;
-  grid: auto / 1fr 1fr 1fr;
+  justify-items: center;
+
+  column-gap: 1em;
+  row-gap: 1em;
 
 }
 
@@ -99,6 +109,9 @@
 
   display: grid;
 
+  border-radius: 1em;
+  border: 3px solid rgb(236, 236, 236);
+
 }
 
 /* ------------------------------------------------------------- */
@@ -107,6 +120,10 @@
 
 .mini-game-info-card > img:nth-of-type(1) {
 
+  width: 100%;
+  border-radius: 1em 1em 0 0;
+
+  border-bottom: 3px solid rgb(236, 236, 236);
 
 }
 
@@ -116,8 +133,10 @@
 
 .mini-game-info-card > header {
 
+  padding: 1em .8em;
+
   font-weight: bold;
-  font-size: 18px;
+  /* font-size: 18px; */
 
 }
 
@@ -127,8 +146,38 @@
 
 .mini-game-info-card > footer {
 
+  height: 3.5em;
+  padding: 0em .8em;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  border-radius: 0 0 .8em .8em;
+
+  background-color: rgb(211, 211, 211);
+
+}
+
+/* ------------------------------------------------------------- */
+/* GitHub Sourcecode Box | Footer
+/* ------------------------------------------------------------- */
+
+.github-sourcecode-box {
+
+  display: grid;
+  justify-items: center;
+  row-gap: 0em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Div 1 (Sourcecode) | GitHub Sourcecode Box
+/* ------------------------------------------------------------- */
+
+.github-sourcecode-box > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+  color:grey;
 
 }
