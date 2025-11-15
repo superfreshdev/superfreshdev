@@ -1,16 +1,16 @@
 /* -------------------------------------------------------------- */
-/* > action-radio.css
+/* > radio-element.css
 /* : styles action radio element
 /* -------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------- */
-/* Action Radio
+/* Radio Element ( Small, Medium, Big )
 /* -------------------------------------------------------------- */
 
-.action-radio-small,
-.action-radio-medium,
-.action-radio-big {
+.radio-element-small,
+.radio-element-medium,
+.radio-element-big {
 
   padding: 0 .6em;
 
@@ -23,7 +23,8 @@
 
   font-weight: bold;
 
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(231, 231, 231);
+
 
   user-select: none;
   cursor: pointer;
@@ -32,24 +33,24 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Hover | Action Radio
+/* Hover | Radio Element
 /* -------------------------------------------------------------- */
 
-.action-radio-small:hover,
-.action-radio-medium:hover,
-.action-radio-big:hover {
+.radio-element-small:hover,
+.radio-element-medium:hover,
+.radio-element-big:hover {
 
   background-color: wheat;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Div 1 |  Action Radio
+/* Div 1 | Radio Element
 /* -------------------------------------------------------------- */
 
-.action-radio-small > div:nth-of-type(1),
-.action-radio-medium > div:nth-of-type(1),
-.action-radio-big > div:nth-of-type(1) {
+.radio-element-small > div:nth-of-type(1),
+.radio-element-medium > div:nth-of-type(1),
+.radio-element-big > div:nth-of-type(1) {
 
   display: flex;
   align-items: center;
@@ -58,11 +59,11 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Div 1 | Div | Action Radio
+/* Div 1 | Div | Radio Element
 /* -------------------------------------------------------------- */
 
-.action-radio-medium > div:nth-of-type(1) > div,
-.action-radio-big > div:nth-of-type(1) > div {
+.radio-element-medium > div:nth-of-type(1) > div,
+.radio-element-big > div:nth-of-type(1) > div {
 
   /* 14.5px = 14,5 / 16px (1em) = .90625em */
   font-size: .90625em;
@@ -70,35 +71,35 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Small | Action Radio
+/* Small | Radio Element
 /* -------------------------------------------------------------- */
 
-.action-radio-small {
+.radio-element-small {
 
   height: 2.1em;
 
 }
 
-.action-radio-small > div:nth-of-type(1) > div {
+.radio-element-small > div:nth-of-type(1) > div {
 
   font-size: 13px;
 }
 
 /* -------------------------------------------------------------- */
-/* Medium | Action Radio
+/* Medium | Radio Element
 /* -------------------------------------------------------------- */
 
-.action-radio-medium {
+.radio-element-medium {
 
   height: 2.3em;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Big | Action Radio
+/* Big | Radio Elements
 /* -------------------------------------------------------------- */
 
-.action-radio-big {
+.radio-element-big {
 
   height: 2.8em;
 

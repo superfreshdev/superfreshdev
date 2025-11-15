@@ -5,6 +5,43 @@
 
 
 /* ------------------------------------------------------------- */
+/* Checkbox | Selected Category Content Languages
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+#chk-selected-category-content-languages {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-selected-category-content-languages:checked + label {
+
+  background-color: wheat;
+
+}
+
+/* change rotation img arrow */
+#chk-selected-category-content-languages:checked + label > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* set content */
+#chk-selected-category-content-languages:checked ~ #smooth-nav-category-content-languages {
+
+  grid-template-rows: 1fr;
+
+}
+
+/* ------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
 /* Radios | First Category ( unset, voc, songs, dictation )
 /* ------------------------------------------------------------- */
 

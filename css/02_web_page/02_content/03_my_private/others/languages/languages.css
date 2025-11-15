@@ -10,15 +10,77 @@
 
 #languages-container {
 
+  width: 100%;
   margin-top: 1.5em;
-  padding-top: 1.5em;
 
-  border-top: 3px solid rgb(237, 237, 237);
+  display: grid;
+
+  background-color: yellowgreen;
 
   /* default unshown */
   display: none;
 
 }
+
+/* ------------------------------------------------------------- */
+/* Nav Languages Container
+/* ------------------------------------------------------------- */
+
+#nav-languages-container {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: .5em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* [1/2] | Nav Category Languages Container
+/* ------------------------------------------------------------- */
+
+#nav-category-languages-container {
+
+  background-color: rgb(190, 190, 230);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Category Content Languages
+/* ------------------------------------------------------------- */
+
+#nav-category-content-languages {
+
+  margin-top: .5em;
+
+  display: grid;
+  row-gap: .5em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* [2/2] | Nav Flags
+/* ------------------------------------------------------------- */
+
+#nav-flags-languages-container {
+
+  background-color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------- */
+
 
 /* ------------------------------------------------------------- */
 /* Languages Content Container
@@ -35,6 +97,14 @@
   display: none;
 
 }
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------- */
 /* Nav Language Container
@@ -96,7 +166,7 @@
 
 #dictation-language-container {
 
-   padding-top: 1.5em;
+  padding-top: 1.5em;
 
   display: none;
 

@@ -82,7 +82,7 @@
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/selection-item/selection-item.css">
 
                 <!-- ------------------------------------- -->
-                <!-- 🟥 Action Elements -->
+                <!-- 🟥 Elements -->
                 <!-- ------------------------------------- -->
 
                 <!-- Drop Down Elements -->
@@ -90,7 +90,9 @@
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-grey.css">
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-2-lines-grey.css">
 
-                <!-- Radio Selection -->
+                <!-- Radio Elements -->
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/radio-element.css">
+
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/radio-selection/radio-selection-light-grey.css">
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/radio-selection/radio-selection-grey.css">
 
@@ -10727,10 +10729,239 @@
                                             <!-- --------------------------------------------------------------------- -->
                                             <div id="languages-container">
 
+                                                <!-- ⚠️ Architecutre -->
+                                                <!--
+
+                                                    1. nav-language-container
+
+                                                        nav-category-language-container
+                                                        nav-flags-language-container
+
+                                                    2. languages-content-container
+
+                                                        2.1 vocubulary-language-container
+                                                        2.2 songs-language-container
+                                                        2.3 dictation-language-container
+
+
+                                                -->
+
                                                 <!-- ------------------------------------------------------- -->
-                                                <!-- Language Content Container -->
+                                                <!-- ➡️🟥 [1/2] | Languages Content Container -->
+                                                <!-- ------------------------------------------------------- -->
+                                                <div id="nav-languages-container">
+
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <!-- ➡️🟥 [1/2] | Nav Category Languages Container -->
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <nav id="nav-category-languages-container">
+
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- 🟩 Label | Selected Category Content Languages -->
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <input type="checkbox" id="chk-selected-category-content-languages">
+                                                        <label for="chk-selected-category-content-languages" class="drop-down-grey-medium">
+
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Title Block -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <div>
+                                                                <!-- <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-0-9" alt="img"> -->
+                                                                <div>
+                                                                    <span id="js-js"> Choose ... </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Img Arrow (open/close) -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
+                                                                class="img-h-0-5" alt="img">
+
+
+                                                        </label>
+
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- ➡️🟥 Smooth | Nav Category Content Languages -->
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <div id="smooth-nav-category-content-languages" class="smooth-open-close-container" style="grid-template-rows: 1fr;">
+
+                                                            <!-- ------------------------------------------------------ -->
+                                                            <!-- Overview Hidden -->
+                                                            <!-- ------------------------------------------------------ -->
+                                                            <div class="overflow-hidden">
+
+                                                                <!-- ------------------------------------------------------ -->
+                                                                <!-- ➡️🟥 Nav Category Content Languages -->
+                                                                <!-- ------------------------------------------------------ -->
+                                                                <nav id="nav-category-content-languages">
+
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- ➡️🟥 Label | Choose -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+                                                                            <!-- <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-0-9" alt="img"> -->
+                                                                            <div id="js-js"> Choose ... </div>
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+                                                                    </label>
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 🟥 Label | Vocubulary -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+
+                                                                            <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-a.png" class="img-h-0-8" alt="img">
+                                                                            <div id="js-js"> Vocubulary </div>
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+
+                                                                    </label>
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 🟥 Label | Songs -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+
+                                                                            <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-music-note.png" class="img-h-0-8" alt="img">
+                                                                            <div id="js-js"> Songs </div>
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+                                                                    </label>
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 🟥Label | Dictation -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+
+                                                                            <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-doc-plan-2.png" class="img-h-0-8" alt="img">
+                                                                            <div id="js-js"> Dictation </div>
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+
+                                                                    </label>
+
+
+                                                                </nav>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </nav>
+
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <!-- 🟥 [2/2] | Nav Flags Languages Container -->
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <nav id="nav-flags-languages-container">
+
+                                                        Nav Flags
+
+                                                    </nav>
+
+                                                </div>
+
+                                                <!-- ------------------------------------------------------- -->
+                                                <!-- 🟥 [2/2] | Language Content Container -->
                                                 <!-- ------------------------------------------------------- -->
                                                 <div id="language-content-container">
+
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <!-- [1/3] | Vocubulary Language Container -->
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <div id="vocubulary-language-container">
+
+                                                        Vocubulary Language Container
+
+                                                    </div>
+
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <!-- [2/3] | Songs Language Container -->
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <div id="songs-language-container">
+
+                                                       Songs Language Container
+
+                                                    </div>
+
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <!-- [3/3] | Dictation Language Container -->
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <div id="dictation-language-container">
+
+                                                        Dictation Language Container
+
+                                                    </div>
+
+                                                </div>
+
+
+
+
+
+                                                <!-- ------------------------------------------------------- -->
+                                                <!--❌❌❌ Trash  -->
+                                                <!-- ------------------------------------------------------- -->
+
+                                                <div id="language-content-container" style="display: none;">
 
                                                     <!-- Radios Category -->
                                                     <input type="radio" id="radio-language-category-unset" name="name-radio-language-category">
