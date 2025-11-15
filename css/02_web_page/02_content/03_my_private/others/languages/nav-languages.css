@@ -1,0 +1,92 @@
+/* ------------------------------------------------------------------------- */
+/* > nav-languages.css
+/* : styles nav languages
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Radios | First Category ( unset, voc, songs, dictation )
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-language-category"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-language-category-unset:checked ~ #nav-language-container #nav-language-category-container label[for="radio-language-category-unset"],
+#radio-language-category-vocubulary:checked ~ #nav-language-container #nav-language-category-container label[for="radio-language-category-vocubulary"],
+#radio-language-category-songs:checked ~ #nav-language-container #nav-language-category-container label[for="radio-language-category-songs"],
+#radio-language-category-dictation:checked ~ #nav-language-container #nav-language-category-container label[for="radio-language-category-dictation"] {
+
+  background-color: wheat;
+  opacity: 1;
+
+}
+
+/* set x */
+#radio-language-category-unset:checked ~ #nav-language-container #nav-language-category-container label[for="radio-language-category-unset"] > .custom-radio-small > img,
+#radio-language-category-vocubulary:checked ~ #nav-language-container #nav-language-category-container label[for="radio-language-category-vocubulary"] > .custom-radio-small > img,
+#radio-language-category-songs:checked ~ #nav-language-container #nav-language-category-container label[for="radio-language-category-songs"] > .custom-radio-small > img,
+#radio-language-category-dictation:checked ~ #nav-language-container #nav-language-category-container label[for="radio-language-category-dictation"] > .custom-radio-small > img {
+
+  display: flex;
+
+}
+
+/* set nav language countries container */
+#radio-language-category-vocubulary:checked ~ #nav-language-container #smooth-nav-langauge-countries-container,
+#radio-language-category-songs:checked ~ #nav-language-container #smooth-nav-langauge-countries-container,
+#radio-language-category-dictation:checked ~ #nav-language-container #smooth-nav-langauge-countries-container {
+
+  grid-template-rows: 1fr;
+
+}
+
+/* set content */
+#radio-language-category-vocubulary:checked ~ #vocubulary-language-container,
+#radio-language-category-songs:checked ~ #songs-language-container,
+#radio-language-category-dictation:checked ~ #dictation-language-container {
+
+  display: grid;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Radios | Second Category ( english, spanish, ...  )
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-language-countries"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-language-english:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-english"],
+#radio-language-spanish:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-spanish"],
+#radio-language-france:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-france"],
+#radio-language-italian:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-italian"],
+#radio-language-polish:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-polish"],
+#radio-language-turkish:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-turkish"] {
+
+  background-color: wheat;
+  opacity: 1;
+
+}
+
+/* set x */
+#radio-language-english:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-english"] .custom-radio-small > img,
+#radio-language-spanish:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-spanish"] .custom-radio-small > img,
+#radio-language-france:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-france"] .custom-radio-small > img,
+#radio-language-italian:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-italian"] .custom-radio-small > img,
+#radio-language-polish:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-polish"] .custom-radio-small > img,
+#radio-language-turkish:checked ~ #nav-language-container #smooth-nav-langauge-countries-container label[for="radio-language-turkish"] .custom-radio-small > img {
+
+  display: flex;
+
+}

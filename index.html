@@ -405,6 +405,7 @@
 
                     <!-- languages -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/languages/languages.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/languages/nav-languages.css">
 
                     <!-- mini-games -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/mini-games/mini-games.css">
@@ -10523,8 +10524,8 @@
 
                                             <input type="radio" id="radio-others-book-listenings" name="name-radio-category-others">
                                             <input type="radio" id="radio-others-meals" name="name-radio-category-others">
-                                            <input type="radio" id="radio-others-languages" name="name-radio-category-others">
-                                            <input checked type="radio" id="radio-others-mini-games" name="name-radio-category-others">
+                                            <input checked type="radio" id="radio-others-languages" name="name-radio-category-others">
+                                            <input type="radio" id="radio-others-mini-games" name="name-radio-category-others">
 
                                             <!-- --------------------------------------------------------------------- -->
                                             <!-- 🟨🟥 Header Nav Others Container -->
@@ -10722,14 +10723,321 @@
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- 🟥 Languages Container | My Private -->
+                                            <!-- ➡️🟥 Languages Container | My Private -->
                                             <!-- --------------------------------------------------------------------- -->
                                             <div id="languages-container">
-                                                Languages
+
+                                                <!-- ------------------------------------------------------- -->
+                                                <!-- Language Content Container -->
+                                                <!-- ------------------------------------------------------- -->
+                                                <div id="language-content-container">
+
+                                                    <!-- Radios Category -->
+                                                    <input type="radio" id="radio-language-category-unset" name="name-radio-language-category">
+                                                    <input type="radio" id="radio-language-category-vocubulary" name="name-radio-language-category">
+                                                    <input type="radio" id="radio-language-category-songs" name="name-radio-language-category">
+                                                    <input type="radio" id="radio-language-category-dictation" name="name-radio-language-category">
+
+                                                    <!-- Radios Countries -->
+                                                    <input type="radio" id="radio-language-english" name="name-radio-language-countries">
+                                                    <input type="radio" id="radio-language-spanish" name="name-radio-language-countries">
+                                                    <input type="radio" id="radio-language-france" name="name-radio-language-countries">
+                                                    <input type="radio" id="radio-language-italian" name="name-radio-language-countries">
+                                                    <input type="radio" id="radio-language-polish" name="name-radio-language-countries">
+                                                    <input type="radio" id="radio-language-turkish" name="name-radio-language-countries">
+
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <!-- Nav Language Container -->
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <div id="nav-language-container">
+
+
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <!-- [1/2] | Nav Language Category Container -->
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <nav id="nav-language-category-container" class="nav-content-panel-small">
+
+                                                            <!-- -------------------------------------------------- -->
+                                                            <!-- Label | Unset -->
+                                                            <!-- -------------------------------------------------- -->
+                                                            <label for="radio-language-category-unset">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-x.png" class="img-h-0-7" alt="img">
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                            <!-- -------------------------------------------------- -->
+                                                            <!-- Label | Vocubulary -->
+                                                            <!-- -------------------------------------------------- -->
+                                                            <label for="radio-language-category-vocubulary">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-a.png" class="img-h-0-8" alt="img">
+                                                                    <div>Vocubulary</div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                            <!-- -------------------------------------------------- -->
+                                                            <!-- Label | Songs -->
+                                                            <!-- -------------------------------------------------- -->
+                                                            <label for="radio-language-category-songs">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-music-note.png" class="img-h-0-8" alt="img">
+                                                                    <div>Songs</div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                            <!-- -------------------------------------------------- -->
+                                                            <!-- Label | Dictation  -->
+                                                            <!-- -------------------------------------------------- -->
+                                                            <label for="radio-language-category-dictation">
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Title -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div>
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-doc-plan-2.png" class="img-h-0-8" alt="img">
+                                                                    <div>Dictation</div>
+                                                                </div>
+
+                                                                <!-- -------------------------------------------- -->
+                                                                <!-- Custom Radio -->
+                                                                <!-- -------------------------------------------- -->
+                                                                <div class="custom-radio-small">
+                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                </div>
+
+                                                            </label>
+
+                                                        </nav>
+
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <!-- [2/2] | Smooth | Nav Language Countries Container -->
+                                                        <!-- ------------------------------------------------------- -->
+                                                        <div id="smooth-nav-langauge-countries-container" class="smooth-open-close-container" >
+
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <!-- Overflow Hidden -->
+                                                            <!-- ------------------------------------------------------------------ -->
+                                                            <div class="overflow-hidden">
+
+
+                                                                <!-- ------------------------------------------------------------------ -->
+                                                                <!-- Nav Language Counties Container -->
+                                                                <!-- ------------------------------------------------------------------ -->
+                                                                <nav id="nav-language-countries-container">
+
+
+                                                                    <div class="nav-content-panel-small">
+
+
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <!-- Label | English -->
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <label for="radio-language-english">
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Title -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div>
+                                                                                <img src="media/img/icons/03-emojies/07-flags/gb-flag.png" class="img-h-0-8" alt="img">
+                                                                                <div>EN</div>
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Custom Radio -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div class="custom-radio-small">
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                            </div>
+
+                                                                        </label>
+
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <!-- Label | Spain -->
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <label for="radio-language-spanish">
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Title -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div>
+                                                                                <img src="media/img/icons/03-emojies/07-flags/spain-flag.png" class="img-h-0-8" alt="img">
+                                                                                <div>ESP</div>
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Custom Radio -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div class="custom-radio-small">
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                            </div>
+
+                                                                        </label>
+
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <!-- Label | France  -->
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <label for="radio-language-france">
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Title -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div>
+                                                                                <img src="media/img/icons/03-emojies/07-flags/france-flag.png" class="img-h-0-8" alt="img">
+                                                                                <div>FR</div>
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Custom Radio -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div class="custom-radio-small">
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                            </div>
+
+                                                                        </label>
+
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <!-- Label | Italian  -->
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <label for="radio-language-italian">
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Title -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div>
+                                                                                <img src="media/img/icons/03-emojies/07-flags/italian-flag.png" class="img-h-0-8" alt="img">
+                                                                                <div>IT</div>
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Custom Radio -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div class="custom-radio-small">
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                            </div>
+
+                                                                        </label>
+
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <!-- Label | Polish  -->
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <label for="radio-language-polish">
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Title -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div>
+                                                                                <img src="media/img/icons/03-emojies/07-flags/polska-flag.png" class="img-h-0-8" alt="img">
+                                                                                <div>PL</div>
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Custom Radio -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div class="custom-radio-small">
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                            </div>
+
+                                                                        </label>
+
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <!-- Label | Turkish  -->
+                                                                        <!-- -------------------------------------------------- -->
+                                                                        <label for="radio-language-turkish">
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Title -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div>
+                                                                                <img src="media/img/icons/03-emojies/07-flags/turkey-flag.png" class="img-h-0-8" alt="img">
+                                                                                <div>TR</div>
+                                                                            </div>
+
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <!-- Custom Radio -->
+                                                                            <!-- -------------------------------------------- -->
+                                                                            <div class="custom-radio-small">
+                                                                                <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                            </div>
+
+                                                                        </label>
+
+                                                                    </div>
+
+                                                                </nav>
+
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <!-- Vocubulary Language Container -->
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <div id="vocubulary-language-container">
+                                                        Vocubulary Language Container
+                                                    </div>
+
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <!-- Songs Language Container -->
+                                                    <!-- ------------------------------------------------------- -->
+                                                     <div id="songs-language-container">
+                                                        Songs Language Container
+                                                    </div>
+
+                                                    <!-- ------------------------------------------------------- -->
+                                                    <!-- Dictation Language Container -->
+                                                    <!-- ------------------------------------------------------- -->
+                                                     <div id="dictation-language-container">
+                                                        Dictation Language Container
+                                                    </div>
+
+
+                                                </div>
+
+
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- ➡️🟥 Mini Games Container | My Private -->
+                                            <!-- 🟩🟨 Mini Games Container | My Private -->
                                             <!-- --------------------------------------------------------------------- -->
                                             <div id="mini-games-container">
 

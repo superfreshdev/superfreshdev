@@ -96,13 +96,13 @@
 
 
   /* ------------------------------------------------------------- */
-  /* Main | Gaming Category Container
+  /* Mini Games | Gaming Card Container
   /* ------------------------------------------------------------- */
 
-  .mini-game-info-card,
-  .mini-game-info-card-coming-soon {
+  .gaming-card-container {
 
-    width: 15em;
+    grid: auto / auto auto;
+
 
   }
 
@@ -233,18 +233,6 @@
     width: 100%;
 
   }
-
-  /* ------------------------------------------------------------- */
-  /* Mini Games | Gaming Card Container
-  /* ------------------------------------------------------------- */
-
-  .gaming-card-container {
-
-    grid: auto / auto auto;
-
-
-  }
-
 
   /* -------------------------------------------------------------- */
   /* Sport | Sport Newest Video Container
