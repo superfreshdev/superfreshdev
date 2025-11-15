@@ -162,6 +162,40 @@
 
   }
 
+  /* ------------------------------------------------------------- */
+  /* Languages | Nav Languages Container
+  /* ------------------------------------------------------------- */
+
+  #nav-languages-container {
+
+    display: flex;
+    justify-content: space-between;
+
+    column-gap: 1em;
+    row-gap: 0em;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* Languages | Selected Category Content Languages
+  /* ------------------------------------------------------------- */
+
+  label[for="chk-selected-category-content-languages"] {
+
+    width: 12em;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  /* Languages | Selected Flag Languages
+  /* ------------------------------------------------------------- */
+
+  label[for="chk-selected-flag-languages"] {
+
+    width: 9em;
+
+  }
+
 
 
 }

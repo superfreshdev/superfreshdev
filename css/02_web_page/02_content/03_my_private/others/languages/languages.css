@@ -14,13 +14,20 @@
   margin-top: 1.5em;
 
   display: grid;
-
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 
   /* default unshown */
   display: none;
 
 }
+
+#languages-container > .status-content-coming-soon {
+
+  margin-bottom: 1.5em;
+
+}
+
+/* languages | status coming soon */
 
 /* ------------------------------------------------------------- */
 /* Nav Languages Container
@@ -36,12 +43,12 @@
 }
 
 /* ------------------------------------------------------------- */
-/* [1/2] | Nav Category Languages Container
+/* [1/2] | Nav Category | Languages Container
 /* ------------------------------------------------------------- */
 
 #nav-category-languages-container {
 
-  background-color: rgb(190, 190, 230);
+  /* background-color: rgb(190, 190, 230); */
 
 }
 
@@ -59,115 +66,24 @@
 }
 
 /* ------------------------------------------------------------- */
-/* [2/2] | Nav Flags
+/* [2/2] | Nav Flags | Languages Container
 /* ------------------------------------------------------------- */
 
 #nav-flags-languages-container {
 
-  background-color: red;
+  /* background-color: red; */
 
 }
 
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------- */
-/* ❌❌❌ Trash
+/* Nav Flags Languages
 /* ------------------------------------------------------------- */
 
+#nav-flags-languages {
 
-/* ------------------------------------------------------------- */
-/* Languages Content Container
-/* ------------------------------------------------------------- */
-
-#languages-content-container {
-
-  margin-top: 1.5em;
-  padding-top: 1.5em;
-
-  border-top: 3px solid rgb(237, 237, 237);
-
-  /* default unshown */
-  display: none;
-
-}
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------- */
-/* Nav Language Container
-/* ------------------------------------------------------------- */
-
-#nav-language-container {
+  margin-top: .5em;
 
   display: grid;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Nav Language Countries Container
-/* ------------------------------------------------------------- */
-
-#nav-language-countries-container {
-
-  margin-top: .6em;
-  padding-top: .6em;
-
-  padding-bottom: 1.5em;
-
-  border-top: 1px solid rgb(238, 238, 238);
-  border-bottom: 3px solid rgb(238, 238, 238);
-
-}
-
-/* ------------------------------------------------------------- */
-/* 🟣🟣 Auslagern
-/* ------------------------------------------------------------- */
-
-/* ------------------------------------------------------------- */
-/* Vocubulary Language Container
-/* ------------------------------------------------------------- */
-
-#vocubulary-language-container {
-
-  padding-top: 1.5em;
-
-  display: none;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Songs Language Container
-/* ------------------------------------------------------------- */
-
-#songs-language-container {
-
-  padding-top: 1.5em;
-
-  display: none;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Dictation Language Container
-/* ------------------------------------------------------------- */
-
-#dictation-language-container {
-
-  padding-top: 1.5em;
-
-  display: none;
+  row-gap: .5em;
 
 }
