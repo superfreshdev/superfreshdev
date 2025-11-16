@@ -405,6 +405,17 @@
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/others.css">
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/nav-others.css">
 
+                    <!-- book listenings -->
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/book-listenings/book-listenings.css">
+
+                    <!-- meals -->
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/meals/meals.css">
+                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/meals/nav-meals.css">
+
+                        <!-- meals card -->
+                        <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/meals/meal-card/meal-card.css">
+                        <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/meals/meal-card/nav-meal-card.css">
+
                     <!-- languages -->
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/languages/languages.css">
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/languages/nav-languages.css">
@@ -426,11 +437,6 @@
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/mini-games/nav-mini-games.css">
                     <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/mini-games/mini-gaming-card.css">
 
-                    <!-- book listenings -->
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/book-listenings/book-listenings.css">
-
-                    <!-- food -->
-                    <link rel="stylesheet" href="css/02_web_page/02_content/03_my_private/others/meals/meals.css">
 
 
 
@@ -10549,8 +10555,8 @@
                                              <input type="radio" id="radio-others-choose" name="name-radio-category-others">
 
                                             <input type="radio" id="radio-others-book-listenings" name="name-radio-category-others">
-                                            <input type="radio" id="radio-others-meals" name="name-radio-category-others">
-                                            <input checked type="radio" id="radio-others-languages" name="name-radio-category-others">
+                                            <input checked type="radio" id="radio-others-meals" name="name-radio-category-others">
+                                            <input  type="radio" id="radio-others-languages" name="name-radio-category-others">
                                             <input type="radio" id="radio-others-mini-games" name="name-radio-category-others">
 
                                             <!-- --------------------------------------------------------------------- -->
@@ -10735,21 +10741,287 @@
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- 🟥 Book Listenings Container | My Private -->
+                                            <!-- 🟥 Book Listenings Container  -->
                                             <!-- --------------------------------------------------------------------- -->
                                             <div id="book-listenings-container">
                                                 Book Listenings
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- 🟥 Meals Container | My Private -->
+                                            <!-- ➡️🟥 Meals Container  -->
                                             <!-- --------------------------------------------------------------------- -->
                                             <div id="meals-container">
-                                                Meals
+
+                                                <!-- ---------------------------------------------------------------- -->
+                                                <!-- Radios | Meals Categories -->
+                                                <!-- ---------------------------------------------------------------- -->
+                                                <input checked type="radio" id="radio-meals-choose" name="name-radio-meal-category">
+                                                <input type="radio" id="radio-meals-daily" name="name-radio-meal-category">
+                                                <input type="radio" id="radio-meals-complex" name="name-radio-meal-category">
+                                                <input type="radio" id="radio-meals-soups" name="name-radio-meal-category">
+                                                <input type="radio" id="radio-meals-bake" name="name-radio-meal-category">
+                                                <input type="radio" id="radio-meals-drinks" name="name-radio-meal-category">
+
+                                                <!-- ------------------------------------------------------- -->
+                                                <!-- 🟨🟥 (js) Status Content | Actually No Pio -->
+                                                <!-- ------------------------------------------------------- -->
+                                                <div class="status-content-actually-no-prio">
+
+                                                    <img src="media/img/icons/02-icon-colors/01-black/black-thinking.png" alt="img">
+
+                                                    <div>
+                                                        <div>Content Actually No Prio</div>
+                                                        <div>» <span id="js-construction-mini-games">12.01.2025</span> </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <!-- --------------------------------------------------------------- -->
+                                                <!-- 🟨🟩 Header Nav Meals Container -->
+                                                <!-- --------------------------------------------------------------- -->
+                                                <div id="header-nav-meals-container">
+
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <!-- 🟨🟩 Nav Meals Container -->
+                                                    <!-- ----------------------------------------------------------- -->
+                                                    <div id="nav-meals-container">
+
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <!-- 🟨🟩  Label | Selected Meals Category -->
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <input type="checkbox" id="chk-selected-meals-category">
+                                                        <label for="chk-selected-meals-category" class="drop-down-grey-medium">
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Title Block -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <div>
+                                                                <!-- <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-0-9" alt="img"> -->
+                                                                <div>
+                                                                    <span id="js-js"> Choose ... </span>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- Img Arrow (open/close) -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png"
+                                                                class="img-h-0-5" alt="img">
+
+                                                        </label>
+
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <!-- 🟨🟩 Smooth | Smooth Nav Meals Category -->
+                                                        <!-- ---------------------------------------------------------- -->
+                                                        <div id="smooth-nav-meals-category" class="smooth-open-close-container">
+
+                                                            <!-- -------------------------------------------------- -->
+                                                            <!-- Overflow Hidden -->
+                                                            <!-- -------------------------------------------------- -->
+                                                            <div class="overflow-hidden">
+
+                                                                <!-- -------------------------------------------------- -->
+                                                                <!-- 🟨🟩 Nav Meal Category -->
+                                                                <!-- -------------------------------------------------- -->
+                                                                <nav id="nav-meal-category">
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Label | Choose -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="radio-meals-choose" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+                                                                            <!-- <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-speaker.png" class="img-h-0-9" alt="img"> -->
+                                                                            <div id="js-js"> Choose ... </div>
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+                                                                    </label>
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Label | Daily Meals ( 1h ) -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="radio-meals-daily" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+                                                                            <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-lunch.png" class="img-h-0-9" alt="img">
+                                                                            <div id="js-js">
+                                                                                <span>Daily Meals</span>
+                                                                                <span class="text-grey"> (1h) </span>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+                                                                    </label>
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Label | Complex Meals ( > 2h ) -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="radio-meals-complex" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+
+
+                                                                            <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-lunch.png" class="img-h-0-9" alt="img">
+                                                                            <div id="js-js">
+                                                                                <span>Complex Meals</span>
+                                                                                <span class="text-grey"> (2h) </span>
+                                                                            </div>
+
+
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+
+                                                                    </label>
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Label | Soups -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="radio-meals-soups" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+
+                                                                            <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-soup-2.png" class="img-h-0-9" alt="img">
+                                                                            <div id="js-js"> Soups </div>
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+                                                                    </label>
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Label | Bake -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="radio-meals-bake" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+
+                                                                            <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-cake.png" class="img-h-0-9" alt="img">
+                                                                            <div id="js-js"> Bake </div>
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+
+                                                                    </label>
+
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <!-- 🟩 Label | Drinks -->
+                                                                    <!-- ------------------------------------------------------------- -->
+                                                                    <label for="radio-meals-drinks" class="radio-element-medium">
+
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <!-- Title Block -->
+                                                                        <!-- ---------------------------------------- -->
+                                                                        <div>
+
+                                                                            <img id="js-js" src="media/img/icons/02-icon-colors/01-black/black-lemon-tea.png" class="img-h-0-9" alt="img">
+                                                                            <div id="js-js"> Drinks </div>
+
+                                                                        </div>
+
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <!-- Custom Radio -->
+                                                                        <!-- -------------------------------------------- -->
+                                                                        <div class="custom-radio-small">
+                                                                            <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
+                                                                        </div>
+
+
+
+                                                                    </label>
+
+
+                                                                </nav>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- 🟩 Img Clipart Me Meal -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <img src="media/img/content/01-default/clipart/kochen.png" id="img-clipart-me-meal" alt="img">
+
+                                                </div>
+
+                                                <!-- --------------------------------------------------------------- -->
+                                                <!-- 🟨🟩 Meals Content Container -->
+                                                <!-- --------------------------------------------------------------- -->
+                                                <div id="meals-content-container">
+
+                                                    <!-- ---------------------------------------------- -->
+                                                    <!-- Meal Card -->
+                                                    <!-- ---------------------------------------------- -->
+                                                    <div class="meal-card">
+
+                                                        Meal Card
+
+                                                    </div>
+
+                                                </div>
+
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- ➡️🟥 Languages Container | My Private -->
+                                            <!-- 🟩🟨 Languages Container -->
                                             <!-- --------------------------------------------------------------------- -->
                                             <div id="languages-container">
 
@@ -10777,7 +11049,7 @@
                                                 <!-- ------------------------------------------------------- -->
                                                 <div class="status-content-coming-soon">
 
-                                                    <img src="media/img/icons/02-icon-colors/01-black/black-build-tool.png" alt="img">
+                                                    <img src="media/img/icons/02-icon-colors/01-black/black-route.png" alt="img">
 
                                                     <div>
                                                         <div>Content Coming Soon</div>
@@ -11190,7 +11462,7 @@
                                             </div>
 
                                             <!-- --------------------------------------------------------------------- -->
-                                            <!-- 🟩🟨 Mini Games Container | My Private -->
+                                            <!-- 🟩🟨 Mini Games Container  -->
                                             <!-- --------------------------------------------------------------------- -->
                                             <div id="mini-games-container">
 

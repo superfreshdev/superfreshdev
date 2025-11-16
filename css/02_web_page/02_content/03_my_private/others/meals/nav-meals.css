@@ -1,0 +1,86 @@
+/* ------------------------------------------------------------------------- */
+/* > nav-meals.css
+/* : styles nav meals
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* Checkbox | Selected Meals Category
+/* ------------------------------------------------------------- */
+
+
+/* default unshown */
+#chk-selected-meals-category {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-selected-meals-category:checked + label {
+
+  background-color: wheat;
+
+}
+
+/* change rotation img arrow */
+#chk-selected-meals-category:checked + label > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
+
+/* set content */
+#chk-selected-meals-category:checked ~ #smooth-nav-meals-category {
+
+  grid-template-rows: 1fr;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Radios | Meal Categories
+/* ------------------------------------------------------------- */
+
+/* default unshown */
+input[name="name-radio-meal-category"] {
+
+  display: none;
+
+}
+
+/* set background */
+#radio-meals-choose:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-choose"],
+#radio-meals-daily:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-daily"],
+#radio-meals-complex:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-complex"],
+#radio-meals-soups:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-soups"],
+#radio-meals-bake:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-bake"],
+#radio-meals-drinks:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-drinks"] {
+
+  background-color: wheat;
+
+}
+
+/* set x */
+#radio-meals-choose:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-choose"] > .custom-radio-small > img,
+#radio-meals-daily:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-daily"] > .custom-radio-small > img,
+#radio-meals-complex:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-complex"] > .custom-radio-small > img,
+#radio-meals-soups:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-soups"] > .custom-radio-small > img,
+#radio-meals-bake:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-bake"] > .custom-radio-small > img,
+#radio-meals-drinks:checked ~ #header-nav-meals-container #smooth-nav-meals-category label[for="radio-meals-drinks"] > .custom-radio-small > img {
+
+  display: flex;
+
+}
+
+
+/* set content */
+#radio-meals-daily:checked ~ #meals-content-container,
+#radio-meals-complex:checked ~ #meals-content-container,
+#radio-meals-soups:checked ~ #meals-content-container,
+#radio-meals-bake:checked ~ #meals-content-container,
+#radio-meals-drinks:checked ~ #meals-content-container {
+
+  display: grid;
+
+}

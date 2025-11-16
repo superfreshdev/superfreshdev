@@ -29,7 +29,6 @@
 .status-content-coming-soon > img:nth-of-type(1),
 .status-content-actually-no-prio > img:nth-of-type(1) {
 
-  height: 1.6em;
   opacity: .6;
 
 }
@@ -43,35 +42,21 @@
 .status-content-actually-no-prio > div:nth-of-type(1) {
 
   line-height: 1.5em;
-
   font-size: 14.5px;
 
 }
 
 /* ------------------------------------------------------------- */
-/* Div 1 | Div 1 | Status Content
+/* Div 1 | Div 1 (Title) | Status Content
 /* ------------------------------------------------------------- */
 
-.status-content-under-construction > div:nth-of-type(1),
-.status-content-coming-soon > div:nth-of-type(1),
-.status-content-actually-no-prio > div:nth-of-type(1) {
+.status-content-under-construction > div:nth-of-type(1) > div:nth-of-type(1),
+.status-content-coming-soon > div:nth-of-type(1) > div:nth-of-type(1),
+.status-content-actually-no-prio > div:nth-of-type(1) > div:nth-of-type(1) {
 
   font-weight: bold;
 
 }
-
-/* ------------------------------------------------------------- */
-/* Div 1 | Div 2 | Status Content
-/* ------------------------------------------------------------- */
-
-.status-content-under-construction > div:nth-of-type(2),
-.status-content-coming-soon > div:nth-of-type(2),
-.status-content-actually-no-prio > div:nth-of-type(2) {
-
-  font-size: 12.5px;
-
-}
-
 
 /* ------------------------------------------------------------- */
 /* 🟨 Under Construction
@@ -80,7 +65,14 @@
 .status-content-under-construction {
 
   background-color: rgb(255, 250, 161);
-  color:grey
+  color:black;
+
+}
+
+/* img  */
+.status-content-under-construction > img:nth-of-type(1) {
+
+  height: 1.6em;
 
 }
 
@@ -95,13 +87,27 @@
 
 }
 
+/* img  */
+.status-content-coming-soon > img:nth-of-type(1) {
+
+  height: 2em;
+
+}
+
 /* ------------------------------------------------------------- */
 /* ⬛ Actually No Prio
 /* ------------------------------------------------------------- */
 
 .status-content-actually-no-prio {
 
-  background-color: rgb(183, 184, 185);
+  background-color: rgb(232, 232, 232);
   color:black;
+
+}
+
+/* img  */
+.status-content-actually-no-prio > img:nth-of-type(1) {
+
+  height: 1.6em;
 
 }

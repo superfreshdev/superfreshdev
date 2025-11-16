@@ -10,10 +10,82 @@
 
 #meals-container {
 
-  margin-top: 1.5em;
-  padding-top: 1.5em;
+  position: relative;
+  width: 100%;
 
-  border-top: 3px solid rgb(237, 237, 237);
+  display: grid;
+
+  margin-top: 1.5em;
+
+  /* default unshown */
+  display: none;
+
+}
+
+/* status | actually no prio */
+#meals-container > .status-content-actually-no-prio {
+
+  margin-bottom: 1.5em;
+}
+
+/* ------------------------------------------------------------- */
+/* Header Nav Meals Container
+/* ------------------------------------------------------------- */
+
+#header-nav-meals-container {
+
+  width: 100%;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Nav Meals Container
+/* ------------------------------------------------------------- */
+
+#nav-meals-container {
+
+  width: 100%;
+  display: grid;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Nav Meals Category
+/* ------------------------------------------------------------- */
+
+#nav-meal-category {
+
+  width: 100%;
+  padding-top: .5em;
+
+  display: grid;
+  row-gap: .5em;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img Clipart Me Meal
+/* ------------------------------------------------------------- */
+
+#img-clipart-me-meal {
+
+  height: 6.5em;
+
+  /* exterme mobile unshwon */
+  display: none;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Meals Content Container
+/* ------------------------------------------------------------- */
+
+#meals-content-container {
+
+  padding: 1.5em 0;
 
   /* default unshown */
   display: none;
