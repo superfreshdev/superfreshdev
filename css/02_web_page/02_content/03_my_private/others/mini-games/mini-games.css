@@ -10,13 +10,10 @@
 
 #mini-games-container {
 
-  margin-top: 1.5em;
+  width: 100%;
 
   display: grid;
   justify-items: center;
-
-
-  border-top: 3px solid rgb(237, 237, 237);
 
   /* default unshown */
   display: none;
@@ -33,6 +30,60 @@
 }
 
 /* ------------------------------------------------------------- */
+/* Info Mini Games
+/* ------------------------------------------------------------- */
+
+#info-mini-games {
+
+  width: 100%;
+  padding: 1.5em .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+/* ------------------------------------------------------------- */
+/* Div | Info Mini Games
+/* ------------------------------------------------------------- */
+
+#info-mini-games > div:nth-of-type(1) {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: .3em;
+
+  font-size: 14.5px;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Div 1 | Span 1 (Info) | Info Mini Games
+/* ------------------------------------------------------------- */
+
+#info-mini-games > div:nth-of-type(1) > span:nth-of-type(1) {
+
+  font-weight: bold;
+  text-decoration: underline;
+
+   color:rgb(88, 88, 88);
+
+}
+
+/* ------------------------------------------------------------- */
+/* Div 1 | Span 2 (Text) | Info Mini Games
+/* ------------------------------------------------------------- */
+
+#info-mini-games > div:nth-of-type(1) > span:nth-of-type(2)  {
+
+  color:grey;
+
+}
+
+/* ------------------------------------------------------------- */
 /* Mini Games Content Container
 /* ------------------------------------------------------------- */
 
@@ -43,60 +94,7 @@
   display: grid;
   row-gap: .8em;
 
-
 }
-
-/* ------------------------------------------------------------- */
-/* Info Mini Games
-/* ------------------------------------------------------------- */
-
-#info-mini-games {
-
-  width: 100%;
-
-  padding: 1.5em 0;
-  margin-bottom: .5em;
-
-  display: flex;
-  align-items: center;
-
-  border-bottom: 3px solid rgb(237, 237, 237);
-
-
-}
-
-/* ------------------------------------------------------------- */
-/* Div | Info Mini Games
-/* ------------------------------------------------------------- */
-
-#info-mini-games > div {
-
-  width: 100%;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Img Icon | Info Mini Games
-/* ------------------------------------------------------------- */
-
-#info-mini-games > img {
-
-  margin-right: 6px;
-  margin-left: 3px;
-
-}
-
-/* ------------------------------------------------------------- */
-/* Div Span | Info Mini Games
-/* ------------------------------------------------------------- */
-
-#info-mini-games > div span {
-
-  font-size: 14.5px;
-  color:grey;
-
-}
-
 
 /* ------------------------------------------------------------- */
 /* Gaming Category Container

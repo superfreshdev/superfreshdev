@@ -10,12 +10,188 @@
 
 #book-listenings-container {
 
+  width: 100%;
   margin-top: 1.5em;
-  padding-top: 1.5em;
+  margin-bottom: 1em;
 
-  border-top: 3px solid rgb(237, 237, 237);
+  display: grid;
+  justify-items: center;
 
   /* default unshown */
   display: none;
+
+}
+
+#book-listenings-container > .status-content-actually-no-prio {
+
+  width: 100%;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Book Listenings Content Container
+/* ------------------------------------------------------------- */
+
+#book-listenings-content-container {
+
+  margin-top: 2.5em;
+
+  display: grid;
+  align-items: flex-start;
+
+  column-gap: 1.5em;
+  row-gap: 1.5em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Book Listenings Info Container
+/* ------------------------------------------------------------- */
+
+#book-listenings-info-container {
+
+  padding: .8em 1em;
+  display: grid;
+  row-gap: .5em;
+
+  font-size: 14.5px;
+
+  border-radius: .8em;
+
+  border: 3px solid #e7e7e7e7;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Header | Book Listenings Info Container
+/* ------------------------------------------------------------- */
+
+#book-listenings-info-container > header {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .8em;
+
+}
+
+/* div | header */
+#book-listenings-info-container > header > div {
+
+  font-weight: bold;
+
+}
+
+/* img | header */
+#book-listenings-info-container > header > img {
+
+  height: 5.5em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Main | Book Listenings Info Container
+/* ------------------------------------------------------------- */
+
+#book-listenings-info-container > main {
+
+  display: grid;
+  row-gap: .3em;
+
+}
+
+/* header */
+#book-listenings-info-container > main > header {
+
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+/* div 1 */
+#book-listenings-info-container > main > div:nth-of-type(1) {
+
+  padding-top: .5em;
+  display: grid;
+  row-gap: .6em;
+  line-height: 1.6em;
+
+  color:grey;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* Book Listenings Webpage Container
+/* ------------------------------------------------------------- */
+
+#book-listenings-webpage-container {
+
+  position: relative;
+
+  border-radius: .8em;
+
+  border: 3px solid #e7e7e7e7;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Img | Book Listenings Webpage Container
+/* ------------------------------------------------------------- */
+
+#book-listenings-webpage-container > img {
+
+  width: 100%;
+  border-radius: .6em;
+
+}
+
+/* ------------------------------------------------------------- */
+/* Link | Book Listenings Webpage Img Container
+/* ------------------------------------------------------------- */
+
+#book-listenings-webpage-container > a {
+
+  text-decoration: none;
+
+  position: absolute;
+  bottom: 0;
+
+  height: 2.8em;
+  width: 100%;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .4em;
+
+  font-weight: bold;
+
+  border-radius: 0 0 .6em .6em;
+
+
+  background-color: rgba(0, 0, 0, 1);
+  color:rgb(176, 176, 176);
+
+  transition: all .4s;
+
+}
+
+#book-listenings-webpage-container > a:hover {
+
+  background-color: wheat;
+
+}
+
+#book-listenings-webpage-container > a:visited {
+
+  color:rgb(176, 176, 176);
+
+}
+
+#book-listenings-webpage-container > a > div {
+
+  font-size: 14.5px;
 
 }
