@@ -1,15 +1,15 @@
 /* -------------------------------------------------------------- */
-/* > action-switch-element.css
+/* > curved-tab-panel.css
 /*
-/* : style action switch element
+/* : style curved switch element
 /* -------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------- */
-/* Action Switch Element
+/* Curved Tab Panel
 /* -------------------------------------------------------------- */
 
-.action-switch-element {
+.curved-tab-panel {
 
   position: relative;
   top:0;
@@ -19,10 +19,7 @@
 
   border-radius: 1.5em 1.5em 1.5em 1.5em;
 
-  /* background-color: rgb(95, 95, 95); */
-  background-color: rgb(104, 104, 104);
-
-
+  background-color: rgb(28, 28, 28);
 
   cursor: pointer;
   transition: all .4s;
@@ -30,10 +27,10 @@
 }
 
 /* -------------------------------------------------------------- */
-/* Label 1 | Action Switch Element
+/* Label | Curved Tab Panel
 /* -------------------------------------------------------------- */
 
-.action-switch-element > label {
+.curved-tab-panel > label {
 
   height: 2.5em;
   padding: 0 .8em;
@@ -46,9 +43,10 @@
 
   border-radius: 1.5em 1.5em 1.5em 1.5em;
 
-  /* background-color: rgb(95, 95, 95); */
-
-  background-color: rgb(104, 104, 104);
+  /* unset label */
+  background-color: rgb(28, 28, 28);
+  color:#818181;
+  opacity: .6;
 
   user-select: none;
 
@@ -57,20 +55,13 @@
 
 }
 
-/* Label > Div */
-.action-switch-element > label > div:nth-of-type(1) {
+/* -------------------------------------------------------------- */
+/* Label Div 1 | Curved Tab Panel
+/* -------------------------------------------------------------- */
+
+.curved-tab-panel > label > div:nth-of-type(1) {
 
   /* 14.5px | 14.5 / 16px= 0.90625 */
   font-size: .90625em;
 
 }
-
-
-/* -------------------------------------------------------------- */
-/* Label 1 | Action Switch Element
-/* -------------------------------------------------------------- */
-
-
-/* -------------------------------------------------------------- */
-/* Label Last | Action Switch Element
-/* -------------------------------------------------------------- */

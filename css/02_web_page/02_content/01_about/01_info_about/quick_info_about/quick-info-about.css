@@ -91,6 +91,7 @@
 #quick-info-content-container-about > div:nth-of-type(2) {
 
   width: 100%;
+  padding: 0 .6em .6em .6em;
 
   line-height: 1.8em;
 
@@ -99,7 +100,5 @@
 
   /* color:rgb(87, 87, 87); */
   color: var(--c-dark-grey);
-
-  /* background-color: grey; */
 
 }

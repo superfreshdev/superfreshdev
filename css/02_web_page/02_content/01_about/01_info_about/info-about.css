@@ -15,22 +15,10 @@
   margin-bottom: 2em;
 
   display: grid;
+  justify-items: center;
   row-gap: 2em;
 
   /* default unshown */
   display: none;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Imgs | Readmore, Mindset
-/* -------------------------------------------------------------- */
-
-.img-header-info-about {
-
-  width: 3.5em;
-  width: 3.5em;
-
-  border-radius: .8em;
 
 }

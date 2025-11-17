@@ -1,152 +1,90 @@
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 /* > nav-read-more-about.css
 /*
 /* : style nav read more about
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------------- */
-/* Label Open Close Read More
-/* ------------------------------------------------------------------- */
-
-label[for="chk-open-read-more-about"] > div:nth-of-type(1) {
-
-  width: 2.8em;
-
-}
-
-/* default unshown text = close */
-label[for="chk-open-read-more-about"] > div:nth-of-type(1) > div:nth-of-type(2) {
-
-  display: none;
-
-}
-
-
-/* ------------------------------------------------------------------- */
-/* ⬇️⬆️ Smooth Open Close | Nav List Read More About
-/* ------------------------------------------------------------------- */
-
-#smooth-open-close-nav-list-read-more-about {
-
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
-
-  /* background-color: blue; */
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Nav List Read More About
-/* ------------------------------------------------------------------- */
-
-#nav-list-read-more-about {
-
-  margin-top: 2em;
-  padding: 1.5em .8em;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  /* mobile */
-  justify-content: center;
-  gap: .6em;
-
-  border-radius: .8em;
-
-  /* background-color: rgba(28, 28, 28, .6); */
-
-  background-color: rgba(255, 255, 255, .4);
-
-}
-
-#nav-list-read-more-about > label {
-
-  /* very small mobile */
-  width: 100%;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Handlings
+/* Checkbox | Show Me (Open)
 /* ------------------------------------------------------------------- */
 
 /* default unshown */
-#chk-open-read-more-about,
-input[name="name-radio-read-more-about"] {
+#chk-open-read-more-about {
 
   display: none;
+}
+
+/* set background */
+#chk-open-read-more-about:checked ~ #header-nav-read-more-about label[for="chk-open-read-more-about"] {
+
+  background-color: rgb(227, 87, 87);
+  color:black;
 
 }
 
-/* ------------------------------------------------------------------- */
-/* Handling | Checkbox
-/* ------------------------------------------------------------------- */
+/* change rotation | img arrow */
+#chk-open-read-more-about:checked ~ #header-nav-read-more-about label[for="chk-open-read-more-about"] > img:nth-of-type(1) {
+
+  transform: rotate(180deg);
+
+}
 
 /* unshown text = open */
-#chk-open-read-more-about:checked ~ #header-read-more-about label[for="chk-open-read-more-about"] > div:nth-of-type(1) > div:nth-of-type(1) {
+#chk-open-read-more-about:checked ~ #header-nav-read-more-about label[for="chk-open-read-more-about"] > div:nth-of-type(1) > div:nth-of-type(1) {
 
   display: none;
 
 }
 
 /* shown text = close */
-#chk-open-read-more-about:checked ~ #header-read-more-about label[for="chk-open-read-more-about"] > div:nth-of-type(1) > div:nth-of-type(2) {
+#chk-open-read-more-about:checked ~ #header-nav-read-more-about label[for="chk-open-read-more-about"] > div:nth-of-type(1) > div:nth-of-type(2) {
 
   display: flex;
 
 }
 
-/* set background */
-#chk-open-read-more-about:checked ~ #header-read-more-about label[for="chk-open-read-more-about"] {
-
-  background-color: rgb(227, 87, 87);;
-
-}
-
-/* change img arrow rotation */
-#chk-open-read-more-about:checked ~ #header-read-more-about label[for="chk-open-read-more-about"] > img:nth-of-type(1) {
-
-  transform: rotate(180deg);
-
-}
-
-/* open nav */
-#chk-open-read-more-about:checked ~ #smooth-open-close-nav-list-read-more-about {
+/* show content */
+#chk-open-read-more-about:checked ~ #smooth-nav-read-more-about {
 
   grid-template-rows: 1fr;
 
 }
 
 /* ------------------------------------------------------------------- */
-/* Handling | Radios ( mission, hobbies, story )
+/* Radios | Read More Categories ( stacks of life, hobbies, story )
 /* ------------------------------------------------------------------- */
 
-/* set background */
-#radio-mission-about:checked ~ #header-nav-read-more-about #smooth-open-close-nav-list-read-more-about label[for="radio-mission-about"],
-#radio-hobbies-about:checked ~ #header-nav-read-more-about #smooth-open-close-nav-list-read-more-about label[for="radio-hobbies-about"],
-#radio-story-about:checked ~ #header-nav-read-more-about #smooth-open-close-nav-list-read-more-about label[for="radio-story-about"] {
+/* default unshown */
+input[name="name-radio-read-more-about"] {
 
+  display: none;
+
+}
+
+/* set background */
+#radio-life-stacks-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-life-stacks-about"],
+#radio-hobbies-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-hobbies-about"],
+#radio-story-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-story-about"] {
+
+  opacity: 1;
   background-color: wheat;
 
 }
 
 /* set x */
-#radio-mission-about:checked ~ #header-nav-read-more-about #smooth-open-close-nav-list-read-more-about label[for="radio-mission-about"] > .custom-radio-default > img,
-#radio-hobbies-about:checked ~ #header-nav-read-more-about #smooth-open-close-nav-list-read-more-about label[for="radio-hobbies-about"] > .custom-radio-default > img,
-#radio-story-about:checked ~ #header-nav-read-more-about #smooth-open-close-nav-list-read-more-about label[for="radio-story-about"] > .custom-radio-default > img {
+#radio-life-stacks-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-life-stacks-about"] > .custom-radio-default > img,
+#radio-hobbies-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-hobbies-about"] > .custom-radio-default > img,
+#radio-story-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-story-about"] > .custom-radio-default > img {
 
   display: flex;
 
 }
 
 /* set content */
-#radio-mission-about:checked ~ #my-mission-about-container,
-#radio-hobbies-about:checked ~ #my-hobbies-about-container,
-#radio-story-about:checked ~ #my-story-about-container {
+#radio-life-stacks-about:checked ~ #my-life-stacks-read-more-about-container,
+#radio-hobbies-about:checked ~ #my-hobbies-read-more-about-container,
+#radio-story-about:checked ~ #story-behind-sd-read-more-about-container {
 
   display: grid;
 

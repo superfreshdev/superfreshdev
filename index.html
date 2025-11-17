@@ -103,7 +103,7 @@
 
 
                 <!-- ❌ Delete  -->
-                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/action-switch-element.css">
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/curved-tab-panel.css">
 
                 <!-- ------------------------------------- -->
                 <!-- Tab Close X -->
@@ -624,9 +624,9 @@
                             <!-- Radios | Nav Header Body -->
                             <!-- ---------------------------------------------------- -->
 
-                            <input type="radio" id="radio-about" name="name-radio-nav-header-body">
+                            <input checked type="radio" id="radio-about" name="name-radio-nav-header-body">
                             <input  type="radio" id="radio-my-it" name="name-radio-nav-header-body">
-                            <input checked type="radio" id="radio-my-private" name="name-radio-nav-header-body">
+                            <input  type="radio" id="radio-my-private" name="name-radio-nav-header-body">
 
                             <!-- -------------------------------------------------------------- -->
                             <!-- About | Label -->
@@ -696,7 +696,7 @@
         <div class="push-slider">
 
             <!-- ------------------------------------------------------------- -->
-            <!-- 🟩 About | Page Slide #1 |  -->
+            <!-- ➡️🟥 About | Page Slide #1 |  -->
             <!-- ------------------------------------------------------------- -->
             <div class="push-content-slide active">
 
@@ -748,31 +748,34 @@
                                         <div id="nav-about">
 
                                             <!-- ------------------------------------------------------ -->
-                                            <!-- Action Switch Element -->
+                                            <!-- Curved Tab Panel -->
                                             <!-- ------------------------------------------------------ -->
-                                            <nav class="action-switch-element">
+                                            <nav class="curved-tab-panel">
 
                                                 <!-- ---------------------------------------------------- -->
                                                 <!-- Label 1 | Info -->
                                                 <!-- ---------------------------------------------------- -->
                                                 <label for="radio-info-about">
                                                     <img src="media/img/icons/02-icon-colors/01-black/black-about.png" class="img-h-1-3" alt="img">
+                                                    <img src="media/img/icons/02-icon-colors/03-grey/grey-about.png" class="img-h-1-3" alt="img">
                                                     <div> Info</div>
                                                 </label>
 
                                                 <!-- ---------------------------------------------------- -->
                                                 <!-- Label 2 | IT Skills -->
                                                 <!-- ---------------------------------------------------- -->
-                                                <label for="radio-it-skills-about">
+                                                <label for="radio-it-skills-about" >
                                                     <img src="media/img/icons/02-icon-colors/01-black/black-binary-small.png" class="img-h-1-2" alt="img">
+                                                    <img src="media/img/icons/02-icon-colors/03-grey/grey-binary-small.png" class="img-h-1-2" alt="img">
                                                     <div>IT Skill's</div>
                                                 </label>
 
                                                 <!-- ---------------------------------------------------- -->
                                                 <!-- Label 3 | Contact -->
                                                 <!-- ---------------------------------------------------- -->
-                                                <label for="radio-contact-about" >
+                                                <label for="radio-contact-about">
                                                     <img src="media/img/icons/02-icon-colors/01-black/black-email.png" class="img-h-0-8" alt="img">
+                                                    <img src="media/img/icons/02-icon-colors/03-grey/grey-email.png" class="img-h-0-8" alt="img">
                                                     <div>Contact</div>
                                                 </label>
 
@@ -787,12 +790,12 @@
                             </div>
 
                             <!-- ----------------------------------------------------------- -->
-                            <!-- 🟩 [2/2] | About Page Content Container                  -->
+                            <!-- ➡️🟥 [2/2] | About Page Content Container                  -->
                             <!-- ----------------------------------------------------------- -->
                             <div id="about-page-content-container">
 
                                 <!-- ---------------------------------------------------- -->
-                                <!-- 🟩 [1/3] | Info About Container                    -->
+                                <!-- ➡️🟥 [1/3] | Info About Container                    -->
                                 <!-- ---------------------------------------------------- -->
                                 <div class="resp-very-small-content-area" >
 
@@ -807,7 +810,7 @@
                                         <div class="resp-very-small-padding-0-08">
 
                                             <!-- ----------------------------------------------------------- -->
-                                            <!-- Info About Container                           -->
+                                            <!-- ➡️🟥 Info About Container                           -->
                                             <!-- ----------------------------------------------------------- -->
                                             <div id="info-about-container">
 
@@ -834,7 +837,7 @@
                                                         <!-- ---------------------------------------------------- -->
                                                         <!-- Header Sticker -->
                                                         <!-- ---------------------------------------------------- -->
-                                                        <div class="header-sticker-medium">
+                                                        <div class="header-sticker-medium" style="height: 2em; background-color: rgb(228, 228, 228);" >
                                                             <img src="media/img/icons/02-icon-colors/01-black/black-thunder.png" class="img-h-0-9" alt="img">
                                                             <div>Quick Info</div>
                                                         </div>
@@ -845,11 +848,11 @@
                                                         <div>
                                                             My Name is Marko (SuperfreshDev) and I'm from Germany.
                                                             <br>
-                                                            I am a Fullstack Software Developer in building <br>
-                                                            <span class="text-bold-dark-grey" >Web-Plattforms</span> ,
-                                                            <span class="text-bold-dark-grey">Software/Mobile-Solutions</span>
+                                                            I am a Fullstack Software Developer in building
+                                                            <span class="text-bold-dark-grey" style="color:rgb(11, 10, 8)">Web-Plattforms</span>,
+                                                            <span class="text-bold-dark-grey" style="color:rgb(11, 10, 8)">Software/Mobile-Solutions</span>
                                                             and creating scalable
-                                                            running <span class="text-bold-dark-grey">Backend-Systems</span>.
+                                                            running <span class="text-bold-dark-grey" style="color:rgb(11, 10, 8)">Backend-Systems</span>.
                                                         </div>
 
                                                     </div>
@@ -857,96 +860,106 @@
                                                 </div>
 
                                                 <!-- ----------------------------------------------------------- -->
-                                                <!-- 🟩 [2/3] | Read More About | Container                    -->
+                                                <!-- ➡️🟥 [2/3] | Read More About | Container                    -->
                                                 <!-- ----------------------------------------------------------- -->
                                                 <div id="read-more-about-container" class="style-page-content-card-white">
 
-                                                    <!-- -------------------------------------------------------- -->
-                                                    <!-- Radios | Read More ( my mission, hobbies, story ) -->
-                                                    <!-- -------------------------------------------------------- -->
-                                                    <input type="radio" id="radio-mission-about" name="name-radio-read-more-about">
+                                                    <!-- -------------------------------------------------------------------------------- -->
+                                                    <!-- Checkbox | Show Me                                                               -->
+                                                    <!-- -------------------------------------------------------------------------------- -->
+                                                    <input checked type="checkbox" id="chk-open-read-more-about">
+
+                                                    <!-- -------------------------------------------------------------------------------- -->
+                                                    <!-- Radios | Read More ( life stacks, hobbies, story )                               -->
+                                                    <!-- -------------------------------------------------------------------------------- -->
+                                                    <input type="radio" id="radio-life-stacks-about" name="name-radio-read-more-about">
                                                     <input type="radio" id="radio-hobbies-about" name="name-radio-read-more-about">
                                                     <input type="radio" id="radio-story-about" name="name-radio-read-more-about">
 
+
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <!-- 🟩 [1/4] | Header Nav Read More About -->
+                                                    <!-- 🟩 [1/5] | Header Nav Read More About -->
                                                     <!-- --------------------------------------------------------------- -->
                                                     <div id="header-nav-read-more-about">
 
-                                                        <!-- -------------------------------------------------------- -->
-                                                        <!-- Checkbox | Open Read More -->
-                                                        <!-- -------------------------------------------------------- -->
-                                                        <input type="checkbox" id="chk-open-read-more-about">
+                                                        <!-- --------------------------------------------------- -->
+                                                        <!-- [1/2] | Header Content Block (🟣) -->
+                                                        <!-- --------------------------------------------------- -->
+                                                        <div class="header-content-block">
 
-                                                        <!-- -------------------------------------------------------- -->
-                                                        <!-- ➡️🟥 [1/2] | Header Content Container -->
-                                                        <!-- -------------------------------------------------------- -->
-                                                        <div class="header-content-container">
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- IMG -->
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <img src="media/img/content/01-default/clipart/me-hi.png"
+                                                                    id="img-about-read-more" alt="img">
 
-                                                            <!-- ------------------------------------------------------ -->
-                                                            <!-- [1/2] | Header Content Block -->
-                                                            <!-- ------------------------------------------------------ -->
-                                                            <div class="header-content-block">
-
-                                                                <img src="media/img/content/01-default/clipart/me-hi.png"
-                                                                    class="img-header-info-about" alt="img">
-
-                                                                <div>
-                                                                    <div class="header-content-title">Read More</div>
-                                                                    <div class="header-content-sub-title">» Life Principles | Hobbies | Story behind SD </div>
-                                                                </div>
-
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- Title Container -->
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <div>
+                                                                <!-- Title -->
+                                                                <div>Read More</div>
+                                                                <!-- Sub Title -->
+                                                                <div>» My Life Stacks | My Hobbies | Story behind SD</div>
                                                             </div>
 
-                                                            <!-- ------------------------------------------------------ -->
-                                                            <!-- [2/2] | Drop Down Element                              -->
-                                                            <!-- ------------------------------------------------------ -->
-                                                            <label for="chk-open-read-more-about" class="action-drop-down-medium">
-
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- [1/2] | Title + IMG  -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <div>
-                                                                    <div>Show Me</div>
-                                                                    <div>Close</div>
-                                                                </div>
-
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- [2/2] | Img Arrow up/down (rotate)        -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-5" alt="img">
-
-                                                            </label>
 
                                                         </div>
 
-                                                        <!-- ------------------------------------------------------ -->
-                                                        <!-- ➡️🟥 [2/2] Smooth Open Close | Nav List Read More About -->
-                                                        <!-- ------------------------------------------------------ -->
-                                                        <div id="smooth-open-close-nav-list-read-more-about">
+                                                        <!-- --------------------------------------------------- -->
+                                                        <!-- [2/2] | Label Show Me -->
+                                                        <!-- --------------------------------------------------- -->
+                                                        <label for="chk-open-read-more-about" class="drop-down-light-grey-medium">
 
-                                                            <!-- -------------------------------------------------------- -->
-                                                            <!-- Overflow Hidden -->
-                                                            <!-- -------------------------------------------------------- -->
-                                                            <div class="overflow-hidden">
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- [1/2] | Title + IMG  -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <div>
+                                                                <div>Show Me</div>
+                                                                <div>Close</div>
+                                                            </div>
 
-                                                                <!-- ---------------------------------------------------------- -->
-                                                                <!-- Nav List Read More About -->
-                                                                <!-- ---------------------------------------------------------- -->
-                                                                <!--- ⚠️ nav-list-read-more-about  -->
-                                                                <div id="nav-top-it-projects">
+                                                            <!-- ---------------------------------------- -->
+                                                            <!-- [2/2] | Img Arrow up/down (rotate)        -->
+                                                            <!-- ---------------------------------------- -->
+                                                            <img src="media/img/icons/02-icon-colors/01-black/black-arrow-clap-down.png" class="img-h-0-5" alt="img">
+
+                                                        </label>
+
+
+                                                    </div>
+
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- ➡️🟥 [2/5] | Smooth | Nav Read More About -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <div id="smooth-nav-read-more-about" class="smooth-open-close-container">
+
+                                                        <!-- --------------------------------------------------------- -->
+                                                        <!-- Overflow Hidden grid ji-c w-100p-->
+                                                        <!-- --------------------------------------------------------- -->
+                                                        <div class="overflow-hidden ">
+
+                                                            <!-- --------------------------------------------------------- -->
+                                                            <!-- Nav Read More About -->
+                                                            <!-- --------------------------------------------------------- -->
+                                                            <div id="nav-read-more-about">
+
+                                                                <!-- --------------------------------------------------------- -->
+                                                                <!-- Nav Content Panel Medium -->
+                                                                <!-- --------------------------------------------------------- -->
+                                                                <nav class="nav-content-panel-medium">
 
                                                                     <!-- -------------------------------------------------- -->
-                                                                    <!-- Label | My Lifecyle -->
+                                                                    <!-- Label | My Life Stacks -->
                                                                     <!-- -------------------------------------------------- -->
-                                                                    <label for="radio-mission-about" class="action-radio-medium">
+                                                                    <label for="radio-life-stacks-about" class="action-radio-medium">
 
                                                                         <!-- -------------------------------------------- -->
                                                                         <!-- Title -->
                                                                         <!-- -------------------------------------------- -->
                                                                         <div>
                                                                             <img src="media/img/icons/02-icon-colors/01-black/black-3-arrow-cricle.png" class="img-h-1-1" alt="img">
-                                                                            <div>My Lifecyle</div>
+                                                                            <div>My Life Stacks</div>
                                                                         </div>
 
                                                                         <!-- -------------------------------------------- -->
@@ -959,7 +972,7 @@
                                                                     </label>
 
                                                                     <!-- -------------------------------------------------- -->
-                                                                    <!-- Label | Food -->
+                                                                    <!-- Label | My Hobbies -->
                                                                     <!-- -------------------------------------------------- -->
                                                                     <label for="radio-hobbies-about" class="action-radio-medium">
 
@@ -981,7 +994,7 @@
                                                                     </label>
 
                                                                     <!-- -------------------------------------------------- -->
-                                                                    <!-- Label | Language -->
+                                                                    <!-- Label | Story behind SD -->
                                                                     <!-- -------------------------------------------------- -->
                                                                     <label for="radio-story-about" class="action-radio-medium">
 
@@ -990,7 +1003,7 @@
                                                                         <!-- -------------------------------------------- -->
                                                                         <div>
                                                                             <img src="media/img/icons/02-icon-colors/01-black/black-shower.png" class="img-h-1-1" alt="img">
-                                                                            <div>Story SuperfreshDEV</div>
+                                                                            <div>Story behind SD</div>
                                                                         </div>
 
                                                                         <!-- -------------------------------------------- -->
@@ -1002,7 +1015,77 @@
 
                                                                     </label>
 
+                                                                </nav>
 
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- 🟥 [3/5] | Life Stacks | Nav Read More About -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <div id="my-life-stacks-read-more-about-container">
+
+                                                        Life Stacks Container
+
+                                                    </div>
+
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- 🟥 [4/5] | My Hobbies | Nav Read More About -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                     <div id="my-hobbies-read-more-about-container">
+
+                                                        My Hobbies Container
+
+                                                    </div>
+
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- 🟥 [5/5] | Story behind SD | Nav Read More About -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                     <div id="story-behind-sd-read-more-about-container">
+
+                                                       Story Behind SD Container
+
+                                                    </div>
+
+
+
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- ❌❌❌ Trash  -->
+                                                    <!-- --------------------------------------------------------------- -->
+
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <!-- 🟩 [1/4] | Header Nav Read More About -->
+                                                    <!-- --------------------------------------------------------------- -->
+                                                    <div id="header-nav-read-more-about" style="display: none;">
+
+
+
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <!-- ➡️🟥 [2/2] Smooth | Nav Read More About -->
+                                                        <!-- ------------------------------------------------------ -->
+                                                        <div id="smooth-nav-read-more-about" class="smooth-open-close-container">
+
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <!-- Overflow Hidden -->
+                                                            <!-- -------------------------------------------------------- -->
+                                                            <div class="overflow-hidden">
+
+                                                                <!-- ---------------------------------------------------------- -->
+                                                                <!-- ➡️🟥 Nav Read More About -->
+                                                                <!-- ---------------------------------------------------------- -->
+                                                                <div id="nav-read-more-about-container">
+
+                                                                    <!-- ------------------------------------------------------ -->
+                                                                    <!-- Nav Content Panel Medium -->
+                                                                    <!-- ------------------------------------------------------ -->
+                                                                    <nav class="nav-content-panel-medium">
+
+
+
+                                                                    </nav>
 
                                                                 </div>
 
@@ -1017,7 +1100,7 @@
                                                     <!-- --------------------------------------------------------------- -->
                                                     <!-- 🟩 [2/4] | My Mission -->
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <div id="my-mission-about-container">
+                                                    <div id="my-mission-about-container" style="display: none;">
 
                                                         <!-- ---------------------------------------------------------- -->
                                                         <!-- Read More About Info Box | #1 -->
@@ -1213,7 +1296,7 @@
                                                     <!-- --------------------------------------------------------------- -->
                                                     <!-- 🟩 [3/4] | My Hobbies -->
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <div id="my-hobbies-about-container">
+                                                    <div id="my-hobbies-about-container" style="display: none;">
 
 
                                                         <!-- ---------------------------------------------------------- -->
@@ -1533,7 +1616,7 @@
                                                     <!-- --------------------------------------------------------------- -->
                                                     <!-- 🟩 [4/4] | Story Superfreshdev -->
                                                     <!-- --------------------------------------------------------------- -->
-                                                     <div id="my-story-about-container">
+                                                     <div id="my-story-about-container" style="display: none;">
 
 
                                                         <!-- ---------------------------------------------------------- -->
@@ -1712,7 +1795,7 @@
                                                 </div>
 
                                                 <!-- ----------------------------------------------------------- -->
-                                                <!-- 🟩 [3/3] | Mindset About | Container                      -->
+                                                <!-- 🟥 [3/3] | Mindset About | Container                      -->
                                                 <!-- ----------------------------------------------------------- -->
                                                 <div id="mindset-about-container" class="style-page-content-card-white">
 
@@ -1732,7 +1815,7 @@
                                                         <div class="header-content-block">
 
                                                             <img src="media/img/content/01-default/clipart/focus-modified.png"
-                                                                id="img-header-mindset-about" alt="img">
+                                                                id="img-about-mindset" alt="img">
 
                                                             <div>
                                                                 <div class="header-content-title" >Mindset</div>
@@ -1744,7 +1827,7 @@
                                                         <!-- ------------------------------------------------------ -->
                                                         <!-- [2/2] | Action Drop Down Element -->
                                                         <!-- ------------------------------------------------------ -->
-                                                        <label for="chk-mindset-about" class="action-drop-down-medium">
+                                                        <label for="chk-mindset-about" class="drop-down-light-grey-medium">
 
                                                             <!-- ---------------------------------------- -->
                                                             <!-- [1/2] | Title + IMG  -->
@@ -1906,7 +1989,7 @@
                                 </div>
 
                                 <!-- ----------------------------------------------------------- -->
-                                <!-- 🟩 [2/3] | IT Skills About Container                     -->
+                                <!-- 🟥 [2/3] | IT Skills About Container                     -->
                                 <!-- ----------------------------------------------------------- -->
                                 <div class="resp-very-small-content-area">
 
@@ -2194,7 +2277,7 @@
                                 </div>
 
                                 <!-- ----------------------------------------------------------- -->
-                                <!-- 🟩 [3/3] | Contact About Container                       -->
+                                <!-- 🟥 [3/3] | Contact About Container                       -->
                                 <!-- ----------------------------------------------------------- -->
                                 <div class="resp-very-small-content-area">
 

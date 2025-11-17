@@ -6,6 +6,23 @@
 
 
 /* ------------------------------------------------------------------- */
+/* Story Behind SD Read More About Container
+/* ------------------------------------------------------------------- */
+
+#story-behind-sd-read-more-about-container {
+
+  margin-top: 2.5em;
+
+  display: grid;
+
+  background-color: rgb(166, 166, 239);
+
+  /* default unshown */
+  display: none;
+
+}
+
+/* ------------------------------------------------------------------- */
 /* My Story Superfreshdev About Container
 /* ------------------------------------------------------------------- */
 

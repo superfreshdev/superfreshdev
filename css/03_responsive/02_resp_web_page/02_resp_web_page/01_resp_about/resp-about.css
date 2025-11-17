@@ -129,12 +129,12 @@
   /* Read More | Labels (mission, hobbies, story ) */
   /* ---------------------------------------------------------------------------------------------- */
 
-  #nav-list-read-more-about > label {
+  /* #nav-list-read-more-about > label {
 
-    /* desktop */
+
     width: auto;
 
-  }
+  } */
 
   /* --------------------------------------------------------- */
   /* Read More | Audio Violine Container */
@@ -150,11 +150,11 @@
   /* Read More | Img About Read More topics */
   /* --------------------------------------------------------- */
 
-  .img-about-read-more-topics {
+  /* .img-about-read-more-topics {
 
     display: flex;
 
-  }
+  } */
 
   /* --------------------------------------------------------- */
   /* About Details | Contact Info Box -> Main */
@@ -342,6 +342,83 @@
 }
 
 /* ------------------------------------------------------------------- */
+/* >= 600px */
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 600px ) {
+
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Header Nav Read More About
+  /* ------------------------------------------------------------------- */
+
+  #header-nav-read-more-about {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: 1em;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Img | Header Nav Read More About */
+  /* ------------------------------------------------------------------- */
+
+  #img-about-read-more {
+
+    /* desktop */
+    width: 5em;
+
+  }
+
+  /* ----------------------------------------------------------------------------------------- */
+  /* Read More | Header Nav Read More About | Header Content Block | Sub Title
+  /* ----------------------------------------------------------------------------------------- */
+
+  #header-nav-read-more-about > .header-content-block > div:nth-of-type(1) > div:nth-of-type(2){
+
+    font-size: 14.5px;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Label | Show Me */
+  /* ------------------------------------------------------------------- */
+
+  label[for="chk-open-read-more-about"] {
+
+    /* desktop */
+    min-width: 7em;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Nav Read More About
+  /* ------------------------------------------------------------------- */
+
+  #nav-read-more-about {
+
+    display: grid;
+    justify-items: center;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Nav Content Panel Medium | Label
+  /* ------------------------------------------------------------------- */
+
+  #nav-read-more-about > .nav-content-panel-medium > label {
+
+    width: auto;
+
+  }
+
+}
+
+/* ------------------------------------------------------------------- */
 /* >= 650px */
 /* ------------------------------------------------------------------- */
 
@@ -451,10 +528,9 @@
 
     /* desktop */
     text-align: left;
+    padding: 0;
 
   }
-
-
 
 }
 

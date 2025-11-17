@@ -6,28 +6,7 @@
 
 
 /* ------------------------------------------------------------------- */
-/* Nav About
-/* ------------------------------------------------------------------- */
-
-#nav-about {
-
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-
-  /* mobile */
-  justify-content: center;
-
-  /* border-radius: 1.5em 1.5em 1.5em 1.5em; */
-
-  /* background-color: rgb(208, 82, 82); */
-
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Handling |
+/* Radios | Info, IT Skills, Contact
 /* ------------------------------------------------------------------- */
 
 /* default unshown */
@@ -41,8 +20,27 @@ input[name="name-radio-nav-about"] {
 #radio-it-skills-about:checked ~ div:nth-of-type(1) label[for="radio-it-skills-about"],
 #radio-contact-about:checked ~ div:nth-of-type(1) label[for="radio-contact-about"] {
 
+  opacity: 1;
   background-color: wheat;
   color:black;
+
+}
+
+/* unshow grey img */
+#radio-info-about:checked ~ div:nth-of-type(1) label[for="radio-info-about"] > img:nth-of-type(2),
+#radio-it-skills-about:checked ~ div:nth-of-type(1) label[for="radio-it-skills-about"] > img:nth-of-type(2),
+#radio-contact-about:checked ~ div:nth-of-type(1) label[for="radio-contact-about"] > img:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* show black img */
+#radio-info-about:checked ~ div:nth-of-type(1) label[for="radio-info-about"] > img:nth-of-type(1),
+#radio-it-skills-about:checked ~ div:nth-of-type(1) label[for="radio-it-skills-about"] > img:nth-of-type(1),
+#radio-contact-about:checked ~ div:nth-of-type(1) label[for="radio-contact-about"] > img:nth-of-type(1) {
+
+ display: flex;
 
 }
 
@@ -51,11 +49,30 @@ input[name="name-radio-nav-about"] {
 #radio-it-skills-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-it-skills-about"]:hover,
 #radio-contact-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-contact-about"]:hover {
 
-  z-index: 3;
-  background-color: rgb(204, 204, 204);
+  /* z-index: 3; */
+  opacity: 1;
+  background-color: wheat;
+  color:black;
 
 }
 
+/* add hover by unchecked labels | unshown grey img */
+#radio-info-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-info-about"]:hover > img:nth-of-type(2),
+#radio-it-skills-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-it-skills-about"]:hover > img:nth-of-type(2),
+#radio-contact-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-contact-about"]:hover > img:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* add hover by unchecked labels | shown black img */
+#radio-info-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-info-about"]:hover > img:nth-of-type(1),
+#radio-it-skills-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-it-skills-about"]:hover > img:nth-of-type(1),
+#radio-contact-about:not(:checked) ~ div:nth-of-type(1) label[for="radio-contact-about"]:hover > img:nth-of-type(1) {
+
+  display: flex;
+
+}
 
 /* show content | info, it-skills, contact */
 #radio-info-about:checked ~ div:nth-of-type(2) #info-about-container,
