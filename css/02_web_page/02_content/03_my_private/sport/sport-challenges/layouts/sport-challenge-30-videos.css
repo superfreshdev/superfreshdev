@@ -5,18 +5,30 @@
 
 
 /* -------------------------------------------------------------- */
+/* Sport Challenge Video Container
+/* -------------------------------------------------------------- */
+
+#sport-challenges-video-container {
+
+  width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+}
+
+/* -------------------------------------------------------------- */
 /* Sport Challenge | 30 Videos Container
 /* -------------------------------------------------------------- */
 
 #sport-challenge-30-videos-container {
 
   width: 100%;
-  padding-top: 3em;
-  padding-bottom: 1.5em;
+  padding: 1.5em 0;
 
   display: grid;
   justify-content: center;
-  row-gap: 1.5em;
+  /* row-gap: 1.5em; */
 
   /* border-top: 3px solid grey; */
 
@@ -88,11 +100,11 @@
 
   font-weight: bold;
 
-  border-radius: .4em;;
+  border-radius: .6em;;
 
 
   background-color: rgb(41, 41, 41);
-  color:white;
+  color:rgb(209, 209, 209);
 
 }
 
@@ -113,7 +125,7 @@
 .sport-challenge-15-videos-container > header > div > div {
 
   font-size: 14.5px;
-  font-style: italic;
+  /* font-style: italic; */
 
 }
 
@@ -141,14 +153,15 @@
 #sport-challenge-3-videos-container {
 
   width: 100%;
-  padding-top: 3em;
-  padding-bottom: 1.5em;
+  padding: 1.5em 0;
 
   display: grid;
   justify-items: center;
 
   grid: auto auto / 1fr;
-  row-gap: 3em;
+  row-gap: 2em;
+
+  /* background-color: grey; */
 
   /* default unshown */
   display: none;
@@ -159,8 +172,9 @@
 /* Divs | Sport Challenge 3 Videos Container
 /* -------------------------------------------------------------- */
 
-#sport-challenge-3-videos-container > div {
+#sport-challenge-3-videos-container > .quick-info-sport-challenge-container:nth-of-type(1) {
 
   width: 100%;
+  /* background-color: green; */
 
 }

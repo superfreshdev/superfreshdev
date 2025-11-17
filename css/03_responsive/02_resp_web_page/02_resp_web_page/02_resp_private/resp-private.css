@@ -313,15 +313,6 @@
 
   }
 
-  /* -------------------------------------------------------------- */
-  /* Sport | Sport Newest Video Container
-  /* -------------------------------------------------------------- */
-
-  #sport-newest-video-container {
-
-    padding-top: 3em;
-
-  }
 
   /* ----------------------------------------------------- */
   /* Sport | Header Content Block */
@@ -440,6 +431,16 @@
 /* ----------------------------------------------------- */
 
 @media ( min-width: 600px ) {
+
+  /* -------------------------------------------------------------- */
+  /* Sport | Reminder Sport Newest Video
+  /* -------------------------------------------------------------- */
+
+  #reminder-sport-newest-video {
+
+    width: 80%;
+
+  }
 
   /* ------------------------------------------------------------- */
   /* Book Listenings | Book Listenings Content Container
@@ -567,6 +568,15 @@
 @media ( min-width: 700px ) {
 
 
+  /* -------------------------------------------------------------- */
+  /* Sport | Sport Newest Video Container
+  /* -------------------------------------------------------------- */
+
+  #sport-newest-video-container {
+
+    padding-top: 3em;
+
+  }
 
   /* -------------------------------------------------------------- */
   /* Sport | Sport Video 3 Container */
@@ -595,18 +605,6 @@
   }
 
   /* -------------------------------------------------------------- */
-  /* Divs | Sport Newest Video Container
-  /* -------------------------------------------------------------- */
-
-  #sport-newest-video-container > div {
-
-    /* mobile */
-    /* width: 39em; */
-    /* background-color: green; */
-
-  }
-
-  /* -------------------------------------------------------------- */
   /* Sport | Reminder Sport Newest Video */
   /* -------------------------------------------------------------- */
 
@@ -621,14 +619,13 @@
 
 
   /* -------------------------------------------------------------- */
-  /* Divs | Sport Challenge 3 Videos Container
+  /* Sport | Sport Challenge 3 Videos Container
   /* -------------------------------------------------------------- */
 
-  #sport-challenge-3-videos-container > div {
+  #sport-challenge-3-videos-container {
 
-    width: 39em;
-
-    /* background-color: red; */
+    width: 37.8em;
+    /* padding: 1.5em 0; */
 
   }
 
@@ -691,17 +688,16 @@
     width: 13em;
 
   }
-
   /* -------------------------------------------------------------- */
-  /* Sport | Sport Video 3 Container */
+  /* Sport | Sport Challenge 3 Videos Container
   /* -------------------------------------------------------------- */
 
-  /* .sport-3-videos-container {
+  #sport-challenge-3-videos-container {
 
-    column-gap: .8em;
+    width: 41em;
+    /* padding: 1.5em 0; */
 
-  } */
-
+  }
 
 }
 
@@ -747,26 +743,13 @@
   }
 
   /* -------------------------------------------------------------- */
-  /* Divs | Sport Newest Video Container
+  /* Sport | Sport Challenge 3 Videos Container
   /* -------------------------------------------------------------- */
 
-  #sport-newest-video-container > div {
+  #sport-challenge-3-videos-container {
 
-    /* mobile */
-    /* width: 43.5em; */
-    /* background-color: rgb(103, 104, 103); */
-
-  }
-
-  /* -------------------------------------------------------------- */
-  /* Divs | Sport Challenge 3 Videos Container
-  /* -------------------------------------------------------------- */
-
-  #sport-challenge-3-videos-container > div {
-
-    width: 43.5em;
-
-    /* background-color: rgb(255, 170, 170); */
+    width: 49.7em;
+    /* padding: 1.5em 0; */
 
   }
 

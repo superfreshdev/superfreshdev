@@ -131,7 +131,9 @@ label[for="chk-selected-category-sport-challenges"] {
 
 #content-sport-container {
 
+  width: 100%;
+
   display: grid;
-  /* background-color: blue; */
+  justify-items: center;
 
 }

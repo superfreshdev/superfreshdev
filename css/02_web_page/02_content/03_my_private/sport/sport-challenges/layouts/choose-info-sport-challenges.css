@@ -33,14 +33,3 @@
   height: 4.5em;
 
 }
-
-/* ------------------------------------------------------------- */
-/* Div (Text) | Choose Sport Challenge Container
-/* ------------------------------------------------------------- */
-
-#choose-info-container-sport-challenges > div {
-
-  font-size: 25px;
-  font-weight: bold;
-
-}

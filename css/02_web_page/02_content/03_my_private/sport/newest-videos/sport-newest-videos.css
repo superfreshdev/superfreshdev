@@ -11,6 +11,7 @@
 #sport-newest-video-container {
 
   width: 100%;
+  /* width: 42em; */
   padding-top: 1.5em;
 
   display: grid;
@@ -20,19 +21,10 @@
   /* default unshown */
   display: none;
 
-}
-
-
-/* -------------------------------------------------------------- */
-/* Divs | Sport Newest Video Container
-/* -------------------------------------------------------------- */
-
-#sport-newest-video-container > div {
-
-  /* mobile */
-  width: 100%;
+  /* background-color: rgb(216, 216, 216); */
 
 }
+
 
 /* -------------------------------------------------------------- */
 /* Reminder Sport Newest
@@ -40,6 +32,7 @@
 
 #reminder-sport-newest-video {
 
+  width: 100%;
   padding: .6em .8em;
 
   /* mobile */
@@ -49,6 +42,8 @@
   row-gap: .4em;
 
   border-radius: .4em;
+
+  background-color: rgb(243, 243, 243);
 
 }
 
@@ -86,14 +81,10 @@
 #history-sport-newest-video-container {
 
   display: grid;
+  justify-items: center;
 
   /* border-top: 3px solid rgb(233, 233, 233); */
 
-}
-
-#history-sport-newest-video-container > label:nth-of-type(1) {
-
-  justify-self: flex-end;
 }
 
 /* -------------------------------------------------------------- */

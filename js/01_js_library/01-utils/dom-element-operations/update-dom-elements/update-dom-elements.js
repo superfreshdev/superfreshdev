@@ -49,3 +49,21 @@ function update_selected_label( label, imgSrc, imgClass, text ) {
   }
 
 }
+
+
+/* ------------------------------------------------------ */
+/* Update | Content Header
+/* ------------------------------------------------------ */
+
+function update_content_header( header, imgSrc, imgClass, title, subTitle ) {
+
+  // update img
+  header.querySelector("img:nth-of-type(1)").setAttribute( "src", imgSrc );
+  header.querySelector("img:nth-of-type(1)").setAttribute( "class", imgClass );
+
+  // update titles
+  header.querySelector("div:nth-of-type(1) .header-content-title").innerText = title;
+  header.querySelector("div:nth-of-type(1) .header-content-sub-title").innerText = subTitle;
+
+
+}
