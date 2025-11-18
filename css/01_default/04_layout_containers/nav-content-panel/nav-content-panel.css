@@ -5,9 +5,11 @@
 
 
 /* -------------------------------------------------------------- */
-/* Nav Content Panel ( small, medium )
+/* Nav Content Panel ( Opacity, Default )
 /* -------------------------------------------------------------- */
 
+.nav-content-panel-opacity-small,
+.nav-content-panel-opacity-medium,
 .nav-content-panel-small,
 .nav-content-panel-medium {
 
@@ -20,13 +22,15 @@
   border-radius: .8em;
 
   font-weight: bold;
+
 }
 
-
 /* -------------------------------------------------------------- */
-/* Label (Default) | Nav Content Panel ( small, medium )
+/* Label | Nav Content Panel
 /* -------------------------------------------------------------- */
 
+.nav-content-panel-opacity-small > label,
+.nav-content-panel-opacity-medium > label,
 .nav-content-panel-small > label,
 .nav-content-panel-medium > label {
 
@@ -40,8 +44,8 @@
 
   border-radius: .8em;
 
-  background-color: #e0e0e0;
-  opacity: .3;
+  background-color: #f0f0f0;
+  color:rgb(95, 95, 95);
 
   user-select: none;
   cursor: pointer;
@@ -49,14 +53,10 @@
 
 }
 
-.nav-content-panel-small > label:hover,
-.nav-content-panel-medium > label:hover {
-
-  background-color: wheat;
-
-}
-
-.nav-content-panel-small > label > div:nth-of-type(1),
+/* Label Div 1 */
+.nav-content-panel-opacity-small > label > div:nth-of-type(1),
+.nav-content-panel-opacity-medium >  label > div:nth-of-type(1),
+.nav-content-panel-small >  label > div:nth-of-type(1),
 .nav-content-panel-medium > label > div:nth-of-type(1) {
 
   display: flex;
@@ -65,9 +65,66 @@
 
 }
 
+/* hover */
+.nav-content-panel-opacity-small > label:hover,
+.nav-content-panel-opacity-medium >  label:hover,
+.nav-content-panel-small >  label:hover,
+.nav-content-panel-medium > label:hover {
+
+  background-color: wheat;
+
+}
+
 /* -------------------------------------------------------------- */
-/* Small | Nav Content Panel
+/* Label ( Opacity ) | Nav Content Panel
 /* -------------------------------------------------------------- */
+
+.nav-content-panel-opacity-small > label,
+.nav-content-panel-opacity-medium > label {
+
+  opacity: .3;
+
+}
+
+/* ------------------------------------ */
+/* Small */
+/* ------------------------------------ */
+
+.nav-content-panel-opacity-small > label {
+
+  height: 2em;
+
+}
+
+.nav-content-panel-opacity-small > label > div:nth-of-type(1) {
+
+  font-size: 13.5px;
+
+}
+
+/* ------------------------------------ */
+/* Medium */
+/* ------------------------------------ */
+
+.nav-content-panel-opacity-medium > label {
+
+  height: 2.3em;
+
+}
+
+.nav-content-panel-opacity-medium > label > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Label ( Default ) | Nav Content Panel
+/* -------------------------------------------------------------- */
+
+/* ------------------------------------ */
+/* Small */
+/* ------------------------------------ */
 
 .nav-content-panel-small > label {
 
@@ -75,25 +132,23 @@
 
 }
 
-/* label */
-.nav-content-panel-small > label > div:nth-of-type(1) > div {
+.nav-content-panel-small > label {
 
-  font-size: 13.5px;
+  height: 2em;
 
 }
 
-/* -------------------------------------------------------------- */
-/* Medium | Nav Content Panel
-/* -------------------------------------------------------------- */
+/* ------------------------------------ */
+/* Medium */
+/* ------------------------------------ */
 
-.nav-content-panel-medium > label {
+.nav-content-panel-medium > label  {
 
   height: 2.3em;
 
 }
 
-/* label */
-.nav-content-panel-medium > label > div:nth-of-type(1) > div {
+.nav-content-panel-medium > label > div:nth-of-type(1) {
 
   font-size: 14.5px;
 

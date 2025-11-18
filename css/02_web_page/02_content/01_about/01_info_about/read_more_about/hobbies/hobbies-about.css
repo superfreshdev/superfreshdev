@@ -1,21 +1,20 @@
 /* -------------------------------------------------------------- */
-/* > my-mission-about.css
+/* > hobbies-about.css
 /*
-/* : style my mission about
+/* : style hobbies about
 /* -------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------------- */
-/* Life Stacks Read More About Container
+/* My Hobbies Read More About Container
 /* ------------------------------------------------------------------- */
 
-#my-life-stacks-read-more-about-container {
+#my-hobbies-read-more-about-container {
 
-  margin-top: 2.5em;
 
   display: grid;
 
-  background-color: rgb(116, 116, 116);
+  background-color: rgb(225, 224, 135);
 
   /* default unshown */
   display: none;
@@ -31,12 +30,11 @@
 /* ❌❌❌ Trash
 /* ------------------------------------------------------------------- */
 
-
 /* ------------------------------------------------------------------- */
-/* My Mission About Container
+/* My Hobbies About Container
 /* ------------------------------------------------------------------- */
 
-#my-mission-about-container {
+#my-hobbies-about-container {
 
   width: 100%;
 
@@ -50,5 +48,33 @@
 
   /* default unshown  */
   display: none;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Violine Audio Container | Read More About
+/* ------------------------------------------------------------------- */
+
+#violine-audio-container-read-more-about {
+
+  padding-top: 1.5em;
+
+  display: grid;
+  justify-items: center;
+  row-gap: .6em;
+
+  font-weight: bold;
+
+  /* default very small mobile unshown */
+  display: none;
+
+}
+
+/* header layout position fix */
+#violine-audio-container-read-more-about > header {
+
+  justify-self: flex-start;
+  padding-left: 1em;
+
 
 }

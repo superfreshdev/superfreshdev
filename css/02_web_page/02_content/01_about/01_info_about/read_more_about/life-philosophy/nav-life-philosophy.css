@@ -1,0 +1,56 @@
+/* ------------------------------------------------------------------------------- */
+/* > nav-life-philosophy.css
+/* : styles nav life philosophy
+/* ------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------- */
+/* Checkboxes | Life Philosohpy Categories ( learning, people, website )
+/* ------------------------------------------------------------------------------- */
+
+/* default unshown */
+#chk-life-philosophy-learning,
+#chk-life-philosophy-people,
+#chk-life-philosophy-website {
+
+  display: none;
+
+}
+
+/* set background */
+#chk-life-philosophy-learning:checked + label,
+#chk-life-philosophy-people:checked + label,
+#chk-life-philosophy-website:checked + label {
+
+  background-color: rgb(239, 113, 113);
+  background-color: wheat;
+
+}
+
+/* unshown img plus */
+#chk-life-philosophy-learning:checked + label > img:nth-of-type(1),
+#chk-life-philosophy-people:checked + label > img:nth-of-type(1),
+#chk-life-philosophy-website:checked + label > img:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* show img minus */
+#chk-life-philosophy-learning:checked + label > img:nth-of-type(2),
+#chk-life-philosophy-people:checked + label > img:nth-of-type(2),
+#chk-life-philosophy-website:checked + label > img:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+
+/* set content */
+#chk-life-philosophy-learning:checked ~ #smooth-content-life-philosophy-learning,
+#chk-life-philosophy-people:checked ~ #smooth-content-life-philosophy-people,
+#chk-life-philosophy-website:checked ~ #smooth-content-life-philosophy-website {
+
+  grid-template-rows: 1fr;
+
+}

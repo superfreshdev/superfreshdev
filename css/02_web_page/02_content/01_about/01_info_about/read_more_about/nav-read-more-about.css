@@ -81,7 +81,16 @@ input[name="name-radio-read-more-about"] {
 
 }
 
-/* set content */
+/* set content | seperator zick zack */
+#radio-life-stacks-about:checked ~ .seperator-zick-zack-container-read-more,
+#radio-hobbies-about:checked ~ .seperator-zick-zack-container-read-more,
+#radio-story-about:checked ~ .seperator-zick-zack-container-read-more {
+
+  display: flex;
+
+}
+
+/* set content | ( life philosophy, hobbies, story behind sd ) */
 #radio-life-stacks-about:checked ~ #my-life-stacks-read-more-about-container,
 #radio-hobbies-about:checked ~ #my-hobbies-read-more-about-container,
 #radio-story-about:checked ~ #story-behind-sd-read-more-about-container {
