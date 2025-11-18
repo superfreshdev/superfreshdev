@@ -28,7 +28,7 @@
 #life-philosophy-content-container {
 
   display: grid;
-  row-gap: 1em;
+  row-gap: .6em;
 
 }
 
@@ -38,6 +38,7 @@
 
 .content-life-philosophy {
 
+  padding: 1em 0;
   color:red;
 
 }
