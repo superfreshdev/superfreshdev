@@ -82,9 +82,9 @@ input[name="name-radio-read-more-about"] {
 }
 
 /* set content | seperator zick zack */
-#radio-life-stacks-about:checked ~ .seperator-zick-zack-container-read-more,
-#radio-hobbies-about:checked ~ .seperator-zick-zack-container-read-more,
-#radio-story-about:checked ~ .seperator-zick-zack-container-read-more {
+#radio-life-stacks-about:checked ~ .seperator-img-container-p-2-0,
+#radio-hobbies-about:checked ~ .seperator-img-container-p-2-0,
+#radio-story-about:checked ~ .seperator-img-container-p-2-0 {
 
   display: flex;
 

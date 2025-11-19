@@ -85,20 +85,12 @@ label[for="chk-open-read-more-about"] > div:nth-of-type(1) > div:nth-of-type(2) 
 }
 
 /* ------------------------------------------------------------------- */
-/* Sperator Zick Zack Container | Read More
+/* Seperator Default | Read More
 /* ------------------------------------------------------------------- */
 
-.seperator-zick-zack-container-read-more {
+/* default unshown, only by checked */
+#read-more-about-container > .seperator-img-container-p-2-0 {
 
-  margin: 2em 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* background-color: rgb(245, 245, 245); */
-
-  /* default unshown */
   display: none;
 
 }

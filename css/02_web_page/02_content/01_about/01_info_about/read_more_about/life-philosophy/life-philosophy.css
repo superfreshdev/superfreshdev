@@ -12,6 +12,7 @@
 #life-philosophy-container {
 
   width: 100%;
+  padding: 2em 0;
 
   display: grid;
   row-gap: .6em;
@@ -79,6 +80,15 @@
 
   background-color: #f0f0f0;
 
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* hover */
+.label-life-philosophy-category:hover {
+
+  background-color: wheat;
 }
 
 /* default unshown img minus */

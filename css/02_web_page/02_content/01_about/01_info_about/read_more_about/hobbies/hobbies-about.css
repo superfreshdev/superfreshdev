@@ -11,15 +11,157 @@
 
 #hobbies-container {
 
+  padding: 2em 0;
 
   display: grid;
 
-  background-color: rgb(225, 224, 135);
+  /* background-color: rgb(225, 224, 135); */
 
   /* default unshown */
   display: none;
 
 }
+
+/* seperator img opacity */
+#hobbies-container .seperator-img-container-p-4-0 > img {
+
+  opacity: .4;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Hobby Content Container
+/* ------------------------------------------------------------------- */
+
+.hobby-content-container {
+
+  display: grid;
+  gap: 1.5em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Hobby Item Container
+/* ------------------------------------------------------------------- */
+
+.hobby-item-container {
+
+  display: grid;
+
+  border-radius: .6em;
+
+  background-color: #f0f0f0;
+
+  background-color: rgb(248, 248, 248);
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header | Hobby Item Container
+/* ------------------------------------------------------------------- */
+
+.hobby-item-container > header {
+
+  display: flex;
+  align-items: center;
+
+}
+
+/* img | header */
+.hobby-item-container > header > img:nth-of-type(1) {
+
+  align-self: flex-start;
+
+  height: 6em;
+  width: 6em;
+
+  border-radius: .6em 0 0 .6em;
+
+}
+
+/* title block | header */
+.hobby-item-container > header > div:nth-of-type(1) {
+
+  padding: .6em 1em;
+
+  display: grid;
+  row-gap: .3em;
+
+}
+
+/* title | header */
+.hobby-item-container > header > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+  font-weight: bold;
+
+  line-height: 1.4em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Div 1 ( Details Block | Optional ) | Hobby Item Container
+/* ------------------------------------------------------------------- */
+
+.hobby-item-container > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+
+  padding: 1em .8em;
+
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------------- */
+
+
+/* 🟣 Auslagern */
+/* ------------------------------------------------------------------- */
+/* Div 1 ( Info Stacks ) | Hobby Item Container
+/* ------------------------------------------------------------------- */
+
+.hobby-info-stack-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3em
+
+}
+
+.hobby-info-stack-container > div {
+
+  font-size: 12.5px;
+
+  height: 1.8em;
+  padding: 0 .4em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4em;
+
+  border-radius: .4em;
+
+  color:rgb(141, 141, 141);
+
+  border: 1px dashed rgb(181, 181, 181);
+
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Div 1 ( Info List ) | Hobby Item Container
+/* ------------------------------------------------------------------- */
+
+.hobby-info-list-container {
+
+
+}
+
 
 
 
