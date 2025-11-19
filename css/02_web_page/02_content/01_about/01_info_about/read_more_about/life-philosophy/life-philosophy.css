@@ -6,13 +6,15 @@
 
 
 /* ------------------------------------------------------------------- */
-/* Life Stacks Read More About Container
+/* Life Philosophy Container
 /* ------------------------------------------------------------------- */
 
-#my-life-stacks-read-more-about-container {
+#life-philosophy-container {
 
+  width: 100%;
 
   display: grid;
+  row-gap: .6em;
 
   /* background-color: rgb(116, 116, 116); */
 
@@ -22,24 +24,41 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Life Philosophy Content Container
-/* ------------------------------------------------------------------- */
-
-#life-philosophy-content-container {
-
-  display: grid;
-  row-gap: .6em;
-
-}
-
-/* ------------------------------------------------------------------- */
 /* Content Life Philosophy
 /* ------------------------------------------------------------------- */
 
 .content-life-philosophy {
 
-  padding: 1em 0;
-  color:red;
+  padding: 1.5em .6em;
+
+  display: grid;
+  row-gap: 2em;
+
+  color:#616161;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Div 1 | Content Life Philosophy
+/* ------------------------------------------------------------------- */
+
+.content-life-philosophy > div {
+
+  display: flex;
+  column-gap: .8em;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Div 1 | Img  | Content Life Philosophy
+/* ------------------------------------------------------------------- */
+
+/* position fix */
+.content-life-philosophy > div > img:nth-of-type(1) {
+
+  position: relative;
+  top:11px;
+  /* padding-top: 8px; */
 
 }
 

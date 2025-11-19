@@ -91,9 +91,9 @@ input[name="name-radio-read-more-about"] {
 }
 
 /* set content | ( life philosophy, hobbies, story behind sd ) */
-#radio-life-stacks-about:checked ~ #my-life-stacks-read-more-about-container,
-#radio-hobbies-about:checked ~ #my-hobbies-read-more-about-container,
-#radio-story-about:checked ~ #story-behind-sd-read-more-about-container {
+#radio-life-stacks-about:checked ~ #life-philosophy-container,
+#radio-hobbies-about:checked ~ #hobbies-container,
+#radio-story-about:checked ~ #story-behind-sd-container {
 
   display: grid;
 
