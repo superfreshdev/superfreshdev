@@ -270,7 +270,6 @@
                         <link rel="stylesheet" href="css/02_web_page/02_content/01_about/01_info_about/read_more_about/read-more-about.css">
                         <link rel="stylesheet" href="css/02_web_page/02_content/01_about/01_info_about/read_more_about/nav-read-more-about.css">
 
-                        <link rel="stylesheet" href="css/02_web_page/02_content/01_about/01_info_about/read_more_about/read-more-info-box.css">
 
                             <!-- read more | life philosophy -->
                             <link rel="stylesheet" href="css/02_web_page/02_content/01_about/01_info_about/read_more_about/life-philosophy/life-philosophy.css">
@@ -875,11 +874,11 @@
                                                     <input type="checkbox" id="chk-open-read-more-about">
 
                                                     <!-- -------------------------------------------------------------------------------- -->
-                                                    <!-- Radios | Read More ( life stacks, hobbies, story )                               -->
+                                                    <!-- Radios | Read More ( life philosophy, hobbies, story )                               -->
                                                     <!-- -------------------------------------------------------------------------------- -->
-                                                    <input type="radio" id="radio-life-stacks-about" name="name-radio-read-more-about">
-                                                    <input type="radio" id="radio-hobbies-about" name="name-radio-read-more-about">
-                                                    <input type="radio" id="radio-story-about" name="name-radio-read-more-about">
+                                                    <input type="radio" id="radio-life-philosophy" name="name-radio-read-more-about">
+                                                    <input checked type="radio" id="radio-hobbies" name="name-radio-read-more-about">
+                                                    <input type="radio" id="radio-story" name="name-radio-read-more-about">
 
 
                                                     <!-- --------------------------------------------------------------- -->
@@ -940,7 +939,7 @@
                                                     <div id="smooth-nav-read-more-about" class="smooth-open-close-container">
 
                                                         <!-- --------------------------------------------------------- -->
-                                                        <!-- Overflow Hidden grid ji-c w-100p-->
+                                                        <!-- Overflow Hidden -->
                                                         <!-- --------------------------------------------------------- -->
                                                         <div class="overflow-hidden ">
 
@@ -957,7 +956,7 @@
                                                                     <!-- -------------------------------------------------- -->
                                                                     <!-- Label | Life Philosophy -->
                                                                     <!-- -------------------------------------------------- -->
-                                                                    <label for="radio-life-stacks-about" class="action-radio-medium">
+                                                                    <label for="radio-life-philosophy" class="action-radio-medium">
 
                                                                         <!-- -------------------------------------------- -->
                                                                         <!-- Title -->
@@ -979,7 +978,7 @@
                                                                     <!-- -------------------------------------------------- -->
                                                                     <!-- Label | Hobbies -->
                                                                     <!-- -------------------------------------------------- -->
-                                                                    <label for="radio-hobbies-about" class="action-radio-medium">
+                                                                    <label for="radio-hobbies" class="action-radio-medium">
 
                                                                         <!-- -------------------------------------------- -->
                                                                         <!-- Title -->
@@ -1001,7 +1000,7 @@
                                                                     <!-- -------------------------------------------------- -->
                                                                     <!-- Label | Story behind SD -->
                                                                     <!-- -------------------------------------------------- -->
-                                                                    <label for="radio-story-about" class="action-radio-medium">
+                                                                    <label for="radio-story" class="action-radio-medium">
 
                                                                         <!-- -------------------------------------------- -->
                                                                         <!-- Title -->
@@ -1059,7 +1058,9 @@
 
                                                                 <!-- title block -->
                                                                 <div>
-                                                                    <div>01/03</div>
+                                                                    <div>
+                                                                        <span>01/03</span>
+                                                                    </div>
                                                                     <div>» Learning, building & have fun</div>
                                                                 </div>
 
@@ -1076,7 +1077,7 @@
                                                         </label>
 
                                                         <!-- ---------------------------------------------------------- -->
-                                                        <!-- 🟩 Smooth | Content | Life Philosophy Learning -->
+                                                        <!-- 🟩 Smooth | Content | Life Philosophy | Learning -->
                                                         <!-- ---------------------------------------------------------- -->
                                                         <div id="smooth-content-life-philosophy-learning" class="smooth-open-close-container">
 
@@ -1154,7 +1155,9 @@
 
                                                                 <!-- title block -->
                                                                 <div>
-                                                                    <div>02/03</div>
+                                                                    <div>
+                                                                        <span>02/03</span>
+                                                                    </div>
                                                                     <div>» People & Event's</div>
                                                                 </div>
 
@@ -1234,7 +1237,9 @@
 
                                                                 <!-- title block -->
                                                                 <div>
-                                                                    <div>03/03</div>
+                                                                    <div>
+                                                                        <span>03/03</span>
+                                                                    </div>
                                                                     <div>» My Web-Site to keep moving</div>
                                                                 </div>
 
@@ -1308,39 +1313,72 @@
                                                      <div id="hobbies-container">
 
 
-                                                        <!-- ------------------------------------------------ -->
-                                                        <!-- [1/3] | Hobby Content Container -->
-                                                        <!-- ------------------------------------------------ -->
-                                                        <div class="hobby-content-container">
+                                                        <!--
 
-                                                            <!--  1 -->
+                                                            hobbies-content-list-part-1-of-2
+
+                                                                .hobby-item-container
+                                                                    img
+                                                                    header
+                                                                        nr
+                                                                        title
+                                                                    (info-sticker)
+
+                                                            hobbies-content-list-part-2-of-2
+
+                                                        -->
+
+                                                        <!-- ------------------------------------------------ -->
+                                                        <!-- 🟩 [1/2] | Hobbies Content List Part 1 of 2 -->
+                                                        <!-- ------------------------------------------------ -->
+                                                        <div id="hobbies-content-list-part-1-of-2">
+
+
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- [1/8] | Running, ... | Hobby Item Container -->
+                                                            <!-- ---------------------------------------------------- -->
                                                             <div class="hobby-item-container">
 
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Header Block -->
-                                                                <!-- ------------------------------------------------- -->
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- --------------------------------------------- -->
                                                                 <header>
 
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- img -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <img src="media/img/content/02-about/magic-3-cover.png"  alt="img">
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- IMG -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/magic-3-cover.png" alt="img">
 
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Header Content Block -->
+                                                                    <!-- --------------------------------------------- -->
                                                                     <div>
 
-                                                                        <!-- title -->
-                                                                        <div>1. Running, Bicycle, Swimming</div>
+                                                                        <!-- Nr -->
+                                                                        <div>
+                                                                            <span>01/08</span>
+                                                                        </div>
 
-                                                                        <!-- sub title -->
-                                                                        <div class="hobby-info-sticker-container">
+                                                                        <!-- Header Title -->
+                                                                        <div>» Running, Bicycle, Swimming</div>
 
-                                                                            <div>5-25km</div>
-                                                                            <div>10-50km </div>
-                                                                            <div>60 Min. </div>
+                                                                        <!-- Mini Info Sticker Hobby Container -->
+                                                                        <div class="mini-info-sticker-hobby-container" style="display: none;">
+
+                                                                            <!-- 1 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>5-25km</span>
+                                                                            </div>
+
+                                                                            <!-- 2 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>10-50km</span>
+                                                                            </div>
+
+                                                                            <!-- 3 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span> 60 Min.</span>
+                                                                            </div>
 
                                                                         </div>
 
@@ -1348,76 +1386,265 @@
 
                                                                 </header>
 
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Main ( Optional )-->
+                                                                <!-- --------------------------------------------- -->
+                                                                <main style="display: none;">
+                                                                    Main
+                                                                </main>
 
                                                             </div>
 
-                                                            <!--  2 -->
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- [2/8] | Soccer, ... | Hobby Item Container -->
+                                                            <!-- ---------------------------------------------------- -->
                                                             <div class="hobby-item-container">
 
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Header Block -->
-                                                                <!-- ------------------------------------------------- -->
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- --------------------------------------------- -->
                                                                 <header>
 
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- img -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <img src="media/img/content/02-about/balls-cover.png"  alt="img">
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- IMG -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/balls-cover.png" alt="img">
 
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Header Content Block -->
+                                                                    <!-- --------------------------------------------- -->
                                                                     <div>
 
-                                                                        <!-- title -->
-                                                                        <div>2. Basketball, Volleyball, Badminton, Soccer</div>
+                                                                        <!-- Nr -->
+                                                                        <div>
+                                                                            <span>02/08</span>
+                                                                        </div>
+
+                                                                        <!-- Header Title -->
+                                                                        <div>» Soccer, Volleyball, Basketball, Badminton</div>
+
+                                                                        <!-- Mini Info Sticker Hobby Container -->
+                                                                        <div class="mini-info-sticker-hobby-container" style="display: none;">
+
+                                                                            <!-- 1 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>5-25km</span>
+                                                                            </div>
+
+                                                                            <!-- 2 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>10-50km</span>
+                                                                            </div>
+
+                                                                            <!-- 3 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span> 60 Min.</span>
+                                                                            </div>
+
+                                                                        </div>
 
                                                                     </div>
 
                                                                 </header>
 
-
-
-
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Main ( Optional )-->
+                                                                <!-- --------------------------------------------- -->
+                                                                <main style="display: none;">
+                                                                    Main
+                                                                </main>
 
                                                             </div>
 
-                                                            <!--  3 -->
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- [3/8] | Gym, ... | Hobby Item Container -->
+                                                            <!-- ---------------------------------------------------- -->
                                                             <div class="hobby-item-container">
 
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Header Block -->
-                                                                <!-- ------------------------------------------------- -->
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- --------------------------------------------- -->
                                                                 <header>
 
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- img -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <img src="media/img/content/02-about/gym-cover.png"  alt="img">
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- IMG -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/gym-cover.png" alt="img">
 
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Header Content Block -->
+                                                                    <!-- --------------------------------------------- -->
                                                                     <div>
 
-                                                                        <!-- title -->
-                                                                        <div>3. Gym, Calisthenics</div>
+                                                                        <!-- Nr -->
+                                                                        <div>
+                                                                            <span>03/08</span>
+                                                                        </div>
 
+                                                                        <!-- Header Title -->
+                                                                        <div>» Gym, Calisthenics</div>
+
+                                                                        <!-- Mini Info Sticker Hobby Container -->
+                                                                        <div class="mini-info-sticker-hobby-container" style="display: none;">
+
+                                                                            <!-- 1 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>5-25km</span>
+                                                                            </div>
+
+                                                                            <!-- 2 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>10-50km</span>
+                                                                            </div>
+
+                                                                            <!-- 3 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span> 60 Min.</span>
+                                                                            </div>
+
+                                                                        </div>
 
                                                                     </div>
 
                                                                 </header>
 
-
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Main ( Optional )-->
+                                                                <!-- --------------------------------------------- -->
+                                                                <main style="display: none;">
+                                                                    Main
+                                                                </main>
 
                                                             </div>
+
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- [4/8] | Gym, ... | Hobby Item Container -->
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <div class="hobby-item-container">
+
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- --------------------------------------------- -->
+                                                                <header>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- IMG -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/travel-cover.png" alt="img">
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Header Content Block -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <!-- Nr -->
+                                                                        <div>
+                                                                            <span>04/08</span>
+                                                                        </div>
+
+                                                                        <!-- Header Title -->
+                                                                        <div>» Travel</div>
+
+                                                                        <!-- Mini Info Sticker Hobby Container -->
+                                                                        <div class="mini-info-sticker-hobby-container" style="display: none;">
+
+                                                                            <!-- 1 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>5-25km</span>
+                                                                            </div>
+
+                                                                            <!-- 2 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>10-50km</span>
+                                                                            </div>
+
+                                                                            <!-- 3 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span> 60 Min.</span>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </header>
+
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Main ( Optional )-->
+                                                                <!-- --------------------------------------------- -->
+                                                                <main style="display: none;">
+                                                                    Main
+                                                                </main>
+
+                                                            </div>
+
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- [5/8] | People, ... | Hobby Item Container -->
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <div class="hobby-item-container">
+
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- --------------------------------------------- -->
+                                                                <header>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- IMG -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/people-cover.png" alt="img">
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Header Content Block -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <!-- Nr -->
+                                                                        <div>
+                                                                            <span>05/08</span>
+                                                                        </div>
+
+                                                                        <!-- Header Title -->
+                                                                        <div>» Family, Friends, Meet new Peoples</div>
+
+                                                                        <!-- Mini Info Sticker Hobby Container -->
+                                                                        <div class="mini-info-sticker-hobby-container" style="display: none;">
+
+                                                                            <!-- 1 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>5-25km</span>
+                                                                            </div>
+
+                                                                            <!-- 2 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>10-50km</span>
+                                                                            </div>
+
+                                                                            <!-- 3 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span> 60 Min.</span>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </header>
+
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Main ( Optional )-->
+                                                                <!-- --------------------------------------------- -->
+                                                                <main style="display: none;">
+                                                                    Main
+                                                                </main>
+
+                                                            </div>
+
 
                                                         </div>
 
+
                                                         <!-- ------------------------------------------------ -->
-                                                        <!-- Seperator -->
+                                                        <!-- 🟩 Seperator -->
                                                         <!-- ------------------------------------------------ -->
                                                         <div class="seperator-img-container-p-2-0">
 
@@ -1426,38 +1653,55 @@
                                                         </div>
 
                                                         <!-- ------------------------------------------------ -->
-                                                        <!-- [2/3] | Hobby Content Container -->
+                                                        <!-- ➡️🟥 [2/2] | Hobbies Content List Part 2 of 2 -->
                                                         <!-- ------------------------------------------------ -->
-                                                        <div class="hobby-content-container">
+                                                        <div id="hobbies-content-list-part-2-of-2">
 
-                                                            <!-- 4 |  Travel -->
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- [6/8] | Violine, ... | Hobby Item Container -->
+                                                            <!-- ---------------------------------------------------- -->
                                                             <div class="hobby-item-container">
 
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Header Block -->
-                                                                <!-- ------------------------------------------------- -->
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- --------------------------------------------- -->
                                                                 <header>
 
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- img -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <img src="media/img/content/02-about/travel-cover.png"  alt="img">
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- IMG -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/violine-cover.png" alt="img">
 
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Header Content Block -->
+                                                                    <!-- --------------------------------------------- -->
                                                                     <div>
 
-                                                                        <!-- title -->
-                                                                        <div>4. Travel</div>
+                                                                        <!-- Nr -->
+                                                                        <div>
+                                                                            <span>06/08</span>
+                                                                        </div>
 
-                                                                        <!-- sub title -->
-                                                                        <div class="hobby-info-stack-container" style="display: none;">
+                                                                        <!-- Header Title -->
+                                                                        <div>» Violine (Crossover)</div>
 
-                                                                            <div>5-25km</div>
-                                                                            <div>10-50km </div>
-                                                                            <div>60 Min. </div>
+                                                                        <!-- Mini Info Sticker Hobby Container -->
+                                                                        <div class="mini-info-sticker-hobby-container" style="display: none;">
+
+                                                                            <!-- 1 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>5-25km</span>
+                                                                            </div>
+
+                                                                            <!-- 2 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>10-50km</span>
+                                                                            </div>
+
+                                                                            <!-- 3 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span> 60 Min.</span>
+                                                                            </div>
 
                                                                         </div>
 
@@ -1465,116 +1709,10 @@
 
                                                                 </header>
 
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Details Block -->
-                                                                <!-- ------------------------------------------------- -->
-                                                                <div style="display: none;">
-                                                                    Details Block
-                                                                </div>
-
-                                                            </div>
-
-                                                            <!-- 5 | Friends, Family  -->
-                                                            <div class="hobby-item-container">
-
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Header Block -->
-                                                                <!-- ------------------------------------------------- -->
-                                                                <header>
-
-                                                                    <!-- ----------------------------------------------- -->
-                                                                    <!-- img -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <img src="media/img/content/02-about/people-cover.png"  alt="img">
-
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <div>
-
-                                                                        <!-- title -->
-                                                                        <div>5. Family, Friends, Meet new Peoples</div>
-
-                                                                        <!-- sub title -->
-                                                                        <div class="hobby-info-stack-container" style="display: none;">
-
-                                                                            <div>5-25km</div>
-                                                                            <div>10-50km </div>
-                                                                            <div>60 Min. </div>
-
-                                                                        </div>
-
-                                                                    </div>
-
-                                                                </header>
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Details Block -->
-                                                                <!-- ------------------------------------------------- -->
-                                                                <div style="display: none;">
-                                                                    Details Block
-                                                                </div>
-
-                                                            </div>
-
-
-                                                        </div>
-
-                                                        <!-- ------------------------------------------------ -->
-                                                        <!-- Seperator -->
-                                                        <!-- ------------------------------------------------ -->
-                                                        <div class="seperator-img-container-p-2-0">
-
-                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-art-seperator.png" class="img-h-0-6" alt="img">
-
-                                                        </div>
-
-                                                        <!-- ------------------------------------------------ -->
-                                                        <!-- [3/3] | Hobby Content Container -->
-                                                        <!-- ------------------------------------------------ -->
-                                                        <div class="hobby-content-container">
-
-                                                            <!-- ➡️🟥 6 | violine -->
-                                                            <div class="hobby-item-container">
-
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Header Block -->
-                                                                <!-- ------------------------------------------------- -->
-                                                                <header>
-
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- img -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <img src="media/img/content/02-about/violine-cover.png"  alt="img">
-
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <div>
-
-                                                                        <!-- title -->
-                                                                        <div>6. Violine</div>
-
-                                                                         <!-- sub title -->
-                                                                        <div class="hobby-info-sticker-container">
-
-                                                                            <div>beginning</div>
-                                                                            <div>6 easy pieces </div>
-                                                                            <div>crossover </div>
-
-                                                                        </div>
-
-                                                                    </div>
-
-                                                                </header>
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Details Block | Violine Inspiration Contianer -->
-                                                                <!-- ------------------------------------------------- -->
-                                                                <div id="violine-inspiration-container">
-
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Main ( Optional )-->
+                                                                <!-- --------------------------------------------- -->
+                                                                <main id="violine-inspiration-container">
 
                                                                     <!-- ---------------------------------------------------- -->
                                                                     <!-- Header -->
@@ -1638,6 +1776,266 @@
 
                                                                     </main>
 
+                                                                </main>
+
+                                                            </div>
+
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- [7/8] | Music ... | Hobby Item Container -->
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <div class="hobby-item-container">
+
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- --------------------------------------------- -->
+                                                                <header>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- IMG -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/music-cover.png" alt="img">
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Header Content Block -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <!-- Nr -->
+                                                                        <div>
+                                                                            <span>07/08</span>
+                                                                        </div>
+
+                                                                        <!-- Header Title -->
+                                                                        <div>» Music</div>
+
+                                                                        <!-- Mini Info Sticker Hobby Container -->
+                                                                        <div class="mini-info-sticker-hobby-container" style="display: none;">
+
+                                                                            <!-- 1 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>5-25km</span>
+                                                                            </div>
+
+                                                                            <!-- 2 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>10-50km</span>
+                                                                            </div>
+
+                                                                            <!-- 3 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span> 60 Min.</span>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </header>
+
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Main ( Optional )-->
+                                                                <!-- --------------------------------------------- -->
+                                                                <main>
+
+                                                                    Violine (Crossover), Piano, Usher, 50-Cent,
+                                                                    RnB, Metallica, Guano Apes, Pop-Charts,
+                                                                    House, Soundtracks, Other Countries, 60er-80er
+
+                                                                </main>
+
+                                                            </div>
+
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <!-- [8/8] | Movies, ... | Hobby Item Container -->
+                                                            <!-- ---------------------------------------------------- -->
+                                                            <div class="hobby-item-container">
+
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Header -->
+                                                                <!-- --------------------------------------------- -->
+                                                                <header>
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- IMG -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/movie-cover.png" alt="img">
+
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <!-- Header Content Block -->
+                                                                    <!-- --------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <!-- Nr -->
+                                                                        <div>
+                                                                            <span>08/08</span>
+                                                                        </div>
+
+                                                                        <!-- Header Title -->
+                                                                        <div>» Movies</div>
+
+                                                                        <!-- Mini Info Sticker Hobby Container -->
+                                                                        <div class="mini-info-sticker-hobby-container" style="display: none;">
+
+                                                                            <!-- 1 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>5-25km</span>
+                                                                            </div>
+
+                                                                            <!-- 2 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span>10-50km</span>
+                                                                            </div>
+
+                                                                            <!-- 3 | Mini Info Sticker -->
+                                                                            <div>
+                                                                                <span> 60 Min.</span>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </header>
+
+                                                                <!-- --------------------------------------------- -->
+                                                                <!-- Main ( Optional )-->
+                                                                <!-- --------------------------------------------- -->
+                                                                <main>
+                                                                    Walking Dead, The Fear Walking Dead, Vikings, Harry Potter, Lord of the Rings,
+                                                                    Hobbit, The Godfather, Beverly Hills Cops,
+                                                                    American Pie, Jobs (2013), I-Robot, Transendence,
+                                                                    Ex-Machina, The Social Network
+                                                                </main>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                        <!-- ------------------------------------------------ -->
+                                                        <!-- ❌❌❌ Trash -->
+                                                        <!-- ------------------------------------------------ -->
+
+                                                        <!-- ------------------------------------------------ -->
+                                                        <!-- [1/3] | Hobby Content Container -->
+                                                        <!-- ------------------------------------------------ -->
+                                                        <div class="hobby-content-container" style="display: none;">
+
+
+
+                                                            <!--  2 -->
+                                                            <div class="hobby-item-container">
+
+
+                                                                <!-- ------------------------------------------------- -->
+                                                                <!-- Header Block -->
+                                                                <!-- ------------------------------------------------- -->
+                                                                <header>
+
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- img -->
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/balls-cover.png"  alt="img">
+
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- Title Block -->
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <!-- title -->
+                                                                        <div>2. Soccer, Volleyball, Basketball, Badminton</div>
+
+                                                                    </div>
+
+                                                                </header>
+
+
+
+
+
+                                                            </div>
+
+                                                            <!--  3 -->
+                                                            <div class="hobby-item-container">
+
+
+                                                                <!-- ------------------------------------------------- -->
+                                                                <!-- Header Block -->
+                                                                <!-- ------------------------------------------------- -->
+                                                                <header>
+
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- img -->
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/gym-cover.png"  alt="img">
+
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- Title Block -->
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <!-- title -->
+                                                                        <div>3. Gym, Calisthenics</div>
+
+
+                                                                    </div>
+
+                                                                </header>
+
+
+
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                        <!-- ------------------------------------------------ -->
+                                                        <!-- [3/3] | Hobby Content Container -->
+                                                        <!-- ------------------------------------------------ -->
+                                                        <div class="hobby-content-container" style="display: none;">
+
+                                                            <!-- ➡️🟥 6 | violine -->
+                                                            <div class="hobby-item-container">
+
+
+                                                                <!-- ------------------------------------------------- -->
+                                                                <!-- Header Block -->
+                                                                <!-- ------------------------------------------------- -->
+                                                                <header>
+
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- img -->
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <img src="media/img/content/02-about/violine-cover.png"  alt="img">
+
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <!-- Title Block -->
+                                                                    <!-- ------------------------------------------------- -->
+                                                                    <div>
+
+                                                                        <!-- title -->
+                                                                        <div>6. Violine ( Crossover )</div>
+
+                                                                         <!-- sub title -->
+                                                                        <div class="hobby-info-sticker-container">
+
+                                                                            <div>beginning</div>
+                                                                            <div>crossover </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </header>
+
+                                                                <!-- ------------------------------------------------- -->
+                                                                <!-- Details Block | Violine Inspiration Contianer -->
+                                                                <!-- ------------------------------------------------- -->
+                                                                <div id="violine-inspiration-container">
+
+
+
+
 
                                                                 </div>
 
@@ -1691,53 +2089,6 @@
 
                                                             </div>
 
-                                                            <!-- 🟥 8 | movies-->
-                                                            <div class="hobby-item-container">
-
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Header Block -->
-                                                                <!-- ------------------------------------------------- -->
-                                                                <header>
-
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- img -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <img src="media/img/content/02-about/movie-cover.png"  alt="img">
-
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <!-- Title Block -->
-                                                                    <!-- ------------------------------------------------- -->
-                                                                    <div>
-
-                                                                        <!-- title -->
-                                                                        <div>8. Movies</div>
-
-                                                                        <!-- sub title -->
-                                                                        <div class="hobby-info-stack-container" style="display: none;">
-
-                                                                            <div>5-25km</div>
-                                                                            <div>10-50km </div>
-                                                                            <div>60 Min. </div>
-
-                                                                        </div>
-
-                                                                    </div>
-
-                                                                </header>
-
-                                                                <!-- ------------------------------------------------- -->
-                                                                <!-- Details Block -->
-                                                                <!-- ------------------------------------------------- -->
-                                                                <div>
-                                                                    Walking Dead, The Fear Walking Dead, Vikings, Harry Potter, Lord of the Rings,
-                                                                    Hobbit, The Godfather, Beverly Hills Cops,
-                                                                    American Pie, Jobs (2013), I-Robot, Transendence,
-                                                                    Ex-Machina, The Social Network
-                                                                </div>
-
-                                                            </div>
-
 
                                                         </div>
 
@@ -1754,8 +2105,8 @@
                                                        <!-- --------------------------------------------------- -->
                                                        <header>
 
-                                                            <div>»  What do “Superfresh” and “Dev” stand for ?</div>
-                                                            <div>»  How did I come up with that name ?</div>
+                                                            <div>What do “Superfresh” and “Dev” stand for ?</div>
+                                                            <div>How did I come up with that name ?</div>
 
                                                        </header>
 
@@ -1840,231 +2191,6 @@
 
 
 
-                                                    <!-- --------------------------------------------------------------- -->
-                                                    <!-- ❌❌❌ Trash  -->
-                                                    <!-- --------------------------------------------------------------- -->
-
-                                                    <!-- --------------------------------------------------------------- -->
-                                                    <!-- 🟩 [1/4] | Header Nav Read More About -->
-                                                    <!-- --------------------------------------------------------------- -->
-                                                    <div id="header-nav-read-more-about" style="display: none;">
-
-
-
-                                                        <!-- ------------------------------------------------------ -->
-                                                        <!-- ➡️🟥 [2/2] Smooth | Nav Read More About -->
-                                                        <!-- ------------------------------------------------------ -->
-                                                        <div id="smooth-nav-read-more-about" class="smooth-open-close-container">
-
-                                                            <!-- -------------------------------------------------------- -->
-                                                            <!-- Overflow Hidden -->
-                                                            <!-- -------------------------------------------------------- -->
-                                                            <div class="overflow-hidden">
-
-                                                                <!-- ---------------------------------------------------------- -->
-                                                                <!-- ➡️🟥 Nav Read More About -->
-                                                                <!-- ---------------------------------------------------------- -->
-                                                                <div id="nav-read-more-about-container">
-
-                                                                    <!-- ------------------------------------------------------ -->
-                                                                    <!-- Nav Content Panel Medium -->
-                                                                    <!-- ------------------------------------------------------ -->
-                                                                    <nav class="nav-content-panel-medium">
-
-
-
-                                                                    </nav>
-
-                                                                </div>
-
-                                                            </div>
-
-
-                                                        </div>
-
-
-                                                    </div>
-
-
-
-
-                                                    <!-- --------------------------------------------------------------- -->
-                                                    <!-- 🟩 [4/4] | Story Superfreshdev -->
-                                                    <!-- --------------------------------------------------------------- -->
-                                                     <div id="my-story-about-container" style="display: none;">
-
-
-                                                        <!-- ---------------------------------------------------------- -->
-                                                        <!-- Audio Story Read More About Container  -->
-                                                        <!-- ---------------------------------------------------------- -->
-                                                        <div id="audio-story-read-more-about-container">
-
-                                                            <audio controls controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar">
-                                                               <source src="media/audio/content/about/about-story.ogg" type="audio/ogg">
-                                                            </audio>
-
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------------------- -->
-                                                        <!-- Part 1/3 | Read More About Info Box  -->
-                                                        <!-- ---------------------------------------------------------- -->
-                                                        <div class="read-more-about-info-box">
-
-
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <!-- [1/2] | Header | Left -->
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <header class="header-read-more-about-info-box-left">
-
-                                                                <!-- -------------------------------------------------- -->
-                                                                <!-- Nr Box  -->
-                                                                <!-- -------------------------------------------------- -->
-                                                                <div class="nr-box-read-more-about">
-                                                                    <div>01</div>
-                                                                    <div></div>
-                                                                    <div>03</div>
-                                                                </div>
-
-
-                                                            </header>
-
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <!-- [2/2] | Main -->
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <main>
-
-                                                                <!-- ------------------------------------------------ -->
-                                                                <!-- Text Container -->
-                                                                <!-- ------------------------------------------------ -->
-                                                                <div class="story-box-read-more-about">
-
-                                                                    <img src="media/img/content/01-default/clipart/cold-shower-clipart.png"
-                                                                     id="img-about-cold-shower" alt="img">
-
-                                                                     One day, after a tough workout, I jumped into an ice-cold shower.
-                                                                     At first, it felt brutal — but then
-                                                                     I grabbed some amazing-smelling shampoo, closed my eyes,
-                                                                     and imagined myself as a fearless
-                                                                     Viking from Norway. Cold? <br>
-
-                                                                     <img src="media/img/content/02-about/viking-2.png"
-                                                                     id="img-about-viking" alt="img">
-
-                                                                     That’s in my blood! Suddenly I started laughing and decided to actually enjoy the freezing water.
-
-                                                                </div>
-
-
-                                                            </main>
-
-
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------------------- -->
-                                                        <!-- Part 2/3 | Read More About Info Box  -->
-                                                        <!-- ---------------------------------------------------------- -->
-                                                        <div class="read-more-about-info-box">
-
-
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <!-- [1/2] | Header | Left -->
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <header class="header-read-more-about-info-box-right">
-
-                                                                <!-- -------------------------------------------------- -->
-                                                                <!-- Nr Box  -->
-                                                                <!-- -------------------------------------------------- -->
-                                                                <div class="nr-box-read-more-about">
-                                                                    <div>02</div>
-                                                                    <div></div>
-                                                                    <div>03</div>
-                                                                </div>
-
-
-                                                            </header>
-
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <!-- [2/2] | Main -->
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <main>
-
-                                                                <!-- ------------------------------------------------ -->
-                                                                <!-- Text Container -->
-                                                                <!-- ------------------------------------------------ -->
-                                                                <div class="story-box-read-more-about">
-
-
-                                                                     When I stepped out, I couldn’t stop smiling.
-                                                                     I felt clean, powerful, and one word popped into my mind: super fresh.<br>
-
-                                                                     <img src="media/img/content/02-about/funny-me.png"
-                                                                     id="img-about-funny-me" alt="img">
-
-                                                                     That was the moment I fell in love with this idea. Being super
-                                                                     fresh isn’t just about feeling clean — it’s about feeling happy,
-                                                                     full of energy, and ready to take on the next challenge of the day.
-
-                                                                </div>
-
-
-                                                            </main>
-
-
-                                                        </div>
-
-                                                        <!-- ---------------------------------------------------------- -->
-                                                        <!-- Part 3/3 | Read More About Info Box  -->
-                                                        <!-- ---------------------------------------------------------- -->
-                                                        <div class="read-more-about-info-box">
-
-
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <!-- [1/2] | Header | Left -->
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <header class="header-read-more-about-info-box-left">
-
-                                                                <!-- -------------------------------------------------- -->
-                                                                <!-- Nr Box  -->
-                                                                <!-- -------------------------------------------------- -->
-                                                                <div class="nr-box-read-more-about">
-                                                                    <div>03</div>
-                                                                    <div></div>
-                                                                    <div>03</div>
-                                                                </div>
-
-
-                                                            </header>
-
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <!-- [2/2] | Main -->
-                                                            <!-- ---------------------------------------------------- -->
-                                                            <main>
-
-                                                                <!-- ------------------------------------------------ -->
-                                                                <!-- Text Container -->
-                                                                <!-- ------------------------------------------------ -->
-                                                                <div class="story-box-read-more-about">
-
-
-                                                                    A few days later, I decided to turn this feeling into a personal statement.
-                                                                    Everything I do, I want it to be super fresh. <br>
-
-                                                                     <img src="media/img/content/02-about/wave-rocket.png"
-                                                                     id="img-about-wave-rocket" alt="img">
-
-                                                                     Whether it’s pushing myself in sports, developing software,
-                                                                     exploring healthy food, or starting new projects — it should bring joy,
-                                                                     energy, and something valuable, both to me and to others.
-
-                                                                </div>
-
-
-                                                            </main>
-
-
-                                                        </div>
-
-                                                    </div>
 
 
                                                 </div>

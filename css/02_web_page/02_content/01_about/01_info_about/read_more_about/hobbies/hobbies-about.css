@@ -1,8 +1,8 @@
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 /* > hobbies-about.css
 /*
 /* : style hobbies about
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------------- */
@@ -17,8 +17,6 @@
   display: grid;
   justify-items: center;
 
-  /* background-color: rgb(225, 224, 135); */
-
   /* default unshown */
   display: none;
 
@@ -32,13 +30,112 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Hobby Content Container
+/* [1/2] | Hobbies Content List Part 1 of 2
 /* ------------------------------------------------------------------- */
 
-.hobby-content-container {
+#hobbies-content-list-part-1-of-2 {
+
+  width: 100%;
 
   display: grid;
-  gap: 1.5em;
+  justify-items: center;
+
+  column-gap: 1.5em;
+  row-gap: 1.5em;
+
+  grid-template-areas:
+
+  'hobby-running'
+  'hobby-soccer'
+  'hobby-gym'
+  'hobby-travel'
+  'hobby-people'
+
+}
+
+/* overwrite img curved because its has main part */
+#hobbies-content-list-part-2-of-2 > .hobby-item-container > header > img:nth-of-type(1) {
+
+  border-radius: .8em 0 0 0;
+
+}
+
+/* running */
+#hobbies-content-list-part-1-of-2 > div:nth-of-type(1) {
+
+  grid-area: hobby-running;
+
+}
+
+/* soccer */
+#hobbies-content-list-part-1-of-2 > div:nth-of-type(2) {
+
+  grid-area: hobby-soccer;
+
+}
+
+/* gym */
+#hobbies-content-list-part-1-of-2 > div:nth-of-type(3) {
+
+  grid-area: hobby-gym;
+
+}
+
+/* travel */
+#hobbies-content-list-part-1-of-2 > div:nth-of-type(4) {
+
+  grid-area: hobby-travel;
+
+}
+
+/* people */
+#hobbies-content-list-part-1-of-2 > div:nth-of-type(5) {
+
+  grid-area: hobby-people;
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* [2/2] | Hobbies Content List Part 2 of 2
+/* ------------------------------------------------------------------- */
+
+#hobbies-content-list-part-2-of-2 {
+
+   width: 100%;
+
+  display: grid;
+  justify-items: center;
+
+  column-gap: 1.5em;
+  row-gap: 1.5em;
+
+  grid-template-areas:
+
+  'hobby-violine'
+  'hobby-music'
+  'hobby-movies'
+
+}
+
+/* violine */
+#hobbies-content-list-part-2-of-2 > div:nth-of-type(1) {
+
+  grid-area: hobby-violine;
+
+}
+
+/* music */
+#hobbies-content-list-part-2-of-2 > div:nth-of-type(2) {
+
+  grid-area: hobby-music;
+
+}
+
+/* movies */
+#hobbies-content-list-part-2-of-2 > div:nth-of-type(3) {
+
+  grid-area: hobby-movies;
 
 }
 
@@ -48,11 +145,14 @@
 
 .hobby-item-container {
 
+  width: 100%;
   display: grid;
 
   border-radius: .6em;
 
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: rgb(248, 248, 248);
+
 
 }
 
@@ -64,45 +164,95 @@
 
   display: flex;
   align-items: center;
-
-}
-
-/* img | header */
-.hobby-item-container > header > img:nth-of-type(1) {
-
-  align-self: flex-start;
-
-  height: 6em;
-  width: 6em;
-
-  border-radius: .6em 0 0 .6em;
-
-}
-
-/* title block | header */
-.hobby-item-container > header > div:nth-of-type(1) {
-
-  padding: .6em 1em;
-
-  display: grid;
-  row-gap: .3em;
+  column-gap: 1em;
 
   color:rgb(78, 78, 78);
 
+
 }
 
-/* title | header */
+/* ------------------------------------------------------------------- */
+/* Img | Header
+/* ------------------------------------------------------------------- */
+
+.hobby-item-container > header > img {
+
+  align-self: flex-start;
+
+  height: 4.5em;
+  width: 4.5em;
+
+  border-radius: .8em 0 0 .8em;
+
+  /* very small mobile */
+  display: none;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header Content Block | Header
+/* ------------------------------------------------------------------- */
+
+.hobby-item-container > header > div:nth-of-type(1) {
+
+  /* desktop */
+  padding: .4em 1em .4em 0;
+
+  /* mobile */
+  padding: .8em .6em;
+
+  display: grid;
+  row-gap: .3em;
+  justify-items: flex-start;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Nr | Header
+/* ------------------------------------------------------------------- */
+
 .hobby-item-container > header > div:nth-of-type(1) > div:nth-of-type(1) {
 
-  font-size: 14.5px;
+  height: 1.3em;
+  padding: 0 .3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .4em;
+
+  background-color: rgb(235, 235, 235);
+  color:rgb(148, 148, 148);
+
+}
+
+.hobby-item-container > header > div:nth-of-type(1) > div:nth-of-type(1) > span {
+
+  font-size: 12.5px;
   font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------------------------------------------- */
+/* Header Title | Header
+/* ------------------------------------------------------------------- */
+
+.hobby-item-container > header > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  font-size: 14.5px;
 
   line-height: 1.4em;
 
+  font-weight: bold;
+
 }
 
-/* hobby info sticker container | header */
-.hobby-info-sticker-container {
+/* ------------------------------------------------------------------- */
+/* Mini Info Sticky Hobby Container ( Optional ) | Header
+/* ------------------------------------------------------------------- */
+
+.mini-info-sticker-hobby-container {
 
   display: flex;
   flex-wrap: wrap;
@@ -110,12 +260,10 @@
 
 }
 
-/* div | hobby info sticker container */
-.hobby-info-sticker-container > div {
+/* Div | Mini Info Sticky Hobby Container  */
+.mini-info-sticker-hobby-container > div {
 
-  font-size: 12.5px;
-
-  height: 1.6em;
+  height: 1.3em;
   padding: 0 .4em;
 
   display: flex;
@@ -131,18 +279,25 @@
 
 }
 
+/* div span */
+.mini-info-sticker-hobby-container > div > span {
+
+  font-size: 12.5px;
+}
+
 
 /* ------------------------------------------------------------------- */
-/* Div 1 ( Details Block | Optional ) | Hobby Item Container
+/* Main ( Optional) | Hobby Item Container
 /* ------------------------------------------------------------------- */
 
-.hobby-item-container > div:nth-of-type(1) {
+.hobby-item-container > main {
 
   font-size: 14.5px;
 
   padding: 1em .8em;
 
-  color:grey;
+  color:rgb(78, 78, 78);
+
 
 }
 
@@ -196,15 +351,11 @@
 /* header | inspiration violine item */
 .violine-inspiration-item > header {
 
+  padding-left: .8em;
+  max-width: 18em;
+
   line-height: 1.4em;
-  color:rgb(158, 158, 158);
+  color:rgb(125, 125, 125);
 
-
-}
-
-/* audio | inspiration violine item */
-.violine-inspiration-item > audio {
-
- /* background-color: red; */
 
 }

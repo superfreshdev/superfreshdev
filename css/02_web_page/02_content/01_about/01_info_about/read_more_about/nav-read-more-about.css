@@ -52,7 +52,7 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Radios | Read More Categories ( stacks of life, hobbies, story )
+/* Radios | Read More Categories ( life philosophy, hobbies, story )
 /* ------------------------------------------------------------------- */
 
 /* default unshown */
@@ -63,9 +63,9 @@ input[name="name-radio-read-more-about"] {
 }
 
 /* set background */
-#radio-life-stacks-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-life-stacks-about"],
-#radio-hobbies-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-hobbies-about"],
-#radio-story-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-story-about"] {
+#radio-life-philosophy:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-life-philosophy"],
+#radio-hobbies:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-hobbies"],
+#radio-story:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-story"] {
 
   opacity: 1;
   background-color: wheat;
@@ -73,27 +73,27 @@ input[name="name-radio-read-more-about"] {
 }
 
 /* set x */
-#radio-life-stacks-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-life-stacks-about"] > .custom-radio-default > img,
-#radio-hobbies-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-hobbies-about"] > .custom-radio-default > img,
-#radio-story-about:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-story-about"] > .custom-radio-default > img {
+#radio-life-philosophy:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-life-philosophy"] > .custom-radio-default > img,
+#radio-hobbies:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-hobbies"] > .custom-radio-default > img,
+#radio-story:checked ~ #smooth-nav-read-more-about #nav-read-more-about label[for="radio-story"] > .custom-radio-default > img {
 
   display: flex;
 
 }
 
 /* set content | seperator zick zack */
-#radio-life-stacks-about:checked ~ .seperator-img-container-p-2-0,
-#radio-hobbies-about:checked ~ .seperator-img-container-p-2-0,
-#radio-story-about:checked ~ .seperator-img-container-p-2-0 {
+#radio-life-philosophy:checked ~ .seperator-img-container-p-2-0,
+#radio-hobbies:checked ~ .seperator-img-container-p-2-0,
+#radio-story:checked ~ .seperator-img-container-p-2-0 {
 
   display: flex;
 
 }
 
 /* set content | ( life philosophy, hobbies, story behind sd ) */
-#radio-life-stacks-about:checked ~ #life-philosophy-container,
-#radio-hobbies-about:checked ~ #hobbies-container,
-#radio-story-about:checked ~ #story-behind-sd-container {
+#radio-life-philosophy:checked ~ #life-philosophy-container,
+#radio-hobbies:checked ~ #hobbies-container,
+#radio-story:checked ~ #story-behind-sd-container {
 
   display: grid;
 

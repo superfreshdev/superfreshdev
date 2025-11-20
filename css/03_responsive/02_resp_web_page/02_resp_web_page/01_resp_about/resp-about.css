@@ -94,6 +94,8 @@
 
   }
 
+
+
   /* ------------------------------------------------ */
   /* Read More | Audio Violine Container  */
   /* ------------------------------------------------ */
@@ -284,6 +286,30 @@
   }
 
   /* ------------------------------------------------------------------- */
+  /* Read More | Hobby Item Container | Header | Img
+  /* ------------------------------------------------------------------- */
+
+  .hobby-item-container > header > img {
+
+    display: flex;
+
+     height: 5.5em;
+     width: 5.5em;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Header Content Block | Header
+  /* ------------------------------------------------------------------- */
+
+  .hobby-item-container > header > div:nth-of-type(1) {
+
+    /* desktop */
+    padding: .4em 1em .4em 0;
+
+  }
+
+  /* ------------------------------------------------------------------- */
   /* Read More | Hobby Content Container */
   /* ------------------------------------------------------------------- */
 
@@ -464,6 +490,49 @@
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 650px ) {
+
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Hobbies Container
+  /* ------------------------------------------------------------------- */
+
+  #hobbies-container {
+
+    width: 90%;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Hobbies Content List Part 1 of 2
+  /* ------------------------------------------------------------------- */
+
+  #hobbies-content-list-part-1-of-2 {
+
+    grid-template-areas:
+
+    'hobby-running hobby-travel'
+    'hobby-soccer hobby-people'
+    'hobby-gym .';
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Hobbies Content List Part 2 of 2
+  /* ------------------------------------------------------------------- */
+
+  #hobbies-content-list-part-2-of-2 {
+
+    grid-template-areas:
+
+    'hobby-violine hobby-music'
+    'hobby-violine hobby-movies';
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
 
   /* ----------------------------------------------------------- */
   /* Mindset | Video Mindset About Container */

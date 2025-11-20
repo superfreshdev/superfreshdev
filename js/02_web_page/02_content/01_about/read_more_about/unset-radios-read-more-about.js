@@ -11,9 +11,9 @@ var chk_read_more = document.getElementById("chk-open-read-more-about");
 // radio
 var radios_read_more = [
 
-  document.getElementById("radio-life-stacks-about"),
-  document.getElementById("radio-hobbies-about"),
-  document.getElementById("radio-story-about")
+  document.getElementById("radio-life-philosophy"),
+  document.getElementById("radio-hobbies"),
+  document.getElementById("radio-story")
 ]
 
 /* ----------------------------------------------------------------- */
