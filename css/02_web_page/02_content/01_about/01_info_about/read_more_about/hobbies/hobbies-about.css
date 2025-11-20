@@ -12,8 +12,10 @@
 #hobbies-container {
 
   padding: 2em 0;
+  width: 100%;
 
   display: grid;
+  justify-items: center;
 
   /* background-color: rgb(225, 224, 135); */
 
@@ -23,7 +25,7 @@
 }
 
 /* seperator img opacity */
-#hobbies-container .seperator-img-container-p-4-0 > img {
+#hobbies-container .seperator-img-container-p-2-0 > img {
 
   opacity: .4;
 
@@ -87,6 +89,8 @@
   display: grid;
   row-gap: .3em;
 
+  color:rgb(78, 78, 78);
+
 }
 
 /* title | header */
@@ -98,6 +102,37 @@
   line-height: 1.4em;
 
 }
+
+/* hobby info sticker container | header */
+.hobby-info-sticker-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3em
+
+}
+
+/* div | hobby info sticker container */
+.hobby-info-sticker-container > div {
+
+  font-size: 12.5px;
+
+  height: 1.6em;
+  padding: 0 .4em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4em;
+
+  border-radius: .4em;
+
+  color:rgb(141, 141, 141);
+
+  border: 1px dashed rgb(181, 181, 181);
+
+}
+
 
 /* ------------------------------------------------------------------- */
 /* Div 1 ( Details Block | Optional ) | Hobby Item Container
@@ -113,112 +148,70 @@
 
 }
 
+/* ------------------------------------------------------- */
+/* 🎻 Violine Inspiration Container
+/* ------------------------------------------------------- */
 
-
-/* ------------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------------- */
-
-
-/* 🟣 Auslagern */
-/* ------------------------------------------------------------------- */
-/* Div 1 ( Info Stacks ) | Hobby Item Container
-/* ------------------------------------------------------------------- */
-
-.hobby-info-stack-container {
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: .3em
-
-}
-
-.hobby-info-stack-container > div {
-
-  font-size: 12.5px;
-
-  height: 1.8em;
-  padding: 0 .4em;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .4em;
-
-  border-radius: .4em;
-
-  color:rgb(141, 141, 141);
-
-  border: 1px dashed rgb(181, 181, 181);
-
-
-}
-
-
-/* ------------------------------------------------------------------- */
-/* Div 1 ( Info List ) | Hobby Item Container
-/* ------------------------------------------------------------------- */
-
-.hobby-info-list-container {
-
-
-}
-
-
-
-
-
-
-
-/* ------------------------------------------------------------------- */
-/* ❌❌❌ Trash
-/* ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- */
-/* My Hobbies About Container
-/* ------------------------------------------------------------------- */
-
-#my-hobbies-about-container {
-
-  width: 100%;
-
-  margin-top: 2em;
-  padding: 2em 0;
+#violine-inspiration-container {
 
   display: grid;
-  row-gap: 3em;
+  row-gap: 1.5em;
 
-  border-top: 3px solid rgb(202, 202, 202);
-
-  /* default unshown  */
+  /* small mobile unshown */
   display: none;
 
 }
 
-/* ------------------------------------------------------------------- */
-/* Violine Audio Container | Read More About
-/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* Header | Violine Inspiration Container
+/* ------------------------------------------------------- */
 
-#violine-audio-container-read-more-about {
-
-  padding-top: 1.5em;
-
-  display: grid;
-  justify-items: center;
-  row-gap: .6em;
+#violine-inspiration-container > header {
 
   font-weight: bold;
-
-  /* default very small mobile unshown */
-  display: none;
+  text-decoration: underline;
 
 }
 
-/* header layout position fix */
-#violine-audio-container-read-more-about > header {
+/* ------------------------------------------------------- */
+/* Main | Violine Inspiration Container
+/* ------------------------------------------------------- */
 
-  justify-self: flex-start;
-  padding-left: 1em;
+#violine-inspiration-container > main {
+
+  display: grid;
+  row-gap: 1.5em;
+
+}
+
+/* ------------------------------------------------------- */
+/* Violine Inspiration Item | Violine Inspiration Container
+/* ------------------------------------------------------- */
+
+.violine-inspiration-item {
+
+  display: grid;
+  row-gap: .3em;
+
+}
+
+/* header | inspiration violine item */
+.violine-inspiration-item > header {
+
+  line-height: 1.4em;
+  color:rgb(158, 158, 158);
 
 
 }
+
+/* audio | inspiration violine item */
+.violine-inspiration-item > audio {
+
+ /* background-color: red; */
+
+}
+
+
+/* ------------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------------- */
