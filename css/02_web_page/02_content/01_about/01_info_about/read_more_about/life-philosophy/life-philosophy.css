@@ -30,7 +30,10 @@
 
 .content-life-philosophy {
 
+  font-size: 14.5px;
   padding: 1.5em .6em;
+
+  line-height: 1.9em;
 
   display: grid;
   row-gap: 2em;
