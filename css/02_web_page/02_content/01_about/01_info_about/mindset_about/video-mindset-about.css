@@ -6,27 +6,10 @@
 
 
 /* ------------------------------------------------------------------- */
-/* Video Mindset About Container
+/* Mindset About Video Box
 /* ------------------------------------------------------------------- */
 
-#video-mindset-about-container {
-
-  width: 100%;
-
-  /* mobile */
-  display: grid;
-  justify-items: center;
-
-  row-gap: 3.5em;
-  column-gap: 2em;
-
-}
-
-/* ------------------------------------------------------------------- */
-/* Video Mindset About Box
-/* ------------------------------------------------------------------- */
-
-.video-mindset-about-box {
+.mindset-about-video-box {
 
   width: 100%;
 
@@ -41,10 +24,10 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* Header | Video Mindset About Box
+/* Header | Mindset About Video Box
 /* ------------------------------------------------------------------- */
 
-.video-mindset-about-box > header {
+.mindset-about-video-box > header {
 
   width: 100%;
   /* better layout fix */
@@ -62,7 +45,7 @@
 /* Nr & Video Description (Div 1) | Header
 /* ------------------------------------------------------------------- */
 
-.video-mindset-about-box > header > div:nth-of-type(1) {
+.mindset-about-video-box > header > div:nth-of-type(1) {
 
   display: grid;
   row-gap: .5em;
@@ -77,8 +60,8 @@
 
   justify-self: flex-start;
 
-  height: 2em;
-  padding: 0 .6em;
+  height: 1.8em;
+  padding: 0 .4em;
 
   letter-spacing: 0px;
 
@@ -90,8 +73,8 @@
 
   font-weight: bold;
 
-  background-color: rgba(28, 28, 28, .8);
-  color:rgb(194, 194, 194);
+  background-color: #eeeeee;
+  color:rgb(40, 40, 40);
 
 }
 
@@ -125,11 +108,12 @@
 
 #video-countdown-mindset-about-1 {
 
+  font-size: 14.5px;
+
   align-self: flex-start;
 
-  height: 2em;
-  width: 3.3em;
-  padding: 0 1em;
+  height: 1.8em;
+  padding: 0 .4em;
 
   display: flex;
   align-items: center;
@@ -143,7 +127,7 @@
   border: 1px solid rgb(185, 185, 185);
 
   /* background-color: rgb(184, 184, 184); */
-  color: rgb(101, 101, 101);
+  color: #808080;
 
 }
 
@@ -158,7 +142,7 @@
 /* Video | Video Mindset Box About
 /* ------------------------------------------------------------------- */
 
-.video-mindset-about-box > video {
+.mindset-about-video-box > video {
 
   width: 100%;
   height: 15em;
@@ -168,7 +152,7 @@
 
   border-radius: 1.5em;
 
-  border: 4px solid #b8b8b8;
+  /* border: 4px solid #444444; */
 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
