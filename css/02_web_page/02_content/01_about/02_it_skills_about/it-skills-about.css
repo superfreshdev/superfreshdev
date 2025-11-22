@@ -6,7 +6,7 @@
 
 
 /* ------------------------------------------------------------------- */
-/* ...
+/* IT Skills About Container
 /* ------------------------------------------------------------------- */
 
 #it-skills-about-container {
@@ -15,7 +15,7 @@
   padding-top: 3em;
 
   display: grid;
-  row-gap: 1em;
+  row-gap: 2em;
 
   /* background-color: red; */
 
@@ -53,10 +53,12 @@
 
 .header-it-skills-content-box-about > div:nth-of-type(1) {
 
-   height: 2.3em;
+  font-size: 14.5px;
+
+  height: 2.3em;
   /* width: 100%; */
 
-  padding: 0 .8em;
+  padding: 0 .6em;
 
   display: flex;
   align-items: center;
@@ -66,8 +68,9 @@
 
   border-radius: .6em;
 
-  background-color: rgba(28 , 28, 28, .8);
-  color:white;
+  background-color: #b8b8b8;
+  background-color: #e4e4e4;
+  color:rgb(32, 32, 32);
 
 }
 
@@ -78,7 +81,7 @@
 
 .it-skills-content-box-about > main {
 
-  padding: 2em .8em;
+  padding: 1.5em .8em .5em .8em;
 
   display: flex;
   justify-content: center;
@@ -102,11 +105,13 @@
 
   border-radius: .6em;
 
-  font-weight: bold;
+  /* font-weight: bold; */
 
-  background-color: rgb(240, 240, 240);
-  background-color: white;
-  color:rgb(98, 98, 98);
+  /* background-color: rgb(240, 240, 240); */
+
+  border: 1px dashed rgb(207, 207, 207);
+
+  color:rgb(145, 145, 145);
 
   cursor: pointer;
   transition: all .4s;

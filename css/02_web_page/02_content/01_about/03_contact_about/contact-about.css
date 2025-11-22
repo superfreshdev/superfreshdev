@@ -77,16 +77,17 @@
 
 #e-mail-contact-title-container-about > a {
 
+  font-size: 14.5px;
+
   padding: .2em .6em;
 
   /* font-size: 1em; */
   font-weight: bold;
 
-  border-radius: .6em;
+  border-radius: 1.6em;
 
-
-  background-color: rgb(28, 28, 28);
-  color:rgb(186, 186, 186);
+  background-color: wheat;
+  color:rgb(20, 20, 20);
 
   transition: all .4s;
 
