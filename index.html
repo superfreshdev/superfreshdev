@@ -872,13 +872,13 @@
                                                     <!-- -------------------------------------------------------------------------------- -->
                                                     <!-- Checkbox | Show Me                                                               -->
                                                     <!-- -------------------------------------------------------------------------------- -->
-                                                    <input checked type="checkbox" id="chk-open-read-more-about">
+                                                    <input type="checkbox" id="chk-open-read-more-about">
 
                                                     <!-- -------------------------------------------------------------------------------- -->
                                                     <!-- Radios | Read More ( life philosophy, hobbies, story )                               -->
                                                     <!-- -------------------------------------------------------------------------------- -->
-                                                    <input  type="radio" id="radio-life-philosophy" name="name-radio-read-more-about">
-                                                    <input checked type="radio" id="radio-hobbies" name="name-radio-read-more-about">
+                                                    <input type="radio" id="radio-life-philosophy" name="name-radio-read-more-about">
+                                                    <input type="radio" id="radio-hobbies" name="name-radio-read-more-about">
                                                     <input type="radio" id="radio-story" name="name-radio-read-more-about">
 
 
@@ -1038,7 +1038,7 @@
                                                     </div>
 
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <!-- 🟩 [4/6] | Life Philosophy Container -->
+                                                    <!-- 🟨🟩 [4/6] | Life Philosophy Container -->
                                                     <!-- --------------------------------------------------------------- -->
                                                     <div id="life-philosophy-container">
 
@@ -1309,12 +1309,12 @@
                                                     </div>
 
                                                     <!-- --------------------------------------------------------------- -->
-                                                    <!-- 🟩  [5/6] | Hobbies Container -->
+                                                    <!-- 🟨🟩 [5/6] | Hobbies Container -->
                                                     <!-- --------------------------------------------------------------- -->
                                                      <div id="hobbies-container">
 
                                                         <!-- -------------------------------------------------------- -->
-                                                        <!-- ➡️🟩 [1/2] | Sport Travel Human | Hobbies Container        -->
+                                                        <!-- 🟩 [1/2] | Sport Travel Human | Hobbies Container        -->
                                                         <!-- -------------------------------------------------------- -->
                                                         <div id="sport-travel-human-hobbies-container">
 
@@ -1772,19 +1772,27 @@
                                                     <div id="story-behind-sd-container">
 
                                                        <!-- --------------------------------------------------- -->
-                                                       <!-- ➡️🟥 Header -->
+                                                       <!-- 🟩 Header (Questions ) -->
                                                        <!-- --------------------------------------------------- -->
                                                        <header>
 
-                                                            <div>What do “Superfresh” and “Dev” stand for ?</div>
-                                                            <div>How did I come up with that name ?</div>
+                                                            <div>
+
+                                                                » What do
+                                                                <span class="txt-u">“Superfresh”</span>
+                                                                and
+                                                                <span class="txt-u">“Dev”</span> stand for ?
+
+                                                            </div>
+
+                                                            <div>» How did I come up with that name ?</div>
 
                                                        </header>
 
                                                        <!-- --------------------------------------------------- -->
-                                                       <!-- 🟥 Audio Container | Story behind SD-->
+                                                       <!-- 🟩 Audio | Story behind SD Container -->
                                                        <!-- --------------------------------------------------- -->
-                                                       <div id="audio-container-story-behind-sd">
+                                                       <div id="audio-story-behind-sd-container">
 
                                                             <audio controls controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar">
                                                                <source src="media/audio/content/about/about-story.ogg" type="audio/ogg">
@@ -1793,14 +1801,18 @@
                                                        </div>
 
                                                        <!-- --------------------------------------------------- -->
-                                                       <!-- 🟥 Content Container | Story behind SD  -->
+                                                       <!-- ➡️🟥 Story behind SD Content Container  -->
                                                        <!-- --------------------------------------------------- -->
-                                                       <div id="content-container-story-behind-sd">
+                                                       <div id="story-behind-sd-content-container">
 
                                                             <!-- --------------------------------------------------------- -->
-                                                            <!-- [1/3] | Story Behind SD Item -->
+                                                            <!-- ➡️🟥 [1/3] | Story Behind SD Item -->
                                                             <!-- --------------------------------------------------------- -->
                                                             <div class="story-behind-sd-item">
+
+                                                                <header>
+                                                                    <div>01/03</div>
+                                                                </header>
 
                                                                 <img src="media/img/content/01-default/clipart/cold-shower-clipart.png"
                                                                     id="img-about-cold-shower" alt="img">
@@ -1821,9 +1833,14 @@
                                                             </div>
 
                                                             <!-- --------------------------------------------------------- -->
-                                                            <!-- [2/3] | Story Behind SD Item -->
+                                                            <!-- ➡️🟥 [2/3] | Story Behind SD Item -->
                                                             <!-- --------------------------------------------------------- -->
                                                             <div class="story-behind-sd-item">
+
+                                                                <header>
+                                                                    <div>02/03</div>
+                                                                </header>
+
 
                                                                 When I stepped out, I couldn’t stop smiling.
                                                                     I felt clean, powerful, and one word popped into my mind: super fresh.<br>
@@ -1839,9 +1856,13 @@
                                                             </div>
 
                                                             <!-- --------------------------------------------------------- -->
-                                                            <!-- [3/3] | Story Behind SD Item -->
+                                                            <!-- ➡️🟥 [3/3] | Story Behind SD Item -->
                                                             <!-- --------------------------------------------------------- -->
                                                             <div class="story-behind-sd-item">
+
+                                                                <header>
+                                                                    <div>03/03</div>
+                                                                </header>
 
 
                                                                  A few days later, I decided to turn this feeling into a personal statement.
@@ -1859,9 +1880,6 @@
                                                        </div>
 
                                                     </div>
-
-
-
 
 
                                                 </div>

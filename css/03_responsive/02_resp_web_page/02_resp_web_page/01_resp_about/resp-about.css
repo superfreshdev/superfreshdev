@@ -55,12 +55,22 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Audio Container | Story Behind SD Container
+  /* Read More | Audio | Story Behind SD Container
   /* ------------------------------------------------------------------- */
 
-  #audio-container-story-behind-sd {
+  #audio-story-behind-sd-container {
 
     display: flex;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Story Behind SD Content Container
+  /* ------------------------------------------------------------------- */
+
+  #story-behind-sd-content-container {
+
+    padding: 0 0 1.5em 0;
 
   }
 
@@ -849,6 +859,16 @@
     ;
 
     grid-template-columns: 1fr 1fr;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Story Behind SD Content Container
+  /* ------------------------------------------------------------------- */
+
+  #story-behind-sd-content-container {
+
+    width: 90%;
 
   }
 
