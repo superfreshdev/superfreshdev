@@ -68,7 +68,6 @@
 
   border-radius: .6em;
 
-  background-color: #b8b8b8;
   background-color: #e4e4e4;
   color:rgb(32, 32, 32);
 
@@ -81,12 +80,12 @@
 
 .it-skills-content-box-about > main {
 
-  padding: 1.5em .8em .5em .8em;
+  padding: 1.5em .4em .5em .4em;
 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: .8em;
+  gap: .6em;
 
 }
 
@@ -97,7 +96,7 @@
 .about-it-skill {
 
   height: 2em;
-  padding: 0 .6em;
+  padding: 0 .4em;
 
   display: flex;
   align-items: center;

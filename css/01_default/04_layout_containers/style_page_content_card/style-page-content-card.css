@@ -14,7 +14,6 @@
 
   width: 100%;
 
-  border-radius: 1.3em;
   border-radius: .8em;
 
   border: 4px solid rgba(185, 185, 185, 0.8);
@@ -31,6 +30,7 @@
 .style-page-content-card-white-medium {
 
    padding: 1.3em .8em;
+   border-radius: 1em;
 
 }
 
@@ -38,5 +38,6 @@
 .style-page-content-card-white-small {
 
    padding: .8em .8em;
+   border-radius: 1em;
 
 }
