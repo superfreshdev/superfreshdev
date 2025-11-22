@@ -11,8 +11,8 @@
 
 #hobbies-container {
 
-  /* padding: 2em 0; */
   width: 100%;
+  padding: 0 0 2em 0;
 
   display: grid;
   justify-items: center;
@@ -40,8 +40,8 @@
   display: grid;
   justify-items: center;
 
-  row-gap: 1em;
-  column-gap: 1em;
+  row-gap: 1.5em;
+  column-gap: 1.3em;
 
 }
 
@@ -64,8 +64,8 @@
 
   ;
 
-  row-gap: 1em;
-  column-gap: 1em;
+  row-gap: 1.5em;
+  column-gap: 1.3em;
 
 }
 
