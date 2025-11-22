@@ -1,0 +1,144 @@
+/* ------------------------------------------------------------------- */
+/* > hobby-item-container.css
+/*
+/* : style hobby item container
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* Hobby Item Container
+/* ------------------------------------------------------------------- */
+
+.hobby-item-container {
+
+  width: 100%;
+
+  border-radius: .8em;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgb(248, 248, 248);
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Header Hobby Item | Hobbies Container
+/* ------------------------------------------------------------------- */
+
+.header-hobby-item {
+
+  display: flex;
+  align-items: center;
+
+}
+
+/* img */
+.header-hobby-item > img:nth-of-type(1) {
+
+  width: 5em;
+  height: 5em;
+
+  border-radius: .8em 0 0 .8em;
+
+}
+
+/* hobby title */
+.header-hobby-item > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+
+  padding: .4em 1em;
+  line-height: 1.4em;
+
+  font-weight: bold;
+
+  color: #5f5f5f;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* Main Hobby Item | Hobbies Container
+/* ------------------------------------------------------------------- */
+
+.main-hobby-item {
+
+  padding: 1em .8em;
+  color: #5f5f5f;
+
+}
+
+/* ------------------------------------------------------- */
+/* 🎻 Violine Inspiration Container
+/* ------------------------------------------------------- */
+
+#violine-inspiration-container {
+
+  margin: 1em 0;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 3em;
+
+  /* small mobile unshown */
+  display: none;
+
+}
+
+/* ------------------------------------------------------- */
+/* Header | Violine Inspiration Container
+/* ------------------------------------------------------- */
+
+#violine-inspiration-container > header {
+
+  font-size: 14.5px;
+
+  height: 1.8em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  background-color: rgb(228, 228, 228);
+  color:rgb(123, 123, 123);
+
+
+}
+
+/* ------------------------------------------------------- */
+/* Main | Violine Inspiration Container
+/* ------------------------------------------------------- */
+
+#violine-inspiration-container > main {
+
+  display: grid;
+  row-gap: 1.5em;
+
+}
+
+/* ------------------------------------------------------- */
+/* Violine Inspiration Item | Violine Inspiration Container
+/* ------------------------------------------------------- */
+
+.violine-inspiration-item {
+
+  display: grid;
+  row-gap: .6em;
+
+}
+
+/* header | inspiration violine item */
+.violine-inspiration-item > header {
+
+  font-size: 14.5px;
+
+  padding-left: .8em;
+  max-width: 18em;
+
+  line-height: 1.4em;
+  color:rgb(125, 125, 125);
+
+}

@@ -293,21 +293,11 @@
 
     display: flex;
 
-     height: 5.5em;
-     width: 5.5em;
+    height: 5em;
+    width: 5em;
 
   }
 
-  /* ------------------------------------------------------------------- */
-  /* Read More | Header Content Block | Header
-  /* ------------------------------------------------------------------- */
-
-  .hobby-item-container > header > div:nth-of-type(1) {
-
-    /* desktop */
-    padding: .4em 1em .4em 0;
-
-  }
 
   /* ------------------------------------------------------------------- */
   /* Read More | Hobby Content Container */
@@ -315,7 +305,7 @@
 
   .hobby-content-container {
 
-    width: 25em;
+    /* width: 25em; */
 
   }
 
@@ -398,6 +388,26 @@
   /* ------------------------------------------------------------------- */
 
   #life-philosophy-container {
+
+    width: 90%;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Sport Trave Human Hobbies Container
+  /* ------------------------------------------------------------------- */
+
+  #sport-travel-human-hobbies-container {
+
+    width: 90%;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Entertainment Hobbies Container
+  /* ------------------------------------------------------------------- */
+
+  #entertainment-hobbies-container {
 
     width: 90%;
 
@@ -814,15 +824,34 @@
 
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Hobbies Container
+  /* Read More | Sport Trave Human Hobbies Container
   /* ------------------------------------------------------------------- */
 
-  #hobbies-container {
+  #sport-travel-human-hobbies-container {
 
-    width: 90%;
-    /* background-color: red; */
+    grid: auto / 1fr 1fr;
 
   }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Entertainment Hobbies Container
+  /* ------------------------------------------------------------------- */
+
+  #entertainment-hobbies-container {
+
+    width: 90%;
+
+    grid-template-areas:
+
+      'hobby-violine hobby-music'
+      'hobby-violine hobby-movies'
+
+    ;
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
 
 
 
