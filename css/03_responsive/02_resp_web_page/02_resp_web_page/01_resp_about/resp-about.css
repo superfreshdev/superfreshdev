@@ -34,6 +34,8 @@
 
 
 
+
+
 }
 
 
@@ -198,25 +200,6 @@
 
   }
 
-
-}
-
-/* ------------------------------------------------------------------- */
-/* >= 450px */
-/* ------------------------------------------------------------------- */
-
-@media ( min-width: 450px ) {
-
-  /* --------------------------------------------------------- */
-  /* Mindset | Video Mindset Box About */
-  /* --------------------------------------------------------- */
-
-  .video-mindset-about-box  {
-
-    width: 22em;
-
-  }
-
   /* ------------------------------------------------------ */
   /* Mindset | Quote Mindset About Container */
   /* ------------------------------------------------------ */
@@ -226,16 +209,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-  }
-
-  /* ------------------------------------------------------ */
-  /* Mindset | Quote Mindset About Container | Divs  */
-  /* ------------------------------------------------------ */
-
-  #quote-mindset-about-container > div {
-
-    width: auto;
 
   }
 
@@ -258,6 +231,37 @@
     transform: rotate(0deg);
 
   }
+
+
+  #quote-mindset-about-3-words-container {
+
+    display: flex;
+    align-items: center;
+
+  }
+
+
+}
+
+/* ------------------------------------------------------------------- */
+/* >= 450px */
+/* ------------------------------------------------------------------- */
+
+@media ( min-width: 450px ) {
+
+  /* --------------------------------------------------------- */
+  /* Mindset | Video Mindset Box About */
+  /* --------------------------------------------------------- */
+
+  .video-mindset-about-box  {
+
+    width: 22em;
+
+  }
+
+
+
+
 
 }
 
@@ -457,7 +461,20 @@
   #img-about-read-more {
 
     /* desktop */
-    width: 5em;
+    width: 4.8em;
+
+     /* layout pos fix of mindset */
+    margin-right: .4em;
+
+  }
+
+  #img-about-mindset {
+
+    width: 4.8em;
+    height: 4.8em;
+
+    /* layout pos fix of read more */
+    margin-right: .4em;
 
   }
 
@@ -465,7 +482,8 @@
   /* Read More | Header Nav Read More About | Header Content Block | Sub Title
   /* ----------------------------------------------------------------------------------------- */
 
-  #header-nav-read-more-about > .header-content-block > div:nth-of-type(1) > div:nth-of-type(2){
+  #header-nav-read-more-about > .header-content-block > div:nth-of-type(1) > div:nth-of-type(2),
+  #header-nav-mindset-about > .header-content-block > div:nth-of-type(1) > div:nth-of-type(2) {
 
     font-size: 14.5px;
 
@@ -475,7 +493,8 @@
   /* Read More | Label | Show Me */
   /* ------------------------------------------------------------------- */
 
-  label[for="chk-open-read-more-about"] {
+  label[for="chk-open-read-more-about"],
+  label[for="chk-mindset-about"] {
 
     /* desktop */
     min-width: 7em;

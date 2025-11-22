@@ -6,15 +6,13 @@
 
 
 /* ------------------------------------------------------- */
-/* Page Content Cards
+/* Page Content Cards ( medium, small )
 /* ------------------------------------------------------- */
 
-.style-page-content-card-white {
+.style-page-content-card-white-medium,
+.style-page-content-card-white-small {
 
   width: 100%;
-  /* mobile */
-  padding: .8em .8em;
-  padding: 1.3em .8em;
 
   border-radius: 1.3em;
   border-radius: .8em;
@@ -27,7 +25,18 @@
 
   background-color: white;
 
-  /* background-color: rgb(247, 247, 247); */
-  /* background-color: rgba(44, 44, 44, .6); */
+}
+
+/* medium */
+.style-page-content-card-white-medium {
+
+   padding: 1.3em .8em;
+
+}
+
+/* small */
+.style-page-content-card-white-small {
+
+   padding: .8em .8em;
 
 }

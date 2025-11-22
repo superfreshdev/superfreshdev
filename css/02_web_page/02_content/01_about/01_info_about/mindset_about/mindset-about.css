@@ -1,8 +1,8 @@
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 /* > mindset-about.css
 /*
 /* : style mindset about
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------------- */
@@ -11,16 +11,8 @@
 
 #mindset-about-container {
 
+  width: 100%;
   display: grid;
-
-}
-
-#img-about-mindset {
-
-  height: 4.8em;
-  width: 4.8em;
-
-  border-radius: 1em;
 
 }
 
@@ -36,27 +28,79 @@
 
 }
 
+/* img */
+#img-about-mindset {
+
+  height: 4em;
+  width: 4em;
+
+  border-radius: 1em;
+
+}
+
+/* default text close = unshown */
+label[for="chk-mindset-about"] > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  display: none;
+}
+
 /* ------------------------------------------------------------------- */
-/* Mindset Content About Container
+/* Mindset About Content Container
 /* ------------------------------------------------------------------- */
 
-#mindset-content-about-container {
+#mindset-about-content-container {
 
-  margin-top: 2.5em;
-  padding-top: 3em;
+  padding: 0 0 1.5em 0;
+  width: 100%;
 
   display: grid;
-  row-gap: 3em;
-
-  border-top: 3px solid rgb(202, 202, 202);
+  justify-items: center;
 
   /* background-color: red; */
 
 }
 
+/* only 2nd opacity  */
+#mindset-about-content-container > .seperator-img-container-p-4-0:nth-of-type(3) {
 
+  opacity: .4;
+
+}
+
+/* ------------------------------------------------------------------- */
+/* [1/2] | Mindset About Video Container
+/* ------------------------------------------------------------------- */
+
+#mindset-about-video-container {
+
+  width: 100%;
+  display: grid;
+  justify-items: center;
+
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* [2/2] | Mindset About 3 Word Quote Container
+/* ------------------------------------------------------------------- */
+
+#mindset-about-3-word-quote-container {
+
+
+}
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* ------------------------------------------------------------------- */
+
+/*
 #img-header-mindset-about {
 
   height: 3.5em;
   border-radius: .8em;
-}
+} */
