@@ -74,3 +74,38 @@
   /* background-color: brown; */
 
 }
+
+
+/* ------------------------------------------------------------- */
+/* Nav My It
+/* ------------------------------------------------------------- */
+
+#nav-my-it {
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  /* mobile */
+  /* justify-content: center; */
+
+  /* border-radius: 1.5em 1.5em 1.5em 1.5em; */
+  /* background-color: rgb(208, 82, 82); */
+
+}
+
+
+
+/* ------------------------------------------------------------- */
+/* Curved Tab Panel | Nav My Private
+/* ------------------------------------------------------------- */
+
+/* default black img unshown */
+label[for="radio-it-projects"] > img:nth-of-type(1),
+label[for="radio-it-docs"] > img:nth-of-type(1) {
+
+  display: none;
+
+}

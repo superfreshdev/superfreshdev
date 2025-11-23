@@ -16,16 +16,34 @@ input[name="name-radio-my-private-category"] {
 }
 
 /* set background */
-#radio-my-private-category-sport:checked ~ #nav-my-private label[for="radio-my-private-category-sport"],
-#radio-my-private-category-others:checked ~ #nav-my-private label[for="radio-my-private-category-others"] {
+#radio-sport-category-my-private:checked ~ #nav-my-private label[for="radio-sport-category-my-private"],
+#radio-others-category-my-private:checked ~ #nav-my-private label[for="radio-others-category-my-private"] {
 
+  opacity: 1;
   background-color: wheat;
+  color:black;
+
+}
+
+/* unshow grey img */
+#radio-sport-category-my-private:checked ~ div:nth-of-type(1) label[for="radio-sport-category-my-private"] > img:nth-of-type(2),
+#radio-others-category-my-private:checked ~ div:nth-of-type(1) label[for="radio-others-category-my-private"] > img:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* show black img */
+#radio-sport-category-my-private:checked ~ div:nth-of-type(1) label[for="radio-sport-category-my-private"] > img:nth-of-type(1),
+#radio-others-category-my-private:checked ~ div:nth-of-type(1) label[for="radio-others-category-my-private"] > img:nth-of-type(1) {
+
+ display: flex;
 
 }
 
 /* set content */
-#radio-my-private-category-sport:checked ~ #sport-container-my-private,
-#radio-my-private-category-others:checked ~ #my-private-others-container {
+#radio-sport-category-my-private:checked ~ #sport-container-my-private,
+#radio-others-category-my-private:checked ~ #my-private-others-container {
 
   display: grid;
 
