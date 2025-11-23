@@ -13,6 +13,7 @@
 
   width: 100%;
   display: grid;
+  justify-items: center;
 
 }
 
@@ -23,8 +24,18 @@
 #header-nav-mindset-about {
 
   width: 100%;
+
   display: grid;
-  row-gap: 2em;
+  justify-items: center;
+
+  row-gap: 1.5em;
+
+}
+
+/* header content block */
+#header-nav-mindset-about > .header-content-block:nth-of-type(1) {
+
+  width: 100%;
 
 }
 
@@ -38,6 +49,18 @@
 
 }
 
+/* ------------------------------------------------------------------- */
+/* Label | Show Me */
+/* ------------------------------------------------------------------- */
+
+label[for="chk-mindset-about"] {
+
+  /* mobile */
+  min-width: 7em;
+
+}
+
+
 /* default text close = unshown */
 label[for="chk-mindset-about"] > div:nth-of-type(1) > div:nth-of-type(2) {
 
@@ -50,8 +73,9 @@ label[for="chk-mindset-about"] > div:nth-of-type(1) > div:nth-of-type(2) {
 
 #mindset-about-content-container {
 
-  padding: 0 0 2.5em 0;
   width: 100%;
+
+  padding-bottom: 2.3em;
 
   display: grid;
   justify-items: center;
@@ -61,7 +85,7 @@ label[for="chk-mindset-about"] > div:nth-of-type(1) > div:nth-of-type(2) {
 }
 
 /* only 2nd opacity  */
-#mindset-about-content-container > .seperator-img-container-p-4-0:nth-of-type(3) {
+#mindset-about-content-container .seperator-img-container-p-3-0 {
 
   opacity: .4;
 
