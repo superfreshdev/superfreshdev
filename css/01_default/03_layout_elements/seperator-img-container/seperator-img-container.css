@@ -10,7 +10,10 @@
 /* -------------------------------------------------------------- */
 
 .seperator-img-container-p-4-0,
+.seperator-img-container-p-3-0,
+.seperator-img-container-p-2-5,
 .seperator-img-container-p-2-0,
+.seperator-img-container-p-1-5-0,
 .seperator-img-container-pt-1-pb-2,
 .seperator-img-containerr-pb-2,
 .seperator-img-container-pt-2  {
@@ -26,6 +29,25 @@
 /* -------------------------------------------------------------- */
 /* Top & Down | Padding
 /* -------------------------------------------------------------- */
+
+.seperator-img-container-p-1-5-0 {
+
+   padding: 1.5em 0;
+
+}
+
+.seperator-img-container-p-2-5-0 {
+
+   padding: 2.5em 0;
+
+}
+
+
+.seperator-img-container-p-3-0 {
+
+   padding: 3em 0;
+
+}
 
 .seperator-img-container-p-4-0 {
 

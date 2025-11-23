@@ -1,0 +1,77 @@
+/* -------------------------------------------------------------- */
+/* > header-sticker-light-grey.css
+/*
+/* : styles header info sticker | light grey
+/* -------------------------------------------------------------- */
+
+
+/* --------------------------------------- */
+/* Light Grey
+/* --------------------------------------- */
+
+/* -------------------------------------------------------------------- */
+/* Header Sticker | Small, Medium, Big
+/* -------------------------------------------------------------------- */
+
+.header-sticker-min-light-grey,
+.header-sticker-medium-light-grey,
+.header-sticker-max-light-grey {
+
+  display: flex;
+  align-items: center;
+  column-gap: .6em;
+
+  font-weight: bold;
+
+  background-color: #eeeeee;
+  color:#5d5d5d;
+
+}
+
+/* Div 1 */
+.header-sticker-min-light-grey > div:nth-of-type(1),
+.header-sticker-medium-light-grey > div:nth-of-type(1),
+.header-sticker-max-light-grey > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Min | Header Tabs
+/* -------------------------------------------------------------------- */
+
+.header-sticker-min-light-grey {
+
+  height: 2em;
+  padding: 0 .6em;
+
+  border-radius: .6em;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Medium | Header Tabs
+/* -------------------------------------------------------------------- */
+
+.header-sticker-medium-light-grey {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+  border-radius: .6em;
+
+}
+
+/* -------------------------------------------------------------------- */
+/* Big | Header Tabs
+/* -------------------------------------------------------------------- */
+
+.header-sticker-max-light-grey {
+
+  height: 2.5em;
+  padding: 0 .6em;
+
+  border-radius: .6em;
+
+}

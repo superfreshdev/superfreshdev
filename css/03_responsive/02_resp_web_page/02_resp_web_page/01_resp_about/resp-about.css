@@ -1,53 +1,25 @@
 /* -------------------------------------------------------------- */
 /* > resp-about.css */
-/*
 /* : responsive sets for about page elements
 /* -------------------------------------------------------------- */
 
 
-
-
 /* ------------------------------------------------------------------- */
-/* >= 330px */
+/* ❌ >= 330px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 330px ) {
 
-
-  /* ---------------------------------------------------------------------------------------------- */
-  /* Read More | Violine Audio Container */
-  /* ---------------------------------------------------------------------------------------------- */
-
-  #about-page-content-container {
-
-    /* background-color: rebeccapurple;
-    justify-items: center; */
-
-  }
-
-  #about-page-content-container .page-content-card-white {
-
-    /* width: 18em;
-    background-color: red; */
-
-  }
-
-
-
-
-
 }
 
-
 /* ------------------------------------------------------------------- */
-/* >= 360px */
+/* 🟨 >= 360px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 360px ) {
 
-
   /* ------------------------------------------------------- */
-  /* Read More |  Violine Inspiration Container
+  /* Read More |  Violine Inspiration Container */
   /* ------------------------------------------------------- */
 
   #violine-inspiration-container {
@@ -57,7 +29,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Audio | Story Behind SD Container
+  /* Read More | Audio Story Behind SD Container */
   /* ------------------------------------------------------------------- */
 
   #audio-story-behind-sd-container {
@@ -67,7 +39,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Story Behind SD Content Container
+  /* Read More | Story Behind SD Content Container */
   /* ------------------------------------------------------------------- */
 
   #story-behind-sd-content-container {
@@ -79,33 +51,10 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 380px */
+/* 🟨 >= 380px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 380px ) {
-
-
-  /* ------------------------------------------------ */
-  /* Read More | Nav Header About Details | Label Img  */
-  /* ------------------------------------------------ */
-
-  #nav-header-about-details > label > img:nth-of-type(1) {
-
-    /* desktop */
-    display: flex;
-
-  }
-
-  /* ------------------------------------------------ */
-  /* Read More | Img About Content Info Box  */
-  /* ------------------------------------------------ */
-
-  .img-about-content-info-box {
-
-    display: flex;
-
-  }
-
 
 
   /* ------------------------------------------------ */
@@ -115,6 +64,17 @@
   #about-read-more-audio-violine-container  {
 
     display: grid;
+
+  }
+
+  /* ------------------------------------------------ */
+  /* Read More | Entertainment Hobbies | "Violine"    */
+  /* ------------------------------------------------ */
+
+  /* because of showing audio than main layout will be shown */
+  #entertainment-hobbies-container > div:nth-of-type(1) > header > img:nth-of-type(1) {
+
+    border-radius: .8em 0 0 0em;
 
   }
 
@@ -138,26 +98,14 @@
 
   }
 
-
-
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 400px */
+/* 🟥 >= 400px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 400px ) {
 
-  /* ---------------------------------------------------------------------------------------------- */
-  /* Read More | Labels (mission, hobbies, story ) */
-  /* ---------------------------------------------------------------------------------------------- */
-
-  /* #nav-list-read-more-about > label {
-
-
-    width: auto;
-
-  } */
 
   /* --------------------------------------------------------- */
   /* Read More | Audio Violine Container */
@@ -168,16 +116,6 @@
     padding: 0 0em 1.5em .8em;
 
   }
-
-  /* --------------------------------------------------------- */
-  /* Read More | Img About Read More topics */
-  /* --------------------------------------------------------- */
-
-  /* .img-about-read-more-topics {
-
-    display: flex;
-
-  } */
 
   /* --------------------------------------------------------- */
   /* About Details | Contact Info Box -> Main */
@@ -244,7 +182,7 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 450px */
+/* 🟥 >= 450px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 450px ) {
@@ -266,7 +204,7 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 480px */
+/* 🟥 >= 480px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 480px ) {
@@ -275,15 +213,43 @@
   /* About | Nav About */
   /* ------------------------------------------------------------------- */
 
-    #nav-about {
+  #nav-about {
 
-      /* desktop */
-      justify-content: flex-end;
+    /* desktop */
+    justify-content: flex-end;
 
-      /* background-color: rgb(0, 69, 57); */
+    /* background-color: rgb(0, 69, 57); */
 
-    }
+  }
 
+  /* ------------------------------------------------------------------- */
+  /* Read More | Header Nav Read More About */
+  /* ------------------------------------------------------------------- */
+
+  #header-nav-read-more-about {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: 1em;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Img About Read More */
+  /* ------------------------------------------------------------------- */
+
+  #img-about-read-more {
+
+    /* desktop */
+    width: 4.8em;
+
+     /* layout pos fix of mindset */
+    margin-right: .4em;
+
+  }
 
   /* ------------------------------------------------------------------- */
   /* Read More | Header Read More */
@@ -299,8 +265,18 @@
 
   }
 
+  /* ----------------------------------------------------------------------------------------- */
+  /* Read More | Header Content Block | "Sub Title" */
+  /* ----------------------------------------------------------------------------------------- */
+
+  #header-nav-read-more-about > .header-content-block > div:nth-of-type(1) > div:nth-of-type(2) {
+
+    font-size: 14.5px;
+
+  }
+
   /* ------------------------------------------------------------------- */
-  /* Read More | Hobby Item Container | Header | Img
+  /* Read More | Hobby | Hobby Item Container > Header > Img */
   /* ------------------------------------------------------------------- */
 
   .hobby-item-container > header > img {
@@ -312,9 +288,8 @@
 
   }
 
-
   /* ------------------------------------------------------------------- */
-  /* Read More | Hobby Content Container */
+  /* Read More | Hobby | Hobby Content Container */
   /* ------------------------------------------------------------------- */
 
   .hobby-content-container {
@@ -335,6 +310,41 @@
     justify-content: space-between;
     row-gap: 0em;
     column-gap: .8em;
+
+  }
+
+    /* ------------------------------------------------------------------- */
+  /* Mindset | Img About Mindset */
+  /* ------------------------------------------------------------------- */
+
+  #img-about-mindset {
+
+    width: 4.8em;
+    height: 4.8em;
+
+    /* layout pos fix of read more */
+    margin-right: .4em;
+
+  }
+
+  /* ----------------------------------------------------------------------------------------- */
+  /* Read More | Header Nav Read More About | Header Content Block | Sub Title */
+  /* ----------------------------------------------------------------------------------------- */
+
+  #header-nav-mindset-about > .header-content-block > div:nth-of-type(1) > div:nth-of-type(2) {
+
+    font-size: 14.5px;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Label | Show Me */
+  /* ------------------------------------------------------------------- */
+
+  label[for="chk-mindset-about"] {
+
+    /* desktop */
+    min-width: 7em;
 
   }
 
@@ -365,43 +375,56 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 580px */
+/* 🟥 >= 580px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 580px ) {
 
+  /* ------------------------------------------------------------------- */
+  /* Read More | Nav Read More About */
+  /* ------------------------------------------------------------------- */
 
-  /* ---------------------------------------------------------------------- */
-  /* About Details | Header About Details Container */
-  /* ---------------------------------------------------------------------- */
+  #nav-read-more-about {
 
-   #header-about-details-container {
+    /* margin-bottom: 1em; */
 
-    /*header title more inside looks better */
-    padding-left: .8em;
-
-    /* desktop */
-    display: flex;
-    justify-content: space-between;
-
-    /* background-color: red; */
+    display: grid;
+    justify-items: center;
 
   }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Nav Content Panel Medium | Label */
+  /* ------------------------------------------------------------------- */
+
+  #nav-read-more-about > .nav-content-panel-medium > label {
+
+    width: auto;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Read More | Life Philosophy Container */
+  /* ------------------------------------------------------------------- */
+
+  #life-philosophy-container {
+
+    padding-bottom: 2em;
+
+  }
+
 
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 600px */
+/* 🟥 >= 600px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 600px ) {
 
 
-
-
-
   /* ------------------------------------------------------------------- */
-  /* Read More |Life Philosophy Container
+  /* Read More |Life Philosophy Container */
   /* ------------------------------------------------------------------- */
 
   #life-philosophy-container {
@@ -411,7 +434,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Sport Trave Human Hobbies Container
+  /* Read More | Sport Trave Human Hobbies Container */
   /* ------------------------------------------------------------------- */
 
   #sport-travel-human-hobbies-container {
@@ -421,7 +444,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Entertainment Hobbies Container
+  /* Read More | Entertainment Hobbies Container */
   /* ------------------------------------------------------------------- */
 
   #entertainment-hobbies-container {
@@ -431,7 +454,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Content Container Story Behind SD
+  /* Read More | Content Container Story Behind SD */
   /* ------------------------------------------------------------------- */
 
   #story-behind-sd-container {
@@ -442,7 +465,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Mindset | Content Container Story Behind SD
+  /* Mindset | Content Container Story Behind SD */
   /* ------------------------------------------------------------------- */
 
   #mindset-about-content-container {
@@ -452,121 +475,84 @@
   }
 
 
-  /* ------------------------------------------------------------------- */
-  /* Read More | Header Nav Read More About
-  /* ------------------------------------------------------------------- */
-
-  #header-nav-read-more-about {
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    column-gap: 1em;
-
-  }
-
-  /* ------------------------------------------------------------------- */
-  /* Read More | Img | Header Nav Read More About */
-  /* ------------------------------------------------------------------- */
-
-  #img-about-read-more {
-
-    /* desktop */
-    width: 4.8em;
-
-     /* layout pos fix of mindset */
-    margin-right: .4em;
-
-  }
-
-  #img-about-mindset {
-
-    width: 4.8em;
-    height: 4.8em;
-
-    /* layout pos fix of read more */
-    margin-right: .4em;
-
-  }
-
-  /* ----------------------------------------------------------------------------------------- */
-  /* Read More | Header Nav Read More About | Header Content Block | Sub Title
-  /* ----------------------------------------------------------------------------------------- */
-
-  #header-nav-read-more-about > .header-content-block > div:nth-of-type(1) > div:nth-of-type(2),
-  #header-nav-mindset-about > .header-content-block > div:nth-of-type(1) > div:nth-of-type(2) {
-
-    font-size: 14.5px;
-
-  }
-
-  /* ------------------------------------------------------------------- */
-  /* Read More | Label | Show Me */
-  /* ------------------------------------------------------------------- */
-
-  label[for="chk-open-read-more-about"],
-  label[for="chk-mindset-about"] {
-
-    /* desktop */
-    min-width: 7em;
-
-  }
-
-  /* ------------------------------------------------------------------- */
-  /* Read More | Nav Read More About
-  /* ------------------------------------------------------------------- */
-
-  #nav-read-more-about {
-
-    display: grid;
-    justify-items: center;
-
-  }
-
-  /* ------------------------------------------------------------------- */
-  /* Read More | Nav Content Panel Medium | Label
-  /* ------------------------------------------------------------------- */
-
-  #nav-read-more-about > .nav-content-panel-medium > label {
-
-    width: auto;
-
-  }
-
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 650px */
+/* 🟥 >= 650px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 650px ) {
 
 
-   /* --------------------------------------------------------- */
-  /* Mindset | Video Mindset Box About */
-  /* --------------------------------------------------------- */
+  /* -------------------------------------------------------------- */
+  /* Quick Info | Quick Info About Container */
+  /* -------------------------------------------------------------- */
 
-  .mindset-about-video-box  {
+  #quick-info-about-container {
+
+    /* special case: overwrite tempalte -> style-page-content-card-white-medium */
+    padding: .8em .8em;
+
+    align-items: center;
+
+    grid-template:
+
+    'img_business_quick_info img_arrow_about_quick_info content_quick_info_about'
+
+    ;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Quick Info | Img Arrow About Quick Info */
+  /* -------------------------------------------------------------- */
+
+  #img-arrow-about-quick-info {
+
+    /* desktop*/
+    display: grid;
+
+    padding: 0 1.3em;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Quick Info | Quick Info About Content Container */
+  /* -------------------------------------------------------------- */
+
+  #quick-info-about-content-container {
 
     width: 100%;
+    display: grid;
+    align-content: center;
+    row-gap: .8em;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Quick Info | "Header Sticker" */
+  /* -------------------------------------------------------------- */
+
+  #quick-info-about-content-container > div:nth-of-type(1) {
+
+    justify-self: flex-start;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Quick Info | "Text" */
+  /* -------------------------------------------------------------- */
+
+  #quick-info-about-content-container > div:nth-of-type(2) {
+
+    /* desktop */
+    text-align: left;
+    padding: 0;
 
   }
 
   /* ------------------------------------------------------------------- */
-  /* Mindset | Mindset About Video Container
-  /* ------------------------------------------------------------------- */
-
-  #mindset-about-video-container {
-
-    grid: auto / 1fr 1fr;
-
-  }
-
-
-  /* ------------------------------------------------------------------- */
-  /* Read More | Hobbies Container
+  /* Read More | Hobbies Container */
   /* ------------------------------------------------------------------- */
 
   #hobbies-container {
@@ -576,7 +562,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Hobbies Content List Part 1 of 2
+  /* Read More | Hobbies Content List Part 1 of 2 */
   /* ------------------------------------------------------------------- */
 
   #hobbies-content-list-part-1-of-2 {
@@ -592,7 +578,7 @@
   }
 
   /* ------------------------------------------------------------------- */
-  /* Read More | Hobbies Content List Part 2 of 2
+  /* Read More | Hobbies Content List Part 2 of 2 */
   /* ------------------------------------------------------------------- */
 
   #hobbies-content-list-part-2-of-2 {
@@ -606,6 +592,25 @@
 
   }
 
+  /* --------------------------------------------------------- */
+  /* Mindset | Video Mindset Box About */
+  /* --------------------------------------------------------- */
+
+  .mindset-about-video-box  {
+
+    width: 100%;
+
+  }
+
+  /* ------------------------------------------------------------------- */
+  /* Mindset | Mindset About Video Container */
+  /* ------------------------------------------------------------------- */
+
+  #mindset-about-video-container {
+
+    grid: auto / 1fr 1fr;
+
+  }
 
   /* ----------------------------------------------------------- */
   /* Mindset | Video Mindset About Container */
@@ -635,85 +640,15 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 700px */
+/* 🟥 >= 700px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 700px ) {
 
 
-  /* -------------------------------------------------------------- */
-  /* Quick Info | Quick Info About Container */
-  /* -------------------------------------------------------------- */
-
-  #quick-info-about-container {
-
-    /* special case: overwrite tempalte -> main content box transparent white */
-    padding: 1em .8em;
 
 
-    width: 100%;
-    display: grid;
-    align-items: center;
 
-    /* mobile */
-    justify-items: center;
-    row-gap: 2em;
-
-    grid-template:
-
-    'img_business_quick_info img_arrow_quick_info content_quick_info_about'
-
-    ;
-
-  }
-
-  /* -------------------------------------------------------------- */
-  /* Quick Info | Img Arrow Seperator Quick Info */
-  /* -------------------------------------------------------------- */
-
-  #img-arrow-seperator-quick-info-about {
-
-    /* desktop*/
-    display: grid;
-
-    padding: 0 1.3em;
-
-  }
-
-  /* -------------------------------------------------------------- */
-  /* Quick Info | Quick Info Content Container */
-  /* -------------------------------------------------------------- */
-
-  #quick-info-content-container-about {
-
-    width: 100%;
-    display: grid;
-    align-content: center;
-    row-gap: .8em;
-
-  }
-
-  /* -------------------------------------------------------------- */
-  /* Quick Info | Quick Info Header Sticker */
-  /* -------------------------------------------------------------- */
-
-  #quick-info-content-container-about > div:nth-of-type(1) {
-
-    justify-self: flex-start;
-
-  }
-
-  /* -------------------------------------------------------------- */
-  /* Quick Info | Quick Info Text */
-  /* -------------------------------------------------------------- */
-
-  #quick-info-content-container-about > div:nth-of-type(2) {
-
-    /* desktop */
-    text-align: left;
-    padding: 0;
-
-  }
 
   /* ------------------------------------------------------------------- */
   /* Read More | Hobby Content Container */
@@ -733,7 +668,7 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 750px */
+/* 🟥 >= 750px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 750px ) {
@@ -880,7 +815,7 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 800px */
+/* 🟥 >= 800px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 800px ) {
@@ -951,7 +886,7 @@
 }
 
 /* ------------------------------------------------------------------- */
-/* >= 850px */
+/* 🟥 >= 850px */
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 850px ) {
@@ -960,12 +895,9 @@
 }
 
 
-
-
-
-
 /* ------------------------------------------------------------------- */
-/* 🟣🟣🟣 Handle Extra 14 Zoll Laptops , heights */
+/* 🟥 To Do | Coming Soon |
+/* Handle Extra 14 Zoll Laptops , heights */
 /* ------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------- */
@@ -973,15 +905,6 @@
 /* ------------------------------------------------------------------- */
 
 @media ( min-width: 850px ) and ( min-height: 550px ) {
-
-
-  #img-quick-info-business {
-    /* display: none; */
-
-    /* border: 3px solid red;
-
-    height: 11em; */
-  }
 
 
 }

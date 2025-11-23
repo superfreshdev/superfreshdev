@@ -24,8 +24,18 @@
 #header-nav-read-more-about {
 
   width: 100%;
+
   display: grid;
+  justify-items: center;
+
   row-gap: 1.5em;
+
+}
+
+/* header content block */
+#header-nav-read-more-about > .header-content-block {
+
+  width: 100%;
 
 }
 
@@ -47,7 +57,7 @@
 label[for="chk-open-read-more-about"] {
 
   /* mobile */
-  min-width: 100%;
+  min-width: 7em;
 
 }
 
@@ -64,7 +74,7 @@ label[for="chk-open-read-more-about"] > div:nth-of-type(1) > div:nth-of-type(2) 
 
 #nav-read-more-about {
 
-  margin-top: .8em;
+  margin-top: 1.3em;
   width: 100%;
 
   display: grid;
@@ -73,10 +83,7 @@ label[for="chk-open-read-more-about"] > div:nth-of-type(1) > div:nth-of-type(2) 
 
 }
 
-/* ------------------------------------------------------------------- */
-/* Nav Content Panel Medium | Label | Nav Read More About
-/* ------------------------------------------------------------------- */
-
+/* Labels  */
 #nav-read-more-about > .nav-content-panel-medium > label {
 
   /* mobile */
@@ -89,8 +96,10 @@ label[for="chk-open-read-more-about"] > div:nth-of-type(1) > div:nth-of-type(2) 
 /* ------------------------------------------------------------------- */
 
 /* default unshown, only by checked */
-#read-more-about-container > .seperator-img-container-p-4-0 {
+#read-more-about-container > .seperator-img-container-p-2-5-0 {
 
+  opacity: .4;
   display: none;
+
 
 }

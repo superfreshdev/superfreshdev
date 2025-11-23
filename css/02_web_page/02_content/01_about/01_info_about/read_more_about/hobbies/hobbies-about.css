@@ -12,7 +12,7 @@
 #hobbies-container {
 
   width: 100%;
-  padding: 0 0 2em 0;
+  padding-bottom: 2em;
 
   display: grid;
   justify-items: center;
@@ -68,8 +68,10 @@
   column-gap: 1.3em;
 
 }
+/* -------------------------------- */
+/* Div 1 | Violine
+/* -------------------------------- */
 
-/* Div 1 | Violine */
 #entertainment-hobbies-container > div:nth-of-type(1) {
 
   grid-area: hobby-violine;
@@ -79,11 +81,15 @@
 /* change img border because of main */
 #entertainment-hobbies-container > div:nth-of-type(1) > header > img:nth-of-type(1) {
 
-  border-radius: .8em 0 0 0;
+  /* small mobile */
+  border-radius: .8em 0 0 .8em;
 
 }
 
-/* Div 2 | Music */
+/* -------------------------------- */
+/* Div 2 | Music
+/* -------------------------------- */
+
 #entertainment-hobbies-container > div:nth-of-type(2) {
 
   grid-area: hobby-music;
@@ -97,7 +103,10 @@
 
 }
 
-/* Div 3 | Movies */
+/* -------------------------------- */
+/* Div 3 | Moves
+/* -------------------------------- */
+
 #entertainment-hobbies-container > div:nth-of-type(3) {
 
   grid-area: hobby-movies;

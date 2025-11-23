@@ -1,75 +1,77 @@
 /* -------------------------------------------------------------- */
-/* > header-stickers.css
+/* > header-sticker-grey.css
 /*
-/* : styles header stickers for contents, e.g u can use these
-     stickers for small texts contents
+/* : styles header info sticker | grey
 /* -------------------------------------------------------------- */
 
 
+/* --------------------------------------- */
+/* Grey
+/* --------------------------------------- */
+
 /* -------------------------------------------------------------------- */
-/* Header Sticker | Min, Medium, Max
+/* Header Tabs | Small, Medium, Big
 /* -------------------------------------------------------------------- */
 
-.header-sticker-min,
-.header-sticker-medium,
-.header-sticker-max {
+.header-sticker-min-grey,
+.header-sticker-medium-grey,
+.header-sticker-max-grey {
 
   display: flex;
   align-items: center;
   column-gap: .6em;
 
-  border-radius: .6em;
-
   font-weight: bold;
 
-  background-color: rgb(184, 184, 184);
-
-  /* background-color: rgb(237, 237, 237); */
-  /* background-color: rgb(205, 205, 205); */
-  color:black;
-
-  user-select: none;
+  background-color: #d7d7d7;
+  color:#5d5d5d;
 
 }
 
-.header-sticker-min > div:nth-of-type(1),
-.header-sticker-medium > div:nth-of-type(1),
-.header-sticker-max > div:nth-of-type(1) {
+/* Div 1 */
+.header-sticker-min-grey > div:nth-of-type(1),
+.header-sticker-medium-grey > div:nth-of-type(1),
+.header-sticker-max-grey > div:nth-of-type(1) {
 
-  /* 14.5px | 14.5 / 16px= 0.90625 */
-  font-size: .90625em;
+  font-size: 14.5px;
 
 }
 
 /* -------------------------------------------------------------------- */
-/* Min | Header Sticker
+/* Min | Header Tabs
 /* -------------------------------------------------------------------- */
 
-.header-sticker-min {
+.header-sticker-min-grey {
 
-  height: 1.8em;
+  height: 2em;
   padding: 0 .6em;
 
+  border-radius: .6em;
+
 }
 
 /* -------------------------------------------------------------------- */
-/* Medium | Header Sticker
+/* Medium | Header Tabs
 /* -------------------------------------------------------------------- */
 
-.header-sticker-medium {
+.header-sticker-medium-grey {
 
   height: 2.3em;
   padding: 0 .6em;
 
+  border-radius: .6em;
+
 }
 
 /* -------------------------------------------------------------------- */
-/* Max | Header Sticker
+/* Big | Header Tabs
 /* -------------------------------------------------------------------- */
 
-.header-sticker-max {
+.header-sticker-max-grey {
 
   height: 2.5em;
   padding: 0 .6em;
+
+  border-radius: .6em;
 
 }
