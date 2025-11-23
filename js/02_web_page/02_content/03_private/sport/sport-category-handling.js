@@ -60,7 +60,7 @@ for( let i=0; i < radios_sport_categories.length; i++ ) {
 
       // console.log("Newest = 0 ")
 
-      update_img_src_and_size( imgSelectedSportCategory, "media/img/icons/02-icon-colors/01-black/black-speaker.png", "1.2em")
+      update_img_src_and_size( imgSelectedSportCategory, "media/img/icons/02-icon-colors/01-black/arrow-video.png", "1.2em")
 
       update_text( textSelectedSportCategory, "Newest Videos" )
 
@@ -103,7 +103,7 @@ for( let i=0; i < radios_sport_categories.length; i++ ) {
 
       //  console.log("Newest = 0 ")
 
-      update_img_src_and_size( imgSelectedSportCategory, "media/img/icons/02-icon-colors/01-black/black-speaker.png", "1.2em")
+      update_img_src_and_size( imgSelectedSportCategory, "media/img/icons/02-icon-colors/01-black/arrow-video.png", "1.2em")
 
       update_text( textSelectedSportCategory, "Newest Videos" )
 
