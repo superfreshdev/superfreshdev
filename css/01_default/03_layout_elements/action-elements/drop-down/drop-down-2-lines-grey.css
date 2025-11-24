@@ -22,8 +22,8 @@
 
   font-weight: bold;
 
-  background-color: rgb(207, 207, 207);
-  color:black;
+  background-color: #e7e7e7;
+  color:rgb(94, 94, 94);
 
   user-select: none;
   cursor: pointer;

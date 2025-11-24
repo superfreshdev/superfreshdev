@@ -23,7 +23,7 @@
 }
 
 /* set color black to challenges */
-#chk-history-newest-sport:checked + label .text-grey {
+#chk-history-newest-sport:checked + label .c-grey {
 
   color:rgb(48, 48, 48);
 
