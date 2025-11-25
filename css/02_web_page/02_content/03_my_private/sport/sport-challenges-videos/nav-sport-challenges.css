@@ -5,39 +5,39 @@
 
 
 /* ----------------------------------------------------------------------------- */
-/* Checkbox | Sport Challenges Category ( Choose Challenge )
+/* Checkbox | Selected Sport Challenge Category )
 /* ----------------------------------------------------------------------------- */
 
 /* default unshown */
-#chk-selected-sport-challenges-category {
+#chk-selected-sport-challenge-category {
 
   display: none;
 
 }
 
 /* set background */
-#chk-selected-sport-challenges-category:checked ~ #header-nav-sport-container label[for="chk-selected-sport-challenges-category"] {
+#chk-selected-sport-challenge-category:checked ~ #header-nav-sport-container label[for="chk-selected-sport-challenge-category"] {
 
   background-color: rgb(239, 113, 113);
 
 }
 
 /* set color black to challenges */
-#chk-selected-sport-challenges-category:checked ~ #header-nav-sport-container label[for="chk-selected-sport-challenges-category"] > div:nth-of-type(1) > div:nth-of-type(2) {
+#chk-selected-sport-challenge-category:checked ~ #header-nav-sport-container label[for="chk-selected-sport-challenge-category"] > div:nth-of-type(1) > div:nth-of-type(2) {
 
   color:rgb(48, 48, 48);
 
 }
 
 /* change rotation img arrow */
-#chk-selected-sport-challenges-category:checked ~ #header-nav-sport-container label[for="chk-selected-sport-challenges-category"] > img:nth-of-type(1) {
+#chk-selected-sport-challenge-category:checked ~ #header-nav-sport-container label[for="chk-selected-sport-challenge-category"] > img:nth-of-type(1) {
 
   transform: rotate(180deg);
 
 }
 
 /* set content */
-#chk-selected-sport-challenges-category:checked ~ #header-nav-sport-container #smooth-nav-sport-challenges-category {
+#chk-selected-sport-challenge-category:checked ~ #header-nav-sport-container #smooth-nav-sport-challenges-category {
 
   grid-template-rows: 1fr;
 }
@@ -72,14 +72,14 @@ input[name="radio-sport-challenges"] {
 
 }
 
-/* Show Content | Choose Challenges */
-#radio-sport-choose-challenge:checked ~ #content-sport-container #choose-info-container-sport-challenges {
+/* Set Content | Choose Challenges */
+#radio-sport-choose-challenge:checked ~ #sport-content-container #banner-choose-sport-challenges-container {
 
   display: flex;
 
 }
 
-/* Show Content | 30 Vidoes / 3 Videos Challenge Container */
+/* Set Content | 30 Vidoes / 3 Videos Challenge Container */
 #radio-sport-challenge-1:checked ~ #sport-content-container #sport-challenge-30-videos-container,
 #radio-sport-challenge-2:checked ~ #sport-content-container #sport-challenge-3-videos-container {
 

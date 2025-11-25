@@ -1,14 +1,14 @@
 /* ------------------------------------------------------------------------- */
-/* > choose-info-sport-challenges.css
-/* : styles choose sport challenge container
+/* > banner-choose-sport-challenges-container.css
+/* : styles banner choose sport challenges container
 /* ------------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------- */
-/* Choose Sport Challenge Container
+/* Banner Choose Sport Challenges Container
 /* ------------------------------------------------------------- */
 
-#choose-info-container-sport-challenges {
+#banner-choose-sport-challenges-container {
 
   padding: 2em 0 .5em 0;
 
@@ -25,11 +25,12 @@
 }
 
 /* ------------------------------------------------------------- */
-/* Img | Choose Sport Challenge Container
+/* Img | Banner Choose Sport Challenges Container
 /* ------------------------------------------------------------- */
 
-#choose-info-container-sport-challenges > img {
+#banner-choose-sport-challenges-container > img {
 
-  height: 4.5em;
+  height: 2.5em;
+  opacity: .3;
 
 }

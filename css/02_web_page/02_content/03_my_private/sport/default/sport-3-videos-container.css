@@ -22,17 +22,19 @@
   'video-sport-newest-3 video-sport-newest-3'
   ;
 
+  row-gap: .6em;
+  column-gap: .6em;
 
-  column-gap: .8em;
-  row-gap: .8em;
+  /* background-color: red; */
 
 }
+
 
 /* -------------------------------------------------------------- */
 /* Sport Video Link Box 1 |
 /* -------------------------------------------------------------- */
 
-.sport-3-videos-container > .sport-video-link-box-large:nth-of-type(1) {
+.sport-3-videos-container > .sport-video-link-box-3er-layout:nth-of-type(1) {
 
   grid-area: video-sport-newest-1;
 
@@ -42,7 +44,7 @@
 /* Sport Video Link Box 2 |
 /* -------------------------------------------------------------- */
 
-.sport-3-videos-container > .sport-video-link-box-large:nth-of-type(2) {
+.sport-3-videos-container > .sport-video-link-box-3er-layout:nth-of-type(2) {
 
   grid-area: video-sport-newest-2;
 
@@ -52,8 +54,9 @@
 /* Sport Video Link Box 3 |
 /* -------------------------------------------------------------- */
 
-.sport-3-videos-container > .sport-video-link-box-large:nth-of-type(3) {
+.sport-3-videos-container > .sport-video-link-box-3er-layout:nth-of-type(3) {
 
   grid-area: video-sport-newest-3;
+
 
 }

@@ -1,17 +1,17 @@
 /* -------------------------------------------------------------- */
-/* > sport-video-link-box.css
-/* : styles sport video link box
+/* > video-sport-link-box.css
+/* : styles video sport link box
 /* -------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------- */
-/* Sport | Video Link Box (Medium, Large)
+/* Sport | Sport Video Link Box ( 3er, 4er layout )
 /* -------------------------------------------------------------- */
 
-.sport-video-link-box-medium,
-.sport-video-link-box-large {
+.sport-video-link-box-3er-layout,
+.sport-video-link-box-4er-layout {
 
-  position: relative;
+   position: relative;
 
   /* mobile */
   width:100%;
@@ -22,44 +22,33 @@
 
   border: 4px solid rgb(201, 201, 201);
 
+  border: 4px solid #f3f3f3;
+
   transition: all .4s;
 
 }
 
-/* .sport-video-link-box-large {
-
-  height: 23em;
-} */
-
-/* -------------------------------------------------------------- */
-/* Hover | Sport | Video Link Box (Medium, Large)
-/* -------------------------------------------------------------- */
-
 /* hover img  */
-.sport-video-link-box-medium:hover > img,
-.sport-video-link-box-large:hover > img {
+.sport-video-link-box-3er-layout:hover > img,
+.sport-video-link-box-4er-layout:hover > img {
 
   opacity: 1;
 
 }
 
 /* hover border  */
-.sport-video-link-box-medium:hover,
-.sport-video-link-box-large:hover {
+.sport-video-link-box-3er-layout:hover,
+.sport-video-link-box-4er-layout:hover {
 
-  /* border: 3px solid rgb(0, 0, 0); */
-  border: 4px solid wheat;
+  border: 4px solid rgba(0, 0, 0, 1)
 
 }
 
-
-
 /* -------------------------------------------------------------- */
-/* Nr | Div 1 | Sport | Video Link Box (Medium, Large)
+/* Nr Sport Video Link |
 /* -------------------------------------------------------------- */
 
-.sport-video-link-box-medium > div:nth-of-type(1),
-.sport-video-link-box-large > div:nth-of-type(1) {
+.nr-sport-video-link {
 
   position: absolute;
   left:.6em;
@@ -83,39 +72,38 @@
 
 }
 
-.sport-video-link-box-medium > div:nth-of-type(1) > div,
-.sport-video-link-box-large > div:nth-of-type(1) > div {
+/* Div | Nr  */
+.nr-sport-video-link > div {
 
   font-size: 12px;
-
   font-weight: bold;
-
 
 }
 
 /* -------------------------------------------------------------- */
-/* Img | Sport | Video Link Box (Medium, Large)
+/* Img | Sport Video Link Box ( 3er, 4er layout )
 /* -------------------------------------------------------------- */
 
-.sport-video-link-box-medium > img,
-.sport-video-link-box-large > img {
+.sport-video-link-box-3er-layout > img:nth-of-type(1),
+.sport-video-link-box-4er-layout > img:nth-of-type(1) {
 
   width: 100%;
   height: 100%;
-  border-radius: .8em;
 
-  box-sizing: content-box;
+  border-radius: .7em .7em .8em .8em;
+
+  /* box-sizing: content-box; */
 
   opacity: .5;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Link Show Me | Sport | Video Link Box (Medium, Large)
+/* Show Me (Link) | Sport Video Link Box ( 3er, 4er layout )
 /* -------------------------------------------------------------- */
 
-.sport-video-link-box-medium > a,
-.sport-video-link-box-large > a {
+.sport-video-link-box-3er-layout > a,
+.sport-video-link-box-4er-layout > a {
 
   text-decoration: none;
 
@@ -145,23 +133,24 @@
 
 }
 
-/* default black img unshown */
-.sport-video-link-box-medium > a > img:nth-of-type(2),
-.sport-video-link-box-large > a > img:nth-of-type(2) {
+/* default unshown | black img */
+.sport-video-link-box-3er-layout > a > img:nth-of-type(2),
+.sport-video-link-box-4er-layout > a > img:nth-of-type(2) {
 
   display: none;
 
 }
 
-.sport-video-link-box-medium > a > div,
-.sport-video-link-box-large > a > div {
+.sport-video-link-box-3er-layout > a > div,
+.sport-video-link-box-4er-layout > a > div {
 
   font-size: 14.5px;
 
 }
 
-.sport-video-link-box-medium > a:hover,
-.sport-video-link-box-large > a:hover {
+/* hover */
+.sport-video-link-box-3er-layout > a:hover,
+.sport-video-link-box-4er-layout > a:hover {
 
   background-color: wheat;
   color:black;
@@ -169,24 +158,24 @@
 }
 
 /* hover unshown grey img */
-.sport-video-link-box-medium > a:hover > img:nth-of-type(1),
-.sport-video-link-box-large > a:hover > img:nth-of-type(1) {
+.sport-video-link-box-3er-layout > a:hover > img:nth-of-type(1),
+.sport-video-link-box-4er-layout > a:hover > img:nth-of-type(1) {
 
   display: none;
 
 }
 
-/* hover shown black img */
-.sport-video-link-box-medium > a:hover > img:nth-of-type(2),
-.sport-video-link-box-large > a:hover > img:nth-of-type(2) {
+/* hover show black img */
+.sport-video-link-box-3er-layout > a:hover > img:nth-of-type(2),
+.sport-video-link-box-4er-layout> a:hover > img:nth-of-type(2) {
 
   display: flex;
 
 }
 
-
-.sport-video-link-box-medium > :a:visited,
-.sport-video-link-box-large > a:visited {
+/* visited be black */
+.sport-video-link-box-3er-layout > :a:visited,
+.sport-video-link-box-4er-layout > a:visited {
 
   color:black;
 

@@ -69,8 +69,8 @@ input[name="radio-sport-category"] {
 
 }
 
-/* show choose challenges label */
-#radio-sport-challenge-videos:checked ~ #header-nav-sport-container label[for="chk-selected-sport-challenges-category"] {
+/* add label | choose challenges */
+#radio-sport-challenge-videos:checked ~ #header-nav-sport-container label[for="chk-selected-sport-challenge-category"] {
 
   display: flex;
 

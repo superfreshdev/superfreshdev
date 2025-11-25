@@ -34,7 +34,7 @@
   grid-template:
 
   'sport-nav-sport'
-  'sport-challenges-selected-category'
+  'selected-sport-challenge-category'
   'smooth-nav-sport-challenges-category'
 
   ;
@@ -42,8 +42,6 @@
   /* background-color: red; */
 
 }
-
-
 
 /* ------------------------------------------------------------- */
 /* [1/4] | Header Content Block
@@ -68,9 +66,6 @@
 
   grid-area: sport-nav-sport;
 
-  /* mobile */
-  /* margin-top: 0em; */
-
   display: grid;
 
 }
@@ -91,13 +86,14 @@
 }
 
 /* ------------------------------------------------------------- */
-/* [3/4] | Label | Selected Sport Challenges Category
+/* [3/4] | Label | Selected Sport Challenge Category
 /* ------------------------------------------------------------- */
 
-label[for="chk-selected-sport-challenges-category"] {
+label[for="chk-selected-sport-challenge-category"] {
+
+  grid-area: selected-sport-challenge-category;
 
   margin-top: .5em;
-  grid-area: sport-challenges-selected-category;
 
   /* default unshown */
   display: none;
@@ -127,7 +123,6 @@ label[for="chk-selected-sport-challenges-category"] {
    /* mobile */
    display: grid;
    row-gap: .4em;
-
 
 }
 
