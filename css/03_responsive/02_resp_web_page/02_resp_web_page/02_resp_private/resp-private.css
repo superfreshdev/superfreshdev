@@ -147,17 +147,6 @@
 
   }
 
-  /* -------------------------------------------------------------- */
-  /* Sport | Challenges | Details Sport Challenge Container | Main
-  /* -------------------------------------------------------------- */
-
-  .details-sport-challenge-container > main {
-
-    grid: auto / .8fr 1fr;
-
-
-  }
-
 
 }
 
@@ -768,17 +757,6 @@
 
     display: grid;
     grid: auto / 1fr 1fr 1fr 1fr;
-
-  }
-
-  /* -------------------------------------------------------------- */
-  /* Sport | Challenges | Details Sport Challenge Container | Main
-  /* -------------------------------------------------------------- */
-
-  .details-sport-challenge-container > main {
-
-    grid: auto / 15em 1fr;
-
 
   }
 

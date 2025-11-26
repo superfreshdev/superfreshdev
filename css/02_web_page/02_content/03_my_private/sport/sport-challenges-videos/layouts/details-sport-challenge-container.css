@@ -39,7 +39,7 @@
 
   border-radius: 2em;
 
-  background-color: rgb(207, 207, 207);
+  background-color: #e8e8e8;
 
 }
 
@@ -95,19 +95,16 @@
 
 .details-sport-challenge-container > main {
 
+  width: 100%;
   padding-top: .8em;
 
-  display: grid;
-  align-items: flex-start;
-
-  /* mobile */
-  /* grid: auto / 1fr 1fr; */
+  display: flex;
+  flex-wrap: wrap;
 
   column-gap: .8em;
-  row-gap: 1em;
+  row-gap: .4em;
 
-  border-top: 3px solid rgb(230, 230, 230);
-
+  border-top: 2px solid rgb(230, 230, 230);
 
 }
 
@@ -117,13 +114,11 @@
 
 .details-sport-workout-container {
 
-  width: 100%;
-
   display: flex;
   flex-wrap: wrap;
 
   column-gap: .4em;
-  row-gap: .8em;
+  row-gap: .4em;
 
 }
 
@@ -141,14 +136,16 @@
 
   border-radius: .4em;
 
-  background-color: rgba(202, 202, 202, 0.3);
-  color:rgb(158, 158, 158);
+  /* border: 1px solid rgb(209, 209, 209); */
+  background-color: #e8e8e8;
+
+  color:rgb(154, 154, 154);
 
 }
 
 .details-sport-workout-container > header > span {
 
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: bold;
 
 }
@@ -158,8 +155,6 @@
 /* -------------------------------------------------------------- */
 
 .details-sport-workout-container > main {
-
-  width: 100%;
 
   display: flex;
   flex-wrap: wrap;
@@ -173,7 +168,7 @@
 
 .details-sport-workout-item {
 
-  height: 1.5em;
+  height: 1.3em;
   padding: 0em .4em;
 
   display: flex;
@@ -184,8 +179,9 @@
 
   border-radius: .4em;
 
-  border: 1px solid rgb(176, 176, 176);
-  color:rgb(49, 49, 49);
+  border: 1px solid #e8e8e8;
+
+  color:rgb(93, 93, 93);
 
 }
 
