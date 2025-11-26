@@ -4,7 +4,6 @@
 /* -------------------------------------------------------------- */
 
 
-
 /* -------------------------------------------------------------- */
 /* Details Sport Challenge Container
 /* -------------------------------------------------------------- */
@@ -17,7 +16,7 @@
   padding: .8em;
 
   display: grid;
-  row-gap: 1em;
+  row-gap: .5em;
 
   border-radius: 0 .8em .8em 0;
 
@@ -44,7 +43,6 @@
 
 }
 
-
 /* -------------------------------------------------------------- */
 /* Header | Details Sport Challenge Container
 /* -------------------------------------------------------------- */
@@ -54,25 +52,17 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 
-  column-gap: .8em;
-  row-gap: .8em;
-
-}
-
-/* div 1 | per week  */
-.details-sport-challenge-container > header > div:nth-of-type(1) {
-
-  font-size: 14.5px;
-
-  font-weight: bold;
-  color:grey;
+  column-gap: .3em;
+  /* row-gap: .3em; */
 
 }
 
-/* sport days info | per week  */
-.sport-days-info {
+/* -------------------------------------------------------------- */
+/* Info Sport Challenge Days | Header
+/* -------------------------------------------------------------- */
+
+.info-sport-challenge-days {
 
   display: flex;
   align-items: center;
@@ -80,10 +70,23 @@
 
 }
 
-.sport-days-info > div {
+.info-sport-challenge-days  > div {
 
   font-size: 14.5px;
   font-weight: bold;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Info Sport Details Challenge Days | Header
+/* -------------------------------------------------------------- */
+
+.info-sport-details-challenge-days {
+
+  font-size: 14.5px;
+  font-weight: bold;
+  color:grey;
+
 }
 
 /* -------------------------------------------------------------- */
@@ -92,11 +95,19 @@
 
 .details-sport-challenge-container > main {
 
-  border-top: 3px solid rgb(230, 230, 230);
-  padding-top: 1em;
+  padding-top: .8em;
 
   display: grid;
-  row-gap: .8em;
+  align-items: flex-start;
+
+  /* mobile */
+  /* grid: auto / 1fr 1fr; */
+
+  column-gap: .8em;
+  row-gap: 1em;
+
+  border-top: 3px solid rgb(230, 230, 230);
+
 
 }
 
@@ -110,7 +121,9 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: .4em;
+
+  column-gap: .4em;
+  row-gap: .8em;
 
 }
 
@@ -121,17 +134,15 @@
 .details-sport-workout-container > header {
 
   height: 1.3em;
-  padding: 0em .3em;
+  padding: 0em .4em;
 
   display: flex;
   align-items: center;
 
   border-radius: .4em;
 
-  font-weight: bold;
-
-  background-color: rgb(223, 223, 223);
-  color:rgb(89, 89, 89);
+  background-color: rgba(202, 202, 202, 0.3);
+  color:rgb(158, 158, 158);
 
 }
 
@@ -141,7 +152,6 @@
   font-weight: bold;
 
 }
-
 
 /* -------------------------------------------------------------- */
 /* Main | Details Sport Workout Container
@@ -163,8 +173,7 @@
 
 .details-sport-workout-item {
 
-
-  height: 1.2em;
+  height: 1.5em;
   padding: 0em .4em;
 
   display: flex;
@@ -175,215 +184,13 @@
 
   border-radius: .4em;
 
-  border: 1px solid rgb(173, 173, 173);
-  color:grey;
+  border: 1px solid rgb(176, 176, 176);
+  color:rgb(49, 49, 49);
 
 }
-
 
 .details-sport-workout-item > div {
 
-  font-size: 13.5px;
-
-}
-
-
-/* -------------------------------------------------------------- */
-/* ❌❌❌ Trasj
-/* -------------------------------------------------------------- */
-
-/* -------------------------------------------------------------- */
-/* Quick Info Sport Challenge Container
-/* -------------------------------------------------------------- */
-
-.quick-info-sport-challenge-container {
-
-  width: 100%;
-
-  display: flex;
-
-  border-radius: .6em;
-
-  background-color: rgb(247, 247, 247);
-
-}
-
-/* -------------------------------------------------------------- */
-/* Quick Info Sport Challenge Box
-/* -------------------------------------------------------------- */
-
-.quick-info-sport-challenge-box {
-
-  height: 100%;
-  padding: 1em .5em;
-
-  position: relative;
-
-  display: flex;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Left Boder Stripe | Sport Challenge
-/* -------------------------------------------------------------- */
-
-.left-border-stripe-sport-challenge {
-
-  position: absolute;
-  left:0;
-  top:0;
-
-  height: 100%;
-  width: 4px;
-
-  border-radius: 2em;
-
-  background-color: rgb(207, 207, 207);
-
-}
-
-/* -------------------------------------------------------------- */
-/* Info Box | Sport Challenge
-/* -------------------------------------------------------------- */
-
-.info-box-sport-challenge {
-
-  padding-left: .5em;
-
-  display: grid;
-  row-gap: .5em;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Header | Info Box
-/* -------------------------------------------------------------- */
-
-.info-box-sport-challenge > header {
-
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
-
-  font-weight: bold;
-
-}
-
-.info-box-sport-challenge > header > div span {
-
-  font-size: 14.5px;
-
-}
-
-.info-box-sport-challenge > header > div > span:nth-of-type(2) {
-
-  color:grey;
-
-}
-
-
-/* -------------------------------------------------------------- */
-/* Week Info Sport Challenge Container
-/* -------------------------------------------------------------- */
-
-.week-info-sport-challenge-container {
-
-  display: grid;
-  row-gap: .6em;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Header | Week Info Sport Challenge Container
-/* -------------------------------------------------------------- */
-
-.week-info-sport-challenge-container > header {
-
-  font-size: 14.5px;
-  font-weight: bold;
-  /* text-decoration: underline; */
-
-  color:#808080;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Main | Week Info Sport Challenge Container
-/* -------------------------------------------------------------- */
-
-.week-info-sport-challenge-container > main {
-
-  display: grid;
-  row-gap: .6em;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Week Info Item Sport Challenge
-/* -------------------------------------------------------------- */
-
-.week-info-item-sport-challenge {
-
-  display: flex;
-  flex-wrap: wrap;
-
-  column-gap: .3em;
-  row-gap: .3em;
-
-}
-
-/* -------------------------------------------------------------- */
-/* Header ( days ) | Week Info Item Sport Challenge
-/* -------------------------------------------------------------- */
-
-.week-info-item-sport-challenge > header {
-
-  font-size: 14.5px;
-
-  height: 1.3em;
-  padding: 0em .3em;
-
-  display: flex;
-  align-items: center;
-
-  border-radius: .4em;
-
-  font-weight: bold;
-
-  background-color: rgb(223, 223, 223);
-  color:rgb(89, 89, 89);
-
-}
-
-.week-info-item-sport-challenge > header > span {
-
   font-size: 12.5px;
 
-}
-
-/* -------------------------------------------------------------- */
-/* Div ( Sport Category ) | Week Info Item Sport Challenge
-/* -------------------------------------------------------------- */
-
-.week-info-item-sport-challenge > div {
-
-  height: 1.2em;
-  padding: 0em .4em;
-
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
-
-  /* font-weight: bold; */
-
-  border-radius: .4em;
-
-  border: 1px solid rgb(173, 173, 173);
-  color:grey;
-
-}
-
-.week-info-item-sport-challenge > div > div:nth-of-type(1) {
-
-  font-size: 12.5px;
 }

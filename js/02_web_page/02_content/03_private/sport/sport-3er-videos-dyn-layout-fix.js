@@ -2,8 +2,6 @@
 
 /*
 
-  🟥 to Do:
-
   Problem:
   Grid dont delete row & col gap if there is only
   one element - bad view is that we have an space
@@ -19,21 +17,7 @@
 /* ----------------------------------------------------------------- */
 
 const sport_3_videos_containers = document.querySelectorAll(".sport-3-videos-container");
-console.log("✳️ Max Count (3er) = " + sport_3_videos_containers.length )
-
-// Only Dom Exist Count
-const childs_of_sport_3_videos = sport_3_videos_containers[1].querySelectorAll(".sport-video-link-box-3er-layout").length;
-console.log("✳️ Max Childs [1] (3er) = " + childs_of_sport_3_videos )
-
-// Only Dom Visible Count
-const visible_children = [...sport_3_videos_containers[1].children].filter(el =>
-  window.getComputedStyle(el).display !== "none");
-
-console.log(visible_children.length); // → 2
-
-/* ------------------------------ */
-
-delete_row_col_gaps_by_grid_layouts( sport_3_videos_containers, ".sport-video-link-box-3er-layout" )
+// console.log("✳️ Max Count (3er) = " + sport_3_videos_containers.length )
 
 /* ----------------------------------------------------------------- */
 /*  Functions
@@ -51,40 +35,40 @@ function delete_row_col_gaps_by_grid_layouts( gridLayoutElements, cssChildElemen
 
   const all_grid_layouts = gridLayoutElements;
 
-  console.log("=> 🐦‍🔥 " + cssChildElementSelector )
+  for( let i=0; i < all_grid_layouts.length; i++ ) {
+
+
+    // Count Dom Visible Child Elements
+    var visible_children = [...all_grid_layouts[i].children].filter(el =>
+      window.getComputedStyle(el).display !== "none");
+
+    // delete row / col gap
+    switch( visible_children.length ) {
+
+      case 1:
+        // delete | row & col gap
+        // console.log(i + " = " + visible_children.length + " | Delete | row & col ");
+
+        all_grid_layouts[i].style.rowGap = "0px";
+        all_grid_layouts[i].style.columnGap = "0px";
+        break;
+
+      case 2:
+        // delete | row gap
+        // console.log(i + " = " + visible_children.length + " | Delete | row ");
+
+        all_grid_layouts[i].style.rowGap = "0px";
+        break;
+
+    }
+
+
+  }
 
 }
 
+/* ----------------------------------------------------------------- */
+/*  Execute
+/* ----------------------------------------------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Solution filter = display = none und dont exist
-
-// manipuliate
-// all_sport_3_videos_containers[1].querySelector("div").style.border = "10px solid red";
-
-// all_sport_3_videos_containers[1].style.backgroundColor = "red";
-// all_sport_3_videos_containers[1].style.rowGap = "0px";
-// all_sport_3_videos_containers[1].style.columnGap = "0px";
+delete_row_col_gaps_by_grid_layouts( sport_3_videos_containers, ".sport-video-link-box-3er-layout" )

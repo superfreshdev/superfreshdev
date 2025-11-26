@@ -31,7 +31,6 @@
 
   }
 
-
   /* ------------------------------------------------------------- */
   /* Meals | Header Nav Meals Container */
   /* ------------------------------------------------------------- */
@@ -145,6 +144,17 @@
   .nav-sport-container > label {
 
     width: auto;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Sport | Challenges | Details Sport Challenge Container | Main
+  /* -------------------------------------------------------------- */
+
+  .details-sport-challenge-container > main {
+
+    grid: auto / .8fr 1fr;
+
 
   }
 
@@ -345,7 +355,6 @@
   #sport-newest-video-container {
 
     padding-top: 3em;
-    /* padding-bottom: 2em; */
 
   }
 
@@ -466,7 +475,8 @@
 
   #sport-newest-video-container {
 
-    width: 35em;
+    /* reminder: parent is 80% */
+    width: 100%;
     /* background-color: red; */
 
   }
@@ -726,21 +736,14 @@
 
   #sport-newest-video-container {
 
-    width: 100%;
+    /* width: 45em; */
 
   }
 
-  /* -------------------------------------------------------------- */
-  /* Sport | Sport Video 3 Container */
-  /* -------------------------------------------------------------- */
+  #sport-newest-video-container > .sport-3-videos-container,
+  #sport-newest-video-container > #history-sport-newest-video-container {
 
-  .sport-3-videos-container {
-
-    /* width: 38em; */
-
-    /* column-gap: 1.3em; */
-    /* justify-content: flex-start; */
-    /* background-color: black; */
+    width: 40em;
 
   }
 
@@ -765,6 +768,17 @@
 
     display: grid;
     grid: auto / 1fr 1fr 1fr 1fr;
+
+  }
+
+  /* -------------------------------------------------------------- */
+  /* Sport | Challenges | Details Sport Challenge Container | Main
+  /* -------------------------------------------------------------- */
+
+  .details-sport-challenge-container > main {
+
+    grid: auto / 15em 1fr;
+
 
   }
 
