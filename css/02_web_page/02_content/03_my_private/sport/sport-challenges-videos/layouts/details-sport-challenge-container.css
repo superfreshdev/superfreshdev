@@ -18,7 +18,7 @@
   display: grid;
   row-gap: .5em;
 
-  border-radius: 0 .8em .8em 0;
+  border-radius: 12px;
 
   background-color: rgb(247, 247, 247);
 
@@ -40,6 +40,8 @@
   border-radius: 2em;
 
   background-color: #e8e8e8;
+
+  display: none;
 
 }
 
@@ -85,7 +87,7 @@
 
   font-size: 14.5px;
   font-weight: bold;
-  color:grey;
+  color:rgb(152, 152, 152);
 
 }
 
@@ -137,15 +139,16 @@
   border-radius: .4em;
 
   /* border: 1px solid rgb(209, 209, 209); */
-  background-color: #e8e8e8;
+  /* background-color: #e8e8e8; */
 
   color:rgb(154, 154, 154);
+  color:black;
 
 }
 
 .details-sport-workout-container > header > span {
 
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: bold;
 
 }
