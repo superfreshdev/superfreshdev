@@ -100,6 +100,7 @@
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-light-grey.css">
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-grey.css">
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-2-lines-grey.css">
+                <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/drop-down/drop-down-2-lines-light-grey.css">
 
                 <!-- Radio Elements -->
                 <link rel="stylesheet" href="css/01_default/03_layout_elements/action-elements/radio-element.css">
@@ -1555,7 +1556,7 @@
                                                                             <header>» Written for Tom Brady - Rhett Price:</header>
 
                                                                             <!-- audio -->
-                                                                            <audio controls controlslist="nodownload noplaybackrate noremoteplayback">
+                                                                            <audio controls controlslist="nodownload noplaybackrate noremoteplayback" preload="none">
                                                                                 <source src="media/audio/content/about/rhett-price-tom-brady.mp3" type="audio/mp3">
                                                                             </audio>
 
@@ -1569,7 +1570,7 @@
                                                                             <header>» Wake Me Up - The Mad Violinist:</header>
 
                                                                             <!-- audio -->
-                                                                            <audio controls controlslist="nodownload noplaybackrate noremoteplayback">
+                                                                            <audio controls controlslist="nodownload noplaybackrate noremoteplayback" preload="none">
                                                                                 <source src="media/audio/content/about/wake-me-up-vio.mp3" type="audio/mp3">
                                                                             </audio>
 
@@ -1585,7 +1586,7 @@
                                                                                     Peter Lee Johnson:</header>
 
                                                                             <!-- audio -->
-                                                                            <audio controls controlslist="nodownload noplaybackrate noremoteplayback">
+                                                                            <audio controls controlslist="nodownload noplaybackrate noremoteplayback" preload="none">
                                                                                 <source src="media/audio/content/about/show-goes-on-classic-violine.mp3" type="audio/mp3">
                                                                             </audio>
 
@@ -1694,7 +1695,7 @@
                                                        <!-- --------------------------------------------------- -->
                                                        <div id="audio-story-behind-sd-container">
 
-                                                            <audio controls controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar">
+                                                            <audio controls controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar" preload="none">
                                                                <source src="media/audio/content/about/about-story.ogg" type="audio/ogg">
                                                             </audio>
 
@@ -8785,8 +8786,8 @@
                                             <!-- ----------------------------------------------------------------- -->
                                             <!-- 🟩 Radios | Category Sport ( newest videos, challenges ) -->
                                             <!-- ----------------------------------------------------------------- -->
-                                            <input checked type="radio" id="radio-sport-newest-videos" name="radio-sport-category">
-                                            <input  type="radio" id="radio-sport-challenge-videos" name="radio-sport-category">
+                                            <input  type="radio" id="radio-sport-newest-videos" name="radio-sport-category">
+                                            <input checked type="radio" id="radio-sport-challenge-videos" name="radio-sport-category">
 
                                             <!-- ----------------------------------------------------------------- -->
                                             <!-- 🟩 Checkbox | Selected Sport Challenge Category -->
@@ -8797,8 +8798,8 @@
                                             <!-- 🟩 Radio | Category Sport Challenges (🟨JS) -->
                                             <!-- ----------------------------------------------------------------- -->
                                             <input type="radio" id="radio-sport-choose-challenge" name="radio-sport-challenges">
-                                            <input  type="radio" id="radio-sport-challenge-1" name="radio-sport-challenges">
-                                            <input  type="radio" id="radio-sport-challenge-2" name="radio-sport-challenges">
+                                            <input type="radio" id="radio-sport-challenge-1" name="radio-sport-challenges">
+                                            <input checked type="radio" id="radio-sport-challenge-2" name="radio-sport-challenges">
 
                                             <!-- ----------------------------------------------------------------- -->
                                             <!-- 🟩 [1/2] | Header Nav | Sport Container -->
@@ -8829,7 +8830,7 @@
                                                     <!-- ------------------------------------------------------------ -->
                                                     <!-- 🟩 Label | Selected Sport Category -->
                                                     <!-- ------------------------------------------------------------ -->
-                                                    <label for="chk-selected-sport-category" class="drop-down-grey-medium">
+                                                    <label for="chk-selected-sport-category" class="drop-down-light-grey-medium">
 
                                                         <!-- ---------------------------------------- -->
                                                         <!-- Title Block -->
@@ -8868,7 +8869,7 @@
                                                                 <!-- ------------------------------------------------------------------ -->
                                                                 <!-- 🟩 Sport Category | Newest Videos -->
                                                                 <!-- ------------------------------------------------------------------ -->
-                                                                <label for="radio-sport-newest-videos" class="drop-down-grey-medium">
+                                                                <label for="radio-sport-newest-videos" class="drop-down-light-grey-medium">
 
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Title Block -->
@@ -8891,7 +8892,7 @@
                                                                 <!-- ------------------------------------------------------------------ -->
                                                                 <!-- 🟩 Sport Category | Challenges -->
                                                                 <!-- ------------------------------------------------------------------ -->
-                                                                <label for="radio-sport-challenge-videos" class="drop-down-grey-medium">
+                                                                <label for="radio-sport-challenge-videos" class="drop-down-light-grey-medium">
 
                                                                     <!-- ---------------------------------------- -->
                                                                     <!-- Title Block -->
@@ -8924,7 +8925,7 @@
                                                 <!-- 🟩 [3/4] | Label | Selected Sport Challenge Category                       -->
                                                 <!-- -------------------------------------------------------------------------- -->
                                                 <label for="chk-selected-sport-challenge-category"
-                                                       class="drop-down-2-lines-grey-medium">
+                                                       class="drop-down-2-lines-light-grey-medium">
 
                                                     <!-- ---------------------------------------- -->
                                                     <!-- Title Block -->
@@ -8963,7 +8964,7 @@
                                                             <!-- --------------------------------------------------- -->
                                                             <!-- Label | Unset Challenge -->
                                                             <!-- --------------------------------------------------- -->
-                                                            <label for="radio-sport-choose-challenge" class="drop-down-2-lines-grey-medium">
+                                                            <label for="radio-sport-choose-challenge" class="drop-down-2-lines-light-grey-medium">
 
                                                                 <!-- ---------------------------------------- -->
                                                                 <!-- Title Block -->
@@ -8988,7 +8989,7 @@
                                                             <!-- --------------------------------------------------- -->
                                                             <!-- Label | Challenge #1 - become fit again -->
                                                             <!-- --------------------------------------------------- -->
-                                                            <label for="radio-sport-challenge-1" class="drop-down-2-lines-grey-medium">
+                                                            <label for="radio-sport-challenge-1" class="drop-down-2-lines-light-grey-medium">
 
                                                                 <!-- ---------------------------------------- -->
                                                                 <!-- Title Block -->
@@ -9013,7 +9014,7 @@
                                                             <!-- --------------------------------------------------- -->
                                                             <!-- Label | Challenge #2 - Become Six-Pack Again -->
                                                             <!-- --------------------------------------------------- -->
-                                                            <label for="radio-sport-challenge-2" class="drop-down-2-lines-grey-medium">
+                                                            <label for="radio-sport-challenge-2" class="drop-down-2-lines-light-grey-medium">
 
                                                                 <!-- ---------------------------------------- -->
                                                                 <!-- Title Block -->
@@ -9487,20 +9488,17 @@
                                                                     <div class="details-sport-workout-container">
 
                                                                         <!-- --------------------------------------------------- -->
-                                                                        <!-- Header -->
+                                                                        <!-- Day Sticker | Sport Challenge -->
                                                                         <!-- --------------------------------------------------- -->
-                                                                        <header style="display: none;">
-                                                                            <span>3 Days: </span>
-                                                                        </header>
-
-                                                                        <!-- --------------------------------------------------- -->
-                                                                        <!-- Main -->
-                                                                        <!-- --------------------------------------------------- -->
-                                                                        <main>
-
+                                                                        <div class="days-sticker-sport-challenge" style="display: none;">
+                                                                            <div>
+                                                                                <span>3 Days:</span>
+                                                                            </div>
+                                                                        </div>
 
                                                                             <!-- 2 - running -->
                                                                             <div class="details-sport-workout-item">
+                                                                                <!-- <img src="media/img/icons/02-icon-colors/01-black/black-running-human.png" class="img-h-0-7" alt="img"> -->
                                                                                 <img src="media/img/icons/02-icon-colors/03-grey/grey-running-human.png" class="img-h-0-7" alt="img">
                                                                                 <div>Running</div>
                                                                             </div>
@@ -9508,6 +9506,7 @@
 
                                                                             <!-- 2 - Strength -->
                                                                             <div class="details-sport-workout-item">
+                                                                                <!-- <img src="media/img/icons/02-icon-colors/01-black/black-biceps.png" class="img-h-0-7" alt="img"> -->
                                                                                 <img src="media/img/icons/02-icon-colors/03-grey/grey-biceps.png" class="img-h-0-7" alt="img">
                                                                                 <div>Strength</div>
                                                                             </div>
@@ -9519,14 +9518,7 @@
                                                                             </div>
 
 
-
-
-
-
-                                                                        </main>
-
                                                                     </div>
-
 
 
                                                                 </main>
@@ -10506,13 +10498,9 @@
                                                         <!-- ----------------------------------------------------------------------- -->
                                                         <div class="details-sport-challenge-container">
 
-                                                            <!-- ------------------------------------------------------------- -->
-                                                            <!-- 🟩 [1/3] | Left Border -->
-                                                            <!-- ------------------------------------------------------------- -->
-                                                            <div class="left-border-details-sport-challenge"></div>
 
                                                             <!-- ------------------------------------------------------------- -->
-                                                            <!-- 🟩 [2/3] | Header -->
+                                                            <!-- 🟩 [1/2] | Header ( 30 Days | ... ) -->
                                                             <!-- ------------------------------------------------------------- -->
                                                             <header>
 
@@ -10533,7 +10521,7 @@
                                                             </header>
 
                                                             <!-- ------------------------------------------------------------- -->
-                                                            <!-- 🟩 [3/3] | Main -->
+                                                            <!-- 🟩 [2/2] | Main ( Details about Sport Challenge ) -->
                                                             <!-- ------------------------------------------------------------- -->
                                                             <main>
 
@@ -10541,80 +10529,88 @@
                                                                 <div class="details-sport-workout-container">
 
                                                                     <!-- --------------------------------------------------- -->
-                                                                    <!-- Header -->
+                                                                    <!-- Day Sticker | Sport Challenge -->
                                                                     <!-- --------------------------------------------------- -->
-                                                                    <header>
-                                                                        <span>3 Days: </span>
-                                                                    </header>
-
-                                                                    <!-- --------------------------------------------------- -->
-                                                                    <!-- Main -->
-                                                                    <!-- --------------------------------------------------- -->
-                                                                    <main>
-
-                                                                        <!-- 1 - stomach -->
-                                                                        <div class="details-sport-workout-item">
-                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-6-plastic.png" class="img-h-0-7" alt="img">
-                                                                            <div>Stomach</div>
+                                                                    <div class="days-sticker-sport-challenge">
+                                                                        <div>
+                                                                            <span>3 Days:</span>
                                                                         </div>
+                                                                    </div>
 
-                                                                        <!-- 2 - Back -->
-                                                                        <div class="details-sport-workout-item">
-                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-body-back.png" class="img-h-0-7" alt="img">
-                                                                            <div>Back</div>
-                                                                        </div>
+                                                                    <!-- 1 - stomach -->
+                                                                    <div class="details-sport-workout-item">
+                                                                        <!-- <img src="media/img/icons/02-icon-colors/01-black/black-6-plastic.png" class="img-h-0-7" alt="img"> -->
+                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-6-plastic.png" class="img-h-0-7" alt="img">
+                                                                        <div>Stomach</div>
+                                                                    </div>
 
-                                                                         <!-- 2 - Strength -->
-                                                                        <div class="details-sport-workout-item">
-                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-biceps.png" class="img-h-0-7" alt="img">
-                                                                            <div>Strength</div>
-                                                                        </div>
+                                                                    <!-- 2 - Back -->
+                                                                    <div class="details-sport-workout-item">
+                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-body-back.png" class="img-h-0-7" alt="img">
+                                                                        <div>Back</div>
+                                                                    </div>
 
+                                                                    <!-- 3 - Strength -->
+                                                                    <div class="details-sport-workout-item">
+                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-biceps.png" class="img-h-0-7" alt="img">
+                                                                        <div>Strength</div>
+                                                                    </div>
 
+                                                                    <!-- 4 - Strength -->
+                                                                    <div class="details-sport-workout-item">
+                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-biceps.png" class="img-h-0-7" alt="img">
+                                                                        <div>Strength</div>
+                                                                    </div>
 
-                                                                    </main>
+                                                                    <!-- 5 - Strength -->
+                                                                    <div class="details-sport-workout-item">
+                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-biceps.png" class="img-h-0-7" alt="img">
+                                                                        <div>Strength</div>
+                                                                    </div>
+
+                                                                    <!-- 6 - Strength -->
+                                                                    <div class="details-sport-workout-item">
+                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-biceps.png" class="img-h-0-7" alt="img">
+                                                                        <div>Strength</div>
+                                                                    </div>
+
 
                                                                 </div>
 
                                                                 <!-- [2/2] | details sport workout -->
-                                                                <div class="details-sport-workout-container">
+                                                                 <div class="details-sport-workout-container">
 
                                                                     <!-- --------------------------------------------------- -->
-                                                                    <!-- Header -->
+                                                                    <!-- Day Sticker | Sport Challenge -->
                                                                     <!-- --------------------------------------------------- -->
-                                                                    <header>
-                                                                        <span>2 Days:</span>
-                                                                    </header>
-
-                                                                    <!-- --------------------------------------------------- -->
-                                                                    <!-- Main -->
-                                                                    <!-- --------------------------------------------------- -->
-                                                                    <main>
-
-
-                                                                         <!-- 2 - running -->
-                                                                        <div class="details-sport-workout-item">
-                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-running-human.png" class="img-h-0-7" alt="img">
-                                                                            <div>Running</div>
+                                                                    <div class="days-sticker-sport-challenge">
+                                                                        <div>
+                                                                            <span>2 Days:</span>
                                                                         </div>
+                                                                    </div>
+
+                                                                    <!-- 2 - running -->
+                                                                    <div class="details-sport-workout-item">
+                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-running-human.png" class="img-h-0-7" alt="img">
+                                                                        <div>Running</div>
+                                                                    </div>
 
 
-                                                                         <!-- 2 - Calisthenics -->
-                                                                        <div class="details-sport-workout-item">
-                                                                            <img src="media/img/icons/02-icon-colors/03-grey/grey-gymnastics.png" class="img-h-0-7" alt="img">
-                                                                            <div>Calisthenics</div>
-                                                                        </div>
+                                                                        <!-- 2 - Calisthenics -->
+                                                                    <div class="details-sport-workout-item">
+                                                                        <img src="media/img/icons/02-icon-colors/03-grey/grey-gymnastics.png" class="img-h-0-7" alt="img">
+                                                                        <div>Calisthenics</div>
+                                                                    </div>
 
-                                                                         <!-- 2 - flexibility-->
-                                                                        <div class="details-sport-workout-item">
-                                                                            <img src="media/img/icons/02-icon-colors/04-light-grey/light-grey-human-flexibility.png" class="img-h-0-8" alt="img">
-                                                                            <div>Flexibility</div>
-                                                                        </div>
+                                                                        <!-- 2 - flexibility-->
+                                                                    <div class="details-sport-workout-item">
+                                                                        <img src="media/img/icons/02-icon-colors/04-light-grey/light-grey-human-flexibility.png" class="img-h-0-8" alt="img">
+                                                                        <div>Flexibility</div>
+                                                                    </div>
 
-
-                                                                    </main>
 
                                                                 </div>
+
 
                                                             </main>
 
