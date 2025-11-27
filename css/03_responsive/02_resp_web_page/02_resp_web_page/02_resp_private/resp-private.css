@@ -745,7 +745,7 @@
   .sport-challenge-15-videos-container > main {
 
     display: grid;
-    grid: auto / 1fr 1fr 1fr 1fr 1fr;
+    grid: auto / 1fr 1fr 1fr 1fr;
 
   }
 
