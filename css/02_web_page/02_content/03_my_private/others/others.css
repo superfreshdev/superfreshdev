@@ -38,6 +38,9 @@
 
   grid-area: header-others;
 
+  /* explicit vor better look & feel */
+  margin-left: .6em;
+
   display: none;
 
 }

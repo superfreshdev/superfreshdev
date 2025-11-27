@@ -56,30 +56,32 @@
   display: grid;
   row-gap: .3em;
 
-  font-size: 14.5px;
+  font-size: 16px;
 
 }
 
 /* ------------------------------------------------------------- */
-/* Div 1 | Span 1 (Info) | Info Mini Games
+/* Div 1 | Div 1 (Info) | Info Mini Games
 /* ------------------------------------------------------------- */
 
-#info-mini-games > div:nth-of-type(1) > span:nth-of-type(1) {
+#info-mini-games > div:nth-of-type(1) > div:nth-of-type(1) {
+
 
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 
    color:rgb(88, 88, 88);
 
 }
 
 /* ------------------------------------------------------------- */
-/* Div 1 | Span 2 (Text) | Info Mini Games
+/* Div 1 | Div 2 (Text) | Info Mini Games
 /* ------------------------------------------------------------- */
 
-#info-mini-games > div:nth-of-type(1) > span:nth-of-type(2)  {
+#info-mini-games > div:nth-of-type(1) > div:nth-of-type(2)  {
 
   color:grey;
+  line-height: 1.7em;
 
 }
 
