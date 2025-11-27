@@ -9,6 +9,7 @@
 /* -------------------------------------------------------------- */
 
 .sport-video-link-box-3er-layout,
+.sport-video-link-box-3er-layout-coming-soon,
 .sport-video-link-box-4er-layout {
 
   position: relative;
@@ -31,6 +32,7 @@
 
 /* hover img  */
 .sport-video-link-box-3er-layout:hover > img:nth-of-type(1),
+.sport-video-link-box-3er-layout-coming-soon:hover > img:nth-of-type(1),
 .sport-video-link-box-4er-layout:hover > img:nth-of-type(1) {
 
   opacity: 1;
@@ -39,6 +41,7 @@
 
 /* hover border  */
 .sport-video-link-box-3er-layout:hover,
+.sport-video-link-box-3er-layout-coming-soon:hover,
 .sport-video-link-box-4er-layout:hover {
 
   border: 4px solid rgb(75, 75, 75);
@@ -83,6 +86,7 @@
 
 /* hover */
 .sport-video-link-box-3er-layout:hover .nr-sport-video-link,
+.sport-video-link-box-3er-layout-coming-soon:hover .nr-sport-video-link,
 .sport-video-link-box-4er-layout:hover .nr-sport-video-link {
 
   background-color: wheat;
@@ -95,6 +99,7 @@
 /* -------------------------------------------------------------- */
 
 .sport-video-link-box-3er-layout > img:nth-of-type(1),
+.sport-video-link-box-3er-layout-coming-soon > img:nth-of-type(1),
 .sport-video-link-box-4er-layout > img:nth-of-type(1) {
 
   width: 100%;
@@ -111,6 +116,13 @@
 /* -------------------------------------------------------------- */
 /* Show Me (Link) | Sport Video Link Box ( 3er, 4er layout )
 /* -------------------------------------------------------------- */
+
+/* coming soon dont have show me */
+.sport-video-link-box-3er-layout-coming-soon > a {
+
+  display: none
+
+}
 
 .sport-video-link-box-3er-layout > a,
 .sport-video-link-box-4er-layout > a {

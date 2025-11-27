@@ -79,14 +79,17 @@
 
   font-size: 14.5px;
 
-  padding: .2em .6em;
+  padding: .3em 1em;
 
   /* font-size: 1em; */
   font-weight: bold;
 
-  border-radius: .8em;
+  text-decoration: none;
 
-  background-color: wheat;
+  border-radius: 1.5em .3em 1.5em .3em;
+
+  border: 3px solid transparent;
+  background-color: rgba(245, 222, 179, .6);
   color:rgb(20, 20, 20);
 
   transition: all .4s;
@@ -97,6 +100,7 @@
 
   background-color: wheat;
   color: black;
+  border: 3px solid rgb(57, 57, 57);
 
 }
 
