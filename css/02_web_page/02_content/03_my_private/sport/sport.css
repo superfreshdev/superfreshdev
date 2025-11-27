@@ -51,6 +51,9 @@
 
   grid-area: sport-header-content-block;
 
+  /* explicit vor better look & feel */
+  margin-left: .6em;
+
   align-self: flex-start;
 
   /* mobile */
