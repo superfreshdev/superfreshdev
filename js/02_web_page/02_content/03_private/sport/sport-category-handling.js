@@ -31,6 +31,24 @@ const data_sport_categories = {
       title: "Challenges"
     }
 
+  ],
+
+  sportHeaders: [
+
+    {
+      imgName: "black-zick-zack-arrow.png",
+      imgCss: "img-h-2-5",
+      title: "Newest Videos",
+      subTitle: "» Max 9 Uploads"
+    },
+
+    {
+      imgName: "black-2-swords.png",
+      imgCss: "img-h-2-5",
+      title: "Choose",
+      subTitle: "» Challenges"
+    }
+
   ]
 
 }
@@ -105,97 +123,24 @@ var radios_sport_categories = [
 
 ]
 
+// Header | Selected Sport Category
+const img_header_sport_category = document.getElementById("js-header-img-sport-category");
+const title_header_sport_category = document.getElementById("js-header-title-sport-category");
+const sub_title_header_sport_category = document.getElementById("js-header-sub-title-sport-category");
+
 // Selected Sport Challenge Category ( label )
 
 // Radios of Sport Challenges Categories ( choose, ch1, ch2, ... )
 
-// Header Update
+
 
 /* ----------------------------------------------------------------------------------- */
-/* Events
+/* Functions
 /* ----------------------------------------------------------------------------------- */
 
-
-  /* -------------------------------------------------------------------------------- */
-  /* Radio Change Listener | Sport Categories ( Newest, Challenges )
-  /* -------------------------------------------------------------------------------- */
-
-  for( let i=0; i < radios_sport_categories.length; i++ ) {
-
-    radios_sport_categories[i].addEventListener("change", ()=> {
-
-      console.log("Radio Changed State = " + i )
-
-      // Step 1/2
-      // close nav (chk unset)
-      chk_selected_sport_category.checked = false;
-
-      // Step 2/3
-      // update label
-      if( radios_sport_categories[i].checked == true ) {
-
-
-        // Hard Defined = 0 = Newest Videos
-        if(i == 0) {
-
-          console.log("Newest = 0 ")
-
-          // update_img_src_and_size( img_lbl_selected_sport_category, "media/img/icons/02-icon-colors/01-black/black-zick-zack-arrow.png", "1.1em")
-
-          // update_text( txt_lbl_selected_sport_category, "Newest Videos" )
-
-          // update_text( txt_count_lbl_selected_sport_category, "(2)" )
-
-          // countTextSelectedSportCategory.innerText = "(⛓️)"
-
-
-        }
-
-        // Hard Defined = 1 = Challenges
-        if(i == 1) {
-
-          console.log("Challenge = 1 ")
-
-          // update_img_src_and_size( img_lbl_selected_sport_category, "media/img/icons/02-icon-colors/01-black/black-2-swords.png", ".9em")
-
-          // update_text( txt_lbl_selected_sport_category, "Challenges" )
-
-          // update_text( txt_count_lbl_selected_sport_category, "(1)" )
-
-          // countTextSelectedSportCategory.innerText = "(😈)"
-
-        }
-
-      }
-
-      // Step 3/3
-      // update header
-      // Reminder: header is unshown by very small mobile size by display = none;
-
-    })
-
-
-  }
-
-  /* -------------------------------------------------------------------------------- */
-  /* Radio Change Listener | Sport Categories ( Newest, Challenges )
-  /* -------------------------------------------------------------------------------- */
-
-  // Radio Change | Sport Category Selections
-
-/* ----------------------------------------------------------------- */
-/* Execute
-/* ----------------------------------------------------------------- */
-
-  /* -------------------------------------------------- */
-  // Step 1/2:
-  // Update First Sport Category Content if any
-  // other Sport Category was default setted
-  /* -------------------------------------------------- */
-
-  start_view_sport_category_content();
-
-
+  /* ------------------------------------------ */
+  /* Start View | Sport Category Content
+  /* ------------------------------------------ */
   function start_view_sport_category_content() {
 
     /* -------------------------------------- */
@@ -213,13 +158,19 @@ var radios_sport_categories = [
       // Update Label | Setted Sport Category
       update_label_setted_sport_category( 0 )
 
+      // Update Header
+      update_header_sport_category( 0 )
+
 
   } else {
 
     console.log("Use Setted Index = " + setted_index)
 
     // Update Label | Setted Sport Category
-     update_label_setted_sport_category( setted_index )
+    update_label_setted_sport_category( setted_index )
+
+    // Update Header
+    update_header_sport_category( setted_index )
 
   }
 
@@ -227,12 +178,10 @@ var radios_sport_categories = [
 
 
   }
-
 
   /* ------------------------------------------ */
   /* Update Label | Setted Sport Category
   /* ------------------------------------------ */
-
   function update_label_setted_sport_category( sport_category_index ) {
 
     var index = sport_category_index;
@@ -273,7 +222,7 @@ var radios_sport_categories = [
 
       // Update | Challenges
       case 1:
-        max_items = 99;
+        max_items = "2🍓";
         break;
 
       default:
@@ -303,8 +252,99 @@ var radios_sport_categories = [
   /* Update Header | Setted Sport Category
   /* ------------------------------------------ */
 
+  function update_header_sport_category( sport_category_index ) {
 
-  function update_header_sport_category( header, data_index) {
+    var index = sport_category_index;
+
+    /* ----------------------------------------------------- */
+    /* Step 1:
+    /* Set Data by setted Sport Category Index
+    /* ----------------------------------------------------- */
+
+    // img
+    var def_img_path = data_sport_categories.defImgSrc;
+    var img_name = data_sport_categories.sportHeaders[index].imgName;
+    var img_css_class = data_sport_categories.sportHeaders[index].imgCss;
+
+    console.log("1 = " + def_img_path)
+    console.log("1 = " + img_name)
+    console.log("1 = " + img_css_class)
+
+    // Update Img Src + Css Class Selector
+    update_img_src_and_size( img_header_sport_category, def_img_path+img_name, img_css_class )
+
+    // title
+    var title = data_sport_categories.sportHeaders[index].title;
+    console.log("1 = " + title )
+
+    // Update Title
+    update_text( title_header_sport_category, title )
+
+    // sub title
+    var sub_title = data_sport_categories.sportHeaders[index].subTitle;
+    console.log("1 = " + sub_title )
+
+    // Update Title
+    update_text( sub_title_header_sport_category, sub_title )
 
 
   }
+
+
+/* ----------------------------------------------------------------------------------- */
+/* Events
+/* ----------------------------------------------------------------------------------- */
+
+  /* -------------------------------------------------------------------------------- */
+  /* Radio Change | Sport Categories ( Newest, Challenges )
+  /* -------------------------------------------------------------------------------- */
+
+  for( let index=0; index < radios_sport_categories.length; index++ ) {
+
+    radios_sport_categories[index].addEventListener("change", ()=> {
+
+      console.log("Radio Changed State = " + index )
+
+      /* ----------------------------------------------------------- */
+      /* Step 1:
+      /* close nav (chk unset)
+      /* ----------------------------------------------------------- */
+
+      chk_selected_sport_category.checked = false;
+
+      /* ----------------------------------------------------------- */
+      /* Step 2:
+      /* update label
+      /* ----------------------------------------------------------- */
+      update_label_setted_sport_category( index )
+
+      /* ----------------------------------------------------------- */
+      /* Step 3:
+      /* update header
+      /* ----------------------------------------------------------- */
+      // Reminder: header is unshown by very small mobile size by display = none;
+
+      update_header_sport_category( index )
+
+    })
+
+
+  }
+
+  /* -------------------------------------------------------------------------------- */
+  /* Radio Change | Sport Categories ( Newest, Challenges )
+  /* -------------------------------------------------------------------------------- */
+
+  // Radio Change | Sport Category Selections
+
+/* ----------------------------------------------------------------- */
+/* Execute
+/* ----------------------------------------------------------------- */
+
+  /* -------------------------------------------------- */
+  /* Step 1/2:
+  /* Update First Sport Category Content if any
+  /* other Sport Category was default setted
+  /* -------------------------------------------------- */
+
+  start_view_sport_category_content();
