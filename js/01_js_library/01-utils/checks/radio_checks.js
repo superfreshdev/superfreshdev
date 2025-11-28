@@ -1,6 +1,7 @@
 console.log("🟨 radio_checks.js")
 
 
+// 🟣 Exist
 /* ----------------------------------------------------------------- */
 /* Check | Exist Given Radios
 /* ----------------------------------------------------------------- */
@@ -20,3 +21,38 @@ function exist_radios( radio_name_group ) {
   }
 
 }
+
+/* ----------------------------------------------------------------- */
+/* Check | G
+/* ----------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------- */
+/* Get | Setted Radio Index
+/* ----------------------------------------------------------------- */
+
+function get_setted_radio_index( radio_name_group ) {
+
+  var radio_elements = document.querySelectorAll(`input[name='${radio_name_group}']`);
+
+  for( let i=0; i < radio_elements.length; i++ ) {
+
+
+    if( radio_elements[i].checked == true ) {
+      // console.log("🟩 Checked Index = " + i)
+      return i;
+
+    }
+
+  }
+
+  // not exist
+  return -1;
+
+}
+
+
+/* ----------------------------------------------------------------- */
+/* Set | Radio Index
+/* ----------------------------------------------------------------- */

@@ -27,3 +27,13 @@ function set_first_radio_by_any_sets( radios_name_group ) {
   set_first_radio.checked = true;
 
 }
+
+/* ----------------------------------------------------------------- */
+/* Set | Radio Index
+/* ----------------------------------------------------------------- */
+
+function set_radio( radioElement ) {
+
+  radioElement.checked = true;
+
+}
