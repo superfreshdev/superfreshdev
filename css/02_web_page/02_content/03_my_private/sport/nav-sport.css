@@ -47,11 +47,13 @@
 /* ----------------------------------------------------------------------------- */
 
 /* default unshown */
-input[name="radio-sport-category"] {
+input[name="radio-name-sport-category"] {
 
   display: none;
 
 }
+
+
 
 /* set background */
 #radio-sport-newest-videos:checked ~ #header-nav-sport-container label[for="radio-sport-newest-videos"],

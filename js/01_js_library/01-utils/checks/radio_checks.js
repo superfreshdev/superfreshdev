@@ -32,9 +32,9 @@ function exist_radios( radio_name_group ) {
 /* Get | Setted Radio Index
 /* ----------------------------------------------------------------- */
 
-function get_setted_radio_index( radio_name_group ) {
+function get_setted_radio_index( radio_name ) {
 
-  var radio_elements = document.querySelectorAll(`input[name='${radio_name_group}']`);
+  var radio_elements = document.querySelectorAll(`input[name='${radio_name}']`);
 
   for( let i=0; i < radio_elements.length; i++ ) {
 
