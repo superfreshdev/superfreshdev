@@ -38,7 +38,10 @@
   width: 100%;
   border-radius: 1em;
 
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+  border: 3px solid rgb(210, 210, 210);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 }
 
