@@ -86,7 +86,7 @@
   padding: 0 .8em;
 
   display: grid;
-  justify-items: center;
+  justify-items: flex-end;
   justify-content: center;
 
   /* background-color: blue; */

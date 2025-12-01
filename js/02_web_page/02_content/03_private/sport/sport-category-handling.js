@@ -15,6 +15,7 @@ console.log("🟨 sport-category-handling.js")
 const data_layout_sport_categories = {
 
   defImgSrc: "media/img/icons/02-icon-colors/01-black/",
+  defSportChallengeTitle: "Challenge",
 
   sportNavs: [
 
@@ -46,6 +47,19 @@ const data_layout_sport_categories = {
       imgCss: "img-h-2-5",
       title: "Choose",
       subTitle: "» Challenges"
+    }
+
+  ],
+
+  sportChallengeSubTitle: [
+
+    {
+      title: "become fit again"
+
+    },
+    {
+      title: "have a six-pack again"
+
     }
 
   ]
@@ -103,6 +117,42 @@ const data_content_sport_challenges_videos = {
 
   challenges: [
 
+    {
+      content: [
+
+        {
+          imgName: "fixed-sport-1.png",
+          externalLink: "https://drive.google.com/file/d/1J9eMjm1CyoqzBIsSzrurCSb6t3eB_f8z/view?usp=sharing"
+        },
+        {
+          imgName: "fixed-sport-2.png",
+          externalLink: "https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing"
+        },
+        {
+          imgName: "fixed-sport-3.png",
+          externalLink: "https://drive.google.com/file/d/1Q_z7GMinGYnMW5Adv8lxNM2TgYF20_ih/view?usp=sharing"
+        }
+      ]
+
+    },
+    {
+      content: [
+
+        {
+          imgName: "fixed-sport-1.png",
+          externalLink: "https://drive.google.com/file/d/1J9eMjm1CyoqzBIsSzrurCSb6t3eB_f8z/view?usp=sharing"
+        },
+        {
+          imgName: "fixed-sport-2.png",
+          externalLink: "https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing"
+        },
+        {
+          imgName: "fixed-sport-3.png",
+          externalLink: "https://drive.google.com/file/d/1Q_z7GMinGYnMW5Adv8lxNM2TgYF20_ih/view?usp=sharing"
+        }
+      ]
+
+    }
 
   ]
 
@@ -113,9 +163,7 @@ const data_content_sport_challenges_videos = {
 /* ----------------------------------------------------------------- */
 
 var max_content_items_newest_sport_videos = get_max_content_items_newest_sport_videos( data_content_newest_sport_videos.videos )
-var max_content_items_sport_challenges = "😈X";
-
-// console.log( "🐦‍🔥 " + get_max_content_items_newest_sport_videos( data_content_newest_sport_videos.videos ) )
+var max_content_items_sport_challenges = get_max_content_items_sport_challenges( data_content_sport_challenges_videos.challenges )
 
 /* --------------------------------------------------- */
 /* Checkbox | Selected Sport Category
@@ -164,12 +212,8 @@ const sub_title_header_sport_category = document.getElementById("js-header-sub-t
 /* Radios | Sport Challenges
 /* --------------------------------------------------- */
 
-var radios_sport_challenges = [
-
-  // document.getElementById("radio-sport-newest-videos"),
-  // document.getElementById("radio-sport-challenge-videos"),
-
-]
+const add_point_radio_sport_challenges = document.getElementById("sport-container-my-private");
+const add_point_radio_labels_sport_challenges = document.getElementById("nav-sport-category-challenges");
 
 
 /* ----------------------------------------------------------------------------------- */
@@ -216,7 +260,8 @@ var radios_sport_challenges = [
       // Update Label | Selected Sport Category
       update_nav_selected_sport_category( 0 )
 
-      // 🟥 Update Labels | Sport Categories ( newest, challanges )
+      // 🟥 unset radios sport challenges
+      console.log("⚠️⚠️⚠️ Uncheck | Sport Challenges  ")
 
       // Update Header | Sport Category
       update_header_sport_category( 0 )
@@ -321,8 +366,8 @@ var radios_sport_challenges = [
 
   function update_nav_sport_categories( label_radio_elements ) {
 
-    console.log("🌳🌳🌳")
-    console.log("Max Radio Elements = " + label_radio_elements.length )
+    // console.log("🌳🌳🌳")
+    // console.log("Max Radio Elements = " + label_radio_elements.length )
 
     var def_img_path = "";
     var img_name = "";
@@ -438,6 +483,13 @@ var radios_sport_challenges = [
 
       chk_selected_sport_category.checked = false;
 
+      // 🟥 unset radios sport challenges
+      if( radios_sport_categories[0].checked == true ) {
+
+        console.log("⚠️⚠️⚠️ Uncheck | Sport Challenges  ")
+
+      }
+
       /* ----------------------------------------------------------- */
       /* Step 2:
       /* update label | nav selected sport category
@@ -466,8 +518,56 @@ var radios_sport_challenges = [
 /* ➡️ Execute ( Start Point )
 /* ----------------------------------------------------------------- */
 
+  function create_radio_labels_sport_challenges( data_layout , add_point_radios, add_point_radio_labels ) {
+
+    console.log("🦖 Create Radio Labels | Sport Challenges ")
+
+    // dyn. create css selectors ?
+
+    // const ?!
+    var radio_sport_challenge_id = "";
+    var radio_sport_challenge_name = "";
+
+    var title = data_layout;
+    var sub_title = "";
+    var nr = "";
+
+    console.log("🟥 Radio Add Point | " + add_point_radios )
+    console.log("🟥 Radio Labels Add Point | " + add_point_radio_labels )
+
+    console.log("------")
+
+    /*
+
+        1. Prints
+
+        2. Add Radio Elements
+        3. Add Label Elements
+
+        4. Add CSS Selector Elements -> ( extra Funktion )
+
+    */
+
+    /* -------------------------------------------- */
+    /* Create Radios
+    /* -------------------------------------------- */
+
+    /* -------------------------------------------- */
+    /* Create Labels
+    /* -------------------------------------------- */
+
+
+    // data_layout_sport_categories
+
+  }
+
   /* -------------------------------------------------- */
   /* Show Content
   /* -------------------------------------------------- */
 
   start_view_sport_category_content();
+
+
+  create_radio_labels_sport_challenges( data_layout_sport_categories,
+                                        add_point_radio_sport_challenges,
+                                        add_point_radio_labels_sport_challenges );
