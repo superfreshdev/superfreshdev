@@ -1,0 +1,123 @@
+/* -------------------------------------------------------------- */
+/* > info-about-sport-challenge-container.css
+/* : styles info about sport challenges
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Info About Sport Challenge Container
+/* -------------------------------------------------------------- */
+
+.info-about-sport-challenge-container {
+
+  width: 100%;
+  display: grid;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Header | Info About Sport Challenge Container
+/* -------------------------------------------------------------- */
+
+.info-about-sport-challenge-container > header {
+
+  height: 2.8em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+  border-radius: .4em;
+
+  background-color: #eeeeee;
+
+}
+
+.info-about-sport-challenge-container > header > div {
+
+  font-weight: bold;
+  font-size: 14.5px;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Main | Info About Sport Challenge Container
+/* -------------------------------------------------------------- */
+
+.info-about-sport-challenge-container > main {
+
+  padding: 1em .4em;
+
+  display: grid;
+  row-gap: .4em;
+
+  /* background-color: red; */
+
+}
+
+/* -------------------------------------------------------------- */
+/* Sport Workout Parts Container | Main
+/* -------------------------------------------------------------- */
+
+.sport-workout-parts-container {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: .4em;
+  row-gap: .4em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Sport Workout Days | Sport Workout Parts Container
+/* -------------------------------------------------------------- */
+
+.sport-workout-days {
+
+  height: 1.8em;
+  padding: 0 .4em;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: .4em;
+
+  background-color: #eeeeee;
+
+}
+
+.sport-workout-days > span {
+
+  font-size: 14.5px;
+  font-weight: bold;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Sport Workout Category | Sport Workout Parts Container
+/* -------------------------------------------------------------- */
+
+.sport-workout-category {
+
+  height: 1.8em;
+  padding: 0 .4em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+  border-radius: .4em;
+
+  border: 2px solid #eeeeee;
+  color: #adadad;
+
+}
+
+.sport-workout-category > div {
+
+  font-size: 14.5px;
+  font-weight: bold;
+
+}
