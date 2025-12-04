@@ -12,13 +12,13 @@ function update_text( textElement, text ) {
 }
 
 /* ----------------------------------------------------------------- */
-/* Update | Img Src & Size by CSS Class Selector
+/* Update | Img Src + Css Class
 /* ----------------------------------------------------------------- */
 
-function update_img_src_and_size( imgElement, path, cssImgSize ) {
+function update_img_src_and_class( imgElement, path, cssClass ) {
 
   imgElement.src = path;
 
-  imgElement.style.height = cssImgSize;
+  imgElement.style.height = cssClass;
 
 }

@@ -1857,7 +1857,7 @@
                                                         <!-- ----------------------------------------------------- -->
                                                         <!-- Overflow Hidden -->
                                                         <!-- ----------------------------------------------------- -->
-                                                        <div class="overflow-hidden grid ji-c w-100p">
+                                                        <div class="overflow-hidden grid ji-c ">
 
                                                             <!-- --------------------------------------------------------------- -->
                                                             <!--  Mindset About Content Container -->
@@ -8800,9 +8800,9 @@
                                             <!-- ----------------------------------------------------------------- -->
                                             <!-- 🟩 Radio | Category Sport Challenges (🟨JS) -->
                                             <!-- ----------------------------------------------------------------- -->
-                                            <input type="radio" id="radio-sport-choose-challenge" name="radio-sport-challenges">
+                                            <!-- <input type="radio" id="radio-sport-choose-challenge" name="radio-sport-challenges">
                                             <input type="radio" id="radio-sport-challenge-1" name="radio-sport-challenges">
-                                            <input type="radio" id="radio-sport-challenge-2" name="radio-sport-challenges">
+                                            <input type="radio" id="radio-sport-challenge-2" name="radio-sport-challenges"> -->
 
                                             <!-- ----------------------------------------------------------------- -->
                                             <!-- 🟩 [1/2] | Header Nav | Sport Container -->
@@ -8881,7 +8881,7 @@
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-zick-zack-arrow.png" class="img-h-1-1" alt="img">
                                                                         <div>
                                                                             <span>Newest Videos</span>
-                                                                            <span class="c-grey">(2)</span>
+                                                                            <span class="c-grey">(?)</span>
                                                                         </div>
                                                                     </div>
 
@@ -8907,7 +8907,7 @@
                                                                         <img src="media/img/icons/02-icon-colors/01-black/black-2-swords.png" class="img-h-0-9" alt="img">
                                                                         <div>
                                                                             <span>Challenges</span>
-                                                                            <span class="c-grey">(1)</span>
+                                                                            <span class="c-grey">(?)</span>
                                                                         </div>
                                                                     </div>
 
@@ -8969,80 +8969,9 @@
                                                         <!-- ------------------------------------------------------------ -->
                                                         <div id="nav-sport-category-challenges">
 
-
-                                                            <!-- --------------------------------------------------- -->
-                                                            <!-- Label | Unset Challenge -->
-                                                            <!-- --------------------------------------------------- -->
-                                                            <label for="radio-sport-choose-challenge" class="drop-down-2-lines-light-grey-medium">
-
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- Title Block -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <div>
-                                                                    <div>Choose ...</div>
-                                                                    <div>» Challenges</div>
-                                                                    <!-- become fit again, calesthenics #1 -->
-                                                                </div>
-
-                                                                <!-- -------------------------------------------- -->
-                                                                <!-- Custom Radio -->
-                                                                <!-- -------------------------------------------- -->
-                                                                <div class="custom-radio-small">
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                </div>
-
-
-
-                                                            </label>
-
-                                                            <!-- --------------------------------------------------- -->
-                                                            <!-- Label | Challenge #1 - become fit again -->
-                                                            <!-- --------------------------------------------------- -->
-                                                            <label for="radio-sport-challenge-1" class="drop-down-2-lines-light-grey-medium">
-
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- Title Block -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <div>
-                                                                    <div>Challenge #1</div>
-                                                                    <div>» become fit again</div>
-                                                                    <!-- become fit again, calesthenics #1 -->
-                                                                </div>
-
-                                                                <!-- -------------------------------------------- -->
-                                                                <!-- Custom Radio -->
-                                                                <!-- -------------------------------------------- -->
-                                                                <div class="custom-radio-small">
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                </div>
-
-
-
-                                                            </label>
-
-                                                            <!-- --------------------------------------------------- -->
-                                                            <!-- Label | Challenge #2 - Become Six-Pack Again -->
-                                                            <!-- --------------------------------------------------- -->
-                                                            <label for="radio-sport-challenge-2" class="drop-down-2-lines-light-grey-medium">
-
-                                                                <!-- ---------------------------------------- -->
-                                                                <!-- Title Block -->
-                                                                <!-- ---------------------------------------- -->
-                                                                <div>
-                                                                    <div>Challenge #2</div>
-                                                                    <div>» have a six-pack again</div>
-                                                                    <!-- become fit again, calesthenics #1 -->
-                                                                </div>
-
-                                                                <!-- -------------------------------------------- -->
-                                                                <!-- Custom Radio -->
-                                                                <!-- -------------------------------------------- -->
-                                                                <div class="custom-radio-small">
-                                                                    <img src="media/img/icons/02-icon-colors/01-black/black-styling-art-x.png" alt="img">
-                                                                </div>
-
-                                                            </label>
-
+                                                            <!-- 🟨 will be dynamically created by js -->
+                                                            <!-- to see the html-css structure look
+                                                                in web-dev-tools in browser  -->
 
                                                         </div>
 
@@ -12596,6 +12525,18 @@
             <!-- --------------------------------------------- -->
 
                 <!-- --------------------------------------------------- -->
+                <!-- 🟩 Timeout -->
+                <!-- --------------------------------------------------- -->
+
+                    <script src="js/01_js_library/01-utils/timeouts/timeout.js"></script>
+
+                <!-- --------------------------------------------------- -->
+                <!-- 🟩 CSS -->
+                <!-- --------------------------------------------------- -->
+
+                     <script src="js/01_js_library/01-utils/css/unset_css.js"></script>
+
+                <!-- --------------------------------------------------- -->
                 <!-- 🟩 Date -->
                 <!-- --------------------------------------------------- -->
 
@@ -12621,12 +12562,30 @@
                      <script src="js/01_js_library/01-utils/update/update_dom_elements.js"></script>
 
 
-
                 <!-- --------------------------------------------------- -->
-                <!-- 🟥 Add | New Dom Elements to Parent                 -->
+                <!-- 🟩 Add | New Dom Elements to Parent                 -->
                 <!-- --------------------------------------------------- -->
 
                     <script src="js/01_js_library/01-utils/dom-element-operations/add-dom-element-to-parent/add-dom-element-to-parent.js"></script>
+
+                <!-- --------------------------------------------------- -->
+                <!-- 🟩 Adding | CSS                -->
+                <!-- --------------------------------------------------- -->
+
+                    <script src="js/01_js_library/01-utils/adding_css/adding_css.js"></script>
+
+                <!-- --------------------------------------------------- -->
+                <!-- 🟩 Get | New Dom Elements to Parent                 -->
+                <!-- --------------------------------------------------- -->
+
+                    <script src="js/01_js_library/01-utils/get/async_get_new_elements.js"></script>
+                    <script src="js/01_js_library/01-utils/get/get_elements.js"></script>
+                    <script src="js/01_js_library/01-utils/get/get_new_elements.js"></script>
+
+
+                    <!-- get new specific elements -->
+                    <script src="js/01_js_library/01-utils/get/get_new_specific_elements/get_new_specific_elements.js"></script>
+
 
                 <!-- --------------------------------------------------- -->
                 <!-- 🟥 Select Dom & Do Operations -->
@@ -12646,6 +12605,21 @@
 
                     <!-- Create Links -->
                     <script src="js/01_js_library/01-utils/dom-element-operations/create-dom-elements/create-links.js"></script>
+
+
+                <!-- ------------------------------------- -->
+                <!-- 🟥 Print | Dom Elements -->
+                <!-- ------------------------------------- -->
+
+                    <script src="js/01_js_library/01-utils/prints/prints.js"></script>
+
+
+                <!-- ------------------------------------- -->
+                <!-- 🟥 Add | Dom Elements -->
+                <!-- ------------------------------------- -->
+
+                    <script src="js/01_js_library/01-utils/add/async_add_dom_elements.js"></script>
+                    <script src="js/01_js_library/01-utils/add/add_dom_elements.js"></script>
 
                 <!-- ------------------------------------- -->
                 <!-- 🟥 Update | Dom Elements -->
@@ -12770,8 +12744,22 @@
                     <!-- Sport -->
                     <!-- ---------------------------- -->
 
-                    <script src="js/02_web_page/02_content/03_private/sport/sport-category-handling.js"></script>
-                    <script src="js/02_web_page/02_content/03_private/sport/sport-3er-videos-dyn-layout-fix.js"></script>
+                    <!-- layout fix | grid dont delete gap by only one element -->
+                    <script src="js/02_web_page/02_content/03_private/sport/default/sport-3er-videos-dyn-layout-fix.js"></script>
+
+
+                    <script src="js/02_web_page/02_content/03_private/sport/default/data-sport.js"></script>
+                    <script src="js/02_web_page/02_content/03_private/sport/default/var-dom-elements-sport.js"></script>
+
+                    <script src="js/02_web_page/02_content/03_private/sport/default/set_content_sport.js"></script>
+
+                    <script src="js/02_web_page/02_content/03_private/sport/default/update-view-sport.js"></script>
+
+                    <script src="js/02_web_page/02_content/03_private/sport/default/async-create-sport-challenges.js"></script>
+
+                    <!-- start -->
+                    <script src="js/02_web_page/02_content/03_private/sport/start-content-sport.js"></script>
+
 
                     <!-- ---------------------------- -->
                     <!-- Others -->
