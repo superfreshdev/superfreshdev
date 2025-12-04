@@ -87,7 +87,7 @@ function get_new_sport_video_link_box( setted_index, data_sport_video_link ) {
   var new_div = createDivClassText( "a", info )
 
   // global
-  add_element_to_add_point_prepend( new_div, content_default_3 )
+  // add_element_to_add_point_prepend( new_div, content_default_3 )
 
 
 

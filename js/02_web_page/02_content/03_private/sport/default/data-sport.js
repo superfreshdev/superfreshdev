@@ -173,7 +173,7 @@
 
           details: {
 
-            info: "Parts of Training Sessions 🦖",
+            info: "Training Sessions Per Week | 30 Days Challenge",
 
             sportArts: [
 
@@ -294,7 +294,7 @@
 
           details: {
 
-            info: "Parts of Training Sessions 🍌🍌🍌",
+            info: "Training Sessions Per Week | 30 Days Challenge 🐉",
 
             sportArts: [
 

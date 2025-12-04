@@ -88,3 +88,70 @@ label[for="radio-others-category-my-private"] > img:nth-of-type(1) {
   display: none;
 
 }
+
+
+/* ------------------------------------------------------------ */
+/* TEST
+/* ------------------------------------------------------------ */
+
+#test-header-private {
+
+  /* height: 0em; */
+  margin-bottom: 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: .8em;
+  row-gap: .8em;
+
+  font-weight: bold;
+
+  border-radius: .8em;
+
+  /* background-color: white; */
+
+}
+
+/* ------------------------------------------------------------ */
+/* Header | TEST
+/* ------------------------------------------------------------ */
+
+#test-header-private > div:nth-of-type(1) {
+
+  height: 100%;
+  /* padding: 0 .8em; */
+  min-width: 15em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .8em;
+
+  background-color: white;
+
+}
+
+/* ------------------------------------------------------------ */
+/* Nav | TEST
+/* ------------------------------------------------------------ */
+
+#test-header-private > nav {
+
+  height: 100%;
+  min-width: 15em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .8em;
+
+  color: white;
+
+  /* background-color: yellow; */
+
+}

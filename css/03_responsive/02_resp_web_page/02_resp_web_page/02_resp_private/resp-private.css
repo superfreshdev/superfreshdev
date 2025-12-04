@@ -32,8 +32,7 @@
 
     /* background-color: grey; */
 
-    column-gap: .3em;
-    row-gap: .3em;
+
 
   }
 
@@ -180,7 +179,7 @@
 
   .details-sport-challenge-container > main {
 
-    row-gap: .4em;
+    /* row-gap: .4em; */
 
   }
 
@@ -651,6 +650,12 @@
 
     width: 80%;
     /* background-color: green; */
+
+  }
+
+  .sport-3-videos-container {
+
+    padding: 0 .8em;
 
   }
 

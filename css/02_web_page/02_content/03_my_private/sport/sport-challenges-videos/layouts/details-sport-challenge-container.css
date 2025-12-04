@@ -17,7 +17,7 @@
   /* padding: .8em; */
 
   display: grid;
-  row-gap: .5em;
+  /* row-gap: .8em; */
 
 }
 
@@ -27,12 +27,14 @@
 
 .details-sport-challenge-container > header {
 
+  height: 3em;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
-  column-gap: .3em;
-  /* row-gap: .3em; */
+  border-bottom: 2px solid rgb(242, 242, 242);
+
 
 }
 
@@ -76,13 +78,16 @@
 
   width: 100%;
   padding-top: 1em;
+  padding-bottom: 1em;
 
   display: grid;
 
   column-gap: .8em;
-  row-gap: .6em;
+  row-gap: .3em;
 
-  border-top: 2px solid rgb(241, 241, 241);
+  border-bottom: 2px solid rgb(242, 242, 242);
+
+  /* border-bottom: 3px solid rgb(243, 243, 243); */
 
 }
 
@@ -94,31 +99,25 @@
 
   width: 100%;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
 
-  column-gap: .4em;
   row-gap: .4em;
-
-  /* background-color: red; */
+  column-gap: .4em;
 
 }
 
 /* -------------------------------------------------------------- */
-/* Days Sticker Sport Challenge ( optional )
+/* Header | Details Sport Workout Container
 /* -------------------------------------------------------------- */
 
-.days-sticker-sport-challenge {
+.details-sport-workout-container > header {
 
-  display: flex;
-  /* background-color: red; */
+  justify-self: flex-start;
 
-}
+  font-size: 14.5px;
 
-.days-sticker-sport-challenge > div {
-
-  height: 1.5em;
-  padding: 0em .4em;
+  height: 1.8em;
+  padding: 0em .5em;
 
   display: flex;
   align-items: center;
@@ -126,30 +125,46 @@
 
   border-radius: .4em;
 
-  border: 1px solid rgb(225, 225, 225);
-
-  background-color: rgb(248, 248, 248);
-  color:rgb(106, 106, 106);
-
-
-
-}
-
-.days-sticker-sport-challenge > div > span {
-
-  font-size: 13.5px;
   font-weight: bold;
 
+  /* old style */
+  /* border: 1px solid rgb(225, 225, 225);
+
+  background-color: rgb(248, 248, 248); */
+  color:rgb(135, 135, 135);
+
+  color: #a8a8a8;
+
+}
+
+.details-sport-workout-container > header > span {
+
+  font-size: 13.5px;
 }
 
 /* -------------------------------------------------------------- */
-/* Details Sport Workout Item
+/* Main | Details Sport Workout Container
 /* -------------------------------------------------------------- */
 
-.details-sport-workout-item {
+.details-sport-workout-container > main {
 
-  height: 1.5em;
-  padding: 0em .4em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
+
+
+}
+
+/* -------------------------------------------------------------- */
+/* Divs "Sport Workout Items" | Main
+/* -------------------------------------------------------------- */
+
+.details-sport-workout-container > main > div {
+
+  font-size: 14.5px;
+
+  height: 1.6em;
+  padding: 0em .5em;
 
   display: flex;
   align-items: center;
@@ -157,18 +172,23 @@
 
   /* font-weight: bold; */
 
-  border-radius: .6em;
+  border-radius: .4em;
 
+  /* old style */
   border: 1px solid rgb(225, 225, 225);
   background-color: rgb(248, 248, 248);
   color:rgb(117, 117, 117);
 
-  /* font-weight: bold; */
+   /* new style */
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  color:#c7c7c7;
+
 
 }
 
-.details-sport-workout-item > div {
 
-  font-size: 14.5px;
 
-}
+/* -------------------------------------------------------------- */
+/* ❌❌❌ Trash
+/* -------------------------------------------------------------- */
