@@ -19,3 +19,23 @@
   /* background-color: red; */
 
 }
+
+
+/* -------------------------------------------------------------- */
+/* Sport Challenge 3 Videos Container
+/* -------------------------------------------------------------- */
+
+#sport-challenge-3-videos-container {
+
+  width: 100%;
+  padding: 2em 0;
+
+  display: grid;
+  justify-items: center;
+
+  row-gap: 2em;
+
+  /* default unshown */
+  display: none;
+
+}

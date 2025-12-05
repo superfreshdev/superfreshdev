@@ -83,7 +83,7 @@
 #history-sport-newest-video-container {
 
   width: 100%;
-  padding: 0 .8em;
+  /* padding: 0 .8em; */
 
   display: grid;
   justify-items: flex-end;
@@ -103,7 +103,7 @@
   padding-bottom: 1.5em;
 
   display: grid;
-  row-gap: 1.5em;
+  row-gap: 3em;
 
   /* background-color: grey; */
 

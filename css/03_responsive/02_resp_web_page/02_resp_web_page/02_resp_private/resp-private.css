@@ -173,24 +173,21 @@
 
 @media ( min-width: 450px ) {
 
-  /* -------------------------------------------------------------- */
-  /* Main | Details Sport Challenge Container
-  /* -------------------------------------------------------------- */
-
-  .details-sport-challenge-container > main {
-
-    /* row-gap: .4em; */
-
-  }
-
 
   /* -------------------------------------------------------------- */
-  /* Sport | 3er | Sport Video Link Box */
+  /* Sport | Sport 3 Videos Link Container  */
   /* -------------------------------------------------------------- */
 
-  .sport-video-link-box-3er-layout {
+  .sport-3-videos-link-container {
 
-    width: 12em;
+    column-gap: 1em;
+
+    grid-template:
+
+      'video-sport-newest-1 video-sport-newest-2 video-sport-newest-3'
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr;
 
   }
 
@@ -381,12 +378,12 @@
   }
 
   /* -------------------------------------------------------------- */
-  /* Sport | Sport Video 3 Container */
+  /* Sport | Sport 3 Videos Link Container  */
   /* -------------------------------------------------------------- */
 
-  .sport-3-videos-container {
+  .sport-3-videos-link-container {
 
-     grid-template:
+    grid-template:
 
       'video-sport-newest-1 video-sport-newest-2 video-sport-newest-3'
     ;
@@ -394,6 +391,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 
   }
+
 
 
   /* ------------------------------------------------------------- */
@@ -733,23 +731,6 @@
 
   }
 
-
-  /* ------------------------------------------------------------- */
-  /* Sport | Sport Newest Video Container */
-  /* ------------------------------------------------------------- */
-
-  #sport-newest-video-container {
-
-    /* width: 45em; */
-
-  }
-
-  #sport-newest-video-container > .sport-3-videos-container,
-  #sport-newest-video-container > #history-sport-newest-video-container {
-
-    /* width: 40em; */
-
-  }
 
   /* ------------------------------------------------------------- */
   /* Book Listenings | Book Listenings Content Container */

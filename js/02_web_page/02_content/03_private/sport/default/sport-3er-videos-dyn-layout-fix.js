@@ -16,14 +16,14 @@
 /*  Var & Dom Elements
 /* ----------------------------------------------------------------- */
 
-const sport_3_videos_containers = document.querySelectorAll(".sport-3-videos-container");
-// console.log("✳️ Max Count (3er) = " + sport_3_videos_containers.length )
+const sport_3_videos_containers = document.querySelectorAll(".sport-3-videos-link-container");
+// console.log("✳️ Max Count (3er) = " + sport-3-videos-link-container.length )
 
 /* ----------------------------------------------------------------- */
 /*  Functions
 /* ----------------------------------------------------------------- */
 
-function delete_row_col_gaps_by_grid_layouts( gridLayoutElements, cssChildElementSelector ) {
+function delete_row_col_gaps_by_grid_layouts( gridLayoutElements ) {
 
   /* ----------------------------------- */
   /* Step 1/1
@@ -71,4 +71,4 @@ function delete_row_col_gaps_by_grid_layouts( gridLayoutElements, cssChildElemen
 /*  Execute
 /* ----------------------------------------------------------------- */
 
-delete_row_col_gaps_by_grid_layouts( sport_3_videos_containers, ".sport-video-link-box-3er-layout" )
+delete_row_col_gaps_by_grid_layouts( sport_3_videos_containers )
