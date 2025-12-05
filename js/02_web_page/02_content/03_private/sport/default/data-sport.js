@@ -70,13 +70,13 @@
 
       },
       {
-        checked: "false",
+        checked: "true",
         radioId: "radio-sport-challenge-1",
         subTitle: "become fit again"
 
       },
       {
-        checked: "true",
+        checked: "",
         radioId: "radio-sport-challenge-2",
         subTitle: "have a six-pack again"
 
@@ -136,6 +136,138 @@
       }
 
     ]
+
+  }
+
+  /* ------------------------------------------------- */
+  // 🟥 Data | Sport Full 30 Videos Challenges
+  /* ------------------------------------------------- */
+  const data_30_sport_videos_challenges = {
+
+    defaults: {
+
+      img_video_src: "media/img/content/05_my_private/01_sport/fixed_sport/",
+      link_title: "Show Me",
+
+      img_link_grey_src: "media/img/icons/02-icon-colors/03-grey/",
+      img_link_grey_name: "grey-external-link.png",
+
+      imgLinkBlackSrc: "media/img/icons/02-icon-colors/01-black/",
+      imgLinkBlackName: "black-external-link.png",
+
+      imgLinkCssClass: "img-h-0-8",
+
+      titleDays: "30 Days",
+      imgDaysSrc: "media/img/icons/03-emojies/04-hobbys/emojie-dart.png",
+      imgDaysClass: "img-h-0-8",
+
+      imgSportArtSrc: "media/img/icons/02-icon-colors/03-grey/"
+
+    },
+
+    info: {
+
+      sportArts: [
+
+        {
+          days: "3 Days",
+
+          items: [
+
+            {
+              imgName: "grey-running-human.png",
+              imgCssClass: "img-h-0-7",
+              title: "Running"
+            },
+
+            {
+              imgName: "grey-biceps.png",
+              imgCssClass: "img-h-0-7",
+              title: "Strength"
+            },
+
+            {
+              imgName: "light-grey-human-flexibility.png",
+              imgCssClass: "img-h-0-8",
+              title: "Flexibility"
+            }
+
+
+          ]
+
+        }
+
+      ]
+
+
+    },
+
+    content: [
+
+      {
+        videos: [
+
+           {
+              imgName: "challenge-1-1-sport.png",
+              externalLink: "..."
+            },
+
+            {
+              imgName: "challenge-1-2-sport.png",
+              externalLink: "..."
+            },
+
+            {
+              imgName: "challenge-1-3-sport.png",
+              externalLink: "..."
+            },
+
+            {
+              imgName: "challenge-1-4-sport.png",
+              externalLink: "..."
+            },
+
+            {
+              imgName: "challenge-1-5-sport.png",
+              externalLink: "..."
+            },
+
+            {
+              imgName: "challenge-1-6-sport.png",
+              externalLink: "..."
+            }
+
+        ]
+
+      },
+
+      {
+        videos: [
+
+           {
+              imgName: "challenge-1-16-sport.png",
+              externalLink: "..."
+            },
+
+            {
+              imgName: "challenge-1-17-sport.png",
+              externalLink: "..."
+            },
+
+            {
+              imgName: "challenge-1-18-sport.png",
+              externalLink: "..."
+            }
+
+        ]
+
+      },
+
+
+
+    ]
+
+
 
   }
 

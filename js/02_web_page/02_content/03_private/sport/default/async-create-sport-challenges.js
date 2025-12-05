@@ -233,10 +233,6 @@ async function async_create_radio_change_listener_sport_challenges() {
         unset_elements_css_backgroundColor( label_elements )
         unset_elements_css_display_none( custom_radios_imgs )
 
-        // unset content | banner
-        // global
-        unset_element_css_display_none( content_banner )
-
         // unset content | fixed 30
         // global
         unset_element_css_display_none( content_fixed_30 )

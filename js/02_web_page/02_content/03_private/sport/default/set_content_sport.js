@@ -22,14 +22,6 @@
 
      switch( index ) {
 
-        case 0:
-          // set content | banner choose
-          // window.alert("🦁 Set | banner | = " + index )
-
-          // global
-          content_banner.style.display = "grid";
-
-          break;
         case 1:
           // set content | fixed 30 videos
           // window.alert("🦁 Set | Fixed 30 = " + index )

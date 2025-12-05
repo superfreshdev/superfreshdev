@@ -1,0 +1,97 @@
+/* -------------------------------------------------------------- */
+/* > sport-challenge-30-videos.css
+/* : styles sport challenge 30 videos link container
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Sport Challenge 30 Videos Link Container
+/* -------------------------------------------------------------- */
+
+#sport-challenge-30-videos-link-container {
+
+  width: 100%;
+  padding: 3em 0 2em 0;
+
+  display: grid;
+  row-gap: 1.5em;
+
+}
+
+/* first header explicit right ( layout right-left header ) */
+/* ⚠️ Cant understand why nth-of-type(2) works because the first one is 1  */
+#sport-challenge-30-videos-link-container .sport-challenge-15-videos-link-container:nth-of-type(2) > header {
+
+  justify-content: flex-end;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Sport Challenge 15 Videos Link Container
+/* -------------------------------------------------------------- */
+
+.sport-challenge-15-videos-link-container {
+
+  display: grid;
+  row-gap: 1.5em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Header | Sport Challenge 15 Videos Link Container
+/* -------------------------------------------------------------- */
+
+.sport-challenge-15-videos-link-container > header {
+
+  width: 100%;
+
+  display: flex;
+  align-content: center;
+
+  border-radius: .4em;
+
+  background-color: #eeeeee;
+
+}
+
+.sport-challenge-15-videos-link-container > header > div:nth-of-type(1) {
+
+  height: 2.3em;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  column-gap: .5em;
+
+  font-weight: bold;
+  /* font-style: italic; */
+
+  border-radius: .4em;
+
+  background-color: rgba(0, 0, 0, .8);
+  color:#acacac;
+
+}
+
+.sport-challenge-15-videos-link-container > header > div:nth-of-type(1) > div {
+
+  font-size: 14.5px;
+  font-weight: bold;
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* Main | Sport Challenge 15 Videos Link Container
+/* -------------------------------------------------------------- */
+
+.sport-challenge-15-videos-link-container > main {
+
+  /* mobile */
+  display: grid;
+  grid: auto / 1fr 1fr;
+
+  column-gap: .6em;
+  row-gap: .6em;
+
+}

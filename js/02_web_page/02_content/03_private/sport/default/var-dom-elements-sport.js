@@ -63,12 +63,10 @@
 
   /* ------------------------------------------------------------------------- */
   // Show Content |
-  // 1.1 Banner Choose Sport Challenges
-  // 1.2 Fixed 30 Videos Sport Challenge
+  // 1.1 Fixed 30 Videos Sport Challenge
   /* ------------------------------------------------------------------------- */
 
-  const content_banner = document.getElementById("banner-choose-sport-challenges-container");
-  const content_fixed_30 = document.getElementById("static-sport-challenge-30-videos-container");
+  const content_fixed_30 = document.getElementById("sport-challenge-30-videos-link-container");
 
 
   /* ------------------------------------------------------------------------- */

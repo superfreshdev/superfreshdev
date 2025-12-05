@@ -73,15 +73,8 @@ input[name="radio-sport-challenges"] {
 
 }
 
-/* Set Content | Choose Challenges */
-#radio-sport-choose-challenge:checked ~ #sport-content-container #banner-choose-sport-challenges-container {
-
-  display: flex;
-
-}
-
 /* Set Content | 30 Vidoes / 3 Videos Challenge Container */
-#radio-sport-challenge-1:checked ~ #sport-content-container #static-sport-challenge-30-videos-container,
+#radio-sport-challenge-1:checked ~ #sport-content-container #sport-challenge-30-videos-link-container,
 #radio-sport-challenge-2:checked ~ #sport-content-container #sport-challenge-3-videos-container {
 
   display: grid;
