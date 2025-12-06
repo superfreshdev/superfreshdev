@@ -11,7 +11,7 @@
 .drop-down-2-lines-light-grey-medium {
 
   /* height: 2.3em; */
-  padding: .4em .6em;
+  padding: .4em .8em;
 
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
 
   font-weight: bold;
 
- background-color: #eeeeee;
+  background-color: #eeeeee;
   color:#5d5d5d;
 
   user-select: none;
@@ -48,7 +48,8 @@
 
 .drop-down-2-lines-light-grey-medium > div:nth-of-type(1) {
 
-  line-height: 1.5em;
+  line-height: 1.6em;
+  color:grey;
 
 }
 
@@ -68,10 +69,8 @@
 
 .drop-down-2-lines-light-grey-medium > div:nth-of-type(1) > div:nth-of-type(2) {
 
-  font-size: 12px;
-
-  line-height: 1.3em;
-
-  color:grey;
+  font-size: 12.5px;
+  line-height: 1.4em;
+  color:rgb(30, 30, 30);
 
 }

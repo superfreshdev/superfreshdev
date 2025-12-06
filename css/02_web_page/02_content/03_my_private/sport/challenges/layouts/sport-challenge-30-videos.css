@@ -11,14 +11,15 @@
 #sport-challenge-30-videos-link-container {
 
   width: 100%;
-  padding: 3em 0 0em 0;
+  padding: 3em 0 3em 0;
 
-  display: grid;
-  /* row-gap: 1.5em; */
+  /* default unshown */
+  display: none;
+
 
 }
 
-/* first header explicit right ( layout right-left header ) */
+/* first header 15 of 30 right */
 /* ⚠️ Cant understand why nth-of-type(2) works because the first one is 1  */
 #sport-challenge-30-videos-link-container .sport-challenge-15-videos-link-container:nth-of-type(2) > header {
 
@@ -88,7 +89,6 @@
   font-weight: bold;
 
 }
-
 
 /* -------------------------------------------------------------- */
 /* Main | Sport Challenge 15 Videos Link Container

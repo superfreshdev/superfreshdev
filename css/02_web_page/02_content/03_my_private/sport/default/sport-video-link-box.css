@@ -1,0 +1,214 @@
+/* -------------------------------------------------------------- */
+/* > sport-video-link-box.css
+/* : styles sport video link box
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Sport Video Link Box & Coming Soon
+/* -------------------------------------------------------------- */
+
+.sport-video-link-box,
+.sport-video-link-box-coming-soon {
+
+  position: relative;
+
+  /* mobile */
+  width:100%;
+
+  display: grid;
+
+  border-radius: .8em;
+
+  /* border: 4px solid rgb(238, 238, 238); */
+  border: 4px solid rgb(210, 210, 210);
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  transition: all .4s;
+
+}
+
+/* hover border  */
+.sport-video-link-box:hover,
+.sport-video-link-box-coming-soon:hover {
+
+  border: 4px solid rgb(75, 75, 75);
+
+}
+
+/* -------------------------------------------------------------- */
+/* Nr | Sport Video Link Box & Coming Soon
+/* -------------------------------------------------------------- */
+
+.nr-sport-video-link {
+
+  position: absolute;
+  left:.6em;
+  top:.6em;
+
+  z-index: 3;
+
+  width: 1.3em;
+  height: 1.3em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border-radius: 50%; */
+
+  border-radius: .4em;
+
+  background-color: rgba(0, 0, 0, .4);
+  color:rgb(172, 172, 172);
+
+}
+
+/* Div | Nr  */
+.nr-sport-video-link > div {
+
+  font-size: 12px;
+  font-weight: bold;
+
+}
+
+/* hover */
+.sport-video-link-box:hover .nr-sport-video-link,
+.sport-video-link-box-coming-soon:hover .nr-sport-video-link {
+
+  background-color: wheat;
+  color:black;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Img | Sport Video Link Box & Coming Soon
+/* -------------------------------------------------------------- */
+
+.sport-video-link-box > img:nth-of-type(1),
+.sport-video-link-box-coming-soon > img:nth-of-type(1) {
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: .5em;
+
+  opacity: .5;
+
+}
+
+
+/* hover img  */
+.sport-video-link-box:hover > img:nth-of-type(1),
+.sport-video-link-box-coming-soon:hover > img:nth-of-type(1) {
+
+  opacity: 1;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Link Show More | Sport Video Link Box & Coming Soon
+/* -------------------------------------------------------------- */
+
+.sport-video-link-box > a,
+.sport-video-link-box-coming-soon > a {
+
+  text-decoration: none;
+
+  position: absolute;
+  bottom: 0;
+
+  height: 2.3em;
+  width: 100%;
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .4em;
+
+  border-radius: 0 0 .5em .5em;
+
+  background-color: rgba(0, 0, 0, .4);
+  color:rgb(172, 172, 172);
+
+  transition: all .4s;
+
+}
+
+/* default unshown | black img | external link */
+.sport-video-link-box > a > img:nth-of-type(2),
+.sport-video-link-box-coming-soon > a > img:nth-of-type(2) {
+
+  display: none;
+
+}
+
+/* default unshown | grey img | external link */
+.sport-video-link-box > a:hover > img:nth-of-type(1),
+.sport-video-link-box-coming-soon > a:hover > img:nth-of-type(1) {
+
+  display: none;
+
+}
+
+/* hover | show black img | external link */
+.sport-video-link-box > a:hover > img:nth-of-type(2),
+.sport-video-link-box-coming-soon > a:hover > img:nth-of-type(2) {
+
+  display: flex;
+
+}
+
+/* text | show me */
+.sport-video-link-box > a > div,
+.sport-video-link-box-coming-soon > a > div {
+
+  font-size: 14.5px;
+  font-weight: bold;
+
+}
+
+
+/* hover */
+.sport-video-link-box > a:hover,
+.sport-video-link-box-coming-soon > a:hover {
+
+  background-color: wheat;
+  color:black;
+
+}
+
+/* hover unshown grey img */
+.sport-video-link-box > a:hover > img:nth-of-type(1),
+.sport-video-link-box-coming-soon > a:hover > img:nth-of-type(1) {
+
+  opacity: 1;
+
+}
+
+/* visited be black */
+.sport-video-link-box > :a:visited,
+.sport-video-link-box-coming-soon > a:visited {
+
+  color:black;
+
+}
+
+
+/* -------------------------------------------------------------- */
+/* Sport Video Link Box | Coming Soon
+/* -------------------------------------------------------------- */
+
+.sport-video-link-box-coming-soon {
+
+
+}
+
+/* coming soon dont have show me */
+.sport-video-link-box-coming-soon > a {
+
+  display: none
+
+}

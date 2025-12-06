@@ -489,28 +489,6 @@
 
   }
 
-  /* -------------------------------------------------------------- */
-  /* Sport | Sport Newest Video Container */
-  /* -------------------------------------------------------------- */
-
-  #sport-newest-video-container {
-
-    /* reminder: parent is 80% */
-    width: 100%;
-    /* background-color: red; */
-
-  }
-
-  /* -------------------------------------------------------------- */
-  /* Sport | Reminder Sport Newest Video */
-  /* -------------------------------------------------------------- */
-
-  #reminder-sport-newest-video {
-
-    width: 100%;
-    /* background-color: magenta; */
-
-  }
 
   /* ------------------------------------------------------------- */
   /* Book Listenings | Book Listenings Content Container */
@@ -627,18 +605,6 @@
 
 @media ( min-width: 700px ) {
 
-
-  /* -------------------------------------------------------------- */
-  /* Sport | Reminder Sport Newest Video */
-  /* -------------------------------------------------------------- */
-
-  #reminder-sport-newest-video {
-
-    /* made textflow */
-    display: block;
-    /* background-color: rgb(242, 242, 242); */
-
-  }
 
 
 }

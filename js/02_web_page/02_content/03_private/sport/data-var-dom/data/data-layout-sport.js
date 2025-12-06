@@ -71,13 +71,13 @@
 
         },
         {
-          checked: "true",
+          checked: "false",
           radioId: "radio-sport-challenge-1",
           subTitle: "become fit again"
 
         },
         {
-          checked: "",
+          checked: "false",
           radioId: "radio-sport-challenge-2",
           subTitle: "have a six-pack again"
 

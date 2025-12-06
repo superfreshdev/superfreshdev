@@ -18,20 +18,10 @@
 
 */
 
-/* ----------------------------------------------------------------- */
-/*  🥶🥶🥶 Testing | Variables
-/* ----------------------------------------------------------------- */
-
-  // test
-  const sport_3_videos_containers_new = document.querySelectorAll(".sport-3-videos-link-container");
-
-
-
 
 /* ----------------------------------------------------------------- */
 /*  Functions
 /* ----------------------------------------------------------------- */
-
 
   /* ----------------------------------------------------------------- */
   /* Delete All Row Col Gaps | If not needed
@@ -39,7 +29,7 @@
 
   async function delete_all_row_col_gaps_if_not_needed( gridLayouts ) {
 
-    console.log("➡️ delete_all_row_col_gaps_if_not_needed() ")
+    // console.log("➡️ delete_all_row_col_gaps_if_not_needed() ")
 
     // console.log("gridLayout(Lenght): " +  gridLayouts.length )
     // console.log("strGridElements: " + strGridElements )
@@ -53,14 +43,14 @@
     //  if only 2 = delete row gap
     //
     //  it checks on style "display=none" too, because
-    //  default elements exist if they are display=none but
+    //  default elements exist if they are setted by display=none but
     //  we want display=none handle like dont exist, so thats
     //  why we should work with an filter
     /* ----------------------------------------------------------------- */
 
     for( let i=0; i < maxGridLayouts; i++ ) {
 
-      console.log("GridLayout Nr." + i + " | " + gridLayouts[i] );
+      // console.log("GridLayout Nr." + i + " | " + gridLayouts[i] );
 
       // Count Dom Visible Child Elements
       var visible_children = [...gridLayouts[i].children].filter(el =>
@@ -100,9 +90,9 @@
   /* Add Media Query | To Set Col Gap
   /* ----------------------------------------------------------------- */
 
-  function add_media_query_to_set_col_gap( gridLayouts, strWidth, setStrColCapEm, resetStrColGapEm ) {
+  async function add_media_query_to_set_col_gap( gridLayouts, strWidth, setStrColCapEm, resetStrColGapEm ) {
 
-    console.log("➡️ add_media_query_to_set_col_gap")
+    // console.log("➡️ add_media_query_to_set_col_gap")
 
     /* Info:
 
@@ -183,17 +173,22 @@
 
     })
 
+    return new Promise(resolve => {
+        resolve();
+    })
+
   }
 
   /* ----------------------------------------------------------------- */
   /* Add Window Load Media Query | To Set Col Gap
   /* ----------------------------------------------------------------- */
 
-  // Because by reload we need to check too
+  // Info: We need another event for window relaod ( web-browser reload )
+  //       to handle it like the media query change event listener
 
-  function add_window_load_media_query_to_set_col_gap( gridLayouts, width , setStrColCapEm, resetStrColGapEm ) {
+  async function add_window_load_media_query_to_set_col_gap( gridLayouts, width , setStrColCapEm, resetStrColGapEm ) {
 
-    console.log("➡️ add_window_load_media_query_to_set_col_gap")
+    // console.log("➡️ add_window_load_media_query_to_set_col_gap")
 
     var maxGridLayouts = gridLayouts.length;
 
@@ -205,7 +200,7 @@
 
       window_load_width = screen.width;
 
-      window.alert("Hahah, u load me= " + window_load_width  )
+      // window.alert("Hahah, u load me= " + window_load_width  )
 
        // if reached break point
        if( window_load_width >= width ) {
@@ -255,15 +250,8 @@
 
     })
 
+    return new Promise(resolve => {
+        resolve();
+    })
+
   }
-
-
-
-  add_window_load_media_query_to_set_col_gap( sport_3_videos_containers_new, "450", "1em", "0em" );
-
-
-
-
-
-
-  add_media_query_to_set_col_gap( sport_3_videos_containers_new, "450px", "1em", "0em" )

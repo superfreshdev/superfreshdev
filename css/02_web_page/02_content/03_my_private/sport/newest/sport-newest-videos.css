@@ -15,18 +15,12 @@
 
   display: grid;
   justify-items: center;
-  row-gap: 1.5em;
+  /* row-gap: 1.5em; */
 
   /* default unshown */
   display: none;
 
   /* background-color: red; */
-
-}
-
-#sport-newest-video-container > .sport-3-videos-container {
-
-  padding: 0 .8em;
 
 }
 
@@ -37,7 +31,7 @@
 #reminder-sport-newest-video {
 
   width: 100%;
-  padding: 0 .8em;
+  padding: 0 .8em 1.5em .8em;
 
   /* mobile */
   display: grid;
@@ -54,12 +48,8 @@
 /* Div 1 | Reminder Sport Newest */
 #reminder-sport-newest-video > div:nth-of-type(1) {
 
-  font-size: 14.5px;
-  font-size: 16px;
-
   /* text-decoration: underline; */
   font-weight: bold;
-
   color:rgb(88, 88, 88);
 
 }
@@ -67,11 +57,7 @@
 /* Div 2 | Reminder Sport Newest */
 #reminder-sport-newest-video > div:nth-of-type(2) {
 
-  font-size: 14.5px;
-
-  font-size: 16px;
   line-height: 1.7em;
-
   color:grey;
 
 }
@@ -83,7 +69,8 @@
 #history-sport-newest-video-container {
 
   width: 100%;
-  /* padding: 0 .8em; */
+  padding-top: 1.5em;
+  padding-bottom: .5em;
 
   display: grid;
   justify-items: flex-end;
@@ -103,7 +90,7 @@
   padding-bottom: 1.5em;
 
   display: grid;
-  row-gap: 3em;
+  row-gap: .8em;
 
   /* background-color: grey; */
 

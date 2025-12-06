@@ -70,9 +70,16 @@
     /* --------------------------------------------------------------------------------------- */
     // ➡️🟥 Step 6:
     // Delete row & col gaps in grid layouts if only 1 or 2 element exists
+    // belongs to sport_3_videos_containers (3er video link box layout)
     /* --------------------------------------------------------------------------------------- */
 
       await delete_all_row_col_gaps_if_not_needed( sport_3_videos_containers )
+
+      // add media query change width listener for setting col gaps again by only 1 element
+      await add_window_load_media_query_to_set_col_gap( sport_3_videos_containers, "450", "1em", "0em" );
+
+      // add window load media query change width listener for setting col gaps again by only 1 element
+      await add_media_query_to_set_col_gap( sport_3_videos_containers, "450px", "1em", "0em" )
 
 
   }
