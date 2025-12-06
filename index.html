@@ -9220,11 +9220,12 @@
                                                                             <!-- ------------------------ -->
                                                                             <!-- IMG -->
                                                                             <!-- ------------------------ -->
-                                                                            <img src="media/img/content/05_my_private/01_sport/challenges_sport/sport-challenge-coming-soon.png" alt="img">
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/sport-fixed-history.png" alt="img">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Link Show More -->
                                                                             <!-- ------------------------ -->
+                                                                             <!-- history slot / video , chat-gbt,  -->
                                                                             <a href="https://drive.google.com/file/d/1J9eMjm1CyoqzBIsSzrurCSb6t3eB_f8z/view?usp=sharing" target="_blank">
 
                                                                                 <img src="media/img/icons/02-icon-colors/03-grey/grey-external-link.png" class="img-h-0-8" alt="img">
@@ -9250,7 +9251,7 @@
                                                                             <!-- ------------------------ -->
                                                                             <!-- IMG -->
                                                                             <!-- ------------------------ -->
-                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-1.png" alt="img">
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/sport-fixed-history.png" alt="img">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Link Show More -->
@@ -9280,7 +9281,7 @@
                                                                             <!-- ------------------------ -->
                                                                             <!-- IMG -->
                                                                             <!-- ------------------------ -->
-                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-3.png" alt="img">
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/sport-fixed-history.png" alt="img">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Link Show More -->
@@ -9305,7 +9306,7 @@
                                                                         <!-- ------------------------------------------ -->
                                                                         <!-- [7/9] | Sport Video Link Box -->
                                                                         <!-- ------------------------------------------ -->
-                                                                        <div class="sport-video-link-box">
+                                                                        <div class="sport-video-link-box-coming-soon">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Nr -->
@@ -9317,7 +9318,7 @@
                                                                             <!-- ------------------------ -->
                                                                             <!-- IMG -->
                                                                             <!-- ------------------------ -->
-                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-1.png" alt="img">
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/sport-fixed-history.png" alt="img">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Link Show More -->
@@ -9335,7 +9336,7 @@
                                                                         <!-- ------------------------------------------ -->
                                                                         <!-- [8/9] | Sport Video Link Box -->
                                                                         <!-- ------------------------------------------ -->
-                                                                        <div class="sport-video-link-box">
+                                                                        <div class="sport-video-link-box-coming-soon">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Nr -->
@@ -9347,7 +9348,7 @@
                                                                             <!-- ------------------------ -->
                                                                             <!-- IMG -->
                                                                             <!-- ------------------------ -->
-                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-1.png" alt="img">
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/sport-fixed-history.png" alt="img">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Link Show More -->
@@ -9377,7 +9378,7 @@
                                                                             <!-- ------------------------ -->
                                                                             <!-- IMG -->
                                                                             <!-- ------------------------ -->
-                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/fixed-sport-3.png" alt="img">
+                                                                            <img src="media/img/content/05_my_private/01_sport/fixed_sport/sport-fixed-history.png" alt="img">
 
                                                                             <!-- ------------------------ -->
                                                                             <!-- Link Show More -->
@@ -12551,6 +12552,13 @@
                      <script src="js/01_js_library/01-utils/css/unset_css.js"></script>
 
                 <!-- --------------------------------------------------- -->
+                <!-- 🟩 Layout Fixes -->
+                <!-- --------------------------------------------------- -->
+
+                    <!-- grid layout | delete col, row gaps if only 1 or 2 elements exits  -->
+                    <script src="js/01_js_library/01-utils/layout-fixes/delete-all-row-col-gaps-if-not-needed.js"></script>
+
+                <!-- --------------------------------------------------- -->
                 <!-- 🟩 Date -->
                 <!-- --------------------------------------------------- -->
 
@@ -12758,21 +12766,28 @@
                     <!-- Sport -->
                     <!-- ---------------------------- -->
 
-                    <!-- layout fix | grid dont delete gap by only one element -->
-                    <script src="js/02_web_page/02_content/03_private/sport/default/sport-3er-videos-dyn-layout-fix.js"></script>
 
+                    <!-- datas -->
+                    <script src="js/02_web_page/02_content/03_private/sport/data-var-dom/data/data-layout-sport.js"></script>
+                    <script src="js/02_web_page/02_content/03_private/sport/data-var-dom/data/data-content-sport.js"></script>
 
-                    <script src="js/02_web_page/02_content/03_private/sport/default/data-sport.js"></script>
-                    <script src="js/02_web_page/02_content/03_private/sport/default/var-dom-elements-sport.js"></script>
+                    <!-- var & dom -->
+                    <script src="js/02_web_page/02_content/03_private/sport/data-var-dom/var-dom/var-dom-sport.js"></script>
 
-                    <script src="js/02_web_page/02_content/03_private/sport/default/set_content_sport.js"></script>
+                    <!-- crud sport  -->
 
-                    <script src="js/02_web_page/02_content/03_private/sport/default/update-view-sport.js"></script>
+                        <!-- set content -->
+                        <script src="js/02_web_page/02_content/03_private/sport/crud-sport/set-content-sport.js"></script>
 
-                    <script src="js/02_web_page/02_content/03_private/sport/default/async-create-sport-challenges.js"></script>
+                        <!-- async functions -->
+                        <script src="js/02_web_page/02_content/03_private/sport/crud-sport/async-functions-sport/async-create-sport-challenges.js"></script>
+                        <script src="js/02_web_page/02_content/03_private/sport/crud-sport/async-functions-sport/async-set-sport-challenges.js"></script>
+                        <script src="js/02_web_page/02_content/03_private/sport/crud-sport/async-functions-sport/async-unshown-sport-challenges.js"></script>
+                        <script src="js/02_web_page/02_content/03_private/sport/crud-sport/async-functions-sport/async-update-views-sport.js"></script>
+
 
                     <!-- start -->
-                    <script src="js/02_web_page/02_content/03_private/sport/start-content-sport.js"></script>
+                    <script src="js/02_web_page/02_content/03_private/sport/start-sport.js"></script>
 
 
                     <!-- ---------------------------- -->

@@ -1,4 +1,4 @@
-// console.log("🟨 start-content-sport.js")
+// console.log("🟨 start-sport.js")
 
 
   /* --------------------------------------------------------------------------------------- */
@@ -65,6 +65,14 @@
     /* --------------------------------------------------------------------------------------- */
 
       await async_set_content_sport_challenges_by_data()
+
+
+    /* --------------------------------------------------------------------------------------- */
+    // ➡️🟥 Step 6:
+    // Delete row & col gaps in grid layouts if only 1 or 2 element exists
+    /* --------------------------------------------------------------------------------------- */
+
+      await delete_all_row_col_gaps_if_not_needed( sport_3_videos_containers )
 
 
   }

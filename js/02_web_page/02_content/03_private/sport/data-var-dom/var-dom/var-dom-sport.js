@@ -1,9 +1,16 @@
-// console.log("🟨 var-dom-elements-sport.js")
+// console.log("🟨 var-dom-sport.js")
 
 
 /* ---------------------------------------------------------------------- */
 // Variables & DOM Elements
 /* --------------------------------------------------------------------- */
+
+  /* ----------------------------------------------------- */
+  // Handle all Grid Layouts to delete row / col gap
+  // if only 1 or 2 element exits
+  /* ----------------------------------------------------- */
+
+  const sport_3_videos_containers = document.querySelectorAll(".sport-3-videos-link-container");
 
   /* ----------------------------------------------------- */
   // Max Items

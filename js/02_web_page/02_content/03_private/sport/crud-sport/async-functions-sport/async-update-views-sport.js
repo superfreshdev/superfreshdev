@@ -1,4 +1,4 @@
-// console.log("🟨 update-view-sport.js")
+// console.log("🟨 async-update-views-sport.js")
 
 
   /* --------------------------------------------------------------------------------------- */
