@@ -308,7 +308,7 @@
      /* Create & Add New Data | Sport 3 Video Link Container
      /* ----------------------------------------------------------------------- */
 
-     new_sport_3_video_link_container = await async_get_created_content_sport_3_videos_link_container( data_defaults , data_videos, 4, 6 );
+     new_sport_3_video_link_container = await async_get_created_content_sport_3_videos_link_container( data_defaults , data_videos, 1, 3 );
      add_point_sport_newest_video_container.prepend( new_sport_3_video_link_container )
 
 
