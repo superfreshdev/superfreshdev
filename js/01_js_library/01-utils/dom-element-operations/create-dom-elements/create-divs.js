@@ -32,6 +32,17 @@ function createDivClass( className) {
 
 }
 
+function get_new_created_divClass( className) {
+
+    var newDiv = document.createElement('div');
+
+    // add class name
+    newDiv.classList.add( className );
+
+    return newDiv;
+
+}
+
 /* ----------------------------------------------------------------------------------- */
 /* Create Div ( class name & text )
 /* ----------------------------------------------------------------------------------- */

@@ -17,7 +17,8 @@
   // ( newest videos , sport challenges )
   /* ----------------------------------------------------- */
 
-  var max_newest_sport_videos  = get_length( data_newest_sport_videos.videos )
+  // andere Zählung top3 + array 2
+  var max_newest_sport_videos  =  99
   console.log("⚠️[max|newest videos]: " + max_newest_sport_videos )
 
   var max_sport_challenges = get_length( data_header_nav_sport_categories.sportChallengeCategories  )
