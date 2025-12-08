@@ -30,6 +30,8 @@
 
 #reminder-sport-newest-video {
 
+  order: 1;
+
   width: 100%;
   padding: 0 .8em 1.5em .8em;
 
@@ -67,6 +69,8 @@
 /* -------------------------------------------------------------- */
 
 #history-sport-newest-video-container {
+
+  order: 3;
 
   width: 100%;
   padding-top: 1.5em;

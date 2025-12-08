@@ -204,7 +204,6 @@
 
       // challenges
       const add_point_sport_container_30 = document.getElementById("sport-challenge-30-videos-link-container");
-      // .sport-challenge-15-videos-link-container ( header, main -> video link boxes )
       const add_point_sport_container_3 = document.getElementById("sport-challenge-3-videos-container");
 
       /* ------------------------------------------------------------------- */
@@ -220,10 +219,6 @@
      /* 🟩 Async | Get | Video Datas By Range Index
      /* --------------------------------------------------------------------------- */
      // 🟣 auslagern -> async-get-data-sport.js
-
-
-
-
 
      async function async_get_dataArray_by_rangeIndex( arrayDatas, startIndex, endIndex ) {
 
@@ -295,7 +290,7 @@
      }
 
      /* --------------------------------------------------------------------------- */
-     /* ➡️🟥 Async | Get Created Content | Sport 3 Videos Link Container
+     /* 🟩 Async | Get Created Content | Sport 3 Videos Link Container
      /* --------------------------------------------------------------------------- */
      // 🟣 auslagern -> async-get-create-content-sport.js
 
@@ -309,8 +304,16 @@
      /* ----------------------------------------------------------------------- */
 
      new_sport_3_video_link_container = await async_get_created_content_sport_3_videos_link_container( data_defaults , data_videos, 1, 3 );
+     new_sport_3_video_link_container.style.order = "2";
      add_point_sport_newest_video_container.prepend( new_sport_3_video_link_container )
 
+     var new_history_1_sport_3_videos_link_container = "";
+     new_history_1_sport_3_videos_link_container = await async_get_created_content_sport_3_videos_link_container( data_defaults , data_videos, 4, 6 );
+     add_point_newest_sport_history_6.appendChild( new_history_1_sport_3_videos_link_container );
+
+     var new_history_3_sport_3_videos_link_container = "";
+     new_history_3_sport_3_videos_link_container = await async_get_created_content_sport_3_videos_link_container( data_defaults , data_videos, 7, 9 );
+     add_point_newest_sport_history_6.appendChild( new_history_3_sport_3_videos_link_container );
 
 
      async function async_get_created_content_sport_3_videos_link_container( dataDefaults, videoDatas, startIndex, endIndex ) {
@@ -364,9 +367,6 @@
           })
 
      }
-
-
-
 
      /* --------------------------------------------------------------------------- */
      /* ➡️🟥 Async | Get Created Content | Sport 3 Videos Link Container

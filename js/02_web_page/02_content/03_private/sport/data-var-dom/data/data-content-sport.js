@@ -69,6 +69,77 @@
           externalLink: ""
         }
 
+      ],
+
+      videoBlocks: [
+
+        {
+
+          block: [
+
+              {
+                imgName: "fixed-sport-4.png",
+                externalLink: "https://drive.google.com/file/d/16s4r5rtodqSpB2VvIerFl5F7DMOK_3Qo/view?usp=sharing"
+              },
+
+              {
+                imgName: "fixed-sport-3.png",
+                externalLink: "https://drive.google.com/file/d/1Q_z7GMinGYnMW5Adv8lxNM2TgYF20_ih/view?usp=sharing"
+              },
+
+              {
+                imgName: "fixed-sport-2.png",
+                externalLink: "https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing"
+              },
+          ]
+
+        },
+
+        {
+
+          block: [
+
+              {
+                imgName: "fixed-sport-4.png",
+                externalLink: "https://drive.google.com/file/d/16s4r5rtodqSpB2VvIerFl5F7DMOK_3Qo/view?usp=sharing"
+              },
+
+              {
+                imgName: "sport-fixed-history.png",
+                externalLink: ""
+              },
+
+              {
+                imgName: "sport-fixed-history.png",
+                externalLink: ""
+              },
+          ]
+
+        },
+
+        {
+
+          block: [
+
+              {
+                imgName: "fixed-sport-4.png",
+                externalLink: "https://drive.google.com/file/d/16s4r5rtodqSpB2VvIerFl5F7DMOK_3Qo/view?usp=sharing"
+              },
+
+              {
+                imgName: "fixed-sport-3.png",
+                externalLink: "https://drive.google.com/file/d/1Q_z7GMinGYnMW5Adv8lxNM2TgYF20_ih/view?usp=sharing"
+              },
+
+              {
+                imgName: "fixed-sport-2.png",
+                externalLink: "https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing"
+              },
+          ]
+
+        }
+
+
       ]
 
     }
