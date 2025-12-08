@@ -46,7 +46,7 @@
 
         {
           imgName: "sport-fixed-history.png",
-          externalLink: "https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing"
+          externalLink: ""
         },
 
         {
