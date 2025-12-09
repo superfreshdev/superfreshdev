@@ -311,130 +311,9 @@
       {
         content: {
 
-          details: {
+          about: {
 
-            info: "Training Sessions Per Week | 30 Days Challenge",
-
-            sportArts: [
-
-              {
-                days: "3 Days",
-
-                items: [
-
-                  {
-                    imgName: "grey-running-human.png",
-                    imgCssClass: "img-h-0-7",
-                    title: "Running"
-                  },
-
-                  {
-                    imgName: "grey-biceps.png",
-                    imgCssClass: "img-h-0-7",
-                    title: "Strength"
-                  },
-
-                  {
-                    imgName: "light-grey-human-flexibility.png",
-                    imgCssClass: "img-h-0-8",
-                    title: "Flexibility"
-                  }
-
-
-                ]
-
-              },
-
-              {
-                days: "2 Days",
-
-                items: [
-
-                  {
-                    imgName: "grey-6-plastic.png",
-                    imgCssClass: "img-h-0-7",
-                    title: "Stomach"
-                  },
-
-                  {
-                    imgName: "grey-body-back.png",
-                    imgCssClass: "img-h-0-7",
-                    title: "Back"
-                  },
-
-                  {
-                    imgName: "grey-gymnastics.png",
-                    imgCssClass: "img-h-0-7",
-                    title: "Calisthenics"
-                  },
-
-                  {
-                    imgName: "light-grey-human-flexibility.png",
-                    imgCssClass: "img-h-0-7",
-                    title: "Flexibility"
-                  }
-
-
-                ]
-
-              },
-
-              {
-                days: "",
-
-                items: [
-
-                  {
-                    imgName: "grey-gymnastics.png",
-                    imgCssClass: "img-h-0-7",
-                    title: "Calisthenics"
-                  },
-
-                  {
-                    imgName: "light-grey-human-flexibility.png",
-                    imgCssClass: "img-h-0-7",
-                    title: "Flexibility"
-                  },
-
-
-
-
-                ]
-
-              }
-
-            ]
-
-          },
-
-          videos: [
-
-            {
-              imgName: "fixed-sport-1.png",
-              externalLink: "https://drive.google.com/file/d/1J9eMjm1CyoqzBIsSzrurCSb6t3eB_f8z/view?usp=sharing"
-            },
-
-            {
-              imgName: "fixed-sport-2.png",
-              externalLink: "https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing"
-            },
-
-            {
-              imgName: "fixed-sport-3.png",
-              externalLink: "https://drive.google.com/file/d/1Q_z7GMinGYnMW5Adv8lxNM2TgYF20_ih/view?usp=sharing"
-            }
-
-          ]
-        }
-
-      },
-
-      {
-        content: {
-
-          details: {
-
-            info: "Training Sessions Per Week | 30 Days Challenge 🐉",
+            info: "30 Days Challenge | #1",
 
             sportArts: [
 
@@ -553,9 +432,130 @@
       {
         content: {
 
-          details: {
+          about: {
 
-            info: "🐉 Dragon Ball Z - Training Sessions",
+            info: "30 Days Challenge | #2",
+
+            sportArts: [
+
+              {
+                days: "3 Days",
+
+                items: [
+
+                  {
+                    imgName: "grey-running-human.png",
+                    imgCssClass: "img-h-0-7",
+                    title: "Running"
+                  },
+
+                  {
+                    imgName: "grey-biceps.png",
+                    imgCssClass: "img-h-0-7",
+                    title: "Strength"
+                  },
+
+                  {
+                    imgName: "light-grey-human-flexibility.png",
+                    imgCssClass: "img-h-0-8",
+                    title: "Flexibility"
+                  }
+
+
+                ]
+
+              },
+
+              {
+                days: "2 Days",
+
+                items: [
+
+                  {
+                    imgName: "grey-6-plastic.png",
+                    imgCssClass: "img-h-0-7",
+                    title: "Stomach"
+                  },
+
+                  {
+                    imgName: "grey-body-back.png",
+                    imgCssClass: "img-h-0-7",
+                    title: "Back"
+                  },
+
+                  {
+                    imgName: "grey-gymnastics.png",
+                    imgCssClass: "img-h-0-7",
+                    title: "Calisthenics"
+                  },
+
+                  {
+                    imgName: "light-grey-human-flexibility.png",
+                    imgCssClass: "img-h-0-7",
+                    title: "Flexibility"
+                  }
+
+
+                ]
+
+              },
+
+              {
+                days: "",
+
+                items: [
+
+                  {
+                    imgName: "grey-gymnastics.png",
+                    imgCssClass: "img-h-0-7",
+                    title: "Calisthenics"
+                  },
+
+                  {
+                    imgName: "light-grey-human-flexibility.png",
+                    imgCssClass: "img-h-0-7",
+                    title: "Flexibility"
+                  },
+
+
+
+
+                ]
+
+              }
+
+            ]
+
+          },
+
+          videos: [
+
+            {
+              imgName: "fixed-sport-1.png",
+              externalLink: "https://drive.google.com/file/d/1J9eMjm1CyoqzBIsSzrurCSb6t3eB_f8z/view?usp=sharing"
+            },
+
+            {
+              imgName: "fixed-sport-2.png",
+              externalLink: "https://drive.google.com/file/d/1JrzXdVsQny1V9onl1rmJc_Q83o4WScHI/view?usp=sharing"
+            },
+
+            {
+              imgName: "fixed-sport-3.png",
+              externalLink: "https://drive.google.com/file/d/1Q_z7GMinGYnMW5Adv8lxNM2TgYF20_ih/view?usp=sharing"
+            }
+
+          ]
+        }
+
+      },
+
+      {
+        content: {
+
+          about: {
+
+            info: "30 Days Challenge | #3",
 
             sportArts: [
 

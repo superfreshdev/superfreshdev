@@ -18,21 +18,10 @@ function createDivText( text ) {
 }
 
 /* ----------------------------------------------------------------------------------- */
-/* Create Div ( class name )
+/* Get New | Div | with CSS Class
 /* ----------------------------------------------------------------------------------- */
 
-function createDivClass( className) {
-
-    var newDiv = document.createElement('div');
-
-    // add class name
-    newDiv.classList.add( className );
-
-    return newDiv;
-
-}
-
-function get_new_created_divClass( className) {
+function get_new_divClass( className) {
 
     var newDiv = document.createElement('div');
 

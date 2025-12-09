@@ -8,7 +8,7 @@
   async function update_view_header_selected_sport_category() {
 
 
-    // console.log("➡️🟥 update_view_header_selected_sport_category")
+    // console.log("➡️ update_view_header_selected_sport_category")
 
     /* --------------------------------------------------------------------------- */
     // Step 1:
@@ -17,12 +17,15 @@
     /* --------------------------------------------------------------------------- */
 
       // global
-      var setted_index = get_setted_radio_index( radio_name_sport_categories )
+      var setted_index = get_setted_radio_index( radios_sport_categories )
       var max_items = "";
 
       /* ----------------------------------------------------------------------- */
-      // Choose which setted index to use
-      // Choose which max items to use
+      // Step 1:
+      // > Check if default selected sport category was setted ?!
+      // > if any setted, than use default index = 0 = newest videos
+      // > by index = 0 use max_items = max_newest_sport_videos
+      // > by not index = 0 use max_items = max_sport_challenges
       /* ---------------------------------------------------------------------- */
 
       if( setted_index == -1 || setted_index == 0 ) {
@@ -178,7 +181,7 @@
   function update_view_header_sport_category( setted_index, data_header_nav ) {
 
 
-      // console.log("🟥 update_view_header_sport_category")
+      // console.log("➡️ update_view_header_sport_category()")
 
       /* ----------------------------------------------------- */
       /* Step 1:
@@ -234,7 +237,7 @@
   async function update_views_max_content_items_select_sport_categories() {
 
 
-    // console.log("🟥 update_views_max_items_select_sport_categories")
+    // console.log("➡️ update_views_max_content_items_select_sport_categories()")
 
     // global
     var labels_sport_categories = lbl_radios_sport_categories;

@@ -22,24 +22,17 @@ function exist_radios( radio_name_group ) {
 
 }
 
-/* ----------------------------------------------------------------- */
-/* Check | G
-/* ----------------------------------------------------------------- */
-
-
 
 /* ----------------------------------------------------------------- */
 /* Get | Setted Radio Index
 /* ----------------------------------------------------------------- */
 
-function get_setted_radio_index( radio_name ) {
+function get_setted_radio_index( radios ) {
 
-  var radio_elements = document.querySelectorAll(`input[name='${radio_name}']`);
-
-  for( let i=0; i < radio_elements.length; i++ ) {
+  for( let i=0; i < radios.length; i++ ) {
 
 
-    if( radio_elements[i].checked == true ) {
+    if( radios[i].checked == true ) {
       // console.log("🟩 Checked Index = " + i)
       return i;
 
@@ -51,6 +44,7 @@ function get_setted_radio_index( radio_name ) {
   return -1;
 
 }
+
 
 
 /* ----------------------------------------------------------------- */

@@ -20,3 +20,24 @@ function remove_img_in_element( element ) {
   }
 
 }
+
+/* ----------------------------------------------------------------- */
+/*  Remove Element From Parent
+/* ----------------------------------------------------------------- */
+
+ function delete_element_from_parent( deleteElement_fromParent ) {
+
+  console.log("➡️ delete_element_from_parent()")
+
+  console.log("deleteElement_fromParent, = " + deleteElement_fromParent )
+
+
+  // Check if exist, if yes than delete
+  if( deleteElement_fromParent != null ) {
+
+    console.log("🟥 Delete , because it exist")
+    deleteElement_fromParent.remove();
+
+  }
+
+}

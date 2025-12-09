@@ -60,37 +60,3 @@ function get_new_custom_radio( css_class, img_src ) {
   return div_custom_radio;
 
 }
-
-/* ----------------------------------------------------------------- */
-/* Get New | Sport Video Link Box
-/* ----------------------------------------------------------------- */
-
-function get_new_sport_video_link_box( setted_index, data_sport_video_link ) {
-
-  console.log("➡️ get_new_sport_video_link_box");
-
-  var index = setted_index;
-  var data = data_sport_video_link;
-
-  // Prints
-  console.log("setted_index= " + setted_index)
-
-
-  /* -------------------------------------------------------------------- */
-  /* To Do
-  /* -------------------------------------------------------------------- */
-
-  console.log("data= " + data.challenges[index].content.details.info )
-  var info = data.challenges[index].content.details.info;
-
-  // 🟥 create_divs.js | auslagern
-  var new_div = createDivClassText( "a", info )
-
-  // global
-  // add_element_to_add_point_prepend( new_div, content_default_3 )
-
-
-
-
-
-}

@@ -254,7 +254,7 @@ async function async_add_sport_video_link_boxes_to( data, startIndex, endIndex, 
     /* Get Data for Radio & Labels
     /* ---------------------------------------------- */
 
-    // data
+    // global
     var data = data_header_nav_sport_categories;
 
     // get created | radios
@@ -291,36 +291,45 @@ async function async_add_sport_video_link_boxes_to( data, startIndex, endIndex, 
         // window.alert("🦁 Jetzt gehts rund = " + i )
 
         /* -------------------------------------------------- */
-        /* Unset | Old CSS Style & Handling
+        // Step 1:
+        // Unset all CSS Styles & Handlings
         /* -------------------------------------------------- */
 
+          // unset css | label
           unset_elements_css_backgroundColor( label_elements )
+          // unset css | radio
           unset_elements_css_display_none( custom_radios_imgs )
 
-          // unset content | fixed 30
-          // global
-          unset_element_css_display_none( content_fixed_30 )
-
-          // unset content | default 3
-          // global
-          unset_element_css_display_none( content_default_3 )
+          // unset css | content 30 videos (global)
+          unset_element_css_display_none( add_point_sport_challenge_30_videos_container )
+          // unset css | content 3 videos (global)
+          unset_element_css_display_none( add_point_sport_challange_3_videos_container )
 
 
         /* -------------------------------------------------- */
-        /* Set | New CSS Style & Handling
+        // Step 2:
+        // Set New CSS Style & Handling ( radio & label )
         /* -------------------------------------------------- */
 
-          // set css | background color
+          // set css | label
           label_elements[ i ].style.backgroundColor = "wheat";
 
-          // css css | img custom radio
+          // set css | label -> custom radio > img
           custom_radios_imgs[ i ].style.display = "flex";
 
-          // set css | set content by index
-          // 0      = choose => banner
-          // 1      = fixed 30 videos
-          // Others = default 3 videos
-          set_content_sport_challenges_by_index( i )
+
+        /* -------------------------------------------------- */
+        // Step 3:
+        // Set Content | Sport Challenge by Index
+        /* -------------------------------------------------- */
+
+          /* info:
+            index = 0 = choose => empty view
+            index = 1 = 30 videos sport challenge
+            index >=2 = 3 videos sport challenge
+          */
+
+          async_set_content_sport_challenges_by_index( i );
 
 
       } )
