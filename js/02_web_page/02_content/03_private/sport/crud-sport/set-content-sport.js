@@ -95,7 +95,7 @@
           /* ------------------------------------------------------------------- */
 
           async_create_info_about_sport_challenge_container_to(
-                                                                data_sport_challenges_videos,
+                                                                data_3_sport_videos_challenges,
                                                                 data_index,
                                                                 add_point_sport_challange_3_videos_container )
 
@@ -162,33 +162,180 @@
       /* 🟥 2.2 Create new
       /* ------------------------------------------------------ */
 
-        /* --------------------------------------------------- */
+        /* --------------------------------------------------------------------------------------- */
         // Step 1:
         // Create ".info-about-sport-challenge-container"
+        /* --------------------------------------------------------------------------------------- */
+
+        var newDivInfoAbout = get_new_divClass( "info-about-sport-challenge-container" )
+
+          /* --------------------------------------------------------------------------------------- */
+          // Step 2:
+          // 2.1 Create Header
+          // 2.2 Add "Header" to ".info-about-sport-challenge-container"
+          /* --------------------------------------------------------------------------------------- */
+
+            // Prints
+            console.log("header_img_path= " + dataDefaults.imgAboutPath )
+            console.log("header_img_class= " + dataDefaults.imgAboutClass )
+            console.log("header_div_text= " + dataAbout.info )
+
+            var imgAboutPath = dataDefaults.imgAboutPath;
+            var imgAboutClass = dataDefaults.imgAboutClass;
+            var textHeaderAbout = dataAbout.info
+
+            async_create_header_img_divText_to( imgAboutPath, imgAboutClass, textHeaderAbout, newDivInfoAbout );
+
+
+          /* --------------------------------------------------------------------------------------- */
+          // Step 3:
+          // 3.1 Create Main
+          // 3.2 Create Main Child Elements
+          // 3.2 Add "Main" to ".info-about-sport-challenge-container"
+          /* --------------------------------------------------------------------------------------- */
+
+            /* ----------------------------------------------------------------- */
+            // 3.1 Create Main
+            /* ----------------------------------------------------------------- */
+
+              var newMain = document.createElement("main");
+
+            /* ----------------------------------------------------------------- */
+            /* 3.1 Create Main Child Elements
+            /* ----------------------------------------------------------------- */
+
+              // ⚠️Datei => sportARts schlecht anderen Namen
+
+              var dataSportArts = dataAbout.sportArts;
+
+              var newSportWorkoutPartsContainer = [];
+
+              var dayDivs = [];
+              var daySubDivs = [];
+              var sportCategoryItems = [];
+
+              newSportWorkoutPartsContainer.push( document.createElement("div") )
+              newSportWorkoutPartsContainer[0].setAttribute("class", "sport-workout-parts-container")
+
+              // ⚠️ Loop
+              for( let i=0; i < dataSportArts.length; i++) {
+
+                console.log(i + ":" + dataSportArts[i].days )
+
+                /* ---------------------------------------- */
+                /* Create Div "X Days" (if exist)
+                /* ---------------------------------------- */
+
+                  if( dataSportArts[i].days != "" ) {
+
+                    // Create Div "Days"
+                    dayDivs.push( document.createElement("div") )
+                    dayDivs[i].setAttribute("class", "sport-workout-days");
+
+                    // Create Div "Days" Span
+                    daySubDivs.push( document.createElement("span") )
+                    daySubDivs.innerText = dataSportArts[i].days;
+
+                    // Add "dayDivs[i]" to "daySubDivs[i]"
+                    dayDivs[i].appendChild( daySubDivs[i]  )
+
+
+                  }
+
+                  // Add "dayDivs[i]" to "daySubDivs[i]"
+                  async_create_sport_workout_parts_container_to( dataSportArts[i].days, newSportWorkoutPartsContainer[0] )
+
+                  for( let j=0; j < dataSportArts[i].items.length; j++ ) {
+
+                    console.log(j + ": " + dataSportArts[i].items[j].imgName )
+                  }
+
+                /* Create Sport Arts Row */
+
+                /*
+                    1. Create Days
+                    2. Create Items
+
+                */
+
+
+              }
+
+              newMain.appendChild( newSportWorkoutPartsContainer[0] )
+
+
+            /* ----------------------------------------------------------------- */
+            /* 3.2 Add Main to ".info-about-sport-challenge-container"
+            /* ----------------------------------------------------------------- */
+
+
+
+
+
+
+            // await async_create_sport_workout_parts_container_to( textDays, newMain )
+
+            // add newMein to newDivInfoAbout
+            newDivInfoAbout.appendChild( newMain )
+
+
+            async function async_create_sport_workout_parts_container_to( textDays, mainPoint ) {
+
+              // Default CSS Classes to Create
+              var cssClass_sport_workout_parts_container = "sport-workout-parts-container";
+              var cssClass_sport_workout_days = "sport-workout-days";
+              var cssClass_sport_workout_category = "sport-workout-category";
+
+              /* ----------------------------------------------------- */
+              /* Step 1:
+              /* Create ".sport-workout-parts-container"
+              /* ----------------------------------------------------- */
+
+                var new_sport_workout_parts_container = document.createElement("div");
+                new_sport_workout_parts_container.setAttribute("class", cssClass_sport_workout_parts_container )
+
+
+            /* ----------------------------------------------------- */
+            /* Step 2:
+            /* Create ".sport-workout-days" if it is defined
+            /* ----------------------------------------------------- */
+
+              if( textDays != "" ) {
+
+
+                var new_sport_workout_days = document.createElement("div");
+                new_sport_workout_days.setAttribute("class", cssClass_sport_workout_days);
+
+                // child span
+                var new_span_sport_workout_days = document.createElement("span");
+                new_span_sport_workout_days.innerText = textDays;
+
+                // add "span" to "new_sport_workout_days"
+                new_sport_workout_days.appendChild( new_span_sport_workout_days )
+
+                // add "new_sport_workout_days" to "new_sport_workout_parts_container"
+                new_sport_workout_parts_container.appendChild( new_sport_workout_days )
+
+
+              }
+
+
+            // Final
+            // Add "new_sport_workout_parts_container" to "mainPoint"
+            mainPoint.appendChild( new_sport_workout_parts_container )
+
+
+        }
+
+
+          /* ----------------------------------------- */
+          /* Create | ".sport-workout-parts-container"
+          /* ----------------------------------------- */
+
+
+
         /* --------------------------------------------------- */
-
-        var newDiv = get_new_divClass( "info-about-sport-challenge-container" )
-
-        /* --------------------------------------------------- */
-        // Step 2:
-        // Create & Add Header to parent
-        /* --------------------------------------------------- */
-
-          // Prints
-          console.log("header_img_path= " )
-          console.log("header_img_class= " )
-          console.log("header_div_text= " + dataAbout.info )
-
-          //  🟥 to Do -> Datenhaltung -> dann weiter programmieren
-
-          var path = "media/img/icons/03-emojies/04-hobbys/emojie-dart.png";
-          var classImg = "img-h-1"
-
-          async_create_header_img_div_to( path, classImg, dataAbout.info, newDiv );
-
-
-        /* --------------------------------------------------- */
-        // Step 2:
+        // Step 3:
         // 2.1 Create main
         // 2.2 Create ".sport-workout-parts-container"
         //
@@ -213,7 +360,9 @@
         // 🟥 Coming Soon
 
         // 🦖 Adding Testing
-        addPoint.prepend( newDiv );
+        addPoint.prepend( newDivInfoAbout );
+
+
 
 
     return new Promise(resolve => {

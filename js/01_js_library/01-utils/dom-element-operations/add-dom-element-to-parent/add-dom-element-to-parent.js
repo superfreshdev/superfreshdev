@@ -26,7 +26,7 @@ function addDomElementToParent( domElement, domParent ) {
 /* Async Create | Header | Img & ( Div + Text )
 /* ------------------------------------------------------------------- */
 
-  async function async_create_header_img_div_to( imgPath, imgClass, divText, parent ) {
+  async function async_create_header_img_divText_to( imgPath, imgClass, divText, parent ) {
 
           console.log("➡️ async_create_header_img_div_to()")
 
