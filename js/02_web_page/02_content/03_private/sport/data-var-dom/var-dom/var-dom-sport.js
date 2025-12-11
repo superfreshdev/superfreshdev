@@ -13,17 +13,26 @@
   const sport_3_videos_containers = document.querySelectorAll(".sport-3-videos-link-container");
 
   /* ----------------------------------------------------- */
-  // Max Content Items
+  // 🟩 Showing Content & Adding Points
+  /* ----------------------------------------------------- */
+
+    const content_newest_sport_videos_container = document.getElementById("sport-newest-video-container");
+    const content_history_newest_sport_videos_container = document.getElementById("content-history-sport-newest-video-container")
+
+    const content_sport_challenges_container = document.getElementById("sport-challenges-video-container");
+
+  /* ----------------------------------------------------- */
+  // 🟩 Max Content Items
   // ( newest videos , sport challenges )
   /* ----------------------------------------------------- */
 
-  var max_newest_sport_videos  =  data_newest_sport_videos.videos.length;
-  console.log("🦖 Max|Newest Sport Videos: " + max_newest_sport_videos )
+  // Max Content Items | Newest Videos
+  var max_content_items_sport_newest_videos = data_newest_sport_videos.videos.length;
 
-  // -1, because we dont count choose challenge selector as sport challenge -
-  // its just to unshown all sport challenges
-  var max_sport_challenges = data_header_nav_sport_categories.sportChallengeCategories.length -1;
-  console.log("🦖 Max|Sport Challenges: " + max_sport_challenges )
+  // Max Content Items | Sport Challenges
+  // > we calc 30 Videos Sport Challenge extra with +1 because thats have an
+  //   own json data object. So we calc all sport challenges drom data_3 ... + 30.
+  var max_content_items_sport_challenges = data_3_sport_videos_challenges.challenges.length +1;
 
 
   /* ----------------------------------------------------- */
@@ -40,6 +49,8 @@
   /* ----------------------------------------------------- */
   // Header | Sport Category ( chk - label )
   /* ----------------------------------------------------- */
+
+  const header_sport_category = document.querySelector("#header-nav-sport-container > .header-content-block")
 
   const img_header_sport_category = document.getElementById("js-header-img-sport-category");
   const title_header_sport_category = document.getElementById("js-header-title-sport-category");

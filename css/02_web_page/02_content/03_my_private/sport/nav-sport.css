@@ -80,9 +80,9 @@ input[name="radio-name-sport-category"] {
 }
 
 /* set content | newest sport videos / sport challenges  */
-#radio-sport-newest-videos:checked ~ #sport-content-container #sport-newest-video-container,
+/* #radio-sport-newest-videos:checked ~ #sport-content-container #sport-newest-video-container,
 #radio-sport-challenge-videos:checked ~ #sport-content-container #sport-challenges-video-container {
 
   display: grid;
 
-}
+} */

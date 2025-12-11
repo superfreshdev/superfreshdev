@@ -1,89 +1,99 @@
 // console.log("🟨 async-add-content-sport.jst.js")
 
 
-/* ---------------------------------------------------- */
-// Async | Add Sport Video Link Boxes To
-/* ---------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+// Async | Add New Content | Sport 3 Videos Link Container To
+/* -------------------------------------------------------------------- */
 
-async function async_add_sport_video_link_boxes_to( data, startIndex, endIndex, add_point ) {
+async function async_add_new_content_sport_3_video_link_container_to( dataDefaults, dataWishedVideos, startNr, addNr, addPoint ) {
 
-  console.log("➡️ async_get_create_sport_video_link_box() ")
+  console.log("➡️ async_add_new_content_sport_3_video_link_container_to()")
 
-  // e.g 1 & 3 = 3 loops, beginning at 1
-  // e.g 15 & 30 = 15 loops, beginning at 15
-  console.log("🟣|startIndex= " + startIndex)
-  console.log("🟣|endIndex= " + endIndex)
-
-  // generate js default text
-  // add_point.innerText = "🟨🟨🟨 JS Dync. Generated"
-
-  // ⚠️ Erst Data überarbeiten
-
-  /* ----------------------------------------------------- */
+  /* ------------------------------------------------------ */
   // Step 1:
-  // Get Data for Sport Video Link Boxes
-  /* ----------------------------------------------------- */
+  // Get Default Datas
+  /* ------------------------------------------------------ */
 
-  // defaults
-  var defImgVideoPath = data.defaults.defImgVideoPath;
-  var linkTitle = data.defaults.linkTitle;
+  // var imgVideoPath = dataDefaults.imgVideoPath;
+  // var linkTitle = dataDefaults.linkTitle;
 
-  var imgIconGreyPath = "";
-  var imgIconGreyName = "";
+  // var imgIconGreyPath = dataDefaults.imgIconGreyPath;
+  // var imgIconGreyName = dataDefaults.imgIconGreyName;
 
-  var imgIconBlackPath = "";
-  var imgIconBlackPath = "";
+  // var imgIconBlackPath = dataDefaults.imgIconBlackPath;
+  // var imgIconBlackName = dataDefaults.imgIconBlackName;
 
-  var imgIconCssClass = "";
+  // var imgIconCssClass = dataDefaults.imgIconCssClass;
 
-  // get data vidoes
-  var videoDatas = data.videos;
+  // console.log("🔥### Prints | Data Defaults: ")
+  // console.log("imgVideoPath= " + imgVideoPath)
 
-  var startArrayIndex = startIndex - 1;
-  var endArrayIndex = endIndex - 1;
-
-  console.log("🟣|rangeOfDatas= " + endArrayIndex)
-
-  // var defImgVideoPath = data.defaults;
-
-  /* ------------------------------------------------------- */
-  // Prints
-  /* ------------------------------------------------------- */
-
-  var dataWishes = [];
-  // divSportVideoLinkBoxes = [];
-  var divElements = [];
-
-  /* -------------------------------------------------- */
-  /* Get Wishes Data Videos
-  /* -------------------------------------------------- */
-
-  for( let i=startArrayIndex; i <= endArrayIndex; i++ ) {
-
-    console.log(i + " :" + videoDatas[i].imgName)
-    dataWishes.push( videoDatas[i] )
+  console.log("🔥### Prints | Data Wished Videos: ")
+  // Test Prints
+  for( let i=0; i < dataWishedVideos.length; i++ ) {
+    console.log(i + " : dataVideos= " + dataWishedVideos[i].imgName)
+    // console.log(i + " : dataVideos= " + dataVideos[i].externalLink)
 
   }
 
-  /* -------------------------------------------------- */
-  /* Creating Wishes Data Videos
-  /* -------------------------------------------------- */
+  console.log("starNr = " + startNr )
+  console.log("AddNr = " + addNr )
 
-  for( let i=0; i < dataWishes.length; i++ ) {
+  /* -------------------------------------------------------------------------------- */
+  // Step 2:
+  // Create new Element | ".sport-3-videos-link-container"
+  /* -------------------------------------------------------------------------------- */
 
-    // create divs
-    divElements.push( document.createElement("div") )
+    var new_sport_3_vidoes_link_container = document.createElement("div");
+    var css_class_3_vidoes_link_container = "sport-3-videos-link-container";
 
-    // set text to divs
-    divElements[i].innerText = dataWishes[i].imgName;
+    new_sport_3_vidoes_link_container.setAttribute("class", css_class_3_vidoes_link_container )
 
-    // add (append) new divs to add_point
-    add_point.appendChild( divElements[i] )
+  /* ------------------------------------------------------------------------------------------------------ */
+  // Step 3:
+  // 3.1 Create new ".sport-video-link-box" by datas
+  // 3.2 Add new ".sport-video-link-box" to  ".sport-3-videos-link-container"
+  /* ------------------------------------------------------------------------------------------------------ */
 
-  }
+      /*
+          1,15 = 1, 1+15=16, 16+15=31
+      */
+
+      var sport_video_link_boxes = [];
+
+      for( let i=0; i < dataWishedVideos.length; i++ ) {
+
+        // console.log(i + ": " + wishedVideoDatas[i].imgName )
+
+        sport_video_link_boxes.push( await async_get_created_content_sport_video_link_box_by_startIndex( dataDefaults, dataWishedVideos[i], startNr ) )
+        // console.log("🐒 = " + sport_video_link_boxes[i].innerText )
+
+        // if addNr > 1 start next step to addtion
+        startNr = startNr + addNr;
+
+        // subtract only by addNr bigger than 1 because of loop additions
+        // e.g 1,15 = 1+15=16 but should be 15
+        if( addNr > 1 && i == 0 ) {
+
+          startNr = startNr -1;
+
+        }
 
 
+        // Add "sport_video_link_boxes[i]" to "new_sport_3_vidoes_link_container"
+        new_sport_3_vidoes_link_container.appendChild( sport_video_link_boxes[i] )
 
+      }
+
+
+  /* -------------------------------------------------------------------------------- */
+  // Step 4:
+  // 4.1 Add "css Order: 2" to ".sport-3-videos-link-container"
+  // 4.2 Add Final ".sport-3-videos-link-container" to "addPoint"
+  /* -------------------------------------------------------------------------------- */
+
+      new_sport_3_vidoes_link_container.style.order = "2";
+      addPoint.appendChild( new_sport_3_vidoes_link_container )
 
 
 
@@ -94,11 +104,240 @@ async function async_add_sport_video_link_boxes_to( data, startIndex, endIndex, 
 }
 
 
+// 🟣 auslagern get wished
+/* -------------------------------------------------------------------- */
+// Async | Get Wished Arrays from Data By Index Range
+/* -------------------------------------------------------------------- */
+
+async function async_get_wished_arrays_from_data_by_index_range( dataOfAllArrays, startIndex, endIndex ) {
+
+  console.log("➡️ async_get_wished_arrays_from_data_by_index_range() ")
+
+  console.log("🟣|startIndex= " + startIndex)
+  console.log("🟣|endIndex= " + endIndex)
+
+  /* --------------------------------------------------- */
+  // Step 1:
+  // Change Index to Array Index
+  // e.g Index 1 = Array Index 0
+  /* --------------------------------------------------- */
+
+  var startArrayIndex = startIndex -1;
+  var endArrayIndex = endIndex -1;
+
+  /* --------------------------------------------------- */
+  // Step 2:
+  // Get wishes Arrays from Data by Index Range
+  /* --------------------------------------------------- */
+
+  var wishedDatas = [];
+
+  for( let i=startArrayIndex; i <= endArrayIndex; i++ ) {
+
+    wishedDatas.push( dataOfAllArrays[i] )
+
+  }
+
+  //Test Prints
+  for( let i=0; i < wishedDatas.length; i++ ) {
+    console.log(i + " : wishedDatas= " + wishedDatas[i].imgName)
+  }
+
+
+
+  return new Promise(resolve => {
+      resolve( wishedDatas );
+  })
+
+}
+
+    /* ----------------------------------------- */
+    /* 🟣 Auslagern
+    /* ----------------------------------------- */
+
+    async function async_get_created_content_sport_video_link_box_by_startIndex( dataDefaults, wishedVideo, nrCounter ) {
+
+      console.log("➡️ async_get_created_content_sport_video_link_box_by_startIndex()")
+
+        /* --------------------------------------------------------- */
+        /* Step 1:
+        /* Create ".sport-video-link-box"
+        /* --------------------------------------------------------- */
+
+        var new_sport_video_link_box = document.createElement("div")
+        var css_class_sport_video_link_box = "sport-video-link-box";
+        new_sport_video_link_box.setAttribute("class", css_class_sport_video_link_box);
+
+
+          /* -------------------------------------------------- */
+          /* Step 1:
+          /* Create & Adding | Nr
+          /* -------------------------------------------------- */
+
+            var nr_element = "";
+            var css_class_nr = "nr-sport-video-link";
+            var sub_nr_element = "";
+
+            /* ---------------------------------- */
+            /* Creatings ...
+            /* ---------------------------------- */
+
+            // Create Div Nr
+            nr_element = document.createElement("div");
+            nr_element.setAttribute("class", css_class_nr )
+
+            // Create Sub Div Nr
+            sub_nr_element = document.createElement("div");
+            sub_nr_element.innerText = nrCounter;
+
+            /* ---------------------------------- */
+            /* Adding ...
+            /* ---------------------------------- */
+
+            // Add "sub_nr_element" to "nr_element"
+            nr_element.appendChild( sub_nr_element)
+
+            // Add "nr_element" to "new_sport_video_link_box"
+            new_sport_video_link_box.appendChild( nr_element )
+
+
+          /* -------------------------------------------------- */
+          /* Step 2:
+          /* Create & Adding | Img
+          /* -------------------------------------------------- */
+
+            var img_video = "";
+            var imgVideoPath = dataDefaults.imgVideoPath;
+
+            // Create img
+            img_video = document.createElement("img");
+            img_video.setAttribute("src", imgVideoPath + wishedVideo.imgName )
+            img_video.setAttribute("alt", "img" )
+
+            // Add "img_video" to "new_sport_video_link_box"
+            new_sport_video_link_box.appendChild( img_video )
+
+
+          /* -------------------------------------------------- */
+          /* Step 3:
+          /* Create & Adding | Link Show Me
+          /* -------------------------------------------------- */
+
+          // create only if externalLink is not empty
+          if( wishedVideo.externalLink != "" ) {
+
+
+            var link_element = "";
+
+            /* ------------------------------------------------- */
+            /* Get Default Link Datas
+            /* ------------------------------------------------- */
+
+            var linkTitle = dataDefaults.linkTitle;
+
+            var imgIconGreyPath = dataDefaults.imgIconGreyPath;
+            var imgIconGreyName = dataDefaults.imgIconGreyName;
+
+            var imgIconBlackPath = dataDefaults.imgIconBlackPath;
+            var imgIconBlackName = dataDefaults.imgIconBlackName;
+
+            var imgIconCssClass = dataDefaults.imgIconCssClass;
+
+            /* ---------------------------------- */
+            /* Creatings ...
+            /* ---------------------------------- */
+
+            // Create Link Element
+            link_element = document.createElement("a");
+            link_element.setAttribute("href", wishedVideo.externalLink )
+            link_element.setAttribute("target", "_blank" )
+
+            // Create Sub Link Img Grey
+            imgGreyLink = document.createElement("img");
+            imgGreyLink.setAttribute("src", imgIconGreyPath + imgIconGreyName )
+            imgGreyLink.setAttribute("alt", "img" )
+            imgGreyLink.setAttribute("class", imgIconCssClass )
+
+            // Create Sub Link Img Black
+            imgBlackLink = document.createElement("img");
+            imgBlackLink.setAttribute("src", imgIconBlackPath + imgIconBlackName )
+            imgBlackLink.setAttribute("alt", "img" )
+            imgBlackLink.setAttribute("class", imgIconCssClass )
+
+            // Create Sub Link Div "Show Me"
+            divTextShowMe = document.createElement("div");
+            divTextShowMe.innerText = linkTitle;
+
+            /* ---------------------------------- */
+            /* Adding ...
+            /* ---------------------------------- */
+
+            // Add img grey
+            link_element.appendChild( imgGreyLink );
+
+            // Add img black
+            link_element.appendChild( imgBlackLink );
+
+            // Add div show me
+            link_element.appendChild( divTextShowMe );
+
+            // Add "link_element" to "new_sport_video_link_box"
+            new_sport_video_link_box.appendChild( link_element)
+
+          }
+
+
+      return new Promise(resolve => {
+          resolve( new_sport_video_link_box );
+      })
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ---------------------------------------------------- */
 // ❌❌❌ Trash
 /* ---------------------------------------------------- */
+
 
 /* ------------------------------------------------------------------------- */
 // Async | Create Radios | Sport Challenges

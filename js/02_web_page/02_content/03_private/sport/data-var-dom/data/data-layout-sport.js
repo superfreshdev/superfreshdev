@@ -31,7 +31,7 @@
 
         {
           imgName: "black-zick-zack-arrow.png",
-          imgClass: "img-h-1-1",
+          imgClass: "img-h-1-2",
           title: "Newest Videos🦁"
         },
 
