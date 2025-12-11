@@ -16,7 +16,7 @@ console.log("🟨 async-update-view-header-nav-sport.js")
     // 1.3 Update View | Header Sport Category
     /* -------------------------------------------------------------------------------------------------------------- */
 
-      console.log("⚙️⚙️⚙️ Update Views | Header Nav Sport ")
+      console.log("⚙️ Update Views | Header Nav Sport ")
 
       /* ----------------------------------------------------------------------------------- */
       // 🟩 1.1 Update View | Selects Sport Categories (max content items)
@@ -47,7 +47,7 @@ console.log("🟨 async-update-view-header-nav-sport.js")
     // 2.3 Create Radio Change Listeners    | Sport Challenges
     /* ---------------------------------------------------------------------------- */
 
-      console.log("⚙️⚙️⚙️ Create Elements | Nav Sport Challenges ")
+      console.log("⚙️ Create Elements | Nav Sport Challenges ")
 
 
     /* ---------------------------------------------------------------------------- */
@@ -58,7 +58,7 @@ console.log("🟨 async-update-view-header-nav-sport.js")
     // 3.3 Set Content | "Newest Videos" or "Challenges"
     /* ---------------------------------------------------------------------------- */
 
-      console.log("⚙️⚙️⚙️ Add Radio Change Listener | Nav Sport Categories ")
+      console.log("⚙️ Add Radio Change Listener | Nav Sport Categories ")
 
       // global
       for( let index=0; index < radios_sport_categories.length; index++ ) {
@@ -117,48 +117,80 @@ console.log("🟨 async-update-view-header-nav-sport.js")
                 /* Add New Content | Sport 3 Videos Link Container #1 (3)
                 /* ---------------------------------------------------------------------------- */
 
-                  // 🔥🔥🔥 Check if this element exist ? dont create again | because it adds and adds
+                  // 🔥🔥 Race Condition by async in if-checking
 
-                  // async_check_if_domElement_exist_in_parent( domElement, parent )
+                  // 🟥 Single Element Check
 
-                  var existElement = false;
+                  var parentElementNewestVideo = document.getElementById("sport-newest-video-container");
+                  // old
+                  var queryScopeExistElement = ":scope > .sport-3-videos-link-container";
+
+                  // async_exist_domElement_in_parent()
+                  // async_exist_domElement_in_parent_with_displayNone_check()
+
+                  // 🟥 Single Element Check
+
+                  /*
+                     check first Ebene -> dann nur eine Methode
+                  */
+                  var existElement = await async_exist_domElement_in_domParent_with_displayNone_check( queryScopeExistElement , parentElementNewestVideo );
+
+                  /* ------------------------------------------------------- */
+                  // Create new Element if not exist
+                  /* ------------------------------------------------------- */
+
+                  console.log("existElement 🔥🔥🔥 = " + existElement)
 
                   if( existElement == false ) {
 
-                    console.log("➡️ Create Element 1-3 ")
+                    console.log("➡️ Create (sport_3_video_link_container)")
+
+                    //Get Wished Datas (3) | global // async_get_dataArrays_by_indexRange
+                    wishedVideoDatas = await async_get_wished_arrays_from_data_by_index_range( dataAllVideosOfNewstSport, 1, 3 )
+
+                    console.log("wishedVideoDatas[length] = " + wishedVideoDatas.length )
+
+                    async_add_new_content_sport_3_video_link_container_to( dataDefaultsNewestSport,
+                                                                           wishedVideoDatas, 1, 1,
+                                                                           content_newest_sport_videos_container );
 
                   } else {
 
-                    console.log("❌ Dont Create Element 1-3, because it exists ")
+                    console.log("❌ Dont Create (sport_3_video_link_container), because it exists ")
 
                   }
 
-                  // Get Wished Datas (3) | global
-                  wishedVideoDatas = await async_get_wished_arrays_from_data_by_index_range( dataAllVideosOfNewstSport, 1, 3 )
-
-                  // console.log("wishedVideoDatas[length] = " + wishedVideoDatas.length )
-
-                  async_add_new_content_sport_3_video_link_container_to( dataDefaultsNewestSport,
-                                                                         wishedVideoDatas, 1, 1,
-                                                                         content_newest_sport_videos_container );
 
                 /* ---------------------------------------------------------------------------- */
                 /* Add New Content | Sport 3 Videos Link Container #2 (History,6)
                 /* ---------------------------------------------------------------------------- */
 
-                  // Get Wished Datas (history,6) | global
+                // 🟥 All Elements Check
+                var parentElementHistoryNewestVideo = document.getElementById("content-history-sport-newest-video-container");
+                var queryExistElements = ":scope > .sport-3-videos-link-container";
 
-                  wishedVideoDatas = await async_get_wished_arrays_from_data_by_index_range( dataAllVideosOfNewstSport, 4, 6 )
 
-                  // console.log("wishedVideoDatas[length] = " + wishedVideoDatas.length )
+                // 🟥 All Elements Check
+                var existElements = await async_exist_domElement_in_domParent_with_displayNone_check( queryExistElements, parentElementHistoryNewestVideo );
+
+                /* ------------------------------------------------------- */
+                // Create new Elements if not exist
+                /* ------------------------------------------------------- */
+
+                if( existElements == false ) {
+
+                  console.log("➡️ Create (history|sport_3_video_link_container)(1/2)")
+
+                  //Get Wished Datas (3) | global // async_get_dataArrays_by_indexRange
+                  wishedVideoDatas = await async_get_wished_arrays_from_data_by_index_range( dataAllVideosOfNewstSport, 1, 3 )
+
+                  console.log("wishedVideoDatas[length] = " + wishedVideoDatas.length )
 
                   async_add_new_content_sport_3_video_link_container_to( dataDefaultsNewestSport,
-                                                                         wishedVideoDatas, 1, 5,
-                                                                         content_history_newest_sport_videos_container );
+                                                                          wishedVideoDatas, 1, 1,
+                                                                          content_history_newest_sport_videos_container );
 
-                /* ---------------------------------------------------------------------------- */
-                /* Add New Content | Sport 3 Videos Link Container #2 (History,9)
-                /* ---------------------------------------------------------------------------- */
+                  console.log("➡️ Create (history|sport_3_video_link_container)(2/2)")
 
                   // Get Wished Datas (history,9) | global
 
@@ -166,7 +198,13 @@ console.log("🟨 async-update-view-header-nav-sport.js")
 
                   async_add_new_content_sport_3_video_link_container_to( dataDefaultsNewestSport,
                                                                          wishedVideoDatas, 1, 15,
-                                                                         content_history_newest_sport_videos_container );
+                                                                         content_history_newest_sport_videos_container )
+
+
+                } else {
+                  console.log("❌ Dont Create (history|sport_3_video_link_container), because it exists ")
+                }
+
 
               break;
 

@@ -7,7 +7,7 @@
 
 async function async_add_new_content_sport_3_video_link_container_to( dataDefaults, dataWishedVideos, startNr, addNr, addPoint ) {
 
-  console.log("➡️ async_add_new_content_sport_3_video_link_container_to()")
+  // console.log("➡️ async_add_new_content_sport_3_video_link_container_to()")
 
   /* ------------------------------------------------------ */
   // Step 1:
@@ -28,16 +28,16 @@ async function async_add_new_content_sport_3_video_link_container_to( dataDefaul
   // console.log("🔥### Prints | Data Defaults: ")
   // console.log("imgVideoPath= " + imgVideoPath)
 
-  console.log("🔥### Prints | Data Wished Videos: ")
+  // console.log("🔥### Prints | Data Wished Videos: ")
   // Test Prints
   for( let i=0; i < dataWishedVideos.length; i++ ) {
-    console.log(i + " : dataVideos= " + dataWishedVideos[i].imgName)
+    // console.log(i + " : dataVideos= " + dataWishedVideos[i].imgName)
     // console.log(i + " : dataVideos= " + dataVideos[i].externalLink)
 
   }
 
-  console.log("starNr = " + startNr )
-  console.log("AddNr = " + addNr )
+  // console.log("starNr = " + startNr )
+  // console.log("AddNr = " + addNr )
 
   /* -------------------------------------------------------------------------------- */
   // Step 2:
@@ -104,17 +104,18 @@ async function async_add_new_content_sport_3_video_link_container_to( dataDefaul
 }
 
 
-// 🟣 auslagern get wished
+
+// 🟣 Auslagern
 /* -------------------------------------------------------------------- */
 // Async | Get Wished Arrays from Data By Index Range
 /* -------------------------------------------------------------------- */
 
 async function async_get_wished_arrays_from_data_by_index_range( dataOfAllArrays, startIndex, endIndex ) {
 
-  console.log("➡️ async_get_wished_arrays_from_data_by_index_range() ")
+  // console.log("➡️ async_get_wished_arrays_from_data_by_index_range() ")
 
-  console.log("🟣|startIndex= " + startIndex)
-  console.log("🟣|endIndex= " + endIndex)
+  // console.log("🟣|startIndex= " + startIndex)
+  // console.log("🟣|endIndex= " + endIndex)
 
   /* --------------------------------------------------- */
   // Step 1:
@@ -139,9 +140,9 @@ async function async_get_wished_arrays_from_data_by_index_range( dataOfAllArrays
   }
 
   //Test Prints
-  for( let i=0; i < wishedDatas.length; i++ ) {
-    console.log(i + " : wishedDatas= " + wishedDatas[i].imgName)
-  }
+  // for( let i=0; i < wishedDatas.length; i++ ) {
+  //   console.log(i + " : wishedDatas= " + wishedDatas[i].imgName)
+  // }
 
 
 
@@ -151,150 +152,241 @@ async function async_get_wished_arrays_from_data_by_index_range( dataOfAllArrays
 
 }
 
-    /* ----------------------------------------- */
-    /* 🟣 Auslagern
-    /* ----------------------------------------- */
+// 🟣 Auslagern
+/* ----------------------------------------------------------------------- */
+/* Async | Get Created Content Sport Video Link Box By StartIndex
+/* ----------------------------------------------------------------------- */
 
-    async function async_get_created_content_sport_video_link_box_by_startIndex( dataDefaults, wishedVideo, nrCounter ) {
+async function async_get_created_content_sport_video_link_box_by_startIndex( dataDefaults, wishedVideo, nrCounter ) {
 
-      console.log("➡️ async_get_created_content_sport_video_link_box_by_startIndex()")
+  // console.log("➡️ async_get_created_content_sport_video_link_box_by_startIndex()")
 
-        /* --------------------------------------------------------- */
-        /* Step 1:
-        /* Create ".sport-video-link-box"
-        /* --------------------------------------------------------- */
+    /* --------------------------------------------------------- */
+    /* Step 1:
+    /* Create ".sport-video-link-box"
+    /* --------------------------------------------------------- */
 
-        var new_sport_video_link_box = document.createElement("div")
-        var css_class_sport_video_link_box = "sport-video-link-box";
-        new_sport_video_link_box.setAttribute("class", css_class_sport_video_link_box);
-
-
-          /* -------------------------------------------------- */
-          /* Step 1:
-          /* Create & Adding | Nr
-          /* -------------------------------------------------- */
-
-            var nr_element = "";
-            var css_class_nr = "nr-sport-video-link";
-            var sub_nr_element = "";
-
-            /* ---------------------------------- */
-            /* Creatings ...
-            /* ---------------------------------- */
-
-            // Create Div Nr
-            nr_element = document.createElement("div");
-            nr_element.setAttribute("class", css_class_nr )
-
-            // Create Sub Div Nr
-            sub_nr_element = document.createElement("div");
-            sub_nr_element.innerText = nrCounter;
-
-            /* ---------------------------------- */
-            /* Adding ...
-            /* ---------------------------------- */
-
-            // Add "sub_nr_element" to "nr_element"
-            nr_element.appendChild( sub_nr_element)
-
-            // Add "nr_element" to "new_sport_video_link_box"
-            new_sport_video_link_box.appendChild( nr_element )
+    var new_sport_video_link_box = document.createElement("div")
+    var css_class_sport_video_link_box = "sport-video-link-box";
+    new_sport_video_link_box.setAttribute("class", css_class_sport_video_link_box);
 
 
-          /* -------------------------------------------------- */
-          /* Step 2:
-          /* Create & Adding | Img
-          /* -------------------------------------------------- */
+      /* -------------------------------------------------- */
+      /* Step 1:
+      /* Create & Adding | Nr
+      /* -------------------------------------------------- */
 
-            var img_video = "";
-            var imgVideoPath = dataDefaults.imgVideoPath;
+        var nr_element = "";
+        var css_class_nr = "nr-sport-video-link";
+        var sub_nr_element = "";
 
-            // Create img
-            img_video = document.createElement("img");
-            img_video.setAttribute("src", imgVideoPath + wishedVideo.imgName )
-            img_video.setAttribute("alt", "img" )
+        /* ---------------------------------- */
+        /* Creatings ...
+        /* ---------------------------------- */
 
-            // Add "img_video" to "new_sport_video_link_box"
-            new_sport_video_link_box.appendChild( img_video )
+        // Create Div Nr
+        nr_element = document.createElement("div");
+        nr_element.setAttribute("class", css_class_nr )
 
+        // Create Sub Div Nr
+        sub_nr_element = document.createElement("div");
+        sub_nr_element.innerText = nrCounter;
 
-          /* -------------------------------------------------- */
-          /* Step 3:
-          /* Create & Adding | Link Show Me
-          /* -------------------------------------------------- */
+        /* ---------------------------------- */
+        /* Adding ...
+        /* ---------------------------------- */
 
-          // create only if externalLink is not empty
-          if( wishedVideo.externalLink != "" ) {
+        // Add "sub_nr_element" to "nr_element"
+        nr_element.appendChild( sub_nr_element)
 
-
-            var link_element = "";
-
-            /* ------------------------------------------------- */
-            /* Get Default Link Datas
-            /* ------------------------------------------------- */
-
-            var linkTitle = dataDefaults.linkTitle;
-
-            var imgIconGreyPath = dataDefaults.imgIconGreyPath;
-            var imgIconGreyName = dataDefaults.imgIconGreyName;
-
-            var imgIconBlackPath = dataDefaults.imgIconBlackPath;
-            var imgIconBlackName = dataDefaults.imgIconBlackName;
-
-            var imgIconCssClass = dataDefaults.imgIconCssClass;
-
-            /* ---------------------------------- */
-            /* Creatings ...
-            /* ---------------------------------- */
-
-            // Create Link Element
-            link_element = document.createElement("a");
-            link_element.setAttribute("href", wishedVideo.externalLink )
-            link_element.setAttribute("target", "_blank" )
-
-            // Create Sub Link Img Grey
-            imgGreyLink = document.createElement("img");
-            imgGreyLink.setAttribute("src", imgIconGreyPath + imgIconGreyName )
-            imgGreyLink.setAttribute("alt", "img" )
-            imgGreyLink.setAttribute("class", imgIconCssClass )
-
-            // Create Sub Link Img Black
-            imgBlackLink = document.createElement("img");
-            imgBlackLink.setAttribute("src", imgIconBlackPath + imgIconBlackName )
-            imgBlackLink.setAttribute("alt", "img" )
-            imgBlackLink.setAttribute("class", imgIconCssClass )
-
-            // Create Sub Link Div "Show Me"
-            divTextShowMe = document.createElement("div");
-            divTextShowMe.innerText = linkTitle;
-
-            /* ---------------------------------- */
-            /* Adding ...
-            /* ---------------------------------- */
-
-            // Add img grey
-            link_element.appendChild( imgGreyLink );
-
-            // Add img black
-            link_element.appendChild( imgBlackLink );
-
-            // Add div show me
-            link_element.appendChild( divTextShowMe );
-
-            // Add "link_element" to "new_sport_video_link_box"
-            new_sport_video_link_box.appendChild( link_element)
-
-          }
+        // Add "nr_element" to "new_sport_video_link_box"
+        new_sport_video_link_box.appendChild( nr_element )
 
 
-      return new Promise(resolve => {
-          resolve( new_sport_video_link_box );
-      })
+      /* -------------------------------------------------- */
+      /* Step 2:
+      /* Create & Adding | Img
+      /* -------------------------------------------------- */
+
+        var img_video = "";
+        var imgVideoPath = dataDefaults.imgVideoPath;
+
+        // Create img
+        img_video = document.createElement("img");
+        img_video.setAttribute("src", imgVideoPath + wishedVideo.imgName )
+        img_video.setAttribute("alt", "img" )
+
+        // Add "img_video" to "new_sport_video_link_box"
+        new_sport_video_link_box.appendChild( img_video )
+
+
+      /* -------------------------------------------------- */
+      /* Step 3:
+      /* Create & Adding | Link Show Me
+      /* -------------------------------------------------- */
+
+      // create only if externalLink is not empty
+      if( wishedVideo.externalLink != "" ) {
+
+
+        var link_element = "";
+
+        /* ------------------------------------------------- */
+        /* Get Default Link Datas
+        /* ------------------------------------------------- */
+
+        var linkTitle = dataDefaults.linkTitle;
+
+        var imgIconGreyPath = dataDefaults.imgIconGreyPath;
+        var imgIconGreyName = dataDefaults.imgIconGreyName;
+
+        var imgIconBlackPath = dataDefaults.imgIconBlackPath;
+        var imgIconBlackName = dataDefaults.imgIconBlackName;
+
+        var imgIconCssClass = dataDefaults.imgIconCssClass;
+
+        /* ---------------------------------- */
+        /* Creatings ...
+        /* ---------------------------------- */
+
+        // Create Link Element
+        link_element = document.createElement("a");
+        link_element.setAttribute("href", wishedVideo.externalLink )
+        link_element.setAttribute("target", "_blank" )
+
+        // Create Sub Link Img Grey
+        imgGreyLink = document.createElement("img");
+        imgGreyLink.setAttribute("src", imgIconGreyPath + imgIconGreyName )
+        imgGreyLink.setAttribute("alt", "img" )
+        imgGreyLink.setAttribute("class", imgIconCssClass )
+
+        // Create Sub Link Img Black
+        imgBlackLink = document.createElement("img");
+        imgBlackLink.setAttribute("src", imgIconBlackPath + imgIconBlackName )
+        imgBlackLink.setAttribute("alt", "img" )
+        imgBlackLink.setAttribute("class", imgIconCssClass )
+
+        // Create Sub Link Div "Show Me"
+        divTextShowMe = document.createElement("div");
+        divTextShowMe.innerText = linkTitle;
+
+        /* ---------------------------------- */
+        /* Adding ...
+        /* ---------------------------------- */
+
+        // Add img grey
+        link_element.appendChild( imgGreyLink );
+
+        // Add img black
+        link_element.appendChild( imgBlackLink );
+
+        // Add div show me
+        link_element.appendChild( divTextShowMe );
+
+        // Add "link_element" to "new_sport_video_link_box"
+        new_sport_video_link_box.appendChild( link_element)
+
+      }
+
+
+  return new Promise(resolve => {
+      resolve( new_sport_video_link_box );
+  })
+
+}
+
+// 🟣 Auslagern
+/* ----------------------------------------------------------------------- */
+/* Async | Exist Dom Element in Parent
+/* ----------------------------------------------------------------------- */
+
+async function async_exist_domElement_in_domParent_with_displayNone_check( cssScopeQuerySelector, domParent ) {
+
+  /* help info:
+     to select only first child element use in querySelector :scope,
+     e.g :scope > .child, with that we only get the first one.
+     Otherwise it looks in the complete dom for .child.
+     ":scope" means look actually from parent point and not from
+     complete domDocument.
+  */
+
+  console.log("➡️ async_exist_domElement_in_parent_with_displayNone_check()")
+
+  // Test Prints
+  console.log("cssScopeQuerySelector = " + cssScopeQuerySelector)
+  console.log("domParent = " + domParent)
+
+  // var
+  var existDomElement = domParent.querySelectorAll( cssScopeQuerySelector );
+  var existStatus = -1;
+
+  // get style of Exist Dom Element
+  var styleExistDomElement = "";
+
+  console.log("🐒 existDomElement = " + existDomElement.length )
+
+  /* ---------------------------------------------------------------------------------- */
+  // Step 1:
+  // 1.1 Check if domElement (cssQuerySelector) exist
+  // 1.2 If domElement exist, check if display=none was setted
+  //      - if yes, return false ( domElement not exist )
+  //      - if no, return true ( domElement has not display=none setted )
+  /* ---------------------------------------------------------------------------------- */
+
+  if( existDomElement != null ) {
+
+    console.log("🟩 domElement exist in Dom")
+
+    // check if domElement has display=none setted
+    // if one of x found, then jump out of loop
+    // because if one element exist with no setted display=none, than
+    // we dont add new content, because than content exist
+    for( let i=0; i < existDomElement.length; i++ ) {
+
+      styleExistDomElement = window.getComputedStyle(existDomElement[i]);
+
+      if( styleExistDomElement.display === "none" ) {
+
+        console.log("🟥 domElement exist & had setted display=none")
+        console.log("➡️ return = false")
+
+        // Dom Element exist but it was setted by display=none
+        // so that we count to not exist too
+        existStatus = false;
+
+      } else {
+
+        // Jump out of loop, because there really exist minimum one
+        i = existDomElement.length;
+
+        console.log("🟩 domElement exist & had (not) setted display=none")
+        console.log("➡️ return = true")
+
+        // Dom Element exist and hat not setted display=none
+        // that means this Element really exist
+        existStatus = true;
+
+      }
 
     }
 
 
 
+  } else {
+
+    console.log("🟥 domElement dont exist in Dom")
+    console.log("➡️ return = false")
+
+    existStatus = false;
+
+  }
+
+   return new Promise(resolve => {
+      resolve( existStatus );
+  })
+
+
+}
 
 
 

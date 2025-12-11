@@ -1,4 +1,4 @@
-console.log("🟨 async-update-view-sport-elements.js")
+// console.log("🟨 async-update-view-sport-elements.js")
 
 
   /* ---------------------------------------------------------------------------------------------------- */
@@ -7,7 +7,7 @@ console.log("🟨 async-update-view-sport-elements.js")
 
   async function update_view_header_sport_category( radios, headerElement ) {
 
-    console.log("➡️ update_view_header_sport_category()")
+    // console.log("➡️ update_view_header_sport_category()")
 
       /* -------------------------------------------------------------------------- */
       // Step 1:
@@ -27,11 +27,11 @@ console.log("🟨 async-update-view-sport-elements.js")
         //if not changed, than use default index 0
         var checkedIndex = 0;
 
-        console.log("radios[length]= " + radios.length )
+        // console.log("radios[length]= " + radios.length )
 
         for( let i=0; i < radios.length; i++ ) {
 
-          console.log(i + ": " + radios[i].getAttribute("id") )
+          // console.log(i + ": " + radios[i].getAttribute("id") )
 
           if( radios[i].checked == true ) {
 
@@ -59,9 +59,9 @@ console.log("🟨 async-update-view-sport-elements.js")
 
         var cssClassImg = data_header_nav_sport_categories.sportCategoriesHeaders[checkedIndex].imgClass;
 
-        console.log("imgPath = " + imgPath)
-        console.log("imgName = " + imgName)
-        console.log("cssClassImg = " + cssClassImg)
+        // console.log("imgPath = " + imgPath)
+        // console.log("imgName = " + imgName)
+        // console.log("cssClassImg = " + cssClassImg)
 
       /* -------------------------------------------------------------------------- */
       // 3.2 Update View "img"
@@ -84,8 +84,8 @@ console.log("🟨 async-update-view-sport-elements.js")
         var textTitle = data_header_nav_sport_categories.sportCategoriesHeaders[checkedIndex].title;
         var textSubTitle = data_header_nav_sport_categories.sportCategoriesHeaders[checkedIndex].subTitle;
 
-        console.log("textTitle = " + textTitle)
-        console.log("textSub = " + textSubTitle)
+        // console.log("textTitle = " + textTitle)
+        // console.log("textSub = " + textSubTitle)
 
       /* -------------------------------------------------------------------------- */
       // 4.2 Update View "title, subTitle"
@@ -110,7 +110,7 @@ console.log("🟨 async-update-view-sport-elements.js")
 
   async function update_view_label_selected_sport_category( radios, labelSelected ) {
 
-    console.log("➡️ update_view_label_selected_sport_category()")
+    // console.log("➡️ update_view_label_selected_sport_category()")
 
     /* -------------------------------------------------------------------------- */
     // Step 1:
@@ -130,11 +130,11 @@ console.log("🟨 async-update-view-sport-elements.js")
       // if not changed, than use default index 0
       var checkedIndex = 0;
 
-      console.log("radios[length]= " + radios.length )
+      // console.log("radios[length]= " + radios.length )
 
       for( let i=0; i < radios.length; i++ ) {
 
-        console.log(i + ": " + radios[i].getAttribute("id") )
+        // console.log(i + ": " + radios[i].getAttribute("id") )
 
         if( radios[i].checked == true ) {
 
@@ -165,9 +165,9 @@ console.log("🟨 async-update-view-sport-elements.js")
 
         var cssClassImg = data_header_nav_sport_categories.sportCategories[checkedIndex].imgClass;
 
-        console.log("imgPath = " + imgPath)
-        console.log("imgName = " + imgName)
-        console.log("cssClassImg = " + cssClassImg)
+        // console.log("imgPath = " + imgPath)
+        // console.log("imgName = " + imgName)
+        // console.log("cssClassImg = " + cssClassImg)
 
         // update img src
         update_img_src_and_class( imgElement, imgFullPath, cssClassImg )
@@ -179,7 +179,7 @@ console.log("🟨 async-update-view-sport-elements.js")
         // get Datas (global)
         var textTitle = data_header_nav_sport_categories.sportCategories[checkedIndex].title;
 
-        console.log("textTitle = " + textTitle)
+        // console.log("textTitle = " + textTitle)
 
         // update text
         update_text_to_element( textTitle, textElement )
@@ -274,7 +274,7 @@ console.log("🟨 async-update-view-sport-elements.js")
 
   async function async_set_start_views_header_nav_sport_categories() {
 
-    console.log("➡️ async_set_start_views_header_nav_sport_categories()")
+    // console.log("➡️ async_set_start_views_header_nav_sport_categories()")
 
     /* ------------------------------------------------------------- */
     // 🟩 Step 1:
