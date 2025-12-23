@@ -5,51 +5,58 @@
 /* Get New | Div | Text
 /* ----------------------------------------------------------------------------------- */
 
-function get_new_divText( text ) {
+    async function get_new_divText( text ) {
 
-    var newDiv = document.createElement('div');
-    var newTextNode = document.createTextNode( text );
+        var newDiv = document.createElement('div');
+        var newTextNode = document.createTextNode( text );
 
-    // add text to div
-    newDiv.appendChild( newTextNode );
+        // add text to div
+        newDiv.appendChild( newTextNode );
 
-    return newDiv;
+        return new Promise(resolve => {
+            resolve( newDiv);
+        })
 
-}
+    }
 
 /* ----------------------------------------------------------------------------------- */
 /* Get New | Div | CSS Class
 /* ----------------------------------------------------------------------------------- */
 
-function get_new_divClass( cssClass ) {
+    async function get_new_divClass( cssClass ) {
 
-    var newDiv = document.createElement('div');
+        var newDiv = document.createElement('div');
 
-    // add class name
-    newDiv.classList.add( cssClass );
+        // add class name
+        newDiv.classList.add( cssClass );
 
-    return newDiv;
 
-}
+        return new Promise(resolve => {
+            resolve( newDiv);
+        })
+
+    }
 
 /* ----------------------------------------------------------------------------------- */
 /* Get New | Div | CSS Class, Text
 /* ----------------------------------------------------------------------------------- */
 
-function get_new_divClassText( cssClass, text ) {
+    async function get_new_divClassText( cssClass, text ) {
 
-    var newDiv = document.createElement('div');
+        var newDiv = document.createElement('div');
 
-    if( text != undefined ) {
+        if( text != undefined ) {
 
-        var newTextNode = document.createTextNode( text );
-        // add text to div
-        newDiv.appendChild( newTextNode );
+            var newTextNode = document.createTextNode( text );
+            // add text to div
+            newDiv.appendChild( newTextNode );
+        }
+
+        // add class name
+        newDiv.classList.add( cssClass );
+
+        return new Promise(resolve => {
+            resolve( newDiv);
+        })
+
     }
-
-    // add class name
-    newDiv.classList.add( cssClass );
-
-    return newDiv;
-
-}

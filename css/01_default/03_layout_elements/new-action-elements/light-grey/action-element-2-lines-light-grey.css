@@ -1,0 +1,75 @@
+/* -------------------------------------------------------------- */
+/* > action-element-2-lines-light-grey.css
+/* : styles action element 2 lines with light grey style
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Action Element 2 Lines | Light Grey
+/* -------------------------------------------------------------- */
+
+.action-element-2-lines-light-grey {
+
+  padding: .4em .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: #eeeeee;
+  color:#5d5d5d;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Hover | Action Element 2 Lines
+/* -------------------------------------------------------------- */
+
+.action-element-2-lines-light-grey:hover {
+
+  background-color: wheat;
+
+}
+
+/* -------------------------------------------------------------- */
+/* First Line | Div 1
+/* -------------------------------------------------------------- */
+
+.action-element-2-lines-light-grey > div:nth-of-type(1) {
+
+  line-height: 1.5em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* First Line | Div 1 | Div 1
+/* -------------------------------------------------------------- */
+
+.action-element-2-lines-light-grey > div:nth-of-type(1) > div:nth-of-type(1) {
+
+  font-size: 14.5px;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Second Line | Div 1 | Div 2
+/* -------------------------------------------------------------- */
+
+.action-element-2-lines-light-grey > div:nth-of-type(1) > div:nth-of-type(2) {
+
+  font-size: 12px;
+
+  line-height: 1.3em;
+
+  color:grey;
+
+}

@@ -123,10 +123,10 @@
 
       // Update | Label Selected Category Others
       // 🟣 outsourced
-      update_selected_label_with_img_class_text(  label_selected_category_others,
-                                                  data_selected_category_others[i].img_src,
-                                                  data_selected_category_others[i].img_css_class,
-                                                  data_selected_category_others[i].text )
+      // update_selected_label_with_img_class_text(  label_selected_category_others,
+      //                                             data_selected_category_others[i].img_src,
+      //                                             data_selected_category_others[i].img_css_class,
+      //                                             data_selected_category_others[i].text )
 
       // Close Category Others
       chk_category_others.checked = false;

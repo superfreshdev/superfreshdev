@@ -3,25 +3,24 @@
 
 
 /* ----------------------------------------------------------------- */
-/* GET | Length
+/* GET | Length from Dom Elements
 /* ----------------------------------------------------------------- */
 
-function get_length_from_array( arrayElements ) {
+async function get_length_from_domElements( domElements ) {
 
-  // console.log(" Le = " + domElements.length  )
+  // if not changed, not exists -1
+  var countDomElements = "-1";
 
-  var element_lenght = "";
+  if( domElements.length != null && domElements.length != undefined ) {
 
-   if( arrayElements.length == null || arrayElements.length == undefined ) {
+    countDomElements = domElements.length;
 
-    element_lenght = -1;
-
-  } else {
-
-    element_lenght = arrayElements.length;
   }
 
-  return element_lenght;
+  return new Promise(resolve => {
+        resolve(countDomElements);
+      })
+
 }
 
 /* ----------------------------------------------------------------- */
@@ -55,7 +54,7 @@ async function get_checked_index_from( checkedElements ) {
 /* Get | Checked Index Otherwise IndexZero
 /* ----------------------------------------------------------------- */
 
-async function get_checked_index_otherwise_indexZero_from( checkedElements ) {
+async function get_checked_index_otherwise_get_index_zero( checkedElements ) {
 
   // not changed, default index = 0
   var checked_index = 0;
@@ -78,68 +77,3 @@ async function get_checked_index_otherwise_indexZero_from( checkedElements ) {
       })
 
 }
-
-/* ----------------------------------------------------------------- */
-/* Get | Arrays from Data
-/* ----------------------------------------------------------------- */
-
-  async function get_arrays_from_data( dataArray ) {
-
-    var wishedDataArray = [];
-
-    for( let i=0; i < dataArray.length; i++ ) {
-
-      wishedDataArray.push( dataArray[i] )
-
-    }
-
-    return new Promise(resolve => {
-        resolve( wishedDataArray );
-    })
-
-  }
-
-/* ----------------------------------------------------------------- */
-/* Get | Arrays from Data by Property name
-/* ----------------------------------------------------------------- */
-
-  async function get_arrays_from_data_by_propertName( dataArray, strPropertyName ) {
-
-    var wishedDataArray = [];
-
-    for( let i=0; i < dataArray.length; i++ ) {
-
-      wishedDataArray.push( dataArray[i][strPropertyName] )
-
-    }
-
-    return new Promise(resolve => {
-        resolve( wishedDataArray );
-    })
-
-  }
-
-/* ----------------------------------------------------------------- */
-/* Get | Full Img Path by Default and Filename from Data
-/* ----------------------------------------------------------------- */
-
-  async function get_imgPath_from_data_with_defaultPath( imgDefaultPath, imgArrayNames ) {
-
-    console.log("imgArrayNames(length)= " + imgArrayNames.length )
-    console.log("imgDefaultPath= " + imgDefaultPath )
-
-    var wishedImgPaths = [];
-
-    for( let i=0; i < imgArrayNames.length; i++ ) {
-
-      wishedDataArray.push( imgDefaultPath + imgArrayNames[i] )
-    }
-
-    console.log("wishedDataArray(length)=" + wishedDataArray.length)
-
-
-    return new Promise(resolve => {
-          resolve( wishedImgPaths );
-      })
-
-  }

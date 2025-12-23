@@ -1,0 +1,102 @@
+/* -------------------------------------------------------------- */
+/* > action-element-1-line-light-grey.css
+/* : styles action element 1 line with light grey style
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* Action Element 1 Line | Grey (small,medium,big)
+/* -------------------------------------------------------------- */
+
+.action-element-1-line-grey-small,
+.action-element-1-line-grey-medium,
+.action-element-1-line-grey-big {
+
+  padding: 0 .6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .6em;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(231, 231, 231);
+  color:black;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Hover | Action Element 1 Line
+/* -------------------------------------------------------------- */
+
+.action-element-1-line-grey-small:hover,
+.action-element-1-line-grey-medium:hover,
+.action-element-1-line-grey-big:hover {
+
+  background-color: wheat;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Div 1 | Action Element 1 Line
+/* -------------------------------------------------------------- */
+
+.action-element-1-line-grey-small > div:nth-of-type(1),
+.action-element-1-line-grey-medium > div:nth-of-type(1),
+.action-element-1-line-grey-big > div:nth-of-type(1) {
+
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Div 1 | Div | Action Element 1 Line
+/* -------------------------------------------------------------- */
+
+.action-element-1-line-grey-small > div:nth-of-type(1) > div,
+.action-element-1-line-grey-medium > div:nth-of-type(1) > div,
+.action-element-1-line-grey-big > div:nth-of-type(1) > div {
+
+  /* 14.5px = 14,5 / 16px (1em) = .90625em */
+  font-size: .90625em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Small | Action Element 1 Line
+/* -------------------------------------------------------------- */
+
+.action-element-1-line-grey-small {
+
+  height: 1.8em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Medium | Action Element 1 Line
+/* -------------------------------------------------------------- */
+
+.action-element-1-line-grey-medium {
+
+  height: 2.3em;
+
+}
+
+/* -------------------------------------------------------------- */
+/* Big | Action Element 1 Line
+/* -------------------------------------------------------------- */
+
+.action-element-1-line-grey-big {
+
+  height: 2.8em;
+
+}

@@ -30,7 +30,8 @@
 
 #reminder-sport-newest-video {
 
-  order: 1;
+  /* order first position */
+  order: -1;
 
   width: 100%;
   padding: 0 .8em 1.5em .8em;
@@ -61,6 +62,16 @@
 
   line-height: 1.7em;
   color:grey;
+
+}
+
+/* ---------------------------------------------------------------------------- */
+/* .sport-3-videos-link-container (1) < Sport Newest Video Container
+/* ---------------------------------------------------------------------------- */
+
+#sport-newest-video-container > .sport-3-videos-link-container:nth-of-type(1) {
+
+  order: 2;
 
 }
 

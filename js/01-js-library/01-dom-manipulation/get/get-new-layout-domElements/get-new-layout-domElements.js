@@ -60,3 +60,82 @@
     return div_custom_radio;
 
   }
+
+/* ----------------------------------------------------------------- */
+/* Get New | Action Element 2 Lines With Custom Radio
+/* ----------------------------------------------------------------- */
+
+  async function get_new_action_element_2lines_with_customRadio( labelFor, cssClassLabel, title, subTitle, cssClassCustomRadio ){
+
+    /* info:
+
+        this creates the css layout construct of action-element-2-lines-light-grey.css
+
+    */
+
+    // console.log("➡️ get_new_action_element_2lines_with_customRadio()")
+    // console.log("labelFor= " + labelFor)
+
+    /* -------------------------------------------------------------- */
+    // Step 1:
+    // Create Label
+    /* -------------------------------------------------------------- */
+
+      var labelElement = document.createElement("label");
+      labelElement.setAttribute("for", labelFor )
+      labelElement.setAttribute("class", cssClassLabel )
+
+      /* -------------------------------------------------------------- */
+      // Step 2:
+      // 2.1 Create Child | Div | "2 Lines Container"
+      /* -------------------------------------------------------------- */
+
+        var twoLinesContainer = document.createElement("div");
+
+        /* -------------------------------------------------------------- */
+        // Step 3:
+        // 3.1 Create Sub Child | Div | "First Line Container"
+        // 3.2 Create Sub Child | Div | "Second Line Container"
+        /* -------------------------------------------------------------- */
+
+          var firstLineContainer = document.createElement("div");
+          firstLineContainer.innerText = title;
+
+          // add "first line container" to "twoLinesContainer"
+          twoLinesContainer.appendChild( firstLineContainer );
+
+          var secondLineContainer = document.createElement("div");
+          secondLineContainer.innerText = subTitle;
+
+          // add "second line container" to "twoLinesContainer"
+          twoLinesContainer.appendChild( secondLineContainer );
+
+       // add "twoLinesContainer" to "labelElement"
+       labelElement.appendChild( twoLinesContainer );
+
+
+      /* -------------------------------------------------------------- */
+      // ➡️ Step 4:
+      // 4.1 Create Child | Div | "Custom Radio"
+      /* -------------------------------------------------------------- */
+
+        var customRadioElement = "";
+
+        // get img full path of custom radio
+        var imgDefaultPathCustomRadio = "";
+        var imgFullPathCustomRadio = imgDefaultPathCustomRadio + "";
+
+        var imgPathCustomRadio = data_layout_sport_categories.defaults.imgPathCustomRadio;
+
+        // create new custom radio
+        customRadioElement = get_new_custom_radio( cssClassCustomRadio, imgPathCustomRadio )
+
+        // add "customRadioElement" to "labelElement"
+        labelElement.appendChild( customRadioElement );
+
+
+    return new Promise(resolve => {
+        resolve(labelElement);
+      })
+
+  }

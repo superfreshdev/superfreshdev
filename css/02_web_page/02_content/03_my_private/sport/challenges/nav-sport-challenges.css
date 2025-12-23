@@ -43,37 +43,28 @@
 }
 
 
-/* ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️ | kann weg !!!  */
 /* ------------------------------------------------------------------------------- */
-/* Radios | Category Sport Challenges ( choose, challenge 1, ... )
-/* ⚠️ These will be dynamically programmed by java script
+/*  Active Sport Challenge
 /* ------------------------------------------------------------------------------- */
 
-/* default unshown */
-input[name="radio-sport-challenges"] {
-
-  display: none;
-
-}
-
-/* set background */
-#radio-sport-choose-challenge:checked ~ #header-nav-sport-container label[for="radio-sport-choose-challenge"],
-#radio-sport-challenge-1:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-1"],
-#radio-sport-challenge-2:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-2"] {
+.active-sport-challenge {
 
   background-color: wheat;
 
 }
 
-/* set x */
-#radio-sport-choose-challenge:checked ~ #header-nav-sport-container label[for="radio-sport-choose-challenge"] > .custom-radio-small > img,
-#radio-sport-challenge-1:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-1"]  > .custom-radio-small > img,
-#radio-sport-challenge-2:checked ~ #header-nav-sport-container label[for="radio-sport-challenge-2"] > .custom-radio-small > img {
+/* ------------------------------------------------------------------------------- */
+/* Custom Radio Small | Img | Active Sport Challenge
+/* ------------------------------------------------------------------------------- */
+
+.active-sport-challenge .custom-radio-small > img {
 
   display: flex;
 
 }
 
+
+/* ⚠️⚠️⚠️⚠️⚠️ Dynamisch lösen, muss auch weg */
 /* Set Content | 30 Vidoes / 3 Videos Challenge Container */
 #radio-sport-challenge-1:checked ~ #sport-content-container #sport-challenge-30-videos-link-container,
 #radio-sport-challenge-2:checked ~ #sport-content-container #sport-challenge-3-videos-container {

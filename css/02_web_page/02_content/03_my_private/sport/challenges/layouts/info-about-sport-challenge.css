@@ -8,147 +8,146 @@
 /* Info About Sport Challenge Container
 /* -------------------------------------------------------------- */
 
-.info-about-sport-challenge-container {
+  .info-about-sport-challenge-container {
 
-  width: 100%;
-  padding-bottom: 1.5em;
+    width: 100%;
+    padding-bottom: 1.5em;
 
-  display: grid;
+    display: grid;
 
-  /* background-color: blue; */
+    /* background-color: blue; */
 
-}
+  }
 
 /* -------------------------------------------------------------- */
 /* Header | Info About Sport Challenge Container
 /* -------------------------------------------------------------- */
 
-.info-about-sport-challenge-container > header {
+  .info-about-sport-challenge-container > header {
 
-  height: 2.8em;
-  padding: 0 .8em;
+    height: 2.8em;
+    padding: 0 .8em;
 
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
 
-  border-radius: .4em;
+    border-radius: .4em;
 
-  background-color: #eeeeee;
+    background-color: #eeeeee;
 
-}
+  }
 
-.info-about-sport-challenge-container > header > div {
+  .info-about-sport-challenge-container > header > div {
 
-  font-weight: bold;
-  font-size: 14.5px;
+    font-weight: bold;
+    font-size: 14.5px;
 
-}
+  }
 
 /* --------------------------------------------------------------------- */
-/* Info About Sport Workout Challenge
+/* Header Info Workout Sport Challenge
 /* --------------------------------------------------------------------- */
 
-.info-about-sport-workout-challenge {
+  .header-info-workout-sport-challenge {
 
-  padding: .8em .8em;
+    padding: .8em .8em;
 
-  /* background-color: red; */
+  }
 
+  .header-info-workout-sport-challenge > span {
 
-}
+    font-size: 14.5px;
 
-.info-about-sport-workout-challenge > span {
+    font-weight: bold;
+    font-style: italic;
 
-  font-size: 14.5px;
+    color: rgb(169, 169, 169);
 
-  font-weight: bold;
-  font-style: italic;
-
-  color: rgb(169, 169, 169);
-
-}
-
+  }
 
 /* -------------------------------------------------------------- */
 /* Main | Info About Sport Challenge Container
 /* -------------------------------------------------------------- */
 
-.info-about-sport-challenge-container > main {
+  .info-about-sport-challenge-container > main {
 
-  padding: 0em .4em;
+    padding: 0em .4em;
 
-  display: grid;
-  row-gap: .4em;
+    display: grid;
+    row-gap: .4em;
 
-  /* background-color: red; */
+    /* background-color: red; */
 
-}
+  }
 
-/* -------------------------------------------------------------- */
-/* Sport Workout Challenge Container | Main
-/* -------------------------------------------------------------- */
 
-.sport-workout-challenge-container {
+/* ------------------------------------------------------------------------------------ */
+/* Week Workout Sport Challenge Container | Main
+/* ------------------------------------------------------------------------------------ */
 
-  display: flex;
-  flex-wrap: wrap;
+  .week-workout-sport-challenge-container {
 
-  column-gap: .4em;
-  row-gap: .4em;
+    display: flex;
+    flex-wrap: wrap;
 
-}
+    column-gap: .4em;
+    row-gap: .4em;
 
-/* -------------------------------------------------------------- */
-/* Sport Workout Days | Sport Workout Parts Container
-/* -------------------------------------------------------------- */
+  }
 
-.sport-workout-days {
+/* ------------------------------------------------------------------------------------ */
+/* Info Days Sport Workout | Week Workout Sport Challenge Container
+/* ------------------------------------------------------------------------------------ */
 
-  height: 1.8em;
-  padding: 0 .4em;
+  .info-days-sport-workout {
 
-  display: flex;
-  align-items: center;
+    height: 1.8em;
+    width: 3.8em;
+    padding: 0 .4em;
 
-  border-radius: .4em;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 
-  background-color: #eeeeee;
+    border-radius: .4em;
 
-}
+    background-color: #eeeeee;
 
-.sport-workout-days > span {
+  }
 
-  font-size: 12.5px;
-  font-weight: bold;
+  .info-days-sport-workout > span {
 
-  color:grey;
+    font-size: 12.5px;
+    font-weight: bold;
 
-}
+    color:grey;
 
-/* -------------------------------------------------------------- */
-/* Sport Workout Category | Sport Workout Parts Container
-/* -------------------------------------------------------------- */
+  }
 
-.sport-workout-category {
+/* ------------------------------------------------------------------------------------ */
+/* Info Sport Workout Category | Week Workout Sport Challenge Container
+/* ------------------------------------------------------------------------------------ */
 
-  height: 1.8em;
-  padding: 0 .4em;
+  .info-sport-workout-category {
 
-  display: flex;
-  align-items: center;
-  column-gap: .4em;
+    height: 1.8em;
+    padding: 0 .4em;
 
-  border-radius: .4em;
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
 
-  border: 2px solid #eeeeee;
-  color: #adadad;
+    border-radius: .4em;
 
-}
+    border: 2px solid #eeeeee;
+    color: #adadad;
 
-.sport-workout-category > div {
+  }
 
-  font-size: 12.5px;
-  font-weight: bold;
+  .info-sport-workout-category  > div {
 
-}
+    font-size: 12.5px;
+    font-weight: bold;
+
+  }

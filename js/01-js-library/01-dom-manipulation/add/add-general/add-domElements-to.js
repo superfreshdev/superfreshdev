@@ -8,7 +8,7 @@
   // single
   async function add_domElement_append_to( newDomElement, addPoint ) {
 
-    console.log("➡️ add_domElement_append_to()")
+    // console.log("➡️ add_domElement_append_to()")
 
     addPoint.appendChild( newDomElement );
 

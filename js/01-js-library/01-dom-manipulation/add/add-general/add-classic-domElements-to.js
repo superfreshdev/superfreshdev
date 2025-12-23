@@ -5,11 +5,23 @@
 /* Add New | Radio to (prepand)
 /* ----------------------------------------------------------------- */
 
-function add_new_radio_prepand_to( id, name, addPoint ) {
+function add_new_radio_prepand_to( id, name, checkedState, addPoint ) {
 
   // console.log("➡️ add_new_radio_prepand_to()")
 
   const new_radio = document.createElement("input");
+
+  // set checked state if was giving
+  if( checkedState != "") {
+
+    // checked only by given true
+    if( checkedState === "true" ) {
+
+      new_radio.setAttribute("checked","");
+
+    }
+
+  }
 
   new_radio.setAttribute("type", "radio");
   new_radio.setAttribute("id", id);
