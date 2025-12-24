@@ -27,7 +27,7 @@
     /* ------------------------------------------------------------------------ */
 
       // get title
-      var text_header = data.challenges[dataIndex].content.infoAbout.headerTitle;
+      var text_header = data.challenges[dataIndex].infoAbout.headerTitle;
       console.log("text_header = " + text_header )
 
       // update
@@ -40,7 +40,7 @@
     /* ------------------------------------------------------------------------ */
 
       // get header info workout
-      var text_headerInfoWorkout = data.challenges[dataIndex].content.infoAbout.headerInfoSportWorkout;
+      var text_headerInfoWorkout = data.challenges[dataIndex].infoAbout.headerInfoSportWorkout;
       console.log("text_headerInfoWorkout = " + text_headerInfoWorkout )
 
       // update

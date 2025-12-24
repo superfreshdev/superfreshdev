@@ -50,7 +50,7 @@
         /* -------------------------------------------------- */
 
           // get "header title"
-          var textHeaderTitle = dataContent.challenges[dataIndex].content.infoAbout.headerTitle;
+          var textHeaderTitle = dataContent.challenges[dataIndex].infoAbout.headerTitle;
 
           var newDivTitle = document.createElement("div")
           newDivTitle.innerText = textHeaderTitle;

@@ -35,7 +35,7 @@
       // ".week-workout-sport-challenge-container"
       /* --------------------------------------------------- */
 
-        var data_sportWeekWorkouts = dataContent.challenges[dataIndex].content.infoAbout.sportWeekWorkouts;
+        var data_sportWeekWorkouts = dataContent.challenges[dataIndex].infoAbout.sportWeekWorkouts;
         var maxSportWeekWorkouts = data_sportWeekWorkouts.length;
         console.log("maxSportWeekWorkouts = " + maxSportWeekWorkouts )
 
@@ -64,7 +64,7 @@
         var cssClass_infoSport = data_layout_sportChallenges.infoAbout.cssClassInfoSport;
 
         // paths of img
-        var imgDefaultPath_infoSport = data_layout_sport_categoriesNew.defaults.imgDefaultGreyPath;
+        var imgDefaultPath_infoSport = data_layout_defaultSport.defaults.imgDefaultGreyPath;
         var imgFullPath_infoSport = "";
 
         // css class img

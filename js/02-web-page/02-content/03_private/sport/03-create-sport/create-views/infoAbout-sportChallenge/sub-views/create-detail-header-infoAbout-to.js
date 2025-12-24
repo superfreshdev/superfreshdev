@@ -25,7 +25,7 @@
       /* -------------------------------------------------------------------------- */
 
         // get css class
-        var cssClass_headerInfoWorkout = data_layout_sportChallenges.linfoAbout.cssClassHeaderInfoWorkout;
+        var cssClass_headerInfoWorkout = data_layout_sportChallenges.infoAbout.cssClassHeaderInfoWorkout;
         // create new div with class
         var div_headerInfoWorkout = await get_new_divClass( cssClass_headerInfoWorkout )
 
@@ -36,7 +36,7 @@
         /* -------------------------------------------------------------------------- */
 
           // get text
-          var textHeaderInfoWorkout = dataContent.challenges[dataIndex].content.infoAbout.headerInfoSportWorkout;
+          var textHeaderInfoWorkout = dataContent.challenges[dataIndex].infoAbout.headerInfoSportWorkout;
 
           // create "span"
           var span_headerInfoWorkout = document.createElement("span");
