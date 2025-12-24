@@ -29,8 +29,8 @@
           var radioElements = [];
 
           // data
-          var dataRadios = data_layout_sport_categories.sportChallengeCategories;
-          var radioName = data_layout_sport_categories.defaultsSportChallenges.radioName;
+          var dataRadios = data_layout_sportChallenges.nav;
+          var radioName = data_layout_sportChallenges.defaults.radioName;
 
           // add point radios (global)
           var addPoint_of_radios = add_point_radio_sport_challenges;
@@ -69,20 +69,20 @@
 
           // data
           var dataLabel = "";
-          var cssClassLabel = data_layout_sport_categories.defaultsSportChallenges.cssClassLabel;
+          var cssClassLabel = data_layout_sportChallenges.defaults.cssClassLabel;
 
-          var titleChallenge = data_layout_sport_categories.defaultsSportChallenges.title;
+          var titleChallenge = data_layout_sportChallenges.defaults.textChallenge;
 
           // default unset challenges
-          var chooseTitle = data_layout_sport_categories.defaultsSportChallenges.chooseTitle;
-          var chooseSubTitle = data_layout_sport_categories.defaultsSportChallenges.title;
+          var chooseTitle = data_layout_sportChallenges.defaults.textChallenge;
+          var chooseSubTitle = data_layout_sportChallenges.defaults.textChoose;
 
           // will be dyn. setted in loop
           var labelFor = "";
           var labelElements = [];
 
           // css class custom radio
-          var cssClassSmallCustomRadio = data_layout_sport_categories.defaults.cssClassSmallCustomRadio;
+          var cssClassSmallCustomRadio = data_layout_defaultSport.defaults.cssClassSmallCustomRadio;
 
           // "addPoint" to add all labels (global)
           var addPoint_of_labels = add_point_radio_labels_sport_challenges;

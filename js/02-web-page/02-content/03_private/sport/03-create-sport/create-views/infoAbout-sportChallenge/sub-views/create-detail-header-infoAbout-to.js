@@ -25,7 +25,7 @@
       /* -------------------------------------------------------------------------- */
 
         // get css class
-        var cssClass_headerInfoWorkout = data_layout_sport_challenges.layoutInfoAbout.cssClassHeaderInfoWorkout;
+        var cssClass_headerInfoWorkout = data_layout_sportChallenges.linfoAbout.cssClassHeaderInfoWorkout;
         // create new div with class
         var div_headerInfoWorkout = await get_new_divClass( cssClass_headerInfoWorkout )
 

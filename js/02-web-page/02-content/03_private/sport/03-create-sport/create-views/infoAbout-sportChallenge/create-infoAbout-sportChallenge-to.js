@@ -26,7 +26,7 @@
     /* ------------------------------------------------------------- */
 
       // get class name (global)
-      var cssClass_infoAbout = data_layout_sport_challenges.layoutInfoAbout.cssClassInfoAbout;
+      var cssClass_infoAbout = data_layout_sportChallenges.infoAbout.cssClassInfoAbout;
       // create new div
       var new_InfoAboutContainer = await get_new_divClass( cssClass_infoAbout )
 

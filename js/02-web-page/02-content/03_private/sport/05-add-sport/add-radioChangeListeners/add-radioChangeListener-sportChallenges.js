@@ -25,11 +25,11 @@
     /* ------------------------------------------------------------ */
 
       var get_created_radios = [];
-      var radioName = data_layout_sport_categories.defaultsSportChallenges.radioName;
+      var radioName = data_layout_sportChallenges.defaults.radioName;
 
       // console.log("radioName= " +radioName)
 
-      var data_radioChallenges = data_layout_sport_categories.sportChallengeCategories;
+      var data_radioChallenges = data_layout_sportChallenges.nav;
 
       // print_element_list( data_radioChallenges )
 
@@ -53,7 +53,7 @@
     /* ------------------------------------------------------------ */
 
       var get_created_labels = [];
-      var cssClass_activeLabel = data_layout_sport_categories.defaultsSportChallenges.cssClassLabelActive;;
+      var cssClass_activeLabel = data_layout_sportChallenges.defaults.cssClassLabelActive;;
 
       // get "created" labels from dom
       get_created_labels = await get_all_labels_by_forArray( radioIds )

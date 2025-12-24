@@ -40,7 +40,7 @@
         console.log("maxSportWeekWorkouts = " + maxSportWeekWorkouts )
 
         var div_weekWorkoutContainers = [];
-        var cssClass_weekWorkoutContainer = data_layout_sport_challenges.layoutInfoAbout.cssClassWeekWorkoutContainer;
+        var cssClass_weekWorkoutContainer = data_layout_sportChallenges.infoAbout.cssClassWeekWorkoutContainer;
 
       /* --------------------------------------------------- */
       // ".info-days-sport-workout"
@@ -51,7 +51,7 @@
 
         var text_days = "";
 
-        var cssClass_infoDays = data_layout_sport_challenges.layoutInfoAbout.cssClassInfoDays;
+        var cssClass_infoDays = data_layout_sportChallenges.infoAbout.cssClassInfoDays;
 
       /* --------------------------------------------------- */
       // ".info-sport-workout-category"
@@ -61,7 +61,7 @@
         var img_infoSport = [];
         var sub_div_infoSport = [];
 
-        var cssClass_infoSport = data_layout_sport_challenges.layoutInfoAbout.cssClassInfoSport;
+        var cssClass_infoSport = data_layout_sportChallenges.infoAbout.cssClassInfoSport;
 
         // paths of img
         var imgDefaultPath_infoSport = data_layout_sport_categoriesNew.defaults.imgDefaultGreyPath;

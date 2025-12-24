@@ -122,13 +122,13 @@
         var customRadioElement = "";
 
         // get img full path of custom radio
-        var imgDefaultPathCustomRadio = "";
-        var imgFullPathCustomRadio = imgDefaultPathCustomRadio + "";
+        var imgDefaultPathCustomRadio = data_layout_defaultSport.defaults.imgDefaultBlackPath;
+        var imgPathCustomRadio = data_layout_defaultSport.defaults.imgNameBlackCreativeX;
 
-        var imgPathCustomRadio = data_layout_sport_categories.defaults.imgPathCustomRadio;
+        var imgFullPathCustomRadio = imgDefaultPathCustomRadio + imgPathCustomRadio;
 
         // create new custom radio
-        customRadioElement = get_new_custom_radio( cssClassCustomRadio, imgPathCustomRadio )
+        customRadioElement = get_new_custom_radio( cssClassCustomRadio, imgFullPathCustomRadio )
 
         // add "customRadioElement" to "labelElement"
         labelElement.appendChild( customRadioElement );

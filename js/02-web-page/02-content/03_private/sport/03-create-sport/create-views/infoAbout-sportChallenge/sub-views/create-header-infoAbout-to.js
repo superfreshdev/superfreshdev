@@ -31,12 +31,12 @@
         /* -------------------------------------------------- */
 
           // get img dart path (global)
-          var imgDart_defaultPath = data_layout_sport_challenges.defaults.imgEmojiesPath;
-          var imgDartName = data_layout_sport_challenges.defaults.imgNameDart;
+          var imgDart_defaultPath = data_layout_sportChallenges.defaults.imgEmojiesPath;
+          var imgDartName = data_layout_sportChallenges.defaults.imgNameDart;
           // img dart full path
           var imgDart_fullPath = imgDart_defaultPath + imgDartName;
           // css class img dart
-          var cssClass_imgDart = data_layout_sport_challenges.defaults.cssClassImgDard;
+          var cssClass_imgDart = data_layout_sportChallenges.defaults.cssClassImgDard;
 
           // create new img dart
           var newImgDart = await get_new_imgClass( imgDart_fullPath, cssClass_imgDart );

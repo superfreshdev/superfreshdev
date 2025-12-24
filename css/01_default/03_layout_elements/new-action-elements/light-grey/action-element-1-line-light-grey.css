@@ -4,6 +4,7 @@
 /* -------------------------------------------------------------- */
 
 
+
 /* -------------------------------------------------------------- */
 /* Action Element 1 Line | Light Grey (small,medium,big)
 /* -------------------------------------------------------------- */
@@ -25,6 +26,14 @@
 
   background-color: #eeeeee;
   color:#5d5d5d;
+
+  /* Prototyp */
+  /* background-color: wheat;
+  background-color: rgb(216, 216, 216);
+
+  border-radius: .6em;
+
+  padding: 0 .8em; */
 
   user-select: none;
   cursor: pointer;
