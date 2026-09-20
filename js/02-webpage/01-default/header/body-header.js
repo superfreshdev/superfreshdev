@@ -33,13 +33,13 @@
 
     if( checkedHeaderIndex == 0 ) {
 
-      var updateCssStyle = " background-color: wheat; color:black;"
+      // var updateCssStyle = "background-color: rgb(210, 195, 164);"
       await async_update_cssStyle_to_element( updateCssStyle, companyItem )
 
     }
     else {
 
-        var updateCssStyle = "color:rgb(179, 161, 131); "
+        // var updateCssStyle = "background-color: rgb(210, 195, 164);"
         await async_update_cssStyle_to_element( updateCssStyle, companyItem )
 
       }
@@ -60,12 +60,12 @@
 
       if( checkedHeaderIndex == 0 ) {
 
-        var updateCssStyle = " background-color: wheat; color:black;"
+        // var updateCssStyle = "background-color: rgb(210, 195, 164);"
         await async_update_cssStyle_to_element( updateCssStyle, companyItem )
 
       } else {
 
-        var updateCssStyle = "color:rgb(179, 161, 131); "
+        // var updateCssStyle = "background-color: rgb(210, 195, 164);"
         await async_update_cssStyle_to_element( updateCssStyle, companyItem )
 
       }

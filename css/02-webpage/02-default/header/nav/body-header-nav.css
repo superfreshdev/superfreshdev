@@ -13,6 +13,7 @@
 
   display: flex;
   align-items: center;
+  column-gap: .4em;
 
 }
 
@@ -22,8 +23,8 @@
 
 .body-header-label {
 
-  height: 2.3em;
-  padding: 0em .6em;
+  height: 2.8em;
+  padding: 0em .7em;
 
   display: flex;
   align-items: center;
@@ -31,11 +32,14 @@
 
   font-weight: bold;
 
-  border-radius: .5em;
+  border-radius: .6em;
 
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
   color: #6e6e6e;
+  /* background-color: rgb(43, 42, 42); */
+
+  border: 2px solid rgb(47, 47, 47);
 
   cursor: pointer;
   user-select: none;
@@ -46,7 +50,8 @@
 /* Hover */
 .body-header-label:hover {
 
-  background-color: wheat;
+  background-color: rgb(210, 195, 164);
+  color:black;
 
 }
 
