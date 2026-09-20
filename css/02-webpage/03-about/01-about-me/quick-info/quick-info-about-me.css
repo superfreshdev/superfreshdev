@@ -27,7 +27,7 @@
 
 .txt-style {
 
-  font-weight: bold;
+  /* font-weight: bold; */
 
   color:rgb(163, 151, 129);
 
@@ -56,7 +56,9 @@
 
   color: rgb(215, 195, 158);
   color:rgba(215, 195, 158, .8);
+  color:grey;
 
+  color:rgb(155, 155, 155);
 
 }
 
@@ -85,6 +87,9 @@
 
   color:rgb(94, 94, 94);
 
+  color:rgb(94, 94, 94);
+
+
   /* font-weight: bold; */
 
 }
@@ -103,10 +108,14 @@
 
   /* background-color: rgba(54, 54, 54, .5); */
 
-  /* background-color: rgba(54, 54, 54, .4); */
+  background-color: rgba(54, 54, 54, .4);
+
+  background-color: rgba(42, 42, 42, .4);
 
   border: 1px solid transparent;
-  border: 1px solid rgba(94, 94, 94, .4);
+  border: 1px solid rgba(94, 94, 94, .2);
+
+  color:rgb(94, 94, 94);
 
   border-radius: .6em;
 
@@ -178,6 +187,8 @@
   background-color: rgb(33, 33, 33);
 
   color: rgb(201, 200, 200);
+
+
 
   /* color: rgb(99, 99, 99); */
 
